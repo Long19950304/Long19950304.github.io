@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Full Name
-      value: Zhilong Zhao (赵志龙)
+      value: Zhilong George Zhao (赵志龙)
     - name: Location
       value: Guangzhou, China (UTC+8)
     - name: Email
@@ -58,4 +58,3 @@
     - LLM evaluation; quality assessment and calibration; benchmarking
     - Agentic engineering: tool-using agents; multi-agent orchestration (prototype-level); workflow design and testing
     - Languages: Mandarin (fluent); English (fluent); Cantonese (listening proficient; basic speaking)
-

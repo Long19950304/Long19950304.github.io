@@ -4,7 +4,7 @@
 
 title: blank # use "blank" to render first/middle/last name in the header
 first_name: Zhilong
-middle_name: ""
+middle_name: George
 last_name: Zhao
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -254,7 +254,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Zhao]
-  first_name: [Zhilong, Z.]
+  first_name: [Zhilong, Z., George, G., "Zhilong George", "Z. G."]
 
   style: apa
   locale: en
@@ -430,7 +430,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
   highlightjs:
     integrity:
       css:

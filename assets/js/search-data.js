@@ -4,13 +4,13 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-about",
-          title: "about",
+          title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -24,43 +24,48 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-research",
-          title: "research",
-          description: "Research directions and selected projects (AGE + X).",
+          title: "Research",
+          description: "Research directions and selected projects (AE + X).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-media",
-          title: "media",
+          title: "Media",
           description: "Selected media and creative works.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/media/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
+          title: "Teaching",
           description: "AI-forward, product- and outcome-oriented teaching.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "Downloadable CV (optional) and application-ready materials.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-agentic-engineering-age-x",
-          title: 'Agentic Engineering (AGE + X)',
+        },{id: "projects-agentic-engineering-ae-x",
+          title: 'Agentic Engineering (AE + X)',
           description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-ai-native-media-production-pipelines",
-          title: 'AI-native Media Production Pipelines',
-          description: "Code-first multi-model, multi-agent workflows for end-to-end content production.",
+            },},{id: "projects-reliable-llm-assisted-qualitative-analysis",
+          title: 'Reliable LLM-Assisted Qualitative Analysis',
+          description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-interdimensional-interview-room-异次元访谈室",
+          title: 'Interdimensional Interview Room / 异次元访谈室',
+          description: "A code-first, AI-native multi-model/agentic workflow for fast, low-cost media production.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-cv',
         title: 'CV',

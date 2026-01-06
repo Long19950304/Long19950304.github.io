@@ -17,5 +17,5 @@ nav_order: 4
 
 ### *Interdimensional Interview Room / 异次元访谈室*
 
-- AI-assisted interview-format video program (selected samples prepared)
-- Produced via AI-native, code-first multi-model/agentic workflow
+- AI-native interview-format video program
+- Selected episode samples will be added after final production

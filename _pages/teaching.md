@@ -11,7 +11,6 @@ I design applied-learning courses that are **AI-forward**, **product/outcome ori
 
 ## Teaching directions
 
-- Social Media Marketing (strategy + measurement; AI-assisted workflows)
 - Digital Content Creation / Production (AI-native pipelines + evaluation)
 - Computational Communication / Digital Methods (annotation, benchmarking, reproducible workflows)
 - AI-Assisted Research Methods (LLM evaluation, reliability, calibration, responsible use)

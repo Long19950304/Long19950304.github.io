@@ -3,15 +3,11 @@ layout: page
 permalink: /cv/
 title: CV
 description: Downloadable CV (optional) and application-ready materials.
-nav: true
-nav_order: 6
+nav: false
 ---
 
 ## CV (public)
 
-If you want a public CV download on this website:
+This page is intentionally kept minimal until a “public CV” version is ready.
 
-1) Put a PDF at `assets/pdf/cv.pdf`
-2) Add a link here, e.g.: `[Download CV (PDF)](/assets/pdf/cv.pdf)`
-
-I recommend using a “public CV” version that does not include your phone number.
+When ready, put a PDF at `assets/pdf/cv.pdf` and link it here.

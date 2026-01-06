@@ -33,6 +33,13 @@ I am currently a **Postdoctoral Researcher and Assistant Researcher** at the Sch
 - **AE for media workflows**: code-first multi-model/agentic pipelines for scripting → visuals → subtitles → packaging → publishing, with evaluation and governance as first-class outputs.
 - **AE for applied learning**: studio-style teaching that links prototype building to evaluation, documentation, and responsible AI practice.
 
+## Quick links
+
+- [CV](/cv/)
+- [Google Scholar](https://scholar.google.com/citations?user=U-FdkpMAAAAJ)
+- [ORCID](https://orcid.org/0000-0002-3771-4969)
+- [GitHub](https://github.com/Long19950304)
+
 ## What I build
 
 - Multi-agent workflows for annotation, evaluation, and quality assurance (human/LLM hybrid).

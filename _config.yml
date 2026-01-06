@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "" # leave blank to use full name
+title: blank # use "blank" to render first/middle/last name in the header
 first_name: Zhilong
 middle_name: ""
 last_name: Zhao

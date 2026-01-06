@@ -137,7 +137,8 @@ html[data-theme="dark"] .post-about .post-header--hero {
   .post-about .profile {
     float: none !important;
     justify-self: end;
-    max-width: 440px;
+    width: 100%;
+    max-width: 480px;
     margin-top: 0.6rem;
   }
 }
@@ -147,7 +148,8 @@ html[data-theme="dark"] .post-about .post-header--hero {
     order: -1;
     float: none !important;
     margin: 0 auto;
-    max-width: 360px;
+    width: 100%;
+    max-width: 380px;
   }
 }
 

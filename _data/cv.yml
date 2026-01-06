@@ -1,0 +1,61 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Zhilong Zhao (赵志龙)
+    - name: Location
+      value: Guangzhou, China (UTC+8)
+    - name: Email
+      value: yb87315@umac.mo
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Communication
+      institution: University of Macau
+      year: 2019–2024
+      description:
+        - Dissertation: Media Trust and Dependency in a Health Crisis (Macau; COVID-19 period)
+        - Briefly enrolled at NTU; transferred and completed PhD at UM
+    - title: MA in Communication and New Media
+      institution: University of Macau
+      year: 2016–2018
+      description:
+        - Creative thesis: Chinese Passenger / 普快列车 (experimental short film)
+    - title: BA in Chinese International Education
+      institution: Huaqiao University
+      year: 2012–2016
+
+- title: Academic Appointments
+  type: time_table
+  contents:
+    - title: Postdoctoral Researcher; Assistant Researcher
+      institution: School of Journalism and Communication, South China University of Technology (SCUT)
+      year: 2024.06–2026.06
+      description:
+        - Communication & digital media research; reliability and evaluation for LLM-assisted qualitative analysis
+        - Academic exchange activities and event organisation
+    - title: Part-time Lecturer / Researcher
+      institution: Guangzhou Sport University
+      year: 2022–2023
+      description:
+        - Taught Introduction to Communication; Special Topics in Media Studies
+
+- title: Awards
+  type: time_table
+  contents:
+    - year: 2024
+      items:
+        - Outstanding Class Advisor (优秀班主任), SCUT
+    - year: 2021
+      items:
+        - Best Residential Tutor, University of Macau
+
+- title: Skills
+  type: list
+  contents:
+    - Python; reproducible research workflows; evaluation harness design
+    - LLM evaluation; quality assessment and calibration; benchmarking
+    - Agentic engineering: tool-using agents; multi-agent orchestration (prototype-level); workflow design and testing
+    - Languages: Mandarin (fluent); English (fluent); Cantonese (listening proficient; basic speaking)
+

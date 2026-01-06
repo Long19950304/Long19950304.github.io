@@ -38,3 +38,46 @@ My research program centers on <strong>Agentic Engineering (AE+X)</strong>: buil
   </div>
   {% endif %}
 </div>
+
+## Research portfolio (synced)
+
+<p class="small">
+This list is synced from my internal research pool and includes published, in-press, preprints, and active projects.
+</p>
+
+{% assign stage_order = "published,accepted,revise_resubmit,submitted,writing,analysis,build,design,data_inventory,idea" | split: "," %}
+{% assign pool = site.data.research_pool.projects %}
+
+{% for stage in stage_order %}
+  {% assign items = pool | where: "stage", stage %}
+  {% if items.size > 0 %}
+### {{ stage | replace: "_", " " | capitalize }}
+
+<ul>
+  {% for p in items %}
+    <li>
+      {% assign link_url = "" %}
+      {% if p.published_url != "" %}
+        {% assign link_url = p.published_url %}
+      {% elsif p.preprint_url != "" %}
+        {% assign link_url = p.preprint_url %}
+      {% endif %}
+
+      {% if link_url != "" %}
+        <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+      {% else %}
+        {{ p.title }}
+      {% endif %}
+
+      {% if p.target_venue != "" %}
+        — <em>{{ p.target_venue }}</em>
+      {% endif %}
+
+      {% if p.year %}
+        ({{ p.year }})
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+  {% endif %}
+{% endfor %}

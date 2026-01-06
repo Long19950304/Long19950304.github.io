@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Communication & Digital Media · Agentic Engineering (AE + X)
+subtitle: "Agentic Engineering (AE+X): evaluation-first multi-agent workflows."
 nav: false
 
 profile:

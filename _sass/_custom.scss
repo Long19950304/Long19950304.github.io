@@ -123,6 +123,49 @@ html[data-theme="dark"] .post-about .post-header--hero {
   opacity: 1;
 }
 
+// Publications readability
+.bibsearch-form-input {
+  width: min(520px, 100%);
+  padding: 0.55rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+html[data-theme="dark"] .bibsearch-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(33, 37, 41, 0.7);
+  color: var(--global-text-color);
+}
+
+.publications {
+  margin-top: 1.25rem;
+}
+
+.publications h2.bibliography {
+  text-align: left;
+  border-top: none;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  margin-top: 2.25rem;
+  color: var(--global-text-color-light);
+  letter-spacing: 0.02em;
+}
+
+.publications ol.bibliography li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="dark"] .publications ol.bibliography li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.publications ol.bibliography li:last-child {
+  border-bottom: none;
+}
+
 // Cards (projects, etc.)
 .card {
   border-radius: 14px;

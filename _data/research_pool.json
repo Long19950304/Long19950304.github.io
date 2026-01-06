@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-01-06T16:53:39+00:00",
+  "generated_at": "2026-01-06T17:22:00+00:00",
   "projects": [
     {
       "project_id": "long1-desk1-parental-mediation-digital-media-health-literacy",
       "title": "Parental Mediation, Digital Media Usage, and Health Literacy: An Exploration Among Chinese Elementary School Students",
       "type": "journal_article",
       "stage": "published",
+      "kind": "paper",
       "target_venue": "Health Communication",
       "year": 2025,
       "updated_at": "2026-01-06T15:38:42+00:00",
@@ -13,13 +14,18 @@
       "published_url": "https://www.tandfonline.com/doi/abs/10.1080/10410236.2024.2387389",
       "published_doi": "10.1080/10410236.2024.2387389",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-journal-of-family-violence-domestic-violence-framing",
       "title": "“Private Dispute or Public Responsibility?”—Newspaper Framing of Domestic Violence in Four Chinese Regions",
       "type": "journal_article",
       "stage": "published",
+      "kind": "paper",
       "target_venue": "Journal of Family Violence",
       "year": 2025,
       "updated_at": "2026-01-06T15:19:53+00:00",
@@ -27,13 +33,18 @@
       "published_url": "https://link.springer.com/article/10.1007/s10896-024-00796-8",
       "published_doi": "10.1007/s10896-024-00796-8",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-china-media-research-first-person-third-person",
       "title": "First-Person Influences on Third-Person Perceptions.",
       "type": "journal_article",
       "stage": "published",
+      "kind": "paper",
       "target_venue": "China Media Research",
       "year": 2023,
       "updated_at": "2026-01-06T15:38:42+00:00",
@@ -41,13 +52,18 @@
       "published_url": "https://www.researchgate.net/profile/Zhilong-Zhao-5/publication/384056727_First-Person_Influences_on_Third-Person_Perceptions/links/66e7d4f501cba963bf22e71b/First-Person-Influences-on-Third-Person-Perceptions.pdf",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-xinwen-daxue-yingxiang-gucha",
       "title": "影响估差：京湘新闻人中的第三者效应和第一者因素",
       "type": "journal_article",
       "stage": "published",
+      "kind": "paper",
       "target_venue": "新闻大学",
       "year": 2020,
       "updated_at": "2026-01-06T15:38:42+00:00",
@@ -55,13 +71,18 @@
       "published_url": "https://scholar.google.com/scholar?cluster=350114746985011410&hl=en&oi=scholarr",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-macao-media-ecology-generational-differences",
       "title": "代际差异与小型社会中的媒体使用：澳门模式的理论探索及其对媒体生态研究的启示",
       "type": "journal_article",
       "stage": "accepted",
+      "kind": "paper",
       "target_venue": "《澳门研究》",
       "year": 2025,
       "updated_at": "2026-01-06T16:30:11+00:00",
@@ -69,13 +90,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-scirep-confidence-diversity-framework",
       "title": "A Confidence–Diversity Framework for Calibrating AI Judgement in Accessible Qualitative Coding Tasks",
       "type": "journal_article",
       "stage": "revise_resubmit",
+      "kind": "paper",
       "target_venue": "Scientific Reports",
       "year": 2025,
       "updated_at": "2026-01-06T14:10:29+00:00",
@@ -83,13 +109,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "https://arxiv.org/abs/2508.02029",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "20260105-agenda-translation-on-platforms-digital-capacity-as-state-communication-capacity-in-local-government-health-messaging-165ebb",
       "title": "Agenda Translation on Platforms: Digital Capacity as State Communication Capacity in Local Government Health Messaging",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Policy & Internet",
       "year": 2026,
       "updated_at": "2026-01-06T12:54:49+00:00",
@@ -97,13 +128,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-johppl-catch-up-under-constraint",
       "title": "Catch-up under Constraint: Subnational Equalization in Reform-Era China’s Public Health Spending and Capacity, 2007–2021",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Journal of Health Politics, Policy and Law (JHPPL)",
       "year": 2026,
       "updated_at": "2026-01-06T14:02:52+00:00",
@@ -111,13 +147,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "20260106-desktop-newdata-info-freedom-covid-transparency",
       "title": "Information Freedom and COVID-19 Mortality Reporting Transparency: Cross-national Evidence",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Social Science & Medicine",
       "year": 2026,
       "updated_at": "2026-01-06T14:34:42+00:00",
@@ -125,13 +166,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-bds-confidence-diversity-framework",
       "title": "Automated Quality Assessment for LLM-Based Complex Qualitative Coding: A Confidence-Diversity Framework",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Journal of Computational Social Science",
       "year": 2025,
       "updated_at": "2026-01-06T14:10:29+00:00",
@@ -139,13 +185,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "https://arxiv.org/abs/2508.20462",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-health-communication-health-feq-paper",
       "title": "Citations Are Not Evidence Chains: From Credibility Cues to Verifiable Evidence in Patient-Facing LLM Health Guidance",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Health Communication",
       "year": 2025,
       "updated_at": "2026-01-06T14:02:52+00:00",
@@ -153,13 +204,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-energy-policy-lccp-air-quality",
       "title": "Do low-carbon city pilots deliver cleaner air? Evidence of delayed gains concentrated in industrial cities",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Energy Policy",
       "year": 2025,
       "updated_at": "2026-01-06T14:10:29+00:00",
@@ -167,13 +223,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-paradox-foreign-media-domestic-trust",
       "title": "The Paradox of Foreign Media Increasing Domestic Trust: The Mediating Role of Political and Economic Awareness in Developmental Governance Contexts",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Policy & Internet",
       "year": 2025,
       "updated_at": "2026-01-06T15:19:53+00:00",
@@ -181,13 +242,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-pishi-global-south-llm",
       "title": "Visual Orientalism in the AI Era: From West-East Binaries to English-Language Centrism",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "Media, Culture & Society",
       "year": 2025,
       "updated_at": "2026-01-06T14:02:52+00:00",
@@ -195,13 +261,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "https://arxiv.org/abs/2511.22931",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-0714theme",
       "title": "学术播客创作者的身份建构与协商：维度、类型与路径",
       "type": "journal_article",
       "stage": "submitted",
+      "kind": "paper",
       "target_venue": "现代出版",
       "year": 2025,
       "updated_at": "2026-01-06T15:31:14+00:00",
@@ -209,13 +280,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-hec-hierarchical-error-framework",
       "title": "Hierarchical Error Correction for Large Language Models: A Systematic Framework for Domain-Specific AI Quality Enhancement",
       "type": "preprint",
       "stage": "writing",
+      "kind": "paper",
       "target_venue": "TBD (journal target)",
       "year": 2025,
       "updated_at": "2026-01-06T14:11:56+00:00",
@@ -223,13 +299,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "https://arxiv.org/abs/2509.24841",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "20260106-desktop-ess-broadband-mobilize-citizens",
       "title": "Does Broadband Rollout Mobilize Citizens? A Design-Based Reassessment Using the European Social Survey",
       "type": "journal_article",
       "stage": "writing",
+      "kind": "paper",
       "target_venue": "TBD (JoC/JCMC-style draft present)",
       "year": null,
       "updated_at": "2026-01-06T14:35:42+00:00",
@@ -237,13 +318,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-ics-global-ai-narratives",
       "title": "Global AI Narratives, Domestic Dual-Channel Agenda Relay, and Local Outcomes",
       "type": "journal_article",
       "stage": "writing",
+      "kind": "paper",
       "target_venue": "Information, Communication & Society (ICS)",
       "year": null,
       "updated_at": "2026-01-06T14:02:52+00:00",
@@ -251,13 +337,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "20260106-desktop-llm2-platformization-democratic-health-ess",
       "title": "Platformization Widens Urban–Rural Gaps in Democratic Health: Evidence from the European Social Survey (2002–2024)",
       "type": "journal_article",
       "stage": "writing",
+      "kind": "paper",
       "target_venue": "New Media & Society",
       "year": null,
       "updated_at": "2026-01-06T14:34:42+00:00",
@@ -265,13 +356,18 @@
       "published_url": "https://doi.org/10.7910/DVN/FAHZXJ",
       "published_doi": "10.7910/DVN/FAHZXJ",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "research001-risk-comm-pollution-vs-disease",
       "title": "Public Health Risk Communication: Air Pollution vs Infectious Disease",
       "type": "journal_article",
       "stage": "writing",
+      "kind": "paper",
       "target_venue": "Journal of Health Communication",
       "year": null,
       "updated_at": "2026-01-06T15:02:37+00:00",
@@ -279,13 +375,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "long1-desk1-embedded-presentation-south-south-llm",
       "title": "南南合作话语在大语言模型中的嵌入式呈现 / Embedded Presentation of South–South Cooperation Discourse in LLM-Generated Global South Narratives",
       "type": "journal_article",
       "stage": "writing",
+      "kind": "paper",
       "target_venue": "新闻大学",
       "year": null,
       "updated_at": "2026-01-06T14:02:52+00:00",
@@ -293,13 +394,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "20260106-desktop-tansuo3-broadband-democratic-health-immigration",
       "title": "Broadband rollout and democratic attitudes (democratic health + immigration): evidence from the European Social Survey",
       "type": "journal_article",
       "stage": "analysis",
+      "kind": "paper",
       "target_venue": "Political Communication (drafts)",
       "year": null,
       "updated_at": "2026-01-06T14:35:42+00:00",
@@ -307,13 +413,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "research001-faming-embedded-anchoring",
       "title": "Embedded Anchoring: Why AI Cannot Replace Journalism",
       "type": "journal_article",
       "stage": "analysis",
+      "kind": "paper",
       "target_venue": "Digital Journalism",
       "year": null,
       "updated_at": "2026-01-06T15:02:37+00:00",
@@ -321,13 +432,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "research001-policy-x-shock-risk-comm",
       "title": "Policy × Shock × Risk Communication: Low-Carbon/ETS Pilots and Pollution-Onset Messaging",
       "type": "working_paper",
       "stage": "analysis",
+      "kind": "paper",
       "target_venue": "TBD",
       "year": null,
       "updated_at": "2026-01-06T15:02:37+00:00",
@@ -335,13 +451,18 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
     },
     {
       "project_id": "research001-agenda-leadlag",
       "title": "Agenda Lead–Lag: Central Media vs Local Government WeChat (2013–2024)",
       "type": "working_paper",
       "stage": "build",
+      "kind": "paper",
       "target_venue": "TBD",
       "year": null,
       "updated_at": "2026-01-06T15:02:37+00:00",
@@ -349,7 +470,30 @@
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
-      "preprint_doi": ""
+      "preprint_doi": "",
+      "conference_name": "",
+      "conference_host": "",
+      "conference_city": "",
+      "conference_date": ""
+    },
+    {
+      "project_id": "long1-desk1-news-title-framing-older-adults",
+      "title": "The Influence of News Title Framing of Older Adults on Viewer Behavior",
+      "type": "other",
+      "stage": "archived",
+      "kind": "conference_paper",
+      "target_venue": "智能与计算传播学2024年年会",
+      "year": 2025,
+      "updated_at": "2026-01-06T17:16:52+00:00",
+      "one_liner": "The Influence of News Title Framing of Older Adults on Viewer Behavior (status: archived; target: Journal of Media Ethics).",
+      "published_url": "",
+      "published_doi": "",
+      "preprint_url": "https://arxiv.org/abs/2503.15493",
+      "preprint_doi": "",
+      "conference_name": "智能与计算传播学2024年年会",
+      "conference_host": "浙江工业大学",
+      "conference_city": "杭州",
+      "conference_date": "2024-11-10"
     }
   ]
 }

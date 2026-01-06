@@ -48,6 +48,41 @@ This list is synced from my internal research pool and includes published, in-pr
 {% assign stage_order = "published,accepted,revise_resubmit,submitted,writing,analysis,build,design,data_inventory,idea" | split: "," %}
 {% assign pool = site.data.research_pool.projects %}
 
+{% assign conf_items = pool | where: "kind", "conference_paper" %}
+{% if conf_items.size > 0 %}
+### Conference presentations
+
+<ul>
+  {% for p in conf_items %}
+    <li>
+      {% if p.preprint_url != "" %}
+        <a href="{{ p.preprint_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+      {% else %}
+        {{ p.title }}
+      {% endif %}
+
+      {% if p.conference_name != "" %}
+        — <em>{{ p.conference_name }}</em>
+      {% endif %}
+
+      {% assign where_parts = "" %}
+      {% if p.conference_city != "" %}
+        {% assign where_parts = where_parts | append: p.conference_city %}
+      {% endif %}
+      {% if p.conference_date != "" %}
+        {% if where_parts != "" %}
+          {% assign where_parts = where_parts | append: ", " %}
+        {% endif %}
+        {% assign where_parts = where_parts | append: p.conference_date %}
+      {% endif %}
+      {% if where_parts != "" %}
+        ({{ where_parts }})
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 {% for stage in stage_order %}
   {% assign items = pool | where: "stage", stage %}
   {% if items.size > 0 %}

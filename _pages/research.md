@@ -1,13 +1,17 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
-description: Research directions and selected projects (AGE + X).
+description: Research directions and selected projects (AE + X).
 nav: true
 nav_order: 3
 display_categories:
 horizontal: false
 ---
+
+<p class="lead">
+My research program centers on <strong>Agentic Engineering (AE + X)</strong>: building and evaluating multi-agent systems that deliver reliable outcomes in applied communication and digital media contexts.
+</p>
 
 <!-- pages/projects.md -->
 <div class="projects">

@@ -1,18 +1,16 @@
 ---
 layout: page
-title: "AI-native Media Production Pipelines"
-description: "Code-first multi-model, multi-agent workflows for end-to-end content production."
-img:
+title: "Reliable LLM-Assisted Qualitative Analysis"
+description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research."
+img: /assets/img/projects/llm-evaluation.svg
 importance: 2
 category: research
 ---
 
-I build **AI-native, code-first** media workflows that integrate multiple models and agents to support:
+I work on reliability and evaluation for LLM-assisted qualitative analysis: how to design benchmarks, calibrate outputs, and run QA for complex coding tasks so results remain defensible in real research workflows.
 
-- Scripting and iteration
-- Visual generation and packaging
-- Subtitles and localization
-- Publishing and performance monitoring
-
-The focus is on **speed with quality**: evaluation, verification, and logging are built into the pipeline rather than added later.
+Representative directions:
+- Coding quality assessment and calibration (complex labels, multi-stage rubrics, error analysis)
+- Benchmark design for domain-specific annotation tasks
+- Reproducible pipelines for human/LLM hybrid coding (auditability and responsible use)
 

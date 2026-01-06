@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /media/
-title: media
+title: Media
 description: Selected media and creative works.
 nav: true
 nav_order: 4

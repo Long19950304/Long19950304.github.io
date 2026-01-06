@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Research directions and selected projects (AE + X).",
+          description: "Research directions and selected projects (AE+X).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -37,15 +37,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Downloadable CV (optional) and application-ready materials.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "projects-agentic-engineering-ae-x",
-          title: 'Agentic Engineering (AE + X)',
+          title: 'Agentic Engineering (AE+X)',
           description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
@@ -54,17 +47,12 @@ ninja.data = [{
           description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-interdimensional-interview-room-异次元访谈室",
-          title: 'Interdimensional Interview Room / 异次元访谈室',
-          description: "A code-first, AI-native multi-model/agentic workflow for fast, low-cost media production.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/cv/", "_blank");
+          window.open("", "_blank");
         },
       },{
         id: 'social-email',

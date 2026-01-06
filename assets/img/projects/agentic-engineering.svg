@@ -33,7 +33,7 @@
   <!-- Title -->
   <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
     <text x="120" y="125" font-size="52" font-weight="700">Agentic Engineering</text>
-    <text x="120" y="180" font-size="30" font-weight="500" opacity="0.85">AE + X · reliable multi-agent systems</text>
+    <text x="120" y="180" font-size="30" font-weight="500" opacity="0.85">AE+X · reliable multi-agent systems</text>
   </g>
 
   <!-- Badge -->

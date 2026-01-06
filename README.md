@@ -4,6 +4,7 @@ This folder is a ready-to-publish **English** personal website using the **al-fo
 
 Target URL (your GitHub username):
 - https://long19950304.github.io
+- Deployment: GitHub Actions builds the site and publishes the prebuilt `_site/` output to `gh-pages` (includes `.nojekyll`).
 
 ## Publish (fastest)
 

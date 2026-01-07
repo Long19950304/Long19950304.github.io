@@ -267,6 +267,7 @@ html[data-theme="dark"] .card.hoverable {
 // Project cards: remove default <figure> margins inside cards
 .projects .card figure {
   margin: 0;
+  line-height: 0;
 }
 
 .projects .card .card-img-top {

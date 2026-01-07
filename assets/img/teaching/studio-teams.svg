@@ -8,71 +8,230 @@
       <stop offset="0" stop-color="#0b5fff"/>
       <stop offset="1" stop-color="#20b7c8"/>
     </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0b1220" flood-opacity="0.10"/>
+    </filter>
+
+    <!-- Simple icon set (stroke-only, works in light/dark backgrounds) -->
+    <g id="icon-doc" fill="none" stroke="#0b5fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 8 a8 8 0 0 1 8 -8 h52 l18 18 v74 a8 8 0 0 1 -8 8 h-70 a8 8 0 0 1 -8 -8 z"/>
+      <path d="M60 0 v18 h18"/>
+      <path d="M14 36 h50"/>
+      <path d="M14 54 h44"/>
+      <path d="M14 72 h38"/>
+    </g>
+    <g id="icon-wrench" fill="none" stroke="#0b5fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M66 14 a20 20 0 0 0 -26 24 l-34 34 a10 10 0 0 0 14 14 l34 -34 a20 20 0 0 0 24 -26"/>
+      <path d="M12 88 l16 -16"/>
+    </g>
+    <g id="icon-check" fill="none" stroke="#0b5fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 56 l20 20 l52 -60"/>
+      <path d="M14 92 h74"/>
+    </g>
+    <g id="icon-rocket" fill="none" stroke="#0b5fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 8 c18 12 28 32 28 56 c-24 0 -44 10 -56 28 c-16 -16 -18 -40 -6 -58 c10 -14 20 -22 34 -26z"/>
+      <path d="M40 46 l18 18"/>
+      <path d="M18 94 c12 -2 22 -8 30 -18"/>
+    </g>
+    <g id="icon-shield" fill="none" stroke="#20b7c8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M50 10 l34 14 v30 c0 26 -16 44 -34 54 c-18 -10 -34 -28 -34 -54 v-30z"/>
+      <path d="M34 58 l12 12 l26 -30"/>
+    </g>
+    <g id="icon-trophy" fill="none" stroke="#0b5fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M26 18 h48 v20 c0 18 -12 32 -24 36 c-12 -4 -24 -18 -24 -36z"/>
+      <path d="M22 22 h-12 v10 c0 10 8 18 18 18"/>
+      <path d="M78 22 h12 v10 c0 10 -8 18 -18 18"/>
+      <path d="M50 74 v20"/>
+      <path d="M30 104 h40"/>
+    </g>
+    <g id="icon-megaphone" fill="none" stroke="#20b7c8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 54 l44 -18 v52 l-44 -18z"/>
+      <path d="M54 36 l32 -14 v86 l-32 -14"/>
+      <path d="M18 60 v28"/>
+    </g>
+    <g id="icon-clapper" fill="none" stroke="#20b7c8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 44 h84 v56 h-84 z"/>
+      <path d="M16 44 l16 -24 h84 l-16 24z"/>
+      <path d="M38 20 l14 24"/>
+      <path d="M66 20 l14 24"/>
+      <path d="M94 20 l14 24"/>
+    </g>
+    <g id="icon-flask" fill="none" stroke="#20b7c8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 10 v32 l-26 44 a18 18 0 0 0 16 28 h40 a18 18 0 0 0 16 -28 l-26 -44 v-32"/>
+      <path d="M30 72 h40"/>
+    </g>
+    <g id="icon-gear" fill="none" stroke="#20b7c8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 18 l8 10 l12 -2 l4 12 l-10 8 l2 12 l-12 4 l-8 -10 l-12 2 l-4 -12 l10 -8 l-2 -12 l12 -4z"/>
+      <circle cx="50" cy="50" r="14"/>
+    </g>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
 
+  <!-- Subtle grid -->
+  <g stroke="#0b5fff" stroke-opacity="0.06" stroke-width="2">
+    <path d="M0 90H1200"/>
+    <path d="M0 150H1200"/>
+    <path d="M0 210H1200"/>
+    <path d="M0 270H1200"/>
+    <path d="M0 330H1200"/>
+    <path d="M0 390H1200"/>
+    <path d="M0 450H1200"/>
+    <path d="M0 510H1200"/>
+    <path d="M0 570H1200"/>
+    <path d="M120 0V630"/>
+    <path d="M240 0V630"/>
+    <path d="M360 0V630"/>
+    <path d="M480 0V630"/>
+    <path d="M600 0V630"/>
+    <path d="M720 0V630"/>
+    <path d="M840 0V630"/>
+    <path d="M960 0V630"/>
+    <path d="M1080 0V630"/>
+  </g>
+
+  <!-- Main card -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="115" rx="22" ry="22" width="1060" height="470" fill="#ffffff" fill-opacity="0.68" stroke="#0b5fff" stroke-opacity="0.12"/>
+  </g>
+
+  <!-- Title -->
   <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-    <text x="90" y="120" font-size="52" font-weight="700">Studio Teaching</text>
-    <text x="90" y="170" font-size="28" font-weight="500" opacity="0.85">collaborate within teams · compete across teams · ship outcomes</text>
-  </g>
-
-  <!-- 3 teams -->
-  <g fill="#ffffff" fill-opacity="0.72" stroke="#0b5fff" stroke-opacity="0.20">
-    <rect x="120" y="240" rx="18" ry="18" width="300" height="290"/>
-    <rect x="450" y="240" rx="18" ry="18" width="300" height="290"/>
-    <rect x="780" y="240" rx="18" ry="18" width="300" height="290"/>
-  </g>
-
-  <!-- Team labels -->
-  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-    <text x="150" y="290" font-size="26" font-weight="700">Team A</text>
-    <text x="480" y="290" font-size="26" font-weight="700">Team B</text>
-    <text x="810" y="290" font-size="26" font-weight="700">Team C</text>
-  </g>
-
-  <!-- Within-team collaboration nodes -->
-  <g stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" opacity="0.9" fill="none">
-    <!-- A -->
-    <path d="M180 360 L270 420 L360 360"/>
-    <path d="M180 360 L360 360"/>
-    <path d="M270 420 L270 470"/>
-    <!-- B -->
-    <path d="M510 360 L600 420 L690 360"/>
-    <path d="M510 360 L690 360"/>
-    <path d="M600 420 L600 470"/>
-    <!-- C -->
-    <path d="M840 360 L930 420 L1020 360"/>
-    <path d="M840 360 L1020 360"/>
-    <path d="M930 420 L930 470"/>
-  </g>
-
-  <g>
-    <!-- nodes -->
-    <circle cx="180" cy="360" r="10" fill="#0b5fff"/>
-    <circle cx="360" cy="360" r="10" fill="#0b5fff"/>
-    <circle cx="270" cy="420" r="10" fill="#20b7c8"/>
-    <circle cx="270" cy="470" r="10" fill="#0b5fff"/>
-
-    <circle cx="510" cy="360" r="10" fill="#0b5fff"/>
-    <circle cx="690" cy="360" r="10" fill="#0b5fff"/>
-    <circle cx="600" cy="420" r="10" fill="#20b7c8"/>
-    <circle cx="600" cy="470" r="10" fill="#0b5fff"/>
-
-    <circle cx="840" cy="360" r="10" fill="#0b5fff"/>
-    <circle cx="1020" cy="360" r="10" fill="#0b5fff"/>
-    <circle cx="930" cy="420" r="10" fill="#20b7c8"/>
-    <circle cx="930" cy="470" r="10" fill="#0b5fff"/>
-  </g>
-
-  <!-- Between-team competition: scoreboard -->
-  <g>
-    <rect x="90" y="545" rx="16" ry="16" width="1020" height="72" fill="#ffffff" fill-opacity="0.75"/>
-    <text x="120" y="577" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="22" font-weight="800" fill="#0b5fff">
-      Evaluation rubric + demo day → rank teams by outcomes
+    <text x="110" y="185" font-size="56" font-weight="800">Studio Teaching</text>
+    <text x="110" y="228" font-size="26" font-weight="600" opacity="0.85">
+      frontier AI + applied learning · team sprints · critique loops · ship outcomes
     </text>
-    <text x="120" y="608" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="18" font-weight="650" fill="#0b5fff" opacity="0.9">
-      quality · novelty · documentation · responsible AI
+  </g>
+
+  <!-- Studio loop (brief → build → evaluate → demo) -->
+  <g>
+    <g fill="#ffffff" fill-opacity="0.82" stroke="#0b5fff" stroke-opacity="0.18">
+      <rect x="110" y="255" rx="18" ry="18" width="230" height="92"/>
+      <rect x="355" y="255" rx="18" ry="18" width="230" height="92"/>
+      <rect x="600" y="255" rx="18" ry="18" width="230" height="92"/>
+      <rect x="845" y="255" rx="18" ry="18" width="230" height="92"/>
+    </g>
+
+    <g opacity="0.85">
+      <g transform="translate(135 269) scale(0.62)"><use href="#icon-doc"/></g>
+      <g transform="translate(380 268) scale(0.70)"><use href="#icon-wrench"/></g>
+      <g transform="translate(625 270) scale(0.70)"><use href="#icon-check"/></g>
+      <g transform="translate(872 268) scale(0.70)"><use href="#icon-rocket"/></g>
+    </g>
+
+    <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
+      <text x="210" y="318" font-size="26" font-weight="800" text-anchor="middle">Brief</text>
+      <text x="470" y="318" font-size="26" font-weight="800" text-anchor="middle">Build</text>
+      <text x="715" y="318" font-size="26" font-weight="800" text-anchor="middle">Evaluate</text>
+      <text x="960" y="318" font-size="26" font-weight="800" text-anchor="middle">Demo</text>
+    </g>
+
+    <!-- arrows -->
+    <g fill="none" stroke="url(#stroke)" stroke-width="6" stroke-linecap="round" opacity="0.7">
+      <path d="M340 301 H355"/>
+      <path d="M585 301 H600"/>
+      <path d="M830 301 H845"/>
+      <path d="M347 291 l10 10 l-10 10"/>
+      <path d="M592 291 l10 10 l-10 10"/>
+      <path d="M837 291 l10 10 l-10 10"/>
+    </g>
+  </g>
+
+  <!-- Teams row -->
+  <g>
+    <g fill="#ffffff" fill-opacity="0.78" stroke="#0b5fff" stroke-opacity="0.18">
+      <rect x="110" y="365" rx="18" ry="18" width="310" height="165"/>
+      <rect x="445" y="365" rx="18" ry="18" width="310" height="165"/>
+      <rect x="780" y="365" rx="18" ry="18" width="310" height="165"/>
+    </g>
+
+    <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
+      <text x="140" y="410" font-size="26" font-weight="800">Team A</text>
+      <text x="475" y="410" font-size="26" font-weight="800">Team B</text>
+      <text x="810" y="410" font-size="26" font-weight="800">Team C</text>
+    </g>
+
+    <!-- avatars + collaboration -->
+    <g fill="none" stroke="url(#stroke)" stroke-width="5" stroke-linecap="round" opacity="0.85">
+      <path d="M230 438 H305"/>
+      <path d="M565 438 H640"/>
+      <path d="M900 438 H975"/>
+    </g>
+    <g>
+      <circle cx="210" cy="438" r="12" fill="#0b5fff"/>
+      <circle cx="267" cy="438" r="12" fill="#20b7c8"/>
+      <circle cx="325" cy="438" r="12" fill="#0b5fff"/>
+
+      <circle cx="545" cy="438" r="12" fill="#0b5fff"/>
+      <circle cx="602" cy="438" r="12" fill="#20b7c8"/>
+      <circle cx="660" cy="438" r="12" fill="#0b5fff"/>
+
+      <circle cx="880" cy="438" r="12" fill="#0b5fff"/>
+      <circle cx="937" cy="438" r="12" fill="#20b7c8"/>
+      <circle cx="995" cy="438" r="12" fill="#0b5fff"/>
+    </g>
+
+    <!-- mini kanban bars -->
+    <g fill="#0b5fff" opacity="0.22">
+      <rect x="140" y="465" rx="10" ry="10" width="90" height="14"/>
+      <rect x="240" y="465" rx="10" ry="10" width="110" height="14"/>
+      <rect x="360" y="465" rx="10" ry="10" width="40" height="14"/>
+
+      <rect x="475" y="465" rx="10" ry="10" width="90" height="14"/>
+      <rect x="575" y="465" rx="10" ry="10" width="110" height="14"/>
+      <rect x="695" y="465" rx="10" ry="10" width="40" height="14"/>
+
+      <rect x="810" y="465" rx="10" ry="10" width="90" height="14"/>
+      <rect x="910" y="465" rx="10" ry="10" width="110" height="14"/>
+      <rect x="1030" y="465" rx="10" ry="10" width="40" height="14"/>
+    </g>
+
+    <!-- evidence + iteration markers -->
+    <g fill="none" stroke="#0b5fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+      <path d="M150 510 l18 18 l36 -44"/>
+      <path d="M485 510 l18 18 l36 -44"/>
+      <path d="M820 510 l18 18 l36 -44"/>
+    </g>
+    <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b5fff" opacity="0.90">
+      <text x="205" y="525" font-size="18" font-weight="800">prototype</text>
+      <text x="540" y="525" font-size="18" font-weight="800">evaluation</text>
+      <text x="875" y="525" font-size="18" font-weight="800">iteration</text>
+    </g>
+  </g>
+
+  <!-- Evaluation + demo day bar + module chips -->
+  <g>
+    <rect x="110" y="545" rx="16" ry="16" width="980" height="60" fill="#ffffff" fill-opacity="0.82" stroke="#0b5fff" stroke-opacity="0.16"/>
+
+    <g transform="translate(135 556) scale(0.42)" opacity="0.9">
+      <use href="#icon-trophy"/>
+    </g>
+    <text x="195" y="583" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="22" font-weight="900" fill="#0b5fff">
+      Rubrics + demo day · outcomes + evidence
     </text>
+
+    <!-- Module + Responsible AI chips (icon-only for clarity) -->
+    <g opacity="0.95">
+      <g>
+        <rect x="792" y="552" rx="14" ry="14" width="46" height="46" fill="#0b5fff" fill-opacity="0.10" stroke="#0b5fff" stroke-opacity="0.16"/>
+        <g transform="translate(801 559) scale(0.16)"><use href="#icon-megaphone"/></g>
+      </g>
+      <g>
+        <rect x="846" y="552" rx="14" ry="14" width="46" height="46" fill="#20b7c8" fill-opacity="0.10" stroke="#20b7c8" stroke-opacity="0.20"/>
+        <g transform="translate(854 559) scale(0.15)"><use href="#icon-clapper"/></g>
+      </g>
+      <g>
+        <rect x="900" y="552" rx="14" ry="14" width="46" height="46" fill="#20b7c8" fill-opacity="0.10" stroke="#20b7c8" stroke-opacity="0.20"/>
+        <g transform="translate(910 559) scale(0.16)"><use href="#icon-flask"/></g>
+      </g>
+      <g>
+        <rect x="954" y="552" rx="14" ry="14" width="46" height="46" fill="#0b5fff" fill-opacity="0.10" stroke="#0b5fff" stroke-opacity="0.16"/>
+        <g transform="translate(963 559) scale(0.16)"><use href="#icon-gear"/></g>
+      </g>
+      <g>
+        <rect x="1008" y="552" rx="14" ry="14" width="46" height="46" fill="#ffffff" fill-opacity="0.70" stroke="#20b7c8" stroke-opacity="0.26"/>
+        <g transform="translate(1016 557) scale(0.16)"><use href="#icon-shield"/></g>
+      </g>
+    </g>
   </g>
 </svg>

@@ -13,7 +13,6 @@ nav_order: 4
 
 - Experimental short film (MA thesis, University of Macau)
 - Shortlisted/selected: Macao International Film Festival (*澳门国际电影节*) short film section (2017)
-- Shortlisted/selected: Macau International Micro Film Festival (*澳门国际微电影节*) (2017)
 
 ### *Interdimensional Interview Room / 异次元访谈室*
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-07T04:39:59+00:00",
+  "generated_at": "2026-01-07T05:12:52+00:00",
   "projects": [
     {
       "project_id": "long1-desk1-parental-mediation-digital-media-health-literacy",
@@ -532,25 +532,6 @@
       "conference_host": "ICA",
       "conference_city": "Paris",
       "conference_date": "2022-04-17"
-    },
-    {
-      "project_id": "long1-desk1-conf-gba-international-comm-2024-hk-press",
-      "title": "智能舆情监测在一国两制话语建构中的应用研究：基于香港报业的分析",
-      "type": "other",
-      "stage": "archived",
-      "kind": "conference_paper",
-      "target_venue": "粤港澳大湾区国际传播发展论坛 2024",
-      "year": null,
-      "updated_at": "2026-01-07T04:22:40+00:00",
-      "one_liner": "",
-      "published_url": "",
-      "published_doi": "",
-      "preprint_url": "",
-      "preprint_doi": "",
-      "conference_name": "粤港澳大湾区国际传播发展论坛 2024",
-      "conference_host": "South China University of Technology",
-      "conference_city": "Guangzhou",
-      "conference_date": "2024-11-17"
     },
     {
       "project_id": "long1-desk1-conf-gba-culture-comm-2021-macau-media-identity",

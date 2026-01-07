@@ -87,8 +87,11 @@ This list is synced from my internal research pool and includes published, in-pr
 {% for stage in stage_order %}
   {% assign items = pool | where: "stage", stage %}
   {% if items.size > 0 %}
-    {% assign is_expanded = expanded_stages contains stage %}
     {% capture stage_label %}{{ stage | replace: "_", " " | capitalize }} ({{ items.size }}){% endcapture %}
+    {% assign is_expanded = false %}
+    {% if expanded_stages contains stage %}
+      {% assign is_expanded = true %}
+    {% endif %}
 
     {% if is_expanded %}
 ### {{ stage_label }}

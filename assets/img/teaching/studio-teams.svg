@@ -68,8 +68,11 @@
   <!-- Between-team competition: scoreboard -->
   <g>
     <rect x="90" y="545" rx="16" ry="16" width="1020" height="58" fill="#ffffff" fill-opacity="0.75"/>
-    <text x="120" y="583" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="24" font-weight="700" fill="#0b5fff">
-      Evaluation rubric + demo day → rank teams by outcomes (quality, novelty, documentation, responsible AI)
+    <text x="120" y="577" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="22" font-weight="800" fill="#0b5fff">
+      Evaluation rubric + demo day → rank teams by outcomes
+    </text>
+    <text x="120" y="603" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="18" font-weight="650" fill="#0b5fff" opacity="0.9">
+      quality · novelty · documentation · responsible AI
     </text>
   </g>
 </svg>

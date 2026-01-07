@@ -47,6 +47,7 @@ This list is synced from my internal research pool and includes published, in-pr
 
 {% assign stage_order = "published,accepted,revise_resubmit,submitted,writing,analysis,build,design,data_inventory,idea" | split: "," %}
 {% assign pool = site.data.research_pool.projects %}
+{% assign expanded_stages = "published,accepted,revise_resubmit,submitted" | split: "," %}
 
 {% assign conf_items = pool | where: "kind", "conference_paper" %}
 {% if conf_items.size > 0 %}
@@ -86,33 +87,46 @@ This list is synced from my internal research pool and includes published, in-pr
 {% for stage in stage_order %}
   {% assign items = pool | where: "stage", stage %}
   {% if items.size > 0 %}
-### {{ stage | replace: "_", " " | capitalize }}
+    {% assign is_expanded = expanded_stages contains stage %}
+    {% capture stage_label %}{{ stage | replace: "_", " " | capitalize }} ({{ items.size }}){% endcapture %}
 
-<ul>
-  {% for p in items %}
-    <li>
-      {% assign link_url = "" %}
-      {% if p.published_url != "" %}
-        {% assign link_url = p.published_url %}
-      {% elsif p.preprint_url != "" %}
-        {% assign link_url = p.preprint_url %}
-      {% endif %}
+    {% if is_expanded %}
+### {{ stage_label }}
+    {% else %}
+<details>
+  <summary><strong>{{ stage_label }}</strong></summary>
+  <div style="margin-top: 0.5rem;"></div>
+    {% endif %}
 
-      {% if link_url != "" %}
-        <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-      {% else %}
-        {{ p.title }}
-      {% endif %}
+    <ul>
+      {% for p in items %}
+        <li>
+          {% assign link_url = "" %}
+          {% if p.published_url != "" %}
+            {% assign link_url = p.published_url %}
+          {% elsif p.preprint_url != "" %}
+            {% assign link_url = p.preprint_url %}
+          {% endif %}
 
-      {% if p.target_venue != "" %}
-        — <em>{{ p.target_venue }}</em>
-      {% endif %}
+          {% if link_url != "" %}
+            <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+          {% else %}
+            {{ p.title }}
+          {% endif %}
 
-      {% if p.year %}
-        ({{ p.year }})
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+          {% if p.target_venue != "" %}
+            — <em>{{ p.target_venue }}</em>
+          {% endif %}
+
+          {% if p.year %}
+            ({{ p.year }})
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% unless is_expanded %}
+</details>
+    {% endunless %}
   {% endif %}
 {% endfor %}

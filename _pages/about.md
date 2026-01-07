@@ -23,9 +23,28 @@ latest_posts:
   enabled: false
 ---
 
-I am **Zhilong George Zhao (赵志龙)**, a communication and digital media researcher working at the intersection of **AI-native workflows**, **LLM evaluation**, and **multi-agent systems**. My next 3–5 year agenda is **Agentic Engineering (AE+X)**: designing, testing, and deploying multi-agent architectures that deliver reliable outcomes in real research and production workflows.
+<p class="lead">
+I build <strong>evaluation-first multi-agent systems</strong> for research and AI-native media production.
+</p>
 
-I am currently a **Postdoctoral Researcher and Assistant Researcher** at the School of Journalism and Communication, South China University of Technology (SCUT), and I am preparing faculty applications in Communication & Digital Media.
+<div class="cta-row">
+  <a class="btn-cta" href="/research/">Research</a>
+  <a class="btn-cta" href="/publications/">Publications</a>
+  <a class="btn-cta" href="/media/">Media</a>
+  <a class="btn-cta" href="/teaching/">Teaching</a>
+</div>
+
+<details>
+  <summary><strong>Background</strong></summary>
+  <div style="margin-top: 0.75rem;">
+    <p>
+      I am <strong>Zhilong George Zhao (赵志龙)</strong>, a communication and digital media researcher working at the intersection of <strong>AI-native workflows</strong>, <strong>LLM evaluation</strong>, and <strong>multi-agent systems</strong>. My next 3–5 year agenda is <strong>Agentic Engineering (AE+X)</strong>: designing, testing, and deploying multi-agent architectures that deliver reliable outcomes in real research and production workflows.
+    </p>
+    <p>
+      I am currently a <strong>Postdoctoral Researcher and Assistant Researcher</strong> at the School of Journalism and Communication, South China University of Technology (SCUT), and I am preparing faculty applications in Communication & Digital Media.
+    </p>
+  </div>
+</details>
 
 ## Focus (AE+X)
 

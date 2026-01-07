@@ -4,9 +4,8 @@
       {% if project.img %}
         {%
           include figure.liquid
-          loading="eager"
           path=project.img
-          sizes = "250px"
+          sizes = "(min-width: 992px) 420px, (min-width: 768px) 45vw, 95vw"
           alt="project thumbnail"
           class="card-img-top"
         %}

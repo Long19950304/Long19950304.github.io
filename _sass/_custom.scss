@@ -274,6 +274,8 @@ html[data-theme="dark"] .card.hoverable {
   display: block;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  height: auto;
+  aspect-ratio: 1400 / 735;
 }
 
 .projects .card .card-body {

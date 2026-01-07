@@ -2,7 +2,7 @@
 layout: page
 title: "Computational Social Science & Digital Methods"
 description: "Computational communication research using large-scale digital trace data, measurement, and causal designs."
-img: /assets/img/projects/computational-social-science.svg
+img: /assets/img/projects/computational-social-science.png
 importance: 3
 category: research
 ---

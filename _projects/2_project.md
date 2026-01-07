@@ -2,7 +2,7 @@
 layout: page
 title: "Reliable LLM-Assisted Qualitative Analysis"
 description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research."
-img: /assets/img/projects/llm-evaluation.svg
+img: /assets/img/projects/llm-evaluation.png
 importance: 2
 category: research
 ---
@@ -13,4 +13,3 @@ Representative directions:
 - Coding quality assessment and calibration (complex labels, multi-stage rubrics, error analysis)
 - Benchmark design for domain-specific annotation tasks
 - Reproducible pipelines for human/LLM hybrid coding (auditability and responsible use)
-

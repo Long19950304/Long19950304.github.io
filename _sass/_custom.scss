@@ -382,3 +382,38 @@ h1 {
   height: 100%;
   object-fit: contain;
 }
+
+// Generic responsive image gallery (used on /media/)
+.media-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .media-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .media-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.media-gallery figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.media-gallery--16x9 img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}

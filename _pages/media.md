@@ -102,6 +102,36 @@ nav_order: 4
 - AI-native interview-format video program
 - Selected episode sample will be added (≤100MB) after you pick the episode and export the final audio.
 
+**Selected stills**
+
+{% assign iir1 = site.static_files | where: "path", "/assets/img/media/interdimensional-interview-room/still-1.jpg" | first %}
+{% assign iir2 = site.static_files | where: "path", "/assets/img/media/interdimensional-interview-room/still-2.jpg" | first %}
+{% assign iir3 = site.static_files | where: "path", "/assets/img/media/interdimensional-interview-room/still-3.jpg" | first %}
+{% assign iir4 = site.static_files | where: "path", "/assets/img/media/interdimensional-interview-room/still-4.jpg" | first %}
+{% assign iir5 = site.static_files | where: "path", "/assets/img/media/interdimensional-interview-room/still-5.jpg" | first %}
+{% assign iir6 = site.static_files | where: "path", "/assets/img/media/interdimensional-interview-room/still-6.jpg" | first %}
+
+<div class="media-gallery media-gallery--16x9">
+  {% if iir1 %}
+    {% include figure.liquid path="assets/img/media/interdimensional-interview-room/still-1.jpg" alt="Interdimensional Interview Room still 1" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}
+  {% endif %}
+  {% if iir2 %}
+    {% include figure.liquid path="assets/img/media/interdimensional-interview-room/still-2.jpg" alt="Interdimensional Interview Room still 2" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}
+  {% endif %}
+  {% if iir3 %}
+    {% include figure.liquid path="assets/img/media/interdimensional-interview-room/still-3.jpg" alt="Interdimensional Interview Room still 3" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}
+  {% endif %}
+  {% if iir4 %}
+    {% include figure.liquid path="assets/img/media/interdimensional-interview-room/still-4.jpg" alt="Interdimensional Interview Room still 4" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}
+  {% endif %}
+  {% if iir5 %}
+    {% include figure.liquid path="assets/img/media/interdimensional-interview-room/still-5.jpg" alt="Interdimensional Interview Room still 5" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}
+  {% endif %}
+  {% if iir6 %}
+    {% include figure.liquid path="assets/img/media/interdimensional-interview-room/still-6.jpg" alt="Interdimensional Interview Room still 6" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}
+  {% endif %}
+</div>
+
 <p class="small">
 When ready, put the sample at <code>assets/video/interdimensional-interview-room-sample.mp4</code> (keep &lt;100MB), and I’ll embed it here.
 </p>

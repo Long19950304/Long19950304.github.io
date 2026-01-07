@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b5fff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#20b7c8" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="stroke3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b5fff"/>
+      <stop offset="1" stop-color="#20b7c8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg3)"/>
+
+  <!-- Axis -->
+  <g stroke="#0b5fff" stroke-opacity="0.18" stroke-width="3">
+    <path d="M160 470H1040"/>
+    <path d="M160 190V470"/>
+  </g>
+
+  <!-- Trend line -->
+  <path d="M180 420 C260 360, 320 380, 400 330 C480 275, 560 295, 640 250 C720 205, 800 235, 880 210 C940 195, 990 200, 1020 185"
+        fill="none" stroke="url(#stroke3)" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Points -->
+  <g fill="#0b5fff" opacity="0.95">
+    <circle cx="180" cy="420" r="9"/>
+    <circle cx="400" cy="330" r="9"/>
+    <circle cx="640" cy="250" r="9"/>
+    <circle cx="880" cy="210" r="9"/>
+    <circle cx="1020" cy="185" r="9" fill="#20b7c8"/>
+  </g>
+
+  <!-- Mini network -->
+  <g fill="none" stroke="url(#stroke3)" stroke-width="3.5" stroke-linecap="round" opacity="0.85">
+    <path d="M230 245 C270 215, 315 215, 355 245"/>
+    <path d="M355 245 C395 275, 440 275, 480 245"/>
+    <path d="M355 245 C355 210, 375 195, 395 180"/>
+  </g>
+  <g>
+    <circle cx="230" cy="245" r="10" fill="#0b5fff"/>
+    <circle cx="355" cy="245" r="10" fill="#0b5fff"/>
+    <circle cx="480" cy="245" r="10" fill="#20b7c8"/>
+    <circle cx="395" cy="180" r="10" fill="#20b7c8"/>
+  </g>
+
+  <!-- Title -->
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
+    <text x="120" y="110" font-size="48" font-weight="700">Computational Social Science</text>
+    <text x="120" y="160" font-size="28" font-weight="500" opacity="0.85">digital trace data · measurement · causal designs</text>
+  </g>
+
+  <!-- Badge -->
+  <g>
+    <rect x="160" y="505" rx="14" ry="14" width="520" height="66" fill="#ffffff" fill-opacity="0.75" stroke="#0b5fff" stroke-opacity="0.20"/>
+    <text x="190" y="548" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="24" font-weight="600" fill="#0b5fff">
+      large-scale evidence with transparent assumptions
+    </text>
+  </g>
+</svg>

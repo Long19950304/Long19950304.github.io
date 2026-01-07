@@ -1,16 +1,15 @@
 ---
 layout: page
-title: "Interdimensional Interview Room / 异次元访谈室"
-description: "A code-first, AI-native multi-model/agentic workflow for fast, low-cost media production."
-img: /assets/img/projects/media-pipeline.svg
+title: "Computational Social Science & Digital Methods"
+description: "Computational communication research using large-scale digital trace data, measurement, and causal designs."
+img: /assets/img/projects/computational-social-science.svg
 importance: 3
-category: media
-published: false
+category: research
 ---
 
-*Interdimensional Interview Room / 异次元访谈室* is a video program produced with an AI-native, code-first workflow: multi-model orchestration and tool-using agents replace most “legacy” media tooling, enabling rapid iteration with low production overhead.
+I develop **computational communication / computational social science** projects that combine large-scale data, careful measurement, and defensible designs.
 
-Focus:
-- End-to-end pipeline design (scripting → visuals → subtitles → packaging → publishing)
-- Evaluation-aware production (quality checks, consistency, and governance artifacts)
-- Practical templates for teaching (studio projects and capstones)
+Representative directions:
+- Platform and agenda dynamics (large-scale text + time-series signals)
+- Measurement and validation for AI-assisted research pipelines
+- Causal designs and policy evaluation with observational data (transparent assumptions + robustness checks)

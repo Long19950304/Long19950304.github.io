@@ -7,6 +7,10 @@ nav: true
 nav_order: 5
 ---
 
+<div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
+  <img src="/assets/img/teaching/studio-teams.svg" alt="Studio teaching: teams + competition" style="width: 100%; height: auto; border-radius: 14px;">
+</div>
+
 I design applied-learning courses that are **AI-forward**, **product/outcome oriented**, and emphasize **teamwork with structured competition** (strong collaboration within teams; transparent competition between teams).
 
 ## Teaching directions

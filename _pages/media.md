@@ -132,10 +132,6 @@ nav_order: 4
   {% endif %}
 </div>
 
-<p class="small">
-When ready, put the sample at <code>assets/video/interdimensional-interview-room-sample.mp4</code> (keep &lt;100MB), and I’ll embed it here.
-</p>
-
 {% assign sample = site.static_files | where: "path", "/assets/video/interdimensional-interview-room-sample.mp4" | first %}
 {% if sample %}
 <div style="max-width: 980px; margin: 0.5rem 0 0;">

@@ -16,47 +16,86 @@ nav_order: 4
 
 **Poster & stills**
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem; margin: 0.75rem 0 0.5rem;">
-  {% assign poster = site.static_files | where: "path", "/assets/img/media/chinese-passenger/poster.jpg" | first %}
-  {% assign still1 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-1.jpg" | first %}
-  {% assign still2 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-2.jpg" | first %}
-  {% assign still3 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-3.jpg" | first %}
-  {% assign still4 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-4.jpg" | first %}
+{% assign poster = site.static_files | where: "path", "/assets/img/media/chinese-passenger/poster.jpg" | first %}
+{% assign still1 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-1.jpg" | first %}
+{% assign still2 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-2.jpg" | first %}
+{% assign still3 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-3.jpg" | first %}
+{% assign still4 = site.static_files | where: "path", "/assets/img/media/chinese-passenger/still-4.jpg" | first %}
 
-  {% if poster %}
-    <img src="{{ poster.path }}" alt="Chinese Passenger poster" style="width:100%; height:auto; border-radius: 14px;">
-  {% else %}
-    <img src="/assets/img/media/chinese-passenger/poster-placeholder.svg" alt="Chinese Passenger poster (placeholder)" style="width:100%; height:auto; border-radius: 14px;">
-  {% endif %}
+<div class="media-work__gallery">
+  <div class="media-work__poster">
+    {% if poster %}
+      {% include figure.liquid
+        path="assets/img/media/chinese-passenger/poster.jpg"
+        alt="Chinese Passenger / 普快列车 poster"
+        class="media-work__img media-work__img--poster"
+        sizes="(min-width: 992px) 40vw, 95vw"
+        loading="eager"
+        zoomable=true
+      %}
+    {% else %}
+      <img src="/assets/img/media/chinese-passenger/poster-placeholder.svg" alt="Chinese Passenger poster (placeholder)" class="media-work__placeholder">
+    {% endif %}
+  </div>
 
-  {% if still1 %}
-    <img src="{{ still1.path }}" alt="Chinese Passenger still" style="width:100%; height:auto; border-radius: 14px;">
-  {% else %}
-    <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" style="width:100%; height:auto; border-radius: 14px;">
-  {% endif %}
+  <div class="media-work__stills">
+    <div class="media-work__still">
+      {% if still1 %}
+        {% include figure.liquid
+          path="assets/img/media/chinese-passenger/still-1.jpg"
+          alt="Chinese Passenger / 普快列车 still 1"
+          class="media-work__img"
+          sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw"
+          zoomable=true
+        %}
+      {% else %}
+        <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" class="media-work__placeholder">
+      {% endif %}
+    </div>
 
-  {% if still2 %}
-    <img src="{{ still2.path }}" alt="Chinese Passenger still" style="width:100%; height:auto; border-radius: 14px;">
-  {% else %}
-    <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" style="width:100%; height:auto; border-radius: 14px;">
-  {% endif %}
+    <div class="media-work__still">
+      {% if still2 %}
+        {% include figure.liquid
+          path="assets/img/media/chinese-passenger/still-2.jpg"
+          alt="Chinese Passenger / 普快列车 still 2"
+          class="media-work__img"
+          sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw"
+          zoomable=true
+        %}
+      {% else %}
+        <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" class="media-work__placeholder">
+      {% endif %}
+    </div>
 
-  {% if still3 %}
-    <img src="{{ still3.path }}" alt="Chinese Passenger still" style="width:100%; height:auto; border-radius: 14px;">
-  {% else %}
-    <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" style="width:100%; height:auto; border-radius: 14px;">
-  {% endif %}
+    <div class="media-work__still">
+      {% if still3 %}
+        {% include figure.liquid
+          path="assets/img/media/chinese-passenger/still-3.jpg"
+          alt="Chinese Passenger / 普快列车 still 3"
+          class="media-work__img"
+          sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw"
+          zoomable=true
+        %}
+      {% else %}
+        <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" class="media-work__placeholder">
+      {% endif %}
+    </div>
 
-  {% if still4 %}
-    <img src="{{ still4.path }}" alt="Chinese Passenger still" style="width:100%; height:auto; border-radius: 14px;">
-  {% else %}
-    <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" style="width:100%; height:auto; border-radius: 14px;">
-  {% endif %}
+    <div class="media-work__still">
+      {% if still4 %}
+        {% include figure.liquid
+          path="assets/img/media/chinese-passenger/still-4.jpg"
+          alt="Chinese Passenger / 普快列车 still 4"
+          class="media-work__img"
+          sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw"
+          zoomable=true
+        %}
+      {% else %}
+        <img src="/assets/img/media/chinese-passenger/still-placeholder.svg" alt="Chinese Passenger still (placeholder)" class="media-work__placeholder">
+      {% endif %}
+    </div>
+  </div>
 </div>
-
-<p class="small">
-Files: <code>assets/img/media/chinese-passenger/poster.jpg</code>, <code>assets/img/media/chinese-passenger/still-1.jpg</code>, <code>still-2.jpg</code>, <code>still-3.jpg</code>, <code>still-4.jpg</code>.
-</p>
 
 ### *Interdimensional Interview Room / 异次元访谈室*
 

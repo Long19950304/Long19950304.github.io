@@ -44,7 +44,7 @@
 - title: Awards
   type: time_table
   contents:
-    - year: 2024
+    - year: 2025
       items:
         - Outstanding Class Advisor (优秀班主任), SCUT
     - year: 2021
@@ -57,4 +57,5 @@
     - Python; reproducible research workflows; evaluation harness design
     - LLM evaluation; quality assessment and calibration; benchmarking
     - Agentic engineering: tool-using agents; multi-agent orchestration (prototype-level); workflow design and testing
-    - Languages: Mandarin (fluent); English (fluent); Cantonese (listening proficient; basic speaking)
+    - Languages: Mandarin (fluent); English (fluent); Cantonese (basic)
+    - AI-native media: code-first multi-model pipelines for end-to-end content production and publishing

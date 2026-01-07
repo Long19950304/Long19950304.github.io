@@ -2,7 +2,7 @@
 layout: page
 title: "Agentic Engineering (AE+X)"
 description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes."
-img: /assets/img/projects/agentic-engineering.png
+img: /assets/img/projects/agentic-engineering.svg
 importance: 1
 category: research
 ---

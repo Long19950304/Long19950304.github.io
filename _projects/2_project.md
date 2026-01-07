@@ -2,7 +2,7 @@
 layout: page
 title: "Reliable LLM-Assisted Qualitative Analysis"
 description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research."
-img: /assets/img/projects/llm-evaluation.png
+img: /assets/img/projects/llm-evaluation.svg
 importance: 2
 category: research
 ---

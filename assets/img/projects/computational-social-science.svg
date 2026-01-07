@@ -1,60 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b5fff" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#20b7c8" stop-opacity="0.10"/>
+    <linearGradient id="css-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b5fff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#20b7c8" stop-opacity="0.12"/>
     </linearGradient>
-    <linearGradient id="stroke3" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="css-stroke" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#0b5fff"/>
       <stop offset="1" stop-color="#20b7c8"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="630" fill="url(#bg3)"/>
+  <rect width="1200" height="630" fill="url(#css-bg)"/>
 
-  <!-- Axis -->
-  <g stroke="#0b5fff" stroke-opacity="0.18" stroke-width="3">
-    <path d="M160 470H1040"/>
-    <path d="M160 190V470"/>
+  <!-- Axes -->
+  <g stroke="#0b5fff" stroke-opacity="0.16" stroke-width="4">
+    <path d="M160 495H1040"/>
+    <path d="M160 165V495"/>
   </g>
 
-  <!-- Trend line -->
-  <path d="M180 420 C260 360, 320 380, 400 330 C480 275, 560 295, 640 250 C720 205, 800 235, 880 210 C940 195, 990 200, 1020 185"
-        fill="none" stroke="url(#stroke3)" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <!-- Trend -->
+  <path
+    d="M180 445 C260 380, 320 410, 410 350 C500 290, 565 320, 660 265 C755 210, 820 245, 910 220 C965 205, 1000 210, 1020 195"
+    fill="none"
+    stroke="url(#css-stroke)"
+    stroke-width="10"
+    stroke-linecap="round"
+    opacity="0.92"
+  />
 
   <!-- Points -->
-  <g fill="#0b5fff" opacity="0.95">
-    <circle cx="180" cy="420" r="9"/>
-    <circle cx="400" cy="330" r="9"/>
-    <circle cx="640" cy="250" r="9"/>
-    <circle cx="880" cy="210" r="9"/>
-    <circle cx="1020" cy="185" r="9" fill="#20b7c8"/>
+  <g opacity="0.98">
+    <circle cx="180" cy="445" r="14" fill="#0b5fff"/>
+    <circle cx="410" cy="350" r="14" fill="#0b5fff"/>
+    <circle cx="660" cy="265" r="14" fill="#0b5fff"/>
+    <circle cx="910" cy="220" r="14" fill="#0b5fff"/>
+    <circle cx="1020" cy="195" r="14" fill="#20b7c8"/>
   </g>
 
-  <!-- Mini network -->
-  <g fill="none" stroke="url(#stroke3)" stroke-width="3.5" stroke-linecap="round" opacity="0.85">
-    <path d="M230 245 C270 215, 315 215, 355 245"/>
-    <path d="M355 245 C395 275, 440 275, 480 245"/>
-    <path d="M355 245 C355 210, 375 195, 395 180"/>
+  <!-- Small network motif -->
+  <g fill="none" stroke="url(#css-stroke)" stroke-width="7" stroke-linecap="round" opacity="0.85">
+    <path d="M260 245 C300 215, 340 215, 380 245"/>
+    <path d="M380 245 C420 275, 460 275, 500 245"/>
+    <path d="M380 245 C380 210, 400 195, 420 180"/>
   </g>
-  <g>
-    <circle cx="230" cy="245" r="10" fill="#0b5fff"/>
-    <circle cx="355" cy="245" r="10" fill="#0b5fff"/>
-    <circle cx="480" cy="245" r="10" fill="#20b7c8"/>
-    <circle cx="395" cy="180" r="10" fill="#20b7c8"/>
-  </g>
-
-  <!-- Title -->
-  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-    <text x="120" y="110" font-size="48" font-weight="700">Computational Social Science</text>
-    <text x="120" y="160" font-size="28" font-weight="500" opacity="0.85">digital trace data · measurement · causal designs</text>
+  <g opacity="0.98">
+    <circle cx="260" cy="245" r="14" fill="#0b5fff"/>
+    <circle cx="380" cy="245" r="14" fill="#0b5fff"/>
+    <circle cx="500" cy="245" r="14" fill="#20b7c8"/>
+    <circle cx="420" cy="180" r="14" fill="#20b7c8"/>
   </g>
 
-  <!-- Badge -->
-  <g>
-    <rect x="160" y="505" rx="14" ry="14" width="520" height="66" fill="#ffffff" fill-opacity="0.75" stroke="#0b5fff" stroke-opacity="0.20"/>
-    <text x="190" y="548" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="24" font-weight="600" fill="#0b5fff">
-      large-scale evidence with transparent assumptions
-    </text>
+  <!-- Corner accents -->
+  <g opacity="0.9">
+    <rect x="90" y="90" width="160" height="18" rx="9" fill="#0b5fff" fill-opacity="0.38"/>
+    <rect x="260" y="90" width="92" height="18" rx="9" fill="#20b7c8" fill-opacity="0.38"/>
   </g>
 </svg>

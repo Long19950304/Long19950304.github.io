@@ -1,45 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b5fff" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.03"/>
+    <linearGradient id="eval-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b5fff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.04"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="630" fill="url(#bg2)"/>
+  <rect width="1200" height="630" fill="url(#eval-bg)"/>
 
-  <!-- Grid -->
-  <g stroke="#0b5fff" stroke-opacity="0.15" stroke-width="2">
-    <path d="M140 140H1060"/>
-    <path d="M140 220H1060"/>
-    <path d="M140 300H1060"/>
-    <path d="M140 380H1060"/>
-    <path d="M140 460H1060"/>
+  <!-- Benchmark grid -->
+  <g stroke="#0b5fff" stroke-opacity="0.14" stroke-width="3">
+    <path d="M140 165H1060"/>
+    <path d="M140 255H1060"/>
+    <path d="M140 345H1060"/>
+    <path d="M140 435H1060"/>
+    <path d="M140 525H1060"/>
 
-    <path d="M140 140V470"/>
-    <path d="M320 140V470"/>
-    <path d="M500 140V470"/>
-    <path d="M680 140V470"/>
-    <path d="M860 140V470"/>
-    <path d="M1060 140V470"/>
+    <path d="M140 165V525"/>
+    <path d="M320 165V525"/>
+    <path d="M500 165V525"/>
+    <path d="M680 165V525"/>
+    <path d="M860 165V525"/>
+    <path d="M1060 165V525"/>
   </g>
 
-  <!-- Checkmarks -->
-  <g fill="none" stroke="#0b5fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
-    <path d="M210 220 l20 20 l44 -54"/>
-    <path d="M570 300 l20 20 l44 -54"/>
-    <path d="M930 380 l20 20 l44 -54"/>
+  <!-- Checkmarks (big + crisp at small sizes) -->
+  <g fill="none" stroke="#0b5fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+    <path d="M220 260 l26 26 l60 -74"/>
+    <path d="M590 350 l26 26 l60 -74"/>
+    <path d="M940 440 l26 26 l60 -74"/>
   </g>
 
-  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-    <text x="140" y="105" font-size="48" font-weight="700">LLM Evaluation</text>
-    <text x="140" y="155" font-size="28" font-weight="500" opacity="0.85">reliability · calibration · benchmark design</text>
-  </g>
-
-  <g>
-    <rect x="140" y="500" rx="14" ry="14" width="460" height="66" fill="#ffffff" fill-opacity="0.75"/>
-    <text x="170" y="543" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="24" font-weight="600" fill="#0b5fff">
-      human/LLM hybrid coding quality assurance
-    </text>
+  <!-- Corner accent -->
+  <g opacity="0.9">
+    <rect x="90" y="90" width="180" height="18" rx="9" fill="#0b5fff" fill-opacity="0.45"/>
+    <rect x="280" y="90" width="120" height="18" rx="9" fill="#0b5fff" fill-opacity="0.20"/>
   </g>
 </svg>

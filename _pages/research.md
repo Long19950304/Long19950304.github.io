@@ -49,38 +49,45 @@ This list is synced from my internal research pool and includes published, in-pr
 {% assign pool = site.data.research_pool.projects %}
 {% assign expanded_stages = "published,accepted,revise_resubmit,submitted" | split: "," %}
 
-{% assign conf_items = pool | where: "kind", "conference_paper" %}
+{% assign conf_items = pool | where: "kind", "conference_paper" | sort: "conference_date" | reverse %}
 {% if conf_items.size > 0 %}
 ### Conference presentations
 
 <ul>
-  {% for p in conf_items %}
-    <li>
-      {% if p.preprint_url != "" %}
-        <a href="{{ p.preprint_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-      {% else %}
-        {{ p.title }}
-      {% endif %}
+{% for p in conf_items %}
+<li>
+{%- assign link_url = "" -%}
+{%- if p.published_url != "" -%}
+  {%- assign link_url = p.published_url -%}
+{%- elsif p.preprint_url != "" -%}
+  {%- assign link_url = p.preprint_url -%}
+{%- endif -%}
 
-      {% if p.conference_name != "" %}
-        — <em>{{ p.conference_name }}</em>
-      {% endif %}
+{%- if link_url != "" -%}
+  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+{%- else -%}
+  {{ p.title }}
+{%- endif -%}
 
-      {% assign where_parts = "" %}
-      {% if p.conference_city != "" %}
-        {% assign where_parts = where_parts | append: p.conference_city %}
-      {% endif %}
-      {% if p.conference_date != "" %}
-        {% if where_parts != "" %}
-          {% assign where_parts = where_parts | append: ", " %}
-        {% endif %}
-        {% assign where_parts = where_parts | append: p.conference_date %}
-      {% endif %}
-      {% if where_parts != "" %}
-        ({{ where_parts }})
-      {% endif %}
-    </li>
-  {% endfor %}
+{%- if p.conference_name != "" -%}
+  — <em>{{ p.conference_name }}</em>
+{%- endif -%}
+
+{%- assign where_parts = "" -%}
+{%- if p.conference_city != "" -%}
+  {%- assign where_parts = where_parts | append: p.conference_city -%}
+{%- endif -%}
+{%- if p.conference_date != "" -%}
+  {%- if where_parts != "" -%}
+    {%- assign where_parts = where_parts | append: ", " -%}
+  {%- endif -%}
+  {%- assign where_parts = where_parts | append: p.conference_date -%}
+{%- endif -%}
+{%- if where_parts != "" -%}
+  ({{ where_parts }})
+{%- endif -%}
+</li>
+{% endfor %}
 </ul>
 {% endif %}
 
@@ -98,35 +105,34 @@ This list is synced from my internal research pool and includes published, in-pr
     {% else %}
 <details>
   <summary><strong>{{ stage_label }}</strong></summary>
-  <div style="margin-top: 0.5rem;"></div>
     {% endif %}
 
-    <ul>
-      {% for p in items %}
-        <li>
-          {% assign link_url = "" %}
-          {% if p.published_url != "" %}
-            {% assign link_url = p.published_url %}
-          {% elsif p.preprint_url != "" %}
-            {% assign link_url = p.preprint_url %}
-          {% endif %}
+<ul>
+{% for p in items %}
+<li>
+{%- assign link_url = "" -%}
+{%- if p.published_url != "" -%}
+  {%- assign link_url = p.published_url -%}
+{%- elsif p.preprint_url != "" -%}
+  {%- assign link_url = p.preprint_url -%}
+{%- endif -%}
 
-          {% if link_url != "" %}
-            <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-          {% else %}
-            {{ p.title }}
-          {% endif %}
+{%- if link_url != "" -%}
+  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+{%- else -%}
+  {{ p.title }}
+{%- endif -%}
 
-          {% if p.target_venue != "" %}
-            — <em>{{ p.target_venue }}</em>
-          {% endif %}
+{%- if p.target_venue != "" -%}
+  — <em>{{ p.target_venue }}</em>
+{%- endif -%}
 
-          {% if p.year %}
-            ({{ p.year }})
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+{%- if p.year -%}
+  ({{ p.year }})
+{%- endif -%}
+</li>
+{% endfor %}
+</ul>
 
     {% unless is_expanded %}
 </details>

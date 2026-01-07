@@ -15,14 +15,13 @@
     <path d="M140 300H1060"/>
     <path d="M140 380H1060"/>
     <path d="M140 460H1060"/>
-    <path d="M140 540H1060"/>
 
-    <path d="M140 140V540"/>
-    <path d="M320 140V540"/>
-    <path d="M500 140V540"/>
-    <path d="M680 140V540"/>
-    <path d="M860 140V540"/>
-    <path d="M1060 140V540"/>
+    <path d="M140 140V470"/>
+    <path d="M320 140V470"/>
+    <path d="M500 140V470"/>
+    <path d="M680 140V470"/>
+    <path d="M860 140V470"/>
+    <path d="M1060 140V470"/>
   </g>
 
   <!-- Checkmarks -->

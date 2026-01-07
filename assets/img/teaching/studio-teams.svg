@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b5fff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#20b7c8" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b5fff"/>
+      <stop offset="1" stop-color="#20b7c8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
+    <text x="90" y="120" font-size="52" font-weight="700">Studio Teaching</text>
+    <text x="90" y="170" font-size="28" font-weight="500" opacity="0.85">collaborate within teams · compete across teams · ship outcomes</text>
+  </g>
+
+  <!-- 3 teams -->
+  <g fill="#ffffff" fill-opacity="0.72" stroke="#0b5fff" stroke-opacity="0.20">
+    <rect x="120" y="240" rx="18" ry="18" width="300" height="290"/>
+    <rect x="450" y="240" rx="18" ry="18" width="300" height="290"/>
+    <rect x="780" y="240" rx="18" ry="18" width="300" height="290"/>
+  </g>
+
+  <!-- Team labels -->
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
+    <text x="150" y="290" font-size="26" font-weight="700">Team A</text>
+    <text x="480" y="290" font-size="26" font-weight="700">Team B</text>
+    <text x="810" y="290" font-size="26" font-weight="700">Team C</text>
+  </g>
+
+  <!-- Within-team collaboration nodes -->
+  <g stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" opacity="0.9" fill="none">
+    <!-- A -->
+    <path d="M180 360 L270 420 L360 360"/>
+    <path d="M180 360 L360 360"/>
+    <path d="M270 420 L270 470"/>
+    <!-- B -->
+    <path d="M510 360 L600 420 L690 360"/>
+    <path d="M510 360 L690 360"/>
+    <path d="M600 420 L600 470"/>
+    <!-- C -->
+    <path d="M840 360 L930 420 L1020 360"/>
+    <path d="M840 360 L1020 360"/>
+    <path d="M930 420 L930 470"/>
+  </g>
+
+  <g>
+    <!-- nodes -->
+    <circle cx="180" cy="360" r="10" fill="#0b5fff"/>
+    <circle cx="360" cy="360" r="10" fill="#0b5fff"/>
+    <circle cx="270" cy="420" r="10" fill="#20b7c8"/>
+    <circle cx="270" cy="470" r="10" fill="#0b5fff"/>
+
+    <circle cx="510" cy="360" r="10" fill="#0b5fff"/>
+    <circle cx="690" cy="360" r="10" fill="#0b5fff"/>
+    <circle cx="600" cy="420" r="10" fill="#20b7c8"/>
+    <circle cx="600" cy="470" r="10" fill="#0b5fff"/>
+
+    <circle cx="840" cy="360" r="10" fill="#0b5fff"/>
+    <circle cx="1020" cy="360" r="10" fill="#0b5fff"/>
+    <circle cx="930" cy="420" r="10" fill="#20b7c8"/>
+    <circle cx="930" cy="470" r="10" fill="#0b5fff"/>
+  </g>
+
+  <!-- Between-team competition: scoreboard -->
+  <g>
+    <rect x="90" y="545" rx="16" ry="16" width="1020" height="58" fill="#ffffff" fill-opacity="0.75"/>
+    <text x="120" y="583" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="24" font-weight="700" fill="#0b5fff">
+      Evaluation rubric + demo day → rank teams by outcomes (quality, novelty, documentation, responsible AI)
+    </text>
+  </g>
+</svg>

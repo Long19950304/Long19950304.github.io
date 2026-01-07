@@ -47,6 +47,16 @@ ninja.data = [{
           description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-computational-social-science-amp-digital-methods",
+          title: 'Computational Social Science &amp;amp; Digital Methods',
+          description: "Computational communication research using large-scale digital trace data, measurement, and causal designs.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-ai-native-media-pipelines",
+          title: 'AI-Native Media Pipelines',
+          description: "Code-first multi-model pipelines for scripting → visuals → subtitles → packaging → publishing (with evaluation and QA).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',

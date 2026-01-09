@@ -100,7 +100,7 @@ nav_order: 4
 ### *Interdimensional Interview Room / 异次元访谈室*
 
 - AI-native interview-format video program
-- Selected episode sample will be added (≤100MB) after you pick the episode and export the final audio.
+- Sample episodes are available via private viewing links upon request (selected stills shown below).
 
 **Selected stills**
 

@@ -32,3 +32,8 @@ long1-desk1-scirep-confidence-diversity-framework:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-scirep-confidence-diversity-framework-en.mp3
+
+long1-desk1-news-title-framing-older-adults:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-news-title-framing-older-adults-en.mp3

@@ -2,38 +2,46 @@ long1-desk1-bds-confidence-diversity-framework:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-bds-confidence-diversity-framework-en.mp3
+  take_home: A practical way to assess (and calibrate) the reliability of LLM-based complex qualitative coding using a confidence–diversity lens.
 
 long1-desk1-hec-hierarchical-error-framework:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-hec-hierarchical-error-framework-en.mp3
+  take_home: A systematic, multi-level error-correction workflow that improves the robustness of domain-specific AI/LLM outputs.
 
 long1-desk1-journal-of-family-violence-domestic-violence-framing:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-journal-of-family-violence-domestic-violence-framing-en.mp3
+  take_home: Newspaper framing of domestic violence varies across regions, shaping whether the issue is treated as private conflict or public responsibility.
 
 long1-desk1-macao-media-ecology-generational-differences:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-macao-media-ecology-generational-differences-en.mp3
+  take_home: A “small-society” Macau case helps theorize how intergenerational media use patterns emerge and how local ecosystems shape them.
 
 long1-desk1-parental-mediation-digital-media-health-literacy:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-parental-mediation-digital-media-health-literacy-en.mp3
+  take_home: Parental mediation is meaningfully linked to children’s digital media use and health literacy, with implications for family and school interventions.
 
 long1-desk1-pishi-global-south-llm:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-pishi-global-south-llm-en.mp3
+  take_home: In the AI era, “orientalism” shifts from simple West–East binaries toward a subtler English-language centrism that structures visibility and authority.
 
 long1-desk1-scirep-confidence-diversity-framework:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-scirep-confidence-diversity-framework-en.mp3
+  take_home: A confidence–diversity framework for calibrating AI judgement in accessible qualitative coding tasks, balancing accuracy with uncertainty awareness.
 
 long1-desk1-news-title-framing-older-adults:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-news-title-framing-older-adults-en.mp3
+  take_home: Negative title framing can boost engagement, but it also reinforces skewed representations of older adults with measurable behavioral effects.

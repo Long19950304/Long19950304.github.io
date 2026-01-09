@@ -3,6 +3,12 @@
   {% assign audio_path = podcast.audio | prepend: "/" %}
   {% assign audio_file = site.static_files | where: "path", audio_path | first %}
   {% if audio_file %}
-    <a class="btn btn-sm z-depth-0" href="{{ audio_file.path }}" role="button">Podcast</a>
+    <div class="podcast-block">
+      <a class="btn btn-sm z-depth-0 podcast-btn" href="{{ audio_file.path }}" role="button">Listen: audio overview</a>
+      {% if podcast.take_home %}
+        <div class="podcast-takehome"><strong>Take-home:</strong> {{ podcast.take_home }}</div>
+      {% endif %}
+      <div class="podcast-guidance">Prefer listening to reading? The audio overview gives a short, two-host walkthrough of the paper’s core question, method, and key finding.</div>
+    </div>
   {% endif %}
 {% endif %}

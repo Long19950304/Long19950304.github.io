@@ -3,8 +3,14 @@
   {% assign audio_path = podcast.audio | prepend: "/" %}
   {% assign audio_file = site.static_files | where: "path", audio_path | first %}
   {% if audio_file %}
-    <div class="podcast-audio">
-      {% include audio.liquid path=podcast.audio controls=true preload="none" %}
+    <div class="podcast-block">
+      {% if podcast.take_home %}
+        <div class="podcast-takehome"><strong>Take-home:</strong> {{ podcast.take_home }}</div>
+      {% endif %}
+      <div class="podcast-guidance">Tip: if you prefer listening, this audio overview offers a concise, two-host explanation of the paper in plain language.</div>
+      <div class="podcast-audio">
+        {% include audio.liquid path=podcast.audio controls=true preload="none" %}
+      </div>
     </div>
   {% endif %}
 {% endif %}

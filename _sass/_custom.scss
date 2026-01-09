@@ -417,3 +417,11 @@ h1 {
   object-fit: cover;
   display: block;
 }
+
+.podcast-audio {
+  margin-top: 0.5rem;
+}
+
+.podcast-audio audio {
+  width: 100%;
+}

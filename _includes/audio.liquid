@@ -1,6 +1,9 @@
 <figure>
   <audio
     src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+    {% if include.preload %}
+      preload="{{ include.preload }}"
+    {% endif %}
     {% if include.class %}
       class="{{ include.class }}"
     {% endif %}
@@ -22,7 +25,9 @@
     {% if include.muted %}
       muted
     {% endif %}
-  />
+  >
+  Your browser does not support the audio element.
+  </audio>
 
   {% if include.caption %}
     <figcaption class="caption">{{ include.caption }}</figcaption>

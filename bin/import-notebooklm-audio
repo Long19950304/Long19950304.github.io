@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage:
+  bin/import-notebooklm-audio <bibkey> <source-audio-file> [--lang en]
+
+Example:
+  bin/import-notebooklm-audio long1-desk1-bds-confidence-diversity-framework ~/Downloads/notebooklm.mp3
+
+What it does:
+  - Transcodes to a web-friendly MP3 (mono, ~80kbps).
+  - Writes to assets/audio/notebooklm/<bibkey>-<lang>.mp3
+EOF
+}
+
+if [[ ${1:-} == "-h" || ${1:-} == "--help" || $# -lt 2 ]]; then
+  usage
+  exit 0
+fi
+
+bibkey="$1"
+src="$2"
+lang="en"
+
+shift 2
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --lang)
+      lang="${2:-}"
+      shift 2
+      ;;
+    *)
+      echo "Unknown arg: $1" >&2
+      usage
+      exit 2
+      ;;
+  esac
+done
+
+if [[ -z "$lang" ]]; then
+  echo "Missing --lang value" >&2
+  exit 2
+fi
+
+if [[ ! -f "$src" ]]; then
+  echo "Source file not found: $src" >&2
+  exit 1
+fi
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+out_dir="$repo_root/assets/audio/notebooklm"
+mkdir -p "$out_dir"
+
+out="$out_dir/${bibkey}-${lang}.mp3"
+
+# Web-friendly settings:
+# - mono (smaller, speech-focused)
+# - 44.1kHz
+# - ~80kbps CBR for predictable size
+ffmpeg -hide_banner -loglevel error -y \
+  -i "$src" \
+  -vn \
+  -ac 1 \
+  -ar 44100 \
+  -codec:a libmp3lame \
+  -b:a 80k \
+  "$out"
+
+chmod 644 "$out"
+echo "Wrote: $out"

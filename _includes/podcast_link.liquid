@@ -1,0 +1,8 @@
+{% assign podcast = site.data.podcasts[include.id] %}
+{% if podcast and podcast.audio %}
+  {% assign audio_path = podcast.audio | prepend: "/" %}
+  {% assign audio_file = site.static_files | where: "path", audio_path | first %}
+  {% if audio_file %}
+    <a class="btn btn-sm z-depth-0" href="{{ audio_file.path }}" role="button">Podcast</a>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,34 @@
+long1-desk1-bds-confidence-diversity-framework:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-bds-confidence-diversity-framework-en.mp3
+
+long1-desk1-hec-hierarchical-error-framework:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-hec-hierarchical-error-framework-en.mp3
+
+long1-desk1-journal-of-family-violence-domestic-violence-framing:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-journal-of-family-violence-domestic-violence-framing-en.mp3
+
+long1-desk1-macao-media-ecology-generational-differences:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-macao-media-ecology-generational-differences-en.mp3
+
+long1-desk1-parental-mediation-digital-media-health-literacy:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-parental-mediation-digital-media-health-literacy-en.mp3
+
+long1-desk1-pishi-global-south-llm:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-pishi-global-south-llm-en.mp3
+
+long1-desk1-scirep-confidence-diversity-framework:
+  language: en
+  provider: notebooklm
+  audio: assets/audio/notebooklm/long1-desk1-scirep-confidence-diversity-framework-en.mp3

@@ -123,6 +123,8 @@ This list is synced from my internal research pool and includes published, in-pr
   {{ p.title }}
 {%- endif -%}
 
+{% include podcast_link.liquid id=p.project_id %}
+
 {%- if p.target_venue != "" -%}
   — <em>{{ p.target_venue }}</em>
 {%- endif -%}

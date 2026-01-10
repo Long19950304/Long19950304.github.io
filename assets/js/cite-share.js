@@ -1,4 +1,12 @@
 (() => {
+  const closeAll = (exceptKey) => {
+    document.querySelectorAll("details.cite-share[open]").forEach((d) => {
+      const key = d.getAttribute("data-cite-share-key") || "";
+      if (exceptKey && key === exceptKey) return;
+      d.removeAttribute("open");
+    });
+  };
+
   const textToClipboard = async (text) => {
     const safeText = String(text ?? "");
     try {
@@ -37,6 +45,7 @@
 
   const normalizeBibtex = (bibtex) => String(bibtex ?? "").replace(/\r\n/g, "\n").trim() + "\n";
   const normalizeRIS = (ris) => String(ris ?? "").replace(/\r\n/g, "\n").trim() + "\n";
+  const normalizeJSON = (obj) => JSON.stringify(obj ?? {}, null, 2).replace(/\r\n/g, "\n").trim() + "\n";
 
   const getPayload = (root) => {
     const script = root.querySelector("script.cite-share__data");
@@ -62,6 +71,11 @@
     const payload = getPayload(root);
     if (!payload) return;
 
+    root.addEventListener("toggle", () => {
+      const key = root.getAttribute("data-cite-share-key") || "";
+      if (root.open) closeAll(key);
+    });
+
     root.addEventListener("click", async (e) => {
       const target = e.target;
       if (!(target instanceof HTMLElement)) return;
@@ -76,6 +90,8 @@
       const citationPlain = payload.citation_plain || "";
       const bibtex = normalizeBibtex(payload.bibtex || "");
       const ris = normalizeRIS(payload.ris || "");
+      const cslJson = normalizeJSON(payload.csl_json || {});
+      const shareText = [citationPlain, canonicalUrl].filter(Boolean).join("\n");
 
       if (action === "copy_link") {
         const ok = await textToClipboard(canonicalUrl);
@@ -97,6 +113,16 @@
         flashSummary(root, ok ? "RIS copied" : "Copy failed");
         return;
       }
+      if (action === "copy_csl_json") {
+        const ok = await textToClipboard(cslJson);
+        flashSummary(root, ok ? "CSL-JSON copied" : "Copy failed");
+        return;
+      }
+      if (action === "copy_share_text") {
+        const ok = await textToClipboard(shareText);
+        flashSummary(root, ok ? "Share text copied" : "Copy failed");
+        return;
+      }
       if (action === "download_bibtex") {
         downloadText(`${key}.bib`, bibtex, "application/x-bibtex;charset=utf-8");
         flashSummary(root, "Downloading…");
@@ -107,6 +133,11 @@
         flashSummary(root, "Downloading…");
         return;
       }
+      if (action === "download_csl_json") {
+        downloadText(`${key}.csl.json`, cslJson, "application/vnd.citationstyles.csl+json;charset=utf-8");
+        flashSummary(root, "Downloading…");
+        return;
+      }
     });
   };
 
@@ -114,10 +145,15 @@
     document.querySelectorAll("details.cite-share").forEach(attach);
   };
 
+  document.addEventListener("click", (e) => {
+    const t = e.target;
+    if (t instanceof Element && t.closest("details.cite-share")) return;
+    closeAll();
+  });
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init, { once: true });
   } else {
     init();
   }
 })();
-

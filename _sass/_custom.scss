@@ -250,33 +250,83 @@ details.cite-share {
   display: inline-block;
   margin-right: 0.35rem;
   vertical-align: middle;
+  position: relative;
 }
 
 details.cite-share > summary {
   list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
 }
 
 details.cite-share > summary::-webkit-details-marker {
   display: none;
 }
 
+.cite-share__summary-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cite-share__chev {
+  opacity: 0.75;
+  transition: transform 160ms ease;
+}
+
+details.cite-share[open] .cite-share__chev {
+  transform: rotate(180deg);
+}
+
 .cite-share__panel {
-  margin-top: 0.35rem;
-  padding: 0.5rem;
-  border: 1px solid rgba(120, 120, 120, 0.25);
-  border-radius: 0.5rem;
-  background: rgba(127, 127, 127, 0.06);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: calc(100% + 0.35rem);
+  min-width: 320px;
+  max-width: 520px;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.14);
 }
 
-.cite-share__row {
-  display: flex;
-  flex-wrap: wrap;
+.cite-share__section + .cite-share__section {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cite-share__section-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+  margin-bottom: 0.45rem;
+}
+
+.cite-share__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.35rem;
-  margin-bottom: 0.35rem;
 }
 
-.cite-share__row:last-child {
-  margin-bottom: 0;
+.cite-share__grid--share {
+  grid-template-columns: 1fr 0.6fr 0.8fr;
+}
+
+.cite-share__btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.35rem;
+  justify-content: flex-start;
+  border-radius: 12px;
 }
 
 .cite-share__hint {
@@ -284,6 +334,43 @@ details.cite-share > summary::-webkit-details-marker {
   font-size: 0.85rem;
   opacity: 0.8;
   line-height: 1.25;
+}
+
+html[data-theme="dark"] .cite-share__panel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(28, 28, 29, 0.78);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="dark"] .cite-share__section + .cite-share__section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+details.cite-share.cite-share--compact > summary {
+  padding: 0.28rem 0.6rem;
+}
+
+.research-item__headline {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.research-item__subtitle {
+  margin-top: 0.1rem;
+  font-size: 0.92rem;
+  opacity: 0.82;
+}
+
+.research-item__meta {
+  margin-top: 0.12rem;
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+
+.research-item .podcast-block {
+  margin-top: 0.55rem;
 }
 
 // Cards (projects, etc.)

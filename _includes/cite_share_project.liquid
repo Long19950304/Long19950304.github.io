@@ -1,0 +1,244 @@
+{%- comment -%}
+  Cite / Share menu for research portfolio list items (synced).
+  - Uses the same JS + styles as `_includes/cite_share.liquid`.
+  - Pulls author/DOI/container metadata from `_data/research_citations.yml` when available.
+{%- endcomment -%}
+
+{%- assign p = include.project -%}
+{%- if p -%}
+
+{%- assign year_num = p.year | default: 0 | plus: 0 -%}
+{%- assign has_external_url = false -%}
+{%- if p.published_url != "" or p.preprint_url != "" -%}
+  {%- assign has_external_url = true -%}
+{%- endif -%}
+
+{%- assign show_actions = false -%}
+{%- if year_num >= 2025 and (has_external_url or p.stage == "accepted") -%}
+  {%- assign show_actions = true -%}
+{%- endif -%}
+
+{%- if show_actions -%}
+  {%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
+  {%- assign title_display = p.title -%}
+  {%- if translated_title != "" -%}
+    {%- assign title_display = translated_title -%}
+  {%- endif -%}
+
+  {%- assign meta = site.data.research_citations[p.project_id] -%}
+  {%- assign canonical_url = site.url | append: '/research/' | append: '#' | append: p.project_id -%}
+
+  {%- assign primary_url = "" -%}
+  {%- if p.published_url != "" -%}
+    {%- assign primary_url = p.published_url -%}
+  {%- elsif p.preprint_url != "" -%}
+    {%- assign primary_url = p.preprint_url -%}
+  {%- elsif meta and meta.url -%}
+    {%- assign primary_url = meta.url -%}
+  {%- endif -%}
+
+  {%- assign container_title = p.target_venue | default: "" -%}
+  {%- if meta and meta.container_title -%}
+    {%- assign container_title = meta.container_title -%}
+  {%- endif -%}
+
+  {%- assign doi = "" -%}
+  {%- if meta and meta.doi -%}
+    {%- assign doi = meta.doi -%}
+  {%- endif -%}
+
+  {%- assign csl_type = "report" -%}
+  {%- if p.type == "journal_article" -%}
+    {%- assign csl_type = "article-journal" -%}
+  {%- endif -%}
+  {%- if meta and meta.type -%}
+    {%- assign csl_type = meta.type -%}
+  {%- endif -%}
+
+  {%- capture author_plain -%}
+    {%- if meta and meta.authors and meta.authors.size > 0 -%}
+      {%- for a in meta.authors -%}
+        {%- if forloop.first == false -%}; {%- endif -%}
+        {{- a.given }} {{ a.family -}}
+      {%- endfor -%}
+    {%- else -%}
+      {{- site.first_name }} {{ site.last_name -}}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- assign author_plain = author_plain | strip -%}
+
+  {%- capture citation_plain -%}
+    {{- author_plain -}}
+    {%- if year_num > 0 -%} ({{ year_num }}).{%- endif -%}
+    {{- ' ' -}}{{ title_display | strip }}.
+    {%- if container_title != "" -%} {{ container_title | strip }}.{%- endif -%}
+    {%- if doi != "" -%} https://doi.org/{{ doi | strip }}{%- endif -%}
+    {%- if doi == "" and primary_url != "" -%} {{ primary_url | strip }}{%- endif -%}
+    {%- if doi == "" and primary_url == "" -%} {{ canonical_url | strip }}{%- endif -%}
+  {%- endcapture -%}
+  {%- assign citation_plain = citation_plain | strip -%}
+
+  {%- capture bibtex_author -%}
+    {%- if meta and meta.authors and meta.authors.size > 0 -%}
+      {%- for a in meta.authors -%}
+        {%- if forloop.first == false -%} and {%- endif -%}
+        {{- a.family }}, {{ a.given -}}
+      {%- endfor -%}
+    {%- else -%}
+      {{- site.last_name }}, {{ site.first_name -}}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- assign bibtex_author = bibtex_author | strip -%}
+
+  {%- assign bibtex_type = "misc" -%}
+  {%- if p.type == "journal_article" -%}
+    {%- assign bibtex_type = "article" -%}
+  {%- endif -%}
+
+  {%- capture bibtex -%}
+@{{ bibtex_type }}{ {{ p.project_id }},
+  author = { {{ bibtex_author }} },
+  title = { {{ p.title | strip }} },
+  year = { {{ year_num }} }{%- if container_title != "" and bibtex_type == "article" -%},
+  journal = { {{ container_title | strip }} }{%- endif -%}{%- if doi != "" -%},
+  doi = { {{ doi | strip }} }{%- endif -%}{%- if primary_url != "" -%},
+  url = { {{ primary_url | strip }} }{%- endif -%}
+}
+  {%- endcapture -%}
+  {%- assign bibtex = bibtex | strip -%}
+
+  {%- capture ris -%}
+    {%- if bibtex_type == 'article' -%}
+TY  - JOUR
+    {%- else -%}
+TY  - GEN
+    {%- endif -%}
+    {%- if meta and meta.authors and meta.authors.size > 0 -%}
+      {%- for a in meta.authors -%}
+AU  - {{ a.given }} {{ a.family }}
+      {%- endfor -%}
+    {%- else -%}
+AU  - {{ site.first_name }} {{ site.last_name }}
+    {%- endif -%}
+TI  - {{ p.title | strip }}
+    {%- if container_title != "" -%}
+JO  - {{ container_title | strip }}
+    {%- endif -%}
+PY  - {{ year_num }}
+    {%- if doi != "" -%}
+DO  - {{ doi | strip }}
+    {%- endif -%}
+    {%- if primary_url != "" -%}
+UR  - {{ primary_url | strip }}
+    {%- else -%}
+UR  - {{ canonical_url | strip }}
+    {%- endif -%}
+ER  -
+  {%- endcapture -%}
+  {%- assign ris = ris | strip -%}
+
+  {%- capture payload -%}
+{
+  "key": {{ p.project_id | jsonify }},
+  "canonical_url": {{ canonical_url | jsonify }},
+  "title": {{ title_display | strip | jsonify }},
+  "authors": {{ author_plain | jsonify }},
+  "year": {{ year_num | jsonify }},
+  "doi": {{ doi | jsonify }},
+  "url": {{ primary_url | default: '' | strip | jsonify }},
+  "note": {{ p.stage | default: '' | strip | jsonify }},
+  "citation_plain": {{ citation_plain | jsonify }},
+  "bibtex": {{ bibtex | jsonify }},
+  "ris": {{ ris | jsonify }},
+  "csl_json": {
+    "id": {{ p.project_id | jsonify }},
+    "type": {{ csl_type | jsonify }},
+    "title": {{ p.title | strip | jsonify }},
+    "author": [
+      {%- if meta and meta.authors and meta.authors.size > 0 -%}
+        {%- for a in meta.authors -%}
+          { "family": {{ a.family | jsonify }}, "given": {{ a.given | jsonify }} }{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      {%- else -%}
+        { "family": {{ site.last_name | jsonify }}, "given": {{ site.first_name | jsonify }} }
+      {%- endif -%}
+    ],
+    "issued": { "date-parts": [[{{ year_num }}]] },
+    "container-title": {{ container_title | default: '' | strip | jsonify }},
+    "DOI": {{ doi | default: '' | strip | jsonify }},
+    "URL": {{ primary_url | default: canonical_url | strip | jsonify }}
+  }
+}
+  {%- endcapture -%}
+
+  <details class="cite-share cite-share--compact" data-cite-share-key="{{ p.project_id }}">
+    <summary class="btn btn-sm z-depth-0 cite-share__summary" role="button" aria-label="Cite and share menu">
+      <span class="cite-share__summary-label">
+        <i class="ti ti-share"></i>
+        Cite / Share
+      </span>
+      <i class="ti ti-chevron-down cite-share__chev"></i>
+    </summary>
+    <div class="cite-share__panel" role="group" aria-label="Cite and share actions">
+      <div class="cite-share__section">
+        <div class="cite-share__section-title">Export</div>
+        <div class="cite-share__grid">
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_citation">
+            <i class="ti ti-copy"></i> Copy citation
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_link">
+            <i class="ti ti-link"></i> Copy link
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_bibtex">
+            <i class="ti ti-braces"></i> Copy BibTeX
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_bibtex">
+            <i class="ti ti-download"></i> BibTeX
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_ris">
+            <i class="ti ti-file-text"></i> Copy RIS
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_ris">
+            <i class="ti ti-download"></i> RIS
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_csl_json">
+            <i class="ti ti-code"></i> Copy CSL-JSON
+          </button>
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_csl_json">
+            <i class="ti ti-download"></i> CSL-JSON
+          </button>
+        </div>
+      </div>
+
+      <div class="cite-share__section">
+        <div class="cite-share__section-title">Share</div>
+        <div class="cite-share__grid cite-share__grid--share">
+          <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_share_text">
+            <i class="ti ti-share-2"></i> Copy share text
+          </button>
+          <a
+            class="btn btn-sm z-depth-0 cite-share__btn"
+            href="https://twitter.com/intent/tweet?text={{ citation_plain | uri_escape }}&url={{ canonical_url | uri_escape }}"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="ti ti-brand-x"></i> X
+          </a>
+          <a
+            class="btn btn-sm z-depth-0 cite-share__btn"
+            href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical_url | uri_escape }}"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="ti ti-brand-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <div class="cite-share__hint">
+          Tip: use the audio overview for a quick, two-host walkthrough, then share the link + citation.
+        </div>
+      </div>
+    </div>
+    <script type="application/json" class="cite-share__data">{{ payload | strip }}</script>
+  </details>
+{%- endif -%}
+{%- endif -%}

@@ -1,0 +1,95 @@
+long1-desk1-bds-confidence-diversity-framework:
+  type: report
+  container_title: arXiv
+  url: https://arxiv.org/abs/2508.20462
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Yindi
+      family: Liu
+
+long1-desk1-hec-hierarchical-error-framework:
+  type: report
+  container_title: arXiv
+  url: https://arxiv.org/abs/2509.24841
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Yindi
+      family: Liu
+
+long1-desk1-pishi-global-south-llm:
+  type: report
+  container_title: arXiv
+  url: https://arxiv.org/abs/2511.22931
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Yindi
+      family: Liu
+
+long1-desk1-scirep-confidence-diversity-framework:
+  type: report
+  container_title: arXiv
+  url: https://arxiv.org/abs/2508.02029
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Yindi
+      family: Liu
+
+long1-desk1-news-title-framing-older-adults:
+  type: report
+  container_title: arXiv
+  url: https://arxiv.org/abs/2503.15493
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Jiaxin
+      family: Xia
+
+long1-desk1-journal-of-family-violence-domestic-violence-framing:
+  type: article-journal
+  container_title: Journal of Family Violence
+  doi: 10.1007/s10896-024-00796-8
+  url: https://link.springer.com/article/10.1007/s10896-024-00796-8
+  authors:
+    - given: Agnes Iok Fong
+      family: Lam
+    - given: Zhilong George
+      family: Zhao
+    - given: Ying
+      family: Li
+    - given: Le
+      family: Luo
+    - given: Hao
+      family: Li
+    - given: Brian J
+      family: Hall
+
+long1-desk1-parental-mediation-digital-media-health-literacy:
+  type: article-journal
+  container_title: Health Communication
+  doi: 10.1080/10410236.2024.2387389
+  url: https://www.tandfonline.com/doi/abs/10.1080/10410236.2024.2387389
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Lin
+      family: Zhu
+    - given: Jing
+      family: Liao
+    - given: Jiaxin
+      family: Xia
+    - given: Xueya
+      family: Pu
+
+long1-desk1-macao-media-ecology-generational-differences:
+  type: article-journal
+  container_title: 《澳门研究》
+  url: ""
+  authors:
+    - given: Zhilong
+      family: Zhao
+    - given: Agnes Iok Fong
+      family: Lam

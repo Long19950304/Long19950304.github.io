@@ -55,7 +55,7 @@ This list is synced from my internal research pool and includes published, in-pr
 
 <ul>
 {% for p in conf_items %}
-<li>
+<li id="{{ p.project_id }}" class="research-item">
 {%- assign link_url = "" -%}
 {%- if p.published_url != "" -%}
   {%- assign link_url = p.published_url -%}
@@ -63,11 +63,23 @@ This list is synced from my internal research pool and includes published, in-pr
   {%- assign link_url = p.preprint_url -%}
 {%- endif -%}
 
-{%- if link_url != "" -%}
-  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-{%- else -%}
-  {{ p.title }}
+{%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
+{%- assign display_title = p.title -%}
+{%- if translated_title != "" -%}
+  {%- assign display_title = translated_title -%}
 {%- endif -%}
+
+<div class="research-item__headline">
+{%- if link_url != "" -%}
+  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ display_title }}</a>
+{%- else -%}
+  {{ display_title }}
+{%- endif -%}
+</div>
+
+{% if translated_title != "" %}
+  <div class="research-item__subtitle">{{ p.title }}</div>
+{% endif %}
 
 {%- if p.conference_name != "" -%}
   — <em>{{ p.conference_name }}</em>
@@ -83,7 +95,7 @@ This list is synced from my internal research pool and includes published, in-pr
   {%- endif -%}
   {%- assign where_parts = where_parts | append: p.conference_date -%}
 {%- endif -%}
-{%- if where_parts != "" -%}
+  {%- if where_parts != "" -%}
   ({{ where_parts }})
 {%- endif -%}
 </li>
@@ -109,7 +121,7 @@ This list is synced from my internal research pool and includes published, in-pr
 
 <ul>
 {% for p in items %}
-<li>
+<li id="{{ p.project_id }}" class="research-item">
 {%- assign link_url = "" -%}
 {%- if p.published_url != "" -%}
   {%- assign link_url = p.published_url -%}
@@ -117,21 +129,36 @@ This list is synced from my internal research pool and includes published, in-pr
   {%- assign link_url = p.preprint_url -%}
 {%- endif -%}
 
-{%- if link_url != "" -%}
-  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-{%- else -%}
-  {{ p.title }}
+{%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
+{%- assign display_title = p.title -%}
+{%- if translated_title != "" -%}
+  {%- assign display_title = translated_title -%}
 {%- endif -%}
 
-{% include podcast_link.liquid id=p.project_id %}
+<div class="research-item__headline">
+{%- if link_url != "" -%}
+  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ display_title }}</a>
+{%- else -%}
+  {{ display_title }}
+{%- endif -%}
+{% include cite_share_project.liquid project=p %}
+</div>
 
+{% if translated_title != "" %}
+  <div class="research-item__subtitle">{{ p.title }}</div>
+{% endif %}
+
+<div class="research-item__meta">
 {%- if p.target_venue != "" -%}
-  — <em>{{ p.target_venue }}</em>
+  <em>{{ p.target_venue }}</em>
 {%- endif -%}
 
 {%- if p.year -%}
   ({{ p.year }})
 {%- endif -%}
+</div>
+
+{% include podcast_link.liquid id=p.project_id %}
 </li>
 {% endfor %}
 </ul>

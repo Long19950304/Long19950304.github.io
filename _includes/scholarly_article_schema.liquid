@@ -1,0 +1,60 @@
+{%- comment -%}
+  Per-entry Schema.org ScholarlyArticle JSON-LD for publications.
+  Keep it minimal but useful for SEO/link previews.
+{%- endcomment -%}
+
+{%- if entry and entry.title and (entry.doi or entry.url or entry.arxiv) -%}
+  {%- assign canonical_url = site.url | append: page.url | append: '#' | append: entry.key -%}
+
+  {%- assign url = "" -%}
+  {%- if entry.doi -%}
+    {%- assign url = "https://doi.org/" | append: entry.doi -%}
+  {%- elsif entry.url -%}
+    {%- assign url = entry.url -%}
+  {%- endif -%}
+
+  {%- assign arxiv_id = "" -%}
+  {%- if entry.arxiv -%}
+    {%- assign arxiv_id = entry.arxiv -%}
+  {%- elsif entry.url and entry.url contains "arxiv.org/abs/" -%}
+    {%- assign arxiv_id = entry.url | split: "arxiv.org/abs/" | last | split: "?" | first -%}
+  {%- endif -%}
+
+  {%- assign container_title = "" -%}
+  {%- if entry.journal -%}
+    {%- assign container_title = entry.journal -%}
+  {%- elsif entry.booktitle -%}
+    {%- assign container_title = entry.booktitle -%}
+  {%- endif -%}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": {{ entry.title | strip | jsonify }},
+    "headline": {{ entry.title | strip | jsonify }},
+    "url": {{ url | default: canonical_url | strip | jsonify }},
+    "mainEntityOfPage": {{ canonical_url | strip | jsonify }},
+    "inLanguage": {{ site.lang | default: "en" | jsonify }},
+    "datePublished": {{ entry.year | default: "" | strip | jsonify }},
+    "author": [
+      {%- for a in entry.author_array -%}
+        { "@type": "Person", "name": {{- a.first | append: " " | append: a.last | strip | jsonify -}} }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+    {%- if container_title != "" -%}
+    ,"isPartOf": { "@type": "Periodical", "name": {{ container_title | strip | jsonify }} }
+    {%- endif -%}
+    {%- if entry.doi or arxiv_id != "" -%}
+    ,"identifier": [
+      {%- if entry.doi -%}
+        { "@type": "PropertyValue", "propertyID": "DOI", "value": {{ entry.doi | strip | jsonify }} }{%- if arxiv_id != "" -%},{%- endif -%}
+      {%- endif -%}
+      {%- if arxiv_id != "" -%}
+        { "@type": "PropertyValue", "propertyID": "arXiv", "value": {{ arxiv_id | strip | jsonify }} }
+      {%- endif -%}
+    ]
+    {%- endif -%}
+  }
+  </script>
+{%- endif -%}

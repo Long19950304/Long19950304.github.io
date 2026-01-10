@@ -373,6 +373,62 @@ details.cite-share.cite-share--compact > summary {
   margin-top: 0.55rem;
 }
 
+.research-filter {
+  margin: 0.75rem 0 0.85rem;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: rgba(127, 127, 127, 0.04);
+}
+
+.research-filter__row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.research-filter__row + .research-filter__row {
+  margin-top: 0.55rem;
+}
+
+.research-filter__input {
+  flex: 1;
+  min-width: 240px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 0.45rem 0.75rem;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.research-filter__count {
+  white-space: nowrap;
+  opacity: 0.75;
+}
+
+.research-filter__row--pills {
+  flex-wrap: wrap;
+}
+
+.research-filter__pill {
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+}
+
+.research-filter__pill.is-active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.14) inset;
+}
+
+html[data-theme="dark"] .research-filter {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(127, 127, 127, 0.06);
+}
+
+html[data-theme="dark"] .research-filter__input {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(28, 28, 29, 0.78);
+  color: inherit;
+}
+
 .podcast {
   display: inline-block;
   margin-right: 0.35rem;

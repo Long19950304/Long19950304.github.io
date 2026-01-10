@@ -53,6 +53,7 @@
     {% if translated_title %}
       <div class="title title-translation">{{ translated_title }}</div>
     {% endif %}
+    {% include scholarly_article_schema.liquid %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}

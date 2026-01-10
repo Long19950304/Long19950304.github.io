@@ -5,6 +5,7 @@ permalink: /research/
 description: Research directions and selected projects (AE+X).
 nav: true
 nav_order: 3
+research_filter: true
 display_categories:
 horizontal: false
 ---
@@ -45,6 +46,20 @@ My research program centers on <strong>Agentic Engineering (AE+X)</strong>: buil
 This list is synced from my internal research pool and includes published, in-press, preprints, and active projects.
 </p>
 
+<div class="research-filter" data-research-filter>
+  <div class="research-filter__row">
+    <input class="research-filter__input" type="search" placeholder="Filter by keyword (title/venue)..." aria-label="Filter research items by keyword" data-research-filter-input>
+    <div class="research-filter__count small" data-research-filter-count></div>
+  </div>
+  <div class="research-filter__row research-filter__row--pills" role="group" aria-label="Stage filters">
+    <button class="btn btn-sm z-depth-0 research-filter__pill is-active" type="button" data-research-filter-stage="all">All</button>
+    <button class="btn btn-sm z-depth-0 research-filter__pill" type="button" data-research-filter-stage="published">Published</button>
+    <button class="btn btn-sm z-depth-0 research-filter__pill" type="button" data-research-filter-stage="accepted">Accepted</button>
+    <button class="btn btn-sm z-depth-0 research-filter__pill" type="button" data-research-filter-stage="preprint">Preprint</button>
+  </div>
+</div>
+
+<div id="research-portfolio" data-research-portfolio>
 {% assign stage_order = "published,accepted,revise_resubmit,submitted,writing,analysis,build,design,data_inventory,idea" | split: "," %}
 {% assign pool = site.data.research_pool.projects %}
 {% assign expanded_stages = "published,accepted,revise_resubmit,submitted" | split: "," %}
@@ -55,7 +70,15 @@ This list is synced from my internal research pool and includes published, in-pr
 
 <ul>
 {% for p in conf_items %}
-<li id="{{ p.project_id }}" class="research-item">
+<li
+  id="{{ p.project_id }}"
+  class="research-item"
+  data-stage="{{ p.stage | default: 'conference' }}"
+  data-year="{{ p.year | default: 0 }}"
+  data-preprint="{% if p.preprint_url != '' %}true{% else %}false{% endif %}"
+  data-title="{{ p.title | strip | escape }}"
+  data-venue="{{ p.conference_name | default: '' | strip | escape }}"
+>
 {%- assign link_url = "" -%}
 {%- if p.published_url != "" -%}
   {%- assign link_url = p.published_url -%}
@@ -121,7 +144,15 @@ This list is synced from my internal research pool and includes published, in-pr
 
 <ul>
 {% for p in items %}
-<li id="{{ p.project_id }}" class="research-item">
+<li
+  id="{{ p.project_id }}"
+  class="research-item"
+  data-stage="{{ p.stage | default: '' }}"
+  data-year="{{ p.year | default: 0 }}"
+  data-preprint="{% if p.preprint_url != '' %}true{% else %}false{% endif %}"
+  data-title="{{ p.title | strip | escape }}"
+  data-venue="{{ p.target_venue | default: '' | strip | escape }}"
+>
 {%- assign link_url = "" -%}
 {%- if p.published_url != "" -%}
   {%- assign link_url = p.published_url -%}
@@ -168,3 +199,5 @@ This list is synced from my internal research pool and includes published, in-pr
     {% endunless %}
   {% endif %}
 {% endfor %}
+
+</div>

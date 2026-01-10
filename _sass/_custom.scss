@@ -239,6 +239,53 @@ html[data-theme="dark"] .publications ol.bibliography li {
   border-bottom: none;
 }
 
+// Publications: bilingual titles + Cite/Share dropdown
+.title-translation {
+  margin-top: 0.15rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+details.cite-share {
+  display: inline-block;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+details.cite-share > summary {
+  list-style: none;
+}
+
+details.cite-share > summary::-webkit-details-marker {
+  display: none;
+}
+
+.cite-share__panel {
+  margin-top: 0.35rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(120, 120, 120, 0.25);
+  border-radius: 0.5rem;
+  background: rgba(127, 127, 127, 0.06);
+}
+
+.cite-share__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.cite-share__row:last-child {
+  margin-bottom: 0;
+}
+
+.cite-share__hint {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  line-height: 1.25;
+}
+
 // Cards (projects, etc.)
 .card {
   border-radius: 14px;

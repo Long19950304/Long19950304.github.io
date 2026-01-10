@@ -1,0 +1,118 @@
+{%- comment -%}
+  Cite / Share menu for publications.
+  - Uses a <details> disclosure (no Bootstrap dropdown dependency).
+  - Embeds a JSON payload the JS can read to copy/export/share.
+{%- endcomment -%}
+
+{%- assign canonical_url = site.url | append: page.url | append: '#' | append: entry.key -%}
+{%- assign note_down = entry.note | default: '' | downcase -%}
+{%- assign entry_year_num = entry.year | default: 0 | plus: 0 -%}
+{%- assign is_published_or_preprint = false -%}
+{%- if entry_year_num >= 2025 and (note_down contains 'published' or note_down contains 'posted') -%}
+  {%- assign is_published_or_preprint = true -%}
+{%- endif -%}
+
+{%- if is_published_or_preprint -%}
+  {%- capture author_plain -%}
+    {%- for a in entry.author_array -%}
+      {%- if forloop.first == false -%}; {%- endif -%}
+      {{- a.first }} {{ a.last -}}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- assign author_plain = author_plain | strip -%}
+
+  {%- capture ris -%}
+    {%- if entry.type == 'article' -%}
+TY  - JOUR
+    {%- else -%}
+TY  - GEN
+    {%- endif -%}
+    {%- for a in entry.author_array -%}
+AU  - {{ a.first }} {{ a.last }}
+    {%- endfor -%}
+TI  - {{ entry.title | strip }}
+    {%- if entry.journal -%}
+JO  - {{ entry.journal | strip }}
+    {%- elsif entry.booktitle -%}
+T2  - {{ entry.booktitle | strip }}
+    {%- endif -%}
+PY  - {{ entry.year | strip }}
+    {%- if entry.doi -%}
+DO  - {{ entry.doi | strip }}
+    {%- endif -%}
+    {%- if entry.url -%}
+UR  - {{ entry.url | strip }}
+    {%- endif -%}
+ER  -
+  {%- endcapture -%}
+  {%- assign ris = ris | strip -%}
+
+  {%- capture citation_plain -%}
+    {{- author_plain -}}
+    {%- if entry.year -%} ({{ entry.year | strip }}).{%- endif -%}
+    {{- ' ' -}}{{ entry.title | strip }}.
+    {%- if entry.journal -%} {{ entry.journal | strip }}.{%- endif -%}
+    {%- if entry.doi -%} https://doi.org/{{ entry.doi | strip }}{%- endif -%}
+    {%- if entry.doi == blank and entry.url -%} {{ entry.url | strip }}{%- endif -%}
+  {%- endcapture -%}
+  {%- assign citation_plain = citation_plain | strip -%}
+
+  {%- capture payload -%}
+{
+  "key": {{ entry.key | jsonify }},
+  "canonical_url": {{ canonical_url | jsonify }},
+  "title": {{ entry.title | strip | jsonify }},
+  "authors": {{ author_plain | jsonify }},
+  "year": {{ entry.year | default: '' | strip | jsonify }},
+  "doi": {{ entry.doi | default: '' | strip | jsonify }},
+  "url": {{ entry.url | default: '' | strip | jsonify }},
+  "note": {{ entry.note | default: '' | strip | jsonify }},
+  "citation_plain": {{ citation_plain | jsonify }},
+  "bibtex": {{ entry.bibtex | jsonify }},
+  "ris": {{ ris | jsonify }}
+}
+  {%- endcapture -%}
+
+  <details class="cite-share" data-cite-share-key="{{ entry.key }}">
+    <summary class="btn btn-sm z-depth-0 cite-share__summary" role="button" aria-label="Cite and share menu">
+      Cite / Share
+    </summary>
+    <div class="cite-share__panel" role="group" aria-label="Cite and share actions">
+      <div class="cite-share__row">
+        <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_link">Copy link</button>
+        <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_citation">Copy citation</button>
+      </div>
+      <div class="cite-share__row">
+        <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_bibtex">Copy BibTeX</button>
+        <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_ris">Copy RIS</button>
+      </div>
+      <div class="cite-share__row">
+        <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_bibtex">Download BibTeX</button>
+        <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_ris">Download RIS</button>
+      </div>
+      <div class="cite-share__row">
+        <a
+          class="btn btn-sm z-depth-0 cite-share__btn"
+          href="https://twitter.com/intent/tweet?text={{ citation_plain | uri_escape }}&url={{ canonical_url | uri_escape }}"
+          target="_blank"
+          rel="noopener"
+        >
+          Share on X
+        </a>
+        <a
+          class="btn btn-sm z-depth-0 cite-share__btn"
+          href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical_url | uri_escape }}"
+          target="_blank"
+          rel="noopener"
+        >
+          Share on LinkedIn
+        </a>
+      </div>
+      <div class="cite-share__hint">
+        Quick tip: use the audio overview above for a conversational summary, then copy a citation to share the paper.
+      </div>
+    </div>
+    <script type="application/json" class="cite-share__data">{{ payload | strip }}</script>
+  </details>
+{%- endif -%}
+

@@ -4,7 +4,26 @@
   {% assign audio_file = site.static_files | where: "path", audio_path | first %}
   {% if audio_file %}
     <div class="podcast-block">
-      <a class="btn btn-sm z-depth-0 podcast-btn" href="{{ audio_file.path }}" role="button">Listen: audio overview</a>
+      <details class="podcast" data-podcast-key="{{ include.id }}">
+        <summary class="btn btn-sm z-depth-0 podcast-btn" role="button" aria-label="Listen to audio overview">
+          <span class="podcast__summary-label">
+            <i class="ti ti-headphones"></i>
+            Listen: audio overview
+          </span>
+          <i class="ti ti-chevron-down podcast__chev"></i>
+        </summary>
+        <div class="podcast__panel" role="group" aria-label="Podcast player">
+          <audio
+            class="podcast__audio"
+            controls
+            preload="none"
+            data-src="{{ audio_file.path }}"
+          ></audio>
+          <div class="podcast__hint">
+            Tip: the player loads audio only when opened, to keep the page fast.
+          </div>
+        </div>
+      </details>
       {% if podcast.take_home %}
         <div class="podcast-takehome"><strong>Take-home:</strong> {{ podcast.take_home }}</div>
       {% endif %}

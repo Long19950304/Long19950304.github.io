@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+fail=0
+
+echo "Audit: title translations"
+python3 - <<'PY' || exit 2
+import json, re, sys
+from pathlib import Path
+
+pool = json.loads(Path("_data/research_pool.json").read_text())
+translations = {}
+path = Path("_data/title_translations.yml")
+if path.exists():
+    raw = path.read_text().splitlines()
+    key = None
+    for line in raw:
+        if not line.strip():
+            continue
+        if not line.startswith(" "):
+            key = line.split(":", 1)[0].strip()
+            translations[key] = ""
+        else:
+            translations[key] += line.strip() + " "
+    translations = {k: v.strip() for k, v in translations.items()}
+
+cjk = re.compile(r"[\u4e00-\u9fff]")
+missing = []
+for p in pool.get("projects", []):
+    title = p.get("title", "")
+    if cjk.search(title):
+        if not translations.get(p.get("project_id", ""), "").strip():
+            missing.append((p.get("project_id", ""), title))
+
+if missing:
+    print("Missing English translations for:")
+    for pid, title in missing:
+        print(f"- {pid}: {title}")
+    sys.exit(1)
+print("OK: all CJK titles in research_pool have translations.")
+PY
+
+echo
+echo "Audit: podcast audio files"
+python3 - <<'PY' || exit 2
+import sys
+from pathlib import Path
+
+lines = Path("_data/podcasts.yml").read_text().splitlines()
+current_key = None
+audio_by_key = {}
+for raw in lines:
+    line = raw.rstrip("\n")
+    if not line.strip():
+        continue
+    if not line.startswith(" "):
+        if line.endswith(":"):
+            current_key = line[:-1].strip()
+            audio_by_key.setdefault(current_key, "")
+        continue
+    if current_key and line.lstrip().startswith("audio:"):
+        audio_by_key[current_key] = line.split("audio:", 1)[1].strip()
+
+missing = []
+for k, audio in audio_by_key.items():
+    if not audio:
+        continue
+    if not Path(audio).exists():
+        missing.append(f"{k}: {audio}")
+if missing:
+    print("Missing podcast audio files:")
+    for a in missing:
+        print(f"- {a}")
+    sys.exit(1)
+print("OK: all referenced podcast audio files exist.")
+PY
+
+echo
+echo "Audit complete."

@@ -373,6 +373,69 @@ details.cite-share.cite-share--compact > summary {
   margin-top: 0.55rem;
 }
 
+.podcast {
+  display: inline-block;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.podcast > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+}
+
+.podcast > summary::-webkit-details-marker {
+  display: none;
+}
+
+.podcast__summary-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.podcast__chev {
+  opacity: 0.75;
+  transition: transform 160ms ease;
+}
+
+details.podcast[open] .podcast__chev {
+  transform: rotate(180deg);
+}
+
+.podcast__panel {
+  margin-top: 0.35rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
+  max-width: 560px;
+}
+
+.podcast__audio {
+  width: min(520px, 100%);
+}
+
+.podcast__hint {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  line-height: 1.25;
+}
+
+html[data-theme="dark"] .podcast__panel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(28, 28, 29, 0.78);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.45);
+}
+
 // Cards (projects, etc.)
 .card {
   border-radius: 14px;

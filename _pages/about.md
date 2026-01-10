@@ -28,10 +28,19 @@ I build <strong>evaluation-first multi-agent systems</strong> for research and A
 </p>
 
 <div class="cta-row">
-  <a class="btn-cta" href="/research/">Research</a>
-  <a class="btn-cta" href="/publications/">Publications</a>
-  <a class="btn-cta" href="/media/">Media</a>
-  <a class="btn-cta" href="/teaching/">Teaching</a>
+  <a class="btn-cta" href="/research/"><i class="ti ti-flask-2"></i> Research</a>
+  <a class="btn-cta" href="/publications/"><i class="ti ti-file-text"></i> Publications</a>
+  <a class="btn-cta" href="/media/"><i class="ti ti-movie"></i> Media</a>
+  <a class="btn-cta" href="/teaching/"><i class="ti ti-chalkboard"></i> Teaching</a>
+</div>
+
+<div class="now-panel">
+  <div class="now-panel__title">Now</div>
+  <ul class="now-panel__list">
+    <li>On the 2025 academic job market (Communication & Digital Media / computational communication / AI-native workflows).</li>
+    <li>Fastest way to understand my work: open any 2025 paper on <a href="/research/">Research</a> and listen to the two-host audio overview.</li>
+    <li>For CV and full application materials, email me at <a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a>.</li>
+  </ul>
 </div>
 
 <details>
@@ -55,9 +64,9 @@ I build <strong>evaluation-first multi-agent systems</strong> for research and A
 ## Quick links
 
 <div class="cta-row">
-  <a class="btn-cta" href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-  <a class="btn-cta" href="https://orcid.org/0000-0002-3771-4969" target="_blank" rel="noopener">ORCID</a>
-  <a class="btn-cta" href="https://github.com/Long19950304" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn-cta" href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ" target="_blank" rel="noopener"><i class="ti ti-school"></i> Google Scholar</a>
+  <a class="btn-cta" href="https://orcid.org/0000-0002-3771-4969" target="_blank" rel="noopener"><i class="ti ti-id"></i> ORCID</a>
+  <a class="btn-cta" href="https://github.com/Long19950304" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i> GitHub</a>
 </div>
 
 ## What I build

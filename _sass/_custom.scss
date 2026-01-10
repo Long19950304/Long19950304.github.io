@@ -185,6 +185,34 @@ html[data-theme="dark"] .btn-cta {
   margin: 0.25rem 0 1rem;
 }
 
+.now-panel {
+  margin: 0.75rem 0 1.1rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: rgba(127, 127, 127, 0.04);
+}
+
+.now-panel__title {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.45rem;
+}
+
+.now-panel__list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.now-panel__list li + li {
+  margin-top: 0.35rem;
+}
+
+html[data-theme="dark"] .now-panel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(127, 127, 127, 0.06);
+}
+
 // Make the contact icons look intentional (not oversized)
 .post-about .social .contact-icons a {
   font-size: 1.25rem;

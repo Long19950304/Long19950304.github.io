@@ -5,6 +5,8 @@ title: Media
 description: Selected media and creative works.
 nav: true
 nav_order: 4
+lang: en
+translation_key: media
 ---
 
 ## Selected works

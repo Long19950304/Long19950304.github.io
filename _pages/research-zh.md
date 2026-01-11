@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Research
-permalink: /research/
-description: Research directions and selected projects (AE+X).
+title: 研究
+permalink: /zh/research/
+description: 研究方向与项目（AE+X）。
 nav: true
 nav_order: 3
 research_filter: true
-lang: en
+lang: zh
 translation_key: research
 display_categories:
 horizontal: false
 ---
 
 <p class="lead">
-My research program centers on <strong>Agentic Engineering (AE+X)</strong>: building and evaluating multi-agent systems that deliver reliable outcomes in applied communication and digital media contexts.
+我的研究计划聚焦于 <strong>Agentic Engineering（AE+X）</strong>：构建并评估多智能体系统，让其在传播与数字媒体的真实应用场景中稳定产出可依赖的结果。
 </p>
 
 <!-- pages/projects.md -->
@@ -42,10 +42,10 @@ My research program centers on <strong>Agentic Engineering (AE+X)</strong>: buil
   {% endif %}
 </div>
 
-## Research portfolio (synced)
+## 研究清单（自动同步）
 
 <p class="small">
-This list is synced from my internal research pool and includes published, in-press, preprints, and active projects.
+以下条目来自我的内部研究池，包含已发表、已接收、预印本与进行中项目。
 </p>
 
 {% assign ui = site.data.i18n[page.lang] | default: site.data.i18n.en %}
@@ -69,7 +69,7 @@ This list is synced from my internal research pool and includes published, in-pr
 
 {% assign conf_items = pool | where: "kind", "conference_paper" | sort: "conference_date" | reverse %}
 {% if conf_items.size > 0 %}
-### Conference presentations
+### 会议报告
 
 <ul>
 {% for p in conf_items %}
@@ -92,7 +92,7 @@ This list is synced from my internal research pool and includes published, in-pr
 {%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
 {%- assign display_title = p.title -%}
 {%- if translated_title != "" -%}
-  {%- assign display_title = translated_title -%}
+  {%- assign display_title = p.title -%}
 {%- endif -%}
 
 <div class="research-item__headline">
@@ -104,7 +104,7 @@ This list is synced from my internal research pool and includes published, in-pr
 </div>
 
 {% if translated_title != "" %}
-  <div class="research-item__subtitle">{{ p.title }}</div>
+  <div class="research-item__subtitle">{{ translated_title }}</div>
 {% endif %}
 
 {%- if p.conference_name != "" -%}
@@ -165,9 +165,6 @@ This list is synced from my internal research pool and includes published, in-pr
 
 {%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
 {%- assign display_title = p.title -%}
-{%- if translated_title != "" -%}
-  {%- assign display_title = translated_title -%}
-{%- endif -%}
 
 <div class="research-item__headline">
 {%- if link_url != "" -%}
@@ -179,7 +176,7 @@ This list is synced from my internal research pool and includes published, in-pr
 </div>
 
 {% if translated_title != "" %}
-  <div class="research-item__subtitle">{{ p.title }}</div>
+  <div class="research-item__subtitle">{{ translated_title }}</div>
 {% endif %}
 
 <div class="research-item__meta">
@@ -204,3 +201,4 @@ This list is synced from my internal research pool and includes published, in-pr
 {% endfor %}
 
 </div>
+

@@ -4,6 +4,8 @@ permalink: /cv/
 title: CV
 description: Downloadable CV (optional) and application-ready materials.
 nav: false
+lang: en
+translation_key: cv
 ---
 
 ## CV

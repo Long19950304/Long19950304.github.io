@@ -4,6 +4,7 @@
 {%- endcomment -%}
 
 {%- if entry and entry.title and (entry.doi or entry.url or entry.arxiv) -%}
+  {%- assign page_lang = page.lang | default: site.lang | default: "en" -%}
   {%- assign canonical_url = site.url | append: page.url | append: '#' | append: entry.key -%}
 
   {%- assign url = "" -%}
@@ -35,7 +36,7 @@
     "headline": {{ entry.title | strip | jsonify }},
     "url": {{ url | default: canonical_url | strip | jsonify }},
     "mainEntityOfPage": {{ canonical_url | strip | jsonify }},
-    "inLanguage": {{ site.lang | default: "en" | jsonify }},
+    "inLanguage": {{ page_lang | jsonify }},
     "datePublished": {{ entry.year | default: "" | strip | jsonify }},
     "author": [
       {%- for a in entry.author_array -%}

@@ -5,6 +5,8 @@ title: Publications
 description: Peer-reviewed publications and selected working papers.
 nav: true
 nav_order: 2
+lang: en
+translation_key: publications
 ---
 
 <!-- _pages/publications.md -->

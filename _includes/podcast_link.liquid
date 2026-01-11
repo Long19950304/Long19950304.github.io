@@ -1,5 +1,10 @@
 {% assign podcast = site.data.podcasts[include.id] %}
 {% if podcast and podcast.audio %}
+  {% assign ui = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+  {% assign take_home_text = podcast.take_home %}
+  {% if page.lang == "zh" and podcast.take_home_zh %}
+    {% assign take_home_text = podcast.take_home_zh %}
+  {% endif %}
   {% assign audio_path = podcast.audio | prepend: "/" %}
   {% assign audio_file = site.static_files | where: "path", audio_path | first %}
   {% if audio_file %}
@@ -8,7 +13,7 @@
         <summary class="btn btn-sm z-depth-0 podcast-btn" role="button" aria-label="Listen to audio overview">
           <span class="podcast__summary-label">
             <i class="ti ti-headphones"></i>
-            Listen: audio overview
+            {{ ui.podcast.label }}
           </span>
           <i class="ti ti-chevron-down podcast__chev"></i>
         </summary>
@@ -20,14 +25,14 @@
             data-src="{{ audio_file.path }}"
           ></audio>
           <div class="podcast__hint">
-            Tip: the player loads audio only when opened, to keep the page fast.
+            {{ ui.podcast.hint }}
           </div>
         </div>
       </details>
-      {% if podcast.take_home %}
-        <div class="podcast-takehome"><strong>Take-home:</strong> {{ podcast.take_home }}</div>
+      {% if take_home_text %}
+        <div class="podcast-takehome"><strong>{{ ui.podcast.take_home_label }}</strong> {{ take_home_text }}</div>
       {% endif %}
-      <div class="podcast-guidance">Prefer listening to reading? The audio overview gives a short, two-host walkthrough of the paper’s core question, method, and key finding.</div>
+      <div class="podcast-guidance">{{ ui.podcast.guidance }}</div>
     </div>
   {% endif %}
 {% endif %}

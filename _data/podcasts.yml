@@ -3,45 +3,53 @@ long1-desk1-bds-confidence-diversity-framework:
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-bds-confidence-diversity-framework-en.mp3
   take_home: A practical way to assess (and calibrate) the reliability of LLM-based complex qualitative coding using a confidence–diversity lens.
+  take_home_zh: 用“置信度×多样性”的视角，对 LLM 驱动的复杂质性编码进行可靠性评估与校准。
 
 long1-desk1-hec-hierarchical-error-framework:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-hec-hierarchical-error-framework-en.mp3
   take_home: A systematic, multi-level error-correction workflow that improves the robustness of domain-specific AI/LLM outputs.
+  take_home_zh: 一个系统化、分层的误差纠正框架，用于提升领域特定 AI/LLM 输出的稳健性。
 
 long1-desk1-journal-of-family-violence-domestic-violence-framing:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-journal-of-family-violence-domestic-violence-framing-en.mp3
   take_home: Newspaper framing of domestic violence varies across regions, shaping whether the issue is treated as private conflict or public responsibility.
+  take_home_zh: 不同地区报纸对家暴议题的框架差异，会影响它被理解为“私人纠纷”还是“公共责任”。
 
 long1-desk1-macao-media-ecology-generational-differences:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-macao-media-ecology-generational-differences-en.mp3
   take_home: A “small-society” Macau case helps theorize how intergenerational media use patterns emerge and how local ecosystems shape them.
+  take_home_zh: 以“澳门小型社会”为案例，解释代际媒体使用差异如何形成，以及本地生态如何塑造这种差异。
 
 long1-desk1-parental-mediation-digital-media-health-literacy:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-parental-mediation-digital-media-health-literacy-en.mp3
   take_home: Parental mediation is meaningfully linked to children’s digital media use and health literacy, with implications for family and school interventions.
+  take_home_zh: 家长媒介干预与儿童数字媒体使用及健康素养存在显著关联，为家庭与学校干预提供依据。
 
 long1-desk1-pishi-global-south-llm:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-pishi-global-south-llm-en.mp3
   take_home: In the AI era, “orientalism” shifts from simple West–East binaries toward a subtler English-language centrism that structures visibility and authority.
+  take_home_zh: 在 AI 时代，“东方主义”从简单的西方/东方二元转向更隐蔽的英语中心主义，重新组织可见性与话语权。
 
 long1-desk1-scirep-confidence-diversity-framework:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-scirep-confidence-diversity-framework-en.mp3
   take_home: A confidence–diversity framework for calibrating AI judgement in accessible qualitative coding tasks, balancing accuracy with uncertainty awareness.
+  take_home_zh: 在可访问的质性编码任务中，用“置信度×多样性”框架校准 AI 判断，在准确性与不确定性之间取得平衡。
 
 long1-desk1-news-title-framing-older-adults:
   language: en
   provider: notebooklm
   audio: assets/audio/notebooklm/long1-desk1-news-title-framing-older-adults-en.mp3
   take_home: Negative title framing can boost engagement, but it also reinforces skewed representations of older adults with measurable behavioral effects.
+  take_home_zh: 负面标题框架可能提升传播效果，但也会强化对老年群体的偏差表征，并带来可观测的行为影响。

@@ -1,0 +1,82 @@
+en:
+  lang_label: "中文"
+  lang_code: "en"
+  lang_locale: "en_US"
+
+  nav:
+    home: "About"
+    publications: "Publications"
+    research: "Research"
+    media: "Media"
+    teaching: "Teaching"
+    cv: "CV"
+
+  research_filter:
+    placeholder: "Filter by keyword (title/venue)..."
+    all: "All"
+    published: "Published"
+    accepted: "Accepted"
+    preprint: "Preprint"
+
+  cite_share:
+    label: "Cite / Share"
+    export: "Export"
+    share: "Share"
+    copy_citation: "Copy citation"
+    copy_link: "Copy link"
+    copy_bibtex: "Copy BibTeX"
+    download_bibtex: "BibTeX"
+    copy_ris: "Copy RIS"
+    download_ris: "RIS"
+    copy_csl_json: "Copy CSL-JSON"
+    download_csl_json: "CSL-JSON"
+    copy_share_text: "Copy share text"
+    tip: "Tip: listen to the two-host audio overview above for a quick, conversational walkthrough, then share the link + citation."
+
+  podcast:
+    label: "Listen: audio overview"
+    hint: "Tip: the player loads audio only when opened, to keep the page fast."
+    guidance: "Prefer listening to reading? The audio overview gives a short, two-host walkthrough of the paper’s core question, method, and key finding."
+    take_home_label: "Take-home:"
+
+zh:
+  lang_label: "EN"
+  lang_code: "zh"
+  lang_locale: "zh_CN"
+
+  nav:
+    home: "关于"
+    publications: "论文"
+    research: "研究"
+    media: "作品"
+    teaching: "教学"
+    cv: "简历"
+
+  research_filter:
+    placeholder: "按关键词筛选（标题/期刊/会议）..."
+    all: "全部"
+    published: "已发表"
+    accepted: "已接收"
+    preprint: "预印本"
+
+  cite_share:
+    label: "引用 / 分享"
+    export: "导出"
+    share: "分享"
+    copy_citation: "复制引用"
+    copy_link: "复制链接"
+    copy_bibtex: "复制 BibTeX"
+    download_bibtex: "BibTeX"
+    copy_ris: "复制 RIS"
+    download_ris: "RIS"
+    copy_csl_json: "复制 CSL-JSON"
+    download_csl_json: "CSL-JSON"
+    copy_share_text: "复制分享文案"
+    tip: "提示：先听上方双人对谈音频快速了解要点，再分享链接与引用信息。"
+
+  podcast:
+    label: "收听：音频概览"
+    hint: "提示：播放器仅在展开后加载音频，以保持页面加载速度。"
+    guidance: "如果你更喜欢听而不是读：音频概览会用双人对谈的方式快速介绍研究问题、方法与关键发现。"
+    take_home_label: "一句话要点："
+

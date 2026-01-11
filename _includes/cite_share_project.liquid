@@ -4,6 +4,8 @@
   - Pulls author/DOI/container metadata from `_data/research_citations.yml` when available.
 {%- endcomment -%}
 
+{%- assign ui = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+
 {%- assign p = include.project -%}
 {%- if p -%}
 
@@ -175,46 +177,46 @@ ER  -
     <summary class="btn btn-sm z-depth-0 cite-share__summary" role="button" aria-label="Cite and share menu">
       <span class="cite-share__summary-label">
         <i class="ti ti-share"></i>
-        Cite / Share
+        {{ ui.cite_share.label }}
       </span>
       <i class="ti ti-chevron-down cite-share__chev"></i>
     </summary>
     <div class="cite-share__panel" role="group" aria-label="Cite and share actions">
       <div class="cite-share__section">
-        <div class="cite-share__section-title">Export</div>
+        <div class="cite-share__section-title">{{ ui.cite_share.export }}</div>
         <div class="cite-share__grid">
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_citation">
-            <i class="ti ti-copy"></i> Copy citation
+            <i class="ti ti-copy"></i> {{ ui.cite_share.copy_citation }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_link">
-            <i class="ti ti-link"></i> Copy link
+            <i class="ti ti-link"></i> {{ ui.cite_share.copy_link }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_bibtex">
-            <i class="ti ti-braces"></i> Copy BibTeX
+            <i class="ti ti-braces"></i> {{ ui.cite_share.copy_bibtex }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_bibtex">
-            <i class="ti ti-download"></i> BibTeX
+            <i class="ti ti-download"></i> {{ ui.cite_share.download_bibtex }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_ris">
-            <i class="ti ti-file-text"></i> Copy RIS
+            <i class="ti ti-file-text"></i> {{ ui.cite_share.copy_ris }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_ris">
-            <i class="ti ti-download"></i> RIS
+            <i class="ti ti-download"></i> {{ ui.cite_share.download_ris }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_csl_json">
-            <i class="ti ti-code"></i> Copy CSL-JSON
+            <i class="ti ti-code"></i> {{ ui.cite_share.copy_csl_json }}
           </button>
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="download_csl_json">
-            <i class="ti ti-download"></i> CSL-JSON
+            <i class="ti ti-download"></i> {{ ui.cite_share.download_csl_json }}
           </button>
         </div>
       </div>
 
       <div class="cite-share__section">
-        <div class="cite-share__section-title">Share</div>
+        <div class="cite-share__section-title">{{ ui.cite_share.share }}</div>
         <div class="cite-share__grid cite-share__grid--share">
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_share_text">
-            <i class="ti ti-share-2"></i> Copy share text
+            <i class="ti ti-share-2"></i> {{ ui.cite_share.copy_share_text }}
           </button>
           <a
             class="btn btn-sm z-depth-0 cite-share__btn"
@@ -234,7 +236,7 @@ ER  -
           </a>
         </div>
         <div class="cite-share__hint">
-          Tip: use the audio overview for a quick, two-host walkthrough, then share the link + citation.
+          {{ ui.cite_share.tip }}
         </div>
       </div>
     </div>

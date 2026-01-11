@@ -5,6 +5,8 @@ title: Teaching
 description: AI-forward, product- and outcome-oriented teaching.
 nav: true
 nav_order: 5
+lang: en
+translation_key: teaching
 ---
 
 <div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">

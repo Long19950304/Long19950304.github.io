@@ -4,6 +4,8 @@ title: About
 permalink: /
 subtitle: "Agentic Engineering (AE+X): evaluation-first multi-agent workflows."
 nav: false
+lang: en
+translation_key: home
 
 profile:
   align: right

@@ -1,4 +1,7 @@
 (() => {
+  const lang = (document.documentElement.getAttribute("lang") || "en").toLowerCase();
+  const t = (en, zh) => (lang.startsWith("zh") ? zh : en);
+
   const closeAll = (exceptKey) => {
     document.querySelectorAll("details.cite-share[open]").forEach((d) => {
       const key = d.getAttribute("data-cite-share-key") || "";
@@ -95,47 +98,47 @@
 
       if (action === "copy_link") {
         const ok = await textToClipboard(canonicalUrl);
-        flashSummary(root, ok ? "Link copied" : "Copy failed");
+        flashSummary(root, ok ? t("Link copied", "已复制链接") : t("Copy failed", "复制失败"));
         return;
       }
       if (action === "copy_citation") {
         const ok = await textToClipboard(citationPlain);
-        flashSummary(root, ok ? "Citation copied" : "Copy failed");
+        flashSummary(root, ok ? t("Citation copied", "已复制引用") : t("Copy failed", "复制失败"));
         return;
       }
       if (action === "copy_bibtex") {
         const ok = await textToClipboard(bibtex);
-        flashSummary(root, ok ? "BibTeX copied" : "Copy failed");
+        flashSummary(root, ok ? t("BibTeX copied", "已复制 BibTeX") : t("Copy failed", "复制失败"));
         return;
       }
       if (action === "copy_ris") {
         const ok = await textToClipboard(ris);
-        flashSummary(root, ok ? "RIS copied" : "Copy failed");
+        flashSummary(root, ok ? t("RIS copied", "已复制 RIS") : t("Copy failed", "复制失败"));
         return;
       }
       if (action === "copy_csl_json") {
         const ok = await textToClipboard(cslJson);
-        flashSummary(root, ok ? "CSL-JSON copied" : "Copy failed");
+        flashSummary(root, ok ? t("CSL-JSON copied", "已复制 CSL-JSON") : t("Copy failed", "复制失败"));
         return;
       }
       if (action === "copy_share_text") {
         const ok = await textToClipboard(shareText);
-        flashSummary(root, ok ? "Share text copied" : "Copy failed");
+        flashSummary(root, ok ? t("Share text copied", "已复制分享文案") : t("Copy failed", "复制失败"));
         return;
       }
       if (action === "download_bibtex") {
         downloadText(`${key}.bib`, bibtex, "application/x-bibtex;charset=utf-8");
-        flashSummary(root, "Downloading…");
+        flashSummary(root, t("Downloading…", "正在下载…"));
         return;
       }
       if (action === "download_ris") {
         downloadText(`${key}.ris`, ris, "application/x-research-info-systems;charset=utf-8");
-        flashSummary(root, "Downloading…");
+        flashSummary(root, t("Downloading…", "正在下载…"));
         return;
       }
       if (action === "download_csl_json") {
         downloadText(`${key}.csl.json`, cslJson, "application/vnd.citationstyles.csl+json;charset=utf-8");
-        flashSummary(root, "Downloading…");
+        flashSummary(root, t("Downloading…", "正在下载…"));
         return;
       }
     });

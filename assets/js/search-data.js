@@ -9,12 +9,26 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-论文",
+          title: "论文",
+          description: "已发表论文与部分工作论文（精选）。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/publications/";
+          },
+        },{id: "nav-publications",
           title: "Publications",
           description: "Peer-reviewed publications and selected working papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-研究",
+          title: "研究",
+          description: "研究方向与项目（AE+X）。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/research/";
           },
         },{id: "nav-research",
           title: "Research",
@@ -23,12 +37,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
+        },{id: "nav-作品",
+          title: "作品",
+          description: "影像与创作作品（节选）。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/media/";
+          },
         },{id: "nav-media",
           title: "Media",
           description: "Selected media and creative works.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/media/";
+          },
+        },{id: "nav-教学",
+          title: "教学",
+          description: "面向 AI 时代、以产品与成果为导向的教学设计。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/teaching/";
           },
         },{id: "nav-teaching",
           title: "Teaching",

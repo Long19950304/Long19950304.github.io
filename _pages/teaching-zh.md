@@ -10,7 +10,7 @@ translation_key: teaching
 ---
 
 <div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
-  <img src="/assets/img/teaching/studio-teams.svg" alt="工作室式教学：团队协作 + 结构化竞赛" style="width: 100%; height: auto; border-radius: 14px;">
+  <img src="/assets/img/teaching/studio-teams-zh.svg" alt="工作室式教学：团队协作 + 结构化竞赛" style="width: 100%; height: auto; border-radius: 14px;">
 </div>
 
 我设计的课程强调 **AI-forward**、**产品/成果导向**，并突出 **团队合作 + 结构化竞赛**（团队内强协作；团队间透明竞争）。
@@ -25,4 +25,3 @@ translation_key: teaching
 ## 工作室式课程（协作 + 竞赛）
 
 学生以小组形式构建 AI 时代的产品（应用、自动化工作流，或媒体/知识 SaaS 原型）。团队内协作被制度化激励；团队间竞争以成果评估为导向。
-

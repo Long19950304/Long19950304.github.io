@@ -6,6 +6,7 @@ title: blank # use "blank" to render first/middle/last name in the header
 first_name: Zhilong
 middle_name: George
 last_name: Zhao
+chinese_name: 赵志龙
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Communication & Digital Media | Agentic Engineering (AE+X) | LLM evaluation and reliable AI-native workflows.

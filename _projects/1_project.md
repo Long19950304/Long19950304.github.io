@@ -2,6 +2,8 @@
 layout: page
 title: "Agentic Engineering (AE+X)"
 description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes."
+title_zh: "多智能体工程（AE+X）"
+description_zh: "以评估为先的研究计划：配置、测试与部署多智能体系统，使其在真实工作流中稳定产出可靠结果。"
 img: /assets/img/projects/agentic-engineering.svg
 importance: 1
 category: research

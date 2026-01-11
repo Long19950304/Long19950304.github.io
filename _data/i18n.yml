@@ -18,6 +18,19 @@ en:
     accepted: "Accepted"
     preprint: "Preprint"
 
+  stages:
+    conference: "Conference presentations"
+    published: "Published"
+    accepted: "Accepted"
+    revise_resubmit: "Revise & resubmit"
+    submitted: "Submitted"
+    writing: "Writing"
+    analysis: "Analysis"
+    build: "Build"
+    design: "Design"
+    data_inventory: "Data inventory"
+    idea: "Idea"
+
   cite_share:
     label: "Cite / Share"
     export: "Export"
@@ -59,6 +72,19 @@ zh:
     accepted: "已接收"
     preprint: "预印本"
 
+  stages:
+    conference: "会议报告"
+    published: "已发表"
+    accepted: "已接收"
+    revise_resubmit: "大修/返修"
+    submitted: "已投稿"
+    writing: "写作中"
+    analysis: "分析中"
+    build: "构建中"
+    design: "设计中"
+    data_inventory: "数据盘点"
+    idea: "想法"
+
   cite_share:
     label: "引用 / 分享"
     export: "导出"
@@ -79,4 +105,3 @@ zh:
     hint: "提示：播放器仅在展开后加载音频，以保持页面加载速度。"
     guidance: "如果你更喜欢听而不是读：音频概览会用双人对谈的方式快速介绍研究问题、方法与关键发现。"
     take_home_label: "一句话要点："
-

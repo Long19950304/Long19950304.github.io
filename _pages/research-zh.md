@@ -69,9 +69,9 @@ horizontal: false
 
 {% assign conf_items = pool | where: "kind", "conference_paper" | sort: "conference_date" | reverse %}
 {% if conf_items.size > 0 %}
-### 会议报告
-
-<ul>
+<details class="research-stage" data-research-stage="conference" open>
+  <summary><strong>{{ ui.stages.conference | default: "会议报告" }} ({{ conf_items.size }})</strong></summary>
+  <ul>
 {% for p in conf_items %}
 <li
   id="{{ p.project_id }}"
@@ -121,31 +121,23 @@ horizontal: false
   {%- endif -%}
   {%- assign where_parts = where_parts | append: p.conference_date -%}
 {%- endif -%}
-  {%- if where_parts != "" -%}
+{%- if where_parts != "" -%}
   ({{ where_parts }})
 {%- endif -%}
 </li>
 {% endfor %}
 </ul>
+</details>
 {% endif %}
 
 {% for stage in stage_order %}
   {% assign items = pool | where: "stage", stage %}
   {% if items.size > 0 %}
-    {% capture stage_label %}{{ stage | replace: "_", " " | capitalize }} ({{ items.size }}){% endcapture %}
-    {% assign is_expanded = false %}
-    {% if expanded_stages contains stage %}
-      {% assign is_expanded = true %}
-    {% endif %}
-
-    {% if is_expanded %}
-### {{ stage_label }}
-    {% else %}
-<details>
-  <summary><strong>{{ stage_label }}</strong></summary>
-    {% endif %}
-
-<ul>
+    {% assign stage_fallback = stage | replace: "_", " " | capitalize %}
+    {% assign stage_name = ui.stages[stage] | default: stage_fallback %}
+    <details class="research-stage" data-research-stage="{{ stage }}"{% if expanded_stages contains stage %} open{% endif %}>
+      <summary><strong>{{ stage_name }} ({{ items.size }})</strong></summary>
+      <ul>
 {% for p in items %}
 <li
   id="{{ p.project_id }}"
@@ -192,13 +184,9 @@ horizontal: false
 {% include podcast_link.liquid id=p.project_id %}
 </li>
 {% endfor %}
-</ul>
-
-    {% unless is_expanded %}
-</details>
-    {% endunless %}
+      </ul>
+    </details>
   {% endif %}
 {% endfor %}
 
 </div>
-

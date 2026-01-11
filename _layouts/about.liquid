@@ -4,9 +4,19 @@ layout: default
 <div class="post post-about">
   <header class="post-header post-header--hero">
     <h1 class="post-title">
+      {% assign lang = page.lang | default: site.lang | default: "en" %}
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        {% assign chinese_name = site.chinese_name | default: "" %}
+        {% capture english_name %}<span class="font-weight-bold">{{ site.first_name }}</span>{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+        {% if chinese_name != "" %}
+          {% if lang == "zh" %}
+            <span class="font-weight-bold">{{ chinese_name }}</span>（{{ english_name }}）
+          {% else %}
+            {{ english_name }} ({{ chinese_name }})
+          {% endif %}
+        {% else %}
+          {{ english_name }}
+        {% endif %}
       {% else %}
         {{ site.title }}
       {% endif %}

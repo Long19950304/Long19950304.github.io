@@ -394,6 +394,37 @@ details.cite-share.cite-share--compact > summary {
   margin-top: 0.55rem;
 }
 
+details.research-stage {
+  margin: 0.9rem 0;
+}
+
+details.research-stage > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  padding: 0.15rem 0;
+}
+
+details.research-stage > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.research-stage > summary::before {
+  content: "▸";
+  opacity: 0.65;
+  transform: translateY(-1px);
+}
+
+details.research-stage[open] > summary::before {
+  content: "▾";
+}
+
+details.research-stage > ul {
+  margin-top: 0.4rem;
+}
+
 .research-filter {
   margin: 0.75rem 0 0.85rem;
   padding: 0.75rem 0.8rem;

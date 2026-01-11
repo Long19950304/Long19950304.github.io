@@ -97,9 +97,9 @@
 
   <!-- Title -->
   <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-    <text x="110" y="185" font-size="56" font-weight="800">Studio Teaching</text>
+    <text x="110" y="185" font-size="56" font-weight="800">工作室式教学</text>
     <text x="110" y="228" font-size="26" font-weight="600" opacity="0.85">
-      frontier AI + applied learning · team sprints · critique loops · ship outcomes
+      前沿 AI + 应用学习 · 团队冲刺 · 点评循环 · 交付成果
     </text>
   </g>
 
@@ -120,10 +120,10 @@
     </g>
 
     <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-      <text x="260" y="318" font-size="26" font-weight="800" text-anchor="start">Brief</text>
-      <text x="505" y="318" font-size="26" font-weight="800" text-anchor="start">Build</text>
-      <text x="745" y="318" font-size="26" font-weight="800" text-anchor="start">Evaluate</text>
-      <text x="990" y="318" font-size="26" font-weight="800" text-anchor="start">Demo</text>
+      <text x="260" y="318" font-size="26" font-weight="800" text-anchor="start">任务</text>
+      <text x="505" y="318" font-size="26" font-weight="800" text-anchor="start">构建</text>
+      <text x="745" y="318" font-size="26" font-weight="800" text-anchor="start">评估</text>
+      <text x="990" y="318" font-size="26" font-weight="800" text-anchor="start">展示</text>
     </g>
 
     <!-- arrows -->
@@ -146,9 +146,9 @@
     </g>
 
     <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b1220">
-      <text x="140" y="410" font-size="26" font-weight="800">Team A</text>
-      <text x="475" y="410" font-size="26" font-weight="800">Team B</text>
-      <text x="810" y="410" font-size="26" font-weight="800">Team C</text>
+      <text x="140" y="410" font-size="26" font-weight="800">A 组</text>
+      <text x="475" y="410" font-size="26" font-weight="800">B 组</text>
+      <text x="810" y="410" font-size="26" font-weight="800">C 组</text>
     </g>
 
     <!-- avatars + collaboration -->
@@ -193,9 +193,9 @@
       <path d="M820 510 l18 18 l36 -44"/>
     </g>
     <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" fill="#0b5fff" opacity="0.90">
-      <text x="205" y="525" font-size="18" font-weight="800">prototype</text>
-      <text x="540" y="525" font-size="18" font-weight="800">evaluation</text>
-      <text x="875" y="525" font-size="18" font-weight="800">iteration</text>
+      <text x="205" y="525" font-size="18" font-weight="800">原型</text>
+      <text x="540" y="525" font-size="18" font-weight="800">评估</text>
+      <text x="875" y="525" font-size="18" font-weight="800">迭代</text>
     </g>
   </g>
 
@@ -207,7 +207,7 @@
       <use href="#icon-trophy"/>
     </g>
     <text x="195" y="583" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" font-size="22" font-weight="900" fill="#0b5fff">
-      Rubrics + demo day · outcomes + evidence
+      评分量表 + Demo Day · 产出 + 证据
     </text>
 
     <!-- Module + Responsible AI chips (icon-only for clarity) -->

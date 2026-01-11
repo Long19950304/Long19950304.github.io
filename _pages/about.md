@@ -34,15 +34,6 @@ I build <strong>evaluation-first multi-agent systems</strong> for research and A
   <a class="btn-cta" href="/teaching/"><i class="ti ti-chalkboard"></i> Teaching</a>
 </div>
 
-<div class="now-panel">
-  <div class="now-panel__title">Now</div>
-  <ul class="now-panel__list">
-    <li>On the 2025 academic job market (Communication & Digital Media / computational communication / AI-native workflows).</li>
-    <li>Fastest way to understand my work: open any 2025 paper on <a href="/research/">Research</a> and listen to the two-host audio overview.</li>
-    <li>For CV and full application materials, email me at <a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a>.</li>
-  </ul>
-</div>
-
 <details>
   <summary><strong>Background</strong></summary>
   <div style="margin-top: 0.75rem;">
@@ -60,14 +51,6 @@ I build <strong>evaluation-first multi-agent systems</strong> for research and A
 - **AE for social science**: reliability and benchmarking for LLM-assisted qualitative analysis (complex coding, calibration, error analysis).
 - **AE for media workflows**: code-first multi-model/agentic pipelines for scripting → visuals → subtitles → packaging → publishing, with evaluation and governance as first-class outputs.
 - **AE for applied learning**: studio-style teaching that links prototype building to evaluation, documentation, and responsible AI practice.
-
-## Quick links
-
-<div class="cta-row">
-  <a class="btn-cta" href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ" target="_blank" rel="noopener"><i class="ti ti-school"></i> Google Scholar</a>
-  <a class="btn-cta" href="https://orcid.org/0000-0002-3771-4969" target="_blank" rel="noopener"><i class="ti ti-id"></i> ORCID</a>
-  <a class="btn-cta" href="https://github.com/Long19950304" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i> GitHub</a>
-</div>
 
 ## What I build
 

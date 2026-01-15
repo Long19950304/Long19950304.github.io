@@ -142,3 +142,21 @@ translation_key: media
   </video>
 </div>
 {% endif %}
+
+### *Xianxian Dialogues / 先贤对谈*
+
+- AI-native dialogue video series (multi-camera interview format)
+
+**Selected posters**
+
+{% assign xx1 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep01-poster.jpg" | first %}
+{% assign xx2 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep02-poster.jpg" | first %}
+{% assign xx3 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep03-poster.jpg" | first %}
+{% assign xx4 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep04-poster.jpg" | first %}
+
+<div class="media-gallery media-gallery--16x9">
+  {% if xx1 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep01-poster.jpg" alt="Xianxian Dialogues EP01 poster" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+  {% if xx2 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep02-poster.jpg" alt="Xianxian Dialogues EP02 poster" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+  {% if xx3 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep03-poster.jpg" alt="Xianxian Dialogues EP03 poster" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+  {% if xx4 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep04-poster.jpg" alt="Xianxian Dialogues EP04 poster" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+</div>

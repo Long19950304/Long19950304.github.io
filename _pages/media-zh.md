@@ -86,3 +86,20 @@ translation_key: media
 </div>
 {% endif %}
 
+### *先贤对谈 / Xianxian Dialogues*
+
+- AI-native 的对谈类视频节目（多机位访谈形式）
+
+**海报（节选）**
+
+{% assign xx1 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep01-poster.jpg" | first %}
+{% assign xx2 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep02-poster.jpg" | first %}
+{% assign xx3 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep03-poster.jpg" | first %}
+{% assign xx4 = site.static_files | where: "path", "/assets/img/media/xianxian-dialogues/ep04-poster.jpg" | first %}
+
+<div class="media-gallery media-gallery--16x9">
+  {% if xx1 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep01-poster.jpg" alt="先贤对谈 EP01 海报" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+  {% if xx2 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep02-poster.jpg" alt="先贤对谈 EP02 海报" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+  {% if xx3 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep03-poster.jpg" alt="先贤对谈 EP03 海报" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+  {% if xx4 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep04-poster.jpg" alt="先贤对谈 EP04 海报" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+</div>

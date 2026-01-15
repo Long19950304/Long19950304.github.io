@@ -172,7 +172,16 @@ horizontal: false
 {% endif %}
 
 <div class="research-item__meta">
+{%- if p.stage == "published" or p.stage == "accepted" -%}
+  {%- if p.target_venue != "" -%}
+    <em>{{ p.target_venue }}</em>
+  {%- endif -%}
+{%- endif -%}
+
 {%- if p.year -%}
+  {%- if p.stage == "published" or p.stage == "accepted" -%}
+    {%- if p.target_venue != "" -%} {% endif -%}
+  {%- endif -%}
   ({{ p.year }})
 {%- endif -%}
 </div>

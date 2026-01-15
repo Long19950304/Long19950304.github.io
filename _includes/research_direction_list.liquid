@@ -54,7 +54,12 @@
     {%- endif -%}
 
     <div class="research-item__meta">
-      {%- if p.year -%} ({{ p.year }}){%- endif -%}
+      {%- assign show_venue = false -%}
+      {%- if p.stage == "published" or p.stage == "accepted" -%}
+        {%- assign show_venue = true -%}
+      {%- endif -%}
+      {%- if show_venue and p.target_venue != "" -%}<em>{{ p.target_venue }}</em>{%- endif -%}
+      {%- if p.year -%}{% if show_venue and p.target_venue != "" %} {% endif %}({{ p.year }}){%- endif -%}
       {%- if p.stage != "" -%}
         {%- assign stage_key = p.stage | default: "" -%}
         {%- assign stage_label = ui.stages[stage_key] | default: (stage_key | replace: "_", " ") -%}

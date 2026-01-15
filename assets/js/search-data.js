@@ -70,21 +70,41 @@ ninja.data = [{
           description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-多智能体工程-ae-x",
+          title: '多智能体工程（AE+X）',
+          description: "以评估为先的研究计划：配置、测试与部署多智能体系统，使其在真实工作流中稳定产出可靠结果。",
+          section: "Projects",handler: () => {
+              window.location.href = "/zh/projects/1_project/";
             },},{id: "projects-reliable-llm-assisted-qualitative-analysis",
           title: 'Reliable LLM-Assisted Qualitative Analysis',
           description: "Benchmarks, calibration, and QA for human/LLM hybrid coding in communication research.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-llm-辅助质性分析的可靠性",
+          title: 'LLM 辅助质性分析的可靠性',
+          description: "面向传播研究的人机协同编码：基准评测、校准与质量保障（QA），让复杂质性分析更可辩护。",
+          section: "Projects",handler: () => {
+              window.location.href = "/zh/projects/2_project/";
             },},{id: "projects-computational-social-science-amp-digital-methods",
           title: 'Computational Social Science &amp;amp; Digital Methods',
           description: "Computational communication research using large-scale digital trace data, measurement, and causal designs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-计算传播与数字方法",
+          title: '计算传播与数字方法',
+          description: "用大规模数字痕迹数据、测量与因果识别设计，开展可复现、可检验的计算传播/计算社会科学研究。",
+          section: "Projects",handler: () => {
+              window.location.href = "/zh/projects/3_project/";
             },},{id: "projects-ai-native-media-pipelines",
           title: 'AI-Native Media Pipelines',
           description: "Code-first multi-model pipelines for scripting → visuals → subtitles → packaging → publishing (with evaluation and QA).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "projects-ai-native-媒体生产流水线",
+          title: 'AI-native 媒体生产流水线',
+          description: "代码优先的多模型/多智能体流水线：脚本→视觉→字幕→打包→发布，并内置评估与质量门控。",
+          section: "Projects",handler: () => {
+              window.location.href = "/zh/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',

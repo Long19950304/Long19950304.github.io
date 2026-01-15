@@ -39,7 +39,10 @@
     {%- assign primary_url = meta.url -%}
   {%- endif -%}
 
-  {%- assign container_title = p.target_venue | default: "" -%}
+  {%- assign container_title = "" -%}
+  {%- if p.stage == "published" or p.stage == "accepted" -%}
+    {%- assign container_title = p.target_venue | default: "" -%}
+  {%- endif -%}
   {%- if meta and meta.container_title -%}
     {%- assign container_title = meta.container_title -%}
   {%- endif -%}

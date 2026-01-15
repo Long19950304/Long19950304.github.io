@@ -24,8 +24,3 @@ translation_key: project-agentic-engineering
 <p class="small">
 完整清单（含引用导出/分享按钮）见：<a href="/zh/research/">研究</a>。
 </p>
-
-## 相关媒体与 Demo
-
-- 代表性的 AI-native 创作作品见：<a href="/zh/media/">作品</a>（如 *异次元访谈室*）。
-- 与工程流水线更直接相关的方向见：<a href="/zh/projects/4_project/">AI-native 媒体生产流水线</a>。

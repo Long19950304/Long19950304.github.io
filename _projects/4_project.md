@@ -30,4 +30,3 @@ See also: the full research portfolio with cite/export tools on <a href="/resear
 ## Related media & demos
 
 - Selected stills and a sample clip are on <a href="/media/">Media</a> (*Interdimensional Interview Room / 异次元访谈室*).
-- Film project materials are also on <a href="/media/">Media</a> (*Chinese Passenger / 普快列车*).

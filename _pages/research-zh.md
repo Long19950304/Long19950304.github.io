@@ -172,10 +172,6 @@ horizontal: false
 {% endif %}
 
 <div class="research-item__meta">
-{%- if p.target_venue != "" -%}
-  <em>{{ p.target_venue }}</em>
-{%- endif -%}
-
 {%- if p.year -%}
   ({{ p.year }})
 {%- endif -%}

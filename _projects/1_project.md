@@ -26,8 +26,3 @@ Key themes:
 <p class="small">
 See also: the full research portfolio with cite/export tools on <a href="/research/">Research</a>.
 </p>
-
-## Related media & demos
-
-- AI-native creative work examples are on <a href="/media/">Media</a> (e.g., *Interdimensional Interview Room / 异次元访谈室*).
-- For engineering pipelines, see <a href="/projects/4_project/">AI-Native Media Pipelines</a>.

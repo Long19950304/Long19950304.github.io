@@ -28,4 +28,3 @@ translation_key: project-ai-native-media-pipelines
 ## 相关媒体与 Demo
 
 - 作品示例与截图见：<a href="/zh/media/">作品</a>（如 *异次元访谈室*）。
-- 电影项目素材见：<a href="/zh/media/">作品</a>（*普快列车*）。

@@ -49,6 +49,12 @@
 {% if page.translation_key %}
   {% assign en_page = site.pages | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
   {% assign zh_page = site.pages | where: "translation_key", page.translation_key | where: "lang", "zh" | first %}
+  {% if en_page == nil %}
+    {% assign en_page = site.projects | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
+  {% endif %}
+  {% if zh_page == nil %}
+    {% assign zh_page = site.projects | where: "translation_key", page.translation_key | where: "lang", "zh" | first %}
+  {% endif %}
   {% if en_page %}
     <link rel="alternate" hreflang="en" href="{{ en_page.url | absolute_url }}">
     <link rel="alternate" hreflang="x-default" href="{{ en_page.url | absolute_url }}">

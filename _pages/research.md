@@ -20,7 +20,7 @@ My research program centers on <strong>Agentic Engineering (AE+X)</strong>: buil
 <div class="projects">
 <!-- Display projects without categories -->
 
-{% assign sorted_projects = site.projects | where: "category", "research" | sort: "importance" %}
+{% assign sorted_projects = site.projects | where: "category", "research" | where: "lang", page.lang | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 

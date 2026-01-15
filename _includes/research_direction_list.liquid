@@ -1,0 +1,70 @@
+{%- comment -%}
+  Render a compact, language-aware list of related research-pool items by project_id.
+
+  Usage:
+    {% include research_direction_list.liquid ids="id1,id2,id3" %}
+{%- endcomment -%}
+
+{%- assign pool = site.data.research_pool.projects -%}
+{%- assign ids = include.ids | default: "" | split: "," -%}
+{%- assign lang = page.lang | default: site.lang | default: "en" -%}
+{%- assign ui = site.data.i18n[lang] | default: site.data.i18n.en -%}
+
+{%- if ids.size > 0 -%}
+<ul class="research-direction-list">
+{%- for rid in ids -%}
+  {%- assign rid_clean = rid | strip -%}
+  {%- if rid_clean == "" -%}{%- continue -%}{%- endif -%}
+
+  {%- assign p = pool | where: "project_id", rid_clean | first -%}
+  {%- if p == nil -%}{%- continue -%}{%- endif -%}
+
+  {%- assign link_url = "" -%}
+  {%- if p.published_url != "" -%}
+    {%- assign link_url = p.published_url -%}
+  {%- elsif p.preprint_url != "" -%}
+    {%- assign link_url = p.preprint_url -%}
+  {%- endif -%}
+
+  {%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
+  {%- assign display_title = p.title -%}
+  {%- assign subtitle = "" -%}
+  {%- if translated_title != "" -%}
+    {%- if lang == "en" -%}
+      {%- assign display_title = translated_title -%}
+      {%- assign subtitle = p.title -%}
+    {%- else -%}
+      {%- assign display_title = p.title -%}
+      {%- assign subtitle = translated_title -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  <li class="research-item">
+    <div class="research-item__headline">
+      {%- if link_url != "" -%}
+        <a href="{{ link_url }}" target="_blank" rel="noopener">{{ display_title }}</a>
+      {%- else -%}
+        {{ display_title }}
+      {%- endif -%}
+      {% include cite_share_project.liquid project=p %}
+    </div>
+
+    {%- if subtitle != "" -%}
+      <div class="research-item__subtitle">{{ subtitle }}</div>
+    {%- endif -%}
+
+    <div class="research-item__meta">
+      {%- if p.target_venue != "" -%}<em>{{ p.target_venue }}</em>{%- endif -%}
+      {%- if p.year -%} ({{ p.year }}){%- endif -%}
+      {%- if p.stage != "" -%}
+        {%- assign stage_key = p.stage | default: "" -%}
+        {%- assign stage_label = ui.stages[stage_key] | default: (stage_key | replace: "_", " ") -%}
+        <span class="research-item__stage">— {{ stage_label }}</span>
+      {%- endif -%}
+    </div>
+
+    {% include podcast_link.liquid id=p.project_id %}
+  </li>
+{%- endfor -%}
+</ul>
+{%- endif -%}

@@ -54,8 +54,8 @@
 - title: Skills
   type: list
   contents:
-    - Python; reproducible research workflows; evaluation harness design
-    - LLM evaluation; quality assessment and calibration; benchmarking
-    - Agentic engineering: tool-using agents; multi-agent orchestration (prototype-level); workflow design and testing
-    - Languages: Mandarin (fluent); English (fluent); Cantonese (basic)
-    - AI-native media: code-first multi-model pipelines for end-to-end content production and publishing
+    - Statistical modeling for communication research: regression/GLM; multilevel models; measurement and reliability; survey and observational designs
+    - LLM evaluation for complex qualitative coding: rubric-based assessment; calibration; confidence scoring; benchmark design; quality assurance
+    - Prompt & agentic engineering: prompt/rubric design; tool-using agents; multi-agent orchestration (prototype-level); evaluation-driven iteration; automation and QA
+    - AI-native media: code-first multimodal pipelines for scripting, visuals, subtitles, packaging, and publishing
+    - Languages: Mandarin (native); English (fluent); Cantonese (basic)

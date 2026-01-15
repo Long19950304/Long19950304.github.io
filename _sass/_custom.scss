@@ -390,8 +390,20 @@ details.cite-share.cite-share--compact > summary {
   opacity: 0.9;
 }
 
+.research-item__stage {
+  opacity: 0.75;
+}
+
 .research-item .podcast-block {
   margin-top: 0.55rem;
+}
+
+.research-direction-list {
+  margin-top: 0.55rem;
+}
+
+.research-direction-list > li {
+  margin-bottom: 0.95rem;
 }
 
 details.research-stage {

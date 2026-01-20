@@ -417,40 +417,57 @@ def _format_linkedin_post(
             ]
         )
 
-    max_items_total = 6 if text_mode == "en" else 10
-    rendered = 0
-    for cat, cat_items in groups:
-        if not cat_items:
-            continue
-        # Category header
-        if text_mode == "en":
-            lines.append(cat)
-        else:
-            lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
-        for it in cat_items:
-            if rendered >= max_items_total:
-                break
+    if text_mode == "en":
+        # LinkedIn EN-only: keep it scannable (no category blocks); rely on the attached card + full list.
+        picks: list[dict[str, Any]] = []
+        for _, cat_items in groups:
+            for it in cat_items:
+                t_en = (it.get("title") or "").strip()
+                u = (it.get("url") or "").strip()
+                if t_en and u:
+                    picks.append(it)
+        picks = picks[:3]
+
+        for it in picks:
             t_en = (it.get("title") or "").strip()
-            t_zh = (it.get("title_zh") or "").strip()
             u = (it.get("url") or "").strip()
-            if not t_en or not u:
-                continue
-            b_en = blurb(it, "en")
-            b_zh = blurb(it, "zh") if text_mode != "en" else ""
-            # One compact bilingual line per item; details live on the digest page.
-            head = f"- {t_en}"
-            if text_mode != "en" and t_zh and t_zh != t_en:
-                head += f" / {t_zh}"
+            b_en = _truncate(blurb(it, "en"), 140)
+            head = f"- {_truncate(t_en, 120)}"
             if b_en:
                 head += f" — {b_en}"
-            if text_mode != "en" and b_zh and b_zh != b_en:
-                head += f" / {b_zh}"
             lines.append(head)
             lines.append(f"  {u}")
-            rendered += 1
-        lines.append("")
-        if rendered >= max_items_total:
-            break
+            lines.append("")
+    else:
+        max_items_total = 10
+        rendered = 0
+        for cat, cat_items in groups:
+            if not cat_items:
+                continue
+            lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
+            for it in cat_items:
+                if rendered >= max_items_total:
+                    break
+                t_en = (it.get("title") or "").strip()
+                t_zh = (it.get("title_zh") or "").strip()
+                u = (it.get("url") or "").strip()
+                if not t_en or not u:
+                    continue
+                b_en = blurb(it, "en")
+                b_zh = blurb(it, "zh")
+                head = f"- {t_en}"
+                if t_zh and t_zh != t_en:
+                    head += f" / {t_zh}"
+                if b_en:
+                    head += f" — {b_en}"
+                if b_zh and b_zh != b_en:
+                    head += f" / {b_zh}"
+                lines.append(head)
+                lines.append(f"  {u}")
+                rendered += 1
+            lines.append("")
+            if rendered >= max_items_total:
+                break
 
     if text_mode != "en":
         # Discussion prompts (max 2) at the end.
@@ -487,24 +504,23 @@ def _format_x_thread(
 
     if text_mode == "en":
         # Single post for X: keep it lightweight; attach BOTH cards here.
-        picks: list[tuple[str, str, str]] = []
+        picks: list[tuple[str, str]] = []
         for _, cat_items in groups:
             for it in cat_items:
                 t = (it.get("title") or "").strip()
-                w = (it.get("why") or "").strip()
                 u = (it.get("url") or "").strip()
                 if t and u:
-                    picks.append((t, w, u))
+                    picks.append((t, u))
         picks = picks[:2]  # keep within X length limits
 
         lines = [
-            f"Daily Digest ({date.isoformat()}) — cards attached (EN + Chinese).",
+            f"Daily Digest ({date.isoformat()}). Cards: EN + Chinese.",
             f"Full list: {urls['en']}",
             "",
         ]
-        for t, w, u in picks:
-            # Titles only (keep under length limits); details live on the digest page.
-            lines.extend([f"- {t}", u, ""])
+        for t, u in picks:
+            # One-line items: readable, within length limits; details live on the digest page.
+            lines.append(f"{_truncate(t, 72)}: {u}")
         return ["\n".join([ln for ln in lines if ln is not None]).strip()]
 
     # Tweet 1: short bilingual intro + canonical links (attach BOTH cards here).

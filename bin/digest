@@ -374,79 +374,62 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
     title_zh = (digest.get("title_zh") or f"每日简报 — {date.isoformat()}").strip()
 
     def blurb(it: dict[str, Any], lang: str) -> str:
-        take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
+        # For social, prefer the short "why" line (less templated, avoids mid-sentence truncation).
         why = _pick_lang(it, "why", "why_zh", lang)
-        has_prompt = bool((it.get("prompt") or "").strip() or (it.get("prompt_zh") or "").strip())
-        # Only a couple of items should carry a longer "take-home" in the post;
-        # the rest stay short, with details living on the digest page.
-        if has_prompt:
-            if lang == "zh":
-                return _first_sentence(take, 70) or why
-            return _first_sentence(take, 120) or why
-        if lang == "zh":
-            return why or _first_sentence(take, 52)
-        return why or _first_sentence(take, 90)
-
-    highlights = []
-    for it in items:
-        if (it.get("prompt") or "").strip() or (it.get("prompt_zh") or "").strip():
-            highlights.append(it)
+        if why:
+            return why
+        take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
+        return _first_sentence(take, 110 if lang != "zh" else 70)
 
     lines: list[str] = [
         f"{title_en} / {title_zh}",
         "",
-        "Today's reading bulletin — EN + 中文 cards attached.",
-        "今日阅读简报（附英文/中文两张卡片）。",
+        "EN + 中文 cards attached. Full lists:",
+        "附英文/中文两张卡片；完整列表：",
     ]
-
-    if highlights:
-        h_en = [((it.get("title") or "").strip()) for it in highlights[:2] if (it.get("title") or "").strip()]
-        h_zh = [((it.get("title_zh") or it.get("title") or "").strip()) for it in highlights[:2] if (it.get("title_zh") or it.get("title") or "").strip()]
-        if h_en:
-            lines.append("Highlights: " + ", ".join(h_en) + ".")
-        if h_zh:
-            lines.append("本期重点：" + "、".join(h_zh) + "。")
 
     lines.extend(
         [
             "",
-            f"EN full list: {urls['en']}",
-            f"中文完整列表: {urls['zh']}",
+            f"EN list: {urls['en']}",
+            f"中文列表: {urls['zh']}",
             "",
-            "EN bulletin:",
+            "Bulletin (clickable links) / 快报（可点击链接）：",
             "",
         ]
     )
 
+    max_items_total = 10
+    rendered = 0
     for cat, cat_items in groups:
         if not cat_items:
             continue
-        lines.append(cat)
-        for it in cat_items[:10]:
-            # EN-only bullets first.
-            t = (it.get("title") or "").strip()
+        # Category header (bilingual)
+        lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
+        for it in cat_items:
+            if rendered >= max_items_total:
+                break
+            t_en = (it.get("title") or "").strip()
+            t_zh = (it.get("title_zh") or "").strip()
             u = (it.get("url") or "").strip()
-            tl = blurb(it, "en")
-            if not t or not u:
+            if not t_en or not u:
                 continue
-            lines.append(f"- {t} — {tl}" if tl else f"- {t}")
+            b_en = blurb(it, "en")
+            b_zh = blurb(it, "zh")
+            # One compact bilingual line per item; details live on the digest page.
+            head = f"- {t_en}"
+            if t_zh and t_zh != t_en:
+                head += f" / {t_zh}"
+            if b_en:
+                head += f" — {b_en}"
+            if b_zh and b_zh != b_en:
+                head += f" / {b_zh}"
+            lines.append(head)
             lines.append(f"  {u}")
+            rendered += 1
         lines.append("")
-
-    lines.extend(["中文快报：", ""])
-    for cat, cat_items in groups:
-        if not cat_items:
-            continue
-        lines.append(CAT_ZH.get(cat, cat))
-        for it in cat_items[:10]:
-            t = (it.get("title_zh") or it.get("title") or "").strip()
-            u = (it.get("url") or "").strip()
-            if not t or not u:
-                continue
-            tl = blurb(it, "zh")
-            lines.append(f"- {t} — {tl}" if tl else f"- {t}")
-            lines.append(f"  {u}")
-        lines.append("")
+        if rendered >= max_items_total:
+            break
 
     # Discussion prompts (max 2) at the end, so it feels intentional rather than templated.
     prompts: list[tuple[str, str]] = []
@@ -456,7 +439,7 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
         if p_en or p_zh:
             prompts.append((p_en, p_zh))
     if prompts:
-        lines.append("Discussion prompts / 讨论题：")
+        lines.append("Open questions / 开放问题：")
         for p_en, p_zh in prompts[:2]:
             if p_en and p_zh:
                 lines.append(f"- {p_en} / {p_zh}")
@@ -466,7 +449,6 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
                 lines.append(f"- {p_zh}")
         lines.append("")
 
-    lines.append("Comments welcome / 欢迎交流。")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -509,14 +491,14 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
             tl_en = w_en or _first_sentence(take_en, 200)
             tl_zh = w_zh or _first_sentence(take_zh, 140)
 
-            # Keep X readable: title + TL;DR lines + link.
+            # Keep X readable: title + short notes + link.
             line = f"{cat_label} {t_en}".strip()
             if tl_en:
-                line = f"{line}\nTL;DR: {tl_en}"
+                line = f"{line}\nNote: {tl_en}"
             if t_zh:
-                line = f"{line}\n中文：{t_zh}"
+                line = f"{line}\n{t_zh}"
             if tl_zh:
-                line = f"{line}\n中文要点：{tl_zh}"
+                line = f"{line}\n要点：{tl_zh}"
             if url:
                 line = f"{line}\n{url}"
             blocks.append(line.strip())
@@ -616,15 +598,16 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
             if not t:
                 continue
 
-            # Title line (bold-ish)
-            t_lines = _wrap(draw, t, font_item_title, max_width=w - pad * 2)
-            t_lines = t_lines[:1]
-            draw.text((x, y), t_lines[0], fill=ink, font=font_item_title)
-            y += 34
+            # Title (allow 2 lines so long titles stay readable).
+            t_lines = _wrap(draw, t, font_item_title, max_width=w - pad * 2)[:2]
+            for ln in t_lines:
+                draw.text((x, y), ln, fill=ink, font=font_item_title)
+                y += 34
+            y += 2
 
             if tl:
-                tl_lines = _wrap(draw, tl, font_item_body, max_width=w - pad * 2)
-                tl_lines = tl_lines[:2]
+                # Keep the blurb compact, but allow up to 2 lines.
+                tl_lines = _wrap(draw, tl, font_item_body, max_width=w - pad * 2)[:2]
                 for ln in tl_lines:
                     draw.text((x, y), ln, fill=sub, font=font_item_body)
                     y += 30

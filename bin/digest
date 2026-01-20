@@ -562,19 +562,18 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
 def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
     # 4:5 aspect ratio is friendly for both LinkedIn and X.
     w, h = 1080, 1350
-    bg = (250, 250, 252)  # near-white
+    # Professional / restrained: clean, bright background; no decorative textures.
+    bg = (252, 252, 253)  # near-white
     ink = (15, 23, 42)    # slate-900
     sub = (51, 65, 85)    # slate-700
     faint = (226, 232, 240)
-    chip_text = (248, 250, 252)
 
     img = Image.new("RGB", (w, h), bg)
     draw = ImageDraw.Draw(img)
 
     fonts = _font_paths(lang)
     font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 52) if fonts else ImageFont.load_default()
-    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 30) if fonts else ImageFont.load_default()
-    font_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 26) if fonts else ImageFont.load_default()
+    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
     font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
     font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
     font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 24) if fonts else ImageFont.load_default()
@@ -583,30 +582,16 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     x = pad
     y = 64
 
-    # Subtle dot-grid texture (keeps the card from looking "flat" without being noisy).
-    dot = (234, 238, 244)
-    for yy in range(100, h - 90, 32):
-        for xx in range(pad, w - pad, 32):
-            draw.ellipse((xx, yy, xx + 3, yy + 3), fill=dot)
-
-    def cat_color(cat: str) -> tuple[int, int, int]:
-        # Muted academic palette.
-        return {
-            "CSS / AI & society": (37, 99, 235),  # blue
-            "AI frontier": (124, 58, 237),        # violet
-            "Digital health / health comm": (16, 185, 129),  # teal
-            "Education / learning sciences / edtech": (245, 158, 11),  # amber
-        }.get(cat, (100, 116, 139))  # slate
-
-    def round_rect(x0: int, y0: int, x1: int, y1: int, r: int, fill: tuple[int, int, int]) -> None:
-        draw.rounded_rectangle((x0, y0, x1, y1), radius=r, fill=fill)
+    def round_rect_outline(x0: int, y0: int, x1: int, y1: int, r: int) -> None:
+        # Monochrome pill with a thin outline (more "academic", less "poster-like").
+        draw.rounded_rectangle((x0, y0, x1, y1), radius=r, outline=faint, width=2, fill=bg)
 
     title = "Daily Digest" if lang != "zh" else "每日简报"
     draw.text((x, y), title, fill=ink, font=font_title)
     y += 58
 
     date_str = date.isoformat()
-    subtitle = "A quick bulletin of what I'm reading today." if lang != "zh" else "今天在读的内容速览（bulletin）。"
+    subtitle = "A quick bulletin of what I'm reading today." if lang != "zh" else "今天在读的内容速览。"
     draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
     y += 34
 
@@ -624,13 +609,12 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         if not cat_items:
             continue
         cat_label = cat if lang != "zh" else CAT_ZH.get(cat, cat)
-        # Category chip
-        c = cat_color(cat)
+        # Category chip (outlined, monochrome)
         chip_h = 30
         chip_w = int(draw.textlength(cat_label, font=font_small)) + 28
-        round_rect(x, y, x + chip_w, y + chip_h, 14, c)
-        draw.text((x + 14, y + 5), cat_label, fill=chip_text, font=font_small)
-        y += chip_h + 14
+        round_rect_outline(x, y, x + chip_w, y + chip_h, 14)
+        draw.text((x + 14, y + 5), cat_label, fill=sub, font=font_small)
+        y += chip_h + 12
 
         for it in cat_items:
             if rendered >= max_items_total:

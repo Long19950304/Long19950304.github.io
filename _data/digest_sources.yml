@@ -1,0 +1,48 @@
+# RSS/Atom sources for the daily digest pipeline.
+# Keep this list high-signal; quality beats coverage.
+
+sources:
+  - id: arxiv-cy
+    name: arXiv cs.CY (Computers & Society)
+    category: "CSS / AI & society"
+    url: https://export.arxiv.org/rss/cs.CY
+
+  - id: arxiv-cl
+    name: arXiv cs.CL (Computation and Language)
+    category: "AI frontier"
+    url: https://export.arxiv.org/rss/cs.CL
+
+  - id: arxiv-lg
+    name: arXiv cs.LG (Machine Learning)
+    category: "AI frontier"
+    url: https://export.arxiv.org/rss/cs.LG
+
+  - id: hf-blog
+    name: Hugging Face Blog
+    category: "AI frontier"
+    url: https://huggingface.co/blog/feed.xml
+
+  - id: openai-blog
+    name: OpenAI Blog
+    category: "AI frontier"
+    url: https://openai.com/blog/rss.xml
+
+  - id: google-ai-blog
+    name: Google AI Blog
+    category: "AI frontier"
+    url: https://ai.googleblog.com/feeds/posts/default
+
+  - id: arxiv-health-literacy
+    name: "arXiv search: health literacy"
+    category: "Digital health / health comm"
+    url: https://export.arxiv.org/api/query?search_query=all:%22health%20literacy%22&start=0&max_results=20&sortBy=submittedDate&sortOrder=descending
+
+  - id: arxiv-education
+    name: "arXiv search: education AND (LLM OR AI)"
+    category: "Education / learning sciences / edtech"
+    url: https://export.arxiv.org/api/query?search_query=all:education+AND+(all:LLM+OR+all:AI)&start=0&max_results=20&sortBy=submittedDate&sortOrder=descending
+
+  - id: cdc-mmwr
+    name: CDC MMWR (Public Health)
+    category: "Digital health / health comm"
+    url: https://tools.cdc.gov/api/v2/resources/media/132608.rss

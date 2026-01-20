@@ -144,6 +144,9 @@ collections:
     output: true
   projects:
     output: true
+  digests:
+    output: true
+    permalink: /digest/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

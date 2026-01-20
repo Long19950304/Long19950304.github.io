@@ -1,0 +1,422 @@
+#!/usr/bin/env python3
+"""
+Daily digest generator for the personal site.
+
+Workflow:
+  1) Draft candidates from RSS/Atom feeds:
+       personal-site/bin/digest draft --date 2026-01-20
+  2) Edit the generated YAML (fill `why` fields, delete low-signal items).
+  3) Build the digest page + image card:
+       personal-site/bin/digest build --date 2026-01-20
+"""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import re
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Iterable
+
+import feedparser
+import yaml
+from PIL import Image, ImageDraw, ImageFont
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DATA_SOURCES = REPO_ROOT / "_data" / "digest_sources.yml"
+DATA_DIGESTS_DIR = REPO_ROOT / "_data" / "digests"
+DIGESTS_DIR = REPO_ROOT / "_digests"
+CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
+
+
+def _die(msg: str, code: int = 2) -> None:
+    print(f"error: {msg}", file=sys.stderr)
+    raise SystemExit(code)
+
+
+def _ensure_dirs() -> None:
+    DATA_DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
+    DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
+    CARD_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _parse_date(s: str) -> dt.date:
+    try:
+        return dt.date.fromisoformat(s)
+    except ValueError:
+        _die(f"invalid --date '{s}', expected YYYY-MM-DD")
+
+
+def _load_sources() -> list[dict[str, Any]]:
+    if not DATA_SOURCES.exists():
+        _die(f"missing {DATA_SOURCES}")
+    raw = yaml.safe_load(DATA_SOURCES.read_text(encoding="utf-8")) or {}
+    sources = raw.get("sources", [])
+    if not isinstance(sources, list) or not sources:
+        _die(f"no sources defined in {DATA_SOURCES}")
+    return sources
+
+
+def _norm(s: str) -> str:
+    s = s.strip().lower()
+    s = re.sub(r"\s+", " ", s)
+    return s
+
+
+def _pick_entry_time(entry: Any) -> dt.datetime | None:
+    # feedparser yields either .published_parsed or .updated_parsed
+    t = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+    if not t:
+        return None
+    return dt.datetime(*t[:6], tzinfo=dt.timezone.utc)
+
+
+def _clean_title(title: str) -> str:
+    title = re.sub(r"\s+", " ", title or "").strip()
+    # arXiv RSS titles sometimes include extra whitespace/line breaks.
+    return title
+
+
+def _draft_items(
+    sources: list[dict[str, Any]],
+    since_utc: dt.datetime,
+    max_items: int,
+) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
+    for src in sources:
+        url = src.get("url", "").strip()
+        if not url:
+            continue
+        feed = feedparser.parse(url)
+        for e in getattr(feed, "entries", []) or []:
+            when = _pick_entry_time(e)
+            if when and when < since_utc:
+                continue
+            title = _clean_title(getattr(e, "title", "") or "")
+            link = (getattr(e, "link", "") or "").strip()
+            if not title or not link:
+                continue
+            items.append(
+                {
+                    "category": src.get("category", "").strip() or "Misc",
+                    "title": title,
+                    "why": "",
+                    "url": link,
+                    "source": src.get("name", "").strip() or src.get("id", "").strip(),
+                    "published_utc": when.isoformat() if when else "",
+                }
+            )
+
+    # Deduplicate by URL, then by normalized title.
+    seen_url: set[str] = set()
+    seen_title: set[str] = set()
+    deduped: list[dict[str, Any]] = []
+    for it in sorted(items, key=lambda x: x.get("published_utc", ""), reverse=True):
+        url = it.get("url", "")
+        tnorm = _norm(it.get("title", ""))
+        if url in seen_url or tnorm in seen_title:
+            continue
+        seen_url.add(url)
+        seen_title.add(tnorm)
+        deduped.append(it)
+
+    return deduped[: max_items or 200]
+
+
+def _save_yaml(path: Path, payload: Any) -> None:
+    path.write_text(yaml.safe_dump(payload, sort_keys=False, allow_unicode=True), encoding="utf-8")
+
+
+def _load_digest_yaml(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        _die(f"missing digest file: {path}")
+    raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if not isinstance(raw, dict):
+        _die(f"invalid digest yaml: {path}")
+    return raw
+
+
+def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict[str, Any]]]]:
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for it in items:
+        cat = (it.get("category", "") or "Misc").strip()
+        groups.setdefault(cat, []).append(it)
+    # Preserve a sensible, stable ordering: CSS first, then AI, then others.
+    order = [
+        "CSS / AI & society",
+        "AI frontier",
+        "Digital health / health comm",
+        "Education / learning sciences / edtech",
+        "Misc",
+    ]
+    ordered: list[tuple[str, list[dict[str, Any]]]] = []
+    for k in order:
+        if k in groups:
+            ordered.append((k, groups.pop(k)))
+    for k in sorted(groups.keys()):
+        ordered.append((k, groups[k]))
+    return ordered
+
+
+def _font_paths() -> dict[str, Path]:
+    # Prefer widely available macOS fonts.
+    candidates = [
+        ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", "regular"),
+        ("/System/Library/Fonts/Supplemental/Arial Bold.ttf", "bold"),
+        ("/System/Library/Fonts/Supplemental/Helvetica.ttc", "regular"),
+    ]
+    out: dict[str, Path] = {}
+    for fp, role in candidates:
+        p = Path(fp)
+        if p.exists() and role not in out:
+            out[role] = p
+    return out
+
+
+def _wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, max_width: int) -> list[str]:
+    """
+    Simple word-wrapping that preserves spaces.
+
+    Important: do NOT strip whitespace aggressively, otherwise words will run together
+    in the rendered card (a common issue when splitting on whitespace).
+    """
+    text = re.sub(r"\s+", " ", (text or "").strip())
+    if not text:
+        return []
+
+    words = text.split(" ")
+    lines: list[str] = []
+    cur = ""
+
+    def flush() -> None:
+        nonlocal cur
+        if cur:
+            lines.append(cur)
+            cur = ""
+
+    for w in words:
+        test = w if not cur else f"{cur} {w}"
+        if draw.textlength(test, font=font) <= max_width:
+            cur = test
+            continue
+
+        # If a single token is too long, hard-wrap it by characters.
+        if not cur and draw.textlength(w, font=font) > max_width:
+            chunk = ""
+            for ch in w:
+                t2 = chunk + ch
+                if draw.textlength(t2, font=font) <= max_width:
+                    chunk = t2
+                else:
+                    if chunk:
+                        lines.append(chunk)
+                    chunk = ch
+            if chunk:
+                cur = chunk
+            continue
+
+        flush()
+        cur = w
+
+    flush()
+    return lines
+
+
+def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path) -> None:
+    # 4:5 aspect ratio is friendly for both LinkedIn and X.
+    w, h = 1080, 1350
+    bg = (248, 250, 252)  # very light gray-blue
+    ink = (15, 23, 42)    # slate-900
+    sub = (51, 65, 85)    # slate-700
+    rule = (226, 232, 240)
+
+    img = Image.new("RGB", (w, h), bg)
+    draw = ImageDraw.Draw(img)
+
+    fonts = _font_paths()
+    font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 52) if fonts else ImageFont.load_default()
+    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 30) if fonts else ImageFont.load_default()
+    font_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 26) if fonts else ImageFont.load_default()
+    font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
+
+    pad = 72
+    x = pad
+    y = 64
+
+    title = "Daily Digest"
+    draw.text((x, y), title, fill=ink, font=font_title)
+    y += 64
+
+    date_str = date.isoformat()
+    draw.text((x, y), date_str, fill=sub, font=font_small)
+    y += 32
+
+    # Top rule
+    draw.line((x, y, w - pad, y), fill=rule, width=2)
+    y += 26
+
+    groups = _group_by_category(items)
+    max_items_total = 10
+    rendered = 0
+
+    for cat, cat_items in groups:
+        if rendered >= max_items_total:
+            break
+        if not cat_items:
+            continue
+        draw.text((x, y), cat, fill=ink, font=font_h2)
+        y += 40
+
+        for it in cat_items:
+            if rendered >= max_items_total:
+                break
+            body = it.get("title", "").strip()
+            why = (it.get("why", "") or "").strip()
+            if why:
+                body = f"{body} - {why}"
+            # Keep bullets compact.
+            bullet = "- "
+            lines = _wrap(draw, body, font_body, max_width=w - pad * 2 - 20)
+            if not lines:
+                continue
+            # 2-line cap per item to avoid clutter.
+            lines = lines[:2]
+            draw.text((x, y), bullet + lines[0], fill=sub, font=font_body)
+            y += 34
+            if len(lines) > 1:
+                draw.text((x + 26, y), lines[1], fill=sub, font=font_body)
+                y += 34
+            y += 10
+            rendered += 1
+
+        y += 14
+        if y > h - 220:
+            break
+
+    # Bottom rule + footer
+    y = h - 160
+    draw.line((x, y, w - pad, y), fill=rule, width=2)
+    y += 22
+    footer = "Zhilong George Zhao | @longlalaland | long19950304.github.io"
+    draw.text((x, y), footer, fill=sub, font=font_small)
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out_path, format="PNG", optimize=True)
+
+
+def build_digest(date: dt.date, digest: dict[str, Any]) -> tuple[Path, Path]:
+    items = digest.get("items", [])
+    if not isinstance(items, list):
+        _die("digest.items must be a list")
+    if not items:
+        _die("digest has no items; skip build or add items first")
+
+    # Image card
+    card_path = CARD_DIR / f"{date.isoformat()}.png"
+    render_card(date, items, card_path)
+
+    # Markdown page (collection item)
+    DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
+    md_path = DIGESTS_DIR / f"{date.isoformat()}.md"
+    title = digest.get("title") or f"Daily Digest - {date.isoformat()}"
+
+    groups = _group_by_category(items)
+    lines: list[str] = [
+        "---",
+        "layout: page",
+        f'title: "{title}"',
+        "lang: en",
+        f"permalink: /digest/{date.isoformat()}/",
+        f"digest_date: {date.isoformat()}",
+        f"card_image: /assets/img/digests/{date.isoformat()}.png",
+        "---",
+        "",
+        f"![Daily digest card](/assets/img/digests/{date.isoformat()}.png)",
+        "",
+        "## Links",
+        "",
+    ]
+
+    for cat, cat_items in groups:
+        if not cat_items:
+            continue
+        lines.append(f"### {cat}")
+        lines.append("")
+        for it in cat_items:
+            t = it.get("title", "").strip()
+            u = it.get("url", "").strip()
+            why = (it.get("why", "") or "").strip()
+            if not t or not u:
+                continue
+            if why:
+                lines.append(f"- [{t}]({u}) - {why}")
+            else:
+                lines.append(f"- [{t}]({u})")
+        lines.append("")
+
+    md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    return md_path, card_path
+
+
+def cmd_draft(args: argparse.Namespace) -> None:
+    _ensure_dirs()
+    date = _parse_date(args.date)
+    sources = _load_sources()
+    # Since: last N hours from now (UTC). This keeps drafts useful for daily runs.
+    since_utc = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=args.hours)
+    items = _draft_items(sources, since_utc=since_utc, max_items=args.max_items)
+
+    out = DATA_DIGESTS_DIR / f"{date.isoformat()}.yml"
+    if out.exists() and not args.force:
+        out = DATA_DIGESTS_DIR / f"{date.isoformat()}.draft.yml"
+
+    payload = {"date": date.isoformat(), "title": f"Daily Digest - {date.isoformat()}", "items": items}
+    _save_yaml(out, payload)
+    print(f"Wrote {out.relative_to(REPO_ROOT)} ({len(items)} items).")
+    print("Next: edit `why` fields + delete low-signal items, then run:")
+    print(f"  {REPO_ROOT}/bin/digest build --date {date.isoformat()}")
+
+
+def cmd_build(args: argparse.Namespace) -> None:
+    _ensure_dirs()
+    date = _parse_date(args.date)
+    digest_path = DATA_DIGESTS_DIR / f"{date.isoformat()}.yml"
+    if not digest_path.exists():
+        # If only draft exists, use it.
+        draft = DATA_DIGESTS_DIR / f"{date.isoformat()}.draft.yml"
+        if draft.exists():
+            digest_path = draft
+        else:
+            _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
+    digest = _load_digest_yaml(digest_path)
+    md_path, card_path = build_digest(date, digest)
+    print(f"Wrote {md_path.relative_to(REPO_ROOT)}")
+    print(f"Wrote {card_path.relative_to(REPO_ROOT)}")
+
+
+def main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(prog="digest")
+    sub = parser.add_subparsers(dest="cmd", required=True)
+
+    p_draft = sub.add_parser("draft", help="Draft a digest YAML from RSS/Atom sources")
+    p_draft.add_argument("--date", required=True, help="YYYY-MM-DD (label for this issue)")
+    p_draft.add_argument("--hours", type=int, default=36, help="Look back window (UTC), default: 36")
+    p_draft.add_argument("--max-items", type=int, default=40, help="Max candidate items to write, default: 40")
+    p_draft.add_argument("--force", action="store_true", help="Overwrite existing YYYY-MM-DD.yml")
+    p_draft.set_defaults(func=cmd_draft)
+
+    p_build = sub.add_parser("build", help="Build digest page + image card from YAML")
+    p_build.add_argument("--date", required=True, help="YYYY-MM-DD")
+    p_build.set_defaults(func=cmd_build)
+
+    args = parser.parse_args(argv)
+    args.func(args)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

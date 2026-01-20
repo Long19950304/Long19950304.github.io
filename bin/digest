@@ -391,7 +391,7 @@ def _format_linkedin_post(
         lines: list[str] = [
             f"{title_en}",
             "",
-            "Cards attached (EN + 中文 card).",
+            "Cards attached (EN + Chinese card).",
             "",
             f"Full list: {urls['en']}",
             "",
@@ -498,7 +498,7 @@ def _format_x_thread(
         picks = picks[:2]  # keep within X length limits
 
         lines = [
-            f"Daily Digest ({date.isoformat()}) — cards attached (EN + 中文).",
+            f"Daily Digest ({date.isoformat()}) — cards attached (EN + Chinese).",
             f"Full list: {urls['en']}",
             "",
         ]

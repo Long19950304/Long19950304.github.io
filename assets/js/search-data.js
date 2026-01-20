@@ -65,7 +65,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "projects-agentic-engineering-ae-x",
+        },{id: "nav-简报",
+          title: "简报",
+          description: "每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/digest/";
+          },
+        },{id: "nav-digest",
+          title: "Digest",
+          description: "Daily (high-signal) research briefs curated across AI, CSS/AI &amp; society, digital health, and education.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/digest/";
+          },
+        },{id: "digests-daily-digest-2026-01-20",
+          title: 'Daily Digest — 2026-01-20',
+          description: "",
+          section: "Digests",handler: () => {
+              window.location.href = "/digest/2026-01-20/";
+            },},{id: "projects-agentic-engineering-ae-x",
           title: 'Agentic Engineering (AE+X)',
           description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes.",
           section: "Projects",handler: () => {

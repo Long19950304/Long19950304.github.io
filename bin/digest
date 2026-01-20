@@ -350,30 +350,18 @@ def _format_item_bilingual(it: dict[str, Any]) -> str:
     elif not zh and w_zh:
         zh = w_zh
 
-    # Human bulletin: keep it short and avoid repetitive labels.
+    # Professional bulletin: one concise takeaway line (no "my take"/first-person labels).
     # LinkedIn will auto-link raw URLs, so we keep the URL on its own line.
     tl_en = _first_sentence(take_en, 200) if take_en else ""
     tl_zh = _first_sentence(take_zh, 140) if take_zh else ""
 
     lines: list[str] = []
     if en:
-        if tl_en:
-            lines.append(f"- {en} ({tl_en})")
-        else:
-            lines.append(f"- {en}")
+        lines.append(f"- {en} — {tl_en}" if tl_en else f"- {en}")
     if zh:
-        if tl_zh:
-            lines.append(f"  {zh}（{tl_zh}）")
-        else:
-            lines.append(f"  {zh}")
+        lines.append(f"  {zh} — {tl_zh}" if tl_zh else f"  {zh}")
     if url:
         lines.append(f"  {url}")
-    if p_en or p_zh:
-        # Keep discussion prompts rare; when present, tuck it under the item.
-        if p_en:
-            lines.append(f"  Question: {p_en}")
-        if p_zh:
-            lines.append(f"  问题：{p_zh}")
     return "\n".join(lines).strip()
 
 
@@ -468,7 +456,7 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
         if p_en or p_zh:
             prompts.append((p_en, p_zh))
     if prompts:
-        lines.append("Question I'm thinking about / 我在想：")
+        lines.append("Discussion prompts / 讨论题：")
         for p_en, p_zh in prompts[:2]:
             if p_en and p_zh:
                 lines.append(f"- {p_en} / {p_zh}")
@@ -722,14 +710,14 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
             lines.append(line)
             if takeaway:
                 if lang != "zh":
-                    lines.append(f"  - My take: {takeaway}")
+                    lines.append(f"  - Takeaway: {takeaway}")
                 else:
-                    lines.append(f"  - 我的一句话: {takeaway}")
+                    lines.append(f"  - 要点: {takeaway}")
             if prompt:
                 if lang != "zh":
-                    lines.append(f"  - Question: {prompt}")
+                    lines.append(f"  - Open question: {prompt}")
                 else:
-                    lines.append(f"  - 我在想: {prompt}")
+                    lines.append(f"  - 开放问题: {prompt}")
         lines.append("")
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")

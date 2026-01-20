@@ -503,10 +503,8 @@ def _format_x_thread(
             "",
         ]
         for t, w, u in picks:
-            line = f"- {t}"
-            if w:
-                line += f" — {w}"
-            lines.extend([line, u, ""])
+            # Titles only (keep under length limits); details live on the digest page.
+            lines.extend([f"- {t}", u, ""])
         return ["\n".join([ln for ln in lines if ln is not None]).strip()]
 
     # Tweet 1: short bilingual intro + canonical links (attach BOTH cards here).

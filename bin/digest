@@ -697,6 +697,9 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
         title = digest.get("title_zh") or f"每日简报 - {date.isoformat()}"
 
     groups = _group_by_category(items)
+    note = (digest.get("note_zh") if lang == "zh" else digest.get("note")) or ""
+    note = note.strip()
+
     lines: list[str] = [
         "---",
         "layout: page",
@@ -710,9 +713,10 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
         "",
         f"![Daily digest card](/assets/img/digests/{date.isoformat()}-{suffix}.png)",
         "",
-        "## Links" if lang != "zh" else "## 链接",
-        "",
     ]
+    if note:
+        lines.extend([note, ""])
+    lines.extend(["## Links" if lang != "zh" else "## 链接", ""])
 
     for cat, cat_items in groups:
         if not cat_items:
@@ -771,6 +775,8 @@ def cmd_draft(args: argparse.Namespace) -> None:
         "date": date.isoformat(),
         "title": f"Daily Digest - {date.isoformat()}",
         "title_zh": f"每日简报 - {date.isoformat()}",
+        "note": "",
+        "note_zh": "",
         "items": items,
     }
     _save_yaml(out, payload)

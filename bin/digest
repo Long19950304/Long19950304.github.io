@@ -443,20 +443,17 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
             cat_zh = CAT_ZH.get(cat, cat)
             cat_label = f"[{cat}]/{cat_zh}"
 
-            blurb_en = w_en or _first_sentence(take_en, 160)
-            line = t_en
-            if blurb_en:
-                line = f"{line} — {blurb_en}"
+            tl_en = _first_sentence(take_en, 200) or w_en
+            tl_zh = _first_sentence(take_zh, 140) or w_zh
+
+            # Keep X readable: title + TL;DR lines + link.
+            line = f"{cat_label} {t_en}".strip()
+            if tl_en:
+                line = f"{line}\nTL;DR: {tl_en}"
             if t_zh:
-                blurb_zh = w_zh or _first_sentence(take_zh, 120)
-                zh_line = t_zh
-                if blurb_zh:
-                    zh_line = f"{zh_line} — {blurb_zh}"
-                line = f"{cat_label} {line}\n{zh_line}"
-            elif w_zh:
-                line = f"{cat_label} {line}\n{w_zh}"
-            else:
-                line = f"{cat_label} {line}"
+                line = f"{line}\n中文：{t_zh}"
+            if tl_zh:
+                line = f"{line}\n中文要点：{tl_zh}"
             if url:
                 line = f"{line}\n{url}"
             blocks.append(line.strip())

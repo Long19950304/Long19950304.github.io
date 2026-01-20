@@ -734,14 +734,14 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
             lines.append(line)
             if takeaway:
                 if lang != "zh":
-                    lines.append(f"  - Take-home: {takeaway}")
+                    lines.append(f"  - My take: {takeaway}")
                 else:
-                    lines.append(f"  - 要点: {takeaway}")
+                    lines.append(f"  - 我的一句话: {takeaway}")
             if prompt:
                 if lang != "zh":
-                    lines.append(f"  - Discuss: {prompt}")
+                    lines.append(f"  - Question: {prompt}")
                 else:
-                    lines.append(f"  - 讨论: {prompt}")
+                    lines.append(f"  - 我在想: {prompt}")
         lines.append("")
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")

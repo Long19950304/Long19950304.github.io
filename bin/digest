@@ -371,6 +371,7 @@ def _format_linkedin_post(
     site_url: str,
     *,
     text_mode: str = "bilingual",
+    style: str = "bulletin",
 ) -> str:
     items = digest.get("items", [])
     groups = _group_by_category(items)
@@ -378,6 +379,8 @@ def _format_linkedin_post(
 
     title_en = (digest.get("title") or f"Daily Digest — {date.isoformat()}").strip()
     title_zh = (digest.get("title_zh") or f"每日简报 — {date.isoformat()}").strip()
+    note_en = (digest.get("note") or "").strip()
+    note_zh = (digest.get("note_zh") or "").strip()
 
     def blurb(it: dict[str, Any], lang: str) -> str:
         # For social, prefer the short "why" line (less templated, avoids mid-sentence truncation).
@@ -386,6 +389,58 @@ def _format_linkedin_post(
             return why
         take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
         return _first_sentence(take, 110 if lang != "zh" else 70)
+
+    if style == "theme":
+        # Theme-first format: a single short paragraph + a clean list of links.
+        lines: list[str] = []
+        if text_mode == "en":
+            lines.extend(
+                [
+                    f"{title_en}",
+                    "",
+                    "Cards attached (EN + Chinese card).",
+                    "",
+                ]
+            )
+            if note_en:
+                lines.extend([_truncate(note_en, 520), ""])
+            lines.extend([f"Links (full list): {urls['en']}", "", "Links:", ""])
+        else:
+            lines.extend(
+                [
+                    f"{title_en} / {title_zh}",
+                    "",
+                    "EN + 中文 cards attached. Full lists:",
+                    "附英文/中文两张卡片；完整列表：",
+                    "",
+                    f"EN list: {urls['en']}",
+                    f"中文列表: {urls['zh']}",
+                    "",
+                ]
+            )
+            if note_en or note_zh:
+                if note_en:
+                    lines.append(_truncate(note_en, 520))
+                if note_zh:
+                    lines.append(_truncate(note_zh, 240))
+                lines.append("")
+            lines.extend(["Links / 链接：", ""])
+
+        # Flatten items; keep it scannable.
+        picks: list[tuple[str, str]] = []
+        for _, cat_items in groups:
+            for it in cat_items:
+                t = (it.get("title") or "").strip()
+                u = (it.get("url") or "").strip()
+                if t and u:
+                    picks.append((t, u))
+
+        max_links = 8 if text_mode == "en" else 10
+        for t, u in picks[:max_links]:
+            lines.append(f"- {_truncate(t, 120)}")
+            lines.append(f"  {u}")
+        lines.append("")
+        return "\n".join(lines).rstrip() + "\n"
 
     if text_mode == "en":
         lines: list[str] = [
@@ -497,12 +552,49 @@ def _format_x_thread(
     site_url: str,
     *,
     text_mode: str = "bilingual",
+    style: str = "bulletin",
 ) -> list[str]:
     items = digest.get("items", [])
     groups = _group_by_category(items)
     urls = _digest_issue_urls(date, site_url)
+    note_en = (digest.get("note") or "").strip()
+    note_zh = (digest.get("note_zh") or "").strip()
 
     if text_mode == "en":
+        if style == "theme":
+            # Theme tweet + link list in replies (so the first post stays readable).
+            head: list[str] = [f"Daily Digest ({date.isoformat()}). Cards: EN + Chinese."]
+            if note_en:
+                head.append(_truncate(note_en, 180))
+            head.append(f"Full list: {urls['en']}")
+            head.append("Links below.")
+            t0 = "\n".join(head).strip()
+
+            lines: list[str] = []
+            for _, cat_items in groups:
+                for it in cat_items:
+                    t = (it.get("title") or "").strip()
+                    u = (it.get("url") or "").strip()
+                    if t and u:
+                        lines.append(f"{_truncate(t, 72)}: {u}")
+
+            tweets: list[str] = [t0]
+            cur: list[str] = []
+            cur_len = 0
+            max_len = 265
+            for ln in lines[:12]:  # cap to avoid spammy threads
+                add_len = len(ln) + (1 if cur else 0)
+                if cur and cur_len + add_len > max_len:
+                    tweets.append("\n".join(cur).strip())
+                    cur = [ln]
+                    cur_len = len(ln)
+                else:
+                    cur.append(ln)
+                    cur_len += add_len
+            if cur:
+                tweets.append("\n".join(cur).strip())
+            return tweets
+
         # Single post for X: keep it lightweight; attach BOTH cards here.
         picks: list[tuple[str, str]] = []
         for _, cat_items in groups:
@@ -848,11 +940,25 @@ def cmd_social(args: argparse.Namespace) -> None:
 
     if args.platform in ("linkedin", "both"):
         print("==== LinkedIn (copy/paste) ====")
-        print(_format_linkedin_post(date, digest, site_url=args.site_url, text_mode=args.text))
+        print(
+            _format_linkedin_post(
+                date,
+                digest,
+                site_url=args.site_url,
+                text_mode=args.text,
+                style=args.style,
+            )
+        )
 
     if args.platform in ("x", "both"):
         print("==== X thread (copy/paste) ====")
-        tweets = _format_x_thread(date, digest, site_url=args.site_url, text_mode=args.text)
+        tweets = _format_x_thread(
+            date,
+            digest,
+            site_url=args.site_url,
+            text_mode=args.text,
+            style=args.style,
+        )
         total = len(tweets)
         for i, t in enumerate(tweets, start=1):
             print(f"\n--- Tweet {i}/{total} ---\n{t}\n")
@@ -886,6 +992,12 @@ def main(argv: list[str]) -> int:
         choices=["en", "bilingual"],
         default="bilingual",
         help="Text mode for posts; note: cards are always EN+ZH. Default: bilingual",
+    )
+    p_social.add_argument(
+        "--style",
+        choices=["bulletin", "theme"],
+        default="bulletin",
+        help="Post layout: bulletin (default) or theme-first (theme + links).",
     )
     p_social.add_argument(
         "--site-url",

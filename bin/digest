@@ -350,22 +350,30 @@ def _format_item_bilingual(it: dict[str, Any]) -> str:
     elif not zh and w_zh:
         zh = w_zh
 
+    # Human bulletin: keep it short and avoid repetitive labels.
+    # LinkedIn will auto-link raw URLs, so we keep the URL on its own line.
+    tl_en = _first_sentence(take_en, 200) if take_en else ""
+    tl_zh = _first_sentence(take_zh, 140) if take_zh else ""
+
     lines: list[str] = []
     if en:
-        lines.append(f"- {en}")
+        if tl_en:
+            lines.append(f"- {en} ({tl_en})")
+        else:
+            lines.append(f"- {en}")
     if zh:
-        lines.append(f"  {zh}")
-    if take_en:
-        lines.append(f"  Take-home: {take_en}")
-    if take_zh:
-        lines.append(f"  要点: {take_zh}")
-    if p_en or p_zh:
-        if p_en:
-            lines.append(f"  Discuss: {p_en}")
-        if p_zh:
-            lines.append(f"  讨论: {p_zh}")
+        if tl_zh:
+            lines.append(f"  {zh}（{tl_zh}）")
+        else:
+            lines.append(f"  {zh}")
     if url:
         lines.append(f"  {url}")
+    if p_en or p_zh:
+        # Keep discussion prompts rare; when present, tuck it under the item.
+        if p_en:
+            lines.append(f"  Question: {p_en}")
+        if p_zh:
+            lines.append(f"  问题：{p_zh}")
     return "\n".join(lines).strip()
 
 
@@ -377,33 +385,100 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
     title_en = (digest.get("title") or f"Daily Digest — {date.isoformat()}").strip()
     title_zh = (digest.get("title_zh") or f"每日简报 — {date.isoformat()}").strip()
 
+    def blurb(it: dict[str, Any], lang: str) -> str:
+        take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
+        why = _pick_lang(it, "why", "why_zh", lang)
+        has_prompt = bool((it.get("prompt") or "").strip() or (it.get("prompt_zh") or "").strip())
+        # Only a couple of items should carry a longer "take-home" in the post;
+        # the rest stay short, with details living on the digest page.
+        if has_prompt:
+            if lang == "zh":
+                return _first_sentence(take, 70) or why
+            return _first_sentence(take, 120) or why
+        if lang == "zh":
+            return why or _first_sentence(take, 52)
+        return why or _first_sentence(take, 90)
+
+    highlights = []
+    for it in items:
+        if (it.get("prompt") or "").strip() or (it.get("prompt_zh") or "").strip():
+            highlights.append(it)
+
     lines: list[str] = [
         f"{title_en} / {title_zh}",
         "",
-        "Full lists / 完整列表：",
-        f"EN: {urls['en']}",
-        f"中文: {urls['zh']}",
-        "",
-        "Bulletin / 要点速览（可点击链接）：",
-        "",
+        "Quick bulletin from what I read today — EN + 中文 cards attached.",
+        "今天读到的一些内容速览（我会把英文/中文两张卡片一起附上）。",
     ]
+
+    if highlights:
+        h_en = [((it.get("title") or "").strip()) for it in highlights[:2] if (it.get("title") or "").strip()]
+        h_zh = [((it.get("title_zh") or it.get("title") or "").strip()) for it in highlights[:2] if (it.get("title_zh") or it.get("title") or "").strip()]
+        if h_en:
+            lines.append("Two things that stuck with me today: " + ", ".join(h_en) + ".")
+        if h_zh:
+            lines.append("今天最想展开的两条：" + "、".join(h_zh) + "。")
+
+    lines.extend(
+        [
+            "",
+            f"EN full list: {urls['en']}",
+            f"中文完整列表: {urls['zh']}",
+            "",
+            "EN bulletin:",
+            "",
+        ]
+    )
 
     for cat, cat_items in groups:
         if not cat_items:
             continue
-        cat_zh = CAT_ZH.get(cat, cat)
-        lines.append(f"{cat} / {cat_zh}")
+        lines.append(cat)
         for it in cat_items[:10]:
-            # LinkedIn doesn't render Markdown links; keep URLs explicit.
-            lines.append(_format_item_bilingual(it))
+            # EN-only bullets first.
+            t = (it.get("title") or "").strip()
+            u = (it.get("url") or "").strip()
+            tl = blurb(it, "en")
+            if not t or not u:
+                continue
+            lines.append(f"- {t} — {tl}" if tl else f"- {t}")
+            lines.append(f"  {u}")
         lines.append("")
 
-    # Hashtags are intentionally few; keep it academic.
-    lines.extend(
-        [
-            "#ComputationalSocialScience #AIEvaluation #HealthCommunication #EdTech",
-        ]
-    )
+    lines.extend(["中文快报：", ""])
+    for cat, cat_items in groups:
+        if not cat_items:
+            continue
+        lines.append(CAT_ZH.get(cat, cat))
+        for it in cat_items[:10]:
+            t = (it.get("title_zh") or it.get("title") or "").strip()
+            u = (it.get("url") or "").strip()
+            if not t or not u:
+                continue
+            tl = blurb(it, "zh")
+            lines.append(f"- {t} — {tl}" if tl else f"- {t}")
+            lines.append(f"  {u}")
+        lines.append("")
+
+    # Discussion prompts (max 2) at the end, so it feels intentional rather than templated.
+    prompts: list[tuple[str, str]] = []
+    for it in items:
+        p_en = (it.get("prompt") or "").strip()
+        p_zh = (it.get("prompt_zh") or "").strip()
+        if p_en or p_zh:
+            prompts.append((p_en, p_zh))
+    if prompts:
+        lines.append("Question I'm thinking about / 我在想：")
+        for p_en, p_zh in prompts[:2]:
+            if p_en and p_zh:
+                lines.append(f"- {p_en} / {p_zh}")
+            elif p_en:
+                lines.append(f"- {p_en}")
+            elif p_zh:
+                lines.append(f"- {p_zh}")
+        lines.append("")
+
+    lines.append("If you'd like, tell me what you're reading this week / 也欢迎你分享你最近在看什么。")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -412,15 +487,15 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
     groups = _group_by_category(items)
     urls = _digest_issue_urls(date, site_url)
 
-    # Tweet 1: short bilingual intro + canonical links.
+    # Tweet 1: short bilingual intro + canonical links (attach BOTH cards here).
     t0 = "\n".join(
         [
             f"Daily Digest / 每日简报 ({date.isoformat()})",
+            "EN + 中文 cards attached.",
             f"EN: {urls['en']}",
             f"中文: {urls['zh']}",
             "",
             "Direct links in thread / 详细链接见串：",
-            "Q: Which item should we unpack next? / 你最想我展开哪一条？",
         ]
     ).strip()
 
@@ -443,8 +518,8 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
             cat_zh = CAT_ZH.get(cat, cat)
             cat_label = f"[{cat}]/{cat_zh}"
 
-            tl_en = _first_sentence(take_en, 200) or w_en
-            tl_zh = _first_sentence(take_zh, 140) or w_zh
+            tl_en = w_en or _first_sentence(take_en, 200)
+            tl_zh = w_zh or _first_sentence(take_zh, 140)
 
             # Keep X readable: title + TL;DR lines + link.
             line = f"{cat_label} {t_en}".strip()
@@ -487,10 +562,11 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
 def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
     # 4:5 aspect ratio is friendly for both LinkedIn and X.
     w, h = 1080, 1350
-    bg = (248, 250, 252)  # very light gray-blue
+    bg = (250, 250, 252)  # near-white
     ink = (15, 23, 42)    # slate-900
     sub = (51, 65, 85)    # slate-700
-    rule = (226, 232, 240)
+    faint = (226, 232, 240)
+    chip_text = (248, 250, 252)
 
     img = Image.new("RGB", (w, h), bg)
     draw = ImageDraw.Draw(img)
@@ -500,22 +576,43 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 30) if fonts else ImageFont.load_default()
     font_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 26) if fonts else ImageFont.load_default()
     font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
+    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
+    font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 24) if fonts else ImageFont.load_default()
 
     pad = 72
     x = pad
     y = 64
 
+    # Subtle dot-grid texture (keeps the card from looking "flat" without being noisy).
+    dot = (234, 238, 244)
+    for yy in range(100, h - 90, 32):
+        for xx in range(pad, w - pad, 32):
+            draw.ellipse((xx, yy, xx + 3, yy + 3), fill=dot)
+
+    def cat_color(cat: str) -> tuple[int, int, int]:
+        # Muted academic palette.
+        return {
+            "CSS / AI & society": (37, 99, 235),  # blue
+            "AI frontier": (124, 58, 237),        # violet
+            "Digital health / health comm": (16, 185, 129),  # teal
+            "Education / learning sciences / edtech": (245, 158, 11),  # amber
+        }.get(cat, (100, 116, 139))  # slate
+
+    def round_rect(x0: int, y0: int, x1: int, y1: int, r: int, fill: tuple[int, int, int]) -> None:
+        draw.rounded_rectangle((x0, y0, x1, y1), radius=r, fill=fill)
+
     title = "Daily Digest" if lang != "zh" else "每日简报"
     draw.text((x, y), title, fill=ink, font=font_title)
-    y += 64
+    y += 58
 
     date_str = date.isoformat()
-    draw.text((x, y), date_str, fill=sub, font=font_small)
-    y += 32
+    subtitle = "A quick bulletin of what I'm reading today." if lang != "zh" else "今天在读的内容速览（bulletin）。"
+    draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
+    y += 34
 
     # Top rule
-    draw.line((x, y, w - pad, y), fill=rule, width=2)
-    y += 26
+    draw.line((x, y, w - pad, y), fill=faint, width=2)
+    y += 22
 
     groups = _group_by_category(items)
     max_items_total = 10
@@ -527,44 +624,55 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         if not cat_items:
             continue
         cat_label = cat if lang != "zh" else CAT_ZH.get(cat, cat)
-        draw.text((x, y), cat_label, fill=ink, font=font_h2)
-        y += 40
+        # Category chip
+        c = cat_color(cat)
+        chip_h = 30
+        chip_w = int(draw.textlength(cat_label, font=font_small)) + 28
+        round_rect(x, y, x + chip_w, y + chip_h, 14, c)
+        draw.text((x + 14, y + 5), cat_label, fill=chip_text, font=font_small)
+        y += chip_h + 14
 
         for it in cat_items:
             if rendered >= max_items_total:
                 break
-            body = _pick_lang(it, "title", "title_zh", lang)
+            t = _pick_lang(it, "title", "title_zh", lang)
             why = _pick_lang(it, "why", "why_zh", lang)
-            if why:
-                body = f"{body} - {why}"
-            # Keep bullets compact.
-            bullet = "- "
-            lines = _wrap(draw, body, font_body, max_width=w - pad * 2 - 20)
-            if not lines:
+            take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
+            # Card should stay very scannable: 1 title line + 1 TL;DR line.
+            tl = why or _first_sentence(take, 140)
+
+            if not t:
                 continue
-            # 2-line cap per item to avoid clutter.
-            lines = lines[:2]
-            draw.text((x, y), bullet + lines[0], fill=sub, font=font_body)
+
+            # Title line (bold-ish)
+            t_lines = _wrap(draw, t, font_item_title, max_width=w - pad * 2)
+            t_lines = t_lines[:1]
+            draw.text((x, y), t_lines[0], fill=ink, font=font_item_title)
             y += 34
-            if len(lines) > 1:
-                draw.text((x + 26, y), lines[1], fill=sub, font=font_body)
-                y += 34
-            y += 10
+
+            if tl:
+                tl_lines = _wrap(draw, tl, font_item_body, max_width=w - pad * 2)
+                tl_lines = tl_lines[:2]
+                for ln in tl_lines:
+                    draw.text((x, y), ln, fill=sub, font=font_item_body)
+                    y += 30
+
+            y += 14
             rendered += 1
 
-        y += 14
+        y += 8
         if y > h - 220:
             break
 
     # Bottom rule + footer
     y = h - 160
-    draw.line((x, y, w - pad, y), fill=rule, width=2)
+    draw.line((x, y, w - pad, y), fill=faint, width=2)
     y += 22
     footer = "Zhilong George Zhao | @longlalaland | long19950304.github.io"
     draw.text((x, y), footer, fill=sub, font=font_small)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out_path, format="PNG", optimize=True)
+    img.save(out_path, format="PNG", optimize=True, compress_level=9)
 
 
 def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[Path, Path]:

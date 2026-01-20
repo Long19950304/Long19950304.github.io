@@ -365,7 +365,13 @@ def _format_item_bilingual(it: dict[str, Any]) -> str:
     return "\n".join(lines).strip()
 
 
-def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) -> str:
+def _format_linkedin_post(
+    date: dt.date,
+    digest: dict[str, Any],
+    site_url: str,
+    *,
+    text_mode: str = "bilingual",
+) -> str:
     items = digest.get("items", [])
     groups = _group_by_category(items)
     urls = _digest_issue_urls(date, site_url)
@@ -381,31 +387,46 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
         take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
         return _first_sentence(take, 110 if lang != "zh" else 70)
 
-    lines: list[str] = [
-        f"{title_en} / {title_zh}",
-        "",
-        "EN + 中文 cards attached. Full lists:",
-        "附英文/中文两张卡片；完整列表：",
-    ]
-
-    lines.extend(
-        [
+    if text_mode == "en":
+        lines: list[str] = [
+            f"{title_en}",
             "",
-            f"EN list: {urls['en']}",
-            f"中文列表: {urls['zh']}",
+            "Cards attached (EN + 中文 card).",
             "",
-            "Bulletin (clickable links) / 快报（可点击链接）：",
+            f"Full list: {urls['en']}",
+            "",
+            "Highlights (clickable links):",
             "",
         ]
-    )
+    else:
+        lines = [
+            f"{title_en} / {title_zh}",
+            "",
+            "EN + 中文 cards attached. Full lists:",
+            "附英文/中文两张卡片；完整列表：",
+        ]
 
-    max_items_total = 10
+        lines.extend(
+            [
+                "",
+                f"EN list: {urls['en']}",
+                f"中文列表: {urls['zh']}",
+                "",
+                "Bulletin (clickable links) / 快报（可点击链接）：",
+                "",
+            ]
+        )
+
+    max_items_total = 6 if text_mode == "en" else 10
     rendered = 0
     for cat, cat_items in groups:
         if not cat_items:
             continue
-        # Category header (bilingual)
-        lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
+        # Category header
+        if text_mode == "en":
+            lines.append(cat)
+        else:
+            lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
         for it in cat_items:
             if rendered >= max_items_total:
                 break
@@ -415,14 +436,14 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
             if not t_en or not u:
                 continue
             b_en = blurb(it, "en")
-            b_zh = blurb(it, "zh")
+            b_zh = blurb(it, "zh") if text_mode != "en" else ""
             # One compact bilingual line per item; details live on the digest page.
             head = f"- {t_en}"
-            if t_zh and t_zh != t_en:
+            if text_mode != "en" and t_zh and t_zh != t_en:
                 head += f" / {t_zh}"
             if b_en:
                 head += f" — {b_en}"
-            if b_zh and b_zh != b_en:
+            if text_mode != "en" and b_zh and b_zh != b_en:
                 head += f" / {b_zh}"
             lines.append(head)
             lines.append(f"  {u}")
@@ -431,31 +452,62 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
         if rendered >= max_items_total:
             break
 
-    # Discussion prompts (max 2) at the end, so it feels intentional rather than templated.
-    prompts: list[tuple[str, str]] = []
-    for it in items:
-        p_en = (it.get("prompt") or "").strip()
-        p_zh = (it.get("prompt_zh") or "").strip()
-        if p_en or p_zh:
-            prompts.append((p_en, p_zh))
-    if prompts:
-        lines.append("Open questions / 开放问题：")
-        for p_en, p_zh in prompts[:2]:
-            if p_en and p_zh:
-                lines.append(f"- {p_en} / {p_zh}")
-            elif p_en:
-                lines.append(f"- {p_en}")
-            elif p_zh:
-                lines.append(f"- {p_zh}")
-        lines.append("")
+    if text_mode != "en":
+        # Discussion prompts (max 2) at the end.
+        prompts: list[tuple[str, str]] = []
+        for it in items:
+            p_en = (it.get("prompt") or "").strip()
+            p_zh = (it.get("prompt_zh") or "").strip()
+            if p_en or p_zh:
+                prompts.append((p_en, p_zh))
+        if prompts:
+            lines.append("Open questions / 开放问题：")
+            for p_en, p_zh in prompts[:2]:
+                if p_en and p_zh:
+                    lines.append(f"- {p_en} / {p_zh}")
+                elif p_en:
+                    lines.append(f"- {p_en}")
+                elif p_zh:
+                    lines.append(f"- {p_zh}")
+            lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
 
 
-def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> list[str]:
+def _format_x_thread(
+    date: dt.date,
+    digest: dict[str, Any],
+    site_url: str,
+    *,
+    text_mode: str = "bilingual",
+) -> list[str]:
     items = digest.get("items", [])
     groups = _group_by_category(items)
     urls = _digest_issue_urls(date, site_url)
+
+    if text_mode == "en":
+        # Single post for X: keep it lightweight; attach BOTH cards here.
+        picks: list[tuple[str, str, str]] = []
+        for _, cat_items in groups:
+            for it in cat_items:
+                t = (it.get("title") or "").strip()
+                w = (it.get("why") or "").strip()
+                u = (it.get("url") or "").strip()
+                if t and u:
+                    picks.append((t, w, u))
+        picks = picks[:2]  # keep within X length limits
+
+        lines = [
+            f"Daily Digest ({date.isoformat()}) — cards attached (EN + 中文).",
+            f"Full list: {urls['en']}",
+            "",
+        ]
+        for t, w, u in picks:
+            line = f"- {t}"
+            if w:
+                line += f" — {w}"
+            lines.extend([line, u, ""])
+        return ["\n".join([ln for ln in lines if ln is not None]).strip()]
 
     # Tweet 1: short bilingual intro + canonical links (attach BOTH cards here).
     t0 = "\n".join(
@@ -782,11 +834,11 @@ def cmd_social(args: argparse.Namespace) -> None:
 
     if args.platform in ("linkedin", "both"):
         print("==== LinkedIn (copy/paste) ====")
-        print(_format_linkedin_post(date, digest, site_url=args.site_url))
+        print(_format_linkedin_post(date, digest, site_url=args.site_url, text_mode=args.text))
 
     if args.platform in ("x", "both"):
         print("==== X thread (copy/paste) ====")
-        tweets = _format_x_thread(date, digest, site_url=args.site_url)
+        tweets = _format_x_thread(date, digest, site_url=args.site_url, text_mode=args.text)
         total = len(tweets)
         for i, t in enumerate(tweets, start=1):
             print(f"\n--- Tweet {i}/{total} ---\n{t}\n")
@@ -807,13 +859,19 @@ def main(argv: list[str]) -> int:
     p_build.add_argument("--date", required=True, help="YYYY-MM-DD")
     p_build.set_defaults(func=cmd_build)
 
-    p_social = sub.add_parser("social", help="Generate bilingual social post text (LinkedIn + X)")
+    p_social = sub.add_parser("social", help="Generate social post text (LinkedIn + X)")
     p_social.add_argument("--date", required=True, help="YYYY-MM-DD")
     p_social.add_argument(
         "--platform",
         choices=["both", "linkedin", "x"],
         default="both",
         help="Which post text to emit, default: both",
+    )
+    p_social.add_argument(
+        "--text",
+        choices=["en", "bilingual"],
+        default="bilingual",
+        help="Text mode for posts; note: cards are always EN+ZH. Default: bilingual",
     )
     p_social.add_argument(
         "--site-url",

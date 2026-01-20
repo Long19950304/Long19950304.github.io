@@ -13,7 +13,7 @@ translation_key: digest
 只在确实有值得读的内容时发布（质量优先，不强行日更）。
 </p>
 
-{% assign digests = site.digests | sort: "name" | reverse %}
+{% assign digests = site.digests_zh | sort: "name" | reverse %}
 
 {% if digests.size == 0 %}
 <p>暂时还没有简报。</p>
@@ -26,4 +26,3 @@ translation_key: digest
 {% endfor %}
 </ul>
 {% endif %}
-

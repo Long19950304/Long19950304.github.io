@@ -15,6 +15,12 @@
     {%- if alt_page == nil -%}
       {%- assign alt_page = site.projects | where: "translation_key", page.translation_key | where: "lang", other_lang | first -%}
     {%- endif -%}
+    {%- if alt_page == nil -%}
+      {%- assign alt_page = site.digests | where: "translation_key", page.translation_key | where: "lang", other_lang | first -%}
+    {%- endif -%}
+    {%- if alt_page == nil -%}
+      {%- assign alt_page = site.digests_zh | where: "translation_key", page.translation_key | where: "lang", other_lang | first -%}
+    {%- endif -%}
   {%- endif -%}
   {%- assign alt_url = alt_page.url -%}
   {%- if alt_url == nil or alt_url == '' -%}

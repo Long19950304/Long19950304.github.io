@@ -30,6 +30,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_SOURCES = REPO_ROOT / "_data" / "digest_sources.yml"
 DATA_DIGESTS_DIR = REPO_ROOT / "_data" / "digests"
 DIGESTS_DIR = REPO_ROOT / "_digests"
+ZH_DIGESTS_DIR = REPO_ROOT / "_digests_zh"
 CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
 
 
@@ -41,6 +42,7 @@ def _die(msg: str, code: int = 2) -> None:
 def _ensure_dirs() -> None:
     DATA_DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
     DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
+    ZH_DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
     CARD_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -162,13 +164,45 @@ def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict
     return ordered
 
 
-def _font_paths() -> dict[str, Path]:
-    # Prefer widely available macOS fonts.
-    candidates = [
-        ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", "regular"),
-        ("/System/Library/Fonts/Supplemental/Arial Bold.ttf", "bold"),
-        ("/System/Library/Fonts/Supplemental/Helvetica.ttc", "regular"),
-    ]
+CAT_ZH = {
+    "CSS / AI & society": "CSS / AI 与社会",
+    "AI frontier": "AI 前沿",
+    "Digital health / health comm": "数字健康 / 健康传播",
+    "Education / learning sciences / edtech": "教育 / 学习科学 / 教育技术",
+    "Misc": "其他",
+}
+
+
+def _pick_lang(it: dict[str, Any], key_en: str, key_zh: str, lang: str) -> str:
+    if lang == "zh":
+        v = (it.get(key_zh) or "").strip()
+        if v:
+            return v
+        # Fallback to English if Chinese is missing.
+    return (it.get(key_en) or "").strip()
+
+
+def _font_paths(lang: str) -> dict[str, Path]:
+    """
+    Pick fonts that actually contain the glyphs we need.
+
+    For zh, we must use a CJK font, otherwise Pillow will render tofu boxes.
+    """
+    if lang == "zh":
+        candidates = [
+            ("/System/Library/Fonts/Hiragino Sans GB.ttc", "regular"),
+            ("/System/Library/Fonts/STHeiti Medium.ttc", "bold"),
+            ("/System/Library/Fonts/STHeiti Light.ttc", "regular"),
+            ("/System/Library/Fonts/Supplemental/Songti.ttc", "regular"),
+        ]
+    else:
+        # Prefer widely available macOS fonts.
+        candidates = [
+            ("/System/Library/Fonts/Supplemental/Arial.ttf", "regular"),
+            ("/System/Library/Fonts/Supplemental/Arial Bold.ttf", "bold"),
+            ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", "regular"),
+            ("/System/Library/Fonts/Supplemental/Helvetica.ttc", "regular"),
+        ]
     out: dict[str, Path] = {}
     for fp, role in candidates:
         p = Path(fp)
@@ -226,7 +260,7 @@ def _wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, ma
     return lines
 
 
-def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path) -> None:
+def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
     # 4:5 aspect ratio is friendly for both LinkedIn and X.
     w, h = 1080, 1350
     bg = (248, 250, 252)  # very light gray-blue
@@ -237,7 +271,7 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path) -> N
     img = Image.new("RGB", (w, h), bg)
     draw = ImageDraw.Draw(img)
 
-    fonts = _font_paths()
+    fonts = _font_paths(lang)
     font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 52) if fonts else ImageFont.load_default()
     font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 30) if fonts else ImageFont.load_default()
     font_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 26) if fonts else ImageFont.load_default()
@@ -247,7 +281,7 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path) -> N
     x = pad
     y = 64
 
-    title = "Daily Digest"
+    title = "Daily Digest" if lang != "zh" else "每日简报"
     draw.text((x, y), title, fill=ink, font=font_title)
     y += 64
 
@@ -268,14 +302,15 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path) -> N
             break
         if not cat_items:
             continue
-        draw.text((x, y), cat, fill=ink, font=font_h2)
+        cat_label = cat if lang != "zh" else CAT_ZH.get(cat, cat)
+        draw.text((x, y), cat_label, fill=ink, font=font_h2)
         y += 40
 
         for it in cat_items:
             if rendered >= max_items_total:
                 break
-            body = it.get("title", "").strip()
-            why = (it.get("why", "") or "").strip()
+            body = _pick_lang(it, "title", "title_zh", lang)
+            why = _pick_lang(it, "why", "why_zh", lang)
             if why:
                 body = f"{body} - {why}"
             # Keep bullets compact.
@@ -308,7 +343,7 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path) -> N
     img.save(out_path, format="PNG", optimize=True)
 
 
-def build_digest(date: dt.date, digest: dict[str, Any]) -> tuple[Path, Path]:
+def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[Path, Path]:
     items = digest.get("items", [])
     if not isinstance(items, list):
         _die("digest.items must be a list")
@@ -316,40 +351,47 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> tuple[Path, Path]:
         _die("digest has no items; skip build or add items first")
 
     # Image card
-    card_path = CARD_DIR / f"{date.isoformat()}.png"
-    render_card(date, items, card_path)
+    suffix = "zh" if lang == "zh" else "en"
+    card_path = CARD_DIR / f"{date.isoformat()}-{suffix}.png"
+    render_card(date, items, card_path, lang=lang)
 
     # Markdown page (collection item)
-    DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
-    md_path = DIGESTS_DIR / f"{date.isoformat()}.md"
+    out_dir = ZH_DIGESTS_DIR if lang == "zh" else DIGESTS_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
+    md_path = out_dir / f"{date.isoformat()}.md"
+
     title = digest.get("title") or f"Daily Digest - {date.isoformat()}"
+    if lang == "zh":
+        title = digest.get("title_zh") or f"每日简报 - {date.isoformat()}"
 
     groups = _group_by_category(items)
     lines: list[str] = [
         "---",
         "layout: page",
         f'title: "{title}"',
-        "lang: en",
-        f"permalink: /digest/{date.isoformat()}/",
+        f"lang: {lang}",
+        f"permalink: /{'zh/' if lang == 'zh' else ''}digest/{date.isoformat()}/",
         f"digest_date: {date.isoformat()}",
-        f"card_image: /assets/img/digests/{date.isoformat()}.png",
+        f"card_image: /assets/img/digests/{date.isoformat()}-{suffix}.png",
+        f"translation_key: digest-{date.isoformat()}",
         "---",
         "",
-        f"![Daily digest card](/assets/img/digests/{date.isoformat()}.png)",
+        f"![Daily digest card](/assets/img/digests/{date.isoformat()}-{suffix}.png)",
         "",
-        "## Links",
+        "## Links" if lang != "zh" else "## 链接",
         "",
     ]
 
     for cat, cat_items in groups:
         if not cat_items:
             continue
-        lines.append(f"### {cat}")
+        cat_label = cat if lang != "zh" else CAT_ZH.get(cat, cat)
+        lines.append(f"### {cat_label}")
         lines.append("")
         for it in cat_items:
-            t = it.get("title", "").strip()
+            t = _pick_lang(it, "title", "title_zh", lang)
             u = it.get("url", "").strip()
-            why = (it.get("why", "") or "").strip()
+            why = _pick_lang(it, "why", "why_zh", lang)
             if not t or not u:
                 continue
             if why:
@@ -360,6 +402,13 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> tuple[Path, Path]:
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     return md_path, card_path
+
+
+def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path, Path]]:
+    out: list[tuple[str, Path, Path]] = []
+    out.append(("en",) + _md_for_lang(date, digest, lang="en"))
+    out.append(("zh",) + _md_for_lang(date, digest, lang="zh"))
+    return out
 
 
 def cmd_draft(args: argparse.Namespace) -> None:
@@ -393,9 +442,10 @@ def cmd_build(args: argparse.Namespace) -> None:
         else:
             _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
     digest = _load_digest_yaml(digest_path)
-    md_path, card_path = build_digest(date, digest)
-    print(f"Wrote {md_path.relative_to(REPO_ROOT)}")
-    print(f"Wrote {card_path.relative_to(REPO_ROOT)}")
+    results = build_digest(date, digest)
+    for lang, md_path, card_path in results:
+        print(f"Wrote {md_path.relative_to(REPO_ROOT)} ({lang})")
+        print(f"Wrote {card_path.relative_to(REPO_ROOT)} ({lang})")
 
 
 def main(argv: list[str]) -> int:

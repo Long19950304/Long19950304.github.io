@@ -395,17 +395,17 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
     lines: list[str] = [
         f"{title_en} / {title_zh}",
         "",
-        "Quick bulletin from what I read today — EN + 中文 cards attached.",
-        "今天读到的一些内容速览（我会把英文/中文两张卡片一起附上）。",
+        "Today's reading bulletin — EN + 中文 cards attached.",
+        "今日阅读简报（附英文/中文两张卡片）。",
     ]
 
     if highlights:
         h_en = [((it.get("title") or "").strip()) for it in highlights[:2] if (it.get("title") or "").strip()]
         h_zh = [((it.get("title_zh") or it.get("title") or "").strip()) for it in highlights[:2] if (it.get("title_zh") or it.get("title") or "").strip()]
         if h_en:
-            lines.append("Two things that stuck with me today: " + ", ".join(h_en) + ".")
+            lines.append("Highlights: " + ", ".join(h_en) + ".")
         if h_zh:
-            lines.append("今天最想展开的两条：" + "、".join(h_zh) + "。")
+            lines.append("本期重点：" + "、".join(h_zh) + "。")
 
     lines.extend(
         [
@@ -466,7 +466,7 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
                 lines.append(f"- {p_zh}")
         lines.append("")
 
-    lines.append("If you'd like, tell me what you're reading this week / 也欢迎你分享你最近在看什么。")
+    lines.append("Comments welcome / 欢迎交流。")
     return "\n".join(lines).rstrip() + "\n"
 
 

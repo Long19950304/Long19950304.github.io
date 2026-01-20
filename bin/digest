@@ -19,6 +19,7 @@ import datetime as dt
 import json
 import re
 import sys
+import html
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
@@ -86,6 +87,33 @@ def _clean_title(title: str) -> str:
     return title
 
 
+def _strip_html(s: str) -> str:
+    # RSS summaries often include HTML tags. Keep a plain-text snippet for drafting.
+    s = html.unescape(s or "")
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def _first_sentence(s: str, max_len: int = 160) -> str:
+    s = re.sub(r"\s+", " ", (s or "").strip())
+    if not s:
+        return ""
+    # Heuristic sentence split. Good enough for drafting.
+    m = re.split(r"(?<=[.!?])\s+", s, maxsplit=1)
+    out = (m[0] if m else s).strip()
+    if len(out) > max_len:
+        out = out[: max_len - 1].rstrip() + "…"
+    return out
+
+
+def _truncate(s: str, max_len: int) -> str:
+    s = re.sub(r"\s+", " ", (s or "").strip())
+    if len(s) <= max_len:
+        return s
+    return s[: max_len - 1].rstrip() + "…"
+
+
 def _draft_items(
     sources: list[dict[str, Any]],
     since_utc: dt.datetime,
@@ -103,16 +131,27 @@ def _draft_items(
                 continue
             title = _clean_title(getattr(e, "title", "") or "")
             link = (getattr(e, "link", "") or "").strip()
+            summary = _strip_html(getattr(e, "summary", "") or getattr(e, "description", "") or "")
             if not title or not link:
                 continue
+            # Provide draft-level snippets (user should rewrite for quality).
+            takeaway = _truncate(summary, 360) if summary else ""
+            why = _first_sentence(summary, 140) if summary else ""
             items.append(
                 {
                     "category": src.get("category", "").strip() or "Misc",
                     "title": title,
-                    "why": "",
+                    "why": why,
+                    "takeaway": takeaway,
+                    "prompt": "",
                     "url": link,
                     "source": src.get("name", "").strip() or src.get("id", "").strip(),
                     "published_utc": when.isoformat() if when else "",
+                    # Chinese fields are intentionally left blank for human curation.
+                    "title_zh": "",
+                    "why_zh": "",
+                    "takeaway_zh": "",
+                    "prompt_zh": "",
                 }
             )
 
@@ -293,13 +332,18 @@ def _digest_issue_urls(date: dt.date, site_url: str) -> dict[str, str]:
 def _format_item_bilingual(it: dict[str, Any]) -> str:
     t_en = (it.get("title") or "").strip()
     w_en = (it.get("why") or "").strip()
+    take_en = (it.get("takeaway") or "").strip()
+    p_en = (it.get("prompt") or "").strip()
     t_zh = (it.get("title_zh") or "").strip()
     w_zh = (it.get("why_zh") or "").strip()
+    take_zh = (it.get("takeaway_zh") or "").strip()
+    p_zh = (it.get("prompt_zh") or "").strip()
     url = (it.get("url") or "").strip()
 
     en = t_en
     if w_en:
         en = f"{en} — {w_en}"
+
     zh = t_zh or ""
     if zh and w_zh:
         zh = f"{zh} — {w_zh}"
@@ -311,6 +355,15 @@ def _format_item_bilingual(it: dict[str, Any]) -> str:
         lines.append(f"- {en}")
     if zh:
         lines.append(f"  {zh}")
+    if take_en:
+        lines.append(f"  Take-home: {take_en}")
+    if take_zh:
+        lines.append(f"  要点: {take_zh}")
+    if p_en or p_zh:
+        if p_en:
+            lines.append(f"  Discuss: {p_en}")
+        if p_zh:
+            lines.append(f"  讨论: {p_zh}")
     if url:
         lines.append(f"  {url}")
     return "\n".join(lines).strip()
@@ -327,13 +380,11 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
     lines: list[str] = [
         f"{title_en} / {title_zh}",
         "",
-        "Links (EN):",
-        urls["en"],
+        "Full lists / 完整列表：",
+        f"EN: {urls['en']}",
+        f"中文: {urls['zh']}",
         "",
-        "链接（中文）：",
-        urls["zh"],
-        "",
-        "Top items / 今日要点：",
+        "Bulletin / 要点速览（可点击链接）：",
         "",
     ]
 
@@ -343,6 +394,7 @@ def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) 
         cat_zh = CAT_ZH.get(cat, cat)
         lines.append(f"{cat} / {cat_zh}")
         for it in cat_items[:10]:
+            # LinkedIn doesn't render Markdown links; keep URLs explicit.
             lines.append(_format_item_bilingual(it))
         lines.append("")
 
@@ -368,6 +420,7 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
             f"中文: {urls['zh']}",
             "",
             "Direct links in thread / 详细链接见串：",
+            "Q: Which item should we unpack next? / 你最想我展开哪一条？",
         ]
     ).strip()
 
@@ -381,20 +434,24 @@ def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> li
         for it in cat_items[:10]:
             t_en = (it.get("title") or "").strip()
             w_en = (it.get("why") or "").strip()
+            take_en = (it.get("takeaway") or "").strip()
             t_zh = (it.get("title_zh") or "").strip()
             w_zh = (it.get("why_zh") or "").strip()
+            take_zh = (it.get("takeaway_zh") or "").strip()
             url = (it.get("url") or "").strip()
 
             cat_zh = CAT_ZH.get(cat, cat)
             cat_label = f"[{cat}]/{cat_zh}"
 
+            blurb_en = w_en or _first_sentence(take_en, 160)
             line = t_en
-            if w_en:
-                line = f"{line} — {w_en}"
+            if blurb_en:
+                line = f"{line} — {blurb_en}"
             if t_zh:
+                blurb_zh = w_zh or _first_sentence(take_zh, 120)
                 zh_line = t_zh
-                if w_zh:
-                    zh_line = f"{zh_line} — {w_zh}"
+                if blurb_zh:
+                    zh_line = f"{zh_line} — {blurb_zh}"
                 line = f"{cat_label} {line}\n{zh_line}"
             elif w_zh:
                 line = f"{cat_label} {line}\n{w_zh}"
@@ -562,12 +619,24 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
             t = _pick_lang(it, "title", "title_zh", lang)
             u = it.get("url", "").strip()
             why = _pick_lang(it, "why", "why_zh", lang)
+            takeaway = _pick_lang(it, "takeaway", "takeaway_zh", lang)
+            prompt = _pick_lang(it, "prompt", "prompt_zh", lang)
             if not t or not u:
                 continue
+            line = f"- [{t}]({u})"
             if why:
-                lines.append(f"- [{t}]({u}) - {why}")
-            else:
-                lines.append(f"- [{t}]({u})")
+                line = f"{line} - {why}"
+            lines.append(line)
+            if takeaway:
+                if lang != "zh":
+                    lines.append(f"  - Take-home: {takeaway}")
+                else:
+                    lines.append(f"  - 要点: {takeaway}")
+            if prompt:
+                if lang != "zh":
+                    lines.append(f"  - Discuss: {prompt}")
+                else:
+                    lines.append(f"  - 讨论: {prompt}")
         lines.append("")
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
@@ -593,10 +662,15 @@ def cmd_draft(args: argparse.Namespace) -> None:
     if out.exists() and not args.force:
         out = DATA_DIGESTS_DIR / f"{date.isoformat()}.draft.yml"
 
-    payload = {"date": date.isoformat(), "title": f"Daily Digest - {date.isoformat()}", "items": items}
+    payload = {
+        "date": date.isoformat(),
+        "title": f"Daily Digest - {date.isoformat()}",
+        "title_zh": f"每日简报 - {date.isoformat()}",
+        "items": items,
+    }
     _save_yaml(out, payload)
     print(f"Wrote {out.relative_to(REPO_ROOT)} ({len(items)} items).")
-    print("Next: edit `why` fields + delete low-signal items, then run:")
+    print("Next: edit `why` (short), `takeaway` (1–2 sentences), `prompt` (1 question) + fill *_zh, then run:")
     print(f"  {REPO_ROOT}/bin/digest build --date {date.isoformat()}")
 
 
@@ -630,6 +704,15 @@ def cmd_social(args: argparse.Namespace) -> None:
             _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
 
     digest = _load_digest_yaml(digest_path)
+    # Social requirement: each post should include BOTH EN + ZH card images.
+    card_en = CARD_DIR / f"{date.isoformat()}-en.png"
+    card_zh = CARD_DIR / f"{date.isoformat()}-zh.png"
+    print("==== Attach images (EN + ZH) ====")
+    print(f"EN card: {card_en}")
+    print(f"ZH card: {card_zh}")
+    if not card_en.exists() or not card_zh.exists():
+        print("(Tip) Run `./bin/digest build --date YYYY-MM-DD` first to generate the cards.")
+    print("")
 
     if args.platform in ("linkedin", "both"):
         print("==== LinkedIn (copy/paste) ====")

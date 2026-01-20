@@ -8,6 +8,8 @@ Workflow:
   2) Edit the generated YAML (fill `why` fields, delete low-signal items).
   3) Build the digest page + image card:
        personal-site/bin/digest build --date 2026-01-20
+  4) (Optional) Generate social post text (X thread + LinkedIn copy):
+       personal-site/bin/digest social --date 2026-01-20
 """
 
 from __future__ import annotations
@@ -32,6 +34,7 @@ DATA_DIGESTS_DIR = REPO_ROOT / "_data" / "digests"
 DIGESTS_DIR = REPO_ROOT / "_digests"
 ZH_DIGESTS_DIR = REPO_ROOT / "_digests_zh"
 CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
+DEFAULT_SITE_URL = "https://long19950304.github.io"
 
 
 def _die(msg: str, code: int = 2) -> None:
@@ -260,6 +263,173 @@ def _wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, ma
     return lines
 
 
+_URL_RE = re.compile(r"https?://\S+")
+
+
+def _x_char_len(s: str) -> int:
+    """
+    Approximate X/Twitter length.
+
+    X counts any URL as ~23 chars regardless of actual length. We approximate
+    with 23 to split threads safely.
+    """
+    if not s:
+        return 0
+    urls = list(_URL_RE.findall(s))
+    # Replace each URL with 23 chars in the count.
+    return len(s) - sum(len(u) for u in urls) + 23 * len(urls)
+
+
+def _digest_issue_urls(date: dt.date, site_url: str) -> dict[str, str]:
+    base = (site_url or DEFAULT_SITE_URL).rstrip("/")
+    return {
+        "en": f"{base}/digest/{date.isoformat()}/",
+        "zh": f"{base}/zh/digest/{date.isoformat()}/",
+        "en_card": f"/assets/img/digests/{date.isoformat()}-en.png",
+        "zh_card": f"/assets/img/digests/{date.isoformat()}-zh.png",
+    }
+
+
+def _format_item_bilingual(it: dict[str, Any]) -> str:
+    t_en = (it.get("title") or "").strip()
+    w_en = (it.get("why") or "").strip()
+    t_zh = (it.get("title_zh") or "").strip()
+    w_zh = (it.get("why_zh") or "").strip()
+    url = (it.get("url") or "").strip()
+
+    en = t_en
+    if w_en:
+        en = f"{en} — {w_en}"
+    zh = t_zh or ""
+    if zh and w_zh:
+        zh = f"{zh} — {w_zh}"
+    elif not zh and w_zh:
+        zh = w_zh
+
+    lines: list[str] = []
+    if en:
+        lines.append(f"- {en}")
+    if zh:
+        lines.append(f"  {zh}")
+    if url:
+        lines.append(f"  {url}")
+    return "\n".join(lines).strip()
+
+
+def _format_linkedin_post(date: dt.date, digest: dict[str, Any], site_url: str) -> str:
+    items = digest.get("items", [])
+    groups = _group_by_category(items)
+    urls = _digest_issue_urls(date, site_url)
+
+    title_en = (digest.get("title") or f"Daily Digest — {date.isoformat()}").strip()
+    title_zh = (digest.get("title_zh") or f"每日简报 — {date.isoformat()}").strip()
+
+    lines: list[str] = [
+        f"{title_en} / {title_zh}",
+        "",
+        "Links (EN):",
+        urls["en"],
+        "",
+        "链接（中文）：",
+        urls["zh"],
+        "",
+        "Top items / 今日要点：",
+        "",
+    ]
+
+    for cat, cat_items in groups:
+        if not cat_items:
+            continue
+        cat_zh = CAT_ZH.get(cat, cat)
+        lines.append(f"{cat} / {cat_zh}")
+        for it in cat_items[:10]:
+            lines.append(_format_item_bilingual(it))
+        lines.append("")
+
+    # Hashtags are intentionally few; keep it academic.
+    lines.extend(
+        [
+            "#ComputationalSocialScience #AIEvaluation #HealthCommunication #EdTech",
+        ]
+    )
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def _format_x_thread(date: dt.date, digest: dict[str, Any], site_url: str) -> list[str]:
+    items = digest.get("items", [])
+    groups = _group_by_category(items)
+    urls = _digest_issue_urls(date, site_url)
+
+    # Tweet 1: short bilingual intro + canonical links.
+    t0 = "\n".join(
+        [
+            f"Daily Digest / 每日简报 ({date.isoformat()})",
+            f"EN: {urls['en']}",
+            f"中文: {urls['zh']}",
+            "",
+            "Direct links in thread / 详细链接见串：",
+        ]
+    ).strip()
+
+    tweets: list[str] = [t0]
+
+    # Thread: compact per-item blocks (avoid orphan headings when splitting).
+    blocks: list[str] = []
+    for cat, cat_items in groups:
+        if not cat_items:
+            continue
+        for it in cat_items[:10]:
+            t_en = (it.get("title") or "").strip()
+            w_en = (it.get("why") or "").strip()
+            t_zh = (it.get("title_zh") or "").strip()
+            w_zh = (it.get("why_zh") or "").strip()
+            url = (it.get("url") or "").strip()
+
+            cat_zh = CAT_ZH.get(cat, cat)
+            cat_label = f"[{cat}]/{cat_zh}"
+
+            line = t_en
+            if w_en:
+                line = f"{line} — {w_en}"
+            if t_zh:
+                zh_line = t_zh
+                if w_zh:
+                    zh_line = f"{zh_line} — {w_zh}"
+                line = f"{cat_label} {line}\n{zh_line}"
+            elif w_zh:
+                line = f"{cat_label} {line}\n{w_zh}"
+            else:
+                line = f"{cat_label} {line}"
+            if url:
+                line = f"{line}\n{url}"
+            blocks.append(line.strip())
+
+    # Pack blocks into tweets with conservative length.
+    cur: list[str] = []
+    cur_len = 0
+    max_len = 265  # keep headroom for platform differences
+    for b in blocks:
+        add = (b + "\n\n").strip() if b else ""
+        if not add:
+            continue
+        add_len = _x_char_len(add) + (2 if cur else 0)
+        if cur and cur_len + add_len > max_len:
+            tweets.append("\n\n".join(cur).strip())
+            cur = [b]
+            cur_len = _x_char_len(b)
+            continue
+        if cur:
+            cur_len += _x_char_len("\n\n" + b)
+            cur.append(b)
+        else:
+            cur = [b]
+            cur_len = _x_char_len(b)
+    if cur:
+        tweets.append("\n\n".join(cur).strip())
+
+    return tweets
+
+
 def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
     # 4:5 aspect ratio is friendly for both LinkedIn and X.
     w, h = 1080, 1350
@@ -448,6 +618,31 @@ def cmd_build(args: argparse.Namespace) -> None:
         print(f"Wrote {card_path.relative_to(REPO_ROOT)} ({lang})")
 
 
+def cmd_social(args: argparse.Namespace) -> None:
+    _ensure_dirs()
+    date = _parse_date(args.date)
+    digest_path = DATA_DIGESTS_DIR / f"{date.isoformat()}.yml"
+    if not digest_path.exists():
+        draft = DATA_DIGESTS_DIR / f"{date.isoformat()}.draft.yml"
+        if draft.exists():
+            digest_path = draft
+        else:
+            _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
+
+    digest = _load_digest_yaml(digest_path)
+
+    if args.platform in ("linkedin", "both"):
+        print("==== LinkedIn (copy/paste) ====")
+        print(_format_linkedin_post(date, digest, site_url=args.site_url))
+
+    if args.platform in ("x", "both"):
+        print("==== X thread (copy/paste) ====")
+        tweets = _format_x_thread(date, digest, site_url=args.site_url)
+        total = len(tweets)
+        for i, t in enumerate(tweets, start=1):
+            print(f"\n--- Tweet {i}/{total} ---\n{t}\n")
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(prog="digest")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -462,6 +657,21 @@ def main(argv: list[str]) -> int:
     p_build = sub.add_parser("build", help="Build digest page + image card from YAML")
     p_build.add_argument("--date", required=True, help="YYYY-MM-DD")
     p_build.set_defaults(func=cmd_build)
+
+    p_social = sub.add_parser("social", help="Generate bilingual social post text (LinkedIn + X)")
+    p_social.add_argument("--date", required=True, help="YYYY-MM-DD")
+    p_social.add_argument(
+        "--platform",
+        choices=["both", "linkedin", "x"],
+        default="both",
+        help="Which post text to emit, default: both",
+    )
+    p_social.add_argument(
+        "--site-url",
+        default=DEFAULT_SITE_URL,
+        help=f"Canonical site URL for digest links, default: {DEFAULT_SITE_URL}",
+    )
+    p_social.set_defaults(func=cmd_social)
 
     args = parser.parse_args(argv)
     args.func(args)

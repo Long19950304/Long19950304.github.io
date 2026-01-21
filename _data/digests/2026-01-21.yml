@@ -16,9 +16,9 @@ items:
   url: https://www.bbc.com/news/articles/c4gwp2me3gzo?at_medium=RSS&at_campaign=rss
   source: BBC News - Business
   published_utc: '2026-01-21T02:12:03+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 欧洲拟暂停批准美欧贸易协议，全球市场警惕
+  why_zh: 欧洲释放可能暂停批准美方贸易协议的信号，市场对政策不确定性反应升温。
+  takeaway_zh: 贸易谈判新闻再度牵动风险情绪；关注外汇/股市反应，以及是否演变为更广泛的谈判僵局。
   prompt_zh: ''
 - category: Business & economy
   title: Dollar and US stocks fall as Trump says ‘no going back’ on Greenland bid
@@ -30,9 +30,9 @@ items:
   url: https://www.ft.com/content/6292304a-b4b3-4f04-89bb-f05861b40cb8
   source: Financial Times - World
   published_utc: '2026-01-20T22:18:07+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 特朗普称对格陵兰收购“不会回头”，美元与美股下跌
+  why_zh: 围绕格陵兰的地缘政治表态扰动市场，拖累美股与美元。
+  takeaway_zh: 高层地缘政治言论会迅速传导到市场波动，值得纳入风险情景与资产配置考量。
   prompt_zh: ''
 - category: Business & economy
   title: US to remove 200 Nato military personnel from duty
@@ -44,9 +44,9 @@ items:
   url: https://www.ft.com/content/d5ac83e1-2b76-4737-895c-200518c7dea1
   source: Financial Times - World
   published_utc: '2026-01-21T00:57:25+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 美国将撤下 200 名北约军人
+  why_zh: 在与欧洲盟友关系更紧张的背景下，美国计划撤下 200 名北约军人。
+  takeaway_zh: 规模不大但信号明确；可继续观察其对盟友姿态与防务协作叙事的影响。
   prompt_zh: ''
 - category: Business & economy
   title: Carney warns of ‘rupture’ to global order as Trump rattles allies
@@ -58,9 +58,9 @@ items:
   url: https://www.ft.com/content/7d9609d4-14cd-4b0c-b48c-0b3f2e4f6611
   source: Financial Times - World
   published_utc: '2026-01-20T23:46:26+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 卡尼警告全球秩序或现“断裂”，盟友对美国施压做准备
+  why_zh: 卡尼将盟友面临的压力上升描述为全球秩序潜在“断裂”，并提醒其外溢风险。
+  takeaway_zh: 中等国家的协调与制度韧性正在成为市场与政策讨论的一部分。
   prompt_zh: ''
 - category: Tech industry
   title: US regulator appeals Meta’s antitrust win
@@ -72,9 +72,9 @@ items:
   url: https://www.ft.com/content/ef7b57cf-d2e7-4cfb-be24-1b5e1bdc3452
   source: Financial Times - Technology
   published_utc: '2026-01-20T22:22:32+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 美国监管机构就 Meta 反垄断胜诉提起上诉
+  why_zh: 监管方对 Meta 反垄断案件的判决结果上诉，平台竞争政策压力延续。
+  takeaway_zh: 即便企业赢下首轮，监管周期仍会继续；此类判例对更广泛的科技格局具有外溢影响。
   prompt_zh: ''
 - category: Tech industry
   title: In an effort to protect young users, ChatGPT will now predict how old you
@@ -86,9 +86,9 @@ items:
   url: https://techcrunch.com/2026/01/20/in-an-effort-to-protect-young-users-chatgpt-will-now-predict-how-old-you-are/
   source: TechCrunch
   published_utc: '2026-01-20T23:29:56+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 为保护年轻用户，ChatGPT 将进行年龄预测
+  why_zh: OpenAI 引入年龄估计，以降低未成年人接触敏感内容的风险。
+  takeaway_zh: 年龄推断正在成为新的安全层；但其准确性、公平性与问责机制同样需要被审视。
   prompt_zh: ''
 - category: Tech industry
   title: Anthropic’s CEO stuns Davos with Nvidia criticism
@@ -100,9 +100,9 @@ items:
   url: https://techcrunch.com/2026/01/20/anthropics-ceo-stuns-davos-with-nvidia-criticism/
   source: TechCrunch
   published_utc: '2026-01-21T01:39:58+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: Anthropic CEO 在达沃斯公开批评英伟达
+  why_zh: 在达沃斯，Anthropic CEO 就芯片供应与对华政策表达强烈观点。
+  takeaway_zh: AI 战略越来越难与硬件供应链与地缘政治切割。
   prompt_zh: ''
 - category: Tech industry
   title: Netflix earned $1.5 billion from ads in 2025
@@ -114,9 +114,9 @@ items:
   url: https://www.theverge.com/news/864451/netflix-advertising-revenue-doubled-q4-2025-earnings
   source: The Verge
   published_utc: '2026-01-20T23:06:25+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: Netflix 2025 年广告收入达 15 亿美元
+  why_zh: Netflix 表示 2025 年广告收入 15 亿美元，并预计 2026 年继续增长。
+  takeaway_zh: 广告不再是边缘实验：它会重塑产品设计、衡量体系与注意力平台竞争。
   prompt_zh: ''
 - category: Tech industry
   title: Trump admin admits DOGE employees had access to off-limits Social Security
@@ -129,9 +129,9 @@ items:
   url: https://www.theverge.com/news/864643/doge-social-security-data-misuse
   source: The Verge
   published_utc: '2026-01-20T22:52:59+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 特朗普政府承认 DOGE 相关人员曾访问受限社保数据
+  why_zh: 报道称 DOGE 相关人员接触了受限社保数据，引发治理与合规担忧。
+  takeaway_zh: 数据访问控制与审计可追溯性正成为头条议题，事关公共部门信任与科技合规。
   prompt_zh: ''
 - category: Tech industry
   title: Why neither Asia nor the US has produced a rival to ASML
@@ -143,7 +143,7 @@ items:
   url: https://www.ft.com/content/e47375fb-8c9f-4a4f-8526-8d46ededb805
   source: Financial Times - Technology
   published_utc: '2026-01-21T00:01:08+00:00'
-  title_zh: ''
-  why_zh: ''
-  takeaway_zh: ''
+  title_zh: 为何亚洲和美国都未能造出 ASML 的对手
+  why_zh: FT 解释 ASML 在光刻领域为何难以复制，以及竞争者为何迟迟未出现。
+  takeaway_zh: 一篇理解半导体栈“技术锁定”与产业政策约束的好路线图。
   prompt_zh: ''

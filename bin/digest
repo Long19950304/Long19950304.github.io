@@ -6,7 +6,7 @@ Workflow:
   1) Draft candidates from RSS/Atom feeds:
        personal-site/bin/digest draft --date 2026-01-20
   2) Edit the generated YAML (fill `why` fields, delete low-signal items).
-  3) Build the digest page + image card:
+  3) Build the digest page:
        personal-site/bin/digest build --date 2026-01-20
   4) (Optional) Generate social post text (X thread + LinkedIn copy):
        personal-site/bin/digest social --date 2026-01-20
@@ -42,6 +42,7 @@ CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
 DEFAULT_SITE_URL = "https://long19950304.github.io"
 FETCH_TIMEOUT_SECONDS = 8
 FETCH_WORKERS = 8
+DEFAULT_MAX_ITEMS_ON_SITE = 100
 
 # feedparser uses urllib under the hood and may otherwise block indefinitely on slow/blocked feeds.
 socket.setdefaulttimeout(FETCH_TIMEOUT_SECONDS)
@@ -273,6 +274,130 @@ CAT_ZH = {
     "Education / learning sciences / edtech": "教育 / 学习科学 / 教育技术",
     "Misc": "其他",
 }
+
+
+def _parse_published_utc(it: dict[str, Any]) -> dt.datetime | None:
+    s = (it.get("published_utc") or "").strip()
+    if not s:
+        return None
+    try:
+        return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def _importance_score(it: dict[str, Any]) -> int:
+    """
+    Rank items for the website digest list.
+
+    This is intentionally heuristic: source quality + policy/market/AI-infra keywords,
+    with a small recency bump.
+    """
+    src = (it.get("source") or "").lower()
+    title = (it.get("title") or "").lower()
+    cat = (it.get("category") or "").lower()
+
+    score = 0
+
+    # Source quality / typical impact.
+    if "reuters" in src:
+        score += 90
+    elif "financial times" in src or src.startswith("ft"):
+        score += 85
+    elif "economist" in src:
+        score += 75
+    elif "bbc" in src:
+        score += 70
+    elif "mit technology review" in src:
+        score += 68
+    elif "guardian" in src:
+        score += 62
+    elif "ars technica" in src:
+        score += 60
+    elif "techcrunch" in src:
+        score += 55
+    elif "the verge" in src:
+        score += 52
+    elif "hacker news" in src:
+        score += 15
+    elif "arxiv" in src:
+        score += 20
+    elif "hugging face" in src:
+        score += 22
+    else:
+        score += 30
+
+    # Category nudge.
+    if "security" in cat:
+        score += 18
+    elif "business" in cat or "economy" in cat or "markets" in cat:
+        score += 14
+    elif "tech" in cat:
+        score += 12
+    elif "ai frontier" in cat:
+        score += 10
+    elif "ai & society" in cat or "css" in cat:
+        score += 8
+
+    # Keyword signals.
+    kw = {
+        # Macro / markets
+        "inflation": 10,
+        "interest rate": 10,
+        "house prices": 7,
+        "stocks": 6,
+        "bond": 6,
+        "tariff": 10,
+        "trade": 8,
+        "sanction": 8,
+        # Regulation / governance
+        "antitrust": 10,
+        "regulator": 8,
+        "privacy": 7,
+        "data": 6,
+        "water": 6,
+        "energy": 6,
+        # AI / platforms / infra
+        "openai": 10,
+        "chatgpt": 9,
+        "anthropic": 8,
+        "nvidia": 8,
+        "meta": 7,
+        "tiktok": 6,
+        "youtube": 6,
+        "netflix": 6,
+        "semiconductor": 8,
+        "asml": 8,
+        "chip": 7,
+        # Geopolitics / conflict
+        "ukraine": 10,
+        "russia": 9,
+        "greenland": 8,
+        "nato": 7,
+        "drone": 7,
+        # Security-ish
+        "breach": 10,
+        "hack": 10,
+        "ransom": 10,
+        "vulnerability": 10,
+        "zero-day": 10,
+    }
+    for k, w in kw.items():
+        if k in title:
+            score += w
+
+    # Recency: small bump for newer items.
+    when = _parse_published_utc(it)
+    if when:
+        age_h = (dt.datetime.now(dt.timezone.utc) - when).total_seconds() / 3600.0
+        if age_h <= 6:
+            score += 6
+        elif age_h <= 12:
+            score += 4
+        elif age_h <= 24:
+            score += 2
+
+    return score
 
 
 def _pick_lang(it: dict[str, Any], key_en: str, key_zh: str, lang: str) -> str:
@@ -889,17 +1014,12 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     _optimize_png(out_path)
 
 
-def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[Path, Path]:
+def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     items = digest.get("items", [])
     if not isinstance(items, list):
         _die("digest.items must be a list")
     if not items:
         _die("digest has no items; skip build or add items first")
-
-    # Image card
-    suffix = "zh" if lang == "zh" else "en"
-    card_path = CARD_DIR / f"{date.isoformat()}-{suffix}.png"
-    render_card(date, items, card_path, lang=lang)
 
     # Markdown page (collection item)
     out_dir = ZH_DIGESTS_DIR if lang == "zh" else DIGESTS_DIR
@@ -910,7 +1030,20 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
     if lang == "zh":
         title = digest.get("title_zh") or f"每日简报 - {date.isoformat()}"
 
-    groups = _group_by_category(items)
+    # Sort by importance (global list, not grouped) and cap to a readable max.
+    items_sorted = sorted(
+        items,
+        key=lambda it: (
+            _importance_score(it),
+            _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+        ),
+        reverse=True,
+    )
+    max_items = int(digest.get("max_items", 0) or DEFAULT_MAX_ITEMS_ON_SITE)
+    items_sorted = items_sorted[:max_items]
+    top = items_sorted[:10]
+    rest = items_sorted[10:]
+
     note = (digest.get("note_zh") if lang == "zh" else digest.get("note")) or ""
     note = note.strip()
 
@@ -921,55 +1054,73 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[P
         f"lang: {lang}",
         f"permalink: /{'zh/' if lang == 'zh' else ''}digest/{date.isoformat()}/",
         f"digest_date: {date.isoformat()}",
-        f"card_image: /assets/img/digests/{date.isoformat()}-{suffix}.png",
         f"translation_key: digest-{date.isoformat()}",
         "---",
-        "",
-        f"![Daily digest card](/assets/img/digests/{date.isoformat()}-{suffix}.png)",
         "",
     ]
     if note:
         lines.extend([note, ""])
-    lines.extend(["## Links" if lang != "zh" else "## 链接", ""])
 
-    for cat, cat_items in groups:
-        if not cat_items:
+    def _cat_label(v: str) -> str:
+        v = (v or "Misc").strip() or "Misc"
+        return v if lang != "zh" else CAT_ZH.get(v, v)
+
+    def _short(it: dict[str, Any]) -> str:
+        why = _pick_lang(it, "why", "why_zh", lang)
+        if why:
+            return why
+        take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
+        return _first_sentence(take, 160 if lang != "zh" else 120)
+
+    def _pub(it: dict[str, Any]) -> str:
+        when = _parse_published_utc(it)
+        if not when:
+            return ""
+        return when.strftime("%Y-%m-%d %H:%M UTC")
+
+    lines.extend(["## Top 10" if lang != "zh" else "## 最重要的 10 条", ""])
+
+    for idx, it in enumerate(top, start=1):
+        t = _pick_lang(it, "title", "title_zh", lang)
+        u = (it.get("url") or "").strip()
+        if not t or not u:
             continue
-        cat_label = cat if lang != "zh" else CAT_ZH.get(cat, cat)
-        lines.append(f"### {cat_label}")
+        meta = " | ".join(
+            x
+            for x in [
+                _cat_label(it.get("category", "")),
+                (it.get("source") or "").strip(),
+                _pub(it),
+            ]
+            if x
+        )
+        lines.append(f"{idx}. [{t}]({u})" + (f" — {meta}" if meta else ""))
+        blurb = _short(it)
+        if blurb:
+            lines.append(f"   - {blurb}")
         lines.append("")
-        for it in cat_items:
-            t = _pick_lang(it, "title", "title_zh", lang)
-            u = it.get("url", "").strip()
-            why = _pick_lang(it, "why", "why_zh", lang)
-            takeaway = _pick_lang(it, "takeaway", "takeaway_zh", lang)
-            prompt = _pick_lang(it, "prompt", "prompt_zh", lang)
-            if not t or not u:
-                continue
-            line = f"- [{t}]({u})"
-            if why:
-                line = f"{line} - {why}"
-            lines.append(line)
-            if takeaway:
-                if lang != "zh":
-                    lines.append(f"  - Takeaway: {takeaway}")
-                else:
-                    lines.append(f"  - 要点: {takeaway}")
-            if prompt:
-                if lang != "zh":
-                    lines.append(f"  - Open question: {prompt}")
-                else:
-                    lines.append(f"  - 开放问题: {prompt}")
-        lines.append("")
+
+    lines.extend(["## Full list" if lang != "zh" else "## 全部列表", ""])
+    lines.append("| # | Title | Category | Source | Published (UTC) |")
+    lines.append("|---:|---|---|---|---|")
+    for idx, it in enumerate(items_sorted, start=1):
+        t = _pick_lang(it, "title", "title_zh", lang)
+        u = (it.get("url") or "").strip()
+        if not t or not u:
+            continue
+        cat = _cat_label(it.get("category", ""))
+        src = (it.get("source") or "").strip()
+        pub = _pub(it)
+        lines.append(f"| {idx} | [{t}]({u}) | {cat} | {src} | {pub} |")
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    return md_path, card_path
+    return md_path
 
 
-def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path, Path]]:
-    out: list[tuple[str, Path, Path]] = []
-    out.append(("en",) + _md_for_lang(date, digest, lang="en"))
-    out.append(("zh",) + _md_for_lang(date, digest, lang="zh"))
+def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]]:
+    out: list[tuple[str, Path]] = []
+    out.append(("en", _md_for_lang(date, digest, lang="en")))
+    out.append(("zh", _md_for_lang(date, digest, lang="zh")))
     return out
 
 
@@ -1012,9 +1163,8 @@ def cmd_build(args: argparse.Namespace) -> None:
             _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
     digest = _load_digest_yaml(digest_path)
     results = build_digest(date, digest)
-    for lang, md_path, card_path in results:
+    for lang, md_path in results:
         print(f"Wrote {md_path.relative_to(REPO_ROOT)} ({lang})")
-        print(f"Wrote {card_path.relative_to(REPO_ROOT)} ({lang})")
 
 
 def cmd_social(args: argparse.Namespace) -> None:
@@ -1076,7 +1226,7 @@ def main(argv: list[str]) -> int:
     p_draft.add_argument("--force", action="store_true", help="Overwrite existing YYYY-MM-DD.yml")
     p_draft.set_defaults(func=cmd_draft)
 
-    p_build = sub.add_parser("build", help="Build digest page + image card from YAML")
+    p_build = sub.add_parser("build", help="Build digest page from YAML")
     p_build.add_argument("--date", required=True, help="YYYY-MM-DD")
     p_build.set_defaults(func=cmd_build)
 

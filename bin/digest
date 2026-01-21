@@ -21,6 +21,8 @@ import re
 import sys
 import html
 import socket
+import shutil
+import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
@@ -55,6 +57,37 @@ def _ensure_dirs() -> None:
     DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
     ZH_DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
     CARD_DIR.mkdir(parents=True, exist_ok=True)
+
+def _optimize_png(path: Path) -> None:
+    """
+    Make generated cards more web-friendly.
+
+    - Keep it optional: if pngquant isn't installed, do nothing.
+    - If optimization isn't smaller, keep the original (avoid quality regressions).
+    - Write back in-place to preserve file owner/group on macOS volumes.
+    """
+    exe = shutil.which("pngquant")
+    if not exe or not path.exists():
+        return
+
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    try:
+        orig_size = path.stat().st_size
+        subprocess.run(
+            [exe, "--force", "--strip", "--speed", "1", "--quality", "80-95", "-o", str(tmp), str(path)],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        if tmp.exists() and tmp.stat().st_size < orig_size:
+            path.write_bytes(tmp.read_bytes())
+    except Exception as e:
+        print(f"warn: pngquant failed for {path.name}: {e}", file=sys.stderr)
+    finally:
+        try:
+            tmp.unlink()
+        except FileNotFoundError:
+            pass
 
 
 def _parse_date(s: str) -> dt.date:
@@ -766,15 +799,15 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     draw = ImageDraw.Draw(img)
 
     fonts = _font_paths(lang)
-    font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 52) if fonts else ImageFont.load_default()
-    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
-    font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
-    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
-    font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 24) if fonts else ImageFont.load_default()
+    font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 50) if fonts else ImageFont.load_default()
+    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 26) if fonts else ImageFont.load_default()
+    font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 21) if fonts else ImageFont.load_default()
+    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 26) if fonts else ImageFont.load_default()
+    font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
 
-    pad = 72
+    pad = 64
     x = pad
-    y = 64
+    y = 56
 
     def round_rect_outline(x0: int, y0: int, x1: int, y1: int, r: int) -> None:
         # Monochrome pill with a thin outline (more "academic", less "poster-like").
@@ -782,16 +815,16 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
 
     title = "Daily Digest" if lang != "zh" else "每日简报"
     draw.text((x, y), title, fill=ink, font=font_title)
-    y += 58
+    y += 54
 
     date_str = date.isoformat()
     subtitle = "A quick bulletin of what I'm reading today." if lang != "zh" else "今天在读的内容速览。"
     draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
-    y += 34
+    y += 32
 
     # Top rule
     draw.line((x, y, w - pad, y), fill=faint, width=2)
-    y += 22
+    y += 20
 
     groups = _group_by_category(items)
     max_items_total = 10
@@ -826,21 +859,22 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
             t_lines = _wrap(draw, t, font_item_title, max_width=w - pad * 2)[:2]
             for ln in t_lines:
                 draw.text((x, y), ln, fill=ink, font=font_item_title)
-                y += 34
-            y += 2
+                y += 32
+            y += 1
 
             if tl:
                 # Keep the blurb compact, but allow up to 2 lines.
                 tl_lines = _wrap(draw, tl, font_item_body, max_width=w - pad * 2)[:2]
                 for ln in tl_lines:
                     draw.text((x, y), ln, fill=sub, font=font_item_body)
-                    y += 30
+                    y += 26
 
-            y += 14
+            y += 10
             rendered += 1
 
-        y += 8
-        if y > h - 220:
+        y += 2
+        # Reserve space for the footer; don't let the last lines collide.
+        if y > h - 210:
             break
 
     # Bottom rule + footer
@@ -852,6 +886,7 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_path, format="PNG", optimize=True, compress_level=9)
+    _optimize_png(out_path)
 
 
 def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> tuple[Path, Path]:

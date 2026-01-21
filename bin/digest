@@ -462,7 +462,7 @@ def _format_linkedin_post(
                 if t and u:
                     picks.append((t, u))
 
-        max_links = 8 if text_mode == "en" else 10
+        max_links = 10 if text_mode == "en" else 10
         for t, u in picks[:max_links]:
             lines.append(f"- {_truncate(t, 120)}")
             lines.append(f"  {u}")
@@ -592,7 +592,7 @@ def _format_x_thread(
             # Theme tweet + link list in replies (so the first post stays readable).
             head: list[str] = [f"Daily Digest ({date.isoformat()}). Cards: EN + Chinese."]
             if note_en:
-                head.append(_truncate(note_en, 180))
+                head.append(_truncate(note_en, 240))
             head.append(f"Full list: {urls['en']}")
             head.append("Links below.")
             t0 = "\n".join(head).strip()
@@ -608,13 +608,14 @@ def _format_x_thread(
             tweets: list[str] = [t0]
             cur: list[str] = []
             cur_len = 0
-            max_len = 265
+            max_len = 270
             for ln in lines[:12]:  # cap to avoid spammy threads
-                add_len = len(ln) + (1 if cur else 0)
+                # Use X-style length approximation (URLs ~23 chars) to pack more per tweet.
+                add_len = _x_char_len(ln) + (1 if cur else 0)
                 if cur and cur_len + add_len > max_len:
                     tweets.append("\n".join(cur).strip())
                     cur = [ln]
-                    cur_len = len(ln)
+                    cur_len = _x_char_len(ln)
                 else:
                     cur.append(ln)
                     cur_len += add_len
@@ -647,9 +648,9 @@ def _format_x_thread(
         head: list[str] = [f"Daily Digest / 每日简报 ({date.isoformat()})"]
         head.append("Cards attached (EN + 中文).")
         if note_en:
-            head.append(_truncate(note_en, 180))
+            head.append(_truncate(note_en, 260))
         if note_zh:
-            head.append(_truncate(note_zh, 120))
+            head.append(_truncate(note_zh, 200))
         head.append(f"EN list: {urls['en']}")
         head.append(f"中文列表: {urls['zh']}")
         head.append("Links below / 链接见串。")
@@ -666,13 +667,13 @@ def _format_x_thread(
         tweets: list[str] = [t0]
         cur: list[str] = []
         cur_len = 0
-        max_len = 265
+        max_len = 270
         for ln in lines[:12]:
-            add_len = len(ln) + (1 if cur else 0)
+            add_len = _x_char_len(ln) + (1 if cur else 0)
             if cur and cur_len + add_len > max_len:
                 tweets.append("\n".join(cur).strip())
                 cur = [ln]
-                cur_len = len(ln)
+                cur_len = _x_char_len(ln)
             else:
                 cur.append(ln)
                 cur_len += add_len

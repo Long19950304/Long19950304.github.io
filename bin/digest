@@ -20,6 +20,8 @@ import json
 import re
 import sys
 import html
+import socket
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
@@ -36,6 +38,11 @@ DIGESTS_DIR = REPO_ROOT / "_digests"
 ZH_DIGESTS_DIR = REPO_ROOT / "_digests_zh"
 CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
 DEFAULT_SITE_URL = "https://long19950304.github.io"
+FETCH_TIMEOUT_SECONDS = 8
+FETCH_WORKERS = 8
+
+# feedparser uses urllib under the hood and may otherwise block indefinitely on slow/blocked feeds.
+socket.setdefaulttimeout(FETCH_TIMEOUT_SECONDS)
 
 
 def _die(msg: str, code: int = 2) -> None:
@@ -120,40 +127,54 @@ def _draft_items(
     max_items: int,
 ) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
-    for src in sources:
-        url = src.get("url", "").strip()
+
+    def fetch(src: dict[str, Any]) -> tuple[dict[str, Any], Any | None]:
+        url = (src.get("url") or "").strip()
         if not url:
-            continue
-        feed = feedparser.parse(url)
-        for e in getattr(feed, "entries", []) or []:
-            when = _pick_entry_time(e)
-            if when and when < since_utc:
+            return (src, None)
+        try:
+            return (src, feedparser.parse(url))
+        except Exception as e:
+            name = src.get("name", "").strip() or src.get("id", "").strip() or "unknown"
+            print(f"warn: failed to fetch '{name}' ({url}): {e}", file=sys.stderr)
+            return (src, None)
+
+    # Fetch feeds concurrently; slow/blocked feeds shouldn't stall the whole daily run.
+    with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as ex:
+        futs = [ex.submit(fetch, s) for s in sources]
+        for fut in as_completed(futs):
+            src, feed = fut.result()
+            if not feed:
                 continue
-            title = _clean_title(getattr(e, "title", "") or "")
-            link = (getattr(e, "link", "") or "").strip()
-            summary = _strip_html(getattr(e, "summary", "") or getattr(e, "description", "") or "")
-            if not title or not link:
-                continue
-            # Provide draft-level snippets (user should rewrite for quality).
-            takeaway = _truncate(summary, 360) if summary else ""
-            why = _first_sentence(summary, 140) if summary else ""
-            items.append(
-                {
-                    "category": src.get("category", "").strip() or "Misc",
-                    "title": title,
-                    "why": why,
-                    "takeaway": takeaway,
-                    "prompt": "",
-                    "url": link,
-                    "source": src.get("name", "").strip() or src.get("id", "").strip(),
-                    "published_utc": when.isoformat() if when else "",
-                    # Chinese fields are intentionally left blank for human curation.
-                    "title_zh": "",
-                    "why_zh": "",
-                    "takeaway_zh": "",
-                    "prompt_zh": "",
-                }
-            )
+            for e in getattr(feed, "entries", []) or []:
+                when = _pick_entry_time(e)
+                if when and when < since_utc:
+                    continue
+                title = _clean_title(getattr(e, "title", "") or "")
+                link = (getattr(e, "link", "") or "").strip()
+                summary = _strip_html(getattr(e, "summary", "") or getattr(e, "description", "") or "")
+                if not title or not link:
+                    continue
+                # Provide draft-level snippets (user should rewrite for quality).
+                takeaway = _truncate(summary, 360) if summary else ""
+                why = _first_sentence(summary, 140) if summary else ""
+                items.append(
+                    {
+                        "category": src.get("category", "").strip() or "Misc",
+                        "title": title,
+                        "why": why,
+                        "takeaway": takeaway,
+                        "prompt": "",
+                        "url": link,
+                        "source": src.get("name", "").strip() or src.get("id", "").strip(),
+                        "published_utc": when.isoformat() if when else "",
+                        # Chinese fields are intentionally left blank for human curation.
+                        "title_zh": "",
+                        "why_zh": "",
+                        "takeaway_zh": "",
+                        "prompt_zh": "",
+                    }
+                )
 
     # Deduplicate by URL, then by normalized title.
     seen_url: set[str] = set()
@@ -191,6 +212,9 @@ def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict
         groups.setdefault(cat, []).append(it)
     # Preserve a sensible, stable ordering: CSS first, then AI, then others.
     order = [
+        "Business & economy",
+        "Tech industry",
+        "Security",
         "CSS / AI & society",
         "AI frontier",
         "Digital health / health comm",
@@ -207,6 +231,9 @@ def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict
 
 
 CAT_ZH = {
+    "Business & economy": "商业 / 经济",
+    "Tech industry": "科技 / 产业",
+    "Security": "安全 / 风险",
     "CSS / AI & society": "CSS / AI 与社会",
     "AI frontier": "AI 前沿",
     "Digital health / health comm": "数字健康 / 健康传播",

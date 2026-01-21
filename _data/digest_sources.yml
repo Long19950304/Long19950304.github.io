@@ -1,7 +1,116 @@
 # RSS/Atom sources for the daily digest pipeline.
 # Keep this list high-signal; quality beats coverage.
+# Tip: for a broader “business + tech daily brief”, add *a few* top-tier outlets
+# rather than many low-signal feeds (duplicates add noise fast).
 
 sources:
+  # -----------------------------
+  # Business / economy / markets
+  # -----------------------------
+  - id: reuters-top
+    name: Reuters Top News
+    category: "Business & economy"
+    url: https://feeds.reuters.com/reuters/topNews
+
+  - id: ft-world
+    name: Financial Times - World
+    category: "Business & economy"
+    url: https://www.ft.com/world?format=rss
+
+  - id: ft-markets
+    name: Financial Times - Markets
+    category: "Business & economy"
+    url: https://www.ft.com/markets?format=rss
+
+  - id: ft-tech
+    name: Financial Times - Technology
+    category: "Tech industry"
+    url: https://www.ft.com/technology?format=rss
+
+  - id: economist-latest
+    name: The Economist - Latest (RSS)
+    category: "Business & economy"
+    url: https://www.economist.com/the-world-this-week/rss.xml
+
+  # -----------------------------
+  # Tech industry / product
+  # -----------------------------
+  - id: verge
+    name: The Verge
+    category: "Tech industry"
+    url: https://www.theverge.com/rss/index.xml
+
+  - id: techcrunch
+    name: TechCrunch
+    category: "Tech industry"
+    url: https://techcrunch.com/feed/
+
+  - id: arstechnica
+    name: Ars Technica
+    category: "Tech industry"
+    url: https://feeds.arstechnica.com/arstechnica/index
+
+  - id: mit-tech-review
+    name: MIT Technology Review
+    category: "Tech industry"
+    url: https://www.technologyreview.com/feed/
+
+  - id: bbc-tech
+    name: BBC News - Technology
+    category: "Tech industry"
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+
+  - id: bbc-business
+    name: BBC News - Business
+    category: "Business & economy"
+    url: https://feeds.bbci.co.uk/news/business/rss.xml
+
+  - id: guardian-tech
+    name: The Guardian - Technology
+    category: "Tech industry"
+    url: https://www.theguardian.com/uk/technology/rss
+
+  - id: guardian-business
+    name: The Guardian - Business
+    category: "Business & economy"
+    url: https://www.theguardian.com/uk/business/rss
+
+  - id: axios-tech
+    name: Axios - Technology
+    category: "Tech industry"
+    url: https://www.axios.com/feeds/rss/technology
+
+  - id: ieee-spectrum
+    name: IEEE Spectrum
+    category: "Tech industry"
+    url: https://spectrum.ieee.org/rss/fulltext
+
+  - id: hackernews
+    name: Hacker News (front page)
+    category: "Tech industry"
+    url: https://hnrss.org/frontpage
+
+  # -----------------------------
+  # Security (high-signal alerts)
+  # -----------------------------
+  - id: cisa-alerts
+    name: CISA Alerts
+    category: "Security"
+    url: https://www.cisa.gov/uscert/ncas/alerts.xml
+
+  - id: cisa-current-activity
+    name: CISA Current Activity
+    category: "Security"
+    url: https://www.cisa.gov/uscert/ncas/current-activity.xml
+
+  - id: krebs
+    name: Krebs on Security
+    category: "Security"
+    url: https://krebsonsecurity.com/feed/
+
+  # -----------------------------
+  # Research-adjacent (keep)
+  # -----------------------------
   - id: arxiv-cy
     name: arXiv cs.CY (Computers & Society)
     category: "CSS / AI & society"

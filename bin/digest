@@ -642,6 +642,44 @@ def _format_x_thread(
             lines.append(f"{_truncate(t, 72)}: {u}")
         return ["\n".join([ln for ln in lines if ln is not None]).strip()]
 
+    if style == "theme":
+        # Bilingual theme post + link list in replies.
+        head: list[str] = [f"Daily Digest / 每日简报 ({date.isoformat()})"]
+        head.append("Cards attached (EN + 中文).")
+        if note_en:
+            head.append(_truncate(note_en, 180))
+        if note_zh:
+            head.append(_truncate(note_zh, 120))
+        head.append(f"EN list: {urls['en']}")
+        head.append(f"中文列表: {urls['zh']}")
+        head.append("Links below / 链接见串。")
+        t0 = "\n".join(head).strip()
+
+        lines: list[str] = []
+        for _, cat_items in groups:
+            for it in cat_items:
+                t = (it.get("title") or "").strip()
+                u = (it.get("url") or "").strip()
+                if t and u:
+                    lines.append(f"{_truncate(t, 72)}: {u}")
+
+        tweets: list[str] = [t0]
+        cur: list[str] = []
+        cur_len = 0
+        max_len = 265
+        for ln in lines[:12]:
+            add_len = len(ln) + (1 if cur else 0)
+            if cur and cur_len + add_len > max_len:
+                tweets.append("\n".join(cur).strip())
+                cur = [ln]
+                cur_len = len(ln)
+            else:
+                cur.append(ln)
+                cur_len += add_len
+        if cur:
+            tweets.append("\n".join(cur).strip())
+        return tweets
+
     # Tweet 1: short bilingual intro + canonical links (attach BOTH cards here).
     t0 = "\n".join(
         [

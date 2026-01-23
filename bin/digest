@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import base64
 import hashlib
 import json
 import os
@@ -662,6 +663,9 @@ def _font_paths(lang: str) -> dict[str, Path]:
     else:
         # Prefer widely available macOS fonts.
         candidates = [
+            ("/System/Library/Fonts/SFNS.ttf", "regular"),
+            ("/System/Library/Fonts/SFNSRounded.ttf", "bold"),
+            ("/System/Library/Fonts/SFNSMono.ttf", "mono"),
             ("/System/Library/Fonts/Supplemental/Arial.ttf", "regular"),
             ("/System/Library/Fonts/Supplemental/Arial Bold.ttf", "bold"),
             ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", "regular"),
@@ -673,6 +677,103 @@ def _font_paths(lang: str) -> dict[str, Path]:
         if p.exists() and role not in out:
             out[role] = p
     return out
+
+
+def _as_bool(v: str | None) -> bool:
+    return (v or "").strip().lower() in {"1", "true", "yes", "y", "on"}
+
+
+def _openrouter_headers(*, title: str) -> dict[str, str]:
+    key = _openrouter_key()
+    if not key:
+        return {}
+    return {
+        "Authorization": f"Bearer {key}",
+        # These are recommended by OpenRouter; keep them stable and non-sensitive.
+        "HTTP-Referer": "https://long19950304.github.io",
+        "X-Title": title,
+        "Content-Type": "application/json",
+    }
+
+
+def _openrouter_generate_image_png(*, model: str, prompt: str) -> bytes:
+    """
+    Generate a single PNG via an image-capable OpenRouter chat model.
+
+    Many Gemini image models return base64 in `choices[0].message.images[0].image_url.url`.
+    """
+    key = _openrouter_key()
+    if not key:
+        raise RuntimeError("OPENROUTER_API_KEY missing")
+
+    url = "https://openrouter.ai/api/v1/chat/completions"
+    payload = {
+        "model": model,
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": (
+                            "Generate ONE single image. OUTPUT MUST BE IMAGE ONLY.\n"
+                            "ABSOLUTELY NO TEXT: no letters, no words, no numbers, no symbols, no watermark, no logo.\n"
+                            + prompt
+                        ),
+                    }
+                ],
+            }
+        ],
+        "modalities": ["image", "text"],
+        "temperature": 0,
+    }
+
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers=_openrouter_headers(title="Personal Site Digest Card BG") or {"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            raw = resp.read()
+    except Exception as e:
+        raise RuntimeError(f"OpenRouter image request failed: {e}") from e
+
+    result = json.loads(raw.decode("utf-8"))
+    message = result["choices"][0]["message"]
+    images = message.get("images") or []
+    if not images:
+        raise RuntimeError("OpenRouter response missing images payload")
+
+    image_data = images[0]
+    image_url = None
+    if isinstance(image_data, dict):
+        if isinstance(image_data.get("image_url"), dict):
+            image_url = image_data["image_url"].get("url")
+        image_url = image_url or image_data.get("url") or image_data.get("data")
+    else:
+        image_url = image_data
+
+    if not image_url or not str(image_url).startswith("data:image"):
+        raise RuntimeError("Unexpected image payload format")
+
+    b64 = str(image_url).split(",", 1)[1]
+    return base64.b64decode(b64)
+
+
+def _resize_to_cover(im: Image.Image, w: int, h: int) -> Image.Image:
+    """
+    Resize without distortion: scale to cover target, then center-crop.
+    This avoids "stretched" backgrounds when the source aspect ratio differs.
+    """
+    im = im.convert("RGB")
+    scale = max(w / im.width, h / im.height)
+    new_size = (max(1, int(round(im.width * scale))), max(1, int(round(im.height * scale))))
+    im = im.resize(new_size, Image.Resampling.LANCZOS)
+    left = max(0, (im.width - w) // 2)
+    top = max(0, (im.height - h) // 2)
+    return im.crop((left, top, left + w, top + h))
 
 
 def _wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, max_width: int) -> list[str]:
@@ -1168,8 +1269,13 @@ def _format_x_thread(
 
 
 def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
-    # 4:5 aspect ratio is friendly for both LinkedIn and X.
-    w, h = 1080, 1350
+    # Default to square (near-1:1) to avoid excessive whitespace and to work well on both X and LinkedIn.
+    # You can override with DIGEST_CARD_FORMAT=portrait (4:5).
+    fmt = (os.environ.get("DIGEST_CARD_FORMAT") or "square").strip().lower()
+    if fmt in {"portrait", "4:5"}:
+        w, h = 1080, 1350
+    else:
+        w, h = 1080, 1080
     # Professional / restrained: clean background with subtle, consistent visual identity.
     # The background must never overpower the text.
     bg = (252, 252, 253)   # near-white
@@ -1184,14 +1290,40 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         return int(hexd, 16)
 
     def _make_background() -> Image.Image:
-        # Allow a user-provided background image (e.g., generated via an API) but soften it.
+        # 1) Allow a user-provided background image (e.g., generated via an API) but soften it.
         bg_img = (os.environ.get("DIGEST_CARD_BG_IMAGE") or "").strip()
         if bg_img and Path(bg_img).exists():
-            im = Image.open(bg_img).convert("RGB").resize((w, h))
+            im = _resize_to_cover(Image.open(bg_img), w, h)
             # Soften and desaturate so text remains dominant.
             im = im.filter(ImageFilter.GaussianBlur(radius=10))
             im = ImageEnhance.Color(im).enhance(0.35)
             im = ImageEnhance.Brightness(im).enhance(1.15)
+            im = ImageEnhance.Contrast(im).enhance(0.95)
+            return im
+
+        # 2) Optionally auto-generate a vivid background using an image-capable Gemini model
+        # (then blur it so it behaves like a background, not a poster).
+        if _as_bool(os.environ.get("DIGEST_CARD_BG_GENERATE")) and _openrouter_key():
+            bg_cache_dir = CARD_DIR / "_bg"
+            bg_cache_dir.mkdir(parents=True, exist_ok=True)
+            cached = bg_cache_dir / f"{date.isoformat()}-bg.png"
+            if cached.exists():
+                im = _resize_to_cover(Image.open(cached), w, h)
+            else:
+                model = (os.environ.get("DIGEST_CARD_BG_MODEL") or "google/gemini-2.5-flash-image").strip()
+                prompt = (os.environ.get("DIGEST_CARD_BG_PROMPT") or "").strip() or (
+                    "Create an abstract, colorful background suitable for a professional news digest card. "
+                    "Style: modern academic, rich color, soft gradients + subtle bokeh, faint data-network vibe. "
+                    "No people, no objects, no logos. Square composition."
+                )
+                png = _openrouter_generate_image_png(model=model, prompt=prompt)
+                cached.write_bytes(png)
+                im = _resize_to_cover(Image.open(cached), w, h)
+
+            # Make it behave like a background: blur + slight brighten; keep color but avoid overpowering text.
+            im = im.filter(ImageFilter.GaussianBlur(radius=18))
+            im = ImageEnhance.Color(im).enhance(0.80)
+            im = ImageEnhance.Brightness(im).enhance(1.08)
             im = ImageEnhance.Contrast(im).enhance(0.95)
             return im
 
@@ -1245,27 +1377,26 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 21) if fonts else ImageFont.load_default()
     font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 26) if fonts else ImageFont.load_default()
     font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
+    font_mono = (
+        ImageFont.truetype(str(fonts["mono"]), 20)
+        if fonts and "mono" in fonts
+        else font_small
+    )
 
-    pad = 64
+    # Slightly smaller margins so the "background" doesn't feel like extra empty area on square cards.
+    pad = 44
     x = pad
-    y = 56
+    y = 44
 
     def round_rect_outline(x0: int, y0: int, x1: int, y1: int, r: int) -> None:
         # Monochrome pill with a thin outline (more "academic", less "poster-like").
         draw.rounded_rectangle((x0, y0, x1, y1), radius=r, outline=faint, width=2, fill=bg)
 
-    # A translucent content panel keeps the text dominant even with patterned backgrounds.
-    panel = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    pd = ImageDraw.Draw(panel)
-    pd.rounded_rectangle(
-        (pad - 18, 36, w - pad + 18, h - 180),
-        radius=28,
-        fill=(255, 255, 255, 232),
-        outline=(*faint, 255),
-        width=2,
-    )
-    img = Image.alpha_composite(img.convert("RGBA"), panel).convert("RGB")
-    draw = ImageDraw.Draw(img)
+    # We build the content first, then draw a panel that fits the content height.
+    # This avoids large empty space on square cards.
+    content_top = 28
+    content_left = pad - 12
+    content_right = w - pad + 12
 
     # Header accent mark (brand cue).
     draw.rounded_rectangle((x - 10, y + 10, x - 4, y + 44), radius=4, fill=accent)
@@ -1277,14 +1408,15 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     date_str = date.isoformat()
     subtitle = "Top stories + sources (see full list on site)." if lang != "zh" else "今日要点与来源（完整版见网站）。"
     draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
-    y += 32
+    y += 34
 
     # Top rule
     draw.line((x, y, w - pad, y), fill=faint, width=2)
     y += 20
 
     # Keep cards low-cognitive-load: show only top N items (titles + source), no long blurbs.
-    max_items_total = int((os.environ.get("DIGEST_CARD_MAX_ITEMS") or "").strip() or 6)
+    default_max = 8 if h == w else 6
+    max_items_total = int((os.environ.get("DIGEST_CARD_MAX_ITEMS") or "").strip() or default_max)
     now = _score_now_for_date(date)
     ranked = sorted(
         items,
@@ -1295,6 +1427,7 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         reverse=True,
     )[: max_items_total]
 
+    y_items_start = y
     for idx, it in enumerate(ranked, start=1):
         t = _pick_lang(it, "title", "title_zh", lang)
         if not t:
@@ -1304,28 +1437,83 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         cat = (CAT_ZH.get(cat_raw, cat_raw) if lang == "zh" else cat_raw)
 
         num = f"{idx}."
-        draw.text((x, y + 2), num, fill=sub, font=font_h2)
-        tx = x + 44
+        draw.text((x, y + 1), num, fill=sub, font=font_h2)
+        tx = x + 46
         t_lines = _wrap_ellipsize(draw, t, font_item_title, max_width=w - pad - tx, max_lines=2)
         for ln in t_lines:
             draw.text((tx, y), ln, fill=ink, font=font_item_title)
-            y += 32
+            y += 34
 
         meta = " · ".join([m for m in [cat, src] if m]) if (cat or src) else ""
         if meta:
-            draw.text((tx, y - 2), meta, fill=sub, font=font_small)
+            draw.text((tx, y - 4), meta, fill=sub, font=font_small)
             y += 28
 
         y += 10
-        if y > h - 230:
+        if y > h - 120:
             break
 
-    # Bottom rule + footer
-    y = h - 160
+    # Two-line footer: render the URL in mono to reduce OCR/link-detection mistakes
+    # (some apps insert a space between letters and digits).
+    footer1 = "Zhilong George Zhao · @longlalaland"
+    footer2 = "https://long19950304.github.io"
+    footer_h = 54
+    footer_gap = 18
+    content_bottom = min(h - 52, y + footer_gap + footer_h + 16)
+
+    # A translucent content panel keeps the text dominant even with vivid backgrounds.
+    panel = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    pd = ImageDraw.Draw(panel)
+    pd.rounded_rectangle(
+        (content_left, content_top, content_right, content_bottom),
+        radius=28,
+        fill=(255, 255, 255, 232),
+        outline=(*faint, 255),
+        width=2,
+    )
+    img = Image.alpha_composite(img.convert("RGBA"), panel).convert("RGB")
+    draw = ImageDraw.Draw(img)
+
+    # Re-draw content on top of the panel (panel was composited after the first pass).
+    y = 52
+    draw.rounded_rectangle((x - 10, y + 10, x - 4, y + 44), radius=4, fill=accent)
+    draw.text((x, y), title, fill=ink, font=font_title)
+    y += 54
+    draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
+    y += 34
     draw.line((x, y, w - pad, y), fill=faint, width=2)
-    y += 22
-    footer = "Zhilong George Zhao | @longlalaland | long19950304.github.io"
-    draw.text((x, y), footer, fill=sub, font=font_small)
+    y += 20
+
+    for idx, it in enumerate(ranked, start=1):
+        t = _pick_lang(it, "title", "title_zh", lang)
+        if not t:
+            continue
+        src = (it.get("source") or "").strip()
+        cat_raw = (it.get("category") or "").strip()
+        cat = (CAT_ZH.get(cat_raw, cat_raw) if lang == "zh" else cat_raw)
+
+        num = f"{idx}."
+        draw.text((x, y + 1), num, fill=sub, font=font_h2)
+        tx = x + 46
+        t_lines = _wrap_ellipsize(draw, t, font_item_title, max_width=w - pad - tx, max_lines=2)
+        for ln in t_lines:
+            draw.text((tx, y), ln, fill=ink, font=font_item_title)
+            y += 34
+
+        meta = " · ".join([m for m in [cat, src] if m]) if (cat or src) else ""
+        if meta:
+            draw.text((tx, y - 4), meta, fill=sub, font=font_small)
+            y += 28
+
+        y += 10
+        if y > content_bottom - 54:
+            break
+
+    # Footer (inside the panel; compact).
+    fy = content_bottom - 50
+    draw.line((x, fy - 14, w - pad, fy - 14), fill=faint, width=2)
+    draw.text((x, fy - 2), footer1, fill=sub, font=font_small)
+    draw.text((x, fy + 20), footer2, fill=sub, font=font_mono)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_path, format="PNG", optimize=True, compress_level=9)

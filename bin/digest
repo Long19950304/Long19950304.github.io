@@ -1292,20 +1292,17 @@ def _format_x_thread(
 
 
 def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
-    # Default to square (near-1:1) to avoid excessive whitespace and to work well on both X and LinkedIn.
-    # You can override with DIGEST_CARD_FORMAT=portrait (4:5).
-    fmt = (os.environ.get("DIGEST_CARD_FORMAT") or "square").strip().lower()
-    if fmt in {"portrait", "4:5"}:
-        w, h = 1080, 1350
-    else:
-        w, h = 1080, 1080
-    # Professional / restrained: clean background with subtle, consistent visual identity.
-    # The background must never overpower the text.
-    bg = (252, 252, 253)   # near-white
-    ink = (15, 23, 42)     # slate-900
-    sub = (51, 65, 85)     # slate-700
-    faint = (226, 232, 240)
-    accent = (37, 99, 235) # blue-600
+    # Always render near-square cards. The user explicitly prefers a square-ish digest image.
+    w, h = 1080, 1080
+
+    # Palette: text sits directly on the colorful background (NO translucent white panel).
+    # We make this legible via a dark gradient overlay + subtle stroke/shadow.
+    bg = (252, 252, 253)              # used only for fallback background generation
+    ink = (255, 255, 255, 255)        # main text
+    sub = (226, 232, 240, 255)        # secondary text
+    faint = (255, 255, 255, 120)      # divider lines
+    accent_rgb = (59, 130, 246)       # blue-500 (works on dark backgrounds)
+    accent = (*accent_rgb, 255)
 
     def _seed() -> int:
         # Stable per-date seed so the card "look" is consistent for a given issue.
@@ -1377,30 +1374,80 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
                 b = rnd.choice(nodes)
                 if a == b:
                     continue
-                od.line([a, b], fill=(*accent, 14), width=2)
+                od.line([a, b], fill=(*accent_rgb, 14), width=2)
             for (nx, ny) in nodes:
-                od.ellipse((nx - 3, ny - 3, nx + 3, ny + 3), fill=(*accent, 30))
+                od.ellipse((nx - 3, ny - 3, nx + 3, ny + 3), fill=(*accent_rgb, 30))
         else:
             # Subtle grid + dots (default).
             step = 60
             for gx in range(0, w + 1, step):
-                od.line((gx, 0, gx, h), fill=(*accent, 8), width=2)
+                od.line((gx, 0, gx, h), fill=(*accent_rgb, 8), width=2)
             for gy in range(0, h + 1, step):
-                od.line((0, gy, w, gy), fill=(*accent, 6), width=2)
+                od.line((0, gy, w, gy), fill=(*accent_rgb, 6), width=2)
             for gx in range(step, w, step * 2):
                 for gy in range(step, h, step * 2):
-                    od.ellipse((gx - 2, gy - 2, gx + 2, gy + 2), fill=(*accent, 14))
+                    od.ellipse((gx - 2, gy - 2, gx + 2, gy + 2), fill=(*accent_rgb, 14))
 
         return Image.alpha_composite(base.convert("RGBA"), overlay).convert("RGB")
 
-    img = _make_background()
+    def _apply_dark_overlay(im: Image.Image) -> Image.Image:
+        """
+        Darken the background (subtle gradient + vignette) so text can be placed directly on it.
+        This replaces the old translucent white content panel.
+        """
+        rgba = im.convert("RGBA")
+
+        # Vertical gradient: slightly dark at top, darker at bottom.
+        g = Image.linear_gradient("L").resize((1, h)).resize((w, h))
+        alpha = g.point(lambda p: int(55 + (p / 255.0) * 155))  # 55..210
+        overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        overlay.putalpha(alpha)
+        rgba = Image.alpha_composite(rgba, overlay)
+
+        # Subtle vignette to keep focus near center.
+        vignette = Image.new("L", (w, h), 0)
+        vd = ImageDraw.Draw(vignette)
+        steps = 8
+        for i in range(steps):
+            inset = int((i / (steps - 1)) * 120)
+            a = int((i / (steps - 1)) * 75)  # edge darkening strength
+            vd.rectangle((inset, inset, w - inset, h - inset), outline=a, width=34)
+        v_rgba = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        v_rgba.putalpha(vignette.filter(ImageFilter.GaussianBlur(radius=18)))
+        rgba = Image.alpha_composite(rgba, v_rgba)
+        return rgba
+
+    def _draw_text(
+        draw: ImageDraw.ImageDraw,
+        xy: tuple[int, int],
+        text: str,
+        *,
+        font: ImageFont.FreeTypeFont,
+        fill: tuple[int, int, int, int],
+        stroke_width: int = 2,
+        stroke_fill: tuple[int, int, int, int] = (0, 0, 0, 210),
+        shadow: bool = True,
+    ) -> None:
+        x0, y0 = xy
+        if shadow:
+            draw.text((x0 + 2, y0 + 2), text, fill=(0, 0, 0, 150), font=font)
+        draw.text(
+            (x0, y0),
+            text,
+            fill=fill,
+            font=font,
+            stroke_width=stroke_width,
+            stroke_fill=stroke_fill,
+        )
+
+    img = _apply_dark_overlay(_make_background())
     draw = ImageDraw.Draw(img)
 
     fonts = _font_paths(lang)
-    font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 50) if fonts else ImageFont.load_default()
-    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 26) if fonts else ImageFont.load_default()
+    font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 54) if fonts else ImageFont.load_default()
+    font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
     font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 21) if fonts else ImageFont.load_default()
-    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 26) if fonts else ImageFont.load_default()
+    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
     font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
     font_mono = (
         ImageFont.truetype(str(fonts["mono"]), 20)
@@ -1408,31 +1455,20 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         else font_small
     )
 
-    # Slightly smaller margins so the "background" doesn't feel like extra empty area on square cards.
-    pad = 44
+    pad = 56
     x = pad
-    y = 44
-
-    def round_rect_outline(x0: int, y0: int, x1: int, y1: int, r: int) -> None:
-        # Monochrome pill with a thin outline (more "academic", less "poster-like").
-        draw.rounded_rectangle((x0, y0, x1, y1), radius=r, outline=faint, width=2, fill=bg)
-
-    # We build the content first, then draw a panel that fits the content height.
-    # This avoids large empty space on square cards.
-    content_top = 28
-    content_left = pad - 12
-    content_right = w - pad + 12
+    y = 52
 
     # Header accent mark (brand cue).
     draw.rounded_rectangle((x - 10, y + 10, x - 4, y + 44), radius=4, fill=accent)
 
     title = "Daily Digest" if lang != "zh" else "每日简报"
-    draw.text((x, y), title, fill=ink, font=font_title)
+    _draw_text(draw, (x, y), title, font=font_title, fill=ink, stroke_width=2)
     y += 54
 
     date_str = date.isoformat()
     subtitle = "Top stories + sources (see full list on site)." if lang != "zh" else "今日要点与来源（完整版见网站）。"
-    draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
+    _draw_text(draw, (x, y), date_str + "  ·  " + subtitle, font=font_small, fill=sub, stroke_width=1)
     y += 34
 
     # Top rule
@@ -1440,7 +1476,7 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     y += 20
 
     # Keep cards low-cognitive-load: show only top N items (titles + source), no long blurbs.
-    default_max = 8 if h == w else 6
+    default_max = 10
     max_items_total = int((os.environ.get("DIGEST_CARD_MAX_ITEMS") or "").strip() or default_max)
     now = _score_now_for_date(date)
     ranked = sorted(
@@ -1452,63 +1488,13 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         reverse=True,
     )[: max_items_total]
 
-    y_items_start = y
-    for idx, it in enumerate(ranked, start=1):
-        t = _pick_lang(it, "title", "title_zh", lang)
-        if not t:
-            continue
-        src = (it.get("source") or "").strip()
-        cat_raw = (it.get("category") or "").strip()
-        cat = (CAT_ZH.get(cat_raw, cat_raw) if lang == "zh" else cat_raw)
-
-        num = f"{idx}."
-        draw.text((x, y + 1), num, fill=sub, font=font_h2)
-        tx = x + 46
-        t_lines = _wrap_ellipsize(draw, t, font_item_title, max_width=w - pad - tx, max_lines=2)
-        for ln in t_lines:
-            draw.text((tx, y), ln, fill=ink, font=font_item_title)
-            y += 34
-
-        meta = " · ".join([m for m in [cat, src] if m]) if (cat or src) else ""
-        if meta:
-            draw.text((tx, y - 4), meta, fill=sub, font=font_small)
-            y += 28
-
-        y += 10
-        if y > h - 120:
-            break
-
-    # Two-line footer: render the URL in mono to reduce OCR/link-detection mistakes
-    # (some apps insert a space between letters and digits).
+    # Footer anchored at the bottom to avoid a large empty block below the content.
     footer1 = "Zhilong George Zhao · @longlalaland"
     digest_path = f"/digest/{date.isoformat()}/" if lang != "zh" else f"/zh/digest/{date.isoformat()}/"
     footer2 = DEFAULT_SITE_URL + digest_path
-    footer_h = 54
-    footer_gap = 18
-    content_bottom = min(h - 52, y + footer_gap + footer_h + 16)
-
-    # A translucent content panel keeps the text dominant even with vivid backgrounds.
-    panel = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    pd = ImageDraw.Draw(panel)
-    pd.rounded_rectangle(
-        (content_left, content_top, content_right, content_bottom),
-        radius=28,
-        fill=(255, 255, 255, 232),
-        outline=(*faint, 255),
-        width=2,
-    )
-    img = Image.alpha_composite(img.convert("RGBA"), panel).convert("RGB")
-    draw = ImageDraw.Draw(img)
-
-    # Re-draw content on top of the panel (panel was composited after the first pass).
-    y = 52
-    draw.rounded_rectangle((x - 10, y + 10, x - 4, y + 44), radius=4, fill=accent)
-    draw.text((x, y), title, fill=ink, font=font_title)
-    y += 54
-    draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
-    y += 34
-    draw.line((x, y, w - pad, y), fill=faint, width=2)
-    y += 20
+    bottom_pad = 52
+    fy = h - bottom_pad - 52
+    footer_top_y = fy - 28  # keep content above divider + footer lines
 
     for idx, it in enumerate(ranked, start=1):
         t = _pick_lang(it, "title", "title_zh", lang)
@@ -1519,30 +1505,29 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         cat = (CAT_ZH.get(cat_raw, cat_raw) if lang == "zh" else cat_raw)
 
         num = f"{idx}."
-        draw.text((x, y + 1), num, fill=sub, font=font_h2)
+        _draw_text(draw, (x, y + 1), num, font=font_h2, fill=sub, stroke_width=1)
         tx = x + 46
         t_lines = _wrap_ellipsize(draw, t, font_item_title, max_width=w - pad - tx, max_lines=2)
         for ln in t_lines:
-            draw.text((tx, y), ln, fill=ink, font=font_item_title)
+            _draw_text(draw, (tx, y), ln, font=font_item_title, fill=ink, stroke_width=2)
             y += 34
 
         meta = " · ".join([m for m in [cat, src] if m]) if (cat or src) else ""
         if meta:
-            draw.text((tx, y - 4), meta, fill=sub, font=font_small)
+            _draw_text(draw, (tx, y - 4), meta, font=font_small, fill=sub, stroke_width=1)
             y += 28
 
         y += 10
-        if y > content_bottom - 54:
+        if y > footer_top_y:
             break
 
-    # Footer (inside the panel; compact).
-    fy = content_bottom - 50
+    # Footer (no panel). URL in mono reduces OCR/link detection issues.
     draw.line((x, fy - 14, w - pad, fy - 14), fill=faint, width=2)
-    draw.text((x, fy - 2), footer1, fill=sub, font=font_small)
-    draw.text((x, fy + 20), footer2, fill=sub, font=font_mono)
+    _draw_text(draw, (x, fy - 2), footer1, font=font_small, fill=sub, stroke_width=1)
+    _draw_text(draw, (x, fy + 20), footer2, font=font_mono, fill=sub, stroke_width=1)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out_path, format="PNG", optimize=True, compress_level=9)
+    img.convert("RGB").save(out_path, format="PNG", optimize=True, compress_level=9)
     _optimize_png(out_path)
 
 

@@ -1456,7 +1456,8 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     # Two-line footer: render the URL in mono to reduce OCR/link-detection mistakes
     # (some apps insert a space between letters and digits).
     footer1 = "Zhilong George Zhao · @longlalaland"
-    footer2 = "https://long19950304.github.io"
+    digest_path = f"/digest/{date.isoformat()}/" if lang != "zh" else f"/zh/digest/{date.isoformat()}/"
+    footer2 = DEFAULT_SITE_URL + digest_path
     footer_h = 54
     footer_gap = 18
     content_bottom = min(h - 52, y + footer_gap + footer_h + 16)

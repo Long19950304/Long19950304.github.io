@@ -3,6 +3,10 @@
   {{ site.first_name }}
   {{ site.middle_name }}
   {{ site.last_name }}. {{ site.footer_text }}
+  <span id="site-visit-badge" class="ms-2">
+    {% if page.url contains '/zh/' %}访问{% else %}Visits{% endif %}:
+    <span id="site-visit-count">189</span>
+  </span>
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
@@ -28,3 +32,36 @@
     </div>
   </footer>
 {% endif %}
+
+<script>
+  // Simple public counter (static site-friendly).
+  // Note: counts 1 per browser session (sessionStorage), not per page navigation.
+  (function () {
+    const el = document.getElementById('site-visit-count');
+    if (!el) return;
+
+    const DEFAULT = 189;
+    const NS = 'long19950304.github.io';
+    const NAME = 'site_visits';
+    const BASE = 'https://api.counterapi.dev/v1';
+    const countedKey = 'zz_site_visit_counted_v1';
+
+    // Avoid inflating counts when previewing locally.
+    const isProd = window.location && window.location.hostname === 'long19950304.github.io';
+    const hasCounted = !!(window.sessionStorage && sessionStorage.getItem(countedKey));
+    const endpoint = hasCounted || !isProd
+      ? `${BASE}/${NS}/${NAME}/`
+      : `${BASE}/${NS}/${NAME}/up`;
+
+    fetch(endpoint, { method: 'GET' })
+      .then(r => r.json())
+      .then(data => {
+        const v = (data && typeof data.count === 'number') ? data.count : DEFAULT;
+        el.textContent = v.toLocaleString();
+        try { sessionStorage.setItem(countedKey, '1'); } catch (_) {}
+      })
+      .catch(() => {
+        el.textContent = DEFAULT.toLocaleString();
+      });
+  })();
+</script>

@@ -932,6 +932,16 @@ def _format_linkedin_post(
         take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
         return _first_sentence(take, 110 if lang != "zh" else 70)
 
+    now = _score_now_for_date(date)
+    ranked_all = sorted(
+        items,
+        key=lambda it: (
+            _importance_score(it, now=now),
+            _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+        ),
+        reverse=True,
+    )
+
     if style == "theme":
         # Theme-first format: a single short paragraph + a clean list of links.
         lines: list[str] = []
@@ -968,14 +978,13 @@ def _format_linkedin_post(
                 lines.append("")
             lines.extend(["Links / 链接：", ""])
 
-        # Flatten items; keep it scannable.
+        # Top items by importance; keep it scannable.
         picks: list[tuple[str, str]] = []
-        for _, cat_items in groups:
-            for it in cat_items:
-                t = (it.get("title") or "").strip()
-                u = (it.get("url") or "").strip()
-                if t and u:
-                    picks.append((t, u))
+        for it in ranked_all:
+            t = (it.get("title") or "").strip()
+            u = (it.get("url") or "").strip()
+            if t and u:
+                picks.append((t, u))
 
         max_links = 10 if text_mode == "en" else 10
         for t, u in picks[:max_links]:
@@ -1017,21 +1026,23 @@ def _format_linkedin_post(
     if text_mode == "en":
         # LinkedIn EN-only: keep it scannable (no category blocks); rely on the attached card + full list.
         picks: list[dict[str, Any]] = []
-        for _, cat_items in groups:
-            for it in cat_items:
-                t_en = (it.get("title") or "").strip()
-                u = (it.get("url") or "").strip()
-                if t_en and u:
-                    picks.append(it)
-        picks = picks[:3]
+        for it in ranked_all:
+            t_en = (it.get("title") or "").strip()
+            u = (it.get("url") or "").strip()
+            if t_en and u:
+                picks.append(it)
+            if len(picks) >= 3:
+                break
 
         for it in picks:
             t_en = (it.get("title") or "").strip()
             u = (it.get("url") or "").strip()
-            b_en = _truncate(blurb(it, "en"), 140)
+            src = (it.get("source") or "").strip()
+            cat = (it.get("category") or "").strip()
+            meta = " · ".join([m for m in [cat, src] if m])
             head = f"- {_truncate(t_en, 120)}"
-            if b_en:
-                head += f" — {b_en}"
+            if meta:
+                head += f" ({meta})"
             lines.append(head)
             lines.append(f"  {u}")
             lines.append("")
@@ -1537,6 +1548,10 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     if lang == "zh":
         title = digest.get("title_zh") or f"每日简报 - {date.isoformat()}"
 
+    # Social card image for this issue (rendered during build). Embed it at the top so the page is
+    # visually recognizable and shareable.
+    card_rel = f"/assets/img/digests/{date.isoformat()}-{'zh' if lang == 'zh' else 'en'}.png"
+
     # Sort by importance (global list, not grouped).
     now = _score_now_for_date(date)
     ranked = sorted(
@@ -1578,6 +1593,7 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         "---",
         "",
     ]
+    lines.extend([f"![{title}]({card_rel})", ""])
     if note:
         lines.extend([note, ""])
 

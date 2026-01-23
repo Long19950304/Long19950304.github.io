@@ -45,7 +45,12 @@ DEFAULT_SITE_URL = "https://long19950304.github.io"
 FETCH_TIMEOUT_SECONDS = 8
 FETCH_WORKERS = 8
 DEFAULT_MAX_ITEMS_ON_SITE = 100
-DEFAULT_TRANSLATE_MODEL = "openai/gpt-4o-mini"
+# Default to a model that is broadly available from more regions.
+DEFAULT_TRANSLATE_MODEL = "deepseek/deepseek-chat"
+DEFAULT_TRANSLATE_FALLBACK_MODELS = [
+    "qwen/qwen-2.5-7b-instruct",
+    "mistralai/mistral-7b-instruct",
+]
 
 # feedparser uses urllib under the hood and may otherwise block indefinitely on slow/blocked feeds.
 socket.setdefaulttimeout(FETCH_TIMEOUT_SECONDS)
@@ -154,6 +159,14 @@ def _translate_en_to_zh(texts: list[str]) -> list[str]:
         return texts
 
     model = (os.environ.get("DIGEST_TRANSLATE_MODEL") or DEFAULT_TRANSLATE_MODEL).strip()
+    fallback_models_env = (os.environ.get("DIGEST_TRANSLATE_MODEL_FALLBACKS") or "").strip()
+    fallback_models = (
+        [m.strip() for m in fallback_models_env.split(",") if m.strip()]
+        if fallback_models_env
+        else list(DEFAULT_TRANSLATE_FALLBACK_MODELS)
+    )
+    models_to_try = [model] + [m for m in fallback_models if m != model]
+
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     sys_msg = (
@@ -164,63 +177,77 @@ def _translate_en_to_zh(texts: list[str]) -> list[str]:
     )
 
     # Single-item requests are much more reliable if we don't force JSON.
+    messages: list[dict[str, str]]
     if len(texts) == 1:
-        payload = {
-            "model": model,
-            "temperature": 0,
-            "messages": [
-                {"role": "system", "content": sys_msg},
-                {
-                    "role": "user",
-                    "content": (
-                        "Translate this to Simplified Chinese. Return ONLY the translated text.\n\n"
-                        f"{texts[0]}"
-                    ),
-                },
-            ],
-        }
+        messages = [
+            {"role": "system", "content": sys_msg},
+            {
+                "role": "user",
+                "content": (
+                    "Translate this to Simplified Chinese. Return ONLY the translated text.\n\n"
+                    f"{texts[0]}"
+                ),
+            },
+        ]
     else:
+        messages = [
+            {"role": "system", "content": sys_msg},
+            {
+                "role": "user",
+                "content": (
+                    "Translate the following snippets to Simplified Chinese. "
+                    "Return ONLY a JSON array of strings with the same order/length.\n\n"
+                    + "\n".join(f"{i+1}. {t}" for i, t in enumerate(texts))
+                ),
+            },
+        ]
+
+    last_err: str | None = None
+    for model_to_try in models_to_try:
         payload = {
-            "model": model,
+            "model": model_to_try,
             "temperature": 0,
-            "messages": [
-                {"role": "system", "content": sys_msg},
-                {
-                    "role": "user",
-                    "content": (
-                        "Translate the following snippets to Simplified Chinese. "
-                        "Return ONLY a JSON array of strings with the same order/length.\n\n"
-                        + "\n".join(f"{i+1}. {t}" for i, t in enumerate(texts))
-                    ),
-                },
-            ],
+            "messages": messages,
         }
 
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {key}",
-            "Content-Type": "application/json",
-            # Recommended by OpenRouter, optional but helps attribution.
-            "HTTP-Referer": DEFAULT_SITE_URL,
-            "X-Title": "personal-site digest translator",
-        },
-        method="POST",
-    )
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {key}",
+                "Content-Type": "application/json",
+                # Recommended by OpenRouter, optional but helps attribution.
+                "HTTP-Referer": DEFAULT_SITE_URL,
+                "X-Title": "personal-site digest translator",
+            },
+            method="POST",
+        )
 
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            raw = resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"warn: translate failed ({e}); leaving zh as EN for this run", file=sys.stderr)
-        return texts
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                raw = resp.read().decode("utf-8", errors="replace")
+        except Exception as e:
+            # Try the next model (some are region-locked).
+            last_err = str(e)
+            print(f"warn: translate failed for {model_to_try} ({e}); trying fallback", file=sys.stderr)
+            continue
 
-    try:
-        data = json.loads(raw)
-        content = data["choices"][0]["message"]["content"]
-    except Exception as e:
-        print(f"warn: translate parse failed ({e}); leaving zh as EN for this run", file=sys.stderr)
+        try:
+            data = json.loads(raw)
+            content = data["choices"][0]["message"]["content"]
+        except Exception as e:
+            last_err = str(e)
+            print(
+                f"warn: translate parse failed for {model_to_try} ({e}); trying fallback",
+                file=sys.stderr,
+            )
+            continue
+
+        # Success.
+        break
+    else:
+        # Exhausted all models.
+        print(f"warn: translate failed ({last_err}); leaving zh as EN for this run", file=sys.stderr)
         return texts
 
     content = content.strip()

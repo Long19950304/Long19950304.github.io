@@ -1,0 +1,1622 @@
+date: '2026-01-23'
+title: Daily Digest - 2026-01-23
+title_zh: 每日简报 - 2026-01-23
+note: ''
+note_zh: ''
+items:
+- category: Tech industry
+  title: The TikTok deal is done, finally
+  why: Just over a year after it briefly disappeared from app stores, TikTok in the
+    US is now part of a new entity, TikTok USDS Joint Venture LLC.
+  takeaway: Just over a year after it briefly disappeared from app stores, TikTok
+    in the US is now part of a new entity, TikTok USDS Joint Venture LLC. With approval
+    from both the US and China closing on the schedule laid out in December, ByteDance's
+    ownership of the new joint venture is now only 19.9 percent […]
+  prompt: ''
+  url: https://www.theverge.com/tech/866437/tiktok-usds-bytedance-sale-oracle-mgx
+  source: The Verge
+  published_utc: '2026-01-23T01:01:16+00:00'
+  title_zh: TikTok交易终于完成
+  why_zh: 在应用商店短暂消失一年多后，美国TikTok现成为新实体TikTok USDS联合有限责任公司的一部分。
+  takeaway_zh: 在应用商店短暂消失一年多后，美国TikTok现成为新实体TikTok USDS联合有限责任公司的一部分。随着美中两国按去年12月制定的时间表完成批准，字节跳动对新合资公司的持股比例现已降至19.9%。
+  prompt_zh: ''
+- category: Tech industry
+  title: 100x (YC S22) Is Hiring a Technical Content Creator
+  why: 'Article URL: https://100x.bot/creator-program Comments URL: https://news.ycombinator.com/item?id=46727090
+    Points: 0 # Comments: 0'
+  takeaway: 'Article URL: https://100x.bot/creator-program Comments URL: https://news.ycombinator.com/item?id=46727090
+    Points: 0 # Comments: 0'
+  prompt: ''
+  url: https://100x.bot/creator-program
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T01:00:57+00:00'
+  title_zh: 100x（YC S22）正在招聘技术内容创作者
+  why_zh: 文章链接：https://100x.bot/creator-program 评论链接：https://news.ycombinator.com/item?id=46727090
+    积分：0 评论数：0
+  takeaway_zh: 文章链接：https://100x.bot/creator-program 评论链接：https://news.ycombinator.com/item?id=46727090
+    积分：0 评论数：0
+  prompt_zh: ''
+- category: Tech industry
+  title: Ring can verify videos now, but that might not help you with most AI fakes
+  why: Ring has launched a new Ring Verify tool that the company says can "verify
+    that Ring videos you receive haven't been edited or changed." Bu…
+  takeaway: Ring has launched a new Ring Verify tool that the company says can "verify
+    that Ring videos you receive haven't been edited or changed." But since Ring won't
+    verify videos that have been altered in any way, it probably won't be able to
+    verify those videos you see on TikTok that look like they're from […]
+  prompt: ''
+  url: https://www.theverge.com/news/866441/ring-verify-security-camera-ai-fakes-video-verification
+  source: The Verge
+  published_utc: '2026-01-23T00:57:41+00:00'
+  title_zh: Ring现在可以验证视频，但这可能对大多数AI伪造视频无济于事。
+  why_zh: Ring推出了一款新的Ring Verify工具，公司称其能够‘验证您收到的Ring视频是否未经编辑或更改。’但...
+  takeaway_zh: Ring推出了一款名为Ring Verify的新工具，公司称其能‘验证您收到的Ring视频未经编辑或更改’。但由于Ring不会验证任何经过修改的视频，它可能无法验证那些在TikTok上看起来像是来自[…]的视频。
+  prompt_zh: ''
+- category: Tech industry
+  title: Beyond Good and Evil 2 somehow survived the purge at Ubisoft
+  why: 'In what world does Prince of Persia: The Sands of Time Remake get canceled
+    amid corporate restructuring and yet BG&E2 does not?'
+  takeaway: 'In what world does Prince of Persia: The Sands of Time Remake get canceled
+    amid corporate restructuring and yet BG&E2 does not? "Beyond Good & Evil 2 remains
+    a priority for us in the context of our strategy centered around Open World Adventures,"
+    an unnamed Ubisoft spokesperson told Kotaku and Insider Gaming. The original Beyond
+    […]'
+  prompt: ''
+  url: https://www.theverge.com/games/866439/beyond-good-and-evil-2-somehow-survived-the-purge-at-ubisoft
+  source: The Verge
+  published_utc: '2026-01-23T00:53:25+00:00'
+  title_zh: 《超越善恶2》在育碧的裁员潮中奇迹般地幸存下来。
+  why_zh: 在什么情况下，《波斯王子：时之砂》重制版会在公司重组中被取消，而《超越善恶2》却得以保留？
+  takeaway_zh: 在什么情况下，《波斯王子：时之砂》重制版会在公司重组中被取消，而《超越善恶2》却得以保留？一位未具名的育碧发言人告诉Kotaku和Insider
+    Gaming：‘《超越善恶2》仍是我们以开放世界冒险为核心战略中的优先项目。’最初的《超越[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI is coming for those sweet enterprise dollars in 2026
+  why: OpenAI has reportedly appointed Barret Zoph to lead its push into enterprise
+    just a week after Zoph rejoined the company.
+  takeaway: OpenAI has reportedly appointed Barret Zoph to lead its push into enterprise
+    just a week after Zoph rejoined the company.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/openai-is-coming-for-those-sweet-enterprise-dollars-in-2026/
+  source: TechCrunch
+  published_utc: '2026-01-23T00:52:33+00:00'
+  title_zh: OpenAI将于2026年进军企业市场，瞄准丰厚利润
+  why_zh: 据报道，OpenAI已任命Barret Zoph领导其企业市场拓展，就在Zoph重返公司一周后。
+  takeaway_zh: 据报道，OpenAI已任命Barret Zoph领导其企业市场拓展，就在Zoph重返公司一周后。
+  prompt_zh: ''
+- category: Tech industry
+  title: Vibe a Guitar Pedal
+  why: 'Article URL: https://polyend.com/endless/ Comments URL: https://news.ycombinator.com/item?id=46726907
+    Points: 7 # Comments: 7'
+  takeaway: 'Article URL: https://polyend.com/endless/ Comments URL: https://news.ycombinator.com/item?id=46726907
+    Points: 7 # Comments: 7'
+  prompt: ''
+  url: https://polyend.com/endless/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T00:29:07+00:00'
+  title_zh: Vibe吉他效果踏板
+  why_zh: 文章链接：https://polyend.com/endless/ 评论链接：https://news.ycombinator.com/item?id=46726907
+    积分：7 评论数：7
+  takeaway_zh: 文章链接：https://polyend.com/endless/ 评论链接：https://news.ycombinator.com/item?id=46726907
+    积分：7 评论数：7
+  prompt_zh: ''
+- category: Tech industry
+  title: Vimeo starts layoffs after acquisition by Bending Spoons
+  why: Vimeo is in the process of laying off some of its global staff after being
+    acquired last year by Bending Spoons for $1.38B.
+  takeaway: Vimeo is in the process of laying off some of its global staff after being
+    acquired last year by Bending Spoons for $1.38B.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/vimeo-starts-layoffs-after-acquisition-by-bending-spoons/
+  source: TechCrunch
+  published_utc: '2026-01-23T00:27:28+00:00'
+  title_zh: Vimeo被Bending Spoons收购后启动裁员
+  why_zh: Vimeo在被Bending Spoons以13.8亿美元收购后，正着手裁减部分全球员工。
+  takeaway_zh: Vimeo在被Bending Spoons以13.8亿美元收购后，正着手裁减部分全球员工。
+  prompt_zh: ''
+- category: Tech industry
+  title: Why medieval city-builder video games are historically inaccurate (2020)
+  why: 'Article URL: https://www.leidenmedievalistsblog.nl/articles/why-medieval-city-builder-video-games-are-historically-inaccurate
+    Comments URL:…'
+  takeaway: 'Article URL: https://www.leidenmedievalistsblog.nl/articles/why-medieval-city-builder-video-games-are-historically-inaccurate
+    Comments URL: https://news.ycombinator.com/item?id=46726857 Points: 31 # Comments:
+    7'
+  prompt: ''
+  url: https://www.leidenmedievalistsblog.nl/articles/why-medieval-city-builder-video-games-are-historically-inaccurate
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T00:22:58+00:00'
+  title_zh: 为何中世纪城市建造类电子游戏不符合史实（2020年）
+  why_zh: 文章链接：https://www.leidenmedievalistsblog.nl/articles/why-medieval-city-builder-video-games-are-historically-inaccurate
+    评论链接：...
+  takeaway_zh: 文章链接：https://www.leidenmedievalistsblog.nl/articles/why-medieval-city-builder-video-games-are-historically-inaccurate
+    评论链接：https://news.ycombinator.com/item?id=46726857 积分：31 评论数：7
+  prompt_zh: ''
+- category: Tech industry
+  title: Metastable Failures and Interactions Between Systems
+  why: 'Article URL: https://charap.co/on-metastable-failures-and-interactions-between-systems/
+    Comments URL: https://news.ycombinator.com/item?id=…'
+  takeaway: 'Article URL: https://charap.co/on-metastable-failures-and-interactions-between-systems/
+    Comments URL: https://news.ycombinator.com/item?id=46726808 Points: 5 # Comments:
+    0'
+  prompt: ''
+  url: https://charap.co/on-metastable-failures-and-interactions-between-systems/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T00:16:22+00:00'
+  title_zh: 亚稳态故障与系统间交互
+  why_zh: 文章链接：https://charap.co/on-metastable-failures-and-interactions-between-systems/
+    评论链接：https://news.ycombinator.com/item?id=…
+  takeaway_zh: 文章链接：https://charap.co/on-metastable-failures-and-interactions-between-systems/
+    评论链接：https://news.ycombinator.com/item?id=46726808 热度：5 评论数：0
+  prompt_zh: ''
+- category: Tech industry
+  title: GM to end Chevy Bolt EV production next year, move China-made Buick to US
+    factory
+  why: The factory musical chairs reflect an economic and political environment, shaped
+    by the Trump administration's tariff policy and its decisi…
+  takeaway: The factory musical chairs reflect an economic and political environment,
+    shaped by the Trump administration's tariff policy and its decision to end the
+    federal EV tax credit.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/gm-to-end-chevy-bolt-ev-production-next-year-move-china-made-buick-to-u-s-factory/
+  source: TechCrunch
+  published_utc: '2026-01-22T23:55:44+00:00'
+  title_zh: 通用汽车明年将停産雪佛兰Bolt EV，并将中国产别克车型转至美国工厂
+  why_zh: 工厂调整反映了受特朗普政府关税政策及其决策影响的经济政治环境。
+  takeaway_zh: 工厂的‘音乐椅’现象反映了由特朗普政府的关税政策及取消联邦电动车税收抵免决定所塑造的经济与政治环境。
+  prompt_zh: ''
+- category: Tech industry
+  title: Samsung’s smallest Frame TVs have fallen to their lowest prices to date
+  why: Unless you’re dead set on picking up a larger panel, Samsung’s forthcoming
+    2026 Frame lineup represents a fairly minor upgrade.
+  takeaway: Unless you’re dead set on picking up a larger panel, Samsung’s forthcoming
+    2026 Frame lineup represents a fairly minor upgrade. That makes last year’s model
+    an easy rec for those on the hunt for an art-inspired 4K TV, especially given
+    the 43- and 50-inch models are down to the lowest prices we’ve seen at Woot, […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/866298/samsung-frame-tv-2025-43-50-inch-qled-woot-deal-sale
+  source: The Verge
+  published_utc: '2026-01-22T23:51:39+00:00'
+  title_zh: 三星最小的Frame电视已降至历史最低价。
+  why_zh: 除非你执意要购买更大尺寸的屏幕，否则三星即将推出的2026年Frame系列仅代表一次相当小的升级。
+  takeaway_zh: 除非你执意要购买更大尺寸的屏幕，否则三星即将推出的2026年Frame系列仅代表一次相当小的升级。这使得去年的型号成为那些寻找艺术风格4K电视的用户的轻松推荐，尤其是43英寸和50英寸型号在Woot上已降至我们见过的最低价格，[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Capital One acquires Brex for steep discount to its peak valuation, but early
+    believers are laughing all the way to the bank
+  why: Before everyone sharpens their knives, consider that for the VCs who backed
+    Brex at its outset, the sale is a triumph.
+  takeaway: Before everyone sharpens their knives, consider that for the VCs who backed
+    Brex at its outset, the sale is a triumph.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/capital-one-acquires-brex-for-steep-discount-to-its-peak-valuation-but-early-believers-are-laughing-all-the-way-to-the-bank/
+  source: TechCrunch
+  published_utc: '2026-01-22T23:46:19+00:00'
+  title_zh: Capital One以远低于峰值的估值收购Brex，但早期支持者却笑到了最后。
+  why_zh: 在众人磨刀霍霍之前，不妨想想，对于最初支持Brex的风险投资家而言，这笔交易堪称胜利。
+  takeaway_zh: 在众人磨刀霍霍之前，不妨想想，对于最初支持Brex的风险投资家而言，这笔交易堪称胜利。
+  prompt_zh: ''
+- category: Tech industry
+  title: Improving the usability of C libraries in Swift
+  why: 'Article URL: https://www.swift.org/blog/improving-usability-of-c-libraries-in-swift/
+    Comments URL: https://news.ycombinator.com/item?id=467…'
+  takeaway: 'Article URL: https://www.swift.org/blog/improving-usability-of-c-libraries-in-swift/
+    Comments URL: https://news.ycombinator.com/item?id=46726526 Points: 27 # Comments:
+    0'
+  prompt: ''
+  url: https://www.swift.org/blog/improving-usability-of-c-libraries-in-swift/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T23:34:44+00:00'
+  title_zh: 提升C语言库在Swift中的易用性
+  why_zh: 文章链接：https://www.swift.org/blog/improving-usability-of-c-libraries-in-swift/
+    评论链接：https://news.ycombinator.com/item?id=467...
+  takeaway_zh: 文章链接：https://www.swift.org/blog/improving-usability-of-c-libraries-in-swift/
+    评论链接：https://news.ycombinator.com/item?id=46726526 积分：27 评论数：0
+  prompt_zh: ''
+- category: Tech industry
+  title: US officially out of WHO, leaving hundreds of millions of dollars unpaid
+  why: US did not pay $278 million in 2024–2025 dues and millions more in promised
+    funds.
+  takeaway: US did not pay $278 million in 2024–2025 dues and millions more in promised
+    funds.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/01/us-stiffs-who-hundreds-of-millions-as-it-officially-withdrawals/
+  source: Ars Technica
+  published_utc: '2026-01-22T23:07:45+00:00'
+  title_zh: 美国正式退出世卫组织，留下数亿美元未付
+  why_zh: 美国未支付2024-2025年度的2.78亿美元会费及更多承诺资金。
+  takeaway_zh: 美国未支付2024-2025年度的2.78亿美元会费及更多承诺资金。
+  prompt_zh: ''
+- category: Tech industry
+  title: FIPS dependencies and prebuilt binaries
+  why: Author here.
+  takeaway: Author here. This came out of debugging a real Rails app running in a
+    FIPS enabled container. Everything looked correct. OpenSSL 3 with the FIPS provider
+    enabled. Ruby built against it. A simple pg connection worked. The app failed
+    once ActiveRecord was involved. The error came from libpq. It turned out the pg
+    gem had pulled in a prebuilt native dependency…
+  prompt: ''
+  url: https://www.docker.com/blog/fips-dependencies-and-prebuilt-binaries/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T23:04:25+00:00'
+  title_zh: FIPS依赖项与预构建二进制文件
+  why_zh: 作者在此。
+  takeaway_zh: 作者在此。这源于调试运行在FIPS启用容器中的真实Rails应用。一切看似正确：启用了FIPS提供程序的OpenSSL 3，Ruby基于其构建，简单的pg连接正常。但涉及ActiveRecord时应用失败。错误来自libpq。最终发现pg
+    gem拉取了预构建原生依赖...
+  prompt_zh: ''
+- category: Tech industry
+  title: Overrun with AI slop, cURL scraps bug bounties to ensure "intact mental health"
+  why: The onslaught includes LLMs finding bogus vulnerabilities and code that won't
+    compile.
+  takeaway: The onslaught includes LLMs finding bogus vulnerabilities and code that
+    won't compile.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/
+  source: Ars Technica
+  published_utc: '2026-01-22T22:46:30+00:00'
+  title_zh: 因AI垃圾泛滥，cURL取消漏洞赏金以确保“心理健康”
+  why_zh: 这场攻势包括LLM发现的虚假漏洞和无法编译的代码。
+  takeaway_zh: 这场攻势包括LLM发现的虚假漏洞和无法编译的代码。
+  prompt_zh: ''
+- category: Tech industry
+  title: Voice AI engine and OpenAI partner LiveKit hits $1B valuation
+  why: The five-year-old-startup powers OpenAI’s ChatGPT voice mode and raised a $100
+    million round led by Index Ventures.
+  takeaway: The five-year-old-startup powers OpenAI’s ChatGPT voice mode and raised
+    a $100 million round led by Index Ventures.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/
+  source: TechCrunch
+  published_utc: '2026-01-22T22:44:29+00:00'
+  title_zh: 语音AI引擎与OpenAI合作伙伴LiveKit估值达10亿美元
+  why_zh: 这家成立五年的初创公司为OpenAI的ChatGPT语音模式提供支持，并完成了由Index Ventures领投的1亿美元融资。
+  takeaway_zh: 这家成立五年的初创公司为OpenAI的ChatGPT语音模式提供支持，并完成了由Index Ventures领投的1亿美元融资。
+  prompt_zh: ''
+- category: Tech industry
+  title: Inference startup Inferact lands $150M to commercialize vLLM
+  why: The seed round values the newly formed startup at $800 million.
+  takeaway: The seed round values the newly formed startup at $800 million.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/inference-startup-inferact-lands-150m-to-commercialize-vllm/
+  source: TechCrunch
+  published_utc: '2026-01-22T22:42:00+00:00'
+  title_zh: 推理初创公司Inferact获得1.5亿美元融资，旨在商业化vLLM。
+  why_zh: 种子轮融资使这家新成立的初创公司估值达到8亿美元。
+  takeaway_zh: 种子轮融资使这家新成立的初创公司估值达到8亿美元。
+  prompt_zh: ''
+- category: Tech industry
+  title: Hacker who stole 120,000 bitcoins wants a second chance—and a security job
+  why: Crypto theft was "the worst thing I had ever done."
+  takeaway: Crypto theft was "the worst thing I had ever done."
+  prompt: ''
+  url: https://arstechnica.com/security/2026/01/hacker-who-stole-120000-bitcoins-wants-a-second-chance-and-a-security-job/
+  source: Ars Technica
+  published_utc: '2026-01-22T22:23:15+00:00'
+  title_zh: 盗取12万比特币的黑客希望获得第二次机会——并谋求一份安全工作
+  why_zh: 加密货币盗窃是“我做过的最糟糕的事”。
+  takeaway_zh: 加密货币盗窃是“我做过的最糟糕的事”。
+  prompt_zh: ''
+- category: Tech industry
+  title: Nintendo is following up Alarmo with a weird Talking Flower in March
+  why: After sharing a brief look at its new Talking Flower during a Nintendo Direct
+    showcase last September that generated more questions than an…
+  takeaway: After sharing a brief look at its new Talking Flower during a Nintendo
+    Direct showcase last September that generated more questions than answers, Nintendo
+    has finally revealed more details about what the interactive toy actually does
+    and how much it costs. It shares some functionality with Nintendo's Alarmo alarm
+    clock, but the Talking Flower seems […]
+  prompt: ''
+  url: https://www.theverge.com/tech/865618/nintendo-talking-flower-preorder-super-mario-wonder
+  source: The Verge
+  published_utc: '2026-01-22T22:17:23+00:00'
+  title_zh: 任天堂将在三月推出一款奇特的会说话的花，作为Alarmo的后续产品。
+  why_zh: 去年九月，任天堂在Direct展示会上简短介绍了其新推出的会说话的花，这一展示引发了比答案更多的问题，[…]
+  takeaway_zh: 去年九月，任天堂在Direct展示会上简短介绍了其新推出的会说话的花，这一展示引发了比答案更多的问题，任天堂终于透露了更多关于这款互动玩具实际功能及售价的细节。它与任天堂的Alarmo闹钟共享部分功能，但会说话的花似乎[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Vimeo lays off ‘large portion’ of staff after Bending Spoons buyout
+  why: Vimeo is laying off employees around the globe just months after the Italian
+    software company Bending Spoons acquired the platform for $1.3…
+  takeaway: Vimeo is laying off employees around the globe just months after the Italian
+    software company Bending Spoons acquired the platform for $1.38 billion, as reported
+    earlier by Business Insider. Even though it's not clear how many people were laid
+    off, Dave Brown, Vimeo's former brand VP, says in a post on LinkedIn that "a large
+    […]
+  prompt: ''
+  url: https://www.theverge.com/news/866238/vimeo-layoffs-bending-spoons-acquisition
+  source: The Verge
+  published_utc: '2026-01-22T22:02:50+00:00'
+  title_zh: Vimeo在Bending Spoons收购后裁掉了‘大部分’员工。
+  why_zh: Vimeo正在全球范围内裁员，距离意大利软件公司Bending Spoons以13亿美元收购该平台仅过去几个月，[…]
+  takeaway_zh: Vimeo正在全球范围内裁员，距离意大利软件公司Bending Spoons以13.8亿美元收购该平台仅过去几个月，正如Business
+    Insider早前报道的那样。尽管尚不清楚具体裁员人数，Vimeo前品牌副总裁Dave Brown在LinkedIn上发帖称‘大部分[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic Economic Index economic primitives
+  why: 'Article URL: https://www.anthropic.com/research/anthropic-economic-index-january-2026-report
+    Comments URL: https://news.ycombinator.com/ite…'
+  takeaway: 'Article URL: https://www.anthropic.com/research/anthropic-economic-index-january-2026-report
+    Comments URL: https://news.ycombinator.com/item?id=46725632 Points: 45 # Comments:
+    35'
+  prompt: ''
+  url: https://www.anthropic.com/research/anthropic-economic-index-january-2026-report
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T21:54:02+00:00'
+  title_zh: Anthropic经济指数 经济学基础要素
+  why_zh: 文章链接：https://www.anthropic.com/research/anthropic-economic-index-january-2026-report
+    评论链接：https://news.ycombinator.com/ite…
+  takeaway_zh: 文章链接：https://www.anthropic.com/research/anthropic-economic-index-january-2026-report
+    评论链接：https://news.ycombinator.com/item?id=46725632 热度：45 评论数：35
+  prompt_zh: ''
+- category: Tech industry
+  title: Epic and Google have a secret $800 million Unreal Engine and services deal
+  why: A judge is questioning whether Epic Games and Google are settling their long-running
+    antitrust fight partly because of a previously unannou…
+  takeaway: A judge is questioning whether Epic Games and Google are settling their
+    long-running antitrust fight partly because of a previously unannounced partnership
+    involving the Unreal Engine, Fortnite, and Android. In a hearing in San Francisco
+    today, the court revealed that Epic and Google have struck a new deal that apparently
+    includes "joint product development…
+  prompt: ''
+  url: https://www.theverge.com/policy/866140/epic-google-fortnite-android-unreal-deal-antitrust-settlement
+  source: The Verge
+  published_utc: '2026-01-22T21:47:07+00:00'
+  title_zh: Epic与Google达成了一项价值8亿美元的Unreal Engine及服务秘密协议。
+  why_zh: 一位法官质疑Epic Games与Google是否因一项先前未宣布的合作关系而部分解决了他们长期以来的反垄断之争，[…]
+  takeaway_zh: 一位法官质疑Epic Games与Google是否因一项先前未宣布的合作关系而部分解决了他们长期以来的反垄断之争，该合作涉及Unreal
+    Engine、Fortnite和Android。在旧金山今日的听证会上，法庭透露Epic与Google已达成一项新协议，显然包括‘联合产品开发[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Are AI agents ready for the workplace? A new benchmark raises doubts
+  why: New research looks at how leading AI models hold up doing actual white-collar
+    work tasks, drawn from consulting, investment banking, and la…
+  takeaway: New research looks at how leading AI models hold up doing actual white-collar
+    work tasks, drawn from consulting, investment banking, and law. Most models failed.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/are-ai-agents-ready-for-the-workplace-a-new-benchmark-raises-doubts/
+  source: TechCrunch
+  published_utc: '2026-01-22T21:42:18+00:00'
+  title_zh: AI助手准备好进入职场了吗？一项新基准测试引发质疑。
+  why_zh: 新研究探讨了领先的AI模型在执行实际白领工作任务时的表现，这些任务源自咨询、投资银行等领域……
+  takeaway_zh: 新研究探讨了领先的AI模型在执行实际白领工作任务时的表现，这些任务源自咨询、投资银行和法律领域。大多数模型未能通过测试。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Report: Apple plans to launch AI-powered wearable pin device as soon as
+    2027'
+  why: Apple, OpenAI, Meta, and more are all racing toward AI hardware products.
+  takeaway: Apple, OpenAI, Meta, and more are all racing toward AI hardware products.
+  prompt: ''
+  url: https://arstechnica.com/apple/2026/01/report-apple-plans-to-launch-ai-powered-wearable-pin-device-as-soon-as-2027/
+  source: Ars Technica
+  published_utc: '2026-01-22T21:32:28+00:00'
+  title_zh: 报告：苹果计划最早于2027年推出AI驱动的可穿戴别针设备
+  why_zh: 苹果、OpenAI、Meta等公司都在竞相推出AI硬件产品。
+  takeaway_zh: 苹果、OpenAI、Meta等公司都在竞相推出AI硬件产品。
+  prompt_zh: ''
+- category: Tech industry
+  title: Extracting a UART Password via SPI Flash Instruction Tracing
+  why: 'Article URL: https://zuernerd.github.io/blog/2026/01/07/switch-password.html
+    Comments URL: https://news.ycombinator.com/item?id=46725389 Po…'
+  takeaway: 'Article URL: https://zuernerd.github.io/blog/2026/01/07/switch-password.html
+    Comments URL: https://news.ycombinator.com/item?id=46725389 Points: 34 # Comments:
+    7'
+  prompt: ''
+  url: https://zuernerd.github.io/blog/2026/01/07/switch-password.html
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T21:31:59+00:00'
+  title_zh: 通过SPI闪存指令追踪提取UART密码
+  why_zh: 文章链接：https://zuernerd.github.io/blog/2026/01/07/switch-password.html 评论链接：https://news.ycombinator.com/item?id=46725389
+    积...
+  takeaway_zh: 文章链接：https://zuernerd.github.io/blog/2026/01/07/switch-password.html
+    评论链接：https://news.ycombinator.com/item?id=46725389 积分：34 评论数：7
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft 365 hit by outage, preventing access to emails and files
+  why: An hours-long outage is preventing Microsoft's enterprise customers from accessing
+    their inboxes, files, and video meetings.
+  takeaway: An hours-long outage is preventing Microsoft's enterprise customers from
+    accessing their inboxes, files, and video meetings.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/microsoft-365-hit-by-outage-preventing-access-to-emails-and-files/
+  source: TechCrunch
+  published_utc: '2026-01-22T21:31:10+00:00'
+  title_zh: Microsoft 365遭遇服务中断，导致用户无法访问电子邮件和文件。
+  why_zh: 长达数小时的服务中断使得微软的企业客户无法访问其收件箱、文件和视频会议。
+  takeaway_zh: 长达数小时的服务中断使得微软的企业客户无法访问其收件箱、文件和视频会议。
+  prompt_zh: ''
+- category: Tech industry
+  title: Sen. Markey questions OpenAI about ‘deceptive advertising’ in ChatGPT
+  why: Sen.
+  takeaway: Sen. Ed Markey (D-MA) is pressing OpenAI about its move to bring ads to
+    ChatGPT, and is asking several other companies whether they have similar plans.
+    In letters to the CEOs of OpenAI, Anthropic, Google, Meta, Microsoft, Snap, and
+    xAI, Markey writes that embedding ads into AI chatbots "raises significant concerns
+    for consumer protection, privacy, […]
+  prompt: ''
+  url: https://www.theverge.com/news/865854/senator-ed-markey-ai-companies-chatbots-advertising
+  source: The Verge
+  published_utc: '2026-01-22T21:30:00+00:00'
+  title_zh: 参议员Markey就ChatGPT中的‘误导性广告’向OpenAI提出质询
+  why_zh: 参议员
+  takeaway_zh: 参议员Ed Markey（D-MA）正就OpenAI将广告引入ChatGPT的举措施压，并询问其他几家公司是否有类似计划。在给OpenAI、Anthropic、谷歌、Meta、微软、Snap和xAI
+    CEO的信中，Markey写道，将广告嵌入AI聊天机器人“引发了消费者保护、隐私等方面的重大担忧，[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Scaling PostgreSQL to power 800M ChatGPT users
+  why: 'Article URL: https://openai.com/index/scaling-postgresql/ Comments URL: https://news.ycombinator.com/item?id=46725300
+    Points: 27 # Comments…'
+  takeaway: 'Article URL: https://openai.com/index/scaling-postgresql/ Comments URL:
+    https://news.ycombinator.com/item?id=46725300 Points: 27 # Comments: 7'
+  prompt: ''
+  url: https://openai.com/index/scaling-postgresql/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T21:24:23+00:00'
+  title_zh: 为8亿ChatGPT用户扩展PostgreSQL数据库效能
+  why_zh: 文章链接：https://openai.com/index/scaling-postgresql/ 评论链接：https://news.ycombinator.com/item?id=46725300
+    热度：27 评论数…
+  takeaway_zh: 文章链接：https://openai.com/index/scaling-postgresql/ 评论链接：https://news.ycombinator.com/item?id=46725300
+    热度：27 评论数：7
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla is finally doing unsupervised robotaxi rides
+  why: Tesla is finally doing unsupervised robotaxi trips in Austin, Texas, according
+    to a video posted on X.
+  takeaway: Tesla is finally doing unsupervised robotaxi trips in Austin, Texas, according
+    to a video posted on X. Elon Musk reposted the video, congratulating Tesla's AI
+    team for the milestone. For months, Tesla's robotaxis in Austin and San Francisco
+    have included safety monitors with access to a kill switch in case of emergency
+    - a fallback […]
+  prompt: ''
+  url: https://www.theverge.com/transportation/866165/tesla-robotaxi-unsupervised-austin-texas-safety-monitor
+  source: The Verge
+  published_utc: '2026-01-22T21:23:19+00:00'
+  title_zh: 特斯拉终于开始进行无人监督的robotaxi试驾。
+  why_zh: 根据X上发布的一段视频，特斯拉终于在美国德克萨斯州奥斯汀开始了无人监督的robotaxi试驾。
+  takeaway_zh: 根据X上发布的一段视频，特斯拉终于在美国德克萨斯州奥斯汀开始了无人监督的robotaxi试驾。Elon Musk转发了该视频，祝贺特斯拉AI团队达成这一里程碑。数月来，特斯拉在奥斯汀和旧金山的robotaxi都配备了安全监控员，并配备紧急停止开关以防万一——这是[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Capital One to acquire Brex for $5.15B
+  why: 'Archive link: https://archive.md/vk8ov , Capitol One statement: https://investor.capitalone.com/news-releases/news-release-d...'
+  takeaway: 'Archive link: https://archive.md/vk8ov , Capitol One statement: https://investor.capitalone.com/news-releases/news-release-d...
+    , Brex statement: https://www.brex.com/journal/brex-and-capital-one-join-force...
+    Comments URL: https://news.ycombinator.com/item?id=46725288 Points: 97 # Comments:
+    62'
+  prompt: ''
+  url: https://www.reuters.com/legal/transactional/capital-one-buy-fintech-firm-brex-515-billion-deal-2026-01-22/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T21:23:12+00:00'
+  title_zh: Capital One以51.5亿美元收购Brex
+  why_zh: 存档链接：https://archive.md/vk8ov ，Capital One声明：https://investor.capitalone.com/news-releases/news-release-d...
+  takeaway_zh: '存档链接：https://archive.md/vk8ov ，Capital One声明：https://investor.capitalone.com/news-releases/news-release-d...
+    ，Brex声明：https://www.brex.com/journal/brex-and-capital-one-join-force... 评论链接：https://news.ycombinator.com/item?id=46725288
+    分数：97 # 评论：62'
+  prompt_zh: ''
+- category: Tech industry
+  title: Asking Grok to delete fake nudes may force victims to sue in Musk's chosen
+    court
+  why: Millions likely harmed by Grok-edited sex images as X advertisers shrugged.
+  takeaway: Millions likely harmed by Grok-edited sex images as X advertisers shrugged.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/asking-grok-to-delete-fake-nudes-may-force-victims-to-sue-in-musks-chosen-court/
+  source: Ars Technica
+  published_utc: '2026-01-22T21:16:42+00:00'
+  title_zh: 要求Grok删除假裸照可能迫使受害者在马斯克选择的法院提起诉讼
+  why_zh: 数百万用户可能因Grok编辑的色情图片而受害，而X的广告商则置之不理。
+  takeaway_zh: 数百万用户可能因Grok编辑的色情图片而受害，而X的广告商则置之不理。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google begins offering free SAT practice tests powered by Gemini
+  why: Google says more kinds of standardized tests will be added in the future.
+  takeaway: Google says more kinds of standardized tests will be added in the future.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/01/google-begins-offering-free-sat-practice-tests-powered-by-gemini/
+  source: Ars Technica
+  published_utc: '2026-01-22T20:46:10+00:00'
+  title_zh: 谷歌开始提供由Gemini驱动的免费SAT模拟测试
+  why_zh: 谷歌表示未来将增加更多种类的标准化测试。
+  takeaway_zh: 谷歌表示未来将增加更多种类的标准化测试。
+  prompt_zh: ''
+- category: Tech industry
+  title: Ring says it&#8217;s not giving ICE access to its cameras
+  why: Ring's partnership with Flock is sparking renewed online backlash this week,
+    with influencers calling for people to smash their Ring camera…
+  takeaway: Ring's partnership with Flock is sparking renewed online backlash this
+    week, with influencers calling for people to smash their Ring cameras and claiming
+    the company is part of the surveillance state amid heightened concerns over ICE
+    actions. Flock is an AI-powered surveillance camera company that has reportedly
+    allowed government agencies - including ICE -…
+  prompt: ''
+  url: https://www.theverge.com/news/866003/ring-ice-camera-access-flock
+  source: The Verge
+  published_utc: '2026-01-22T20:30:27+00:00'
+  title_zh: Ring表示不会向ICE提供其摄像头的访问权限。
+  why_zh: Ring与Flock的合作本周引发新一轮网络反弹，有网红呼吁人们砸毁他们的Ring摄像头……
+  takeaway_zh: Ring与Flock的合作本周引发新一轮网络反弹，有网红呼吁人们砸毁他们的Ring摄像头，并声称在移民海关执法局(ICE)行动引发高度关注之际，该公司已成为监控体系的一部分。Flock是一家AI驱动的监控摄像头公司，据报道已向包括ICE在内的政府机构提供……
+  prompt_zh: ''
+- category: Tech industry
+  title: Ring is adding a new content verification feature to videos
+  why: Ring says the new feature will identify if video edits have been made, even
+    if they're minor.
+  takeaway: Ring says the new feature will identify if video edits have been made,
+    even if they're minor.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/ring-is-adding-a-new-content-verification-feature-to-videos/
+  source: TechCrunch
+  published_utc: '2026-01-22T19:50:47+00:00'
+  title_zh: Ring正在为视频添加新的内容验证功能。
+  why_zh: Ring表示，新功能将识别视频是否经过编辑，即使改动微小。
+  takeaway_zh: Ring表示，新功能将识别视频是否经过编辑，即使改动微小。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google DeepMind CEO is ‘surprised’ OpenAI is rushing forward with ads in
+    ChatGPT
+  why: Google DeepMind CEO Demis Hassabis says the tech giant isn't pressuring him
+    to insert ads into the AI chatbot experience.
+  takeaway: Google DeepMind CEO Demis Hassabis says the tech giant isn't pressuring
+    him to insert ads into the AI chatbot experience.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/google-deepmind-ceo-is-surprised-openai-is-rushing-forward-with-ads-in-chatgpt/
+  source: TechCrunch
+  published_utc: '2026-01-22T19:41:01+00:00'
+  title_zh: 谷歌DeepMind CEO对OpenAI急于在ChatGPT中投放广告感到‘惊讶’
+  why_zh: 谷歌DeepMind CEO Demis Hassabis表示，科技巨头并未施压他在AI聊天体验中插入广告。
+  takeaway_zh: 谷歌DeepMind CEO Demis Hassabis表示，科技巨头并未施压他在AI聊天体验中插入广告。
+  prompt_zh: ''
+- category: Tech industry
+  title: Why does SSH send 100 packets per keystroke?
+  why: 'Article URL: https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/
+    Comments URL: https://news.ycombinator.com/item?id=46723990 Poin…'
+  takeaway: 'Article URL: https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/
+    Comments URL: https://news.ycombinator.com/item?id=46723990 Points: 267 # Comments:
+    179'
+  prompt: ''
+  url: https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T19:27:32+00:00'
+  title_zh: 为什么SSH每次按键会发送100个数据包？
+  why_zh: 文章链接：https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/ 评论链接：https://news.ycombinator.com/item?id=46723990
+    分数…
+  takeaway_zh: '文章链接：https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/
+    评论链接：https://news.ycombinator.com/item?id=46723990 分数：267 # 评论：179'
+  prompt_zh: ''
+- category: Tech industry
+  title: Humans& thinks coordination is the next frontier for AI, and they’re building
+    a model to prove it
+  why: Humans&, a new startup founded by alumni of Anthropic, Meta, OpenAI, xAI, and
+    Google DeepMind, is building the next generation of foundatio…
+  takeaway: Humans&, a new startup founded by alumni of Anthropic, Meta, OpenAI, xAI,
+    and Google DeepMind, is building the next generation of foundation models for
+    collaboration, not chat.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/humans-thinks-coordination-is-the-next-frontier-for-ai-and-theyre-building-a-model-to-prove-it/
+  source: TechCrunch
+  published_utc: '2026-01-22T19:24:13+00:00'
+  title_zh: Humans&认为协调是AI的下一个前沿领域，并正在构建一个模型来证明这一点。
+  why_zh: Humans&，一家由Anthropic、Meta、OpenAI、xAI和Google DeepMind前员工创立的新兴初创公司，正在构建下一代基础……
+  takeaway_zh: Humans&，一家由Anthropic、Meta、OpenAI、xAI和Google DeepMind前员工创立的新兴初创公司，正在构建下一代用于协作而非聊天的基础模型。
+  prompt_zh: ''
+- category: Tech industry
+  title: Check out the first trailer for Masters of the Universe
+  why: '"Talking tigers, spaceships, and magic swords that can make a man as mighty
+    as a god."'
+  takeaway: '"Talking tigers, spaceships, and magic swords that can make a man as
+    mighty as a god."'
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/01/check-out-the-first-trailer-for-masters-of-the-universe/
+  source: Ars Technica
+  published_utc: '2026-01-22T19:18:34+00:00'
+  title_zh: 观看《宇宙巨人希曼》首支预告片
+  why_zh: “会说话的老虎、宇宙飞船和能让人强大如神的神秘宝剑。”
+  takeaway_zh: “会说话的老虎、宇宙飞船和能让人强大如神的神秘宝剑。”
+  prompt_zh: ''
+- category: Tech industry
+  title: '''Active'' sitting is better for brain health: review of studies'
+  why: 'Article URL: https://www.sciencealert.com/not-all-sitting-is-equal-one-type-was-just-linked-to-better-brain-health
+    Comments URL: https://ne…'
+  takeaway: 'Article URL: https://www.sciencealert.com/not-all-sitting-is-equal-one-type-was-just-linked-to-better-brain-health
+    Comments URL: https://news.ycombinator.com/item?id=46723694 Points: 67 # Comments:
+    29'
+  prompt: ''
+  url: https://www.sciencealert.com/not-all-sitting-is-equal-one-type-was-just-linked-to-better-brain-health
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T19:03:56+00:00'
+  title_zh: '''主动''坐姿更有益大脑健康：研究综述'
+  why_zh: 文章链接：https://www.sciencealert.com/not-all-sitting-is-equal-one-type-was-just-linked-to-better-brain-health
+    评论链接：https://ne…
+  takeaway_zh: '文章链接：https://www.sciencealert.com/not-all-sitting-is-equal-one-type-was-just-linked-to-better-brain-health
+    评论链接：https://news.ycombinator.com/item?id=46723694 分数：67 # 评论：29'
+  prompt_zh: ''
+- category: Tech industry
+  title: Thinking of Joining IEEE’s Leadership Ranks?
+  why: Strong leadership is essential for IEEE to advance technology for humanity.
+  takeaway: Strong leadership is essential for IEEE to advance technology for humanity.
+    The organization depends on the dedicated service of its volunteers to advance
+    its mission . Each year, the Nominations and Appointments (N&A) Committee is responsible
+    for recommending candidates to the Board of Directors and the IEEE Assembly for
+    volunteer leadership positions, inc…
+  prompt: ''
+  url: https://spectrum.ieee.org/ieee-leadership-nominations-2027
+  source: IEEE Spectrum
+  published_utc: '2026-01-22T19:00:03+00:00'
+  title_zh: 考虑加入IEEE领导层吗？
+  why_zh: 强有力的领导力对IEEE推进技术造福人类至关重要。
+  takeaway_zh: 强有力的领导力对IEEE推进技术造福人类至关重要。组织依赖于志愿者的奉献服务来推进其使命。每年，提名与任命(N&A)委员会负责向董事会和IEEE大会推荐志愿者领导职位候选人……
+  prompt_zh: ''
+- category: Tech industry
+  title: Substack launches a TV app
+  why: The move comes as Substack has been investing more heavily in video and livestreaming,
+    as it looks to compete with platforms like YouTube a…
+  takeaway: The move comes as Substack has been investing more heavily in video and
+    livestreaming, as it looks to compete with platforms like YouTube and Patreon
+    for both creators and viewers.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/substack-launches-a-tv-app/
+  source: TechCrunch
+  published_utc: '2026-01-22T18:58:50+00:00'
+  title_zh: Substack推出电视应用。
+  why_zh: 此举正值Substack加大对视频和直播的投资力度，旨在与YouTube和Patreon等平台争夺创作者和观众。
+  takeaway_zh: 此举正值Substack加大对视频和直播的投资力度，旨在与YouTube和Patreon等平台争夺创作者和观众。
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla launches robotaxi rides in Austin with no human safety driver
+  why: Not all of Tesla's fleet in Austin will be fully driverless.
+  takeaway: Not all of Tesla's fleet in Austin will be fully driverless. Per Tesla's
+    AI lead Ashok Elluswamy, the company will be "starting with a few unsupervised
+    vehicles mixed in with the broader robotaxi fleet with safety monitors, and the
+    ratio will increase over time."
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/tesla-launches-robotaxi-rides-in-austin-with-no-human-safety-driver/
+  source: TechCrunch
+  published_utc: '2026-01-22T18:51:43+00:00'
+  title_zh: 特斯拉在奥斯汀推出无人安全驾驶员的机器人出租车服务。
+  why_zh: 并非特斯拉在奥斯汀的所有车队都将完全无人驾驶。
+  takeaway_zh: 并非所有特斯拉在奥斯汀的车队都将完全无人驾驶。据特斯拉AI负责人Ashok Elluswamy称，公司将‘从少数无监督车辆开始，与配备安全监控员的更广泛机器人出租车车队混合运营，比例将随时间增加。’
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta seeks to limit evidence in child safety case
+  why: Meta is set to go on trial in New Mexico for allegedly failing to protect minors.
+  takeaway: Meta is set to go on trial in New Mexico for allegedly failing to protect
+    minors. The company is requesting a broad swath of information not be allowed
+    to be presented in court.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/meta-seeks-to-limit-evidence-in-child-safety-case/
+  source: TechCrunch
+  published_utc: '2026-01-22T18:40:01+00:00'
+  title_zh: Meta寻求在儿童安全案中限制证据
+  why_zh: Meta将在新墨西哥州接受审判，被指控未能保护未成年人。
+  takeaway_zh: Meta因涉嫌未能保护未成年人即将在新墨西哥州受审，公司申请禁止法庭呈现大量信息。
+  prompt_zh: ''
+- category: Tech industry
+  title: I was banned from Claude for scaffolding a Claude.md file?
+  why: 'Article URL: https://hugodaniel.com/posts/claude-code-banned-me/ Comments
+    URL: https://news.ycombinator.com/item?id=46723384 Points: 327 #…'
+  takeaway: 'Article URL: https://hugodaniel.com/posts/claude-code-banned-me/ Comments
+    URL: https://news.ycombinator.com/item?id=46723384 Points: 327 # Comments: 261'
+  prompt: ''
+  url: https://hugodaniel.com/posts/claude-code-banned-me/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T18:38:27+00:00'
+  title_zh: 我因搭建Claude.md文件被Claude封禁？
+  why_zh: '文章链接：https://hugodaniel.com/posts/claude-code-banned-me/ 评论链接：https://news.ycombinator.com/item?id=46723384
+    分数：327 #…'
+  takeaway_zh: '文章链接：https://hugodaniel.com/posts/claude-code-banned-me/ 评论链接：https://news.ycombinator.com/item?id=46723384
+    分数：327 # 评论：261'
+  prompt_zh: ''
+- category: Tech industry
+  title: Google now offers free SAT practice exams, powered by Gemini
+  why: Students can prompt Gemini by typing "I want to take a practice SAT test,”
+    and the AI will provide them with a free practice exam.
+  takeaway: Students can prompt Gemini by typing "I want to take a practice SAT test,”
+    and the AI will provide them with a free practice exam. Gemini then analyzes the
+    results, highlighting strengths and identifying areas that need further review.
+    It also offers detailed explanations for any incorrect answers.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/google-now-offers-free-sat-practice-exams-powered-by-gemini/
+  source: TechCrunch
+  published_utc: '2026-01-22T18:27:36+00:00'
+  title_zh: 谷歌现提供由Gemini驱动的免费SAT模拟考试。
+  why_zh: 学生可以通过输入‘我想参加SAT模拟考试’来提示Gemini，AI将为他们提供一次免费的模拟考试。
+  takeaway_zh: 学生可以通过输入‘我想参加SAT模拟考试’来提示Gemini，AI将为他们提供一次免费的模拟考试。随后，Gemini分析结果，突出优势并指出需要进一步复习的领域，同时为错误答案提供详细解释。
+  prompt_zh: ''
+- category: Tech industry
+  title: Recent discoveries on the acquisition of the highest levels of human performance
+  why: 'Article URL: https://www.science.org/doi/abs/10.1126/science.adt7790 Comments
+    URL: https://news.ycombinator.com/item?id=46722853 Points: 10…'
+  takeaway: 'Article URL: https://www.science.org/doi/abs/10.1126/science.adt7790
+    Comments URL: https://news.ycombinator.com/item?id=46722853 Points: 100 # Comments:
+    46'
+  prompt: ''
+  url: https://www.science.org/doi/abs/10.1126/science.adt7790
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T18:01:02+00:00'
+  title_zh: 人类最高水平能力习得的新发现
+  why_zh: 文章链接：https://www.science.org/doi/abs/10.1126/science.adt7790 评论链接：https://news.ycombinator.com/item?id=46722853
+    分数：10…
+  takeaway_zh: '文章链接：https://www.science.org/doi/abs/10.1126/science.adt7790 评论链接：https://news.ycombinator.com/item?id=46722853
+    分数：100 # 评论：46'
+  prompt_zh: ''
+- category: Tech industry
+  title: Former CEO of celeb fav gym Dogpound launches $5M fund to back wellness companies
+  why: Jenny Liu is a solo first-time GP looking to back underrepresented wellness
+    founders.
+  takeaway: Jenny Liu is a solo first-time GP looking to back underrepresented wellness
+    founders.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/former-ceo-of-celeb-fav-gym-dogpound-launches-5m-fund-to-back-wellness-companies/
+  source: TechCrunch
+  published_utc: '2026-01-22T18:00:00+00:00'
+  title_zh: 名人喜爱的健身房Dogpound前CEO发起500万美元基金，支持健康公司。
+  why_zh: Jenny Liu是一位首次独立担任普通合伙人的投资者，旨在支持未被充分代表的健康领域创始人。
+  takeaway_zh: Jenny Liu是一位首次独立担任普通合伙人的投资者，旨在支持未被充分代表的健康领域创始人。
+  prompt_zh: ''
+- category: Tech industry
+  title: Blue Origin makes impressive strides with reuse—next launch will refly booster
+  why: With this quick turnaround, Blue Origin takes a step toward a faster cadence.
+  takeaway: With this quick turnaround, Blue Origin takes a step toward a faster cadence.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/blue-origin-makes-impressive-strides-with-reuse-next-launch-will-refly-booster/
+  source: Ars Technica
+  published_utc: '2026-01-22T17:49:24+00:00'
+  title_zh: 蓝色起源在重复使用方面取得重大进展——下次发射将复用助推器
+  why_zh: 凭借此次快速周转，蓝色起源向着加快发射频率迈进一步。
+  takeaway_zh: 凭借此次快速周转，蓝色起源向着加快发射频率迈进一步。
+  prompt_zh: ''
+- category: Tech industry
+  title: CSS Optical Illusions
+  why: 'Article URL: https://alvaromontoro.com/blog/68091/css-optical-illusions Comments
+    URL: https://news.ycombinator.com/item?id=46722570 Points:…'
+  takeaway: 'Article URL: https://alvaromontoro.com/blog/68091/css-optical-illusions
+    Comments URL: https://news.ycombinator.com/item?id=46722570 Points: 132 # Comments:
+    12'
+  prompt: ''
+  url: https://alvaromontoro.com/blog/68091/css-optical-illusions
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T17:41:22+00:00'
+  title_zh: CSS视错觉
+  why_zh: 文章链接：https://alvaromontoro.com/blog/68091/css-optical-illusions 评论链接：https://news.ycombinator.com/item?id=46722570
+    分数：…
+  takeaway_zh: '文章链接：https://alvaromontoro.com/blog/68091/css-optical-illusions 评论链接：https://news.ycombinator.com/item?id=46722570
+    分数：132 # 评论：12'
+  prompt_zh: ''
+- category: Tech industry
+  title: “Dr. Google” had its issues. Can ChatGPT Health do better?
+  why: 'For the past two decades, there’s been a clear first step for anyone who starts
+    experiencing new medical symptoms: Look them up online.'
+  takeaway: 'For the past two decades, there’s been a clear first step for anyone
+    who starts experiencing new medical symptoms: Look them up online. The practice
+    was so common that it gained the pejorative moniker “Dr. Google.” But times are
+    changing, and many medical-information seekers are now using LLMs. According to
+    OpenAI, 230 million people ask…'
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/22/1131692/dr-google-had-its-issues-can-chatgpt-health-do-better/
+  source: MIT Technology Review
+  published_utc: '2026-01-22T17:38:09+00:00'
+  title_zh: “谷歌医生”有其问题。ChatGPT健康版能否做得更好？
+  why_zh: 过去二十年里，任何人出现新的医疗症状时，第一步通常很明确：上网查询。
+  takeaway_zh: 过去二十年里，任何人出现新的医疗症状时，第一步通常很明确：上网查询。这种做法如此普遍，以至于获得了贬义的绰号“谷歌医生”。但时代在变，许多寻求医疗信息的人现在开始使用大语言模型。据OpenAI称，有2.3亿人询问…
+  prompt_zh: ''
+- category: Tech industry
+  title: Composing APIs and CLIs in the LLM era
+  why: 'Article URL: https://walters.app/blog/composing-apis-clis Comments URL: https://news.ycombinator.com/item?id=46722074
+    Points: 27 # Comments…'
+  takeaway: 'Article URL: https://walters.app/blog/composing-apis-clis Comments URL:
+    https://news.ycombinator.com/item?id=46722074 Points: 27 # Comments: 4'
+  prompt: ''
+  url: https://walters.app/blog/composing-apis-clis
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T17:14:04+00:00'
+  title_zh: LLM时代的API与CLI组合
+  why_zh: '文章链接：https://walters.app/blog/composing-apis-clis 评论链接：https://news.ycombinator.com/item?id=46722074
+    分数：27 # 评论…'
+  takeaway_zh: '文章链接：https://walters.app/blog/composing-apis-clis 评论链接：https://news.ycombinator.com/item?id=46722074
+    分数：27 # 评论：4'
+  prompt_zh: ''
+- category: Tech industry
+  title: AnswerThis (YC F25) Is Hiring
+  why: 'Article URL: https://www.ycombinator.com/companies/answerthis/jobs/r5VHmSC-ai-agent-orchestration
+    Comments URL: https://news.ycombinator.co…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/answerthis/jobs/r5VHmSC-ai-agent-orchestration
+    Comments URL: https://news.ycombinator.com/item?id=46721897 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/answerthis/jobs/r5VHmSC-ai-agent-orchestration
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T17:00:40+00:00'
+  title_zh: AnswerThis（YC F25）正在招聘
+  why_zh: 文章网址：https://www.ycombinator.com/companies/answerthis/jobs/r5VHmSC-ai-agent-orchestration
+    评论网址：https://news.ycombinator.com/…
+  takeaway_zh: 文章网址：https://www.ycombinator.com/companies/answerthis/jobs/r5VHmSC-ai-agent-orchestration
+    评论网址：https://news.ycombinator.com/item?id=46721897 得分：0 评论数：0
+  prompt_zh: ''
+- category: Tech industry
+  title: Struggling fusion power company General Fusion to go public via $1B reverse
+    merger
+  why: General Fusion's merger with an acquisition company will net the company over
+    $300 million.
+  takeaway: General Fusion's merger with an acquisition company will net the company
+    over $300 million. Just last year, the company ran into trouble raising money
+    from other investors.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/struggling-fusion-power-company-general-fusion-to-go-public-via-1b-reverse-merger/
+  source: TechCrunch
+  published_utc: '2026-01-22T17:00:25+00:00'
+  title_zh: 陷入困境的核聚变能源公司General Fusion将通过10亿美元的反向并购上市。
+  why_zh: General Fusion与一家收购公司的合并将为公司带来超过3亿美元的资金。
+  takeaway_zh: General Fusion与一家收购公司的合并将为公司带来超过3亿美元的资金。就在去年，该公司在向其他投资者融资时遇到了困难。
+  prompt_zh: ''
+- category: Tech industry
+  title: Waymo continues robotaxi ramp up with Miami service now open to public
+  why: Waymo is opening its driverless robotaxis to the public in Miami, starting
+    with a 60-square-mile service area and plans to reach the airpor…
+  takeaway: Waymo is opening its driverless robotaxis to the public in Miami, starting
+    with a 60-square-mile service area and plans to reach the airport "soon."
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/waymo-continues-robotaxi-ramp-up-with-miami-service-now-open-to-public/
+  source: TechCrunch
+  published_utc: '2026-01-22T16:59:02+00:00'
+  title_zh: Waymo继续推进机器人出租车服务，迈阿密服务现已向公众开放。
+  why_zh: Waymo在迈阿密向公众开放其无人驾驶机器人出租车服务，初期覆盖60平方英里的服务区域，并计划‘很快’扩展至机场。
+  takeaway_zh: Waymo在迈阿密向公众开放其无人驾驶机器人出租车服务，初期覆盖60平方英里的服务区域，并计划‘很快’扩展至机场。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: isometric.nyc – giant isometric pixel art map of NYC'
+  why: Hey HN!
+  takeaway: 'Hey HN! I wanted to share something I built over the last few weeks:
+    isometric.nyc is a massive isometric pixel art map of NYC, built with nano banana
+    and coding agents. I didn''t write a single line of code. Of course no-code doesn''t
+    mean no-engineering. This project took a lot more manual labor than I''d hoped!
+    I wrote a deep dive on the workflow and some t…'
+  prompt: ''
+  url: https://cannoneyed.com/isometric-nyc/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T16:52:35+00:00'
+  title_zh: Show HN：isometric.nyc——纽约市的巨型等距像素艺术地图
+  why_zh: 嘿，HN！
+  takeaway_zh: 嘿，HN！我想分享一个过去几周我构建的项目：isometric.nyc，这是一幅巨大的纽约市等距像素艺术地图，使用nano banana和编码代理构建。我没有编写一行代码。当然，无代码并不意味着无工程。这个项目比我预想的要耗费更多的人力！我写了一篇关于工作流程和一些技……
+  prompt_zh: ''
+- category: Tech industry
+  title: Ireland proposes new law allowing police to use spyware
+  why: The Irish government announced that it wants to pass a law that would grant
+    police more surveillance powers, such as using spyware to fight…
+  takeaway: The Irish government announced that it wants to pass a law that would
+    grant police more surveillance powers, such as using spyware to fight serious
+    crime, while aiming to protect the privacy rights of its citizens.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/ireland-proposes-new-law-allowing-police-to-use-spyware/
+  source: TechCrunch
+  published_utc: '2026-01-22T16:49:28+00:00'
+  title_zh: 爱尔兰提议新法律，允许警方使用间谍软件。
+  why_zh: 爱尔兰政府宣布，希望通过一项法律，赋予警方更多监控权力，如使用间谍软件打击严重犯罪，同时旨在保护公民的隐私权。
+  takeaway_zh: 爱尔兰政府宣布，希望通过一项法律，赋予警方更多监控权力，如使用间谍软件打击严重犯罪，同时旨在保护公民的隐私权。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Dispatch from Davos: hot air, big egos and cold flexes'
+  why: This story first appeared in The Debrief, our subscriber-only newsletter about
+    the biggest news in tech by Mat Honan, Editor in Chief.
+  takeaway: This story first appeared in The Debrief, our subscriber-only newsletter
+    about the biggest news in tech by Mat Honan, Editor in Chief. Subscribe to read
+    the next edition as soon as it lands. It’s supposed to be frigid in Davos this
+    time of year. Part of the charm is seeing the world’s elite tromp through the…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/22/1131687/hot-air-cold-flexes-at-davos/
+  source: MIT Technology Review
+  published_utc: '2026-01-22T16:39:55+00:00'
+  title_zh: 达沃斯快讯：空谈、自负与冷酷的炫耀
+  why_zh: 本故事首次出现在The Debrief，我们的订阅者专属通讯，由主编Mat Honan撰写，报道科技界最大新闻。
+  takeaway_zh: 本故事首次出现在The Debrief，我们的订阅者专属通讯，由主编Mat Honan撰写，报道科技界最大新闻。订阅以第一时间阅读下一期。达沃斯此时本应寒冷刺骨。部分魅力在于目睹世界精英们跋涉其中…
+  prompt_zh: ''
+- category: Tech industry
+  title: Google adds your Gmail and Photos to AI Mode to enable "Personal Intelligence"
+  why: Personal Intelligence is optional and rolling out first to AI Pro and AI Ultra
+    subscribers.
+  takeaway: Personal Intelligence is optional and rolling out first to AI Pro and
+    AI Ultra subscribers.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/01/google-ai-mode-can-now-customize-responses-with-your-email-and-photos/
+  source: Ars Technica
+  published_utc: '2026-01-22T16:35:41+00:00'
+  title_zh: 谷歌将Gmail和照片接入AI模式以启用“个人智能”功能
+  why_zh: 个人智能功能为可选服务，首批面向AI Pro和AI Ultra订阅用户推出。
+  takeaway_zh: 个人智能功能为可选服务，首批面向AI Pro和AI Ultra订阅用户推出。
+  prompt_zh: ''
+- category: Tech industry
+  title: Finally, a new controller that solves the Switch 2's "flat Joy-Con" problem
+  why: But Nyxi's Hyperion 3 upgrade comes with a pretty high asking price.
+  takeaway: But Nyxi's Hyperion 3 upgrade comes with a pretty high asking price.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/01/finally-a-new-controller-that-solves-the-switch-2s-flat-joy-con-problem/
+  source: Ars Technica
+  published_utc: '2026-01-22T16:15:08+00:00'
+  title_zh: 终于有一款新控制器解决了Switch 2的‘扁平Joy-Con’问题
+  why_zh: 但Nyxi的Hyperion 3升级版售价颇为昂贵。
+  takeaway_zh: 但Nyxi的Hyperion 3升级版售价颇为昂贵。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google’s AI Mode can now tap into your Gmail and Photos to provide tailored
+    responses
+  why: The company notes that AI Mode doesn’t train directly on your Gmail inbox or
+    Google Photos library.
+  takeaway: The company notes that AI Mode doesn’t train directly on your Gmail inbox
+    or Google Photos library. Instead, it trains on specific prompts and the model’s
+    responses.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/22/googles-ai-mode-can-now-tap-into-your-gmail-and-photos-to-provide-tailored-responses/
+  source: TechCrunch
+  published_utc: '2026-01-22T16:00:00+00:00'
+  title_zh: 谷歌的AI模式现在可以接入您的Gmail和照片，以提供定制化响应。
+  why_zh: 公司指出，AI模式不会直接在您的Gmail收件箱或Google照片库上进行训练。
+  takeaway_zh: 公司指出，AI模式不会直接在您的Gmail收件箱或Google照片库上进行训练。相反，它针对特定提示和模型的响应进行训练。
+  prompt_zh: ''
+- category: Tech industry
+  title: eBay bans illicit automated shopping amid rapid rise of AI agents
+  why: New policy requires "buy for me" AI tools and chatbots to obtain permission
+    before accessing the platform.
+  takeaway: New policy requires "buy for me" AI tools and chatbots to obtain permission
+    before accessing the platform.
+  prompt: ''
+  url: https://arstechnica.com/information-technology/2026/01/ebay-bans-illicit-automated-shopping-amid-rapid-rise-of-ai-agents/
+  source: Ars Technica
+  published_utc: '2026-01-22T15:56:33+00:00'
+  title_zh: eBay禁止非法自动购物行为以应对AI代理的迅速崛起
+  why_zh: 新政策要求‘代购’AI工具及聊天机器人在访问平台前需获得许可。
+  takeaway_zh: 新政策要求‘代购’AI工具及聊天机器人在访问平台前需获得许可。
+  prompt_zh: ''
+- category: Tech industry
+  title: GPTZero finds 100 new hallucinations in NeurIPS 2025 accepted papers
+  why: 'Article URL: https://gptzero.me/news/neurips/ Comments URL: https://news.ycombinator.com/item?id=46720395
+    Points: 686 # Comments: 377'
+  takeaway: 'Article URL: https://gptzero.me/news/neurips/ Comments URL: https://news.ycombinator.com/item?id=46720395
+    Points: 686 # Comments: 377'
+  prompt: ''
+  url: https://gptzero.me/news/neurips/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T15:20:48+00:00'
+  title_zh: GPTZero在NeurIPS 2025接收论文中发现100个新幻觉
+  why_zh: 文章网址：https://gptzero.me/news/neurips/ 评论网址：https://news.ycombinator.com/item?id=46720395
+    得分：686 评论数：377
+  takeaway_zh: 文章网址：https://gptzero.me/news/neurips/ 评论网址：https://news.ycombinator.com/item?id=46720395
+    得分：686 评论数：377
+  prompt_zh: ''
+- category: Tech industry
+  title: Tree-sitter vs. Language Servers
+  why: 'Article URL: https://lambdaland.org/posts/2026-01-21_tree-sitter_vs_lsp/ Comments
+    URL: https://news.ycombinator.com/item?id=46719899 Points…'
+  takeaway: 'Article URL: https://lambdaland.org/posts/2026-01-21_tree-sitter_vs_lsp/
+    Comments URL: https://news.ycombinator.com/item?id=46719899 Points: 207 # Comments:
+    55'
+  prompt: ''
+  url: https://lambdaland.org/posts/2026-01-21_tree-sitter_vs_lsp/
+  source: Hacker News (front page)
+  published_utc: '2026-01-22T14:47:58+00:00'
+  title_zh: Tree-sitter vs. 语言服务器
+  why_zh: 文章网址：https://lambdaland.org/posts/2026-01-21_tree-sitter_vs_lsp/ 评论网址：https://news.ycombinator.com/item?id=46719899
+    得分……
+  takeaway_zh: 文章网址：https://lambdaland.org/posts/2026-01-21_tree-sitter_vs_lsp/ 评论网址：https://news.ycombinator.com/item?id=46719899
+    得分：207 评论数：55
+  prompt_zh: ''
+- category: Tech industry
+  title: All sorts of interesting flags and artifacts will fly to the Moon on Artemis
+    II
+  why: More than 2,300 commemorative items fill the duffel bag-size pouch.
+  takeaway: More than 2,300 commemorative items fill the duffel bag-size pouch.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/nasa-to-fly-apollo-aviation-artifacts-on-artemis-ii/
+  source: Ars Technica
+  published_utc: '2026-01-22T14:41:38+00:00'
+  title_zh: 各类有趣的旗帜和文物将随阿尔忒弥斯二号飞往月球
+  why_zh: 体积相当于行李袋的收纳包内装有2300多件纪念品。
+  takeaway_zh: 体积相当于行李袋的收纳包内装有2300多件纪念品。
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta wants to block data about social media use, mental health in child safety
+    trial
+  why: Company is pulling out all the stops to protect itself in advance of New Mexico
+    trial.
+  takeaway: Company is pulling out all the stops to protect itself in advance of New
+    Mexico trial.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/meta-wants-to-block-data-about-social-media-use-mental-health-in-child-safety-trial/
+  source: Ars Technica
+  published_utc: '2026-01-22T14:25:35+00:00'
+  title_zh: Meta欲在儿童安全审判中阻止社交媒体使用与心理健康数据的披露
+  why_zh: 公司正全力以赴，在新墨西哥州审判前保护自身。
+  takeaway_zh: 公司正全力以赴，在新墨西哥州审判前保护自身。
+  prompt_zh: ''
+- category: Tech industry
+  title: How to Compute With Electron Waves
+  why: Much has been made of the excessive power demands of AI, but solutions are
+    sparse.
+  takeaway: 'Much has been made of the excessive power demands of AI, but solutions
+    are sparse. This has led engineers to consider completely new paradigms in computing:
+    optical , thermodynamic , reversible —the list goes on. Many of these approaches
+    require a change in the materials used for computation, which would demand an
+    overhaul in the CMOS fabrication techniques…'
+  prompt: ''
+  url: https://spectrum.ieee.org/plasmon-computing-device
+  source: IEEE Spectrum
+  published_utc: '2026-01-22T14:00:02+00:00'
+  title_zh: 如何利用电子波进行计算
+  why_zh: AI的过高能耗问题备受关注，但解决方案寥寥。
+  takeaway_zh: AI的过高能耗问题备受关注，但解决方案寥寥。这促使工程师考虑全新的计算范式：光计算、热力学计算、可逆计算——不一而足。其中许多方法需要改变计算所用材料，这将要求彻底革新CMOS制造技术……
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Download: Yann LeCun’s new venture, and lithium’s on the rise'
+  why: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology.
+  takeaway: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology. Yann LeCun’s new venture
+    is a contrarian bet against large language models Yann LeCun is a Turing Award
+    recipient and a top AI researcher, but he has long been a contrarian figure in…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/22/1131680/the-download-yann-lecun-lithium-rise/
+  source: MIT Technology Review
+  published_utc: '2026-01-22T13:10:00+00:00'
+  title_zh: 今日下载：Yann LeCun的新项目，以及锂的崛起
+  why_zh: 这是今天的《The Download》，我们的工作日通讯，每日为您带来全球科技动态。
+  takeaway_zh: 这是今天的《The Download》，我们的工作日通讯，每日为您带来全球科技动态。Yann LeCun的新冒险是对大型语言模型的逆向押注。Yann
+    LeCun是图灵奖得主和顶级AI研究员，但他长期以来一直是科技界的逆向思维者……
+  prompt_zh: ''
+- category: Tech industry
+  title: Why 2026 is a hot year for lithium
+  why: In 2026, I’m going to be closely watching the price of lithium.
+  takeaway: In 2026, I’m going to be closely watching the price of lithium. If you’re
+    not in the habit of obsessively tracking commodity markets, I certainly don’t
+    blame you. (Though the news lately definitely makes the case that minerals can
+    have major implications for global politics and the economy.) But lithium is worthy
+    of a close…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/22/1131563/lithium-2026/
+  source: MIT Technology Review
+  published_utc: '2026-01-22T11:00:00+00:00'
+  title_zh: 为何2026年是锂的热门年份
+  why_zh: 2026年，我将密切关注锂的价格。
+  takeaway_zh: 2026年，我将密切关注锂的价格。如果你没有习惯性地痴迷于追踪大宗商品市场，我当然不会责怪你。（尽管最近的新闻确实表明，矿产对全球政治和经济有重大影响。）但锂值得密切关注……
+  prompt_zh: ''
+- category: Tech industry
+  title: Yann LeCun’s new venture is a contrarian bet against large language models
+  why: Yann LeCun is a Turing Award recipient and a top AI researcher, but he has
+    long been a contrarian figure in the tech world.
+  takeaway: Yann LeCun is a Turing Award recipient and a top AI researcher, but he
+    has long been a contrarian figure in the tech world. He believes that the industry’s
+    current obsession with large language models is wrong-headed and will ultimately
+    fail to solve many pressing problems. Instead, he thinks we should be betting
+    on world…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/
+  source: MIT Technology Review
+  published_utc: '2026-01-22T10:00:00+00:00'
+  title_zh: Yann LeCun的新冒险是对大型语言模型的逆向押注
+  why_zh: Yann LeCun是图灵奖得主和顶级AI研究员，但他长期以来一直是科技界的逆向思维者。
+  takeaway_zh: Yann LeCun是图灵奖得主和顶级AI研究员，但他长期以来一直是科技界的逆向思维者。他认为，行业当前对大型语言模型的痴迷是错误的，最终无法解决许多紧迫问题。相反，他认为我们应该押注于……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Psychometric Comparability of LLM-Based Digital Twins
+  why: 'arXiv:2601.14264v1 Announce Type: new Abstract: Large language models (LLMs)
+    are used as "digital twins" to replace human respondents, yet…'
+  takeaway: 'arXiv:2601.14264v1 Announce Type: new Abstract: Large language models
+    (LLMs) are used as "digital twins" to replace human respondents, yet their psychometric
+    comparability to humans is uncertain. We propose a construct-validity framework
+    spanning construct representation and the nomological net, benchmarking digital
+    twins against human gold standards across…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14264
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 基于LLM的数字双胞胎的心理测量可比性
+  why_zh: arXiv:2601.14264v1 公告类型：新 摘要：大型语言模型（LLMs）被用作“数字双胞胎”以替代人类受访者，然而……
+  takeaway_zh: arXiv:2601.14264v1 公告类型：新 摘要：大型语言模型（LLMs）被用作“数字双胞胎”以替代人类受访者，然而它们与人类的心理测量可比性尚不确定。我们提出一个构念效度框架，涵盖构念表征和法则网络，将数字双胞胎的表现与人类标准进行基准测试……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'From Textbook to Talkbot: A Case Study of a Greek-Language RAG-Based Chatbot
+    in Higher Education'
+  why: 'arXiv:2601.14265v1 Announce Type: new Abstract: The integration of AI chatbots
+    into educational settings has opened new pathways for transf…'
+  takeaway: 'arXiv:2601.14265v1 Announce Type: new Abstract: The integration of AI
+    chatbots into educational settings has opened new pathways for transforming teaching
+    and learning, offering enhanced support to both educators and learners. This study
+    investigates the design and application of an AI chatbot as an educational tool
+    in higher education. Designed to operate…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14265
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 从教材到聊天机器人：希腊语RAG聊天机器人在高等教育中的案例研究
+  why_zh: arXiv:2601.14265v1 公告类型：新 摘要：AI聊天机器人在教育环境中的整合为新途径开辟了新路径，以转……
+  takeaway_zh: arXiv:2601.14265v1 公告类型：新 摘要：AI聊天机器人在教育环境中的整合为教学和学习开辟了新路径，为教育者和学习者提供了增强支持。本研究调查了AI聊天机器人作为高等教育工具的设计和应用。该工具设计为……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Developmental trajectories of decision making and affective dynamics in large
+    language models
+  why: 'arXiv:2601.14268v1 Announce Type: new Abstract: Large language models (LLMs)
+    are increasingly used in medicine and clinical workflows, yet…'
+  takeaway: 'arXiv:2601.14268v1 Announce Type: new Abstract: Large language models
+    (LLMs) are increasingly used in medicine and clinical workflows, yet we know little
+    about their decision and affective profiles. Taking a historically informed outlook
+    on the future, we treated successive OpenAI models as an evolving lineage and
+    compared them with humans in a gambling tas…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14268
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 大型语言模型中决策制定和情感动态的发展轨迹
+  why_zh: arXiv:2601.14268v1 公告类型：新 摘要：大型语言模型（LLMs）在医学和临床工作流程中的应用日益增多，然而……
+  takeaway_zh: arXiv:2601.14268v1 公告类型：新 摘要：大型语言模型（LLMs）在医学和临床工作流程中的应用日益增多，然而我们对其决策和情感特征的了解却很少。带着对未来历史视角的展望，我们将OpenAI的连续模型视为一个演化谱系，并将它们与人类在賭博任务中进行了比较……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Recursivism: An Artistic Paradigm for Self-Transforming Art in the Age of
+    AI'
+  why: 'arXiv:2601.14401v1 Announce Type: new Abstract: This article introduces Recursivism
+    as a conceptual framework for analyzing contemporary ar…'
+  takeaway: 'arXiv:2601.14401v1 Announce Type: new Abstract: This article introduces
+    Recursivism as a conceptual framework for analyzing contemporary artistic practices
+    in the age of artificial intelligence. While recursion is precisely defined in
+    mathematics and computer science, it has not previously been formalized as an
+    aesthetic paradigm. Recursivism designates pra…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14401
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 递归主义：AI时代自我变革艺术的艺术范式
+  why_zh: arXiv:2601.14401v1 公告类型：新 摘要：本文提出递归主义作为分析当代艺术的...
+  takeaway_zh: arXiv:2601.14401v1 公告类型：新 摘要：本文提出递归主义作为分析人工智能时代当代艺术实践的概念框架。尽管递归在数学和计算机科学中有明确定义，但此前从未被形式化为美学范式。递归主义指...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Language, Caste, and Context: Demographic Disparities in AI-Generated Explanations
+    Across Indian and American STEM Educational Systems'
+  why: 'arXiv:2601.14506v1 Announce Type: new Abstract: The popularization of AI chatbot
+    usage globally has created opportunities for research into…'
+  takeaway: 'arXiv:2601.14506v1 Announce Type: new Abstract: The popularization of
+    AI chatbot usage globally has created opportunities for research into their benefits
+    and drawbacks, especially for students using AI assistants for coursework support.
+    This paper asks: how do LLMs perceive the intellectual capabilities of student
+    profiles from intersecting marginalized id…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14506
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 语言、种姓与语境：AI生成解释在印度和美国STEM教育体系中的群体差异
+  why_zh: arXiv:2601.14506v1 公告类型：新 摘要：AI聊天机器人在全球的普及为研究其...
+  takeaway_zh: arXiv:2601.14506v1 公告类型：新 摘要：AI聊天机器人在全球的普及为研究其利弊创造了条件，尤其是学生使用AI助手辅助课程作业的情况。本文探讨：大语言模型如何看待来自交叉性边缘身份学生群体的...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Aiming for AI Interoperability: Challenges and Opportunities'
+  why: 'arXiv:2601.14512v1 Announce Type: new Abstract: The Aiming for AI Interoperability
+    report investigates the ongoing challenge of achieving r…'
+  takeaway: 'arXiv:2601.14512v1 Announce Type: new Abstract: The Aiming for AI Interoperability
+    report investigates the ongoing challenge of achieving regulatory and technical
+    AI interoperability as national and global AI governance efforts are proliferating.
+    Here, technical interoperability is the ability of AI systems and networks to
+    function together, and regulatory…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14512
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 追求AI互操作性：挑战与机遇
+  why_zh: arXiv:2601.14512v1 公告类型：新 摘要：《追求AI互操作性》报告研究了在国家和全球AI治理...
+  takeaway_zh: arXiv:2601.14512v1 公告类型：新 摘要：《追求AI互操作性》报告研究了在国家和全球AI治理激增背景下，实现监管与技术互操作的持续挑战。技术互操作指AI系统和网络协同运作的能力，而监管...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Algorithmic Barrier: Quantifying Artificial Frictional Unemployment
+    in Automated Recruitment Systems'
+  why: 'arXiv:2601.14534v1 Announce Type: new Abstract: The United States labor market
+    exhibits a persistent coexistence of high job vacancy rates…'
+  takeaway: 'arXiv:2601.14534v1 Announce Type: new Abstract: The United States labor
+    market exhibits a persistent coexistence of high job vacancy rates and prolonged
+    unemployment duration, a pattern that standard labor market theory struggles to
+    explain. This paper argues that a non-trivial portion of contemporary frictional
+    unemployment is artificially induced by autom…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14534
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 算法壁垒：量化自动化招聘系统中的人工摩擦性失业
+  why_zh: arXiv:2601.14534v1 公告类型：新 摘要：美国劳动力市场持续表现出高职位空缺率与...
+  takeaway_zh: arXiv:2601.14534v1 公告类型：新 摘要：美国劳动力市场持续表现出高职位空缺率与长期失业并存的现象，传统劳动力市场理论难以解释。本文认为，当代摩擦性失业中有相当部分是由自动化招聘系统...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'ICLF: An Immersive Code Learning Framework based on Git for Teaching and
+    Evaluating Student Programming Projects'
+  why: 'arXiv:2601.14814v1 Announce Type: new Abstract: Programming projects are essential
+    in computer science education for bridging theory with p…'
+  takeaway: 'arXiv:2601.14814v1 Announce Type: new Abstract: Programming projects
+    are essential in computer science education for bridging theory with practice
+    and introducing students to tools like Git, IDEs, and debuggers. However, designing
+    and evaluating these projects (especially in MOOCs)can be challenging. We propose
+    the Immersive Code Learning Framework (ICLF),…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14814
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: ICLF：基于Git的沉浸式代码学习框架用于编程教学与项目评估
+  why_zh: arXiv:2601.14814v1 公告类型：新 摘要：编程项目对计算机科学教育至关重要，它能...
+  takeaway_zh: arXiv:2601.14814v1 公告类型：新 摘要：编程项目对计算机科学教育至关重要，它能连接理论与实践，并让学生接触Git、IDE和调试器等工具。但设计评估这些项目（尤其在MOOCs中）具有挑战性。我们提出沉浸式代码学习框架（ICLF）...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Arguing conformance with data protection principles
+  why: 'arXiv:2601.15155v1 Announce Type: new Abstract: We show how conformance arguments
+    can be used by organisations to substantiate claims of co…'
+  takeaway: 'arXiv:2601.15155v1 Announce Type: new Abstract: We show how conformance
+    arguments can be used by organisations to substantiate claims of conformance to
+    data protection principles. Use of conformance arguments can improve the rigour
+    and consistency with which these organisations, supervisory authorities, certification
+    bodies and data subjects can assess the…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.15155
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 论证符合数据保护原则
+  why_zh: arXiv:2601.15155v1 宣布类型：新论文 摘要：我们展示组织如何通过符合性论证来证实其符合数据保护原则的主张……
+  takeaway_zh: arXiv:2601.15155v1 宣布类型：新论文 摘要：我们展示组织如何通过符合性论证来证实其符合数据保护原则的主张。使用符合性论证可以提高这些组织、监管机构、认证机构和数据主体评估……的严谨性和一致性
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Evaluation of Large Language Models in Legal Applications: Challenges, Methods,
+    and Future Directions'
+  why: 'arXiv:2601.15267v1 Announce Type: new Abstract: Large language models (LLMs)
+    are being increasingly integrated into legal applications, inc…'
+  takeaway: 'arXiv:2601.15267v1 Announce Type: new Abstract: Large language models
+    (LLMs) are being increasingly integrated into legal applications, including judicial
+    decision support, legal practice assistance, and public-facing legal services.
+    While LLMs show strong potential in handling legal knowledge and tasks, their
+    deployment in real-world legal settings raises…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.15267
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 大语言模型在法律应用中的评估：挑战、方法与未来方向
+  why_zh: arXiv:2601.15267v1 公告类型：新 摘要：大语言模型（LLMs）正日益融入法律应用，包...
+  takeaway_zh: arXiv:2601.15267v1 公告类型：新 摘要：大语言模型（LLMs）正日益融入法律应用，包括司法决策支持、法律实务辅助和公共法律服务。虽然LLMs在处理法律知识和任务方面展现出强大潜力，但其在真实法律场景中的部署仍存在...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Computational Foundations for Strategic Coopetition: Formalizing Trust and
+    Reputation Dynamics'
+  why: 'arXiv:2510.24909v2 Announce Type: cross Abstract: Modern socio-technical systems
+    increasingly involve multi-stakeholder environments where…'
+  takeaway: 'arXiv:2510.24909v2 Announce Type: cross Abstract: Modern socio-technical
+    systems increasingly involve multi-stakeholder environments where actors simultaneously
+    cooperate and compete. These coopetitive relationships exhibit dynamic trust evolution
+    based on observed behavior over repeated interactions. While conceptual modeling
+    languages like i* represent tr…'
+  prompt: ''
+  url: https://arxiv.org/abs/2510.24909
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 战略竞合的计算基础：形式化信任与声誉动态
+  why_zh: arXiv:2510.24909v2 公告类型：交叉 摘要：现代社会技术系统日益涉及多利益相关方环境...
+  takeaway_zh: arXiv:2510.24909v2 公告类型：交叉 摘要：现代社会技术系统日益涉及多方利益相关者环境，其中参与者同时合作与竞争。这些竞合关系基于重复互动中的观察行为呈现动态信任演化。虽然概念建模语言如i*能表示信任...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Introducing a Novel Systems Thinking approach inspired by STPA: Road Safety
+    Intervention design case study'
+  why: 'arXiv:2601.14292v1 Announce Type: cross Abstract: According to the latest
+    provisional statistics released by the UK Department for Transpor…'
+  takeaway: 'arXiv:2601.14292v1 Announce Type: cross Abstract: According to the latest
+    provisional statistics released by the UK Department for Transport, Great Britain
+    recorded 1,633 road deaths in 2024, representing a slight increase from 2023 and
+    raising concerns about safety progress, which indicates that preventable fatalities
+    remain a challenge. The deployment of…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14292
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 引入受STPA启发的新型系统思维方法：道路交通安全干预设计案例研究
+  why_zh: arXiv:2601.14292v1 公告类型：交叉 摘要：根据英国交通部发布的最新临时统计数据...
+  takeaway_zh: arXiv:2601.14292v1 公告类型：交叉 摘要：英国交通部最新临时统计显示，2024年大不列颠地区录得1,633例道路死亡案例，较2023年略有上升，引发对安全进展的担忧，表明可预防性伤亡仍是挑战。相关技术部署...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Epistemic Constitutionalism Or: how to avoid coherence bias'
+  why: 'arXiv:2601.14295v1 Announce Type: cross Abstract: Large language models increasingly
+    function as artificial reasoners: they evaluate argume…'
+  takeaway: 'arXiv:2601.14295v1 Announce Type: cross Abstract: Large language models
+    increasingly function as artificial reasoners: they evaluate arguments, assign
+    credibility, and express confidence. Yet their belief-forming behavior is governed
+    by implicit, uninspected epistemic policies. This paper argues for an epistemic
+    constitution for AI: explicit, contestable me…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14295
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 认知宪政主义：如何避免连贯性偏见
+  why_zh: arXiv:2601.14295v1 公告类型：交叉 摘要：大型语言模型逐渐承担人工推理者角色：它们评估论点、分配可信度并表达置信水平...
+  takeaway_zh: arXiv:2601.14295v1 公告类型：交叉 摘要：大型语言模型越来越多地作为人工推理者运作：它们评估论证、分配可信度并表达置信度。然而其信念形成行为受制于隐性的、未经检验的认知策略。本文主张为AI建立认知宪法：明确、可质疑的机制...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Guardrails for trust, safety, and ethical development and deployment of Large
+    Language Models (LLM)
+  why: 'arXiv:2601.14298v1 Announce Type: cross Abstract: The AI era has ushered in
+    Large Language Models (LLM) to the technological forefront, whi…'
+  takeaway: 'arXiv:2601.14298v1 Announce Type: cross Abstract: The AI era has ushered
+    in Large Language Models (LLM) to the technological forefront, which has been
+    much of the talk in 2023, and is likely to remain as such for many years to come.
+    LLMs are the AI models that are the power house behind generative AI applications
+    such as ChatGPT. These AI models, fueled by…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14298
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 大型语言模型信任保障、安全防护及伦理开发部署框架
+  why_zh: arXiv:2601.14298v1 公告类型：交叉 摘要：AI时代已将大型语言模型(LLM)推向技术前沿...
+  takeaway_zh: arXiv:2601.14298v1 公告类型：交叉 摘要：AI时代将大型语言模型(LLM)推向技术前沿，其在2023年成为热议焦点，并可能持续多年。LLM是支撑ChatGPT等生成式AI应用的动力引擎。这些由海量数据驱动的AI模型...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Assessing the livability within the 15-minute city concept based on mobile
+    phone data
+  why: 'arXiv:2601.14307v1 Announce Type: cross Abstract: Many cities promote walkability
+    through concepts such as the compact city and 15-minute c…'
+  takeaway: 'arXiv:2601.14307v1 Announce Type: cross Abstract: Many cities promote
+    walkability through concepts such as the compact city and 15-minute city to enhance
+    urban livability, yet few methods link spatial walkability features to empirically
+    measured livability and account for temporal dynamics. The method developed for
+    this study uses mobile phone data from the…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14307
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 基于手机数据评估15分钟城市概念的宜居性
+  why_zh: arXiv:2601.14307v1 公告类型：交叉 摘要：许多城市通过紧凑城市和15分钟城市等概念提升步行友好性以增强城市宜居性，但少有方法将空间步行特征与实证测量的宜居性相关联并考虑时间动态性。本研究开发的方法利用手机数据...
+  takeaway_zh: arXiv:2601.14307v1 公告类型：交叉 摘要：许多城市通过紧凑城市和15分钟城市等概念促进步行友好性，但鲜有方法能将空间步行特征与实测宜居性联系起来并考虑时间动态变化。本研究采用手机数据...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Predicting Long-Term Self-Rated Health in Small Areas Using Ordinal Regression
+    and Microsimulation
+  why: 'arXiv:2601.14335v1 Announce Type: cross Abstract: This paper presents an approach
+    for predicting the self-rated health of individuals in a…'
+  takeaway: 'arXiv:2601.14335v1 Announce Type: cross Abstract: This paper presents
+    an approach for predicting the self-rated health of individuals in a future population
+    utilising the individuals'' socio-economic characteristics. An open-source microsimulation
+    is used to project Ireland''s population into the future where each individual
+    is defined by a number of demograp…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14335
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 基于序数回归与微观模拟的小区域长期自评健康预测
+  why_zh: arXiv:2601.14335v1 公告类型：交叉 摘要：本文提出一种预测未来人群中个体自评健康状况的方法...
+  takeaway_zh: arXiv:2601.14335v1 公告类型：交叉 摘要：本研究提出利用个体社会经济特征预测未来人口自评健康状况的方法。通过开源微观模拟工具对爱尔兰人口进行未来投影，每个个体由多项人口统计特征定义...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Measuring the State of Open Science in Transportation Using Large Language
+    Models
+  why: 'arXiv:2601.14429v1 Announce Type: cross Abstract: Open science initiatives
+    have strengthened scientific integrity and accelerated research…'
+  takeaway: 'arXiv:2601.14429v1 Announce Type: cross Abstract: Open science initiatives
+    have strengthened scientific integrity and accelerated research progress across
+    many fields, but the state of their practice within transportation research remains
+    under-investigated. Key features of open science, defined here as data and code
+    availability, are difficult to extract d…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14429
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 运用大型语言模型评估交通领域的开放科学现状
+  why_zh: arXiv:2601.14429v1 公告类型：交叉 摘要：开放科学计划在诸多领域强化了科研诚信并加速研究进程...
+  takeaway_zh: arXiv:2601.14429v1 公告类型：交叉 摘要：开放科学计划虽在多个领域强化科研诚信并加速研究进程，但其在交通研究中的实践状况仍研究不足。开放科学的核心特征（此处定义为数据与代码可得性）难以通过传统方法从文献中系统提取...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'European digital identity: A missed opportunity?'
+  why: 'arXiv:2601.14503v1 Announce Type: cross Abstract: Recent European efforts
+    around digital identity -- the EUDI regulation and its OpenID arc…'
+  takeaway: 'arXiv:2601.14503v1 Announce Type: cross Abstract: Recent European efforts
+    around digital identity -- the EUDI regulation and its OpenID architecture --
+    aim high, but start from a narrow and ill-defined conceptualization of authentication.
+    Based on a broader, more grounded understanding of the term, in we identify several
+    issues in the design of OpenID4VCI a…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14503
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 欧洲数字身份：错失的机遇？
+  why_zh: arXiv:2601.14503v1 公告类型：交叉 摘要：欧洲近期围绕数字身份的努力——EUDI法规及其OpenID架构...
+  takeaway_zh: arXiv:2601.14503v1 公告类型：交叉 摘要：欧洲近期数字身份建设（EUDI法规及OpenID架构）虽立意高远，却始于狭隘且定义模糊的认证概念。基于更广阔扎实的术语理解，本文指出OpenID4VCI架构存在的若干设计问题...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Self-Blinding and Counterfactual Self-Simulation Mitigate Biases and Sycophancy
+    in Large Language Models
+  why: 'arXiv:2601.14553v1 Announce Type: cross Abstract: Fair decisions require ignoring
+    irrelevant, potentially biasing, information.'
+  takeaway: 'arXiv:2601.14553v1 Announce Type: cross Abstract: Fair decisions require
+    ignoring irrelevant, potentially biasing, information. To achieve this, decision-makers
+    need to approximate what decision they would have made had they not known certain
+    facts, such as the gender or race of a job candidate. This counterfactual self-simulation
+    is notoriously hard for hu…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14553
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 自盲化与反事实自模拟缓解大型语言模型偏见与谄媚倾向
+  why_zh: arXiv:2601.14553v1 公告类型：跨学科 摘要：公平决策需要忽略无关且可能带有偏见的信息。
+  takeaway_zh: arXiv:2601.14553v1 公告类型：跨学科 摘要：公平决策需要忽略无关且可能带有偏见的信息。为此，决策者需模拟在不知晓某些事实（如求职者性别或种族）时可能做出的决定。这种反事实自我模拟对人类而言
+    notoriously 困难...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Designing KRIYA: An AI Companion for Wellbeing Self-Reflection'
+  why: 'arXiv:2601.14589v1 Announce Type: cross Abstract: Most personal wellbeing
+    apps present summative dashboards of health and physical activity…'
+  takeaway: 'arXiv:2601.14589v1 Announce Type: cross Abstract: Most personal wellbeing
+    apps present summative dashboards of health and physical activity metrics, yet
+    many users struggle to translate this information into meaningful understanding.
+    These apps commonly support engagement through goals, reminders, and structured
+    targets, which can reinforce comparison, judg…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14589
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 设计KRIYA：一款用于健康自省的AI伴侣
+  why_zh: arXiv:2601.14589v1 公告类型：跨学科 摘要：大多数个人健康应用仅提供健康和身体活动指标的总结性仪表盘...
+  takeaway_zh: arXiv:2601.14589v1 公告类型：跨学科 摘要：大多数个人健康应用仅提供健康和身体活动指标的总结性仪表盘，但许多用户难以将这些信息转化为有意义的理解。这类应用通常通过目标、提醒和结构化指标来维持用户参与度，但可能强化攀比、评判...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Reflecting in the Reflection: Integrating a Socratic Questioning Framework
+    into Automated AI-Based Question Generation'
+  why: 'arXiv:2601.14798v1 Announce Type: cross Abstract: Designing good reflection
+    questions is pedagogically important but time-consuming and une…'
+  takeaway: 'arXiv:2601.14798v1 Announce Type: cross Abstract: Designing good reflection
+    questions is pedagogically important but time-consuming and unevenly supported
+    across teachers. This paper introduces a reflection-in-reflection framework for
+    automated generation of reflection questions with large language models (LLMs).
+    Our approach coordinates two role-specialize…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14798
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 反思中的反思：将苏格拉底提问框架整合至基于AI的自动化问题生成系统
+  why_zh: arXiv:2601.14798v1 公告类型：跨学科 摘要：设计优质反思问题具有重要教学意义，但耗时且教师支持不均衡...
+  takeaway_zh: arXiv:2601.14798v1 公告类型：跨学科 摘要：设计优质反思问题具有重要教学意义但耗时且教师支持不均衡。本文提出'反思中的反思'框架，利用大语言模型（LLM）自动生成反思问题。该方法协调两个角色专业化的...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Operationalising DAO Sustainability KPIs: A Multi-Chain Dashboard for Governance
+    Analytics'
+  why: 'arXiv:2601.14927v1 Announce Type: cross Abstract: We present DAO Portal, a
+    production-grade analytics pipeline and interactive dashboard fo…'
+  takeaway: 'arXiv:2601.14927v1 Announce Type: cross Abstract: We present DAO Portal,
+    a production-grade analytics pipeline and interactive dashboard for assessing
+    the sustainability of Decentralised Autonomous Organisations (DAOs) through Key
+    Performance Indicators (KPIs) derived from on-chain governance and token events.
+    Building on our previous work, which defined an…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14927
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: DAO可持续性KPI的可操作化：面向治理分析的多链仪表盘
+  why_zh: arXiv:2601.14927v1 公告类型：跨学科 摘要：我们推出DAO Portal，这是一个生产级分析管道和交互式仪表盘...
+  takeaway_zh: arXiv:2601.14927v1 公告类型：跨学科 摘要：我们推出DAO Portal，这是一个生产级分析管道和交互式仪表盘，用于通过链上治理和代币事件衍生的关键绩效指标（KPI）评估去中心化自治组织（DAO）的可持续性。基于我们先前定义...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Interoperable Architecture for Digital Identity Delegation for AI Agents
+    with Blockchain Integration
+  why: 'arXiv:2601.14982v1 Announce Type: cross Abstract: Verifiable delegation in
+    digital identity systems remains unresolved across centralized,…'
+  takeaway: 'arXiv:2601.14982v1 Announce Type: cross Abstract: Verifiable delegation
+    in digital identity systems remains unresolved across centralized, federated,
+    and self-sovereign identity (SSI) environments, particularly where both human
+    users and autonomous AI agents must exercise and transfer authority without exposing
+    primary credentials or private keys. We introd…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.14982
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 支持AI代理数字身份委托的区块链互操作架构
+  why_zh: arXiv:2601.14982v1 公告类型：跨学科 摘要：数字身份系统中可验证的委托问题在中心化、联邦制和自主权身份（SSI）环境中仍未解决...
+  takeaway_zh: arXiv:2601.14982v1 公告类型：跨学科 摘要：数字身份系统中可验证的委托问题在中心化、联邦制和自主权身份（SSI）环境中仍未解决，特别是在人类用户和自主AI代理需在不暴露主凭证或私钥的情况下行使和转移权限的场景。我们提出...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Circadian Modulation of Semantic Exploration in Social Media Language
+  why: 'arXiv:2601.15091v1 Announce Type: cross Abstract: Human cognition exhibits
+    strong circadian modulation, yet its influence on high-dimension…'
+  takeaway: 'arXiv:2601.15091v1 Announce Type: cross Abstract: Human cognition exhibits
+    strong circadian modulation, yet its influence on high-dimensional semantic behavior
+    remains poorly understood. Using large-scale Reddit data, we quantify time-of-day
+    variation in language use by embedding text into a pretrained transformer model
+    and measuring semantic entropy as an…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.15091
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 社交媒体语言中语义探索的昼夜节律调节
+  why_zh: arXiv:2601.15091v1 公告类型：跨学科 摘要：人类认知表现出强烈的昼夜节律调节，但其对高维语义行为的影响仍知之甚少...
+  takeaway_zh: arXiv:2601.15091v1 公告类型：跨学科 摘要：人类认知表现出强烈的昼夜节律调节，但其对高维语义行为的影响仍知之甚少。通过大规模Reddit数据，我们使用预训练Transformer模型嵌入文本，并将语义熵作为...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: An Agentic Operationalization of DISARM for FIMI Investigation on Social
+    Media
+  why: 'arXiv:2601.15109v1 Announce Type: cross Abstract: The interoperability of
+    data and intelligence across allied partners and their respective…'
+  takeaway: 'arXiv:2601.15109v1 Announce Type: cross Abstract: The interoperability
+    of data and intelligence across allied partners and their respective end-user
+    groups is considered a foundational enabler to the collective defense capability--both
+    conventional and hybrid--of NATO countries. Foreign Information Manipulation and
+    Interference (FIMI) and related hybrid act…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.15109
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: DISARM框架的智能体化操作：面向社交媒体的FIMI调查
+  why_zh: arXiv:2601.15109v1 公告类型：跨学科 摘要：盟国间数据与情报的互操作性被视为北约国家...
+  takeaway_zh: arXiv:2601.15109v1 公告类型：跨学科 摘要：盟国间数据与情报的互操作性被视为北约国家集体防御能力（包括常规与混合防御）的基础推动因素。外国信息操纵与干扰（FIMI）及相关混合行动...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: The Promises and Perils of using LLMs for Effective Public Services
+  why: 'arXiv:2601.15163v1 Announce Type: cross Abstract: Governments are the primary
+    providers of essential public services and are responsible fo…'
+  takeaway: 'arXiv:2601.15163v1 Announce Type: cross Abstract: Governments are the
+    primary providers of essential public services and are responsible for delivering
+    them effectively. In high-stakes decision-making domains such as child welfare
+    (CW), agencies must protect children without unnecessarily prolonging a family''s
+    engagement with the system. With growing optimi…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.15163
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 利用LLM提升公共服务的承诺与风险
+  why_zh: arXiv:2601.15163v1 公告类型：交叉 摘要：政府是基本公共服务的主要提供者，并负责…
+  takeaway_zh: arXiv:2601.15163v1 公告类型：交叉 摘要：政府是基本公共服务的主要提供者，并负责有效提供这些服务。在儿童福利（CW）等高风险决策领域，机构必须在保护儿童的同时，避免不必要地延长家庭与系统的接触。随着乐观情绪的增长…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Towards AI Transparency and Accountability: A Global Framework for Exchanging
+    Information on AI Systems'
+  why: 'arXiv:2307.13658v3 Announce Type: replace Abstract: We propose that future
+    AI transparency and accountability regulations are based on an o…'
+  takeaway: 'arXiv:2307.13658v3 Announce Type: replace Abstract: We propose that future
+    AI transparency and accountability regulations are based on an open global standard
+    for exchanging information about AI systems, which allows co-existence of potentially
+    conflicting local regulations. Then, we discuss key components of a lightweight
+    and effective AI transparency and/…'
+  prompt: ''
+  url: https://arxiv.org/abs/2307.13658
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 迈向AI透明与问责：全球AI系统信息交换框架
+  why_zh: arXiv:2307.13658v3 公告类型：替换 摘要：我们建议未来的AI透明度和问责制法规基于一个开…
+  takeaway_zh: arXiv:2307.13658v3 公告类型：替换 摘要：我们建议未来的AI透明度和问责制法规基于一个开放的全球标准，用于交换关于AI系统的信息，该标准允许存在可能冲突的地方法规共存。接着，我们讨论了一个轻量级且有效的AI透明度和/…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Generative AI Purpose-built for Social and Mental Health: A Real-World Pilot'
+  why: 'arXiv:2511.11689v3 Announce Type: replace Abstract: Generative artificial
+    intelligence (GAI) chatbots built for mental health could deliver…'
+  takeaway: 'arXiv:2511.11689v3 Announce Type: replace Abstract: Generative artificial
+    intelligence (GAI) chatbots built for mental health could deliver safe, personalized,
+    and scalable mental health support. We evaluate a foundation model designed for
+    mental health. Adults completed mental health measures while engaging with the
+    chatbot between May 15, 2025 and Septemb…'
+  prompt: ''
+  url: https://arxiv.org/abs/2511.11689
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 专为社会与心理健康打造的生成式AI：现实世界试点
+  why_zh: arXiv:2511.11689v3 公告类型：替换 摘要：为心理健康设计的生成式人工智能（GAI）聊天机器人能够提供…
+  takeaway_zh: arXiv:2511.11689v3 公告类型：替换 摘要：为心理健康设计的生成式人工智能（GAI）聊天机器人能够提供安全、个性化且可扩展的心理健康支持。我们评估了一个专为心理健康设计的基础模型。成年人在2025年5月15日至9月期间与聊天机器人互动时完成了心理健康测量…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Designing AI-Resilient Assessments Using Interconnected Problems: A Theoretically
+    Grounded and Empirically Validated Framework'
+  why: 'arXiv:2512.10758v3 Announce Type: replace Abstract: The proliferation of generative
+    AI tools has rendered traditional modular assessments i…'
+  takeaway: 'arXiv:2512.10758v3 Announce Type: replace Abstract: The proliferation
+    of generative AI tools has rendered traditional modular assessments in computing
+    and data-centric education increasingly ineffective, creating a disconnect between
+    academic evaluation and authentic skill measurement. This paper presents a theoretically
+    grounded framework for designing AI-…'
+  prompt: ''
+  url: https://arxiv.org/abs/2512.10758
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 利用互连问题设计AI韧性评估：理论依据与实证验证框架
+  why_zh: arXiv:2512.10758v3 公告类型：替换 摘要：生成式AI工具的普及使得传统的模块化评估在计算和数据…
+  takeaway_zh: arXiv:2512.10758v3 公告类型：替换 摘要：生成式AI工具的普及使得传统的模块化评估在计算和数据为中心的教育中越来越无效，造成了学术评估与真实技能测量之间的脱节。本文提出了一个理论依据的框架，用于设计AI…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Beyond Automation: Rethinking Work, Creativity, and Governance in the Age
+    of Generative AI'
+  why: 'arXiv:2512.11893v2 Announce Type: replace Abstract: The rapid expansion of
+    generative artificial intelligence (AI) is transforming work, cr…'
+  takeaway: 'arXiv:2512.11893v2 Announce Type: replace Abstract: The rapid expansion
+    of generative artificial intelligence (AI) is transforming work, creativity, and
+    economic security in ways that extend beyond automation and productivity. This
+    paper examines four interconnected dimensions of contemporary AI deployment: (1)
+    transformations in employment and task composi…'
+  prompt: ''
+  url: https://arxiv.org/abs/2512.11893
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-22T05:00:00+00:00'
+  title_zh: 超越自动化：生成式AI时代的工作、创造力与治理再思考
+  why_zh: arXiv:2512.11893v2 公告类型：替换 摘要：生成式人工智能（AI）的快速扩展正在以超越自动化和生产力的方式…
+  takeaway_zh: arXiv:2512.11893v2 公告类型：替换 摘要：生成式人工智能（AI）的快速扩展正在以超越自动化和生产力的方式转变工作、创造力和经济安全。本文探讨了当代AI部署的四个相互关联的维度：（1）就业和任务构成的转变…
+  prompt_zh: ''

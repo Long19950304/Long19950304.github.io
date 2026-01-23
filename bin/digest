@@ -655,16 +655,18 @@ def _font_paths(lang: str) -> dict[str, Path]:
     """
     if lang == "zh":
         candidates = [
-            ("/System/Library/Fonts/Hiragino Sans GB.ttc", "regular"),
+            # Prefer Heiti (黑体) per site style guide.
+            ("/System/Library/Fonts/STHeiti Light.ttc", "regular"),
             ("/System/Library/Fonts/STHeiti Medium.ttc", "bold"),
             ("/System/Library/Fonts/STHeiti Light.ttc", "regular"),
+            ("/System/Library/Fonts/Hiragino Sans GB.ttc", "regular"),
             ("/System/Library/Fonts/Supplemental/Songti.ttc", "regular"),
         ]
     else:
-        # Prefer widely available macOS fonts.
+        # Prefer Times New Roman per site style guide.
         candidates = [
-            ("/System/Library/Fonts/SFNS.ttf", "regular"),
-            ("/System/Library/Fonts/SFNSRounded.ttf", "bold"),
+            ("/System/Library/Fonts/Supplemental/Times New Roman.ttf", "regular"),
+            ("/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf", "bold"),
             ("/System/Library/Fonts/SFNSMono.ttf", "mono"),
             ("/System/Library/Fonts/Supplemental/Arial.ttf", "regular"),
             ("/System/Library/Fonts/Supplemental/Arial Bold.ttf", "bold"),
@@ -681,6 +683,16 @@ def _font_paths(lang: str) -> dict[str, Path]:
 
 def _as_bool(v: str | None) -> bool:
     return (v or "").strip().lower() in {"1", "true", "yes", "y", "on"}
+
+def _as_bool_default(v: str | None, default: bool) -> bool:
+    if v is None:
+        return default
+    s = v.strip().lower()
+    if s in {"0", "false", "no", "n", "off"}:
+        return False
+    if s in {"1", "true", "yes", "y", "on"}:
+        return True
+    return default
 
 
 def _openrouter_headers(*, title: str) -> dict[str, str]:
@@ -1314,7 +1326,9 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
 
         # 2) Optionally auto-generate a vivid background using an image-capable Gemini model
         # (then blur it so it behaves like a background, not a poster).
-        if _as_bool(os.environ.get("DIGEST_CARD_BG_GENERATE")) and _openrouter_key():
+        # Default: if OPENROUTER_API_KEY is available, we generate (unless explicitly disabled).
+        do_generate = _as_bool_default(os.environ.get("DIGEST_CARD_BG_GENERATE"), default=bool(_openrouter_key()))
+        if do_generate and _openrouter_key():
             bg_cache_dir = CARD_DIR / "_bg"
             bg_cache_dir.mkdir(parents=True, exist_ok=True)
             cached = bg_cache_dir / f"{date.isoformat()}-bg.png"

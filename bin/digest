@@ -16,8 +16,10 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
+import random
 import re
 import sys
 import html
@@ -32,7 +34,7 @@ from typing import Any, Iterable
 
 import feedparser
 import yaml
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageEnhance, ImageFilter
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -277,7 +279,7 @@ def _translate_en_to_zh(texts: list[str]) -> list[str]:
         return left + right
 
 
-def _autofill_digest_zh_fields(digest: dict[str, Any]) -> bool:
+def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> bool:
     """
     Fill missing *_zh fields in digest items in-place.
     Returns True if anything changed.
@@ -293,7 +295,7 @@ def _autofill_digest_zh_fields(digest: dict[str, Any]) -> bool:
     items_sorted = sorted(
         items,
         key=lambda it: (
-            _importance_score(it),
+            _importance_score(it, now=now),
             _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
         ),
         reverse=True,
@@ -515,7 +517,12 @@ def _parse_published_utc(it: dict[str, Any]) -> dt.datetime | None:
         return None
 
 
-def _importance_score(it: dict[str, Any]) -> int:
+def _score_now_for_date(date: dt.date) -> dt.datetime:
+    # Use a stable "now" anchored to the digest date so rebuilds are deterministic.
+    return dt.datetime.combine(date, dt.time(23, 59, 59), tzinfo=dt.timezone.utc)
+
+
+def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> int:
     """
     Rank items for the website digest list.
 
@@ -618,7 +625,8 @@ def _importance_score(it: dict[str, Any]) -> int:
     # Recency: small bump for newer items.
     when = _parse_published_utc(it)
     if when:
-        age_h = (dt.datetime.now(dt.timezone.utc) - when).total_seconds() / 3600.0
+        ref = now or dt.datetime.now(dt.timezone.utc)
+        age_h = (ref - when).total_seconds() / 3600.0
         if age_h <= 6:
             score += 6
         elif age_h <= 12:
@@ -713,6 +721,25 @@ def _wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, ma
         cur = w
 
     flush()
+    return lines
+
+
+def _wrap_ellipsize(
+    draw: ImageDraw.ImageDraw,
+    text: str,
+    font: ImageFont.FreeTypeFont,
+    max_width: int,
+    max_lines: int,
+) -> list[str]:
+    lines = _wrap(draw, text, font, max_width=max_width)
+    if len(lines) <= max_lines:
+        return lines
+    lines = lines[:max_lines]
+    last = lines[-1].rstrip()
+    # Add ellipsis without overflowing too much.
+    while last and draw.textlength(last + "…", font=font) > max_width:
+        last = last[:-1].rstrip()
+    lines[-1] = (last + "…") if last else "…"
     return lines
 
 
@@ -1143,13 +1170,73 @@ def _format_x_thread(
 def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
     # 4:5 aspect ratio is friendly for both LinkedIn and X.
     w, h = 1080, 1350
-    # Professional / restrained: clean, bright background; no decorative textures.
-    bg = (252, 252, 253)  # near-white
-    ink = (15, 23, 42)    # slate-900
-    sub = (51, 65, 85)    # slate-700
+    # Professional / restrained: clean background with subtle, consistent visual identity.
+    # The background must never overpower the text.
+    bg = (252, 252, 253)   # near-white
+    ink = (15, 23, 42)     # slate-900
+    sub = (51, 65, 85)     # slate-700
     faint = (226, 232, 240)
+    accent = (37, 99, 235) # blue-600
 
-    img = Image.new("RGB", (w, h), bg)
+    def _seed() -> int:
+        # Stable per-date seed so the card "look" is consistent for a given issue.
+        hexd = hashlib.sha256(date.isoformat().encode("utf-8")).hexdigest()[:8]
+        return int(hexd, 16)
+
+    def _make_background() -> Image.Image:
+        # Allow a user-provided background image (e.g., generated via an API) but soften it.
+        bg_img = (os.environ.get("DIGEST_CARD_BG_IMAGE") or "").strip()
+        if bg_img and Path(bg_img).exists():
+            im = Image.open(bg_img).convert("RGB").resize((w, h))
+            # Soften and desaturate so text remains dominant.
+            im = im.filter(ImageFilter.GaussianBlur(radius=10))
+            im = ImageEnhance.Color(im).enhance(0.35)
+            im = ImageEnhance.Brightness(im).enhance(1.15)
+            im = ImageEnhance.Contrast(im).enhance(0.95)
+            return im
+
+        # Default: subtle gradient + pattern.
+        base = Image.new("RGB", (w, h), bg)
+        # Light blue top → near-white bottom.
+        top = Image.new("RGB", (w, h), (244, 247, 255))
+        grad = Image.linear_gradient("L").resize((w, h))
+        base = Image.composite(top, base, grad)
+
+        style = (os.environ.get("DIGEST_CARD_STYLE") or "grid").strip().lower()
+        rnd = random.Random(_seed())
+
+        overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        od = ImageDraw.Draw(overlay)
+
+        if style == "network":
+            # Minimal "data network" in the top-right quadrant.
+            nodes: list[tuple[int, int]] = []
+            for _ in range(16):
+                nx = rnd.randint(int(w * 0.52), w - 80)
+                ny = rnd.randint(60, int(h * 0.45))
+                nodes.append((nx, ny))
+            for _ in range(20):
+                a = rnd.choice(nodes)
+                b = rnd.choice(nodes)
+                if a == b:
+                    continue
+                od.line([a, b], fill=(*accent, 14), width=2)
+            for (nx, ny) in nodes:
+                od.ellipse((nx - 3, ny - 3, nx + 3, ny + 3), fill=(*accent, 30))
+        else:
+            # Subtle grid + dots (default).
+            step = 60
+            for gx in range(0, w + 1, step):
+                od.line((gx, 0, gx, h), fill=(*accent, 8), width=2)
+            for gy in range(0, h + 1, step):
+                od.line((0, gy, w, gy), fill=(*accent, 6), width=2)
+            for gx in range(step, w, step * 2):
+                for gy in range(step, h, step * 2):
+                    od.ellipse((gx - 2, gy - 2, gx + 2, gy + 2), fill=(*accent, 14))
+
+        return Image.alpha_composite(base.convert("RGBA"), overlay).convert("RGB")
+
+    img = _make_background()
     draw = ImageDraw.Draw(img)
 
     fonts = _font_paths(lang)
@@ -1167,12 +1254,28 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
         # Monochrome pill with a thin outline (more "academic", less "poster-like").
         draw.rounded_rectangle((x0, y0, x1, y1), radius=r, outline=faint, width=2, fill=bg)
 
+    # A translucent content panel keeps the text dominant even with patterned backgrounds.
+    panel = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    pd = ImageDraw.Draw(panel)
+    pd.rounded_rectangle(
+        (pad - 18, 36, w - pad + 18, h - 180),
+        radius=28,
+        fill=(255, 255, 255, 232),
+        outline=(*faint, 255),
+        width=2,
+    )
+    img = Image.alpha_composite(img.convert("RGBA"), panel).convert("RGB")
+    draw = ImageDraw.Draw(img)
+
+    # Header accent mark (brand cue).
+    draw.rounded_rectangle((x - 10, y + 10, x - 4, y + 44), radius=4, fill=accent)
+
     title = "Daily Digest" if lang != "zh" else "每日简报"
     draw.text((x, y), title, fill=ink, font=font_title)
     y += 54
 
     date_str = date.isoformat()
-    subtitle = "A quick bulletin of what I'm reading today." if lang != "zh" else "今天在读的内容速览。"
+    subtitle = "Top stories + sources (see full list on site)." if lang != "zh" else "今日要点与来源（完整版见网站）。"
     draw.text((x, y), date_str + "  ·  " + subtitle, fill=sub, font=font_small)
     y += 32
 
@@ -1180,55 +1283,41 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     draw.line((x, y, w - pad, y), fill=faint, width=2)
     y += 20
 
-    groups = _group_by_category(items)
-    max_items_total = 10
-    rendered = 0
+    # Keep cards low-cognitive-load: show only top N items (titles + source), no long blurbs.
+    max_items_total = int((os.environ.get("DIGEST_CARD_MAX_ITEMS") or "").strip() or 6)
+    now = _score_now_for_date(date)
+    ranked = sorted(
+        items,
+        key=lambda it: (
+            _importance_score(it, now=now),
+            _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+        ),
+        reverse=True,
+    )[: max_items_total]
 
-    for cat, cat_items in groups:
-        if rendered >= max_items_total:
-            break
-        if not cat_items:
+    for idx, it in enumerate(ranked, start=1):
+        t = _pick_lang(it, "title", "title_zh", lang)
+        if not t:
             continue
-        cat_label = cat if lang != "zh" else CAT_ZH.get(cat, cat)
-        # Category chip (outlined, monochrome)
-        chip_h = 30
-        chip_w = int(draw.textlength(cat_label, font=font_small)) + 28
-        round_rect_outline(x, y, x + chip_w, y + chip_h, 14)
-        draw.text((x + 14, y + 5), cat_label, fill=sub, font=font_small)
-        y += chip_h + 12
+        src = (it.get("source") or "").strip()
+        cat_raw = (it.get("category") or "").strip()
+        cat = (CAT_ZH.get(cat_raw, cat_raw) if lang == "zh" else cat_raw)
 
-        for it in cat_items:
-            if rendered >= max_items_total:
-                break
-            t = _pick_lang(it, "title", "title_zh", lang)
-            why = _pick_lang(it, "why", "why_zh", lang)
-            take = _pick_lang(it, "takeaway", "takeaway_zh", lang)
-            # Card should stay very scannable: 1 title line + 1 TL;DR line.
-            tl = why or _first_sentence(take, 140)
+        num = f"{idx}."
+        draw.text((x, y + 2), num, fill=sub, font=font_h2)
+        tx = x + 44
+        t_lines = _wrap_ellipsize(draw, t, font_item_title, max_width=w - pad - tx, max_lines=2)
+        for ln in t_lines:
+            draw.text((tx, y), ln, fill=ink, font=font_item_title)
+            y += 32
 
-            if not t:
-                continue
+        meta = " · ".join([m for m in [cat, src] if m]) if (cat or src) else ""
+        if meta:
+            draw.text((tx, y - 2), meta, fill=sub, font=font_small)
+            y += 28
 
-            # Title (allow 2 lines so long titles stay readable).
-            t_lines = _wrap(draw, t, font_item_title, max_width=w - pad * 2)[:2]
-            for ln in t_lines:
-                draw.text((x, y), ln, fill=ink, font=font_item_title)
-                y += 32
-            y += 1
-
-            if tl:
-                # Keep the blurb compact, but allow up to 2 lines.
-                tl_lines = _wrap(draw, tl, font_item_body, max_width=w - pad * 2)[:2]
-                for ln in tl_lines:
-                    draw.text((x, y), ln, fill=sub, font=font_item_body)
-                    y += 26
-
-            y += 10
-            rendered += 1
-
-        y += 2
-        # Reserve space for the footer; don't let the last lines collide.
-        if y > h - 210:
+        y += 10
+        if y > h - 230:
             break
 
     # Bottom rule + footer
@@ -1260,10 +1349,11 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         title = digest.get("title_zh") or f"每日简报 - {date.isoformat()}"
 
     # Sort by importance (global list, not grouped).
+    now = _score_now_for_date(date)
     ranked = sorted(
         items,
         key=lambda it: (
-            _importance_score(it),
+            _importance_score(it, now=now),
             _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
         ),
         reverse=True,
@@ -1371,6 +1461,13 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
     out: list[tuple[str, Path]] = []
     out.append(("en", _md_for_lang(date, digest, lang="en")))
     out.append(("zh", _md_for_lang(date, digest, lang="zh")))
+
+    # Social cards (EN + ZH). These are referenced by `digest social`.
+    items = digest.get("items", [])
+    if isinstance(items, list) and items:
+        render_card(date, items, CARD_DIR / f"{date.isoformat()}-en.png", lang="en")
+        render_card(date, items, CARD_DIR / f"{date.isoformat()}-zh.png", lang="zh")
+
     return out
 
 
@@ -1413,7 +1510,7 @@ def cmd_build(args: argparse.Namespace) -> None:
             _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
     digest = _load_digest_yaml(digest_path)
     # Auto-fill missing zh fields so the Chinese site is fully Chinese by default.
-    if _autofill_digest_zh_fields(digest):
+    if _autofill_digest_zh_fields(digest, now=_score_now_for_date(date)):
         _save_yaml(digest_path, digest)
     results = build_digest(date, digest)
     for lang, md_path in results:

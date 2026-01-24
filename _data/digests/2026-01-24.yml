@@ -1,0 +1,1736 @@
+date: '2026-01-24'
+title: Daily Digest - 2026-01-24
+title_zh: 每日简报 - 2026-01-24
+note: ''
+note_zh: ''
+items:
+- category: Tech industry
+  title: Chromebooks train schoolkids to be loyal customers, internal Google document
+    suggests
+  why: Internal documents revealed as part of a child safety lawsuit hint at Google's
+    plan to "onboard kids" into its ecosystem by investing in sc…
+  takeaway: Internal documents revealed as part of a child safety lawsuit hint at
+    Google's plan to "onboard kids" into its ecosystem by investing in schools. In
+    this November 2020 presentation, Google writes that getting kids into its ecosystem
+    "leads to brand trust and loyalty over their lifetime," as reported earlier by
+    NBC News. The heavily-redacted documents, […]
+  prompt: ''
+  url: https://www.theverge.com/news/867138/google-chromebook-education-expansion-court-filings
+  source: The Verge
+  published_utc: '2026-01-24T01:21:41+00:00'
+  title_zh: 谷歌内部文件暗示，Chromebooks将学生培养为忠实客户。
+  why_zh: 作为儿童安全诉讼的一部分，内部文件揭示了谷歌计划通过投资学校将儿童纳入其生态系统的意图。
+  takeaway_zh: 作为儿童安全诉讼的一部分，内部文件揭示了谷歌计划通过投资学校将儿童纳入其生态系统的意图。在2020年11月的演示中，谷歌写道，将儿童引入其生态系统将“在他们的一生中建立品牌信任和忠诚度”，正如NBC新闻早前报道的那样。这些大量删节的文件，[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Leak: Nvidia is about to challenge ‘Intel Inside’ with as many as eight
+    Arm laptops'
+  why: Intel and AMD have split the Windows laptop market for years, but the x86 players
+    may be getting outnumbered.
+  takeaway: Intel and AMD have split the Windows laptop market for years, but the
+    x86 players may be getting outnumbered. It's not just Apple MacBooks and MediaTek-based
+    Chromebooks using Arm chips anymore. There are finally competent Qualcomm Snapdragon
+    laptops running Windows, and - as soon as this spring - Nvidia will finally power
+    Windows consumer laptops […]
+  prompt: ''
+  url: https://www.theverge.com/games/867056/leak-nvidia-n1-n1x-laptops-lenovo-dell
+  source: The Verge
+  published_utc: '2026-01-24T01:09:10+00:00'
+  title_zh: 泄露：英伟达拟携多达八款Arm笔记本挑战'Intel Inside'
+  why_zh: 多年来Intel与AMD瓜分Windows笔记本市场，但x86阵营或将面临数量劣势。
+  takeaway_zh: 多年来Intel与AMD瓜分Windows笔记本市场，但x86阵营或将面临数量劣势。如今搭载Arm芯片的不只有苹果MacBook和联发科Chromebook。高通骁龙Windows笔记本终于堪用，而最快今春，英伟达将首次为消费级Windows笔记本提供芯片[...]
+  prompt_zh: ''
+- category: Tech industry
+  title: Who’s behind AMI Labs, Yann LeCun’s ‘world model’ startup
+  why: Yann LeCun's new venture, AMI Labs, has drawn intense attention since the AI
+    scientist left Meta to found it.
+  takeaway: Yann LeCun's new venture, AMI Labs, has drawn intense attention since
+    the AI scientist left Meta to found it.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/
+  source: TechCrunch
+  published_utc: '2026-01-24T00:04:45+00:00'
+  title_zh: 谁是AMI Labs背后的推手，Yann LeCun的‘世界模型’初创公司
+  why_zh: Yann LeCun的新创企业AMI Labs自他离开Meta创立以来，便引起了广泛关注。
+  takeaway_zh: Yann LeCun的新创企业AMI Labs自他离开Meta创立以来，便引起了广泛关注。
+  prompt_zh: ''
+- category: Business & economy
+  title: Gold records best week since 2008 as Greenland crisis rattles dollar
+  why: Precious metal closes in on $5,000 and silver tops $100 as Trump’s shortlived
+    tariffs threat sparks rush to safe havens
+  takeaway: Precious metal closes in on $5,000 and silver tops $100 as Trump’s shortlived
+    tariffs threat sparks rush to safe havens
+  prompt: ''
+  url: https://www.ft.com/content/6d7ab91c-fc2a-4766-8ebd-3108c5446946
+  source: Financial Times - World
+  published_utc: '2026-01-23T23:32:37+00:00'
+  title_zh: 3. 格陵兰危机冲击美元，黄金创2008年以来最佳单周表现
+  why_zh: 4. 特朗普短暂关税威胁引发避险潮，贵金属逼近5000美元白银突破100美元
+  takeaway_zh: 4. 特朗普短暂关税威胁引发避险潮，贵金属逼近5000美元白银突破100美元
+  prompt_zh: ''
+- category: Business & economy
+  title: Yen rallies as ‘rate check’ sparks intervention speculation
+  why: Japanese currency rises most since August after New York Fed queries market
+    participants on price levels
+  takeaway: Japanese currency rises most since August after New York Fed queries market
+    participants on price levels
+  prompt: ''
+  url: https://www.ft.com/content/0cff24f9-3c5e-4aff-966a-ff34ef448a2d
+  source: Financial Times - Markets
+  published_utc: '2026-01-23T22:55:28+00:00'
+  title_zh: 13. 日元因'汇率检查'大涨，引发干预猜测
+  why_zh: 14. 纽约联储询价后，日元创8月以来最大涨幅
+  takeaway_zh: 14. 纽约联储询价后，日元创8月以来最大涨幅
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok Is Now Collecting More Data About Its Users
+  why: 'Article URL: https://www.wired.com/story/tiktok-new-privacy-policy/ Comments
+    URL: https://news.ycombinator.com/item?id=46739078 Points: 87…'
+  takeaway: 'Article URL: https://www.wired.com/story/tiktok-new-privacy-policy/ Comments
+    URL: https://news.ycombinator.com/item?id=46739078 Points: 87 # Comments: 41'
+  prompt: ''
+  url: https://www.wired.com/story/tiktok-new-privacy-policy/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T22:51:41+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'voyage-multimodal-3.5: a new multimodal retrieval frontier with video support'
+  why: 'Article URL: https://blog.voyageai.com/2026/01/15/voyage-multimodal-3-5/ Comments
+    URL: https://news.ycombinator.com/item?id=46739075 Points…'
+  takeaway: 'Article URL: https://blog.voyageai.com/2026/01/15/voyage-multimodal-3-5/
+    Comments URL: https://news.ycombinator.com/item?id=46739075 Points: 7 # Comments:
+    1'
+  prompt: ''
+  url: https://blog.voyageai.com/2026/01/15/voyage-multimodal-3-5/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T22:51:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Tory peers force UK to pause passage of Chagos Islands bill after US criticism
+  why: Donald Trump called plan to transfer sovereignty of the archipelago to Mauritius
+    an ‘act of great stupidity’
+  takeaway: Donald Trump called plan to transfer sovereignty of the archipelago to
+    Mauritius an ‘act of great stupidity’
+  prompt: ''
+  url: https://www.ft.com/content/d226cb01-3af5-41ea-9ede-1a6678ba1b48
+  source: Financial Times - World
+  published_utc: '2026-01-23T22:43:52+00:00'
+  title_zh: 15. 保守党贵族迫使英国暂停查戈斯群岛法案，此前遭美国批评
+  why_zh: 16. 特朗普称将该群岛主权移交毛里求斯是'极度愚蠢之举'
+  takeaway_zh: 16. 特朗普称将该群岛主权移交毛里求斯是'极度愚蠢之举'
+  prompt_zh: ''
+- category: Tech industry
+  title: Is China quietly winning the AI race?
+  why: The BBC's Lily Jamali looks into why big US firms and start-ups alike are turning
+    to Chinese tech.
+  takeaway: The BBC's Lily Jamali looks into why big US firms and start-ups alike
+    are turning to Chinese tech.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c86v52gv726o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-01-23T22:31:33+00:00'
+  title_zh: 中国正在悄然赢得AI竞赛吗？
+  why_zh: BBC记者莉莉·贾玛利探究为何美国大小企业纷纷转向中国技术
+  takeaway_zh: BBC记者莉莉·贾玛利探究为何美国大小企业纷纷转向中国技术
+  prompt_zh: ''
+- category: Business & economy
+  title: Post Office and Fujitsu accused of delaying £4m legal claim
+  why: Lee Castleton is taking legal action against his former employer over the Horizon
+    IT scandal.
+  takeaway: Lee Castleton is taking legal action against his former employer over
+    the Horizon IT scandal.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cgk82743gz1o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T22:14:21+00:00'
+  title_zh: 邮局与富士通被控拖延400万英镑法律索赔
+  why_zh: 李·卡斯尔顿因Horizon IT丑闻对前雇主提起法律诉讼
+  takeaway_zh: 李·卡斯尔顿因Horizon IT丑闻对前雇主提起法律诉讼
+  prompt_zh: ''
+- category: Tech industry
+  title: Congress doesn’t seem to know if the TikTok deal complies with its law
+  why: TikTok finally closed a deal meant to bring it into compliance with the law
+    that should have banned it a year ago, and the lawmakers who pa…
+  takeaway: TikTok finally closed a deal meant to bring it into compliance with the
+    law that should have banned it a year ago, and the lawmakers who passed that law
+    still don't seem to know what's going on. The company announced Tuesday that its
+    US service is now part of the separate TikTok USDS Joint Venture […]
+  prompt: ''
+  url: https://www.theverge.com/news/866977/tiktok-deal-congress-china
+  source: The Verge
+  published_utc: '2026-01-23T22:08:43+00:00'
+  title_zh: 国会似乎不知道TikTok交易是否符合其法律
+  why_zh: TikTok终于达成一项旨在使其符合本应在一年前禁止它的法律的协议，而通过该法律的议员们似乎仍然不知道发生了什么。 […]
+  takeaway_zh: TikTok终于达成一项旨在使其符合本应在一年前禁止它的法律的协议，而通过该法律的议员们似乎仍然不知道发生了什么。该公司周二宣布其美国业务现已归属于独立的TikTok
+    USDS合资企业 […]
+  prompt_zh: ''
+- category: Tech industry
+  title: TR-49 is interactive fiction for fans of deep research rabbit holes
+  why: Dense narrative deduction game tells a compellingly academia-tinged sci-fi
+    tale.
+  takeaway: Dense narrative deduction game tells a compellingly academia-tinged sci-fi
+    tale.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/01/tr-49-is-interactive-fiction-for-fans-of-deep-research-rabbit-holes/
+  source: Ars Technica
+  published_utc: '2026-01-23T21:52:24+00:00'
+  title_zh: TR-49是为喜欢深入研究兔子洞的粉丝准备的互动小说
+  why_zh: 密集的叙事推理游戏讲述了一个引人入胜、带有学术色彩的科幻故事。
+  takeaway_zh: 密集的叙事推理游戏讲述了一个引人入胜、带有学术色彩的科幻故事。
+  prompt_zh: ''
+- category: Business & economy
+  title: BlackRock’s Rick Rieder surges ahead in race to chair Federal Reserve
+  why: Donald Trump has said he plans to name his nominee to run the US central bank
+    ‘in the not too distant future’
+  takeaway: Donald Trump has said he plans to name his nominee to run the US central
+    bank ‘in the not too distant future’
+  prompt: ''
+  url: https://www.ft.com/content/a9bad7cb-ff5f-41ca-abcd-be93e7e20cd1
+  source: Financial Times - World
+  published_utc: '2026-01-23T21:52:01+00:00'
+  title_zh: 17. 贝莱德瑞克·里德在美联储主席角逐中领先
+  why_zh: 18. 特朗普表示计划'不久后'提名美联储主席人选
+  takeaway_zh: 18. 特朗普表示计划'不久后'提名美联储主席人选
+  prompt_zh: ''
+- category: Tech industry
+  title: Waymo probed by National Transportation Safety Board over illegal school
+    bus behavior
+  why: The NTSB joins the National Highway Traffic Safety Administration in investigating
+    Waymo vehicles illegally passing stopped school buses.
+  takeaway: The NTSB joins the National Highway Traffic Safety Administration in investigating
+    Waymo vehicles illegally passing stopped school buses.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/waymo-probed-by-national-transportation-safety-board-over-illegal-school-bus-behavior/
+  source: TechCrunch
+  published_utc: '2026-01-23T21:50:47+00:00'
+  title_zh: Waymo因非法校车行为遭国家运输安全委员会调查
+  why_zh: 国家运输安全委员会与国家公路交通安全管理局联手调查Waymo车辆非法超越停靠校车的行为。
+  takeaway_zh: 国家运输安全委员会与国家公路交通安全管理局联手调查Waymo车辆非法超越停靠校车的行为。
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Cover Story: The true danger posed by Donald Trump'
+  why: An exclusive look at how we designed our cover
+  takeaway: An exclusive look at how we designed our cover
+  prompt: ''
+  url: https://www.economist.com/the-world-this-week/2026/01/23/cover-story-the-true-danger-posed-by-donald-trump
+  source: The Economist - Latest (RSS)
+  published_utc: '2026-01-23T21:18:08+00:00'
+  title_zh: 封面故事：唐纳德·特朗普带来的真正危险
+  why_zh: 独家揭秘我们如何设计封面
+  takeaway_zh: 独家揭秘我们如何设计封面
+  prompt_zh: ''
+- category: Tech industry
+  title: The Rippling/Deel corporate spying scandal may have taken another wild turn
+  why: The Department of Justice may be conducting a criminal investigation.
+  takeaway: The Department of Justice may be conducting a criminal investigation.
+    This is arguably the biggest drama between two HR startups ever.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/the-rippling-deel-corporate-spying-scandal-may-have-taken-another-wild-turn/
+  source: TechCrunch
+  published_utc: '2026-01-23T21:13:28+00:00'
+  title_zh: Rippling/Deel企业间谍丑闻可能又有了新的戏剧性转折
+  why_zh: 司法部可能正在进行刑事调查。
+  takeaway_zh: 司法部可能正在进行刑事调查。这可以说是两家HR初创公司之间最大的戏剧性事件。
+  prompt_zh: ''
+- category: Business & economy
+  title: Rothschilds join the ranks of the super-rich buying up British pubs
+  why: A growing number of wealthy UK residents are investing in country establishments
+  takeaway: A growing number of wealthy UK residents are investing in country establishments
+  prompt: ''
+  url: https://www.ft.com/content/ede1382e-4844-425e-b34e-97d805e717aa
+  source: Financial Times - World
+  published_utc: '2026-01-23T21:00:09+00:00'
+  title_zh: 19. 罗斯柴尔德家族加入超级富豪收购英国酒吧行列
+  why_zh: 20. 越来越多英国富人投资乡村酒馆
+  takeaway_zh: 20. 越来越多英国富人投资乡村酒馆
+  prompt_zh: ''
+- category: Tech industry
+  title: Demand for Intel's processors is apparently there, but the supply is not
+  why: Intel is allocating more of its own production to its money-making server chips.
+  takeaway: Intel is allocating more of its own production to its money-making server
+    chips.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/01/core-ultra-series-3-launch-may-be-hampered-by-chip-shortages-says-intel/
+  source: Ars Technica
+  published_utc: '2026-01-23T20:48:46+00:00'
+  title_zh: 英特尔处理器的需求显然存在，但供应不足
+  why_zh: 英特尔正将更多自有产能分配给其盈利的服务器芯片。
+  takeaway_zh: 英特尔正将更多自有产能分配给其盈利的服务器芯片。
+  prompt_zh: ''
+- category: Business & economy
+  title: Goldman paid CEO David Solomon $47mn in 2025 as its stock soared
+  why: Wall Street executive’s remuneration jumps 21% from the previous year and was
+    roughly in line with bank’s profits
+  takeaway: Wall Street executive’s remuneration jumps 21% from the previous year
+    and was roughly in line with bank’s profits
+  prompt: ''
+  url: https://www.ft.com/content/dc1b4c6c-8274-405c-8e61-f089cb211907
+  source: Financial Times - World
+  published_utc: '2026-01-23T20:44:48+00:00'
+  title_zh: 高盛在2025年向CEO大卫·所罗门支付了4700万美元，当时其股价飙升
+  why_zh: 华尔街高管的薪酬较上年增长21%，与银行利润大致相符
+  takeaway_zh: 华尔街高管的薪酬较上年增长21%，与银行利润大致相符
+  prompt_zh: ''
+- category: Tech industry
+  title: Unrolling the Codex agent loop
+  why: 'Article URL: https://openai.com/index/unrolling-the-codex-agent-loop/ Comments
+    URL: https://news.ycombinator.com/item?id=46737630 Points: 2…'
+  takeaway: 'Article URL: https://openai.com/index/unrolling-the-codex-agent-loop/
+    Comments URL: https://news.ycombinator.com/item?id=46737630 Points: 200 # Comments:
+    77'
+  prompt: ''
+  url: https://openai.com/index/unrolling-the-codex-agent-loop/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T20:42:36+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What to know about Netflix’s landmark acquisition of Warner Bros.
+  why: Learn more about Netflix's acquisition of Warner Bros., considered the most
+    historic megadeal in Hollywood, as it continues to develop.
+  takeaway: Learn more about Netflix's acquisition of Warner Bros., considered the
+    most historic megadeal in Hollywood, as it continues to develop.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/what-to-know-about-netflixs-landmark-acquisition-of-warner-bros/
+  source: TechCrunch
+  published_utc: '2026-01-23T20:31:27+00:00'
+  title_zh: 关于Netflix收购华纳兄弟的里程碑事件，你需要了解什么
+  why_zh: 深入了解Netflix收购华纳兄弟的交易，这被认为是好莱坞最具历史意义的巨型交易，且仍在持续发展中。
+  takeaway_zh: 深入了解Netflix收购华纳兄弟的交易，这被认为是好莱坞最具历史意义的巨型交易，且仍在持续发展中。
+  prompt_zh: ''
+- category: Business & economy
+  title: '‘There’s no free lunch’: How Wall St learned to live with Trump’s barbs'
+  why: Banks endure presidential attacks as their share prices and profits soar under
+    lenient policies
+  takeaway: Banks endure presidential attacks as their share prices and profits soar
+    under lenient policies
+  prompt: ''
+  url: https://www.ft.com/content/0b06b987-66c6-45d7-983f-9b60368042e5
+  source: Financial Times - World
+  published_utc: '2026-01-23T20:29:39+00:00'
+  title_zh: ‘天下没有免费的午餐’：华尔街如何学会忍受特朗普的嘲讽
+  why_zh: 银行在宽松政策下股价和利润飙升，同时忍受总统的攻击
+  takeaway_zh: 银行在宽松政策下股价和利润飙升，同时忍受总统的攻击
+  prompt_zh: ''
+- category: Tech industry
+  title: Banned C++ features in Chromium
+  why: 'Article URL: https://chromium.googlesource.com/chromium/src/+/main/styleguide/c++/c++-features.md
+    Comments URL: https://news.ycombinator.co…'
+  takeaway: 'Article URL: https://chromium.googlesource.com/chromium/src/+/main/styleguide/c++/c++-features.md
+    Comments URL: https://news.ycombinator.com/item?id=46737447 Points: 106 # Comments:
+    87'
+  prompt: ''
+  url: https://chromium.googlesource.com/chromium/src/+/main/styleguide/c++/c++-features.md
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T20:27:58+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Researchers say Russian government hackers were behind attempted Poland power
+    outage
+  why: Security researchers have attributed the attempted use of destructive "wiper"
+    malware across Poland's energy infrastructure in late Decembe…
+  takeaway: Security researchers have attributed the attempted use of destructive
+    "wiper" malware across Poland's energy infrastructure in late December to a Russian-backed
+    hacking group known for causing power outages in neighboring Ukraine.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/researchers-say-russian-government-hackers-were-behind-attempted-poland-power-outage/
+  source: TechCrunch
+  published_utc: '2026-01-23T20:17:24+00:00'
+  title_zh: 研究人员称俄罗斯政府黑客是波兰停电事件的幕后黑手
+  why_zh: 安全研究人员将12月底波兰能源基础设施上尝试使用破坏性“擦除器”恶意软件的行为归因于…
+  takeaway_zh: 安全研究人员将12月底波兰能源基础设施上尝试使用破坏性“擦除器”恶意软件的行为归因于一个以在邻国乌克兰制造停电事件而闻名的俄罗斯支持的黑客组织
+  prompt_zh: ''
+- category: Business & economy
+  title: UK should show more gratitude to arts donors, says V&A chief
+  why: Tristram Hunt tells the FT that Labour’s non-dom tax changes have been a ‘challenge’
+    for fundraising
+  takeaway: Tristram Hunt tells the FT that Labour’s non-dom tax changes have been
+    a ‘challenge’ for fundraising
+  prompt: ''
+  url: https://www.ft.com/content/e4ce3066-5c63-4066-8fc3-68772b4b6777
+  source: Financial Times - World
+  published_utc: '2026-01-23T20:17:00+00:00'
+  title_zh: V&A馆长称英国应对艺术捐赠者表现出更多感激
+  why_zh: 特里斯特拉姆·亨特告诉《金融时报》，工党的非定居者税收变化对筹款构成了‘挑战’
+  takeaway_zh: 特里斯特拉姆·亨特告诉《金融时报》，工党的非定居者税收变化对筹款构成了‘挑战’
+  prompt_zh: ''
+- category: Tech industry
+  title: DHS keeps trying and failing to unmask anonymous ICE critics online
+  why: Community watch groups have a playbook to keep ICE away from subscriber information.
+  takeaway: Community watch groups have a playbook to keep ICE away from subscriber
+    information.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/instagram-ice-critic-wins-fight-to-stay-anonymous-as-dhs-backs-down/
+  source: Ars Technica
+  published_utc: '2026-01-23T20:10:40+00:00'
+  title_zh: 国土安全部屡次尝试但未能在线揭露匿名批评ICE的人士
+  why_zh: 社区监督组织有一套策略来防止ICE获取订阅者信息。
+  takeaway_zh: 社区监督组织有一套策略来防止ICE获取订阅者信息。
+  prompt_zh: ''
+- category: Tech industry
+  title: How did Davos turn into a tech conference?
+  why: The World Economic Forum’s annual meeting in Davos felt different this year,
+    and not just because Meta and Salesforce took over storefronts…
+  takeaway: The World Economic Forum’s annual meeting in Davos felt different this
+    year, and not just because Meta and Salesforce took over storefronts on the main
+    promenade. AI dominated the conversation in a way that overshadowed traditional
+    topics like climate change and global poverty, and the CEOs weren’t holding back.
+    There was public criticism of trade policy, w…
+  prompt: ''
+  url: https://techcrunch.com/video/how-did-davos-turn-into-a-tech-conference/
+  source: TechCrunch
+  published_utc: '2026-01-23T20:00:00+00:00'
+  title_zh: 达沃斯是如何变成科技会议的？
+  why_zh: 今年在达沃斯举行的世界经济论坛年会感觉有所不同，不仅仅是因为Meta和Salesforce占据了主街的店面……
+  takeaway_zh: 今年在达沃斯举行的世界经济论坛年会感觉有所不同，不仅仅是因为Meta和Salesforce占据了主街的店面。AI主导了讨论，其影响力甚至盖过了气候变化和全球贫困等传统话题，CEO们也毫不保留。对贸易政策的公开批评，……
+  prompt_zh: ''
+- category: Tech industry
+  title: Certificate Transparency Log Explorer
+  why: 'Article URL: https://certs.swerdlow.dev Comments URL: https://news.ycombinator.com/item?id=46737076
+    Points: 18 # Comments: 5'
+  takeaway: 'Article URL: https://certs.swerdlow.dev Comments URL: https://news.ycombinator.com/item?id=46737076
+    Points: 18 # Comments: 5'
+  prompt: ''
+  url: https://certs.swerdlow.dev
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T19:57:44+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta is stopping teens from chatting with its AI characters
+  why: Meta is "temporarily pausing" the ability for teens to chat with its AI characters
+    as it develops a "new version" of the characters that wi…
+  takeaway: Meta is "temporarily pausing" the ability for teens to chat with its AI
+    characters as it develops a "new version" of the characters that will offer a
+    "better experience." The company made the announcement in an update to a blog
+    post from October where the company had detailed more parental controls for teen
+    AI use. […]
+  prompt: ''
+  url: https://www.theverge.com/news/866906/meta-teens-ai-characters-stop-block-new-version
+  source: The Verge
+  published_utc: '2026-01-23T19:50:59+00:00'
+  title_zh: Meta禁止青少年与其AI角色聊天
+  why_zh: Meta"暂时禁止"青少年与其AI角色聊天，正在开发一个"新版本"的角色，该版本会更……
+  takeaway_zh: Meta"暂时禁止"青少年与其AI角色聊天，正在开发一个"新版本"的角色以提供"更好体验"。该公司在更新10月份的博客文章时宣布了这一消息，文章详细介绍了针对青少年使用AI的更多家长控制功能。
+    […]
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Submit your questions to Stuart Kirk: What should I invest in this year?'
+  why: Take part in a live Ask an Expert Q&A with the FT’s ‘Skin in the Game columnist
+    on Thursday January 29, at 1pm GMT
+  takeaway: Take part in a live Ask an Expert Q&A with the FT’s ‘Skin in the Game
+    columnist on Thursday January 29, at 1pm GMT
+  prompt: ''
+  url: https://www.ft.com/content/5cd7781d-5f39-4f2a-9ef4-f56d29934f04
+  source: Financial Times - Markets
+  published_utc: '2026-01-23T19:36:08+00:00'
+  title_zh: 向斯图尔特·柯克提交你的问题：今年我该投资什么？
+  why_zh: 1月29日周四下午1点（GMT），参加《金融时报》‘利益相关’专栏的现场专家问答
+  takeaway_zh: 1月29日周四下午1点（GMT），参加《金融时报》‘利益相关’专栏的现场专家问答
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump’s bid to remake the world order
+  why: Nato’s relationship with US President Donald Trump took a turn for the worse
+    this week.
+  takeaway: Nato’s relationship with US President Donald Trump took a turn for the
+    worse this week.
+  prompt: ''
+  url: https://www.ft.com/content/d88255bf-e9c4-47bf-8205-0e5b59e5f597
+  source: Financial Times - World
+  published_utc: '2026-01-23T19:31:50+00:00'
+  title_zh: 特朗普重塑世界秩序的努力
+  why_zh: 北约与美国总统唐纳德·特朗普的关系本周恶化
+  takeaway_zh: 北约与美国总统唐纳德·特朗普的关系本周恶化
+  prompt_zh: ''
+- category: Business & economy
+  title: Decoupling from Trump’s America
+  why: Washington’s allies are looking for a new strategy after a week that has demonstrated
+    what some see as the risks of subordination and coerc…
+  takeaway: Washington’s allies are looking for a new strategy after a week that has
+    demonstrated what some see as the risks of subordination and coercion
+  prompt: ''
+  url: https://www.ft.com/content/ed081984-836a-443c-ab0b-69462848e686
+  source: Financial Times - World
+  published_utc: '2026-01-23T19:17:03+00:00'
+  title_zh: 与特朗普的美国脱钩
+  why_zh: 华盛顿的盟友正在寻找新策略，过去一周的事件展示了某些人眼中的从属和胁迫风险
+  takeaway_zh: 华盛顿的盟友正在寻找新策略，过去一周的事件展示了某些人眼中的从属和胁迫风险
+  prompt_zh: ''
+- category: Tech industry
+  title: What TikTok’s new owners mean for your feed
+  why: TikTok is officially under new ownership in the US, and that could spell big
+    changes for the video-sharing app.
+  takeaway: TikTok is officially under new ownership in the US, and that could spell
+    big changes for the video-sharing app. On January 22nd, ByteDance - TikTok's Chinese
+    parent company - and a group of investors closed a $14 billion deal to spin off
+    the platform's US operations, introducing a new slate of American executives.
+    The Silver […]
+  prompt: ''
+  url: https://www.theverge.com/tech/866868/tiktok-usds-new-owners-algorithm-explained
+  source: The Verge
+  published_utc: '2026-01-23T19:10:51+00:00'
+  title_zh: TikTok新东家对你的推荐流意味着什么
+  why_zh: TikTok在美国正式迎来新东家，这可能给这款视频分享应用带来重大变化。
+  takeaway_zh: TikTok在美国正式迎来新东家，这可能给这款视频分享应用带来重大变化。1月22日，TikTok的中国母公司字节跳动与一群投资者完成了140亿美元的交易，剥离该平台的美国业务，引入一批新的美国高管。Silver
+    […]
+  prompt_zh: ''
+- category: Business & economy
+  title: Nigel Farage attended Davos as adviser to Iranian billionaire
+  why: Reform UK leader’s pass and hotel costs for World Economic Forum event were
+    paid for by Sasan Ghandehari
+  takeaway: Reform UK leader’s pass and hotel costs for World Economic Forum event
+    were paid for by Sasan Ghandehari
+  prompt: ''
+  url: https://www.ft.com/content/7b405c28-f5b9-4bbd-b309-57243bc19ddf
+  source: Financial Times - World
+  published_utc: '2026-01-23T19:01:36+00:00'
+  title_zh: 奈杰尔·法拉奇以伊朗亿万富翁顾问身份出席达沃斯
+  why_zh: 改革英国领导人的通行证和酒店费用由萨桑·甘德哈里支付，用于世界经济论坛活动
+  takeaway_zh: 改革英国领导人的通行证和酒店费用由萨桑·甘德哈里支付，用于世界经济论坛活动
+  prompt_zh: ''
+- category: Business & economy
+  title: Threat to Starmer grows as Rayner backs Burnham to stand as MP
+  why: By-election win would open path for Manchester mayor to launch challenge for
+    Labour leadership
+  takeaway: By-election win would open path for Manchester mayor to launch challenge
+    for Labour leadership
+  prompt: ''
+  url: https://www.ft.com/content/3425ec9e-8b27-4e1e-b97e-50794fd48a9c
+  source: Financial Times - World
+  published_utc: '2026-01-23T18:49:22+00:00'
+  title_zh: 斯塔默的威胁加剧，雷纳支持伯纳姆竞选议员
+  why_zh: 补选胜利将为曼彻斯特市长挑战工党领导权铺平道路
+  takeaway_zh: 补选胜利将为曼彻斯特市长挑战工党领导权铺平道路
+  prompt_zh: ''
+- category: Business & economy
+  title: Ministers set to delay key elements of special needs education reforms until
+    next parliament
+  why: Delaying implementation is seen as a way to avoid a repeat of last year’s backbench
+    rebellion
+  takeaway: Delaying implementation is seen as a way to avoid a repeat of last year’s
+    backbench rebellion
+  prompt: ''
+  url: https://www.ft.com/content/e1aa67e6-4b1c-46c5-9515-1fa08ae3d254
+  source: Financial Times - World
+  published_utc: '2026-01-23T18:47:30+00:00'
+  title_zh: 部长们计划将特殊教育改革的重点内容推迟至下届议会
+  why_zh: 推迟实施被视为避免去年后座议员叛乱重演的一种方式
+  takeaway_zh: 推迟实施被视为避免去年后座议员叛乱重演的一种方式
+  prompt_zh: ''
+- category: Tech industry
+  title: White House alters arrest photo of ICE protester, says "the memes will continue"
+  why: Lawyer calls it "outrageous that the White House would make up stories."
+  takeaway: Lawyer calls it "outrageous that the White House would make up stories."
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/white-house-posts-altered-arrest-photo-to-make-it-appear-ice-critic-was-sobbing/
+  source: Ars Technica
+  published_utc: '2026-01-23T18:46:31+00:00'
+  title_zh: 白宫修改了ICE抗议者的逮捕照片，并表示“表情包将继续”
+  why_zh: 律师称“白宫编造故事的行为令人愤慨”。
+  takeaway_zh: 律师称“白宫编造故事的行为令人愤慨”。
+  prompt_zh: ''
+- category: Business & economy
+  title: Nigel Farage’s trip to Davos hosted and paid for by family trust of billionaire
+  why: Trust says Reform UK leader was invited to WEF event by London-based venture
+    capitalist as an honorary adviser Nigel Farage’s trip to Davos…
+  takeaway: Trust says Reform UK leader was invited to WEF event by London-based venture
+    capitalist as an honorary adviser Nigel Farage’s trip to Davos this week was hosted
+    and paid for by the $10bn family trust of an Iranian-born billionaire, the Guardian
+    has learned. The leader of Reform UK has been touring Davos this week, giving
+    speeches in which he pledged to tax…
+  prompt: ''
+  url: https://www.theguardian.com/politics/2026/jan/23/nigel-farages-trip-to-davos-hosted-and-paid-for-by-family-trust-of-billionaire
+  source: The Guardian - Business
+  published_utc: '2026-01-23T18:39:35+00:00'
+  title_zh: 奈杰尔·法拉奇的达沃斯之行由亿万富翁家族信托资助
+  why_zh: 信托表示，改革英国党领袖是以荣誉顾问身份受伦敦风投家邀请参加世界经济论坛。奈杰尔·法拉奇的达沃斯之行……
+  takeaway_zh: 信托表示，改革英国党领袖是以荣誉顾问身份受伦敦风投家邀请参加世界经济论坛。《卫报》获悉，奈杰尔·法拉奇本周的达沃斯之行由一位伊朗裔亿万富翁的百亿美元家族信托资助。这位改革英国党领袖本周在达沃斯巡回演讲，承诺将对……
+  prompt_zh: ''
+- category: Tech industry
+  title: Telly’s "free" ad-based TVs make notable revenue—when they’re actually delivered
+  why: The LA startup said it would ship "millions" of TVs by 2024.
+  takeaway: The LA startup said it would ship "millions" of TVs by 2024.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/01/tellys-free-ad-based-tvs-make-notable-revenue-when-theyre-actually-delivered/
+  source: Ars Technica
+  published_utc: '2026-01-23T18:32:42+00:00'
+  title_zh: Telly的“免费”广告电视在真正交付时创造了显著收入
+  why_zh: 洛杉矶初创公司表示，到2024年将发货"数百万"台电视机。
+  takeaway_zh: 洛杉矶初创公司表示，到2024年将发货"数百万"台电视机。
+  prompt_zh: ''
+- category: Business & economy
+  title: What does a new US TikTok deal mean for users?
+  why: While TikTok's future in the US has been secured, questions remain about exactly
+    what changes US users will see.
+  takeaway: While TikTok's future in the US has been secured, questions remain about
+    exactly what changes US users will see.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cq5yynydvgzo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T18:15:10+00:00'
+  title_zh: 美国TikTok新协议对用户意味着什么？
+  why_zh: 尽管TikTok在美国的未来已得到保障，但美国用户将看到哪些具体变化仍存疑问
+  takeaway_zh: 尽管TikTok在美国的未来已得到保障，但美国用户将看到哪些具体变化仍存疑问
+  prompt_zh: ''
+- category: Tech industry
+  title: Casio teased a retro gaming-inspired sampler
+  why: Casio showed up to NAMM (CES for music gear nerds) this year with a prototype
+    sampler called the SX-C1 that looks every bit the lovechild o…
+  takeaway: Casio showed up to NAMM (CES for music gear nerds) this year with a prototype
+    sampler called the SX-C1 that looks every bit the lovechild of a Game Boy and
+    an SP-404. The top has a directional pad and four buttons just like you'd find
+    on a game controller, flanking a 1.3-inch OLED screen. But […]
+  prompt: ''
+  url: https://www.theverge.com/news/866709/casio-sx-c1-retro-gaming-inspired-sampler-at-namm
+  source: The Verge
+  published_utc: '2026-01-23T18:10:28+00:00'
+  title_zh: 卡西欧预告了一款复古游戏风格的采样器。
+  why_zh: 卡西欧今年带着一款名为SX-C1的采样器原型亮相NAMM（音乐设备极客的CES），它看起来完全像是Game Boy和SP-404的结合体。
+  takeaway_zh: 卡西欧今年带着一款名为SX-C1的采样器原型亮相NAMM（音乐设备极客的CES），它看起来完全像是Game Boy和SP-404的结合体。顶部有一个方向键和四个按钮，就像游戏控制器一样，两侧是一个1.3英寸的OLED屏幕。但是[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: New YC homepage
+  why: 'Article URL: https://www.ycombinator.com/ Comments URL: https://news.ycombinator.com/item?id=46735644
+    Points: 157 # Comments: 80'
+  takeaway: 'Article URL: https://www.ycombinator.com/ Comments URL: https://news.ycombinator.com/item?id=46735644
+    Points: 157 # Comments: 80'
+  prompt: ''
+  url: https://www.ycombinator.com/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T18:08:11+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best instant cameras you can buy right now
+  why: Even with the ability to take excellent photos with our phones and instantly
+    share them across the world, there’s something magical about t…
+  takeaway: Even with the ability to take excellent photos with our phones and instantly
+    share them across the world, there’s something magical about the old-school instant
+    camera. With just a click of a button, you can capture a moment in a photo that
+    you can see and touch almost immediately. Images captured by an instant camera
+    […]
+  prompt: ''
+  url: https://www.theverge.com/23133103/best-instant-cameras-fujifilm-polaroid-kodak
+  source: The Verge
+  published_utc: '2026-01-23T18:01:09+00:00'
+  title_zh: 目前你能买到的最佳即时相机。
+  why_zh: 尽管我们可以用手机拍摄出色的照片并立即分享到世界各地，但老式即时相机仍有一种魔力。
+  takeaway_zh: 尽管我们可以用手机拍摄出色的照片并立即分享到世界各地，但老式即时相机仍有一种魔力。只需按下按钮，你就能捕捉到一个瞬间，几乎立即就能看到并触摸到照片。即时相机拍摄的图像[…]
+  prompt_zh: ''
+- category: Business & economy
+  title: Chery plan to use British JLR plants on agenda for Starmer’s Beijing trip
+  why: UK government has been courting Chinese company to build cars locally
+  takeaway: UK government has been courting Chinese company to build cars locally
+  prompt: ''
+  url: https://www.ft.com/content/6998c36a-d098-4605-aa44-e5a6557651f9
+  source: Financial Times - World
+  published_utc: '2026-01-23T18:00:56+00:00'
+  title_zh: 奇瑞计划利用英国捷豹路虎工厂成为斯塔默北京之行的议程
+  why_zh: 英国政府一直在招揽中国公司当地建厂生产汽车
+  takeaway_zh: 英国政府一直在招揽中国公司当地建厂生产汽车
+  prompt_zh: ''
+- category: Business & economy
+  title: The Taco trade has eaten itself
+  why: Tracking the Donald Trump show has become pointless for investors in the short
+    term
+  takeaway: Tracking the Donald Trump show has become pointless for investors in the
+    short term
+  prompt: ''
+  url: https://www.ft.com/content/5c1a2e77-6f41-4241-ad3e-66139f6dfac8
+  source: Financial Times - World
+  published_utc: '2026-01-23T18:00:08+00:00'
+  title_zh: 5. 塔可交易已自我吞噬
+  why_zh: 6. 短期而言，追踪特朗普秀对投资者已无意义
+  takeaway_zh: 6. 短期而言，追踪特朗普秀对投资者已无意义
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft gave FBI set of BitLocker encryption keys to unlock suspects' laptops
+  why: 'Article URL: https://techcrunch.com/2026/01/23/microsoft-gave-fbi-a-set-of-bitlocker-encryption-keys-to-unlock-suspects-laptops-reports/
+    Co…'
+  takeaway: 'Article URL: https://techcrunch.com/2026/01/23/microsoft-gave-fbi-a-set-of-bitlocker-encryption-keys-to-unlock-suspects-laptops-reports/
+    Comments URL: https://news.ycombinator.com/item?id=46735545 Points: 624 # Comments:
+    430'
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/microsoft-gave-fbi-a-set-of-bitlocker-encryption-keys-to-unlock-suspects-laptops-reports/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T17:58:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Why credit card upstart Brex is selling out to Big Plastic
+  why: Despite its depressed valuation, the fintech’s longtime backers were probably
+    keen to cash out
+  takeaway: Despite its depressed valuation, the fintech’s longtime backers were probably
+    keen to cash out
+  prompt: ''
+  url: https://www.ft.com/content/a009f986-f3c3-493c-965c-47f182ae62c1
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:57:59+00:00'
+  title_zh: 信用卡新贵Brex为何向大型信用卡公司屈服
+  why_zh: 尽管估值低迷，这家金融科技公司的长期投资者可能急于套现
+  takeaway_zh: 尽管估值低迷，这家金融科技公司的长期投资者可能急于套现
+  prompt_zh: ''
+- category: Business & economy
+  title: US investment-grade credit spreads reach lowest level this century
+  why: Investor appetite for blue-chip debt remains strong despite a choppy week for
+    stocks triggered by Trump’s tariff threats
+  takeaway: Investor appetite for blue-chip debt remains strong despite a choppy week
+    for stocks triggered by Trump’s tariff threats
+  prompt: ''
+  url: https://www.ft.com/content/c8adef7b-0487-42a1-a2f4-17d27276e603
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:56:52+00:00'
+  title_zh: 美国投资级信贷利差创下本世纪最低水平
+  why_zh: 尽管特朗普关税威胁引发股市动荡，投资者对蓝筹债的兴趣依然强劲
+  takeaway_zh: 尽管特朗普关税威胁引发股市动荡，投资者对蓝筹债的兴趣依然强劲
+  prompt_zh: ''
+- category: Tech industry
+  title: Proof of Corn
+  why: 'Article URL: https://proofofcorn.com/ Comments URL: https://news.ycombinator.com/item?id=46735511
+    Points: 318 # Comments: 228'
+  takeaway: 'Article URL: https://proofofcorn.com/ Comments URL: https://news.ycombinator.com/item?id=46735511
+    Points: 318 # Comments: 228'
+  prompt: ''
+  url: https://proofofcorn.com/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T17:56:31+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Route leak incident on January 22, 2026
+  why: 'Article URL: https://blog.cloudflare.com/route-leak-incident-january-22-2026/
+    Comments URL: https://news.ycombinator.com/item?id=46735489 P…'
+  takeaway: 'Article URL: https://blog.cloudflare.com/route-leak-incident-january-22-2026/
+    Comments URL: https://news.ycombinator.com/item?id=46735489 Points: 116 # Comments:
+    29'
+  prompt: ''
+  url: https://blog.cloudflare.com/route-leak-incident-january-22-2026/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T17:54:45+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The dystopian world of Donald Trump
+  why: He pulled back on Greenland, but a rupture of the old order is under way
+  takeaway: He pulled back on Greenland, but a rupture of the old order is under way
+  prompt: ''
+  url: https://www.ft.com/content/2d508ca0-c8b6-4a59-985f-952ac20d5034
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:49:54+00:00'
+  title_zh: 唐纳德·特朗普的黑暗世界
+  why_zh: 他对格陵兰岛有所收敛，但旧秩序的裂痕正在显现
+  takeaway_zh: 他对格陵兰岛有所收敛，但旧秩序的裂痕正在显现
+  prompt_zh: ''
+- category: Business & economy
+  title: Is this the week Trump went too far? – The Latest
+  why: Donald Trump’s maximalist approach to foreign policy reached a crescendo this
+    week, with the US president dominating proceedings at the Wor…
+  takeaway: Donald Trump’s maximalist approach to foreign policy reached a crescendo
+    this week, with the US president dominating proceedings at the World Economic
+    Forum in Davos. Trump rescinded his threat to seize the Danish territory of Greenland,
+    and launched his so-called board of peace for Gaza. It’s been a chaotic week in
+    Trumpworld – but there is increasing resi…
+  prompt: ''
+  url: https://www.theguardian.com/news/audio/2026/jan/23/is-this-the-week-trump-went-too-far-the-latest
+  source: The Guardian - Business
+  published_utc: '2026-01-23T17:44:46+00:00'
+  title_zh: 这是特朗普玩过火的一周吗？——最新动态
+  why_zh: 唐纳德·特朗普的极限施压外交政策本周达到高潮，这位美国总统主导了达沃斯世界经济论坛的议程……
+  takeaway_zh: 唐纳德·特朗普的极限施压外交政策本周达到高潮，这位美国总统主导了达沃斯世界经济论坛的议程。他撤销了夺取丹麦格陵兰领土的威胁，并启动所谓加沙和平委员会。这是特朗普世界的混乱一周——但越来越多人认为……
+  prompt_zh: ''
+- category: Business & economy
+  title: UK business activity stronger than expected in January
+  why: Retail sales also rebounded in December, driven by online jewellery purchases
+  takeaway: Retail sales also rebounded in December, driven by online jewellery purchases
+  prompt: ''
+  url: https://www.ft.com/content/8548b6f6-42c5-4f84-980d-8cce097cd0cd
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:40:24+00:00'
+  title_zh: 英国1月商业活动强于预期
+  why_zh: 12月零售额同样反弹，线上珠宝购买为主要驱动力
+  takeaway_zh: 12月零售额同样反弹，线上珠宝购买为主要驱动力
+  prompt_zh: ''
+- category: Business & economy
+  title: Starmer condemns Trump’s ‘appalling’ claim that Nato avoided Afghan frontline
+  why: UK prime minister says US president should apologise for comments in latest
+    sign of strain between allies
+  takeaway: UK prime minister says US president should apologise for comments in latest
+    sign of strain between allies
+  prompt: ''
+  url: https://www.ft.com/content/5e93ead5-5fa7-4cce-9c62-802c976fe4c3
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:35:29+00:00'
+  title_zh: 7. 斯塔默谴责特朗普关于北约避开阿富汗前线的'骇人'言论
+  why_zh: 8. 英国首相称美国总统应为言论道歉，盟友关系再现紧张迹象
+  takeaway_zh: 8. 英国首相称美国总统应为言论道歉，盟友关系再现紧张迹象
+  prompt_zh: ''
+- category: Business & economy
+  title: Nuuk threat
+  why: A US play for the island of Greenland sent shudders across global markets
+  takeaway: A US play for the island of Greenland sent shudders across global markets
+  prompt: ''
+  url: https://www.ft.com/content/96da15fd-674d-4310-b748-438d54e180f3
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:29:58+00:00'
+  title_zh: 格陵兰岛威胁
+  why_zh: 美国对格陵兰岛的企图引发全球市场震动
+  takeaway_zh: 美国对格陵兰岛的企图引发全球市场震动
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Killing the ISP Appliance: An eBPF/XDP Approach to Distributed BNG'
+  why: 'Article URL: https://markgascoyne.co.uk/posts/ebpf-bng/ Comments URL: https://news.ycombinator.com/item?id=46735179
+    Points: 64 # Comments:…'
+  takeaway: 'Article URL: https://markgascoyne.co.uk/posts/ebpf-bng/ Comments URL:
+    https://news.ycombinator.com/item?id=46735179 Points: 64 # Comments: 18'
+  prompt: ''
+  url: https://markgascoyne.co.uk/posts/ebpf-bng/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T17:29:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok deal is done; Trump wants praise while users fear MAGA tweaks
+  why: '“I am so happy”: Trump closes deal that hands TikTok US to his allies.'
+  takeaway: '“I am so happy”: Trump closes deal that hands TikTok US to his allies.'
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/tiktok-finalizes-trump-deal-that-allows-bytedance-to-maintain-some-control/
+  source: Ars Technica
+  published_utc: '2026-01-23T17:29:06+00:00'
+  title_zh: TikTok协议落定；特朗普邀功而用户担忧MAGA式改动
+  why_zh: '''我太高兴了''：特朗普敲定协议将TikTok美国业务交予盟友'
+  takeaway_zh: '''我太高兴了''：特朗普敲定协议将TikTok美国业务交予盟友'
+  prompt_zh: ''
+- category: Tech industry
+  title: Hang on, there’s a Trump Phone Ultra coming too?
+  why: Where's the Trump Phone?
+  takeaway: Where's the Trump Phone? We're going to keep talking about it every week.
+    We've reached out, as usual, to ask about the Trump Phone's whereabouts. As usual,
+    we're still waiting for a response. In the meantime, it turns out we might have
+    two Trump Phones to worry about. The Trump Phone may be no more […]
+  prompt: ''
+  url: https://www.theverge.com/news/866601/trump-mobile-t1-ultra-phone-don-hendrickson-interview
+  source: The Verge
+  published_utc: '2026-01-23T17:27:22+00:00'
+  title_zh: 等等，还有一款特朗普手机Ultra要来了？
+  why_zh: 特朗普手机在哪里？
+  takeaway_zh: 特朗普手机在哪里？我们每周都会继续讨论它。像往常一样，我们已经联系询问特朗普手机的下落。像往常一样，我们仍在等待回应。与此同时，我们可能有两款特朗普手机需要担心。特朗普手机可能已经不复存在[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Nobody likes lag: How to make low-latency dev sandboxes'
+  why: 'Article URL: https://www.compyle.ai/blog/nobody-likes-lag/ Comments URL: https://news.ycombinator.com/item?id=46735139
+    Points: 57 # Comment…'
+  takeaway: 'Article URL: https://www.compyle.ai/blog/nobody-likes-lag/ Comments URL:
+    https://news.ycombinator.com/item?id=46735139 Points: 57 # Comments: 32'
+  prompt: ''
+  url: https://www.compyle.ai/blog/nobody-likes-lag/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T17:26:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Notes on the Intel 8086 processor's arithmetic-logic unit
+  why: 'Article URL: https://www.righto.com/2026/01/notes-on-intel-8086-processors.html
+    Comments URL: https://news.ycombinator.com/item?id=46735133…'
+  takeaway: 'Article URL: https://www.righto.com/2026/01/notes-on-intel-8086-processors.html
+    Comments URL: https://news.ycombinator.com/item?id=46735133 Points: 73 # Comments:
+    9'
+  prompt: ''
+  url: https://www.righto.com/2026/01/notes-on-intel-8086-processors.html
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T17:26:27+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Shares in Czech ammunition group surge 31% on stock market debut
+  why: Performance of Czechoslovak Group underlines strong investor demand for defence
+    companies
+  takeaway: Performance of Czechoslovak Group underlines strong investor demand for
+    defence companies
+  prompt: ''
+  url: https://www.ft.com/content/9796dc0a-6d51-4ce4-b67a-0c63ca3adf8e
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:18:58+00:00'
+  title_zh: 捷克弹药集团上市首日股价飙升31%
+  why_zh: 捷克斯洛伐克集团的表现印证了投资者对防务公司的强烈需求
+  takeaway_zh: 捷克斯洛伐克集团的表现印证了投资者对防务公司的强烈需求
+  prompt_zh: ''
+- category: Business & economy
+  title: TikTok finalises Trump deal to stay online in US
+  why: Video app sets up American unit to handle data and algorithm security
+  takeaway: Video app sets up American unit to handle data and algorithm security
+  prompt: ''
+  url: https://www.ft.com/content/b905cb50-3093-4273-b097-4cedc835fadd
+  source: Financial Times - World
+  published_utc: '2026-01-23T17:17:53+00:00'
+  title_zh: 9. TikTok敲定特朗普协议以维持美国运营
+  why_zh: 10. 视频应用成立美国子公司处理数据与算法安全
+  takeaway_zh: 10. 视频应用成立美国子公司处理数据与算法安全
+  prompt_zh: ''
+- category: Business & economy
+  title: '1975: Could you do your food shop just once a year?'
+  why: Grocery shopping with a couple who bought all their supplies yearly rather
+    than weekly.
+  takeaway: Grocery shopping with a couple who bought all their supplies yearly rather
+    than weekly.
+  prompt: ''
+  url: https://www.bbc.com/videos/cn9zel8v9eeo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T17:10:24+00:00'
+  title_zh: 1975年：你能一年只采购一次食品吗？
+  why_zh: 探访每年而非每周采购生活用品的夫妇
+  takeaway_zh: 探访每年而非每周采购生活用品的夫妇
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Photos’ latest feature lets you meme yourself
+  why: The addition is meant to just be a fun way to explore your photos and experiment
+    with Google's Gemini AI technology, and specifically Nano…
+  takeaway: The addition is meant to just be a fun way to explore your photos and
+    experiment with Google's Gemini AI technology, and specifically Nano Banana.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/google-photos-latest-feature-lets-you-meme-yourself/
+  source: TechCrunch
+  published_utc: '2026-01-23T17:02:22+00:00'
+  title_zh: Google Photos最新功能让你把自己变成表情包
+  why_zh: 这一新增功能旨在以一种有趣的方式探索你的照片，并体验Google的Gemini AI技术，特别是Nano……
+  takeaway_zh: 这一新增功能旨在以一种有趣的方式探索你的照片，并体验Google的Gemini AI技术，特别是Nano Banana。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Video Friday: Humans and Robots Team Up in Battlefield Triage'
+  why: Video Friday is your weekly selection of awesome robotics videos, collected
+    by your friends at IEEE Spectrum robotics.
+  takeaway: 'Video Friday is your weekly selection of awesome robotics videos, collected
+    by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming
+    robotics events for the next few months. Please send us your events for inclusion.
+    ICRA 2026 : 1–5 June 2026, VIENNA Enjoy today’s videos! One of my favorite parts
+    of robotics is watching research…'
+  prompt: ''
+  url: https://spectrum.ieee.org/darpa-triage-challenge-robot
+  source: IEEE Spectrum
+  published_utc: '2026-01-23T17:00:03+00:00'
+  title_zh: 视频星期五：人类与机器人在战场急救中合作。
+  why_zh: 视频星期五是您每周精选的精彩机器人视频，由IEEE Spectrum机器人的朋友们收集。
+  takeaway_zh: 视频星期五是您每周精选的精彩机器人视频，由IEEE Spectrum机器人的朋友们收集。我们还发布未来几个月的机器人活动周历。请将您的活动发送给我们以便收录。ICRA
+    2026：2026年6月1日至5日，维也纳。享受今天的视频吧！我最喜欢的机器人部分之一是观看研究…
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta pauses teen access to AI characters ahead of new version
+  why: Meta today said that it is pausing teens' access to its AI characters globally
+    across all its apps.
+  takeaway: Meta today said that it is pausing teens' access to its AI characters
+    globally across all its apps. The company mentioned that it is not abandoning
+    its efforts but wants to develop an updated version of AI characters for teens.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/meta-pauses-teen-access-to-ai-characters-ahead-of-new-version/
+  source: TechCrunch
+  published_utc: '2026-01-23T17:00:00+00:00'
+  title_zh: Meta在全球暂停青少年访问AI角色功能，新版即将推出
+  why_zh: Meta今日宣布将在其所有应用中全球暂停青少年访问AI角色功能。
+  takeaway_zh: Meta今日宣布将在其所有应用中全球暂停青少年访问AI角色功能。该公司表示并未放弃计划，而是要为青少年开发更新版AI角色。
+  prompt_zh: ''
+- category: Business & economy
+  title: Poor wage growth estimates led to inflation forecast errors, BoE says
+  why: Central bank technical paper comes after widespread criticism of its post-Covid
+    performance
+  takeaway: Central bank technical paper comes after widespread criticism of its post-Covid
+    performance
+  prompt: ''
+  url: https://www.ft.com/content/21a7ac07-c388-41e3-a447-ed850cb0f624
+  source: Financial Times - World
+  published_utc: '2026-01-23T16:56:22+00:00'
+  title_zh: 1. 英国央行称，工资增长预估不足导致通胀预测失误
+  why_zh: 2. 央行技术文件发布前，其新冠后表现广受批评
+  takeaway_zh: 2. 央行技术文件发布前，其新冠后表现广受批评
+  prompt_zh: ''
+- category: Business & economy
+  title: BoJ warns over rise in bond yields as Takaichi dissolves parliament for snap
+    poll
+  why: Japan will hold shortest-ever general election campaign period before voting
+    next month
+  takeaway: Japan will hold shortest-ever general election campaign period before
+    voting next month
+  prompt: ''
+  url: https://www.ft.com/content/dd223012-dbec-4895-a32a-e0395d2bfb80
+  source: Financial Times - World
+  published_utc: '2026-01-23T16:56:19+00:00'
+  title_zh: 11. 日本央行警告债券收益率上升，高市解散议会提前大选
+  why_zh: 12. 日本将举行史上最短大选竞选期，下月投票
+  takeaway_zh: 12. 日本将举行史上最短大选竞选期，下月投票
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla kills Autopilot, locks lane-keeping behind $99/month fee
+  why: With falling sales and shrinking profits, the recurring revenue will be most
+    welcome.
+  takeaway: With falling sales and shrinking profits, the recurring revenue will be
+    most welcome.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/01/tesla-wants-recurring-revenue-discontinues-autopilot-in-favor-of-fsd/
+  source: Ars Technica
+  published_utc: '2026-01-23T16:54:12+00:00'
+  title_zh: 特斯拉取消Autopilot功能，将车道保持锁定在每月99美元订阅费后
+  why_zh: 随着销售额下滑和利润缩减，经常性收入将最受欢迎。
+  takeaway_zh: 随着销售额下滑和利润缩减，经常性收入将最受欢迎。
+  prompt_zh: ''
+- category: Tech industry
+  title: Marshall’s new hub connects to multiple Bluetooth speakers without pairing
+  why: Marshall has announced a new music streaming hub called the Heddon that can
+    broadcast to multiple speakers using the Bluetooth Auracast fea…
+  takeaway: Marshall has announced a new music streaming hub called the Heddon that
+    can broadcast to multiple speakers using the Bluetooth Auracast feature that's
+    finally starting to catch on. Similar to Sennheiser's BTA1 TV Transmitter announced
+    earlier this week, the Heddon doesn't require wireless audio devices to go through
+    a pairing process to stream audio, as […]
+  prompt: ''
+  url: https://www.theverge.com/tech/866640/marshall-music-streaming-hub-heddon-bluetooth-auracast-speakers
+  source: The Verge
+  published_utc: '2026-01-23T16:54:01+00:00'
+  title_zh: 马歇尔的新款集线器无需配对即可连接多个蓝牙音箱。
+  why_zh: 马歇尔宣布了一款名为Heddon的新音乐流媒体集线器，它可以使用蓝牙Auracast功能向多个音箱广播音频。
+  takeaway_zh: 马歇尔宣布了一款名为Heddon的新音乐流媒体集线器，它可以使用蓝牙Auracast功能向多个音箱广播音频，这一功能终于开始流行。与本周早些时候发布的森海塞尔BTA1电视发射器类似，Heddon不需要无线音频设备通过配对过程来流式传输音频，正如[…]
+  prompt_zh: ''
+- category: Business & economy
+  title: Billionaire gambler Tony Bloom denies owing millions to former colleague
+  why: Brighton & Hove Albion football club owner confirms placing bets through accounts
+    of Reform UK adviser George Cottrell, according to legal…
+  takeaway: Brighton & Hove Albion football club owner confirms placing bets through
+    accounts of Reform UK adviser George Cottrell, according to legal documents The
+    billionaire owner of Brighton & Hove Albion football club has confirmed his syndicate
+    placed millions of pounds worth of bets through the gambling accounts of the Reform
+    UK adviser George Cottrell. The admi…
+  prompt: ''
+  url: https://www.theguardian.com/football/2026/jan/23/billionaire-gambler-tony-bloom-denies-owing-millions-george-cottrell
+  source: The Guardian - Business
+  published_utc: '2026-01-23T16:41:56+00:00'
+  title_zh: 亿万富翁赌徒托尼·布鲁姆否认欠前同事数百万债务
+  why_zh: 根据法律文件，布莱顿足球俱乐部老板承认通过改革英国党顾问乔治·科特雷尔账户下注……
+  takeaway_zh: 根据法律文件，布莱顿足球俱乐部老板承认通过改革英国党顾问乔治·科特雷尔账户下注。这位亿万富翁老板证实其财团通过改革英国党顾问乔治·科特雷尔的博彩账户投注数百万英镑。该承认……
+  prompt_zh: ''
+- category: Tech industry
+  title: Today only, you can buy the AirPods Pro 3 for less than $200
+  why: If you’re considering gifting the AirPods Pro 3 for Valentine’s Day, now’s
+    a great time to pick them up.
+  takeaway: If you’re considering gifting the AirPods Pro 3 for Valentine’s Day, now’s
+    a great time to pick them up. Today only, Best Buy is selling the noise-canceling
+    earbuds for $199.99 ($50 off), matching their all-time low. For iPhone owners,
+    nothing else really compares to the AirPods Pro 3. They deliver the best active
+    noise cancellation […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/866710/apple-airpods-pro-3-super-mario-bros-deal-sale
+  source: The Verge
+  published_utc: '2026-01-23T16:40:56+00:00'
+  title_zh: 仅限今天，你可以以低于200美元的价格购买AirPods Pro 3。
+  why_zh: 如果你考虑在情人节赠送AirPods Pro 3，现在是个好时机。
+  takeaway_zh: 如果你考虑在情人节赠送AirPods Pro 3，现在是个好时机。仅限今天，百思买以199.99美元（优惠50美元）的价格出售这款降噪耳机，与历史最低价持平。对于iPhone用户来说，没有什么能与AirPods
+    Pro 3相媲美。它们提供了最佳的主动降噪功能[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Gas Town's agent patterns, design bottlenecks, and vibecoding at scale
+  why: 'Article URL: https://maggieappleton.com/gastown Comments URL: https://news.ycombinator.com/item?id=46734302
+    Points: 251 # Comments: 265'
+  takeaway: 'Article URL: https://maggieappleton.com/gastown Comments URL: https://news.ycombinator.com/item?id=46734302
+    Points: 251 # Comments: 265'
+  prompt: ''
+  url: https://maggieappleton.com/gastown
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T16:19:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Here’s what you should know about the US TikTok deal
+  why: A number of investors are competing for the opportunity to purchase the app,
+    and if a deal were to go through, the platform's U.S.
+  takeaway: A number of investors are competing for the opportunity to purchase the
+    app, and if a deal were to go through, the platform's U.S. business could have
+    its valuation soar to upward of $60 billion.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/heres-whats-you-should-know-about-the-us-tiktok-deal/
+  source: TechCrunch
+  published_utc: '2026-01-23T16:17:19+00:00'
+  title_zh: 关于美国TikTok交易，你应该知道这些
+  why_zh: 多位投资者正竞相争夺购买该应用的机会，如果交易达成，该平台的美国业务估值可能飙升至600亿美元以上。
+  takeaway_zh: 多位投资者正竞相争夺购买该应用的机会，如果交易达成，该平台的美国业务估值可能飙升至600亿美元以上。
+  prompt_zh: ''
+- category: Business & economy
+  title: '‘At the table or on the menu’: a turbulent Davos week with Trump’s circus
+    in town'
+  why: Dissenting voices were few and far between as the US president brought his
+    smash-and-grab politics to the WEF “If we’re not at the table, w…
+  takeaway: Dissenting voices were few and far between as the US president brought
+    his smash-and-grab politics to the WEF “If we’re not at the table, we’re on the
+    menu.” The Canadian prime minister, Mark Carney, was the darling of Davos this
+    week as he rallied resistance to Donald Trump’s smash and grab politics and his
+    voracious appetite for other countries’ wealth an…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/jan/23/davos-turbulent-week-trump-circus
+  source: The Guardian - Business
+  published_utc: '2026-01-23T16:15:10+00:00'
+  title_zh: ‘在桌边还是菜单上’：特朗普的马戏团到访，达沃斯动荡一周
+  why_zh: 异议声音寥寥无几，美国总统将他的‘打砸抢’政治带到了世界经济论坛，‘如果我们不在桌边，我们就在菜单上。’
+  takeaway_zh: 异议声音寥寥无几，美国总统将他的‘打砸抢’政治带到了世界经济论坛，‘如果我们不在桌边，我们就在菜单上。’加拿大总理马克·卡尼成为本周达沃斯的宠儿，他团结各方抵抗唐纳德·特朗普的‘打砸抢’政治及其对其他国家财富的贪婪胃口。
+  prompt_zh: ''
+- category: Business & economy
+  title: Strong UK pay growth could limit interest rate cuts, Bank policymaker warns
+  why: Megan Greene says apparent end to the decline in wage growth could hinder fight
+    against inflation The Bank of England may not be able to lo…
+  takeaway: Megan Greene says apparent end to the decline in wage growth could hinder
+    fight against inflation The Bank of England may not be able to lower interest
+    rates as much as expected this year, due to strong UK pay growth and expected
+    rate cuts in the US, one of its top policymakers has said. Megan Greene, a member
+    of the Bank’s monetary policy committee (MPC),…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/jan/23/pay-growth-limit-interest-rate-cuts-bank-policymaker-megan-greene
+  source: The Guardian - Business
+  published_utc: '2026-01-23T16:00:39+00:00'
+  title_zh: 英国强劲的薪酬增长可能限制利率下调，央行政策制定者警告
+  why_zh: Megan Greene表示，工资增长下降趋势的明显结束可能阻碍对抗通胀的努力，英国央行今年可能无法如预期般大幅降息
+  takeaway_zh: Megan Greene表示，工资增长下降趋势的明显结束可能阻碍对抗通胀的努力，英国央行今年可能无法如预期般大幅降息，原因是英国强劲的薪酬增长以及美国预期的降息，央行货币政策委员会（MPC）成员Megan
+    Greene如是说
+  prompt_zh: ''
+- category: Business & economy
+  title: Concerns over the new Chinese embassy are overwrought
+  why: Buildings don’t spy, bully, or interfere — people do
+  takeaway: Buildings don’t spy, bully, or interfere — people do
+  prompt: ''
+  url: https://www.ft.com/content/308eb605-e311-4803-9598-dba5f22727f9
+  source: Financial Times - World
+  published_utc: '2026-01-23T16:00:07+00:00'
+  title_zh: 对中国新大使馆的担忧实属过虑
+  why_zh: 建筑不会间谍、霸凌或干涉——人才会
+  takeaway_zh: 建筑不会间谍、霸凌或干涉——人才会
+  prompt_zh: ''
+- category: Tech industry
+  title: This startup will send 1,000 people’s ashes to space — affordably — in 2027
+  why: Started by an engineer who worked on the space shuttle program, and at Blue
+    Origin, Space Beyond has a spot on a 2027 Falcon 9 flight.
+  takeaway: Started by an engineer who worked on the space shuttle program, and at
+    Blue Origin, Space Beyond has a spot on a 2027 Falcon 9 flight.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/this-startup-will-send-1000-peoples-ashes-to-space-affordably-in-2027/
+  source: TechCrunch
+  published_utc: '2026-01-23T16:00:00+00:00'
+  title_zh: 这家初创公司将在2027年以可承受的价格将1000人的骨灰送入太空
+  why_zh: 由曾参与航天飞机项目并在Blue Origin工作过的工程师创立，Space Beyond已预订了2027年Falcon 9航班的一个位置。
+  takeaway_zh: 由曾参与航天飞机项目并在Blue Origin工作过的工程师创立，Space Beyond已预订了2027年Falcon 9航班的一个位置。
+  prompt_zh: ''
+- category: Business & economy
+  title: Heathrow scraps 100ml liquid container limit
+  why: Heathrow says it has become the biggest airport to drop the limit after rolling
+    out new high-tech scanners.
+  takeaway: Heathrow says it has become the biggest airport to drop the limit after
+    rolling out new high-tech scanners.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c1evvx89559o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T15:53:25+00:00'
+  title_zh: 希思罗机场取消100毫升液体容器限制
+  why_zh: 希思罗称在部署新型高科技扫描仪后，成为首个取消该限制的大型机场
+  takeaway_zh: 希思罗称在部署新型高科技扫描仪后，成为首个取消该限制的大型机场
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok-like microdramas are going to make billions this year, even though
+    they kind of suck
+  why: The business model behind these apps replicates the same dark patterns as mobile
+    games.
+  takeaway: The business model behind these apps replicates the same dark patterns
+    as mobile games.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/tiktok-like-microdramas-are-going-to-make-billions-this-year-even-though-they-kind-of-suck/
+  source: TechCrunch
+  published_utc: '2026-01-23T15:50:41+00:00'
+  title_zh: 类似TikTok的微短剧今年将赚取数十亿，尽管它们有点糟糕
+  why_zh: 这些应用背后的商业模式复制了与手机游戏相同的黑暗模式。
+  takeaway_zh: 这些应用背后的商业模式复制了与手机游戏相同的黑暗模式。
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok finalizes deal to create new US entity and avoid ban
+  why: The deal ends a six-year long political saga that started in 2020 when President
+    Donald Trump tried to ban the app over national security c…
+  takeaway: The deal ends a six-year long political saga that started in 2020 when
+    President Donald Trump tried to ban the app over national security concerns during
+    his first term.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/tiktok-finalizes-deal-to-create-new-us-entity-and-avoid-ban/
+  source: TechCrunch
+  published_utc: '2026-01-23T15:44:18+00:00'
+  title_zh: TikTok敲定交易，成立新美国实体以避免禁令
+  why_zh: 这笔交易结束了始于2020年、长达六年的政治纷争，当时美国总统唐纳德·特朗普在其首个任期内因国家安全问题试图封禁该应用。
+  takeaway_zh: 这笔交易结束了始于2020年、长达六年的政治纷争，当时美国总统唐纳德·特朗普在其首个任期内因国家安全问题试图封禁该应用。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'OpenAI chief Sam Altman plans India visit as AI leaders converge in New
+    Delhi: sources'
+  why: The visit comes as New Delhi prepares to host a major AI summit expected to
+    draw top executives from Meta, Google, and Anthropic.
+  takeaway: The visit comes as New Delhi prepares to host a major AI summit expected
+    to draw top executives from Meta, Google, and Anthropic. This will be Altman's
+    first visit to the country in nearly a year.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/openai-chief-sam-altman-plans-india-visit-as-ai-leaders-converge-in-new-delhi-sources/
+  source: TechCrunch
+  published_utc: '2026-01-23T15:30:09+00:00'
+  title_zh: OpenAI首席执行官萨姆·奥尔特曼计划访问印度，AI领袖齐聚新德里：消息源
+  why_zh: 此次访问正值新德里筹备一场重要AI峰会，预计将吸引Meta、谷歌和Anthropic的高管出席。
+  takeaway_zh: 此次访问正值新德里筹备一场重要AI峰会，预计将吸引Meta、谷歌和Anthropic的高管出席。这将是奥尔特曼近一年来首次访印。
+  prompt_zh: ''
+- category: Tech industry
+  title: The tech monoculture is finally breaking
+  why: 'Article URL: http://www.jasonwillems.com/technology/2025/12/17/Tech-Is-Fun-Again/
+    Comments URL: https://news.ycombinator.com/item?id=467336…'
+  takeaway: 'Article URL: http://www.jasonwillems.com/technology/2025/12/17/Tech-Is-Fun-Again/
+    Comments URL: https://news.ycombinator.com/item?id=46733624 Points: 123 # Comments:
+    172'
+  prompt: ''
+  url: http://www.jasonwillems.com/technology/2025/12/17/Tech-Is-Fun-Again/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T15:26:33+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Intel shares drop 17% as supply issues limit growth
+  why: Manufacturing setbacks undermine company’s efforts to become US champion in
+    advanced chipmaking
+  takeaway: Manufacturing setbacks undermine company’s efforts to become US champion
+    in advanced chipmaking
+  prompt: ''
+  url: https://www.ft.com/content/847efe3b-44c5-44cc-9529-16bb01e21484
+  source: Financial Times - Technology
+  published_utc: '2026-01-23T15:13:02+00:00'
+  title_zh: 英特尔股价下跌17%，因供应问题限制增长
+  why_zh: 制造挫折削弱了公司成为美国先进芯片制造领军者的努力
+  takeaway_zh: 制造挫折削弱了公司成为美国先进芯片制造领军者的努力
+  prompt_zh: ''
+- category: Business & economy
+  title: UK ministers urged to release ‘withheld’ safety reports on smart motorways
+  why: Campaigners believe evaluations have been suppressed as they cast further doubt
+    on safety and economic benefits UK politics live – latest u…
+  takeaway: Campaigners believe evaluations have been suppressed as they cast further
+    doubt on safety and economic benefits UK politics live – latest updates Road campaigners
+    and motoring organisations have urged UK government ministers to immediately release
+    a series of “withheld” safety assessments of smart motorways – some dating back
+    to 2022. Designed to increase c…
+  prompt: ''
+  url: https://www.theguardian.com/uk-news/2026/jan/23/ministers-urged-release-safety-reports-popes-britain-smart-motorways
+  source: The Guardian - Business
+  published_utc: '2026-01-23T15:09:01+00:00'
+  title_zh: 英国部长们被敦促发布‘被扣留’的智能高速公路安全报告
+  why_zh: 活动人士认为评估被压制，因为它们进一步质疑了安全性和经济效益。英国政治直播——最新更新
+  takeaway_zh: 活动人士认为评估被压制，因为它们进一步质疑了安全性和经济效益。英国政治直播——最新更新。道路活动人士和汽车组织敦促英国政府部长立即发布一系列‘被扣留’的智能高速公路安全评估——其中一些可追溯到2022年。这些评估旨在提高通行能力……
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Waypoint-1: Real-Time Interactive Video Diffusion from Overworld'
+  why: 'Article URL: https://huggingface.co/blog/waypoint-1 Comments URL: https://news.ycombinator.com/item?id=46733301
+    Points: 60 # Comments: 15'
+  takeaway: 'Article URL: https://huggingface.co/blog/waypoint-1 Comments URL: https://news.ycombinator.com/item?id=46733301
+    Points: 60 # Comments: 15'
+  prompt: ''
+  url: https://huggingface.co/blog/waypoint-1
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T15:03:01+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '‘Cornwall isn’t resilient enough’: towns struggle with broadband outage
+    after Storm Goretti'
+  why: Politicians call for more infrastructure funding amid anger that county is
+    seen as ‘holiday playground’ Accessed by a steep, winding lane,…
+  takeaway: Politicians call for more infrastructure funding amid anger that county
+    is seen as ‘holiday playground’ Accessed by a steep, winding lane, the tiny settlement
+    of Cucurrian in the far-west of Cornwall feels remote at the best of times. But
+    over the last two weeks, the people who live here have felt even more isolated
+    after they were left without a way of com…
+  prompt: ''
+  url: https://www.theguardian.com/uk-news/2026/jan/23/cornish-towns-broadband-outage-storm-goretti
+  source: The Guardian - Technology
+  published_utc: '2026-01-23T15:00:13+00:00'
+  title_zh: ‘康沃尔抗灾能力不足’：暴风雨戈雷蒂过后，宽带中断令城镇陷入困境
+  why_zh: 政界人士呼吁增加基建投资，民众愤怒于该郡被视为‘度假游乐场’ 通往这座偏远小村的是一条陡峭蜿蜒的小路...
+  takeaway_zh: 政界人士呼吁增加基建投资，民众愤怒于该郡被视为‘度假游乐场’ 位于康沃尔郡最西端的库库里安小村本就偏远，一条陡峭蜿蜒的小路是唯一通道。过去两周，通讯中断让当地居民感到更加孤立...
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Only 1 week left (or until the first 500 passes are gone): The first TechCrunch
+    Disrupt 2026 ticket discount is ending'
+  why: Register now to save up to $680 on your TechCrunch Disrupt 2026 pass and get
+    a second ticket at 50% off.
+  takeaway: Register now to save up to $680 on your TechCrunch Disrupt 2026 pass and
+    get a second ticket at 50% off. This offer ends next week on January 30, or once
+    the first 500 tickets are claimed — whichever comes first.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/only-1-week-left-or-until-the-first-500-passes-are-gone-the-first-disrupt-2026-ticket-discount-is-ending/
+  source: TechCrunch
+  published_utc: '2026-01-23T15:00:00+00:00'
+  title_zh: 仅剩一周（或前500张通行证售完即止）：TechCrunch Disrupt 2026首波门票优惠即将结束
+  why_zh: 立即注册，最高可节省680美元购买TechCrunch Disrupt 2026通行证，并享受第二张门票半价优惠。
+  takeaway_zh: 立即注册，最高可节省680美元购买TechCrunch Disrupt 2026通行证，并享受第二张门票半价优惠。此优惠将于下周1月30日结束，或前500张门票售完即止——以先到者为准。
+  prompt_zh: ''
+- category: Business & economy
+  title: Investment platforms and building societies clash over new Isa rules
+  why: Dispute over whether ‘cash-like’ money market funds should be allowed in stocks-and-shares
+    Isas
+  takeaway: Dispute over whether ‘cash-like’ money market funds should be allowed
+    in stocks-and-shares Isas
+  prompt: ''
+  url: https://www.ft.com/content/341217cc-adf7-4168-b4b7-f1878ff42204
+  source: Financial Times - Markets
+  published_utc: '2026-01-23T14:51:10+00:00'
+  title_zh: 投资平台与建房互助会因新Isa规则起冲突
+  why_zh: 围绕‘类现金’货币市场基金是否应被允许纳入股票型Isa的争议
+  takeaway_zh: 围绕‘类现金’货币市场基金是否应被允许纳入股票型Isa的争议
+  prompt_zh: ''
+- category: Tech industry
+  title: KORG phase8 – Acoustic Synthesizer
+  why: 'Article URL: https://www.korg.com/us/products/dj/phase8/ Comments URL: https://news.ycombinator.com/item?id=46732967
+    Points: 186 # Comments…'
+  takeaway: 'Article URL: https://www.korg.com/us/products/dj/phase8/ Comments URL:
+    https://news.ycombinator.com/item?id=46732967 Points: 186 # Comments: 88'
+  prompt: ''
+  url: https://www.korg.com/us/products/dj/phase8/
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T14:34:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Rocket Report: Chinese rockets fail twice in 12 hours; Rocket Lab reports
+    setback'
+  why: Another partially reusable Chinese rocket, the Long March 12B, is nearing its
+    first test flight.
+  takeaway: Another partially reusable Chinese rocket, the Long March 12B, is nearing
+    its first test flight.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/rocket-report-rocket-lab-reports-neutron-setback-australia-backs-launch-startup/
+  source: Ars Technica
+  published_utc: '2026-01-23T14:31:44+00:00'
+  title_zh: 火箭报告：中国火箭12小时内两次发射失败；Rocket Lab遭遇挫折
+  why_zh: 另一款部分可重复使用的中国火箭长征12B即将迎来首次试飞。
+  takeaway_zh: 另一款部分可重复使用的中国火箭长征12B即将迎来首次试飞。
+  prompt_zh: ''
+- category: Tech industry
+  title: Tiny falcons are helping keep the food supply safe on cherry farms
+  why: Their presence appears to lower the risk of food-borne illnesses from pathogens.
+  takeaway: Their presence appears to lower the risk of food-borne illnesses from
+    pathogens.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/01/tiny-falcons-are-helping-keep-the-food-supply-safe-on-cherry-farms/
+  source: Ars Technica
+  published_utc: '2026-01-23T14:10:48+00:00'
+  title_zh: 小型猎鹰正在帮助樱桃农场保障食品安全
+  why_zh: 它们的存在似乎降低了食源性疾病由病原体引发的风险。
+  takeaway_zh: 它们的存在似乎降低了食源性疾病由病原体引发的风险。
+  prompt_zh: ''
+- category: Business & economy
+  title: Put north of England ‘front and centre’ of net zero strategy, Reeves urged
+  why: Region has higher share of net zero economic output, data shows, and Labour
+    leaders fear Reform would dismantle industry if it wins power R…
+  takeaway: Region has higher share of net zero economic output, data shows, and Labour
+    leaders fear Reform would dismantle industry if it wins power Rachel Reeves has
+    been urged to put the north of England at the heart of the UK’s net zero strategy
+    as research shows the sector contributes a larger share of the region’s economy
+    than it does nationally. The Labour peer…
+  prompt: ''
+  url: https://www.theguardian.com/environment/2026/jan/23/north-england-net-zero-growth-strategy-rachel-reeves
+  source: The Guardian - Business
+  published_utc: '2026-01-23T14:00:13+00:00'
+  title_zh: 将英格兰北部置于净零战略的‘核心’，里夫斯被敦促
+  why_zh: 数据显示，该地区净零经济产出占比更高，工党领袖担心如果改革党掌权会摧毁工业。
+  takeaway_zh: 数据显示，该地区净零经济产出占比更高，工党领袖担心如果改革党掌权会摧毁工业。雷切尔·里夫斯被敦促将英格兰北部置于英国净零战略的核心，因为研究表明该行业对该地区经济的贡献大于全国平均水平。工党同僚……
+  prompt_zh: ''
+- category: Tech industry
+  title: Young will suffer most when AI ‘tsunami’ hits jobs, says head of IMF
+  why: Kristalina Georgieva says research suggests 60% of jobs in advanced economies
+    will be affected, with many entry-level roles wiped out Artif…
+  takeaway: Kristalina Georgieva says research suggests 60% of jobs in advanced economies
+    will be affected, with many entry-level roles wiped out Artificial intelligence
+    will be a “tsunami hitting the labour market”, with young people worst affected,
+    the head of the International Monetary Fund warned the World Economic Forum on
+    Friday. Kristalina Georgieva told delegat…
+  prompt: ''
+  url: https://www.theguardian.com/technology/2026/jan/23/ai-tsunami-labour-market-youth-employment-says-head-of-imf-davos
+  source: The Guardian - Technology
+  published_utc: '2026-01-23T13:35:53+00:00'
+  title_zh: IMF总裁警告：AI'海啸'冲击就业市场时年轻人受害最深
+  why_zh: 克里斯塔利娜·格奥尔基耶娃称研究显示发达国家60%工作岗位将受影响，大量入门级职位消失 人工...
+  takeaway_zh: 克里斯塔利娜·格奥尔基耶娃称研究显示发达国家60%工作岗位将受影响，大量入门级职位消失。IMF总裁周五在达沃斯论坛警告，人工智能将成为'冲击劳动力市场的海啸'，年轻人首当其冲。她向与会代表表示...
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Radicle: The Sovereign Forge'
+  why: 'Article URL: https://radicle.xyz Comments URL: https://news.ycombinator.com/item?id=46732213
+    Points: 258 # Comments: 130'
+  takeaway: 'Article URL: https://radicle.xyz Comments URL: https://news.ycombinator.com/item?id=46732213
+    Points: 258 # Comments: 130'
+  prompt: ''
+  url: https://radicle.xyz
+  source: Hacker News (front page)
+  published_utc: '2026-01-23T13:25:42+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Heathrow scraps 100ml limit on liquids in cabin bags after tech upgrade
+  why: Airport tells outbound travellers they may bring containers that hold up to
+    2 litres and keep devices in bags as it rolls out latest CT sca…
+  takeaway: Airport tells outbound travellers they may bring containers that hold
+    up to 2 litres and keep devices in bags as it rolls out latest CT scanners Davos
+    live – latest updates Heathrow has released travellers from the tyranny of tiny
+    toiletries after the UK’s biggest airport finally scrapped the 100ml limit on
+    liquids in cabin bags. The long-awaited rollout of…
+  prompt: ''
+  url: https://www.theguardian.com/uk-news/2026/jan/23/heathrow-scraps-100ml-limit-liquids-cabin-bags
+  source: The Guardian - Business
+  published_utc: '2026-01-23T13:20:33+00:00'
+  title_zh: 希思罗机场在技术升级后取消手提行李中100毫升液体限制
+  why_zh: 机场告知出境旅客，随着最新CT扫描仪的推出，他们可携带容量不超过2升的容器，并将设备留在包内。
+  takeaway_zh: 机场告知出境旅客，随着最新CT扫描仪的推出，他们可携带容量不超过2升的容器，并将设备留在包内。达沃斯现场——最新动态：希思罗机场终于取消了手提行李中液体100毫升的限制，让旅客摆脱了小容量洗漱用品的束缚。这一期待已久的举措…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Download: chatbots for health, and US fights over AI regulation'
+  why: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology.
+  takeaway: 'This is today’s edition of The Download, our weekday newsletter that
+    provides a daily dose of what’s going on in the world of technology. “Dr. Google”
+    had its issues. Can ChatGPT Health do better? For the past two decades, there’s
+    been a clear first step for anyone who starts experiencing new medical symptoms:
+    Look them up online.…'
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/23/1131708/the-download-chatbots-for-health-and-us-fights-over-ai-regulation/
+  source: MIT Technology Review
+  published_utc: '2026-01-23T13:07:00+00:00'
+  title_zh: 今日推荐：医疗聊天机器人，及美国AI监管之争
+  why_zh: 这是今日《科技纵览》——我们的工作日通讯，为您提供全球科技动态每日速递
+  takeaway_zh: 这是今日《科技纵览》——我们的工作日通讯，为您提供全球科技动态每日速递。“谷歌医生”存在缺陷，ChatGPT健康版能做得更好吗？二十年来，人们出现新症状时的第一步很明确：上网查询……
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla discontinues Autopilot in bid to boost adoption of its Full Self-Driving
+    software
+  why: The company is also currently facing a 30-day suspension of its manufacturing
+    and dealer licenses in California for deceptive marketing abo…
+  takeaway: The company is also currently facing a 30-day suspension of its manufacturing
+    and dealer licenses in California for deceptive marketing about Autopilot's capabilities.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/23/tesla-discontinues-autopilot-in-bid-to-boost-adoption-of-its-full-self-driving-software/
+  source: TechCrunch
+  published_utc: '2026-01-23T12:56:44+00:00'
+  title_zh: 特斯拉停用Autopilot以推动其全自动驾驶软件的普及
+  why_zh: 该公司目前还因虚假营销面临加州制造和经销商执照30天的停牌……
+  takeaway_zh: 该公司目前还因对Autopilot功能的虚假宣传，面临加州制造和经销商执照被暂停30天的处罚。
+  prompt_zh: ''
+- category: Business & economy
+  title: A better CAPE ratio
+  why: Statistically speaking
+  takeaway: Statistically speaking
+  prompt: ''
+  url: https://www.ft.com/content/84b8a579-8634-47de-a421-a1eb39c8577d
+  source: Financial Times - Markets
+  published_utc: '2026-01-23T12:47:30+00:00'
+  title_zh: 更优的CAPE比率
+  why_zh: 从统计学角度看
+  takeaway_zh: 从统计学角度看
+  prompt_zh: ''
+- category: Business & economy
+  title: Tesla fined for repeatedly failing to help UK police over driving offences
+  why: The British arm of Tesla has faced multiple court proceedings linked to allegations
+    of road traffic offences.
+  takeaway: The British arm of Tesla has faced multiple court proceedings linked to
+    allegations of road traffic offences.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c0r44zpprg7o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T12:45:43+00:00'
+  title_zh: 特斯拉因多次未配合英国警方调查交通违法遭罚款
+  why_zh: 特斯拉英国分公司因涉嫌道路交通违法多次被诉至法庭
+  takeaway_zh: 特斯拉英国分公司因涉嫌道路交通违法多次被诉至法庭
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump covets mineral-rich Greenland, but what natural resources does it actually
+    have?
+  why: Greenland's natural resources include large reserves of rare earth deposits.
+  takeaway: Greenland's natural resources include large reserves of rare earth deposits.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cly9230yw15o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T12:39:51+00:00'
+  title_zh: 特朗普觊觎矿产丰富的格陵兰岛，但它究竟拥有哪些自然资源？
+  why_zh: 格陵兰岛的自然资源包括大量稀土矿床储备
+  takeaway_zh: 格陵兰岛的自然资源包括大量稀土矿床储备
+  prompt_zh: ''
+- category: Business & economy
+  title: Poundland shuts 149 stores, cuts 2,200 jobs and focuses on £1 items
+  why: Discounter relaunches Pep & Co clothing brand after a switch to ranges supplied
+    by its former parent group hit sales Poundland has shut 149…
+  takeaway: Discounter relaunches Pep & Co clothing brand after a switch to ranges
+    supplied by its former parent group hit sales Poundland has shut 149 stores with
+    the loss of 2,200 jobs under a rescue shake-up launched after challenging trading
+    conditions and unpopular clothing ranges sent it into the red. The company, which
+    was itself bought for £1 from Pepco Group b…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/jan/23/poundland-shuts-149-stores-cuts-2200-jobs-and-focuses-on-1-items
+  source: The Guardian - Business
+  published_utc: '2026-01-23T12:26:59+00:00'
+  title_zh: Poundland关闭149家门店，裁员2200人，并专注于1英镑商品。
+  why_zh: 折扣店在更换前母公司供应的产品系列导致销售下滑后，重新推出Pep & Co服装品牌。Poundland已关闭149家…
+  takeaway_zh: 折扣店在更换前母公司供应的产品系列导致销售下滑后，重新推出Pep & Co服装品牌。Poundland在面临严峻交易环境和不受欢迎的服装系列导致亏损后，启动了救援重组，关闭了149家门店，裁员2200人。该公司本身以1英镑的价格从Pepco集团被收购…
+  prompt_zh: ''
+- category: Tech industry
+  title: '2026 Lucid Air Touring review: This feels like a complete car now'
+  why: It's efficient, easy to live with, and smooth to drive.
+  takeaway: It's efficient, easy to live with, and smooth to drive.
+  prompt: ''
+  url: https://arstechnica.com/features/2026/01/2026-lucid-air-touring-review-this-feels-like-a-complete-car-now/
+  source: Ars Technica
+  published_utc: '2026-01-23T12:00:31+00:00'
+  title_zh: 2026款Lucid Air Touring评测：现在它感觉像一辆完整的车了
+  why_zh: 它高效、易用且驾驶平顺。
+  takeaway_zh: 它高效、易用且驾驶平顺。
+  prompt_zh: ''
+- category: Tech industry
+  title: This 67,800-year-old hand stencil is the world's oldest human-made art
+  why: The world's oldest art has an unintentional story to tell about human exploration.
+  takeaway: The world's oldest art has an unintentional story to tell about human
+    exploration.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/01/this-67800-year-old-hand-stencil-is-the-worlds-oldest-human-made-art/
+  source: Ars Technica
+  published_utc: '2026-01-23T12:00:29+00:00'
+  title_zh: 这幅67800年前的手印模板是世界上最古老的人类艺术品
+  why_zh: 世界上最古老的艺术无意中讲述了人类探索的故事。
+  takeaway_zh: 世界上最古老的艺术无意中讲述了人类探索的故事。
+  prompt_zh: ''
+- category: Business & economy
+  title: How Trump’s relations with America’s biggest banking boss hit rock bottom
+  why: US president’s $5bn lawsuit against JP Morgan and Jamie Dimon follows a steady
+    rise in tensions between the two men Weeks after Donald Trum…
+  takeaway: US president’s $5bn lawsuit against JP Morgan and Jamie Dimon follows
+    a steady rise in tensions between the two men Weeks after Donald Trump’s first
+    shock election win, bosses from across corporate America were scrambling to enter
+    the president’s orbit. Business leaders ranging from the General Motors boss,
+    Mary Barra, to Disney’s chief, Bob Iger, quickly s…
+  prompt: ''
+  url: https://www.theguardian.com/us-news/2026/jan/23/how-trump-relations-jp-morgan-banking-boss-rock-bottom-jamie-dimon
+  source: The Guardian - Business
+  published_utc: '2026-01-23T12:00:09+00:00'
+  title_zh: 特朗普与美国最大银行掌门人的关系如何跌至谷底
+  why_zh: 美国总统对摩根大通和杰米·戴蒙提起的50亿美元诉讼，标志着两人之间紧张关系的持续升级。唐纳德·特朗普首次意外当选总统几周后，美国企业界的老板们纷纷试图进入总统的圈子。从通用汽车CEO玛丽·博拉到迪士尼CEO鲍勃·艾格，商界领袖们迅速…
+  takeaway_zh: 美国总统对摩根大通和杰米·戴蒙提起的50亿美元诉讼，标志着两人之间紧张关系的持续升级。唐纳德·特朗普首次意外当选总统几周后，美国企业界的老板们纷纷试图进入总统的圈子。从通用汽车CEO玛丽·博拉到迪士尼CEO鲍勃·艾格，商界领袖们迅速…
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX lines up Wall Street banks as Musk eyes blockbuster IPO
+  why: US aerospace tech company reportedly held talks last year over private share
+    sale that values business at $800bn Elon Musk’s SpaceX is repo…
+  takeaway: US aerospace tech company reportedly held talks last year over private
+    share sale that values business at $800bn Elon Musk’s SpaceX is reportedly lining
+    up four Wall Street banks to help the company list on the stock market as investors
+    prepare for an expected rush of US tech listings. SpaceX is considering Bank of
+    America, JP Morgan, Goldman Sachs and Morg…
+  prompt: ''
+  url: https://www.theguardian.com/science/2026/jan/23/elon-musk-space-x-ipo-wall-street-banks-stock-market-private-share-sales
+  source: The Guardian - Technology
+  published_utc: '2026-01-23T11:54:50+00:00'
+  title_zh: SpaceX联手华尔街投行，马斯克酝酿重磅IPO
+  why_zh: 据报道，这家美国航天科技公司去年进行私募时估值达8000亿美元 埃隆·马斯克的SpaceX据...
+  takeaway_zh: 据报道，这家美国航天科技公司去年进行私募时估值达8000亿美元。知情人士透露，埃隆·马斯克的SpaceX正与美银、摩根大通、高盛和摩根士丹利四家投行接洽，为上市做准备。此举正值投资者预期美国科技公司将掀起IPO热潮...
+  prompt_zh: ''
+- category: Business & economy
+  title: ‘Creditor-on-creditor violence’ restructurings fail to stave off default
+  why: New research shows 80% of companies that complete liability management exercises
+    default again within 3 years
+  takeaway: New research shows 80% of companies that complete liability management
+    exercises default again within 3 years
+  prompt: ''
+  url: https://www.ft.com/content/c212da74-5a75-49f6-a6e6-45c8da0e5765
+  source: Financial Times - Markets
+  published_utc: '2026-01-23T11:00:04+00:00'
+  title_zh: ‘债权人内部倾轧’式重组未能避免违约
+  why_zh: 新研究显示，完成债务重组的企业中有80%在三年内再次违约
+  takeaway_zh: 新研究显示，完成债务重组的企业中有80%在三年内再次违约
+  prompt_zh: ''
+- category: Business & economy
+  title: Free air fryers to help people cook more healthily
+  why: Meir Matters previously taught people how to use slow cookers - which they
+    could then take home.
+  takeaway: Meir Matters previously taught people how to use slow cookers - which
+    they could then take home.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cn8jjezj7v5o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T10:38:47+00:00'
+  title_zh: 免费发放空气炸锅倡导健康烹饪
+  why_zh: Meir Matters机构此前教授慢炖锅使用方法——学员可带走使用
+  takeaway_zh: Meir Matters机构此前教授慢炖锅使用方法——学员可带走使用
+  prompt_zh: ''
+- category: Tech industry
+  title: America’s coming war over AI regulation
+  why: MIT Technology Review’s What’s Next series looks across industries, trends,
+    and technologies to give you a first look at the future.
+  takeaway: MIT Technology Review’s What’s Next series looks across industries, trends,
+    and technologies to give you a first look at the future. You can read the rest
+    of them here. In the final weeks of 2025, the battle over regulating artificial
+    intelligence in the US reached a boiling point. On December 11, after Congress
+    failed twice…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/23/1131559/americas-coming-war-over-ai-regulation/
+  source: MIT Technology Review
+  published_utc: '2026-01-23T10:00:00+00:00'
+  title_zh: 美国即将爆发关于AI监管的战争
+  why_zh: 《麻省理工科技评论》的'未来展望'系列横跨行业、趋势与技术，带您先睹未来。
+  takeaway_zh: 《麻省理工科技评论》的'未来展望'系列横跨行业、趋势与技术，带您先睹未来。其余内容可在此阅读。2025年最后几周，美国关于人工智能监管的争论达到白热化。12月11日，国会两次未能通过法案后……
+  prompt_zh: ''
+- category: Tech industry
+  title: Measles is surging in the US. Wastewater tracking could help.
+  why: 'This week marked a rather unpleasant anniversary: It’s a year since Texas
+    reported a case of measles—the start of a significant outbreak th…'
+  takeaway: 'This week marked a rather unpleasant anniversary: It’s a year since Texas
+    reported a case of measles—the start of a significant outbreak that ended up spreading
+    across multiple states. Since the start of January 2025, there have been over
+    2,500 confirmed cases of measles in the US. Three people have died. As vaccination
+    rates drop…'
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/23/1131698/measles-surging-us-wastewater-tracking/
+  source: MIT Technology Review
+  published_utc: '2026-01-23T10:00:00+00:00'
+  title_zh: 美国麻疹病例激增，废水监测或可助力防控
+  why_zh: 本周迎来一个令人不快的周年纪念：一年前德克萨斯州报告了一例麻疹病例，这成为一场蔓延多州重大疫情的开端……
+  takeaway_zh: 本周迎来一个令人不快的周年纪念：一年前德克萨斯州报告了一例麻疹病例，这成为一场蔓延多州重大疫情的开端。自2025年1月以来，美国已确诊超2500例麻疹病例，造成3人死亡。随着疫苗接种率下降……
+  prompt_zh: ''
+- category: Business & economy
+  title: Demand for online jewellery boosts December retail sales
+  why: Sales rose by more than expected, but it remained a difficult festive period
+    for many retailers.
+  takeaway: Sales rose by more than expected, but it remained a difficult festive
+    period for many retailers.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cy8y4qz9429o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T09:30:42+00:00'
+  title_zh: 线上珠宝需求提振12月零售额
+  why_zh: 销售额超预期增长，但对多数零售商而言仍是艰难节日季
+  takeaway_zh: 销售额超预期增长，但对多数零售商而言仍是艰难节日季
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok announces it has finalized deal to establish US entity, sidestepping
+    ban
+  why: Majority US-owned venture includes Larry Ellison’s Oracle, private-equity group
+    Silver Lake and Abu Dhabi’s MGX TikTok announced on Thursda…
+  takeaway: Majority US-owned venture includes Larry Ellison’s Oracle, private-equity
+    group Silver Lake and Abu Dhabi’s MGX TikTok announced on Thursday it had closed
+    a deal to establish a new US entity, allowing it to sidestep a ban and ending
+    a long legal battle. The deal finalized by ByteDance, TikTok’s Chinese owner,
+    sets up a majority American-owned venture, with…
+  prompt: ''
+  url: https://www.theguardian.com/us-news/2026/jan/22/tiktok-us-venture-oracle
+  source: The Guardian - Technology
+  published_utc: '2026-01-23T08:43:07+00:00'
+  title_zh: TikTok宣布完成协议成立美国实体，规避禁令
+  why_zh: 由美国资本主导的新公司包括拉里·埃里森的甲骨文、私募集团银湖资本及阿布扎比MGX。TikTok周四宣布……
+  takeaway_zh: 由美国资本主导的新公司包括拉里·埃里森的甲骨文、私募集团银湖资本及阿布扎比MGX。TikTok周四宣布已完成协议成立新美国实体，从而规避禁令并结束长期法律纠纷。字节跳动作为TikTok中国母公司最终敲定协议，成立由美国资本控股的新公司……
+  prompt_zh: ''
+- category: Business & economy
+  title: The rollercoaster years that led to the US-TikTok deal
+  why: It is a challenge for TikTok's parent company ByteDance as well as global ambitions
+    for other Chinese tech companies.
+  takeaway: It is a challenge for TikTok's parent company ByteDance as well as global
+    ambitions for other Chinese tech companies.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c6200mz054yo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T08:08:54+00:00'
+  title_zh: 导致美TikTok协议的过山车式岁月
+  why_zh: 这对TikTok母公司字节跳动以及其他中国科技公司的全球抱负都是一项挑战
+  takeaway_zh: 这对TikTok母公司字节跳动以及其他中国科技公司的全球抱负都是一项挑战
+  prompt_zh: ''
+- category: Business & economy
+  title: The greatest threat facing Britain may soon be the US – but the establishment
+    won’t recognise it | Andy Beckett
+  why: Since the end of the second world war, all eyes have been on Russia.
+  takeaway: Since the end of the second world war, all eyes have been on Russia. Yet
+    Trump’s increasingly erratic, hostile presidency is shattering old assumptions
+    One of the things that the depleted, often denigrated British state is still pretty
+    good at is persuading the public that another country is a threat. As a small,
+    warlike island next to a much larger land ma…
+  prompt: ''
+  url: https://www.theguardian.com/commentisfree/2026/jan/23/britain-us-establishment-russia-donald-trump
+  source: The Guardian - Business
+  published_utc: '2026-01-23T08:00:11+00:00'
+  title_zh: 英国面临的最大威胁可能很快来自美国——但体制内人士不会承认 | 安迪·贝克特
+  why_zh: 自二战结束以来，所有人的目光都聚焦在俄罗斯。
+  takeaway_zh: 自二战结束以来，全球目光始终聚焦俄罗斯。然而特朗普愈发反复无常、充满敌意的总统任期正在打破固有认知。资源匮乏、常遭诟病的英国政府至今仍擅长的一件事，就是让公众相信另一个国家构成威胁。这个好战的小岛国毗邻广袤的欧亚大陆...
+  prompt_zh: ''
+- category: Business & economy
+  title: Does TikTok's US deal threaten the company's global ambitions?
+  why: TikTok has finalised a deal to allow its American business to continue, by
+    creating a new US entity separate from its global operations.
+  takeaway: TikTok has finalised a deal to allow its American business to continue,
+    by creating a new US entity separate from its global operations. The BBC's Asia
+    Business Correspondent Suranjana Tewari breaks down what this could mean.
+  prompt: ''
+  url: https://www.bbc.com/news/videos/c5y33mll93do?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-01-23T07:28:55+00:00'
+  title_zh: TikTok的美国协议是否威胁其全球抱负？
+  why_zh: TikTok已敲定协议，通过创建一个独立于全球业务的新美国实体，使其美国业务得以继续
+  takeaway_zh: TikTok已敲定协议，通过创建一个独立于全球业务的新美国实体，使其美国业务得以继续。BBC亚洲商业记者Suranjana Tewari解析了这可能意味着什么
+  prompt_zh: ''
+- category: Tech industry
+  title: '‘I’m picking winners’: UK business secretary takes activist approach to
+    economic growth'
+  why: AI evangelist Peter Kyle wants to scale up businesses, attract overseas investors
+    and look out for UK’s poorer regions The UK business secr…
+  takeaway: AI evangelist Peter Kyle wants to scale up businesses, attract overseas
+    investors and look out for UK’s poorer regions The UK business secretary, Peter
+    Kyle, has said he is “betting big” and “picking winners” as the government takes
+    direct stakes in growing businesses to boost economic growth. Speaking at the
+    World Economic Forum in Davos, where he and the…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/jan/23/peter-kyle-uk-business-secretary-activist-approach-economic-growth
+  source: The Guardian - Technology
+  published_utc: '2026-01-23T07:00:11+00:00'
+  title_zh: ‘我在挑选赢家’：英国商业大臣采取激进策略促进经济增长
+  why_zh: AI布道者彼得·凯尔计划扩大企业规模、吸引海外投资并关注英国贫困地区 这位英国商业大臣...
+  takeaway_zh: AI布道者彼得·凯尔希望扩大企业规模，吸引海外投资者，并关注英国较贫困地区。英国商务大臣彼得·凯尔表示，他正在“大举押注”并“挑选赢家”，因为政府直接入股成长型企业以促进经济增长。在达沃斯世界经济论坛上发表讲话时，他和…
+  prompt_zh: ''
+- category: Business & economy
+  title: Homes for sale to inspire artists in England – in pictures
+  why: From an Italian-style townhouse in London’s Chelsea to a country retreat in
+    Dorset where every room is its own gallery Continue reading...
+  takeaway: From an Italian-style townhouse in London’s Chelsea to a country retreat
+    in Dorset where every room is its own gallery Continue reading...
+  prompt: ''
+  url: https://www.theguardian.com/money/gallery/2026/jan/23/homes-for-sale-to-inspire-artists-in-england-in-pictures
+  source: The Guardian - Business
+  published_utc: '2026-01-23T07:00:07+00:00'
+  title_zh: 英格兰激发艺术家灵感的待售住宅——图集欣赏
+  why_zh: 从伦敦切尔西的意式联排别墅到多塞特郡每个房间都是独立画廊的乡间度假屋 继续阅读...
+  takeaway_zh: 从伦敦切尔西的意式联排别墅到多塞特郡每个房间都是独立画廊的乡间度假屋 继续阅读...
+  prompt_zh: ''

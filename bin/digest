@@ -1321,6 +1321,17 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
             im = ImageEnhance.Contrast(im).enhance(0.95)
             return im
 
+        # 1b) If a pinned background exists, always reuse it (avoid regenerating a new background every day).
+        # Users can still override via DIGEST_CARD_BG_IMAGE.
+        pinned = CARD_DIR / "_bg" / "global-bg.png"
+        if pinned.exists():
+            im = _resize_to_cover(Image.open(pinned), w, h)
+            im = im.filter(ImageFilter.GaussianBlur(radius=10))
+            im = ImageEnhance.Color(im).enhance(0.35)
+            im = ImageEnhance.Brightness(im).enhance(1.15)
+            im = ImageEnhance.Contrast(im).enhance(0.95)
+            return im
+
         # 2) Optionally auto-generate a vivid background using an image-capable Gemini model
         # (then blur it so it behaves like a background, not a poster).
         # Default: if OPENROUTER_API_KEY is available, we generate (unless explicitly disabled).

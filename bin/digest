@@ -673,6 +673,99 @@ def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> 
     return score
 
 
+def _select_top_diverse(
+    ranked_items: list[dict[str, Any]],
+    *,
+    n: int,
+    max_per_source: int,
+    max_per_domain: int,
+    max_per_category: int,
+) -> list[dict[str, Any]]:
+    """
+    Pick a diversified Top N from an already-ranked list.
+
+    Motivation: a single high-volume/high-weight outlet (e.g., FT) can dominate a Top 10 or card.
+    We cap items by:
+      - per `source` label
+      - per URL domain (e.g., ft.com)
+      - per category (soft cap; can be relaxed during filling)
+    """
+
+    def _domain(u: str) -> str:
+        try:
+            return (urlparse(u).netloc or "").lower()
+        except Exception:
+            return ""
+
+    picked: list[dict[str, Any]] = []
+    used: set[str] = set()
+    by_src: dict[str, int] = {}
+    by_dom: dict[str, int] = {}
+    by_cat: dict[str, int] = {}
+
+    # Phase 1: strict caps (source + domain + category).
+    for it in ranked_items:
+        if len(picked) >= n:
+            break
+        key = it.get("url", "") or it.get("title", "")
+        if not key or key in used:
+            continue
+        src = (it.get("source") or "").strip()
+        dom = _domain((it.get("url") or "").strip())
+        cat = (it.get("category") or "Misc").strip() or "Misc"
+
+        if src and by_src.get(src, 0) >= max_per_source:
+            continue
+        if dom and by_dom.get(dom, 0) >= max_per_domain:
+            continue
+        if cat and by_cat.get(cat, 0) >= max_per_category:
+            continue
+
+        picked.append(it)
+        used.add(key)
+        if src:
+            by_src[src] = by_src.get(src, 0) + 1
+        if dom:
+            by_dom[dom] = by_dom.get(dom, 0) + 1
+        if cat:
+            by_cat[cat] = by_cat.get(cat, 0) + 1
+
+    # Phase 2: preserve *source diversity* (domain/source caps), relax category cap.
+    if len(picked) < n:
+        for it in ranked_items:
+            if len(picked) >= n:
+                break
+            key = it.get("url", "") or it.get("title", "")
+            if not key or key in used:
+                continue
+            src = (it.get("source") or "").strip()
+            dom = _domain((it.get("url") or "").strip())
+            if src and by_src.get(src, 0) >= max_per_source:
+                continue
+            if dom and by_dom.get(dom, 0) >= max_per_domain:
+                continue
+
+            picked.append(it)
+            used.add(key)
+            if src:
+                by_src[src] = by_src.get(src, 0) + 1
+            if dom:
+                by_dom[dom] = by_dom.get(dom, 0) + 1
+
+    # Phase 3: final fallback — fill ignoring caps (better a complete list than empty).
+    if len(picked) < n:
+        for it in ranked_items:
+            if len(picked) >= n:
+                break
+            key = it.get("url", "") or it.get("title", "")
+            if not key or key in used:
+                continue
+            picked.append(it)
+            used.add(key)
+
+    return picked
+
+
 def _pick_lang(it: dict[str, Any], key_en: str, key_zh: str, lang: str) -> str:
     if lang == "zh":
         v = (it.get(key_zh) or "").strip()
@@ -1525,14 +1618,23 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     default_max = 10
     max_items_total = int((os.environ.get("DIGEST_CARD_MAX_ITEMS") or "").strip() or default_max)
     now = _score_now_for_date(date)
-    ranked = sorted(
+    ranked_all = sorted(
         items,
         key=lambda it: (
             _importance_score(it, now=now),
             _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
         ),
         reverse=True,
-    )[: max_items_total]
+    )
+
+    # Match the website "Top 10" logic: diversify sources/domains so the card isn't all from one outlet.
+    ranked = _select_top_diverse(
+        ranked_all,
+        n=max_items_total,
+        max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
+        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
+        max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
+    )
 
     # Footer anchored at the bottom to avoid a large empty block below the content.
     footer1 = "Zhilong George Zhao · @longlalaland"
@@ -1621,97 +1723,6 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
                 break
     else:
         items_sorted = ranked[:max_items]
-
-    def _select_top_diverse(
-        ranked_items: list[dict[str, Any]],
-        *,
-        n: int,
-        max_per_source: int,
-        max_per_domain: int,
-        max_per_category: int,
-    ) -> list[dict[str, Any]]:
-        """
-        Pick a diversified Top N from an already-ranked list.
-
-        Motivation: A single high-volume/high-weight outlet (e.g., FT) can dominate the Top 10.
-        This keeps the Top 10 readable by capping:
-          - per `source` label
-          - per URL domain (e.g., ft.com)
-          - per category
-        """
-
-        def _domain(u: str) -> str:
-            try:
-                return (urlparse(u).netloc or "").lower()
-            except Exception:
-                return ""
-
-        picked: list[dict[str, Any]] = []
-        used = set()
-        by_src: dict[str, int] = {}
-        by_dom: dict[str, int] = {}
-        by_cat: dict[str, int] = {}
-
-        for it in ranked_items:
-            if len(picked) >= n:
-                break
-            key = it.get("url", "") or it.get("title", "")
-            if not key or key in used:
-                continue
-            src = (it.get("source") or "").strip()
-            dom = _domain((it.get("url") or "").strip())
-            cat = (it.get("category") or "Misc").strip() or "Misc"
-
-            if src and by_src.get(src, 0) >= max_per_source:
-                continue
-            if dom and by_dom.get(dom, 0) >= max_per_domain:
-                continue
-            if cat and by_cat.get(cat, 0) >= max_per_category:
-                continue
-
-            picked.append(it)
-            used.add(key)
-            if src:
-                by_src[src] = by_src.get(src, 0) + 1
-            if dom:
-                by_dom[dom] = by_dom.get(dom, 0) + 1
-            if cat:
-                by_cat[cat] = by_cat.get(cat, 0) + 1
-
-        # If caps were too strict, fill remaining slots in a way that preserves *source diversity*
-        # (domain/source caps) first, even if that means relaxing the category cap.
-        if len(picked) < n:
-            for it in ranked_items:
-                if len(picked) >= n:
-                    break
-                key = it.get("url", "") or it.get("title", "")
-                if not key or key in used:
-                    continue
-                src = (it.get("source") or "").strip()
-                dom = _domain((it.get("url") or "").strip())
-                if src and by_src.get(src, 0) >= max_per_source:
-                    continue
-                if dom and by_dom.get(dom, 0) >= max_per_domain:
-                    continue
-                picked.append(it)
-                used.add(key)
-                if src:
-                    by_src[src] = by_src.get(src, 0) + 1
-                if dom:
-                    by_dom[dom] = by_dom.get(dom, 0) + 1
-
-        # Final fallback: if we're still short, fill ignoring caps (better a complete list than empty).
-        if len(picked) < n:
-            for it in ranked_items:
-                if len(picked) >= n:
-                    break
-                key = it.get("url", "") or it.get("title", "")
-                if not key or key in used:
-                    continue
-                picked.append(it)
-                used.add(key)
-
-        return picked
 
     top = _select_top_diverse(
         items_sorted,

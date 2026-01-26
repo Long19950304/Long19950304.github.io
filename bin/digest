@@ -558,8 +558,22 @@ def _draft_items(
                 except Exception:
                     pass
                 # Provide draft-level snippets (user should rewrite for quality).
-                takeaway = _truncate(summary, 360) if summary else ""
-                why = _first_sentence(summary, 140) if summary else ""
+                # For GitHub releases, summaries are too verbose/noisy; keep it readable.
+                is_gh_release = False
+                try:
+                    u1 = urlparse(link)
+                    dom1 = (u1.netloc or "").lower()
+                    p1 = (u1.path or "").lower()
+                    is_gh_release = ("github.com" in dom1) and ("/releases/" in p1)
+                except Exception:
+                    is_gh_release = False
+
+                if is_gh_release:
+                    takeaway = ""
+                    why = "Release update (see link for changelog)."
+                else:
+                    takeaway = _truncate(summary, 360) if summary else ""
+                    why = _first_sentence(summary, 140) if summary else ""
                 items.append(
                     {
                         "category": cat,
@@ -1893,10 +1907,12 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
 
     top_ai = _select_top_diverse(
         items_ai,
-        n=10,
+        # Prefer diversity over padding: if we only have a few distinct sources today,
+        # show fewer items rather than repeating the same repo/tool many times.
+        n=min(10, len({(it.get("source") or "").strip() for it in items_ai if (it.get("source") or "").strip()})),
         # For AI tools, most high-signal items come from GitHub Releases (same domain),
         # so keep a looser domain cap but tighter per-source cap to avoid 1 repo dominating.
-        max_per_source=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_SOURCE", "2") or "2"),
+        max_per_source=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_SOURCE", "1") or "1"),
         max_per_domain=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_DOMAIN", "20") or "20"),
         max_per_category=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_CATEGORY", "10") or "10"),
     )
@@ -2000,7 +2016,7 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         top_news,
     )
     _render_top_section(
-        "## Top 10 — AI tools & model updates" if lang != "zh" else "## AI 工具 / 模型更新（10 条）",
+        "## AI tools & model updates" if lang != "zh" else "## AI 工具 / 模型更新",
         top_ai,
     )
 
@@ -2032,28 +2048,51 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
         items_news = [it for it in items if (it.get("category") or "").strip() != ai_cat]
         items_ai = [it for it in items if (it.get("category") or "").strip() == ai_cat]
 
+        # For AI cards, prefer a short diversified set (avoid 10 near-identical release tags).
+        now = _score_now_for_date(date)
+        ai_ranked = sorted(
+            items_ai,
+            key=lambda it: (
+                _importance_score(it, now=now),
+                _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+            ),
+            reverse=True,
+        )
+        ai_unique_sources = {(it.get("source") or "").strip() for it in ai_ranked if (it.get("source") or "").strip()}
+        ai_n = min(10, len(ai_unique_sources))
+        if ai_n > 0:
+            ai_ranked = _select_top_diverse(
+                ai_ranked,
+                n=ai_n,
+                max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
+                max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
+                max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
+            )
+        else:
+            ai_ranked = []
+
         render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-en.png", lang="en")
         render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-zh.png", lang="zh")
 
         render_card(
             date,
-            items_ai,
+            ai_ranked,
             CARD_DIR / f"{date.isoformat()}-ai-en.png",
             lang="en",
             title_override="AI Tools & Model Updates",
             subtitle_override="New tools/models/releases (see site for the full list).",
-            max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "2") or "2"),
+            max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
             max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
         )
         render_card(
             date,
-            items_ai,
+            ai_ranked,
             CARD_DIR / f"{date.isoformat()}-ai-zh.png",
             lang="zh",
             title_override="AI 工具 / 模型更新",
             subtitle_override="今日工具/模型发布（完整版见网站）。",
-            max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "2") or "2"),
+            max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
             max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
         )

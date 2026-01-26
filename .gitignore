@@ -16,3 +16,4 @@ __pycache__/
 .pytest_cache/
 *.baiduyun.uploading.cfg
 assets/img/digests/_bg/
+_data/digests/*.draft.yml

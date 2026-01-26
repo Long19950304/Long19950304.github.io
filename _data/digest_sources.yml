@@ -160,6 +160,11 @@ sources:
     category: "AI tools & model releases"
     url: https://developer.nvidia.com/blog/feed/
 
+  - id: stability-news
+    name: Stability AI - News
+    category: "AI tools & model releases"
+    url: https://stability.ai/news?format=rss
+
   # Aggregators / AI news with frequent tool/model announcements
   - id: decoder-ai
     name: The Decoder (AI)
@@ -177,6 +182,18 @@ sources:
     url: https://www.wired.com/feed/tag/ai/latest/rss
 
   # GitHub releases (tooling version bumps are often the fastest signal)
+  # MCP / agent tooling (practical)
+  - id: gh-mcp-servers
+    name: GitHub Releases - modelcontextprotocol/servers
+    category: "AI tools & model releases"
+    url: https://github.com/modelcontextprotocol/servers/releases.atom
+
+  - id: gh-mcp-spec
+    name: GitHub Releases - modelcontextprotocol/specification
+    category: "AI tools & model releases"
+    url: https://github.com/modelcontextprotocol/specification/releases.atom
+
+  # Practical LLM infra / serving
   - id: gh-ollama
     name: GitHub Releases - ollama/ollama
     category: "AI tools & model releases"
@@ -192,6 +209,11 @@ sources:
     category: "AI tools & model releases"
     url: https://github.com/vllm-project/vllm/releases.atom
 
+  - id: gh-open-webui
+    name: GitHub Releases - open-webui/open-webui
+    category: "AI tools & model releases"
+    url: https://github.com/open-webui/open-webui/releases.atom
+
   - id: gh-transformers
     name: GitHub Releases - huggingface/transformers
     category: "AI tools & model releases"
@@ -206,6 +228,17 @@ sources:
     name: GitHub Releases - huggingface/diffusers
     category: "AI tools & model releases"
     url: https://github.com/huggingface/diffusers/releases.atom
+
+  # Image / video tooling updates (practical for visuals)
+  - id: gh-comfyui
+    name: GitHub Releases - comfyanonymous/ComfyUI
+    category: "AI tools & model releases"
+    url: https://github.com/comfyanonymous/ComfyUI/releases.atom
+
+  - id: gh-automatic1111
+    name: GitHub Releases - AUTOMATIC1111/stable-diffusion-webui
+    category: "AI tools & model releases"
+    url: https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases.atom
 
   - id: gh-langchain
     name: GitHub Releases - langchain-ai/langchain

@@ -900,24 +900,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7836'
-  why: 'CUDA: faster FA for GQA > 1 but not power of 2 ( #19092 ) macOS/iOS: macOS
-    Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: U…'
-  takeaway: 'CUDA: faster FA for GQA > 1 but not power of 2 ( #19092 ) macOS/iOS:
-    macOS Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64
-    (CPU) Ubuntu x64 (Vulkan) Ubuntu s390x (CPU) Windows: Windows x64 (CPU) Windows
-    arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA
-    13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL)…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7836
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T21:10:48+00:00'
   title_zh: ggml-org/llama.cpp 发布：b7836
-  why_zh: CUDA：GQA > 1 但非2的幂时FA更快（#19092）macOS/iOS：macOS Apple Silicon（arm64）macOS
-    Intel（x64）iOS XCFramework Linux：U…
-  takeaway_zh: CUDA：针对GQA大于1但非2的幂次情况优化FA速度（#19092）macOS/iOS：macOS Apple Silicon（arm64）macOS
-    Intel（x64）iOS XCFramework Linux：Ubuntu x64（CPU）Ubuntu x64（Vulkan）Ubuntu s390x（CPU）Windows：Windows
-    x64（CPU）Windows arm64（CPU）Windows x64（CUDA 12）- CUDA 12.4动态库 Windows x64（CUDA
-    13）- CUDA 13.1动态库 Windows x64（Vulkan）Windows x64（SYCL）…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
   title: Oneplus phone update introduces hardware anti-rollback
@@ -938,24 +929,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7835'
-  why: 'metal : fix recommendedMaxWorkingSetSize availability on legacy iOS/macOS
-    ( #19088 ) Co-authored-by: chenbin11 chenbin11@kuaishou.com macOS…'
-  takeaway: 'metal : fix recommendedMaxWorkingSetSize availability on legacy iOS/macOS
-    ( #19088 ) Co-authored-by: chenbin11 chenbin11@kuaishou.com macOS/iOS: macOS Apple
-    Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu
-    x64 (Vulkan) Ubuntu s390x (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU)
-    Windows x64 (CUDA 12) - CUDA 12.4 DLLs Win…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7835
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T19:45:56+00:00'
   title_zh: ggml-org/llama.cpp 版本发布：b7835
-  why_zh: metal：修复旧版iOS/macOS上推荐的recommendedMaxWorkingSetSize可用性问题（#19088）合著者：chenbin11
-    chenbin11@kuaishou.com macOS…
-  takeaway_zh: metal：修复旧版iOS/macOS上推荐的recommendedMaxWorkingSetSize可用性问题（#19088）合著者：chenbin11
-    chenbin11@kuaishou.com macOS/iOS：macOS Apple Silicon（arm64）macOS Intel（x64）iOS
-    XCFramework Linux：Ubuntu x64（CPU）Ubuntu x64（Vulkan）Ubuntu s390x（CPU）Windows：Windows
-    x64（CPU）Windows arm64（CPU）Windows x64（CUDA 12）- CUDA 12.4动态库 Win…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
   title: Spanish track was fractured before high-speed train disaster, report finds
@@ -1115,21 +1097,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7833'
-  why: 'ggml-cpu: Use tiled FA for prompt-processing ( #19012 ) ggml-cpu: Use tiled
-    FA for prompt-processing the FA performance is gimped on CPU on…'
-  takeaway: 'ggml-cpu: Use tiled FA for prompt-processing ( #19012 ) ggml-cpu: Use
-    tiled FA for prompt-processing the FA performance is gimped on CPU on long contexts
-    because it essentially uses a vector kernel. This PR adds a tiled FA for PP. Perf
-    tuning for tile sizes done on a AMD EPYC single-socket 64-c machine. fix out of
-    bounds for mask skip rows where there are a…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7833
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T16:15:23+00:00'
   title_zh: ggml-org/llama.cpp 版本发布：b7833
-  why_zh: ggml-cpu：为提示处理启用分块FA优化（#19012）ggml-cpu：为提示处理启用分块FA优化 CPU环境下长上下文FA性能受限的原因是…
-  takeaway_zh: ggml-cpu：为提示处理启用分块FA优化（#19012）ggml-cpu：为提示处理启用分块FA优化 CPU环境下长上下文FA性能受限的原因是本质上使用了向量内核。本次提交增加了针对提示处理的分块FA方案。在AMD
-    EPYC单路64核机器上完成了分块尺寸的调优。修复了掩码跳行时越界的问题…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
   title: Trusting your phone to Abxylute’s mobile controller requires a big leap of
@@ -1182,23 +1158,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7832'
-  why: 'kv-cache : support V-less cache ( #19067 ) kv-cache : support V-less cache
-    cuda : better check for V_is_K_view cuda : improve V_is_K_view c…'
-  takeaway: 'kv-cache : support V-less cache ( #19067 ) kv-cache : support V-less
-    cache cuda : better check for V_is_K_view cuda : improve V_is_K_view check graph
-    : add comments hparams : refactor macOS/iOS: macOS Apple Silicon (arm64) macOS
-    Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu x64 (Vulkan) Ubuntu
-    s390x (CPU) Windows: Windows x64 (CPU) Windows arm6…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7832
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T15:26:08+00:00'
   title_zh: ggml-org/llama.cpp 版本发布：b7832
-  why_zh: kv缓存：支持无V缓存方案（#19067）kv缓存：支持无V缓存方案 cuda：优化V_is_K_view检测 cuda：改进V_is_K_view检查…
-  takeaway_zh: kv缓存：支持无V缓存方案（#19067）kv缓存：支持无V缓存方案 cuda：优化V_is_K_view检测 cuda：改进V_is_K_view检查
-    图结构：添加注释 超参数：重构 macOS/iOS：macOS Apple Silicon（arm64）macOS Intel（x64）iOS XCFramework
-    Linux：Ubuntu x64（CPU）Ubuntu x64（Vulkan）Ubuntu s390x（CPU）Windows：Windows x64（CPU）Windows
-    arm6…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Business & economy
   title: Davey says war bonds would help to speed up UK defence spending
@@ -1398,24 +1366,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7830'
-  why: 'completion : fix prompt cache for recurrent models ( #19045 ) macOS/iOS: macOS
-    Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linu…'
-  takeaway: 'completion : fix prompt cache for recurrent models ( #19045 ) macOS/iOS:
-    macOS Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64
-    (CPU) Ubuntu x64 (Vulkan) Ubuntu s390x (CPU) Windows: Windows x64 (CPU) Windows
-    arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA
-    13.1 DLLs Windows x64 (Vulkan) Windows x64 (SY…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7830
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T11:04:07+00:00'
   title_zh: ggml-org/llama.cpp 版本发布：b7830
-  why_zh: 补全功能：修复循环模型的提示缓存问题（#19045）macOS/iOS：macOS Apple Silicon（arm64）macOS Intel（x64）iOS
-    XCFramework Linu…
-  takeaway_zh: 补全功能：修复循环模型的提示缓存问题（#19045）macOS/iOS：macOS Apple Silicon（arm64）macOS
-    Intel（x64）iOS XCFramework Linux：Ubuntu x64（CPU）Ubuntu x64（Vulkan）Ubuntu s390x（CPU）Windows：Windows
-    x64（CPU）Windows arm64（CPU）Windows x64（CUDA 12）- CUDA 12.4动态库 Windows x64（CUDA
-    13）- CUDA 13.1动态库 Windows x64（Vulkan）Windows x64（SY…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Business & economy
   title: City minister accused of ignoring £2bn car finance tax loophole
@@ -1436,23 +1395,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7828'
-  why: 'llama: fix integer type consistency in split helpers ( #18894 ) llama: fix
-    integer type consistency in split helpers llama: apply minor sty…'
-  takeaway: 'llama: fix integer type consistency in split helpers ( #18894 ) llama:
-    fix integer type consistency in split helpers llama: apply minor style fixes llama:
-    remove trailing whitespace macOS/iOS: macOS Apple Silicon (arm64) macOS Intel
-    (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu x64 (Vulkan) Ubuntu s390x
-    (CPU) Windows: Windows x64 (CPU) Windows arm64…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7828
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T10:56:13+00:00'
   title_zh: ggml-org/llama.cpp 版本发布：b7828
-  why_zh: llama：修复分割辅助函数中的整数类型一致性（#18894）llama：修复分割辅助函数中的整数类型一致性 llama：应用次要样式…
-  takeaway_zh: llama：修复分割辅助函数中的整数类型一致性（#18894）llama：修复分割辅助函数中的整数类型一致性 llama：应用次要样式修复
-    llama：删除尾部空格 macOS/iOS：macOS Apple Silicon（arm64）macOS Intel（x64）iOS XCFramework
-    Linux：Ubuntu x64（CPU）Ubuntu x64（Vulkan）Ubuntu s390x（CPU）Windows：Windows x64（CPU）Windows
-    arm64…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Business & economy
   title: How botched Tory insulation scheme looms over Labour’s warm homes plan
@@ -1491,20 +1442,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7827'
-  why: 'common : use two decimal places for float arg help messages ( #19048 ) common
-    : use two decimal places for float arg help messages This com…'
-  takeaway: 'common : use two decimal places for float arg help messages ( #19048
-    ) common : use two decimal places for float arg help messages This commit updates
-    the help messages for various command-line arguments in arg.cpp to display floating-point
-    default values with two decimal places instead of one. The motivation for this
-    changes is that currently only having o…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7827
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T07:54:59+00:00'
   title_zh: ggml-org/llama.cpp 版本发布：b7827
-  why_zh: 通用功能：浮点参数帮助信息显示两位小数（#19048）通用功能：浮点参数帮助信息显示两位小数 本次修改…
-  takeaway_zh: 通用功能：浮点参数帮助信息显示两位小数（#19048）通用功能：浮点参数帮助信息显示两位小数 本次提交更新了arg.cpp中多个命令行参数的帮助信息，将浮点默认值显示精度从一位小数改为两位。修改动机是当前的参数帮助…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Business & economy
   title: 'Fitness fraud: gym goers warned over fake deals on memberships and personal
@@ -1526,45 +1472,39 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ollama/ollama release: v0.15.1'
-  why: What's Changed GLM-4.7-Flash performance and correctness improvements, fixing
-    repetitive answers and tool calling quality Fixed performance…
-  takeaway: 'What''s Changed GLM-4.7-Flash performance and correctness improvements,
-    fixing repetitive answers and tool calling quality Fixed performance issues on
-    macOS and arm64 Linux Fixed issue where ollama launch would not detect claude
-    and would incorrectly update opencode configurations New Contributors @stillhart
-    made their first contribution in #13855 Full Chang…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ollama/ollama/releases/tag/v0.15.1
   source: GitHub Releases - ollama/ollama
   published_utc: '2026-01-25T04:53:31+00:00'
   title_zh: ollama/ollama 版本发布：v0.15.1
-  why_zh: GLM-4.7-Flash 性能与正确性改进，修复重复回答和工具调用质量 修复性能…
-  takeaway_zh: 'GLM-4.7-Flash 性能与正确性改进，修复重复回答和工具调用质量 修复 macOS 和 arm64 Linux 上的性能问题
-    修复 ollama 启动时无法检测 claude 并错误更新 opencode 配置的问题 新贡献者 @stillhart 在 #13855 中首次贡献 完整变更…'
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'BerriAI/litellm release: v1.81.3.rc.1'
-  why: 'Full Changelog : v1.81.3.rc...v1.81.3.rc.1'
-  takeaway: 'Full Changelog : v1.81.3.rc...v1.81.3.rc.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.rc.1
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-25T03:17:11+00:00'
   title_zh: BerriAI/litellm 发布：v1.81.3.rc.1
-  why_zh: 完整变更日志：v1.81.3.rc...v1.81.3.rc.1
-  takeaway_zh: 完整变更日志：v1.81.3.rc...v1.81.3.rc.1
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'BerriAI/litellm release: v1.81.3-nightly'
-  why: 'Full Changelog : v1.81.3.rc...v1.81.3-nightly'
-  takeaway: 'Full Changelog : v1.81.3.rc...v1.81.3-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3-nightly
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-25T03:14:33+00:00'
   title_zh: BerriAI/litellm 发布：v1.81.3-nightly
-  why_zh: 完整变更日志：v1.81.3.rc...v1.81.3-nightly
-  takeaway_zh: 完整变更日志：v1.81.3.rc...v1.81.3-nightly
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Business & economy
   title: Should smartphones be locked away at gigs and in schools?
@@ -1598,15 +1538,15 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7826'
-  why: 'convert : fix conversion for inheriting models that were bypassing mo…'
-  takeaway: 'convert : fix conversion for inheriting models that were bypassing mo…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7826
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-25T01:36:47+00:00'
   title_zh: ggml-org/llama.cpp 发布：b7826
-  why_zh: 转换：修复继承模型的转换问题，这些模型绕过了 mo…
-  takeaway_zh: 转换：修复继承模型的转换问题，这些模型绕过了 mo…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Business & economy
   title: Five ways weight-loss jabs are changing spending habits
@@ -1624,36 +1564,27 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'BerriAI/litellm release: v1.81.3.rc'
-  why: 'What''s Changed fix logfile and pidfile of supervisor for non root environment
-    by @dotmobo in #17267 Fix audio cost per second override by @…'
-  takeaway: 'What''s Changed fix logfile and pidfile of supervisor for non root environment
-    by @dotmobo in #17267 Fix audio cost per second override by @dushyantzz in #19158
-    fix: add openai/dall-e base pricing entries by @obod-mpw in #19133 fix(tools):
-    prevent OOM with nested $defs in tool schemas by @rsp2k in #19112 chore: resolve
-    ModuleNotFoundError for Microsoft Found…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.rc
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-25T00:55:05+00:00'
   title_zh: BerriAI/litellm 发布：v1.81.3.rc
-  why_zh: '修复非 root 环境下 supervisor 的 logfile 和 pidfile，由 @dotmobo 在 #17267 中提交 修复音频每秒成本覆盖，由
-    @…'
-  takeaway_zh: '修复非 root 环境下 supervisor 的 logfile 和 pidfile，由 @dotmobo 在 #17267 中提交
-    修复音频每秒成本覆盖，由 @dushyantzz 在 #19158 中提交 修复：添加 openai/dall-e 基础定价条目，由 @obod-mpw 在
-    #19133 中提交 修复（工具）：防止工具模式中嵌套 $defs 导致 OOM，由 @rsp2k 在 #19112 中提交 任务：解决 Microsoft
-    Found… 的 ModuleNotFoundError'
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ollama/ollama release: v0.15.1-rc1'
-  why: 'glm4moelite: quantize more tensors to q8_0 and avoid double BOS token…'
-  takeaway: 'glm4moelite: quantize more tensors to q8_0 and avoid double BOS token…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ollama/ollama/releases/tag/v0.15.1-rc1
   source: GitHub Releases - ollama/ollama
   published_utc: '2026-01-25T00:33:54+00:00'
   title_zh: ollama/ollama 发布：v0.15.1-rc1
-  why_zh: glm4moelite：将更多张量量化为 q8_0 并避免双 BOS 标记…
-  takeaway_zh: glm4moelite：将更多张量量化为 q8_0 并避免双 BOS 标记…
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
   title: Microsoft handed the government encryption keys for customer data
@@ -1688,61 +1619,39 @@ items:
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7825'
-  why: 'llama-fit-params: keep explicit --ctx-size 0 ( #19070 ) macOS/iOS: macOS Apple
-    Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ubu…'
-  takeaway: 'llama-fit-params: keep explicit --ctx-size 0 ( #19070 ) macOS/iOS: macOS
-    Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU)
-    Ubuntu x64 (Vulkan) Ubuntu s390x (CPU) Windows: Windows x64 (CPU) Windows arm64
-    (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1
-    DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Wi…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7825
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-24T22:05:32+00:00'
   title_zh: ggml-org/llama.cpp 发布：b7825
-  why_zh: 'llama-fit-params：保持显式 --ctx-size 0 ( #19070 ) macOS/iOS：macOS Apple Silicon
-    (arm64) macOS Intel (x64) iOS XCFramework Linux：Ubu…'
-  takeaway_zh: 'llama-fit-params：保持显式 --ctx-size 0 ( #19070 ) macOS/iOS：macOS Apple
-    Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux：Ubuntu x64 (CPU) Ubuntu
-    x64 (Vulkan) Ubuntu s390x (CPU) Windows：Windows x64 (CPU) Windows arm64 (CPU)
-    Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs
-    Windows x64 (Vulkan) Windows x64 (SYCL) Wi…'
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'ggml-org/llama.cpp release: b7824'
-  why: 'GGUF: check that tensor size is representable ( #19072 ) macOS/iOS: macOS
-    Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ub…'
-  takeaway: 'GGUF: check that tensor size is representable ( #19072 ) macOS/iOS: macOS
-    Apple Silicon (arm64) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU)
-    Ubuntu x64 (Vulkan) Ubuntu s390x (CPU) Windows: Windows x64 (CPU) Windows arm64
-    (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1
-    DLLs Windows x64 (Vulkan) Windows x64 (SYCL) W…'
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/ggml-org/llama.cpp/releases/tag/b7824
   source: GitHub Releases - ggerganov/llama.cpp
   published_utc: '2026-01-24T21:40:47+00:00'
   title_zh: ggml-org/llama.cpp 发布：b7824
-  why_zh: 'GGUF：检查张量大小是否可表示 ( #19072 ) macOS/iOS：macOS Apple Silicon (arm64) macOS
-    Intel (x64) iOS XCFramework Linux：Ub…'
-  takeaway_zh: 'GGUF：检查张量大小是否可表示 ( #19072 ) macOS/iOS：macOS Apple Silicon (arm64)
-    macOS Intel (x64) iOS XCFramework Linux：Ubuntu x64 (CPU) Ubuntu x64 (Vulkan) Ubuntu
-    s390x (CPU) Windows：Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12)
-    - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows
-    x64 (SYCL) W…'
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'vllm-project/vllm release: v0.14.1'
-  why: This is a patch release on top of v0.14.0 to address a few security and memory
-    leak fixes.
-  takeaway: This is a patch release on top of v0.14.0 to address a few security and
-    memory leak fixes.
+  why: Release update (see link for changelog).
+  takeaway: ''
   prompt: ''
   url: https://github.com/vllm-project/vllm/releases/tag/v0.14.1
   source: GitHub Releases - vllm-project/vllm
   published_utc: '2026-01-24T20:59:37+00:00'
   title_zh: vllm-project/vllm 发布：v0.14.1
-  why_zh: 这是基于v0.14.0的补丁版本，旨在修复若干安全问题和内存泄漏。
-  takeaway_zh: 这是基于v0.14.0的补丁版本，旨在修复若干安全问题和内存泄漏。
+  why_zh: 版本更新（详见链接中的更新日志）。
+  takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
   title: Tech CEOs boast and bicker about AI at Davos

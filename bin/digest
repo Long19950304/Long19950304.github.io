@@ -28,6 +28,7 @@ import socket
 import shutil
 import subprocess
 import urllib.request
+from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
@@ -421,12 +422,22 @@ def _draft_items(
                 summary = _strip_html(getattr(e, "summary", "") or getattr(e, "description", "") or "")
                 if not title or not link:
                     continue
+                # Category override heuristics (some sources have broad feeds).
+                cat = src.get("category", "").strip() or "Misc"
+                try:
+                    u = urlparse(link)
+                    dom = (u.netloc or "").lower()
+                    path = (u.path or "").lower()
+                    if "arstechnica.com" in dom and path.startswith("/security/"):
+                        cat = "Security"
+                except Exception:
+                    pass
                 # Provide draft-level snippets (user should rewrite for quality).
                 takeaway = _truncate(summary, 360) if summary else ""
                 why = _first_sentence(summary, 140) if summary else ""
                 items.append(
                     {
-                        "category": src.get("category", "").strip() or "Misc",
+                        "category": cat,
                         "title": title,
                         "why": why,
                         "takeaway": takeaway,
@@ -455,7 +466,31 @@ def _draft_items(
         seen_title.add(tnorm)
         deduped.append(it)
 
-    return deduped[: max_items or 200]
+    # High-volume sources (e.g., Hacker News, FT) can otherwise dominate the most-recent slice,
+    # leading to a Top 10 that feels single-source. Apply simple caps here to keep candidates diverse.
+    total = int(max_items or 200)
+    cap_per_source = int(os.environ.get("DIGEST_DRAFT_MAX_PER_SOURCE", "20") or "20")
+    cap_per_domain = int(os.environ.get("DIGEST_DRAFT_MAX_PER_DOMAIN", "20") or "20")
+
+    by_src: dict[str, int] = {}
+    by_dom: dict[str, int] = {}
+    out: list[dict[str, Any]] = []
+    for it in deduped:
+        if len(out) >= total:
+            break
+        src = (it.get("source") or "").strip()
+        dom = (urlparse((it.get("url") or "").strip()).netloc or "").lower()
+        if src and by_src.get(src, 0) >= cap_per_source:
+            continue
+        if dom and by_dom.get(dom, 0) >= cap_per_domain:
+            continue
+        out.append(it)
+        if src:
+            by_src[src] = by_src.get(src, 0) + 1
+        if dom:
+            by_dom[dom] = by_dom.get(dom, 0) + 1
+
+    return out
 
 
 def _save_yaml(path: Path, payload: Any) -> None:
@@ -1587,7 +1622,104 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     else:
         items_sorted = ranked[:max_items]
 
-    top = items_sorted[:10]
+    def _select_top_diverse(
+        ranked_items: list[dict[str, Any]],
+        *,
+        n: int,
+        max_per_source: int,
+        max_per_domain: int,
+        max_per_category: int,
+    ) -> list[dict[str, Any]]:
+        """
+        Pick a diversified Top N from an already-ranked list.
+
+        Motivation: A single high-volume/high-weight outlet (e.g., FT) can dominate the Top 10.
+        This keeps the Top 10 readable by capping:
+          - per `source` label
+          - per URL domain (e.g., ft.com)
+          - per category
+        """
+
+        def _domain(u: str) -> str:
+            try:
+                return (urlparse(u).netloc or "").lower()
+            except Exception:
+                return ""
+
+        picked: list[dict[str, Any]] = []
+        used = set()
+        by_src: dict[str, int] = {}
+        by_dom: dict[str, int] = {}
+        by_cat: dict[str, int] = {}
+
+        for it in ranked_items:
+            if len(picked) >= n:
+                break
+            key = it.get("url", "") or it.get("title", "")
+            if not key or key in used:
+                continue
+            src = (it.get("source") or "").strip()
+            dom = _domain((it.get("url") or "").strip())
+            cat = (it.get("category") or "Misc").strip() or "Misc"
+
+            if src and by_src.get(src, 0) >= max_per_source:
+                continue
+            if dom and by_dom.get(dom, 0) >= max_per_domain:
+                continue
+            if cat and by_cat.get(cat, 0) >= max_per_category:
+                continue
+
+            picked.append(it)
+            used.add(key)
+            if src:
+                by_src[src] = by_src.get(src, 0) + 1
+            if dom:
+                by_dom[dom] = by_dom.get(dom, 0) + 1
+            if cat:
+                by_cat[cat] = by_cat.get(cat, 0) + 1
+
+        # If caps were too strict, fill remaining slots in a way that preserves *source diversity*
+        # (domain/source caps) first, even if that means relaxing the category cap.
+        if len(picked) < n:
+            for it in ranked_items:
+                if len(picked) >= n:
+                    break
+                key = it.get("url", "") or it.get("title", "")
+                if not key or key in used:
+                    continue
+                src = (it.get("source") or "").strip()
+                dom = _domain((it.get("url") or "").strip())
+                if src and by_src.get(src, 0) >= max_per_source:
+                    continue
+                if dom and by_dom.get(dom, 0) >= max_per_domain:
+                    continue
+                picked.append(it)
+                used.add(key)
+                if src:
+                    by_src[src] = by_src.get(src, 0) + 1
+                if dom:
+                    by_dom[dom] = by_dom.get(dom, 0) + 1
+
+        # Final fallback: if we're still short, fill ignoring caps (better a complete list than empty).
+        if len(picked) < n:
+            for it in ranked_items:
+                if len(picked) >= n:
+                    break
+                key = it.get("url", "") or it.get("title", "")
+                if not key or key in used:
+                    continue
+                picked.append(it)
+                used.add(key)
+
+        return picked
+
+    top = _select_top_diverse(
+        items_sorted,
+        n=10,
+        max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
+        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
+        max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
+    )
 
     note = (digest.get("note_zh") if lang == "zh" else digest.get("note")) or ""
     note = note.strip()
@@ -1787,7 +1919,7 @@ def main(argv: list[str]) -> int:
     p_draft = sub.add_parser("draft", help="Draft a digest YAML from RSS/Atom sources")
     p_draft.add_argument("--date", required=True, help="YYYY-MM-DD (label for this issue)")
     p_draft.add_argument("--hours", type=int, default=36, help="Look back window (UTC), default: 36")
-    p_draft.add_argument("--max-items", type=int, default=40, help="Max candidate items to write, default: 40")
+    p_draft.add_argument("--max-items", type=int, default=80, help="Max candidate items to write, default: 80")
     p_draft.add_argument("--force", action="store_true", help="Overwrite existing YYYY-MM-DD.yml")
     p_draft.set_defaults(func=cmd_draft)
 

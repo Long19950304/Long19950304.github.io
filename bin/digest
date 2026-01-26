@@ -64,6 +64,28 @@ def _die(msg: str, code: int = 2) -> None:
     print(f"error: {msg}", file=sys.stderr)
     raise SystemExit(code)
 
+def _site_asset_version() -> str:
+    """
+    Best-effort cache buster for GitHub Pages assets.
+
+    GitHub Pages serves long-lived assets with caching; when we regenerate a card for the same
+    filename, browsers may keep showing the old image for a while. We append `?v=<sha>` so each
+    deployment can bust caches deterministically.
+    """
+    sha = (os.environ.get("GITHUB_SHA") or "").strip()
+    if sha:
+        return sha[:7]
+    try:
+        out = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=str(REPO_ROOT),
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        return out
+    except Exception:
+        return ""
+
 
 def _ensure_dirs() -> None:
     DATA_DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -1697,7 +1719,10 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
 
     # Social card image for this issue (rendered during build). Embed it at the top so the page is
     # visually recognizable and shareable.
+    ver = _site_asset_version()
     card_rel = f"/assets/img/digests/{date.isoformat()}-{'zh' if lang == 'zh' else 'en'}.png"
+    if ver:
+        card_rel += f"?v={ver}"
 
     # Sort by importance (global list, not grouped).
     now = _score_now_for_date(date)

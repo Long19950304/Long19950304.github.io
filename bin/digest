@@ -405,7 +405,7 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
         news,
         n=10,
         max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
-        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
+        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "1") or "1"),
         max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
     )
     ai_top_pool = _ai_item_practicality_filter(ai)

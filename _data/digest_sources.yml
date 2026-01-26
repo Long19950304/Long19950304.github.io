@@ -150,20 +150,36 @@ sources:
     category: "AI tools & model releases"
     url: https://deepmind.google/blog/rss.xml
 
-  - id: aws-ml-blog
-    name: AWS Machine Learning Blog
+  # AWS ML blog is great but very long-form and can dominate the AI tools section.
+  # Prefer AWS "What's New" (filtered to AI/GenAI keywords) for concise product updates.
+  - id: aws-whats-new
+    name: AWS What's New (Recent Announcements)
     category: "AI tools & model releases"
-    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    url: https://aws.amazon.com/about-aws/whats-new/recent/feed/
+    include_keywords:
+      - bedrock
+      - sagemaker
+      - amazon q
+      - generative ai
+      - genai
+      - llm
+      - foundation model
+      - model
 
   - id: nvidia-dev-blog
     name: NVIDIA Developer Blog
     category: "AI tools & model releases"
     url: https://developer.nvidia.com/blog/feed/
 
-  - id: stability-news
-    name: Stability AI - News
+  - id: simon-willison
+    name: Simon Willison (LLM/tools)
     category: "AI tools & model releases"
-    url: https://stability.ai/news?format=rss
+    url: https://simonwillison.net/atom/everything/
+
+  - id: latent-space
+    name: Latent Space (LLM/tools)
+    category: "AI tools & model releases"
+    url: https://www.latent.space/feed
 
   # Aggregators / AI news with frequent tool/model announcements
   - id: decoder-ai
@@ -181,89 +197,67 @@ sources:
     category: "AI tools & model releases"
     url: https://www.wired.com/feed/tag/ai/latest/rss
 
-  # GitHub releases (tooling version bumps are often the fastest signal)
-  # MCP / agent tooling (practical)
+  # GitHub releases via API (Atom endpoints often time out from this environment).
+  # These are the most practical signals for new MCP servers, SDKs, and tooling updates.
   - id: gh-mcp-servers
     name: GitHub Releases - modelcontextprotocol/servers
     category: "AI tools & model releases"
-    url: https://github.com/modelcontextprotocol/servers/releases.atom
+    github_repo: modelcontextprotocol/servers
 
   - id: gh-mcp-spec
     name: GitHub Releases - modelcontextprotocol/specification
     category: "AI tools & model releases"
-    url: https://github.com/modelcontextprotocol/specification/releases.atom
+    github_repo: modelcontextprotocol/specification
 
-  # Practical LLM infra / serving
   - id: gh-ollama
     name: GitHub Releases - ollama/ollama
     category: "AI tools & model releases"
-    url: https://github.com/ollama/ollama/releases.atom
-
-  - id: gh-llama-cpp
-    name: GitHub Releases - ggerganov/llama.cpp
-    category: "AI tools & model releases"
-    url: https://github.com/ggerganov/llama.cpp/releases.atom
+    github_repo: ollama/ollama
 
   - id: gh-vllm
     name: GitHub Releases - vllm-project/vllm
     category: "AI tools & model releases"
-    url: https://github.com/vllm-project/vllm/releases.atom
+    github_repo: vllm-project/vllm
 
   - id: gh-open-webui
     name: GitHub Releases - open-webui/open-webui
     category: "AI tools & model releases"
-    url: https://github.com/open-webui/open-webui/releases.atom
+    github_repo: open-webui/open-webui
 
-  - id: gh-transformers
-    name: GitHub Releases - huggingface/transformers
-    category: "AI tools & model releases"
-    url: https://github.com/huggingface/transformers/releases.atom
-
-  - id: gh-tgi
-    name: GitHub Releases - huggingface/text-generation-inference
-    category: "AI tools & model releases"
-    url: https://github.com/huggingface/text-generation-inference/releases.atom
-
-  - id: gh-diffusers
-    name: GitHub Releases - huggingface/diffusers
-    category: "AI tools & model releases"
-    url: https://github.com/huggingface/diffusers/releases.atom
-
-  # Image / video tooling updates (practical for visuals)
   - id: gh-comfyui
     name: GitHub Releases - comfyanonymous/ComfyUI
     category: "AI tools & model releases"
-    url: https://github.com/comfyanonymous/ComfyUI/releases.atom
+    github_repo: comfyanonymous/ComfyUI
 
   - id: gh-automatic1111
     name: GitHub Releases - AUTOMATIC1111/stable-diffusion-webui
     category: "AI tools & model releases"
-    url: https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases.atom
+    github_repo: AUTOMATIC1111/stable-diffusion-webui
 
   - id: gh-langchain
     name: GitHub Releases - langchain-ai/langchain
     category: "AI tools & model releases"
-    url: https://github.com/langchain-ai/langchain/releases.atom
+    github_repo: langchain-ai/langchain
 
   - id: gh-llamaindex
     name: GitHub Releases - run-llama/llama_index
     category: "AI tools & model releases"
-    url: https://github.com/run-llama/llama_index/releases.atom
+    github_repo: run-llama/llama_index
 
   - id: gh-litellm
     name: GitHub Releases - BerriAI/litellm
     category: "AI tools & model releases"
-    url: https://github.com/BerriAI/litellm/releases.atom
+    github_repo: BerriAI/litellm
 
   - id: gh-openai-python
     name: GitHub Releases - openai/openai-python
     category: "AI tools & model releases"
-    url: https://github.com/openai/openai-python/releases.atom
+    github_repo: openai/openai-python
 
   - id: gh-openai-node
     name: GitHub Releases - openai/openai-node
     category: "AI tools & model releases"
-    url: https://github.com/openai/openai-node/releases.atom
+    github_repo: openai/openai-node
 
   - id: google-ai-blog
     name: Google AI Blog

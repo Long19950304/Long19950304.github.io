@@ -28,11 +28,13 @@ import socket
 import shutil
 import subprocess
 import urllib.request
+import gzip
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
+from types import SimpleNamespace
 
 import feedparser
 import yaml
@@ -46,7 +48,7 @@ DIGESTS_DIR = REPO_ROOT / "_digests"
 ZH_DIGESTS_DIR = REPO_ROOT / "_digests_zh"
 CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
 DEFAULT_SITE_URL = "https://long19950304.github.io"
-FETCH_TIMEOUT_SECONDS = 8
+FETCH_TIMEOUT_SECONDS = 15
 FETCH_WORKERS = 8
 DEFAULT_MAX_ITEMS_ON_SITE = 100
 # AI tool/model updates are a separate block; keep a separate cap so they don't get squeezed out.
@@ -396,6 +398,26 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
     news = [it for it in ranked_all if (it.get("category") or "").strip() != ai_cat][:max_news]
     ai = [it for it in ranked_all if (it.get("category") or "").strip() == ai_cat][:max_ai]
 
+    # Only translate what we actually show:
+    # - Titles for the full lists (news + AI) so zh pages are fully Chinese.
+    # - A short blurb (why) only for Top items (<= 20 total).
+    top_news = _select_top_diverse(
+        news,
+        n=10,
+        max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
+        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
+        max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
+    )
+    ai_top_pool = _ai_item_practicality_filter(ai)
+    ai_unique_sources = {(it.get("source") or "").strip() for it in ai_top_pool if (it.get("source") or "").strip()}
+    top_ai = _select_top_diverse(
+        ai_top_pool,
+        n=min(10, len(ai_unique_sources)),
+        max_per_source=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_SOURCE", "1") or "1"),
+        max_per_domain=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_DOMAIN", "20") or "20"),
+        max_per_category=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_CATEGORY", "10") or "10"),
+    )
+
     items_sorted: list[dict[str, Any]] = []
     seen_ids: set[int] = set()
     for it in news + ai:
@@ -405,12 +427,21 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
         seen_ids.add(iid)
         items_sorted.append(it)
 
+    # Items for which we need a zh blurb (top picks only).
+    blurb_sorted: list[dict[str, Any]] = []
+    seen2: set[int] = set()
+    for it in top_news + top_ai:
+        iid = id(it)
+        if iid in seen2:
+            continue
+        seen2.add(iid)
+        blurb_sorted.append(it)
+
     # If a previous run wrote back an English "translation", clear it so we can retry properly.
     for it in items_sorted:
         for k_zh, k_en in [
             ("title_zh", "title"),
             ("why_zh", "why"),
-            ("takeaway_zh", "takeaway"),
         ]:
             v = (it.get(k_zh) or "").strip()
             src = (it.get(k_en) or "").strip()
@@ -419,18 +450,23 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
 
     # Collect translation jobs (dedupe by source text to reduce API calls).
     jobs_by_text: dict[str, list[tuple[dict[str, Any], str]]] = {}
+    # Titles for all visible items (news + AI caps)
     for it in items_sorted:
-        for k_en, k_zh in [
-            ("title", "title_zh"),
-            ("why", "why_zh"),
-            ("takeaway", "takeaway_zh"),
-        ]:
-            if (it.get(k_zh) or "").strip():
-                continue
-            src = (it.get(k_en) or "").strip()
-            if not src:
-                continue
-            jobs_by_text.setdefault(src, []).append((it, k_zh))
+        if (it.get("title_zh") or "").strip():
+            continue
+        src = (it.get("title") or "").strip()
+        if not src:
+            continue
+        jobs_by_text.setdefault(src, []).append((it, "title_zh"))
+
+    # Short blurbs only for top items (<= 20).
+    for it in blurb_sorted:
+        if (it.get("why_zh") or "").strip():
+            continue
+        src = (it.get("why") or "").strip()
+        if not src:
+            continue
+        jobs_by_text.setdefault(src, []).append((it, "why_zh"))
 
     if not jobs_by_text:
         return False
@@ -469,6 +505,108 @@ def _strip_html(s: str) -> str:
     return s
 
 
+def _http_get_bytes(url: str, *, timeout: int = FETCH_TIMEOUT_SECONDS) -> bytes:
+    """
+    Fetch bytes with a stable User-Agent and gzip support.
+
+    Some feeds return empty or hang without a UA. We fetch bytes ourselves (instead of letting
+    feedparser fetch) so we can set headers and enforce timeouts consistently.
+    """
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "personal-site-digest/1.0 (+https://long19950304.github.io)",
+            "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.1",
+            "Accept-Encoding": "gzip",
+        },
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        raw = resp.read()
+        enc = (resp.headers.get("Content-Encoding") or "").lower().strip()
+        if enc == "gzip":
+            try:
+                raw = gzip.decompress(raw)
+            except Exception:
+                pass
+        return raw
+
+
+def _fetch_feed(url: str) -> Any | None:
+    """
+    Fetch + parse RSS/Atom from bytes.
+    Returns a feedparser feed-like object (with `.entries`) or None on failure.
+    """
+    try:
+        raw = _http_get_bytes(url, timeout=FETCH_TIMEOUT_SECONDS)
+        feed = feedparser.parse(raw)
+        # bozo means parsing issues; if there are entries we still keep it.
+        if getattr(feed, "bozo", False) and not (getattr(feed, "entries", None) or []):
+            return None
+        return feed
+    except Exception:
+        return None
+
+
+def _fetch_github_releases(repo: str, *, per_page: int = 10) -> Any | None:
+    """
+    Fetch GitHub releases via API and expose them as feed-like entries.
+
+    This avoids github.com Atom timeouts (common from this environment) while keeping the rest
+    of the pipeline unchanged.
+    """
+    repo = (repo or "").strip()
+    if not repo or "/" not in repo:
+        return None
+    url = f"https://api.github.com/repos/{repo}/releases?per_page={per_page}"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "personal-site-digest/1.0 (+https://long19950304.github.io)",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+        method="GET",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT_SECONDS) as resp:
+            data = json.loads(resp.read().decode("utf-8", errors="replace"))
+    except Exception:
+        return None
+
+    if not isinstance(data, list):
+        return None
+
+    entries: list[Any] = []
+    for rel in data:
+        if not isinstance(rel, dict):
+            continue
+        if rel.get("draft") or rel.get("prerelease"):
+            continue
+        link = (rel.get("html_url") or "").strip()
+        if not link:
+            continue
+        tag = (rel.get("tag_name") or "").strip()
+        name = (rel.get("name") or "").strip()
+        title = name or tag
+        if not title:
+            continue
+        # Prefix repo for readability and better zh translation.
+        title = f"{repo}: {title}"
+        summary = (rel.get("body") or "").strip()
+        when_iso = (rel.get("published_at") or rel.get("created_at") or rel.get("updated_at") or "").strip()
+        published_parsed = None
+        if when_iso:
+            try:
+                when = dt.datetime.fromisoformat(when_iso.replace("Z", "+00:00")).astimezone(dt.timezone.utc)
+                published_parsed = when.utctimetuple()
+            except Exception:
+                published_parsed = None
+        entries.append(SimpleNamespace(title=title, link=link, summary=summary, published_parsed=published_parsed))
+
+    return SimpleNamespace(entries=entries)
+
+
 def _first_sentence(s: str, max_len: int = 160) -> str:
     s = re.sub(r"\s+", " ", (s or "").strip())
     if not s:
@@ -495,14 +633,79 @@ def _draft_items(
 ) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     now_utc = dt.datetime.now(dt.timezone.utc)
-    ai_hours = int(os.environ.get("DIGEST_AI_DRAFT_HOURS", "168") or "168")  # 7 days by default
+    # Tool/model releases (MCP servers, SDKs, etc.) are often weekly/biweekly, so keep a longer window.
+    ai_hours = int(os.environ.get("DIGEST_AI_DRAFT_HOURS", "336") or "336")  # 14 days by default
+
+    # Keep the AI tools section practical: we want tool/model release updates.
+    # For AI-news feeds that also publish commentary, reclassify non-release items into AI frontier.
+    ai_tools_news_ids = {"decoder-ai", "wired-ai-tag", "venturebeat-ai"}
+    ai_tools_misc_ids = {"simon-willison"}
+    # Stricter heuristic: require at least one "action" and one "object" keyword
+    # to keep an item in the AI tools/model releases section.
+    ai_action_kw = [
+        "release",
+        "launch",
+        "announc",
+        "introduc",
+        "roll out",
+        "rollout",
+        "unveil",
+        "ship",
+        "update",
+        "new",
+        "open-source",
+        "open source",
+        "beta",
+        "preview",
+        "available",
+    ]
+    ai_object_kw = [
+        "model",
+        "api",
+        "sdk",
+        "agent",
+        "tool",
+        "workflow",
+        "plugin",
+        "mcp",
+        "server",
+        "checkpoint",
+        "diffusion",
+        "image",
+        "video",
+        "inference",
+        "fine-tune",
+        "finetune",
+    ]
+    ai_relevance_kw = [
+        "llm",
+        "gpt",
+        "openai",
+        "anthropic",
+        "claude",
+        "gemini",
+        "mcp",
+        "prompt",
+        "embedding",
+        "transformer",
+        "diffusion",
+        "agent",
+        "model",
+        "inference",
+        "tool",
+        "sdk",
+        "api",
+    ]
 
     def fetch(src: dict[str, Any]) -> tuple[dict[str, Any], Any | None]:
         url = (src.get("url") or "").strip()
-        if not url:
-            return (src, None)
         try:
-            return (src, feedparser.parse(url))
+            gh_repo = (src.get("github_repo") or "").strip()
+            if gh_repo:
+                return (src, _fetch_github_releases(gh_repo))
+            if not url:
+                return (src, None)
+            return (src, _fetch_feed(url))
         except Exception as e:
             name = src.get("name", "").strip() or src.get("id", "").strip() or "unknown"
             print(f"warn: failed to fetch '{name}' ({url}): {e}", file=sys.stderr)
@@ -532,6 +735,12 @@ def _draft_items(
                 summary = _strip_html(getattr(e, "summary", "") or getattr(e, "description", "") or "")
                 if not title or not link:
                     continue
+                # Optional per-source keyword filter (useful for broad announcement feeds).
+                inc = src.get("include_keywords")
+                if isinstance(inc, list) and inc:
+                    blob = f"{title} {summary}".lower()
+                    if not any(str(k).lower() in blob for k in inc if str(k).strip()):
+                        continue
 
                 # GitHub releases feeds often use tag-only titles (e.g., "v0.7.1" or "b7836"),
                 # which are unreadable in the Chinese digest and fail our CJK presence check.
@@ -544,11 +753,24 @@ def _draft_items(
                     if "github.com" in dom0 and len(parts0) >= 3 and parts0[2].lower().startswith("releases"):
                         repo0 = f"{parts0[0]}/{parts0[1]}"
                         if repo0 and repo0.lower() not in title.lower():
-                            title = f"{repo0} release: {title}"
+                            title = f"{repo0}: {title}"
                 except Exception:
                     pass
                 # Category override heuristics (some sources have broad feeds).
                 cat = src.get("category", "").strip() or "Misc"
+                sid = (src.get("id") or "").strip()
+                if cat == "AI tools & model releases" and sid in ai_tools_news_ids:
+                    blob = f"{title} {summary}".lower()
+                    keep = any(k in blob for k in ai_action_kw) and any(k in blob for k in ai_object_kw)
+                    if not keep:
+                        cat = "AI frontier"
+                elif cat == "AI tools & model releases" and sid in ai_tools_misc_ids:
+                    # Filter out non-AI posts from general blogs that sometimes cover AI tooling.
+                    # Use title-only: some blogs include sitewide navigation in summaries, causing false hits.
+                    blob = f"{title}".lower()
+                    if not any(k in blob for k in ai_relevance_kw):
+                        # Keep the section high-signal: don't leak unrelated posts into the main news list.
+                        continue
                 try:
                     u = urlparse(link)
                     dom = (u.netloc or "").lower()
@@ -610,6 +832,7 @@ def _draft_items(
     total = int(max_items or 200)
     cap_per_source = int(os.environ.get("DIGEST_DRAFT_MAX_PER_SOURCE", "20") or "20")
     cap_per_domain = int(os.environ.get("DIGEST_DRAFT_MAX_PER_DOMAIN", "20") or "20")
+    cap_github_domain = int(os.environ.get("DIGEST_DRAFT_MAX_GITHUB_PER_DOMAIN", "80") or "80")
 
     by_src: dict[str, int] = {}
     by_dom: dict[str, int] = {}
@@ -621,7 +844,8 @@ def _draft_items(
         dom = (urlparse((it.get("url") or "").strip()).netloc or "").lower()
         if src and by_src.get(src, 0) >= cap_per_source:
             continue
-        if dom and by_dom.get(dom, 0) >= cap_per_domain:
+        cap_dom = cap_github_domain if dom == "github.com" else cap_per_domain
+        if dom and by_dom.get(dom, 0) >= cap_dom:
             continue
         out.append(it)
         if src:
@@ -796,10 +1020,25 @@ def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> 
         "ransom": 10,
         "vulnerability": 10,
         "zero-day": 10,
+
+        # Practical AI tooling / agents / visuals
+        "mcp": 12,
+        "model context protocol": 12,
+        "modelcontextprotocol": 12,
+        "comfyui": 10,
+        "stable diffusion": 9,
+        "sdxl": 9,
+        "image model": 8,
+        "video model": 8,
     }
     for k, w in kw.items():
         if k in title:
             score += w
+
+    # AI tools: de-noise commit-tag style releases (too frequent to be useful in a daily brief).
+    if "ai tools" in cat or "model releases" in cat:
+        if "llama.cpp" in title and re.search(r"\brelease:\s*b\d{4,}\b", title):
+            score -= 18
 
     # Recency: small bump for newer items.
     when = _parse_published_utc(it)
@@ -814,6 +1053,67 @@ def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> 
             score += 2
 
     return score
+
+
+def _ai_item_practicality_filter(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """
+    Filter low-signal AI tool items for the *Top* section.
+
+    Goal: keep "new tool / model / MCP / visual release" style items, avoid noisy prereleases
+    and endless commit-tag updates dominating the top list.
+    """
+
+    def _is_noisy(it: dict[str, Any]) -> bool:
+        t = (it.get("title") or "").lower()
+        u = (it.get("url") or "").lower()
+        # GitHub releases are, by definition, "tool updates"—keep them unless they are noisy pre-releases.
+        if "github.com" in u and "/releases/" in u:
+            # Pre-releases/nightlies are too frequent for a daily brief.
+            if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
+                return True
+            # llama.cpp commit-tag releases are extremely frequent; keep them out of Top unless needed.
+            if "llama.cpp" in t and re.search(r"\brelease:\s*b\d{4,}\b", t):
+                return True
+            return False
+        # Keep Top list practical: require at least one tooling/release cue.
+        practical_kw = [
+            "release",
+            "launch",
+            "introduc",
+            "rollout",
+            "roll out",
+            "unveil",
+            "ship",
+            "update",
+            "adds",
+            "add support",
+            "support",
+            "sdk",
+            "api",
+            "mcp",
+            "server",
+            "agent",
+            "tool",
+            "workflow",
+            "plugin",
+            "model",
+            "inference",
+            "open-source",
+            "open source",
+        ]
+        if not any(k in t for k in practical_kw):
+            return True
+        # Pre-releases/nightlies are too frequent for a daily brief.
+        if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
+            return True
+        # llama.cpp commit-tag releases are extremely frequent; keep them out of Top unless needed.
+        if "llama.cpp" in t and re.search(r"\brelease:\s*b\d{4,}\b", t):
+            return True
+        return False
+
+    filtered = [it for it in items if not _is_noisy(it)]
+    # If we filtered too aggressively, fall back to original list.
+    return filtered if len(filtered) >= 3 else items
 
 
 def _select_top_diverse(
@@ -1789,7 +2089,7 @@ def render_card(
 
     # Match the website "Top 10" logic: diversify sources/domains so the card isn't all from one outlet.
     mps = max_per_source if max_per_source is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3")
-    mpd = max_per_domain if max_per_domain is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2")
+    mpd = max_per_domain if max_per_domain is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "1") or "1")
     mpc = max_per_category if max_per_category is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5")
     ranked = _select_top_diverse(
         ranked_all,
@@ -1901,15 +2201,16 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         items_news,
         n=10,
         max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
-        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
+        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "1") or "1"),
         max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
     )
 
+    ai_top_pool = _ai_item_practicality_filter(items_ai)
     top_ai = _select_top_diverse(
-        items_ai,
+        ai_top_pool,
         # Prefer diversity over padding: if we only have a few distinct sources today,
         # show fewer items rather than repeating the same repo/tool many times.
-        n=min(10, len({(it.get("source") or "").strip() for it in items_ai if (it.get("source") or "").strip()})),
+        n=min(10, len({(it.get("source") or "").strip() for it in ai_top_pool if (it.get("source") or "").strip()})),
         # For AI tools, most high-signal items come from GitHub Releases (same domain),
         # so keep a looser domain cap but tighter per-source cap to avoid 1 repo dominating.
         max_per_source=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_SOURCE", "1") or "1"),
@@ -2051,7 +2352,7 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
         # For AI cards, prefer a short diversified set (avoid 10 near-identical release tags).
         now = _score_now_for_date(date)
         ai_ranked = sorted(
-            items_ai,
+            _ai_item_practicality_filter(items_ai),
             key=lambda it: (
                 _importance_score(it, now=now),
                 _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),

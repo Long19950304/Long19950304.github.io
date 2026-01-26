@@ -49,6 +49,8 @@ DEFAULT_SITE_URL = "https://long19950304.github.io"
 FETCH_TIMEOUT_SECONDS = 8
 FETCH_WORKERS = 8
 DEFAULT_MAX_ITEMS_ON_SITE = 100
+# AI tool/model updates are a separate block; keep a separate cap so they don't get squeezed out.
+DEFAULT_MAX_AI_ITEMS_ON_SITE = 80
 # Default to a model that is broadly available from more regions.
 DEFAULT_TRANSLATE_MODEL = "deepseek/deepseek-chat"
 DEFAULT_TRANSLATE_FALLBACK_MODELS = [
@@ -157,8 +159,71 @@ def _pick_entry_time(entry: Any) -> dt.datetime | None:
 
 
 def _openrouter_key() -> str | None:
-    # Keep secrets out of logs; just read env.
-    return (os.environ.get("OPENROUTER_API_KEY") or "").strip() or None
+    """
+    Resolve OpenRouter API key without ever printing it.
+
+    Resolution order:
+      1) Env: OPENROUTER_API_KEY
+      2) Optional env override: XIANXIAN_ENV_PATH points to a .env file
+      3) Auto-discovery: /Volumes/long1/desk1/先贤对谈/ep*/.env and archive .env files
+         (prefers the most recently modified .env)
+    """
+
+    key = (os.environ.get("OPENROUTER_API_KEY") or "").strip()
+    if key and not key.lower().startswith("your_") and not key.startswith("<"):
+        return key
+
+    def _parse_dotenv(path: Path) -> dict[str, str]:
+        env: dict[str, str] = {}
+        try:
+            txt = path.read_text(encoding="utf-8", errors="ignore")
+        except Exception:
+            return env
+        for raw in txt.splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            k = k.strip()
+            v = v.strip().strip('"').strip("'")
+            if k:
+                env[k] = v
+        return env
+
+    candidates: list[Path] = []
+    override = (os.environ.get("XIANXIAN_ENV_PATH") or "").strip()
+    if override:
+        candidates.append(Path(override))
+
+    base = Path("/Volumes/long1/desk1/先贤对谈")
+    if base.exists():
+        found: list[Path] = []
+        found.extend(base.glob("ep*/.env"))
+        archive = base / "_archive_历史文档"
+        if archive.exists():
+            found.extend(archive.glob("**/.env"))
+
+        uniq: list[Path] = []
+        seen: set[str] = set()
+        for p in found:
+            ps = str(p)
+            if ps in seen:
+                continue
+            seen.add(ps)
+            uniq.append(p)
+        uniq.sort(key=lambda p: p.stat().st_mtime if p.exists() else 0.0, reverse=True)
+        candidates.extend(uniq)
+
+    for p in candidates:
+        if not p.exists():
+            continue
+        env = _parse_dotenv(p)
+        key2 = (env.get("OPENROUTER_API_KEY") or "").strip()
+        if key2 and not key2.lower().startswith("your_") and not key2.startswith("<"):
+            os.environ.setdefault("OPENROUTER_API_KEY", key2)
+            return key2
+
+    return None
 
 
 _CJK_RE = re.compile(r"[\u4e00-\u9fff]")
@@ -315,8 +380,8 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
     if not isinstance(items, list) or not items:
         return False
 
-    # Match the site output: rank + cap first.
-    items_sorted = sorted(
+    # Match the site output: rank first, then cap per section (news vs AI tools).
+    ranked_all = sorted(
         items,
         key=lambda it: (
             _importance_score(it, now=now),
@@ -324,8 +389,21 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
         ),
         reverse=True,
     )
-    max_items = int(digest.get("max_items", 0) or DEFAULT_MAX_ITEMS_ON_SITE)
-    items_sorted = items_sorted[:max_items]
+    ai_cat = "AI tools & model releases"
+    max_news = int(digest.get("max_items", 0) or DEFAULT_MAX_ITEMS_ON_SITE)
+    max_ai = int(digest.get("max_items_ai", 0) or DEFAULT_MAX_AI_ITEMS_ON_SITE)
+
+    news = [it for it in ranked_all if (it.get("category") or "").strip() != ai_cat][:max_news]
+    ai = [it for it in ranked_all if (it.get("category") or "").strip() == ai_cat][:max_ai]
+
+    items_sorted: list[dict[str, Any]] = []
+    seen_ids: set[int] = set()
+    for it in news + ai:
+        iid = id(it)
+        if iid in seen_ids:
+            continue
+        seen_ids.add(iid)
+        items_sorted.append(it)
 
     # If a previous run wrote back an English "translation", clear it so we can retry properly.
     for it in items_sorted:
@@ -416,6 +494,8 @@ def _draft_items(
     max_items: int,
 ) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    ai_hours = int(os.environ.get("DIGEST_AI_DRAFT_HOURS", "168") or "168")  # 7 days by default
 
     def fetch(src: dict[str, Any]) -> tuple[dict[str, Any], Any | None]:
         url = (src.get("url") or "").strip()
@@ -437,13 +517,36 @@ def _draft_items(
                 continue
             for e in getattr(feed, "entries", []) or []:
                 when = _pick_entry_time(e)
-                if when and when < since_utc:
+                # Separate lookback window for AI tool/model releases: releases are bursty and may
+                # not happen daily, so we keep a longer window there to increase variety.
+                cat_for_cutoff = (src.get("category") or "").strip()
+                cutoff = (
+                    now_utc - dt.timedelta(hours=ai_hours)
+                    if cat_for_cutoff == "AI tools & model releases"
+                    else since_utc
+                )
+                if when and when < cutoff:
                     continue
                 title = _clean_title(getattr(e, "title", "") or "")
                 link = (getattr(e, "link", "") or "").strip()
                 summary = _strip_html(getattr(e, "summary", "") or getattr(e, "description", "") or "")
                 if not title or not link:
                     continue
+
+                # GitHub releases feeds often use tag-only titles (e.g., "v0.7.1" or "b7836"),
+                # which are unreadable in the Chinese digest and fail our CJK presence check.
+                # Prefix with repo name so translation produces a Chinese cue like "发布/更新".
+                try:
+                    u0 = urlparse(link)
+                    dom0 = (u0.netloc or "").lower()
+                    p0 = (u0.path or "").strip("/")
+                    parts0 = [p for p in p0.split("/") if p]
+                    if "github.com" in dom0 and len(parts0) >= 3 and parts0[2].lower().startswith("releases"):
+                        repo0 = f"{parts0[0]}/{parts0[1]}"
+                        if repo0 and repo0.lower() not in title.lower():
+                            title = f"{repo0} release: {title}"
+                except Exception:
+                    pass
                 # Category override heuristics (some sources have broad feeds).
                 cat = src.get("category", "").strip() or "Misc"
                 try:
@@ -1032,8 +1135,11 @@ def _digest_issue_urls(date: dt.date, site_url: str) -> dict[str, str]:
     return {
         "en": f"{base}/digest/{date.isoformat()}/",
         "zh": f"{base}/zh/digest/{date.isoformat()}/",
-        "en_card": f"/assets/img/digests/{date.isoformat()}-en.png",
-        "zh_card": f"/assets/img/digests/{date.isoformat()}-zh.png",
+        # Cards: 2 for the main news + 2 for AI tools/model releases.
+        "news_en_card": f"/assets/img/digests/{date.isoformat()}-en.png",
+        "news_zh_card": f"/assets/img/digests/{date.isoformat()}-zh.png",
+        "ai_en_card": f"/assets/img/digests/{date.isoformat()}-ai-en.png",
+        "ai_zh_card": f"/assets/img/digests/{date.isoformat()}-ai-zh.png",
     }
 
 
@@ -1445,7 +1551,19 @@ def _format_x_thread(
     return tweets
 
 
-def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, lang: str) -> None:
+def render_card(
+    date: dt.date,
+    items: list[dict[str, Any]],
+    out_path: Path,
+    *,
+    lang: str,
+    title_override: str | None = None,
+    subtitle_override: str | None = None,
+    footer_url_override: str | None = None,
+    max_per_source: int | None = None,
+    max_per_domain: int | None = None,
+    max_per_category: int | None = None,
+) -> None:
     # Always render near-square cards. The user explicitly prefers a square-ish digest image.
     w, h = 1080, 1080
 
@@ -1627,12 +1745,14 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     # Header accent mark (brand cue).
     draw.rounded_rectangle((x - 10, y + 10, x - 4, y + 44), radius=4, fill=accent)
 
-    title = "Daily Digest" if lang != "zh" else "每日简报"
+    title = title_override or ("Daily Digest" if lang != "zh" else "每日简报")
     _draw_text(draw, (x, y), title, font=font_title, fill=ink, stroke_width=2)
     y += 54
 
     date_str = date.isoformat()
-    subtitle = "Top stories + sources (see full list on site)." if lang != "zh" else "今日要点与来源（完整版见网站）。"
+    subtitle = subtitle_override or (
+        "Top stories + sources (see full list on site)." if lang != "zh" else "今日要点与来源（完整版见网站）。"
+    )
     _draw_text(draw, (x, y), date_str + "  ·  " + subtitle, font=font_small, fill=sub, stroke_width=1)
     y += 34
 
@@ -1654,18 +1774,21 @@ def render_card(date: dt.date, items: list[dict[str, Any]], out_path: Path, *, l
     )
 
     # Match the website "Top 10" logic: diversify sources/domains so the card isn't all from one outlet.
+    mps = max_per_source if max_per_source is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3")
+    mpd = max_per_domain if max_per_domain is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2")
+    mpc = max_per_category if max_per_category is not None else int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5")
     ranked = _select_top_diverse(
         ranked_all,
         n=max_items_total,
-        max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
-        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
-        max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
+        max_per_source=mps,
+        max_per_domain=mpd,
+        max_per_category=mpc,
     )
 
     # Footer anchored at the bottom to avoid a large empty block below the content.
     footer1 = "Zhilong George Zhao · @longlalaland"
     digest_path = f"/digest/{date.isoformat()}/" if lang != "zh" else f"/zh/digest/{date.isoformat()}/"
-    footer2 = DEFAULT_SITE_URL + digest_path
+    footer2 = footer_url_override or (DEFAULT_SITE_URL + digest_path)
     bottom_pad = 52
     fy = h - bottom_pad - 52
     footer_top_y = fy - 28  # keep content above divider + footer lines
@@ -1721,12 +1844,15 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     if lang == "zh":
         title = digest.get("title_zh") or f"每日简报 - {date.isoformat()}"
 
-    # Social card image for this issue (rendered during build). Embed it at the top so the page is
-    # visually recognizable and shareable.
+    # Cards for this issue (rendered during build). We now create 4 images per day:
+    #  - main news (EN + ZH)
+    #  - AI tools/model releases (EN + ZH)
     ver = _site_asset_version()
-    card_rel = f"/assets/img/digests/{date.isoformat()}-{'zh' if lang == 'zh' else 'en'}.png"
+    card_news_rel = f"/assets/img/digests/{date.isoformat()}-{'zh' if lang == 'zh' else 'en'}.png"
+    card_ai_rel = f"/assets/img/digests/{date.isoformat()}-ai-{'zh' if lang == 'zh' else 'en'}.png"
     if ver:
-        card_rel += f"?v={ver}"
+        card_news_rel += f"?v={ver}"
+        card_ai_rel += f"?v={ver}"
 
     # Sort by importance (global list, not grouped).
     now = _score_now_for_date(date)
@@ -1738,27 +1864,41 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         ),
         reverse=True,
     )
-    max_items = int(digest.get("max_items", 0) or DEFAULT_MAX_ITEMS_ON_SITE)
+    # Split content: main news vs AI tools/model releases, with separate caps.
+    ai_cat = "AI tools & model releases"
+    max_news = int(digest.get("max_items", 0) or DEFAULT_MAX_ITEMS_ON_SITE)
+    max_ai = int(digest.get("max_items_ai", 0) or DEFAULT_MAX_AI_ITEMS_ON_SITE)
 
-    # For zh pages, ensure visible text is Chinese (don't fall back to EN).
     if lang == "zh":
-        items_sorted: list[dict[str, Any]] = []
+        # For zh pages, ensure visible text is Chinese (don't fall back to EN).
+        ranked_zh: list[dict[str, Any]] = []
         for it in ranked:
             t_zh = (it.get("title_zh") or "").strip()
             if not t_zh or not _has_cjk(t_zh):
                 continue
-            items_sorted.append(it)
-            if len(items_sorted) >= max_items:
-                break
+            ranked_zh.append(it)
+        items_news = [it for it in ranked_zh if (it.get("category") or "").strip() != ai_cat][:max_news]
+        items_ai = [it for it in ranked_zh if (it.get("category") or "").strip() == ai_cat][:max_ai]
     else:
-        items_sorted = ranked[:max_items]
+        items_news = [it for it in ranked if (it.get("category") or "").strip() != ai_cat][:max_news]
+        items_ai = [it for it in ranked if (it.get("category") or "").strip() == ai_cat][:max_ai]
 
-    top = _select_top_diverse(
-        items_sorted,
+    top_news = _select_top_diverse(
+        items_news,
         n=10,
         max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
         max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "2") or "2"),
         max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
+    )
+
+    top_ai = _select_top_diverse(
+        items_ai,
+        n=10,
+        # For AI tools, most high-signal items come from GitHub Releases (same domain),
+        # so keep a looser domain cap but tighter per-source cap to avoid 1 repo dominating.
+        max_per_source=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_SOURCE", "2") or "2"),
+        max_per_domain=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_DOMAIN", "20") or "20"),
+        max_per_category=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_CATEGORY", "10") or "10"),
     )
 
     note = (digest.get("note_zh") if lang == "zh" else digest.get("note")) or ""
@@ -1775,7 +1915,15 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         "---",
         "",
     ]
-    lines.extend([f"![{title}]({card_rel})", ""])
+    # Two cards on-site: (1) main news, (2) AI tools/model updates.
+    lines.extend(
+        [
+            f"![{title} — News]({card_news_rel})",
+            "",
+            f"![{title} — AI tools]({card_ai_rel})",
+            "",
+        ]
+    )
     if note:
         lines.extend([note, ""])
 
@@ -1802,43 +1950,69 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
             return ""
         return when.strftime("%Y-%m-%d %H:%M UTC")
 
-    lines.extend(["## Top 10" if lang != "zh" else "## 最重要的 10 条", ""])
+    def _render_top_section(title_md: str, top_items: list[dict[str, Any]]) -> None:
+        lines.extend([title_md, ""])
+        if not top_items:
+            lines.append("- (No items in this window.)" if lang != "zh" else "-（本窗口暂无条目。）")
+            lines.append("")
+            return
+        for idx, it in enumerate(top_items, start=1):
+            t = (it.get("title_zh") or "").strip() if lang == "zh" else _pick_lang(it, "title", "title_zh", lang)
+            u = (it.get("url") or "").strip()
+            if not t or not u:
+                continue
+            meta = " | ".join(
+                x
+                for x in [
+                    _cat_label(it.get("category", "")),
+                    (it.get("source") or "").strip(),
+                    _pub(it),
+                ]
+                if x
+            )
+            lines.append(f"{idx}. [{t}]({u})" + (f" — {meta}" if meta else ""))
+            blurb = _short(it)
+            if blurb:
+                lines.append(f"   - {blurb}")
+            lines.append("")
 
-    for idx, it in enumerate(top, start=1):
-        t = (it.get("title_zh") or "").strip() if lang == "zh" else _pick_lang(it, "title", "title_zh", lang)
-        u = (it.get("url") or "").strip()
-        if not t or not u:
-            continue
-        meta = " | ".join(
-            x
-            for x in [
-                _cat_label(it.get("category", "")),
-                (it.get("source") or "").strip(),
-                _pub(it),
-            ]
-            if x
-        )
-        lines.append(f"{idx}. [{t}]({u})" + (f" — {meta}" if meta else ""))
-        blurb = _short(it)
-        if blurb:
-            lines.append(f"   - {blurb}")
+    def _render_table(title_md: str, table_items: list[dict[str, Any]]) -> None:
+        lines.extend([title_md, ""])
+        if lang == "zh":
+            lines.append("| # | 标题 | 类别 | 来源 | 时间 (UTC) |")
+        else:
+            lines.append("| # | Title | Category | Source | Published (UTC) |")
+        lines.append("|---:|---|---|---|---|")
+        for idx, it in enumerate(table_items, start=1):
+            t = (it.get("title_zh") or "").strip() if lang == "zh" else _pick_lang(it, "title", "title_zh", lang)
+            u = (it.get("url") or "").strip()
+            if not t or not u:
+                continue
+            cat = _cat_label(it.get("category", ""))
+            src = (it.get("source") or "").strip()
+            pub = _pub(it)
+            lines.append(f"| {idx} | [{t}]({u}) | {cat} | {src} | {pub} |")
         lines.append("")
 
-    lines.extend(["## Full list" if lang != "zh" else "## 全部列表", ""])
-    if lang == "zh":
-        lines.append("| # | 标题 | 类别 | 来源 | 时间 (UTC) |")
-    else:
-        lines.append("| # | Title | Category | Source | Published (UTC) |")
-    lines.append("|---:|---|---|---|---|")
-    for idx, it in enumerate(items_sorted, start=1):
-        t = (it.get("title_zh") or "").strip() if lang == "zh" else _pick_lang(it, "title", "title_zh", lang)
-        u = (it.get("url") or "").strip()
-        if not t or not u:
-            continue
-        cat = _cat_label(it.get("category", ""))
-        src = (it.get("source") or "").strip()
-        pub = _pub(it)
-        lines.append(f"| {idx} | [{t}]({u}) | {cat} | {src} | {pub} |")
+    # Top lists (split into two parts per user preference).
+    _render_top_section(
+        "## Top 10 — News" if lang != "zh" else "## 最重要的 10 条（新闻）",
+        top_news,
+    )
+    _render_top_section(
+        "## Top 10 — AI tools & model updates" if lang != "zh" else "## AI 工具 / 模型更新（10 条）",
+        top_ai,
+    )
+
+    # Full lists (split).
+    _render_table(
+        "## Full list — News" if lang != "zh" else "## 全部列表（新闻）",
+        items_news,
+    )
+    _render_table(
+        "## Full list — AI tools & model updates" if lang != "zh" else "## 全部列表（AI 工具 / 模型更新）",
+        items_ai,
+    )
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     return md_path
@@ -1849,11 +2023,40 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
     out.append(("en", _md_for_lang(date, digest, lang="en")))
     out.append(("zh", _md_for_lang(date, digest, lang="zh")))
 
-    # Social cards (EN + ZH). These are referenced by `digest social`.
+    # Social cards (4 per day):
+    #  - main news (EN + ZH)
+    #  - AI tools/model releases (EN + ZH)
     items = digest.get("items", [])
     if isinstance(items, list) and items:
-        render_card(date, items, CARD_DIR / f"{date.isoformat()}-en.png", lang="en")
-        render_card(date, items, CARD_DIR / f"{date.isoformat()}-zh.png", lang="zh")
+        ai_cat = "AI tools & model releases"
+        items_news = [it for it in items if (it.get("category") or "").strip() != ai_cat]
+        items_ai = [it for it in items if (it.get("category") or "").strip() == ai_cat]
+
+        render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-en.png", lang="en")
+        render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-zh.png", lang="zh")
+
+        render_card(
+            date,
+            items_ai,
+            CARD_DIR / f"{date.isoformat()}-ai-en.png",
+            lang="en",
+            title_override="AI Tools & Model Updates",
+            subtitle_override="New tools/models/releases (see site for the full list).",
+            max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "2") or "2"),
+            max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
+            max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
+        )
+        render_card(
+            date,
+            items_ai,
+            CARD_DIR / f"{date.isoformat()}-ai-zh.png",
+            lang="zh",
+            title_override="AI 工具 / 模型更新",
+            subtitle_override="今日工具/模型发布（完整版见网站）。",
+            max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "2") or "2"),
+            max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
+            max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
+        )
 
     return out
 
@@ -1916,13 +2119,18 @@ def cmd_social(args: argparse.Namespace) -> None:
             _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
 
     digest = _load_digest_yaml(digest_path)
-    # Social requirement: each post should include BOTH EN + ZH card images.
-    card_en = CARD_DIR / f"{date.isoformat()}-en.png"
-    card_zh = CARD_DIR / f"{date.isoformat()}-zh.png"
-    print("==== Attach images (EN + ZH) ====")
-    print(f"EN card: {card_en}")
-    print(f"ZH card: {card_zh}")
-    if not card_en.exists() or not card_zh.exists():
+    # Social requirement: each post should include BOTH EN + ZH cards
+    # for both sections: news + AI tools/model updates.
+    card_news_en = CARD_DIR / f"{date.isoformat()}-en.png"
+    card_news_zh = CARD_DIR / f"{date.isoformat()}-zh.png"
+    card_ai_en = CARD_DIR / f"{date.isoformat()}-ai-en.png"
+    card_ai_zh = CARD_DIR / f"{date.isoformat()}-ai-zh.png"
+    print("==== Attach images (4 cards) ====")
+    print(f"News EN: {card_news_en}")
+    print(f"News ZH: {card_news_zh}")
+    print(f"AI EN:   {card_ai_en}")
+    print(f"AI ZH:   {card_ai_zh}")
+    if not (card_news_en.exists() and card_news_zh.exists() and card_ai_en.exists() and card_ai_zh.exists()):
         print("(Tip) Run `./bin/digest build --date YYYY-MM-DD` first to generate the cards.")
     print("")
 

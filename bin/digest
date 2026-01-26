@@ -540,6 +540,7 @@ def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict
         "Security",
         "CSS / AI & society",
         "AI frontier",
+        "AI tools & model releases",
         "Digital health / health comm",
         "Education / learning sciences / edtech",
         "Misc",
@@ -559,6 +560,7 @@ CAT_ZH = {
     "Security": "安全 / 风险",
     "CSS / AI & society": "CSS / AI 与社会",
     "AI frontier": "AI 前沿",
+    "AI tools & model releases": "AI 工具 / 模型发布",
     "Digital health / health comm": "数字健康 / 健康传播",
     "Education / learning sciences / edtech": "教育 / 学习科学 / 教育技术",
     "Misc": "其他",
@@ -630,6 +632,8 @@ def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> 
         score += 12
     elif "ai frontier" in cat:
         score += 10
+    elif "ai tools" in cat or "model releases" in cat:
+        score += 11
     elif "ai & society" in cat or "css" in cat:
         score += 8
 

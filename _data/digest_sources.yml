@@ -136,6 +136,102 @@ sources:
     category: "AI frontier"
     url: https://openai.com/blog/rss.xml
 
+  # -----------------------------
+  # AI tools & model releases (product + tooling updates)
+  # -----------------------------
+  # Official / lab / infra blogs (high-signal)
+  - id: microsoft-ai-blog
+    name: Microsoft AI Blog
+    category: "AI tools & model releases"
+    url: https://blogs.microsoft.com/ai/feed/
+
+  - id: deepmind-blog
+    name: Google DeepMind Blog
+    category: "AI tools & model releases"
+    url: https://deepmind.google/blog/rss.xml
+
+  - id: aws-ml-blog
+    name: AWS Machine Learning Blog
+    category: "AI tools & model releases"
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+
+  - id: nvidia-dev-blog
+    name: NVIDIA Developer Blog
+    category: "AI tools & model releases"
+    url: https://developer.nvidia.com/blog/feed/
+
+  # Aggregators / AI news with frequent tool/model announcements
+  - id: decoder-ai
+    name: The Decoder (AI)
+    category: "AI tools & model releases"
+    url: https://the-decoder.com/feed/
+
+  - id: venturebeat-ai
+    name: VentureBeat - AI
+    category: "AI tools & model releases"
+    url: https://venturebeat.com/category/ai/feed
+
+  - id: wired-ai-tag
+    name: WIRED - AI
+    category: "AI tools & model releases"
+    url: https://www.wired.com/feed/tag/ai/latest/rss
+
+  # GitHub releases (tooling version bumps are often the fastest signal)
+  - id: gh-ollama
+    name: GitHub Releases - ollama/ollama
+    category: "AI tools & model releases"
+    url: https://github.com/ollama/ollama/releases.atom
+
+  - id: gh-llama-cpp
+    name: GitHub Releases - ggerganov/llama.cpp
+    category: "AI tools & model releases"
+    url: https://github.com/ggerganov/llama.cpp/releases.atom
+
+  - id: gh-vllm
+    name: GitHub Releases - vllm-project/vllm
+    category: "AI tools & model releases"
+    url: https://github.com/vllm-project/vllm/releases.atom
+
+  - id: gh-transformers
+    name: GitHub Releases - huggingface/transformers
+    category: "AI tools & model releases"
+    url: https://github.com/huggingface/transformers/releases.atom
+
+  - id: gh-tgi
+    name: GitHub Releases - huggingface/text-generation-inference
+    category: "AI tools & model releases"
+    url: https://github.com/huggingface/text-generation-inference/releases.atom
+
+  - id: gh-diffusers
+    name: GitHub Releases - huggingface/diffusers
+    category: "AI tools & model releases"
+    url: https://github.com/huggingface/diffusers/releases.atom
+
+  - id: gh-langchain
+    name: GitHub Releases - langchain-ai/langchain
+    category: "AI tools & model releases"
+    url: https://github.com/langchain-ai/langchain/releases.atom
+
+  - id: gh-llamaindex
+    name: GitHub Releases - run-llama/llama_index
+    category: "AI tools & model releases"
+    url: https://github.com/run-llama/llama_index/releases.atom
+
+  - id: gh-litellm
+    name: GitHub Releases - BerriAI/litellm
+    category: "AI tools & model releases"
+    url: https://github.com/BerriAI/litellm/releases.atom
+
+  - id: gh-openai-python
+    name: GitHub Releases - openai/openai-python
+    category: "AI tools & model releases"
+    url: https://github.com/openai/openai-python/releases.atom
+
+  - id: gh-openai-node
+    name: GitHub Releases - openai/openai-node
+    category: "AI tools & model releases"
+    url: https://github.com/openai/openai-node/releases.atom
+
   - id: google-ai-blog
     name: Google AI Blog
     category: "AI frontier"

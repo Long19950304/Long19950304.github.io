@@ -19,7 +19,24 @@ translation_key: digest
 {% if digests.size == 0 %}
 <p>暂时还没有简报。</p>
 {% else %}
-<div class="row">
+<div class="digest-index" data-digest-index>
+  <div class="digest-index-controls">
+    <div class="digest-index-controls__row">
+      <input class="form-control form-control-sm digest-index-search" type="search" placeholder="搜索…" data-digest-search>
+    </div>
+    <div class="digest-index-controls__row digest-index-filters" role="group" aria-label="简报筛选">
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="all">全部</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="ai-tools">AI 工具</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="ai-society">AI 与社会</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="health">健康</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="education">教育</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="security">安全</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="business">商业</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="tech">科技</button>
+    </div>
+  </div>
+
+  <div class="row">
 {% for d in digests %}
   {% assign en = site.digests | where: "digest_date", d.digest_date | first %}
   {% assign meta = site.data.digests[d.digest_date] %}
@@ -30,12 +47,27 @@ translation_key: digest
       {% assign tagline = meta.items[0].title %}
     {% endif %}
   {% endif %}
+  {% assign tags = "" %}
+  {% if meta and meta.items %}
+    {% for it in meta.items %}
+      {% assign cat = it.category | downcase %}
+      {% if cat contains "ai tools" %}{% assign tags = tags | append: " ai-tools" %}{% endif %}
+      {% if cat contains "css" or cat contains "society" %}{% assign tags = tags | append: " ai-society" %}{% endif %}
+      {% if cat contains "health" %}{% assign tags = tags | append: " health" %}{% endif %}
+      {% if cat contains "education" %}{% assign tags = tags | append: " education" %}{% endif %}
+      {% if cat contains "security" or cat contains "cyber" %}{% assign tags = tags | append: " security" %}{% endif %}
+      {% if cat contains "business" or cat contains "economy" or cat contains "finance" %}{% assign tags = tags | append: " business" %}{% endif %}
+      {% if cat contains "tech" %}{% assign tags = tags | append: " tech" %}{% endif %}
+    {% endfor %}
+  {% endif %}
+  {% assign tags = tags | strip %}
+
   {% assign thumb_path = '/assets/img/digests/' | append: d.digest_date | append: '-zh.png' %}
   {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}
   {% assign ai_path = '/assets/img/digests/' | append: d.digest_date | append: '-ai-zh.png' %}
   {% assign ai_file = site.static_files | where: "path", ai_path | first %}
   <div class="col-12 col-md-6 col-lg-4 mb-4">
-    <div class="card h-100 digest-index-card">
+    <div class="card h-100 digest-index-card" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
       <a href="{{ d.url }}">
         {% if thumb_file %}
           <img
@@ -71,5 +103,7 @@ translation_key: digest
     </div>
   </div>
 {% endfor %}
+</div>
+  <script defer src="{{ '/assets/js/digest-index.js' | relative_url }}"></script>
 </div>
 {% endif %}

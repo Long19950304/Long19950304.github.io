@@ -14,9 +14,73 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
+  {% if page.page_class == "digest-page" %}
+    {% if page.lang == "zh" %}
+      {% assign _digest_coll = site.digests_zh %}
+      {% assign _digest_index_url = "/zh/digest/" %}
+    {% else %}
+      {% assign _digest_coll = site.digests %}
+      {% assign _digest_index_url = "/digest/" %}
+    {% endif %}
+    {% assign _sorted = _digest_coll | sort: "digest_date" %}
+    {% assign _prev = nil %}
+    {% assign _next = nil %}
+    {% assign _found = false %}
+    {% for it in _sorted %}
+      {% if _found and _next == nil %}
+        {% assign _next = it %}
+      {% endif %}
+      {% if it.digest_date == page.digest_date %}
+        {% assign _found = true %}
+      {% endif %}
+      {% unless _found %}
+        {% assign _prev = it %}
+      {% endunless %}
+    {% endfor %}
+
+    <nav class="digest-issue-nav" aria-label="Digest navigation">
+      <a class="digest-issue-nav__index" href="{{ _digest_index_url | relative_url }}">
+        {% if page.lang == "zh" %}返回简报列表{% else %}Back to Digest{% endif %}
+      </a>
+      <div class="digest-issue-nav__links">
+        {% if _prev %}
+          <a class="digest-issue-nav__prev" href="{{ _prev.url }}">
+            {% if page.lang == "zh" %}上一期{% else %}Previous{% endif %}: {{ _prev.digest_date }}
+          </a>
+        {% endif %}
+        {% if _next %}
+          <a class="digest-issue-nav__next" href="{{ _next.url }}">
+            {% if page.lang == "zh" %}下一期{% else %}Next{% endif %}: {{ _next.digest_date }}
+          </a>
+        {% endif %}
+      </div>
+    </nav>
+  {% endif %}
+
   <article>
     {{ content }}
   </article>
+
+  {% if page.page_class == "digest-page" %}
+    <nav class="digest-issue-nav digest-issue-nav--bottom" aria-label="Digest navigation">
+      <a class="digest-issue-nav__index" href="{{ _digest_index_url | relative_url }}">
+        {% if page.lang == "zh" %}返回简报列表{% else %}Back to Digest{% endif %}
+      </a>
+      <div class="digest-issue-nav__links">
+        {% if _prev %}
+          <a class="digest-issue-nav__prev" href="{{ _prev.url }}">
+            {% if page.lang == "zh" %}上一期{% else %}Previous{% endif %}: {{ _prev.digest_date }}
+          </a>
+        {% endif %}
+        {% if _next %}
+          <a class="digest-issue-nav__next" href="{{ _next.url }}">
+            {% if page.lang == "zh" %}下一期{% else %}Next{% endif %}: {{ _next.digest_date }}
+          </a>
+        {% endif %}
+      </div>
+    </nav>
+    <script defer src="{{ '/assets/js/digest-issue.js' | relative_url }}"></script>
+  {% endif %}
 
   {% if page.related_publications %}
     <h2>References</h2>

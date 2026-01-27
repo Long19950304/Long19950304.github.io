@@ -56,7 +56,7 @@ items:
   url: https://github.com/ollama/ollama/releases/tag/v0.15.2
   source: GitHub Releases - ollama/ollama
   published_utc: '2026-01-27T00:52:57+00:00'
-  title_zh: ''
+  title_zh: ollama/ollama v0.15.2版
   why_zh: 发布更新（变更日志见链接）。
   takeaway_zh: ''
   prompt_zh: ''
@@ -105,7 +105,8 @@ items:
   published_utc: '2026-01-26T23:55:29+00:00'
   title_zh: 让编码代理编写高质量Python测试的技巧
   why_zh: 有人在Hacker News上询问我是否有任何建议，能让编码代理写出质量尚可的测试。
-  takeaway_zh: ''
+  takeaway_zh: 有人在Hacker News上询问我是否有建议能让编程助手写出质量尚可的测试代码。我的回答是：我主要使用Python，这大有裨益，因为训练数据中充斥着大量优秀的pytest测试示例，涵盖了诸如使用fixture库模拟外部HTTP
+    API、快照测试等实践。
   prompt_zh: ''
 - category: Tech industry
   title: Y Combinator website no longer lists Canada as a country it invests in
@@ -226,7 +227,8 @@ items:
   published_utc: '2026-01-26T22:29:54+00:00'
   title_zh: 我让ChatGPT分析了我十年的Apple Watch数据，然后咨询了医生
   why_zh: 文章链接：https://www.msn.com/en-us/news/technology/i-let-chatgpt-analyze-a-decade-of-my-apple-watch-data-then-i-called-my-doctor/ar-AA1…
-  takeaway_zh: ''
+  takeaway_zh: '文章链接：https://www.msn.com/en-us/news/technology/i-let-chatgpt-analyze-a-decade-of-my-apple-watch-data-then-i-called-my-doctor/ar-AA1UZxip
+    评论链接：https://news.ycombinator.com/item?id=46772495 得分：32 # 评论：26'
   prompt_zh: ''
 - category: Tech industry
   title: Vinod Khosla publicly disavows Keith Rabois’ comments on ICE shooting
@@ -493,7 +495,8 @@ items:
   title_zh: ChatGPT容器现可运行bash、pip/npm安装包及下载文件
   why_zh: '文章链接: https://simonwillison.net/2026/Jan/26/chatgpt-containers/ 评论链接: https://news.ycombinator.com/item?id=46770221
     得分:…'
-  takeaway_zh: ''
+  takeaway_zh: '文章链接：https://simonwillison.net/2026/Jan/26/chatgpt-containers/ 评论链接：https://news.ycombinator.com/item?id=46770221
+    得分：154 # 评论：140'
   prompt_zh: ''
 - category: AI tools & model releases
   title: ChatGPT Containers can now run bash, pip/npm install packages, and download
@@ -543,7 +546,7 @@ items:
   published_utc: '2026-01-26T19:00:03+00:00'
   title_zh: IEEE将动手STEM活动带到印度农村地区
   why_zh: “除非我们在教育上实现平等，否则我们不会有一个平等的社会。”——美国最高法院大法官索尼娅·索托马约尔所言。
-  takeaway_zh: ''
+  takeaway_zh: ‘除非我们在教育上实现平等，否则我们不会有一个平等的社会。’美国最高法院大法官索尼娅·索托马约尔的这番话在世界上教育无法得到保障的地区引起了强烈共鸣。在印度东北角的偏远地区——村庄位于森林、山脉和河岸——农村教室……
   prompt_zh: ''
 - category: AI frontier
   title: MCP Apps, the Model Context Protocol's first official extension, turns AI
@@ -560,7 +563,8 @@ items:
   published_utc: '2026-01-26T18:58:02+00:00'
   title_zh: MCP应用作为Model Context Protocol的首个官方扩展，将AI响应转化为交互界面
   why_zh: Model Context Protocol 刚刚迎来了首个官方扩展“MCP Apps”。AI工具现在可以直接嵌入交互式界面…
-  takeaway_zh: ''
+  takeaway_zh: 模型上下文协议（MCP）刚刚迎来了首个官方扩展——'MCP应用'。AI工具现在可以将交互式界面直接嵌入对话中。文章《MCP应用：模型上下文协议的首个官方扩展，将AI响应转化为交互式界面》首次发表于The
+    Decoder。
   prompt_zh: ''
 - category: Tech industry
   title: 'Show HN: TetrisBench – Gemini Flash reaches 66% win rate on Tetris against
@@ -592,7 +596,7 @@ items:
   published_utc: '2026-01-26T18:32:15+00:00'
   title_zh: OpenAI在科学领域的重大举措
   why_zh: 自ChatGPT爆炸性亮相以来的三年里，OpenAI的技术已经颠覆了家庭和工作中的许多日常活动…
-  takeaway_zh: ''
+  takeaway_zh: 自ChatGPT三年前爆炸性亮相以来，OpenAI的技术已经颠覆了家庭、工作、学校等各个领域的日常活动——只要人们打开浏览器或拿出手机，无处不在。现在，OpenAI正明确瞄准科学家群体。10月，该公司宣布已启动一项……
   prompt_zh: ''
 - category: Tech industry
   title: Even the big dick subreddit is mad about ICE
@@ -662,7 +666,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.rc.2
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-26T18:18:16+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.3.rc.2版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -771,7 +775,7 @@ items:
   published_utc: '2026-01-26T18:00:00+00:00'
   title_zh: MCP将Claude聊天整合进Slack、Figma和Canva等应用
   why_zh: Anthropic的Claude今天因MCP的新扩展而变得更加活跃，MCP是一种开源协议，允许AI代理轻松访问…
-  takeaway_zh: ''
+  takeaway_zh: Anthropic的Claude今天变得更加活跃，这要归功于MCP的新扩展，这一开源协议使得AI代理能够轻松访问互联网上的工具和数据。用户现在可以直接在Claude聊天机器人中与应用互动，起草并格式化Slack消息给同事，并创建[…]
   prompt_zh: ''
 - category: Tech industry
   title: Fedora Asahi Remix is now working on Apple M3
@@ -800,7 +804,7 @@ items:
   published_utc: '2026-01-26T17:48:50+00:00'
   title_zh: TikTok将近期故障归咎于美国数据中心停电
   why_zh: 这些中断的时间恰逢期待已久的美国独立实体的创建。
-  takeaway_zh: ''
+  takeaway_zh: 这些中断的时间与上周期待已久的美国TikTok独立实体的创建时间吻合。
   prompt_zh: ''
 - category: Tech industry
   title: TikTokers are heading to UpScrolled following US takeover
@@ -967,7 +971,7 @@ items:
   published_utc: '2026-01-26T16:23:48+00:00'
   title_zh: 数据中心停电导致TikTok美国所有权首周末故障
   why_zh: 美国TikTok用户经历了广泛的错误，引发了各种阴谋论。
-  takeaway_zh: ''
+  takeaway_zh: 美国TikTok用户遭遇了广泛的错误，引发了各种阴谋论。
   prompt_zh: ''
 - category: Tech industry
   title: How to get Doom running on a pair of earbuds
@@ -1299,7 +1303,7 @@ items:
   published_utc: '2026-01-26T05:00:00+00:00'
   title_zh: 伦理AI的竞争愿景：OpenAI案例研究
   why_zh: arXiv:2601.16513v1 公告类型：新 摘要：引言。
-  takeaway_zh: ''
+  takeaway_zh: arXiv:2601.16513v1 公告类型：新 摘要：引言。AI伦理在不同参与者和利益相关者群体中有不同的框架。我们报告了OpenAI分析AI伦理话语的案例研究结果。方法。研究探讨：OpenAI的公共话语如何随时间利用'伦理'、'安全'、'对齐'及相关概念，并……
   prompt_zh: ''
 - category: CSS / AI & society
   title: 'Nishpaksh: TEC Standard-Compliant Framework for Fairness Auditing and Certification
@@ -1646,7 +1650,8 @@ items:
   published_utc: '2026-01-25T12:55:42+00:00'
   title_zh: ChatGPT未能识别出由OpenAI自家工具Sora制作的92%假视频
   why_zh: Newsguard调查显示，顶级聊天机器人很少能识别出虚假视频。
-  takeaway_zh: ''
+  takeaway_zh: Newsguard的一项调查显示，顶级聊天机器人很少能识别虚假视频。ChatGPT甚至在其公司自己的内容上也表现不佳。文章《ChatGPT未能识别92%由OpenAI自家Sora工具制作的虚假视频》首次发表于The
+    Decoder。
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'BerriAI/litellm: v1.81.3.rc.1'
@@ -1656,7 +1661,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.rc.1
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-25T03:17:11+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.3.rc.1版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -1668,7 +1673,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3-nightly
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-25T03:14:33+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.3夜间版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -1680,7 +1685,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.rc
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-25T00:55:05+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.3.rc版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -1692,7 +1697,7 @@ items:
   url: https://github.com/ollama/ollama/releases/tag/v0.15.1
   source: GitHub Releases - ollama/ollama
   published_utc: '2026-01-24T23:20:52+00:00'
-  title_zh: ''
+  title_zh: ollama/ollama v0.15.1版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -1704,7 +1709,7 @@ items:
   url: https://github.com/vllm-project/vllm/releases/tag/v0.14.1
   source: GitHub Releases - vllm-project/vllm
   published_utc: '2026-01-24T20:29:27+00:00'
-  title_zh: ''
+  title_zh: vllm-project/vllm v0.14.1版
   why_zh: 发布更新（变更日志见链接）。
   takeaway_zh: ''
   prompt_zh: ''
@@ -1716,7 +1721,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-stable
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-24T19:46:15+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.0稳定版
   why_zh: 发布更新（变更日志见链接）。
   takeaway_zh: ''
   prompt_zh: ''
@@ -1747,7 +1752,7 @@ items:
   published_utc: '2026-01-23T22:26:01+00:00'
   title_zh: ‘恐怖谷’：特朗普的达沃斯闹剧、AI中期选举与ChatGPT的最后手段
   why_zh: 在本期《Uncanny Valley》节目中，主持人解析了来自达沃斯的新闻，特朗普与主要AI公司在世界E…舞台上同台。
-  takeaway_zh: ''
+  takeaway_zh: 在本期《Uncanny Valley》节目中，我们的主持人解读了达沃斯的新闻，特朗普和主要AI公司在世界经济论坛上同台亮相。
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'Wilson Lin on FastRender: a browser built by thousands of parallel agents'
@@ -1800,7 +1805,7 @@ items:
   url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.7
   source: GitHub Releases - langchain-ai/langchain
   published_utc: '2026-01-23T15:22:23+00:00'
-  title_zh: ''
+  title_zh: langchain-ai/langchain langchain==1.2.7版
   why_zh: 发布更新（变更日志见链接）。
   takeaway_zh: ''
   prompt_zh: ''
@@ -1852,7 +1857,7 @@ items:
   published_utc: '2026-01-22T19:21:07+00:00'
   title_zh: 为NVIDIA Blackwell数据中心GPU扩展NVFP4推理助力FLUX.2
   why_zh: 2025年，NVIDIA与Black Forest Labs（BFL）合作优化FLUX.1文本到图像模型系列，解锁了FP4图像生成…
-  takeaway_zh: ''
+  takeaway_zh: 2025年，NVIDIA与Black Forest Labs（BFL）合作优化FLUX.1文本到图像模型系列，解锁了NVIDIA上的FP4图像生成性能……
   prompt_zh: ''
 - category: AI frontier
   title: AI-Powered Disinformation Swarms Are Coming for Democracy
@@ -1984,7 +1989,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0.rc.5
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-22T03:30:46+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.0.rc.5版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2013,7 +2018,7 @@ items:
   url: https://github.com/ollama/ollama/releases/tag/v0.15.0
   source: GitHub Releases - ollama/ollama
   published_utc: '2026-01-21T22:40:42+00:00'
-  title_zh: ''
+  title_zh: ollama/ollama v0.15.0版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2025,7 +2030,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0.rc.4
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-21T21:43:55+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.0.rc.4版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2051,7 +2056,7 @@ items:
   url: https://github.com/run-llama/llama_index/releases/tag/v0.14.13
   source: GitHub Releases - run-llama/llama_index
   published_utc: '2026-01-21T20:44:52+00:00'
-  title_zh: ''
+  title_zh: run-llama/llama_index v0.14.13版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2063,7 +2068,7 @@ items:
   url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.10.0
   source: GitHub Releases - comfyanonymous/ComfyUI
   published_utc: '2026-01-21T19:22:04+00:00'
-  title_zh: ''
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.10.0版
   why_zh: 发布更新（变更日志见链接）。
   takeaway_zh: ''
   prompt_zh: ''
@@ -2110,7 +2115,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.1-nightly
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-21T13:12:55+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.1夜间版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2175,7 +2180,7 @@ items:
   url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0.rc.1
   source: GitHub Releases - BerriAI/litellm
   published_utc: '2026-01-20T16:55:00+00:00'
-  title_zh: ''
+  title_zh: BerriAI/litellm v1.81.0.rc.1版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2195,7 +2200,7 @@ items:
   published_utc: '2026-01-20T16:00:00+00:00'
   title_zh: Amazon Quick Suite推出扩大规模、更快数据摄取及更丰富SPICE数据集类型支持
   why_zh: Amazon Quick Suite SPICE引擎现已支持更大规模、更快的数据摄取及更广泛的数据类型，以推动高级分析和AI…
-  takeaway_zh: ''
+  takeaway_zh: Amazon Quick Suite的SPICE引擎现在支持更高的规模、更快的摄入和更广泛的数据类型，以推动高级分析和AI驱动的工作负载。通过此次发布，客户在使用新的数据准备体验时，每个数据集最多可以加载2TB的数据，是之前1TB限制的两倍。尽管数据集大小增加，SPICE仍然……
   prompt_zh: ''
 - category: AI tools & model releases
   title: Amazon EC2 G7e instances are now generally available
@@ -2257,7 +2262,7 @@ items:
   url: https://github.com/vllm-project/vllm/releases/tag/v0.14.0
   source: GitHub Releases - vllm-project/vllm
   published_utc: '2026-01-20T09:20:31+00:00'
-  title_zh: ''
+  title_zh: vllm-project/vllm v0.14.0版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2441,7 +2446,7 @@ items:
   url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.9.2
   source: GitHub Releases - comfyanonymous/ComfyUI
   published_utc: '2026-01-15T17:55:40+00:00'
-  title_zh: ''
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.9.2版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2686,7 +2691,7 @@ items:
   url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.9.1
   source: GitHub Releases - comfyanonymous/ComfyUI
   published_utc: '2026-01-13T07:33:55+00:00'
-  title_zh: ''
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.9.1版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''
@@ -2698,7 +2703,7 @@ items:
   url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.9.0
   source: GitHub Releases - comfyanonymous/ComfyUI
   published_utc: '2026-01-13T07:20:31+00:00'
-  title_zh: ''
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.9.0版
   why_zh: ''
   takeaway_zh: ''
   prompt_zh: ''

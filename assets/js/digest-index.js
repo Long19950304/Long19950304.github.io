@@ -1,0 +1,47 @@
+(() => {
+  const root = document.querySelector('[data-digest-index]');
+  if (!root) return;
+
+  const search = root.querySelector('[data-digest-search]');
+  const buttons = Array.from(root.querySelectorAll('[data-digest-filter]'));
+  const cards = Array.from(root.querySelectorAll('[data-digest-card]'));
+
+  let activeTag = 'all';
+
+  const normalize = (s) => (s || '').toLowerCase().trim();
+
+  const setActive = (tag) => {
+    activeTag = tag;
+    buttons.forEach((b) => {
+      b.classList.toggle('active', b.dataset.digestFilter === tag);
+      b.setAttribute('aria-pressed', b.dataset.digestFilter === tag ? 'true' : 'false');
+    });
+    apply();
+  };
+
+  const apply = () => {
+    const q = normalize(search ? search.value : '');
+    cards.forEach((card) => {
+      const tags = normalize(card.dataset.tags || '');
+      const title = normalize(card.dataset.title || '');
+      const tagline = normalize(card.dataset.tagline || '');
+
+      const tagOk = activeTag === 'all' ? true : tags.split(/\s+/).includes(activeTag);
+      const qOk = !q ? true : (title.includes(q) || tagline.includes(q));
+
+      card.style.display = tagOk && qOk ? '' : 'none';
+    });
+  };
+
+  if (search) {
+    search.addEventListener('input', apply);
+  }
+
+  buttons.forEach((b) => {
+    b.addEventListener('click', () => setActive(b.dataset.digestFilter || 'all'));
+  });
+
+  // Default state.
+  setActive('all');
+})();
+

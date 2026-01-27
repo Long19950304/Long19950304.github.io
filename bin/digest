@@ -263,9 +263,10 @@ def _translate_en_to_zh(texts: list[str]) -> list[str]:
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     sys_msg = (
-        "You are a professional bilingual editor. "
-        "Translate English to natural, concise Simplified Chinese. "
-        "Keep proper nouns/brand names as-is if commonly used. "
+        "You are a professional bilingual editor for a news digest. "
+        "Translate English to natural, concise Simplified Chinese suitable for an academic/professional briefing. "
+        "Avoid literal calques; prioritize fluent, idiomatic Chinese. "
+        "Keep proper nouns/brand names as-is if commonly used; keep technical terms accurate. "
         "No hype, no emojis, no explanations."
     )
 
@@ -400,7 +401,7 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
 
     # Only translate what we actually show:
     # - Titles for the full lists (news + AI) so zh pages are fully Chinese.
-    # - A short blurb (why) only for Top items (<= 20 total).
+    # - Short blurbs for Top items (<= 20 total) so zh pages read naturally.
     top_news = _select_top_diverse(
         news,
         n=10,
@@ -442,6 +443,7 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
         for k_zh, k_en in [
             ("title_zh", "title"),
             ("why_zh", "why"),
+            ("takeaway_zh", "takeaway"),
         ]:
             v = (it.get(k_zh) or "").strip()
             src = (it.get(k_en) or "").strip()
@@ -465,8 +467,19 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
             continue
         src = (it.get("why") or "").strip()
         if not src:
+            src = _first_sentence((it.get("takeaway") or "").strip(), 160)
+        if not src:
             continue
         jobs_by_text.setdefault(src, []).append((it, "why_zh"))
+
+    # Takeaways (optional) for top items: helps Chinese pages feel less empty when `why` is short.
+    for it in blurb_sorted:
+        if (it.get("takeaway_zh") or "").strip():
+            continue
+        src = (it.get("takeaway") or "").strip()
+        if not src:
+            continue
+        jobs_by_text.setdefault(src, []).append((it, "takeaway_zh"))
 
     if not jobs_by_text:
         return False
@@ -2307,10 +2320,13 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
                 ]
                 if x
             )
-            lines.append(f"{idx}. [{t}]({u})" + (f" — {meta}" if meta else ""))
+            # Keep the list scannable: title line + a muted meta line.
+            lines.append(f"{idx}. [{t}]({u})")
+            if meta:
+                lines.append(f'   <div class="digest-item-meta">{html.escape(meta)}</div>')
             blurb = _short(it)
             if blurb:
-                lines.append(f"   - {blurb}")
+                lines.append(f'   <div class="digest-item-why">{html.escape(blurb)}</div>')
             lines.append("")
 
     def _render_table(title_md: str, table_items: list[dict[str, Any]], *, section_id: str) -> None:

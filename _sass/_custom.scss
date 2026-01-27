@@ -809,6 +809,26 @@ h1 {
   overflow: hidden;
 }
 
+// Digest index controls
+.digest-index-controls {
+  margin: 0 0 1rem;
+}
+
+.digest-index-controls__row {
+  margin-bottom: 0.5rem;
+}
+
+.digest-index-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.digest-index-filters .btn.active {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.22);
+}
+
 // Digest issue pages (detail)
 .digest-page .digest-note {
   color: var(--global-text-color-light);
@@ -869,6 +889,55 @@ h1 {
   background: rgba(255, 255, 255, 0.85);
 }
 
+// Digest issue navigation (prev/next)
+.digest-issue-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0.25rem 0 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.digest-issue-nav--bottom {
+  margin: 1.5rem 0 0;
+}
+
+.digest-issue-nav__index {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.digest-issue-nav__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.digest-issue-nav__prev,
+.digest-issue-nav__next {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.digest-issue-nav__prev:hover,
+.digest-issue-nav__next:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 1);
+}
+
+.digest-copy-btn {
+  margin: -0.25rem 0 0.75rem;
+}
+
 // Turn the Top-10 lists into scannable "cards".
 .digest-page h2 + ol {
   list-style: none;
@@ -908,10 +977,22 @@ h1 {
   font-weight: 650;
 }
 
-.digest-page h2 + ol > li > ul {
-  margin: 0.45rem 0 0;
-  padding-left: 1.1rem;
+.digest-page .digest-item-meta {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.25;
   color: var(--global-text-color-light);
+}
+
+.digest-page .digest-item-why {
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .digest-page .digest-details {

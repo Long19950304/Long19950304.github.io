@@ -1,0 +1,317 @@
+weeks:
+- week: 2026-W04
+  start: '2026-01-19'
+  end: '2026-01-25'
+  issues:
+  - '2026-01-20'
+  - '2026-01-21'
+  - '2026-01-22'
+  - '2026-01-23'
+  - '2026-01-24'
+  - '2026-01-25'
+  highlights_news:
+  - date: '2026-01-20'
+    url: https://openai.com/index/cerebras-partnership
+    title: OpenAI partners with Cerebras
+    title_zh: OpenAI 与 Cerebras 合作
+    category: AI frontier
+    source: OpenAI Blog
+    published_utc: ''
+  - date: '2026-01-20'
+    url: https://huggingface.co/blog/microsoft/diff-attn-v2
+    title: Differential Transformer V2
+    title_zh: 差分变压器V2
+    category: AI frontier
+    source: Hugging Face Blog
+    published_utc: ''
+  - date: '2026-01-20'
+    url: https://arxiv.org/abs/2601.10691v1
+    title: 'The Conversational Exam: A Scalable Assessment Design for the AI Era'
+    title_zh: 对话式考试：AI 时代可扩展的评估设计
+    category: Education / learning sciences / edtech
+    source: arXiv
+    published_utc: ''
+  - date: '2026-01-20'
+    url: https://huggingface.co/blog/open-responses
+    title: 'Open Responses: What you need to know'
+    title_zh: Open Responses：你需要了解什么
+    category: AI frontier
+    source: Hugging Face Blog
+    published_utc: ''
+  - date: '2026-01-20'
+    url: https://arxiv.org/abs/2601.10983v1
+    title: 'Evaluating 21st-Century Competencies in Postsecondary Curricula with Large
+      Language Models: Performance Benchmarking and Reasoning-Based Prompting Strategies'
+    title_zh: 用大语言模型评估高等教育课程的 21 世纪能力：性能基准与推理式提示策略
+    category: Education / learning sciences / edtech
+    source: arXiv
+    published_utc: ''
+  - date: '2026-01-21'
+    url: https://www.ft.com/content/ef7b57cf-d2e7-4cfb-be24-1b5e1bdc3452
+    title: US regulator appeals Meta’s antitrust win
+    title_zh: 美国监管机构就 Meta 反垄断胜诉提起上诉
+    category: Tech industry
+    source: Financial Times - Technology
+    published_utc: '2026-01-20T22:22:32+00:00'
+  - date: '2026-01-21'
+    url: https://www.bbc.com/news/articles/c4gwp2me3gzo?at_medium=RSS&at_campaign=rss
+    title: Global markets on alert as Europe to suspend approval of US trade deal
+    title_zh: 欧洲拟暂停批准美欧贸易协议，全球市场警惕
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-01-21T02:12:03+00:00'
+  - date: '2026-01-21'
+    url: https://techcrunch.com/2026/01/20/anthropics-ceo-stuns-davos-with-nvidia-criticism/
+    title: Anthropic’s CEO stuns Davos with Nvidia criticism
+    title_zh: Anthropic CEO 在达沃斯公开批评英伟达
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-21T01:39:58+00:00'
+  - date: '2026-01-21'
+    url: https://www.theverge.com/news/864451/netflix-advertising-revenue-doubled-q4-2025-earnings
+    title: Netflix earned $1.5 billion from ads in 2025
+    title_zh: Netflix 2025 年广告收入达 15 亿美元
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-20T23:06:25+00:00'
+  - date: '2026-01-21'
+    url: https://www.ft.com/content/6292304a-b4b3-4f04-89bb-f05861b40cb8
+    title: Dollar and US stocks fall as Trump says ‘no going back’ on Greenland bid
+    title_zh: 特朗普称对格陵兰收购“不会回头”，美元与美股下跌
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-01-20T22:18:07+00:00'
+  - date: '2026-01-22'
+    url: https://www.ft.com/content/0fbb3761-12f8-4634-89d2-f8b01ec2d3c6
+    title: Chicken producer MHP sells Ukraine’s first corporate bond since Russian
+      invasion
+    title_zh: 鸡肉生产商MHP出售自俄罗斯入侵以来乌克兰的首个公司债券
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-01-21T16:26:07+00:00'
+  - date: '2026-01-22'
+    url: https://www.bbc.com/news/articles/cgezx40r7d7o?at_medium=RSS&at_campaign=rss
+    title: Trump drops tariffs threat over Greenland after Nato talks
+    title_zh: 特朗普在北约会谈后放弃对格林兰的关税威胁
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-01-21T23:05:53+00:00'
+  - date: '2026-01-22'
+    url: https://www.theguardian.com/world/2026/jan/21/trump-framework-greenland-tariffs-threats
+    title: Trump walks back Greenland tariffs threat, citing vague ‘deal’ over territory
+    title_zh: 特朗普撤回对格林兰关税的威胁，提到对该领土的模糊“协议”
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-01-21T22:25:54+00:00'
+  - date: '2026-01-22'
+    url: https://arstechnica.com/features/2026/01/has-gemini-surpassed-chatgpt-we-put-the-ai-models-to-the-test/
+    title: Has Gemini surpassed ChatGPT? We put the AI models to the test.
+    title_zh: 双子座超越ChatGPT了吗？我们对这两种AI模型进行了测试。
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-01-21T15:03:39+00:00'
+  - date: '2026-01-22'
+    url: https://www.technologyreview.com/2026/01/21/1131366/rethinking-ais-future-in-an-augmented-workplace/
+    title: Rethinking AI’s future in an augmented workplace
+    title_zh: 重新思考增强工作场所中AI的未来
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-21T15:00:00+00:00'
+  - date: '2026-01-23'
+    url: https://www.technologyreview.com/2026/01/22/1131692/dr-google-had-its-issues-can-chatgpt-health-do-better/
+    title: “Dr. Google” had its issues. Can ChatGPT Health do better?
+    title_zh: “谷歌医生”有其问题。ChatGPT健康版能否做得更好？
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-22T17:38:09+00:00'
+  - date: '2026-01-23'
+    url: https://techcrunch.com/2026/01/22/google-deepmind-ceo-is-surprised-openai-is-rushing-forward-with-ads-in-chatgpt/
+    title: Google DeepMind CEO is ‘surprised’ OpenAI is rushing forward with ads in
+      ChatGPT
+    title_zh: 谷歌DeepMind CEO对OpenAI急于在ChatGPT中投放广告感到‘惊讶’
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-22T19:41:01+00:00'
+  - date: '2026-01-23'
+    url: https://arstechnica.com/tech-policy/2026/01/meta-wants-to-block-data-about-social-media-use-mental-health-in-child-safety-trial/
+    title: Meta wants to block data about social media use, mental health in child
+      safety trial
+    title_zh: Meta欲在儿童安全审判中阻止社交媒体使用与心理健康数据的披露
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-01-22T14:25:35+00:00'
+  - date: '2026-01-23'
+    url: https://www.theverge.com/news/865854/senator-ed-markey-ai-companies-chatbots-advertising
+    title: Sen. Markey questions OpenAI about ‘deceptive advertising’ in ChatGPT
+    title_zh: 参议员Markey就ChatGPT中的‘误导性广告’向OpenAI提出质询
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-22T21:30:00+00:00'
+  - date: '2026-01-23'
+    url: https://spectrum.ieee.org/ieee-leadership-nominations-2027
+    title: Thinking of Joining IEEE’s Leadership Ranks?
+    title_zh: 考虑加入IEEE领导层吗？
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-01-22T19:00:03+00:00'
+  - date: '2026-01-24'
+    url: https://www.ft.com/content/21a7ac07-c388-41e3-a447-ed850cb0f624
+    title: Poor wage growth estimates led to inflation forecast errors, BoE says
+    title_zh: 1. 英国央行称，工资增长预估不足导致通胀预测失误
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-01-23T16:56:22+00:00'
+  - date: '2026-01-24'
+    url: https://www.bbc.com/news/articles/cly9230yw15o?at_medium=RSS&at_campaign=rss
+    title: Trump covets mineral-rich Greenland, but what natural resources does it
+      actually have?
+    title_zh: 特朗普觊觎矿产丰富的格陵兰岛，但它究竟拥有哪些自然资源？
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-01-23T12:39:51+00:00'
+  - date: '2026-01-24'
+    url: https://www.economist.com/the-world-this-week/2026/01/23/cover-story-the-true-danger-posed-by-donald-trump
+    title: 'Cover Story: The true danger posed by Donald Trump'
+    title_zh: 封面故事：唐纳德·特朗普带来的真正危险
+    category: Business & economy
+    source: The Economist - Latest (RSS)
+    published_utc: '2026-01-23T21:18:08+00:00'
+  - date: '2026-01-24'
+    url: https://techcrunch.com/2026/01/23/researchers-say-russian-government-hackers-were-behind-attempted-poland-power-outage/
+    title: Researchers say Russian government hackers were behind attempted Poland
+      power outage
+    title_zh: 研究人员称俄罗斯政府黑客是波兰停电事件的幕后黑手
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-23T20:17:24+00:00'
+  - date: '2026-01-24'
+    url: https://www.theguardian.com/business/2026/jan/23/pay-growth-limit-interest-rate-cuts-bank-policymaker-megan-greene
+    title: Strong UK pay growth could limit interest rate cuts, Bank policymaker warns
+    title_zh: 英国强劲的薪酬增长可能限制利率下调，央行政策制定者警告
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-01-23T16:00:39+00:00'
+  highlights_ai: []
+- week: 2026-W05
+  start: '2026-01-26'
+  end: '2026-02-01'
+  issues:
+  - '2026-01-26'
+  - '2026-01-27'
+  highlights_news:
+  - date: '2026-01-27'
+    url: https://www.technologyreview.com/2026/01/26/1131728/inside-openais-big-play-for-science/
+    title: Inside OpenAI’s big play for science
+    title_zh: OpenAI在科学领域的重大举措
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-26T18:32:15+00:00'
+  - date: '2026-01-27'
+    url: https://arstechnica.com/tech-policy/2026/01/tiktok-glitches-caused-by-data-center-power-outage-us-joint-venture-says/
+    title: Data center power outage took out TikTok first weekend under US ownership
+    title_zh: 数据中心停电导致TikTok美国所有权首周末故障
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-01-26T16:23:48+00:00'
+  - date: '2026-01-27'
+    url: https://techcrunch.com/2026/01/26/tiktok-attributes-recent-glitches-to-a-power-outage-at-a-u-s-data-center/
+    title: TikTok attributes recent glitches to a power outage at a US data center
+    title_zh: TikTok将近期故障归咎于美国数据中心停电
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-26T17:48:50+00:00'
+  - date: '2026-01-27'
+    url: https://www.theverge.com/news/867673/claude-mcp-app-interactive-slack-figma-canva
+    title: MCP unites Claude chat with apps like Slack, Figma, and Canva
+    title_zh: MCP将Claude聊天整合进Slack、Figma和Canva等应用
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-26T18:00:00+00:00'
+  - date: '2026-01-27'
+    url: https://the-decoder.com/mcp-apps-the-model-context-protocols-first-official-extension-turns-ai-responses-into-interactive-interfaces/
+    title: MCP Apps, the Model Context Protocol's first official extension, turns
+      AI responses into interactive interfaces
+    title_zh: MCP应用作为Model Context Protocol的首个官方扩展，将AI响应转化为交互界面
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-01-26T18:58:02+00:00'
+  - date: '2026-01-26'
+    url: https://www.technologyreview.com/2026/01/23/1131698/measles-surging-us-wastewater-tracking/
+    title: Measles is surging in the US. Wastewater tracking could help.
+    title_zh: 美国麻疹病例激增，废水追踪或可助力防控。
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-23T10:00:00+00:00'
+  - date: '2026-01-26'
+    url: https://arstechnica.com/security/2026/01/wiper-malware-targeted-poland-energy-grid-but-failed-to-knock-out-electricity/
+    title: Poland's energy grid was targeted by never-before-seen wiper malware
+    title_zh: 波兰能源网遭遇前所未见的擦除恶意软件攻击。
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-01-24T19:08:06+00:00'
+  - date: '2026-01-26'
+    url: https://techcrunch.com/2026/01/25/chatgpt-is-pulling-answers-from-elon-musks-grokipedia/
+    title: ChatGPT is pulling answers from Elon Musk’s Grokipedia
+    title_zh: ChatGPT正从Elon Musk的Grokipedia中提取答案。
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-25T22:35:53+00:00'
+  - date: '2026-01-26'
+    url: https://www.theverge.com/news/867244/microsoft-bitlocker-privacy-fbi
+    title: Microsoft handed the government encryption keys for customer data
+    title_zh: 微软向政府移交了客户数据的加密密钥
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-24T22:39:57+00:00'
+  - date: '2026-01-26'
+    url: https://the-decoder.com/openais-gpt-5-2-pro-solves-math-problems-that-stumped-every-ai-model-before-it/
+    title: OpenAI's GPT-5.2 Pro solves math problems that stumped every AI model before
+      it
+    title_zh: OpenAI的GPT-5.2 Pro解决了此前所有AI模型都未能攻克的数学难题
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-01-24T13:08:00+00:00'
+  highlights_ai:
+  - date: '2026-01-27'
+    url: https://the-decoder.com/chatgpt-fails-to-spot-92-of-fake-videos-made-by-openais-own-sora-tool/
+    title: ChatGPT fails to spot 92% of fake videos made by OpenAI's own Sora tool
+    title_zh: ChatGPT未能识别出由OpenAI自家工具Sora制作的92%假视频
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-01-25T12:55:42+00:00'
+  - date: '2026-01-27'
+    url: https://developer.nvidia.com/blog/scaling-nvfp4-inference-for-flux-2-on-nvidia-blackwell-data-center-gpus/
+    title: Scaling NVFP4 Inference for FLUX.2 on NVIDIA Blackwell Data Center GPUs
+    title_zh: 为NVIDIA Blackwell数据中心GPU扩展NVFP4推理助力FLUX.2
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-01-22T19:21:07+00:00'
+  - date: '2026-01-27'
+    url: https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.14
+    title: 'modelcontextprotocol/servers: Release 2026.1.14'
+    title_zh: modelcontextprotocol/servers：2026.1.14版本发布
+    category: AI tools & model releases
+    source: GitHub Releases - modelcontextprotocol/servers
+    published_utc: '2026-01-14T16:35:35+00:00'
+  - date: '2026-01-27'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.10.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.10.0'
+    title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.10.0版
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-01-21T19:22:04+00:00'
+  - date: '2026-01-27'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-quick-suite-launches-expanded-spice
+    title: Amazon Quick Suite launches expanded size, faster ingestion, and richer
+      data type support for SPICE datasets
+    title_zh: Amazon Quick Suite推出扩大规模、更快数据摄取及更丰富SPICE数据集类型支持
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-01-20T16:00:00+00:00'
+  - date: '2026-01-26'
+    url: https://simonwillison.net/2026/Jan/12/claude-cowork/#atom-everything
+    title: First impressions of Claude Cowork, Anthropic's general agent
+    title_zh: 初探Anthropic通用智能体Claude Cowork
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-01-12T21:46:13+00:00'

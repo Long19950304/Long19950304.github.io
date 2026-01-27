@@ -44,6 +44,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageEnhance, ImageFilter
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_SOURCES = REPO_ROOT / "_data" / "digest_sources.yml"
 DATA_DIGESTS_DIR = REPO_ROOT / "_data" / "digests"
+DATA_WEEKLY_PATH = REPO_ROOT / "_data" / "digest_weekly.yml"
 DIGESTS_DIR = REPO_ROOT / "_digests"
 ZH_DIGESTS_DIR = REPO_ROOT / "_digests_zh"
 CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
@@ -880,6 +881,137 @@ def _load_digest_yaml(path: Path) -> dict[str, Any]:
     if not isinstance(raw, dict):
         _die(f"invalid digest yaml: {path}")
     return raw
+
+
+def _compute_top_lists(date: dt.date, digest: dict[str, Any], *, lang: str = "en") -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    items = digest.get("items", [])
+    if not isinstance(items, list) or not items:
+        return ([], [])
+
+    now = _score_now_for_date(date)
+    ranked = sorted(
+        items,
+        key=lambda it: (
+            _importance_score(it, now=now),
+            _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+        ),
+        reverse=True,
+    )
+
+    ai_cat = "AI tools & model releases"
+    max_news = int(digest.get("max_items", 0) or DEFAULT_MAX_ITEMS_ON_SITE)
+    max_ai = int(digest.get("max_items_ai", 0) or DEFAULT_MAX_AI_ITEMS_ON_SITE)
+
+    if lang == "zh":
+        ranked_zh: list[dict[str, Any]] = []
+        for it in ranked:
+            t_zh = (it.get("title_zh") or "").strip()
+            if not t_zh or not _has_cjk(t_zh):
+                continue
+            ranked_zh.append(it)
+        items_news = [it for it in ranked_zh if (it.get("category") or "").strip() != ai_cat][:max_news]
+        items_ai = [it for it in ranked_zh if (it.get("category") or "").strip() == ai_cat][:max_ai]
+    else:
+        items_news = [it for it in ranked if (it.get("category") or "").strip() != ai_cat][:max_news]
+        items_ai = [it for it in ranked if (it.get("category") or "").strip() == ai_cat][:max_ai]
+
+    top_news = _select_top_diverse(
+        items_news,
+        n=10,
+        max_per_source=int(os.environ.get("DIGEST_TOP_MAX_PER_SOURCE", "3") or "3"),
+        max_per_domain=int(os.environ.get("DIGEST_TOP_MAX_PER_DOMAIN", "1") or "1"),
+        max_per_category=int(os.environ.get("DIGEST_TOP_MAX_PER_CATEGORY", "5") or "5"),
+    )
+
+    ai_top_pool = _ai_item_practicality_filter(items_ai)
+    top_ai = _select_top_diverse(
+        ai_top_pool,
+        n=min(10, len({(it.get("source") or "").strip() for it in ai_top_pool if (it.get("source") or "").strip()})),
+        max_per_source=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_SOURCE", "1") or "1"),
+        max_per_domain=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_DOMAIN", "20") or "20"),
+        max_per_category=int(os.environ.get("DIGEST_AI_TOP_MAX_PER_CATEGORY", "10") or "10"),
+    )
+    return (top_news, top_ai)
+
+
+def _update_weekly_data(date: dt.date, digest: dict[str, Any]) -> None:
+    """
+    Maintain a weekly aggregation file for the site.
+
+    Output: `personal-site/_data/digest_weekly.yml`
+    """
+    start = date - dt.timedelta(days=date.weekday())
+    end = start + dt.timedelta(days=6)
+    iso = start.isocalendar()
+    week_key = f"{iso.year}-W{iso.week:02d}"
+
+    payload = {"weeks": []}
+    if DATA_WEEKLY_PATH.exists():
+        try:
+            loaded = yaml.safe_load(DATA_WEEKLY_PATH.read_text(encoding="utf-8")) or {}
+            if isinstance(loaded, dict) and isinstance(loaded.get("weeks"), list):
+                payload = loaded
+        except Exception:
+            payload = {"weeks": []}
+
+    weeks: list[dict[str, Any]] = payload.get("weeks") or []
+    if not isinstance(weeks, list):
+        weeks = []
+
+    wk: dict[str, Any] | None = None
+    for w in weeks:
+        if isinstance(w, dict) and (w.get("week") == week_key):
+            wk = w
+            break
+    if wk is None:
+        wk = {
+            "week": week_key,
+            "start": start.isoformat(),
+            "end": end.isoformat(),
+            "issues": [],
+            "highlights_news": [],
+            "highlights_ai": [],
+        }
+        weeks.append(wk)
+
+    issues = wk.get("issues") if isinstance(wk.get("issues"), list) else []
+    if date.isoformat() not in issues:
+        issues.append(date.isoformat())
+    issues = sorted(set(issues))
+    wk["issues"] = issues
+
+    top_news, top_ai = _compute_top_lists(date, digest, lang="en")
+
+    def add_highlights(key: str, items: list[dict[str, Any]], cap: int) -> None:
+        cur = wk.get(key) if isinstance(wk.get(key), list) else []
+        if not isinstance(cur, list):
+            cur = []
+        seen = {str(x.get("url")) for x in cur if isinstance(x, dict) and x.get("url")}
+        for it in items[:5]:
+            u = (it.get("url") or "").strip()
+            if not u or u in seen:
+                continue
+            cur.append(
+                {
+                    "date": date.isoformat(),
+                    "url": u,
+                    "title": (it.get("title") or "").strip(),
+                    "title_zh": (it.get("title_zh") or "").strip(),
+                    "category": (it.get("category") or "").strip(),
+                    "source": (it.get("source") or "").strip(),
+                    "published_utc": (it.get("published_utc") or "").strip(),
+                }
+            )
+            seen.add(u)
+        wk[key] = cur[:cap]
+
+    add_highlights("highlights_news", top_news, cap=25)
+    add_highlights("highlights_ai", top_ai, cap=25)
+
+    # Keep a stable order.
+    weeks_sorted = sorted(weeks, key=lambda w: (w.get("week") or ""), reverse=False)
+    payload["weeks"] = weeks_sorted
+    _save_yaml(DATA_WEEKLY_PATH, payload)
 
 
 def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict[str, Any]]]]:
@@ -2250,6 +2382,7 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     # Hero cards (two on-site: (1) main news, (2) AI tools/model updates).
     hero_news = "News" if lang != "zh" else "新闻"
     hero_ai = "AI tools" if lang != "zh" else "AI 工具"
+    hero_sections_label = "Sections" if lang != "zh" else "目录"
     lines.extend(
         [
             '<div class="digest-hero">',
@@ -2263,19 +2396,34 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
             f'      <figcaption>{hero_ai}</figcaption>',
             "    </figure>",
             "  </div>",
-            '  <div class="digest-hero-nav">',
-            f'    <a href="#top-news">{("Top 10 — News" if lang != "zh" else "最重要的 10 条（新闻）")}</a>',
-            f'    <a href="#top-ai">{("AI tools & model updates" if lang != "zh" else "AI 工具 / 模型更新")}</a>',
-            f'    <a href="#full-news">{("Full list — News" if lang != "zh" else "全部列表（新闻）")}</a>',
-            f'    <a href="#full-ai">{("Full list — AI tools" if lang != "zh" else "全部列表（AI 工具 / 模型更新）")}</a>',
-            "  </div>",
+            '  <details class="digest-sections" open>',
+            f"    <summary>{hero_sections_label}</summary>",
+            '    <div class="digest-hero-nav">',
+            f'      <a href="#top-news">{("Top 10 — News" if lang != "zh" else "最重要的 10 条（新闻）")}</a>',
+            f'      <a href="#top-ai">{("AI tools & model updates" if lang != "zh" else "AI 工具 / 模型更新")}</a>',
+            f'      <a href="#full-news">{("Full list — News" if lang != "zh" else "全部列表（新闻）")}</a>',
+            f'      <a href="#full-ai">{("Full list — AI tools" if lang != "zh" else "全部列表（AI 工具 / 模型更新）")}</a>',
+            "    </div>",
+            "  </details>",
+            '  <nav class="digest-float-toc" aria-label="Digest sections">',
+            f'    <a href="#top-news">{("Top News" if lang != "zh" else "Top 新闻")}</a>',
+            f'    <a href="#top-ai">{("Top AI" if lang != "zh" else "Top AI")}</a>',
+            f'    <a href="#full-news">{("All News" if lang != "zh" else "全部新闻")}</a>',
+            f'    <a href="#full-ai">{("All AI" if lang != "zh" else "全部 AI")}</a>',
+            "  </nav>",
             "</div>",
             "",
         ]
     )
     if note:
         # Keep this one short; it shows at the top of the page.
-        lines.extend([f'<p class="digest-note">{note}</p>', ""])
+        label = "Today in one line" if lang != "zh" else "今日一句话"
+        lines.extend(
+            [
+                f'<div class="digest-highlight"><div class="digest-highlight__label">{label}</div><div class="digest-highlight__text">{html.escape(note)}</div></div>',
+                "",
+            ]
+        )
 
     def _cat_label(v: str) -> str:
         v = (v or "Misc").strip() or "Misc"
@@ -2329,26 +2477,44 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
                 lines.append(f'   <div class="digest-item-why">{html.escape(blurb)}</div>')
             lines.append("")
 
-    def _render_table(title_md: str, table_items: list[dict[str, Any]], *, section_id: str) -> None:
+    def _render_full_list(title_md: str, table_items: list[dict[str, Any]], *, section_id: str) -> None:
         # Wrap the full list in a collapsible block to keep the page scannable.
-        n_items = len([it for it in table_items if (it.get("title_zh") if lang == "zh" else it.get("title")) and it.get("url")])
-        summary = (
-            f"{title_md.lstrip('#').strip()} ({n_items})"
-            if lang != "zh"
-            else f"{title_md.lstrip('#').strip()}（{n_items} 条）"
-        )
-        lines.extend(
+        n_items = len(
             [
-                f'<details class="digest-details" id="{section_id}">',
-                f"<summary>{summary}</summary>",
-                "",
+                it
+                for it in table_items
+                if (it.get("title_zh") if lang == "zh" else it.get("title")) and it.get("url")
             ]
         )
-        if lang == "zh":
-            lines.append("| # | 标题 | 类别 | 来源 | 时间 (UTC) |")
-        else:
-            lines.append("| # | Title | Category | Source | Published (UTC) |")
-        lines.append("|---:|---|---|---|---|")
+        summary = f"{title_md.lstrip('#').strip()} ({n_items})" if lang != "zh" else f"{title_md.lstrip('#').strip()}（{n_items} 条）"
+        search_ph = "Search in this list…" if lang != "zh" else "在本列表中搜索…"
+        sort_label = "Sort" if lang != "zh" else "排序"
+        sort_time = "Newest first" if lang != "zh" else "最新优先"
+        sort_src = "Source" if lang != "zh" else "来源"
+        sort_cat = "Category" if lang != "zh" else "类别"
+        cat_label = "Category" if lang != "zh" else "类别"
+        src_label = "Source" if lang != "zh" else "来源"
+
+        lines.extend(
+            [
+                f'<details class="digest-details" id="{section_id}" data-digest-full>',
+                f"<summary>{summary}</summary>",
+                "",
+                '<div class="digest-full-controls">',
+                f'  <input class="form-control form-control-sm digest-full-search" type="search" placeholder="{search_ph}" data-digest-full-search>',
+                f'  <select class="custom-select custom-select-sm digest-full-select" data-digest-full-sort aria-label="{sort_label}">',
+                f'    <option value="time">{sort_time}</option>',
+                f'    <option value="source">{sort_src}</option>',
+                f'    <option value="category">{sort_cat}</option>',
+                "  </select>",
+                f'  <select class="custom-select custom-select-sm digest-full-select" data-digest-full-filter=\"category\" aria-label=\"{cat_label}\"></select>',
+                f'  <select class="custom-select custom-select-sm digest-full-select" data-digest-full-filter=\"source\" aria-label=\"{src_label}\"></select>',
+                "</div>",
+                "",
+                '<div class="digest-full-list" data-digest-full-list>',
+            ]
+        )
+
         for idx, it in enumerate(table_items, start=1):
             t = (it.get("title_zh") or "").strip() if lang == "zh" else _pick_lang(it, "title", "title_zh", lang)
             u = (it.get("url") or "").strip()
@@ -2357,10 +2523,31 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
             cat = _cat_label(it.get("category", ""))
             src = (it.get("source") or "").strip()
             pub = _pub(it)
-            lines.append(f"| {idx} | [{t}]({u}) | {cat} | {src} | {pub} |")
-        lines.append("")
-        lines.append("</details>")
-        lines.append("")
+            blurb = _short(it)
+
+            # Data attrs power front-end filtering/sorting.
+            data_title = html.escape(t)
+            data_cat = html.escape(cat)
+            data_src = html.escape(src)
+            data_pub = html.escape(pub)
+            data_url = html.escape(u)
+
+            lines.extend(
+                [
+                    f'<div class="digest-full-item" data-title="{data_title}" data-category="{data_cat}" data-source="{data_src}" data-published="{data_pub}" data-url="{data_url}">',
+                    '  <div class="digest-full-item__head">',
+                    f'    <div class="digest-full-item__idx">{idx}</div>',
+                    f'    <div class="digest-full-item__title"><a href="{u}" target="_blank" rel="noopener noreferrer">{html.escape(t)}</a></div>',
+                    '    <button type="button" class="btn btn-sm btn-outline-secondary digest-copy-row" data-copy-url="' + data_url + '" data-copy-title="' + data_title + '">' + ("Copy" if lang != "zh" else "复制") + "</button>",
+                    "  </div>",
+                    f'  <div class="digest-full-item__meta">{html.escape(cat)} · {html.escape(src)}' + (f" · {html.escape(pub)}" if pub else "") + "</div>",
+                ]
+            )
+            if blurb:
+                lines.append(f'  <div class="digest-full-item__blurb">{html.escape(blurb)}</div>')
+            lines.append("</div>")
+
+        lines.extend(["</div>", "</details>", ""])
 
     # Top lists (split into two parts per user preference).
     _render_top_section(
@@ -2373,12 +2560,12 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     )
 
     # Full lists (split).
-    _render_table(
+    _render_full_list(
         "## Full list — News" if lang != "zh" else "## 全部列表（新闻）",
         items_news,
         section_id="full-news",
     )
-    _render_table(
+    _render_full_list(
         "## Full list — AI tools & model updates" if lang != "zh" else "## 全部列表（AI 工具 / 模型更新）",
         items_ai,
         section_id="full-ai",
@@ -2498,6 +2685,11 @@ def cmd_build(args: argparse.Namespace) -> None:
     results = build_digest(date, digest)
     for lang, md_path in results:
         print(f"Wrote {md_path.relative_to(REPO_ROOT)} ({lang})")
+    # Maintain weekly aggregates for the weekly digest view.
+    try:
+        _update_weekly_data(date, digest)
+    except Exception as e:
+        print(f"warn: weekly aggregate update failed ({e})", file=sys.stderr)
 
 
 def cmd_social(args: argparse.Namespace) -> None:

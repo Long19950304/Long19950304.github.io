@@ -14,6 +14,10 @@ translation_key: digest
 仅在确实有值得读的内容时更新。
 </p>
 
+<p class="small">
+<a href="{{ '/zh/digest/weekly/' | relative_url }}">每周汇总</a>
+</p>
+
 {% assign digests = site.digests_zh | sort: "name" | reverse %}
 
 {% if digests.size == 0 %}

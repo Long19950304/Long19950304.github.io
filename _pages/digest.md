@@ -14,6 +14,10 @@ Curated, high-signal briefings across AI, AI &amp; society, digital health, and 
 Updated when there is something genuinely worth reading.
 </p>
 
+<p class="small">
+<a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
+</p>
+
 {% assign digests = site.digests | sort: "name" | reverse %}
 
 {% if digests.size == 0 %}

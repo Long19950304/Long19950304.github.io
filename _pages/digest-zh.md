@@ -10,7 +10,8 @@ translation_key: digest
 ---
 
 <p class="small">
-只在确实有值得读的内容时发布（质量优先，不强行日更）。
+精选高信号简报：AI、AI 与社会、健康传播与教育方向。
+仅在确实有值得读的内容时更新。
 </p>
 
 {% assign digests = site.digests_zh | sort: "name" | reverse %}

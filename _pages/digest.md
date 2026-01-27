@@ -10,7 +10,8 @@ translation_key: digest
 ---
 
 <p class="small">
-High-signal briefs. I post when there is something genuinely worth your time (quality over frequency).
+Curated, high-signal briefings across AI, AI &amp; society, digital health, and education.
+Updated when there is something genuinely worth reading.
 </p>
 
 {% assign digests = site.digests | sort: "name" | reverse %}

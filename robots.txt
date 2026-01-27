@@ -4,4 +4,7 @@ permalink: /robots.txt
 User-agent: *
 Disallow:
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+# Prefer canonical host (primarily used by Baidu).
+Host: www.zhaozhilong.com
+
+Sitemap: https://www.zhaozhilong.com/sitemap.xml

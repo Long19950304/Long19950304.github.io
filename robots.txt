@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://long19950304.github.io/sitemap.xml
+Sitemap: https://www.zhaozhilong.com/sitemap.xml

@@ -144,7 +144,7 @@
 
 	    // When the user searches, show direct item results (news/tools), not digest cards.
 	    if (results && grid) {
-	      const showItems = q.length >= 2;
+	      const showItems = q.length >= 1;
 	      results.hidden = !showItems;
 	      grid.style.display = showItems ? 'none' : '';
 	      if (showItems) {

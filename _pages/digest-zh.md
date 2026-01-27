@@ -72,7 +72,7 @@ translation_key: digest
   {% assign thumb_webp_file = site.static_files | where: "path", thumb_webp_path | first %}
   {% assign ai_path = '/assets/img/digests/' | append: d.digest_date | append: '-ai-zh.png' %}
   {% assign ai_file = site.static_files | where: "path", ai_path | first %}
-  <div class="col-12 col-md-6 col-lg-4 mb-4">
+  <div class="col-12 col-md-6 col-lg-4 mb-4" data-digest-col>
     <div class="card h-100 digest-index-card" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
       <a href="{{ d.url }}">
         {% if thumb_file %}

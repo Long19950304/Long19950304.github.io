@@ -10,6 +10,9 @@
 
   const normalize = (s) => (s || '').toLowerCase().trim();
 
+  // Hide/show the *grid column*, not just the inner card; otherwise you end up with empty gaps.
+  const cardWrap = (card) => card.closest('[data-digest-col]') || card.parentElement || card;
+
   const setActive = (tag) => {
     activeTag = tag;
     buttons.forEach((b) => {
@@ -29,7 +32,8 @@
       const tagOk = activeTag === 'all' ? true : tags.split(/\s+/).includes(activeTag);
       const qOk = !q ? true : (title.includes(q) || tagline.includes(q));
 
-      card.style.display = tagOk && qOk ? '' : 'none';
+      const wrap = cardWrap(card);
+      wrap.style.display = tagOk && qOk ? '' : 'none';
     });
   };
 
@@ -44,4 +48,3 @@
   // Default state.
   setActive('all');
 })();
-

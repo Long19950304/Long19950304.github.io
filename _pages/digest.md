@@ -2,7 +2,7 @@
 layout: page
 title: Digest
 permalink: /digest/
-description: Daily (high-signal) research briefs curated across AI, CSS/AI & society, digital health, and education.
+description: Daily digest archive (news + sources), plus a separate AI tools/model updates section per day.
 nav: true
 nav_order: 7
 lang: en
@@ -63,6 +63,8 @@ Archive of daily digests (news + sources), plus a separate AI tools/model update
     {% endfor %}
   {% endif %}
   {% assign tags = tags | strip %}
+  {%- comment -%}Keep the `data-tags` attribute small and stable for filtering.{%- endcomment -%}
+  {% assign tags = tags | split: " " | uniq | join: " " | strip %}
   {% assign thumb_path = '/assets/img/digests/' | append: date_key | append: '-en.png' %}
   {% assign thumb_webp_path = '/assets/img/digests/' | append: date_key | append: '-en.webp' %}
   {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}

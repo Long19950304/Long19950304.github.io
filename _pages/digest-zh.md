@@ -2,7 +2,7 @@
 layout: page
 title: 简报
 permalink: /zh/digest/
-description: 每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。
+description: 每日简报归档（新闻 + 来源），并单列当日 AI 工具 / 模型更新。
 nav: true
 nav_order: 7
 lang: zh
@@ -66,6 +66,8 @@ translation_key: digest
     {% endfor %}
   {% endif %}
   {% assign tags = tags | strip %}
+  {%- comment -%}保持 `data-tags` 简洁，便于筛选与缓存。{%- endcomment -%}
+  {% assign tags = tags | split: " " | uniq | join: " " | strip %}
 
   {% assign thumb_path = '/assets/img/digests/' | append: date_key | append: '-zh.png' %}
   {% assign thumb_webp_path = '/assets/img/digests/' | append: date_key | append: '-zh.webp' %}

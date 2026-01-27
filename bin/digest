@@ -2229,20 +2229,40 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
         f"permalink: /{'zh/' if lang == 'zh' else ''}digest/{date.isoformat()}/",
         f"digest_date: {date.isoformat()}",
         f"translation_key: digest-{date.isoformat()}",
+        "page_class: digest-page",
         "---",
         "",
     ]
-    # Two cards on-site: (1) main news, (2) AI tools/model updates.
+
+    # Hero cards (two on-site: (1) main news, (2) AI tools/model updates).
+    hero_news = "News" if lang != "zh" else "新闻"
+    hero_ai = "AI tools" if lang != "zh" else "AI 工具"
     lines.extend(
         [
-            f"![{title} — News]({card_news_rel})",
-            "",
-            f"![{title} — AI tools]({card_ai_rel})",
+            '<div class="digest-hero">',
+            '  <div class="digest-hero-grid">',
+            '    <figure class="digest-hero-card">',
+            f'      <a href="{card_news_rel}"><img src="{card_news_rel}" alt="{html.escape(title)} — {hero_news}" loading="lazy"></a>',
+            f'      <figcaption>{hero_news}</figcaption>',
+            "    </figure>",
+            '    <figure class="digest-hero-card">',
+            f'      <a href="{card_ai_rel}"><img src="{card_ai_rel}" alt="{html.escape(title)} — {hero_ai}" loading="lazy"></a>',
+            f'      <figcaption>{hero_ai}</figcaption>',
+            "    </figure>",
+            "  </div>",
+            '  <div class="digest-hero-nav">',
+            f'    <a href="#top-news">{("Top 10 — News" if lang != "zh" else "最重要的 10 条（新闻）")}</a>',
+            f'    <a href="#top-ai">{("AI tools & model updates" if lang != "zh" else "AI 工具 / 模型更新")}</a>',
+            f'    <a href="#full-news">{("Full list — News" if lang != "zh" else "全部列表（新闻）")}</a>',
+            f'    <a href="#full-ai">{("Full list — AI tools" if lang != "zh" else "全部列表（AI 工具 / 模型更新）")}</a>',
+            "  </div>",
+            "</div>",
             "",
         ]
     )
     if note:
-        lines.extend([note, ""])
+        # Keep this one short; it shows at the top of the page.
+        lines.extend([f'<p class="digest-note">{note}</p>', ""])
 
     def _cat_label(v: str) -> str:
         v = (v or "Misc").strip() or "Misc"
@@ -2293,8 +2313,21 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
                 lines.append(f"   - {blurb}")
             lines.append("")
 
-    def _render_table(title_md: str, table_items: list[dict[str, Any]]) -> None:
-        lines.extend([title_md, ""])
+    def _render_table(title_md: str, table_items: list[dict[str, Any]], *, section_id: str) -> None:
+        # Wrap the full list in a collapsible block to keep the page scannable.
+        n_items = len([it for it in table_items if (it.get("title_zh") if lang == "zh" else it.get("title")) and it.get("url")])
+        summary = (
+            f"{title_md.lstrip('#').strip()} ({n_items})"
+            if lang != "zh"
+            else f"{title_md.lstrip('#').strip()}（{n_items} 条）"
+        )
+        lines.extend(
+            [
+                f'<details class="digest-details" id="{section_id}">',
+                f"<summary>{summary}</summary>",
+                "",
+            ]
+        )
         if lang == "zh":
             lines.append("| # | 标题 | 类别 | 来源 | 时间 (UTC) |")
         else:
@@ -2310,14 +2343,16 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
             pub = _pub(it)
             lines.append(f"| {idx} | [{t}]({u}) | {cat} | {src} | {pub} |")
         lines.append("")
+        lines.append("</details>")
+        lines.append("")
 
     # Top lists (split into two parts per user preference).
     _render_top_section(
-        "## Top 10 — News" if lang != "zh" else "## 最重要的 10 条（新闻）",
+        ("## Top 10 — News {#top-news}" if lang != "zh" else "## 最重要的 10 条（新闻） {#top-news}"),
         top_news,
     )
     _render_top_section(
-        "## AI tools & model updates" if lang != "zh" else "## AI 工具 / 模型更新",
+        ("## AI tools & model updates {#top-ai}" if lang != "zh" else "## AI 工具 / 模型更新 {#top-ai}"),
         top_ai,
     )
 
@@ -2325,10 +2360,12 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     _render_table(
         "## Full list — News" if lang != "zh" else "## 全部列表（新闻）",
         items_news,
+        section_id="full-news",
     )
     _render_table(
         "## Full list — AI tools & model updates" if lang != "zh" else "## 全部列表（AI 工具 / 模型更新）",
         items_ai,
+        section_id="full-ai",
     )
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")

@@ -1,3 +1,14 @@
+// Redirect http -> https for the custom domain.
+// GitHub Pages sometimes serves http for custom domains even when HTTPS is enabled.
+(() => {
+  try {
+    const host = window.location && window.location.hostname;
+    if (window.location && window.location.protocol === "http:" && (host === "www.zhaozhilong.com" || host === "zhaozhilong.com")) {
+      window.location.replace("https://" + host + window.location.pathname + window.location.search + window.location.hash);
+    }
+  } catch (_) {}
+})();
+
 $(document).ready(function () {
   // add toggle functionality to abstract, award and bibtex buttons
   $("a.abstract").click(function () {

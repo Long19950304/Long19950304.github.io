@@ -41,13 +41,13 @@
     if (!el) return;
 
     const DEFAULT = 189;
-    const NS = 'long19950304.github.io';
+    const NS = 'long19950304.github.io'; // keep namespace to preserve historical counts
     const NAME = 'site_visits';
     const BASE = 'https://api.counterapi.dev/v1';
     const countedKey = 'zz_site_visit_counted_v1';
 
     // Avoid inflating counts when previewing locally.
-    const isProd = window.location && window.location.hostname === 'long19950304.github.io';
+    const isProd = window.location && ['www.zhaozhilong.com', 'zhaozhilong.com', 'long19950304.github.io'].includes(window.location.hostname);
     const hasCounted = !!(window.sessionStorage && sessionStorage.getItem(countedKey));
     const endpoint = hasCounted || !isProd
       ? `${BASE}/${NS}/${NAME}/`

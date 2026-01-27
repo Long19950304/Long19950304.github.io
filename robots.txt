@@ -1,4 +1,7 @@
 User-agent: *
 Disallow:
 
+# Prefer canonical host (primarily used by Baidu).
+Host: www.zhaozhilong.com
+
 Sitemap: https://www.zhaozhilong.com/sitemap.xml

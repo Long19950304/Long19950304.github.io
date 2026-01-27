@@ -10,12 +10,12 @@ translation_key: digest
 ---
 
 <p class="small">
-Curated, high-signal briefings across AI, AI &amp; society, digital health, and education.
-Updated when there is something genuinely worth reading.
+Archive of daily digests (news + sources), plus a separate AI tools/model updates section per day.
 </p>
 
 <p class="small">
 <a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
+ · <a href="{{ '/digest/feed.xml' | relative_url }}">RSS</a>
 </p>
 
 {% assign digests = site.digests | sort: "name" | reverse %}
@@ -63,18 +63,31 @@ Updated when there is something genuinely worth reading.
   {% endif %}
   {% assign tags = tags | strip %}
   {% assign thumb_path = '/assets/img/digests/' | append: d.digest_date | append: '-en.png' %}
+  {% assign thumb_webp_path = '/assets/img/digests/' | append: d.digest_date | append: '-en.webp' %}
   {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}
+  {% assign thumb_webp_file = site.static_files | where: "path", thumb_webp_path | first %}
   {% assign ai_path = '/assets/img/digests/' | append: d.digest_date | append: '-ai-en.png' %}
   {% assign ai_file = site.static_files | where: "path", ai_path | first %}
   <div class="col-12 col-md-6 col-lg-4 mb-4">
     <div class="card h-100 digest-index-card" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
       <a href="{{ d.url }}">
         {% if thumb_file %}
-          <img
-            class="card-img-top digest-card-thumb"
-            src="{{ thumb_path | relative_url }}"
-            alt="Daily Digest {{ d.digest_date }} card"
-            loading="lazy">
+          {% if thumb_webp_file %}
+            <picture>
+              <source type="image/webp" srcset="{{ thumb_webp_path | relative_url }}">
+              <img
+                class="card-img-top digest-card-thumb"
+                src="{{ thumb_path | relative_url }}"
+                alt="Daily Digest {{ d.digest_date }} card"
+                loading="lazy">
+            </picture>
+          {% else %}
+            <img
+              class="card-img-top digest-card-thumb"
+              src="{{ thumb_path | relative_url }}"
+              alt="Daily Digest {{ d.digest_date }} card"
+              loading="lazy">
+          {% endif %}
         {% else %}
           <div class="digest-card-thumb digest-card-thumb--placeholder">
             <div class="digest-card-thumb__date">{{ d.digest_date }}</div>

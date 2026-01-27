@@ -48,7 +48,7 @@ DATA_WEEKLY_PATH = REPO_ROOT / "_data" / "digest_weekly.yml"
 DIGESTS_DIR = REPO_ROOT / "_digests"
 ZH_DIGESTS_DIR = REPO_ROOT / "_digests_zh"
 CARD_DIR = REPO_ROOT / "assets" / "img" / "digests"
-DEFAULT_SITE_URL = "https://long19950304.github.io"
+DEFAULT_SITE_URL = "https://www.zhaozhilong.com"
 FETCH_TIMEOUT_SECONDS = 15
 FETCH_WORKERS = 8
 DEFAULT_MAX_ITEMS_ON_SITE = 100
@@ -128,6 +128,24 @@ def _optimize_png(path: Path) -> None:
             tmp.unlink()
         except FileNotFoundError:
             pass
+
+
+def _write_webp_from_png(png_path: Path) -> None:
+    """
+    Create a .webp sibling for a generated PNG (for faster web delivery).
+
+    Keep PNG as a fallback; templates should prefer WebP via <picture>.
+    """
+    if not png_path.exists():
+        return
+    webp = png_path.with_suffix(".webp")
+    try:
+        im = Image.open(png_path).convert("RGB")
+        webp.parent.mkdir(parents=True, exist_ok=True)
+        # Cards are mostly text; a conservative quality keeps edges crisp.
+        im.save(webp, format="WEBP", quality=82, method=6)
+    except Exception:
+        return
 
 
 def _parse_date(s: str) -> dt.date:
@@ -505,6 +523,116 @@ def _autofill_digest_zh_fields(digest: dict[str, Any], *, now: dt.datetime) -> b
     return changed
 
 
+def _autofill_digest_notes(digest: dict[str, Any], *, now: dt.datetime) -> bool:
+    """
+    Auto-fill `note` / `note_zh` (1-line highlight) if missing.
+
+    Used by:
+      - digest index card tagline
+      - "Today in one line / 今日一句话" on the issue page
+    """
+    note = (digest.get("note") or "").strip()
+    note_zh = (digest.get("note_zh") or "").strip()
+    if note and note_zh:
+        return False
+
+    items = digest.get("items", [])
+    if not isinstance(items, list) or not items:
+        return False
+
+    ranked = sorted(
+        items,
+        key=lambda it: (
+            _importance_score(it, now=now),
+            _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+        ),
+        reverse=True,
+    )
+    ai_cat = "AI tools & model releases"
+    news = [it for it in ranked if (it.get("category") or "").strip() != ai_cat]
+    ai = [it for it in ranked if (it.get("category") or "").strip() == ai_cat]
+
+    top_news = _select_top_diverse(
+        news,
+        n=min(3, len(news)),
+        max_per_source=2,
+        max_per_domain=1,
+        max_per_category=2,
+    )
+    ai_top_pool = _ai_item_practicality_filter(ai)
+    top_ai = _select_top_diverse(
+        ai_top_pool,
+        n=min(2, len(ai_top_pool)),
+        max_per_source=1,
+        max_per_domain=20,
+        max_per_category=10,
+    )
+
+    def _clean(s: str) -> str:
+        s = (s or "").strip()
+        s = re.sub(r"\s+", " ", s)
+        return s.strip(" .;:，。；：-—")
+
+    def _shorten(s: str, max_len: int) -> str:
+        s = _clean(s)
+        if len(s) <= max_len:
+            return s
+        return s[: max_len - 1].rstrip() + "…"
+
+    if not note:
+        picks: list[str] = []
+        for it in top_news[:2]:
+            t = (it.get("title") or "").strip()
+            if t:
+                picks.append(_shorten(t, 64))
+        if top_ai:
+            t = (top_ai[0].get("title") or "").strip()
+            if t:
+                picks.append(_shorten(t, 58))
+        if picks:
+            if len(picks) == 1:
+                note = f"Today: {picks[0]}."
+            elif len(picks) == 2:
+                note = f"Today: {picks[0]} · {picks[1]}."
+            else:
+                note = f"Today: {picks[0]} · {picks[1]} · AI: {picks[2]}."
+
+    if not note_zh:
+        picks_zh: list[str] = []
+        for it in top_news[:2]:
+            t = (it.get("title_zh") or "").strip()
+            if t and _has_cjk(t):
+                picks_zh.append(_shorten(t, 38))
+            else:
+                t2 = (it.get("title") or "").strip()
+                if t2:
+                    picks_zh.append(_shorten(t2, 38))
+        if top_ai:
+            t = (top_ai[0].get("title_zh") or "").strip()
+            if t and _has_cjk(t):
+                picks_zh.append(_shorten(t, 34))
+            else:
+                t2 = (top_ai[0].get("title") or "").strip()
+                if t2:
+                    picks_zh.append(_shorten(t2, 34))
+        if picks_zh:
+            if len(picks_zh) == 1:
+                note_zh = f"今日关注：{picks_zh[0]}。"
+            elif len(picks_zh) == 2:
+                note_zh = f"今日关注：{picks_zh[0]}；{picks_zh[1]}。"
+            else:
+                note_zh = f"今日关注：{picks_zh[0]}；{picks_zh[1]}；AI：{picks_zh[2]}。"
+
+    changed = False
+    if note and note != (digest.get("note") or "").strip():
+        digest["note"] = note
+        changed = True
+    if note_zh and note_zh != (digest.get("note_zh") or "").strip():
+        digest["note_zh"] = note_zh
+        changed = True
+    return changed
+
+
 def _clean_title(title: str) -> str:
     title = re.sub(r"\s+", " ", title or "").strip()
     # arXiv RSS titles sometimes include extra whitespace/line breaks.
@@ -529,7 +657,7 @@ def _http_get_bytes(url: str, *, timeout: int = FETCH_TIMEOUT_SECONDS) -> bytes:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "personal-site-digest/1.0 (+https://long19950304.github.io)",
+            "User-Agent": f"personal-site-digest/1.0 (+{DEFAULT_SITE_URL})",
             "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.1",
             "Accept-Encoding": "gzip",
         },
@@ -576,7 +704,7 @@ def _fetch_github_releases(repo: str, *, per_page: int = 10) -> Any | None:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "personal-site-digest/1.0 (+https://long19950304.github.io)",
+            "User-Agent": f"personal-site-digest/1.0 (+{DEFAULT_SITE_URL})",
             "Accept": "application/vnd.github+json",
             "X-GitHub-Api-Version": "2022-11-28",
         },
@@ -1418,7 +1546,7 @@ def _openrouter_headers(*, title: str) -> dict[str, str]:
     return {
         "Authorization": f"Bearer {key}",
         # These are recommended by OpenRouter; keep them stable and non-sensitive.
-        "HTTP-Referer": "https://long19950304.github.io",
+        "HTTP-Referer": DEFAULT_SITE_URL,
         "X-Title": title,
         "Content-Type": "application/json",
     }
@@ -2285,6 +2413,7 @@ def render_card(
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.convert("RGB").save(out_path, format="PNG", optimize=True, compress_level=9)
     _optimize_png(out_path)
+    _write_webp_from_png(out_path)
 
 
 def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
@@ -2308,10 +2437,14 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     #  - AI tools/model releases (EN + ZH)
     ver = _site_asset_version()
     card_news_rel = f"/assets/img/digests/{date.isoformat()}-{'zh' if lang == 'zh' else 'en'}.png"
+    card_news_webp_rel = card_news_rel[:-4] + ".webp"
     card_ai_rel = f"/assets/img/digests/{date.isoformat()}-ai-{'zh' if lang == 'zh' else 'en'}.png"
+    card_ai_webp_rel = card_ai_rel[:-4] + ".webp"
     if ver:
         card_news_rel += f"?v={ver}"
+        card_news_webp_rel += f"?v={ver}"
         card_ai_rel += f"?v={ver}"
+        card_ai_webp_rel += f"?v={ver}"
 
     # Sort by importance (global list, not grouped).
     now = _score_now_for_date(date)
@@ -2388,11 +2521,11 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
             '<div class="digest-hero">',
             '  <div class="digest-hero-grid">',
             '    <figure class="digest-hero-card">',
-            f'      <a href="{card_news_rel}"><img src="{card_news_rel}" alt="{html.escape(title)} — {hero_news}" loading="lazy"></a>',
+            f'      <a href="{card_news_rel}"><picture><source type="image/webp" srcset="{card_news_webp_rel}"><img src="{card_news_rel}" alt="{html.escape(title)} — {hero_news}" loading="lazy"></picture></a>',
             f'      <figcaption>{hero_news}</figcaption>',
             "    </figure>",
             '    <figure class="digest-hero-card">',
-            f'      <a href="{card_ai_rel}"><img src="{card_ai_rel}" alt="{html.escape(title)} — {hero_ai}" loading="lazy"></a>',
+            f'      <a href="{card_ai_rel}"><picture><source type="image/webp" srcset="{card_ai_webp_rel}"><img src="{card_ai_rel}" alt="{html.escape(title)} — {hero_ai}" loading="lazy"></picture></a>',
             f'      <figcaption>{hero_ai}</figcaption>',
             "    </figure>",
             "  </div>",
@@ -2679,8 +2812,15 @@ def cmd_build(args: argparse.Namespace) -> None:
         else:
             _die(f"missing digest YAML for {date.isoformat()} (expected {digest_path})")
     digest = _load_digest_yaml(digest_path)
-    # Auto-fill missing zh fields so the Chinese site is fully Chinese by default.
-    if _autofill_digest_zh_fields(digest, now=_score_now_for_date(date)):
+    # Auto-fill missing zh fields so the Chinese site is fully Chinese by default,
+    # then auto-generate a short one-line highlight if missing.
+    changed = False
+    now = _score_now_for_date(date)
+    if _autofill_digest_zh_fields(digest, now=now):
+        changed = True
+    if _autofill_digest_notes(digest, now=now):
+        changed = True
+    if changed:
         _save_yaml(digest_path, digest)
     results = build_digest(date, digest)
     for lang, md_path in results:

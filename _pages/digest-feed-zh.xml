@@ -1,0 +1,32 @@
+---
+layout: null
+permalink: /zh/digest/feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>赵志龙 — 每日简报</title>
+    <link>{{ '/zh/digest/' | absolute_url }}</link>
+    <description>每日简报归档（新闻 + AI 工具/模型更新）。</description>
+    <language>zh</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% assign digests = site.digests_zh | sort: "name" | reverse %}
+    {% for d in digests limit: 50 %}
+      {% assign meta = site.data.digests[d.digest_date] %}
+      {% assign tagline = meta.note_zh %}
+      {% if tagline == nil or tagline == "" %}
+        {% assign tagline = meta.items[0].title_zh %}
+        {% if tagline == nil or tagline == "" %}
+          {% assign tagline = meta.items[0].title %}
+        {% endif %}
+      {% endif %}
+    <item>
+      <title>{{ d.title | xml_escape }}</title>
+      <link>{{ d.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ d.url | absolute_url }}</guid>
+      <pubDate>{{ d.digest_date | date_to_rfc822 }}</pubDate>
+      <description>{{ tagline | default: "" | strip | truncate: 240 | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

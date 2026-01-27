@@ -1,0 +1,29 @@
+---
+layout: null
+permalink: /digest/feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Zhilong George Zhao — Daily Digest</title>
+    <link>{{ '/digest/' | absolute_url }}</link>
+    <description>Daily digest archive (news + AI tools/model updates).</description>
+    <language>en</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% assign digests = site.digests | sort: "name" | reverse %}
+    {% for d in digests limit: 50 %}
+      {% assign meta = site.data.digests[d.digest_date] %}
+      {% assign tagline = meta.note %}
+      {% if tagline == nil or tagline == "" %}
+        {% assign tagline = meta.items[0].title %}
+      {% endif %}
+    <item>
+      <title>{{ d.title | xml_escape }}</title>
+      <link>{{ d.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ d.url | absolute_url }}</guid>
+      <pubDate>{{ d.digest_date | date_to_rfc822 }}</pubDate>
+      <description>{{ tagline | default: "" | strip | truncate: 240 | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

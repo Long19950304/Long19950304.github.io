@@ -1,8 +1,10 @@
 date: '2026-01-26'
 title: Daily Digest - 2026-01-26
 title_zh: 每日简报 - 2026-01-26
-note: ''
-note_zh: ''
+note: 'Today: Measles is surging in the US. Wastewater tracking could help · Poland''s
+  energy grid was targeted by never-before-seen wiper ma… · AI: ChatGPT fails to spot
+  92% of fake videos made by OpenAI''s….'
+note_zh: 今日关注：美国麻疹病例激增，废水追踪或可助力防控；波兰能源网遭遇前所未见的擦除恶意软件攻击；AI：ChatGPT未能识别出OpenAI自家Sora工具制作的92%假…。
 items:
 - category: Tech industry
   title: 'The Holy Grail of Linux Binary Compatibility: Musl and Dlopen'

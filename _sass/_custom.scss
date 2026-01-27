@@ -818,6 +818,81 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.digest-search-results {
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  padding: 0.65rem 0.75rem;
+  max-height: 420px;
+  overflow: auto;
+}
+
+.digest-search-results__header {
+  font-size: 0.9rem;
+  font-weight: 650;
+  margin-bottom: 0.5rem;
+}
+
+.digest-search-results__empty {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  padding: 0.25rem 0;
+}
+
+.digest-search-results__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.digest-search-results__item {
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.digest-search-results__item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.digest-search-results__title {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.digest-search-results__meta {
+  margin-top: 0.15rem;
+  font-size: 0.84rem;
+  color: var(--global-text-color-light);
+}
+
+.digest-search-results__actions {
+  margin-top: 0.35rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.digest-search-results__badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.digest-search-results__link {
+  font-size: 0.82rem;
+  text-decoration: none;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+}
+
 .digest-index-filters {
   display: flex;
   flex-wrap: wrap;
@@ -849,6 +924,8 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.9rem;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -859,6 +936,20 @@ h1 {
 
 .digest-page .digest-hero-card {
   margin: 0;
+}
+
+.digest-page .digest-hero-card img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 576px) {
+  .digest-page .digest-hero-card img {
+    max-height: 320px;
+  }
 }
 
 .digest-page .digest-hero-card figcaption {

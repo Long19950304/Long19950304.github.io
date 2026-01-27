@@ -28,6 +28,9 @@ translation_key: digest
     <div class="digest-index-controls__row">
       <input class="form-control form-control-sm digest-index-search" type="search" placeholder="搜索…" data-digest-search>
     </div>
+    <div class="digest-index-controls__row">
+      <div class="digest-search-results" data-digest-results hidden></div>
+    </div>
     <div class="digest-index-controls__row digest-index-filters" role="group" aria-label="简报筛选">
       <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="all">全部</button>
       <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="ai-tools">AI 工具</button>
@@ -40,7 +43,7 @@ translation_key: digest
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-digest-grid>
 {% for d in digests %}
   {% assign date_key = d.digest_date | date: "%Y-%m-%d" %}
   {% assign en = site.digests | where: "digest_date", d.digest_date | first %}

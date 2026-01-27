@@ -1,0 +1,42 @@
+---
+layout: none
+permalink: /assets/digest-items.json
+---
+{%- comment -%}
+Flattened digest items for client-side search on /digest/ and /zh/digest/.
+Keep this file reasonably small by limiting to recent digests.
+{%- endcomment -%}
+[
+{%- assign entries = site.data.digests | sort -%}
+{%- assign entries = entries | reverse -%}
+{%- assign first_item = true -%}
+{%- for entry in entries limit: 120 -%}
+  {%- assign date_key = entry[0] -%}
+  {%- assign digest = entry[1] -%}
+  {%- assign items = digest.items -%}
+  {%- if items -%}
+    {%- for it in items -%}
+      {%- assign cat = it.category | default: "" -%}
+      {%- assign cat_lc = cat | downcase -%}
+      {%- assign kind = "news" -%}
+      {%- if cat_lc contains "ai tools" -%}
+        {%- assign kind = "ai-tools" -%}
+      {%- endif -%}
+      {%- unless first_item -%},{%- endunless -%}
+      {%- assign first_item = false -%}
+{
+  "date": {{ date_key | jsonify }},
+  "kind": {{ kind | jsonify }},
+  "category": {{ cat | jsonify }},
+  "title": {{ it.title | default: "" | jsonify }},
+  "title_zh": {{ it.title_zh | default: "" | jsonify }},
+  "source": {{ it.source | default: "" | jsonify }},
+  "url": {{ it.url | default: "" | jsonify }},
+  "published_utc": {{ it.published_utc | default: "" | jsonify }},
+  "digest_url": {{ "/digest/" | append: date_key | append: "/" | jsonify }},
+  "digest_zh_url": {{ "/zh/digest/" | append: date_key | append: "/" | jsonify }}
+}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+]

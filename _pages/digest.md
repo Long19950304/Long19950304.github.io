@@ -28,6 +28,9 @@ Archive of daily digests (news + sources), plus a separate AI tools/model update
     <div class="digest-index-controls__row">
       <input class="form-control form-control-sm digest-index-search" type="search" placeholder="Search…" data-digest-search>
     </div>
+    <div class="digest-index-controls__row">
+      <div class="digest-search-results" data-digest-results hidden></div>
+    </div>
     <div class="digest-index-controls__row digest-index-filters" role="group" aria-label="Digest filters">
       <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="all">All</button>
       <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="ai-tools">AI tools</button>
@@ -40,7 +43,7 @@ Archive of daily digests (news + sources), plus a separate AI tools/model update
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-digest-grid>
 {% for d in digests %}
   {% assign date_key = d.digest_date | date: "%Y-%m-%d" %}
   {% assign zh = site.digests_zh | where: "digest_date", d.digest_date | first %}

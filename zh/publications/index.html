@@ -430,23 +430,63 @@
     if (!el) return;
 
     const DEFAULT = 189;
-    const NS = 'long19950304.github.io'; // keep namespace to preserve historical counts
+    // Counter namespace:
+    // - We now use the new domain for increments.
+    // - To preserve the historical count, we keep a one-time baseline from the old namespace.
+    const NS_NEW = 'www.zhaozhilong.com';
+    const NS_OLD = 'long19950304.github.io';
     const NAME = 'site_visits';
     const BASE = 'https://api.counterapi.dev/v1';
     const countedKey = 'zz_site_visit_counted_v1';
+    const baselineKey = 'zz_site_visit_baseline_v1';
 
     // Avoid inflating counts when previewing locally.
     const isProd = window.location && ['www.zhaozhilong.com', 'zhaozhilong.com', 'long19950304.github.io'].includes(window.location.hostname);
     const hasCounted = !!(window.sessionStorage && sessionStorage.getItem(countedKey));
-    const endpoint = hasCounted || !isProd
-      ? `${BASE}/${NS}/${NAME}/`
-      : `${BASE}/${NS}/${NAME}/up`;
+    const endpointNew = hasCounted || !isProd
+      ? `${BASE}/${NS_NEW}/${NAME}/`
+      : `${BASE}/${NS_NEW}/${NAME}/up`;
 
-    fetch(endpoint, { method: 'GET' })
-      .then(r => r.json())
-      .then(data => {
-        const v = (data && typeof data.count === 'number') ? data.count : DEFAULT;
-        el.textContent = v.toLocaleString();
+    function readBaseline() {
+      try {
+        const v = window.localStorage && localStorage.getItem(baselineKey);
+        const n = v ? Number(v) : NaN;
+        return Number.isFinite(n) ? n : null;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function writeBaseline(v) {
+      try { localStorage.setItem(baselineKey, String(v)); } catch (_) {}
+    }
+
+    function setCount(base, n) {
+      const total = (Number.isFinite(base) ? base : DEFAULT) + (Number.isFinite(n) ? n : 0);
+      el.textContent = total.toLocaleString();
+    }
+
+    const baseline = readBaseline();
+    const baselinePromise = baseline != null
+      ? Promise.resolve(baseline)
+      : fetch(`${BASE}/${NS_OLD}/${NAME}/`, { method: 'GET' })
+          .then(r => r.json())
+          .then(d => {
+            const v = (d && typeof d.count === 'number') ? d.count : DEFAULT;
+            writeBaseline(v);
+            return v;
+          })
+          .catch(() => DEFAULT);
+
+    Promise.all([
+      baselinePromise,
+      fetch(endpointNew, { method: 'GET' })
+        .then(r => r.json())
+        .then(d => (d && typeof d.count === 'number') ? d.count : 0)
+        .catch(() => 0),
+    ])
+      .then(([base, n]) => {
+        setCount(base, n);
         try { sessionStorage.setItem(countedKey, '1'); } catch (_) {}
       })
       .catch(() => {

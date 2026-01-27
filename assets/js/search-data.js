@@ -67,14 +67,14 @@ ninja.data = [{
           },
         },{id: "nav-简报",
           title: "简报",
-          description: "每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。",
+          description: "每日简报归档（新闻 + 来源），并单列当日 AI 工具 / 模型更新。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/digest/";
           },
         },{id: "nav-digest",
           title: "Digest",
-          description: "Daily (high-signal) research briefs curated across AI, CSS/AI &amp; society, digital health, and education.",
+          description: "Daily digest archive (news + sources), plus a separate AI tools/model updates section per day.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/digest/";

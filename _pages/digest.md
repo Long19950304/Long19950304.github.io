@@ -42,8 +42,9 @@ Archive of daily digests (news + sources), plus a separate AI tools/model update
 
   <div class="row">
 {% for d in digests %}
+  {% assign date_key = d.digest_date | date: "%Y-%m-%d" %}
   {% assign zh = site.digests_zh | where: "digest_date", d.digest_date | first %}
-  {% assign meta = site.data.digests[d.digest_date] %}
+  {% assign meta = site.data.digests[date_key] %}
   {% assign tagline = meta.note %}
   {% if tagline == nil or tagline == "" %}
     {% assign tagline = meta.items[0].title %}
@@ -62,11 +63,11 @@ Archive of daily digests (news + sources), plus a separate AI tools/model update
     {% endfor %}
   {% endif %}
   {% assign tags = tags | strip %}
-  {% assign thumb_path = '/assets/img/digests/' | append: d.digest_date | append: '-en.png' %}
-  {% assign thumb_webp_path = '/assets/img/digests/' | append: d.digest_date | append: '-en.webp' %}
+  {% assign thumb_path = '/assets/img/digests/' | append: date_key | append: '-en.png' %}
+  {% assign thumb_webp_path = '/assets/img/digests/' | append: date_key | append: '-en.webp' %}
   {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}
   {% assign thumb_webp_file = site.static_files | where: "path", thumb_webp_path | first %}
-  {% assign ai_path = '/assets/img/digests/' | append: d.digest_date | append: '-ai-en.png' %}
+  {% assign ai_path = '/assets/img/digests/' | append: date_key | append: '-ai-en.png' %}
   {% assign ai_file = site.static_files | where: "path", ai_path | first %}
   <div class="col-12 col-md-6 col-lg-4 mb-4" data-digest-col>
     <div class="card h-100 digest-index-card" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">

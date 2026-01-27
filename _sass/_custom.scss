@@ -765,3 +765,18 @@ h1 {
 .podcast-guidance {
   margin-bottom: 0.25rem;
 }
+
+// Digest index cards
+.digest-index-card {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.digest-card-thumb {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: rgba(0, 0, 0, 0.04);
+}

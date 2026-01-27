@@ -798,3 +798,13 @@ h1 {
   padding: 0.25rem 0.4rem;
   border-radius: 8px;
 }
+
+.digest-card-tagline {
+  font-size: 0.92rem;
+  line-height: 1.3;
+  color: var(--global-text-color-light);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

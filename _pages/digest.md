@@ -21,6 +21,11 @@ High-signal briefs. I post when there is something genuinely worth your time (qu
 <div class="row">
 {% for d in digests %}
   {% assign zh = site.digests_zh | where: "digest_date", d.digest_date | first %}
+  {% assign meta = site.data.digests[d.digest_date] %}
+  {% assign tagline = meta.note %}
+  {% if tagline == nil or tagline == "" %}
+    {% assign tagline = meta.items[0].title %}
+  {% endif %}
   {% assign thumb_path = '/assets/img/digests/' | append: d.digest_date | append: '-en.png' %}
   {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}
   {% assign ai_path = '/assets/img/digests/' | append: d.digest_date | append: '-ai-en.png' %}
@@ -43,6 +48,9 @@ High-signal briefs. I post when there is something genuinely worth your time (qu
       <div class="card-body">
         <div class="small text-muted mb-1">{{ d.digest_date }}</div>
         <h5 class="card-title mb-0"><a href="{{ d.url }}">{{ d.title }}</a></h5>
+        {% if tagline %}
+          <div class="digest-card-tagline mt-2">{{ tagline | strip | truncate: 120 }}</div>
+        {% endif %}
         <div class="mt-2">
           <span class="badge badge-light">News</span>
           {% if ai_file %}

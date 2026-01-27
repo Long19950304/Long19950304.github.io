@@ -780,3 +780,21 @@ h1 {
   display: block;
   background: rgba(0, 0, 0, 0.04);
 }
+
+.digest-card-thumb--placeholder {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(32, 201, 151, 0.12));
+}
+
+.digest-card-thumb__date {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.55);
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.25rem 0.4rem;
+  border-radius: 8px;
+}

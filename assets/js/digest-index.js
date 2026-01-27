@@ -30,7 +30,8 @@
       const tagline = normalize(card.dataset.tagline || '');
 
       const tagOk = activeTag === 'all' ? true : tags.split(/\s+/).includes(activeTag);
-      const qOk = !q ? true : (title.includes(q) || tagline.includes(q));
+      // Search also matches tags (so "ai", "health", "business" etc. work as expected).
+      const qOk = !q ? true : (title.includes(q) || tagline.includes(q) || tags.includes(q));
 
       const wrap = cardWrap(card);
       wrap.style.display = tagOk && qOk ? '' : 'none';

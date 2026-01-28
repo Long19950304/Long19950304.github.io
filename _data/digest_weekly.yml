@@ -198,6 +198,7 @@ weeks:
   issues:
   - '2026-01-26'
   - '2026-01-27'
+  - '2026-01-28'
   highlights_news:
   - date: '2026-01-27'
     url: https://www.technologyreview.com/2026/01/26/1131728/inside-openais-big-play-for-science/
@@ -271,6 +272,42 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-01-24T13:08:00+00:00'
+  - date: '2026-01-28'
+    url: https://www.technologyreview.com/2026/01/27/1131793/openais-latest-product-lets-you-vibe-code-science/
+    title: OpenAI’s latest product lets you vibe code science
+    title_zh: OpenAI最新产品让你尽情体验编程科学的魅力
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-27T18:00:43+00:00'
+  - date: '2026-01-28'
+    url: https://techcrunch.com/2026/01/27/anthropic-and-openai-ceos-condemn-ice-violence-praise-trump/
+    title: Anthropic and OpenAI CEOs condemn ICE violence, praise Trump
+    title_zh: Anthropic与OpenAI首席执行官谴责ICE暴力行为并称赞特朗普
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-27T18:19:19+00:00'
+  - date: '2026-01-28'
+    url: https://arstechnica.com/ai/2026/01/openai-spills-technical-details-about-how-its-ai-coding-agent-works/
+    title: OpenAI spills technical details about how its AI coding agent works
+    title_zh: OpenAI披露其AI编码助手技术细节
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-01-26T23:05:17+00:00'
+  - date: '2026-01-28'
+    url: https://www.theverge.com/news/869008/meta-data-centers-ad-campaign
+    title: Meta is spending millions to convince people that data centers are cool
+      and you like them
+    title_zh: Meta斥资数百万重塑数据中心形象博取公众好感
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-27T23:53:53+00:00'
+  - date: '2026-01-28'
+    url: https://the-decoder.com/openai-reportedly-launches-chatgpt-ads-at-premium-tv-prices/
+    title: OpenAI reportedly launches ChatGPT ads at premium TV prices
+    title_zh: 据报道OpenAI以高价电视广告费率推出ChatGPT广告
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-01-26T19:53:26+00:00'
   highlights_ai:
   - date: '2026-01-27'
     url: https://the-decoder.com/chatgpt-fails-to-spot-92-of-fake-videos-made-by-openais-own-sora-tool/
@@ -315,3 +352,38 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-01-12T21:46:13+00:00'
+  - date: '2026-01-28'
+    url: https://www.latent.space/p/ainews-anthropic-launches-the-mcp
+    title: '[AINews] Anthropic launches the MCP Apps open spec, in Claude.ai'
+    title_zh: '[AI新闻]Anthropic在Claude.ai发布MCP应用开放规范'
+    category: AI tools & model releases
+    source: Latent Space (LLM/tools)
+    published_utc: '2026-01-27T07:20:28+00:00'
+  - date: '2026-01-28'
+    url: https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.26
+    title: 'modelcontextprotocol/servers: Release 2026.1.26'
+    title_zh: 'modelcontextprotocol/servers: 2026.1.26版发布'
+    category: AI tools & model releases
+    source: GitHub Releases - modelcontextprotocol/servers
+    published_utc: '2026-01-27T12:11:26+00:00'
+  - date: '2026-01-28'
+    url: https://github.com/openai/openai-python/releases/tag/v2.16.0
+    title: 'openai/openai-python: v2.16.0'
+    title_zh: 'openai/openai-python: v2.16.0版本'
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-01-27T23:27:23+00:00'
+  - date: '2026-01-28'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.11.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.11.0'
+    title_zh: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI v0.11.0版'
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-01-27T06:23:53+00:00'
+  - date: '2026-01-28'
+    url: https://developer.nvidia.com/blog/adaptive-inference-in-nvidia-tensorrt-for-rtx-enables-automatic-optimization/
+    title: Adaptive Inference in NVIDIA TensorRT for RTX Enables Automatic Optimization
+    title_zh: NVIDIA TensorRT自适应推理技术实现RTX自动优化
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-01-26T21:00:00+00:00'

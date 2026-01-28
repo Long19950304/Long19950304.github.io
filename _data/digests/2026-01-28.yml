@@ -1,0 +1,1857 @@
+date: '2026-01-28'
+title: Daily Digest - 2026-01-28
+title_zh: 每日简报 - 2026-01-28
+note: 'Today: OpenAI’s latest product lets you vibe code science · Anthropic and OpenAI
+  CEOs condemn ICE violence, praise Trump · AI: [AINews] Anthropic launches the MCP
+  Apps open spec, in Cl….'
+note_zh: 今日关注：OpenAI最新产品让你尽情体验编程科学的魅力；Anthropic与OpenAI首席执行官谴责ICE暴力行为并称赞特朗普；AI：[AI新闻]Anthropic在Claude.ai发布MCP应用开…。
+items:
+- category: Tech industry
+  title: Meta is spending millions to convince people that data centers are cool and
+    you like them
+  why: Over the last few months of 2025, Meta spent $6.4 million on an ad campaign
+    running in cities across the country, from Sacramento to Washin…
+  takeaway: 'Over the last few months of 2025, Meta spent $6.4 million on an ad campaign
+    running in cities across the country, from Sacramento to Washington, with a clear
+    mission: win over viewers on the construction of new data centers. As the New
+    York Times reports, the ad campaign is anchored by short, folksy video spotlights
+    […]'
+  prompt: ''
+  url: https://www.theverge.com/news/869008/meta-data-centers-ad-campaign
+  source: The Verge
+  published_utc: '2026-01-27T23:53:53+00:00'
+  title_zh: Meta斥资数百万重塑数据中心形象博取公众好感
+  why_zh: 2025年后几个月，Meta耗资640万美元在全美多个城市投放广告，从萨克拉门托到华盛顿...
+  takeaway_zh: 2025年最后几个月，Meta耗资640万美元在全国范围内从萨克拉门托到华盛顿等城市开展广告宣传，明确目标：赢得观众对新建数据中心的支持。据《纽约时报》报道，该广告宣传以简短、亲切的视频片段为核心…
+  prompt_zh: ''
+- category: Tech industry
+  title: Moltbot, the AI agent that &#8216;actually does things,&#8217; is tech’s
+    new obsession
+  why: An open-source AI agent that "actually does things" is taking off, with people
+    across the web sharing how they're using the agent to do a w…
+  takeaway: An open-source AI agent that "actually does things" is taking off, with
+    people across the web sharing how they're using the agent to do a whole bunch
+    of things, like manage reminders, log health and fitness data, and even communicate
+    with clients. The tool, called Moltbot (formerly Clawdbot), runs locally on a
+    variety of devices, […]
+  prompt: ''
+  url: https://www.theverge.com/report/869004/moltbot-clawdbot-local-ai-agent
+  source: The Verge
+  published_utc: '2026-01-27T23:28:11+00:00'
+  title_zh: Moltbot——这款‘真正能做事’的AI代理正成为科技界新宠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.16.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.16.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-01-27T23:27:23+00:00'
+  title_zh: 'openai/openai-python: v2.16.0版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best budget robot vacuums
+  why: 'Today’s robot vacuums are becoming a bit like cars: with all the features,
+    upgrades, and fancy trimmings available these days, it’s easy to…'
+  takeaway: 'Today’s robot vacuums are becoming a bit like cars: with all the features,
+    upgrades, and fancy trimmings available these days, it’s easy to forget that they
+    can just be simple machines that get us from point A to point B. Yes, some bots
+    blow hot air on their bums (mop pads), deftly navigate dog poop, […]'
+  prompt: ''
+  url: https://www.theverge.com/23846479/best-budget-robot-vacuum-robot-mop
+  source: The Verge
+  published_utc: '2026-01-27T23:09:23+00:00'
+  title_zh: 最佳平价扫地机器人推荐
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: There's a rash of scam spam coming from a real Microsoft address
+  why: Abusing Microsoft's reputation may make scam harder to spot.
+  takeaway: Abusing Microsoft's reputation may make scam harder to spot.
+  prompt: ''
+  url: https://arstechnica.com/information-technology/2026/01/theres-a-rash-of-scam-spam-coming-from-a-real-microsoft-address/
+  source: Ars Technica
+  published_utc: '2026-01-27T22:34:40+00:00'
+  title_zh: 微软真实地址爆出大量欺诈垃圾邮件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The winter storm tested power grids straining to accommodate AI data centers
+  why: The colossal winter storm that swept across 34 states left hundreds of thousands
+    of people without electricity.
+  takeaway: The colossal winter storm that swept across 34 states left hundreds of
+    thousands of people without electricity. Bitterly cold temperatures lingering
+    after Winter Storm Fern are still testing power grids, already under stress from
+    a rush of new AI data centers. Over the weekend, wholesale electricity prices
+    soared in Virginia, the state with the most […]
+  prompt: ''
+  url: https://www.theverge.com/report/868859/electricity-rates-power-grid-ai-data-center-winter-storm
+  source: The Verge
+  published_utc: '2026-01-27T22:28:58+00:00'
+  title_zh: 冬季风暴考验电力系统，AI数据中心需求加剧压力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anduril has invented a wild new drone flying contest where jobs are the prize
+  why: This is a race series for software programmers and the brainchild of founder
+    Palmer Luckey, he tells TechCrunch.
+  takeaway: This is a race series for software programmers and the brainchild of founder
+    Palmer Luckey, he tells TechCrunch.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/anduril-has-invented-a-wild-new-drone-flying-contest-where-jobs-are-the-prize/
+  source: TechCrunch
+  published_utc: '2026-01-27T21:54:38+00:00'
+  title_zh: Anduril公司推出以工作岗位为奖品的疯狂无人机竞速赛
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Thief of $90M in seized U.S.-controlled crypto is gov't contractor's son
+  why: 'Article URL: https://www.web3isgoinggreat.com/single/lick-theft Comments URL:
+    https://news.ycombinator.com/item?id=46787521 Points: 70 # Co…'
+  takeaway: 'Article URL: https://www.web3isgoinggreat.com/single/lick-theft Comments
+    URL: https://news.ycombinator.com/item?id=46787521 Points: 70 # Comments: 8'
+  prompt: ''
+  url: https://www.web3isgoinggreat.com/single/lick-theft
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T21:54:29+00:00'
+  title_zh: 美国政府扣押的9000万美元加密货币盗窃案主谋为政府承包商之子
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best fitness trackers and watches we’ve tested
+  why: Fitness trackers have come a long way from the simple bands that tracked steps
+    and little else.
+  takeaway: Fitness trackers have come a long way from the simple bands that tracked
+    steps and little else. Modern trackers can monitor everything from your heart
+    health to how well you’ve recovered from a hard bout of training. Even flagship
+    smartwatches, which used to be lackluster trackers, have become pretty adept workout
+    companions. Whatever your fitness […]
+  prompt: ''
+  url: https://www.theverge.com/22985108/best-fitness-tracker
+  source: The Verge
+  published_utc: '2026-01-27T21:51:15+00:00'
+  title_zh: 我们测试过的最佳健身追踪器和智能手表
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Bluesky teases 2026 roadmap: A better Discover feed, real-time features,
+    and more'
+  why: Bluesky is teasing new features and improvements ranging from the Discover
+    feed to video support.
+  takeaway: Bluesky is teasing new features and improvements ranging from the Discover
+    feed to video support.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/bluesky-teases-2026-roadmap-a-better-discover-feed-real-time-features-and-more/
+  source: TechCrunch
+  published_utc: '2026-01-27T21:32:18+00:00'
+  title_zh: Bluesky预告2026路线图：优化发现流、实时功能等
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic reportedly upped its latest raise to $20B
+  why: Anthropic looks to raise $20 billion at more than $300 billion valuation, according
+    to reports.
+  takeaway: Anthropic looks to raise $20 billion at more than $300 billion valuation,
+    according to reports.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/anthropic-reportedly-upped-its-latest-raise-to-20b/
+  source: TechCrunch
+  published_utc: '2026-01-27T21:16:10+00:00'
+  title_zh: 据报道Anthropic最新融资估值达200亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Supreme Court to decide how 1988 videotape privacy law applies to online
+    video
+  why: Salazar v.
+  takeaway: Salazar v. Paramount hinges on video privacy law's definition of "consumer."
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/supreme-court-to-decide-how-1988-videotape-privacy-law-applies-to-online-video/
+  source: Ars Technica
+  published_utc: '2026-01-27T21:15:51+00:00'
+  title_zh: 最高法院将裁定1988年录像带隐私法如何适用于网络视频
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A WB-57 pilot just made a heroic landing in Houston after its landing gear
+    failed
+  why: '"A thorough investigation will be conducted by NASA into the cause."'
+  takeaway: '"A thorough investigation will be conducted by NASA into the cause."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/one-of-nasas-three-wb-57-aircraft-just-did-a-belly-landing-in-houston/
+  source: Ars Technica
+  published_utc: '2026-01-27T21:05:17+00:00'
+  title_zh: WB-57飞行员在休斯顿英勇迫降，因起落架故障
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I wrapped the Zorks with an LLM'
+  why: I grew up on the Infocom games and when microsoft actually open-sourced Zork
+    1/2/3 I really wanted to figure out how to use LLMs to let you…
+  takeaway: I grew up on the Infocom games and when microsoft actually open-sourced
+    Zork 1/2/3 I really wanted to figure out how to use LLMs to let you type whatever
+    you want, I always found the amount language that the games "understood" to be
+    so limiting - even if it was pretty state of the art at the time. So I figured
+    out how to wrap it with Tambo.. (and run the ga…
+  prompt: ''
+  url: https://infocom.tambo.co/
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T20:59:49+00:00'
+  title_zh: Show HN：我用大语言模型封装了Zorks游戏
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok settles just before social media addiction trial to begin
+  why: 'Article URL: https://www.bbc.com/news/articles/c24g8v6qr1mo Comments URL:
+    https://news.ycombinator.com/item?id=46786237 Points: 96 # Commen…'
+  takeaway: 'Article URL: https://www.bbc.com/news/articles/c24g8v6qr1mo Comments
+    URL: https://news.ycombinator.com/item?id=46786237 Points: 96 # Comments: 88'
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c24g8v6qr1mo
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T20:38:22+00:00'
+  title_zh: TikTok在社交媒体成瘾审判开始前达成和解
+  why_zh: '文章链接：https://www.bbc.com/news/articles/c24g8v6qr1mo 评论链接：https://news.ycombinator.com/item?id=46786237
+    积分：96 # 评论…'
+  takeaway_zh: '文章链接：https://www.bbc.com/news/articles/c24g8v6qr1mo 评论链接：https://news.ycombinator.com/item?id=46786237
+    积分：96 # 评论：88'
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon agrees to pay consumers $309M in returns policy settlement
+  why: The lawsuit, filed in 2023, alleged that Amazon caused "substantial unjustified
+    monetary losses” for consumers who returned an item but wer…
+  takeaway: The lawsuit, filed in 2023, alleged that Amazon caused "substantial unjustified
+    monetary losses” for consumers who returned an item but were still charged for
+    it.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/amazon-agrees-to-pay-consumers-309m-in-returns-policy-settlement/
+  source: TechCrunch
+  published_utc: '2026-01-27T20:38:03+00:00'
+  title_zh: 亚马逊同意支付3.09亿美元和解退货政策纠纷
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Time Station Emulator
+  why: 'Article URL: https://github.com/kangtastic/timestation Comments URL: https://news.ycombinator.com/item?id=46786183
+    Points: 66 # Comments: 10'
+  takeaway: 'Article URL: https://github.com/kangtastic/timestation Comments URL:
+    https://news.ycombinator.com/item?id=46786183 Points: 66 # Comments: 10'
+  prompt: ''
+  url: https://github.com/kangtastic/timestation
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T20:35:34+00:00'
+  title_zh: 时间车站模拟器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How many chess games are possible?
+  why: 'Article URL: https://win-vector.com/2026/01/27/how-many-chess-games-are-possible/
+    Comments URL: https://news.ycombinator.com/item?id=467855…'
+  takeaway: 'Article URL: https://win-vector.com/2026/01/27/how-many-chess-games-are-possible/
+    Comments URL: https://news.ycombinator.com/item?id=46785598 Points: 24 # Comments:
+    11'
+  prompt: ''
+  url: https://win-vector.com/2026/01/27/how-many-chess-games-are-possible/
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T19:59:47+00:00'
+  title_zh: 国际象棋可能的对局总数是多少？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok joins Snap to settle social media addiction lawsuit
+  why: Jury selection begins Tuesday as this case moves closer to trial.
+  takeaway: Jury selection begins Tuesday as this case moves closer to trial.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/tiktok-joins-snap-to-settle-social-media-addiction-lawsuit/
+  source: TechCrunch
+  published_utc: '2026-01-27T19:40:46+00:00'
+  title_zh: TikTok效仿Snap达成社交成瘾诉讼和解
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Razer’s testing a new tool for customizing its keyboards in your browser
+  why: Razer has announced the beta release of a new online customization tool compatible
+    with several versions of its Huntsman V3 Pro keyboards a…
+  takeaway: Razer has announced the beta release of a new online customization tool
+    compatible with several versions of its Huntsman V3 Pro keyboards at launch. Razer
+    Synapse Web isn't a full replacement for the company's Synapse 4 desktop app.
+    It's instead designed to be a streamlined alternative accessible through a browser
+    for situations where you're not […]
+  prompt: ''
+  url: https://www.theverge.com/tech/868843/razer-synapse-web-beta-browser-chromium-configure-settings
+  source: The Verge
+  published_utc: '2026-01-27T19:38:19+00:00'
+  title_zh: 雷蛇正在测试一款可通过浏览器自定义键盘的新工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Try text scaling support in Chrome Canary
+  why: 'Article URL: https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
+    Comments URL: https://news.ycombinator.c…'
+  takeaway: 'Article URL: https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
+    Comments URL: https://news.ycombinator.com/item?id=46784977 Points: 47 # Comments:
+    10'
+  prompt: ''
+  url: https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T19:20:24+00:00'
+  title_zh: 试用Chrome Canary中的文本缩放支持功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Amazon Alexa+ Is Now Available to Everyone. Here’s How to Turn It Off (2026)
+  why: Alexa+ has been rolling out to everyone with a Prime membership, even if you
+    didn’t ask for it.
+  takeaway: Alexa+ has been rolling out to everyone with a Prime membership, even
+    if you didn’t ask for it. Here’s how to change it back.
+  prompt: ''
+  url: https://www.wired.com/story/alexa-plus-early-access-rollout-2026/
+  source: WIRED - AI
+  published_utc: '2026-01-27T19:12:06+00:00'
+  title_zh: Amazon Alexa+ 现已面向所有人开放，以下是关闭方法（2026）
+  why_zh: Alexa+已向所有Prime会员推出，即使您并未主动要求。
+  takeaway_zh: Alexa+已向所有Prime会员推出，即使您并未主动要求。以下是恢复原状的方法。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Network Firewall now supports GenAI traffic visibility and enforcement
+    with Web category-based filtering
+  why: AWS Network Firewall now provides visibility into generative AI (GenAI) application
+    traffic and supports traffic filtering based on web cat…
+  takeaway: AWS Network Firewall now provides visibility into generative AI (GenAI)
+    application traffic and supports traffic filtering based on web categories. This
+    new capability simplifies governance by enabling you to identify and control access
+    to GenAI services, social media platforms, streaming sites, and other web categories
+    directly within your firewall rules u…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/01/aws-network-firewall-web-category-based-filtering
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-01-27T19:00:00+00:00'
+  title_zh: AWS网络防火墙新增GenAI流量可视化和基于Web类别的过滤功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerating Diffusion Models with an Open, Plug-and-Play Offering
+  why: Recent advances in large-scale diffusion models have revolutionized generative
+    AI across multiple domains, from image synthesis to audio ge…
+  takeaway: Recent advances in large-scale diffusion models have revolutionized generative
+    AI across multiple domains, from image synthesis to audio generation, 3D asset...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/accelerating-diffusion-models-with-an-open-plug-and-play-offering/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-01-27T19:00:00+00:00'
+  title_zh: 开源即插即用方案加速扩散模型研发
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Arm's Cortex A725 Ft. Dell's Pro Max with GB10
+  why: 'Article URL: https://chipsandcheese.com/p/arms-cortex-a725-ft-dells-pro-max
+    Comments URL: https://news.ycombinator.com/item?id=46784599 Poi…'
+  takeaway: 'Article URL: https://chipsandcheese.com/p/arms-cortex-a725-ft-dells-pro-max
+    Comments URL: https://news.ycombinator.com/item?id=46784599 Points: 34 # Comments:
+    7'
+  prompt: ''
+  url: https://chipsandcheese.com/p/arms-cortex-a725-ft-dells-pro-max
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T18:59:30+00:00'
+  title_zh: Arm的Cortex A725搭配戴尔Pro Max性能测试：GB10跑分
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Lennart Poettering, Christian Brauner founded a new company
+  why: 'Article URL: https://amutable.com/about Comments URL: https://news.ycombinator.com/item?id=46784572
+    Points: 194 # Comments: 236'
+  takeaway: 'Article URL: https://amutable.com/about Comments URL: https://news.ycombinator.com/item?id=46784572
+    Points: 194 # Comments: 236'
+  prompt: ''
+  url: https://amutable.com/about
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T18:57:15+00:00'
+  title_zh: Lennart Poettering与Christian Brauner联合创立新公司
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon shutters all of its physical Go and Fresh stores
+  why: Amazon Go and Fresh physical store locations will soon be no more, with Amazon
+    announcing on Tuesday that it's closing the majority of the…
+  takeaway: Amazon Go and Fresh physical store locations will soon be no more, with
+    Amazon announcing on Tuesday that it's closing the majority of the stores and
+    converting others into Whole Foods Market locations. Customers will still be able
+    to order from Amazon Fresh online, but won't be able to shop at physical stores
+    with the […]
+  prompt: ''
+  url: https://www.theverge.com/news/868800/amazon-go-and-fresh-stores-closed
+  source: The Verge
+  published_utc: '2026-01-27T18:55:55+00:00'
+  title_zh: 亚马逊将关闭其所有Go和Fresh实体店铺
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hypercubic (YC F25) Is Hiring a Founding SWE and COBOL Engineer
+  why: 'Article URL: https://www.ycombinator.com/companies/hypercubic/jobs Comments
+    URL: https://news.ycombinator.com/item?id=46784491 Points: 0 #…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/hypercubic/jobs Comments
+    URL: https://news.ycombinator.com/item?id=46784491 Points: 0 # Comments: 0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/hypercubic/jobs
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T18:50:50+00:00'
+  title_zh: Hypercubic（YC F25）正在招聘创始软件工程师与COBOL工程师
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: LG's new subscription program charges up to £277 per month to rent a TV
+  why: Significant discounts come with committing to 1- to 3-year rental periods.
+  takeaway: Significant discounts come with committing to 1- to 3-year rental periods.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/01/lgs-new-subscription-program-charges-up-to-277-per-month-to-rent-a-tv/
+  source: Ars Technica
+  published_utc: '2026-01-27T18:37:32+00:00'
+  title_zh: LG新订阅计划月租电视费用高达277英镑
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: The State-Led Crackdown on Grok and xAI Has Begun
+  why: At least 37 attorneys general for US states and territories are taking action
+    against xAI after Grok generated a flood of nonconsensual sex…
+  takeaway: At least 37 attorneys general for US states and territories are taking
+    action against xAI after Grok generated a flood of nonconsensual sexual images
+    of women and minors.
+  prompt: ''
+  url: https://www.wired.com/story/the-state-led-crackdown-on-grok-and-xai-has-begun/
+  source: WIRED - AI
+  published_utc: '2026-01-27T18:35:07+00:00'
+  title_zh: 国家主导的对Grok和xAI的打击行动已开始
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: LLM-as-a-Courtroom
+  why: 'Article URL: https://falconer.com/notes/llm-as-a-courtroom/ Comments URL:
+    https://news.ycombinator.com/item?id=46784210 Points: 31 # Commen…'
+  takeaway: 'Article URL: https://falconer.com/notes/llm-as-a-courtroom/ Comments
+    URL: https://news.ycombinator.com/item?id=46784210 Points: 31 # Comments: 9'
+  prompt: ''
+  url: https://falconer.com/notes/llm-as-a-courtroom/
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T18:32:36+00:00'
+  title_zh: 作为法庭的大语言模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A former Netflix game studio went indie to reach more players
+  why: When Netflix first acquired cozy game developer Spry Fox in 2022, it made a
+    lot of sense.
+  takeaway: When Netflix first acquired cozy game developer Spry Fox in 2022, it made
+    a lot of sense. The studio had been around for over a decade and had several hits
+    with mobile games like Triple Town and Alphabear. That approachable style of puzzle
+    game seemed like a good fit for Netflix's mobile-first strategy, and, as […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/868711/spry-fox-netflix-game-studio-indie-spirit-crossing
+  source: The Verge
+  published_utc: '2026-01-27T18:30:00+00:00'
+  title_zh: 前Netflix游戏工作室独立运营，旨在触达更多玩家
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: An app developer is suing Apple for Sherlocking it with Continuity Camera
+  why: Reincubate, which makes the Camo and Camo Studio apps for turning your iOS
+    or Android phone into a webcam for your Mac or PC, is suing Appl…
+  takeaway: Reincubate, which makes the Camo and Camo Studio apps for turning your
+    iOS or Android phone into a webcam for your Mac or PC, is suing Apple, alleging
+    anticompetitive conduct and patent infringement. Camo first launched in 2020,
+    but two years after, Apple launched a similar feature called Continuity Camera,
+    which works just with Apple […]
+  prompt: ''
+  url: https://www.theverge.com/news/868740/apple-reincubate-lawsuit-camo-continuity-camera
+  source: The Verge
+  published_utc: '2026-01-27T18:25:12+00:00'
+  title_zh: 一名应用开发者起诉苹果公司通过Continuity Camera功能实施‘Sherlocking’竞争
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic and OpenAI CEOs condemn ICE violence, praise Trump
+  why: Anthropic's Dario Amodei and OpenAI's Sam Altman spoke out against ICE enforcement
+    tactics following Minneapolis violence, with one address…
+  takeaway: Anthropic's Dario Amodei and OpenAI's Sam Altman spoke out against ICE
+    enforcement tactics following Minneapolis violence, with one addressing concerns
+    publicly and the other in an internal message.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/anthropic-and-openai-ceos-condemn-ice-violence-praise-trump/
+  source: TechCrunch
+  published_utc: '2026-01-27T18:19:19+00:00'
+  title_zh: Anthropic与OpenAI首席执行官谴责ICE暴力行为并称赞特朗普
+  why_zh: Anthropic的Dario Amodei与OpenAI的Sam Altman就明尼阿波利斯暴力事件公开批评ICE执法手段
+  takeaway_zh: Anthropic的Dario Amodei与OpenAI的Sam Altman就明尼阿波利斯暴力事件后的ICE执法策略发声，一人公开表达关切，另一人则在内部信息中提及。
+  prompt_zh: ''
+- category: Tech industry
+  title: Clawdbot Renames to Moltbot
+  why: 'Article URL: https://github.com/moltbot/moltbot/commit/6d16a658e5ebe6ce15856565a47090d5b9d5dfb6
+    Comments URL: https://news.ycombinator.com/…'
+  takeaway: 'Article URL: https://github.com/moltbot/moltbot/commit/6d16a658e5ebe6ce15856565a47090d5b9d5dfb6
+    Comments URL: https://news.ycombinator.com/item?id=46783863 Points: 138 # Comments:
+    114'
+  prompt: ''
+  url: https://github.com/moltbot/moltbot/commit/6d16a658e5ebe6ce15856565a47090d5b9d5dfb6
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T18:08:36+00:00'
+  title_zh: Clawdbot更名为Moltbot
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The first human test of a rejuvenation method will begin “shortly”
+  why: When Elon Musk was at Davos last week, an interviewer asked him if he thought
+    aging could be reversed.
+  takeaway: When Elon Musk was at Davos last week, an interviewer asked him if he
+    thought aging could be reversed. Musk said he hasn’t put much time into the problem
+    but suspects it is “very solvable” and that when scientists discover why we age,
+    it’s going to be something “obvious.” Not long after, the Harvard professor…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/
+  source: MIT Technology Review
+  published_utc: '2026-01-27T18:08:19+00:00'
+  title_zh: 首例人类衰老逆转疗法即将开始短期测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anker’s foldable 3-in-1 charging station has hit a new low price of $50
+  why: Buying separate chargers for your phone, watch, and earbuds adds up quickly.
+  takeaway: Buying separate chargers for your phone, watch, and earbuds adds up quickly.
+    Anker’s MagGo Wireless Charging Station (Foldable 3-in-1) replaces all three,
+    and now through January 30th it’s just $49.99 ($60 off) at Amazon-owned Woot.
+    That’s the best price we’ve seen, and cheaper than many chargers designed for
+    just one device. The charging station delivers […
+  prompt: ''
+  url: https://www.theverge.com/gadgets/868696/anker-maggo-wireless-charging-station-foldable-3-in-1-lego-roses-deal-sale
+  source: The Verge
+  published_utc: '2026-01-27T18:08:11+00:00'
+  title_zh: Anker可折叠三合一充电站新低价至50美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '“IG is a drug”: Internal messages may doom Meta at social media addiction
+    trial'
+  why: A loss could cost social media companies billions and force changes on platforms.
+  takeaway: A loss could cost social media companies billions and force changes on
+    platforms.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/tiktok-settles-hours-before-landmark-social-media-addiction-trial-starts/
+  source: Ars Technica
+  published_utc: '2026-01-27T18:07:46+00:00'
+  title_zh: “Instagram如同毒品”：内部通信记录或将决定Meta社交成瘾案败诉
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Prism
+  why: 'Article URL: https://openai.com/index/introducing-prism Comments URL: https://news.ycombinator.com/item?id=46783752
+    Points: 331 # Comments:…'
+  takeaway: 'Article URL: https://openai.com/index/introducing-prism Comments URL:
+    https://news.ycombinator.com/item?id=46783752 Points: 331 # Comments: 203'
+  prompt: ''
+  url: https://openai.com/index/introducing-prism
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T18:03:10+00:00'
+  title_zh: 棱镜
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI CEO Altman admits he broke his own AI security rule after just two
+    hours, says we're all about to YOLO
+  why: OpenAI CEO Sam Altman warns that convenience is leading us to give AI agents
+    too much control without the necessary security infrastructure…
+  takeaway: OpenAI CEO Sam Altman warns that convenience is leading us to give AI
+    agents too much control without the necessary security infrastructure in place.
+    He admits he broke his own resolution not to give OpenAI's Codex model full access
+    after just two hours. The article OpenAI CEO Altman admits he broke his own AI
+    security rule after just two hours, says we're…
+  prompt: ''
+  url: https://the-decoder.com/openai-ceo-altman-admits-he-broke-his-own-ai-security-rule-after-just-two-hours-says-were-all-going-yolo/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T18:02:01+00:00'
+  title_zh: OpenAI首席执行官阿尔特曼承认两小时内违反自设AI安全规则，称人类即将集体‘YOLO’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI’s latest product lets you vibe code science
+  why: OpenAI just revealed what its new in-house team, OpenAI for Science, has been
+    up to.
+  takeaway: OpenAI just revealed what its new in-house team, OpenAI for Science, has
+    been up to. The firm has released a free LLM-powered tool for scientists called
+    Prism, which embeds ChatGPT in a text editor for writing scientific papers. The
+    idea is to put ChatGPT front and center inside software that scientists use to
+    write up…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/27/1131793/openais-latest-product-lets-you-vibe-code-science/
+  source: MIT Technology Review
+  published_utc: '2026-01-27T18:00:43+00:00'
+  title_zh: OpenAI最新产品让你尽情体验编程科学的魅力
+  why_zh: OpenAI首次披露其内部团队OpenAI for Science的研究进展
+  takeaway_zh: OpenAI刚刚透露了其内部新团队OpenAI for Science的进展。公司发布了一款名为Prism的免费LLM工具，专为科学家设计，将ChatGPT嵌入文本编辑器，用于撰写科学论文。其理念是将ChatGPT置于科学家撰写软件的核心位置…
+  prompt_zh: ''
+- category: Tech industry
+  title: Google’s more affordable AI Plus plan rolls out to all markets, including
+    the US
+  why: Gemini 3 Pro and other AI tools are now available globally through the Google
+    AI Plus plan, which is $7.99 per month in the United States.
+  takeaway: Gemini 3 Pro and other AI tools are now available globally through the
+    Google AI Plus plan, which is $7.99 per month in the United States.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/googles-ai-plus-plan-rolls-out-to-all-markets-including-the-u-s/
+  source: TechCrunch
+  published_utc: '2026-01-27T18:00:39+00:00'
+  title_zh: 谷歌更实惠的AI Plus计划面向全球市场推出，包括美国
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI launches Prism, a new AI workspace for scientists
+  why: OpenAI has launched a new scientific workspace program called Prism, which
+    integrates AI into existing standards for composing research pap…
+  takeaway: OpenAI has launched a new scientific workspace program called Prism, which
+    integrates AI into existing standards for composing research papers.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/openai-launches-prism-a-new-ai-workspace-for-scientists/
+  source: TechCrunch
+  published_utc: '2026-01-27T18:00:00+00:00'
+  title_zh: OpenAI推出科学家专用AI工作平台Prism
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amid Trump attacks and weaponized sanctions, Europeans look to rely less
+    on US tech
+  why: European governments are looking to move away from U.S.
+  takeaway: European governments are looking to move away from U.S. tech and reclaim
+    their digital sovereignty at a time of unpredictability and volatility in the
+    United States.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/amid-trump-attacks-and-weaponized-sanctions-europeans-look-to-rely-less-on-us-tech/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:56:47+00:00'
+  title_zh: 在特朗普攻击与制裁武器化背景下欧洲寻求减少对美国技术依赖
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: LemonSlice – Upgrade your voice agents to real-time video'
+  why: 'Hey HN, we''re the co-founders of LemonSlice (try our HN playground here:
+    https://lemonslice.com/hn ).'
+  takeaway: 'Hey HN, we''re the co-founders of LemonSlice (try our HN playground here:
+    https://lemonslice.com/hn ). We train interactive avatar video models. Our API
+    lets you upload a photo and immediately jump into a FaceTime-style call with that
+    character. Here''s a demo: https://www.loom.com/share/941577113141418e80d2834c83a5a0a9
+    Chatbots are everywhere and voice AI ha…'
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=46783600
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T17:55:15+00:00'
+  title_zh: Show HN：LemonSlice——将语音助手升级为实时视频代理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The price gap between Waymo and Uber is narrowing
+  why: A trip in a Waymo robotaxi still costs more, on average, than a comparable
+    ride in a human-driven Uber or a Lyft.
+  takeaway: A trip in a Waymo robotaxi still costs more, on average, than a comparable
+    ride in a human-driven Uber or a Lyft. But that gap is narrowing, according to
+    new data published Tuesday by Obi, a company that aggregates real-time pricing
+    and pickup times across multiple ride-hailing services.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/the-price-gap-between-waymo-and-uber-is-narrowing/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:43:19+00:00'
+  title_zh: Waymo与Uber的价格差距正在缩小
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Australian plumber is a YouTube sensation
+  why: Bruce of Drain Cleaning Australia wants everyone to share his deep abiding
+    love for a free-flowing drain.
+  takeaway: Bruce of Drain Cleaning Australia wants everyone to share his deep abiding
+    love for a free-flowing drain.
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/01/australian-plumber-is-a-youtube-sensation/
+  source: Ars Technica
+  published_utc: '2026-01-27T17:37:58+00:00'
+  title_zh: 澳大利亚水电工成为YouTube网红
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FBI is investigating Minnesota Signal chats tracking ICE
+  why: 'Article URL: https://www.nbcnews.com/tech/internet/fbi-investigating-minnesota-signal-minneapolis-group-ice-patel-kash-rcna256041
+    Comments…'
+  takeaway: 'Article URL: https://www.nbcnews.com/tech/internet/fbi-investigating-minnesota-signal-minneapolis-group-ice-patel-kash-rcna256041
+    Comments URL: https://news.ycombinator.com/item?id=46783254 Points: 433 # Comments:
+    482'
+  prompt: ''
+  url: https://www.nbcnews.com/tech/internet/fbi-investigating-minnesota-signal-minneapolis-group-ice-patel-kash-rcna256041
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T17:32:05+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: If you live in the UK, you probably won’t be able to visit Pornhub anymore
+  why: Pornhub parent company Aylo will restrict access from U.K.
+  takeaway: Pornhub parent company Aylo will restrict access from U.K. users, rather
+    than comply with age-verification mandates, which the company said it believes
+    have not succeeded in promoting online safety.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/if-you-live-in-the-uk-you-probably-wont-be-able-to-visit-pornhub-anymore/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:31:05+00:00'
+  title_zh: 英国居民或将无法访问Pornhub
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok says it’s still working to recover its US infrastructure
+  why: TikTok says some of the glitches continue but it's making "significant progress"
+    in recovering its U.S.
+  takeaway: TikTok says some of the glitches continue but it's making "significant
+    progress" in recovering its U.S. infrastructure.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/tiktok-says-its-still-working-to-recover-its-u-s-infrastructure/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:29:34+00:00'
+  title_zh: TikTok称仍在恢复美国服务器基础设施
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Allen AI's SERA brings open coding agents to private repos for as little
+    as $400 in training costs
+  why: Allen AI's new SERA coding agents can be trained on private code bases for
+    as little as $400, putting custom AI development tools within re…
+  takeaway: Allen AI's new SERA coding agents can be trained on private code bases
+    for as little as $400, putting custom AI development tools within reach for small
+    teams. The article Allen AI's SERA brings open coding agents to private repos
+    for as little as $400 in training costs appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/allen-ais-sera-brings-open-coding-agents-to-private-repos-for-as-little-as-400-in-training-costs/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T17:24:49+00:00'
+  title_zh: Allen AI的SERA以低至400美元训练成本为私有仓库提供开放编程代理
+  why_zh: Allen AI的新SERA编码代理能以低至400美元的价格在私有代码库上训练，使定制AI开发工具触手可及。
+  takeaway_zh: Allen AI新推出的SERA编码代理，能以低至400美元的成本在私有代码库上进行训练，使小型团队也能负担得起定制AI开发工具。文章《Allen
+    AI的SERA以低至400美元的训练成本将开放编码代理引入私有仓库》首发于The Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: WhatsApp is rolling out a new stricter security setting to protect users
+    from cyberattacks
+  why: Strict Account Settings adds restrictions like automatically blocking media
+    and attachments from unknown senders, and silencing calls from…
+  takeaway: Strict Account Settings adds restrictions like automatically blocking
+    media and attachments from unknown senders, and silencing calls from unknown numbers.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/whatsapp-is-rolling-out-a-new-stricter-security-setting-to-protect-users-from-cyber-attacts/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:24:22+00:00'
+  title_zh: WhatsApp推出更严格的安全设置，保护用户免受网络攻击
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'AI2: Open Coding Agents'
+  why: 'Article URL: https://allenai.org/blog/open-coding-agents Comments URL: https://news.ycombinator.com/item?id=46783017
+    Points: 101 # Comments…'
+  takeaway: 'Article URL: https://allenai.org/blog/open-coding-agents Comments URL:
+    https://news.ycombinator.com/item?id=46783017 Points: 101 # Comments: 17'
+  prompt: ''
+  url: https://allenai.org/blog/open-coding-agents
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T17:17:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SoundCloud Data Breach Now on HaveIBeenPwned
+  why: 'Article URL: https://haveibeenpwned.com/Breach/SoundCloud Comments URL: https://news.ycombinator.com/item?id=46782930
+    Points: 130 # Comment…'
+  takeaway: 'Article URL: https://haveibeenpwned.com/Breach/SoundCloud Comments URL:
+    https://news.ycombinator.com/item?id=46782930 Points: 130 # Comments: 64'
+  prompt: ''
+  url: https://haveibeenpwned.com/Breach/SoundCloud
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T17:11:39+00:00'
+  title_zh: SoundCloud数据泄露事件已录入HaveIBeenPwned数据库
+  why_zh: '文章链接：https://haveibeenpwned.com/Breach/SoundCloud 评论链接：https://news.ycombinator.com/item?id=46782930
+    积分：130 # 评论…'
+  takeaway_zh: '文章链接：https://haveibeenpwned.com/Breach/SoundCloud 评论链接：https://news.ycombinator.com/item?id=46782930
+    积分：130 # 评论：64'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Management as AI superpower: Thriving in a world of agentic AI'
+  why: 'Article URL: https://www.oneusefulthing.org/p/management-as-ai-superpower
+    Comments URL: https://news.ycombinator.com/item?id=46782811 Point…'
+  takeaway: 'Article URL: https://www.oneusefulthing.org/p/management-as-ai-superpower
+    Comments URL: https://news.ycombinator.com/item?id=46782811 Points: 64 # Comments:
+    75'
+  prompt: ''
+  url: https://www.oneusefulthing.org/p/management-as-ai-superpower
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T17:04:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Artie (YC S23) Is Hiring a Founding Recruiter
+  why: 'Article URL: https://www.ycombinator.com/companies/artie/jobs/MX163y2-founding-recruiter
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/artie/jobs/MX163y2-founding-recruiter
+    Comments URL: https://news.ycombinator.com/item?id=46782763 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/artie/jobs/MX163y2-founding-recruiter
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T17:01:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI Overviews gets upgraded to Gemini 3 with a dash of AI Mode
+  why: AI Overviews may get it right more often with the move to Gemini 3.
+  takeaway: AI Overviews may get it right more often with the move to Gemini 3.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/01/ai-overviews-gets-upgraded-to-gemini-3-with-a-dash-of-ai-mode/
+  source: Ars Technica
+  published_utc: '2026-01-27T17:00:58+00:00'
+  title_zh: AI概览升级至Gemini 3，融入AI模式
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google now lets users jump from AI Overviews into AI Mode conversations
+  why: The tech giant also announced that it's making Gemini 3 the new default model
+    for AI Overviews globally.
+  takeaway: The tech giant also announced that it's making Gemini 3 the new default
+    model for AI Overviews globally.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/google-now-lets-users-jump-from-ai-overviews-into-ai-mode-conversations/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:00:00+00:00'
+  title_zh: 谷歌允许用户从AI概览直接跳转至AI模式对话
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Android phones are getting more anti-theft features
+  why: Google says Android devices will get new security features, like stronger authentication
+    safeguards and enhanced recovery tools.
+  takeaway: Google says Android devices will get new security features, like stronger
+    authentication safeguards and enhanced recovery tools.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/android-phones-are-getting-more-anti-theft-features/
+  source: TechCrunch
+  published_utc: '2026-01-27T17:00:00+00:00'
+  title_zh: 安卓手机新增更多防盗功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Google DeepMind Staffers Ask Leaders to Keep Them ‘Physically Safe’ From
+    ICE
+  why: A federal agent allegedly tried to enter Google’s Cambridge campus in the fall,
+    WIRED has learned.
+  takeaway: A federal agent allegedly tried to enter Google’s Cambridge campus in
+    the fall, WIRED has learned. Now, staffers want policies that protect them from
+    immigration officials.
+  prompt: ''
+  url: https://www.wired.com/story/google-deepmind-staffers-ice-office-questions-safety/
+  source: WIRED - AI
+  published_utc: '2026-01-27T17:00:00+00:00'
+  title_zh: Google DeepMind员工要求领导层保护他们免受ICE的‘人身威胁’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: One Human + One Agent = One Browser From Scratch
+  why: One Human + One Agent = One Browser From Scratch embedding-shapes was so infuriated
+    by the hype around Cursor's FastRender browser project…
+  takeaway: One Human + One Agent = One Browser From Scratch embedding-shapes was
+    so infuriated by the hype around Cursor's FastRender browser project - thousands
+    of parallel agents producing ~1.6 million lines of Rust - that they were inspired
+    to take a go at building a web browser using coding agents themselves. The result
+    is one-agent-one-browser and it's really imp…
+  prompt: ''
+  url: https://simonwillison.net/2026/Jan/27/one-human-one-agent-one-browser/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-01-27T16:58:08+00:00'
+  title_zh: 一人一代理：从零构建浏览器
+  why_zh: 一人一代理=从零构建浏览器，embedding-shapes对Cursor的FastRender浏览器项目的炒作感到极度不满…
+  takeaway_zh: 一人一代理，从零构建一个浏览器。embedding-shapes对Cursor的FastRender浏览器项目炒作感到极度不满——数千个并行代理生成了约160万行Rust代码——这激发了他们自己尝试使用编码代理构建网页浏览器的灵感。成果是‘一代理一浏览器’，确实令人印象深刻...
+  prompt_zh: ''
+- category: Tech industry
+  title: Indian states weigh Australia-style ban on social media for children
+  why: Any move to restrict children's access to social media in India would carry
+    significant implications for global technology companies, for w…
+  takeaway: Any move to restrict children's access to social media in India would
+    carry significant implications for global technology companies, for which the
+    South Asian nation is a critical growth market.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/indian-states-weigh-australia-style-ban-on-social-media-for-children/
+  source: TechCrunch
+  published_utc: '2026-01-27T16:58:01+00:00'
+  title_zh: 印度各州考虑效仿澳大利亚禁止未成年人使用社交媒体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'OpenSSL: Stack buffer overflow in CMS AuthEnvelopedData parsing'
+  why: 'Article URL: https://openssl-library.org/news/vulnerabilities/#CVE-2025-15467
+    Comments URL: https://news.ycombinator.com/item?id=46782662 P…'
+  takeaway: 'Article URL: https://openssl-library.org/news/vulnerabilities/#CVE-2025-15467
+    Comments URL: https://news.ycombinator.com/item?id=46782662 Points: 67 # Comments:
+    37'
+  prompt: ''
+  url: https://openssl-library.org/news/vulnerabilities/#CVE-2025-15467
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T16:56:23+00:00'
+  title_zh: OpenSSL：CMS AuthEnvelopedData解析中的堆栈缓冲区溢出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Mistral AI launches terminal-based coding agent Vibe 2.0
+  why: Mistral AI has unveiled Mistral Vibe 2.0, an upgrade to its terminal-based
+    coding agent powered by the Devstral 2 model.
+  takeaway: Mistral AI has unveiled Mistral Vibe 2.0, an upgrade to its terminal-based
+    coding agent powered by the Devstral 2 model. The article Mistral AI launches
+    terminal-based coding agent Vibe 2.0 appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/mistral-ai-launches-terminal-based-coding-agent-vibe-2-0/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T16:54:46+00:00'
+  title_zh: Mistral AI推出终端编程代理Vibe 2.0
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic CEO warns democracies must protect themselves from their own AI
+  why: Dario Amodei outlines the dangers of powerful AI systems in a new essay.
+  takeaway: 'Dario Amodei outlines the dangers of powerful AI systems in a new essay.
+    His central demand: Democracies should only use AI in ways that don''t make them
+    more like their autocratic adversaries. The article Anthropic CEO warns democracies
+    must protect themselves from their own AI appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/anthropic-ceo-warns-democracies-must-protect-themselves-from-their-own-ai/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T16:44:35+00:00'
+  title_zh: Anthropic首席执行官警告民主政体须防范自身开发的AI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: 'OpenAI manager Weil: "2026 will be for science what 2025 was for software
+    engineering"'
+  why: Kevin Weil leads OpenAI's science team and believes GPT-5 is already making
+    researchers more productive.
+  takeaway: 'Kevin Weil leads OpenAI''s science team and believes GPT-5 is already
+    making researchers more productive. For 2026, he expects significant progress
+    - and more humility. The article OpenAI manager Weil: "2026 will be for science
+    what 2025 was for software engineering" appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/openai-manager-weil-2026-will-be-for-science-what-2025-was-for-software-engineering/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T16:28:02+00:00'
+  title_zh: OpenAI经理Weil表示：‘2026年对科学的意义将如同2025年对软件工程’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon is closing its physical Amazon Go and Amazon Fresh stores
+  why: Upon closing down some stores in 2024, an Amazon spokesperson said that the
+    company "couldn't make the economics work with the lease cost."…
+  takeaway: Upon closing down some stores in 2024, an Amazon spokesperson said that
+    the company "couldn't make the economics work with the lease cost." These retail
+    closures will not impact customers who use Amazon for grocery delivery.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/amazon-is-closing-its-physical-amazon-go-and-amazon-fresh-stores/
+  source: TechCrunch
+  published_utc: '2026-01-27T16:21:32+00:00'
+  title_zh: 亚马逊即将关闭其实体店铺Amazon Go和Amazon Fresh
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Volvo invented the three-point seat belt 67 years ago; now it has improved
+    it
+  why: The EX60 senses a passenger's size and weight, determining how much force to
+    use.
+  takeaway: The EX60 senses a passenger's size and weight, determining how much force
+    to use.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/01/how-volvos-new-adaptive-seat-belts-will-reduce-injuries-during-a-crash/
+  source: Ars Technica
+  published_utc: '2026-01-27T16:16:32+00:00'
+  title_zh: 67年前沃尔沃发明三点式安全带，如今再创新
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple patches ancient iOS versions to keep iMessage, FaceTime, other services
+    working
+  why: Apple renews certificates for old iOS versions to keep the lights on longer.
+  takeaway: Apple renews certificates for old iOS versions to keep the lights on longer.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/01/apple-patches-ancient-ios-versions-to-keep-imessage-facetime-other-services-working/
+  source: Ars Technica
+  published_utc: '2026-01-27T15:49:53+00:00'
+  title_zh: 苹果为老旧iOS版本打补丁，确保iMessage、FaceTime等服务正常运行
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 430k-year-old well-preserved wooden tools are the oldest ever found
+  why: https://archive.ph/mHlUT https://apnews.com/article/oldest-wooden-tools-marathousa-1-...
+  takeaway: 'https://archive.ph/mHlUT https://apnews.com/article/oldest-wooden-tools-marathousa-1-...
+    https://archaeologymag.com/2026/01/430000-year-old-wooden-to... Comments URL:
+    https://news.ycombinator.com/item?id=46781530 Points: 317 # Comments: 177'
+  prompt: ''
+  url: https://www.nytimes.com/2026/01/26/science/archaeology-neanderthals-tools.html
+  source: Hacker News (front page)
+  published_utc: '2026-01-27T15:46:29+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trade wars muzzle allied talks on Trump's Golden Dome missile shield
+  why: “International partners, I have not been allowed to talk to yet because of
+    the trade wars."
+  takeaway: “International partners, I have not been allowed to talk to yet because
+    of the trade wars."
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/trade-wars-muzzle-allied-talks-on-trumps-golden-dome-missile-shield/
+  source: Ars Technica
+  published_utc: '2026-01-27T15:42:04+00:00'
+  title_zh: 贸易战阻碍特朗普金顶导弹防御系统的盟国磋商
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Risotto raises $10M seed to use AI to make ticketing systems easier to use
+  why: '"Our special sauce is the prompt libraries, the eval suites, and the thousands
+    and thousands of real-world examples that the AI gets traine…'
+  takeaway: '"Our special sauce is the prompt libraries, the eval suites, and the
+    thousands and thousands of real-world examples that the AI gets trained on to
+    ensure it actually does what it''s expected to do,” CEO Aron Solberg told TechCrunch.'
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/risotto-raises-10m-seed-to-use-ai-to-make-ticketing-systems-easier-to-use/
+  source: TechCrunch
+  published_utc: '2026-01-27T15:25:22+00:00'
+  title_zh: Risotto获1000万美元种子轮融资，旨在利用AI简化票务系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why NASA, IMSA, and tech companies are teaming up on tech transfer
+  why: IMSA Labs will use the vast amount of race car data collected during a race
+    to improve simulations.
+  takeaway: IMSA Labs will use the vast amount of race car data collected during a
+    race to improve simulations.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/01/why-nasa-imsa-and-tech-companies-are-teaming-up-on-tech-transfer/
+  source: Ars Technica
+  published_utc: '2026-01-27T15:17:13+00:00'
+  title_zh: NASA、IMSA与科技公司联手推进技术转移的背后原因
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Samsung’s TriFold phone will cost $2,899 in the US
+  why: The phone's display unfolds twice to reveal a 10-inch display, which is the
+    largest screen ever on a Galaxy phone.
+  takeaway: The phone's display unfolds twice to reveal a 10-inch display, which is
+    the largest screen ever on a Galaxy phone.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/samsungs-trifold-phone-will-cost-2899-in-the-us/
+  source: TechCrunch
+  published_utc: '2026-01-27T15:13:19+00:00'
+  title_zh: 三星TriFold手机在美国售价定为2899美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Kimi K2.5: Visual Agentic Intelligence'
+  why: 'Kimi K2.5: Visual Agentic Intelligence Kimi K2 landed in July as a 1 trillion
+    parameter open weight LLM.'
+  takeaway: 'Kimi K2.5: Visual Agentic Intelligence Kimi K2 landed in July as a 1
+    trillion parameter open weight LLM. It was joined by Kimi K2 Thinking in November
+    which added reasoning capabilities. Now they''ve made it multi-modal: the K2 models
+    were text-only, but the new 2.5 can handle image inputs as well: Kimi K2.5 builds
+    on Kimi K2 with continued pretraining over…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Jan/27/kimi-k25/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-01-27T15:07:41+00:00'
+  title_zh: Kimi K2.5：视觉行为智能体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Phoebe Gates and Sophia Kianni’s Phia raises $35M to ‘make shopping fun again’
+  why: “We are just at such a prime time of opportunity,” Gates said to explain the
+    new fundraise.
+  takeaway: “We are just at such a prime time of opportunity,” Gates said to explain
+    the new fundraise. “Commerce itself for the consumer hasn’t really been adapted
+    in the last 30 years, and the opportunity to make a truly personalized, end-to-end
+    shopping experience is today.”
+  prompt: ''
+  url: https://techcrunch.com/2026/01/27/phoebe-gates-and-sophia-kiannis-phia-raises-35m-to-make-shopping-fun-again/
+  source: TechCrunch
+  published_utc: '2026-01-27T15:00:00+00:00'
+  title_zh: 菲比·盖茨和苏菲亚·基安尼的Phia公司融资3500万美元，致力于‘让购物重拾乐趣’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Stratospheric internet could finally start taking off this year
+  why: Today, an estimated 2.2 billion people still have either limited or no access
+    to the internet, largely because they live in remote places.
+  takeaway: Today, an estimated 2.2 billion people still have either limited or no
+    access to the internet, largely because they live in remote places. But that number
+    could drop this year, thanks to tests of stratospheric airships, uncrewed aircraft,
+    and other high-altitude platforms for internet delivery. Even with nearly 10,000
+    active Starlink satellites in orbit and…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/27/1131780/stratospheric-internet-take-off/
+  source: MIT Technology Review
+  published_utc: '2026-01-27T14:52:04+00:00'
+  title_zh: 平流层互联网有望在今年取得突破性进展
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meet the mysterious electrides
+  why: These chemical oddities may explain why Earth seems to be deficient in certain
+    elements.
+  takeaway: These chemical oddities may explain why Earth seems to be deficient in
+    certain elements.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/01/meet-the-mysterious-electrides/
+  source: Ars Technica
+  published_utc: '2026-01-27T14:48:01+00:00'
+  title_zh: 揭秘神秘的电化物
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: As data from space spikes, an innovative ground station company seeks to
+    cash in
+  why: '"That''s why we''re here, that''s why we''re building what we''re building."'
+  takeaway: '"That''s why we''re here, that''s why we''re building what we''re building."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/as-data-from-space-spikes-an-innovative-ground-station-company-seeks-to-cash-in/
+  source: Ars Technica
+  published_utc: '2026-01-27T14:16:32+00:00'
+  title_zh: 太空数据激增背景下，创新地面站公司寻求变现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: UK government taps Anthropic AI to help citizens find jobs
+  why: The British government has chosen Anthropic to develop an AI assistant for
+    the GOV.UK website.
+  takeaway: The British government has chosen Anthropic to develop an AI assistant
+    for the GOV.UK website. The article UK government taps Anthropic AI to help citizens
+    find jobs appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/uk-government-taps-anthropic-ai-to-help-citizens-find-jobs/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T14:11:15+00:00'
+  title_zh: 英国政府选用Anthropic AI协助公民就业
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How Norway Accomplished a Near-Total EV Transition
+  why: More than 97 percent of the new cars Norwegians registered in November 2025
+    were electric, almost reaching the country’s goal of 100 percen…
+  takeaway: More than 97 percent of the new cars Norwegians registered in November
+    2025 were electric, almost reaching the country’s goal of 100 percent. As a result,
+    the government has begun removing some of the many carrots it used to encourage
+    its successful EV transition . Cecilie Knibe Kroglund, state secretary in the
+    country’s Ministry of Transport, reveals some…
+  prompt: ''
+  url: https://spectrum.ieee.org/norway-ev-policy-electric-vehicles
+  source: IEEE Spectrum
+  published_utc: '2026-01-27T14:00:03+00:00'
+  title_zh: 挪威如何实现近乎全面的电动汽车转型
+  why_zh: 2025年11月，挪威新注册的汽车中超过97%为电动车，几乎实现了该国100%的目标。
+  takeaway_zh: 2025年11月，挪威新注册的汽车中超过97%为电动车，几乎实现了该国100%的目标。因此，政府开始撤除一些用于鼓励成功电动化转型的激励措施。挪威交通部国务秘书Cecilie
+    Knibe Kroglund透露了部分…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Download: OpenAI’s plans for science, and chatbot age verification'
+  why: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology.
+  takeaway: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology. Inside OpenAI’s big
+    play for science —Will Douglas Heaven In the three years since ChatGPT’s explosive
+    debut, OpenAI’s technology has upended a remarkable range of everyday activities
+    at home, at work, and in…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/27/1131767/the-download-openais-plans-for-science-and-chatbot-age-verification/
+  source: MIT Technology Review
+  published_utc: '2026-01-27T13:10:00+00:00'
+  title_zh: 本期内容：OpenAI的科学计划与聊天机器人年龄验证机制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: This Humanoid Is Ready to Bring You a Toothbrush
+  why: Fauna, a new startup, is betting that humanoid robots will find success as
+    hospitality workers, research assistants, and entertainers.
+  takeaway: Fauna, a new startup, is betting that humanoid robots will find success
+    as hospitality workers, research assistants, and entertainers.
+  prompt: ''
+  url: https://www.wired.com/story/humanoid-robot-butler-sprout-fauna/
+  source: WIRED - AI
+  published_utc: '2026-01-27T13:00:00+00:00'
+  title_zh: 这款人形机器人已准备好为你递上牙刷
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'modelcontextprotocol/servers: Release 2026.1.26'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.26
+  source: GitHub Releases - modelcontextprotocol/servers
+  published_utc: '2026-01-27T12:11:26+00:00'
+  title_zh: 'modelcontextprotocol/servers: 2026.1.26版发布'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Former Tesla AI chief Andrej Karpathy now codes "mostly in English" just
+    three months after calling AI agents useless
+  why: 'Just last October, Andrej Karpathy dismissed AI agents: "They just don''t
+    work." Now he says 80 percent of his coding is agent-based and cal…'
+  takeaway: 'Just last October, Andrej Karpathy dismissed AI agents: "They just don''t
+    work." Now he says 80 percent of his coding is agent-based and calls it the "biggest
+    change to my basic coding workflow in ~2 decades." A typically measured voice
+    is joining the agent coding hype, but with some warnings attached. The article
+    Former Tesla AI chief Andrej Karpathy now co…'
+  prompt: ''
+  url: https://the-decoder.com/former-tesla-ai-chief-andrej-karpathy-now-codes-mostly-in-english-just-three-months-after-calling-ai-agents-useless/
+  source: The Decoder (AI)
+  published_utc: '2026-01-27T11:45:20+00:00'
+  title_zh: 前特斯拉AI主管Andrej Karpathy在称AI代理无用仅三个月后，如今‘主要用英语编程’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Where Tech Leaders and Students Really Think AI Is Going
+  why: We asked tech CEOs, journalists, entertainers, students, and more about the
+    promise and peril of artificial intelligence.
+  takeaway: We asked tech CEOs, journalists, entertainers, students, and more about
+    the promise and peril of artificial intelligence. Here’s what they said.
+  prompt: ''
+  url: https://www.wired.com/story/for-future-reference-ai-technology/
+  source: WIRED - AI
+  published_utc: '2026-01-27T10:30:00+00:00'
+  title_zh: 科技领袖与学生真正认为AI将走向何方
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '[AINews] Anthropic launches the MCP Apps open spec, in Claude.ai'
+  why: Open Standards for Rich generative UI is all you need.
+  takeaway: Open Standards for Rich generative UI is all you need.
+  prompt: ''
+  url: https://www.latent.space/p/ainews-anthropic-launches-the-mcp
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-01-27T07:20:28+00:00'
+  title_zh: '[AI新闻]Anthropic在Claude.ai发布MCP应用开放规范'
+  why_zh: 开放标准是丰富生成式UI的全部所需。
+  takeaway_zh: 开放标准是丰富生成式UI的全部所需。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.11.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.11.0
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-01-27T06:23:53+00:00'
+  title_zh: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI v0.11.0版'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Investigating Self-regulated Learning Sequences within a Generative AI-based
+    Intelligent Tutoring System
+  why: 'arXiv:2601.17000v1 Announce Type: new Abstract: There has been a growing trend
+    in employing generative artificial intelligence (GenAI) tech…'
+  takeaway: 'arXiv:2601.17000v1 Announce Type: new Abstract: There has been a growing
+    trend in employing generative artificial intelligence (GenAI) techniques to support
+    learning. Moreover, scholars have reached a consensus on the critical role of
+    self-regulated learning (SRL) in ensuring learning effectiveness within GenAI-assisted
+    learning environments, making it esse…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17000
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 探究生成式AI智能辅导系统中的自我调节学习序列
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Lex Reformatica: Five Principles of Policy Reform for the Technological
+    Age'
+  why: 'arXiv:2601.17001v1 Announce Type: new Abstract: Twenty-five years ago, Joel
+    Reidenberg argued that technology itself, not just law and regu…'
+  takeaway: 'arXiv:2601.17001v1 Announce Type: new Abstract: Twenty-five years ago,
+    Joel Reidenberg argued that technology itself, not just law and regulation, imposes
+    rules on communities in the Information Society. System design choices like network
+    architecture and configurations create regulatory norms he termed "Lex Informatica"-referencing
+    the merchant-driven medi…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17001
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: Lex Reformatica：技术时代政策改革的五项原则
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Beyond Simulations: What 20,000 Real Conversations Reveal About Mental Health
+    AI Safety'
+  why: 'arXiv:2601.17003v1 Announce Type: new Abstract: Large language models (LLMs)
+    are increasingly used for mental health support, yet existing…'
+  takeaway: 'arXiv:2601.17003v1 Announce Type: new Abstract: Large language models
+    (LLMs) are increasingly used for mental health support, yet existing safety evaluations
+    rely primarily on small, simulation-based test sets that have an unknown relationship
+    to the linguistic distribution of real usage. In this study, we present replications
+    of four published safety test…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17003
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 超越模拟：20,000次真实对话揭示的心理健康AI安全性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'From Noise to Insights: Enhancing Supply Chain Decision Support through
+    AI-Based Survey Integrity Analytics'
+  why: 'arXiv:2601.17005v1 Announce Type: new Abstract: The reliability of survey
+    data is crucial in supply chain decision-making, particularly whe…'
+  takeaway: 'arXiv:2601.17005v1 Announce Type: new Abstract: The reliability of survey
+    data is crucial in supply chain decision-making, particularly when evaluating
+    readiness for AI-driven tools such as safety stock optimization systems. However,
+    surveys often attract low-effort or fake responses that degrade the accuracy of
+    derived insights. This study proposes a light…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17005
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 从噪音到洞察：通过AI驱动的调查完整性分析提升供应链决策支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Artificial Intelligence in Spanish Gastroenterology: high expectations,
+    limited integration. A national survey'
+  why: 'arXiv:2601.17011v1 Announce Type: new Abstract: Background: Artificial intelligence
+    (AI) has emerged as a disruptive innovation in medicine…'
+  takeaway: 'arXiv:2601.17011v1 Announce Type: new Abstract: Background: Artificial
+    intelligence (AI) has emerged as a disruptive innovation in medicine, yet its
+    adoption within gastroenterology remains limited and poorly characterized. We
+    aimed to examine knowledge, practical applications, perceived barriers, and expectations
+    regarding AI among gastroenterology special…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17011
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 人工智能在西班牙胃肠病学中的应用：高期望与有限整合——一项全国调查
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Digital Divide in Geriatric Care: Why Usability, Not Access, is the
+    Real Problem'
+  why: 'arXiv:2601.17012v1 Announce Type: new Abstract: The rapid increase in the
+    world''s aging population to 16% by the year 2050 spurs the need f…'
+  takeaway: 'arXiv:2601.17012v1 Announce Type: new Abstract: The rapid increase in
+    the world''s aging population to 16% by the year 2050 spurs the need for the application
+    of digital health solutions to enhance older individuals'' independence, accessibility,
+    and well-being. While digital health technologies such as telemedicine, wearables,
+    and mobile health applications…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17012
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 老年护理中的数字鸿沟：可用性而非访问才是真正问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Private Accountability in the Age of Artificial Intelligence
+  why: 'arXiv:2601.17013v1 Announce Type: new Abstract: In this Article, I explore
+    the impending conflict between the protection of civil rights an…'
+  takeaway: 'arXiv:2601.17013v1 Announce Type: new Abstract: In this Article, I explore
+    the impending conflict between the protection of civil rights and artificial intelligence
+    (AI). While both areas of law have amassed rich and well-developed areas of scholarly
+    work and doctrinal support, a growing body of scholars are interrogating the intersection
+    between them. This…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17013
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 人工智能时代的私人问责
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Measuring Political Stance and Consistency in Large Language Models
+  why: 'arXiv:2601.17016v1 Announce Type: new Abstract: With the incredible advancements
+    in Large Language Models (LLMs), many people have started…'
+  takeaway: 'arXiv:2601.17016v1 Announce Type: new Abstract: With the incredible advancements
+    in Large Language Models (LLMs), many people have started using them to satisfy
+    their information needs. However, utilizing LLMs might be problematic for political
+    issues where disagreement is common and model outputs may reflect training-data
+    biases or deliberate alignment cho…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17016
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 测量大语言模型中的政治立场与一致性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Self-Organizing Railway Traffic Management
+  why: 'arXiv:2601.17017v1 Announce Type: new Abstract: Improving traffic management
+    in case of perturbation is one of the main challenges in today…'
+  takeaway: 'arXiv:2601.17017v1 Announce Type: new Abstract: Improving traffic management
+    in case of perturbation is one of the main challenges in today''s railway research.
+    The great majority of the existing literature proposes approaches to make centralized
+    decisions to minimize delay propagation. In this paper, we propose a new paradigm
+    to the same aim: we design and…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17017
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 自主组织的铁路交通管理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Evaluating the Evolution of Critical Thinking, Creativity, Communication
+    and Collaboration in Higher Education Courses
+  why: 'arXiv:2601.17018v1 Announce Type: new Abstract: The development of Creativity,
+    Communication, Critical Thinking, and Collaboration (the 4Cs…'
+  takeaway: 'arXiv:2601.17018v1 Announce Type: new Abstract: The development of Creativity,
+    Communication, Critical Thinking, and Collaboration (the 4Cs) is a central objective
+    of contemporary competency-based education. However, empirical evidence on how
+    these competencies evolve across learning modules and instructional phases remains
+    limited. This study evaluates the…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17018
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 高等教育课程中批判性思维、创造力、沟通与协作能力的演变评估
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Three Axes of Success: A Three-Dimensional Framework for Career Decision-Making'
+  why: 'arXiv:2601.17023v1 Announce Type: new Abstract: Career decision-making is
+    a socio-technical problem: individuals exercise bounded agency wh…'
+  takeaway: 'arXiv:2601.17023v1 Announce Type: new Abstract: Career decision-making
+    is a socio-technical problem: individuals exercise bounded agency while navigating
+    labor market institutions, organizational incentive structures, and information
+    asymmetries that shape feasible trajectories. Existing frameworks optimize along
+    single dimensions - financial returns, work-…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17023
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 成功的三维度：职业决策的三轴框架
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Ensuring Computer Science Learning in the AI Era: Open Generative AI Policies
+    and Assignment-Driven Written Quizzes'
+  why: 'arXiv:2601.17024v1 Announce Type: new Abstract: The widespread availability
+    of generative artificial intelligence (GenAI) has created a pre…'
+  takeaway: 'arXiv:2601.17024v1 Announce Type: new Abstract: The widespread availability
+    of generative artificial intelligence (GenAI) has created a pressing challenge
+    in computer science (CS) education: how to incorporate powerful AI tools into
+    programming coursework without undermining student learning through cognitive
+    offloading. This paper presents an assessment mo…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17024
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 人工智能时代的计算机科学学习保障：开放式生成AI政策与作业驱动的书面测验
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: '(Mis-)Informed Consent: Predatory Apps and the Exploitation of Populations
+    with Limited Literacy'
+  why: 'arXiv:2601.17025v1 Announce Type: new Abstract: Among populations with limited
+    literacy in emerging digital markets, the adoption of mobile…'
+  takeaway: 'arXiv:2601.17025v1 Announce Type: new Abstract: Among populations with
+    limited literacy in emerging digital markets, the adoption of mobile phones, combined
+    with comprehension barriers and poor cybersecurity hygiene, has created hidden
+    privacy risks. This paper examines how informed consent is often abused by predatory
+    financial applications, leading to fin…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17025
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: （错误）知情同意：掠夺性应用程序与低识字率群体的剥削
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Failing on Bias Mitigation: Investigating Why Predictive Models Struggle
+    with Government Data'
+  why: 'arXiv:2601.17054v1 Announce Type: new Abstract: The potential for bias and
+    unfairness in AI-supporting government services raises ethical a…'
+  takeaway: 'arXiv:2601.17054v1 Announce Type: new Abstract: The potential for bias
+    and unfairness in AI-supporting government services raises ethical and legal concerns.
+    Using crime rate prediction with the Bristol City Council data as a case study,
+    we examine how these issues persist. Rather than auditing real-world deployed
+    systems, our goal is to understand why wide…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17054
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 偏见缓解失败：探究预测模型为何难以应对政府数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'AI, Metacognition, and the Verification Bottleneck: A Three-Wave Longitudinal
+    Study of Human Problem-Solving'
+  why: 'arXiv:2601.17055v1 Announce Type: new Abstract: This longitudinal pilot study
+    tracked how generative AI reshapes problem-solving over six m…'
+  takeaway: 'arXiv:2601.17055v1 Announce Type: new Abstract: This longitudinal pilot
+    study tracked how generative AI reshapes problem-solving over six months across
+    three waves in an academic setting. AI integration reached saturation by Wave
+    3, with daily use rising from 52.4% to 95.7% and ChatGPT adoption from 85.7% to
+    100%. A dominant hybrid workflow increased 2.7-fo…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17055
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: AI、元认知与验证瓶颈：人类问题解决的三波纵向研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Initial results of the Digital Consciousness Model
+  why: 'arXiv:2601.17060v1 Announce Type: new Abstract: Artificially intelligent systems
+    have become remarkably sophisticated.'
+  takeaway: 'arXiv:2601.17060v1 Announce Type: new Abstract: Artificially intelligent
+    systems have become remarkably sophisticated. They hold conversations, write essays,
+    and seem to understand context in ways that surprise even their creators. This
+    raises a crucial question: Are we creating systems that are conscious? The Digital
+    Consciousness Model (DCM) is a first at…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17060
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 数字意识模型的初步成果
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Between Search and Platform: ChatGPT Under the DSA'
+  why: 'arXiv:2601.17064v1 Announce Type: new Abstract: This article examines the
+    applicability of the Digital Services Act (DSA) to ChatGPT, argui…'
+  takeaway: 'arXiv:2601.17064v1 Announce Type: new Abstract: This article examines
+    the applicability of the Digital Services Act (DSA) to ChatGPT, arguing that it
+    should be classified as a hybrid of the two types of hosting services: online
+    search engines and platforms. This requires classifying search engines as hosting
+    services, which we show is appropriate under the…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17064
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 搜索与平台之间：DSA框架下的ChatGPT
+  why_zh: arXiv:2601.17064v1 公告类型：新 摘要：本文探讨了《数字服务法案》(DSA)对ChatGPT的适用性，主张其应被归类为两种托管服务的混合体：在线搜索引擎和平台。这要求将搜索引擎归类为托管服务，我们证明这在…
+  takeaway_zh: arXiv:2601.17064v1 公告类型：新 摘要：本文探讨了《数字服务法案》(DSA)对ChatGPT的适用性，主张其应被归类为两种托管服务的混合体：在线搜索引擎和平台。这要求将搜索引擎归类为托管服务，我们证明这在DSA框架下是恰当的…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Trademark Search, Artificial Intelligence and the Role of the Private Sector
+  why: 'arXiv:2601.17072v1 Announce Type: new Abstract: Almost every industry today
+    confronts the potential role of artificial intelligence and mac…'
+  takeaway: 'arXiv:2601.17072v1 Announce Type: new Abstract: Almost every industry
+    today confronts the potential role of artificial intelligence and machine learning
+    in its future. While many studies examine AI in consumer marketing, less attention
+    addresses AI''s role in creating and selecting trademarks that are distinctive,
+    recognizable, and meaningful to consumers. T…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17072
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 商标搜索、人工智能与私营部门的作用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Do VLMs Have a Moral Backbone? A Study on the Fragile Morality of Vision-Language
+    Models
+  why: 'arXiv:2601.17082v1 Announce Type: new Abstract: Despite substantial efforts
+    toward improving the moral alignment of Vision-Language Models…'
+  takeaway: 'arXiv:2601.17082v1 Announce Type: new Abstract: Despite substantial efforts
+    toward improving the moral alignment of Vision-Language Models (VLMs), it remains
+    unclear whether their ethical judgments are stable in realistic settings. This
+    work studies moral robustness in VLMs, defined as the ability to preserve moral
+    judgments under textual and visual perturb…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17082
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 视觉语言模型具备道德脊柱吗？关于其脆弱道德性的研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Beyond Instrumental and Substitutive Paradigms: Introducing Machine Culture
+    as an Emergent Phenomenon in Large Language Models'
+  why: 'arXiv:2601.17096v1 Announce Type: new Abstract: Recent scholarship typically
+    characterizes Large Language Models (LLMs) through either an \…'
+  takeaway: 'arXiv:2601.17096v1 Announce Type: new Abstract: Recent scholarship typically
+    characterizes Large Language Models (LLMs) through either an \textit{Instrumental
+    Paradigm} (viewing models as reflections of their developers'' culture) or a \textit{Substitutive
+    Paradigm} (viewing models as bilingual proxies that switch cultural frames based
+    on language). This stu…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.17096
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-01-27T05:00:00+00:00'
+  title_zh: 超越工具性与替代性范式：将机器文化作为大语言模型中的涌现现象提出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.15.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.15.2
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-01-27T00:52:57+00:00'
+  title_zh: 'ollama/ollama: v0.15.2版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Tips for getting coding agents to write good Python tests
+  why: Someone asked on Hacker News if I had any tips for getting coding agents to
+    write decent quality tests.
+  takeaway: 'Someone asked on Hacker News if I had any tips for getting coding agents
+    to write decent quality tests. Here''s what I said: I work in Python which helps
+    a lot because there are a TON of good examples of pytest tests floating around
+    in the training data, including things like usage of fixture libraries for mocking
+    external HTTP APIs and snapshot testing and…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Jan/26/tests/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-01-26T23:55:29+00:00'
+  title_zh: 编写优质Python测试的编程代理技巧
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI spills technical details about how its AI coding agent works
+  why: Unusually detailed post explains how OpenAI handles the Codex agent loop.
+  takeaway: Unusually detailed post explains how OpenAI handles the Codex agent loop.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/01/openai-spills-technical-details-about-how-its-ai-coding-agent-works/
+  source: Ars Technica
+  published_utc: '2026-01-26T23:05:17+00:00'
+  title_zh: OpenAI披露其AI编码助手技术细节
+  why_zh: 深度长文揭秘OpenAI如何构建Codex代理循环机制
+  takeaway_zh: 深度长文揭秘OpenAI如何构建Codex代理循环机制
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock now supports 1-hour duration for prompt caching
+  why: Amazon Bedrock now supports a 1-hour time-to-live (TTL) option for prompt caching
+    for select Anthropic Claude models.
+  takeaway: Amazon Bedrock now supports a 1-hour time-to-live (TTL) option for prompt
+    caching for select Anthropic Claude models. With this update, you can extend the
+    persistence of cached prompt prefixes from the default 5 minutes to 1 hour, improving
+    cost efficiency and performance for long-running agentic workflows and multi-turn
+    conversations. Previously, cached co…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-bedrock-one-hour-duration-prompt-caching/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-01-26T22:30:00+00:00'
+  title_zh: Amazon Bedrock现支持1小时提示缓存时长
+  why_zh: Amazon Bedrock现为部分Anthropic Claude模型提供1小时生存时间(TTL)的提示缓存选项。
+  takeaway_zh: Amazon Bedrock现为部分Anthropic Claude模型提供1小时生存时间（TTL）的提示缓存选项。通过此更新，您可以将缓存提示前缀的持久性从默认的5分钟延长至1小时，从而提升长时间运行的代理工作流和多轮对话的成本效益与性能。此前，缓存内容...
+  prompt_zh: ''
+- category: Tech industry
+  title: Doctors face-palm as RFK Jr.’s top vaccine advisor questions need for polio
+    shot
+  why: Kirk Milhoan's comments come as federal vaccine policy slides to insignificance.
+  takeaway: Kirk Milhoan's comments come as federal vaccine policy slides to insignificance.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/01/do-we-really-need-polio-shots-deep-thoughts-by-rfk-jr-advisor-get-dragged/
+  source: Ars Technica
+  published_utc: '2026-01-26T21:31:13+00:00'
+  title_zh: RFK Jr.首席疫苗顾问质疑脊髓灰质炎疫苗必要性，医生无奈
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why has Microsoft been routing example.com traffic to a company in Japan?
+  why: Company's autodiscover caused users' test credentials to be sent outside Microsoft
+    networks.
+  takeaway: Company's autodiscover caused users' test credentials to be sent outside
+    Microsoft networks.
+  prompt: ''
+  url: https://arstechnica.com/information-technology/2026/01/odd-anomaly-caused-microsofts-network-to-mishandle-example-com-traffic/
+  source: Ars Technica
+  published_utc: '2026-01-26T21:02:26+00:00'
+  title_zh: 微软为何将example.com流量导向日本公司？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Adaptive Inference in NVIDIA TensorRT for RTX Enables Automatic Optimization
+  why: Deploying AI applications across diverse consumer hardware has traditionally
+    forced a trade-off.
+  takeaway: Deploying AI applications across diverse consumer hardware has traditionally
+    forced a trade-off. You can optimize for specific GPU configurations and achieve...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/adaptive-inference-in-nvidia-tensorrt-for-rtx-enables-automatic-optimization/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-01-26T21:00:00+00:00'
+  title_zh: NVIDIA TensorRT自适应推理技术实现RTX自动优化
+  why_zh: 跨多样化消费硬件部署AI应用历来需要权衡。
+  takeaway_zh: 在多样化的消费级硬件上部署AI应用，传统上需要做出权衡。针对特定GPU配置进行优化，可实现...
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple's AirTag 2 is easier to find thanks to new chip
+  why: This is the first major upgrade since Apple introduced AirTags five years ago.
+  takeaway: This is the first major upgrade since Apple introduced AirTags five years
+    ago.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/01/apple-introduces-new-airtag-with-better-range-and-a-louder-speaker/
+  source: Ars Technica
+  published_utc: '2026-01-26T20:18:02+00:00'
+  title_zh: 苹果AirTag 2因新芯片更易定位
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '“Wildly irresponsible”: DOT''s use of AI to draft safety rules sparks concerns'
+  why: Staffers warn DOT's use of Gemini to draft rules could cause injuries and deaths.
+  takeaway: Staffers warn DOT's use of Gemini to draft rules could cause injuries
+    and deaths.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/wildly-irresponsible-dots-use-of-ai-to-draft-safety-rules-sparks-concerns/
+  source: Ars Technica
+  published_utc: '2026-01-26T20:13:47+00:00'
+  title_zh: “极其不负责任”：交通部用AI起草安全规则引发担忧
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI reportedly launches ChatGPT ads at premium TV prices
+  why: OpenAI is reportedly charging around $60 per 1,000 impressions for ChatGPT
+    ads, pricing that matches premium TV spots like NFL games rather…
+  takeaway: OpenAI is reportedly charging around $60 per 1,000 impressions for ChatGPT
+    ads, pricing that matches premium TV spots like NFL games rather than typical
+    online advertising. The company is also billing per impression instead of per
+    click, a format advertisers usually find less attractive. The article OpenAI reportedly
+    launches ChatGPT ads at premium TV price…
+  prompt: ''
+  url: https://the-decoder.com/openai-reportedly-launches-chatgpt-ads-at-premium-tv-prices/
+  source: The Decoder (AI)
+  published_utc: '2026-01-26T19:53:26+00:00'
+  title_zh: 据报道OpenAI以高价电视广告费率推出ChatGPT广告
+  why_zh: 据报OpenAI对ChatGPT广告收取每千次展示60美元费用，价格堪比NFL赛事等顶级电视广告位
+  takeaway_zh: 据报道，OpenAI对ChatGPT广告的收费约为每千次展示60美元，与NFL比赛等高端电视广告价格相当，而非典型在线广告。公司还按展示而非点击计费，这种模式通常对广告商吸引力较低。文章称OpenAI以高端电视广告价格推出ChatGPT广告…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: ChatGPT Containers can now run bash, pip/npm install packages, and download
+    files
+  why: One of my favourite features of ChatGPT is its ability to write and execute
+    code in a container.
+  takeaway: 'One of my favourite features of ChatGPT is its ability to write and execute
+    code in a container. This feature launched as ChatGPT Code Interpreter nearly
+    three years ago , was half-heartedly rebranded to "Advanced Data Analysis" at
+    some point and is generally really difficult to find detailed documentation about.
+    Case in point: it appears to have had a mass…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Jan/26/chatgpt-containers/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-01-26T19:19:31+00:00'
+  title_zh: ChatGPT容器现可运行bash指令、pip/npm安装包及下载文件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: IEEE Brings Hands-On STEM Activities to India’s Rural Areas
+  why: “Until we get equality in education, we won’t have an equal society.” Spoken
+    by Sonia Sotomayor , associate justice of the U.S.
+  takeaway: “Until we get equality in education, we won’t have an equal society.”
+    Spoken by Sonia Sotomayor , associate justice of the U.S. Supreme Court , the
+    words echo sharply across regions of the world where education is not guaranteed.
+    In the far northeastern corner of India—where villages are located in forests,
+    on mountains, and along riverbanks—rural classroom…
+  prompt: ''
+  url: https://spectrum.ieee.org/ieee-stem-activities-rural-india
+  source: IEEE Spectrum
+  published_utc: '2026-01-26T19:00:03+00:00'
+  title_zh: IEEE在印度农村地区推出实践性STEM教育活动
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

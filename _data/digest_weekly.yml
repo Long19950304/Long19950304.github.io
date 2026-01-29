@@ -199,6 +199,7 @@ weeks:
   - '2026-01-26'
   - '2026-01-27'
   - '2026-01-28'
+  - '2026-01-29'
   highlights_news:
   - date: '2026-01-27'
     url: https://www.technologyreview.com/2026/01/26/1131728/inside-openais-big-play-for-science/
@@ -308,6 +309,43 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-01-26T19:53:26+00:00'
+  - date: '2026-01-29'
+    url: https://arstechnica.com/ai/2026/01/report-china-approves-import-of-high-end-nvidia-ai-chips-after-weeks-of-uncertainty/
+    title: 'Report: China approves import of high-end Nvidia AI chips after weeks
+      of uncertainty'
+    title_zh: 报道：经历数周不确定性后，中国批准进口高端英伟达AI芯片
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-01-28T17:21:29+00:00'
+  - date: '2026-01-29'
+    url: https://www.technologyreview.com/2026/01/28/1131835/what-ai-remembers-about-you-is-privacys-next-frontier/
+    title: What AI “remembers” about you is privacy’s next frontier
+    title_zh: AI对你的“记忆”成为隐私保护新战场
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-28T14:57:37+00:00'
+  - date: '2026-01-29'
+    url: https://techcrunch.com/2026/01/28/microsoft-earnings-7-6-billion-openai/
+    title: Microsoft gained $7.6B from OpenAI last quarter
+    title_zh: 微软上季度从OpenAI获利76亿美元
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-28T22:47:24+00:00'
+  - date: '2026-01-29'
+    url: https://www.theverge.com/tech/869926/apple-hires-sebastiaan-de-with-design-team-halide-lux
+    title: Halide co-founder Sebastiaan de With is joining Apple&#8217;s design team
+    title_zh: Halide联合创始人Sebastiaan de With将加入苹果设计团队
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-28T23:59:45+00:00'
+  - date: '2026-01-29'
+    url: https://the-decoder.com/china-greenlights-400000-nvidia-h200-chip-imports-for-tech-giants-according-to-reuters/
+    title: China greenlights 400,000 Nvidia H200 chip imports for tech giants, according
+      to Reuters
+    title_zh: 路透社：中国批准科技巨头进口40万块英伟达H200芯片
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-01-28T15:30:29+00:00'
   highlights_ai:
   - date: '2026-01-27'
     url: https://the-decoder.com/chatgpt-fails-to-spot-92-of-fake-videos-made-by-openais-own-sora-tool/
@@ -387,3 +425,32 @@ weeks:
     category: AI tools & model releases
     source: NVIDIA Developer Blog
     published_utc: '2026-01-26T21:00:00+00:00'
+  - date: '2026-01-29'
+    url: https://github.com/openai/openai-node/releases/tag/v6.17.0
+    title: 'openai/openai-node: v6.17.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-01-28T22:26:56+00:00'
+  - date: '2026-01-29'
+    url: https://the-decoder.com/openais-prism-combines-latex-editor-reference-manager-and-gpt-5-2-in-one-tool/
+    title: OpenAI's Prism combines LaTeX editor, reference manager, and GPT-5.2 in
+      one tool
+    title_zh: OpenAI的Prism集LaTeX编辑器、参考文献管理器和GPT-5.2于一体
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-01-28T10:49:48+00:00'
+  - date: '2026-01-29'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch
+    title: 'BerriAI/litellm: v1.81.0-patch'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-01-29T00:40:42+00:00'
+  - date: '2026-01-29'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-eks-distro-kubernetes-version-1-35
+    title: Amazon EKS and Amazon EKS Distro now supports Kubernetes version 1.35
+    title_zh: Amazon EKS和Amazon EKS Distro现已支持Kubernetes 1.35版本
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-01-28T23:00:00+00:00'

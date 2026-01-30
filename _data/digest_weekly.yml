@@ -200,6 +200,7 @@ weeks:
   - '2026-01-27'
   - '2026-01-28'
   - '2026-01-29'
+  - '2026-01-30'
   highlights_news:
   - date: '2026-01-27'
     url: https://www.technologyreview.com/2026/01/26/1131728/inside-openais-big-play-for-science/
@@ -346,6 +347,43 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-01-28T15:30:29+00:00'
+  - date: '2026-01-30'
+    url: https://techcrunch.com/2026/01/29/fintech-firm-marquis-blames-hack-at-firewall-provider-sonicwall-for-its-data-breach/
+    title: Fintech firm Marquis blames hack at firewall provider SonicWall for its
+      data breach
+    title_zh: 金融科技公司Marquis将数据泄露归咎于防火墙供应商SonicWall遭黑客入侵
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-01-29T20:31:43+00:00'
+  - date: '2026-01-30'
+    url: https://arstechnica.com/ai/2026/01/new-openai-tool-renews-fears-that-ai-slop-will-overwhelm-scientific-research/
+    title: New OpenAI tool renews fears that “AI slop” will overwhelm scientific research
+    title_zh: OpenAI新工具引发担忧：'AI垃圾'或将淹没科学研究
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-01-29T17:51:49+00:00'
+  - date: '2026-01-30'
+    url: https://www.technologyreview.com/2026/01/29/1131787/the-ai-hype-index-grok-makes-porn-claude-code-nails-your-job/
+    title: 'The AI Hype Index: Grok makes porn, and Claude Code nails your job'
+    title_zh: AI炒作指数：Grok生成色情内容，Claude Code抢走你的工作
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-01-29T20:56:23+00:00'
+  - date: '2026-01-30'
+    url: https://www.theverge.com/news/870422/data-center-ai-gas-power-surge
+    title: It’s a new heyday for gas thanks to data centers
+    title_zh: 数据中心需求推动天然气迎来新黄金时代
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-01-29T22:12:49+00:00'
+  - date: '2026-01-30'
+    url: https://the-decoder.com/openai-clarifies-it-wont-claim-ownership-of-user-discoveries-following-confusion-over-monetization-plans/
+    title: OpenAI clarifies it won't claim ownership of user discoveries following
+      confusion over monetization plans
+    title_zh: OpenAI澄清不会主张用户发现成果所有权，消除商业化计划误解
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-01-29T17:29:13+00:00'
   highlights_ai:
   - date: '2026-01-27'
     url: https://the-decoder.com/chatgpt-fails-to-spot-92-of-fake-videos-made-by-openais-own-sora-tool/
@@ -454,3 +492,32 @@ weeks:
     category: AI tools & model releases
     source: AWS What's New (Recent Announcements)
     published_utc: '2026-01-28T23:00:00+00:00'
+  - date: '2026-01-30'
+    url: https://the-decoder.com/chatgpt-agent-reportedly-lost-75-of-its-users-because-nobody-knew-what-it-was-actually-for/
+    title: ChatGPT Agent reportedly lost 75% of its users because nobody knew what
+      it was actually for
+    title_zh: ChatGPT Agent据称因无人知晓其实际用途而流失75%用户
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-01-29T20:00:36+00:00'
+  - date: '2026-01-30'
+    url: https://simonwillison.net/2026/Jan/30/a-programming-tool-for-the-arts/#atom-everything
+    title: We gotta talk about AI as a programming tool for the arts
+    title_zh: 我们必须谈谈AI作为艺术编程工具
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-01-30T03:51:53+00:00'
+  - date: '2026-01-30'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch2
+    title: 'BerriAI/litellm: v1.81.0-patch2'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-01-30T00:37:30+00:00'
+  - date: '2026-01-30'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-eventbridge-increases-event-payload-size-256-kb-1-mb
+    title: Announcing increased 1 MB payload size support in Amazon EventBridge
+    title_zh: 宣布Amazon EventBridge支持1 MB有效载荷大小提升
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-01-29T18:30:00+00:00'

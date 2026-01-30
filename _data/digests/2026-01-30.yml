@@ -1,0 +1,917 @@
+date: '2026-01-30'
+title: Daily Digest - 2026-01-30
+title_zh: 每日简报 - 2026-01-30
+note: 'Today: Fintech firm Marquis blames hack at firewall provider SonicWall… · New
+  OpenAI tool renews fears that “AI slop” will overwhelm scie… · AI: ChatGPT Agent
+  reportedly lost 75% of its users because no….'
+note_zh: 今日关注：金融科技公司Marquis将数据泄露归咎于防火墙供应商SonicWall遭…；OpenAI新工具引发担忧：'AI垃圾'或将淹没科学研究；AI：ChatGPT
+  Agent据称因无人知晓其实际用途而流失75%用户。
+items:
+- category: Tech industry
+  title: The Dank Case for Scrolling Window Managers
+  why: 'Article URL: https://tedium.co/2026/01/29/niri-danklinux-scrolling-window-managers/
+    Comments URL: https://news.ycombinator.com/item?id=4682…'
+  takeaway: 'Article URL: https://tedium.co/2026/01/29/niri-danklinux-scrolling-window-managers/
+    Comments URL: https://news.ycombinator.com/item?id=46820468 Points: 11 # Comments:
+    3'
+  prompt: ''
+  url: https://tedium.co/2026/01/29/niri-danklinux-scrolling-window-managers/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T04:17:38+00:00'
+  title_zh: 滚动窗口管理器的有力论据
+  why_zh: 文章链接：https://tedium.co/2026/01/29/niri-danklinux-scrolling-window-managers/
+    评论链接：https://news.ycombinator.com/item?id=4682…
+  takeaway_zh: 文章链接：https://tedium.co/2026/01/29/niri-danklinux-scrolling-window-managers/
+    评论链接：https://news.ycombinator.com/item?id=46820468 得分：11 评论数：3
+  prompt_zh: ''
+- category: Tech industry
+  title: Moltbook
+  why: 'Article URL: https://www.moltbook.com/ Comments URL: https://news.ycombinator.com/item?id=46820360
+    Points: 12 # Comments: 4'
+  takeaway: 'Article URL: https://www.moltbook.com/ Comments URL: https://news.ycombinator.com/item?id=46820360
+    Points: 12 # Comments: 4'
+  prompt: ''
+  url: https://www.moltbook.com/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T03:55:34+00:00'
+  title_zh: ''
+  why_zh: 文章链接：https://www.moltbook.com/ 评论链接：https://news.ycombinator.com/item?id=46820360
+    积分：12 评论数：4
+  takeaway_zh: 文章链接：https://www.moltbook.com/ 评论链接：https://news.ycombinator.com/item?id=46820360
+    积分：12 评论数：4
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: We gotta talk about AI as a programming tool for the arts
+  why: A thoughtful take on AI as a programmable component—using live-arts automation
+    as a concrete use case.
+  takeaway: Simon Willison argues for treating AI like a programming tool, not a magic
+    box—useful framing for building reliable creative workflows.
+  prompt: What’s the smallest, safest ‘AI as a tool’ workflow you’d trust on stage?
+  url: https://simonwillison.net/2026/Jan/30/a-programming-tool-for-the-arts/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-01-30T03:51:53+00:00'
+  title_zh: 我们必须谈谈AI作为艺术编程工具
+  why_zh: 关于AI作为可编程组件的深思——以现场艺术自动化为具体用例。
+  takeaway_zh: 西蒙·威尔逊主张将AI视为编程工具而非魔法盒——这一框架有助于构建可靠的创意工作流程。
+  prompt_zh: ''
+- category: Tech industry
+  title: Two days of oatmeal reduce cholesterol level
+  why: 'Article URL: https://www.uni-bonn.de/en/news/017-2026 Comments URL: https://news.ycombinator.com/item?id=46819809
+    Points: 52 # Comments: 42'
+  takeaway: 'Article URL: https://www.uni-bonn.de/en/news/017-2026 Comments URL: https://news.ycombinator.com/item?id=46819809
+    Points: 52 # Comments: 42'
+  prompt: ''
+  url: https://www.uni-bonn.de/en/news/017-2026
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T02:16:21+00:00'
+  title_zh: 两天燕麦饮食降低胆固醇水平
+  why_zh: 文章链接：https://www.uni-bonn.de/en/news/017-2026 评论链接：https://news.ycombinator.com/item?id=46819809
+    积分：52 评论数：42
+  takeaway_zh: 文章链接：https://www.uni-bonn.de/en/news/017-2026 评论链接：https://news.ycombinator.com/item?id=46819809
+    积分：52 评论数：42
+  prompt_zh: ''
+- category: Tech industry
+  title: How Sequoia-backed Ethos reached the public market while rivals fell short
+  why: The profitable life-insurance platform was one of the first major tech companies
+    to test the 2026 public markets.
+  takeaway: The profitable life-insurance platform was one of the first major tech
+    companies to test the 2026 public markets.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/29/how-sequoia-backed-ethos-reached-the-public-market-while-rivals-fell-short/
+  source: TechCrunch
+  published_utc: '2026-01-30T01:33:13+00:00'
+  title_zh: 红杉支持的Ethos如何逆势登陆公开市场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.0-patch2'
+  why: If you rely on LiteLLM routing/proxy behavior, patch releases can matter—scan
+    the changelog before upgrading.
+  takeaway: LiteLLM v1.81.0-patch2 is out; see release notes for fixes and potential
+    behavior changes.
+  prompt: What’s your upgrade strategy for fast-moving AI infra dependencies (pin,
+    canary, or auto-update)?
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-01-30T00:37:30+00:00'
+  title_zh: ''
+  why_zh: 若依赖LiteLLM的路由/代理功能，补丁发布可能至关重要——升级前请查阅变更日志。
+  takeaway_zh: LiteLLM v1.81.0-patch2已发布；详情请参阅发布说明，了解修复内容及潜在行为变化。
+  prompt_zh: ''
+- category: Tech industry
+  title: The iPhone just had its best quarter ever
+  why: Apple’s cash engine is still iPhone—and a record quarter buys time for its
+    AI strategy.
+  takeaway: Apple reportedly posted its best iPhone quarter, with growth credited
+    to regions including China and India.
+  prompt: What would it take for Apple’s AI story to matter as much as the iPhone
+    cycle?
+  url: https://techcrunch.com/2026/01/29/the-iphone-just-had-its-best-quarter-ever/
+  source: TechCrunch
+  published_utc: '2026-01-29T23:57:21+00:00'
+  title_zh: iPhone刚创下季度销售历史新高
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Guys, I don’t think Tim Cook knows how to monetize AI
+  why: One intrepid Morgan Stanley analyst dared to ask how Apple will make money
+    on its AI investments.
+  takeaway: One intrepid Morgan Stanley analyst dared to ask how Apple will make money
+    on its AI investments. The answer will not shock you.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/29/guys-i-dont-think-tim-cook-knows-how-to-monetize-ai/
+  source: TechCrunch
+  published_utc: '2026-01-29T23:51:17+00:00'
+  title_zh: 伙计们，我觉得库克根本不懂如何将AI变现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Having that high-deductible health plan might kill you, literally
+  why: With ACA tax credits gone, more people are turning to high-deductible plans.
+  takeaway: With ACA tax credits gone, more people are turning to high-deductible
+    plans.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/01/having-that-high-deductible-health-plan-might-kill-you-literally/
+  source: Ars Technica
+  published_utc: '2026-01-29T23:22:58+00:00'
+  title_zh: 高免赔额健康保险可能真的会要了你的命
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US spy satellite agency declassifies high-flying Cold War listening post
+  why: The JUMPSEAT satellites loitered over the North Pole to spy on the Soviet Union.
+  takeaway: The JUMPSEAT satellites loitered over the North Pole to spy on the Soviet
+    Union.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/us-spy-satellite-agency-declassifies-high-flying-cold-war-listening-post/
+  source: Ars Technica
+  published_utc: '2026-01-29T23:07:05+00:00'
+  title_zh: 美国间谍卫星机构解密冷战时期高空监听站
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Software is mostly all you need
+  why: 'Article URL: https://softwarefordays.com/post/software-is-mostly-all-you-need/
+    Comments URL: https://news.ycombinator.com/item?id=46818154…'
+  takeaway: 'Article URL: https://softwarefordays.com/post/software-is-mostly-all-you-need/
+    Comments URL: https://news.ycombinator.com/item?id=46818154 Points: 38 # Comments:
+    29'
+  prompt: ''
+  url: https://softwarefordays.com/post/software-is-mostly-all-you-need/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T23:06:34+00:00'
+  title_zh: 软件几乎是你所需的一切
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk’s SpaceX, Tesla, and xAI in talks to merge, according to reports
+  why: A Tesla/SpaceX/xAI consolidation would create a vertically integrated AI+hardware
+    stack—and new governance risk.
+  takeaway: Reports say Musk’s SpaceX, Tesla, and xAI discussed a merger, potentially
+    bundling Grok, Starlink, and SpaceX under one corporate umbrella.
+  prompt: If the merger happens, who actually controls the data, compute, and IP across
+    the combined stack?
+  url: https://techcrunch.com/2026/01/29/elon-musk-spacex-tesla-xai-merger-talks-ipo-reuters/
+  source: TechCrunch
+  published_utc: '2026-01-29T22:47:42+00:00'
+  title_zh: 据报道马斯克旗下SpaceX、特斯拉和xAI正商讨合并事宜
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: People complaining about Windows 11 hasn't stopped it from hitting 1 billion
+    users
+  why: Windows 11 clears a milestone as Windows 10 continues its slow fade.
+  takeaway: Windows 11 clears a milestone as Windows 10 continues its slow fade.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/01/windows-11-has-hit-1-billion-users-just-a-hair-faster-than-windows-10-did/
+  source: Ars Technica
+  published_utc: '2026-01-29T22:46:59+00:00'
+  title_zh: 用户对Windows 11的抱怨未能阻止其突破10亿用户大关
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Grid: Forever free, local-first, browser-based 3D printing/CNC/laser slicer'
+  why: 'Article URL: https://grid.space/stem/ Comments URL: https://news.ycombinator.com/item?id=46817813
+    Points: 212 # Comments: 67'
+  takeaway: 'Article URL: https://grid.space/stem/ Comments URL: https://news.ycombinator.com/item?id=46817813
+    Points: 212 # Comments: 67'
+  prompt: ''
+  url: https://grid.space/stem/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T22:38:57+00:00'
+  title_zh: Grid：永远免费、本地优先、基于浏览器的3D打印/CNC/激光切片软件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Cutting Up Curved Things
+  why: 'Article URL: https://campedersen.com/tessellation Comments URL: https://news.ycombinator.com/item?id=46817764
+    Points: 35 # Comments: 6'
+  takeaway: 'Article URL: https://campedersen.com/tessellation Comments URL: https://news.ycombinator.com/item?id=46817764
+    Points: 35 # Comments: 6'
+  prompt: ''
+  url: https://campedersen.com/tessellation
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T22:34:54+00:00'
+  title_zh: 切割曲线物体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: '‘Uncanny Valley’: Minneapolis Misinformation, TikTok’s New Owners, and Moltbot
+    Hype'
+  why: 'On this episode of Uncanny Valley, we dive into the news that''s held our
+    attention this week: ICE activity as it''s been unfolding in Minnes…'
+  takeaway: 'On this episode of Uncanny Valley, we dive into the news that''s held
+    our attention this week: ICE activity as it''s been unfolding in Minnesota.'
+  prompt: ''
+  url: https://www.wired.com/story/uncanny-valley-podcast-ice-minneapolis-tiktok-moltbot/
+  source: WIRED - AI
+  published_utc: '2026-01-29T22:19:59+00:00'
+  title_zh: 《恐怖谷》：明尼阿波利斯市假新闻、TikTok新东家与Moltbot炒作
+  why_zh: 在本期《Uncanny Valley》中，我们深入探讨了本周关注的新闻：ICE在明尼苏达州的活动进展。
+  takeaway_zh: 在本期《Uncanny Valley》中，我们深入探讨了本周关注的新闻：ICE在明尼苏达州的活动进展。
+  prompt_zh: ''
+- category: Tech industry
+  title: It’s a new heyday for gas thanks to data centers
+  why: Data-center electricity demand is reviving gas build-outs—an AI boom with climate
+    consequences.
+  takeaway: New gas plant development is surging, driven in part by data-center growth;
+    more gas capacity means more emissions pressure and policy pushback.
+  prompt: Will data centers drive a clean-energy build-out—or lock in a new wave of
+    fossil infrastructure?
+  url: https://www.theverge.com/news/870422/data-center-ai-gas-power-surge
+  source: The Verge
+  published_utc: '2026-01-29T22:12:49+00:00'
+  title_zh: 数据中心需求推动天然气迎来新黄金时代
+  why_zh: 数据中心电力需求正推动天然气设施扩建——AI繁荣伴随气候影响。
+  takeaway_zh: 新天然气电厂建设激增，部分源于数据中心增长；更多天然气产能意味着更大的排放压力和政策反弹。
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon is reportedly in talks to invest $50B in OpenAI
+  why: A $50B check would reshape OpenAI’s alliances—and escalate the hyperscaler
+    AI arms race.
+  takeaway: 'Report: Amazon is in talks to invest up to $50B in OpenAI. If it happens,
+    it tightens the AWS–OpenAI relationship while raising governance and competition
+    questions.'
+  prompt: If AWS becomes a major backer, does OpenAI become truly multi-cloud—or more
+    dependent on one provider?
+  url: https://techcrunch.com/2026/01/29/amazon-is-reportedly-in-talks-to-invest-50-billion-in-openai/
+  source: TechCrunch
+  published_utc: '2026-01-29T22:11:09+00:00'
+  title_zh: 据报道亚马逊正洽谈向OpenAI投资500亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Backseat Software
+  why: 'Article URL: https://blog.mikeswanson.com/backseat-software/ Comments URL:
+    https://news.ycombinator.com/item?id=46817452 Points: 37 # Comme…'
+  takeaway: 'Article URL: https://blog.mikeswanson.com/backseat-software/ Comments
+    URL: https://news.ycombinator.com/item?id=46817452 Points: 37 # Comments: 0'
+  prompt: ''
+  url: https://blog.mikeswanson.com/backseat-software/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T22:10:07+00:00'
+  title_zh: 后座软件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How often do AI chatbots lead users down a harmful path?
+  why: Anthropic's latest paper on "user disempowerment" has some troubling findings.
+  takeaway: Anthropic's latest paper on "user disempowerment" has some troubling findings.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/01/how-often-do-ai-chatbots-lead-users-down-a-harmful-path/
+  source: Ars Technica
+  published_utc: '2026-01-29T22:05:59+00:00'
+  title_zh: AI聊天机器人将用户引向有害路径的频率有多高？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple just had a record-breaking iPhone quarter
+  why: Apple says the iPhone had its "best-ever" quarter, with revenue hitting more
+    than $85.3 billion over the past few months.
+  takeaway: Apple says the iPhone had its "best-ever" quarter, with revenue hitting
+    more than $85.3 billion over the past few months. The company announced the news
+    as part of its Q1 2026 earnings report, which also revealed record-breaking revenue
+    of $143.8 billion, up 16 percent when compared to the same time last year. "The
+    demand for […]
+  prompt: ''
+  url: https://www.theverge.com/news/870319/apple-iphone-best-revenue-ai-q1-2026
+  source: The Verge
+  published_utc: '2026-01-29T21:54:56+00:00'
+  title_zh: 苹果刚经历了iPhone销量破纪录的一季度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Medium gives employees Friday off to participate in national strike protesting
+    ICE
+  why: Activists behind the general strike are calling for "no work, no school, and
+    no shopping" amid a push to defund ICE, which has escalated ra…
+  takeaway: Activists behind the general strike are calling for "no work, no school,
+    and no shopping" amid a push to defund ICE, which has escalated raids in U.S.
+    cities, killing several people, including two U.S. citizens earlier this month
+    in Minneapolis.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/29/medium-gives-employees-friday-off-to-participate-in-national-strike-protesting-ice/
+  source: TechCrunch
+  published_utc: '2026-01-29T21:49:15+00:00'
+  title_zh: Medium允许员工周五休假参加抗议ICE的全国大罢工
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft won’t stop buying AI chips from Nvidia, AMD, even after launching
+    its own, Nadella says
+  why: Even with custom silicon, Microsoft still needs Nvidia/AMD capacity to meet
+    AI demand.
+  takeaway: Nadella says Microsoft will keep buying Nvidia and AMD AI chips alongside
+    its own chips to scale AI workloads.
+  prompt: Do cloud providers converge on a stable multi-supplier strategy—or pivot
+    once in-house chips mature?
+  url: https://techcrunch.com/2026/01/29/microsoft-wont-stop-buying-ai-chips-from-nvidia-amd-even-after-launching-its-own-nadella-says/
+  source: TechCrunch
+  published_utc: '2026-01-29T21:21:46+00:00'
+  title_zh: 微软CEO纳德拉表示，即便推出自研AI芯片后仍将继续采购英伟达和AMD产品
+  why_zh: 即便拥有定制芯片，微软仍需依赖Nvidia/AMD的产能来满足AI需求。
+  takeaway_zh: 纳德拉表示，微软将继续采购英伟达和AMD的AI芯片，同时使用自家芯片，以扩展AI工作负载。
+  prompt_zh: ''
+- category: Tech industry
+  title: The weirdest headphones at CES will launch on Kickstarter next month
+  why: There's never a shortage of weird tech debuting at CES every year.
+  takeaway: There's never a shortage of weird tech debuting at CES every year. A new
+    company called Tomorrow Doesn't Matter, or TDM, announced a peculiar pair of headphones
+    at the show earlier this month with a feature no one has tried before. The Neo
+    headphones can be rolled up like a hedgehog which turns them into […]
+  prompt: ''
+  url: https://www.theverge.com/news/870416/tdm-neo-wireless-headphones-bluetooth-speaker-kickstarter-february
+  source: The Verge
+  published_utc: '2026-01-29T21:03:11+00:00'
+  title_zh: CES最奇葩耳机将于下月在Kickstarter众筹
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The AI Hype Index: Grok makes porn, and Claude Code nails your job'
+  why: Everyone is panicking because AI is very bad; everyone is panicking because
+    AI is very good.
+  takeaway: Everyone is panicking because AI is very bad; everyone is panicking because
+    AI is very good. It’s just that you never know which one you’re going to get.
+    Grok is a pornography machine. Claude Code can do anything from building websites
+    to reading your MRI. So of course Gen Z is spooked by what this…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/29/1131787/the-ai-hype-index-grok-makes-porn-claude-code-nails-your-job/
+  source: MIT Technology Review
+  published_utc: '2026-01-29T20:56:23+00:00'
+  title_zh: AI炒作指数：Grok生成色情内容，Claude Code抢走你的工作
+  why_zh: 人们因AI表现糟糕而恐慌；人们也因AI表现卓越而恐慌。
+  takeaway_zh: 人们因AI表现糟糕而恐慌；人们也因AI表现卓越而恐慌。你永远不知道会遇到哪一种。Grok是色情内容生成器，Claude Code则无所不能，从建站到解读MRI。难怪Z世代对此感到不安……
+  prompt_zh: ''
+- category: Tech industry
+  title: The WiFi only works when it's raining (2024)
+  why: 'Article URL: https://predr.ag/blog/wifi-only-works-when-its-raining/ Comments
+    URL: https://news.ycombinator.com/item?id=46816357 Points: 12…'
+  takeaway: 'Article URL: https://predr.ag/blog/wifi-only-works-when-its-raining/
+    Comments URL: https://news.ycombinator.com/item?id=46816357 Points: 127 # Comments:
+    42'
+  prompt: ''
+  url: https://predr.ag/blog/wifi-only-works-when-its-raining/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T20:47:36+00:00'
+  title_zh: WiFi只在雨天工作（2024）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Fintech firm Marquis blames hack at firewall provider SonicWall for its data
+    breach
+  why: 'Perimeter-device incidents can cascade: one vendor compromise can expose many
+    customers.'
+  takeaway: Marquis blames a SonicWall-related hack for its breach and says it may
+    seek to recover costs—another reminder of firewall supply-chain risk.
+  prompt: What’s the fastest, lowest-friction way to reduce blast radius from perimeter-vendor
+    failures?
+  url: https://techcrunch.com/2026/01/29/fintech-firm-marquis-blames-hack-at-firewall-provider-sonicwall-for-its-data-breach/
+  source: TechCrunch
+  published_utc: '2026-01-29T20:31:43+00:00'
+  title_zh: 金融科技公司Marquis将数据泄露归咎于防火墙供应商SonicWall遭黑客入侵
+  why_zh: 边界设备事件可能引发连锁反应：一家供应商的漏洞可能危及众多客户。
+  takeaway_zh: Marquis将数据泄露归咎于与SonicWall相关的黑客攻击，并表示可能寻求成本回收——再次提醒防火墙供应链风险。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Project Genie lets you create interactive worlds from a photo or prompt
+  why: Project Genie lets you generate new worlds 60 seconds at a time, but only if
+    you pay for AI Ultra.
+  takeaway: Project Genie lets you generate new worlds 60 seconds at a time, but only
+    if you pay for AI Ultra.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/01/google-project-genie-lets-you-create-interactive-worlds-from-a-photo-or-prompt/
+  source: Ars Technica
+  published_utc: '2026-01-29T20:26:50+00:00'
+  title_zh: 谷歌Project Genie可通过照片或提示创建交互式虚拟世界
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best foldable phone you can buy
+  why: A foldable phone isn’t for the faint of heart.
+  takeaway: A foldable phone isn’t for the faint of heart. They’re generally heavier,
+    pricier, and have less capable cameras than a standard slab-style phone. They’re
+    also still not as durable as regular smartphones, though they’re not nearly as
+    fragile as they once were. In fact, thanks to Google, we finally have a foldable
+    phone we can […]
+  prompt: ''
+  url: https://www.theverge.com/tech/635839/best-foldable-phone
+  source: The Verge
+  published_utc: '2026-01-29T20:18:26+00:00'
+  title_zh: 市面上最值得购买的可折叠手机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Satya Nadella insists people are using Microsoft’s Copilot AI a lot
+  why: With Microsoft spending many billions on data centers, and rumors that no one
+    is using its AI, CEO Satya Nadella shared some usage numbers.
+  takeaway: With Microsoft spending many billions on data centers, and rumors that
+    no one is using its AI, CEO Satya Nadella shared some usage numbers.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/29/satya-nadella-insists-people-are-using-microsofts-copilot-ai-a-lot/
+  source: TechCrunch
+  published_utc: '2026-01-29T20:06:56+00:00'
+  title_zh: 萨提亚·纳德拉坚称用户频繁使用微软Copilot AI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: ChatGPT Agent reportedly lost 75% of its users because nobody knew what it
+    was actually for
+  why: OpenAI may shelve ChatGPT Agent just months after launch.
+  takeaway: 'OpenAI may shelve ChatGPT Agent just months after launch. Users dropped
+    from four million to under one million, plagued by technical issues and unclear
+    purpose: many didn''t know what to use it for or that it even existed. The branding
+    didn''t help either, suggesting only this mode was agentic when ChatGPT already
+    had agent capabilities. The article ChatGPT A…'
+  prompt: ''
+  url: https://the-decoder.com/chatgpt-agent-reportedly-lost-75-of-its-users-because-nobody-knew-what-it-was-actually-for/
+  source: The Decoder (AI)
+  published_utc: '2026-01-29T20:00:36+00:00'
+  title_zh: ChatGPT Agent据称因无人知晓其实际用途而流失75%用户
+  why_zh: OpenAI可能在推出ChatGPT Agent数月后将其搁置。
+  takeaway_zh: OpenAI可能在推出ChatGPT Agent仅数月后将其搁置。用户数量从400万骤降至不足100万，主要受技术问题和用途不明困扰：许多人不知如何使用，甚至不知其存在。品牌命名也未起到帮助，暗示仅此模式具备代理能力，而ChatGPT本身已具备代理功能。文章ChatGPT
+    A…
+  prompt_zh: ''
+- category: Tech industry
+  title: Comcast keeps losing customers despite price guarantee and unlimited data
+  why: Comcast overhauled Internet plans to stop customer losses.
+  takeaway: Comcast overhauled Internet plans to stop customer losses. It isn't working
+    yet.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/comcast-keeps-losing-customers-despite-price-guarantee-and-unlimited-data/
+  source: Ars Technica
+  published_utc: '2026-01-29T19:51:45+00:00'
+  title_zh: 康卡斯特客户持续流失，尽管提供价格保证和无限流量
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk might merge SpaceX with Tesla or xAI
+  why: Elon Musk-led SpaceX may merge with another company helmed by Elon Musk.
+  takeaway: Elon Musk-led SpaceX may merge with another company helmed by Elon Musk.
+    Reuters initially reported Thursday that SpaceX and xAI are "in discussions to
+    merge" ahead of SpaceX's IPO that's planned for later this year. The merger would
+    help with SpaceX's plans to launch data centers into space, according to the publication.
+    Later on Thursday, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/870380/elon-musk-space-x-xai-merger
+  source: The Verge
+  published_utc: '2026-01-29T19:47:58+00:00'
+  title_zh: 埃隆·马斯克或考虑将SpaceX与特斯拉/xAI合并
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Flameshot
+  why: 'Article URL: https://github.com/flameshot-org/flameshot Comments URL: https://news.ycombinator.com/item?id=46815297
+    Points: 149 # Comments:…'
+  takeaway: 'Article URL: https://github.com/flameshot-org/flameshot Comments URL:
+    https://news.ycombinator.com/item?id=46815297 Points: 149 # Comments: 55'
+  prompt: ''
+  url: https://github.com/flameshot-org/flameshot
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T19:30:35+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple’s second biggest acquisition ever is an AI company that listens to
+    ‘silent speech’
+  why: Apple's biggest acquisition ever is still its $3 billion Beats buy in 2014,
+    but now the second biggest deal is bringing in Q.ai, a four-yea…
+  takeaway: Apple's biggest acquisition ever is still its $3 billion Beats buy in
+    2014, but now the second biggest deal is bringing in Q.ai, a four-year-old AI
+    audio startup. Apple did not disclose the terms, but Financial Times reports that
+    Apple is spending $2 billion on the company. It also mentioned Q.ai patents for
+    optical sensor […]
+  prompt: ''
+  url: https://www.theverge.com/news/870353/apple-q-ai-acquisition-silent-speech
+  source: The Verge
+  published_utc: '2026-01-29T19:22:27+00:00'
+  title_zh: 苹果史上第二大收购案：专注听‘无声语言’的AI公司
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'She''ll mess with Texas: Nurse keeps mailing abortion pills, despite Paxton
+    lawsuit'
+  why: Texas sues Delaware nurse practitioner shipping out hundreds of abortion pills
+    each month.
+  takeaway: Texas sues Delaware nurse practitioner shipping out hundreds of abortion
+    pills each month.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/01/i-dont-fear-ken-paxton-nurse-vows-to-keep-shipping-abortion-pills-to-texas/
+  source: Ars Technica
+  published_utc: '2026-01-29T19:19:11+00:00'
+  title_zh: 与德州对抗：护士坚持邮寄堕胎药，无视帕克斯顿诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Obsbot’s new gimbal webcam doesn’t justify its $350 price
+  why: Webcam company Obsbot recently launched two new gimbal-equipped webcams, the
+    $349 Tiny 3 and the $199 Tiny 3 Lite.
+  takeaway: Webcam company Obsbot recently launched two new gimbal-equipped webcams,
+    the $349 Tiny 3 and the $199 Tiny 3 Lite. It claims that the priciest model is
+    the smallest pan, tilt, zoom (PTZ) 4K webcam ever made, weighing 63 grams. Ironically,
+    the Tiny 3 Lite is heavier and bigger. I've been testing the Tiny 3 for […]
+  prompt: ''
+  url: https://www.theverge.com/tech/867950/obsbot-tiny-3-lite-hands-on-impressions
+  source: The Verge
+  published_utc: '2026-01-29T19:14:27+00:00'
+  title_zh: Obsbot新款云台摄像头难以支撑350美元定价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: AI-Generated Anti-ICE Videos Are Getting the Fanfic Treatment
+  why: Across Instagram and Facebook, AI-generated videos show people of color putting
+    ICE agents in their place.
+  takeaway: Across Instagram and Facebook, AI-generated videos show people of color
+    putting ICE agents in their place. Are they cathartic or just adding to a stew
+    of misinformation?
+  prompt: ''
+  url: https://www.wired.com/story/anti-ice-videos-are-getting-the-ai-fanfic-treatment-online/
+  source: WIRED - AI
+  published_utc: '2026-01-29T19:07:14+00:00'
+  title_zh: AI生成反ICE视频正获同人二次创作
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What ice fishing can teach us about making foraging decisions
+  why: Social density increases likelihood of sticking with a location.
+  takeaway: Social density increases likelihood of sticking with a location. Environmental
+    factors had little influence.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/01/what-ice-fishing-can-teach-us-about-making-foraging-decisions/
+  source: Ars Technica
+  published_utc: '2026-01-29T19:00:41+00:00'
+  title_zh: 冰钓活动对采集决策的启示
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: A Yann LeCun–Linked Startup Charts a New Path to AGI
+  why: As the world’s largest companies pour hundreds of billions of dollars into
+    large language models, San Francisco-based Logical Intelligence…
+  takeaway: As the world’s largest companies pour hundreds of billions of dollars
+    into large language models, San Francisco-based Logical Intelligence is trying
+    something different in pursuit of AI that can mimic the human brain.
+  prompt: ''
+  url: https://www.wired.com/story/logical-intelligence-yann-lecun-startup-chart-new-course-agi/
+  source: WIRED - AI
+  published_utc: '2026-01-29T19:00:00+00:00'
+  title_zh: Yann LeCun关联初创公司为AGI开辟新路径
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple buys Israeli startup Q.ai as the AI race heats up
+  why: Apple keeps buying niche AI startups to shore up on-device features—especially
+    audio.
+  takeaway: Apple acquired Israeli startup Q.ai, which works on imaging/ML and tech
+    for interpreting whispered speech and improving audio in noisy environments.
+  prompt: Which Apple product feature would benefit most from whisper/speech enhancement
+    tech?
+  url: https://techcrunch.com/2026/01/29/apple-buys-israeli-startup-q-ai-as-the-ai-race-heats-up/
+  source: TechCrunch
+  published_utc: '2026-01-29T18:58:07+00:00'
+  title_zh: 随着AI竞争升温，苹果收购以色列初创公司Q.ai
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DHS is using Google and Adobe AI to make videos
+  why: The US Department of Homeland Security is using AI video generators from Google
+    and Adobe to make and edit content shared with the public,…
+  takeaway: The US Department of Homeland Security is using AI video generators from
+    Google and Adobe to make and edit content shared with the public, a new document
+    reveals. It comes as immigration agencies have flooded social media with content
+    to support President Trump’s mass deportation agenda—some of which appears to
+    be made with AI—and as…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/29/1131938/dhs-is-using-google-and-adobe-ai-to-make-videos/
+  source: MIT Technology Review
+  published_utc: '2026-01-29T18:57:11+00:00'
+  title_zh: 美国国土安全部正使用谷歌和Adobe的AI技术制作视频
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: PlayStation 2 Recompilation Project Is Absolutely Incredible
+  why: 'Article URL: https://redgamingtech.com/playstation-2-recompilation-project-is-absolutely-incredible/
+    Comments URL: https://news.ycombinator…'
+  takeaway: 'Article URL: https://redgamingtech.com/playstation-2-recompilation-project-is-absolutely-incredible/
+    Comments URL: https://news.ycombinator.com/item?id=46814743 Points: 348 # Comments:
+    148'
+  prompt: ''
+  url: https://redgamingtech.com/playstation-2-recompilation-project-is-absolutely-incredible/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T18:55:38+00:00'
+  title_zh: PlayStation 2重编译项目令人惊叹
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: County pays $600k to pentesters it arrested for assessing courthouse security
+  why: 'Article URL: https://arstechnica.com/security/2026/01/county-pays-600000-to-pentesters-it-arrested-for-assessing-courthouse-security/
+    Comme…'
+  takeaway: 'Article URL: https://arstechnica.com/security/2026/01/county-pays-600000-to-pentesters-it-arrested-for-assessing-courthouse-security/
+    Comments URL: https://news.ycombinator.com/item?id=46814614 Points: 356 # Comments:
+    172'
+  prompt: ''
+  url: https://arstechnica.com/security/2026/01/county-pays-600000-to-pentesters-it-arrested-for-assessing-courthouse-security/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T18:48:09+00:00'
+  title_zh: 县政府向因评估法院安全而被捕的渗透测试者支付60万美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: My Mom and Dr. DeepSeek (2025)
+  why: 'Article URL: https://restofworld.org/2025/ai-chatbot-china-sick/ Comments
+    URL: https://news.ycombinator.com/item?id=46814569 Points: 152 #…'
+  takeaway: 'Article URL: https://restofworld.org/2025/ai-chatbot-china-sick/ Comments
+    URL: https://news.ycombinator.com/item?id=46814569 Points: 152 # Comments: 88'
+  prompt: ''
+  url: https://restofworld.org/2025/ai-chatbot-china-sick/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T18:45:27+00:00'
+  title_zh: 我妈妈与Dr. DeepSeek（2025）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Everything is gambling now: the latest news on prediction markets like Polymarket
+    and Kalshi'
+  why: Prediction markets will let you bet on just about anything, from how many tweets
+    Elon Musk will post this week to the next president of the…
+  takeaway: Prediction markets will let you bet on just about anything, from how many
+    tweets Elon Musk will post this week to the next president of the United States,
+    with predictions sometimes showing shockingly (or suspiciously) spot-on accuracy.
+    Polymarket’s CEO Shayne Copland has even claimed that prediction markets are “the
+    most accurate thing we have as […]
+  prompt: ''
+  url: https://www.theverge.com/news/868238/prediction-markets-polymarket-kalshi-robinhood
+  source: The Verge
+  published_utc: '2026-01-29T18:42:54+00:00'
+  title_zh: 万物皆可赌：Polymarket和Kalshi等预测市场最新动态
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Announcing increased 1 MB payload size support in Amazon EventBridge
+  why: Bigger event payloads simplify event-driven architectures that previously needed
+    chunking or external storage.
+  takeaway: Amazon EventBridge increases event payload size from 256KB to 1MB, enabling
+    richer events without splitting or compressing payloads.
+  prompt: Does a larger payload limit change how you design schemas for event-driven
+    systems?
+  url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-eventbridge-increases-event-payload-size-256-kb-1-mb
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-01-29T18:30:00+00:00'
+  title_zh: 宣布Amazon EventBridge支持1 MB有效载荷大小提升
+  why_zh: 更大的事件负载简化了以往需要分块或外部存储的事件驱动架构。
+  takeaway_zh: Amazon EventBridge将事件负载大小从256KB提升至1MB，支持更丰富的事件内容，无需拆分或压缩负载。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock now supports server-side custom tools using the Responses
+    API
+  why: Server-side tool calls reduce client complexity and bring OpenAI-style tool
+    APIs to Bedrock.
+  takeaway: AWS adds server-side custom tools for Bedrock Responses API (OpenAI-compatible
+    endpoints), so Bedrock can call tools directly.
+  prompt: Will server-side tool execution become the default pattern for enterprise
+    agent workflows?
+  url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-bedrock-server-side-custom-tools-responses-api
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-01-29T18:09:00+00:00'
+  title_zh: Amazon Bedrock现支持使用Responses API的服务器端自定义工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Waymo robotaxis are now giving rides to and from San Francisco International
+    Airport
+  why: Airport access is a robotaxi milestone—but safety and city politics will decide
+    scale.
+  takeaway: Waymo says its robotaxis can now take riders to/from San Francisco International
+    Airport as the company faces ongoing scrutiny over safety.
+  prompt: Is airport service the inflection point for robotaxis, or just a PR milestone?
+  url: https://techcrunch.com/2026/01/29/waymo-sfo-airport-robotaxis/
+  source: TechCrunch
+  published_utc: '2026-01-29T17:55:43+00:00'
+  title_zh: Waymo自动驾驶出租车开始提供旧金山国际机场接送服务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: New OpenAI tool renews fears that “AI slop” will overwhelm scientific research
+  why: AI-assisted papers are already straining peer review—new tooling may accelerate
+    the flood.
+  takeaway: Ars reports OpenAI’s new “Prism” research workspace arrives as studies
+    warn of a surge in lower-quality, AI-assisted papers.
+  prompt: What practical checks could journals adopt that don’t just punish legitimate
+    automation?
+  url: https://arstechnica.com/ai/2026/01/new-openai-tool-renews-fears-that-ai-slop-will-overwhelm-scientific-research/
+  source: Ars Technica
+  published_utc: '2026-01-29T17:51:49+00:00'
+  title_zh: OpenAI新工具引发担忧：'AI垃圾'或将淹没科学研究
+  why_zh: AI辅助论文已使同行评审不堪重负——新工具可能加剧这一趋势。
+  takeaway_zh: Ars报道，OpenAI新推出的“Prism”研究工作空间正值研究警告AI辅助论文质量下降之际。
+  prompt_zh: ''
+- category: AI frontier
+  title: Google Deepmind opens Project Genie to US Gemini subscribers for real-time
+    AI world generation
+  why: Google Deepmind opens Project Genie to its first users.
+  takeaway: Google Deepmind opens Project Genie to its first users. The prototype
+    creates interactive worlds from text or images in real time. The article Google
+    Deepmind opens Project Genie to US Gemini subscribers for real-time AI world generation
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/google-deepmind-opens-project-genie-to-us-subscribers-for-real-time-ai-world-generation/
+  source: The Decoder (AI)
+  published_utc: '2026-01-29T17:40:15+00:00'
+  title_zh: 谷歌Deepmind向美国Gemini订阅者开放实时AI世界生成项目Genie
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Spotify&#8217;s new group chats share music with everyone in your circle
+  why: Spotify is expanding its in-app messaging feature with group chats.
+  takeaway: Spotify is expanding its in-app messaging feature with group chats. Now
+    you can add up to 10 friends and family members to your discussion about your
+    new favorite song, podcast, or audiobook, as reported earlier by TechCrunch. The
+    music streaming platform launched direct messaging last August, allowing you to
+    share what you're listening to without […]
+  prompt: ''
+  url: https://www.theverge.com/news/870288/spotify-group-chats-direct-messaging-expansion
+  source: The Verge
+  published_utc: '2026-01-29T17:36:13+00:00'
+  title_zh: Spotify新推群聊功能可与圈子共享音乐
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI clarifies it won't claim ownership of user discoveries following confusion
+    over monetization plans
+  why: OpenAI researcher Kevin Weil says the company has no plans to claim a share
+    of individual users' discoveries, and that CFO Sarah Friar's co…
+  takeaway: OpenAI researcher Kevin Weil says the company has no plans to claim a
+    share of individual users' discoveries, and that CFO Sarah Friar's comments about
+    IP-based pricing were misinterpreted. The article OpenAI clarifies it won't claim
+    ownership of user discoveries following confusion over monetization plans appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-clarifies-it-wont-claim-ownership-of-user-discoveries-following-confusion-over-monetization-plans/
+  source: The Decoder (AI)
+  published_utc: '2026-01-29T17:29:13+00:00'
+  title_zh: OpenAI澄清不会主张用户发现成果所有权，消除商业化计划误解
+  why_zh: OpenAI研究员Kevin Weil表示，公司无意分享个人用户的发现成果，CFO Sarah Friar的言论被误解。
+  takeaway_zh: OpenAI研究员Kevin Weil表示，公司无意分享个人用户的发现成果，CFO Sarah Friar关于基于IP定价的言论被误解。文章《OpenAI澄清不会对用户发现主张所有权，此前因盈利计划引发困惑》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: I built marshmallow castles in Google’s new AI-world generator
+  why: Starting Thursday, Google AI Ultra subscribers in the U.S.
+  takeaway: Starting Thursday, Google AI Ultra subscribers in the U.S. can play around
+    with Project Genie, which is powered by a combination of Google’s latest world
+    model Genie 3, its image generation model Nano Banana Pro, and Gemini.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/29/i-built-marshmallow-castles-in-googles-new-ai-world-generator-project-genie/
+  source: TechCrunch
+  published_utc: '2026-01-29T17:29:11+00:00'
+  title_zh: 我在谷歌新AI世界生成器里搭建了棉花糖城堡
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Custom machine kept man alive without lungs for 48 hours
+  why: Infections had turned his lungs to soup and had to be cleared before transplant.
+  takeaway: Infections had turned his lungs to soup and had to be cleared before transplant.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/01/custom-machine-kept-man-alive-without-lungs-for-48-hours/
+  source: Ars Technica
+  published_utc: '2026-01-29T17:26:08+00:00'
+  title_zh: 定制设备让无肺男子存活48小时
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Nearly half of Microsoft's commercial contract backlog is tied to OpenAI
+  why: Microsoft posts record cloud revenue but the stock is down double digits.
+  takeaway: 'Microsoft posts record cloud revenue but the stock is down double digits.
+    Investors question whether billions in AI spending will pay off, especially with
+    nearly half the cloud backlog coming from one customer: OpenAI. The article Nearly
+    half of Microsoft''s commercial contract backlog is tied to OpenAI appeared first
+    on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/nearly-half-of-microsofts-commercial-contract-backlog-is-tied-to-openai/
+  source: The Decoder (AI)
+  published_utc: '2026-01-29T17:03:39+00:00'
+  title_zh: 微软47%商业合约积压与OpenAI相关
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Project Genie: Experimenting with infinite, interactive worlds'
+  why: 'Article URL: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/
+    Comments URL: https://news.ycombinato…'
+  takeaway: 'Article URL: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/
+    Comments URL: https://news.ycombinator.com/item?id=46812933 Points: 505 # Comments:
+    248'
+  prompt: ''
+  url: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T17:02:39+00:00'
+  title_zh: Project Genie：探索无限互动世界
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Reflex (YC W23) Senior Software Engineer Infra
+  why: 'Article URL: https://www.ycombinator.com/companies/reflex/jobs/Jcwrz7A-lead-software-engineer-infra
+    Comments URL: https://news.ycombinator.…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/reflex/jobs/Jcwrz7A-lead-software-engineer-infra
+    Comments URL: https://news.ycombinator.com/item?id=46812892 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/reflex/jobs/Jcwrz7A-lead-software-engineer-infra
+  source: Hacker News (front page)
+  published_utc: '2026-01-29T17:00:42+00:00'
+  title_zh: Reflex（YC W23）高级软件工程师基础设施
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Half of developers think gen AI is bad for the gaming industry
+  why: While generative AI is being adopted at various levels of game development,
+    a new survey suggests that developers increasingly think the te…
+  takeaway: While generative AI is being adopted at various levels of game development,
+    a new survey suggests that developers increasingly think the technology is bad
+    for the industry. According to the most recent survey from the Game Developers
+    Conference, 52 percent of respondents said that gen AI is having a "negative"
+    impact on the games industry, […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/869386/ai-game-development-gdc-survey
+  source: The Verge
+  published_utc: '2026-01-29T17:00:00+00:00'
+  title_zh: 半数开发者认为生成式AI对游戏业有害
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: An AI Toy Exposed 50,000 Logs of Its Chats With Kids to Anyone With a Gmail
+    Account
+  why: Kids’ AI products are racing ahead of basic security and privacy controls.
+  takeaway: Wired reports an AI toy left a web console largely unprotected, exposing
+    ~50,000 chat logs with children to anyone with a Gmail account.
+  prompt: Should child-facing AI toys be regulated like COPPA-heavy apps—or more strictly?
+  url: https://www.wired.com/story/an-ai-toy-exposed-50000-logs-of-its-chats-with-kids-to-anyone-with-a-gmail-account/
+  source: WIRED - AI
+  published_utc: '2026-01-29T17:00:00+00:00'
+  title_zh: 某AI玩具泄露5万条儿童聊天记录，任何Gmail用户可查阅
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

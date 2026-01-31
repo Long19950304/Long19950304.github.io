@@ -1,0 +1,947 @@
+date: '2026-01-31'
+title: Daily Digest - 2026-01-31
+title_zh: 每日简报 - 2026-01-31
+note: 'Today: Russian hackers breached Polish power grid thanks to bad securi… · The
+  Download: US immigration agencies’ AI videos, and inside th… · AI: Anthropic brings
+  agentic plug-ins to Cowork.'
+note_zh: 今日关注：报告称，俄罗斯黑客因安全漏洞入侵波兰电网；今日下载：美国移民机构的AI视频，以及Vitalism运动内幕；AI：Anthropic为Cowork引入代理插件。
+items:
+- category: Security
+  title: 175K+ publicly-exposed Ollama AI instances discovered
+  why: A large number of self-hosted Ollama endpoints are reportedly exposed to the
+    public internet, raising the risk of data leakage and abuse.
+  takeaway: 'If you run local LLM tooling, treat it like any other service: bind to
+    localhost by default, put it behind auth/reverse proxy when remote access is needed,
+    and monitor logs for unexpected traffic.'
+  prompt: Do you have any local AI endpoints that might be reachable from the public
+    internet?
+  url: https://www.techradar.com/pro/security/over-175-000-publicly-exposed-ollama-ai-servers-discovered-worldwide-so-fix-now
+  source: TechRadar
+  published_utc: '2026-01-31T00:12:22+00:00'
+  title_zh: 发现17.5万+公开暴露的Ollama AI实例
+  why_zh: 据报道，大量自托管的Ollama端点暴露在公共互联网上，增加了数据泄露和滥用的风险。
+  takeaway_zh: 如果您运行本地LLM工具，请像对待其他服务一样：默认绑定到本地主机，远程访问时置于认证/反向代理之后，并监控日志以发现异常流量。
+  prompt_zh: ''
+- category: AI infrastructure
+  title: The $100B Megadeal Between OpenAI and Nvidia Is on Ice
+  why: Mega-scale AI infrastructure plans can move markets—but they also face financing,
+    demand, and execution risk.
+  takeaway: A reported pause on an OpenAI–Nvidia mega-deal is a reminder that even
+    top AI players are still constrained by capital, supply chains, and uncertainty
+    about long-run compute demand.
+  prompt: What signal would convince you that today’s AI infra spend will still pay
+    off in 2–3 years?
+  url: https://www.wsj.com/tech/ai/the-100-billion-megadeal-between-openai-and-nvidia-is-on-ice-aa3025e3
+  source: The Wall Street Journal
+  published_utc: '2026-01-31T00:02:30+00:00'
+  title_zh: OpenAI与英伟达千亿美元超级交易陷入僵局
+  why_zh: 超大规模AI基础设施计划能影响市场——但也面临融资、需求和执行风险。
+  takeaway_zh: 据报道，OpenAI与Nvidia的一项巨额交易暂停，提醒我们即使顶级AI玩家也仍受资本、供应链和长期计算需求不确定性的制约。
+  prompt_zh: ''
+- category: Security
+  title: Russian hackers breached Polish power grid thanks to bad security, report
+    says
+  why: Critical infrastructure incidents still often trace back to basic security
+    gaps—segmentation, access control, and monitoring.
+  takeaway: 'The headline is geopolitics, but the lesson is operational: attackers
+    exploit weak links and misconfigurations; resilience comes from boring, repeatable
+    controls.'
+  prompt: If you had to harden one ‘boring’ control today (patching, MFA, segmentation,
+    backups), which would it be?
+  url: https://techcrunch.com/2026/01/30/russian-hackers-breached-polish-power-grid-thanks-to-bad-security-report-says/
+  source: TechCrunch
+  published_utc: '2026-01-30T16:50:24+00:00'
+  title_zh: 报告称，俄罗斯黑客因安全漏洞入侵波兰电网
+  why_zh: 关键基础设施事件往往可追溯到基本的安全漏洞——分段、访问控制和监控。
+  takeaway_zh: 标题是地缘政治，但教训在于操作层面：攻击者利用薄弱环节和配置错误；韧性来自枯燥但可重复的控制措施。
+  prompt_zh: ''
+- category: AI & society
+  title: Inside the marketplace powering bespoke AI deepfakes of real women
+  why: A detailed look at the economics and supply chain behind non-consensual deepfakes—where
+    ‘bespoke’ requests are becoming a product.
+  takeaway: As creation gets cheaper, enforcement needs to target marketplaces, distribution
+    channels, and monetization—not just individual uploads.
+  prompt: What’s the most effective choke point to disrupt non-consensual deepfake
+    supply chains?
+  url: https://www.technologyreview.com/2026/01/30/1131945/inside-the-marketplace-powering-bespoke-ai-deepfakes-of-real-women/
+  source: MIT Technology Review
+  published_utc: '2026-01-30T16:32:31+00:00'
+  title_zh: 揭秘定制AI深度伪造真实女性视频的市场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Practical Security Guidance for Sandboxing Agentic Workflows and Managing
+    Execution Risk
+  why: Agentic workflows that browse the web and execute code expand the attack surface;
+    this offers a concrete checklist for sandboxing and execution controls.
+  takeaway: 'Assume tools and tool outputs are untrusted: isolate execution, restrict
+    egress, minimize permissions, log actions, and add human review for sensitive
+    operations.'
+  prompt: Which tasks in your workflow should never be delegated to an agent without
+    a sandbox?
+  url: https://developer.nvidia.com/blog/practical-security-guidance-for-sandboxing-agentic-workflows-and-managing-execution-risk/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-01-30T16:13:00+00:00'
+  title_zh: 沙盒化智能体工作流及执行风险管理的实用安全指南
+  why_zh: 浏览网页和执行代码的代理工作流程扩大了攻击面；这为沙盒化和执行控制提供了具体检查清单。
+  takeaway_zh: 假设工具及其输出不可信：隔离执行、限制出口、最小化权限、记录操作，并对敏感操作进行人工审查。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic brings agentic plug-ins to Cowork
+  why: Plugins push AI assistants from chat into real workflows—useful, but they raise
+    the stakes on permissions and data handling.
+  takeaway: 'The value shifts to integrations: assistants become more powerful as
+    they can act across tools, but governance is needed to prevent overreach and leakage.'
+  prompt: Which integration would make an AI assistant genuinely useful for your work—email,
+    docs, code, or data?
+  url: https://techcrunch.com/2026/01/30/anthropic-brings-agentic-plugins-to-cowork/
+  source: TechCrunch
+  published_utc: '2026-01-30T18:00:00+00:00'
+  title_zh: Anthropic为Cowork引入代理插件
+  why_zh: 插件将AI助手从聊天推入实际工作流程——虽有用，但也提高了权限和数据处理的复杂性。
+  takeaway_zh: 价值转向集成：助手因能跨工具行动而变得更强大，但需治理以防止越界与信息泄露。
+  prompt_zh: ''
+- category: AI infrastructure
+  title: Advancing GPU Programming with the CUDA Tile IR Backend for OpenAI Triton
+  why: Low-level compiler and kernel tooling upgrades can translate into real performance
+    gains for AI workloads—and lower the cost of writing fast GPU code.
+  takeaway: Better Triton/CUDA backends can shrink the gap between research prototypes
+    and production-grade kernels, accelerating iteration for teams that optimize inference/training.
+  prompt: Where do you hit the most friction with GPU performance work—debugging,
+    portability, or tuning?
+  url: https://developer.nvidia.com/blog/advancing-gpu-programming-with-the-cuda-tile-ir-backend-for-openai-triton/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-01-30T20:01:47+00:00'
+  title_zh: 通过CUDA Tile IR后端推动OpenAI Triton的GPU编程进步
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Platforms & policy
+  title: Bluesky issues its first transparency report, noting rise in user reports
+    and legal demands
+  why: Transparency reports are becoming a baseline trust signal as platforms scale
+    and face more moderation and legal pressure.
+  takeaway: Early transparency reporting is a good sign—but the details (what counts,
+    response times, and appeal processes) determine whether it builds trust.
+  prompt: Which transparency metric would most change your view of a platform’s credibility?
+  url: https://techcrunch.com/2026/01/30/bluesky-issues-its-first-transparency-report-noting-rise-in-user-reports-and-legal-demands/
+  source: TechCrunch
+  published_utc: '2026-01-30T17:25:00+00:00'
+  title_zh: Bluesky发布首份透明度报告：用户投诉与法律要求激增
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI products
+  title: I Let Google’s ‘Auto Browse’ AI Agent Take Over Chrome. It Didn’t Quite Click
+  why: A hands-on test is a reality check on how far browser agents still are from
+    being reliable for everyday tasks.
+  takeaway: Agentic browsing often struggles with brittle UIs, ambiguous intent, and
+    permission boundaries—so near-term wins may be narrow, well-scoped tasks.
+  prompt: What browser task would you trust an agent to do today without supervision?
+  url: https://www.wired.com/story/google-chrome-auto-browse-hands-on/
+  source: WIRED
+  published_utc: '2026-01-30T20:41:49+00:00'
+  title_zh: 我让Google的‘自动浏览’AI代理接管Chrome，但效果不尽如人意
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Cloud & enterprise
+  title: Amazon SageMaker Unified Studio now supports AWS PrivateLink
+  why: Private connectivity (PrivateLink) is a common enterprise requirement for adopting
+    managed ML tooling without exposing traffic to the public internet.
+  takeaway: 'Quiet but important enterprise signal: more ML ‘studio’ experiences will
+    ship with private network paths by default as regulated adoption grows.'
+  prompt: Does your team require private networking for ML/AI tooling?
+  url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-sagemaker-unified-studio-aws-privatelink/
+  source: AWS
+  published_utc: '2026-01-30T19:08:00+00:00'
+  title_zh: Amazon SageMaker Unified Studio现支持AWS PrivateLink
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Jeffrey Epstein was permanently banned from Xbox Live
+  why: Would it surprise you to learn Microsoft booted Jeffrey Epstein from its online
+    gaming platform?
+  takeaway: 'Would it surprise you to learn Microsoft booted Jeffrey Epstein from
+    its online gaming platform? As spotted by XboxEra, the latest batch of Epstein''s
+    emails shows that in December 2013, he was "permanently suspended due to harassment,
+    threats, and/or abuse of other players." But it appears the real reason may be
+    simpler: A second email […]'
+  prompt: ''
+  url: https://www.theverge.com/tech/871425/jeffrey-epstein-xbox-live-ban-microsoft-sex-offender
+  source: The Verge
+  published_utc: '2026-01-31T00:34:17+00:00'
+  title_zh: 杰弗里·爱泼斯坦被永久禁止使用Xbox Live
+  why_zh: 得知微软将杰弗里·爱泼斯坦从其在线游戏平台踢出，你会感到惊讶吗？
+  takeaway_zh: 得知微软将杰弗里·爱泼斯坦从其在线游戏平台踢出，你会感到惊讶吗？据XboxEra发现，爱泼斯坦的最新一批邮件显示，2013年12月，他因“骚扰、威胁和/或虐待其他玩家”被永久封禁。但真实原因可能更简单：第二封邮件[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Physical Intelligence, Stripe veteran Lachy Groom’s latest bet, is building
+    Silicon Valley’s buzziest robot brains
+  why: If co-founder Lachy Groom has any doubts, he doesn’t show it.
+  takeaway: If co-founder Lachy Groom has any doubts, he doesn’t show it. He’s working
+    with people who've been working on this problem for decades and who believe the
+    timing is finally right, which is all he needs to know.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/
+  source: TechCrunch
+  published_utc: '2026-01-31T00:09:54+00:00'
+  title_zh: Physical Intelligence，Stripe老将Lachy Groom的最新押注，正在打造硅谷最热门的机器人智能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OnlyFans considering selling majority stake to Architect Capital
+  why: This isn't the first time in recent memory that OnlyFans has been in talks
+    to sell off its business.
+  takeaway: This isn't the first time in recent memory that OnlyFans has been in talks
+    to sell off its business.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/onlyfans-considering-selling-majority-stake-to-architect-capital/
+  source: TechCrunch
+  published_utc: '2026-01-30T23:54:09+00:00'
+  title_zh: OnlyFans考虑将多数股权出售给Architect Capital
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Peloton lays off 11 percent of its staff just a few months after launching
+    its AI hardware
+  why: Peloton said on Friday that it's cutting around 11 percent of its staff, mostly
+    impacting "engineers working on technology and enterprise-r…
+  takeaway: Peloton said on Friday that it's cutting around 11 percent of its staff,
+    mostly impacting "engineers working on technology and enterprise-related efforts,"
+    reports Bloomberg. Last August, Peloton laid off six percent of its workforce
+    and told investors it would continue layoffs globally in 2026, in an attempt to
+    cut at least $100 million of annual […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/871422/peloton-layoffs-cost-cutting-2026
+  source: The Verge
+  published_utc: '2026-01-30T23:53:55+00:00'
+  title_zh: Peloton在推出AI硬件仅几个月后裁员11%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Stonebraker on CAP theorem and Databases
+  why: 'Article URL: https://perspectives.mvdirona.com/2010/04/stonebraker-on-cap-theorem-and-databases/
+    Comments URL: https://news.ycombinator.com…'
+  takeaway: 'Article URL: https://perspectives.mvdirona.com/2010/04/stonebraker-on-cap-theorem-and-databases/
+    Comments URL: https://news.ycombinator.com/item?id=46831592 Points: 3 # Comments:
+    0'
+  prompt: ''
+  url: https://perspectives.mvdirona.com/2010/04/stonebraker-on-cap-theorem-and-databases/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T23:47:28+00:00'
+  title_zh: Stonebraker论CAP定理与数据库
+  why_zh: 文章URL：https://perspectives.mvdirona.com/2010/04/stonebraker-on-cap-theorem-and-databases/
+    评论URL：https://news.ycombinator.com…
+  takeaway_zh: 文章链接：https://perspectives.mvdirona.com/2010/04/stonebraker-on-cap-theorem-and-databases/
+    评论链接：https://news.ycombinator.com/item?id=46831592 得分：3 评论数：0
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenClaw’s AI assistants are now building their own social network
+  why: The viral personal AI assistant formerly known as Clawdbot has a new shell
+    — again.
+  takeaway: The viral personal AI assistant formerly known as Clawdbot has a new shell
+    — again. After briefly rebranding as Moltbot, it has now picked OpenClaw as its
+    new name.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network/
+  source: TechCrunch
+  published_utc: '2026-01-30T23:36:34+00:00'
+  title_zh: OpenClaw的AI助手正在构建自己的社交网络
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US judge rules Luigi Mangione won't face death penalty in CEO killing case
+  why: 'Article URL: https://www.aljazeera.com/news/2026/1/30/us-judge-rules-mangione-will-not-face-death-penalty-for-ceo-murder
+    Comments URL: http…'
+  takeaway: 'Article URL: https://www.aljazeera.com/news/2026/1/30/us-judge-rules-mangione-will-not-face-death-penalty-for-ceo-murder
+    Comments URL: https://news.ycombinator.com/item?id=46831218 Points: 26 # Comments:
+    6'
+  prompt: ''
+  url: https://www.aljazeera.com/news/2026/1/30/us-judge-rules-mangione-will-not-face-death-penalty-for-ceo-murder
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T23:07:53+00:00'
+  title_zh: 美国法官裁定Luigi Mangione在CEO谋杀案中免于死刑
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Video game company stock prices dip after Google introduces an AI world-generation
+    tool
+  why: The stock prices of some major video game companies, including Take-Two Interactive,
+    Roblox, and Unity, had notable declines on Friday, jus…
+  takeaway: The stock prices of some major video game companies, including Take-Two
+    Interactive, Roblox, and Unity, had notable declines on Friday, just a day after
+    Google announced its Project Genie tool that lets users prompt AI to generate
+    interactive experiences, Reuters reports. Take-Two's stock price closed at $220.30
+    (down 7.93 percent from yesterday), Roblox's…
+  prompt: ''
+  url: https://www.theverge.com/games/871348/google-project-genie-take-two-roblox-unity
+  source: The Verge
+  published_utc: '2026-01-30T22:45:16+00:00'
+  title_zh: 谷歌推出AI世界生成工具后，视频游戏公司股价下跌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I built an AI conversation partner to practice speaking languages'
+  why: Hi, I built TalkBits because most language apps focus on vocabulary or exercises,
+    but not actual conversation.
+  takeaway: Hi, I built TalkBits because most language apps focus on vocabulary or
+    exercises, but not actual conversation. The hard part of learning a language is
+    speaking naturally under pressure. TalkBits lets you have real-time spoken conversations
+    with an AI that acts like a native speaker. You can choose different scenarios
+    (travel, daily life, work, etc.), speak…
+  prompt: ''
+  url: https://apps.apple.com/us/app/talkbits-speak-naturally/id6756824177
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T22:16:19+00:00'
+  title_zh: 展示HN：我构建了一个AI对话伙伴来练习语言口语
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Informant told FBI that Jeffrey Epstein had a ‘personal hacker’
+  why: The hacker allegedly developed zero-day exploits and offensive cyber tools
+    and sold them to several countries, including an unnamed central…
+  takeaway: The hacker allegedly developed zero-day exploits and offensive cyber tools
+    and sold them to several countries, including an unnamed central African government,
+    the U.K., and the United States.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/informant-told-fbi-that-jeffrey-epstein-had-a-personal-hacker/
+  source: TechCrunch
+  published_utc: '2026-01-30T22:04:00+00:00'
+  title_zh: 线人告知FBI，杰弗里·爱泼斯坦拥有‘私人黑客’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I trapped an AI model inside an art installation (2025) [video]
+  why: 'Article URL: https://www.youtube.com/watch?v=7fNYj0EXxMs Comments URL: https://news.ycombinator.com/item?id=46830523
+    Points: 26 # Comments:…'
+  takeaway: 'Article URL: https://www.youtube.com/watch?v=7fNYj0EXxMs Comments URL:
+    https://news.ycombinator.com/item?id=46830523 Points: 26 # Comments: 4'
+  prompt: ''
+  url: https://www.youtube.com/watch?v=7fNYj0EXxMs
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T21:58:46+00:00'
+  title_zh: 我将一个AI模型困在了艺术装置中（2025）[视频]
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'P vs. NP and the Difficulty of Computation: A ruliological approach'
+  why: 'Article URL: https://writings.stephenwolfram.com/2026/01/p-vs-np-and-the-difficulty-of-computation-a-ruliological-approach/
+    Comments URL: h…'
+  takeaway: 'Article URL: https://writings.stephenwolfram.com/2026/01/p-vs-np-and-the-difficulty-of-computation-a-ruliological-approach/
+    Comments URL: https://news.ycombinator.com/item?id=46830027 Points: 33 # Comments:
+    38'
+  prompt: ''
+  url: https://writings.stephenwolfram.com/2026/01/p-vs-np-and-the-difficulty-of-computation-a-ruliological-approach/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T21:17:21+00:00'
+  title_zh: P vs. NP与计算难度：一种规则学方法
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Instagram might soon let you remove yourself from someone’s Close Friends
+    list
+  why: Since the feature's launch in 2018, users haven't been able to remove themselves
+    from someone else's Close Friends list.
+  takeaway: Since the feature's launch in 2018, users haven't been able to remove
+    themselves from someone else's Close Friends list.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/instagram-might-soon-let-you-remove-yourself-from-someones-close-friends-list/
+  source: TechCrunch
+  published_utc: '2026-01-30T21:14:58+00:00'
+  title_zh: Instagram可能很快允许你从某人的密友列表中移除自己
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Blue Origin pauses space tourism flights to focus on the moon
+  why: The company is trying to take advantage of President Donald Trump's desire
+    to return astronauts to the lunar surface by the end of his term.
+  takeaway: The company is trying to take advantage of President Donald Trump's desire
+    to return astronauts to the lunar surface by the end of his term.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/blue-origin-pauses-space-tourism-flights-to-focus-on-the-moon/
+  source: TechCrunch
+  published_utc: '2026-01-30T21:11:52+00:00'
+  title_zh: 蓝色起源暂停太空旅游飞行，专注于月球计划
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sonos’ Super Bowl sale knocks hundreds off its audio gear
+  why: Sonos isn’t exactly synonymous with the Super Bowl, although the brand discounts
+    its gear every year around this time like clockwork.
+  takeaway: Sonos isn’t exactly synonymous with the Super Bowl, although the brand
+    discounts its gear every year around this time like clockwork. It’s knocking 20
+    percent off many of its marquee products, including soundbars and standalone speakers
+    — all of which can be paired together to improve sound quality and to put audio
+    in more places […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/871054/sonos-super-bowl-deal-sale-era-beam-arc-ultra-sub
+  source: The Verge
+  published_utc: '2026-01-30T20:58:39+00:00'
+  title_zh: Sonos超级碗促销活动，音频设备大降价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Peerweb: Decentralized website hosting via WebTorrent'
+  why: 'https://github.com/omodaka9375/peerweb Comments URL: https://news.ycombinator.com/item?id=46829582
+    Points: 143 # Comments: 51'
+  takeaway: 'https://github.com/omodaka9375/peerweb Comments URL: https://news.ycombinator.com/item?id=46829582
+    Points: 143 # Comments: 51'
+  prompt: ''
+  url: https://peerweb.lol/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T20:40:00+00:00'
+  title_zh: Peerweb：通过WebTorrent实现去中心化网站托管
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Silver plunges 30% in worst day since 1980, gold tumbles
+  why: 'Article URL: https://www.cnbc.com/2026/01/30/silver-gold-fall-price-usd-dollar-fed-warsh-chair-trump-metals.html
+    Comments URL: https://news…'
+  takeaway: 'Article URL: https://www.cnbc.com/2026/01/30/silver-gold-fall-price-usd-dollar-fed-warsh-chair-trump-metals.html
+    Comments URL: https://news.ycombinator.com/item?id=46829548 Points: 173 # Comments:
+    153'
+  prompt: ''
+  url: https://www.cnbc.com/2026/01/30/silver-gold-fall-price-usd-dollar-fed-warsh-chair-trump-metals.html
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T20:37:48+00:00'
+  title_zh: 白银暴跌30%，创1980年以来最差单日表现，黄金亦大幅下挫
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Moltbook is a human-free Reddit clone where AI agents discuss cybersecurity
+    and philosophy
+  why: A social network just for AI agents?
+  takeaway: A social network just for AI agents? On Moltbook, more than 35,000 bots
+    post, warn each other about security vulnerabilities, and philosophize about consciousness.
+    The article Moltbook is a human-free Reddit clone where AI agents discuss cybersecurity
+    and philosophy appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/moltbook-is-a-human-free-reddit-clone-where-ai-agents-discuss-cybersecurity-and-philosophy/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T20:32:05+00:00'
+  title_zh: Moltbook：AI代理讨论网络安全与哲学的无人类Reddit克隆版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Fitbit users now have until May to migrate to a Google account
+  why: Fitbit users who are holding out on moving their data over to a Google account
+    now have until May 19th, 2026 to make the switch.
+  takeaway: Fitbit users who are holding out on moving their data over to a Google
+    account now have until May 19th, 2026 to make the switch. The previous deadline
+    was just days away on February 2nd, but that date has been updated on Google's
+    help page for Fitbit account migration. The post also now specifies that, […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/871218/fitbit-account-migration-google-deadline-may-2026
+  source: The Verge
+  published_utc: '2026-01-30T20:25:51+00:00'
+  title_zh: Fitbit用户现可延至五月迁移至谷歌账户
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Antirender: remove the glossy shine on architectural renderings'
+  why: 'Article URL: https://antirender.com/ Comments URL: https://news.ycombinator.com/item?id=46829147
+    Points: 683 # Comments: 164'
+  takeaway: 'Article URL: https://antirender.com/ Comments URL: https://news.ycombinator.com/item?id=46829147
+    Points: 683 # Comments: 164'
+  prompt: ''
+  url: https://antirender.com/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T20:05:24+00:00'
+  title_zh: Antirender：去除建筑渲染图中的光泽效果
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX’s IPO could open the floodgates — and secondaries are booming in the
+    meantime
+  why: To unpack what SpaceX’s IPO chatter means, how private liquidity works before
+    a debut, and what investors are looking for in today’s pre-IP…
+  takeaway: To unpack what SpaceX’s IPO chatter means, how private liquidity works
+    before a debut, and what investors are looking for in today’s pre-IPO giants,
+    we spoke with Greg Martin, managing director at Rainmaker Securities, a broker-dealer
+    specializing in secondary share transactions for late-stage private companies.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/spacexs-ipo-could-open-the-floodgates-and-secondaries-are-booming-in-the-meantime/
+  source: TechCrunch
+  published_utc: '2026-01-30T19:41:25+00:00'
+  title_zh: SpaceX的IPO可能打开闸门——与此同时，二级市场正蓬勃发展
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Perplexity signs $750 million deal with Microsoft
+  why: Perplexity signs a $750 million deal with Microsoft for Azure cloud access,
+    while its main cloud provider Amazon is suing the startup.
+  takeaway: Perplexity signs a $750 million deal with Microsoft for Azure cloud access,
+    while its main cloud provider Amazon is suing the startup. The article Perplexity
+    signs $750 million deal with Microsoft appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/perplexity-signs-750-million-deal-with-microsoft/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T19:34:31+00:00'
+  title_zh: Perplexity与微软签订7.5亿美元合作协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic's Cowork gets plugins that turn Claude into a specialized assistant
+    for knowledge workers
+  why: Anthropic's new Cowork plugins turn Claude into a specialist for sales, legal,
+    finance, and other departments by bundling skills, data conn…
+  takeaway: Anthropic's new Cowork plugins turn Claude into a specialist for sales,
+    legal, finance, and other departments by bundling skills, data connections, and
+    commands into role-specific AI assistants. The article Anthropic's Cowork gets
+    plugins that turn Claude into a specialized assistant for knowledge workers appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/anthropics-cowork-gets-plugins-that-turn-claude-into-a-specialized-assistant-for-knowledge-workers/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T19:17:43+00:00'
+  title_zh: Anthropic的Cowork获得插件，将Claude转变为知识工作者的专业助手
+  why_zh: Anthropic的新Cowork插件通过整合技能、数据连接，将Claude转变为销售、法律、财务等部门的专家。
+  takeaway_zh: Anthropic新推出的Cowork插件将Claude转变为销售、法律、财务等部门的专家，通过将技能、数据连接和命令打包成角色特定的AI助手。文章《Anthropic的Cowork获得插件，将Claude转变为知识工作者的专业助手》首次发表于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: There’s a social network for AI agents, and it’s getting weird
+  why: Yes, you read that right.
+  takeaway: Yes, you read that right. "Moltbook" is a social network of sorts for
+    AI agents, particularly ones offered by OpenClaw (a viral AI assistant project
+    that was formerly known as Moltbot, and before that, known as Clawdbot - until
+    a legal dispute with Anthropic). Moltbook, which is set up similarly to Reddit
+    and was built […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-moltbot-openclaw
+  source: The Verge
+  published_utc: '2026-01-30T19:11:35+00:00'
+  title_zh: AI社交网络兴起，画风逐渐诡异
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We finally heard from Trump Mobile… and they immediately ghosted us
+  why: Where's the Trump phone?
+  takeaway: Where's the Trump phone? We're going to keep talking about it every week.
+    We've reached out, as usual, to ask about the Trump phone's whereabouts. As usual,
+    we're still waiting for a response. In the meantime, I finally got a reply from
+    a company exec. After months - months - of emailing various official Trump […]
+  prompt: ''
+  url: https://www.theverge.com/tech/870934/trump-mobile-executive-team-don-hendrickson
+  source: The Verge
+  published_utc: '2026-01-30T19:06:35+00:00'
+  title_zh: 我们终于联系上Trump Mobile…然后立刻被拉黑了
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ode to Very Small Devices
+  why: As fairies for the Irish or leeks for Welsh, it’s the secret lives of small
+    hidden machines, their junctures, and networks that inspire me:…
+  takeaway: 'As fairies for the Irish or leeks for Welsh, it’s the secret lives of
+    small hidden machines, their junctures, and networks that inspire me: Mystic hidden
+    functionaries that make our made world live, brave little servo motors, whose
+    couplers, whose eccentric fire-filled sensors are encased in bakelite with brass
+    screws, who stare with red eyes, who gauge moi…'
+  prompt: ''
+  url: https://spectrum.ieee.org/poetry-for-engineers-ode
+  source: IEEE Spectrum
+  published_utc: '2026-01-30T19:02:06+00:00'
+  title_zh: 微型设备颂歌
+  why_zh: 如同爱尔兰的精灵或威尔士的韭葱，正是这些隐秘小机器的秘密生活、它们的交汇点和网络激发了我的灵感：…
+  takeaway_zh: 如同爱尔兰的精灵或威尔士的韭葱，激发我灵感的是那些隐秘小机器的秘密生活、它们的连接点与网络：神秘的功能元件让我们的制造世界运转，勇敢的小型伺服电机，其耦合器、充满火花的偏心传感器被封装在带黄铜螺丝的胶木中，它们用红眼凝视，测量着我……
+  prompt_zh: ''
+- category: Tech industry
+  title: Go Global to Make Your Career Go Further
+  why: This article is part of our exclusive career advice series in partnership with
+    the IEEE Technology and Engineering Management Society .
+  takeaway: This article is part of our exclusive career advice series in partnership
+    with the IEEE Technology and Engineering Management Society . In your career,
+    you are likely to face many choices and job opportunities. One I faced was whether
+    to participate in a development project involving teams from around the world.
+    It presented a great opportunity for personal…
+  prompt: ''
+  url: https://spectrum.ieee.org/global-projects-career-benefits
+  source: IEEE Spectrum
+  published_utc: '2026-01-30T19:00:02+00:00'
+  title_zh: 走向全球，拓展职业疆界
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Uber is literally in the driver’s seat when it comes to AV bets
+  why: Self-driving truck startup Waabi’s billion-dollar fundraise isn’t just about
+    trucks.
+  takeaway: Self-driving truck startup Waabi’s billion-dollar fundraise isn’t just
+    about trucks. The deal, for $750 million up front plus another $250 million from
+    Uber tied to deployment milestones, marks a major expansion into robotaxis for
+    the company founded by former Uber AI chief Raquel Urtasun. It also feels like
+    another chip from Uber on the autonomous vehicle…
+  prompt: ''
+  url: https://techcrunch.com/video/uber-is-literally-in-the-drivers-seat-when-it-comes-to-av-bets/
+  source: TechCrunch
+  published_utc: '2026-01-30T18:56:17+00:00'
+  title_zh: 在自动驾驶投资方面，Uber处于主导地位
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Dyson’s powerful 360 Vis Nav robot vacuum is nearly 75 percent off today
+  why: In case you missed it, we recently overhauled our guides to the best budget
+    robot vacuums and the best mopping vacs, both of which feature…
+  takeaway: In case you missed it, we recently overhauled our guides to the best budget
+    robot vacuums and the best mopping vacs, both of which feature a slate of new
+    picks from Roborock, Narwal, Dreame, and others. Dyson’s 360 Vis Nav Robot Vacuum
+    didn’t technically make the cut, though it was once one of our top […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/870256/dyson-360-vis-nav-robot-vacuum-lego-lotr-balrog-deal-sale
+  source: The Verge
+  published_utc: '2026-01-30T18:48:52+00:00'
+  title_zh: 戴森360 Vis Nav扫地机器人今日直降近75%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Video Friday: Multitasking Robots Smoothly Do the Things Together'
+  why: Video Friday is your weekly selection of awesome robotics videos, collected
+    by your friends at IEEE Spectrum robotics.
+  takeaway: 'Video Friday is your weekly selection of awesome robotics videos, collected
+    by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming
+    robotics events for the next few months. Please send us your events for inclusion.
+    ICRA 2026 : 1–5 June 2026, VIENNA Enjoy this week’s videos! Westwood Robotics
+    is proud to announce a major update:…'
+  prompt: ''
+  url: https://spectrum.ieee.org/multitasking-robot
+  source: IEEE Spectrum
+  published_utc: '2026-01-30T18:30:02+00:00'
+  title_zh: 周五视频：多任务机器人流畅协作实录
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tim Cook is destroying his own legacy
+  why: What responsibility do you have to speak up about bad things happening in the
+    world?
+  takeaway: What responsibility do you have to speak up about bad things happening
+    in the world? Does that responsibility change when speaking up might affect your
+    business? What about if you're a sports creator, or the moderator of a deeply
+    NSFW subreddit? What about if you're just a little ol' phone website? Ultimately,
+    everyone has to […]
+  prompt: ''
+  url: https://www.theverge.com/podcast/870717/tim-cook-melania-minneapolis-tiktok-vergecast
+  source: The Verge
+  published_utc: '2026-01-30T18:09:24+00:00'
+  title_zh: 蒂姆·库克正在亲手毁掉自己的遗产
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Establishing a Scalable Sparse Ecosystem with the Universal Sparse Tensor
+  why: Sparse tensors are vectors, matrices, and higher-dimensional generalizations
+    with many zeros.
+  takeaway: Sparse tensors are vectors, matrices, and higher-dimensional generalizations
+    with many zeros. They are crucial in various fields such as scientific computing,...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/establishing-a-scalable-sparse-ecosystem-with-the-universal-sparse-tensor/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-01-30T18:00:00+00:00'
+  title_zh: 建立可扩展的稀疏生态系统与通用稀疏张量
+  why_zh: 稀疏张量是包含大量零的向量、矩阵及更高维度的推广。
+  takeaway_zh: 稀疏张量是包含大量零的向量、矩阵及更高维度的推广，在科学计算等多个领域至关重要，……
+  prompt_zh: ''
+- category: Tech industry
+  title: ICE invades Minnesota and Minnesotans fight back
+  why: The Trump administration has flooded Minneapolis and other parts of Minnesota
+    with federal agents as part of its immigration crackdown, Ope…
+  takeaway: The Trump administration has flooded Minneapolis and other parts of Minnesota
+    with federal agents as part of its immigration crackdown, Operation Metro Surge
+    — detaining children, intimidating protestors and community organizers, and killing
+    multiple people. Minnesotans have responded with mass community-level resistance,
+    including mutual aid and tracking I…
+  prompt: ''
+  url: https://www.theverge.com/policy/870315/ice-invades-minnesota-and-minnesotans-fight-back
+  source: The Verge
+  published_utc: '2026-01-30T17:32:40+00:00'
+  title_zh: ICE突袭明尼苏达州遭当地民众激烈反抗
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Reid Hoffman urges Silicon Valley leaders to stop bending the knee to President
+    Trump
+  why: Some Valley CEOs have condemned recent border patrol events, but Hoffman urges
+    them to wield their influence more powerfully.
+  takeaway: Some Valley CEOs have condemned recent border patrol events, but Hoffman
+    urges them to wield their influence more powerfully.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/reid-hoffman-urges-silicon-valley-leaders-to-stop-bending-the-knee-to-president-trump/
+  source: TechCrunch
+  published_utc: '2026-01-30T16:51:39+00:00'
+  title_zh: 里德·霍夫曼敦促硅谷领袖停止向特朗普总统低头
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Kimi K2.5 Technical Report [pdf]
+  why: 'Article URL: https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf
+    Comments URL: https://news.ycombinator.com/item?id=4682659…'
+  takeaway: 'Article URL: https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf
+    Comments URL: https://news.ycombinator.com/item?id=46826597 Points: 195 # Comments:
+    84'
+  prompt: ''
+  url: https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T16:43:50+00:00'
+  title_zh: Kimi K2.5技术报告[pdf]
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: At Age 25, Wikipedia Refuses to Evolve
+  why: Wikipedia celebrates its 25th anniversary this month as the internet’s most
+    reliable knowledge source.
+  takeaway: 'Wikipedia celebrates its 25th anniversary this month as the internet’s
+    most reliable knowledge source. Yet behind the celebrations, a troubling pattern
+    has developed: the volunteer community that built this encyclopedia has lately
+    rejected a key innovation designed to serve readers. The same institution founded
+    on the principle of easy and open community co…'
+  prompt: ''
+  url: https://spectrum.ieee.org/wikipedia-at-25
+  source: IEEE Spectrum
+  published_utc: '2026-01-30T16:30:23+00:00'
+  title_zh: 25岁的维基百科拒绝进化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Ask HN: Do you also "hoard" notes/links but struggle to turn them into actions?'
+  why: Hi HN — I’m exploring an idea and would love your feedback.
+  takeaway: 'Hi HN — I’m exploring an idea and would love your feedback. I’m a builder
+    and user of Obsidian, validating a concept called Concerns. Today it’s only a
+    landing page + short survey (no product yet) to test whether this pain is real.
+    The core idea (2–3 bullets): - Many of us capture tons of useful info (notes/links/docs),
+    but it rarely becomes shipped work. -…'
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=46826277
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T16:22:05+00:00'
+  title_zh: 提问HN：你是否也‘囤积’笔记/链接，却难以将其转化为行动？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Pentagon and Anthropic clash over AI weapons and surveillance safeguards
+  why: The Pentagon wants unrestricted access to AI technology.
+  takeaway: The Pentagon wants unrestricted access to AI technology. Anthropic is
+    demanding guarantees against autonomous weapons control and domestic surveillance.
+    A $200 million contract hangs in the balance. The article Pentagon and Anthropic
+    clash over AI weapons and surveillance safeguards appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/pentagon-and-anthropic-clash-over-ai-weapons-and-surveillance-safeguards/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T16:00:31+00:00'
+  title_zh: 五角大楼与Anthropic就AI武器监控保障条款激烈交锋
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How far does $5,000 go when you want an electric car?
+  why: You won't be going on road trips, but a very cheap electric runabout is possible.
+  takeaway: You won't be going on road trips, but a very cheap electric runabout is
+    possible.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/01/how-far-does-5000-go-when-you-want-an-electric-car/
+  source: Ars Technica
+  published_utc: '2026-01-30T15:55:42+00:00'
+  title_zh: 5000美元在购买电动汽车时能走多远？
+  why_zh: 虽然不适合长途旅行，但一款非常便宜的电动代步车是可行的。
+  takeaway_zh: 虽然不适合长途旅行，但一款非常便宜的电动代步车是可行的。
+  prompt_zh: ''
+- category: Tech industry
+  title: Self Driving Car Insurance
+  why: 'Article URL: https://www.lemonade.com/car/explained/self-driving-car-insurance/
+    Comments URL: https://news.ycombinator.com/item?id=46825828…'
+  takeaway: 'Article URL: https://www.lemonade.com/car/explained/self-driving-car-insurance/
+    Comments URL: https://news.ycombinator.com/item?id=46825828 Points: 92 # Comments:
+    217'
+  prompt: ''
+  url: https://www.lemonade.com/car/explained/self-driving-car-insurance/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T15:50:15+00:00'
+  title_zh: 自动驾驶汽车保险
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: NASA faces a crucial choice on a Mars spacecraft—and it must decide soon
+  why: '"We think that’s a really important mission, and something that we can do."'
+  takeaway: '"We think that’s a really important mission, and something that we can
+    do."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/01/nasa-faces-a-crucial-choice-on-a-mars-spacecraft-and-it-must-decide-soon/
+  source: Ars Technica
+  published_utc: '2026-01-30T15:31:43+00:00'
+  title_zh: NASA面临火星飞船的关键抉择，必须尽快决定
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Buttered Crumpet, a custom typeface for Wallace and Gromit
+  why: 'Article URL: https://jamieclarketype.com/case-study/wallace-and-gromit-font/
+    Comments URL: https://news.ycombinator.com/item?id=46825415 Po…'
+  takeaway: 'Article URL: https://jamieclarketype.com/case-study/wallace-and-gromit-font/
+    Comments URL: https://news.ycombinator.com/item?id=46825415 Points: 219 # Comments:
+    47'
+  prompt: ''
+  url: https://jamieclarketype.com/case-study/wallace-and-gromit-font/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T15:19:28+00:00'
+  title_zh: Buttered Crumpet，为Wallace和Gromit定制的字体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Last 24 hours to grab your plus-one pass at 50% off to TechCrunch Disrupt
+    2026
+  why: Today is the last day to lock in a plus-one pass at 50% off to TechCrunch Disrupt
+    2026, happening on October 13-15 in San Francisco.
+  takeaway: Today is the last day to lock in a plus-one pass at 50% off to TechCrunch
+    Disrupt 2026, happening on October 13-15 in San Francisco.
+  prompt: ''
+  url: https://techcrunch.com/2026/01/30/last-24-hours-to-grab-your-1-pass-at-50-off-to-techcrunch-disrupt-2026/
+  source: TechCrunch
+  published_utc: '2026-01-30T15:00:00+00:00'
+  title_zh: 最后24小时，以五折优惠抢购TechCrunch Disrupt 2026的加一票
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Amla Sandbox – WASM bash shell sandbox for AI agents'
+  why: WASM sandbox for running LLM-generated code safely.
+  takeaway: 'WASM sandbox for running LLM-generated code safely. Agents get a bash-like
+    shell and can only call tools you provide, with constraints you define. No Docker,
+    no subprocess, no SaaS — just pip install amla-sandbox Comments URL: https://news.ycombinator.com/item?id=46824877
+    Points: 116 # Comments: 71'
+  prompt: ''
+  url: https://github.com/amlalabs/amla-sandbox
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T14:34:32+00:00'
+  title_zh: 展示HN：Amla沙盒——为AI代理设计的WASM bash shell沙盒
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI planning IPO for late 2026, fears Anthropic might go public first
+  why: OpenAI is preparing for an IPO in the fourth quarter of 2026, the Wall Street
+    Journal reports.
+  takeaway: OpenAI is preparing for an IPO in the fourth quarter of 2026, the Wall
+    Street Journal reports. The article OpenAI planning IPO for late 2026, fears Anthropic
+    might go public first appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-planning-ipo-for-late-2026-fears-anthropic-might-go-public-first/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T14:28:29+00:00'
+  title_zh: OpenAI计划2026年底IPO，担忧Anthropic抢先上市
+  why_zh: 《华尔街日报》报道，OpenAI正筹备于2026年第四季度进行IPO。
+  takeaway_zh: 《华尔街日报》报道，OpenAI正筹备于2026年第四季度进行IPO。文章《OpenAI计划2026年末IPO，担心Anthropic可能抢先上市》首次出现在The
+    Decoder上。
+  prompt_zh: ''
+- category: AI frontier
+  title: SpaceX eyes merger with xAI that would unite Grok, Starlink, and X under
+    one roof
+  why: SpaceX is negotiating a merger with Elon Musk's AI company xAI ahead of a planned
+    IPO, Reuters reports.
+  takeaway: SpaceX is negotiating a merger with Elon Musk's AI company xAI ahead of
+    a planned IPO, Reuters reports. The article SpaceX eyes merger with xAI that would
+    unite Grok, Starlink, and X under one roof appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/spacex-eyes-merger-with-xai-that-would-unite-grok-starlink-and-x-under-one-roof/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T14:25:16+00:00'
+  title_zh: SpaceX考虑合并xAI，拟将Grok、星链和X平台整合
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI develops six-layer context system to help employees navigate 600 petabytes
+    of data
+  why: OpenAI has developed an internal AI data agent that lets employees run complex
+    data analyses using natural language.
+  takeaway: OpenAI has developed an internal AI data agent that lets employees run
+    complex data analyses using natural language. A key technique called "Codex Enrichment"
+    crawls the codebase to understand what tables actually contain. The article OpenAI
+    develops six-layer context system to help employees navigate 600 petabytes of
+    data appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-develops-six-layer-context-system-to-help-employees-navigate-600-petabytes-of-data/
+  source: The Decoder (AI)
+  published_utc: '2026-01-30T14:23:26+00:00'
+  title_zh: OpenAI开发六层上下文系统，助员工管理600PB数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: HTTP Cats
+  why: 'Article URL: https://http.cat/ Comments URL: https://news.ycombinator.com/item?id=46824422
+    Points: 191 # Comments: 32'
+  takeaway: 'Article URL: https://http.cat/ Comments URL: https://news.ycombinator.com/item?id=46824422
+    Points: 191 # Comments: 32'
+  prompt: ''
+  url: https://http.cat/
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T13:56:51+00:00'
+  title_zh: HTTP猫咪
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Download: US immigration agencies’ AI videos, and inside the Vitalism
+    movement'
+  why: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology.
+  takeaway: 'This is today’s edition of The Download, our weekday newsletter that
+    provides a daily dose of what’s going on in the world of technology. DHS is using
+    Google and Adobe AI to make videos The news: The US Department of Homeland Security
+    is using AI video generators from Google and Adobe to make and edit content shared…'
+  prompt: ''
+  url: https://www.technologyreview.com/2026/01/30/1132022/the-download-us-immigration-agencies-ai-videos-and-inside-the-vitalism-movement/
+  source: MIT Technology Review
+  published_utc: '2026-01-30T13:10:00+00:00'
+  title_zh: 今日下载：美国移民机构的AI视频，以及Vitalism运动内幕
+  why_zh: 这是今天的《The Download》，我们的工作日通讯，为您提供每日科技世界动态。
+  takeaway_zh: 这是今天的《The Download》，我们的工作日通讯，为您提供每日科技世界动态。美国国土安全部正使用谷歌和Adobe的AI制作视频。
+  prompt_zh: ''
+- category: Tech industry
+  title: Pangolin (YC S25) is hiring software engineers (open-source, Go, networking)
+  why: 'Article URL: https://docs.pangolin.net/careers/join-us Comments URL: https://news.ycombinator.com/item?id=46823544
+    Points: 0 # Comments: 0'
+  takeaway: 'Article URL: https://docs.pangolin.net/careers/join-us Comments URL:
+    https://news.ycombinator.com/item?id=46823544 Points: 0 # Comments: 0'
+  prompt: ''
+  url: https://docs.pangolin.net/careers/join-us
+  source: Hacker News (front page)
+  published_utc: '2026-01-30T12:11:49+00:00'
+  title_zh: Pangolin（YC S25）正在招聘软件工程师（开源、Go、网络）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

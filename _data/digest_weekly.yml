@@ -201,6 +201,7 @@ weeks:
   - '2026-01-28'
   - '2026-01-29'
   - '2026-01-30'
+  - '2026-01-31'
   highlights_news:
   - date: '2026-01-27'
     url: https://www.technologyreview.com/2026/01/26/1131728/inside-openais-big-play-for-science/
@@ -521,3 +522,25 @@ weeks:
     category: AI tools & model releases
     source: AWS What's New (Recent Announcements)
     published_utc: '2026-01-29T18:30:00+00:00'
+  - date: '2026-01-31'
+    url: https://techcrunch.com/2026/01/30/anthropic-brings-agentic-plugins-to-cowork/
+    title: Anthropic brings agentic plug-ins to Cowork
+    title_zh: Anthropic为Cowork引入代理插件
+    category: AI tools & model releases
+    source: TechCrunch
+    published_utc: '2026-01-30T18:00:00+00:00'
+  - date: '2026-01-31'
+    url: https://the-decoder.com/anthropics-cowork-gets-plugins-that-turn-claude-into-a-specialized-assistant-for-knowledge-workers/
+    title: Anthropic's Cowork gets plugins that turn Claude into a specialized assistant
+      for knowledge workers
+    title_zh: Anthropic的Cowork获得插件，将Claude转变为知识工作者的专业助手
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-01-30T19:17:43+00:00'
+  - date: '2026-01-31'
+    url: https://developer.nvidia.com/blog/establishing-a-scalable-sparse-ecosystem-with-the-universal-sparse-tensor/
+    title: Establishing a Scalable Sparse Ecosystem with the Universal Sparse Tensor
+    title_zh: 建立可扩展的稀疏生态系统与通用稀疏张量
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-01-30T18:00:00+00:00'

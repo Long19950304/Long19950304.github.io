@@ -1,0 +1,259 @@
+date: '2026-02-01'
+title: Daily Digest - 2026-02-01
+title_zh: 每日简报 - 2026-02-01
+note: 'Today: Nvidia CEO pushes back against report that his company’s $100B… · ChatGPT
+  isn’t the only chatbot pulling answers from Elon Musk’s… · AI: AI coding tools hurt
+  learning unless you ask why, Anthrop….'
+note_zh: 今日关注：英伟达CEO反驳有关公司对OpenAI千亿美元投资停滞的报道；ChatGPT并非唯一从马斯克的‘Grokipedia’获取答案的聊天机器人；AI：Anthropic研究发现：AI编码工具阻碍学习，除非你问为什么。
+items:
+- category: AI & society
+  title: 'Generative AI and Wikipedia editing: What we learned in 2025'
+  why: A year-end reflection on how generative AI is changing Wikipedia editing—workflows,
+    quality control, and community norms.
+  takeaway: 'The durable lesson is governance-by-design: make provenance/citations
+    easy, keep humans in the loop, and align incentives so AI speeds up drafting without
+    eroding verification.'
+  prompt: What’s the most practical ‘human-in-the-loop’ checkpoint for AI-assisted
+    knowledge production?
+  url: https://wikiedu.org/blog/2026/01/29/generative-ai-and-wikipedia-editing-what-we-learned-in-2025/
+  source: Wiki Education
+  published_utc: '2026-01-31T21:14:02+00:00'
+  title_zh: 生成式AI与维基百科编辑：2025年的经验总结
+  why_zh: 年终观察：生成式AI如何改变维基百科编辑——工作流程、质量控制与社区规范的转型
+  takeaway_zh: 持久经验是设计即治理：简化溯源/引证流程，保持人工审核，调整激励使AI加速创作而不削弱核查
+  prompt_zh: ''
+- category: Security
+  title: Autonomous cars, drones cheerfully obey prompt injection by road sign
+  why: 'Physical prompt injection: road signs and other real-world text can steer
+    autonomous cars/drones if systems treat external instructions as trusted.'
+  takeaway: Robust autonomy needs strict separation between perception and instruction,
+    plus sandboxed actions and safe defaults when inputs look adversarial.
+  prompt: Where should autonomous systems draw the line between ‘readable text’ and
+    ‘actionable instruction’?
+  url: https://www.theregister.com/2026/01/30/road_sign_hijack_ai/
+  source: The Register
+  published_utc: '2026-01-31T20:48:33+00:00'
+  title_zh: 自动驾驶汽车与无人机愉快地响应路标提示注入
+  why_zh: 物理提示注入：若自动驾驶系统将外部指令视为可信，路标等现实世界中的文字可能操控汽车或无人机。
+  takeaway_zh: 稳健的自主系统需严格区分感知与指令，在输入呈现对抗性时采取沙盒化操作及安全默认设置。
+  prompt_zh: ''
+- category: Tech industry
+  title: Nvidia CEO pushes back against report that his company’s $100B OpenAI investment
+    has stalled
+  why: Nvidia CEO Jensen Huang said that a recent report of friction between his company
+    and OpenAI was “nonsense.”
+  takeaway: Nvidia CEO Jensen Huang said that a recent report of friction between
+    his company and OpenAI was “nonsense.”
+  prompt: ''
+  url: https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/
+  source: TechCrunch
+  published_utc: '2026-01-31T17:54:12+00:00'
+  title_zh: 英伟达CEO反驳有关公司对OpenAI千亿美元投资停滞的报道
+  why_zh: Nvidia CEO黄仁勋称，近期关于公司与OpenAI存在摩擦的报道是‘无稽之谈’。
+  takeaway_zh: Nvidia CEO黄仁勋称，近期关于公司与OpenAI存在摩擦的报道是‘无稽之谈’。
+  prompt_zh: ''
+- category: Platforms & policy
+  title: US has investigated claims WhatsApp chats aren't private
+  why: US authorities reportedly investigated claims that WhatsApp chats aren’t private—another
+    reminder that privacy depends on more than just ‘end-to-end encryption.’
+  takeaway: Even with E2EE, metadata, device compromise, backups, and legal access
+    paths can still undermine user privacy. Research and policy need to distinguish
+    these layers clearly.
+  prompt: 'When people say an app is ‘private’, which layer do they actually mean:
+    content, metadata, device, or backups?'
+  url: https://www.bloomberg.com/news/articles/2026-01-29/us-has-investigated-claims-that-whatsapp-chats-aren-t-private
+  source: Bloomberg
+  published_utc: '2026-01-31T17:25:30+00:00'
+  title_zh: 美国调查WhatsApp聊天不私密的指控
+  why_zh: 据报道，美国当局调查WhatsApp聊天不私密的指控——再次提醒隐私不能仅依赖‘端到端加密’
+  takeaway_zh: 即便采用端到端加密，元数据、设备漏洞、备份及合法访问途径仍可能破坏用户隐私。研究与政策需明确区分这些层面
+  prompt_zh: ''
+- category: Security
+  title: Mobile carriers can get your GPS location
+  why: A technical walkthrough of how mobile carriers can infer GPS/GNSS location—highlighting
+    a privacy surface that’s easy to underestimate.
+  takeaway: For sensitive contexts, treat carrier-level location as potentially observable.
+    Threat models for journalists, activists, and researchers should include carrier-side
+    inference.
+  prompt: What would a ‘reasonable’ transparency/consent regime for carrier-side location
+    inference look like?
+  url: https://an.dywa.ng/carrier-gnss.html
+  source: an.dywa.ng
+  published_utc: '2026-01-31T17:21:34+00:00'
+  title_zh: 移动运营商可获取你的GPS位置
+  why_zh: 技术详解：移动运营商如何推断GPS/GNSS定位——这一易被低估的隐私暴露面
+  takeaway_zh: 敏感场景下应将运营商级定位视为潜在可观测数据。针对记者、活动家与研究人员的威胁建模需涵盖运营商侧推断
+  prompt_zh: ''
+- category: Platforms & policy
+  title: Finland to end "uncontrolled human experiment" with ban on youth social media
+  why: Finland is considering a ban on youth social media, framing current exposure
+    as an uncontrolled ‘human experiment.’
+  takeaway: We may see a shift from ‘parental controls’ to stricter age-gating and
+    platform obligations—creating new demand for measurement, compliance, and impact
+    evaluation.
+  prompt: If a youth social-media ban were enacted, what outcome metrics would count
+    as ‘success’ one year later?
+  url: https://yle.fi/a/74-20207494
+  source: Yle
+  published_utc: '2026-01-31T17:06:22+00:00'
+  title_zh: 芬兰将禁止青少年社交媒体，结束“失控的人类实验”
+  why_zh: 芬兰拟立法禁止青少年使用社交媒体，称当前曝光度堪比不受控的‘人类实验’
+  takeaway_zh: 我们或将目睹从‘家长控制’转向更严格的年龄门槛与平台责任——催生对监测、合规及影响评估的新需求
+  prompt_zh: ''
+- category: Tech industry
+  title: How YouTube and Adhesive Tape Are Disrupting Assistive Technology
+  why: Assistive technology is expensive, and many people with disabilities live on
+    fixed incomes.
+  takeaway: Assistive technology is expensive, and many people with disabilities live
+    on fixed incomes. Disabled assistive tech users also must contend with equipment
+    that was often designed without any capacity to be repaired or modified. But assistive
+    tech users ultimately need the functionality they need—a wheelchair that isn’t
+    constantly needing to be charged, perh…
+  prompt: ''
+  url: https://spectrum.ieee.org/assistive-technology-macgyver
+  source: IEEE Spectrum
+  published_utc: '2026-01-31T15:00:02+00:00'
+  title_zh: YouTube和胶带如何颠覆辅助技术领域
+  why_zh: 辅助技术价格昂贵，而许多残障人士依靠固定收入生活。
+  takeaway_zh: 辅助技术价格昂贵，而许多残障人士依靠固定收入生活。残疾辅助技术用户还不得不面对那些在设计之初就未考虑维修或改装可能性的设备。但归根结底，用户需要的是能满足核心功能的设备——比如无需频繁充电的轮椅，或...
+  prompt_zh: ''
+- category: AI frontier
+  title: Google Deepmind pioneer David Silver departs to found AI startup, betting
+    LLMs alone won't reach superintelligence
+  why: David Silver, one of the key AI researchers behind landmark Deepmind projects
+    like AlphaGo and AlphaZero, is leaving the Google subsidiary…
+  takeaway: David Silver, one of the key AI researchers behind landmark Deepmind projects
+    like AlphaGo and AlphaZero, is leaving the Google subsidiary to found his own
+    startup. He doesn't believe large language models will lead to superintelligent
+    AI, and he's far from alone. The article Google Deepmind pioneer David Silver
+    departs to found AI startup, betting LLMs alo…
+  prompt: ''
+  url: https://the-decoder.com/google-deepmind-pioneer-david-silver-departs-to-found-ai-startup-betting-llms-alone-wont-reach-superintelligence/
+  source: The Decoder (AI)
+  published_utc: '2026-01-31T13:50:17+00:00'
+  title_zh: 谷歌DeepMind先驱大卫·西尔弗离职创立AI初创公司，押注纯LLM无法实现超智能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI still leads enterprise AI, but Anthropic is gaining fast, according
+    to new study
+  why: 'An oligopoly is taking shape in enterprise AI: OpenAI still leads, but Anthropic
+    is catching up fast while Microsoft dominates applications.'
+  takeaway: 'An oligopoly is taking shape in enterprise AI: OpenAI still leads, but
+    Anthropic is catching up fast while Microsoft dominates applications. And the
+    open-source revolution? For large companies, it''s not happening yet. If anything,
+    they''re moving the other way. The article OpenAI still leads enterprise AI, but
+    Anthropic is gaining fast, according to new stud…'
+  prompt: ''
+  url: https://the-decoder.com/openai-still-leads-enterprise-ai-but-anthropic-is-gaining-fast-according-to-new-study/
+  source: The Decoder (AI)
+  published_utc: '2026-01-31T13:03:48+00:00'
+  title_zh: 新研究显示OpenAI仍领跑企业AI领域，但Anthropic正快速逼近
+  why_zh: 企业级AI领域正形成寡头格局：OpenAI仍领先，但Anthropic快速追赶，而微软主导应用层
+  takeaway_zh: 企业级AI领域正形成寡头格局：OpenAI仍领先但Anthropic快速追赶，微软主导应用层。开源革命？对大公司而言尚未发生，甚至有逆向趋势
+  prompt_zh: ''
+- category: AI & society
+  title: ChatGPT isn’t the only chatbot pulling answers from Elon Musk’s Grokipedia
+  why: More chatbots are citing Elon Musk’s AI-generated ‘Grokipedia’, raising the
+    risk of citation laundering and feedback loops in information ecosystems.
+  takeaway: 'As AI-generated sources propagate into AI search/chat, provenance becomes
+    a first-class requirement: we need stronger source vetting and clearer uncertainty
+    signals.'
+  prompt: Should AI systems be allowed to cite AI-generated encyclopedias by default—or
+    require an explicit user opt-in?
+  url: https://www.theverge.com/report/870910/ai-chatbots-citing-grokipedia
+  source: The Verge
+  published_utc: '2026-01-31T13:00:00+00:00'
+  title_zh: ChatGPT并非唯一从马斯克的‘Grokipedia’获取答案的聊天机器人
+  why_zh: 更多聊天机器人开始引用埃隆·马斯克的AI生成‘Grokipedia’，加剧了信息生态系统中引文污染与反馈循环的风险
+  takeaway_zh: 当AI生成内容涌入AI搜索/聊天时，溯源成为核心需求：亟需更强来源审查与明确的不确定性标识
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AI coding tools hurt learning unless you ask why, Anthropic study finds
+  why: Developers who learn new programming skills with AI assistance score significantly
+    worse on knowledge tests, according to a new Anthropic s…
+  takeaway: Developers who learn new programming skills with AI assistance score significantly
+    worse on knowledge tests, according to a new Anthropic study that raises concerns
+    about pushing AI integration too aggressively in the workplace. The article AI
+    coding tools hurt learning unless you ask why, Anthropic study finds appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/ai-coding-tools-hurt-learning-unless-you-ask-why-anthropic-study-finds/
+  source: The Decoder (AI)
+  published_utc: '2026-01-31T11:36:19+00:00'
+  title_zh: Anthropic研究发现：AI编码工具阻碍学习，除非你问为什么
+  why_zh: Anthropic最新研究显示，借助AI学习新编程技能的开发者在知识测试中表现明显较差。
+  takeaway_zh: Anthropic新研究显示，借助AI学习新编程技能的开发者在知识测试中表现明显更差，这引发了职场过度推广AI集成的担忧。该报道《Anthropic研究：除非追问原理，否则AI编程工具会损害学习效果》由The
+    Decoder首发。
+  prompt_zh: ''
+- category: AI frontier
+  title: 'DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents'
+  why: 'arXiv:2601.20975v1 Announce Type: new Abstract: We introduce DeepSearchQA,
+    a 900-prompt benchmark for evaluating agents on difficult multi-…'
+  takeaway: 'arXiv:2601.20975v1 Announce Type: new Abstract: We introduce DeepSearchQA,
+    a 900-prompt benchmark for evaluating agents on difficult multi-step information-seeking
+    tasks across 17 different fields. Unlike traditional benchmarks that target single
+    answer retrieval or broad-spectrum factuality, DeepSearchQA features a dataset
+    of challenging, handcrafted tasks…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.20975
+  source: arXiv cs.CL (Computation and Language)
+  published_utc: '2026-01-31T05:00:00+00:00'
+  title_zh: DeepSearchQA：弥合深度研究代理的全面性差距
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Large Language Models Naively Recover Ethnicity from Individual Records
+  why: 'arXiv:2601.21132v1 Announce Type: new Abstract: I demonstrate that large language
+    models can infer ethnicity from names with accuracy excee…'
+  takeaway: 'arXiv:2601.21132v1 Announce Type: new Abstract: I demonstrate that large
+    language models can infer ethnicity from names with accuracy exceeding that of
+    Bayesian Improved Surname Geocoding (BISG) without additional training data, enabling
+    inference outside the United States and to contextually appropriate classification
+    categories. Using stratified samples f…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.21132
+  source: arXiv cs.CL (Computation and Language)
+  published_utc: '2026-01-31T05:00:00+00:00'
+  title_zh: 大语言模型天真地从个体记录中恢复种族信息
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: 'Parametric Knowledge is Not All You Need: Toward Honest Large Language Models
+    via Retrieval of Pretraining Data'
+  why: 'arXiv:2601.21218v1 Announce Type: new Abstract: Large language models (LLMs)
+    are highly capable of answering questions, but they are often…'
+  takeaway: 'arXiv:2601.21218v1 Announce Type: new Abstract: Large language models
+    (LLMs) are highly capable of answering questions, but they are often unaware of
+    their own knowledge boundary, i.e., knowing what they know and what they don''t
+    know. As a result, they can generate factually incorrect responses on topics they
+    do not have enough knowledge of, commonly known…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.21218
+  source: arXiv cs.CL (Computation and Language)
+  published_utc: '2026-01-31T05:00:00+00:00'
+  title_zh: 参数化知识并非万能：通过检索预训练数据实现诚实的大语言模型
+  why_zh: arXiv:2601.21218v1 公告类型：新 摘要：大语言模型(LLM)回答问题能力出色，但往往...
+  takeaway_zh: arXiv:2601.21218v1 公告类型：新 摘要：大语言模型(LLM)回答问题能力出色，但往往缺乏对自身知识边界的认知，即在未知领域仍会生成事实性错误回答...
+  prompt_zh: ''
+- category: AI frontier
+  title: 'SHARP: Social Harm Analysis via Risk Profiles for Measuring Inequities in
+    Large Language Models'
+  why: 'arXiv:2601.21235v1 Announce Type: new Abstract: Large language models (LLMs)
+    are increasingly deployed in high-stakes domains, where rare b…'
+  takeaway: 'arXiv:2601.21235v1 Announce Type: new Abstract: Large language models
+    (LLMs) are increasingly deployed in high-stakes domains, where rare but severe
+    failures can result in irreversible harm. However, prevailing evaluation benchmarks
+    often reduce complex social risk to mean-centered scalar scores, thereby obscuring
+    distributional structure, cross-dimensional…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.21235
+  source: arXiv cs.CL (Computation and Language)
+  published_utc: '2026-01-31T05:00:00+00:00'
+  title_zh: SHARP：通过风险档案进行社会危害分析，衡量大语言模型中的不平等
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

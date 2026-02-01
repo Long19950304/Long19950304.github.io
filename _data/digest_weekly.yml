@@ -202,6 +202,7 @@ weeks:
   - '2026-01-29'
   - '2026-01-30'
   - '2026-01-31'
+  - '2026-02-01'
   highlights_news:
   - date: '2026-01-27'
     url: https://www.technologyreview.com/2026/01/26/1131728/inside-openais-big-play-for-science/
@@ -544,3 +545,10 @@ weeks:
     category: AI tools & model releases
     source: NVIDIA Developer Blog
     published_utc: '2026-01-30T18:00:00+00:00'
+  - date: '2026-02-01'
+    url: https://the-decoder.com/ai-coding-tools-hurt-learning-unless-you-ask-why-anthropic-study-finds/
+    title: AI coding tools hurt learning unless you ask why, Anthropic study finds
+    title_zh: Anthropic研究发现：AI编码工具阻碍学习，除非你问为什么
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-01-31T11:36:19+00:00'

@@ -552,3 +552,52 @@ weeks:
     category: AI tools & model releases
     source: The Decoder (AI)
     published_utc: '2026-01-31T11:36:19+00:00'
+- week: 2026-W06
+  start: '2026-02-02'
+  end: '2026-02-08'
+  issues:
+  - '2026-02-02'
+  highlights_news:
+  - date: '2026-02-02'
+    url: https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/
+    title: 'The Download: inside a deepfake marketplace, and EV batteries’ future'
+    title_zh: 深度解析：深伪市场内幕与电动汽车电池未来
+    category: AI & society
+    source: MIT Technology Review
+    published_utc: '2026-02-02T13:10:00+00:00'
+  - date: '2026-02-02'
+    url: https://www.bbc.com/news/articles/c9wx2dz2v44o?at_medium=RSS&at_campaign=rss
+    title: AI 'slop' is transforming social media - and a backlash is brewing
+    title_zh: AI‘垃圾内容’正改变社交媒体，反弹情绪渐起
+    category: AI & society
+    source: BBC News - Technology
+    published_utc: '2026-02-02T06:54:06+00:00'
+  - date: '2026-02-02'
+    url: https://www.theguardian.com/technology/2026/feb/02/openclaw-viral-ai-agent-personal-assistant-artificial-intelligence
+    title: Viral AI personal assistant seen as step change – but experts warn of risks
+    title_zh: 病毒式AI个人助理被视为重大变革，但专家警示风险
+    category: AI & society
+    source: The Guardian - Technology
+    published_utc: '2026-02-02T07:00:51+00:00'
+  - date: '2026-02-02'
+    url: https://techcrunch.com/2026/02/02/linq-raises-20m-to-enable-ai-assistants-to-live-within-messaging-apps/
+    title: Linq raises $20M to enable AI assistants to live within messaging apps
+    title_zh: Linq融资2000万美元，让AI助手入驻即时通讯应用
+    category: AI & society
+    source: TechCrunch
+    published_utc: '2026-02-02T14:16:13+00:00'
+  - date: '2026-02-02'
+    url: https://www.theverge.com/report/872062/grok-still-undressing-men
+    title: Elon Musk’s Grok is still undressing men
+    title_zh: Elon Musk的Grok仍在‘脱衣’男性
+    category: AI & society
+    source: The Verge
+    published_utc: '2026-02-02T14:09:47+00:00'
+  highlights_ai:
+  - date: '2026-02-02'
+    url: https://the-decoder.com/chinese-ai-companies-rush-to-ship-new-models-before-lunar-new-year/
+    title: Chinese AI companies rush to ship new models before Lunar New Year
+    title_zh: 中国AI公司赶在春节前推出新模型
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-02T10:07:15+00:00'

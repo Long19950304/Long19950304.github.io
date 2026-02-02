@@ -1,0 +1,163 @@
+date: '2026-02-02'
+title: Daily Digest - 2026-02-02
+title_zh: 每日简报 - 2026-02-02
+note: 'Today: The Download: inside a deepfake marketplace, and EV batteries’… · AI
+  ''slop'' is transforming social media - and a backlash is brew… · AI: Chinese AI
+  companies rush to ship new models before Lunar….'
+note_zh: 今日关注：深度解析：深伪市场内幕与电动汽车电池未来；AI‘垃圾内容’正改变社交媒体，反弹情绪渐起；AI：中国AI公司赶在春节前推出新模型。
+items:
+- category: AI & society
+  title: Linq raises $20M to enable AI assistants to live within messaging apps
+  why: Messaging apps are becoming the distribution layer for AI assistants—shifting
+    from standalone chatbots to embedded, always-on copilots.
+  takeaway: 'The product moat may move to integrations + permissions: whoever controls
+    the messaging surface can shape what assistants can see, do, and recommend.'
+  prompt: Which messaging surface (WhatsApp/WeChat/Telegram/iMessage/Slack) is most
+    likely to become the default home for AI assistants?
+  url: https://techcrunch.com/2026/02/02/linq-raises-20m-to-enable-ai-assistants-to-live-within-messaging-apps/
+  source: TechCrunch
+  published_utc: '2026-02-02T14:16:13+00:00'
+  title_zh: Linq融资2000万美元，让AI助手入驻即时通讯应用
+  why_zh: 即时通讯应用正成为AI助手的分发层，从独立聊天机器人转向嵌入式、常驻副驾驶
+  takeaway_zh: 产品护城河可能转向集成能力和权限管理：谁控制了消息传递界面，谁就能决定智能助理的可见信息、可执行操作和推荐内容。
+  prompt_zh: ''
+- category: AI & society
+  title: Elon Musk’s Grok is still undressing men
+  why: ‘Nudification’ misuse persists even as models add safety patches—illustrating
+    how quickly abuse adapts.
+  takeaway: Risk mitigation needs multiple layers (model safeguards + distribution
+    enforcement + legal and reporting channels), not just one-time filters.
+  prompt: 'What’s the most effective choke point to reduce non-consensual ‘undressing’
+    content: model guardrails, platform enforcement, or legal remedies?'
+  url: https://www.theverge.com/report/872062/grok-still-undressing-men
+  source: The Verge
+  published_utc: '2026-02-02T14:09:47+00:00'
+  title_zh: Elon Musk的Grok仍在‘脱衣’男性
+  why_zh: ‘裸体化’滥用持续，即便模型加入安全补丁，显示滥用行为快速适应
+  takeaway_zh: 风险缓释需要多层防护（模型安全措施+分发管控+法律与举报渠道），而非一次性过滤器。
+  prompt_zh: ''
+- category: Security
+  title: 'MaliciousCorgi: AI Extensions send your code to China'
+  why: A report on ‘MaliciousCorgi’ highlights how AI browser/IDE extensions can exfiltrate
+    source code—turning convenience into data leakage.
+  takeaway: 'Treat AI extensions like untrusted software: enforce allowlists, review
+    permissions, restrict network egress, and keep sensitive repos off consumer-grade
+    plugins.'
+  prompt: Do you have an organization-level policy for AI/IDE extensions (allowlist
+    + data classification + egress controls)?
+  url: https://www.koi.ai/blog/maliciouscorgi-the-cute-looking-ai-extensions-leaking-code-from-1-5-million-developers
+  source: Koi Security
+  published_utc: '2026-02-02T12:59:58+00:00'
+  title_zh: MaliciousCorgi：AI扩展程序将你的代码发送至中国
+  why_zh: 关于‘MaliciousCorgi’的报告强调AI浏览器/IDE扩展如何窃取源代码，便利变数据泄露
+  takeaway_zh: 对待AI扩展应如非受信软件：强制执行许可名单、审核权限、限制网络出口，并避免将敏感代码库开放给消费级插件。
+  prompt_zh: ''
+- category: AI & society
+  title: 'The Download: inside a deepfake marketplace, and EV batteries’ future'
+  why: A deepfake marketplace report shows how non-consensual media is becoming productized;
+    the EV battery outlook highlights where the next constraints may be.
+  takeaway: For harmful synthetic media, the scalable interventions are usually at
+    marketplaces, distribution, and monetization—not just individual takedowns.
+  prompt: 'For deepfakes, which intervention scales best: platform enforcement, payment
+    rails, watermarking, or liability rules?'
+  url: https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/
+  source: MIT Technology Review
+  published_utc: '2026-02-02T13:10:00+00:00'
+  title_zh: 深度解析：深伪市场内幕与电动汽车电池未来
+  why_zh: 深伪市场报告揭示非同意媒体如何商品化；电动汽车电池前景指出未来瓶颈
+  takeaway_zh: 针对有害合成媒体的可扩展干预措施通常集中在市场平台、传播渠道和变现环节，而不仅仅是个别内容的下架处理。
+  prompt_zh: ''
+- category: AI frontier
+  title: Former OpenAI researcher says current AI models can't learn from mistakes,
+    calling it a barrier to AGI
+  why: A former OpenAI researcher argues today’s models struggle to learn from mistakes—pointing
+    at a gap between ‘pattern completion’ and robust self-correction.
+  takeaway: If error-driven learning is limited, evaluation should emphasize feedback
+    loops, counterfactual testing, and post-hoc correction—not just static benchmarks.
+  prompt: What benchmark would best measure ‘learning from mistakes’ for LLM-based
+    agents?
+  url: https://the-decoder.com/former-openai-researcher-says-current-ai-models-cant-learn-from-mistakes-calling-it-a-barrier-to-agi/
+  source: The Decoder (AI)
+  published_utc: '2026-02-02T11:02:12+00:00'
+  title_zh: 前OpenAI研究员称当前AI模型无法从错误中学习，阻碍AGI发展
+  why_zh: 前OpenAI研究员认为当前模型难以从错误中学习，指出‘模式完成’与稳健自我修正间的差距
+  takeaway_zh: 当误差驱动学习受限时，评估体系应注重反馈循环、反事实测试和事后修正机制，而非静态基准测试。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Chinese AI companies rush to ship new models before Lunar New Year
+  why: Chinese AI labs are accelerating release cycles ahead of Lunar New Year, signaling
+    intense competition and a fast-moving domestic model ecosystem.
+  takeaway: This pace raises the importance of reliable evals, safety practices, and
+    deployment governance—especially when models ship into products quickly.
+  prompt: What would make you seriously consider switching to a Chinese LLM provider
+    for real workloads?
+  url: https://the-decoder.com/chinese-ai-companies-rush-to-ship-new-models-before-lunar-new-year/
+  source: The Decoder (AI)
+  published_utc: '2026-02-02T10:07:15+00:00'
+  title_zh: 中国AI公司赶在春节前推出新模型
+  why_zh: 中国AI实验室加速发布周期，春节前竞争激烈，国内模型生态系统快速迭代
+  takeaway_zh: 这种发展速度凸显了可靠评估体系、安全实践和部署治理的重要性——尤其是当模型被快速集成到产品中时。
+  prompt_zh: ''
+- category: Platforms & policy
+  title: '‘Marketplace for predators’: Meta faces jury trial over child exploitation
+    claims'
+  why: A jury trial against Meta over child exploitation claims is another high-stakes
+    test of platform liability and safety-by-design expectations.
+  takeaway: Litigation pressure can force concrete product changes (defaults, friction,
+    reporting, moderation) and creates natural experiments for researchers.
+  prompt: Which platform design change most reduces child exploitation risk without
+    overblocking legitimate content?
+  url: https://www.theguardian.com/technology/2026/feb/02/meta-trial-new-mexico-social-media
+  source: The Guardian - Technology
+  published_utc: '2026-02-02T11:00:11+00:00'
+  title_zh: ‘捕食者市场’：Meta因儿童剥削指控面临陪审团审判
+  why_zh: 针对Meta的儿童剥削指控陪审团审判，再次考验平台责任与安全设计期望
+  takeaway_zh: 诉讼压力能推动具体产品改进（默认设置、操作阻力、举报机制、内容审核），并为研究者创造自然实验场景。
+  prompt_zh: ''
+- category: Platforms & policy
+  title: Pornhub is now restricting access for UK users - will other sites follow
+    suit?
+  why: Pornhub restricting access for UK users reflects how age-assurance rules can
+    reshape access, compliance, and cross-site spillovers.
+  takeaway: 'Age verification is a privacy/security problem too: centralization and
+    data retention can create new attack surfaces if implemented poorly.'
+  prompt: How should ‘age assurance’ be implemented to minimize privacy and security
+    risks?
+  url: https://www.bbc.com/news/articles/cvg5er4ewg6o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-02-02T09:49:12+00:00'
+  title_zh: Pornhub限制英国用户访问，其他网站会效仿吗？
+  why_zh: Pornhub限制英国用户访问，反映年龄验证规则如何重塑访问、合规及跨站溢出效应
+  takeaway_zh: 年龄验证同样涉及隐私/安全问题：糟糕的集中化实现和数据留存制度可能制造新的攻击面。
+  prompt_zh: ''
+- category: AI & society
+  title: AI 'slop' is transforming social media - and a backlash is brewing
+  why: AI-generated ‘slop’ is flooding feeds, testing whether platforms and users
+    will demand provenance, authenticity signals, or new moderation norms.
+  takeaway: If engagement incentives reward low-cost synthetic content, platforms
+    may need stronger provenance tooling and ranking changes to avoid quality collapse.
+  prompt: Will provenance labels actually change user behavior—or will platforms need
+    ranking changes to reduce AI slop?
+  url: https://www.bbc.com/news/articles/c9wx2dz2v44o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-02-02T06:54:06+00:00'
+  title_zh: AI‘垃圾内容’正改变社交媒体，反弹情绪渐起
+  why_zh: AI生成的‘垃圾内容’充斥信息流，考验平台与用户对来源、真实性信号或新审核规范的需求
+  takeaway_zh: 如果用户互动激励机制助长低成本合成内容泛滥，平台可能需要加强来源验证工具和排序算法调整，以避免内容质量崩溃。
+  prompt_zh: ''
+- category: AI & society
+  title: Viral AI personal assistant seen as step change – but experts warn of risks
+  why: Viral ‘AI personal assistants’ show the shift from chat to agency—but experts
+    warn about permissions, security, and unintended actions.
+  takeaway: 'Agentic systems expand risk surfaces: good defaults include least-privilege
+    permissions, action logs, sandboxed execution, and explicit confirmation for high-impact
+    actions.'
+  prompt: What permission boundary would you require before letting an AI agent act
+    on your behalf?
+  url: https://www.theguardian.com/technology/2026/feb/02/openclaw-viral-ai-agent-personal-assistant-artificial-intelligence
+  source: The Guardian - Technology
+  published_utc: '2026-02-02T07:00:51+00:00'
+  title_zh: 病毒式AI个人助理被视为重大变革，但专家警示风险
+  why_zh: 病毒式‘AI个人助理’展示从聊天到代理的转变，但专家提醒注意权限、安全及意外行为
+  takeaway_zh: 智能代理系统扩大了风险层面：良好的默认设置应包括最小权限原则、操作日志记录、沙箱执行模式以及对高影响操作的显式确认。
+  prompt_zh: ''

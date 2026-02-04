@@ -2718,6 +2718,35 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
     #  - AI tools/model releases (EN + ZH)
     items = digest.get("items", [])
     if isinstance(items, list) and items:
+        def _looks_ai_related(it: dict[str, Any]) -> bool:
+            # Fall back when the curated list has no dedicated "AI tools & model releases" items.
+            # This keeps the two AI cards from rendering as empty backgrounds.
+            text = " ".join(
+                [
+                    (it.get("title") or ""),
+                    (it.get("why") or ""),
+                    (it.get("takeaway") or ""),
+                    (it.get("source") or ""),
+                ]
+            ).lower()
+            keys = [
+                " ai ",
+                "ai-",
+                "openai",
+                "chatgpt",
+                "llm",
+                "model",
+                "claude",
+                "codex",
+                "agentic",
+                "mcp",
+                "nvidia",
+                "gpu",
+                "chips",
+                "vector",
+            ]
+            return any(k in text for k in keys)
+
         ai_cat = "AI tools & model releases"
         items_news = [it for it in items if (it.get("category") or "").strip() != ai_cat]
         items_ai = [it for it in items if (it.get("category") or "").strip() == ai_cat]
@@ -2748,13 +2777,22 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
         render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-en.png", lang="en")
         render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-zh.png", lang="zh")
 
+        # If there are no dedicated AI tool/model items in the curated list, fall back to
+        # AI-related highlights from the main items so the AI cards aren't blank.
+        if not ai_ranked:
+            ai_ranked = [it for it in items_news if _looks_ai_related(it)]
+
         render_card(
             date,
             ai_ranked,
             CARD_DIR / f"{date.isoformat()}-ai-en.png",
             lang="en",
             title_override="AI Tools & Model Updates",
-            subtitle_override="New tools/models/releases (see site for the full list).",
+            subtitle_override=(
+                "New tools/models/releases (see site for the full list)."
+                if any((it.get("category") or "").strip() == ai_cat for it in items)
+                else "AI highlights (no dedicated tool/model releases in today's top list)."
+            ),
             max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
             max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
@@ -2765,7 +2803,11 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
             CARD_DIR / f"{date.isoformat()}-ai-zh.png",
             lang="zh",
             title_override="AI 工具 / 模型更新",
-            subtitle_override="今日工具/模型发布（完整版见网站）。",
+            subtitle_override=(
+                "今日工具/模型发布（完整版见网站）。"
+                if any((it.get("category") or "").strip() == ai_cat for it in items)
+                else "AI 要闻（今日未选入工具/模型发布条目；详见网站）。"
+            ),
             max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
             max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),

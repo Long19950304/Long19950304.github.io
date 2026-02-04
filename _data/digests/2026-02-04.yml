@@ -1,0 +1,158 @@
+date: '2026-02-04'
+title: Daily Digest - 2026-02-04
+title_zh: 每日简报 - 2026-02-04
+note: 'Today: Can Tesla make its own chips? · Nvidia''s $100 billion OpenAI deal has
+  seemingly vanished.'
+note_zh: 今日关注：特斯拉能否自主研发芯片？；英伟达与OpenAI的1000亿美元交易似乎已告吹。
+items:
+- category: Security & privacy
+  title: Notepad++ supply chain attack breakdown
+  why: A post-mortem breaks down a supply-chain compromise affecting Notepad++ distribution
+    and how it was detected.
+  takeaway: Supply-chain attacks keep targeting trusted developer tools. Treat update
+    channels as attack surface—verify signatures, pin hashes where possible, and monitor
+    for unexpected installer behavior.
+  prompt: What would you change in your update/installer verification process after
+    reading this?
+  url: https://securelist.com/notepad-supply-chain-attack/118708/
+  source: Hacker News (front page)
+  published_utc: '2026-02-03T22:35:27+00:00'
+  title_zh: Notepad++供应链攻击事件剖析
+  why_zh: 事后分析揭示影响Notepad++分发的供应链攻击及其检测过程
+  takeaway_zh: 供应链攻击持续瞄准可信开发工具，应将更新通道视为攻击面——验证签名、固定哈希值并监控安装程序异常行为。
+  prompt_zh: ''
+- category: Tech industry
+  title: Xcode 26.3 adds support for Claude, Codex, and other agentic tools via MCP
+  why: Apple updates Xcode to integrate multiple coding agents via the Model Context
+    Protocol (MCP).
+  takeaway: Agentic coding is moving from standalone chat apps into the IDE. Teams
+    will need clearer policies on data access, tool permissions, and code review expectations.
+  prompt: Where should the boundary be between "agent proposes" and "human approves"
+    in your workflow?
+  url: https://arstechnica.com/apple/2026/02/xcode-26-3-adds-support-for-claude-codex-and-other-agentic-tools-via-mcp/
+  source: Ars Technica
+  published_utc: '2026-02-03T18:01:49+00:00'
+  title_zh: Xcode 26.3通过MCP新增对Claude、Codex等代理工具的支持
+  why_zh: 苹果更新Xcode，通过模型上下文协议（MCP）集成多种编码代理
+  takeaway_zh: 智能化编程正从独立聊天应用向IDE集成开发环境迁移，团队需制定更明晰的数据访问、工具权限和代码审查政策。
+  prompt_zh: ''
+- category: Tech industry
+  title: Department of Justice appeals Google search monopoly ruling
+  why: The U.S. DOJ and states appeal the Google Search monopoly decision, keeping
+    antitrust pressure on Google.
+  takeaway: Appeals extend uncertainty for Google's search distribution and ad business.
+    Potential remedies could reshape default search deals and platform bundling over
+    time.
+  prompt: What remedy would most improve competition without materially hurting users?
+  url: https://www.theverge.com/tech/873438/google-antitrust-case-doj-states-appeal
+  source: The Verge
+  published_utc: '2026-02-03T22:40:47+00:00'
+  title_zh: 司法部对谷歌搜索垄断裁决提出上诉
+  why_zh: 美国司法部及各州对谷歌搜索垄断判决提出上诉，持续施压反垄断
+  takeaway_zh: 上诉程序延长了谷歌搜索分发与广告业务的不确定性，潜在救济措施可能逐步重塑默认搜索引擎协议和平台捆绑模式。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google court filings suggest ChromeOS has an expiration date
+  why: Court filings suggest Google may wind down ChromeOS after existing support
+    commitments expire.
+  takeaway: If ChromeOS sunsets, schools and enterprises could face another fleet
+    migration. Device lifecycle planning and app compatibility audits become more
+    urgent.
+  prompt: If you manage ChromeOS devices, what's your migration or contingency plan?
+  url: https://arstechnica.com/google/2026/02/google-court-filings-suggest-googles-chromeos-has-an-expiration-date/
+  source: Ars Technica
+  published_utc: '2026-02-03T18:25:18+00:00'
+  title_zh: 谷歌法庭文件暗示ChromeOS有终止日期
+  why_zh: 法庭文件暗示谷歌可能在现有支持承诺到期后逐步关闭ChromeOS
+  takeaway_zh: 若ChromeOS终止支持，学校与企业可能面临设备群迁移挑战，需加速推进生命周期规划与应用兼容性评估。
+  prompt_zh: ''
+- category: Tech industry
+  title: Nvidia's $100 billion OpenAI deal has seemingly vanished
+  why: Reports suggest Nvidia's headline-grabbing proposed OpenAI investment plan
+    has fizzled.
+  takeaway: AI mega-deals can evaporate quickly as strategy, regulation, and market
+    conditions shift. Watch second-order effects on partnership dynamics and AI infrastructure
+    narratives.
+  prompt: What signals tell you an AI partnership is real versus hype?
+  url: https://arstechnica.com/information-technology/2026/02/five-months-later-nvidias-100-billion-openai-investment-plan-has-fizzled-out/
+  source: Ars Technica
+  published_utc: '2026-02-03T22:44:15+00:00'
+  title_zh: 英伟达与OpenAI的1000亿美元交易似乎已告吹
+  why_zh: 报道称英伟达备受瞩目的OpenAI投资计划已泡汤
+  takeaway_zh: 人工智能领域的巨额交易会因战略、监管和市场变化而快速消退，需警惕其对合作伙伴关系动态和AI基础设施叙事的次生影响。
+  prompt_zh: ''
+- category: Business & economy
+  title: US stocks drop on fears AI will hit software and analytics groups
+  why: U.S. stocks drop as investors worry new AI tools could pressure software and
+    analytics business models.
+  takeaway: 'Markets are starting to price AI as both productivity boost and margin
+    risk. Expect more scrutiny on defensibility: proprietary data, distribution, and
+    switching costs.'
+  prompt: Which software moats get stronger with AI, and which get weaker?
+  url: https://www.ft.com/content/48ec5657-c2e7-4111-a236-24a96a8d49e7
+  source: Financial Times - Markets
+  published_utc: '2026-02-03T22:20:08+00:00'
+  title_zh: 美股因担忧AI冲击软件与分析集团而下跌
+  why_zh: 美股下跌，因投资者担忧新AI工具可能冲击软件与分析业务模式
+  takeaway_zh: 市场开始双向定价AI的生产力提升与利润率风险，企业专属数据、分销渠道和转换成本等防御性要素将受更多审视。
+  prompt_zh: ''
+- category: Tech industry
+  title: Can Tesla make its own chips?
+  why: A look at Tesla's push toward custom chips and the value-destruction risks
+    of vertical integration.
+  takeaway: Custom silicon can be strategic, but execution risk is high and capital
+    intensive. The payoff depends on whether it yields durable differentiation at
+    scale.
+  prompt: When does custom silicon make sense versus buying best-in-class?
+  url: https://www.ft.com/content/51ea8ce1-e088-4c37-bcc5-8dd2edacda94
+  source: Financial Times - Technology
+  published_utc: '2026-02-04T00:01:01+00:00'
+  title_zh: 特斯拉能否自主研发芯片？
+  why_zh: 探讨特斯拉自研芯片的推进及垂直整合的价值破坏风险
+  takeaway_zh: 定制芯片可能具有战略意义，但执行风险高且资本密集，其回报取决于能否实现规模化的持续差异化优势。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'AliSQL: Alibaba''s open-source MySQL with vector and DuckDB engines'
+  why: Alibaba open-sources AliSQL, a MySQL variant that adds vector and DuckDB engines
+    for hybrid workloads.
+  takeaway: 'Databases are converging: OLTP + analytics + vector search in one stack.
+    This can simplify architectures but raises questions about performance isolation
+    and ops complexity.'
+  prompt: Would you trade best-of-breed components for a unified database stack?
+  url: https://github.com/alibaba/AliSQL
+  source: Hacker News (front page)
+  published_utc: '2026-02-03T18:40:18+00:00'
+  title_zh: AliSQL：阿里巴巴开源MySQL，集成向量与DuckDB引擎
+  why_zh: 阿里巴巴开源AliSQL，一款集成向量与DuckDB引擎的MySQL变体，适用于混合工作负载
+  takeaway_zh: 数据库正趋向融合：OLTP联机交易处理+分析+向量搜索统一架构，虽简化系统但引发性能隔离与运维复杂度的新考量。
+  prompt_zh: ''
+- category: Security & privacy
+  title: Homeland Security is trying to force tech companies to hand over data about
+    Trump critics
+  why: TechCrunch reports DHS using administrative subpoenas to seek data about anonymous
+    accounts tracking ICE operations.
+  takeaway: Administrative subpoenas can expand government access without judicial
+    oversight. Platforms may face new pressure that tests transparency practices and
+    privacy commitments.
+  prompt: What transparency standard should platforms follow for subpoenas like this?
+  url: https://techcrunch.com/2026/02/03/homeland-security-is-trying-to-force-tech-companies-to-hand-over-data-about-trump-critics/
+  source: TechCrunch
+  published_utc: '2026-02-03T18:35:19+00:00'
+  title_zh: 国土安全部试图迫使科技公司交出特朗普批评者的数据
+  why_zh: TechCrunch报道国土安全部使用行政传票获取追踪ICE行动的匿名账户数据
+  takeaway_zh: 行政传票可在缺乏司法监督的情况下扩大政府数据获取权限，平台或将面临考验透明度实践与隐私承诺的新压力。
+  prompt_zh: ''
+- category: Business & economy
+  title: Walmart becomes first retailer to hit $1tn market value
+  why: Walmart hits a $1T market value milestone, reflecting its scale and continued
+    reinvention.
+  takeaway: Retail winners increasingly look like platform + logistics + data businesses.
+    Walmart's milestone shows how operational excellence compounds over decades.
+  prompt: What's Walmart's most defensible advantage over the next decade?
+  url: https://www.bbc.com/news/articles/cvgp7ry9evwo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-03T18:12:38+00:00'
+  title_zh: 沃尔玛成为首家市值突破1万亿美元的零售商
+  why_zh: 沃尔玛市值突破1万亿美元，彰显其规模与持续革新
+  takeaway_zh: 零售业赢家日益显现为平台+物流+数据的复合业态，沃尔玛的里程碑印证了运营卓越性经年累月的复利效应。
+  prompt_zh: ''

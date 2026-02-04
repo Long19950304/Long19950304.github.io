@@ -557,6 +557,7 @@ weeks:
   end: '2026-02-08'
   issues:
   - '2026-02-02'
+  - '2026-02-04'
   highlights_news:
   - date: '2026-02-02'
     url: https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/
@@ -593,6 +594,42 @@ weeks:
     category: AI & society
     source: The Verge
     published_utc: '2026-02-02T14:09:47+00:00'
+  - date: '2026-02-04'
+    url: https://www.ft.com/content/51ea8ce1-e088-4c37-bcc5-8dd2edacda94
+    title: Can Tesla make its own chips?
+    title_zh: 特斯拉能否自主研发芯片？
+    category: Tech industry
+    source: Financial Times - Technology
+    published_utc: '2026-02-04T00:01:01+00:00'
+  - date: '2026-02-04'
+    url: https://arstechnica.com/information-technology/2026/02/five-months-later-nvidias-100-billion-openai-investment-plan-has-fizzled-out/
+    title: Nvidia's $100 billion OpenAI deal has seemingly vanished
+    title_zh: 英伟达与OpenAI的1000亿美元交易似乎已告吹
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-03T22:44:15+00:00'
+  - date: '2026-02-04'
+    url: https://www.bbc.com/news/articles/cvgp7ry9evwo?at_medium=RSS&at_campaign=rss
+    title: Walmart becomes first retailer to hit $1tn market value
+    title_zh: 沃尔玛成为首家市值突破1万亿美元的零售商
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-03T18:12:38+00:00'
+  - date: '2026-02-04'
+    url: https://techcrunch.com/2026/02/03/homeland-security-is-trying-to-force-tech-companies-to-hand-over-data-about-trump-critics/
+    title: Homeland Security is trying to force tech companies to hand over data about
+      Trump critics
+    title_zh: 国土安全部试图迫使科技公司交出特朗普批评者的数据
+    category: Security & privacy
+    source: TechCrunch
+    published_utc: '2026-02-03T18:35:19+00:00'
+  - date: '2026-02-04'
+    url: https://www.theverge.com/tech/873438/google-antitrust-case-doj-states-appeal
+    title: Department of Justice appeals Google search monopoly ruling
+    title_zh: 司法部对谷歌搜索垄断裁决提出上诉
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-02-03T22:40:47+00:00'
   highlights_ai:
   - date: '2026-02-02'
     url: https://the-decoder.com/chinese-ai-companies-rush-to-ship-new-models-before-lunar-new-year/

@@ -156,3 +156,53 @@ items:
   why_zh: 沃尔玛市值突破1万亿美元，彰显其规模与持续革新
   takeaway_zh: 零售业赢家日益显现为平台+物流+数据的复合业态，沃尔玛的里程碑印证了运营卓越性经年累月的复利效应。
   prompt_zh: ''
+
+# --- AI tools & model updates (kept explicitly so the AI cards are accurate) ---
+- category: AI tools & model releases
+  title: 'ComfyUI v0.12.1'
+  why: ComfyUI ships v0.12.1; see the release notes for workflow changes and fixes.
+  takeaway: For image/video generation pipelines, pin ComfyUI + custom nodes to known-good versions; minor releases can break graphs.
+  prompt: Do you pin ComfyUI and custom nodes versions for reproducible workflows?
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.12.1
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-02-03T21:27:07+00:00'
+  title_zh: ComfyUI 发布 v0.12.1
+  why_zh: ComfyUI 发布 v0.12.1；请查看 release notes 了解工作流变更与修复。
+  takeaway_zh: 对图像/视频生成流水线，建议固定 ComfyUI 与自定义节点版本；小版本更新也可能导致工作流不兼容。
+  prompt_zh: 你的工作流是否会固定 ComfyUI 与自定义节点的版本来保证可复现？
+- category: AI tools & model releases
+  title: Xcode 26.3 unlocks agentic coding (official announcement)
+  why: Apple announces Xcode 26.3 capabilities for agentic coding; see the official post for details.
+  takeaway: Tooling is shifting from chat to in-IDE agents. Treat permissions, data access, and review policy as part of your secure SDLC.
+  prompt: What minimum guardrails would you require before enabling agentic coding in your IDE?
+  url: https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/
+  source: Apple Newsroom
+  published_utc: '2026-02-03T18:04:08+00:00'
+  title_zh: Xcode 26.3 推出代理式编程能力（官方发布）
+  why_zh: 苹果官方发布 Xcode 26.3 的代理式编程能力更新；细节以公告为准。
+  takeaway_zh: 编程助手正从聊天工具转向 IDE 内代理。权限、数据访问与审查规则应作为安全开发流程的一部分固化下来。
+  prompt_zh: 在 IDE 开启代理式编程前，你会要求哪些最低限度的护栏？
+- category: AI tools & model releases
+  title: Accelerating long-context model training in JAX and XLA
+  why: NVIDIA outlines techniques to speed up long-context training using JAX/XLA.
+  takeaway: As context windows grow, performance bottlenecks shift to memory, compilation, and kernel efficiency; infra tuning matters.
+  prompt: For long-context training/inference, what's your main bottleneck today?
+  url: https://developer.nvidia.com/blog/accelerating-long-context-model-training-in-jax-and-xla/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-03T17:30:00+00:00'
+  title_zh: NVIDIA：在 JAX/XLA 中加速长上下文模型训练
+  why_zh: NVIDIA 介绍了使用 JAX/XLA 加速长上下文训练的工程方法与优化要点。
+  takeaway_zh: 随着上下文长度扩大，瓶颈更偏向显存、编译与 kernel 效率；“基础设施调优能力”会越来越关键。
+  prompt_zh: 你在长上下文训练/推理中的主要瓶颈是什么？
+- category: AI tools & model releases
+  title: Introducing Holo2 (UI localization model)
+  why: Hugging Face introduces Holo2, a model aimed at UI localization tasks.
+  takeaway: "UI localization is a practical frontier for LLMs: structured constraints, multilingual nuance, and evaluation beyond BLEU."
+  prompt: Where do you see the biggest wins from LLMs in localization or translation workflows?
+  url: https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b
+  source: Hugging Face Blog
+  published_utc: '2026-02-03T17:40:14+00:00'
+  title_zh: Holo2：面向 UI 本地化的模型
+  why_zh: Hugging Face 介绍 Holo2 模型，聚焦 UI 本地化等落地任务。
+  takeaway_zh: UI 本地化是 LLM 的高价值场景：既有结构化约束又有多语细微差异，评测也需要超越传统 BLEU。
+  prompt_zh: 你认为 LLM 在本地化/翻译工作流中最大的增益会出现在哪些环节？

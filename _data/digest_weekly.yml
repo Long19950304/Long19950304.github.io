@@ -638,3 +638,45 @@ weeks:
     category: AI tools & model releases
     source: The Decoder (AI)
     published_utc: '2026-02-02T10:07:15+00:00'
+  - date: '2026-02-04'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.12.1
+    title: ComfyUI v0.12.1
+    title_zh: ComfyUI 发布 v0.12.1
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-03T21:27:07+00:00'
+  - date: '2026-02-04'
+    url: https://the-decoder.com/gemini-models-dominate-new-ai-rankings-for-strategic-board-games/
+    title: Gemini models dominate new AI rankings for strategic board games
+    title_zh: Gemini 模型在策略类桌游新榜单中领先
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-03T17:31:40+00:00'
+  - date: '2026-02-04'
+    url: https://developer.nvidia.com/blog/accelerating-long-context-model-training-in-jax-and-xla/
+    title: Accelerating long-context model training in JAX and XLA
+    title_zh: NVIDIA：在 JAX/XLA 中加速长上下文模型训练
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-02-03T17:30:00+00:00'
+  - date: '2026-02-04'
+    url: https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b
+    title: H Company's new Holo2 model takes the lead in UI Localization
+    title_zh: Holo2 模型在 UI 本地化任务上表现领先
+    category: AI tools & model releases
+    source: Hugging Face Blog
+    published_utc: '2026-02-03T17:40:14+00:00'
+  - date: '2026-02-04'
+    url: https://www.theverge.com/news/873300/apple-xcode-openai-anthropic-ai-agentic-coding
+    title: Apple’s Xcode adds OpenAI and Anthropic’s coding agents
+    title_zh: 苹果 Xcode 引入 OpenAI 与 Anthropic 编码代理
+    category: AI tools & model releases
+    source: The Verge
+    published_utc: '2026-02-03T19:04:09+00:00'
+  - date: '2026-02-04'
+    url: https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/
+    title: Xcode 26.3 unlocks agentic coding (official announcement)
+    title_zh: Xcode 26.3 推出代理式编程能力（官方发布）
+    category: AI tools & model releases
+    source: Apple Newsroom
+    published_utc: '2026-02-03T18:04:08+00:00'

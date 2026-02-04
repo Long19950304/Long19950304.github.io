@@ -219,6 +219,32 @@ sources:
     category: "AI tools & model releases"
     github_repo: vllm-project/vllm
 
+  # SDKs / agent frameworks (keep a small, high-signal set; we filter noisy pre-releases in code)
+  - id: gh-openai-python
+    name: GitHub Releases - openai/openai-python
+    category: "AI tools & model releases"
+    github_repo: openai/openai-python
+
+  - id: gh-openai-node
+    name: GitHub Releases - openai/openai-node
+    category: "AI tools & model releases"
+    github_repo: openai/openai-node
+
+  - id: gh-anthropic-python
+    name: GitHub Releases - anthropics/anthropic-sdk-python
+    category: "AI tools & model releases"
+    github_repo: anthropics/anthropic-sdk-python
+
+  - id: gh-anthropic-ts
+    name: GitHub Releases - anthropics/anthropic-sdk-typescript
+    category: "AI tools & model releases"
+    github_repo: anthropics/anthropic-sdk-typescript
+
+  - id: gh-autogen
+    name: GitHub Releases - microsoft/autogen
+    category: "AI tools & model releases"
+    github_repo: microsoft/autogen
+
   - id: gh-open-webui
     name: GitHub Releases - open-webui/open-webui
     category: "AI tools & model releases"

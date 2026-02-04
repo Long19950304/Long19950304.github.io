@@ -2372,6 +2372,11 @@ def render_card(
         max_per_category=mpc,
     )
 
+    if not ranked:
+        # Avoid "blank" cards when a section has no items.
+        empty = "(No items in this window.)" if lang != "zh" else "（此时间窗内无条目。）"
+        _draw_text(draw, (x, y + 6), empty, font=font_item_body, fill=sub, stroke_width=1)
+
     # Footer anchored at the bottom to avoid a large empty block below the content.
     footer1 = "Zhilong George Zhao · @longlalaland"
     digest_path = f"/digest/{date.isoformat()}/" if lang != "zh" else f"/zh/digest/{date.isoformat()}/"
@@ -2718,35 +2723,6 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
     #  - AI tools/model releases (EN + ZH)
     items = digest.get("items", [])
     if isinstance(items, list) and items:
-        def _looks_ai_related(it: dict[str, Any]) -> bool:
-            # Fall back when the curated list has no dedicated "AI tools & model releases" items.
-            # This keeps the two AI cards from rendering as empty backgrounds.
-            text = " ".join(
-                [
-                    (it.get("title") or ""),
-                    (it.get("why") or ""),
-                    (it.get("takeaway") or ""),
-                    (it.get("source") or ""),
-                ]
-            ).lower()
-            keys = [
-                " ai ",
-                "ai-",
-                "openai",
-                "chatgpt",
-                "llm",
-                "model",
-                "claude",
-                "codex",
-                "agentic",
-                "mcp",
-                "nvidia",
-                "gpu",
-                "chips",
-                "vector",
-            ]
-            return any(k in text for k in keys)
-
         ai_cat = "AI tools & model releases"
         items_news = [it for it in items if (it.get("category") or "").strip() != ai_cat]
         items_ai = [it for it in items if (it.get("category") or "").strip() == ai_cat]
@@ -2777,11 +2753,6 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
         render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-en.png", lang="en")
         render_card(date, items_news, CARD_DIR / f"{date.isoformat()}-zh.png", lang="zh")
 
-        # If there are no dedicated AI tool/model items in the curated list, fall back to
-        # AI-related highlights from the main items so the AI cards aren't blank.
-        if not ai_ranked:
-            ai_ranked = [it for it in items_news if _looks_ai_related(it)]
-
         render_card(
             date,
             ai_ranked,
@@ -2790,8 +2761,8 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
             title_override="AI Tools & Model Updates",
             subtitle_override=(
                 "New tools/models/releases (see site for the full list)."
-                if any((it.get("category") or "").strip() == ai_cat for it in items)
-                else "AI highlights (no dedicated tool/model releases in today's top list)."
+                if items_ai
+                else "No tool/model release updates selected for this issue."
             ),
             max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
@@ -2805,8 +2776,8 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
             title_override="AI 工具 / 模型更新",
             subtitle_override=(
                 "今日工具/模型发布（完整版见网站）。"
-                if any((it.get("category") or "").strip() == ai_cat for it in items)
-                else "AI 要闻（今日未选入工具/模型发布条目；详见网站）。"
+                if items_ai
+                else "本期未选择工具/模型发布更新。"
             ),
             max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),

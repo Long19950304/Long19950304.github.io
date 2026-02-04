@@ -780,7 +780,7 @@ def _draft_items(
 
     # Keep the AI tools section practical: we want tool/model release updates.
     # For AI-news feeds that also publish commentary, reclassify non-release items into AI frontier.
-    ai_tools_news_ids = {"decoder-ai", "wired-ai-tag", "venturebeat-ai"}
+    ai_tools_news_ids = {"decoder-ai", "wired-ai-tag", "venturebeat-ai", "latent-space"}
     ai_tools_misc_ids = {"simon-willison"}
     # Stricter heuristic: require at least one "action" and one "object" keyword
     # to keep an item in the AI tools/model releases section.
@@ -972,6 +972,10 @@ def _draft_items(
     # High-volume sources (e.g., Hacker News, FT) can otherwise dominate the most-recent slice,
     # leading to a Top 10 that feels single-source. Apply simple caps here to keep candidates diverse.
     total = int(max_items or 200)
+    # Ensure the draft still contains enough AI tool/model release candidates even if
+    # the non-AI news volume is very high. This matters because AI tool updates can be
+    # "bursty" and may land earlier than the main news cycle, especially with a longer lookback.
+    min_ai = int(os.environ.get("DIGEST_DRAFT_MIN_AI_ITEMS", "30") or "30")
     cap_per_source = int(os.environ.get("DIGEST_DRAFT_MAX_PER_SOURCE", "20") or "20")
     cap_per_domain = int(os.environ.get("DIGEST_DRAFT_MAX_PER_DOMAIN", "20") or "20")
     cap_github_domain = int(os.environ.get("DIGEST_DRAFT_MAX_GITHUB_PER_DOMAIN", "80") or "80")
@@ -979,21 +983,42 @@ def _draft_items(
     by_src: dict[str, int] = {}
     by_dom: dict[str, int] = {}
     out: list[dict[str, Any]] = []
-    for it in deduped:
+
+    def _try_add(it: dict[str, Any]) -> bool:
         if len(out) >= total:
-            break
+            return False
         src = (it.get("source") or "").strip()
         dom = (urlparse((it.get("url") or "").strip()).netloc or "").lower()
         if src and by_src.get(src, 0) >= cap_per_source:
-            continue
+            return False
         cap_dom = cap_github_domain if dom == "github.com" else cap_per_domain
         if dom and by_dom.get(dom, 0) >= cap_dom:
-            continue
+            return False
         out.append(it)
         if src:
             by_src[src] = by_src.get(src, 0) + 1
         if dom:
             by_dom[dom] = by_dom.get(dom, 0) + 1
+        return True
+
+    ai_cat = "AI tools & model releases"
+    ai_items = [it for it in deduped if (it.get("category") or "").strip() == ai_cat]
+    other_items = [it for it in deduped if (it.get("category") or "").strip() != ai_cat]
+
+    # Pass 1: reserve space for AI tool/model updates.
+    want_ai = min(min_ai, total)
+    ai_added = 0
+    for it in ai_items:
+        if ai_added >= want_ai:
+            break
+        if _try_add(it):
+            ai_added += 1
+
+    # Pass 2: fill the rest with everything else (including any remaining AI items).
+    for it in other_items + ai_items:
+        if len(out) >= total:
+            break
+        _try_add(it)
 
     return out
 
@@ -1344,8 +1369,8 @@ def _ai_item_practicality_filter(items: list[dict[str, Any]]) -> list[dict[str, 
             # Pre-releases/nightlies are too frequent for a daily brief.
             if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
                 return True
-            # llama.cpp commit-tag releases are extremely frequent; keep them out of Top unless needed.
-            if "llama.cpp" in t and re.search(r"\brelease:\s*b\d{4,}\b", t):
+            # llama.cpp-style commit-tag releases are extremely frequent; keep them out of Top unless needed.
+            if ("llama.cpp" in t) and (re.search(r"\brelease:\s*b\d{4,}\b", t) or re.search(r"\bb\d{4,}\b", t)):
                 return True
             return False
         # Keep Top list practical: require at least one tooling/release cue.

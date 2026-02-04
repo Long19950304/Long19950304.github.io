@@ -85,6 +85,12 @@ sources:
     category: "Tech industry"
     url: https://spectrum.ieee.org/rss/fulltext
 
+  # Deep analysis on AI hardware/infra trends (RSS includes free excerpts).
+  - id: semianalysis
+    name: SemiAnalysis
+    category: "Tech industry"
+    url: https://www.semianalysis.com/feed
+
   - id: hackernews
     name: Hacker News (front page)
     category: "Tech industry"
@@ -136,6 +142,21 @@ sources:
     category: "AI frontier"
     url: https://openai.com/blog/rss.xml
 
+  # Duplicate OpenAI blog under the "AI tools & model releases" section, but keyword-filtered
+  # so only concrete releases/announcements show up in the tooling pipeline.
+  - id: openai-blog-releases
+    name: OpenAI Blog (releases-only)
+    category: "AI tools & model releases"
+    url: https://openai.com/blog/rss.xml
+    include_keywords:
+      - release
+      - introducing
+      - launch
+      - api
+      - model
+      - gpt
+      - chatgpt
+
   # -----------------------------
   # AI tools & model releases (product + tooling updates)
   # -----------------------------
@@ -149,6 +170,32 @@ sources:
     name: Google DeepMind Blog
     category: "AI tools & model releases"
     url: https://deepmind.google/blog/rss.xml
+
+  - id: google-ai-blog
+    name: Google AI (blog.google)
+    category: "AI tools & model releases"
+    url: https://blog.google/technology/ai/rss/
+    include_keywords:
+      - release
+      - introducing
+      - launch
+      - available
+      - api
+      - model
+
+  - id: pytorch-blog
+    name: PyTorch Blog
+    category: "AI tools & model releases"
+    url: https://pytorch.org/blog/feed.xml
+    include_keywords:
+      - release
+      - introduces
+      - introducing
+      - supports
+      - support
+      - adds
+      - update
+      - available
 
   # AWS ML blog is great but very long-form and can dominate the AI tools section.
   # Prefer AWS "What's New" (filtered to AI/GenAI keywords) for concise product updates.
@@ -244,6 +291,51 @@ sources:
     name: GitHub Releases - microsoft/autogen
     category: "AI tools & model releases"
     github_repo: microsoft/autogen
+
+  - id: gh-semantic-kernel
+    name: GitHub Releases - microsoft/semantic-kernel
+    category: "AI tools & model releases"
+    github_repo: microsoft/semantic-kernel
+
+  - id: gh-langchain
+    name: GitHub Releases - langchain-ai/langchain
+    category: "AI tools & model releases"
+    github_repo: langchain-ai/langchain
+
+  - id: gh-llamaindex
+    name: GitHub Releases - run-llama/llama_index
+    category: "AI tools & model releases"
+    github_repo: run-llama/llama_index
+
+  - id: gh-transformers
+    name: GitHub Releases - huggingface/transformers
+    category: "AI tools & model releases"
+    github_repo: huggingface/transformers
+
+  - id: gh-diffusers
+    name: GitHub Releases - huggingface/diffusers
+    category: "AI tools & model releases"
+    github_repo: huggingface/diffusers
+
+  - id: gh-tgi
+    name: GitHub Releases - huggingface/text-generation-inference
+    category: "AI tools & model releases"
+    github_repo: huggingface/text-generation-inference
+
+  - id: gh-tensorrt-llm
+    name: GitHub Releases - NVIDIA/TensorRT-LLM
+    category: "AI tools & model releases"
+    github_repo: NVIDIA/TensorRT-LLM
+
+  - id: gh-onnxruntime
+    name: GitHub Releases - microsoft/onnxruntime
+    category: "AI tools & model releases"
+    github_repo: microsoft/onnxruntime
+
+  - id: gh-open-webui
+    name: GitHub Releases - open-webui/open-webui
+    category: "AI tools & model releases"
+    github_repo: open-webui/open-webui
 
   - id: gh-open-webui
     name: GitHub Releases - open-webui/open-webui

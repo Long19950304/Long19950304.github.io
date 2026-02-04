@@ -1,0 +1,68 @@
+==== Attach images (4 cards) ====
+News EN: /Volumes/long1/desk1/找工作/personal-site/assets/img/digests/2026-02-04-en.png
+News ZH: /Volumes/long1/desk1/找工作/personal-site/assets/img/digests/2026-02-04-zh.png
+AI EN:   /Volumes/long1/desk1/找工作/personal-site/assets/img/digests/2026-02-04-ai-en.png
+AI ZH:   /Volumes/long1/desk1/找工作/personal-site/assets/img/digests/2026-02-04-ai-zh.png
+
+==== LinkedIn (copy/paste) ====
+Daily Digest - 2026-02-04
+
+Cards attached (EN + Chinese card).
+
+Today: Can Tesla make its own chips? · Nvidia's $100 billion OpenAI deal has seemingly vanished.
+
+Links (full list): https://www.zhaozhilong.com/digest/2026-02-04/
+
+Links:
+
+- Can Tesla make its own chips?
+  https://www.ft.com/content/51ea8ce1-e088-4c37-bcc5-8dd2edacda94
+- US stocks drop on fears AI will hit software and analytics groups
+  https://www.ft.com/content/48ec5657-c2e7-4111-a236-24a96a8d49e7
+- Nvidia's $100 billion OpenAI deal has seemingly vanished
+  https://arstechnica.com/information-technology/2026/02/five-months-later-nvidias-100-billion-openai-investment-plan-has-fizzled-out/
+- Walmart becomes first retailer to hit $1tn market value
+  https://www.bbc.com/news/articles/cvgp7ry9evwo?at_medium=RSS&at_campaign=rss
+- Xcode 26.3 adds support for Claude, Codex, and other agentic tools via MCP
+  https://arstechnica.com/apple/2026/02/xcode-26-3-adds-support-for-claude-codex-and-other-agentic-tools-via-mcp/
+- Homeland Security is trying to force tech companies to hand over data about Trump critics
+  https://techcrunch.com/2026/02/03/homeland-security-is-trying-to-force-tech-companies-to-hand-over-data-about-trump-critics/
+- Google court filings suggest ChromeOS has an expiration date
+  https://arstechnica.com/google/2026/02/google-court-filings-suggest-googles-chromeos-has-an-expiration-date/
+- Department of Justice appeals Google search monopoly ruling
+  https://www.theverge.com/tech/873438/google-antitrust-case-doj-states-appeal
+- Notepad++ supply chain attack breakdown
+  https://securelist.com/notepad-supply-chain-attack/118708/
+- AliSQL: Alibaba's open-source MySQL with vector and DuckDB engines
+  https://github.com/alibaba/AliSQL
+
+==== X thread (copy/paste) ====
+
+--- Tweet 1/5 ---
+Daily Digest (2026-02-04). Cards: EN + Chinese.
+Today: Can Tesla make its own chips? · Nvidia's $100 billion OpenAI deal has seemingly vanished.
+Full list: https://www.zhaozhilong.com/digest/2026-02-04/
+Links below.
+
+
+--- Tweet 2/5 ---
+US stocks drop on fears AI will hit software and analytics groups: https://www.ft.com/content/48ec5657-c2e7-4111-a236-24a96a8d49e7
+Walmart becomes first retailer to hit $1tn market value: https://www.bbc.com/news/articles/cvgp7ry9evwo?at_medium=RSS&at_campaign=rss
+Xcode 26.3 adds support for Claude, Codex, and other agentic tools via…: https://arstechnica.com/apple/2026/02/xcode-26-3-adds-support-for-claude-codex-and-other-agentic-tools-via-mcp/
+
+
+--- Tweet 3/5 ---
+Department of Justice appeals Google search monopoly ruling: https://www.theverge.com/tech/873438/google-antitrust-case-doj-states-appeal
+Google court filings suggest ChromeOS has an expiration date: https://arstechnica.com/google/2026/02/google-court-filings-suggest-googles-chromeos-has-an-expiration-date/
+Nvidia's $100 billion OpenAI deal has seemingly vanished: https://arstechnica.com/information-technology/2026/02/five-months-later-nvidias-100-billion-openai-investment-plan-has-fizzled-out/
+
+
+--- Tweet 4/5 ---
+Can Tesla make its own chips?: https://www.ft.com/content/51ea8ce1-e088-4c37-bcc5-8dd2edacda94
+AliSQL: Alibaba's open-source MySQL with vector and DuckDB engines: https://github.com/alibaba/AliSQL
+Notepad++ supply chain attack breakdown: https://securelist.com/notepad-supply-chain-attack/118708/
+
+
+--- Tweet 5/5 ---
+Homeland Security is trying to force tech companies to hand over data a…: https://techcrunch.com/2026/02/03/homeland-security-is-trying-to-force-tech-companies-to-hand-over-data-about-trump-critics/
+

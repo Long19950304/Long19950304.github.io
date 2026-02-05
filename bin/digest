@@ -983,9 +983,17 @@ def _draft_items(
     by_src: dict[str, int] = {}
     by_dom: dict[str, int] = {}
     out: list[dict[str, Any]] = []
+    seen_final_url: set[str] = set()
+    seen_final_title: set[str] = set()
 
     def _try_add(it: dict[str, Any]) -> bool:
         if len(out) >= total:
+            return False
+        url = (it.get("url") or "").strip()
+        tnorm = _norm(it.get("title", ""))
+        if url and url in seen_final_url:
+            return False
+        if tnorm and tnorm in seen_final_title:
             return False
         src = (it.get("source") or "").strip()
         dom = (urlparse((it.get("url") or "").strip()).netloc or "").lower()
@@ -995,6 +1003,10 @@ def _draft_items(
         if dom and by_dom.get(dom, 0) >= cap_dom:
             return False
         out.append(it)
+        if url:
+            seen_final_url.add(url)
+        if tnorm:
+            seen_final_title.add(tnorm)
         if src:
             by_src[src] = by_src.get(src, 0) + 1
         if dom:

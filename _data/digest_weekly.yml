@@ -558,6 +558,7 @@ weeks:
   issues:
   - '2026-02-02'
   - '2026-02-04'
+  - '2026-02-05'
   highlights_news:
   - date: '2026-02-02'
     url: https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/
@@ -630,6 +631,42 @@ weeks:
     category: Tech industry
     source: The Verge
     published_utc: '2026-02-03T22:40:47+00:00'
+  - date: '2026-02-05'
+    url: https://www.ft.com/content/27fc8a66-3bbb-409f-8f54-93bce8d67b85
+    title: White House seeks critical minerals trade zone to curb China’s dominance
+    title_zh: 白宫寻求建立关键矿产贸易区以遏制中国主导地位
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-04T19:53:43+00:00'
+  - date: '2026-02-05'
+    url: https://arstechnica.com/security/2026/02/russian-state-hackers-exploit-office-vulnerability-to-infect-computers/
+    title: Microsoft releases urgent Office patch. Russian-state hackers pounce.
+    title_zh: 微软发布紧急Office补丁，俄国家黑客趁机攻击
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-02-04T23:08:04+00:00'
+  - date: '2026-02-05'
+    url: https://techcrunch.com/2026/02/04/hackers-publish-personal-information-stolen-during-harvard-upenn-data-breaches/
+    title: Hackers publish personal information stolen during Harvard, UPenn data
+      breaches
+    title_zh: 黑客公开哈佛、宾大数据泄露事件中的被盗个人信息
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-04T17:56:37+00:00'
+  - date: '2026-02-05'
+    url: https://www.technologyreview.com/2026/02/04/1131014/from-guardrails-to-governance-a-ceos-guide-for-securing-agentic-systems/
+    title: 'From guardrails to governance: A CEO’s guide for securing agentic systems'
+    title_zh: 从防护到治理：CEO守护代理系统的指南
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-02-04T14:00:00+00:00'
+  - date: '2026-02-05'
+    url: https://www.theguardian.com/politics/2026/feb/05/minister-luke-pollard-defends-long-delays-uk-military-spending-plan
+    title: Minister defends long delays to UK military spending plan
+    title_zh: 英国防长为军事开支计划长期延误辩护
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-05T00:01:15+00:00'
   highlights_ai:
   - date: '2026-02-02'
     url: https://the-decoder.com/chinese-ai-companies-rush-to-ship-new-models-before-lunar-new-year/
@@ -680,3 +717,32 @@ weeks:
     category: AI tools & model releases
     source: Apple Newsroom
     published_utc: '2026-02-03T18:04:08+00:00'
+  - date: '2026-02-05'
+    url: https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.26
+    title: 'modelcontextprotocol/servers: Release 2026.1.26'
+    title_zh: 'modelcontextprotocol/servers: 2026.1.26版本发布'
+    category: AI tools & model releases
+    source: GitHub Releases - modelcontextprotocol/servers
+    published_utc: '2026-01-27T12:11:26+00:00'
+  - date: '2026-02-05'
+    url: https://the-decoder.com/chinese-ai-video-model-kling-3-0-takes-another-step-toward-usable-creative-assets/
+    title: Chinese AI video model Kling 3.0 takes another step toward usable creative
+      assets
+    title_zh: 中国AI视频模型Kling 3.0向实用创意资产迈进新一步
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-04T17:49:41+00:00'
+  - date: '2026-02-05'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.1
+    title: 'anthropics/anthropic-sdk-python: v0.77.1'
+    title_zh: 'anthropics/anthropic-sdk-python: v0.77.1版本'
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-02-03T17:43:49+00:00'
+  - date: '2026-02-05'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.72.1
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.72.1'
+    title_zh: 'anthropics/anthropic-sdk-typescript: sdk v0.72.1版本'
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-01-30T00:32:35+00:00'

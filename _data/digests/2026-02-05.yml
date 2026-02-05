@@ -1,0 +1,291 @@
+date: '2026-02-05'
+title: Daily Digest - 2026-02-05
+title_zh: 每日简报 - 2026-02-05
+note: 'Today: White House seeks critical minerals trade zone to curb China’s… · Microsoft
+  releases urgent Office patch. Russian-state hackers p… · AI: modelcontextprotocol/servers:
+  Release 2026.1.26.'
+note_zh: '今日关注：白宫寻求建立关键矿产贸易区以遏制中国主导地位；微软发布紧急Office补丁，俄国家黑客趁机攻击；AI：modelcontextprotocol/servers:
+  202…。'
+items:
+- category: Business & economy
+  title: White House seeks critical minerals trade zone to curb China’s dominance
+  why: Effort marks rare instance of Trump administration aiming to collaborate with
+    global allies on trade
+  takeaway: Effort marks rare instance of Trump administration aiming to collaborate
+    with global allies on trade
+  prompt: ''
+  url: https://www.ft.com/content/27fc8a66-3bbb-409f-8f54-93bce8d67b85
+  source: Financial Times - World
+  published_utc: '2026-02-04T19:53:43+00:00'
+  title_zh: 白宫寻求建立关键矿产贸易区以遏制中国主导地位
+  why_zh: 特朗普政府罕见地尝试与全球盟友在贸易领域展开合作。
+  takeaway_zh: 特朗普政府罕见地尝试与全球盟友在贸易领域展开合作。
+  prompt_zh: ''
+- category: Security
+  title: Microsoft releases urgent Office patch. Russian-state hackers pounce.
+  why: The window to patch vulnerabilities is shrinking rapidly.
+  takeaway: The window to patch vulnerabilities is shrinking rapidly.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/02/russian-state-hackers-exploit-office-vulnerability-to-infect-computers/
+  source: Ars Technica
+  published_utc: '2026-02-04T23:08:04+00:00'
+  title_zh: 微软发布紧急Office补丁，俄国家黑客趁机攻击
+  why_zh: 修补漏洞的时间窗口正在迅速缩小。
+  takeaway_zh: 修补漏洞的时间窗口正在迅速缩小。
+  prompt_zh: ''
+- category: Tech industry
+  title: Hackers publish personal information stolen during Harvard, UPenn data breaches
+  why: The prolific cybercrime group ShinyHunters took responsibility for hacking
+    Harvard and the University of Pennsylvania, and published the st…
+  takeaway: The prolific cybercrime group ShinyHunters took responsibility for hacking
+    Harvard and the University of Pennsylvania, and published the stolen data on its
+    extortion website.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/04/hackers-publish-personal-information-stolen-during-harvard-upenn-data-breaches/
+  source: TechCrunch
+  published_utc: '2026-02-04T17:56:37+00:00'
+  title_zh: 黑客公开哈佛、宾大数据泄露事件中的被盗个人信息
+  why_zh: 多产的网络犯罪组织ShinyHunters声称对哈佛大学和宾夕法尼亚大学的黑客攻击负责，并公布了被盗数据……
+  takeaway_zh: 多产的网络犯罪组织ShinyHunters声称对哈佛大学和宾夕法尼亚大学的黑客攻击负责，并在其勒索网站上公布了被盗数据。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'From guardrails to governance: A CEO’s guide for securing agentic systems'
+  why: The previous article in this series, “Rules fail at the prompt, succeed at
+    the boundary,” focused on the first AI-orchestrated espionage ca…
+  takeaway: 'The previous article in this series, “Rules fail at the prompt, succeed
+    at the boundary,” focused on the first AI-orchestrated espionage campaign and
+    the failure of prompt-level control. This article is the prescription. The question
+    every CEO is now getting from their board is some version of: What do we do about
+    agent risk? Across…'
+  prompt: ''
+  url: https://www.technologyreview.com/2026/02/04/1131014/from-guardrails-to-governance-a-ceos-guide-for-securing-agentic-systems/
+  source: MIT Technology Review
+  published_utc: '2026-02-04T14:00:00+00:00'
+  title_zh: 从防护到治理：CEO守护代理系统的指南
+  why_zh: 本系列前一篇文章《规则在提示处失效，在边界处成功》聚焦于首起AI策划的间谍活动……
+  takeaway_zh: 本系列前一篇文章《规则在提示处失效，在边界处成功》聚焦于首起AI策划的间谍活动及提示层面控制的失败。本文为解决方案。每位CEO现在从董事会收到的提问都是某种形式的：我们该如何应对代理风险？……
+  prompt_zh: ''
+- category: Business & economy
+  title: Minister defends long delays to UK military spending plan
+  why: Luke Pollard says blueprint expected last autumn is ‘a bigger task than many
+    people outside defence realise’ A government minister has defe…
+  takeaway: Luke Pollard says blueprint expected last autumn is ‘a bigger task than
+    many people outside defence realise’ A government minister has defended long delays
+    to a military spending plan that are also stalling the UK’s next-generation Tempest
+    fighter jet programme, but refused to say when it will be complete. The defence
+    investment plan (DIP), originally expec…
+  prompt: ''
+  url: https://www.theguardian.com/politics/2026/feb/05/minister-luke-pollard-defends-long-delays-uk-military-spending-plan
+  source: The Guardian - Business
+  published_utc: '2026-02-05T00:01:15+00:00'
+  title_zh: 英国防长为军事开支计划长期延误辩护
+  why_zh: Luke Pollard表示，去年秋季预期的蓝图是‘一项比许多国防领域外人士所意识到的更为艰巨的任务’。一位政府部长为军事支出计划的长期拖延辩护，该计划也阻碍了英国下一代Tempest战斗机项目的进展，但拒绝透露何时完成。国防投资计划（DIP）最初预计……
+  takeaway_zh: Luke Pollard表示，去年秋季预期的蓝图是‘一项比许多国防领域外人士所意识到的更为艰巨的任务’。一位政府部长为军事支出计划的长期拖延辩护，该计划也阻碍了英国下一代Tempest战斗机项目的进展，但拒绝透露何时完成。国防投资计划（DIP）最初预计……
+  prompt_zh: ''
+- category: Tech industry
+  title: Sam Altman responds to Anthropic’s ‘funny’ Super Bowl ads
+  why: Sam Altman responded to Anthropic's new Super Bowl ad in an X post on Wednesday,
+    saying the OpenAI competitor's campaign is "clearly dishon…
+  takeaway: Sam Altman responded to Anthropic's new Super Bowl ad in an X post on
+    Wednesday, saying the OpenAI competitor's campaign is "clearly dishonest," and
+    called it "on brand" for Anthropic to "doublespeak." "We would obviously never
+    run ads in the way Anthropic depicts them," he wrote. "We are not stupid and we
+    know our users […]
+  prompt: ''
+  url: https://www.theverge.com/news/874084/ai-chatgpt-claude-super-bowl-ads-openai-anthropic
+  source: The Verge
+  published_utc: '2026-02-04T21:03:05+00:00'
+  title_zh: Sam Altman回应Anthropic超级碗'滑稽'广告
+  why_zh: Sam Altman在周三的X帖子中回应了Anthropic的新超级碗广告，称OpenAI竞争对手的广告活动‘明显不诚实’，并称Anthropic‘双重标准’是其‘品牌特色’。他写道：‘我们显然不会以Anthropic描绘的方式投放广告。我们并不愚蠢，我们了解我们的用户……’
+  takeaway_zh: Sam Altman在周三的X帖子中回应了Anthropic的新超级碗广告，称OpenAI竞争对手的广告活动‘明显不诚实’，并称Anthropic‘双重标准’是其‘品牌特色’。他写道：‘我们显然不会以Anthropic描绘的方式投放广告。我们并不愚蠢，我们了解我们的用户……’
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic pledges to keep Claude ad-free while OpenAI moves forward with
+    ChatGPT advertising
+  why: Anthropic says Claude will stay ad-free, unlike OpenAI's ChatGPT, but the company
+    is exploring other ways to monetize AI conversations.
+  takeaway: Anthropic says Claude will stay ad-free, unlike OpenAI's ChatGPT, but
+    the company is exploring other ways to monetize AI conversations. The article
+    Anthropic pledges to keep Claude ad-free while OpenAI moves forward with ChatGPT
+    advertising appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/anthropic-pledges-to-keep-claude-ad-free-while-openai-moves-forward-with-chatgpt-advertising/
+  source: The Decoder (AI)
+  published_utc: '2026-02-04T16:25:09+00:00'
+  title_zh: Anthropic承诺保持Claude无广告，OpenAI则推进ChatGPT广告业务
+  why_zh: Anthropic表示，Claude将保持无广告，与OpenAI的ChatGPT不同，但公司正在探索其他方式将AI对话货币化。
+  takeaway_zh: Anthropic表示，Claude将保持无广告，与OpenAI的ChatGPT不同，但公司正在探索其他方式将AI对话货币化。文章《Anthropic承诺保持Claude无广告，而OpenAI推进ChatGPT广告》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI frontier
+  title: Navigating health questions with ChatGPT
+  why: A family shares how ChatGPT helped them prepare for critical cancer treatment
+    decisions for their son alongside expert guidance from his do…
+  takeaway: A family shares how ChatGPT helped them prepare for critical cancer treatment
+    decisions for their son alongside expert guidance from his doctors.
+  prompt: ''
+  url: https://openai.com/index/navigating-health-questions
+  source: OpenAI Blog
+  published_utc: '2026-02-05T00:00:00+00:00'
+  title_zh: 使用ChatGPT解答健康问题的技巧
+  why_zh: 一个家庭分享了ChatGPT如何帮助他们为儿子的关键癌症治疗决策做准备，同时结合了医生的专业指导。
+  takeaway_zh: 一个家庭分享了ChatGPT如何帮助他们为儿子的关键癌症治疗决策做准备，同时结合了医生的专业指导。
+  prompt_zh: ''
+- category: AI frontier
+  title: '[AINews] Context Graphs and Agent Traces'
+  why: a quiet day lets us feature a bubbling topic.
+  takeaway: a quiet day lets us feature a bubbling topic.
+  prompt: ''
+  url: https://www.latent.space/p/ainews-context-graphs-hype-or-actually
+  source: Latent Space (AI newsletter)
+  published_utc: '2026-02-04T03:13:58+00:00'
+  title_zh: '[AINews]上下文图谱与代理追踪'
+  why_zh: 平静的一天让我们得以聚焦一个热议话题。
+  takeaway_zh: 平静的一天让我们得以聚焦一个热议话题。
+  prompt_zh: ''
+- category: Education / learning sciences / edtech
+  title: 'A labeled dataset of simulated phlebotomy procedures for medical AI: polygon
+    annotations for object detection and human-object interaction'
+  why: This data article presents a dataset of 11,884 labeled images documenting a
+    simulated blood extraction (phlebotomy) procedure performed on…
+  takeaway: This data article presents a dataset of 11,884 labeled images documenting
+    a simulated blood extraction (phlebotomy) procedure performed on a training arm.
+    Images were extracted from high-definition videos recorded under controlled conditions
+    and curated to reduce redundancy using Structural Similarity Index Measure (SSIM)
+    filtering. An automated face-anonym…
+  prompt: ''
+  url: https://arxiv.org/abs/2602.04624v1
+  source: 'arXiv search: education AND (LLM OR AI)'
+  published_utc: '2026-02-04T14:54:46+00:00'
+  title_zh: 医疗AI模拟抽血程序标注数据集：目标检测与人机交互的多边形标注
+  why_zh: 本文展示了一个包含11,884张标注图像的数据集，记录了在训练手臂上进行的模拟采血（静脉穿刺）过程。图像从高清视频中提取，在受控条件下录制，并通过结构相似性指数（SSIM）过滤以减少冗余。自动面部匿名……
+  takeaway_zh: 本文展示了一个包含11,884张标注图像的数据集，记录了在训练手臂上进行的模拟采血（静脉穿刺）过程。图像从高清视频中提取，在受控条件下录制，并通过结构相似性指数（SSIM）过滤以减少冗余。自动面部匿名……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerating Long-Context Model Training in JAX and XLA
+  why: Large language models (LLMs) are rapidly expanding their context windows, with
+    recent models supporting sequences of 128K tokens, 256K toke…
+  takeaway: Large language models (LLMs) are rapidly expanding their context windows,
+    with recent models supporting sequences of 128K tokens, 256K tokens, and beyond....
+  prompt: ''
+  url: https://developer.nvidia.com/blog/accelerating-long-context-model-training-in-jax-and-xla/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-03T17:30:00+00:00'
+  title_zh: 加速JAX和XLA中的长上下文模型训练
+  why_zh: 大型语言模型（LLMs）正迅速扩展其上下文窗口，近期模型支持128K、256K甚至更多token的序列……
+  takeaway_zh: 大型语言模型（LLMs）的上下文窗口正在迅速扩大，最新的模型支持128K个令牌、256K个令牌，甚至更多...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'modelcontextprotocol/servers: Release 2026.1.26'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.26
+  source: GitHub Releases - modelcontextprotocol/servers
+  published_utc: '2026-01-27T12:11:26+00:00'
+  title_zh: 'modelcontextprotocol/servers: 2026.1.26版本发布'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Chinese AI video model Kling 3.0 takes another step toward usable creative
+    assets
+  why: Kling AI launches video model 3.0 with longer clips, improved character consistency,
+    and 4K image generation.
+  takeaway: Kling AI launches video model 3.0 with longer clips, improved character
+    consistency, and 4K image generation. The article Chinese AI video model Kling
+    3.0 takes another step toward usable creative assets appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/chinese-ai-video-model-kling-3-0-takes-another-step-toward-usable-creative-assets/
+  source: The Decoder (AI)
+  published_utc: '2026-02-04T17:49:41+00:00'
+  title_zh: 中国AI视频模型Kling 3.0向实用创意资产迈进新一步
+  why_zh: Kling AI推出视频模型3.0，支持更长的片段、改进的角色一致性和4K图像生成。
+  takeaway_zh: 克莱丁AI推出视频模型3.0，支持更长的片段、增强的人物一致性以及4K图像生成。文章《Chinese AI视频模型克莱丁3.0迈向实用创作素材》首发于The
+    Decoder 。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.77.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.1
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-02-03T17:43:49+00:00'
+  title_zh: 'anthropics/anthropic-sdk-python: v0.77.1版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.72.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.72.1
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-01-30T00:32:35+00:00'
+  title_zh: 'anthropics/anthropic-sdk-typescript: sdk v0.72.1版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==1.2.8'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.8
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-02T15:59:10+00:00'
+  title_zh: 'langchain-ai/langchain: langchain==1.2.8版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: python-1.39.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/python-1.39.3
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-02-02T01:33:49+00:00'
+  title_zh: 'microsoft/semantic-kernel: python-1.39.3版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.15.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.15.4
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-01T23:13:41+00:00'
+  title_zh: 'ollama/ollama: v0.15.4版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.0-patch2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-01-30T00:37:30+00:00'
+  title_zh: 'BerriAI/litellm: v1.81.0-patch2版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'huggingface/transformers: Transformers v5'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/transformers/releases/tag/v5.0.0
+  source: GitHub Releases - huggingface/transformers
+  published_utc: '2026-01-26T10:17:10+00:00'
+  title_zh: 'huggingface/transformers: Transformers v5版本'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''

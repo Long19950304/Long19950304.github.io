@@ -224,8 +224,8 @@ sources:
     url: https://simonwillison.net/atom/everything/
 
   - id: latent-space
-    name: Latent Space (LLM/tools)
-    category: "AI tools & model releases"
+    name: Latent Space (AI newsletter)
+    category: "AI frontier"
     url: https://www.latent.space/feed
 
   # Aggregators / AI news with frequent tool/model announcements
@@ -337,11 +337,6 @@ sources:
     category: "AI tools & model releases"
     github_repo: open-webui/open-webui
 
-  - id: gh-open-webui
-    name: GitHub Releases - open-webui/open-webui
-    category: "AI tools & model releases"
-    github_repo: open-webui/open-webui
-
   - id: gh-comfyui
     name: GitHub Releases - comfyanonymous/ComfyUI
     category: "AI tools & model releases"
@@ -352,35 +347,10 @@ sources:
     category: "AI tools & model releases"
     github_repo: AUTOMATIC1111/stable-diffusion-webui
 
-  - id: gh-langchain
-    name: GitHub Releases - langchain-ai/langchain
-    category: "AI tools & model releases"
-    github_repo: langchain-ai/langchain
-
-  - id: gh-llamaindex
-    name: GitHub Releases - run-llama/llama_index
-    category: "AI tools & model releases"
-    github_repo: run-llama/llama_index
-
   - id: gh-litellm
     name: GitHub Releases - BerriAI/litellm
     category: "AI tools & model releases"
     github_repo: BerriAI/litellm
-
-  - id: gh-openai-python
-    name: GitHub Releases - openai/openai-python
-    category: "AI tools & model releases"
-    github_repo: openai/openai-python
-
-  - id: gh-openai-node
-    name: GitHub Releases - openai/openai-node
-    category: "AI tools & model releases"
-    github_repo: openai/openai-node
-
-  - id: google-ai-blog
-    name: Google AI Blog
-    category: "AI frontier"
-    url: https://ai.googleblog.com/feeds/posts/default
 
   - id: arxiv-health-literacy
     name: "arXiv search: health literacy"

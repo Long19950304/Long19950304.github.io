@@ -1,0 +1,30 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+
+  <link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="{{ site.url }}{{ site.baseurl }}/" rel="alternate" type="text/html" hreflang="en"/>
+
+  {%- assign digests = site.digests | where: "lang", "en" | sort: "digest_date" | reverse -%}
+  {%- assign latest = digests.first -%}
+
+  <updated>{% if latest %}{{ latest.digest_date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</updated>
+  <id>{{ site.url }}{{ site.baseurl }}/feed.xml</id>
+  <title type="html">{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+
+  {%- for d in digests limit: 20 -%}
+  <entry>
+    <title type="html">{{ d.title | xml_escape }}</title>
+    <link href="{{ site.url }}{{ d.url }}"/>
+    <id>{{ site.url }}{{ d.url }}</id>
+    <updated>{{ d.digest_date | date_to_xmlschema }}</updated>
+    <summary type="html">{{ d.note | default: d.title | strip_html | xml_escape }}</summary>
+  </entry>
+  {%- endfor -%}
+</feed>
+

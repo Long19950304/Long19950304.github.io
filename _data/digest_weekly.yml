@@ -559,6 +559,7 @@ weeks:
   - '2026-02-02'
   - '2026-02-04'
   - '2026-02-05'
+  - '2026-02-06'
   highlights_news:
   - date: '2026-02-02'
     url: https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/
@@ -667,6 +668,42 @@ weeks:
     category: Business & economy
     source: The Guardian - Business
     published_utc: '2026-02-05T00:01:15+00:00'
+  - date: '2026-02-06'
+    url: https://www.ft.com/content/99af4279-dabf-469d-bc4a-77579a73e393
+    title: Trump calls for new nuclear treaty with Russia as New Start expires
+    title_zh: 特朗普呼吁与俄罗斯达成新核协议，《新削减战略武器条约》到期
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-05T21:15:28+00:00'
+  - date: '2026-02-06'
+    url: https://www.ft.com/content/e036870a-8335-4ba5-9262-1dd4f31907b0
+    title: Prediction market Kalshi seeks US approval to offer margin trades
+    title_zh: 预测市场Kalshi寻求美国批准提供保证金交易
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-02-05T20:58:14+00:00'
+  - date: '2026-02-06'
+    url: https://www.bbc.com/news/articles/c150e144we3o?at_medium=RSS&at_campaign=rss
+    title: Amazon shares tumble as it joins the Big Tech AI spending spree
+    title_zh: 亚马逊加入科技巨头AI军备竞赛导致股价暴跌
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-06T00:06:56+00:00'
+  - date: '2026-02-06'
+    url: https://www.bbc.com/news/articles/c5y46356zzyo?at_medium=RSS&at_campaign=rss
+    title: Can robots ever be graceful?
+    title_zh: 机器人能拥有优雅气质吗？
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-06T00:05:05+00:00'
+  - date: '2026-02-06'
+    url: https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/
+    title: OpenAI launches new agentic coding model only minutes after Anthropic drops
+      its own
+    title_zh: OpenAI在Anthropic发布自家模型仅数分钟后，便推出全新自主编程模型
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-05T20:01:39+00:00'
   highlights_ai:
   - date: '2026-02-02'
     url: https://the-decoder.com/chinese-ai-companies-rush-to-ship-new-models-before-lunar-new-year/
@@ -746,3 +783,40 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-01-30T00:32:35+00:00'
+  - date: '2026-02-06'
+    url: https://the-decoder.com/openais-new-coding-model-gpt-5-3-codex-helped-build-itself-during-training-and-deployment/
+    title: OpenAI's new coding model GPT-5.3-Codex helped build itself during training
+      and deployment
+    title_zh: OpenAI新编码模型GPT-5.3-Codex在训练与部署过程中自我构建
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-05T20:01:59+00:00'
+  - date: '2026-02-06'
+    url: https://github.com/openai/openai-node/releases/tag/v6.18.0
+    title: 'openai/openai-node: v6.18.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-05T16:27:40+00:00'
+  - date: '2026-02-06'
+    url: https://github.com/openai/openai-python/releases/tag/v2.17.0
+    title: 'openai/openai-python: v2.17.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-02-05T16:26:56+00:00'
+  - date: '2026-02-06'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.12.3
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.12.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-05T07:04:07+00:00'
+  - date: '2026-02-06'
+    url: https://the-decoder.com/claude-opus-4-6-brings-one-million-token-context-window-to-anthropics-flagship-model/
+    title: Claude Opus 4.6 brings one million token context window to Anthropic's
+      flagship model
+    title_zh: Claude Opus 4.6为Anthropic旗舰模型带来百万级token上下文窗口
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-05T19:10:33+00:00'

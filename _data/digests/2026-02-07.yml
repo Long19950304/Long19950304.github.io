@@ -1,0 +1,1173 @@
+date: '2026-02-07'
+title: Daily Digest - 2026-02-07
+title_zh: 每日简报 - 2026-02-07
+note: 'Today: Trump is pushing to end war in Ukraine by June, Zelenskyy says · Cost
+  of UK pet insurance falls despite higher vet fees and infl… · AI: openai/openai-node:
+  v6.18.0.'
+note_zh: '今日关注：泽连斯基称特朗普正推动在6月前结束乌克兰战争；尽管兽医费用和通胀上升，英国宠物保险费用却下降；AI：openai/openai-node:
+  v6.18.0。'
+items:
+- category: AI tools & model releases
+  title: Japan's lower house election becomes a testing ground for generative AI misinformation
+  why: AI-generated fake videos are spreading rapidly across Japanese social media
+    during the lower house election campaign.
+  takeaway: AI-generated fake videos are spreading rapidly across Japanese social
+    media during the lower house election campaign. In a survey, more than half of
+    respondents believed fake news to be true. But Japan is far from the only democracy
+    facing this problem. The article Japan's lower house election becomes a testing
+    ground for generative AI misinformation appear…
+  prompt: ''
+  url: https://the-decoder.com/japans-lower-house-election-becomes-a-testing-ground-for-generative-ai-misinformation/
+  source: The Decoder (AI)
+  published_utc: '2026-02-07T10:14:57+00:00'
+  title_zh: 日本众议院选举成为生成式AI虚假信息的试验场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.0-stable.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-stable.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-07T02:36:15+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.0-patch3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch3
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-06T18:35:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Browser now supports browser profiles
+  why: Amazon Bedrock AgentCore Browser now supports browser profiles, enabling you
+    to reuse authentication state across multiple browser sessions…
+  takeaway: Amazon Bedrock AgentCore Browser now supports browser profiles, enabling
+    you to reuse authentication state across multiple browser sessions without repeated
+    login flows. This feature reduces session setup time from minutes to tens of seconds
+    for enterprise customers processing hundreds or thousands of automated browser
+    sessions daily. Browser profiles persi…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-agentcore-browser-profiles
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-06T17:00:00+00:00'
+  title_zh: Amazon Bedrock AgentCore 浏览器现支持浏览器配置文件
+  why_zh: Amazon Bedrock AgentCore浏览器现支持浏览器配置文件，可跨会话复用认证状态...
+  takeaway_zh: Amazon Bedrock AgentCore浏览器现支持浏览器配置文件，使您能够在多个浏览器会话中重复使用认证状态，无需重复登录流程。该功能将企业客户每天处理数百或数千个自动化浏览器会话的会话设置时间从几分钟缩短至几十秒。浏览器配置文件持久化...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Config now supports 30 new resource types
+  why: AWS Config now supports 30 additional AWS resource types across key services
+    including Amazon EKS, Amazon Q, and AWS IoT.
+  takeaway: AWS Config now supports 30 additional AWS resource types across key services
+    including Amazon EKS, Amazon Q, and AWS IoT. This expansion provides greater coverage
+    over your AWS environment, enabling you to more effectively discover, assess,
+    audit, and remediate an even broader range of resources. With this launch, if
+    you have enabled recording for all resou…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-config-new-resource-types
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-06T16:00:00+00:00'
+  title_zh: AWS Config 现支持30种新资源类型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 3 Ways NVFP4 Accelerates AI Training and Inference
+  why: The latest AI models continue to grow in size and complexity, demanding increasing
+    amounts of compute performance for training and inferenc…
+  takeaway: The latest AI models continue to grow in size and complexity, demanding
+    increasing amounts of compute performance for training and inference—far beyond
+    what...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-06T16:00:00+00:00'
+  title_zh: NVFP4加速AI训练与推理的3种方式
+  why_zh: 最新AI模型规模与复杂度持续增长，对训练和推理所需的计算性能要求不断提高...
+  takeaway_zh: 最新的AI模型在规模和复杂性上持续增长，对训练和推理所需的计算性能提出了越来越高的要求——远超...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==1.2.9'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.9
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-06T12:39:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Making AI work for everyone, everywhere: our approach to localization'
+  why: OpenAI shares its approach to AI localization, showing how globally shared
+    frontier models can be adapted to local languages, laws, and cul…
+  takeaway: OpenAI shares its approach to AI localization, showing how globally shared
+    frontier models can be adapted to local languages, laws, and cultures without
+    compromising safety.
+  prompt: ''
+  url: https://openai.com/index/our-approach-to-localization
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-06T10:00:00+00:00'
+  title_zh: 让AI为全球每个人服务：我们的本地化策略
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/onnxruntime: ONNX Runtime v1.24.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/onnxruntime/releases/tag/v1.24.1
+  source: GitHub Releases - microsoft/onnxruntime
+  published_utc: '2026-02-06T00:00:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.80.0-stable.opus-4-6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.80.0-stable.opus-4-6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-05T19:56:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 G6e instances now available in the UAE region
+  why: Starting today, the Amazon EC2 G6e instances powered by NVIDIA L40S Tensor
+    Core GPUs is now available in Middle East (UAE) Region.
+  takeaway: Starting today, the Amazon EC2 G6e instances powered by NVIDIA L40S Tensor
+    Core GPUs is now available in Middle East (UAE) Region. G6e instances can be used
+    for a wide range of machine learning and spatial computing use cases. Customers
+    can use G6e instances to deploy large language models (LLMs) and diffusion models
+    for generating images, video, and audio.…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-g6e-instances-uae-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-05T19:30:00+00:00'
+  title_zh: Amazon EC2 G6e实例现已在阿联酋地区上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon WorkSpaces launches Graphics G6, Gr6, and G6f bundles
+  why: Today, Amazon WorkSpaces announces the availability of 12 new Graphics G6,
+    Gr6, and G6f WorkSpaces bundles built on the Amazon EC2 G6 famil…
+  takeaway: Today, Amazon WorkSpaces announces the availability of 12 new Graphics
+    G6, Gr6, and G6f WorkSpaces bundles built on the Amazon EC2 G6 family. These bundles
+    expand customers’ options for running graphics-intensive and GPU-accelerated workloads,
+    and are available on both Amazon WorkSpaces Personal and Amazon WorkSpaces Core.
+    The new bundles are designed to su…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-workspaces-personal-core-graphics-g6-gr6-g6f-bundles/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-05T18:00:00+00:00'
+  title_zh: Amazon WorkSpaces推出Graphics G6、Gr6和G6f捆绑包
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How to Build License-Compliant Synthetic Data Pipelines for AI Model Distillation
+  why: Specialized AI models are built to perform specific tasks or solve particular
+    problems.
+  takeaway: Specialized AI models are built to perform specific tasks or solve particular
+    problems. But if you’ve ever tried to fine-tune or distill a domain-specific...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/how-to-build-license-compliant-synthetic-data-pipelines-for-ai-model-distillation/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-05T18:00:00+00:00'
+  title_zh: 如何构建符合许可的合成数据管道用于AI模型蒸馏
+  why_zh: 专用AI模型专为执行特定任务或解决特定问题而构建
+  takeaway_zh: 专用AI模型旨在执行特定任务或解决特定问题。但如果你曾尝试微调或提炼领域特定的...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: foundry-sdk: v0.2.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.3
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-05T17:51:50+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: bedrock-sdk: v0.26.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.3
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-05T17:51:44+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: vertex-sdk: v0.14.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.3
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-05T17:51:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.78.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.78.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-02-05T17:51:33+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.73.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.73.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-05T17:51:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.18.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.18.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-02-05T16:27:40+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.17.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.17.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-02-05T16:26:56+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'huggingface/transformers: v5.1.0: EXAONE-MoE, PP-DocLayoutV3, Youtu-LLM,
+    GLM-OCR'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/transformers/releases/tag/v5.1.0
+  source: GitHub Releases - huggingface/transformers
+  published_utc: '2026-02-05T15:44:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.9'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.9
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-05T14:22:02+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How Painkiller RTX Uses Generative AI to Modernize Game Assets at Scale
+  why: Painkiller RTX sets a new standard for how small teams can balance massive
+    visual ambition with limited resources by integrating generative…
+  takeaway: Painkiller RTX sets a new standard for how small teams can balance massive
+    visual ambition with limited resources by integrating generative AI. By upscaling...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/how-painkiller-rtx-uses-generative-ai-to-modernize-game-assets-at-scale/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-05T14:00:00+00:00'
+  title_zh: Painkiller RTX如何利用生成式AI大规模现代化游戏资产
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GPT-5 lowers the cost of cell-free protein synthesis
+  why: An autonomous lab combining OpenAI’s GPT-5 with Ginkgo Bioworks’ cloud automation
+    cut cell-free protein synthesis costs by 40% through clos…
+  takeaway: An autonomous lab combining OpenAI’s GPT-5 with Ginkgo Bioworks’ cloud
+    automation cut cell-free protein synthesis costs by 40% through closed-loop experimentation.
+  prompt: ''
+  url: https://openai.com/index/gpt-5-lowers-protein-synthesis-cost
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-05T11:00:00+00:00'
+  title_zh: GPT-5降低无细胞蛋白质合成的成本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing Trusted Access for Cyber
+  why: OpenAI introduces Trusted Access for Cyber, a trust-based framework that expands
+    access to frontier cyber capabilities while strengthening…
+  takeaway: OpenAI introduces Trusted Access for Cyber, a trust-based framework that
+    expands access to frontier cyber capabilities while strengthening safeguards against
+    misuse.
+  prompt: ''
+  url: https://openai.com/index/trusted-access-for-cyber
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-05T10:00:00+00:00'
+  title_zh: 推出网络安全可信访问
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Claude Opus 4.6 now available in Amazon Bedrock
+  why: Starting today, Amazon Bedrock supports Claude Opus 4.6.
+  takeaway: Starting today, Amazon Bedrock supports Claude Opus 4.6. According to
+    Anthropic, Opus 4.6 is their most intelligent model and the world's best model
+    for coding, enterprise agents, and professional work. Claude Opus 4.6 brings advanced
+    capabilities to Amazon Bedrock customers, including industry-leading performance
+    for agentic tasks, complex coding projects,…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/2/claude-opus-4.6-available-amazon-bedrock/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-05T09:59:00+00:00'
+  title_zh: Claude Opus 4.6现已在Amazon Bedrock上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.12.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.12.3
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-02-05T07:04:07+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.8-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.8-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-05T06:22:11+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing OpenAI Frontier
+  why: OpenAI Frontier is an enterprise platform for building, deploying, and managing
+    AI agents with shared context, onboarding, permissions, and…
+  takeaway: OpenAI Frontier is an enterprise platform for building, deploying, and
+    managing AI agents with shared context, onboarding, permissions, and governance.
+  prompt: ''
+  url: https://openai.com/index/introducing-openai-frontier
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-05T06:00:00+00:00'
+  title_zh: OpenAI Frontier正式发布
+  why_zh: OpenAI Frontier是企业级平台，用于构建、部署和管理具备共享上下文、权限控制等功能的AI智能体...
+  takeaway_zh: OpenAI Frontier是一个企业平台，用于构建、部署和管理具有共享上下文、入职、权限和治理的AI代理。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.6.rc.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-05T03:12:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why has Elon Musk merged his rocket company with his AI startup?
+  why: SpaceX’s acquisition of xAI creates business worth $1.25tn but whether premise
+    behind deal will work is questioned The acquisition of xAI b…
+  takeaway: 'SpaceX’s acquisition of xAI creates business worth $1.25tn but whether
+    premise behind deal will work is questioned The acquisition of xAI by SpaceX is
+    a typical Elon Musk deal: big numbers backed by big ambition. As well as extending
+    “the light of consciousness to the stars”, as Musk described it, the transaction
+    creates a business worth $1.25tn (£920bn) by…'
+  prompt: ''
+  url: https://www.theguardian.com/technology/2026/feb/07/why-has-elon-musk-merged-his-rocket-company-with-his-ai-startup
+  source: The Guardian - Technology
+  published_utc: '2026-02-07T14:00:04+00:00'
+  title_zh: 埃隆·马斯克为何将火箭公司与AI初创企业合并？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Low-Vision Programmers Can Now Design 3D Models Independently
+  why: Most 3D design software requires visual dragging and rotating—posing a challenge
+    for blind and low-vision users.
+  takeaway: Most 3D design software requires visual dragging and rotating—posing a
+    challenge for blind and low-vision users. As a result, a range of hardware design,
+    robotics, coding, and engineering work is inaccessible to interested programmers.
+    A visually-impaired programmer might write great code. But because of the lack
+    of accessible modeling software , the coder…
+  prompt: ''
+  url: https://spectrum.ieee.org/3d-modeling-blind-programmers
+  source: IEEE Spectrum
+  published_utc: '2026-02-07T14:00:01+00:00'
+  title_zh: 低视力程序员现可独立设计3D模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Cairn is a climbing journey about perseverance and obsession
+  why: I'm an awful rock climber.
+  takeaway: I'm an awful rock climber. Being scared of heights probably doesn't help.
+    But when I've tried it, I've loved the slow, methodical work of moving from one
+    ledge to the next. It reminds me a lot of why I love running; in both sports,
+    you achieve goals that seem insurmountable by taking them one step […]
+  prompt: ''
+  url: https://www.theverge.com/games/874914/cairn-review-pc-playstation-5
+  source: The Verge
+  published_utc: '2026-02-07T14:00:00+00:00'
+  title_zh: 《Cairn》是一款关于坚持与执念的攀岩之旅
+  why_zh: 我是个糟糕的攀岩者
+  takeaway_zh: 我是个糟糕的攀岩者——恐高症显然无济于事。但尝试时，我痴迷于那种在岩壁间缓慢缜密的移动过程，这让我想起热爱跑步的缘由：两者都通过逐步突破看似不可逾越的目标...
+  prompt_zh: ''
+- category: Tech industry
+  title: France's homegrown open source online office suite
+  why: 'Article URL: https://github.com/suitenumerique Comments URL: https://news.ycombinator.com/item?id=46923736
+    Points: 65 # Comments: 33'
+  takeaway: 'Article URL: https://github.com/suitenumerique Comments URL: https://news.ycombinator.com/item?id=46923736
+    Points: 65 # Comments: 33'
+  prompt: ''
+  url: https://github.com/suitenumerique
+  source: Hacker News (front page)
+  published_utc: '2026-02-07T13:34:34+00:00'
+  title_zh: 法国本土开源在线办公套件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Reform-run Kent council accused of fabricating £40m net zero savings
+  why: 'Exclusive: Disclosures show figures cited by council leader rested on unfunded
+    ideas listed briefly in budget papers Reform UK’s flagship c…'
+  takeaway: 'Exclusive: Disclosures show figures cited by council leader rested on
+    unfunded ideas listed briefly in budget papers Reform UK’s flagship council has
+    been accused of telling a “blatant lie” after its claim of nearly £40m in savings
+    on net zero was found to be based on hypothetical projects for which there was
+    no documentation. Kent county council, which has…'
+  prompt: ''
+  url: https://www.theguardian.com/politics/2026/feb/07/reform-run-kent-council-accused-of-fabricating-40m-net-zero-savings
+  source: The Guardian - Business
+  published_utc: '2026-02-07T13:34:18+00:00'
+  title_zh: 肯特改革派议会被指捏造4000万英镑净零储蓄
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Software Engineering Is Back
+  why: 'Article URL: https://blog.alaindichiappari.dev/p/software-engineering-is-back
+    Comments URL: https://news.ycombinator.com/item?id=46923543 P…'
+  takeaway: 'Article URL: https://blog.alaindichiappari.dev/p/software-engineering-is-back
+    Comments URL: https://news.ycombinator.com/item?id=46923543 Points: 52 # Comments:
+    53'
+  prompt: ''
+  url: https://blog.alaindichiappari.dev/p/software-engineering-is-back
+  source: Hacker News (front page)
+  published_utc: '2026-02-07T13:07:09+00:00'
+  title_zh: 软件工程复兴
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best way to watch the Olympics
+  why: Hi, friends!
+  takeaway: Hi, friends! Welcome to Installer No. 115, your guide to the best and
+    Verge-iest stuff in the world. (If you're new here, welcome, go Seahawks I guess,
+    and also you can read all the old editions at the Installer homepage.) This week,
+    I've been reading about The Washington Post and the Murdochs and Polymarket and
+    […]
+  prompt: ''
+  url: https://www.theverge.com/tech/875154/how-to-watch-olympics-nintendo-muppets-installer
+  source: The Verge
+  published_utc: '2026-02-07T13:00:00+00:00'
+  title_zh: 观看奥运会的最佳方式
+  why_zh: 嗨，朋友们！
+  takeaway_zh: 嗨，朋友们！欢迎阅读第115期Installer，为您精选全球最酷科技动态（新用户请前往Installer主页查阅往期，顺便为海鹰队加个油）。本周我关注了《华盛顿邮报》、默多克家族、Polymarket等事件...
+  prompt_zh: ''
+- category: AI frontier
+  title: Nvidia CEO Jensen Huang claims AI no longer hallucinates, apparently hallucinating
+    himself
+  why: Nvidia CEO Jensen Huang claims in a CNBC interview that AI no longer hallucinates.
+  takeaway: Nvidia CEO Jensen Huang claims in a CNBC interview that AI no longer hallucinates.
+    At best, that's a massive oversimplification. At worst, it's misleading. Either
+    way, nobody pushes back, which says a lot about the current state of the AI debate.
+    The article Nvidia CEO Jensen Huang claims AI no longer hallucinates, apparently
+    hallucinating himself appeared…
+  prompt: ''
+  url: https://the-decoder.com/nvidia-ceo-jensen-huang-claims-ai-no-longer-hallucinates-apparently-hallucinating-himself/
+  source: The Decoder (AI)
+  published_utc: '2026-02-07T12:58:49+00:00'
+  title_zh: 英伟达CEO黄仁勋宣称AI不再幻觉，自己却似乎陷入幻觉
+  why_zh: 英伟达CEO黄仁勋在CNBC采访中声称AI不再产生幻觉
+  takeaway_zh: 英伟达CEO黄仁勋声称AI不再产生幻觉，这种说法往好了说是过度简化，往坏了说具有误导性。但无人反驳的事实，恰恰揭示了当前AI讨论的现状。《黄仁勋宣称AI不再幻觉，此言本身似幻觉》一文指出...
+  prompt_zh: ''
+- category: Tech industry
+  title: Reinforcement Learning from Human Feedback
+  why: 'Article URL: https://arxiv.org/abs/2504.12501 Comments URL: https://news.ycombinator.com/item?id=46923463
+    Points: 24 # Comments: 2'
+  takeaway: 'Article URL: https://arxiv.org/abs/2504.12501 Comments URL: https://news.ycombinator.com/item?id=46923463
+    Points: 24 # Comments: 2'
+  prompt: ''
+  url: https://arxiv.org/abs/2504.12501
+  source: Hacker News (front page)
+  published_utc: '2026-02-07T12:53:39+00:00'
+  title_zh: 基于人类反馈的强化学习
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Hoot: Scheme on WebAssembly'
+  why: 'Article URL: https://www.spritely.institute/hoot/ Comments URL: https://news.ycombinator.com/item?id=46923254
+    Points: 44 # Comments: 8'
+  takeaway: 'Article URL: https://www.spritely.institute/hoot/ Comments URL: https://news.ycombinator.com/item?id=46923254
+    Points: 44 # Comments: 8'
+  prompt: ''
+  url: https://www.spritely.institute/hoot/
+  source: Hacker News (front page)
+  published_utc: '2026-02-07T12:18:20+00:00'
+  title_zh: Hoot：WebAssembly上的Scheme语言
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: A simple text file beats complex skill systems for AI coding agents
+  why: Vercel set out to find the best way for AI coding agents to access up-to-date
+    framework knowledge.
+  takeaway: Vercel set out to find the best way for AI coding agents to access up-to-date
+    framework knowledge. The answer turned out to be surprisingly simple. The article
+    A simple text file beats complex skill systems for AI coding agents appeared first
+    on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/a-simple-text-file-beats-complex-skill-systems-for-ai-coding-agents/
+  source: The Decoder (AI)
+  published_utc: '2026-02-07T12:15:14+00:00'
+  title_zh: 简单文本文件胜过AI编程代理的复杂技能系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Under Trump, EPA’s enforcement of environmental laws collapses, report finds
+  why: The Environmental Protection Agency has drastically pulled back on holding
+    polluters accountable.
+  takeaway: The Environmental Protection Agency has drastically pulled back on holding
+    polluters accountable.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/02/under-trump-epas-enforcement-of-environmental-laws-collapses-report-finds/
+  source: Ars Technica
+  published_utc: '2026-02-07T12:00:35+00:00'
+  title_zh: 报告显示特朗普任内EPA环境执法力度崩溃
+  why_zh: 美国环境保护署已大幅放松对污染者的问责力度
+  takeaway_zh: 美国环境保护署已大幅放松对污染者的问责力度
+  prompt_zh: ''
+- category: Business & economy
+  title: The Epstein files reveal that a vast global conspiracy actually exists –
+    sort of
+  why: 'The documents confirm what many have long assumed: elites live by their own
+    special rules and codes of immunity The millions of Jeffrey Eps…'
+  takeaway: 'The documents confirm what many have long assumed: elites live by their
+    own special rules and codes of immunity The millions of Jeffrey Epstein files
+    dumped last Friday by the US Department of Justice will provide journalists, conspiracy
+    theorists and interested members of the public with months of reading. And what
+    they will read is enraging. What makes th…'
+  prompt: ''
+  url: https://www.theguardian.com/us-news/2026/feb/07/epstein-files-global-conspiracy
+  source: The Guardian - Business
+  published_utc: '2026-02-07T12:00:03+00:00'
+  title_zh: 爱泼斯坦文件揭示：一个庞大的全球阴谋确实存在——某种程度上
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: UK electric vehicle charging firms ‘seeking buyers amid rising costs and
+    tough competition’
+  why: Mergers and acquisitions will shrink number of operators from more than 100
+    to five or six, says Be.EV co-founder British electric charger…
+  takeaway: Mergers and acquisitions will shrink number of operators from more than
+    100 to five or six, says Be.EV co-founder British electric charger companies are
+    asking rivals to buy them as they run out of cash amid rising costs and intense
+    competition, according to industry bosses. A wave of mergers and acquisitions
+    is likely to shrink the number of charge point o…
+  prompt: ''
+  url: https://www.theguardian.com/environment/2026/feb/07/uk-electric-vehicle-charging-mergers-acquisitions-b-ev
+  source: The Guardian - Business
+  published_utc: '2026-02-07T12:00:02+00:00'
+  title_zh: 英国电动汽车充电企业在成本上升与激烈竞争中寻求买家
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Post-Brexit sales of British farm products to EU fall by 37%
+  why: NFU warn it could take years to restore Brexit losses despite efforts to smooth
+    negotiations on farming and other elements of UK-EU reset E…
+  takeaway: NFU warn it could take years to restore Brexit losses despite efforts
+    to smooth negotiations on farming and other elements of UK-EU reset Exports of
+    British farm products to the EU have dropped almost 40% in the five years since
+    Brexit, highlighting the trade barriers caused by the UK’s divorce from the EU
+    in 2020. Analysis of HMRC data by the National Farm…
+  prompt: ''
+  url: https://www.theguardian.com/environment/2026/feb/07/brexit-farm-products-sales-eu
+  source: The Guardian - Business
+  published_utc: '2026-02-07T12:00:02+00:00'
+  title_zh: 脱欧后英国农产品对欧盟销售额下降37%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump housing policy is a mess and it won’t fix the US housing crisis
+  why: Deregulation alone can’t make homes affordable when rising inequality, not
+    zoning, is what is driving prices up Donald Trump has an interes…
+  takeaway: Deregulation alone can’t make homes affordable when rising inequality,
+    not zoning, is what is driving prices up Donald Trump has an interesting view
+    of how housing plays in US politics. “I don’t want to drive housing prices down.
+    I want to drive housing prices up for people that own their homes,” he said at
+    a recent cabinet meeting. Unaffordable housing may…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/feb/07/trump-rising-home-prices-affordability-crisis
+  source: The Guardian - Business
+  published_utc: '2026-02-07T12:00:02+00:00'
+  title_zh: 特朗普住房政策混乱，无法解决美国住房危机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Thousands of Malawi businesses close in protest over tax changes
+  why: Peaceful demonstrations force a delay in measures aimed at improving revenue
+    collection but which many fear will be fatal for small traders…
+  takeaway: Peaceful demonstrations force a delay in measures aimed at improving revenue
+    collection but which many fear will be fatal for small traders Demonstrations
+    across Malawi’s four main cities during the past week have achieved a delay in
+    the introduction of a new tax regime that business owners claim will cripple their
+    livelihoods. Tens of thousands had signed…
+  prompt: ''
+  url: https://www.theguardian.com/global-development/2026/feb/07/businesses-close-protest-malawi-tax-changes-electronic-invoicing-system
+  source: The Guardian - Business
+  published_utc: '2026-02-07T12:00:01+00:00'
+  title_zh: 马拉维数千企业因税收改革抗议停业
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: The Technologies Changing How You’ll Watch the 2026 Winter Olympic Games
+  why: From drones with “first-person” visualization to real-time 360-degree replays
+    and Olympics GPT, get ready to immerse yourself in the Winter…
+  takeaway: From drones with “first-person” visualization to real-time 360-degree
+    replays and Olympics GPT, get ready to immerse yourself in the Winter Games in
+    Milan and Cortina.
+  prompt: ''
+  url: https://www.wired.com/story/the-technologies-changing-how-youll-watch-the-2026-winter-olympic-games/
+  source: WIRED - AI
+  published_utc: '2026-02-07T12:00:00+00:00'
+  title_zh: 改变2026冬奥观赛体验的技术革新
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Moltbook, the Social Network for AI Agents, Exposed Real Humans’ Data
+  why: 'Plus: Apple’s Lockdown mode keeps the FBI out of a reporter’s phone, Elon
+    Musk’s Starlink cuts off Russian forces, and more.'
+  takeaway: 'Plus: Apple’s Lockdown mode keeps the FBI out of a reporter’s phone,
+    Elon Musk’s Starlink cuts off Russian forces, and more.'
+  prompt: ''
+  url: https://www.wired.com/story/security-news-this-week-moltbook-the-social-network-for-ai-agents-exposed-real-humans-data/
+  source: WIRED - AI
+  published_utc: '2026-02-07T11:30:00+00:00'
+  title_zh: Moltbook：AI代理社交网络泄露真实用户数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump praises ‘very good’ talks with Iran but warns of ‘steep’ consequences
+  why: US president says Tehran seems to ‘want to make a deal very badly’
+  takeaway: US president says Tehran seems to ‘want to make a deal very badly’
+  prompt: ''
+  url: https://www.ft.com/content/5edc63d6-8870-426e-9397-0d64d288aca4
+  source: Financial Times - World
+  published_utc: '2026-02-07T11:15:10+00:00'
+  title_zh: 特朗普称赞与伊朗的‘非常良好’会谈，但警告‘严厉’后果
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Can the US crack the formula for ending bank runs?
+  why: Senators push proposals to lift deposit insurance limit, aiming to avoid another
+    Silicon Valley Bank debacle
+  takeaway: Senators push proposals to lift deposit insurance limit, aiming to avoid
+    another Silicon Valley Bank debacle
+  prompt: ''
+  url: https://www.ft.com/content/3ec341d6-fe63-436e-a512-4d9aad678ce1
+  source: Financial Times - Markets
+  published_utc: '2026-02-07T11:00:03+00:00'
+  title_zh: 美国能否找到终结银行挤兑的良方？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Buy European and the French paradox
+  why: French ideas are often in the ascendant in EU policy-making just as the country’s
+    government grows weaker
+  takeaway: French ideas are often in the ascendant in EU policy-making just as the
+    country’s government grows weaker
+  prompt: ''
+  url: https://www.ft.com/content/394c74f2-08e9-4f6e-be8d-cefbeb0da038
+  source: Financial Times - World
+  published_utc: '2026-02-07T11:00:03+00:00'
+  title_zh: 购买欧洲资产与法国悖论
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Waymo is trying to seduce me. But another option is staring us in the face
+    | Dave Schilling
+  why: I understand the appeal of avoiding all human contact.
+  takeaway: 'I understand the appeal of avoiding all human contact. Still, good old-fashioned
+    taxis have so much to offer It’s Super Bowl weekend here in America, which means
+    a few things: copious amounts of gut-busting food, controversial half-time show
+    performances, extravagant commercials, and occasionally a bit of football. For
+    the tens of thousands rich enough to a…'
+  prompt: ''
+  url: https://www.theguardian.com/commentisfree/2026/feb/07/waymo-taxis-san-francisco-super-bowl
+  source: The Guardian - Business
+  published_utc: '2026-02-07T11:00:03+00:00'
+  title_zh: Waymo试图吸引我，但另一个选择正摆在眼前 | 戴夫·席林
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Monzo wrongly denied refunds to thousands of fraud and scam victims
+  why: Ombudsman found bank wrongly rejected 34% of complaints last year, with NatWest
+    and HSBC close behind Monzo has wrongly denied refunds to t…
+  takeaway: Ombudsman found bank wrongly rejected 34% of complaints last year, with
+    NatWest and HSBC close behind Monzo has wrongly denied refunds to thousands of
+    fraud and scam victims, the Guardian can reveal. The digital-only bank wrongly
+    rejected more than 1,000 fraud and scam complaints that were closed last year
+    alone, according to data from the Financial Ombudsm…
+  prompt: ''
+  url: https://www.theguardian.com/money/2026/feb/07/monzo-natwest-hsbc-refunds-fraud-scam-fos-ombudsman
+  source: The Guardian - Business
+  published_utc: '2026-02-07T11:00:01+00:00'
+  title_zh: Monzo错误拒绝数千名欺诈受害者退款
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A diverging Magnificent Seven
+  why: Increasing AI scrutiny is dividing the group into winners and losers
+  takeaway: Increasing AI scrutiny is dividing the group into winners and losers
+  prompt: ''
+  url: https://www.ft.com/content/5676a4bd-c7d8-47f1-84f7-82c006cfc2ca
+  source: Financial Times - Technology
+  published_utc: '2026-02-07T10:30:02+00:00'
+  title_zh: ‘七巨头’走势分化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Victims urge tougher action on deepfake abuse as new law comes into force
+  why: Campaigners welcome criminalisation of non-consensual AI-generated explicit
+    images but say law does not go far enough Victims of deepfake i…
+  takeaway: Campaigners welcome criminalisation of non-consensual AI-generated explicit
+    images but say law does not go far enough Victims of deepfake image abuse have
+    called for stronger protection against AI-generated explicit images, as the law
+    criminalising the creation of non-consensual intimate images comes into effect.
+    Campaigners from Stop Image-Based Abuse deli…
+  prompt: ''
+  url: https://www.theguardian.com/technology/2026/feb/07/campaigners-call-stronger-protection-against-ai-generated-explicit-imagery
+  source: The Guardian - Technology
+  published_utc: '2026-02-07T10:00:02+00:00'
+  title_zh: 新法生效之际，受害者呼吁严打深度伪造滥用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI's UAE deal with G42 shows AI models are cultural products as much
+    as technical tools
+  why: OpenAI is working with G42 on a custom ChatGPT for the UAE that speaks the
+    local dialect, reflects political views, and includes content re…
+  takeaway: OpenAI is working with G42 on a custom ChatGPT for the UAE that speaks
+    the local dialect, reflects political views, and includes content restrictions.
+    The article OpenAI's UAE deal with G42 shows AI models are cultural products as
+    much as technical tools appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openais-uae-deal-with-g42-shows-ai-models-are-cultural-products-as-much-as-technical-tools/
+  source: The Decoder (AI)
+  published_utc: '2026-02-07T09:26:43+00:00'
+  title_zh: OpenAI与G42的阿联酋协议表明AI模型既是技术工具也是文化产物
+  why_zh: OpenAI正与G42合作为阿联酋开发定制版ChatGPT，支持当地方言、反映政治观点并包含符合...
+  takeaway_zh: OpenAI正与G42合作，为阿联酋开发一款定制版ChatGPT，该版本将使用当地方言，反映政治观点，并包含内容限制。文章《OpenAI与G42的阿联酋协议表明AI模型既是技术工具也是文化产物》首次发表于The
+    Decoder。
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump is pushing to end war in Ukraine by June, Zelenskyy says
+  why: Three-way peace talks are expected to take place in Miami within a week
+  takeaway: Three-way peace talks are expected to take place in Miami within a week
+  prompt: ''
+  url: https://www.ft.com/content/ccc11b61-500c-4514-ba5b-fe67b592137f
+  source: Financial Times - World
+  published_utc: '2026-02-07T09:23:27+00:00'
+  title_zh: 泽连斯基称特朗普正推动在6月前结束乌克兰战争
+  why_zh: 三方和谈预计将在一周内在迈阿密举行
+  takeaway_zh: 三方和谈预计将在一周内在迈阿密举行
+  prompt_zh: ''
+- category: AI frontier
+  title: Google's PaperBanana uses five AI agents to auto-generate scientific diagrams
+  why: Researchers at Peking University and Google built a system that turns method
+    descriptions into scientific diagrams automatically.
+  takeaway: Researchers at Peking University and Google built a system that turns
+    method descriptions into scientific diagrams automatically. Five specialized AI
+    agents handle everything from finding reference images to quality control, tackling
+    one of the last manual bottlenecks in academic publishing. The article Google's
+    PaperBanana uses five AI agents to auto-gener…
+  prompt: ''
+  url: https://the-decoder.com/googles-paperbanana-uses-five-ai-agents-to-auto-generate-scientific-diagrams/
+  source: The Decoder (AI)
+  published_utc: '2026-02-07T08:52:01+00:00'
+  title_zh: 谷歌PaperBanana用五个AI代理自动生成科学图表
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Retail investors pull money from UK equity funds for tenth year in row
+  why: Funds suffer £11.1bn in outflows in 2025 despite FTSE 100 surging 21.5 per
+    cent — its biggest gain since 2009
+  takeaway: Funds suffer £11.1bn in outflows in 2025 despite FTSE 100 surging 21.5
+    per cent — its biggest gain since 2009
+  prompt: ''
+  url: https://www.ft.com/content/a67d1c61-b687-44e8-9c2c-75c5cbe32f37
+  source: Financial Times - Markets
+  published_utc: '2026-02-07T08:21:27+00:00'
+  title_zh: 散户投资者连续第十年从英国股票基金撤资
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Lib Dems urge FCA to investigate Peter Mandelson over potential insider trading
+  why: 'Exclusive: Daisy Cooper says ex-minister could have ‘abused trading laws’
+    when sharing state information with Jeffrey Epstein The Liberal D…'
+  takeaway: 'Exclusive: Daisy Cooper says ex-minister could have ‘abused trading laws’
+    when sharing state information with Jeffrey Epstein The Liberal Democrats have
+    urged the UK’s financial regulator to immediately investigate Peter Mandelson,
+    saying his apparent decision to leak highly confidential government information
+    to the disgraced financier Jeffrey Epstein may…'
+  prompt: ''
+  url: https://www.theguardian.com/politics/2026/feb/07/lib-dems-urge-fca-investigate-peter-mandelson-potential-insider-trading
+  source: The Guardian - Business
+  published_utc: '2026-02-07T08:00:57+00:00'
+  title_zh: 自民党敦促FCA调查彼得·曼德尔森潜在内幕交易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Cost of UK pet insurance falls despite higher vet fees and inflation
+  why: Competition is driving down prices, albeit slowly, with the median lifetime
+    cover put at £247 for dogs and £180 for cats a year Vet fees co…
+  takeaway: Competition is driving down prices, albeit slowly, with the median lifetime
+    cover put at £247 for dogs and £180 for cats a year Vet fees continue to rise
+    and many other costs are on the increase, but pet insurance has on average become
+    slightly cheaper as providers compete for custom, new research claims. The pricing
+    data coincides with a study which found…
+  prompt: ''
+  url: https://www.theguardian.com/money/2026/feb/07/cost-of-uk-pet-insurance-falls-despite-higher-vet-fees-and-inflation
+  source: The Guardian - Business
+  published_utc: '2026-02-07T08:00:56+00:00'
+  title_zh: 尽管兽医费用和通胀上升，英国宠物保险费用却下降
+  why_zh: 市场竞争正逐步压低价格——犬类终身医保中位数为每年247英镑，猫类为180英镑。尽管兽医费用持续上涨...
+  takeaway_zh: 研究显示，尽管兽医费等成本持续上升，但宠物保险均价因市场竞争略有下降——犬类终身医保中位数为每年247英镑，猫类180英镑。该价格数据与另一项研究发现...
+  prompt_zh: ''
+- category: Tech industry
+  title: Vocal Guide – belt sing without killing yourself
+  why: 'Article URL: https://jesperordrup.github.io/vocal-guide/ Comments URL: https://news.ycombinator.com/item?id=46922049
+    Points: 110 # Comments…'
+  takeaway: 'Article URL: https://jesperordrup.github.io/vocal-guide/ Comments URL:
+    https://news.ycombinator.com/item?id=46922049 Points: 110 # Comments: 44'
+  prompt: ''
+  url: https://jesperordrup.github.io/vocal-guide/
+  source: Hacker News (front page)
+  published_utc: '2026-02-07T07:37:03+00:00'
+  title_zh: Vocal Guide：科学飙高音指南
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US and India reach interim trade deal
+  why: Agreement follows détente between Donald Trump and Indian Prime Minister Narendra
+    Modi
+  takeaway: Agreement follows détente between Donald Trump and Indian Prime Minister
+    Narendra Modi
+  prompt: ''
+  url: https://www.ft.com/content/183a5155-7114-47bc-8eea-b7516f4d3c73
+  source: Financial Times - Markets
+  published_utc: '2026-02-07T07:26:53+00:00'
+  title_zh: 美印达成临时贸易协议
+  why_zh: 协议达成前，唐纳德·特朗普与印度总理纳伦德拉·莫迪关系已现缓和
+  takeaway_zh: 协议达成前，唐纳德·特朗普与印度总理纳伦德拉·莫迪关系已现缓和
+  prompt_zh: ''
+- category: Business & economy
+  title: UK threatens to seize Russia-linked shadow fleet tanker in escalatory move
+  why: Capture of rogue ship could open a new front against Moscow at a time when
+    Russia’s oil revenues are tumbling The UK is threatening to seiz…
+  takeaway: Capture of rogue ship could open a new front against Moscow at a time
+    when Russia’s oil revenues are tumbling The UK is threatening to seize a Russia-linked
+    shadow fleet tanker in an escalatory move that could lead to the opening up of
+    a new front against Moscow at a time when the country’s oil revenues are tumbling.
+    British defence sources confirmed that m…
+  prompt: ''
+  url: https://www.theguardian.com/world/2026/feb/07/uk-threatens-to-seize-russia-linked-shadow-fleet-tanker-in-escalatory-move
+  source: The Guardian - Business
+  published_utc: '2026-02-07T07:00:56+00:00'
+  title_zh: 英国威胁扣押俄罗斯影子舰队油轮，局势升级
+  why_zh: 对违规船只的扣押可能开辟对抗莫斯科的新战线，此时俄罗斯石油收入正急剧下滑。英国威胁要没收...
+  takeaway_zh: 英国威胁扣押俄罗斯影子舰队油轮，此举可能开辟对抗莫斯科的新战线。此时俄石油收入急剧下滑，国防消息人士证实...
+  prompt_zh: ''
+- category: Business & economy
+  title: Wealthy use loophole to conceal value of £300m in Scottish land sales
+  why: Prices paid for large estates not being disclosed on official register, land
+    reform advocates say Land reform campaigners are alarmed at th…
+  takeaway: Prices paid for large estates not being disclosed on official register,
+    land reform advocates say Land reform campaigners are alarmed at the increasing
+    use of a legal loophole that allows landowners to conceal the price paid for Highland
+    estates from the public register. Andy Wightman, a land reform analyst, said the
+    loophole meant the prices paid in more t…
+  prompt: ''
+  url: https://www.theguardian.com/uk-news/2026/feb/07/wealthy-use-loophole-to-conceal-value-of-300m-in-scottish-land-sales
+  source: The Guardian - Business
+  published_utc: '2026-02-07T07:00:55+00:00'
+  title_zh: 富豪利用漏洞隐瞒苏格兰3亿英镑土地交易价值
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: '‘Plainly wrong’: London flat dwellers fight shock £200,000 heating bill'
+  why: Almost 1m UK households are hooked up to heat networks.
+  takeaway: Almost 1m UK households are hooked up to heat networks. None had protection
+    from poor service or price hikes … until last month ‘If I could move, I would
+    – to a place without a heat network. But I can’t while this debt is hanging over
+    me,” says Anja Georgiou. The mother lives with her family in a rented flat in
+    the River Gardens development in Greenwich in…
+  prompt: ''
+  url: https://www.theguardian.com/money/2026/feb/07/london-flat-dwellers-heating-bill-heat-networks
+  source: The Guardian - Business
+  published_utc: '2026-02-07T07:00:55+00:00'
+  title_zh: ‘明显错误’：伦敦公寓住户抗争20万英镑天价暖气账单
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ‘Hermès orange’ iPhone sparks Apple comeback in China
+  why: Vivid redesign and social media buzz lure Chinese buyers back after a prolonged
+    slump
+  takeaway: Vivid redesign and social media buzz lure Chinese buyers back after a
+    prolonged slump
+  prompt: ''
+  url: https://www.ft.com/content/e2d78d04-7368-4b0c-abd5-591c03774c46
+  source: Financial Times - Technology
+  published_utc: '2026-02-07T07:00:00+00:00'
+  title_zh: ‘爱马仕橙’iPhone助力苹果在中国市场卷土重来
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Benchmark raises $225M in special funds to double down on Cerebras
+  why: Benchmark Capital has been an investor in the Nvidia rival since 2016.
+  takeaway: Benchmark Capital has been an investor in the Nvidia rival since 2016.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/06/benchmark-raises-225m-in-special-funds-to-double-down-on-cerebras/
+  source: TechCrunch
+  published_utc: '2026-02-07T05:23:04+00:00'
+  title_zh: Benchmark筹集2.25亿美元专项基金加注Cerebras
+  why_zh: Benchmark Capital自2016年起便投资了这家英伟达的竞争对手
+  takeaway_zh: Benchmark Capital自2016年起便投资了这家英伟达的竞争对手
+  prompt_zh: ''
+- category: Tech industry
+  title: Tech wreck signals a market reset
+  why: Rising tide might no longer support all sector stocks, let alone speculative
+    dross like crypto
+  takeaway: Rising tide might no longer support all sector stocks, let alone speculative
+    dross like crypto
+  prompt: ''
+  url: https://www.ft.com/content/df69f37b-0929-45d0-b357-5db7ed5c2678
+  source: Financial Times - Technology
+  published_utc: '2026-02-07T05:00:50+00:00'
+  title_zh: 科技股暴跌预示市场调整
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Mexico’s extortion crisis casts a shadow over Super Bowl avocados
+  why: Record exports to the US for Sunday’s clash belies threats to labourers and
+    farmers from cartels
+  takeaway: Record exports to the US for Sunday’s clash belies threats to labourers
+    and farmers from cartels
+  prompt: ''
+  url: https://www.ft.com/content/0d640d47-201e-46ec-964a-98f09f78e14c
+  source: Financial Times - Markets
+  published_utc: '2026-02-07T05:00:50+00:00'
+  title_zh: 墨西哥的勒索危机给超级碗鳄梨蒙上阴影
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: How the NFL became America’s true national pastime
+  why: The football league is perhaps the only institution capable of uniting much
+    of the country, as this weekend’s Super Bowl will show
+  takeaway: The football league is perhaps the only institution capable of uniting
+    much of the country, as this weekend’s Super Bowl will show
+  prompt: ''
+  url: https://www.ft.com/content/8656b757-c6ec-40cc-a2d1-a23cb089892d
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:41+00:00'
+  title_zh: NFL如何成为美国真正的国民消遣
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Putin isn’t really winning. Europe needs to make that clear
+  why: Behind Russia’s victory narrative in Ukraine is a system under strain.
+  takeaway: Behind Russia’s victory narrative in Ukraine is a system under strain.
+    To fight back, the ‘middle powers’ must work harder on their own story
+  prompt: ''
+  url: https://www.ft.com/content/36b57cc3-9488-41fd-aba8-a1cf50e0336e
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:41+00:00'
+  title_zh: 普京并未真正获胜，欧洲需明确这一点
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The Trevi Fountain is not just a cultural vending machine
+  why: Charging €2 to look creates a physical and psychological barrier between Rome
+    and one of its best-loved monuments
+  takeaway: Charging €2 to look creates a physical and psychological barrier between
+    Rome and one of its best-loved monuments
+  prompt: ''
+  url: https://www.ft.com/content/fc180ba7-d62c-411a-9945-090d4afc0eaf
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:41+00:00'
+  title_zh: 特雷维喷泉不仅是文化自动售货机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Starmer faces questions over visit to Palantir office alongside Mandelson
+  why: Former ambassador was also shareholder in lobbying group that counted US tech
+    firm as a client
+  takeaway: Former ambassador was also shareholder in lobbying group that counted
+    US tech firm as a client
+  prompt: ''
+  url: https://www.ft.com/content/5bba355e-b8e3-4bc3-b440-750a23f8d48c
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:41+00:00'
+  title_zh: 斯塔默因与曼德尔森一同访问Palantir办公室而面临质疑
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: How easy is it for Brits to retire to mainland Europe?
+  why: Changes to inheritance tax and non-dom rules have spurred interest in retiring
+    abroad — but there are new hurdles, too
+  takeaway: Changes to inheritance tax and non-dom rules have spurred interest in
+    retiring abroad — but there are new hurdles, too
+  prompt: ''
+  url: https://www.ft.com/content/730aec80-5592-4ea1-954e-5c159867541c
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:32+00:00'
+  title_zh: 英国人退休移居欧洲大陆有多容易？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Farmer J founder: ‘There are easier ways to make money than becoming an
+    entrepreneur’'
+  why: Jonathan Recanati shares what drives him as he takes on his ‘biggest risk’
+    yet — expanding to the US
+  takeaway: Jonathan Recanati shares what drives him as he takes on his ‘biggest risk’
+    yet — expanding to the US
+  prompt: ''
+  url: https://www.ft.com/content/2223e9b5-b1fb-41fe-8c40-6b51cb587c3c
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:32+00:00'
+  title_zh: Farmer J创始人：‘有比创业更轻松的赚钱方式’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The three-way race for Brazil’s rare earths heats up
+  why: US, EU and China compete for South American nation’s vast deposits of the critical
+    minerals as trade tensions loom
+  takeaway: US, EU and China compete for South American nation’s vast deposits of
+    the critical minerals as trade tensions loom
+  prompt: ''
+  url: https://www.ft.com/content/4a6a6245-b2b1-44d6-9a22-bacdf8e9b44e
+  source: Financial Times - Markets
+  published_utc: '2026-02-07T05:00:22+00:00'
+  title_zh: 巴西稀土资源三方争夺战升温
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: AI disrupting traditional careers may not be bad for children
+  why: If the normal pathways to financial security are vanishing, why not let your
+    child follow their passions?
+  takeaway: If the normal pathways to financial security are vanishing, why not let
+    your child follow their passions?
+  prompt: ''
+  url: https://www.ft.com/content/4a499162-df64-44e8-ad31-c13e96344767
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:22+00:00'
+  title_zh: AI颠覆传统职业对儿童未必是坏事
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Milei clashes with Argentina’s powerful unions over labour reform
+  why: Rightwing leader’s latest bill overhauls the country’s rigid employment market
+  takeaway: Rightwing leader’s latest bill overhauls the country’s rigid employment
+    market
+  prompt: ''
+  url: https://www.ft.com/content/97f334da-e3a4-4f86-b04c-bea3d248aad5
+  source: Financial Times - World
+  published_utc: '2026-02-07T05:00:22+00:00'
+  title_zh: 米莱与阿根廷强大工会就劳工改革发生冲突
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

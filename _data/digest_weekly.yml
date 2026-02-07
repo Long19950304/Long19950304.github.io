@@ -560,6 +560,7 @@ weeks:
   - '2026-02-04'
   - '2026-02-05'
   - '2026-02-06'
+  - '2026-02-07'
   highlights_news:
   - date: '2026-02-02'
     url: https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/
@@ -704,6 +705,42 @@ weeks:
     category: Tech industry
     source: TechCrunch
     published_utc: '2026-02-05T20:01:39+00:00'
+  - date: '2026-02-07'
+    url: https://www.ft.com/content/ccc11b61-500c-4514-ba5b-fe67b592137f
+    title: Trump is pushing to end war in Ukraine by June, Zelenskyy says
+    title_zh: 泽连斯基称特朗普正推动在6月前结束乌克兰战争
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-07T09:23:27+00:00'
+  - date: '2026-02-07'
+    url: https://www.ft.com/content/183a5155-7114-47bc-8eea-b7516f4d3c73
+    title: US and India reach interim trade deal
+    title_zh: 美印达成临时贸易协议
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-02-07T07:26:53+00:00'
+  - date: '2026-02-07'
+    url: https://www.theguardian.com/money/2026/feb/07/cost-of-uk-pet-insurance-falls-despite-higher-vet-fees-and-inflation
+    title: Cost of UK pet insurance falls despite higher vet fees and inflation
+    title_zh: 尽管兽医费用和通胀上升，英国宠物保险费用却下降
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-07T08:00:56+00:00'
+  - date: '2026-02-07'
+    url: https://www.theguardian.com/world/2026/feb/07/uk-threatens-to-seize-russia-linked-shadow-fleet-tanker-in-escalatory-move
+    title: UK threatens to seize Russia-linked shadow fleet tanker in escalatory move
+    title_zh: 英国威胁扣押俄罗斯影子舰队油轮，局势升级
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-07T07:00:56+00:00'
+  - date: '2026-02-07'
+    url: https://arstechnica.com/science/2026/02/under-trump-epas-enforcement-of-environmental-laws-collapses-report-finds/
+    title: Under Trump, EPA’s enforcement of environmental laws collapses, report
+      finds
+    title_zh: 报告显示特朗普任内EPA环境执法力度崩溃
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-07T12:00:35+00:00'
   highlights_ai:
   - date: '2026-02-02'
     url: https://the-decoder.com/chinese-ai-companies-rush-to-ship-new-models-before-lunar-new-year/
@@ -820,3 +857,17 @@ weeks:
     category: AI tools & model releases
     source: The Decoder (AI)
     published_utc: '2026-02-05T19:10:33+00:00'
+  - date: '2026-02-07'
+    url: https://openai.com/index/introducing-openai-frontier
+    title: Introducing OpenAI Frontier
+    title_zh: OpenAI Frontier正式发布
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-02-05T06:00:00+00:00'
+  - date: '2026-02-07'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.3
+    title: 'anthropics/anthropic-sdk-typescript: foundry-sdk: v0.2.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-05T17:51:50+00:00'

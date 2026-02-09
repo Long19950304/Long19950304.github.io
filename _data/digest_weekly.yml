@@ -871,3 +871,80 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-02-05T17:51:50+00:00'
+- week: 2026-W07
+  start: '2026-02-09'
+  end: '2026-02-15'
+  issues:
+  - '2026-02-09'
+  highlights_news:
+  - date: '2026-02-09'
+    url: https://www.ft.com/content/13556ff7-89be-463f-8dbd-a16540a47dab
+    title: Japanese stocks soar to record after Takaichi landslide election win
+    title_zh: 日本股市在高市早苗选举大胜后创下历史新高
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-09T00:59:01+00:00'
+  - date: '2026-02-09'
+    url: https://www.ft.com/content/8baa0537-6a70-4e4d-b67d-38aff7832330
+    title: Hong Kong’s Jimmy Lai sentenced to 20 years in prison
+    title_zh: 香港黎智英被判20年监禁
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-09T02:09:02+00:00'
+  - date: '2026-02-09'
+    url: https://www.bbc.com/news/articles/cddg885344do?at_medium=RSS&at_campaign=rss
+    title: The shadowy world of abandoned oil tankers
+    title_zh: 废弃油轮的隐秘世界
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-09T00:09:30+00:00'
+  - date: '2026-02-09'
+    url: https://www.bbc.com/news/articles/cm24j1dpexvo?at_medium=RSS&at_campaign=rss
+    title: Luxury travel takes off as plane makers chase Asia's super-rich
+    title_zh: 豪华旅行兴起，飞机制造商追逐亚洲超级富豪
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-08T23:01:52+00:00'
+  - date: '2026-02-09'
+    url: https://www.theguardian.com/commentisfree/picture/2026/feb/08/ella-baron-jeff-bezos-cuts-washington-post-cartoon-melania-documentary-amazon
+    title: Ella Baron on Jeff Bezos’s cuts to the Washington Post – cartoon
+    title_zh: 埃拉·巴伦关于杰夫·贝索斯削减《华盛顿邮报》开支的漫画
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-08T18:00:02+00:00'
+  highlights_ai:
+  - date: '2026-02-09'
+    url: https://github.com/openai/openai-node/releases/tag/v6.18.0
+    title: 'openai/openai-node: v6.18.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-05T16:27:40+00:00'
+  - date: '2026-02-09'
+    url: https://github.com/openai/openai-python/releases/tag/v2.17.0
+    title: 'openai/openai-python: v2.17.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-02-05T16:26:56+00:00'
+  - date: '2026-02-09'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.79.0
+    title: 'anthropics/anthropic-sdk-python: v0.79.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-02-07T18:05:51+00:00'
+  - date: '2026-02-09'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.74.0
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.74.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-07T18:00:01+00:00'
+  - date: '2026-02-09'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.3
+    title: 'anthropics/anthropic-sdk-typescript: foundry-sdk: v0.2.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-05T17:51:50+00:00'

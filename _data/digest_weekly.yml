@@ -876,6 +876,7 @@ weeks:
   end: '2026-02-15'
   issues:
   - '2026-02-09'
+  - '2026-02-10'
   highlights_news:
   - date: '2026-02-09'
     url: https://www.ft.com/content/13556ff7-89be-463f-8dbd-a16540a47dab
@@ -912,6 +913,41 @@ weeks:
     category: Business & economy
     source: The Guardian - Business
     published_utc: '2026-02-08T18:00:02+00:00'
+  - date: '2026-02-10'
+    url: https://www.ft.com/content/7b5ec575-da49-4a40-ab30-dd11ef3dee8b
+    title: Russia’s shell output soars as it prepares for ‘next war’, warns Estonia
+    title_zh: 俄罗斯炮弹产量激增，爱沙尼亚警告其正为‘下一场战争’做准备
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-10T16:50:45+00:00'
+  - date: '2026-02-10'
+    url: https://www.ft.com/content/eea27ca8-75e4-4d8a-90e7-bbf98d90ece1
+    title: Daniel Ek and Peter Thiel-backed start-ups win German military drone contracts
+    title_zh: Daniel Ek与Peter Thiel支持的初创公司赢得德国军用无人机合同
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-10T17:18:26+00:00'
+  - date: '2026-02-10'
+    url: https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/
+    title: A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions
+    title_zh: ‘QuitGPT’运动呼吁人们取消ChatGPT订阅
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-02-10T17:00:24+00:00'
+  - date: '2026-02-10'
+    url: https://www.bbc.com/news/articles/cg7e8ven7r7o?at_medium=RSS&at_campaign=rss
+    title: US consumer spending slowed in December - Is it a warning for the economy?
+    title_zh: 12月美国消费者支出放缓——这是对经济的警告吗？
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-10T18:32:08+00:00'
+  - date: '2026-02-10'
+    url: https://www.bbc.com/news/articles/cwy8lg9lkj3o?at_medium=RSS&at_campaign=rss
+    title: Wrapped helps Spotify add users despite artists' criticism over fees
+    title_zh: 尽管艺术家对费用提出批评，Wrapped仍助力Spotify用户增长
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-10T18:02:02+00:00'
   highlights_ai:
   - date: '2026-02-09'
     url: https://github.com/openai/openai-node/releases/tag/v6.18.0
@@ -948,3 +984,38 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-02-05T17:51:50+00:00'
+  - date: '2026-02-10'
+    url: https://the-decoder.com/openai-says-chatgpt-is-growing-again-plans-new-model-this-week/
+    title: OpenAI says ChatGPT is growing again, plans new model this week
+    title_zh: OpenAI称ChatGPT用户增长恢复，计划本周推出新模型
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-09T18:01:24+00:00'
+  - date: '2026-02-10'
+    url: https://github.com/openai/openai-python/releases/tag/v2.20.0
+    title: 'openai/openai-python: v2.20.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-02-10T19:02:11+00:00'
+  - date: '2026-02-10'
+    url: https://github.com/openai/openai-node/releases/tag/v6.21.0
+    title: 'openai/openai-node: v6.21.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-10T19:02:04+00:00'
+  - date: '2026-02-10'
+    url: https://github.com/openai/openai-python/releases/tag/v2.19.0
+    title: 'openai/openai-python: v2.19.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-02-10T18:20:53+00:00'
+  - date: '2026-02-10'
+    url: https://github.com/openai/openai-node/releases/tag/v6.20.0
+    title: 'openai/openai-node: v6.20.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-10T18:14:11+00:00'

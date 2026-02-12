@@ -877,6 +877,7 @@ weeks:
   issues:
   - '2026-02-09'
   - '2026-02-10'
+  - '2026-02-12'
   highlights_news:
   - date: '2026-02-09'
     url: https://www.ft.com/content/13556ff7-89be-463f-8dbd-a16540a47dab
@@ -948,6 +949,42 @@ weeks:
     category: Business & economy
     source: BBC News - Business
     published_utc: '2026-02-10T18:02:02+00:00'
+  - date: '2026-02-12'
+    url: https://www.ft.com/content/468ebeec-3d38-4f8c-8513-97f533d8f43b
+    title: Russia blocks Meta’s WhatsApp messaging service
+    title_zh: 俄罗斯封锁Meta旗下通讯服务WhatsApp
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-11T23:53:54+00:00'
+  - date: '2026-02-12'
+    url: https://www.ft.com/content/befefca6-b6b0-4795-b3a7-fa9fe4d5181e
+    title: US House votes to overturn Trump’s tariffs on Canada
+    title_zh: 美国众议院投票推翻特朗普对加拿大的关税政策
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-12T00:14:58+00:00'
+  - date: '2026-02-12'
+    url: https://arstechnica.com/information-technology/2026/02/openai-researcher-quits-over-fears-that-chatgpt-ads-could-manipulate-users/
+    title: OpenAI researcher quits over ChatGPT ads, warns of "Facebook" path
+    title_zh: OpenAI研究员因ChatGPT广告辞职，警告‘Facebook化’风险
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-11T20:44:19+00:00'
+  - date: '2026-02-12'
+    url: https://techcrunch.com/2026/02/11/microsoft-says-hackers-are-exploiting-critical-zero-day-bugs-to-target-windows-and-office-users/
+    title: Microsoft says hackers are exploiting critical zero-day bugs to target
+      Windows and Office users
+    title_zh: 微软称黑客正利用零日漏洞攻击Windows和Office用户
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-11T20:46:40+00:00'
+  - date: '2026-02-12'
+    url: https://www.bbc.com/news/articles/cn71mgmzljlo?at_medium=RSS&at_campaign=rss
+    title: 'Instagram boss: 16 hours of daily use is ''problematic,'' not addiction'
+    title_zh: Instagram负责人：每日使用16小时属于‘有问题’行为，但非成瘾
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-12T01:19:57+00:00'
   highlights_ai:
   - date: '2026-02-09'
     url: https://github.com/openai/openai-node/releases/tag/v6.18.0
@@ -1019,3 +1056,32 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - openai/openai-node
     published_utc: '2026-02-10T18:14:11+00:00'
+  - date: '2026-02-12'
+    url: https://the-decoder.com/openai-says-chatgpt-update-improves-response-style-and-quality/
+    title: OpenAI says ChatGPT update improves response style and quality
+    title_zh: OpenAI称ChatGPT更新提升回答风格与质量
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-11T14:25:33+00:00'
+  - date: '2026-02-12'
+    url: https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything
+    title: Skills in OpenAI API
+    title_zh: OpenAI API技能说明
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-02-11T19:19:22+00:00'
+  - date: '2026-02-12'
+    url: https://the-decoder.com/openai-upgrades-responses-api-with-features-built-specifically-for-long-running-ai-agents/
+    title: OpenAI upgrades Responses API with features built specifically for long-running
+      AI agents
+    title_zh: OpenAI为长期运行AI代理专项升级Responses API
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-11T18:32:55+00:00'
+  - date: '2026-02-12'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.13.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.13.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-10T20:27:38+00:00'

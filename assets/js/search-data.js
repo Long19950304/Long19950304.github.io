@@ -179,6 +179,11 @@ ninja.data = [{
           description: "",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-02-10/";
+            },},{id: "digests-daily-digest-2026-02-12",
+          title: 'Daily Digest - 2026-02-12',
+          description: "",
+          section: "Digests",handler: () => {
+              window.location.href = "/digest/2026-02-12/";
             },},{id: "digests_zh-每日简报-2026-01-20",
           title: '每日简报 — 2026-01-20',
           description: "",
@@ -279,6 +284,11 @@ ninja.data = [{
           description: "",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-02-10/";
+            },},{id: "digests_zh-每日简报-2026-02-12",
+          title: '每日简报 - 2026-02-12',
+          description: "",
+          section: "Digests_zh",handler: () => {
+              window.location.href = "/zh/digest/2026-02-12/";
             },},{id: "projects-agentic-engineering-ae-x",
           title: 'Agentic Engineering (AE+X)',
           description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes.",

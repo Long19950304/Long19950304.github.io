@@ -1,0 +1,1231 @@
+date: '2026-02-13'
+title: Daily Digest - 2026-02-13
+title_zh: 每日简报 - 2026-02-13
+note: 'Today: Trump plans to roll back tariffs on metal and aluminium goods · Taylor
+  Swift asks US government to block ''Swift Home'' trademark · AI: OpenAI has yet
+  another new coding model and this time it''….'
+note_zh: 今日关注：特朗普计划撤销对金属和铝制品的关税；泰勒·斯威夫特要求美国政府阻止'Swift Home'商标注册；AI：OpenAI再推新编码模型，此次速度极快。
+items:
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.11-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.11-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-13T02:27:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.0-patch4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch4
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-13T01:17:18+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.16.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.16.0
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-02-13T00:35:21+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.0
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-02-12T23:42:36+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.16.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.16.1
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-12T23:40:00+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_dev-test-v0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_dev-test-v0
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-12T21:19:03+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing GPT‑5.3‑Codex‑Spark
+  why: Introducing GPT‑5.3‑Codex‑Spark OpenAI announced a partnership with Cerebras
+    on January 14th .
+  takeaway: Introducing GPT‑5.3‑Codex‑Spark OpenAI announced a partnership with Cerebras
+    on January 14th . Four weeks later they're already launching the first integration,
+    "an ultra-fast model for real-time coding in Codex". Despite being named GPT-5.3-Codex-Spark
+    it's not purely an accelerated alternative to GPT-5.3-Codex - the blog post calls
+    it "a smaller version o…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T21:16:07+00:00'
+  title_zh: 推出GPT-5.3-Codex-Spark
+  why_zh: OpenAI于1月14日宣布与Cerebras合作，推出GPT-5.3-Codex-Spark
+  takeaway_zh: GPT‑5.3‑Codex‑Spark发布 OpenAI于1月14日宣布与Cerebras建立合作伙伴关系。四周后，他们已推出首个集成产品，即“Codex中用于实时编码的超快模型”。尽管命名为GPT-5.3-Codex-Spark，它并非GPT-5.3-Codex的纯加速替代品——博客文章称其为“一个更小版本的…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.12'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.12
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-12T20:53:28+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Chinese AI lab Zhipu releases GLM-5 under MIT license, claims parity with
+    top Western models
+  why: Chinese AI company Zhipu AI released GLM-5, a 744-billion-parameter open-source
+    model that rivals Claude Opus 4.5 and GPT-5.2 on coding and…
+  takeaway: Chinese AI company Zhipu AI released GLM-5, a 744-billion-parameter open-source
+    model that rivals Claude Opus 4.5 and GPT-5.2 on coding and agent benchmarks.
+    The article Chinese AI lab Zhipu releases GLM-5 under MIT license, claims parity
+    with top Western models appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/chinese-ai-lab-zhipu-releases-glm-5-under-mit-license-claims-parity-with-top-western-models/
+  source: The Decoder (AI)
+  published_utc: '2026-02-12T20:41:45+00:00'
+  title_zh: 中国AI实验室智谱发布GLM-5，采用MIT许可，宣称与西方顶级模型持平
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Quoting Anthropic
+  why: Claude Code was made available to the general public in May 2025.
+  takeaway: 'Claude Code was made available to the general public in May 2025. Today,
+    Claude Code’s run-rate revenue has grown to over $2.5 billion; this figure has
+    more than doubled since the beginning of 2026. The number of weekly active Claude
+    Code users has also doubled since January 1 [ six weeks ago ]. — Anthropic , announcing
+    their $30 billion series G Tags: codi…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/anthropic/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T20:22:14+00:00'
+  title_zh: 引用Anthropic
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock increases default quotas for Anthropic’s Claude Sonnet 4.5
+    model in AWS GovCloud (US)
+  why: Amazon Bedrock has increased the default quotas for Anthropic’s Claude Sonnet
+    4.5 in AWS GovCloud (US-West) and AWS GovCloud (US-East) to 5…
+  takeaway: Amazon Bedrock has increased the default quotas for Anthropic’s Claude
+    Sonnet 4.5 in AWS GovCloud (US-West) and AWS GovCloud (US-East) to 5,000,000 tokens
+    per minute and 1,000 requests per minute, aligning with commercial AWS regions.
+    This 25x increase enables customers to scale their AI workloads more effectively
+    in regulated environments. Claude Sonnet 4.…
+  prompt: ''
+  url: https://aws.amazon.comabout-aws/whats-new/2026/02/amazon-bedrock-increases-default-sonnet-4.5-quotas-aws-govcloud-us
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-12T19:52:00+00:00'
+  title_zh: Amazon Bedrock在AWS GovCloud（美国）提升Anthropic Claude Sonnet 4.5模型的默认配额
+  why_zh: Amazon Bedrock已将Anthropic的Claude Sonnet 4.5在AWS GovCloud（美国西部）和AWS GovCloud（美国东部）的默认配额提高至5…
+  takeaway_zh: Amazon Bedrock已将Anthropic的Claude Sonnet 4.5在AWS GovCloud（美国西部）和AWS
+    GovCloud（美国东部）的默认配额提升至每分钟500万令牌和每分钟1000次请求，与商业AWS区域保持一致。这一25倍的提升使客户能够在受监管环境中更有效地扩展其AI工作负载。Claude
+    Sonnet 4.…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI has yet another new coding model and this time it's really fast
+  why: OpenAI's new GPT-5.3-Codex-Spark is a smaller coding model that runs on Cerebras
+    chips and pushes over 1,000 tokens per second.
+  takeaway: OpenAI's new GPT-5.3-Codex-Spark is a smaller coding model that runs on
+    Cerebras chips and pushes over 1,000 tokens per second. It's the company's first
+    model built specifically for real-time programming. The article OpenAI has yet
+    another new coding model and this time it's really fast appeared first on The
+    Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-has-yet-another-new-coding-model-and-this-time-its-really-fast/
+  source: The Decoder (AI)
+  published_utc: '2026-02-12T19:24:48+00:00'
+  title_zh: OpenAI再推新编码模型，此次速度极快
+  why_zh: OpenAI新推出的GPT-5.3-Codex-Spark是一款运行在Cerebras芯片上的小型编码模型，每秒可处理超过1000个token
+  takeaway_zh: OpenAI新推出的GPT-5.3-Codex-Spark是一款运行在Cerebras芯片上的小型编码模型，每秒可处理超过1000个token。这是该公司首个专为实时编程打造的模型。文章《OpenAI又推出了一款新的编码模型，这次真的很快》首次发表于The
+    Decoder
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Gemini 3 Deep Think
+  why: Gemini 3 Deep Think New from Google.
+  takeaway: Gemini 3 Deep Think New from Google. They say it's "built to push the
+    frontier of intelligence and solve modern challenges across science, research,
+    and engineering". It drew me a really good SVG of a pelican riding a bicycle !
+    I think this is the best one I've seen so far - here's my previous collection
+    . (And since it's an FAQ, here's my answer to What ha…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/gemini-3-deep-think/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T18:12:17+00:00'
+  title_zh: Gemini 3 深度思考
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: An AI Agent Published a Hit Piece on Me
+  why: An AI Agent Published a Hit Piece on Me Scott Shambaugh helps maintain the
+    excellent and venerable matplotlib Python charting library, incl…
+  takeaway: An AI Agent Published a Hit Piece on Me Scott Shambaugh helps maintain
+    the excellent and venerable matplotlib Python charting library, including taking
+    on the thankless task of triaging and reviewing incoming pull requests. A GitHub
+    account called @crabby-rathbun opened PR 31132 the other day in response to an
+    issue labeled "Good first issue" describing a m…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T17:45:05+00:00'
+  title_zh: 一位AI代理发布了一篇针对我的负面文章
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Pentagon pushes AI companies to deploy unrestricted models on classified
+    military networks
+  why: The Pentagon is pressing leading AI companies including OpenAI, Anthropic,
+    Google, and xAI to make their AI tools available on classified m…
+  takeaway: The Pentagon is pressing leading AI companies including OpenAI, Anthropic,
+    Google, and xAI to make their AI tools available on classified military networks
+    - without the usual usage restrictions. The article Pentagon pushes AI companies
+    to deploy unrestricted models on classified military networks appeared first on
+    The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/pentagon-pushes-ai-companies-to-deploy-unrestricted-models-on-classified-military-networks/
+  source: The Decoder (AI)
+  published_utc: '2026-02-12T16:56:59+00:00'
+  title_zh: 五角大楼推动AI公司在机密军事网络上部署无限制模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Gemini 3 Deep Think: Advancing science, research and engineering'
+  why: Our most specialized reasoning mode is now updated to solve modern science,
+    research and engineering challenges.
+  takeaway: Our most specialized reasoning mode is now updated to solve modern science,
+    research and engineering challenges.
+  prompt: ''
+  url: https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/
+  source: Google DeepMind Blog
+  published_utc: '2026-02-12T16:15:09+00:00'
+  title_zh: Gemini 3 深度思考：推动科学、研究与工程进步
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Announcing new Amazon EC2 general purpose M8azn instances
+  why: AWS is announcing the general availability of new Amazon EC2 M8azn instances,
+    general purpose high-frequency high-network instances powered…
+  takeaway: AWS is announcing the general availability of new Amazon EC2 M8azn instances,
+    general purpose high-frequency high-network instances powered by fifth generation
+    AMD EPYC (formerly code named Turin) processors, offering the highest maximum
+    CPU frequency, 5GHz in the cloud. M8azn instances offer up to 2x compute performance
+    compared to previous generation M5zn…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-m8azn-instances-generally-available
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-12T16:00:00+00:00'
+  title_zh: 宣布推出新的Amazon EC2通用型M8azn实例
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: I Tried RentAHuman, Where AI Agents Hired Me to Hype Their AI Startups
+  why: Rather than offering a revolutionary new approach to gig work, RentAHuman is
+    filled with bots that just want me to be another cog in the AI…
+  takeaway: Rather than offering a revolutionary new approach to gig work, RentAHuman
+    is filled with bots that just want me to be another cog in the AI hype machine.
+  prompt: ''
+  url: https://www.wired.com/story/i-tried-rentahuman-ai-agents-hired-me-to-hype-their-ai-startups/
+  source: WIRED - AI
+  published_utc: '2026-02-12T11:00:00+00:00'
+  title_zh: 我尝试了RentAHuman，AI代理雇佣我为他们的AI初创公司造势
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.16.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.16.0
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-12T01:19:43+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Payment Cryptography Achieves Cartes Bancaires Approval
+  why: Today, AWS Payment Cryptography has become one of the first cloud-based payment
+    cryptography services to obtain approval from Groupement de…
+  takeaway: Today, AWS Payment Cryptography has become one of the first cloud-based
+    payment cryptography services to obtain approval from Groupement des Cartes Bancaires
+    (CB ), France's national card payment network. This CB approval, combined with
+    existing compliance credentials, enables customers to run payment workloads in
+    AWS while helping customers maintain CB com…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/payment-cryptography-cartes-bancaires
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-11T21:00:00+00:00'
+  title_zh: AWS支付密码学获得Cartes Bancaires认证
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.3-stable.opus-4-6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3-stable.opus-4-6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-11T19:50:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Skills in OpenAI API
+  why: Skills in OpenAI API OpenAI's adoption of Skills continues to gain ground.
+  takeaway: 'Skills in OpenAI API OpenAI''s adoption of Skills continues to gain ground.
+    You can now use Skills directly in the OpenAI API with their shell tool . You
+    can zip skills up and upload them first, but I think an even neater interface
+    is the ability to send skills with the JSON request as inline base64-encoded zip
+    data, as seen in this script : r = OpenAI (). r…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-11T19:19:22+00:00'
+  title_zh: OpenAI API中的技能
+  why_zh: OpenAI API中的技能应用持续扩展
+  takeaway_zh: OpenAI API中的技能应用持续扩展。现在，您可以直接在OpenAI API中使用他们的shell工具应用技能。您可以先将技能打包并上传，但我认为更简洁的界面是能够通过JSON请求发送内联的base64编码压缩数据，如本脚本所示：r
+    = OpenAI().r…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS announces 6 new locations for AWS Data Transfer Terminal
+  why: AWS Data Transfer Terminal is now available in six additional locations in
+    Seattle and Phoenix (US), London (UK), Paris (France), Sydney (A…
+  takeaway: AWS Data Transfer Terminal is now available in six additional locations
+    in Seattle and Phoenix (US), London (UK), Paris (France), Sydney (Australia),
+    and Tokyo (Japan), expanding availability alongside existing locations in San
+    Francisco, Los Angeles, and New York City (US), and Munich (Germany) . AWS Data
+    Transfer Terminal is a secure, physical location wh…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-data-transfer-terminal-6-new-locations/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-11T19:02:00+00:00'
+  title_zh: AWS宣布新增6个AWS数据传输终端站点
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Qwen-Image-2.0 renders ancient Chinese calligraphy and PowerPoint slides
+    with near-perfect text accuracy
+  why: Alibaba's Qwen team has introduced Qwen-Image-2.0, a compact image model that
+    can create and edit images.
+  takeaway: Alibaba's Qwen team has introduced Qwen-Image-2.0, a compact image model
+    that can create and edit images. It also demonstrates special capabilities in
+    precise text rendering. The article Qwen-Image-2.0 renders ancient Chinese calligraphy
+    and PowerPoint slides with near-perfect text accuracy appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/qwen-image-2-0-renders-ancient-chinese-calligraphy-and-powerpoint-slides-with-near-perfect-text-accuracy/
+  source: The Decoder (AI)
+  published_utc: '2026-02-11T19:00:58+00:00'
+  title_zh: Qwen-Image-2.0以近乎完美的文本准确度呈现中国古代书法与PowerPoint幻灯片
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'GLM-5: From Vibe Coding to Agentic Engineering'
+  why: 'GLM-5: From Vibe Coding to Agentic Engineering This is a huge new MIT-licensed
+    model: 754B parameters and 1.51TB on Hugging Face twice the…'
+  takeaway: 'GLM-5: From Vibe Coding to Agentic Engineering This is a huge new MIT-licensed
+    model: 754B parameters and 1.51TB on Hugging Face twice the size of GLM-4.7 which
+    was 368B and 717GB (4.5 and 4.6 were around that size too). It''s interesting
+    to see Z.ai take a position on what we should call professional software engineers
+    building with LLMs - I''ve seen "Agenti…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/11/glm-5/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-11T18:56:14+00:00'
+  title_zh: GLM-5：从氛围编码到代理工程
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_stable_build-test-v0.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_stable_build-test-v0.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-11T17:21:02+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 R8i and R8i-flex instances are now available in additional AWS
+    regions
+  why: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex
+    instances are available in the Asia Pacific (New Zealand) and Mi…
+  takeaway: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex
+    instances are available in the Asia Pacific (New Zealand) and Middle East (UAE)
+    regions. These instances are powered by custom Intel Xeon 6 processors, available
+    only on AWS, delivering the highest performance and fastest memory bandwidth among
+    comparable Intel processors in the clou…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-r8i-r8i-flex-instances-AKL-DXB-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-11T17:00:00+00:00'
+  title_zh: Amazon EC2 R8i和R8i-flex实例现已在更多AWS区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 C8i and C8i-flex instances are now available in Europe (Paris),
+    Canada (Central), and US West (N. California) regions
+  why: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i and C8i-flex
+    instances are available in the Europe (Paris), Canada (Central),…
+  takeaway: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i and C8i-flex
+    instances are available in the Europe (Paris), Canada (Central), and US West (N.
+    California) regions. These instances are powered by custom Intel Xeon 6 processors,
+    available only on AWS, delivering the highest performance and fastest memory bandwidth
+    among comparable Intel processor…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-c8i-c8i-flex-instances-europe-paris-canada-central-uswest-ncalifornia-regions
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-11T17:00:00+00:00'
+  title_zh: Amazon EC2 C8i和C8i-flex实例现已在欧洲（巴黎）、加拿大（中部）和美国西部（北加州）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Browser now supports proxy configuration
+  why: Amazon Bedrock AgentCore Browser now supports customer-provided proxy configuration,
+    enabling customers to route browser sessions through t…
+  takeaway: Amazon Bedrock AgentCore Browser now supports customer-provided proxy
+    configuration, enabling customers to route browser sessions through their own
+    proxy infrastructure for geo-targeting, regional content access, and compliance
+    requirements. Organizations can access geo-restricted content, verify region-specific
+    pricing, and validate localized application b…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/bedrock-agentcore-browser-proxy
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-11T06:16:00+00:00'
+  title_zh: Amazon Bedrock AgentCore浏览器现支持代理配置
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.10-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.10-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-11T00:44:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'FirstFT: Top Goldman lawyer to quit over Epstein links'
+  why: 'Also in today’s newsletter: Schroders’ UK Treasury call and US metals tariff
+    rollback'
+  takeaway: 'Also in today’s newsletter: Schroders’ UK Treasury call and US metals
+    tariff rollback'
+  prompt: ''
+  url: https://www.ft.com/content/b889de67-a4be-4952-9419-f3d98f026838
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:31:16+00:00'
+  title_zh: FirstFT：高盛首席律师因爱泼斯坦事件辞职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'New Nick Bostrom Paper: Optimal Timing for Superintelligence [pdf]'
+  why: 'Article URL: https://nickbostrom.com/optimal.pdf Comments URL: https://news.ycombinator.com/item?id=46999117
+    Points: 5 # Comments: 0'
+  takeaway: 'Article URL: https://nickbostrom.com/optimal.pdf Comments URL: https://news.ycombinator.com/item?id=46999117
+    Points: 5 # Comments: 0'
+  prompt: ''
+  url: https://nickbostrom.com/optimal.pdf
+  source: Hacker News (front page)
+  published_utc: '2026-02-13T05:05:26+00:00'
+  title_zh: 尼克·博斯特罗姆新论文：超级智能的最佳时机[pdf]
+  why_zh: '文章URL: https://nickbostrom.com/optimal.pdf 评论URL: https://news.ycombinator.com/item?id=46999117
+    积分: 5 评论数: 0'
+  takeaway_zh: '文章URL: https://nickbostrom.com/optimal.pdf 评论URL: https://news.ycombinator.com/item?id=46999117
+    积分: 5 评论数: 0'
+  prompt_zh: ''
+- category: Business & economy
+  title: Starmer set to call for multinational defence initiative to cut cost of rearmament
+  why: UK prime minister expected to push the idea of enhanced co-operation at the
+    Munich Security Conference
+  takeaway: UK prime minister expected to push the idea of enhanced co-operation at
+    the Munich Security Conference
+  prompt: ''
+  url: https://www.ft.com/content/28e1a901-623a-4ba0-84ec-2281a23634d7
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:31+00:00'
+  title_zh: 斯塔默将呼吁多国防务倡议以降低重新武装成本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The Schroders dynasty is swallowed by US retirees
+  why: The asset manager was among the last holdouts in the City of London to remain
+    under UK ownership
+  takeaway: The asset manager was among the last holdouts in the City of London to
+    remain under UK ownership
+  prompt: ''
+  url: https://www.ft.com/content/73319845-e46e-4626-9540-ffa3f55873a8
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:31+00:00'
+  title_zh: 施罗德王朝被美国退休人员吞并
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump plans to roll back tariffs on metal and aluminium goods
+  why: Latest softening of levies comes amid persistent voter anxiety about affordability
+    in the US
+  takeaway: Latest softening of levies comes amid persistent voter anxiety about affordability
+    in the US
+  prompt: ''
+  url: https://www.ft.com/content/f2eff736-12de-4c33-9826-847d2fdf8be3
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:31+00:00'
+  title_zh: 特朗普计划撤销对金属和铝制品的关税
+  why_zh: 最新税费减免措施出台之际，美国选民对生活成本的担忧持续存在
+  takeaway_zh: 最新税费减免措施出台之际，美国选民对生活成本的担忧持续存在
+  prompt_zh: ''
+- category: Business & economy
+  title: Bankers push to avoid US regulator taking charge of British supervisor
+  why: Michael Hsu is among the frontrunners to succeed Sam Woods at BoE Prudential
+    Regulation Authority
+  takeaway: Michael Hsu is among the frontrunners to succeed Sam Woods at BoE Prudential
+    Regulation Authority
+  prompt: ''
+  url: https://www.ft.com/content/228fa18d-8b67-4152-9604-39f89375250f
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:31+00:00'
+  title_zh: 银行家们推动避免美国监管机构接管英国监管者
+  why_zh: Michael Hsu是接替Sam Woods担任英国央行审慎监管局局长的热门人选之一
+  takeaway_zh: Michael Hsu是接替Sam Woods担任英国央行审慎监管局局长的热门人选之一
+  prompt_zh: ''
+- category: Business & economy
+  title: Schroders is the defining deal of a glass half-empty UK
+  why: Asset manager is ending its listed life with a whimper rather than a bang
+  takeaway: Asset manager is ending its listed life with a whimper rather than a bang
+  prompt: ''
+  url: https://www.ft.com/content/a9b425f6-6efb-4ca8-b765-5a190d9d9774
+  source: Financial Times - Markets
+  published_utc: '2026-02-13T05:00:31+00:00'
+  title_zh: 施罗德是英国半杯空心态的典型交易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Wall Street hunts next casualty from AI threat to white collar work
+  why: Stocks from insurance to property and wealth management punished after new
+    tech launches
+  takeaway: Stocks from insurance to property and wealth management punished after
+    new tech launches
+  prompt: ''
+  url: https://www.ft.com/content/40d04966-d526-4314-9c2a-c721c88aaab1
+  source: Financial Times - Technology
+  published_utc: '2026-02-13T05:00:20+00:00'
+  title_zh: 华尔街寻找人工智能威胁白领工作的下一个受害者
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Venezuelans optimistic after US intervention, poll finds
+  why: Majority want election this year and would vote for María Corina Machado
+  takeaway: Majority want election this year and would vote for María Corina Machado
+  prompt: ''
+  url: https://www.ft.com/content/d9936aff-98e8-436e-ad68-50d883513509
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:20+00:00'
+  title_zh: 民调显示，美国干预后委内瑞拉人持乐观态度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: How London unwittingly killed housebuilding
+  why: A perfect storm of policy and regulatory headwinds has slowed new construction
+    to a trickle
+  takeaway: A perfect storm of policy and regulatory headwinds has slowed new construction
+    to a trickle
+  prompt: ''
+  url: https://www.ft.com/content/05faba7d-cb8e-470b-b35f-271517b99d92
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:20+00:00'
+  title_zh: 伦敦如何无意中扼杀了住房建设
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Air France-KLM warns EU climate rules would halve Asia flights
+  why: Brussels’ sustainable fuel rules would leave European carriers at a ‘significant
+    competitive disadvantage’ warns CEO
+  takeaway: Brussels’ sustainable fuel rules would leave European carriers at a ‘significant
+    competitive disadvantage’ warns CEO
+  prompt: ''
+  url: https://www.ft.com/content/c275cac0-3743-4b99-9a05-b58cb064882b
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:20+00:00'
+  title_zh: 法航-荷航警告欧盟气候规则将削减亚洲航班一半
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Farage’s popularity dips as Reform surges in polls
+  why: YouGov figures point to challenges ahead for populist party’s leader as he
+    seeks to win backing from more voters
+  takeaway: YouGov figures point to challenges ahead for populist party’s leader as
+    he seeks to win backing from more voters
+  prompt: ''
+  url: https://www.ft.com/content/2bcb122d-7ed5-42af-ae60-eba93e710564
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:20+00:00'
+  title_zh: 法拉奇人气下滑，改革党在民调中崛起
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The battle between crypto and banks is splitting Trump’s base
+  why: A fight over stablecoin rules is really about whether deposits at major financial
+    institutions will disappear
+  takeaway: A fight over stablecoin rules is really about whether deposits at major
+    financial institutions will disappear
+  prompt: ''
+  url: https://www.ft.com/content/67188f14-04da-4ad0-81c5-d913cfe85043
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:20+00:00'
+  title_zh: 加密货币与银行之争分裂特朗普阵营
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: PwC UK applications jump 35% in graduate jobs drought
+  why: Big Four accounting firm says it has decided not to automate some junior work
+    so staff can develop judgment
+  takeaway: Big Four accounting firm says it has decided not to automate some junior
+    work so staff can develop judgment
+  prompt: ''
+  url: https://www.ft.com/content/915a32cf-d62d-4caf-b539-8525e52257ad
+  source: Financial Times - Technology
+  published_utc: '2026-02-13T05:00:11+00:00'
+  title_zh: 普华永道英国毕业生职位申请量在就业荒中激增35%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google warns EU against ‘erecting walls’ in tech sovereignty push
+  why: Europe risks undermining its own competitiveness drive through curbs on US
+    groups, tech company says
+  takeaway: Europe risks undermining its own competitiveness drive through curbs on
+    US groups, tech company says
+  prompt: ''
+  url: https://www.ft.com/content/0847914c-be27-4573-8600-8cdb54e604b7
+  source: Financial Times - Technology
+  published_utc: '2026-02-13T05:00:11+00:00'
+  title_zh: 谷歌警告欧盟在技术主权推进中‘筑墙’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Will pressure from Trump cause Cuba to finally buckle?
+  why: The communist regime is more isolated than ever and fuel supplies are dwindling.
+  takeaway: The communist regime is more isolated than ever and fuel supplies are
+    dwindling. Diplomats fear outbreaks of disease and the spread of hunger
+  prompt: ''
+  url: https://www.ft.com/content/8140ecea-7293-4528-b06c-a0615bf25862
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:11+00:00'
+  title_zh: 特朗普的压力会让古巴最终屈服吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The campaign to bring back the Shah of Iran
+  why: Reza Pahlavi, son of the former monarch, has spent years seeking to build support
+  takeaway: Reza Pahlavi, son of the former monarch, has spent years seeking to build
+    support
+  prompt: ''
+  url: https://www.ft.com/content/ffc92252-4307-473f-a840-66ba5b2e2dfd
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:11+00:00'
+  title_zh: 恢复伊朗国王的运动
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: How China is fighting ‘involution’, with Yanmei Xie
+  why: And how the rest of the world should react
+  takeaway: And how the rest of the world should react
+  prompt: ''
+  url: https://www.ft.com/content/895312cd-c9a9-45e2-911c-8fe09e20c271
+  source: Financial Times - World
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 中国如何与‘内卷’作斗争，谢燕梅解读
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: How to check in continually over 4,000 days on an online learning platform?
+    An empirical experience and a practical solution
+  why: 'arXiv:2602.11249v1 Announce Type: new Abstract: The check-in service is often
+    provided as an incentive system by online learning platforms…'
+  takeaway: 'arXiv:2602.11249v1 Announce Type: new Abstract: The check-in service
+    is often provided as an incentive system by online learning platforms to help
+    users establish a learning routine and achieve accomplishment. However, according
+    to the questionnaire conducted in this study, 82.5% of users of online English
+    learning platforms that feature a check-in service…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11249
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 如何在在线学习平台连续签到4000余天？实证经验与实践方案
+  why_zh: arXiv:2602.11249v1 公告类型：新 摘要：在线学习平台常提供签到服务作为激励系统…
+  takeaway_zh: arXiv:2602.11249v1 公告类型：新 摘要：在线学习平台常提供签到服务作为激励系统，帮助用户建立学习习惯并取得成就。然而，根据本研究进行的问卷调查，82.5%的提供签到服务的在线英语学习平台用户…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Bizarre Love Triangle: Generative AI, Art, and Kitsch'
+  why: 'arXiv:2602.11353v1 Announce Type: new Abstract: Generative artificial intelligence
+    (GenAI) has engrossed the mainstream culture, expanded A…'
+  takeaway: 'arXiv:2602.11353v1 Announce Type: new Abstract: Generative artificial
+    intelligence (GenAI) has engrossed the mainstream culture, expanded AI''s creative
+    user base, and catalyzed economic, legal, and aesthetic issues that stir a lively
+    public debate. Unsurprisingly, GenAI tools proliferate kitsch in the hands of
+    amateurs and hobbyists, but various shortcoming…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11353
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 怪异三角恋：生成式AI、艺术与媚俗
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Manifold of the Absolute: Religious Perennialism as Generative Inference'
+  why: 'arXiv:2602.11368v1 Announce Type: new Abstract: This paper formalizes religious
+    epistemology through the mathematics of Variational Autoenc…'
+  takeaway: 'arXiv:2602.11368v1 Announce Type: new Abstract: This paper formalizes
+    religious epistemology through the mathematics of Variational Autoencoders. We
+    model religious traditions as distinct generative mappings from a shared, low-dimensional
+    latent space to the high-dimensional space of observable cultural forms, and define
+    three competing generative configura…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11368
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 绝对之流形：作为生成推理的宗教永恒主义
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'When Visibility Outpaces Verification: Delayed Verification and Narrative
+    Lock-in in Agentic AI Discourse'
+  why: 'arXiv:2602.11412v1 Announce Type: new Abstract: Agentic AI systems-autonomous
+    entities capable of independent planning and execution-reshap…'
+  takeaway: 'arXiv:2602.11412v1 Announce Type: new Abstract: Agentic AI systems-autonomous
+    entities capable of independent planning and execution-reshape the landscape of
+    human-AI trust. Long before direct system exposure, user expectations are mediated
+    through high-stakes public discourse on social platforms. However, platform-mediated
+    engagement signals (e.g., upvotes…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11412
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 当可见性超越验证：智能体AI话语中的延迟验证与叙事锁定
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Digital Ecosystems: Enabling Collaboration in a Fragmented World'
+  why: 'arXiv:2602.11707v1 Announce Type: new Abstract: As geopolitical, organizational,
+    and technological fragmentation deepens, resilient digital…'
+  takeaway: 'arXiv:2602.11707v1 Announce Type: new Abstract: As geopolitical, organizational,
+    and technological fragmentation deepens, resilient digital collaboration becomes
+    imperative. This paper develops a spectrum framework of polycentric digital ecosystems-nested
+    socio-technical systems spanning personal, organizational, inter-organizational,
+    and global layers. Int…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11707
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 数字生态系统：碎片化世界中的协作赋能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Artificial intelligence is creating a new global linguistic hierarchy
+  why: 'arXiv:2602.12018v1 Announce Type: new Abstract: Artificial intelligence (AI)
+    has the potential to transform healthcare, education, governan…'
+  takeaway: 'arXiv:2602.12018v1 Announce Type: new Abstract: Artificial intelligence
+    (AI) has the potential to transform healthcare, education, governance and socioeconomic
+    equity, but its benefits remain concentrated in a small number of languages (Bender,
+    2019; Blasi et al., 2022; Joshi et al., 2020; Ranathunga and de Silva, 2022; Young,
+    2015). Language AI - the techn…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.12018
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 人工智能正在创造新的全球语言等级体系
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Methodological Variation in Studying Staff and Student Perceptions of AI
+  why: 'arXiv:2602.11158v1 Announce Type: cross Abstract: In this paper, we compare
+    methodological approaches for comparing student and staff perce…'
+  takeaway: 'arXiv:2602.11158v1 Announce Type: cross Abstract: In this paper, we compare
+    methodological approaches for comparing student and staff perceptions, and ask:
+    how much do these measures vary across different approaches? We focus on the case
+    of AI perceptions, which are generally assessed via a single quantitative or qualitative
+    measure, or with a mixed methods…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11158
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 研究师生对AI认知的方法论差异
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Grok in the Wild: Characterizing the Roles and Uses of Large Language Models
+    on Social Media'
+  why: 'arXiv:2602.11286v1 Announce Type: cross Abstract: xAI''s large language model,
+    Grok, is called by millions of people each week on the social…'
+  takeaway: 'arXiv:2602.11286v1 Announce Type: cross Abstract: xAI''s large language
+    model, Grok, is called by millions of people each week on the social media platform
+    X. Prior work characterizing how large language models are used has focused on
+    private, one-on-one interactions. Grok''s deployment on X represents a major departure
+    from this setting, with interactions oc…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11286
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 野生Grok：社交媒体中大语言模型角色与用途的特征分析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Dissecting Subjectivity and the "Ground Truth" Illusion in Data Annotation
+  why: 'arXiv:2602.11318v1 Announce Type: cross Abstract: In machine learning, "ground
+    truth" refers to the assumed correct labels used to train an…'
+  takeaway: 'arXiv:2602.11318v1 Announce Type: cross Abstract: In machine learning,
+    "ground truth" refers to the assumed correct labels used to train and evaluate
+    models. However, the foundational "ground truth" paradigm rests on a positivistic
+    fallacy that treats human disagreement as technical noise rather than a vital
+    sociotechnical signal. This systematic literature…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11318
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 解构数据标注中的主观性与'地面真相'幻觉
+  why_zh: arXiv:2602.11318v1 公告类型：交叉 摘要：在机器学习中，“真实标签”指的是用于训练模型的假定正确标签…
+  takeaway_zh: arXiv:2602.11318v1 公告类型：交叉 摘要：在机器学习中，“真实标签”指的是用于训练和评估模型的假定正确标签。然而，这一基础的“真实标签”范式建立在一种实证主义谬误之上，它将人类分歧视为技术噪音而非关键的社会技术信号。本系统文献…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Using predictive multiplicity to measure individual performance within the
+    AI Act
+  why: 'arXiv:2602.11944v1 Announce Type: cross Abstract: When building AI systems
+    for decision support, one often encounters the phenomenon of pre…'
+  takeaway: 'arXiv:2602.11944v1 Announce Type: cross Abstract: When building AI systems
+    for decision support, one often encounters the phenomenon of predictive multiplicity:
+    a single best model does not exist; instead, one can construct many models with
+    similar overall accuracy that differ in their predictions for individual cases.
+    Especially when decisions have a direc…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11944
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 运用预测多样性衡量《人工智能法案》框架下的个体表现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Wisdom of the LLM Crowd: A Large Scale Benchmark of Multi-Label U.S. Election-Related
+    Harmful Social Media Content'
+  why: 'arXiv:2602.11962v1 Announce Type: cross Abstract: The spread of election misinformation
+    and harmful political content conveys misleading na…'
+  takeaway: 'arXiv:2602.11962v1 Announce Type: cross Abstract: The spread of election
+    misinformation and harmful political content conveys misleading narratives and
+    poses a serious threat to democratic integrity. Detecting harmful content at early
+    stages is essential for understanding and potentially mitigating its downstream
+    spread. In this study, we introduce USE24-XD…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.11962
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: LLM群体智慧：美国选举相关有害社交媒体内容的大规模多标签基准测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Neutral Prompts, Non-Neutral People: Quantifying Gender and Skin-Tone Bias
+    in Gemini Flash 2.5 Image and GPT Image 1.5'
+  why: 'arXiv:2602.12133v1 Announce Type: cross Abstract: This study quantifies gender
+    and skin-tone bias in two widely deployed commercial image g…'
+  takeaway: 'arXiv:2602.12133v1 Announce Type: cross Abstract: This study quantifies
+    gender and skin-tone bias in two widely deployed commercial image generators -
+    Gemini Flash 2.5 Image (NanoBanana) and GPT Image 1.5 - to test the assumption
+    that neutral prompts yield demographically neutral outputs. We generated 3,200
+    photorealistic images using four semantically neut…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.12133
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 中性提示与非中性人群：量化Gemini Flash 2.5与GPT Image 1.5在性别和肤色上的偏见
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: '"Sorry, I Didn''t Catch That": How Speech Models Miss What Matters Most'
+  why: 'arXiv:2602.12249v1 Announce Type: cross Abstract: Despite speech recognition
+    systems achieving low word error rates on standard benchmarks,…'
+  takeaway: 'arXiv:2602.12249v1 Announce Type: cross Abstract: Despite speech recognition
+    systems achieving low word error rates on standard benchmarks, they often fail
+    on short, high-stakes utterances in real-world deployments. Here, we study this
+    failure mode in a high-stakes task: the transcription of U.S. street names as
+    spoken by U.S. participants. We evaluate 15 m…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.12249
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: '''抱歉，我没听清''：语音模型如何遗漏最关键内容'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Legitimate Overrides in Decentralized Protocols
+  why: 'arXiv:2602.12260v1 Announce Type: cross Abstract: Decentralized protocols
+    claim immutable, rule-based execution, yet many embed emergency m…'
+  takeaway: 'arXiv:2602.12260v1 Announce Type: cross Abstract: Decentralized protocols
+    claim immutable, rule-based execution, yet many embed emergency mechanisms such
+    as chain-level freezes, protocol pauses, and account quarantines. These overrides
+    are crucial for responding to exploits and systemic failures, but they expose
+    a core tension: when does intervention preser…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.12260
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 去中心化协议中的合法覆盖机制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Prompt Engineer: Analyzing Hard and Soft Skill Requirements in the AI Job
+    Market'
+  why: 'arXiv:2506.00058v2 Announce Type: replace Abstract: The rise of large language
+    models (LLMs) has created a new job role: the Prompt Enginee…'
+  takeaway: 'arXiv:2506.00058v2 Announce Type: replace Abstract: The rise of large
+    language models (LLMs) has created a new job role: the Prompt Engineer. Despite
+    growing interest in this position, we still do not fully understand what skills
+    this new job role requires or how common these jobs are. In this paper, we present
+    a data-driven analysis of global prompt engine…'
+  prompt: ''
+  url: https://arxiv.org/abs/2506.00058
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: Prompt工程师：剖析AI职场中的硬技能与软技能需求
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Trustworthiness of Legal Considerations for the Use of LLMs in Education
+  why: 'arXiv:2508.03771v2 Announce Type: replace Abstract: As Artificial Intelligence
+    (AI), particularly Large Language Models (LLMs), becomes inc…'
+  takeaway: 'arXiv:2508.03771v2 Announce Type: replace Abstract: As Artificial Intelligence
+    (AI), particularly Large Language Models (LLMs), becomes increasingly embedded
+    in education systems worldwide, ensuring their ethical, legal, and contextually
+    appropriate deployment has become a critical policy concern. This paper offers
+    a comparative analysis of AI-related regul…'
+  prompt: ''
+  url: https://arxiv.org/abs/2508.03771
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 教育领域应用LLM的法律考量可信度探讨
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Eroding the Truth-Default: A Causal Analysis of Human Susceptibility to
+    Foundation Model Hallucinations and Disinformation in the Wild'
+  why: 'arXiv:2601.22871v2 Announce Type: replace Abstract: As foundation models (FMs)
+    approach human-level fluency, distinguishing synthetic from…'
+  takeaway: 'arXiv:2601.22871v2 Announce Type: replace Abstract: As foundation models
+    (FMs) approach human-level fluency, distinguishing synthetic from organic content
+    has become a key challenge for Trustworthy Web Intelligence. This paper presents
+    JudgeGPT and RogueGPT, a dual-axis framework that decouples "authenticity" from
+    "attribution" to investigate the mechanisms…'
+  prompt: ''
+  url: https://arxiv.org/abs/2601.22871
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 侵蚀真相默认：人类对基础模型幻觉与野外虚假信息易感性的因果分析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Toward Dignity-Aware AI: Next-Generation Elderly Monitoring from Fall Detection
+    to ADL'
+  why: 'arXiv:2511.11696v2 Announce Type: replace-cross Abstract: This position paper
+    envisions a next-generation elderly monitoring system that mo…'
+  takeaway: 'arXiv:2511.11696v2 Announce Type: replace-cross Abstract: This position
+    paper envisions a next-generation elderly monitoring system that moves beyond
+    fall detection toward the broader goal of Activities of Daily Living (ADL) recognition.
+    Our ultimate aim is to design privacy-preserving, edge-deployed, and federated
+    AI systems that can robustly detect and un…'
+  prompt: ''
+  url: https://arxiv.org/abs/2511.11696
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 迈向尊严感知AI：从跌倒检测到日常生活活动监测的下一代老年监护
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'DSO: Direct Steering Optimization for Bias Mitigation'
+  why: 'arXiv:2512.15926v3 Announce Type: replace-cross Abstract: Generative models
+    are often deployed to make decisions on behalf of users, such a…'
+  takeaway: 'arXiv:2512.15926v3 Announce Type: replace-cross Abstract: Generative
+    models are often deployed to make decisions on behalf of users, such as vision-language
+    models (VLMs) identifying which person in a room is a doctor to help visually
+    impaired individuals. Yet, VLM decisions are influenced by the perceived demographic
+    attributes of people in the input, whic…'
+  prompt: ''
+  url: https://arxiv.org/abs/2512.15926
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: DSO：直接转向优化以缓解偏见
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Exploring Silicon-Based Societies: An Early Study of the Moltbook Agent
+    Community'
+  why: 'arXiv:2602.02613v3 Announce Type: replace-cross Abstract: The rapid emergence
+    of autonomous large language model agents has given rise to p…'
+  takeaway: 'arXiv:2602.02613v3 Announce Type: replace-cross Abstract: The rapid emergence
+    of autonomous large language model agents has given rise to persistent, large-scale
+    agent ecosystems whose collective behavior cannot be adequately understood through
+    anecdotal observation or small-scale simulation. This paper introduces data-driven
+    silicon sociology as a systemat…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.02613
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-13T05:00:00+00:00'
+  title_zh: 探索硅基社会：Moltbook代理社区的早期研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Former McKinsey partner to lead Australian opposition party
+  why: Angus Taylor pledges more conservative agenda after Liberals ditch first female
+    leader
+  takeaway: Angus Taylor pledges more conservative agenda after Liberals ditch first
+    female leader
+  prompt: ''
+  url: https://www.ft.com/content/c60bca86-5c26-4faf-baa0-33adb4b36703
+  source: Financial Times - World
+  published_utc: '2026-02-13T04:52:14+00:00'
+  title_zh: 前麦肯锡合伙人将领导澳大利亚反对党
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Waymo is asking DoorDash drivers to shut the doors of its self-driving cars
+  why: If a passenger accidentally leaves a Waymo door open, the vehicle can get stuck
+    in place.
+  takeaway: If a passenger accidentally leaves a Waymo door open, the vehicle can
+    get stuck in place.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/12/waymo-is-asking-doordash-drivers-to-shut-the-doors-of-its-self-driving-cars/
+  source: TechCrunch
+  published_utc: '2026-02-13T04:41:41+00:00'
+  title_zh: Waymo要求DoorDash司机为其自动驾驶车辆关闭车门
+  why_zh: 如果乘客不小心让Waymo的车门保持开启状态，车辆可能会原地不动
+  takeaway_zh: 如果乘客不小心让Waymo的车门保持开启状态，车辆可能会原地不动
+  prompt_zh: ''
+- category: Tech industry
+  title: AI safety leader says 'world is in peril' and quits to study poetry
+  why: It comes in the same week an OpenAI researcher resigned amid concerns about
+    its decision to start testing ChatGPT ads.
+  takeaway: It comes in the same week an OpenAI researcher resigned amid concerns
+    about its decision to start testing ChatGPT ads.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c62dlvdq3e3o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-02-13T04:37:44+00:00'
+  title_zh: AI安全负责人宣称'世界处于危险中'后辞职研习诗歌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trade bellwether Singapore says global ‘fragility’ will hit economy
+  why: City-state says tougher times loom after a turbulent year of geopolitical strife
+    and US tariff threats
+  takeaway: City-state says tougher times loom after a turbulent year of geopolitical
+    strife and US tariff threats
+  prompt: ''
+  url: https://www.ft.com/content/c5cbc591-ea11-4245-b0a8-766a5d84ed10
+  source: Financial Times - World
+  published_utc: '2026-02-13T03:50:03+00:00'
+  title_zh: 贸易风向标新加坡称全球‘脆弱性’将冲击经济
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Wonder of Modern Drywall
+  why: 'Article URL: https://worksinprogress.co/issue/the-wonder-of-modern-drywall/
+    Comments URL: https://news.ycombinator.com/item?id=46998606 Poi…'
+  takeaway: 'Article URL: https://worksinprogress.co/issue/the-wonder-of-modern-drywall/
+    Comments URL: https://news.ycombinator.com/item?id=46998606 Points: 7 # Comments:
+    1'
+  prompt: ''
+  url: https://worksinprogress.co/issue/the-wonder-of-modern-drywall/
+  source: Hacker News (front page)
+  published_utc: '2026-02-13T03:33:27+00:00'
+  title_zh: 现代干墙的奇妙之处
+  why_zh: '文章URL: https://worksinprogress.co/issue/the-wonder-of-modern-drywall/ 评论URL:
+    https://news.ycombinator.com/item?id=46998606 积分…'
+  takeaway_zh: '文章URL: https://worksinprogress.co/issue/the-wonder-of-modern-drywall/
+    评论URL: https://news.ycombinator.com/item?id=46998606 积分: 7 评论数: 1'
+  prompt_zh: ''
+- category: Business & economy
+  title: Bangladesh dynastic heir defeats Islamist challengers in post-uprising election
+  why: Country holds first poll after 2024 youth-led revolution that ousted longtime
+    leader Sheikh Hasina
+  takeaway: Country holds first poll after 2024 youth-led revolution that ousted longtime
+    leader Sheikh Hasina
+  prompt: ''
+  url: https://www.ft.com/content/3b3ca149-4f17-44e9-a3f1-c1285f577876
+  source: Financial Times - World
+  published_utc: '2026-02-13T03:10:51+00:00'
+  title_zh: 孟加拉国世袭继承人在后起义选举中击败伊斯兰主义挑战者
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Taylor Swift asks US government to block 'Swift Home' trademark
+  why: Her team argued that a bedding firm's designs showed similarities to her trademarked
+    signature.
+  takeaway: Her team argued that a bedding firm's designs showed similarities to her
+    trademarked signature.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cr5lmg9l1y7o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-13T02:29:17+00:00'
+  title_zh: 泰勒·斯威夫特要求美国政府阻止'Swift Home'商标注册
+  why_zh: 她的团队辩称，一家床上用品公司的设计与她注册商标的签名存在相似之处
+  takeaway_zh: 她的团队辩称，一家床上用品公司的设计与她注册商标的签名存在相似之处
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Skip the Tips: A game to select "No Tip" but dark patterns try to stop you'
+  why: 'Article URL: https://skipthe.tips/ Comments URL: https://news.ycombinator.com/item?id=46997519
+    Points: 178 # Comments: 97'
+  takeaway: 'Article URL: https://skipthe.tips/ Comments URL: https://news.ycombinator.com/item?id=46997519
+    Points: 178 # Comments: 97'
+  prompt: ''
+  url: https://skipthe.tips/
+  source: Hacker News (front page)
+  published_utc: '2026-02-13T00:54:51+00:00'
+  title_zh: 跳过小费：一款选择‘无小费’但暗黑模式试图阻止你的游戏
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: When Amazon badly needed a ride, Europe's Ariane 6 rocket delivered
+  why: This was the first launch of the Ariane 64, the most powerful rocket in European
+    space history.
+  takeaway: This was the first launch of the Ariane 64, the most powerful rocket in
+    European space history.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/02/when-amazon-badly-needed-a-ride-europes-ariane-6-rocket-delivered/
+  source: Ars Technica
+  published_utc: '2026-02-13T00:34:29+00:00'
+  title_zh: 当亚马逊急需运载时，欧洲阿丽亚娜6型火箭成功交付
+  why_zh: 这是欧洲航天史上最强大的火箭——阿丽亚娜64号的首次发射
+  takeaway_zh: 这是欧洲航天史上最强大的火箭——阿丽亚娜64号的首次发射
+  prompt_zh: ''
+- category: Tech industry
+  title: AI coding platform's flaws allow BBC reporter to be hacked
+  why: Vibe-coding tools - which let people without coding skills create apps using
+    AI - are exploding in popularity.
+  takeaway: Vibe-coding tools - which let people without coding skills create apps
+    using AI - are exploding in popularity.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cy4wnw04e8wo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-02-13T00:19:30+00:00'
+  title_zh: AI编程平台漏洞导致BBC记者遭黑客入侵
+  why_zh: 无需编程技能即可利用AI创建应用的氛围编码工具正迅速走红
+  takeaway_zh: 无需编程技能即可利用AI创建应用的氛围编码工具正迅速走红
+  prompt_zh: ''
+- category: Tech industry
+  title: AWS Adds support for nested virtualization
+  why: 'Article URL: https://github.com/aws/aws-sdk-go-v2/commit/3dca5e45d5ad05460b93410087833cbaa624754e
+    Comments URL: https://news.ycombinator.co…'
+  takeaway: 'Article URL: https://github.com/aws/aws-sdk-go-v2/commit/3dca5e45d5ad05460b93410087833cbaa624754e
+    Comments URL: https://news.ycombinator.com/item?id=46997133 Points: 136 # Comments:
+    52'
+  prompt: ''
+  url: https://github.com/aws/aws-sdk-go-v2/commit/3dca5e45d5ad05460b93410087833cbaa624754e
+  source: Hacker News (front page)
+  published_utc: '2026-02-13T00:07:57+00:00'
+  title_zh: AWS新增对嵌套虚拟化的支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Rain and politics driving up half-term holiday bookings, travel agents say
+  why: The Advantage Travel Partnerships says rain plus the political environment
+    is creating a "powerful psychological need for escape".
+  takeaway: The Advantage Travel Partnerships says rain plus the political environment
+    is creating a "powerful psychological need for escape".
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c3ew90z9jezo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-13T00:05:55+00:00'
+  title_zh: 旅行社称降雨和政治因素推高期中假期预订量
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

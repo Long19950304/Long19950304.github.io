@@ -878,6 +878,7 @@ weeks:
   - '2026-02-09'
   - '2026-02-10'
   - '2026-02-12'
+  - '2026-02-13'
   highlights_news:
   - date: '2026-02-09'
     url: https://www.ft.com/content/13556ff7-89be-463f-8dbd-a16540a47dab
@@ -985,6 +986,41 @@ weeks:
     category: Business & economy
     source: BBC News - Business
     published_utc: '2026-02-12T01:19:57+00:00'
+  - date: '2026-02-13'
+    url: https://www.ft.com/content/f2eff736-12de-4c33-9826-847d2fdf8be3
+    title: Trump plans to roll back tariffs on metal and aluminium goods
+    title_zh: 特朗普计划撤销对金属和铝制品的关税
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-13T05:00:31+00:00'
+  - date: '2026-02-13'
+    url: https://www.ft.com/content/228fa18d-8b67-4152-9604-39f89375250f
+    title: Bankers push to avoid US regulator taking charge of British supervisor
+    title_zh: 银行家们推动避免美国监管机构接管英国监管者
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-13T05:00:31+00:00'
+  - date: '2026-02-13'
+    url: https://www.bbc.com/news/articles/cr5lmg9l1y7o?at_medium=RSS&at_campaign=rss
+    title: Taylor Swift asks US government to block 'Swift Home' trademark
+    title_zh: 泰勒·斯威夫特要求美国政府阻止'Swift Home'商标注册
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-13T02:29:17+00:00'
+  - date: '2026-02-13'
+    url: https://www.bbc.com/news/articles/cy4wnw04e8wo?at_medium=RSS&at_campaign=rss
+    title: AI coding platform's flaws allow BBC reporter to be hacked
+    title_zh: AI编程平台漏洞导致BBC记者遭黑客入侵
+    category: Tech industry
+    source: BBC News - Technology
+    published_utc: '2026-02-13T00:19:30+00:00'
+  - date: '2026-02-13'
+    url: https://arstechnica.com/space/2026/02/when-amazon-badly-needed-a-ride-europes-ariane-6-rocket-delivered/
+    title: When Amazon badly needed a ride, Europe's Ariane 6 rocket delivered
+    title_zh: 当亚马逊急需运载时，欧洲阿丽亚娜6型火箭成功交付
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-13T00:34:29+00:00'
   highlights_ai:
   - date: '2026-02-09'
     url: https://github.com/openai/openai-node/releases/tag/v6.18.0
@@ -1085,3 +1121,32 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - comfyanonymous/ComfyUI
     published_utc: '2026-02-10T20:27:38+00:00'
+  - date: '2026-02-13'
+    url: https://the-decoder.com/openai-has-yet-another-new-coding-model-and-this-time-its-really-fast/
+    title: OpenAI has yet another new coding model and this time it's really fast
+    title_zh: OpenAI再推新编码模型，此次速度极快
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-12T19:24:48+00:00'
+  - date: '2026-02-13'
+    url: https://aws.amazon.comabout-aws/whats-new/2026/02/amazon-bedrock-increases-default-sonnet-4.5-quotas-aws-govcloud-us
+    title: Amazon Bedrock increases default quotas for Anthropic’s Claude Sonnet 4.5
+      model in AWS GovCloud (US)
+    title_zh: Amazon Bedrock在AWS GovCloud（美国）提升Anthropic Claude Sonnet 4.5模型的默认配额
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-02-12T19:52:00+00:00'
+  - date: '2026-02-13'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch4
+    title: 'BerriAI/litellm: v1.81.0-patch4'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-02-13T01:17:18+00:00'
+  - date: '2026-02-13'
+    url: https://github.com/vllm-project/vllm/releases/tag/v0.16.0
+    title: 'vllm-project/vllm: v0.16.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - vllm-project/vllm
+    published_utc: '2026-02-13T00:35:21+00:00'

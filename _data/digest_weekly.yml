@@ -879,6 +879,7 @@ weeks:
   - '2026-02-10'
   - '2026-02-12'
   - '2026-02-13'
+  - '2026-02-14'
   highlights_news:
   - date: '2026-02-09'
     url: https://www.ft.com/content/13556ff7-89be-463f-8dbd-a16540a47dab
@@ -1021,6 +1022,41 @@ weeks:
     category: Tech industry
     source: Ars Technica
     published_utc: '2026-02-13T00:34:29+00:00'
+  - date: '2026-02-14'
+    url: https://www.ft.com/content/fdd602f0-317a-429f-b122-7898257dd804
+    title: Rubio skips Ukraine meeting with European leaders in Munich
+    title_zh: 卢比奥缺席慕尼黑与欧洲领导人的乌克兰问题会议
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-13T18:50:36+00:00'
+  - date: '2026-02-14'
+    url: https://www.ft.com/content/d52b97ba-8199-4877-b210-e7575cbdcaf2
+    title: What the truck just happened to transport stocks?
+    title_zh: 卡车究竟发生了什么，竟用来运输股票？
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-02-13T19:59:43+00:00'
+  - date: '2026-02-14'
+    url: https://www.bbc.com/news/articles/cd6z05p56xyo?at_medium=RSS&at_campaign=rss
+    title: Inflation eases in US as prices for used cars fall
+    title_zh: 美国通胀缓解，二手车价格下降
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-13T18:22:32+00:00'
+  - date: '2026-02-14'
+    url: https://www.bbc.com/news/articles/c4g52q0pl5yo?at_medium=RSS&at_campaign=rss
+    title: Heathrow not crowded but people walk in 'wrong place', says boss
+    title_zh: 希思罗机场不拥挤，但人们‘走错了地方’，老板说
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-13T22:32:05+00:00'
+  - date: '2026-02-14'
+    url: https://techcrunch.com/2026/02/13/fintech-lending-giant-figure-confirms-data-breach/
+    title: Fintech lending giant Figure confirms data breach
+    title_zh: 金融科技借贷巨头Figure确认数据泄露
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-13T21:02:46+00:00'
   highlights_ai:
   - date: '2026-02-09'
     url: https://github.com/openai/openai-node/releases/tag/v6.18.0
@@ -1150,3 +1186,25 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - vllm-project/vllm
     published_utc: '2026-02-13T00:35:21+00:00'
+  - date: '2026-02-14'
+    url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
+    title: OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK
+    title_zh: OpenAI正淘汰其4o模型，中国的ChatGPT粉丝不买账
+    category: AI tools & model releases
+    source: WIRED - AI
+    published_utc: '2026-02-13T21:56:18+00:00'
+  - date: '2026-02-14'
+    url: https://github.com/openai/openai-python/releases/tag/v2.21.0
+    title: 'openai/openai-python: v2.21.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-02-14T00:11:26+00:00'
+  - date: '2026-02-14'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-s4.5-quota-aws-govcloud-us
+    title: Amazon Bedrock increases default quotas for Anthropic’s Claude Sonnet 4.5
+      model in AWS GovCloud (US)
+    title_zh: Amazon Bedrock在AWS GovCloud（美国）提高Anthropic Claude Sonnet 4.5模型的默认配额
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-02-12T19:52:00+00:00'

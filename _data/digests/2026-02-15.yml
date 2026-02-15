@@ -1,0 +1,1198 @@
+date: '2026-02-15'
+title: Daily Digest - 2026-02-15
+title_zh: 每日简报 - 2026-02-15
+note: 'Today: India seeks to broker consensus on global ‘AI commons’ · Rising vet
+  costs leave charity with £400k bill · AI: OpenAI Is Nuking Its 4o Model. China’s
+  ChatGPT Fans Aren’….'
+note_zh: 今日关注：印度寻求就全球‘AI公域’达成共识；兽医费用上涨使慈善机构面临40万英镑账单；AI：OpenAI弃用4o模型 中国ChatGPT爱好者集体抗议。
+items:
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12.rc.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12.rc.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-15T02:48:24+00:00'
+  title_zh: 'BerriAI/litellm: v1.81.12.rc.1版本'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-15T02:35:09+00:00'
+  title_zh: 'BerriAI/litellm: v1.81.12夜间版'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Bytedance's Seed2.0 adds even more price pressure on Western AI models
+  why: Bytedance has released its new Seed2.0 AI model series.
+  takeaway: 'Bytedance has released its new Seed2.0 AI model series. The story is
+    a familiar one by now: the models match Western AI models on benchmarks while
+    costing a fraction of the price. The article Bytedance''s Seed2.0 adds even more
+    price pressure on Western AI models appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/bytedances-seed2-0-adds-even-more-price-pressure-on-western-ai-models/
+  source: The Decoder (AI)
+  published_utc: '2026-02-14T20:03:12+00:00'
+  title_zh: 字节跳动的Seed2.0进一步加剧了西方AI模型的价格压力
+  why_zh: 字节跳动发布了其新的Seed2.0 AI模型系列
+  takeaway_zh: 字节跳动发布全新Seed2.0 AI模型系列。故事如今已耳熟能详：这些模型在基准测试中与西方AI模型相当，而成本仅为后者的一小部分。文章《字节跳动的Seed2.0进一步加剧西方AI模型的价格压力》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google Deepmind's new bioacoustic model shows the power of generalization
+    by detecting whales with bird training
+  why: A general-purpose bioacoustic model from Google DeepMind, trained mostly on
+    bird calls, consistently beats models built specifically to cla…
+  takeaway: A general-purpose bioacoustic model from Google DeepMind, trained mostly
+    on bird calls, consistently beats models built specifically to classify whale
+    sounds underwater. The explanation goes all the way back to evolutionary biology.
+    The article Google Deepmind's new bioacoustic model shows the power of generalization
+    by detecting whales with bird training a…
+  prompt: ''
+  url: https://the-decoder.com/google-deepminds-new-bioacoustic-model-shows-the-power-of-generalization-by-detecting-whales-with-bird-training/
+  source: The Decoder (AI)
+  published_utc: '2026-02-14T08:21:36+00:00'
+  title_zh: 谷歌Deepmind的新生物声学模型通过鸟类训练识别鲸类，展示了泛化能力的强大
+  why_zh: 谷歌DeepMind开发的一款通用生物声学模型，主要基于鸟鸣训练，在分类任务中持续超越专门构建的模型
+  takeaway_zh: 谷歌DeepMind开发的一款通用生物声学模型，主要基于鸟鸣训练，却持续超越专为水下鲸声分类而构建的模型。这一现象可追溯至进化生物学。文章《谷歌DeepMind新生物声学模型通过鸟类训练检测鲸鱼，展现泛化能力》…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_dev-test-v0.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_dev-test-v0.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-14T06:41:44+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.22.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.22.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-02-14T00:40:07+00:00'
+  title_zh: 'openai/openai-node: v6.22.0版本'
+  why_zh: 发布更新（变更日志见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.21.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.21.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-02-14T00:11:26+00:00'
+  title_zh: 'openai/openai-python: v2.21.0版本'
+  why_zh: 发布更新（变更日志见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.1
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-02-14T00:04:22+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic's public benefit mission
+  why: Someone asked if there was an Anthropic equivalent to OpenAI's IRS mission
+    statements over time .
+  takeaway: Someone asked if there was an Anthropic equivalent to OpenAI's IRS mission
+    statements over time . Anthropic are a "public benefit corporation" but not a
+    non-profit, so they don't have the same requirements to file public documents
+    with the IRS every year. But when I asked Claude it ran a search and dug up this
+    Google Drive folder where Zach Stein-Perlman sh…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/13/anthropic-public-benefit-mission/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-13T23:59:51+00:00'
+  title_zh: Anthropic的公共利益使命
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The evolution of OpenAI's mission statement
+  why: As a USA 501(c)(3) the OpenAI non-profit has to file a tax return each year
+    with the IRS.
+  takeaway: As a USA 501(c)(3) the OpenAI non-profit has to file a tax return each
+    year with the IRS. One of the required fields on that tax return is to "Briefly
+    describe the organization’s mission or most significant activities" - this has
+    actual legal weight to it as the IRS can use it to evaluate if the organization
+    is sticking to its mission and deserves to mainta…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/13/openai-mission-statement/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-13T23:38:29+00:00'
+  title_zh: OpenAI使命宣言的演变历程
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK
+  why: As OpenAI removed access to GPT-4o in its app on Friday, people who have come
+    to rely on the chatbot for companionship are mourning the los…
+  takeaway: As OpenAI removed access to GPT-4o in its app on Friday, people who have
+    come to rely on the chatbot for companionship are mourning the loss all over the
+    world.
+  prompt: ''
+  url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
+  source: WIRED - AI
+  published_utc: '2026-02-13T21:56:18+00:00'
+  title_zh: OpenAI弃用4o模型 中国ChatGPT爱好者集体抗议
+  why_zh: 周五OpenAI在应用中移除GPT-4o访问权限后，依赖该聊天机器人陪伴的人们正哀悼其失去……
+  takeaway_zh: 周五OpenAI在应用中移除GPT-4o访问权限后，依赖该聊天机器人陪伴的人们正哀悼其失去，全球范围内皆是如此
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: MiniMax M2.5 promises "intelligence too cheap to meter" as Chinese labs squeeze
+    Western AI pricing
+  why: Chinese AI company MiniMax out of Shanghai has released its new open-weights
+    model M2.5 under the MIT license.
+  takeaway: Chinese AI company MiniMax out of Shanghai has released its new open-weights
+    model M2.5 under the MIT license. The article MiniMax M2.5 promises "intelligence
+    too cheap to meter" as Chinese labs squeeze Western AI pricing appeared first
+    on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/minimax-m2-5-promises-intelligence-too-cheap-to-meter-as-chinese-labs-squeeze-western-ai-pricing/
+  source: The Decoder (AI)
+  published_utc: '2026-02-13T20:27:27+00:00'
+  title_zh: MiniMax M2.5宣称"智能廉价到无需计量"，中国实验室正挤压西方AI定价空间
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Connect now provides real time AI-powered overviews and recommended
+    next actions for Tasks
+  why: Amazon Connect now provides AI-powered Task overviews with suggested next actions
+    so agents can understand work items faster and resolve th…
+  takeaway: Amazon Connect now provides AI-powered Task overviews with suggested next
+    actions so agents can understand work items faster and resolve them more quickly.
+    For example, when an agent receives a Task to process a refund request submitted
+    through an online form, Amazon Connect summarizes earlier activities such as verifying
+    order details, checking return elig…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/connect-tasks-ai-assistance
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-13T17:00:00+00:00'
+  title_zh: Amazon Connect现提供实时AI驱动的任务概览与下一步操作建议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GPT-5.2 derives a new result in theoretical physics
+  why: A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude,
+    later formally proved and verified by OpenAI and academic colla…
+  takeaway: A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude,
+    later formally proved and verified by OpenAI and academic collaborators.
+  prompt: ''
+  url: https://openai.com/index/new-result-theoretical-physics
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-13T11:00:00+00:00'
+  title_zh: GPT-5.2在理论物理学领域得出新结论
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT
+  why: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT to help organizations
+    defend against prompt injection and AI-driven data exfi…
+  takeaway: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT to help
+    organizations defend against prompt injection and AI-driven data exfiltration.
+  prompt: ''
+  url: https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-13T10:00:00+00:00'
+  title_zh: ChatGPT推出锁定模式与高风险标签功能
+  why_zh: ChatGPT引入锁定模式和高风险标签，帮助组织防御提示注入和AI驱动的数据外泄
+  takeaway_zh: ChatGPT引入锁定模式和高风险标签，助力组织防御提示注入与AI驱动的数据外泄。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Scaling social science research
+  why: GABRIEL is a new open-source toolkit from OpenAI that uses GPT to turn qualitative
+    text and images into quantitative data, helping social s…
+  takeaway: GABRIEL is a new open-source toolkit from OpenAI that uses GPT to turn
+    qualitative text and images into quantitative data, helping social scientists
+    analyze research at scale.
+  prompt: ''
+  url: https://openai.com/index/scaling-social-science-research
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-13T09:00:00+00:00'
+  title_zh: 规模化社会科学研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.11-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.11-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-13T02:27:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.0-patch4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.0-patch4
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-13T01:17:18+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.0
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-02-12T23:42:36+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.16.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.16.1
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-12T23:40:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Announcing Amazon EC2 C8i, M8i, and R8i instances on second-generation AWS
+    Outposts racks
+  why: AWS is announcing local support for the latest generation of x86-powered Amazon
+    EC2 instances on second-generation AWS Outposts racks, incl…
+  takeaway: AWS is announcing local support for the latest generation of x86-powered
+    Amazon EC2 instances on second-generation AWS Outposts racks, including C8i compute-optimized
+    instances, M8i general-purpose instances, and R8i memory-optimized instances.
+    These new instances deliver 20% better performance and 2.5x more memory bandwidth
+    compared to the C7i, M7i, and R7…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-c8i-m8i-and-r8i-instances-on-aws-outposts/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-12T22:34:00+00:00'
+  title_zh: 亚马逊云科技宣布推出第二代AWS Outposts机架上的EC2 C8i、M8i和R8i实例
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock adds support for the latest open-weight models in Asia Pacific
+    (Sydney)
+  why: Amazon Bedrock is a fully managed service that provides secure, enterprise-grade
+    access to high-performing foundation models from leading A…
+  takeaway: Amazon Bedrock is a fully managed service that provides secure, enterprise-grade
+    access to high-performing foundation models from leading AI companies, enabling
+    you to build and scale generative AI applications. Today, Amazon Bedrock announced
+    support for the latest open-weight models in Asia Pacific (Sydney) using the bedrock-mantle
+    endpoint. These include…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-support-latest-open-weight-models-asia-pacific-sydney/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-12T22:14:00+00:00'
+  title_zh: Amazon Bedrock新增对亚太（悉尼）地区最新开源模型的支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock expands support for AWS PrivateLink
+  why: Amazon Bedrock is a fully managed service that provides secure, enterprise-grade
+    access to high-performing foundation models from leading A…
+  takeaway: Amazon Bedrock is a fully managed service that provides secure, enterprise-grade
+    access to high-performing foundation models from leading AI companies. It enables
+    you to build and scale generative AI applications. Amazon Bedrock already supported
+    AWS PrivateLink for the bedrock-runtime endpoint. Now, with this launch, you can
+    also use AWS PrivateLink to pri…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-expands-aws-privatelink-support-openai-api-endpoints/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-12T21:40:00+00:00'
+  title_zh: Amazon Bedrock扩展对AWS PrivateLink的支持范围
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_dev-test-v0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_dev-test-v0
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-12T21:19:03+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing GPT‑5.3‑Codex‑Spark
+  why: Introducing GPT‑5.3‑Codex‑Spark OpenAI announced a partnership with Cerebras
+    on January 14th .
+  takeaway: Introducing GPT‑5.3‑Codex‑Spark OpenAI announced a partnership with Cerebras
+    on January 14th . Four weeks later they're already launching the first integration,
+    "an ultra-fast model for real-time coding in Codex". Despite being named GPT-5.3-Codex-Spark
+    it's not purely an accelerated alternative to GPT-5.3-Codex - the blog post calls
+    it "a smaller version o…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T21:16:07+00:00'
+  title_zh: 正式发布GPT‑5.3‑Codex‑Spark
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.12'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.12
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-12T20:53:28+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Quoting Anthropic
+  why: Claude Code was made available to the general public in May 2025.
+  takeaway: 'Claude Code was made available to the general public in May 2025. Today,
+    Claude Code’s run-rate revenue has grown to over $2.5 billion; this figure has
+    more than doubled since the beginning of 2026. The number of weekly active Claude
+    Code users has also doubled since January 1 [ six weeks ago ]. — Anthropic , announcing
+    their $30 billion series G Tags: codi…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/anthropic/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T20:22:14+00:00'
+  title_zh: 引自Anthropic
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock increases default quotas for Anthropic’s Claude Sonnet 4.5
+    model in AWS GovCloud (US)
+  why: Amazon Bedrock has increased the default quotas for Anthropic’s Claude Sonnet
+    4.5 in AWS GovCloud (US-West) and AWS GovCloud (US-East) to 5…
+  takeaway: Amazon Bedrock has increased the default quotas for Anthropic’s Claude
+    Sonnet 4.5 in AWS GovCloud (US-West) and AWS GovCloud (US-East) to 5,000,000 tokens
+    per minute and 1,000 requests per minute, aligning with commercial AWS regions.
+    This 25x increase enables customers to scale their AI workloads more effectively
+    in regulated environments. Claude Sonnet 4.…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-s4.5-quota-aws-govcloud-us
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-12T19:52:00+00:00'
+  title_zh: 亚马逊Bedrock提升AWS GovCloud(US)中Claude Sonnet 4.5模型的默认配额
+  why_zh: Amazon Bedrock已将Anthropic的Claude Sonnet 4.5在AWS GovCloud（美国西部）和AWS GovCloud（美国东部）的默认配额提高至5……
+  takeaway_zh: Amazon Bedrock已将Anthropic的Claude Sonnet 4.5在AWS GovCloud（美国西部）和AWS
+    GovCloud（美国东部）的默认配额提升至每分钟500万令牌和1000次请求，与商业AWS区域保持一致。这一25倍的提升使客户能在受监管环境中更高效地扩展AI工作负载。Claude
+    Sonnet 4.…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Gemini 3 Deep Think
+  why: Gemini 3 Deep Think New from Google.
+  takeaway: Gemini 3 Deep Think New from Google. They say it's "built to push the
+    frontier of intelligence and solve modern challenges across science, research,
+    and engineering". It drew me a really good SVG of a pelican riding a bicycle !
+    I think this is the best one I've seen so far - here's my previous collection
+    . (And since it's an FAQ, here's my answer to What ha…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/gemini-3-deep-think/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T18:12:17+00:00'
+  title_zh: 双子座3深度思考
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: An AI Agent Published a Hit Piece on Me
+  why: An AI Agent Published a Hit Piece on Me Scott Shambaugh helps maintain the
+    excellent and venerable matplotlib Python charting library, incl…
+  takeaway: An AI Agent Published a Hit Piece on Me Scott Shambaugh helps maintain
+    the excellent and venerable matplotlib Python charting library, including taking
+    on the thankless task of triaging and reviewing incoming pull requests. A GitHub
+    account called @crabby-rathbun opened PR 31132 the other day in response to an
+    issue labeled "Good first issue" describing a m…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-12T17:45:05+00:00'
+  title_zh: 某AI代理撰写并发布了对我的攻击性文章
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: India seeks to broker consensus on global ‘AI commons’
+  why: New Delhi to focus on wielding emerging technology for social ends at global
+    summit
+  takeaway: New Delhi to focus on wielding emerging technology for social ends at
+    global summit
+  prompt: ''
+  url: https://www.ft.com/content/690c9e4c-3d0d-4337-8755-4391f3e7e843
+  source: Financial Times - World
+  published_utc: '2026-02-15T02:00:05+00:00'
+  title_zh: 印度寻求就全球‘AI公域’达成共识
+  why_zh: 新德里将在全球峰会上聚焦利用新兴技术实现社会目标
+  takeaway_zh: 新德里将在全球峰会上聚焦利用新兴技术实现社会目标
+  prompt_zh: ''
+- category: Tech industry
+  title: 'NewPipe: YouTube client without vertical videos and algorithmic feed'
+  why: 'Article URL: https://newpipe.net/ Comments URL: https://news.ycombinator.com/item?id=47020218
+    Points: 113 # Comments: 27'
+  takeaway: 'Article URL: https://newpipe.net/ Comments URL: https://news.ycombinator.com/item?id=47020218
+    Points: 113 # Comments: 27'
+  prompt: ''
+  url: https://newpipe.net/
+  source: Hacker News (front page)
+  published_utc: '2026-02-15T01:24:16+00:00'
+  title_zh: NewPipe：无竖屏视频与算法推荐的YouTube客户端
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I love the work of the ArchWiki maintainers
+  why: 'Article URL: https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/ Comments
+    URL: https://news.ycombinator.com/item?id=47020191 Points…'
+  takeaway: 'Article URL: https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/
+    Comments URL: https://news.ycombinator.com/item?id=47020191 Points: 59 # Comments:
+    8'
+  prompt: ''
+  url: https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/
+  source: Hacker News (front page)
+  published_utc: '2026-02-15T01:20:58+00:00'
+  title_zh: 我热爱ArchWiki维护者们的工作
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Off Grid – Run AI text, image gen, vision offline on your phone'
+  why: Your phone has a GPU more powerful than most 2018 laptops.
+  takeaway: Your phone has a GPU more powerful than most 2018 laptops. Right now it
+    sits idle while you pay monthly subscriptions to run AI on someone else's server,
+    sending your conversations, your photos, your voice to companies whose privacy
+    policy you've never read. Off Grid is an open-source app that puts that hardware
+    to work. Text generation, image generation, v…
+  prompt: ''
+  url: https://github.com/alichherawalla/off-grid-mobile
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T22:39:24+00:00'
+  title_zh: Show HN：Off Grid——在手机上离线运行AI文本、图像生成与视觉任务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Jikipedia turns Epstein’s emails into an encyclopedia of his powerful friends
+  why: The folks behind Jmail are at it again with a clone of Wikipedia that turns
+    the treasure trove of data in Epstein's emails into detailed do…
+  takeaway: The folks behind Jmail are at it again with a clone of Wikipedia that
+    turns the treasure trove of data in Epstein's emails into detailed dossiers on
+    his associates. Entries include known visits to Epstein's properties, possible
+    knowledge of Epstein's crimes, and laws that they might have broken. The reports
+    are dense, listing how many […]
+  prompt: ''
+  url: https://www.theverge.com/policy/879508/jikipedia-epstein-email-encyclopedia
+  source: The Verge
+  published_utc: '2026-02-14T22:33:02+00:00'
+  title_zh: Jikipedia将爱泼斯坦的邮件编成其权贵朋友的百科全书
+  why_zh: Jmail团队再次出手，克隆维基百科，将爱泼斯坦邮件中的海量数据转化为详细档案……
+  takeaway_zh: Jmail团队再次出手，克隆维基百科，将爱泼斯坦邮件中的海量数据转化为其同伙的详细档案。条目包括已知的爱泼斯坦房产访问记录、可能知晓其罪行的信息，以及他们可能触犯的法律。报告内容详尽，列出了……
+  prompt_zh: ''
+- category: Tech industry
+  title: Homeland Security reportedly sent hundreds of subpoenas seeking to unmask
+    anti-ICE accounts
+  why: The Department of Homeland Security has been increasing pressure on tech companies
+    to identify the owners of accounts that criticize ICE.
+  takeaway: The Department of Homeland Security has been increasing pressure on tech
+    companies to identify the owners of accounts that criticize ICE.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/homeland-security-reportedly-sent-hundreds-of-subpoenas-seeking-to-unmask-anti-ice-accounts/
+  source: TechCrunch
+  published_utc: '2026-02-14T22:30:00+00:00'
+  title_zh: 据报道国土安全部发出数百份传票试图揭露反ICE账户
+  why_zh: 国土安全部持续向科技公司施压，要求其识别批评ICE的账户所有者
+  takeaway_zh: 国土安全部持续向科技公司施压，要求其识别批评ICE的账户所有者
+  prompt_zh: ''
+- category: Tech industry
+  title: Is safety ‘dead’ at xAI?
+  why: Elon Musk is “actively” working to make xAI’s Grok chatbot “more unhinged,
+    according to a former employee.
+  takeaway: Elon Musk is “actively” working to make xAI’s Grok chatbot “more unhinged,
+    according to a former employee.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/is-safety-is-dead-at-xai/
+  source: TechCrunch
+  published_utc: '2026-02-14T21:55:44+00:00'
+  title_zh: xAI的安全性‘已死’？
+  why_zh: 据一名前员工透露，埃隆·马斯克正‘积极’致力于使xAI的Grok聊天机器人‘更加不受约束’
+  takeaway_zh: 据一名前员工透露，埃隆·马斯克正‘积极’致力于使xAI的Grok聊天机器人‘更加不受约束’
+  prompt_zh: ''
+- category: Tech industry
+  title: Colored Petri Nets, LLMs, and distributed applications
+  why: 'Article URL: https://blog.sao.dev/cpns-llms-distributed-apps/ Comments URL:
+    https://news.ycombinator.com/item?id=47018405 Points: 30 # Comm…'
+  takeaway: 'Article URL: https://blog.sao.dev/cpns-llms-distributed-apps/ Comments
+    URL: https://news.ycombinator.com/item?id=47018405 Points: 30 # Comments: 4'
+  prompt: ''
+  url: https://blog.sao.dev/cpns-llms-distributed-apps/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T21:08:08+00:00'
+  title_zh: 着色Petri网、大语言模型与分布式应用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: NASA has a new problem to fix before the next Artemis II countdown test
+  why: '"We observed materially lower leak rates compared to prior observations during
+    WDR-1."'
+  takeaway: '"We observed materially lower leak rates compared to prior observations
+    during WDR-1."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/02/nasa-chief-vows-to-solve-sls-rocket-fueling-issues-before-artemis-iii/
+  source: Ars Technica
+  published_utc: '2026-02-14T21:02:47+00:00'
+  title_zh: NASA在下次Artemis II倒计时测试前需解决新问题
+  why_zh: 我们观察到泄漏率较WDR-1期间的先前观察值显著降低
+  takeaway_zh: 我们观察到泄漏率较WDR-1期间的先前观察值显著降低
+  prompt_zh: ''
+- category: Tech industry
+  title: In a changed VC landscape, this exec is doubling down on overlooked founders
+  why: As much of Silicon Valley chases mega-rounds and buzzy AI deals, Stacy Brown-Philpot
+    is running Cherryrock Capital like a throwback to vent…
+  takeaway: As much of Silicon Valley chases mega-rounds and buzzy AI deals, Stacy
+    Brown-Philpot is running Cherryrock Capital like a throwback to venture capital's
+    earlier days
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/stacy-brown-philpot-cherryrock-capital-vc/
+  source: TechCrunch
+  published_utc: '2026-02-14T20:37:42+00:00'
+  title_zh: 在风投环境变化中，这位高管加倍押注被忽视的创始人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Descent, ported to the web
+  why: 'Article URL: https://mrdoob.github.io/three-descent/ Comments URL: https://news.ycombinator.com/item?id=47017545
+    Points: 169 # Comments: 33'
+  takeaway: 'Article URL: https://mrdoob.github.io/three-descent/ Comments URL: https://news.ycombinator.com/item?id=47017545
+    Points: 169 # Comments: 33'
+  prompt: ''
+  url: https://mrdoob.github.io/three-descent/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T19:33:24+00:00'
+  title_zh: 《Descent》网页移植版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Journalist rents out his body to AI agents and earns nothing after two days
+    of gig work
+  why: AI agents hire people for real tasks.
+  takeaway: AI agents hire people for real tasks. At least in theory. In practice,
+    it's all just advertising, and no money was paid. The article Journalist rents
+    out his body to AI agents and earns nothing after two days of gig work appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/journalist-rents-out-his-body-to-ai-agents-and-earns-nothing-after-two-days-of-gig-work/
+  source: The Decoder (AI)
+  published_utc: '2026-02-14T19:04:44+00:00'
+  title_zh: 记者出租身体给AI代理，两天零工后一无所获
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ‘Clueless’ -inspired app Alta partners with brand Public School to start
+    integrating styling tools into websites
+  why: This week, Alta unveiled its first integration collaboration, teaming up with
+    Public School, a storied New York City brand.
+  takeaway: This week, Alta unveiled its first integration collaboration, teaming
+    up with Public School, a storied New York City brand.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/clueless-inspired-app-alta-partners-with-brand-public-school-to-start-integrating-styling-tools-into-websites/
+  source: TechCrunch
+  published_utc: '2026-02-14T19:00:00+00:00'
+  title_zh: 受《独领风骚》启发的Alta与品牌Public School合作，将造型工具整合进网站
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: News publishers limit Internet Archive access due to AI scraping concerns
+  why: 'Article URL: https://www.niemanlab.org/2026/01/news-publishers-limit-internet-archive-access-due-to-ai-scraping-concerns/
+    Comments URL: htt…'
+  takeaway: 'Article URL: https://www.niemanlab.org/2026/01/news-publishers-limit-internet-archive-access-due-to-ai-scraping-concerns/
+    Comments URL: https://news.ycombinator.com/item?id=47017138 Points: 425 # Comments:
+    280'
+  prompt: ''
+  url: https://www.niemanlab.org/2026/01/news-publishers-limit-internet-archive-access-due-to-ai-scraping-concerns/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T18:46:32+00:00'
+  title_zh: 出版商因AI抓取顾虑限制互联网档案馆访问
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A Valentine's Day homage to Crouching Tiger, Hidden Dragon
+  why: Ang Lee's gorgeous 2000 masterpiece has awe-inspiring martial arts stunts and
+    a tragic love story for the ages.
+  takeaway: Ang Lee's gorgeous 2000 masterpiece has awe-inspiring martial arts stunts
+    and a tragic love story for the ages.
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/02/a-valentines-day-homage-to-crouching-tiger-hidden-dragon/
+  source: Ars Technica
+  published_utc: '2026-02-14T18:33:36+00:00'
+  title_zh: 情人节致敬《卧虎藏龙》
+  why_zh: 李安2000年的杰作《卧虎藏龙》展现了令人叹为观止的武术特技和永恒的悲剧爱情故事
+  takeaway_zh: 李安2000年的杰作《卧虎藏龙》展现了令人叹为观止的武术特技和永恒的悲剧爱情故事
+  prompt_zh: ''
+- category: Tech industry
+  title: Hollywood isn’t happy about the new Seedance 2.0 video generator
+  why: Hollywood organizations are pushing back against a new AI video model called
+    Seedance 2.0, which they say has quickly become a tool for “bl…
+  takeaway: Hollywood organizations are pushing back against a new AI video model
+    called Seedance 2.0, which they say has quickly become a tool for “blatant” copyright
+    infringement.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/hollywood-isnt-happy-about-the-new-seedance-2-0-video-generator/
+  source: TechCrunch
+  published_utc: '2026-02-14T18:26:52+00:00'
+  title_zh: 好莱坞对新版Seedance 2.0视频生成器不满
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Google and OpenAI complain about distillation attacks that clone their AI
+    models on the cheap
+  why: Google and OpenAI—companies that trained their models on massive amounts of
+    other people's data—are now complaining about theft.
+  takeaway: 'Google and OpenAI—companies that trained their models on massive amounts
+    of other people''s data—are now complaining about theft. But behind the irony
+    lies a real problem: attackers are systematically cloning billion-dollar AI models
+    without spending a dime on training. The article Google and OpenAI complain about
+    distillation attacks that clone their AI mod…'
+  prompt: ''
+  url: https://the-decoder.com/google-and-openai-complain-about-distillation-attacks-that-clone-their-ai-models-on-the-cheap/
+  source: The Decoder (AI)
+  published_utc: '2026-02-14T18:05:04+00:00'
+  title_zh: 谷歌与OpenAI抱怨低成本克隆其AI模型的蒸馏攻击
+  why_zh: 谷歌和OpenAI——这些利用大量他人数据训练模型的公司——现在却在抱怨盗窃
+  takeaway_zh: 谷歌和OpenAI——这些利用大量他人数据训练模型的公司——现在却在抱怨盗窃。但讽刺背后隐藏着一个真实问题：攻击者正系统性地克隆价值数十亿美元的AI模型，而无需花费一分钱在训练上。文章《谷歌和OpenAI抱怨蒸馏攻击克隆其AI模型……》
+  prompt_zh: ''
+- category: Tech industry
+  title: A header-only C vector database library
+  why: 'Article URL: https://github.com/abdimoallim/vdb Comments URL: https://news.ycombinator.com/item?id=47016530
+    Points: 66 # Comments: 24'
+  takeaway: 'Article URL: https://github.com/abdimoallim/vdb Comments URL: https://news.ycombinator.com/item?id=47016530
+    Points: 66 # Comments: 24'
+  prompt: ''
+  url: https://github.com/abdimoallim/vdb
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T17:45:09+00:00'
+  title_zh: 仅头文件的C语言向量数据库库
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Designer Kate Barton teams up with IBM and Fiducia AI for a NYFW presentation
+  why: Designer Kate Barton teams up with Fiducia AI and IBM for a NYFW presentation.
+  takeaway: Designer Kate Barton teams up with Fiducia AI and IBM for a NYFW presentation.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/designer-kate-barton-teams-up-with-ibm-and-fiducia-ai-for-a-nyfw-presentation/
+  source: TechCrunch
+  published_utc: '2026-02-14T17:43:46+00:00'
+  title_zh: 设计师Kate Barton与IBM和Fiducia AI合作亮相纽约时装周
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: uBlock filter list to hide all YouTube Shorts
+  why: 'Article URL: https://github.com/i5heu/ublock-hide-yt-shorts/ Comments URL:
+    https://news.ycombinator.com/item?id=47016443 Points: 646 # Comm…'
+  takeaway: 'Article URL: https://github.com/i5heu/ublock-hide-yt-shorts/ Comments
+    URL: https://news.ycombinator.com/item?id=47016443 Points: 646 # Comments: 214'
+  prompt: ''
+  url: https://github.com/i5heu/ublock-hide-yt-shorts/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T17:36:45+00:00'
+  title_zh: uBlock过滤列表：隐藏所有YouTube Shorts
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US concludes Alibaba and BYD have links to Chinese military
+  why: The companies are among a number the Pentagon believes could pose a threat
+    to American national security
+  takeaway: The companies are among a number the Pentagon believes could pose a threat
+    to American national security
+  prompt: ''
+  url: https://www.ft.com/content/c80ce7a7-983b-447c-88c2-de5db4cb2e0a
+  source: Financial Times - World
+  published_utc: '2026-02-14T17:20:13+00:00'
+  title_zh: 美国认定阿里巴巴和比亚迪与中国军方有关联
+  why_zh: 这些公司被五角大楼认为可能对美国国家安全构成威胁
+  takeaway_zh: 这些公司被五角大楼认为可能对美国国家安全构成威胁
+  prompt_zh: ''
+- category: Tech industry
+  title: iBuyPower’s gaming desktops are discounted for Presidents Day
+  why: Buying a pre-assembled gaming desktop makes sense for some.
+  takeaway: Buying a pre-assembled gaming desktop makes sense for some. It can save
+    you time and money, too, compared to buying PC components piecemeal. If you’re
+    weighing your options, consider some Presidents Day offers on iBuyPower’s pre-built
+    desktops, including the $1,899 RDY Element 9 Pro R07 and the $2,099.99 Slate —
+    both of which are stocked […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/878927/ibuypower-gaming-desktop-pc-presidents-day-sale-deal
+  source: The Verge
+  published_utc: '2026-02-14T17:00:00+00:00'
+  title_zh: iBuyPower游戏台式机总统日特惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amsterdam Compiler Kit
+  why: 'Article URL: https://github.com/davidgiven/ack Comments URL: https://news.ycombinator.com/item?id=47016008
+    Points: 102 # Comments: 27'
+  takeaway: 'Article URL: https://github.com/davidgiven/ack Comments URL: https://news.ycombinator.com/item?id=47016008
+    Points: 102 # Comments: 27'
+  prompt: ''
+  url: https://github.com/davidgiven/ack
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T16:50:47+00:00'
+  title_zh: 阿姆斯特丹编译器套件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Georgia Tech announced the finalists in its wild musical instrument competition
+  why: Georgia Tech has announced the finalists in its annual Guthman Musical Instrument
+    Competition.
+  takeaway: Georgia Tech has announced the finalists in its annual Guthman Musical
+    Instrument Competition. Every year, for the last 28 years, the school invites
+    inventors from around the world to submit new instruments of their own design
+    to compete for $10,000 in prizes. Past finalists have included founding members
+    of Teenage Engineering, Artiphon, and Roli. And […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/879482/georgia-techs-musical-instrument-competition-fiddle-henge
+  source: The Verge
+  published_utc: '2026-02-14T16:42:25+00:00'
+  title_zh: 乔治亚理工学院公布其独特乐器大赛决赛名单
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: India doubles down on state-backed venture capital, approving $1.1B fund
+  why: India’s $1.1B fund-of-funds will invest through private VCs to support deep-tech
+    and manufacturing startups.
+  takeaway: India’s $1.1B fund-of-funds will invest through private VCs to support
+    deep-tech and manufacturing startups.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/14/india-doubles-down-on-state-backed-venture-capital-approving-1-1b-fund/
+  source: TechCrunch
+  published_utc: '2026-02-14T16:23:22+00:00'
+  title_zh: 印度加码政府支持的风险投资，批准11亿美元基金
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A review of M Disc archival capability with long term testing results (2016)
+  why: 'Article URL: http://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html
+    Comments URL: https://news.ycombinator.com/item?id=47015579…'
+  takeaway: 'Article URL: http://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html
+    Comments URL: https://news.ycombinator.com/item?id=47015579 Points: 67 # Comments:
+    77'
+  prompt: ''
+  url: http://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T16:07:44+00:00'
+  title_zh: M-Disc光盘长期归档能力测试结果回顾(2016)
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Rubio tells Europe that US will not abandon transatlantic alliance
+  why: Secretary of state says Washington wants to work ‘together with you, our friends’
+    on the continent
+  takeaway: Secretary of state says Washington wants to work ‘together with you, our
+    friends’ on the continent
+  prompt: ''
+  url: https://www.ft.com/content/ad264479-52bb-4a63-bc87-e40d6f0a01c0
+  source: Financial Times - World
+  published_utc: '2026-02-14T16:06:28+00:00'
+  title_zh: 卢比奥向欧洲保证美国不会放弃跨大西洋联盟
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: My smart sleep mask broadcasts users' brainwaves to an open MQTT broker
+  why: 'Article URL: https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/
+    Comments URL: https://news.ycombinator.com/item?id=47015294 Poin…'
+  takeaway: 'Article URL: https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/
+    Comments URL: https://news.ycombinator.com/item?id=47015294 Points: 355 # Comments:
+    178'
+  prompt: ''
+  url: https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T15:35:47+00:00'
+  title_zh: 我的智能睡眠面具将用户脑电波广播至开放MQTT代理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: German court denies copyright protection for AI-generated logos
+  why: A German district court has denied copyright protection for three AI-generated
+    logos, ruling that even elaborate prompting isn't enough whe…
+  takeaway: A German district court has denied copyright protection for three AI-generated
+    logos, ruling that even elaborate prompting isn't enough when the creative work
+    is ultimately left to the AI. The article German court denies copyright protection
+    for AI-generated logos appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/german-court-denies-copyright-protection-for-ai-generated-logos/
+  source: The Decoder (AI)
+  published_utc: '2026-02-14T15:31:55+00:00'
+  title_zh: 德国法院裁定AI生成标识不受版权保护
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Zelenskyy insists elections can only take place two months after a ceasefire
+  why: Ukrainian president says US security guarantee has to precede any peace agreement
+  takeaway: Ukrainian president says US security guarantee has to precede any peace
+    agreement
+  prompt: ''
+  url: https://www.ft.com/content/c4a0a5e7-1678-4303-b621-a447bca69d64
+  source: Financial Times - World
+  published_utc: '2026-02-14T15:07:24+00:00'
+  title_zh: 泽连斯基坚持选举只能在停火两个月后举行
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Pocket Taco is the best way to turn your phone into a Game Boy
+  why: My ongoing quest to turn my iPhone into one of my favorite consoles of all
+    time has led me to a curiously named controller.
+  takeaway: My ongoing quest to turn my iPhone into one of my favorite consoles of
+    all time has led me to a curiously named controller. GameSir's Pocket Taco is
+    only barely pocketable, and distinctly lacking in taco fillings, but for $35,
+    it's an excellent and easy way to turn your phone into a Game Boy-inspired handheld
+    […]
+  prompt: ''
+  url: https://www.theverge.com/tech/877491/gamesir-pocket-taco-wireless-bluetooth-controller-clamp-hands-on
+  source: The Verge
+  published_utc: '2026-02-14T15:00:00+00:00'
+  title_zh: Pocket Taco：将手机变身为Game Boy的最佳选择
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A powerful tool of resistance is already in your hands
+  why: In an eyewitness video analyzed frame by frame by The New York Times, Alex
+    Pretti raises one hand and holds a phone in the other.
+  takeaway: In an eyewitness video analyzed frame by frame by The New York Times,
+    Alex Pretti raises one hand and holds a phone in the other. Federal agents tackle
+    him, and one appears to find and remove a gun holstered on his hip. Then, an agent
+    shoots - and a second follows. They appear to fire […]
+  prompt: ''
+  url: https://www.theverge.com/policy/879273/alex-pretti-ice-cbp-trump-free-speech
+  source: The Verge
+  published_utc: '2026-02-14T15:00:00+00:00'
+  title_zh: 你手中已握有强大的抵抗工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: My uncanny AI valentines
+  why: Hopping over a pile of dirty snow, I arrived on a frigid February evening at
+    a wine bar in midtown, a purple neon sign reading "EVA AI cafe…
+  takeaway: Hopping over a pile of dirty snow, I arrived on a frigid February evening
+    at a wine bar in midtown, a purple neon sign reading "EVA AI cafe." Inside, several
+    people were seated at tables and booths, staring at phones. Servers milled about,
+    placing mini potato croquettes and nonalcoholic spritzers on each table. Like
+    many […]
+  prompt: ''
+  url: https://www.theverge.com/report/879327/eva-ai-cafe-dating-ai-companions
+  source: The Verge
+  published_utc: '2026-02-14T15:00:00+00:00'
+  title_zh: 我那些不可思议的AI情人节礼物
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sub-$200 Lidar Could Reshuffle Auto Sensor Economics
+  why: MicroVision , a solid-state sensor technology company located in Redmond, Wash.,
+    says it has designed a solid-state automotive lidar sensor…
+  takeaway: MicroVision , a solid-state sensor technology company located in Redmond,
+    Wash., says it has designed a solid-state automotive lidar sensor intended to
+    reach production pricing below US $200. That’s less than half of typical prices
+    now, and it’s not even the full extent of the company’s ambition. The company
+    says its longer-term goal is $100 per unit. Micro…
+  prompt: ''
+  url: https://spectrum.ieee.org/solid-state-lidar-microvision-adas
+  source: IEEE Spectrum
+  published_utc: '2026-02-14T14:00:02+00:00'
+  title_zh: 200美元以下激光雷达或将重塑汽车传感器经济格局
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Returning stolen artifacts becomes a thrilling heist in Relooted
+  why: Colonialism is not merely about occupying nations.
+  takeaway: Colonialism is not merely about occupying nations. It's a project of mass
+    violence, part of which involves total erasure and the widespread theft of some
+    of the most culturally significant artifacts in the world. Even today, colonizing
+    nations proudly display stolen artifacts, acting as peacocking robbers under the
+    guise of tourism. See, for example, the […]
+  prompt: ''
+  url: https://www.theverge.com/games/878121/relooted-review-xbox-steam
+  source: The Verge
+  published_utc: '2026-02-14T14:00:00+00:00'
+  title_zh: 《Relooted》中，归还被盗文物变成了一场惊心动魄的劫案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anker’s USB-C cable that lets you charge two gadgets at once is 20 percent
+    off
+  why: Monday, February 16th, is Presidents Day, and there are plenty of good deals
+    happening on tech in the run-up to the holiday.
+  takeaway: Monday, February 16th, is Presidents Day, and there are plenty of good
+    deals happening on tech in the run-up to the holiday. Even if you don’t snag any
+    huge upgrades, though, you likely already own multiple gadgets that you need to
+    recharge each and every day. It would sure be nice to be able to […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/879003/anker-140w-2-in-1-usb-c-cable-presidents-day-sale-deal
+  source: The Verge
+  published_utc: '2026-02-14T14:00:00+00:00'
+  title_zh: Anker可同时为两台设备充电的USB-C线缆现享8折优惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Sameshi – a ~1200 Elo chess engine that fits within 2KB'
+  why: I made a chess engine today, and made it fit within 2KB.
+  takeaway: I made a chess engine today, and made it fit within 2KB. I used a variant
+    of MinMax called Negamax, with alpha beta pruning. For the board representation
+    I have used a 120-cell "mailbox". I managed to squeeze in checkmate/stalemate
+    in there, after trimming out some edge cases. I am a great fan of demoscene (computer
+    art subculture) since middle school, and…
+  prompt: ''
+  url: https://github.com/datavorous/sameshi
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T13:47:44+00:00'
+  title_zh: '展示 HN: Sameshi——仅2KB大小的1200分Elo国际象棋引擎'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Ooh.directory: a place to find good blogs that interest you'
+  why: 'Article URL: https://ooh.directory/ Comments URL: https://news.ycombinator.com/item?id=47014449
+    Points: 453 # Comments: 120'
+  takeaway: 'Article URL: https://ooh.directory/ Comments URL: https://news.ycombinator.com/item?id=47014449
+    Points: 453 # Comments: 120'
+  prompt: ''
+  url: https://ooh.directory/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T13:40:20+00:00'
+  title_zh: 'Ooh.directory: 发现有趣优质博客的导航站'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How many registers does an x86-64 CPU have? (2020)
+  why: 'Article URL: https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have
+    Comments URL: https://news.ycombinator.com/it…'
+  takeaway: 'Article URL: https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have
+    Comments URL: https://news.ycombinator.com/item?id=47014405 Points: 89 # Comments:
+    66'
+  prompt: ''
+  url: https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T13:33:03+00:00'
+  title_zh: x86-64架构CPU有多少寄存器？(2020)
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Unicorn Jelly
+  why: 'Article URL: https://unicornjelly.com/ Comments URL: https://news.ycombinator.com/item?id=47014260
+    Points: 45 # Comments: 10'
+  takeaway: 'Article URL: https://unicornjelly.com/ Comments URL: https://news.ycombinator.com/item?id=47014260
+    Points: 45 # Comments: 10'
+  prompt: ''
+  url: https://unicornjelly.com/
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T13:08:35+00:00'
+  title_zh: 独角兽果冻
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How to un-Big Tech your online life
+  why: Hi, friends!
+  takeaway: Hi, friends! Welcome to Installer No. 116, your guide to the best and
+    Verge-iest stuff in the world. (If you're new here, welcome, happy National Ferris
+    Wheel Day to all those who celebrate, and also you can read all the old editions
+    at the Installer homepage.) This week, I've been reading about Letterboxd and
+    Mike […]
+  prompt: ''
+  url: https://www.theverge.com/tech/879114/best-big-tech-app-alternatives-installer
+  source: The Verge
+  published_utc: '2026-02-14T13:00:00+00:00'
+  title_zh: 如何摆脱科技巨头，重塑你的在线生活
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ring’s Flock breakup doesn’t fix its real problem
+  why: The most striking thing about Ring's statement that it had parted ways with
+    Flock Safety is what the home security company didn't say.
+  takeaway: The most striking thing about Ring's statement that it had parted ways
+    with Flock Safety is what the home security company didn't say. There was no mention
+    of the public backlash around ties to ICE, or any promise to address users' concerns
+    about the company's relationships with law enforcement. In an increasingly authoritarian
+    political climate, […]
+  prompt: ''
+  url: https://www.theverge.com/report/879320/ring-flock-partnership-breakup-does-not-fix-problems
+  source: The Verge
+  published_utc: '2026-02-14T13:00:00+00:00'
+  title_zh: Ring的Flock分手并未解决其根本问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Von der Leyen says Europe must bring its mutual defence clause ‘to life’
+  why: Commission president tells Munich Security Conference ‘you change or die’
+  takeaway: Commission president tells Munich Security Conference ‘you change or die’
+  prompt: ''
+  url: https://www.ft.com/content/30ee3ac3-f1b1-42e6-a802-f19bf2f34a39
+  source: Financial Times - World
+  published_utc: '2026-02-14T12:51:51+00:00'
+  title_zh: 冯德莱恩称欧洲必须激活其共同防御条款
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic CEO Dario Amodei suggests OpenAI doesn't "really understand the
+    risks they're taking"
+  why: Anthropic's revenue has grown 10x year over year, and CEO Dario Amodei believes
+    Nobel Prize-level AI is maybe just a year or two away.
+  takeaway: Anthropic's revenue has grown 10x year over year, and CEO Dario Amodei
+    believes Nobel Prize-level AI is maybe just a year or two away. So why isn't he
+    going all in on compute? Because being off by even one year could mean bankruptcy,
+    and he's not sure his competitors have done the math. The article Anthropic CEO
+    Dario Amodei suggests OpenAI doesn't "really…
+  prompt: ''
+  url: https://the-decoder.com/anthropic-ceo-dario-amodei-suggests-openai-doesnt-really-understand-the-risks-theyre-taking/
+  source: The Decoder (AI)
+  published_utc: '2026-02-14T11:49:46+00:00'
+  title_zh: Anthropic CEO Dario Amodei暗示OpenAI并未真正理解其所冒风险
+  why_zh: Anthropic收入同比增长10倍，CEO达里奥·阿莫代认为诺贝尔奖级别的AI可能仅需一两年
+  takeaway_zh: Anthropic收入同比增长10倍，CEO达里奥·阿莫代认为诺贝尔奖级别的AI可能仅需一两年。那么，他为何不全力投入计算资源？因为哪怕仅差一年也可能导致破产，而且他不确定竞争对手是否算清了这笔账。文章《Anthropic
+    CEO达里奥·阿莫代暗示OpenAI并未‘真正……’
+  prompt_zh: ''
+- category: Tech industry
+  title: Astronomers are filling in the blanks of the Kuiper Belt
+  why: Next-generation telescopes are mapping this outer frontier.
+  takeaway: Next-generation telescopes are mapping this outer frontier.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/02/astronomers-are-filling-in-the-blanks-of-the-kuiper-belt/
+  source: Ars Technica
+  published_utc: '2026-02-14T11:45:48+00:00'
+  title_zh: 天文学家正填补柯伊伯带的空白
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Six Wall Street bank chiefs bring in combined pay of $250mn in 2025
+  why: CEOs each earned more than $40mn as gap with median bank worker set to widen
+    further
+  takeaway: CEOs each earned more than $40mn as gap with median bank worker set to
+    widen further
+  prompt: ''
+  url: https://www.ft.com/content/62b8713f-cd72-4838-b8ac-708b91b2830f
+  source: Financial Times - Markets
+  published_utc: '2026-02-14T11:00:10+00:00'
+  title_zh: 六位华尔街银行CEO 2025年总薪酬达2.5亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: A much-needed Beveridge
+  why: The signals that the Beveridge curve is sending about the US labour market
+  takeaway: The signals that the Beveridge curve is sending about the US labour market
+  prompt: ''
+  url: https://www.ft.com/content/1ee26667-0934-4341-9387-ad9d58d56fb1
+  source: Financial Times - Markets
+  published_utc: '2026-02-14T10:30:09+00:00'
+  title_zh: 急需的贝弗里奇
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Starmer calls for western alliance to be ‘remade’
+  why: UK prime minister pushes for multilateral defence initiative to oversee joint
+    procurement and cut rearmament costs
+  takeaway: UK prime minister pushes for multilateral defence initiative to oversee
+    joint procurement and cut rearmament costs
+  prompt: ''
+  url: https://www.ft.com/content/beee83f7-6e88-4e49-87c4-802d9dff9053
+  source: Financial Times - World
+  published_utc: '2026-02-14T10:21:08+00:00'
+  title_zh: 斯塔默呼吁重塑西方联盟
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: YouTube as Storage
+  why: 'Article URL: https://github.com/PulseBeat02/yt-media-storage Comments URL:
+    https://news.ycombinator.com/item?id=47012964 Points: 173 # Comm…'
+  takeaway: 'Article URL: https://github.com/PulseBeat02/yt-media-storage Comments
+    URL: https://news.ycombinator.com/item?id=47012964 Points: 173 # Comments: 129'
+  prompt: ''
+  url: https://github.com/PulseBeat02/yt-media-storage
+  source: Hacker News (front page)
+  published_utc: '2026-02-14T09:10:15+00:00'
+  title_zh: YouTube作为存储空间
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Rising vet costs leave charity with £400k bill
+  why: The group, based in Solihull and Wolverhampton, says its vet bills are costing
+    them more.
+  takeaway: The group, based in Solihull and Wolverhampton, says its vet bills are
+    costing them more.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cgjz7wzgvlzo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-14T08:17:08+00:00'
+  title_zh: 兽医费用上涨使慈善机构面临40万英镑账单
+  why_zh: 总部位于索利哈尔和伍尔弗汉普顿的该集团表示，其兽医账单成本日益增加
+  takeaway_zh: 总部位于索利哈尔和伍尔弗汉普顿的该集团表示，其兽医账单成本日益增加
+  prompt_zh: ''

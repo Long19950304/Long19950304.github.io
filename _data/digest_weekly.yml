@@ -880,6 +880,7 @@ weeks:
   - '2026-02-12'
   - '2026-02-13'
   - '2026-02-14'
+  - '2026-02-15'
   highlights_news:
   - date: '2026-02-09'
     url: https://www.ft.com/content/13556ff7-89be-463f-8dbd-a16540a47dab
@@ -1208,3 +1209,17 @@ weeks:
     category: AI tools & model releases
     source: AWS What's New (Recent Announcements)
     published_utc: '2026-02-12T19:52:00+00:00'
+  - date: '2026-02-15'
+    url: https://github.com/openai/openai-node/releases/tag/v6.22.0
+    title: 'openai/openai-node: v6.22.0'
+    title_zh: 'openai/openai-node: v6.22.0版本'
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-14T00:40:07+00:00'
+  - date: '2026-02-15'
+    url: https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt
+    title: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT
+    title_zh: ChatGPT推出锁定模式与高风险标签功能
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-02-13T10:00:00+00:00'

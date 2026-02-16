@@ -1223,3 +1223,81 @@ weeks:
     category: AI tools & model releases
     source: OpenAI Blog (releases-only)
     published_utc: '2026-02-13T10:00:00+00:00'
+- week: 2026-W08
+  start: '2026-02-16'
+  end: '2026-02-22'
+  issues:
+  - '2026-02-16'
+  highlights_news:
+  - date: '2026-02-16'
+    url: https://www.ft.com/content/b6436d45-9eb0-4bfa-a773-48b517b9202d
+    title: 'FirstFT: Fund managers take most bearish position on dollar for a decade'
+    title_zh: FirstFT：基金经理对美元持十年来最悲观态度
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-16T21:56:16+00:00'
+  - date: '2026-02-16'
+    url: https://www.ft.com/content/fb82b59a-7ebb-40f2-ac88-da9dfd31dbbe
+    title: Starmer cancels plans to delay 30 local council elections in England
+    title_zh: 斯塔默取消推迟英格兰30场地方议会选举的计划
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-16T20:49:31+00:00'
+  - date: '2026-02-16'
+    url: https://www.bbc.com/news/articles/cd9g28yzy0no?at_medium=RSS&at_campaign=rss
+    title: Six of Sarah Ferguson's companies winding down
+    title_zh: 莎拉·弗格森六家公司正逐步关闭
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-16T19:22:44+00:00'
+  - date: '2026-02-16'
+    url: https://www.bbc.com/news/articles/cx2gn239exlo?at_medium=RSS&at_campaign=rss
+    title: How dark web agent spotted bedroom wall clue to rescue girl from years
+      of harm
+    title_zh: 暗网特工如何通过卧室墙线索解救多年受害女孩
+    category: Tech industry
+    source: BBC News - Technology
+    published_utc: '2026-02-16T22:02:33+00:00'
+  - date: '2026-02-16'
+    url: https://www.technologyreview.com/2026/02/16/1125881/tuning-into-the-future-of-collaboration/
+    title: Tuning into the future of collaboration
+    title_zh: 迈向协作的未来
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-02-16T15:00:00+00:00'
+  highlights_ai:
+  - date: '2026-02-16'
+    url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
+    title: OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK
+    title_zh: OpenAI弃用4o模型，中国的ChatGPT粉丝不买账
+    category: AI tools & model releases
+    source: WIRED - AI
+    published_utc: '2026-02-13T21:56:18+00:00'
+  - date: '2026-02-16'
+    url: https://the-decoder.com/manus-new-agents-mode-arrives-on-telegram-first-despite-meta-owning-whatsapp/
+    title: Manus new "Agents" mode arrives on Telegram first despite Meta owning WhatsApp
+    title_zh: Manus新“代理”模式率先登陆Telegram，尽管Meta拥有WhatsApp
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-16T20:19:47+00:00'
+  - date: '2026-02-16'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.9
+    title: 'langchain-ai/langchain: langchain-openai==1.1.9'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-02-15T08:50:36+00:00'
+  - date: '2026-02-16'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.8
+    title: 'langchain-ai/langchain: langchain-openai==1.1.8'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-02-15T08:50:32+00:00'
+  - date: '2026-02-16'
+    url: https://github.com/openai/openai-node/releases/tag/v6.22.0
+    title: 'openai/openai-node: v6.22.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-14T00:40:07+00:00'

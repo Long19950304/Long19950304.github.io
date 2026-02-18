@@ -1,0 +1,1180 @@
+date: '2026-02-18'
+title: Daily Digest - 2026-02-18
+title_zh: 每日简报 - 2026-02-18
+note: 'Today: Nvidia secures multibillion-dollar Meta deal as it battles chip… · Meta&#8217;s
+  new deal with Nvidia buys up millions of AI chips · AI: Comfy-Org/ComfyUI: comfyanonymous/ComfyUI:
+  v0.14.1.'
+note_zh: '今日关注：英伟达与Meta达成数十亿美元协议，正与芯片对手激烈竞争；Meta与英伟达新协议购入数百万AI芯片；AI：Comfy-Org/ComfyUI:
+  comfyanonymous…。'
+items:
+- category: AI tools & model releases
+  title: Introducing Claude Sonnet 4.6
+  why: Introducing Claude Sonnet 4.6 Sonnet 4.6 is out today, and Anthropic claim
+    it offers similar performance to November's Opus 4.5 while maint…
+  takeaway: Introducing Claude Sonnet 4.6 Sonnet 4.6 is out today, and Anthropic claim
+    it offers similar performance to November's Opus 4.5 while maintaining the Sonnet
+    pricing of $3/million input and $15/million output tokens (the Opus models are
+    $5/$25). Here's the system card PDF . Sonnet 4.6 has a "reliable knowledge cutoff"
+    of August 2025, compared to Opus 4.6's M…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-17T23:58:58+00:00'
+  title_zh: Claude Sonnet 4.6正式发布
+  why_zh: Claude Sonnet 4.6今日发布，Anthropic声称其性能堪比11月的Opus 4.5，同时保持...
+  takeaway_zh: 今日推出Claude Sonnet 4.6，Anthropic称其性能与去年11月的Opus 4.5相当，同时保持Sonnet的定价：每百万输入token
+    3美元，每百万输出token 15美元（Opus模型为5/25美元）。这里是系统卡片PDF。Sonnet 4.6的‘可靠知识截止日期’为2025年8月，而Opus
+    4.6的M…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock reinforcement fine-tuning adds support for open-weight models
+    with OpenAI-compatible APIs
+  why: Amazon Bedrock now extends reinforcement fine-tuning (RFT) support to popular
+    open-weight models, including OpenAI GPT-OSS and Qwen models,…
+  takeaway: Amazon Bedrock now extends reinforcement fine-tuning (RFT) support to
+    popular open-weight models, including OpenAI GPT-OSS and Qwen models, and introduces
+    OpenAI-compatible fine-tuning APIs. These capabilities make it easier for developers
+    to improve open-weight model accuracy without requiring deep machine learning
+    expertise or large volumes of labeled dat…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-reinforcement-fine-tuning-openai
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-17T21:17:00+00:00'
+  title_zh: Amazon Bedrock强化微调新增支持开放权重模型，兼容OpenAI API
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.3-stable.sonnet-4-6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3-stable.sonnet-4-6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-17T20:40:47+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.14.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.1
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-02-17T20:31:49+00:00'
+  title_zh: ''
+  why_zh: 版本更新说明（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.75.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.75.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-17T19:26:11+00:00'
+  title_zh: ''
+  why_zh: 版本更新说明（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.80.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.80.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-02-17T19:25:53+00:00'
+  title_zh: ''
+  why_zh: 版本更新说明（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.10'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.10
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-17T18:04:01+00:00'
+  title_zh: ''
+  why_zh: 版本更新说明（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities
+  why: 'Enterprise data is inherently complex: real-world documents are multimodal,
+    spanning text, tables, charts and graphs, images, diagrams, sca…'
+  takeaway: 'Enterprise data is inherently complex: real-world documents are multimodal,
+    spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms,...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-17T18:00:00+00:00'
+  title_zh: 利用五大核心多模态RAG能力构建AI就绪的知识系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Context files for coding agents often don't help - and may even hurt performance
+  why: Context files are supposed to make coding agents more productive.
+  takeaway: Context files are supposed to make coding agents more productive. New
+    research shows that only works under very specific conditions. The article Context
+    files for coding agents often don't help - and may even hurt performance appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/context-files-for-coding-agents-often-dont-help-and-may-even-hurt-performance/
+  source: The Decoder (AI)
+  published_utc: '2026-02-17T16:48:34+00:00'
+  title_zh: 编码代理的上下文文件通常无益，甚至可能损害性能
+  why_zh: 上下文文件本应提升编程代理的工作效率
+  takeaway_zh: 上下文文件本应提升编码代理的效率，但新研究表明，这仅在特定条件下有效。文章《编码代理的上下文文件往往无益——甚至可能损害性能》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Claude Sonnet 4.6 now available in Amazon Bedrock
+  why: Starting today, Amazon Bedrock supports Claude Sonnet 4.6, which offers frontier
+    performance across coding, agents, and professional work a…
+  takeaway: Starting today, Amazon Bedrock supports Claude Sonnet 4.6, which offers
+    frontier performance across coding, agents, and professional work at scale. According
+    to Anthropic, Claude Sonnet 4.6 is their best computer use model yet, allowing
+    organizations to deploy browser-based automation across business tools with near-human
+    reliability. Claude Sonnet 4.6 appr…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/claude-sonnet-4.6-available-in-amazon-bedrock/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-17T15:43:00+00:00'
+  title_zh: Claude Sonnet 4.6现已在Amazon Bedrock上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.3
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-02-17T07:25:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.14.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.0
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-02-17T06:29:10+00:00'
+  title_zh: ''
+  why_zh: 版本更新说明（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.13-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.13-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-17T04:37:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Qwen3.5: Towards Native Multimodal Agents'
+  why: 'Qwen3.5: Towards Native Multimodal Agents Alibaba''s Qwen just released the
+    first two models in the Qwen 3.5 series - one open weights, one…'
+  takeaway: 'Qwen3.5: Towards Native Multimodal Agents Alibaba''s Qwen just released
+    the first two models in the Qwen 3.5 series - one open weights, one proprietary.
+    Both are multi-modal for vision input. The open weight one is a Mixture of Experts
+    model called Qwen3.5-397B-A17B. Interesting to see Qwen call out serving efficiency
+    as a benefit of that architecture: Built…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/17/qwen35/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-17T04:30:57+00:00'
+  title_zh: Qwen3.5：迈向原生多模态代理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.13'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.13
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-17T02:33:04+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Two new Showboat tools: Chartroom and datasette-showboat'
+  why: I introduced Showboat a week ago - my CLI tool that helps coding agents create
+    Markdown documents that demonstrate the code that they have…
+  takeaway: I introduced Showboat a week ago - my CLI tool that helps coding agents
+    create Markdown documents that demonstrate the code that they have created. I've
+    been finding new ways to use it on a daily basis, and I've just released two new
+    tools to help get the best out of the Showboat pattern. Chartroom is a CLI charting
+    tool that works well with Showboat, and d…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-17T00:43:45+00:00'
+  title_zh: Showboat推出两款新工具：Chartroom和datasette-showboat
+  why_zh: 一周前我发布了Showboat——这款CLI工具能帮助编程代理生成记录代码实现的Markdown文档...
+  takeaway_zh: 一周前我介绍了Showboat——我的CLI工具，帮助编码代理创建展示其编写代码的Markdown文档。我每天都在发现使用它的新方法，并刚刚发布了两款新工具以充分发挥Showboat模式的优势。Chartroom是一款与Showboat配合良好的CLI图表工具，以及d…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Manus new "Agents" mode arrives on Telegram first despite Meta owning WhatsApp
+  why: Manus launches its AI agent on Telegram, letting users run complex tasks directly
+    in chat.
+  takeaway: Manus launches its AI agent on Telegram, letting users run complex tasks
+    directly in chat. Telegram is the first supported platform, with more on the way.
+    The article Manus new "Agents" mode arrives on Telegram first despite Meta owning
+    WhatsApp appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/manus-new-agents-mode-arrives-on-telegram-first-despite-meta-owning-whatsapp/
+  source: The Decoder (AI)
+  published_utc: '2026-02-16T20:19:47+00:00'
+  title_zh: Manus新‘Agents’模式率先登陆Telegram，尽管Meta拥有WhatsApp
+  why_zh: Manus在Telegram推出AI代理，支持用户在聊天界面直接执行复杂任务
+  takeaway_zh: Manus在Telegram上推出其AI助手，用户可直接在聊天中执行复杂任务。Telegram为首个支持平台，更多平台即将加入。文章《Manus新‘Agents’模式率先登陆Telegram，尽管Meta拥有WhatsApp》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'huggingface/transformers: v5.2.0: GLM-5, Qwen3.5, Voxtral Realtime, VibeVoice
+    Acoustic Tokenizer'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/transformers/releases/tag/v5.2.0
+  source: GitHub Releases - huggingface/transformers
+  published_utc: '2026-02-16T18:55:53+00:00'
+  title_zh: huggingface/transformers：v5.2.0：GLM-5、Qwen3.5、Voxtral实时、VibeVoice声学分词器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Alibaba's free Qwen3.5 signals that China's open-weight model race is far
+    from slowing down
+  why: Chinese AI labs keep shipping new models at a rapid clip.
+  takeaway: Chinese AI labs keep shipping new models at a rapid clip. Today it's Alibaba's
+    turn with Qwen3.5, which tries to match top Western models using a hybrid architecture
+    that combines linear attention and mixture-of-experts while keeping just 17 billion
+    parameters active per query. And yes, it's open weight. The article Alibaba's
+    free Qwen3.5 signals that China…
+  prompt: ''
+  url: https://the-decoder.com/alibabas-free-qwen3-5-signals-that-chinas-open-weight-ai-race-is-far-from-slowing-down/
+  source: The Decoder (AI)
+  published_utc: '2026-02-16T18:18:46+00:00'
+  title_zh: 阿里免费推出Qwen3.5，表明中国开源模型竞赛远未放缓
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.10.dev1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.10.dev1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-16T18:00:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: dotnet-1.71.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/dotnet-1.71.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-02-16T17:33:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Glue 5.1 is now available in 18 additional regions
+  why: 'AWS Glue 5.1 is now available in eighteen additional AWS Regions: Africa (Cape
+    Town), Asia Pacific (Hyderabad, Jakarta, Melbourne, Osaka, S…'
+  takeaway: 'AWS Glue 5.1 is now available in eighteen additional AWS Regions: Africa
+    (Cape Town), Asia Pacific (Hyderabad, Jakarta, Melbourne, Osaka, Seoul, Taipei),
+    Canada (Calgary, Central), Europe (London, Milan, Paris, Zurich), Israel (Tel
+    Aviv), Mexico (Central), Middle East (Bahrain, UAE), and US West (N. California).
+    AWS Glue is a serverless, scalable data integ…'
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-glue-5-1-eighteen-additional-regions
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-16T17:00:00+00:00'
+  title_zh: AWS Glue 5.1现已在18个新增区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Rodney and Claude Code for Desktop
+  why: I'm a very heavy user of Claude Code on the web , Anthropic's excellent but
+    poorly named cloud version of Claude Code where everything runs…
+  takeaway: I'm a very heavy user of Claude Code on the web , Anthropic's excellent
+    but poorly named cloud version of Claude Code where everything runs in a container
+    environment managed by them, greatly reducing the risk of anything bad happening
+    to a computer I care about. I don't use the web interface at all (hence my dislike
+    of the name) - I access it exclusively t…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/16/rodney-claude-code/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-16T16:38:57+00:00'
+  title_zh: Rodney与Claude桌面版代码
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.2
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-02-16T07:37:23+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openrouter==0.0.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.0.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-15T08:50:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-anthropic==1.3.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.3.3
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-15T08:50:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.9'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.9
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-15T08:50:36+00:00'
+  title_zh: ''
+  why_zh: 版本更新说明（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.8'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.8
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-15T08:50:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.13'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.13
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-15T07:46:09+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive
+    Debt
+  why: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive
+    Debt This piece by Margaret-Anne Storey is the best explanatio…
+  takeaway: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive
+    Debt This piece by Margaret-Anne Storey is the best explanation of the term cognitive
+    debt I've seen so far. Cognitive debt , a term gaining traction recently, instead
+    communicates the notion that the debt compounded from going fast lives in the
+    brains of the developers and affects…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/15/cognitive-debt/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-15T05:20:11+00:00'
+  title_zh: 生成式与代理式AI如何将关注点从技术债务转向认知债务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta&#8217;s new deal with Nvidia buys up millions of AI chips
+  why: Meta has struck a multiyear deal to expand its data centers with millions of
+    Nvidia's Grace and Vera CPUs and Blackwell and Rubin GPUs.
+  takeaway: Meta has struck a multiyear deal to expand its data centers with millions
+    of Nvidia's Grace and Vera CPUs and Blackwell and Rubin GPUs. While Meta has long
+    been using Nvidia's hardware for its AI products, this deal "represents the first
+    large-scale Nvidia Grace-only deployment," which Nvidia says will deliver "significant
+    performance-per-watt improvements…
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/880513/nvidia-meta-ai-grace-vera-chips
+  source: The Verge
+  published_utc: '2026-02-18T00:27:08+00:00'
+  title_zh: Meta与英伟达新协议购入数百万AI芯片
+  why_zh: Meta与英伟达达成多年协议，将部署数百万颗Grace/Vera CPU及Blackwell/Rubin GPU扩建数据中心
+  takeaway_zh: Meta与英伟达签署多年协议，将部署数百万颗Grace/Vera CPU及Blackwell/Rubin GPU扩建数据中心。尽管Meta长期采用英伟达硬件支持AI产品，但此次合作是'首次大规模部署纯Grace方案'，英伟达宣称将实现'显著的能效比提升'...
+  prompt_zh: ''
+- category: Business & economy
+  title: Iran says ‘understanding’ reached with US to guide nuclear talks
+  why: Both sides report ‘progress’ but warn of challenging negotiations ahead
+  takeaway: Both sides report ‘progress’ but warn of challenging negotiations ahead
+  prompt: ''
+  url: https://www.ft.com/content/f5ab8d7b-24d5-45ad-adbc-45dfcccdbbc5
+  source: Financial Times - World
+  published_utc: '2026-02-18T00:06:11+00:00'
+  title_zh: 伊朗称与美国达成‘谅解’，将指导核谈判
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Reform UK pledges to keep fiscal watchdog if it wins power
+  why: New ‘shadow chancellor’ Robert Jenrick to make commitment in a speech to the
+    City as populist party seeks to calm nerves
+  takeaway: New ‘shadow chancellor’ Robert Jenrick to make commitment in a speech
+    to the City as populist party seeks to calm nerves
+  prompt: ''
+  url: https://www.ft.com/content/2caa8741-e8eb-4d34-a5d6-2779c68931db
+  source: Financial Times - World
+  published_utc: '2026-02-18T00:01:07+00:00'
+  title_zh: 改革英国承诺若掌权将保留财政监督机构
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Intellexa’s Predator spyware used to hack iPhone of journalist in Angola,
+    research says
+  why: Amnesty International says it found evidence that a government customer of
+    Intellexa, a sanctioned surveillance vendor, used its Predator s…
+  takeaway: Amnesty International says it found evidence that a government customer
+    of Intellexa, a sanctioned surveillance vendor, used its Predator spyware against
+    a prominent journalist in Angola.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/17/intellexas-predator-spyware-used-to-hack-iphone-of-journalist-in-angola-research-says/
+  source: TechCrunch
+  published_utc: '2026-02-18T00:01:00+00:00'
+  title_zh: 研究称Intellexa的Predator间谍软件被用于入侵安哥拉记者的iPhone
+  why_zh: 大赦国际称发现证据表明受制裁监控供应商Intellexa的某政府客户使用其Predator系统...
+  takeaway_zh: 大赦国际称发现证据显示，受制裁监控供应商Intellexa的某政府客户曾使用其 Predator间谍软件跟踪安哥拉知名记者
+  prompt_zh: ''
+- category: Business & economy
+  title: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+  why: A trade body has warned illegal skin bleaching products are being sold in an
+    increasingly wide range of places.
+  takeaway: A trade body has warned illegal skin bleaching products are being sold
+    in an increasingly wide range of places.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c3rzn1pxr3qo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-18T00:00:38+00:00'
+  title_zh: 监管机构警告英国肉店销售非法美白霜
+  why_zh: 贸易机构警告称非法皮肤美白产品正日益泛滥
+  takeaway_zh: 贸易机构警告称非法皮肤美白产品正日益泛滥
+  prompt_zh: ''
+- category: Tech industry
+  title: Jack Altman joins Benchmark as GP
+  why: Jack Altman and Benchmark announced today that he would be joining the firm
+    as a general partner.
+  takeaway: Jack Altman and Benchmark announced today that he would be joining the
+    firm as a general partner.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/17/jack-altman-joins-benchmark-as-gp/
+  source: TechCrunch
+  published_utc: '2026-02-17T23:54:55+00:00'
+  title_zh: Jack Altman加入Benchmark担任普通合伙人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ford turns to F1 and bounties to build a $30,000 electric truck
+  why: A combination of 3D-printed Lego-like parts, Formula 1 thinking, and a bounty
+    program will help the company hit that target.
+  takeaway: A combination of 3D-printed Lego-like parts, Formula 1 thinking, and a
+    bounty program will help the company hit that target. The team, led by Tesla veteran
+    Alan Clarke, is obsessed with efficiency.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/17/ford-turns-to-f1-and-bounties-to-build-a-30000-electric-truck/
+  source: TechCrunch
+  published_utc: '2026-02-17T23:43:21+00:00'
+  title_zh: 福特借助F1和悬赏打造3万美元电动卡车
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: 'NVIDIA Nemotron 2 Nano 9B Japanese: 日本のソブリンAIを支える最先端小規模言語モデル'
+  why: ''
+  takeaway: ''
+  prompt: ''
+  url: https://huggingface.co/blog/nvidia/nemotron-nano-9b-v2-japanese-ja
+  source: Hugging Face Blog
+  published_utc: '2026-02-17T23:28:52+00:00'
+  title_zh: NVIDIA Nemotron 2 Nano 9B 日语：支持日本主权AI的尖端小规模语言模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Stephen Colbert says CBS banned him from airing this James Talarico interview
+  why: The Late Show host Stephen Colbert says CBS blocked him from broadcasting an
+    interview with James Talarico, a Democratic representative fro…
+  takeaway: The Late Show host Stephen Colbert says CBS blocked him from broadcasting
+    an interview with James Talarico, a Democratic representative from Texas. During
+    his opening monologue on Monday night, Colbert says the network's lawyers told
+    him in "no uncertain terms" that he couldn't have Talarico on the show, forcing
+    him to post the interview on […]
+  prompt: ''
+  url: https://www.theverge.com/policy/880009/stephen-colbert-cbs-fcc-brendan-carr-talarico-interview
+  source: The Verge
+  published_utc: '2026-02-17T23:13:08+00:00'
+  title_zh: Stephen Colbert称CBS禁止他播出James Talarico的采访
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '''My Words Are Like an Uncontrollable Dog'': On Life with Nonfluent Aphasia'
+  why: 'Article URL: https://thereader.mitpress.mit.edu/my-words-are-like-an-uncontrollable-dog-on-life-with-nonfluent-aphasia/
+    Comments URL: https…'
+  takeaway: 'Article URL: https://thereader.mitpress.mit.edu/my-words-are-like-an-uncontrollable-dog-on-life-with-nonfluent-aphasia/
+    Comments URL: https://news.ycombinator.com/item?id=47054744 Points: 12 # Comments:
+    0'
+  prompt: ''
+  url: https://thereader.mitpress.mit.edu/my-words-are-like-an-uncontrollable-dog-on-life-with-nonfluent-aphasia/
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T23:06:51+00:00'
+  title_zh: ‘我的话语像一只失控的狗’：与非流畅性失语症共处的生活
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump escalates assault on US consumer protection agency
+  why: White House Council of Economic Advisers report estimates regulatory burden
+    has cost consumers more than $237bn
+  takeaway: White House Council of Economic Advisers report estimates regulatory burden
+    has cost consumers more than $237bn
+  prompt: ''
+  url: https://www.ft.com/content/e0ab096d-b78c-42dc-8e8b-c7b5900e6d42
+  source: Financial Times - Markets
+  published_utc: '2026-02-17T23:03:51+00:00'
+  title_zh: 特朗普加大对美国消费者保护机构的攻击
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best deals on MacBooks right now
+  why: Apple currently sells MacBooks equipped with its own M-series processors in
+    a wide range of sizes and price points, all of which run the co…
+  takeaway: Apple currently sells MacBooks equipped with its own M-series processors
+    in a wide range of sizes and price points, all of which run the company’s newest
+    operating system, macOS 26. Purchasing a new MacBook can be complicated if you’re
+    trying to figure out what specs you need, but finding a deal on a relatively speedy
+    […]
+  prompt: ''
+  url: https://www.theverge.com/22399419/apple-macbook-air-pro-mac-mini-imac-deals
+  source: The Verge
+  published_utc: '2026-02-17T23:00:00+00:00'
+  title_zh: 当前MacBook的最佳优惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: I invested £12,000 in Brewdog - I think I've lost it all
+  why: More than 200,000 people bought Equity for Punks shares in the craft brewer
+    but many now believe they are worthless.
+  takeaway: More than 200,000 people bought Equity for Punks shares in the craft brewer
+    but many now believe they are worthless.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c795879x08go?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-17T22:55:53+00:00'
+  title_zh: 我向Brewdog投资了1.2万英镑——恐怕血本无归
+  why_zh: 逾20万人认购了这家精酿啤酒商的'Equity for Punks'股份，但如今多数人认为已成废纸
+  takeaway_zh: 逾20万人认购了这家精酿啤酒商的'Equity for Punks'股份，但如今多数人认为已成废纸
+  prompt_zh: ''
+- category: Tech industry
+  title: GameHub will give Mac owners another imperfect way to play Windows games
+  why: GameHub's existing Windows emulator on Android has its fair share of issues.
+  takeaway: GameHub's existing Windows emulator on Android has its fair share of issues.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/02/gamehub-will-give-mac-owners-another-imperfect-way-to-play-windows-games/
+  source: Ars Technica
+  published_utc: '2026-02-17T22:45:07+00:00'
+  title_zh: GameHub将为Mac用户提供另一种不完美的Windows游戏体验
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'pg_background: Make Postgres do the long work (while your session stays
+    light)'
+  why: 'Article URL: https://vibhorkumar.wordpress.com/2026/02/16/pg_background-make-postgres-do-the-long-work-while-your-session-stays-light/
+    Comm…'
+  takeaway: 'Article URL: https://vibhorkumar.wordpress.com/2026/02/16/pg_background-make-postgres-do-the-long-work-while-your-session-stays-light/
+    Comments URL: https://news.ycombinator.com/item?id=47054464 Points: 17 # Comments:
+    1'
+  prompt: ''
+  url: https://vibhorkumar.wordpress.com/2026/02/16/pg_background-make-postgres-do-the-long-work-while-your-session-stays-light/
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T22:40:11+00:00'
+  title_zh: pg_background：让Postgres处理繁重任务（保持会话轻量）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google’s AI search results will make links more obvious
+  why: Google says it will now display links more prominently inside its AI-powered
+    features in Search.
+  takeaway: Google says it will now display links more prominently inside its AI-powered
+    features in Search. Robby Stein, the vice president of Google Search, announced
+    on Tuesday that a list of links will now appear inside a pop-up when you hover
+    over the sources in AI Overviews and AI Mode on desktop, alongside a description
+    of […]
+  prompt: ''
+  url: https://www.theverge.com/tech/880475/google-ai-overviews-ai-mode-links-update
+  source: The Verge
+  published_utc: '2026-02-17T22:38:24+00:00'
+  title_zh: 谷歌的AI搜索结果将使链接更加明显
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sony’s WH-1000XM6 are nearly $100 off for just a few more hours
+  why: If you’re looking for a great pair of noise-canceling headphones, Sony’s WH-1000XM6
+    are amongst the best available and are now down to $368…
+  takeaway: If you’re looking for a great pair of noise-canceling headphones, Sony’s
+    WH-1000XM6 are amongst the best available and are now down to $368 ($92 off) at
+    Amazon in black or gray. While their high price usually makes them harder for
+    us to suggest over the last-gen model, which is often on sale for around $278.99,
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/880476/sony-wh-1000-xm6-deal-sale
+  source: The Verge
+  published_utc: '2026-02-17T22:32:39+00:00'
+  title_zh: 索尼WH-1000XM6耳机限时优惠近100美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Behold, the story of the Fed balance sheet in a single chart
+  why: More Fed history (sorry), briefly put
+  takeaway: More Fed history (sorry), briefly put
+  prompt: ''
+  url: https://www.ft.com/content/cbe2d1e9-8a8a-443e-9cfb-95f3b238b656
+  source: Financial Times - Markets
+  published_utc: '2026-02-17T22:21:10+00:00'
+  title_zh: 一张图读懂美联储资产负债表的故事
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Berkshire Hathaway energy unit sells power assets in rare disposal
+  why: PacifiCorp to sell wind farms, transmission lines and natural gas plant to
+    Oregon utility Portland General Electric for $1.9bn
+  takeaway: PacifiCorp to sell wind farms, transmission lines and natural gas plant
+    to Oregon utility Portland General Electric for $1.9bn
+  prompt: ''
+  url: https://www.ft.com/content/1f0191b8-a77b-4d8a-9fdb-304d21c7b1f5
+  source: Financial Times - World
+  published_utc: '2026-02-17T22:15:30+00:00'
+  title_zh: 伯克希尔哈撒韦能源公司罕见出售电力资产
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I swear the UFO is coming any minute
+  why: 'Article URL: https://www.experimental-history.com/p/i-swear-the-ufo-is-coming-any-minute
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway: 'Article URL: https://www.experimental-history.com/p/i-swear-the-ufo-is-coming-any-minute
+    Comments URL: https://news.ycombinator.com/item?id=47054134 Points: 62 # Comments:
+    8'
+  prompt: ''
+  url: https://www.experimental-history.com/p/i-swear-the-ufo-is-coming-any-minute
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T22:10:22+00:00'
+  title_zh: 我发誓UFO随时会来
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Boost to British Steel as Turkey places high-speed rail order
+  why: ‘Eight-figure agreement’ made to supply new line between Ankara and İzmir –
+    but questions over plant’s future remain British Steel has secu…
+  takeaway: ‘Eight-figure agreement’ made to supply new line between Ankara and İzmir
+    – but questions over plant’s future remain British Steel has secured an order
+    worth tens of millions of pounds to supply rail for a high-speed electric railway
+    in Turkey, amid continuing uncertainty over the long-term future of the government-controlled
+    steelworks in Scunthorpe. The s…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/feb/17/british-steel-turkey-high-speed-rail-order
+  source: The Guardian - Business
+  published_utc: '2026-02-17T22:00:50+00:00'
+  title_zh: 土耳其高速铁路订单为英国钢铁业带来提振
+  why_zh: 安卡拉至伊兹密尔新线路签署'八位数合同'——但钢厂前景仍存疑 英国钢铁公司已获...
+  takeaway_zh: 安卡拉至伊兹密尔新线路签署'八位数合同'——但钢厂前景仍存疑 英国钢铁公司获得土耳其高速电气化铁路数千万英镑钢轨订单，与此同时斯肯索普政府控股钢铁厂的长期命运仍悬而未决...
+  prompt_zh: ''
+- category: Business & economy
+  title: 'FirstFT: India and France near $35bn fighter jet deal'
+  why: 'Also in today’s newsletter: Warner Bros reopens ownership battle and bank
+    documents reveal Adani associates’ secret investments'
+  takeaway: 'Also in today’s newsletter: Warner Bros reopens ownership battle and
+    bank documents reveal Adani associates’ secret investments'
+  prompt: ''
+  url: https://www.ft.com/content/040da9a9-1085-41dc-a8aa-c178ad0814ec
+  source: Financial Times - World
+  published_utc: '2026-02-17T21:54:02+00:00'
+  title_zh: FirstFT：印度与法国接近达成350亿美元战斗机交易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: CBS turmoil deepens as Cooper quits and Colbert defies lawyers
+  why: Journalist’s exit comes as Bari Weiss seeks to revive Paramount-owned television
+    network
+  takeaway: Journalist’s exit comes as Bari Weiss seeks to revive Paramount-owned
+    television network
+  prompt: ''
+  url: https://www.ft.com/content/01079bc7-6b79-41da-a4be-3147394ee4f2
+  source: Financial Times - World
+  published_utc: '2026-02-17T21:42:26+00:00'
+  title_zh: CBS动荡加剧，库珀辞职，科尔伯特无视律师建议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Dual nationals face scramble for UK passports as new rules come into force
+  why: Entry requirements to the UK for dual nationals are being overhauled as part
+    of sweeping changes to the immigration system.
+  takeaway: Entry requirements to the UK for dual nationals are being overhauled as
+    part of sweeping changes to the immigration system.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cx2d9yk2kpjo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-17T21:41:07+00:00'
+  title_zh: 双重国籍者面临英国护照新规实施后的抢办潮
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Piggyback’s fantastic Metroid Prime art book is nearly 20 percent off
+  why: 'Metroid Prime 4: Beyond launched on the Nintendo Switch and Switch 2 in December,
+    but if you’re itching for some more lore, Metroid Prime 1…'
+  takeaway: 'Metroid Prime 4: Beyond launched on the Nintendo Switch and Switch 2
+    in December, but if you’re itching for some more lore, Metroid Prime 1–3: A Visual
+    Retrospective is a nice way to dig in, especially now that it’s on sale. Normally
+    $49.99, you can currently buy the hardcover version for $41.08 (about $9 off)
+    […]'
+  prompt: ''
+  url: https://www.theverge.com/gadgets/821108/metroid-prime-1-3-a-visual-retrospective-art-book-deal-sale
+  source: The Verge
+  published_utc: '2026-02-17T21:30:00+00:00'
+  title_zh: Piggyback的《银河战士Prime》精美艺术书近8折优惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: SEC urged to investigate Apollo over Epstein ties
+  why: Teachers’ unions say regulators should look at private equity giant’s apparent
+    ‘lack of candour’
+  takeaway: Teachers’ unions say regulators should look at private equity giant’s
+    apparent ‘lack of candour’
+  prompt: ''
+  url: https://www.ft.com/content/9f96ca88-2cee-4ca1-a076-58cf3440ac55
+  source: Financial Times - World
+  published_utc: '2026-02-17T21:24:49+00:00'
+  title_zh: SEC被敦促调查阿波罗与爱泼斯坦的关联
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Nvidia secures multibillion-dollar Meta deal as it battles chip rivals
+  why: Social media group will purchase millions of chips even as it tries to develop
+    its own AI hardware
+  takeaway: Social media group will purchase millions of chips even as it tries to
+    develop its own AI hardware
+  prompt: ''
+  url: https://www.ft.com/content/d3b50dfc-31fa-45a8-9184-c5f0476f4504
+  source: Financial Times - Technology
+  published_utc: '2026-02-17T21:15:06+00:00'
+  title_zh: 英伟达与Meta达成数十亿美元协议，正与芯片对手激烈竞争
+  why_zh: 某社交媒体集团即便在研发自主AI硬件的同时，仍将采购数百万颗芯片
+  takeaway_zh: 某社交媒体集团即便在研发自主AI硬件的同时，仍将采购数百万颗芯片
+  prompt_zh: ''
+- category: Business & economy
+  title: Peruvian Congress removes interim president José Jerí
+  why: The 39-year-old conservative was the nation’s eighth president in less than
+    a decade
+  takeaway: The 39-year-old conservative was the nation’s eighth president in less
+    than a decade
+  prompt: ''
+  url: https://www.ft.com/content/a0702bee-0396-4873-b7f4-3d0e11a61d21
+  source: Financial Times - World
+  published_utc: '2026-02-17T21:04:26+00:00'
+  title_zh: 秘鲁国会罢免临时总统何塞·杰里
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Structured AI (YC F25) Is Hiring
+  why: 'Article URL: https://www.ycombinator.com/companies/structured-ai/jobs/q3cx77y-gtm-intern
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/structured-ai/jobs/q3cx77y-gtm-intern
+    Comments URL: https://news.ycombinator.com/item?id=47053267 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/structured-ai/jobs/q3cx77y-gtm-intern
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T21:00:30+00:00'
+  title_zh: Structured AI（YC F25）正在招聘
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google announces dates for I/O 2026
+  why: 'It''s official: Google I/O 2026 will take place from May 19th to 20th.'
+  takeaway: 'It''s official: Google I/O 2026 will take place from May 19th to 20th.
+    In an announcement on Tuesday, Google says it will share the "latest AI breakthroughs
+    and updates in products across the company, from Gemini to Android and more" during
+    the event, which will take place in-person in Mountain View, California''s Shoreline
+    Amphitheatre, and […]'
+  prompt: ''
+  url: https://www.theverge.com/tech/880401/google-io-2026-dates-ai
+  source: The Verge
+  published_utc: '2026-02-17T20:56:56+00:00'
+  title_zh: 谷歌宣布2026年I/O大会日期
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta’s own research found parental supervision doesn’t really help curb teens’
+    compulsive social media use
+  why: An internal research study at Meta found that parental supervision may not
+    help teens regulate their social media, and teens with trauma ar…
+  takeaway: An internal research study at Meta found that parental supervision may
+    not help teens regulate their social media, and teens with trauma are more inclined
+    to overuse social media.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/17/metas-own-research-found-parental-supervision-doesnt-really-help-curb-teens-compulsive-social-media-use/
+  source: TechCrunch
+  published_utc: '2026-02-17T20:45:33+00:00'
+  title_zh: Meta内部研究发现，家长监督对遏制青少年沉迷社交媒体效果有限
+  why_zh: Meta内部研究发现家长监督或无助青少年调节社交媒体使用，受过创伤的青少年更易沉迷
+  takeaway_zh: Meta内部研究发现：家长监督或无助青少年调节社媒使用，且创伤经历者更易沉迷
+  prompt_zh: ''
+- category: Security
+  title: Password managers' promise that they can't see your vaults isn't always true
+  why: Contrary to what password managers say, a server compromise can mean game over.
+  takeaway: Contrary to what password managers say, a server compromise can mean game
+    over.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/02/password-managers-promise-that-they-cant-see-your-vaults-isnt-always-true/
+  source: Ars Technica
+  published_utc: '2026-02-17T20:43:01+00:00'
+  title_zh: 密码管理器声称无法查看您的保险库，但事实并非总是如此
+  why_zh: 与密码管理软件宣传相反，服务器一旦沦陷就意味着满盘皆输
+  takeaway_zh: 与密码管理软件宣传相反，服务器一旦沦陷就意味着满盘皆输
+  prompt_zh: ''
+- category: Tech industry
+  title: BarraCUDA Open-source CUDA compiler targeting AMD GPUs
+  why: 'Article URL: https://github.com/Zaneham/BarraCUDA Comments URL: https://news.ycombinator.com/item?id=47052941
+    Points: 112 # Comments: 39'
+  takeaway: 'Article URL: https://github.com/Zaneham/BarraCUDA Comments URL: https://news.ycombinator.com/item?id=47052941
+    Points: 112 # Comments: 39'
+  prompt: ''
+  url: https://github.com/Zaneham/BarraCUDA
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T20:35:18+00:00'
+  title_zh: BarraCUDA 开源CUDA编译器，面向AMD GPU
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I''m launching a LPFM radio station'
+  why: I've been working on creating a Low Power FM radio station for the east San
+    Fernando Valley of Los Angeles.
+  takeaway: I've been working on creating a Low Power FM radio station for the east
+    San Fernando Valley of Los Angeles. We are not yet on the broadcast band but our
+    channel will be 95.9FM and our range can been seen on the homepage of our site.
+    KPBJ is a freeform community radio station. Anyone in the area is encouraged to
+    get a timeslot and become a host. We make no c…
+  prompt: ''
+  url: https://www.kpbj.fm/
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T20:15:57+00:00'
+  title_zh: Show HN：我正在启动一个LPFM广播电台
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple is reportedly cooking up a trio of AI wearables
+  why: As the AI hardware space heats up, the iPhone maker has multiple smart products
+    in development.
+  takeaway: As the AI hardware space heats up, the iPhone maker has multiple smart
+    products in development.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/17/apple-is-reportedly-cooking-up-a-trio-of-ai-wearables/
+  source: TechCrunch
+  published_utc: '2026-02-17T20:14:00+00:00'
+  title_zh: 据报道，苹果正在研发三款AI可穿戴设备
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Bayer offers $7.25bn to settle weedkiller cancer claims
+  why: The company has faced years of legal battles over Roundup, a weedkiller made
+    by Monsanto.
+  takeaway: The company has faced years of legal battles over Roundup, a weedkiller
+    made by Monsanto.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c7473vyxgqpo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-17T20:13:48+00:00'
+  title_zh: 拜耳提出72.5亿美元和解除草剂致癌索赔
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Thrive raises $10B for new fund, its largest yet
+  why: Thrive Capital just raised $10 billion for its new fund -- nearly double the
+    size of its last fund.
+  takeaway: Thrive Capital just raised $10 billion for its new fund -- nearly double
+    the size of its last fund.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/17/thrive-raises-10b-for-new-fund-its-largest-yet/
+  source: TechCrunch
+  published_utc: '2026-02-17T20:13:12+00:00'
+  title_zh: Thrive为其新基金筹集100亿美元，创下最大规模
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Meta and Other Tech Firms Put Restrictions on Use of OpenClaw Over Security
+    Fears
+  why: Security experts have urged people to be cautious with the viral agentic AI
+    tool, known for being highly capable but also wildly unpredicta…
+  takeaway: Security experts have urged people to be cautious with the viral agentic
+    AI tool, known for being highly capable but also wildly unpredictable.
+  prompt: ''
+  url: https://www.wired.com/story/openclaw-banned-by-tech-companies-as-security-concerns-mount/
+  source: WIRED - AI
+  published_utc: '2026-02-17T20:10:12+00:00'
+  title_zh: Meta及其他科技公司因安全担忧限制使用OpenClaw
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Lidar Mobility Device Assists Navigation and Avoids Collisions
+  why: At CES 2026 in Las Vegas, Singapore-based startup Strutt introduced the EV
+    1 , a powered personal mobility device that uses lidar , cameras…
+  takeaway: At CES 2026 in Las Vegas, Singapore-based startup Strutt introduced the
+    EV 1 , a powered personal mobility device that uses lidar , cameras , and onboard
+    computing for collision avoidance. Unlike manually-steered powered wheelchairs
+    , the EV 1 assists with navigation in both indoor and outdoor environments—stopping
+    or rerouting itself before a collision can…
+  prompt: ''
+  url: https://spectrum.ieee.org/assistive-technology-lidar-wheelchair
+  source: IEEE Spectrum
+  published_utc: '2026-02-17T19:58:48+00:00'
+  title_zh: 激光雷达移动设备辅助导航并避免碰撞
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Warner Bros throws ownership battle open by giving Paramount a week to up
+    its offer
+  why: Netflix grants weeklong waiver to rival bidder in high-stakes battle for control
+  takeaway: Netflix grants weeklong waiver to rival bidder in high-stakes battle for
+    control
+  prompt: ''
+  url: https://www.ft.com/content/251fec8a-b4ea-44e7-abd2-e471f268e3a8
+  source: Financial Times - World
+  published_utc: '2026-02-17T19:54:53+00:00'
+  title_zh: 华纳兄弟开放所有权争夺战，给派拉蒙一周时间提高报价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Here are the best Apple Watch deals available right now
+  why: In September, Apple launched its latest batch of smartwatches, including the
+    Apple Watch Series 11, the SE 3, and the Ultra 3.
+  takeaway: In September, Apple launched its latest batch of smartwatches, including
+    the Apple Watch Series 11, the SE 3, and the Ultra 3. Each has its own pros and
+    cons, but the introduction of Apple’s newest wearables also means there are now
+    more Apple Watch models on the market than ever before — and a lot […]
+  prompt: ''
+  url: https://www.theverge.com/21289209/best-apple-watch-deals
+  source: The Verge
+  published_utc: '2026-02-17T19:48:43+00:00'
+  title_zh: 当前Apple Watch的最佳优惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Now Pixel 9 phones can transfer files with AirDrop, too
+  why: When Google announced it had engineered AirDrop compatibility for its Pixel
+    10 phones late last year, the pessimists among us figured it wo…
+  takeaway: When Google announced it had engineered AirDrop compatibility for its
+    Pixel 10 phones late last year, the pessimists among us figured it would be a
+    matter of days before Apple shut it down. But not only is it still working, Google
+    has expanded the capability to the Pixel 9 series (minus the budget-oriented Pixel
+    9A). […]
+  prompt: ''
+  url: https://www.theverge.com/tech/880210/google-pixel-9-airdrop-quick-share
+  source: The Verge
+  published_utc: '2026-02-17T19:48:15+00:00'
+  title_zh: 现在Pixel 9手机也能通过AirDrop传输文件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Why youth unemployment is rising
+  why: Unemployment in the UK rose to its highest rate in nearly five years at the
+    end of 2025
+  takeaway: Unemployment in the UK rose to its highest rate in nearly five years at
+    the end of 2025
+  prompt: ''
+  url: https://www.bbc.com/news/videos/c5yqx9wg9ego?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-17T19:47:56+00:00'
+  title_zh: 为何青年失业率持续攀升
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US charges two ex-executives at private equity-owned group with fraud
+  why: Former Mobileum employees ‘inflated’ revenues to drive up valuation before
+    buyout, prosecutors allege
+  takeaway: Former Mobileum employees ‘inflated’ revenues to drive up valuation before
+    buyout, prosecutors allege
+  prompt: ''
+  url: https://www.ft.com/content/95af2355-b564-44f8-a0a2-74abf1eb7f3f
+  source: Financial Times - World
+  published_utc: '2026-02-17T19:33:34+00:00'
+  title_zh: 美国起诉私募股权集团两名前高管欺诈
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Estimating Surface Heating of an Atmospheric Reentry Vehicle With Simulation
+  why: Join Hannah Alpert (NASA Ames) to explore thermal data from the record-breaking
+    6-meter LOFTID inflatable aeroshell.
+  takeaway: Join Hannah Alpert (NASA Ames) to explore thermal data from the record-breaking
+    6-meter LOFTID inflatable aeroshell. Learn how COMSOL Multiphysics® was used to
+    perform inverse analysis on flight thermocouple data, validating heat flux gauges
+    and preflight CFD predictions. Attendees will gain technical insights into improving
+    thermal models for future HIAD m…
+  prompt: ''
+  url: https://event.on24.com/wcc/r/5204256/9B4BA35D454493C7D9829FE90B5A0ABD
+  source: IEEE Spectrum
+  published_utc: '2026-02-17T19:27:00+00:00'
+  title_zh: 通过仿真估算大气再入飞行器的表面加热
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple is reportedly planning to launch AI-powered glasses, a pendant, and
+    AirPods
+  why: Apple is pushing ahead with plans to launch its first pair of smart glasses,
+    along with an AI-powered pendant and camera-equipped AirPods,…
+  takeaway: Apple is pushing ahead with plans to launch its first pair of smart glasses,
+    along with an AI-powered pendant and camera-equipped AirPods, according to a report
+    from Bloomberg's Mark Gurman. The three devices come with built-in cameras and
+    will connect to the iPhone, allowing Siri to use "visual context to carry out
+    actions," Bloomberg reports. […]
+  prompt: ''
+  url: https://www.theverge.com/tech/880293/apple-ai-hardware-smart-glasses-pin-airpods
+  source: The Verge
+  published_utc: '2026-02-17T19:26:21+00:00'
+  title_zh: 据报道，苹果计划推出AI眼镜、吊坠和AirPods
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: AsteroidOS 2.0 – Nobody asked, we shipped anyway'
+  why: Hi HN, After roughly 8 years of silently rolling 1.1 nightlies, we finally
+    tagged a proper stable 2.0 release.
+  takeaway: Hi HN, After roughly 8 years of silently rolling 1.1 nightlies, we finally
+    tagged a proper stable 2.0 release. We built this because wrist-sized Linux is
+    genuinely fun to hack on, and because a handful of us think it's worth keeping
+    capable hardware alive long after manufacturers move on. Smartwatches don't really
+    get old — the silicon is basically the same…
+  prompt: ''
+  url: https://asteroidos.org/news/2-0-release/index.html
+  source: Hacker News (front page)
+  published_utc: '2026-02-17T19:24:55+00:00'
+  title_zh: Show HN：AsteroidOS 2.0——无人问津，我们依然发布了
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Macron meets Modi in India as blockbuster fighter jet deal nears
+  why: The $35bn sale of more than 100 Rafales would be the largest ever for New Delhi
+    and Dassault Aviation
+  takeaway: The $35bn sale of more than 100 Rafales would be the largest ever for
+    New Delhi and Dassault Aviation
+  prompt: ''
+  url: https://www.ft.com/content/7e02fbc4-11db-4407-8fbd-a18f9cf9871b
+  source: Financial Times - World
+  published_utc: '2026-02-17T19:21:34+00:00'
+  title_zh: 马克龙在印度会见莫迪，重磅战斗机交易临近
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: '‘It’s soul-crushing’: young people battle to find any work in bleak jobs
+    market'
+  why: Chair of UK government review says dramatic changes in labour market risks
+    putting ‘a generation on the scrapheap’ On any given day, Poppy…
+  takeaway: Chair of UK government review says dramatic changes in labour market risks
+    putting ‘a generation on the scrapheap’ On any given day, Poppy Blackman is engaged
+    in the “soul-crushing” process of applying for a new job, and rarely ever hearing
+    anything back. The 22-year-old has been unemployed since January 2025 and says
+    she applies to an average of 50 roles a…
+  prompt: ''
+  url: https://www.theguardian.com/society/2026/feb/17/its-soul-crushing-young-people-battle-bleak-jobs-market-as-youth-unemployment-rises
+  source: The Guardian - Business
+  published_utc: '2026-02-17T19:17:08+00:00'
+  title_zh: ‘令人心碎’：年轻人在黯淡的就业市场中艰难寻找工作
+  why_zh: 英国政府评估主席称劳动力市场剧变恐致'一代人遭淘汰' 日常生活中的Poppy...
+  takeaway_zh: 英国政府评估主席称劳动力市场剧变恐致'一代人遭淘汰' 22岁的Poppy Blackman每天深陷'令人崩溃'的求职漩涡——平均投递50份简历却石沉大海。这位自2025年1月失业至今的毕业生...
+  prompt_zh: ''
+- category: Business & economy
+  title: A new era of US antitrust-lite leaves investors little better off
+  why: A Texas federal court has invalidated Biden-era rules demanding more details
+    when seeking approval for deals
+  takeaway: A Texas federal court has invalidated Biden-era rules demanding more details
+    when seeking approval for deals
+  prompt: ''
+  url: https://www.ft.com/content/e381cd2f-2d29-4210-b598-1951745f31f7
+  source: Financial Times - World
+  published_utc: '2026-02-17T19:15:35+00:00'
+  title_zh: 美国反垄断新纪元‘轻触’政策下，投资者获益寥寥
+  why_zh: 得克萨斯州联邦法院废除了拜登政府时期要求交易审批时提供更多细节的规定
+  takeaway_zh: 得克萨斯州联邦法院废除了拜登政府时期要求交易审批时提供更多细节的规定
+  prompt_zh: ''

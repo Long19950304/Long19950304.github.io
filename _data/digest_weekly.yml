@@ -1228,6 +1228,7 @@ weeks:
   end: '2026-02-22'
   issues:
   - '2026-02-16'
+  - '2026-02-18'
   highlights_news:
   - date: '2026-02-16'
     url: https://www.ft.com/content/b6436d45-9eb0-4bfa-a773-48b517b9202d
@@ -1265,6 +1266,41 @@ weeks:
     category: Tech industry
     source: MIT Technology Review
     published_utc: '2026-02-16T15:00:00+00:00'
+  - date: '2026-02-18'
+    url: https://www.ft.com/content/d3b50dfc-31fa-45a8-9184-c5f0476f4504
+    title: Nvidia secures multibillion-dollar Meta deal as it battles chip rivals
+    title_zh: 英伟达与Meta达成数十亿美元协议，正与芯片对手激烈竞争
+    category: Tech industry
+    source: Financial Times - Technology
+    published_utc: '2026-02-17T21:15:06+00:00'
+  - date: '2026-02-18'
+    url: https://www.ft.com/content/e381cd2f-2d29-4210-b598-1951745f31f7
+    title: A new era of US antitrust-lite leaves investors little better off
+    title_zh: 美国反垄断新纪元‘轻触’政策下，投资者获益寥寥
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-17T19:15:35+00:00'
+  - date: '2026-02-18'
+    url: https://www.theverge.com/ai-artificial-intelligence/880513/nvidia-meta-ai-grace-vera-chips
+    title: Meta&#8217;s new deal with Nvidia buys up millions of AI chips
+    title_zh: Meta与英伟达新协议购入数百万AI芯片
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-02-18T00:27:08+00:00'
+  - date: '2026-02-18'
+    url: https://www.bbc.com/news/articles/c3rzn1pxr3qo?at_medium=RSS&at_campaign=rss
+    title: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    title_zh: 监管机构警告英国肉店销售非法美白霜
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-18T00:00:38+00:00'
+  - date: '2026-02-18'
+    url: https://www.bbc.com/news/articles/c795879x08go?at_medium=RSS&at_campaign=rss
+    title: I invested £12,000 in Brewdog - I think I've lost it all
+    title_zh: 我向Brewdog投资了1.2万英镑——恐怕血本无归
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-17T22:55:53+00:00'
   highlights_ai:
   - date: '2026-02-16'
     url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
@@ -1301,3 +1337,31 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - openai/openai-node
     published_utc: '2026-02-14T00:40:07+00:00'
+  - date: '2026-02-18'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.1
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.14.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-17T20:31:49+00:00'
+  - date: '2026-02-18'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.10
+    title: 'langchain-ai/langchain: langchain-openai==1.1.10'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-02-17T18:04:01+00:00'
+  - date: '2026-02-18'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.14.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-17T06:29:10+00:00'
+  - date: '2026-02-18'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.75.0
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.75.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-17T19:26:11+00:00'

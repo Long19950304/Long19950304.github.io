@@ -1229,6 +1229,7 @@ weeks:
   issues:
   - '2026-02-16'
   - '2026-02-18'
+  - '2026-02-19'
   highlights_news:
   - date: '2026-02-16'
     url: https://www.ft.com/content/b6436d45-9eb0-4bfa-a773-48b517b9202d
@@ -1301,6 +1302,41 @@ weeks:
     category: Business & economy
     source: BBC News - Business
     published_utc: '2026-02-17T22:55:53+00:00'
+  - date: '2026-02-19'
+    url: https://www.ft.com/content/9f82858d-b461-4c77-8865-bd538c325ccd
+    title: 'FirstFT: US and Japan unveil $36bn in projects as part of trade deal'
+    title_zh: 首刊精选：美日公布价值360亿美元合作项目，作为贸易协议的一部分
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-18T21:43:05+00:00'
+  - date: '2026-02-19'
+    url: https://www.ft.com/content/0c6d8ff6-f207-431b-bfb9-1d8b42bb4b6d
+    title: Zuckerberg overruled 18 wellbeing experts to keep beauty filters on Instagram
+    title_zh: 扎克伯格否决18位健康专家建议，坚持保留Instagram美颜滤镜
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-19T02:53:31+00:00'
+  - date: '2026-02-19'
+    url: https://www.bbc.com/news/articles/c5y42znjnjvo?at_medium=RSS&at_campaign=rss
+    title: Zuckerberg defends Meta in landmark social media addiction trial
+    title_zh: 扎克伯格在里程碑式社交媒体成瘾诉讼中为Meta辩护
+    category: Tech industry
+    source: BBC News - Technology
+    published_utc: '2026-02-19T03:29:12+00:00'
+  - date: '2026-02-19'
+    url: https://www.bbc.com/news/articles/cn71xyjpdl2o?at_medium=RSS&at_campaign=rss
+    title: Why there's no quick fix in sight for the problem of dazzling headlights
+    title_zh: 为何刺眼车灯问题短期内难以解决
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-19T01:10:15+00:00'
+  - date: '2026-02-19'
+    url: https://techcrunch.com/2026/02/18/openai-deepens-india-push-with-pine-labs-fintech-partnership/
+    title: OpenAI deepens India push with Pine Labs fintech partnership
+    title_zh: OpenAI深化印度市场布局，与Pine Labs达成金融科技合作
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-19T03:30:00+00:00'
   highlights_ai:
   - date: '2026-02-16'
     url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
@@ -1365,3 +1401,24 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-02-17T19:26:11+00:00'
+  - date: '2026-02-19'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.80.11.gemini-metadata.dev
+    title: 'BerriAI/litellm: v1.80.11.gemini-metadata.dev'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-02-18T03:50:00+00:00'
+  - date: '2026-02-19'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.2
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.14.2'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-18T06:12:02+00:00'
+  - date: '2026-02-19'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.77.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-18T20:29:25+00:00'

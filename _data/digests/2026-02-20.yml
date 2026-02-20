@@ -1,0 +1,1196 @@
+date: '2026-02-20'
+title: Daily Digest - 2026-02-20
+title_zh: 每日简报 - 2026-02-20
+note: 'Today: How the UK accidentally shackled itself to Mastercard · US and Indonesia
+  finalise deal to cut tariffs to 19% · AI: Introducing OpenAI for India.'
+note_zh: 今日关注：英国如何意外地将自己束缚于万事达卡；美国与印尼敲定协议，将关税降至19%；AI：推出OpenAI印度版。
+items:
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.gemini.3.1-pro-patch'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro-patch
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-20T04:46:06+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.patch.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.patch.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-20T01:04:07+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS IAM Identity Center is now available in the Asia Pacific (New Zealand)
+    AWS Region
+  why: You can now deploy AWS IAM Identity Center in 38 AWS Regions, including Asia
+    Pacific (New Zealand).
+  takeaway: You can now deploy AWS IAM Identity Center in 38 AWS Regions, including
+    Asia Pacific (New Zealand). IAM Identity Center is the recommended service for
+    managing workforce access to AWS applications. It enables you to connect your
+    existing source of workforce identities to AWS once and offer your users single
+    sign on experience across AWS. It powers the perso…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-iam-identity-center-asia-pacific-new-zealand-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-19T22:00:00+00:00'
+  title_zh: AWS IAM Identity Center 现已在亚太（新西兰）AWS 区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/onnxruntime: ONNX Runtime v1.24.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/onnxruntime/releases/tag/v1.24.2
+  source: GitHub Releases - microsoft/onnxruntime
+  published_utc: '2026-02-19T21:28:03+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.13.dev1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T20:07:33+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: bedrock-sdk: v0.26.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-19T20:04:51+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: vertex-sdk: v0.14.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.4
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-19T20:04:45+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.78.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.78.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-19T20:04:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.83.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-02-19T19:26:11+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.gemini.3.1-pro'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T19:19:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 G7e instances now available in Asia Pacific (Tokyo) region
+  why: Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO 6000
+    Blackwell Server Edition GPUs are now available in Asia Pacific…
+  takeaway: Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO
+    6000 Blackwell Server Edition GPUs are now available in Asia Pacific (Tokyo) region.
+    G7e instances offer up to 2.3x inference performance compared to G6e. Customers
+    can use G7e instances to deploy large language models (LLMs), agentic AI models,
+    multimodal generative AI models, and physi…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-g7e-instances-tokyo-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-19T19:11:00+00:00'
+  title_zh: 亚马逊EC2 G7e实例现已在亚太（东京）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: dotnet-1.72.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/dotnet-1.72.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-02-19T18:40:10+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Gemini 3.1 Pro
+  why: Gemini 3.1 Pro The first in the Gemini 3.1 series, priced the same as Gemini
+    3 Pro ($2/million input, $12/million output under 200,000 toke…
+  takeaway: Gemini 3.1 Pro The first in the Gemini 3.1 series, priced the same as
+    Gemini 3 Pro ($2/million input, $12/million output under 200,000 tokens, $4/$18
+    for 200,000 to 1,000,000). That's less than half the price of Claude Opus 4.6
+    with very similar benchmark scores to that model. They boast about its improved
+    SVG animation performance compared to Gemini 3 Pro…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-19T17:58:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google releases Gemini 3.1 Pro with improved reasoning capabilities
+  why: With Gemini 3.1 Pro, Google wants to improve the core intelligence of its model
+    family.
+  takeaway: 'With Gemini 3.1 Pro, Google wants to improve the core intelligence of
+    its model family. On a demanding reasoning benchmark, performance has more than
+    doubled compared to its predecessor. But benchmarks are just that: benchmarks.
+    The article Google releases Gemini 3.1 Pro with improved reasoning capabilities
+    appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/google-releases-gemini-3-1-pro-with-improved-reasoning-capabilities/
+  source: The Decoder (AI)
+  published_utc: '2026-02-19T17:35:37+00:00'
+  title_zh: 谷歌发布Gemini 3.1 Pro，推理能力显著提升
+  why_zh: Google欲通过Gemini 3.1 Pro提升其模型家族的核心智能
+  takeaway_zh: Google通过Gemini 3.1 Pro提升模型家族核心智能，在严苛推理基准测试中表现较前代提升逾倍。但基准终究仅为基准。《解码者》首发电稿：Google发布具备强化推理能力的Gemini
+    3.1 Pro
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node
+    Localization
+  why: NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA
+    Blackwell families all feature non-uniform memory access (…
+  takeaway: NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper,
+    and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors,
+    but...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-19T17:30:00+00:00'
+  title_zh: 利用NVIDIA多实例GPU与NUMA节点本地化加速数据处理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: vectordata-dotnet-10.0.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/vectordata-dotnet-10.0.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-02-19T17:26:54+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Gemini 3.1 Pro: A smarter model for your most complex tasks'
+  why: 3.1 Pro is designed for tasks where a simple answer isn’t enough.
+  takeaway: 3.1 Pro is designed for tasks where a simple answer isn’t enough.
+  prompt: ''
+  url: https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/
+  source: Google DeepMind Blog
+  published_utc: '2026-02-19T16:06:14+00:00'
+  title_zh: Gemini 3.1 Pro：为复杂任务而生的更智能模型
+  why_zh: 3.1 Pro专为解决简单答案无法应对的复杂任务而设计
+  takeaway_zh: 3.1 Pro专为解决简单答案无法应对的复杂任务而设计
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.14'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.14
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-19T14:22:50+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: New benchmark shows AI agents can exploit most smart contract vulnerabilities
+    on their own
+  why: OpenAI and crypto investment firm Paradigm have built EVMbench, a benchmark
+    that measures how well AI agents can find, fix, and exploit sec…
+  takeaway: OpenAI and crypto investment firm Paradigm have built EVMbench, a benchmark
+    that measures how well AI agents can find, fix, and exploit security vulnerabilities
+    in Ethereum smart contracts. The article New benchmark shows AI agents can exploit
+    most smart contract vulnerabilities on their own appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/new-benchmark-shows-ai-agents-can-exploit-most-smart-contract-vulnerabilities-on-their-own/
+  source: The Decoder (AI)
+  published_utc: '2026-02-19T13:35:08+00:00'
+  title_zh: 新基准测试显示AI代理可自主利用多数智能合约漏洞
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.3.oauth.dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.oauth.dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T09:09:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_1.81.13-dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_1.81.13-dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T04:10:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: 1.81.3-stable.dev.oauth'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/1.81.3-stable.dev.oauth
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T02:28:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8i-flex instances are now available in additional AWS regions
+  why: Starting today, Amazon EC2 M8i-flex instances are now available in Asia Pacific
+    (Malaysia, Seoul, Singapore, Tokyo), Europe (Frankfurt) and…
+  takeaway: Starting today, Amazon EC2 M8i-flex instances are now available in Asia
+    Pacific (Malaysia, Seoul, Singapore, Tokyo), Europe (Frankfurt) and Canada (Central)
+    regions. These instances are powered by custom Intel Xeon 6 processors, available
+    only on AWS, delivering the highest performance and fastest memory bandwidth among
+    comparable Intel processors in the cl…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-m8i-flex-instances-FRA-ICN-KUL-NRT-SIN-YUL-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-19T02:00:00+00:00'
+  title_zh: 亚马逊EC2 M8i-flex实例现已在更多AWS区域开放
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.80.15-stable.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.80.15-stable.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T01:02:11+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-text-splitters==1.1.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-18T23:03:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing OpenAI for India
+  why: OpenAI for India expands AI access across the country—building local infrastructure,
+    powering enterprises, and advancing workforce skills.
+  takeaway: OpenAI for India expands AI access across the country—building local infrastructure,
+    powering enterprises, and advancing workforce skills.
+  prompt: ''
+  url: https://openai.com/index/openai-for-india
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-18T21:00:00+00:00'
+  title_zh: 推出OpenAI印度版
+  why_zh: OpenAI印度计划扩大AI技术普及——建设本地基础设施、赋能企业并提升劳动力技能
+  takeaway_zh: OpenAI印度计划扩大AI技术普及——建设本地基础设施、赋能企业并提升劳动力技能
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.77.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-18T20:29:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.82.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-02-18T20:24:48+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'run-llama/llama_index: v0.14.15'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/run-llama/llama_index/releases/tag/v0.14.15
+  source: GitHub Releases - run-llama/llama_index
+  published_utc: '2026-02-18T19:06:42+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google brings AI music generation to Gemini with Deepmind's Lyria 3
+  why: Google Deepmind's new Lyria 3 model creates 30-second tracks with vocals, lyrics,
+    and cover art from a simple text prompt or uploaded media.
+  takeaway: Google Deepmind's new Lyria 3 model creates 30-second tracks with vocals,
+    lyrics, and cover art from a simple text prompt or uploaded media. The article
+    Google brings AI music generation to Gemini with Deepmind's Lyria 3 appeared first
+    on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/google-brings-ai-music-generation-to-gemini-with-lyria-3/
+  source: The Decoder (AI)
+  published_utc: '2026-02-18T18:56:27+00:00'
+  title_zh: 谷歌将Deepmind Lyria 3音乐生成功能整合至Gemini
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'FirstFT: Investors pour record sums into European stocks'
+  why: 'Also in today’s newsletter: Trump’s Iran warning and Amazon’s AI coding bot'
+  takeaway: 'Also in today’s newsletter: Trump’s Iran warning and Amazon’s AI coding
+    bot'
+  prompt: ''
+  url: https://www.ft.com/content/3d3ee720-d133-4335-bb1a-3385f345eda3
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:32:23+00:00'
+  title_zh: FirstFT：投资者向欧洲股市注入创纪录资金
+  why_zh: 今日简报还包括：特朗普对伊朗的警告与亚马逊AI编程机器人
+  takeaway_zh: 今日简报还包括：特朗普对伊朗的警告与亚马逊AI编程机器人
+  prompt_zh: ''
+- category: Business & economy
+  title: OpenClaw and the privacy problem of agentic AI
+  why: How can you be sure that personal digital agents will always be working in
+    your best interests
+  takeaway: How can you be sure that personal digital agents will always be working
+    in your best interests
+  prompt: ''
+  url: https://www.ft.com/content/f9ff060d-63b0-44f4-b46e-31a5545468db
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:20:08+00:00'
+  title_zh: OpenClaw与代理型AI的隐私问题
+  why_zh: 如何确保个人数字代理始终维护用户利益？
+  takeaway_zh: 如何确保个人数字代理始终维护用户利益？
+  prompt_zh: ''
+- category: Business & economy
+  title: North Korea’s Kim Jong Un triumphant at rare congress
+  why: Analysts say the reclusive regime is in its strongest geopolitical and economic
+    position in years
+  takeaway: Analysts say the reclusive regime is in its strongest geopolitical and
+    economic position in years
+  prompt: ''
+  url: https://www.ft.com/content/620a5268-a147-464f-8bf9-1b967efcb210
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:02:59+00:00'
+  title_zh: 朝鲜金正恩在罕见大会上取得胜利
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Can Europe survive without US defence? Surprisingly, the Baltic sea nations
+    are showing the way | Elisabeth Braw
+  why: 'Joint patrols are being mounted to protect undersea cables from Russian sabotage:
+    localised cooperation is our best hope for now Elisabeth…'
+  takeaway: 'Joint patrols are being mounted to protect undersea cables from Russian
+    sabotage: localised cooperation is our best hope for now Elisabeth Braw is a senior
+    fellow at the Atlantic Council thinktank When European countries in the Baltic
+    Sea region joined Nato for protection against Russia, they were not anticipating
+    their most powerful Nato ally would be the…'
+  prompt: ''
+  url: https://www.theguardian.com/commentisfree/2026/feb/20/europe-us-defence-baltic-sea-nations-russian-sabotage
+  source: The Guardian - Business
+  published_utc: '2026-02-20T05:00:25+00:00'
+  title_zh: 欧洲能否脱离美国防务独立生存？波罗的海国家意外指明方向 | Elisabeth Braw
+  why_zh: 各国正组织联合巡逻保护海底电缆免遭俄罗斯破坏：局部合作是当前最佳应对之策...
+  takeaway_zh: 各国正组织联合巡逻保护海底电缆免遭俄罗斯破坏：大西洋理事会高级研究员Elisabeth Braw表示，波罗的海国家加入北约时未曾料到...
+  prompt_zh: ''
+- category: Business & economy
+  title: Investors pour record sums into European stocks
+  why: Inflows on track for all-time high in February as global fund managers seek
+    alternatives to expensive US tech shares
+  takeaway: Inflows on track for all-time high in February as global fund managers
+    seek alternatives to expensive US tech shares
+  prompt: ''
+  url: https://www.ft.com/content/80173261-2b72-41f7-9eae-490aabb14623
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:24+00:00'
+  title_zh: 投资者向欧洲股市注入创纪录资金
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Zambia calls for domestic debt to be part of major indices
+  why: Finance minister’s request highlights power of benchmark providers and follows
+    strong demand from foreign investors
+  takeaway: Finance minister’s request highlights power of benchmark providers and
+    follows strong demand from foreign investors
+  prompt: ''
+  url: https://www.ft.com/content/5510cd03-94dd-4bf8-a540-d5fe952cf981
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:24+00:00'
+  title_zh: 赞比亚呼吁将国内债务纳入主要指数
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The ‘incredibly significant’ US military forces surrounding Iran
+  why: US naval and aircraft build-up is reminiscent of the invasion of Iraq, experts
+    say
+  takeaway: US naval and aircraft build-up is reminiscent of the invasion of Iraq,
+    experts say
+  prompt: ''
+  url: https://www.ft.com/content/a7da6a98-3368-4853-922a-b9f8451682a3
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:24+00:00'
+  title_zh: 伊朗周边‘极其重要’的美国军事力量
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The fund manager pay gap persists
+  why: Even in a competitive, performance-driven industry, female and minority managers
+    are paid less and are more likely to be fired
+  takeaway: Even in a competitive, performance-driven industry, female and minority
+    managers are paid less and are more likely to be fired
+  prompt: ''
+  url: https://www.ft.com/content/9c79e7a5-12da-42ca-bd52-c34a89c7281d
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 基金经理薪酬差距持续存在
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Dear ChatGPT, please construct me an optimal portfolio
+  why: AI is already smarter and more knowledgeable than all financial advisers
+  takeaway: AI is already smarter and more knowledgeable than all financial advisers
+  prompt: ''
+  url: https://www.ft.com/content/000d33c8-efc5-46cc-a213-e153b3f6a250
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 亲爱的ChatGPT，请为我构建一个最优投资组合
+  why_zh: 人工智能已在智慧和知识储备上超越所有理财顾问
+  takeaway_zh: 人工智能已在智慧和知识储备上超越所有理财顾问
+  prompt_zh: ''
+- category: Business & economy
+  title: How the UK accidentally shackled itself to Mastercard
+  why: Instead of wresting power from a banking oligopoly, the UK’s payments regulator
+    ended up strengthening a duopoly
+  takeaway: Instead of wresting power from a banking oligopoly, the UK’s payments
+    regulator ended up strengthening a duopoly
+  prompt: ''
+  url: https://www.ft.com/content/f436654c-aa8d-4a73-a1fc-2dd46abe48eb
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 英国如何意外地将自己束缚于万事达卡
+  why_zh: 英国支付监管机构非但未能削弱银行寡头垄断，反而强化了双头垄断格局
+  takeaway_zh: 英国支付监管机构非但未能削弱银行寡头垄断，反而强化了双头垄断格局
+  prompt_zh: ''
+- category: Business & economy
+  title: Aggreko owners target $12bn valuation with US listing or stake sale
+  why: Power supplier was bought for £2.3bn five years ago by TDR Capital and I Squared
+  takeaway: Power supplier was bought for £2.3bn five years ago by TDR Capital and
+    I Squared
+  prompt: ''
+  url: https://www.ft.com/content/0bce673b-ddb2-4892-98b7-453dca4d6339
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: Aggreko所有者瞄准120亿美元估值，计划美国上市或股权出售
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Row brews over ‘savvy squirrel’ campaign to drive UK investment
+  why: Push to support chancellor’s ‘nation of investors’ plan divides financial services
+    industry
+  takeaway: Push to support chancellor’s ‘nation of investors’ plan divides financial
+    services industry
+  prompt: ''
+  url: https://www.ft.com/content/e4f8e22d-11cd-43fe-8b6a-35d1bd72ffd5
+  source: Financial Times - Markets
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 关于推动英国投资的‘精明松鼠’活动引发争议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: ‘Is university still worth it?’ is the wrong question
+  why: The graduate earnings premium isn’t really measuring what most people think
+  takeaway: The graduate earnings premium isn’t really measuring what most people
+    think
+  prompt: ''
+  url: https://www.ft.com/content/649d3c64-b8e5-4979-9f0c-9aebd43642e2
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: ‘大学还值得上吗？’是个错误的问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Musk’s Starlink to be tested against Eutelsat on French shipping fleet
+  why: Move by CMA CGM comes amid European efforts to support OneWeb as a rival to
+    SpaceX’s satellite network
+  takeaway: Move by CMA CGM comes amid European efforts to support OneWeb as a rival
+    to SpaceX’s satellite network
+  prompt: ''
+  url: https://www.ft.com/content/4abe6b34-cae5-43a9-b66a-1cc68756bf7b
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 马斯克的Starlink将与Eutelsat在法国船队上展开测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Reform wants to put public unions ‘under review’, by-election candidate has
+    said
+  why: Comments late last year indicate challenges Farage faces in courting working-class
+    voters
+  takeaway: Comments late last year indicate challenges Farage faces in courting working-class
+    voters
+  prompt: ''
+  url: https://www.ft.com/content/871b5f86-83c3-4dc6-b56f-d65f68563d8c
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 改革党候选人表示希望将公共工会‘置于审查之下’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Reasons to worry about America’s investment position with the rest of the
+    world
+  why: Data shows that our global financial system is plagued with serious but often
+    ignored imbalances
+  takeaway: Data shows that our global financial system is plagued with serious but
+    often ignored imbalances
+  prompt: ''
+  url: https://www.ft.com/content/8333387f-d23f-4fa8-b16d-365ff11a18ef
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 对美国与世界其他地区投资地位的担忧理由
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Amazon service was taken down by AI coding bot
+  why: Tech giant blames ‘user error, not AI error’ for incident in December involving
+    its Kiro tool
+  takeaway: Tech giant blames ‘user error, not AI error’ for incident in December
+    involving its Kiro tool
+  prompt: ''
+  url: https://www.ft.com/content/00c282de-ed14-4acd-a948-bc8d6bdb339d
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:14+00:00'
+  title_zh: 亚马逊服务因AI编码机器人而中断
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The ANC’s sudden embrace of South African business
+  why: Once instinctively hostile to corporate interests, the party is now working
+    with the private sector to shore up the economy
+  takeaway: Once instinctively hostile to corporate interests, the party is now working
+    with the private sector to shore up the economy
+  prompt: ''
+  url: https://www.ft.com/content/c08a1125-bd51-4fab-967b-04a9054f9751
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:05+00:00'
+  title_zh: 非国大突然拥抱南非商业
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The rainforest retreat in the midst of a megacity
+  why: Surrounded by jungle, a new hotel is the ideal base from which to explore the
+    greener side of Singapore
+  takeaway: Surrounded by jungle, a new hotel is the ideal base from which to explore
+    the greener side of Singapore
+  prompt: ''
+  url: https://www.ft.com/content/ec46db1d-abc7-4955-a4fc-8a4829c9c53b
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:05+00:00'
+  title_zh: 大都市中的雨林避世之所
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Frieze LA 2026
+  why: LA fires one year later; interviews with Monika Sprüth and Philomene Magers,
+    Greta Waller and Amanda Ross-Ho; artists against ICE.
+  takeaway: 'LA fires one year later; interviews with Monika Sprüth and Philomene
+    Magers, Greta Waller and Amanda Ross-Ho; artists against ICE. Plus: the problem
+    with celebrity painters'
+  prompt: ''
+  url: https://www.ft.com/content/7b8e786a-0822-472a-8b2f-a447b64a8b57
+  source: Financial Times - World
+  published_utc: '2026-02-20T05:00:05+00:00'
+  title_zh: 2026年洛杉矶弗里兹艺术博览会
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Chinese green energy tycoon warns AI boom will strain global power
+  why: Envision founder Zhang Lei says renewables are essential to stop the technology
+    driving up household bills
+  takeaway: Envision founder Zhang Lei says renewables are essential to stop the technology
+    driving up household bills
+  prompt: ''
+  url: https://www.ft.com/content/1e67c4d5-704d-424f-a8ec-d6a2484b36e3
+  source: Financial Times - Technology
+  published_utc: '2026-02-20T05:00:05+00:00'
+  title_zh: 中国绿色能源巨头警告AI繁荣将加剧全球电力紧张
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Expanding the Scope of Computational Thinking in Artificial Intelligence
+    for K-12 Education
+  why: 'arXiv:2602.16890v1 Announce Type: new Abstract: The introduction of generative
+    artificial intelligence applications to the public has led t…'
+  takeaway: 'arXiv:2602.16890v1 Announce Type: new Abstract: The introduction of generative
+    artificial intelligence applications to the public has led to heated discussions
+    about its potential impacts and risks for K-12 education. One particular challenge
+    has been to decide what students should learn about AI, and how this relates to
+    computational thinking, which has se…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.16890
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 扩展K-12教育中人工智能计算思维的范畴
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: CreateAI Insights from an NSF Workshop on K12 Students, Teachers, and Families
+    as Designers of Artificial Intelligence and Machine Learning Applications
+  why: 'arXiv:2602.16894v1 Announce Type: new Abstract: In response to the exponential
+    growth in the use of artificial intelligence and machine lea…'
+  takeaway: 'arXiv:2602.16894v1 Announce Type: new Abstract: In response to the exponential
+    growth in the use of artificial intelligence and machine learning applications,
+    educators, researchers and policymakers have taken steps to integrate artificial
+    intelligence applications into K-12 education. Among these efforts, one equally
+    important approach has received little,…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.16894
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: CreateAI洞见：NSF研讨会聚焦K-12学生、教师及家庭作为AI与机器学习应用的设计者
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Beyond the Flag: A Framework for Integrating Cybersecurity Competitions
+    into K-12 Education for Cognitive Apprenticeship and Ethical Skill Development'
+  why: 'arXiv:2602.16921v1 Announce Type: new Abstract: Capture the Flag (CTF) competitions
+    are powerful pedagogical tools for addressing the globa…'
+  takeaway: 'arXiv:2602.16921v1 Announce Type: new Abstract: Capture the Flag (CTF)
+    competitions are powerful pedagogical tools for addressing the global cybersecurity
+    workforce gap, yet their effective K-12 implementation is often undermined by
+    significant barriers, including educator preparedness gaps and equity concerns.
+    This paper addresses these challenges by propo…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.16921
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 超越旗帜：将网络安全竞赛融入K-12教育，促进认知学徒制与伦理技能发展的框架
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: How should AI knowledge be governed? Epistemic authority, structural transparency,
+    and the case for open cognitive graphs
+  why: 'arXiv:2602.16949v1 Announce Type: new Abstract: Through widespread use in
+    formative assessment and self-directed learning, educational AI s…'
+  takeaway: 'arXiv:2602.16949v1 Announce Type: new Abstract: Through widespread use
+    in formative assessment and self-directed learning, educational AI systems exercise
+    de facto epistemic authority. Unlike human educators, however, these systems are
+    not embedded in institutional mechanisms of accountability, review, and correction,
+    creating a structural governance challe…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.16949
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: AI知识应如何治理？认知权威、结构透明性与开放认知图谱的案例
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'A testable framework for AI alignment: Simulation Theology as an engineered
+    worldview for silicon-based agents'
+  why: 'arXiv:2602.16987v1 Announce Type: new Abstract: As artificial intelligence
+    (AI) capabilities advance rapidly, frontier models increasingly…'
+  takeaway: 'arXiv:2602.16987v1 Announce Type: new Abstract: As artificial intelligence
+    (AI) capabilities advance rapidly, frontier models increasingly demonstrate systematic
+    deception and scheming, complying with safety protocols during oversight but defecting
+    when unsupervised. This paper examines the ensuing alignment challenge through
+    an analogy from forensic psycho…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.16987
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: AI对齐的可测试框架：模拟神学作为硅基代理的工程化世界观
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Archetypes and gender in fiction: A data-driven mapping of gender stereotypes
+    in stories'
+  why: 'arXiv:2602.17005v1 Announce Type: new Abstract: Fictional character representations
+    reflect social norms and biases.'
+  takeaway: 'arXiv:2602.17005v1 Announce Type: new Abstract: Fictional character representations
+    reflect social norms and biases. Women are relatively underrepresented in television
+    and film, irrespective of genre. In addition, women are frequently stereotyped
+    in these media. The combination of this stereotyping and the gender imbalance
+    may have an impact on child devel…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17005
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 小说中的原型与性别：数据驱动的性别刻板印象映射
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Security at the Border? The Lived Experiences of Refugees and Asylum Seekers
+    in the UK
+  why: 'arXiv:2602.17280v1 Announce Type: new Abstract: We bring to light how some
+    asylum seekers and refugees arriving in the UK experience border…'
+  takeaway: 'arXiv:2602.17280v1 Announce Type: new Abstract: We bring to light how
+    some asylum seekers and refugees arriving in the UK experience border control
+    and wider immigration systems, as well as the impact that these have on their
+    subsequent lives in the UK. We do so through participant observation in a support
+    organisation and interviews with caseworkers, asylu…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17280
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 边境安全？英国难民与寻求庇护者的生活体验
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Non-Invasive Anemia Detection: A Multichannel PPG-Based Hemoglobin Estimation
+    with Explainable Artificial Intelligence'
+  why: 'arXiv:2602.17290v1 Announce Type: new Abstract: Anemia is a prevalent hematological
+    disorder that requires frequent hemoglobin monitoring f…'
+  takeaway: 'arXiv:2602.17290v1 Announce Type: new Abstract: Anemia is a prevalent
+    hematological disorder that requires frequent hemoglobin monitoring for early
+    diagnosis and effective management. Conventional hemoglobin assessment relies
+    on invasive blood sampling, limiting its suitability for large-scale or continuous
+    screening. This paper presents a non-invasive fram…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17290
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 无创贫血检测：基于多通道PPG的血红蛋白估计与可解释人工智能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Human attribution of empathic behaviour to AI systems
+  why: 'arXiv:2602.17293v1 Announce Type: new Abstract: Artificial intelligence systems
+    increasingly generate text intended to provide social and e…'
+  takeaway: 'arXiv:2602.17293v1 Announce Type: new Abstract: Artificial intelligence
+    systems increasingly generate text intended to provide social and emotional support.
+    Understanding how users perceive empathic qualities in such content is therefore
+    critical. We examined differences in perceived empathy signals between human-written
+    and large language model (LLM)-gener…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17293
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 人类对AI系统共情行为的归因
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Open Datasets in Learning Analytics: Trends, Challenges, and Best PRACTICE'
+  why: 'arXiv:2602.17314v1 Announce Type: new Abstract: Open datasets play a crucial
+    role in three research domains that intersect data science and…'
+  takeaway: 'arXiv:2602.17314v1 Announce Type: new Abstract: Open datasets play a
+    crucial role in three research domains that intersect data science and education:
+    learning analytics, educational data mining, and artificial intelligence in education.
+    Researchers in these domains apply computational methods to analyze data from
+    educational contexts, aiming to better unde…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17314
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 学习分析中的开放数据集：趋势、挑战与最佳实践
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Astra: AI Safety, Trust, & Risk Assessment'
+  why: 'arXiv:2602.17357v1 Announce Type: new Abstract: This paper argues that existing
+    global AI safety frameworks exhibit contextual blindness to…'
+  takeaway: 'arXiv:2602.17357v1 Announce Type: new Abstract: This paper argues that
+    existing global AI safety frameworks exhibit contextual blindness towards India''s
+    unique socio-technical landscape. With a population of 1.5 billion and a massive
+    informal economy, India''s AI integration faces specific challenges such as caste-based
+    discrimination, linguistic exclusion o…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17357
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: Astra：AI安全、信任与风险评估
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Insidious Imaginaries: A Critical Overview of AI Speculations'
+  why: 'arXiv:2602.17383v1 Announce Type: new Abstract: Speculative thinking about
+    the capabilities and implications of artificial intelligence (AI…'
+  takeaway: 'arXiv:2602.17383v1 Announce Type: new Abstract: Speculative thinking
+    about the capabilities and implications of artificial intelligence (AI) influences
+    computer science research, drives AI industry practices, feeds academic studies
+    of existential hazards, and stirs a global political debate. It primarily concerns
+    predictions about the possibilities, benefit…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17383
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 潜伏的想象：AI推测的批判性概述
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Preserving Historical Truth: Detecting Historical Revisionism in Large Language
+    Models'
+  why: 'arXiv:2602.17433v1 Announce Type: new Abstract: Large language models (LLMs)
+    are increasingly used as sources of historical information, mo…'
+  takeaway: 'arXiv:2602.17433v1 Announce Type: new Abstract: Large language models
+    (LLMs) are increasingly used as sources of historical information, motivating
+    the need for scalable audits on contested events and politically charged narratives
+    in settings that mirror real user interactions. We introduce \textsc{\texttt{HistoricalMisinfo}},
+    a curated dataset of $500$ co…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17433
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 守护历史真相：检测大语言模型中的历史修正主义
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'From Labor to Collaboration: A Methodological Experiment Using AI Agents
+    to Augment Research Perspectives in Taiwan''s Humanities and Social Sciences'
+  why: 'arXiv:2602.17221v1 Announce Type: cross Abstract: Generative AI is reshaping
+    knowledge work, yet existing research focuses predominantly on…'
+  takeaway: 'arXiv:2602.17221v1 Announce Type: cross Abstract: Generative AI is reshaping
+    knowledge work, yet existing research focuses predominantly on software engineering
+    and the natural sciences, with limited methodological exploration for the humanities
+    and social sciences. Positioned as a "methodological experiment," this study proposes
+    an AI Agent-based collabora…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17221
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 从劳动到协作：利用AI代理增强台湾人文社科研究视角的方法论实验
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: What Do LLMs Associate with Your Name? A Human-Centered Black-Box Audit of
+    Personal Data
+  why: 'arXiv:2602.17483v1 Announce Type: cross Abstract: Large language models (LLMs),
+    and conversational agents based on them, are exposed to per…'
+  takeaway: 'arXiv:2602.17483v1 Announce Type: cross Abstract: Large language models
+    (LLMs), and conversational agents based on them, are exposed to personal data
+    (PD) during pre-training and during user interactions. Prior work shows that PD
+    can resurface, yet users lack insight into how strongly models associate specific
+    information to their identity. We audit PD acro…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17483
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 大语言模型如何关联你的名字？个人数据的人类中心化黑箱审计
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Using LLMs for Knowledge Component-level Correctness Labeling in Open-ended
+    Coding Problems
+  why: 'arXiv:2602.17542v1 Announce Type: cross Abstract: Fine-grained skill representations,
+    commonly referred to as knowledge components (KCs), a…'
+  takeaway: 'arXiv:2602.17542v1 Announce Type: cross Abstract: Fine-grained skill
+    representations, commonly referred to as knowledge components (KCs), are fundamental
+    to many approaches in student modeling and learning analytics. However, KC-level
+    correctness labels are rarely available in real-world datasets, especially for
+    open-ended programming tasks where solutions…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17542
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 使用LLM进行开放式编码问题中的知识组件级正确性标注
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Adapting Actively on the Fly: Relevance-Guided Online Meta-Learning with
+    Latent Concepts for Geospatial Discovery'
+  why: 'arXiv:2602.17605v1 Announce Type: cross Abstract: In many real-world settings,
+    such as environmental monitoring, disaster response, or publ…'
+  takeaway: 'arXiv:2602.17605v1 Announce Type: cross Abstract: In many real-world
+    settings, such as environmental monitoring, disaster response, or public health,
+    with costly and difficult data collection and dynamic environments, strategically
+    sampling from unobserved regions is essential for efficiently uncovering hidden
+    targets under tight resource constraints. Yet,…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.17605
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 动态主动适应：基于相关性的在线元学习与潜在概念在地理空间发现中的应用
+  why_zh: arXiv:2602.17605v1 公告类型：交叉摘要 在环境监测、灾难响应或公共健康等现实场景中...
+  takeaway_zh: arXiv:2602.17605v1 公告类型：交叉摘要 在数据采集成本高昂、环境动态变化的现实场景中，战略性地从未观测区域采样对于资源受限条件下高效发现隐藏目标至关重要...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Toward LLM-Supported Automated Assessment of Critical Thinking Subskills
+  why: 'arXiv:2510.12915v2 Announce Type: replace Abstract: As the world becomes increasingly
+    saturated with AI-generated content, disinformation,…'
+  takeaway: 'arXiv:2510.12915v2 Announce Type: replace Abstract: As the world becomes
+    increasingly saturated with AI-generated content, disinformation, and algorithmic
+    persuasion, critical thinking - the capacity to evaluate evidence, detect unreliable
+    claims, and exercise independent judgment - is becoming a defining human skill.
+    Developing critical thinking skills thr…'
+  prompt: ''
+  url: https://arxiv.org/abs/2510.12915
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: 迈向LLM支持的批判性思维子技能自动评估
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: VERA-MH Concept Paper
+  why: 'arXiv:2510.15297v3 Announce Type: replace Abstract: We introduce VERA-MH (Validation
+    of Ethical and Responsible AI in Mental Health), an au…'
+  takeaway: 'arXiv:2510.15297v3 Announce Type: replace Abstract: We introduce VERA-MH
+    (Validation of Ethical and Responsible AI in Mental Health), an automated evaluation
+    of the safety of AI chatbots used in mental health contexts, with an initial focus
+    on suicide risk. Practicing clinicians and academic experts developed a rubric
+    informed by best practices for suicide…'
+  prompt: ''
+  url: https://arxiv.org/abs/2510.15297
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: VERA-MH概念文件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Rise of AI Search: Implications for Information Markets and Human Judgement
+    at Scale'
+  why: 'arXiv:2602.13415v2 Announce Type: replace Abstract: We executed 24,000 search
+    queries in 243 countries, generating 2.8 million AI and tradi…'
+  takeaway: 'arXiv:2602.13415v2 Announce Type: replace Abstract: We executed 24,000
+    search queries in 243 countries, generating 2.8 million AI and traditional search
+    results in 2024 and 2025. We found a rapid global expansion of AI search and key
+    trends that reflect important, previously hidden, policy decisions by AI companies
+    that impact human exposure to AI search wo…'
+  prompt: ''
+  url: https://arxiv.org/abs/2602.13415
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-02-20T05:00:00+00:00'
+  title_zh: AI搜索的崛起：对信息市场及大规模人类判断的影响
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Mystery donor gives Japanese city $3.6M in gold bars to fix water system
+  why: 'Article URL: https://www.bbc.com/news/articles/c3ew5jlqz87o Comments URL:
+    https://news.ycombinator.com/item?id=47083735 Points: 8 # Comment…'
+  takeaway: 'Article URL: https://www.bbc.com/news/articles/c3ew5jlqz87o Comments
+    URL: https://news.ycombinator.com/item?id=47083735 Points: 8 # Comments: 3'
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c3ew5jlqz87o
+  source: Hacker News (front page)
+  published_utc: '2026-02-20T04:27:51+00:00'
+  title_zh: 神秘捐赠者赠予日本城市价值360万美元金条以修复供水系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Consistency diffusion language models: Up to 14x faster, no quality loss'
+  why: 'Article URL: https://www.together.ai/blog/consistency-diffusion-language-models
+    Comments URL: https://news.ycombinator.com/item?id=47083648…'
+  takeaway: 'Article URL: https://www.together.ai/blog/consistency-diffusion-language-models
+    Comments URL: https://news.ycombinator.com/item?id=47083648 Points: 16 # Comments:
+    2'
+  prompt: ''
+  url: https://www.together.ai/blog/consistency-diffusion-language-models
+  source: Hacker News (front page)
+  published_utc: '2026-02-20T04:15:58+00:00'
+  title_zh: 一致性扩散语言模型：速度提升高达14倍，质量无损
+  why_zh: 文章链接：https://www.together.ai/blog/consistency-diffusion-language-models
+    评论链接：https://news.ycombinator.com/item?id=47083648...
+  takeaway_zh: '文章链接：https://www.together.ai/blog/consistency-diffusion-language-models
+    评论链接：https://news.ycombinator.com/item?id=47083648 积分：16 #评论数：2'
+  prompt_zh: ''
+- category: Business & economy
+  title: US and Indonesia finalise deal to cut tariffs to 19%
+  why: Washington will set a 19% tariff on most Indonesian goods in exchange for lower
+    trade barriers for US goods
+  takeaway: Washington will set a 19% tariff on most Indonesian goods in exchange
+    for lower trade barriers for US goods
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cgk2d7yxm2zo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-20T03:05:32+00:00'
+  title_zh: 美国与印尼敲定协议，将关税降至19%
+  why_zh: 华盛顿将对大多数印尼商品征收19%关税，以换取美国商品面临的贸易壁垒降低
+  takeaway_zh: 华盛顿将对大多数印尼商品征收19%关税，以换取美国商品面临的贸易壁垒降低
+  prompt_zh: ''
+- category: Tech industry
+  title: An AI Agent Published a Hit Piece on Me – The Operator Came Forward
+  why: 'Article URL: https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+    Comments URL: https://news.ycombinator.com/item?id=4708314…'
+  takeaway: 'Article URL: https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+    Comments URL: https://news.ycombinator.com/item?id=47083145 Points: 221 # Comments:
+    171'
+  prompt: ''
+  url: https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+  source: Hacker News (front page)
+  published_utc: '2026-02-20T03:05:08+00:00'
+  title_zh: AI代理发布了一篇关于我的负面文章——操作者现身
+  why_zh: 文章链接：https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+    评论链接：https://news.ycombinator.com/item?id=4708314...
+  takeaway_zh: '文章链接：https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+    评论链接：https://news.ycombinator.com/item?id=47083145 积分：221 #评论数：171'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Pi for Excel: AI sidebar add-in for Excel, powered by Pi'
+  why: 'Article URL: https://github.com/tmustier/pi-for-excel Comments URL: https://news.ycombinator.com/item?id=47082854
+    Points: 26 # Comments: 3'
+  takeaway: 'Article URL: https://github.com/tmustier/pi-for-excel Comments URL: https://news.ycombinator.com/item?id=47082854
+    Points: 26 # Comments: 3'
+  prompt: ''
+  url: https://github.com/tmustier/pi-for-excel
+  source: Hacker News (front page)
+  published_utc: '2026-02-20T02:20:06+00:00'
+  title_zh: Pi for Excel：由Pi驱动的Excel侧边栏AI插件
+  why_zh: '文章链接：https://github.com/tmustier/pi-for-excel 评论链接：https://news.ycombinator.com/item?id=47082854
+    积分：26 #评论数：3'
+  takeaway_zh: '文章链接：https://github.com/tmustier/pi-for-excel 评论链接：https://news.ycombinator.com/item?id=47082854
+    积分：26 #评论数：3'
+  prompt_zh: ''
+- category: Tech industry
+  title: Nasa boss says Boeing Starliner failure one of worst in its history
+  why: The agency released a critical report that puts the Starliner incident at same
+    mistake level assigned to the fatal Columbia and Challenger…
+  takeaway: The agency released a critical report that puts the Starliner incident
+    at same mistake level assigned to the fatal Columbia and Challenger shuttle disasters.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cm2x3nlxg9jo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-02-20T01:44:48+00:00'
+  title_zh: NASA局长称波音星际客机故障为其史上最严重之一
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: An ARM Homelab Server, or a Minisforum MS-R1 Review
+  why: 'Article URL: https://sour.coffee/2026/02/20/an-arm-homelab-server-or-a-minisforum-ms-r1-review/
+    Comments URL: https://news.ycombinator.com/…'
+  takeaway: 'Article URL: https://sour.coffee/2026/02/20/an-arm-homelab-server-or-a-minisforum-ms-r1-review/
+    Comments URL: https://news.ycombinator.com/item?id=47082548 Points: 40 # Comments:
+    36'
+  prompt: ''
+  url: https://sour.coffee/2026/02/20/an-arm-homelab-server-or-a-minisforum-ms-r1-review/
+  source: Hacker News (front page)
+  published_utc: '2026-02-20T01:33:36+00:00'
+  title_zh: ARM家庭实验室服务器，或Minisforum MS-R1评测
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: MuMu Player (NetEase) silently runs 17 reconnaissance commands every 30 minutes
+  why: 'Article URL: https://gist.github.com/interpiduser5/547d8a7baec436f24b7cce89dd4ae1ea
+    Comments URL: https://news.ycombinator.com/item?id=4708…'
+  takeaway: 'Article URL: https://gist.github.com/interpiduser5/547d8a7baec436f24b7cce89dd4ae1ea
+    Comments URL: https://news.ycombinator.com/item?id=47082496 Points: 147 # Comments:
+    68'
+  prompt: ''
+  url: https://gist.github.com/interpiduser5/547d8a7baec436f24b7cce89dd4ae1ea
+  source: Hacker News (front page)
+  published_utc: '2026-02-20T01:28:47+00:00'
+  title_zh: MuMu Player（网易）每30分钟静默执行17条侦察命令
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Live Nation sees strong ticket sales as monopoly lawsuit looms
+  why: The entertainment giant's revenue surged last year as 159 million fans attended
+    its concerts.
+  takeaway: The entertainment giant's revenue surged last year as 159 million fans
+    attended its concerts.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cgqgvxz27z7o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-20T01:09:51+00:00'
+  title_zh: Live Nation门票销售强劲，垄断诉讼逼近
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

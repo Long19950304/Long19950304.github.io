@@ -1230,6 +1230,7 @@ weeks:
   - '2026-02-16'
   - '2026-02-18'
   - '2026-02-19'
+  - '2026-02-20'
   highlights_news:
   - date: '2026-02-16'
     url: https://www.ft.com/content/b6436d45-9eb0-4bfa-a773-48b517b9202d
@@ -1337,6 +1338,43 @@ weeks:
     category: Tech industry
     source: TechCrunch
     published_utc: '2026-02-19T03:30:00+00:00'
+  - date: '2026-02-20'
+    url: https://www.ft.com/content/f436654c-aa8d-4a73-a1fc-2dd46abe48eb
+    title: How the UK accidentally shackled itself to Mastercard
+    title_zh: 英国如何意外地将自己束缚于万事达卡
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-02-20T05:00:14+00:00'
+  - date: '2026-02-20'
+    url: https://www.bbc.com/news/articles/cgk2d7yxm2zo?at_medium=RSS&at_campaign=rss
+    title: US and Indonesia finalise deal to cut tariffs to 19%
+    title_zh: 美国与印尼敲定协议，将关税降至19%
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-20T03:05:32+00:00'
+  - date: '2026-02-20'
+    url: https://www.theguardian.com/commentisfree/2026/feb/20/europe-us-defence-baltic-sea-nations-russian-sabotage
+    title: Can Europe survive without US defence? Surprisingly, the Baltic sea nations
+      are showing the way | Elisabeth Braw
+    title_zh: 欧洲能否脱离美国防务独立生存？波罗的海国家意外指明方向 | Elisabeth Braw
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-20T05:00:25+00:00'
+  - date: '2026-02-20'
+    url: https://arxiv.org/abs/2602.17605
+    title: 'Adapting Actively on the Fly: Relevance-Guided Online Meta-Learning with
+      Latent Concepts for Geospatial Discovery'
+    title_zh: 动态主动适应：基于相关性的在线元学习与潜在概念在地理空间发现中的应用
+    category: CSS / AI & society
+    source: arXiv cs.CY (Computers & Society)
+    published_utc: '2026-02-20T05:00:00+00:00'
+  - date: '2026-02-20'
+    url: https://www.together.ai/blog/consistency-diffusion-language-models
+    title: 'Consistency diffusion language models: Up to 14x faster, no quality loss'
+    title_zh: 一致性扩散语言模型：速度提升高达14倍，质量无损
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-02-20T04:15:58+00:00'
   highlights_ai:
   - date: '2026-02-16'
     url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
@@ -1422,3 +1460,38 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-02-18T20:29:25+00:00'
+  - date: '2026-02-20'
+    url: https://openai.com/index/openai-for-india
+    title: Introducing OpenAI for India
+    title_zh: 推出OpenAI印度版
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-02-18T21:00:00+00:00'
+  - date: '2026-02-20'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4
+    title: 'anthropics/anthropic-sdk-typescript: bedrock-sdk: v0.26.4'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-19T20:04:51+00:00'
+  - date: '2026-02-20'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0
+    title: 'anthropics/anthropic-sdk-python: v0.83.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-02-19T19:26:11+00:00'
+  - date: '2026-02-20'
+    url: https://github.com/microsoft/semantic-kernel/releases/tag/vectordata-dotnet-10.0.0
+    title: 'microsoft/semantic-kernel: vectordata-dotnet-10.0.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - microsoft/semantic-kernel
+    published_utc: '2026-02-19T17:26:54+00:00'
+  - date: '2026-02-20'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro-patch
+    title: 'BerriAI/litellm: v1.81.9-stable.gemini.3.1-pro-patch'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-02-20T04:46:06+00:00'

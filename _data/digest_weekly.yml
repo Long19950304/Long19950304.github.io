@@ -1231,6 +1231,7 @@ weeks:
   - '2026-02-18'
   - '2026-02-19'
   - '2026-02-20'
+  - '2026-02-22'
   highlights_news:
   - date: '2026-02-16'
     url: https://www.ft.com/content/b6436d45-9eb0-4bfa-a773-48b517b9202d
@@ -1375,6 +1376,42 @@ weeks:
     category: Tech industry
     source: Hacker News (front page)
     published_utc: '2026-02-20T04:15:58+00:00'
+  - date: '2026-02-22'
+    url: https://www.ft.com/content/b7c1eb3e-7469-4aab-8909-9d3616a291a5
+    title: What does Trump’s latest tariff threat mean for his previous trade pacts?
+    title_zh: 特朗普最新关税威胁对其此前贸易协议意味着什么？
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-22T07:12:03+00:00'
+  - date: '2026-02-22'
+    url: https://www.bbc.com/news/articles/cn8z48xwqn3o?at_medium=RSS&at_campaign=rss
+    title: Trump says he will increase his new global tariffs to 15%
+    title_zh: 特朗普宣布将全球新关税提高至15%
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-22T08:08:24+00:00'
+  - date: '2026-02-22'
+    url: https://www.theguardian.com/business/2026/feb/22/food-production-hike-in-energy-standing-charges-inflation
+    title: '‘Eye-watering numbers’: food producers sound alarm on rise in energy charges'
+    title_zh: ‘惊人数字’：食品生产商对能源费用上涨发出警告
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-22T07:00:32+00:00'
+  - date: '2026-02-22'
+    url: https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/
+    title: Sam Altman would like remind you that humans use a lot of energy, too
+    title_zh: Sam Altman提醒我们，人类也消耗大量能源
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-21T21:38:01+00:00'
+  - date: '2026-02-22'
+    url: https://arstechnica.com/space/2026/02/nasa-says-it-needs-to-haul-the-artemis-ii-rocket-back-to-the-hangar-for-repairs/
+    title: NASA says it needs to haul the Artemis II rocket back to the hangar for
+      repairs
+    title_zh: NASA表示需将Artemis II火箭拖回机库维修
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-21T23:54:38+00:00'
   highlights_ai:
   - date: '2026-02-16'
     url: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/
@@ -1495,3 +1532,17 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-02-20T04:46:06+00:00'
+  - date: '2026-02-22'
+    url: https://the-decoder.com/anthropics-new-ai-security-tool-sends-cybersecurity-stocks-tumbling/
+    title: Anthropic's new AI security tool sends cybersecurity stocks tumbling
+    title_zh: Anthropic发布AI安全工具引发网安股暴跌
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-21T10:15:44+00:00'
+  - date: '2026-02-22'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable
+    title: 'BerriAI/litellm: v1.81.12-stable'
+    title_zh: BerriAI/litellm版本：1.81.12-stable
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-02-21T22:46:10+00:00'

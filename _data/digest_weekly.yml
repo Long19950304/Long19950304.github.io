@@ -1546,3 +1546,83 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-02-21T22:46:10+00:00'
+- week: 2026-W09
+  start: '2026-02-23'
+  end: '2026-03-01'
+  issues:
+  - '2026-02-23'
+  highlights_news:
+  - date: '2026-02-23'
+    url: https://www.ft.com/content/51788098-b2da-4753-a12b-782c20ee530e
+    title: Ukraine blames Russia for ‘terrorist attack’ in Lviv
+    title_zh: 乌克兰指责俄罗斯对利沃夫发动‘恐怖袭击’
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-22T13:45:25+00:00'
+  - date: '2026-02-23'
+    url: https://www.theguardian.com/us-news/2026/feb/22/uk-in-talks-with-us-over-best-possible-deal-for-british-firms-amid-higher-tariffs-threat-trump
+    title: US will not back out of its tariff deals with UK and others, says Trump
+      trade representative
+    title_zh: 美国贸易代表称不会退出与英国等国的关税协议
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-22T17:18:02+00:00'
+  - date: '2026-02-23'
+    url: https://www.bbc.com/news/articles/c98qjl76eyro?at_medium=RSS&at_campaign=rss
+    title: The uncertainties facing businesses and consumers after Trump's tariff
+      changes
+    title_zh: 特朗普关税新政后企业与消费者面临的不确定性
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-22T16:55:58+00:00'
+  - date: '2026-02-23'
+    url: https://techcrunch.com/2026/02/22/trump-says-netflix-will-face-consequences-if-it-doesnt-fire-board-member-susan-rice/
+    title: Trump says Netflix will face ‘consequences’ if it doesn’t fire board member
+      Susan Rice
+    title_zh: 特朗普称网飞若不解雇董事会成员苏珊·赖斯将‘承担后果’
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-22T17:39:55+00:00'
+  - date: '2026-02-23'
+    url: https://www.theverge.com/column/882516/privacy-laws-america
+    title: America desperately needs new privacy laws
+    title_zh: 美国亟需新隐私法
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-02-22T13:00:00+00:00'
+  highlights_ai:
+  - date: '2026-02-23'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4
+    title: 'anthropics/anthropic-sdk-typescript: bedrock-sdk: v0.26.4'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-02-19T20:04:51+00:00'
+  - date: '2026-02-23'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0
+    title: 'anthropics/anthropic-sdk-python: v0.83.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-02-19T19:26:11+00:00'
+  - date: '2026-02-23'
+    url: https://github.com/microsoft/semantic-kernel/releases/tag/vectordata-dotnet-10.0.0
+    title: 'microsoft/semantic-kernel: vectordata-dotnet-10.0.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - microsoft/semantic-kernel
+    published_utc: '2026-02-19T17:26:54+00:00'
+  - date: '2026-02-23'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable
+    title: 'BerriAI/litellm: v1.81.12-stable'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-02-21T22:46:10+00:00'
+  - date: '2026-02-23'
+    url: https://github.com/ollama/ollama/releases/tag/v0.16.3
+    title: 'ollama/ollama: v0.16.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - ollama/ollama
+    published_utc: '2026-02-19T22:11:27+00:00'

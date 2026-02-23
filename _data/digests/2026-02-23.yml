@@ -1,0 +1,1187 @@
+date: '2026-02-23'
+title: Daily Digest - 2026-02-23
+title_zh: 每日简报 - 2026-02-23
+note: 'Today: Voice bots can be tricked into spreading falsehoods · UK job vacancies
+  hit lowest since the pandemic · AI: Nvidia open-sources DreamDojo world model for
+  robot training.'
+note_zh: 今日关注：语音聊天机器人容易被诱导传播虚假信息；英国职位空缺降至疫情以来最低；AI：英伟达开源 DreamDojo 机器人训练“世界模型”。
+items:
+- category: AI tools & model releases
+  title: 'The Claude C Compiler: What It Reveals About the Future of Software'
+  why: 'The Claude C Compiler: What It Reveals About the Future of Software On February
+    5th Anthropic''s Nicholas Carlini wrote about a project to u…'
+  takeaway: 'The Claude C Compiler: What It Reveals About the Future of Software On
+    February 5th Anthropic''s Nicholas Carlini wrote about a project to use parallel
+    Claudes to build a C compiler on top of the brand new Opus 4.6 Chris Lattner (Swift,
+    LLVM, Clang, Mojo) knows more about C compilers than most. He just published this
+    review of the code. Some points that stoo…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/22/ccc/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-22T23:58:43+00:00'
+  title_zh: Claude C编译器：揭示软件未来之窗
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Hollywood's MPA calls Bytedance's Seedance 2.0 a machine built for "systemic
+    infringement"
+  why: Hollywood is done asking nicely.
+  takeaway: Hollywood is done asking nicely. First Netflix, then Warner Bros., Disney,
+    Paramount, and Sony. Now the MPA itself. Hollywood is closing ranks against Bytedance's
+    Seedance 2.0, arguing the AI video generator was built on stolen content. The
+    API launch might already be on hold. The article Hollywood's MPA calls Bytedance's
+    Seedance 2.0 a machine built for "s…
+  prompt: ''
+  url: https://the-decoder.com/hollywoods-mpa-calls-bytedances-seedance-2-0-a-machine-built-for-systemic-infringement/
+  source: The Decoder (AI)
+  published_utc: '2026-02-22T18:19:48+00:00'
+  title_zh: 好莱坞MPA称字节跳动的Seedance 2.0为‘系统性侵权’机器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Nvidia's DreamDojo is an open source world model for robot training
+  why: Nvidia wants to move robot training out of the real world and into an AI world
+    model.
+  takeaway: Nvidia wants to move robot training out of the real world and into an
+    AI world model. DreamDojo generates simulated futures from video data, no 3D engine
+    required. The article Nvidia's DreamDojo is an open source world model for robot
+    training appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/nvidias-dreamdojo-is-an-open-source-world-model-for-robot-training/
+  source: The Decoder (AI)
+  published_utc: '2026-02-22T12:30:53+00:00'
+  title_zh: Nvidia的DreamDojo：开源机器人训练世界模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Why AI still can't find that one concert photo you're looking for
+  why: 'A new benchmark presents AI models with a seemingly simple task: finding certain
+    photos in a personal collection.'
+  takeaway: 'A new benchmark presents AI models with a seemingly simple task: finding
+    certain photos in a personal collection. The results are sobering. The article
+    Why AI still can''t find that one concert photo you''re looking for appeared first
+    on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/why-ai-still-cant-find-that-one-concert-photo-youre-looking-for/
+  source: The Decoder (AI)
+  published_utc: '2026-02-22T11:23:36+00:00'
+  title_zh: 为何AI仍难觅你所寻的那张音乐会照片
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12-stable'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-21T22:46:10+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_pro-mgmnt-dev-v1.81.13'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_pro-mgmnt-dev-v1.81.13
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-21T03:31:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Adding TILs, releases, museums, tools and research to my blog
+  why: I've been wanting to add indications of my various other online activities
+    to my blog for a while now.
+  takeaway: 'I''ve been wanting to add indications of my various other online activities
+    to my blog for a while now. I just turned on a new feature I''m calling "beats"
+    (after story beats, naming this was hard!) which adds five new types of content
+    to my site, all corresponding to activity elsewhere. Here''s what beats look like:
+    Those three are from the 30th December 2025…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/20/beats/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-20T23:47:10+00:00'
+  title_zh: 将TILs、版本发布、博物馆、工具和研究添加到我的博客
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_langfuse-dev-v1.81.13'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_langfuse-dev-v1.81.13
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-20T18:45:43+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.gemini.3.1-pro.sonnet-4.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro.sonnet-4.6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-20T09:08:34+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.gemini.3.1-pro-patch'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro-patch
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-20T04:46:06+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.patch.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.patch.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-20T01:04:07+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.16.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.16.3
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-19T22:11:27+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS IAM Identity Center is now available in the Asia Pacific (New Zealand)
+    AWS Region
+  why: You can now deploy AWS IAM Identity Center in 38 AWS Regions, including Asia
+    Pacific (New Zealand).
+  takeaway: You can now deploy AWS IAM Identity Center in 38 AWS Regions, including
+    Asia Pacific (New Zealand). IAM Identity Center is the recommended service for
+    managing workforce access to AWS applications. It enables you to connect your
+    existing source of workforce identities to AWS once and offer your users single
+    sign on experience across AWS. It powers the perso…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-iam-identity-center-asia-pacific-new-zealand-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-19T22:00:00+00:00'
+  title_zh: AWS IAM Identity Center现已在亚太（新西兰）AWS区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/onnxruntime: ONNX Runtime v1.24.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/onnxruntime/releases/tag/v1.24.2
+  source: GitHub Releases - microsoft/onnxruntime
+  published_utc: '2026-02-19T21:28:03+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.13.dev1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T20:07:33+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: bedrock-sdk: v0.26.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-19T20:04:51+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: vertex-sdk: v0.14.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.4
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-19T20:04:45+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.78.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.78.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-02-19T20:04:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.83.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-02-19T19:26:11+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.9-stable.gemini.3.1-pro'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T19:19:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 G7e instances now available in Asia Pacific (Tokyo) region
+  why: Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO 6000
+    Blackwell Server Edition GPUs are now available in Asia Pacific…
+  takeaway: Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO
+    6000 Blackwell Server Edition GPUs are now available in Asia Pacific (Tokyo) region.
+    G7e instances offer up to 2.3x inference performance compared to G6e. Customers
+    can use G7e instances to deploy large language models (LLMs), agentic AI models,
+    multimodal generative AI models, and physi…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-g7e-instances-tokyo-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-19T19:11:00+00:00'
+  title_zh: Amazon EC2 G7e实例现已在亚太（东京）区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: dotnet-1.72.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/dotnet-1.72.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-02-19T18:40:10+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Gemini 3.1 Pro
+  why: Gemini 3.1 Pro The first in the Gemini 3.1 series, priced the same as Gemini
+    3 Pro ($2/million input, $12/million output under 200,000 toke…
+  takeaway: Gemini 3.1 Pro The first in the Gemini 3.1 series, priced the same as
+    Gemini 3 Pro ($2/million input, $12/million output under 200,000 tokens, $4/$18
+    for 200,000 to 1,000,000). That's less than half the price of Claude Opus 4.6
+    with very similar benchmark scores to that model. They boast about its improved
+    SVG animation performance compared to Gemini 3 Pro…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-19T17:58:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node
+    Localization
+  why: NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA
+    Blackwell families all feature non-uniform memory access (…
+  takeaway: NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper,
+    and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors,
+    but...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-19T17:30:00+00:00'
+  title_zh: 利用NVIDIA多实例GPU与NUMA节点本地化加速数据处理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: vectordata-dotnet-10.0.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/vectordata-dotnet-10.0.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-02-19T17:26:54+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.14'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.14
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-19T14:22:50+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.3.oauth.dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.3.oauth.dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T09:09:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: 1.81.3-stable.dev.oauth'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/1.81.3-stable.dev.oauth
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-19T02:28:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8i-flex instances are now available in additional AWS regions
+  why: Starting today, Amazon EC2 M8i-flex instances are now available in Asia Pacific
+    (Malaysia, Seoul, Singapore, Tokyo), Europe (Frankfurt) and…
+  takeaway: Starting today, Amazon EC2 M8i-flex instances are now available in Asia
+    Pacific (Malaysia, Seoul, Singapore, Tokyo), Europe (Frankfurt) and Canada (Central)
+    regions. These instances are powered by custom Intel Xeon 6 processors, available
+    only on AWS, delivering the highest performance and fastest memory bandwidth among
+    comparable Intel processors in the cl…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-m8i-flex-instances-FRA-ICN-KUL-NRT-SIN-YUL-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-19T02:00:00+00:00'
+  title_zh: Amazon EC2 M8i-flex实例现已在更多AWS区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-text-splitters==1.1.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-02-18T23:03:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: How budget fast fashion is taking small-town India by storm
+  why: More Indians in small towns are now shopping for affordable brands instead
+    of unlabelled goods in the bazaars.
+  takeaway: More Indians in small towns are now shopping for affordable brands instead
+    of unlabelled goods in the bazaars.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c15xvy7k2q5o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-23T00:40:05+00:00'
+  title_zh: 廉价快时尚如何席卷印度小城镇
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Are you cut out for living and working in Antarctica?
+  why: Jobs are available on the icy continent for chefs, plumbers, carpenters and
+    even hairdressers.
+  takeaway: Jobs are available on the icy continent for chefs, plumbers, carpenters
+    and even hairdressers.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cn0e30d9wj9o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-23T00:01:56+00:00'
+  title_zh: 你适合在南极生活和工作吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: UK job vacancies ‘fall to lowest level since pandemic’
+  why: Advertised roles dropped 3% last month to 695,000 – first dip below 700,000
+    since January 2021, job site Adzuna says The number of job vaca…
+  takeaway: Advertised roles dropped 3% last month to 695,000 – first dip below 700,000
+    since January 2021, job site Adzuna says The number of job vacancies in the UK
+    has tumbled to the lowest level in five years, research suggests, falling to levels
+    not seen since the pandemic. The number of jobs being advertised slid by 3% in
+    January to 695,000, according to the job…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/feb/23/uk-job-vacancies-fall-to-lowest-level-since-pandemic
+  source: The Guardian - Business
+  published_utc: '2026-02-23T00:01:51+00:00'
+  title_zh: 英国职位空缺‘降至疫情以来最低水平’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Share of UK companies with low productivity higher than in 1997
+  why: BCG research points to Britain falling behind peers in growth sectors
+  takeaway: BCG research points to Britain falling behind peers in growth sectors
+  prompt: ''
+  url: https://www.ft.com/content/2f396a29-0b54-4da5-bf86-1879708bb44a
+  source: Financial Times - World
+  published_utc: '2026-02-23T00:01:09+00:00'
+  title_zh: 英国低生产率企业占比高于1997年水平
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Conservatives should not just focus on voters lost to Reform, analysis suggests
+  why: Polling finds that Tory voters who have drifted left or become disengaged outnumber
+    those turning to Nigel Farage’s party
+  takeaway: Polling finds that Tory voters who have drifted left or become disengaged
+    outnumber those turning to Nigel Farage’s party
+  prompt: ''
+  url: https://www.ft.com/content/7590bb2c-7647-4379-a549-abdab4be4bfa
+  source: Financial Times - World
+  published_utc: '2026-02-23T00:01:09+00:00'
+  title_zh: 分析显示保守党不应仅关注被改革党夺走的选民
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Mexico hit by wave of violence after security forces kill cartel leader
+  why: Death of Jalisco New Generation Cartel boss ‘El Mencho’ follows US calls for
+    action against traffickers
+  takeaway: Death of Jalisco New Generation Cartel boss ‘El Mencho’ follows US calls
+    for action against traffickers
+  prompt: ''
+  url: https://www.ft.com/content/55fa278a-6902-43e8-9021-dfd3cb7d26a7
+  source: Financial Times - World
+  published_utc: '2026-02-22T23:24:11+00:00'
+  title_zh: 墨西哥安全部队击毙毒枭后爆发暴力浪潮
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple might take a new approach to announcing its next products
+  why: Apple has invited the tech press to a “special Apple experience” on March 4,
+    but it might unfold a bit differently than the company's stand…
+  takeaway: Apple has invited the tech press to a “special Apple experience” on March
+    4, but it might unfold a bit differently than the company's standard press event.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/apple-might-take-a-new-approach-to-announcing-its-next-products/
+  source: TechCrunch
+  published_utc: '2026-02-22T23:08:08+00:00'
+  title_zh: 苹果可能改变下一代产品发布策略
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Ministers pledge £3.8bn of extra cash for special needs education in English
+    schools
+  why: Labour government aims to end need for parents to ‘battle’ for support as it
+    bids to avoid backbench revolt over reforms
+  takeaway: Labour government aims to end need for parents to ‘battle’ for support
+    as it bids to avoid backbench revolt over reforms
+  prompt: ''
+  url: https://www.ft.com/content/5dd8897d-5627-4f5c-bb38-750af2525f2d
+  source: Financial Times - World
+  published_utc: '2026-02-22T22:30:09+00:00'
+  title_zh: 英国大臣承诺为英格兰特殊教育追加38亿英镑拨款
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Can the creator economy stay afloat in a flood of AI slop?
+  why: On the latest episode of Equity, we debated what’s next for the creator economy,
+    and whether there will be any room for the next generation…
+  takeaway: On the latest episode of Equity, we debated what’s next for the creator
+    economy, and whether there will be any room for the next generation of creators
+    to stand out.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/can-the-creator-economy-stay-afloat-in-a-flood-of-ai-slop/
+  source: TechCrunch
+  published_utc: '2026-02-22T22:15:58+00:00'
+  title_zh: 在人工智能浪潮中，创作者经济能否屹立不倒？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Samsung is adding Perplexity to Galaxy AI
+  why: In addition to summoning Bixby or Gemini, Galaxy S26 users will be able to
+    call on Perplexity by saying "hey, Plex." The integration of Per…
+  takeaway: In addition to summoning Bixby or Gemini, Galaxy S26 users will be able
+    to call on Perplexity by saying "hey, Plex." The integration of Perplexity into
+    Galaxy AI is just one element of the company's embrace of a "multi-agent ecosystem."
+    Often, people will use different AI agents for different tasks, depending on where
+    their strengths […]
+  prompt: ''
+  url: https://www.theverge.com/tech/882921/samsung-is-adding-perplexity-to-galaxy-ai
+  source: The Verge
+  published_utc: '2026-02-22T22:15:30+00:00'
+  title_zh: 三星将为Galaxy AI集成Perplexity
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'FirstFT: Leaked documents reveal Iran’s €500mn arms deal with Russia'
+  why: 'Also in today’s newsletter: Mexico kills top drug cartel leader and PE firm
+    struggle to exit China deals'
+  takeaway: 'Also in today’s newsletter: Mexico kills top drug cartel leader and PE
+    firm struggle to exit China deals'
+  prompt: ''
+  url: https://www.ft.com/content/e35db505-e503-469b-a044-bb03114e82d6
+  source: Financial Times - World
+  published_utc: '2026-02-22T21:45:26+00:00'
+  title_zh: FirstFT：泄露文件显示伊朗与俄罗斯达成5亿欧元军火交易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: You need to listen to Laurie Spiegel’s masterpiece of early ambient music
+  why: I recently had the pleasure of interviewing Laurie Spiegel for the site.
+  takeaway: I recently had the pleasure of interviewing Laurie Spiegel for the site.
+    As preparation for the interview, I spent a lot of time over the last couple of
+    weeks revisiting Spiegel's records, most notably The Expanding Universe, her 1980
+    masterpiece that blends synth experimentalism with early examples of what would
+    eventually be called ambient music, […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/882915/laurie-spiegel-the-expanding-universe-review-masterpiece-ambient-music
+  source: The Verge
+  published_utc: '2026-02-22T21:30:00+00:00'
+  title_zh: 你需要听听劳瑞·斯皮格尔的早期氛围音乐杰作
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bill Gurley says that right now, the worst thing you can do for your career
+    is play it safe
+  why: '"The number one thing is to get out of your head this ideal that gets passed
+    around in the self-help world: ''go get a mentor,'' and everyone…'
+  takeaway: '"The number one thing is to get out of your head this ideal that gets
+    passed around in the self-help world: ''go get a mentor,'' and everyone runs out
+    and cold calls someone that''s ridiculously too high and unachievable, and it
+    doesn''t work."'
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/bill-gurley-says-that-right-now-the-worst-thing-you-can-do-for-your-career-is-play-it-safe/
+  source: TechCrunch
+  published_utc: '2026-02-22T21:08:50+00:00'
+  title_zh: 比尔·格利称现阶段职场最大禁忌就是求稳
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Man killed by Secret Service after entering Mar-a-Lago grounds with gun
+  why: Trump and wife Melania were in Washington at the time of the incident early
+    on Sunday
+  takeaway: Trump and wife Melania were in Washington at the time of the incident
+    early on Sunday
+  prompt: ''
+  url: https://www.ft.com/content/bb1808b5-032b-493c-b7bb-6d3057acb1e5
+  source: Financial Times - World
+  published_utc: '2026-02-22T20:37:42+00:00'
+  title_zh: 男子持枪闯入海湖庄园后被特勤局击毙
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Satellite images reveal surge in US fighter jets in Middle East
+  why: Washington has deployed dozens of planes to the region as Donald Trump threatens
+    to strike Iran
+  takeaway: Washington has deployed dozens of planes to the region as Donald Trump
+    threatens to strike Iran
+  prompt: ''
+  url: https://www.ft.com/content/c743e6de-202c-4135-ae52-0f0e34213182
+  source: Financial Times - World
+  published_utc: '2026-02-22T19:22:45+00:00'
+  title_zh: 卫星图像显示美军中东战斗机数量激增
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: New and existing battles cast a shadow over the coming days
+  why: Trump gives first State of the Union address of second term, Labour in by-election
+    fight and Ukraine war enters a fifth year
+  takeaway: Trump gives first State of the Union address of second term, Labour in
+    by-election fight and Ukraine war enters a fifth year
+  prompt: ''
+  url: https://www.ft.com/content/61e86925-7c8a-44bf-9f68-0ac8b875edf3
+  source: Financial Times - World
+  published_utc: '2026-02-22T18:15:09+00:00'
+  title_zh: 新旧冲突阴云笼罩未来数日
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Europe needs to learn the art of the trade deal
+  why: The Supreme Court’s ruling offers a rare opportunity to fix a historic error
+  takeaway: The Supreme Court’s ruling offers a rare opportunity to fix a historic
+    error
+  prompt: ''
+  url: https://www.ft.com/content/572683fb-e4b4-4451-8b7b-056c24dae153
+  source: Financial Times - World
+  published_utc: '2026-02-22T18:15:01+00:00'
+  title_zh: 欧洲需掌握贸易协定的谈判艺术
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Quantonation’s double-sized second fund shows quantum still has believers
+  why: Quantonation Ventures, a venture firm investing in quantum and physics-based
+    startups, has closed its oversubscribed second fund at €220 mi…
+  takeaway: Quantonation Ventures, a venture firm investing in quantum and physics-based
+    startups, has closed its oversubscribed second fund at €220 million, or approximately
+    $260 million. That’s more than twice the size of its inaugural fund, and comes
+    in addition to other signals that the quantum winter isn’t coming yet.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/quantonations-double-sized-second-fund-shows-quantum-still-has-believers/
+  source: TechCrunch
+  published_utc: '2026-02-22T18:00:00+00:00'
+  title_zh: Quantonation第二期基金规模翻倍显示量子技术仍有信徒
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Employers should contribute to universities | Letters
+  why: Johnny Rich proposes a sustainable funding model for higher education.
+  takeaway: 'Johnny Rich proposes a sustainable funding model for higher education.
+    Plus letters from Henry Malt and David Gleave On the subject of student debts
+    ( Student debt is a generational injustice. Why are we squeezing graduates harder
+    than the super-rich?, 16 February ), Gaby Hinsliff writes: “If the government
+    has better options, then let’s hear them sooner ra…'
+  prompt: ''
+  url: https://www.theguardian.com/education/2026/feb/22/employers-should-contribute-to-universities
+  source: The Guardian - Business
+  published_utc: '2026-02-22T17:55:12+00:00'
+  title_zh: 雇主应向大学出资 | 读者来信
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Tories would scrap ‘debt trap’ of high interest student loans, says Kemi
+    Badenoch
+  why: Education secretary Bridget Phillipson suggests priority is grants for poorer
+    students rather than cutting interest Kemi Badenoch has said…
+  takeaway: Education secretary Bridget Phillipson suggests priority is grants for
+    poorer students rather than cutting interest Kemi Badenoch has said the Conservatives
+    would scrap the “unfair debt trap” of high interest rates on student loans, piling
+    pressure on Labour ministers to tackle the growing outrage over the high costs.
+    The education secretary, Bridget Philli…
+  prompt: ''
+  url: https://www.theguardian.com/politics/2026/feb/22/tories-scrap-high-interest-student-loans-says-kemi-badenoch
+  source: The Guardian - Business
+  published_utc: '2026-02-22T17:46:41+00:00'
+  title_zh: 凯米·巴德诺赫称保守党将废除‘高息学生贷款债务陷阱’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump says Netflix will face ‘consequences’ if it doesn’t fire board member
+    Susan Rice
+  why: Netflix board member Susan Rice had predicted that corporations that “take
+    a knee” to Trump will be “held accountable” when Democrats retur…
+  takeaway: Netflix board member Susan Rice had predicted that corporations that “take
+    a knee” to Trump will be “held accountable” when Democrats return to power.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/trump-says-netflix-will-face-consequences-if-it-doesnt-fire-board-member-susan-rice/
+  source: TechCrunch
+  published_utc: '2026-02-22T17:39:55+00:00'
+  title_zh: 特朗普称网飞若不解雇董事会成员苏珊·赖斯将‘承担后果’
+  why_zh: Netflix董事会成员苏珊·赖斯曾预测，向特朗普‘屈膝’的企业将在民主党重新掌权时‘被追究责任’
+  takeaway_zh: Netflix董事会成员苏珊·赖斯曾预测，向特朗普‘屈膝’的企业将在民主党重新掌权时‘被追究责任’
+  prompt_zh: ''
+- category: Business & economy
+  title: 'The Guardian view on the funding crisis at the National Gallery: the public
+    should not pay the price | Editorial'
+  why: Financial difficulties at one of the UK’s most prestigious institutions are
+    a sign of the times.
+  takeaway: Financial difficulties at one of the UK’s most prestigious institutions
+    are a sign of the times. But maintaining free access to great art must be a priority
+    “The National Gallery is doing a great job isn’t it?” David Hockney reflected
+    in 2024. “Everything in the collection is good, every single picture is good.”
+    Judging by recent performance, the artist wou…
+  prompt: ''
+  url: https://www.theguardian.com/commentisfree/2026/feb/22/the-guardian-view-on-the-funding-crisis-at-the-national-gallery-the-public-should-not-pay-the-price
+  source: The Guardian - Business
+  published_utc: '2026-02-22T17:25:43+00:00'
+  title_zh: 《卫报》社论：国家美术馆资金危机不应由公众买单
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US will not back out of its tariff deals with UK and others, says Trump trade
+    representative
+  why: 'Promise comes as minister admits to ‘uncertainty’ about new 15% levy on imports
+    from around the world Graeme Wearden: Trump’s trade war ris…'
+  takeaway: 'Promise comes as minister admits to ‘uncertainty’ about new 15% levy
+    on imports from around the world Graeme Wearden: Trump’s trade war risks undermining
+    his hopes of hefty US interest rate cuts The US will not back out of tariff deals
+    it has already sealed with countries around the world, including the UK, the EU,
+    Japan, Switzerland and others, Donald Trum…'
+  prompt: ''
+  url: https://www.theguardian.com/us-news/2026/feb/22/uk-in-talks-with-us-over-best-possible-deal-for-british-firms-amid-higher-tariffs-threat-trump
+  source: The Guardian - Business
+  published_utc: '2026-02-22T17:18:02+00:00'
+  title_zh: 美国贸易代表称不会退出与英国等国的关税协议
+  why_zh: 部长承认对全球进口商品新征15%关税存在‘不确定性’，承诺随之而来
+  takeaway_zh: 部长承认对全球进口商品新征15%关税存在‘不确定性’，承诺随之而来。格雷姆·韦尔登：特朗普的贸易战可能削弱他对美国大幅降息的期望。美国不会退出已与英国、欧盟、日本、瑞士等国达成的关税协议，唐纳德·特朗普……
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TechCrunch Mobility: Waymo makes its defense'
+  why: Welcome back to TechCrunch Mobility — your central hub for news and insights
+    on the future of transportation.
+  takeaway: Welcome back to TechCrunch Mobility — your central hub for news and insights
+    on the future of transportation.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/techcrunch-mobility-waymo-makes-its-defense/
+  source: TechCrunch
+  published_utc: '2026-02-22T17:05:00+00:00'
+  title_zh: TechCrunch机动专栏：Waymo展开辩护
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The uncertainties facing businesses and consumers after Trump's tariff changes
+  why: Businesses say questions remain after US President Donald Trump announced he
+    will impose global tariffs of 15%.
+  takeaway: Businesses say questions remain after US President Donald Trump announced
+    he will impose global tariffs of 15%.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c98qjl76eyro?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-22T16:55:58+00:00'
+  title_zh: 特朗普关税新政后企业与消费者面临的不确定性
+  why_zh: 企业表示，在特朗普宣布将对全球商品征收15%关税后，仍存疑问
+  takeaway_zh: 企业表示，在特朗普宣布将对全球商品征收15%关税后，仍存疑问
+  prompt_zh: ''
+- category: Business & economy
+  title: Iranian students mount further anti-regime protests
+  why: Slogans chanted on campuses in Tehran as new academic semester begins amid
+    clashes with pro-regime groups
+  takeaway: Slogans chanted on campuses in Tehran as new academic semester begins
+    amid clashes with pro-regime groups
+  prompt: ''
+  url: https://www.ft.com/content/312e8986-1ce9-4251-b1ef-f208a9ae0506
+  source: Financial Times - World
+  published_utc: '2026-02-22T16:39:37+00:00'
+  title_zh: 伊朗学生再次发起反政权抗议活动
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Iran agreed secret shoulder-fired missile deal with Russia
+  why: Leaks reveal €500mn contract for man-portable ‘Verba’ system to rebuild Tehran’s
+    air defences
+  takeaway: Leaks reveal €500mn contract for man-portable ‘Verba’ system to rebuild
+    Tehran’s air defences
+  prompt: ''
+  url: https://www.ft.com/content/d034cc1a-f5fb-494e-a3c1-466e8e80ed82
+  source: Financial Times - World
+  published_utc: '2026-02-22T16:00:07+00:00'
+  title_zh: 伊朗秘密同意向俄罗斯提供肩扛式导弹
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: China’s brain-computer interface industry is racing ahead
+  why: China’s brain-computer interface industry is rapidly scaling from research
+    to commercialization, driven by strong policy support, expanding…
+  takeaway: China’s brain-computer interface industry is rapidly scaling from research
+    to commercialization, driven by strong policy support, expanding clinical trials,
+    and growing investor interest.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/chinas-brain-computer-interface-industry-is-racing-ahead/
+  source: TechCrunch
+  published_utc: '2026-02-22T16:00:00+00:00'
+  title_zh: 中国脑机接口产业加速发展
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump’s new flat-rate tariff is a boost for China and Brazil
+  why: US allies including the UK, EU and Japan hardest hit after Supreme Court rules
+    against previous levies
+  takeaway: US allies including the UK, EU and Japan hardest hit after Supreme Court
+    rules against previous levies
+  prompt: ''
+  url: https://www.ft.com/content/a12657e5-e160-444d-9b4e-87e89480e625
+  source: Financial Times - World
+  published_utc: '2026-02-22T15:59:41+00:00'
+  title_zh: 特朗普新推行的统一关税政策对中国和巴西有利
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump says Netflix will ‘pay the consequences’ if it doesn’t fire Susan Rice
+  why: Donald Trump threatened that there would be "consequences" for Netflix if it
+    didn't fire board member Susan Rice.
+  takeaway: Donald Trump threatened that there would be "consequences" for Netflix
+    if it didn't fire board member Susan Rice. Rice served in both the Obama and Biden
+    administrations, and recently appeared on Preet Bharara's podcast, where she said
+    corporations that "take a knee to Trump" are going to be "caught with more than
+    their pants down. […]
+  prompt: ''
+  url: https://www.theverge.com/policy/882881/trump-netflix-consequences-fire-susan-rice
+  source: The Verge
+  published_utc: '2026-02-22T15:37:41+00:00'
+  title_zh: 特朗普宣称网飞不解雇苏珊·赖斯就会‘付出代价’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Lamborghini pulls plug on plans to launch all-electric supercar
+  why: Company will shift focus to hybrids, citing drop-off in EV demand among sports
+    car lovers who ‘miss the noise’ The Italian supercar manufac…
+  takeaway: Company will shift focus to hybrids, citing drop-off in EV demand among
+    sports car lovers who ‘miss the noise’ The Italian supercar manufacturer Lamborghini
+    has abandoned plans to make all-electric vehicles, and will instead focus on making
+    plug-in hybrid cars, after a drop-off in demand for EVs among its wealthy clientele.
+    Lamborghini unveiled its first al…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/feb/22/lamborghini-pulls-plug-on-all-electric-supercar
+  source: The Guardian - Business
+  published_utc: '2026-02-22T15:03:06+00:00'
+  title_zh: 兰博基尼取消推出全电动超跑计划
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 6 days left to lock in the lowest TechCrunch Disrupt 2026 rates
+  why: Super Early Bird pricing for TechCrunch Disrupt 2026 ends February 27 at 11:59
+    p.m.
+  takeaway: Super Early Bird pricing for TechCrunch Disrupt 2026 ends February 27
+    at 11:59 p.m. PT. That means you have just 6 days left to secure up to $680 of
+    ticket savings.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/
+  source: TechCrunch
+  published_utc: '2026-02-22T15:00:00+00:00'
+  title_zh: 距离TechCrunch Disrupt2026早鸟优惠截止仅剩6天
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We hid backdoors in ~40MB binaries and asked AI + Ghidra to find them
+  why: 'Article URL: https://quesma.com/blog/introducing-binaryaudit/ Comments URL:
+    https://news.ycombinator.com/item?id=47111440 Points: 14 # Comm…'
+  takeaway: 'Article URL: https://quesma.com/blog/introducing-binaryaudit/ Comments
+    URL: https://news.ycombinator.com/item?id=47111440 Points: 14 # Comments: 2'
+  prompt: ''
+  url: https://quesma.com/blog/introducing-binaryaudit/
+  source: Hacker News (front page)
+  published_utc: '2026-02-22T14:50:44+00:00'
+  title_zh: 我们在约40MB二进制文件中隐藏后门并让AI+Ghidra进行检测
+  why_zh: '文章URL: https://quesma.com/blog/introducing-binaryaudit/ 评论URL: https://news.ycombinator.com/item?id=47111440
+    积分: 14 # 评论: 2'
+  takeaway_zh: '文章URL: https://quesma.com/blog/introducing-binaryaudit/ 评论URL: https://news.ycombinator.com/item?id=47111440
+    积分: 14 # 评论: 2'
+  prompt_zh: ''
+- category: Business & economy
+  title: Hungary to block new EU sanctions against Russia
+  why: Foreign minister says Ukraine must first resume oil transit via Druzhba pipeline
+  takeaway: Foreign minister says Ukraine must first resume oil transit via Druzhba
+    pipeline
+  prompt: ''
+  url: https://www.ft.com/content/8fb1156d-ab33-4436-ac53-cb1ea28afd7f
+  source: Financial Times - World
+  published_utc: '2026-02-22T14:44:55+00:00'
+  title_zh: 匈牙利将阻止欧盟对俄罗斯实施新制裁
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Man accidentally gains control of 7k robot vacuums
+  why: 'Article URL: https://www.popsci.com/technology/robot-vacuum-army/ Comments
+    URL: https://news.ycombinator.com/item?id=47111400 Points: 16 #…'
+  takeaway: 'Article URL: https://www.popsci.com/technology/robot-vacuum-army/ Comments
+    URL: https://news.ycombinator.com/item?id=47111400 Points: 16 # Comments: 1'
+  prompt: ''
+  url: https://www.popsci.com/technology/robot-vacuum-army/
+  source: Hacker News (front page)
+  published_utc: '2026-02-22T14:44:42+00:00'
+  title_zh: 男子意外控制七千台扫地机器人
+  why_zh: '文章URL: https://www.popsci.com/technology/robot-vacuum-army/ 评论URL: https://news.ycombinator.com/item?id=47111400
+    积分: 16 # 评论: 1'
+  takeaway_zh: '文章URL: https://www.popsci.com/technology/robot-vacuum-army/ 评论URL:
+    https://news.ycombinator.com/item?id=47111400 积分: 16 # 评论: 1'
+  prompt_zh: ''
+- category: Tech industry
+  title: This magazine plays Tetris — here’s how
+  why: Tetris has been immortalized in a playable McDonald's plastic chicken nugget,
+    a playable fake 7-Eleven Slurpee cup, and a playable wristwat…
+  takeaway: Tetris has been immortalized in a playable McDonald's plastic chicken
+    nugget, a playable fake 7-Eleven Slurpee cup, and a playable wristwatch. But the
+    most intriguing way to play Tetris yet is encased in paper. Last year the Tetris
+    Company partnered with Red Bull for a gaming tournament that culminated in the
+    150-meter-tall Dubai Frame landmark […]
+  prompt: ''
+  url: https://www.theverge.com/tech/881175/red-bull-media-house-game-pop-bulletin-magazine-playable-tetris-flexible-display
+  source: The Verge
+  published_utc: '2026-02-22T14:03:24+00:00'
+  title_zh: 这本杂志玩起了俄罗斯方块——以下是实现方式
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The world order we’re leaving behind may be replaced by no order at all |
+    Eduardo Porter
+  why: In the world being ushered in by Trump, power will prevail over cooperation.
+  takeaway: In the world being ushered in by Trump, power will prevail over cooperation.
+    We will come to rue having taken this path The Canadian prime minister, Mark Carney,
+    inspired a wave of enthusiastic nodding among the cosmopolitan crowd gathered
+    in Davos last month when he took to the podium and proclaimed that the world order
+    underwritten by the United States, w…
+  prompt: ''
+  url: https://www.theguardian.com/us-news/ng-interactive/2026/feb/22/world-order-trump
+  source: The Guardian - Business
+  published_utc: '2026-02-22T14:00:40+00:00'
+  title_zh: 我们正在抛弃的世界秩序或被彻底无序取代 | 爱德华多·波特
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Readers reply: what would be the most socially useful way to spend a billion
+    dollars?'
+  why: The long-running series in which readers answer other readers’ questions on
+    subjects ranging from trivial flights of fancy to profound scie…
+  takeaway: 'The long-running series in which readers answer other readers’ questions
+    on subjects ranging from trivial flights of fancy to profound scientific and philosophical
+    concepts • This week’s question: what would happen to the world if computer said
+    yes? I’ve always thought it would be good to acquire an old warehouse in every
+    town throughout the land and conver…'
+  prompt: ''
+  url: https://www.theguardian.com/lifeandstyle/2026/feb/22/readers-reply-what-would-be-the-most-socially-useful-way-to-spend-a-billion-dollars
+  source: The Guardian - Business
+  published_utc: '2026-02-22T14:00:40+00:00'
+  title_zh: 读者问答：怎样花十亿美元对社会最有益？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Iran students stage first large anti-government protests since deadly crackdown
+  why: 'Article URL: https://www.bbc.com/news/articles/c5yj2kzkrj0o Comments URL:
+    https://news.ycombinator.com/item?id=47111067 Points: 25 # Commen…'
+  takeaway: 'Article URL: https://www.bbc.com/news/articles/c5yj2kzkrj0o Comments
+    URL: https://news.ycombinator.com/item?id=47111067 Points: 25 # Comments: 4'
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c5yj2kzkrj0o
+  source: Hacker News (front page)
+  published_utc: '2026-02-22T13:59:40+00:00'
+  title_zh: 伊朗学生发起致命镇压后首次大规模反政府抗议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I put New Zealand behind a $1 paywall
+  why: 'Article URL: https://rename.world/ Comments URL: https://news.ycombinator.com/item?id=47111042
+    Points: 22 # Comments: 4'
+  takeaway: 'Article URL: https://rename.world/ Comments URL: https://news.ycombinator.com/item?id=47111042
+    Points: 22 # Comments: 4'
+  prompt: ''
+  url: https://rename.world/
+  source: Hacker News (front page)
+  published_utc: '2026-02-22T13:57:18+00:00'
+  title_zh: 我把新西兰放在1美元付费墙后面
+  why_zh: '文章URL: https://rename.world/ 评论URL: https://news.ycombinator.com/item?id=47111042
+    积分: 22 # 评论: 4'
+  takeaway_zh: '文章URL: https://rename.world/ 评论URL: https://news.ycombinator.com/item?id=47111042
+    积分: 22 # 评论: 4'
+  prompt_zh: ''
+- category: Business & economy
+  title: Isis vows new phase of Syria attacks in rare recording
+  why: Militant group calls Syrian President Ahmed al-Sharaa a western ‘puppet without
+    a soul’
+  takeaway: Militant group calls Syrian President Ahmed al-Sharaa a western ‘puppet
+    without a soul’
+  prompt: ''
+  url: https://www.ft.com/content/caaa8421-3a6c-4b5b-91a7-47e41dffae45
+  source: Financial Times - World
+  published_utc: '2026-02-22T13:49:18+00:00'
+  title_zh: 伊斯兰国罕见录音宣称将在叙利亚展开新阶段袭击
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Ukraine blames Russia for ‘terrorist attack’ in Lviv
+  why: Woman arrested after one person killed and at least 25 injured by ‘double-tap’
+    bombing in western city
+  takeaway: Woman arrested after one person killed and at least 25 injured by ‘double-tap’
+    bombing in western city
+  prompt: ''
+  url: https://www.ft.com/content/51788098-b2da-4753-a12b-782c20ee530e
+  source: Financial Times - World
+  published_utc: '2026-02-22T13:45:25+00:00'
+  title_zh: 乌克兰指责俄罗斯对利沃夫发动‘恐怖袭击’
+  why_zh: 西部城市发生‘双响’爆炸致1死25伤，一女子被捕
+  takeaway_zh: 西部城市发生‘双响’爆炸致1死25伤，一女子被捕
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump warns Netflix of ‘consequences’ unless it pulls top Democrat from board
+  why: US president calls for removal of Susan Rice as streaming platform pursues
+    takeover of Warner Bros Discovery Donald Trump has told Netflix…
+  takeaway: US president calls for removal of Susan Rice as streaming platform pursues
+    takeover of Warner Bros Discovery Donald Trump has told Netflix to remove the
+    Democratic foreign policy expert Susan Rice from its board or “face the consequences”,
+    while the streaming platform is locked in an extraordinary corporate battle to
+    take control of Warner Bros Discovery (W…
+  prompt: ''
+  url: https://www.theguardian.com/media/2026/feb/22/trump-warns-netflix-of-consequences-unless-it-pulls-top-democrat-susan-rice-from-board
+  source: The Guardian - Business
+  published_utc: '2026-02-22T13:30:07+00:00'
+  title_zh: 特朗普警告网飞除非撤换民主党高层董事否则将面临‘后果’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Funding approved to reduce cold deaths
+  why: Citizens Advice's Warm and Well scheme in North Yorkshire will receive the
+    money over three years.
+  takeaway: Citizens Advice's Warm and Well scheme in North Yorkshire will receive
+    the money over three years.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cn48wxx7e44o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-02-22T13:26:17+00:00'
+  title_zh: 防寒防冻专项资金获批以减少寒冷致死
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Volatility: The volatile memory forensic extraction framework'
+  why: 'Article URL: https://github.com/volatilityfoundation/volatility3 Comments
+    URL: https://news.ycombinator.com/item?id=47110781 Points: 14 # C…'
+  takeaway: 'Article URL: https://github.com/volatilityfoundation/volatility3 Comments
+    URL: https://news.ycombinator.com/item?id=47110781 Points: 14 # Comments: 0'
+  prompt: ''
+  url: https://github.com/volatilityfoundation/volatility3
+  source: Hacker News (front page)
+  published_utc: '2026-02-22T13:20:07+00:00'
+  title_zh: Volatility：内存取证提取框架
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: '‘We want to rebuild trust’: fired CDC workers form group to combat Trump’s
+    war on science'
+  why: Former employees stepped up to create the National Public Health Coalition
+    to advocate for public health after Trump’s cuts to the agency A…
+  takeaway: Former employees stepped up to create the National Public Health Coalition
+    to advocate for public health after Trump’s cuts to the agency Abby Tighe thought
+    she had landed her forever job. She joined the Centers for Disease Control and
+    Prevention (CDC) in December 2023, managing a national youth substance abuse prevention
+    program. The project focused on rur…
+  prompt: ''
+  url: https://www.theguardian.com/us-news/2026/feb/22/fired-cdc-workers-trump-war-on-science
+  source: The Guardian - Business
+  published_utc: '2026-02-22T13:00:38+00:00'
+  title_zh: ‘我们要重建信任’：被解雇的CDC员工成立组织对抗特朗普对科学的打压
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Poem: The Attraction of Blackberries'
+  why: The first time she tried to seduce me, (atoms falling in a vacuum) she asked
+    about blackberries— (every mass exerts some gravity) Did I kno…
+  takeaway: The first time she tried to seduce me, (atoms falling in a vacuum) she
+    asked about blackberries— (every mass exerts some gravity) Did I know their season,
+    where they grow? (galvanometers, gravimeters) I could answer both easily— (tools
+    to measure small attractions) down the dirt road in September. (devices that report,
+    don’t interfere) She eagerly went ther…
+  prompt: ''
+  url: https://spectrum.ieee.org/poetry-for-engineers-blackberries
+  source: IEEE Spectrum
+  published_utc: '2026-02-22T13:00:02+00:00'
+  title_zh: 诗歌：黑莓的诱惑
+  why_zh: 她第一次试图引诱我时，（原子在真空中下落）她问起黑莓——（每个质量都产生引力）我知道它们的季节和生长地吗？（电流计，重力计）我都能轻松回答——（测量微小引力的工具）九月时在土路旁。（报告但不干扰的设备）她急切地去了那里……
+  takeaway_zh: 她第一次试图引诱我时，（原子在真空中下落）她问起黑莓——（每个质量都产生引力）我知道它们的季节和生长地吗？（电流计，重力计）我都能轻松回答——（测量微小引力的工具）九月时在土路旁。（报告但不干扰的设备）她急切地去了那里……
+  prompt_zh: ''
+- category: Tech industry
+  title: America desperately needs new privacy laws
+  why: This is The Stepback, a weekly newsletter breaking down one essential story
+    from the tech world.
+  takeaway: This is The Stepback, a weekly newsletter breaking down one essential
+    story from the tech world. For more on the dire state of tech regulation, follow
+    Adi Robertson. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt
+    in for The Stepback here. How it started In 1973, long before the modern digital
+    era, […]
+  prompt: ''
+  url: https://www.theverge.com/column/882516/privacy-laws-america
+  source: The Verge
+  published_utc: '2026-02-22T13:00:00+00:00'
+  title_zh: 美国亟需新隐私法
+  why_zh: 这是《The Stepback》，一份每周解析科技界重要事件的简报
+  takeaway_zh: 这是《The Stepback》，一份每周解析科技界重要事件的简报。欲了解更多关于科技监管的严峻现状，请关注阿迪·罗伯逊。《The Stepback》于东部时间上午8点送达订阅者邮箱。点击此处订阅《The
+    Stepback》。起源 1973年，远在数字时代之前，……
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Retro camera shootout: Camp Snap Pro vs. Flashback One35 V2'
+  why: There's been a surge of interest over the last few years in inexpensive digital
+    cameras.
+  takeaway: 'There''s been a surge of interest over the last few years in inexpensive
+    digital cameras. Younger folks are snapping up old point-and-shoots because they
+    view the aesthetic as more authentic and more appealing than smartphone images.
+    Companies are even rereleasing old tech at new prices. And there are cameras like
+    the original Camp Snap: a […]'
+  prompt: ''
+  url: https://www.theverge.com/gadgets/882641/camp-snap-pro-flashback-one35-v2-digicam-camera-comparison-review
+  source: The Verge
+  published_utc: '2026-02-22T13:00:00+00:00'
+  title_zh: 复古相机对决：Camp Snap Pro vs. Flashback One35 V2
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: ChatGPT and Gemini voice bots are easy to trick into spreading falsehoods
+  why: 'Turns out Alexa''s long-standing habit of not doing what you ask can actually
+    be a feature: while ChatGPT Voice and Gemini Live happily repe…'
+  takeaway: 'Turns out Alexa''s long-standing habit of not doing what you ask can
+    actually be a feature: while ChatGPT Voice and Gemini Live happily repeated false
+    claims up to 50 percent of the time, Amazon''s voice assistant refused to spread
+    a single one. The article ChatGPT and Gemini voice bots are easy to trick into
+    spreading falsehoods appeared first on The Decoder…'
+  prompt: ''
+  url: https://the-decoder.com/chatgpt-and-gemini-voice-bots-are-easy-to-trick-into-spreading-falsehoods/
+  source: The Decoder (AI)
+  published_utc: '2026-02-22T12:59:05+00:00'
+  title_zh: ChatGPT和Gemini语音机器人易被诱导传播虚假信息
+  why_zh: 事实证明，Alexa长期不按指令行事的习惯可能是一种特性：ChatGPT Voice和Gemini Live乐于重复虚假信息，而亚马逊的语音助手则拒绝传播任何一条
+  takeaway_zh: 事实证明，Alexa长期不按指令行事的习惯可能是一种特性：ChatGPT Voice和Gemini Live乐于重复虚假信息，而亚马逊的语音助手则拒绝传播任何一条。文章《ChatGPT和Gemini语音机器人容易被诱导传播虚假信息》首次发表于The
+    Decoder……
+  prompt_zh: ''

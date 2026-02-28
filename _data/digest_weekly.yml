@@ -1551,6 +1551,10 @@ weeks:
   end: '2026-03-01'
   issues:
   - '2026-02-23'
+  - '2026-02-25'
+  - '2026-02-26'
+  - '2026-02-27'
+  - '2026-02-28'
   highlights_news:
   - date: '2026-02-23'
     url: https://www.ft.com/content/51788098-b2da-4753-a12b-782c20ee530e
@@ -1590,6 +1594,152 @@ weeks:
     category: Tech industry
     source: The Verge
     published_utc: '2026-02-22T13:00:00+00:00'
+  - date: '2026-02-25'
+    url: https://www.ft.com/content/92101fcd-84b8-4485-ab4a-ac4eed81635c
+    title: Aussie and Kiwi dollars surge as traders position for global interest rate
+      rises
+    title_zh: 澳元和新西兰元因交易员押注全球利率上升而大幅上涨
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-25T02:32:52+00:00'
+  - date: '2026-02-25'
+    url: https://www.bbc.com/news/articles/cx2lpl9lxw2o?at_medium=RSS&at_campaign=rss
+    title: Energy bills to fall in April after charges shake-up
+    title_zh: 费用调整后，能源账单将于四月下降
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-25T00:04:55+00:00'
+  - date: '2026-02-25'
+    url: https://www.technologyreview.com/2026/02/24/1132172/using-big-data-for-good/
+    title: Using big data for good
+    title_zh: 利用大数据行善
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-02-24T22:00:00+00:00'
+  - date: '2026-02-25'
+    url: https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/
+    title: Nvidia challenger AI chip startup MatX raised $500M
+    title_zh: Nvidia挑战者AI芯片初创公司MatX融资5亿美元
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-25T00:45:47+00:00'
+  - date: '2026-02-25'
+    url: https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit
+    title: OpenAI defeats xAI’s trade secrets lawsuit
+    title_zh: OpenAI击败xAI的商业机密诉讼
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-02-24T23:05:28+00:00'
+  - date: '2026-02-26'
+    url: https://www.ft.com/content/ecebdbcf-b2a7-431d-81ae-9fe491f76539
+    title: First Solar shares slide as tariff and demand woes bite
+    title_zh: First Solar股价因关税和需求担忧下滑
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-02-25T22:01:23+00:00'
+  - date: '2026-02-26'
+    url: https://www.bbc.com/news/articles/c80jgd8yljko?at_medium=RSS&at_campaign=rss
+    title: Chip giant Nvidia defies AI concerns with record $215bn revenue
+    title_zh: 芯片巨头Nvidia无视AI担忧，创下2150亿美元营收纪录
+    category: Tech industry
+    source: BBC News - Technology
+    published_utc: '2026-02-25T23:22:41+00:00'
+  - date: '2026-02-26'
+    url: https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers/
+    title: Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing
+      lawsuit
+    title_zh: 法官裁定马斯克无证据证明OpenAI窃取xAI商业机密，驳回诉讼
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-25T22:09:21+00:00'
+  - date: '2026-02-26'
+    url: https://techcrunch.com/2026/02/25/inside-the-story-of-the-us-defense-contractor-who-leaked-hacking-tools-to-russia/
+    title: Inside the story of the US defense contractor who leaked hacking tools
+      to Russia
+    title_zh: 揭秘美国国防承包商向俄罗斯泄露黑客工具的内幕
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-25T19:30:47+00:00'
+  - date: '2026-02-26'
+    url: https://www.technologyreview.com/2026/02/25/1132873/roundtables-why-2026-is-the-year-for-sodium-ion-batteries/
+    title: 'Roundtables: Why 2026 Is the Year for Sodium-Ion Batteries'
+    title_zh: 圆桌讨论：为何2026年是钠离子电池的元年
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-02-25T21:15:27+00:00'
+  - date: '2026-02-27'
+    url: https://www.ft.com/content/62e713ad-ffdc-4898-8492-481815d1aff0
+    title: Tech stocks dip as Nvidia results fail to quell AI spending fears
+    title_zh: 科技股下跌，因英伟达财报未能缓解市场对AI支出的担忧
+    category: Business & economy
+    source: Financial Times - Markets
+    published_utc: '2026-02-26T21:58:38+00:00'
+  - date: '2026-02-27'
+    url: https://www.bbc.com/news/articles/cvg3vlzzkqeo?at_medium=RSS&at_campaign=rss
+    title: Anthropic boss rejects Pentagon demand to drop AI safeguards
+    title_zh: Anthropic首席执行官拒绝五角大楼要求，坚持保留AI安全措施
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-27T03:54:27+00:00'
+  - date: '2026-02-27'
+    url: https://techcrunch.com/2026/02/26/anthropic-ceo-stands-firm-as-pentagon-deadline-looms/
+    title: Anthropic CEO stands firm as Pentagon deadline looms
+    title_zh: Anthropic首席执行官立场坚定，五角大楼最后期限逼近
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-02-26T23:19:06+00:00'
+  - date: '2026-02-27'
+    url: https://arstechnica.com/science/2026/02/genomes-chart-the-history-of-neanderthal-modern-human-interactions/
+    title: Neanderthals seemed to have a thing for modern human women
+    title_zh: 尼安德特人似乎对现代人类女性情有独钟
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-26T23:16:46+00:00'
+  - date: '2026-02-27'
+    url: https://the-decoder.com/anthropic-acquires-vercept-to-give-claude-sharper-eyes-for-reading-and-controlling-computer-screens/
+    title: Anthropic acquires Vercept to give Claude sharper eyes for reading and
+      controlling computer screens
+    title_zh: Anthropic收购Vercept，赋予Claude更敏锐的阅读和控制电脑屏幕能力
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-02-26T20:30:27+00:00'
+  - date: '2026-02-28'
+    url: https://www.ft.com/content/1aeff07f-6221-4577-b19c-887bb654c585
+    title: Trump administration to cut Anthropic from state contracts and Pentagon
+      supply chain
+    title_zh: 特朗普政府计划将Anthropic排除出国家合同和五角大楼供应链
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-02-28T00:07:53+00:00'
+  - date: '2026-02-28'
+    url: https://www.bbc.com/news/articles/cn48jj3y8ezo?at_medium=RSS&at_campaign=rss
+    title: Trump orders government to stop using Anthropic in battle over AI use
+    title_zh: 特朗普命令政府停止使用Anthropic，打响AI应用争夺战
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-02-27T22:52:03+00:00'
+  - date: '2026-02-28'
+    url: https://www.theguardian.com/technology/2026/feb/27/suicide-forum-in-breach-of-online-safety-act-after-failing-to-block-uk-users
+    title: Suicide forum found to be in breach of Online Safety Act after failing
+      to block UK users
+    title_zh: 自杀论坛因未能屏蔽英国用户违反《网络安全法》
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-02-27T20:03:53+00:00'
+  - date: '2026-02-28'
+    url: https://www.technologyreview.com/2026/02/27/1133769/asme-finalist-reporting/
+    title: MIT Technology Review is a 2026 ASME finalist in reporting
+    title_zh: MIT科技评论是2026年ASME的获奖入围者
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-02-27T21:41:31+00:00'
+  - date: '2026-02-28'
+    url: https://arstechnica.com/tech-policy/2026/02/whoops-us-military-laser-strike-takes-down-cbp-drone-near-mexican-border/
+    title: 'Whoops: US military laser strike takes down CBP drone near Mexican border'
+    title_zh: US军方激光击落近墨西哥边境的海关无人机：oops
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-02-27T19:14:51+00:00'
   highlights_ai:
   - date: '2026-02-23'
     url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4
@@ -1626,3 +1776,81 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - ollama/ollama
     published_utc: '2026-02-19T22:11:27+00:00'
+  - date: '2026-02-25'
+    url: https://the-decoder.com/google-openai-and-anthropic-are-all-bracing-for-deepseeks-next-big-release/
+    title: Google, OpenAI, and Anthropic are all bracing for Deepseek's next big release
+    title_zh: Google、OpenAI与Anthropic均严阵以待Deepseek的下一次重大发布
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-02-24T07:58:09+00:00'
+  - date: '2026-02-25'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.15.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.15.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-24T20:56:09+00:00'
+  - date: '2026-02-25'
+    url: https://github.com/openai/openai-python/releases/tag/v2.24.0
+    title: 'openai/openai-python: v2.24.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-02-24T20:01:29+00:00'
+  - date: '2026-02-25'
+    url: https://github.com/openai/openai-node/releases/tag/v6.25.0
+    title: 'openai/openai-node: v6.25.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-02-24T19:53:38+00:00'
+  - date: '2026-02-25'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.3.4
+    title: 'langchain-ai/langchain: langchain-anthropic==1.3.4'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-02-24T13:54:19+00:00'
+  - date: '2026-02-26'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.84.0
+    title: 'anthropics/anthropic-sdk-python: v0.84.0'
+    title_zh: anthropics/anthropic-sdk-python发布v0.84.0版
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-02-25T05:22:10+00:00'
+  - date: '2026-02-27'
+    url: https://github.com/ollama/ollama/releases/tag/v0.17.2
+    title: 'ollama/ollama: v0.17.2'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - ollama/ollama
+    published_utc: '2026-02-26T22:41:34+00:00'
+  - date: '2026-02-28'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-projects-api-mantle-inference-engine/
+    title: Amazon Bedrock announces OpenAI-compatible Projects API
+    title_zh: 亚马逊Bedrock宣布推出OpenAI兼容的Projects API
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-02-26T23:06:00+00:00'
+  - date: '2026-02-28'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.15.1
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.15.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-02-26T22:01:35+00:00'
+  - date: '2026-02-28'
+    url: https://openai.com/index/figma-partnership
+    title: OpenAI Codex and Figma launch seamless code-to-design experience
+    title_zh: OpenAI Codex和Figma推出无缝代码到设计体验
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-02-26T06:00:00+00:00'
+  - date: '2026-02-28'
+    url: https://www.wired.com/story/uncanny-valley-podcast-pentagon-anthropic-agentic-mimetic-trump-state-of-the-union/
+    title: '‘Uncanny Valley’: Pentagon vs. ‘Woke’ Anthropic, Agentic vs. Mimetic,
+      and Trump vs. State of the Union'
+    title_zh: ‘幽灵谷’：五角大楼 vs. ‘觉醒’Anthropic，代理 vs. 模仿，特朗普 vs. 国情咨文
+    category: AI tools & model releases
+    source: WIRED - AI
+    published_utc: '2026-02-26T23:20:36+00:00'

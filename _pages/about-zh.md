@@ -14,6 +14,12 @@ profile:
   more_info: >
     <p>中国广州（UTC+8）</p>
     <p><a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/zhilong-george-zhao/">LinkedIn</a>
+      · <a href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ&hl=zh-CN">Google Scholar</a>
+      · <a href="/zh/digest/">每日简报</a>
+      · <a href="/zh/digest/feed.xml">RSS</a>
+    </p>
 
 selected_papers: true
 social: true
@@ -34,6 +40,7 @@ latest_posts:
   <a class="btn-cta" href="/zh/publications/"><i class="ti ti-file-text"></i> 论文</a>
   <a class="btn-cta" href="/zh/media/"><i class="ti ti-movie"></i> 作品</a>
   <a class="btn-cta" href="/zh/teaching/"><i class="ti ti-chalkboard"></i> 教学</a>
+  <a class="btn-cta" href="/zh/digest/"><i class="ti ti-news"></i> 简报</a>
 </div>
 
 <details>
@@ -59,4 +66,3 @@ latest_posts:
 - 用于标注、评估与质量保障的多智能体工作流（人类/LLM 混合）。
 - 尽量减少“传统工具依赖”、强调可复现性的 AI-native 媒体生产流水线。
 - 强调<strong>团队内协作</strong>与<strong>团队间竞争</strong>的课程设计（以成果/评估为导向）。
-

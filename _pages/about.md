@@ -14,6 +14,12 @@ profile:
   more_info: >
     <p>Guangzhou, China (UTC+8)</p>
     <p><a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/zhilong-george-zhao/">LinkedIn</a>
+      · <a href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ&hl=en">Google Scholar</a>
+      · <a href="/digest/">Daily Digest</a>
+      · <a href="/digest/feed.xml">RSS</a>
+    </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -34,6 +40,7 @@ I build <strong>evaluation-first multi-agent systems</strong> for research and A
   <a class="btn-cta" href="/publications/"><i class="ti ti-file-text"></i> Publications</a>
   <a class="btn-cta" href="/media/"><i class="ti ti-movie"></i> Media</a>
   <a class="btn-cta" href="/teaching/"><i class="ti ti-chalkboard"></i> Teaching</a>
+  <a class="btn-cta" href="/digest/"><i class="ti ti-news"></i> Digest</a>
 </div>
 
 <details>

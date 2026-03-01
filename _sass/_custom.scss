@@ -12,6 +12,9 @@
   // Common "surface" tokens so cards/buttons look consistent across pages.
   --surface-glass: rgba(255, 255, 255, 0.72);
   --surface-glass-strong: rgba(255, 255, 255, 0.86);
+  // Card surface: slightly clearer separation from the page background.
+  --surface-card: rgba(255, 255, 255, 0.78);
+  --surface-card-strong: rgba(255, 255, 255, 0.9);
   --surface-tint: rgba(127, 127, 127, 0.04);
   --border-soft: rgba(0, 0, 0, 0.08);
   --border-softer: rgba(0, 0, 0, 0.06);
@@ -26,6 +29,9 @@ html[data-theme="dark"] {
 
   --surface-glass: rgba(28, 28, 29, 0.78);
   --surface-glass-strong: rgba(28, 28, 29, 0.88);
+  // In dark mode, a faint white overlay reads better than a pure dark glass.
+  --surface-card: rgba(255, 255, 255, 0.04);
+  --surface-card-strong: rgba(255, 255, 255, 0.06);
   --surface-tint: rgba(127, 127, 127, 0.06);
   --border-soft: rgba(255, 255, 255, 0.12);
   --border-softer: rgba(255, 255, 255, 0.08);
@@ -347,7 +353,7 @@ html[data-theme="dark"] .bibsearch-form-input {
   padding: 0.95rem 1rem;
   border: 1px solid var(--border-soft);
   border-radius: 14px;
-  background: var(--surface-glass);
+  background: var(--surface-card);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
   transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;

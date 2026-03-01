@@ -1555,6 +1555,7 @@ weeks:
   - '2026-02-26'
   - '2026-02-27'
   - '2026-02-28'
+  - '2026-03-01'
   highlights_news:
   - date: '2026-02-23'
     url: https://www.ft.com/content/51788098-b2da-4753-a12b-782c20ee530e
@@ -1854,3 +1855,18 @@ weeks:
     category: AI tools & model releases
     source: WIRED - AI
     published_utc: '2026-02-26T23:20:36+00:00'
+  - date: '2026-03-01'
+    url: https://openai.com/index/amazon-partnership
+    title: OpenAI and Amazon announce strategic partnership
+    title_zh: OpenAI与亚马逊宣布战略合作
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-02-27T05:30:00+00:00'
+  - date: '2026-03-01'
+    url: https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/
+    title: Develop Native Multimodal Agents with Qwen3.5 VLM Using NVIDIA GPU-Accelerated
+      Endpoints
+    title_zh: 基于NVIDIA GPU加速端点开发原生多模态Qwen3.5 VLM代理
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-02-27T17:30:00+00:00'

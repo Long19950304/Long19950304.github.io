@@ -1,0 +1,1189 @@
+date: '2026-03-01'
+title: Daily Digest - 2026-03-01
+title_zh: 每日简报 - 2026-03-01
+note: 'Today: UK must restore ‘dynamism’ in labour market, says Tony Blair In… · OpenAI
+  to work with Pentagon after Anthropic dropped by Trump o… · AI: OpenAI and Amazon
+  announce strategic partnership.'
+note_zh: 今日关注：托尼·布莱尔研究所称英国须恢复劳动力市场‘活力’；OpenAI将与五角大楼合作，此前Anthropic因伦理担忧被特朗普弃用；AI：OpenAI与亚马逊宣布战略合作。
+items:
+- category: AI tools & model releases
+  title: Even frontier LLMs from GPT-5 onward lose up to 33% accuracy when you chat
+    too long
+  why: Even with newer models like GPT-5.2 and Claude 4.6, AI chatbots still give
+    worse answers the longer a conversation goes on.
+  takeaway: Even with newer models like GPT-5.2 and Claude 4.6, AI chatbots still
+    give worse answers the longer a conversation goes on. The article Even frontier
+    LLMs from GPT-5 onward lose up to 33% accuracy when you chat too long appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/even-frontier-llms-from-gpt-5-onward-lose-up-to-33-accuracy-when-you-chat-too-long/
+  source: The Decoder (AI)
+  published_utc: '2026-02-28T17:45:42+00:00'
+  title_zh: 即使是最先进的GPT-5等前沿大模型，在长时间对话后准确率会下降33%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: A new benchmark pits five AI models against each other as autonomous social
+    media agents on X
+  why: AI benchmarking startup Arcada Labs is pitting five leading AI models against
+    each other as autonomous social media agents on X.
+  takeaway: AI benchmarking startup Arcada Labs is pitting five leading AI models
+    against each other as autonomous social media agents on X. The article A new benchmark
+    pits five AI models against each other as autonomous social media agents on X
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/a-new-benchmark-pits-five-ai-models-against-each-other-as-autonomous-social-media-agents-on-x/
+  source: The Decoder (AI)
+  published_utc: '2026-02-28T11:08:06+00:00'
+  title_zh: 新基准测试让五款AI模型在X平台上作为自主社交媒体代理展开对决
+  why_zh: AI基准测试初创公司Arcada Labs正让五大领先AI模型在X平台上作为自主社交媒体代理一较高下
+  takeaway_zh: AI基准测试初创公司Arcada Labs正在X平台上让五大领先AI模型作为自主社交媒体代理进行对决。文章《新基准测试：五大AI模型在X平台上作为自主社交媒体代理对决》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Perplexity open-sources embedding models that match Google and Alibaba at
+    a fraction of the memory cost
+  why: AI search engine Perplexity is introducing two new text embedding models designed
+    to match or beat Google's and Alibaba's offerings at a fr…
+  takeaway: AI search engine Perplexity is introducing two new text embedding models
+    designed to match or beat Google's and Alibaba's offerings at a fraction of the
+    usual memory cost. Both models are open source. The article Perplexity open-sources
+    embedding models that match Google and Alibaba at a fraction of the memory cost
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/perplexity-open-sources-embedding-models-that-match-google-and-alibaba-at-a-fraction-of-the-memory-cost/
+  source: The Decoder (AI)
+  published_utc: '2026-02-28T10:41:18+00:00'
+  title_zh: Perplexity开源Embedding模型，以更低内存成本媲美谷歌和阿里巴巴
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12-stable.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-28T05:16:37+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.6.rc.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-28T02:56:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: An AI agent coding skeptic tries AI agent coding, in excessive detail
+  why: An AI agent coding skeptic tries AI agent coding, in excessive detail Another
+    in the genre of "OK, coding agents got good in November" post…
+  takeaway: An AI agent coding skeptic tries AI agent coding, in excessive detail
+    Another in the genre of "OK, coding agents got good in November" posts, this one
+    is by Max Woolf and is very much worth your time. He describes a sequence of coding
+    agent projects, each more ambitious than the last - starting with simple YouTube
+    metadata scrapers and eventually evolving t…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-27T20:43:41+00:00'
+  title_zh: 一位对AI代理编码持怀疑态度者详尽尝试AI代理编码
+  why_zh: 一位AI代理编码怀疑者尝试AI代理编码，细节详尽 另一篇‘好吧，编码代理在11月变强了’类文章…
+  takeaway_zh: 一位对AI代理编码持怀疑态度的作者详细尝试了AI代理编码，这篇由Max Woolf撰写的文章非常值得一读。他描述了一系列编码代理项目，从简单的YouTube元数据抓取器开始，逐步发展到更复杂的应用。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock batch inference now supports the Converse API format
+  why: Amazon Bedrock batch inference now supports the Converse API as a model invocation
+    type, enabling you to use a consistent, model-agnostic i…
+  takeaway: Amazon Bedrock batch inference now supports the Converse API as a model
+    invocation type, enabling you to use a consistent, model-agnostic input format
+    for your batch workloads. Previously, batch inference required model-specific
+    request formats using the InvokeModel API. Now, when creating a batch inference
+    job, you can select Converse as the model invocati…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-batch-inference-supports-converse-api-format/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-27T19:00:00+00:00'
+  title_zh: Amazon Bedrock批量推理现支持Converse API格式
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14.rc.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14.rc.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-27T18:19:47+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Free Claude Max for (large project) open source maintainers
+  why: Free Claude Max for (large project) open source maintainers Anthropic are now
+    offering their $200/month Claude Max 20x plan for free to ope…
+  takeaway: 'Free Claude Max for (large project) open source maintainers Anthropic
+    are now offering their $200/month Claude Max 20x plan for free to open source
+    maintainers... for six months... and you have to meet the following criteria:
+    Maintainers: You''re a primary maintainer or core team member of a public repo
+    with 5,000+ GitHub stars or 1M+ monthly NPM downloads.…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-27T18:08:22+00:00'
+  title_zh: 为（大型项目）开源维护者提供免费Claude Max
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Develop Native Multimodal Agents with Qwen3.5 VLM Using NVIDIA GPU-Accelerated
+    Endpoints
+  why: Alibaba has introduced the new open source Qwen3.5 series built for native
+    multimodal agents.
+  takeaway: Alibaba has introduced the new open source Qwen3.5 series built for native
+    multimodal agents. The first model in this series is a ~400B parameter native...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-27T17:30:00+00:00'
+  title_zh: 基于NVIDIA GPU加速端点开发原生多模态Qwen3.5 VLM代理
+  why_zh: 阿里巴巴推出全新开源Qwen3.5系列，专为原生多模态代理打造
+  takeaway_zh: 阿里巴巴推出了专为原生多模态代理设计的新开源Qwen3.5系列，该系列的首个模型拥有约4000亿参数。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Maximizing GPU Utilization with NVIDIA Run:ai and NVIDIA NIM
+  why: Organizations deploying LLMs are challenged by inference workloads with different
+    resource requirements.
+  takeaway: Organizations deploying LLMs are challenged by inference workloads with
+    different resource requirements. A small embedding model might use only a few
+    gigabytes...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/maximizing-gpu-utilization-with-nvidia-runai-and-nvidia-nim/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-27T17:00:00+00:00'
+  title_zh: 利用NVIDIA Run:ai和NVIDIA NIM实现GPU利用率最大化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_presidio-dev-v1.81.16'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_presidio-dev-v1.81.16
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-27T13:09:30+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI and Amazon announce strategic partnership
+  why: OpenAI and Amazon announce a strategic partnership bringing OpenAI’s Frontier
+    platform to AWS, expanding AI infrastructure, custom models,…
+  takeaway: OpenAI and Amazon announce a strategic partnership bringing OpenAI’s Frontier
+    platform to AWS, expanding AI infrastructure, custom models, and enterprise AI
+    agents.
+  prompt: ''
+  url: https://openai.com/index/amazon-partnership
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-27T05:30:00+00:00'
+  title_zh: OpenAI与亚马逊宣布战略合作
+  why_zh: OpenAI与亚马逊宣布战略合作，将OpenAI的Frontier平台引入AWS，扩展AI基础设施、定制模型…
+  takeaway_zh: OpenAI与亚马逊宣布达成战略合作，将OpenAI的Frontier平台引入AWS，扩展AI基础设施、定制模型及企业AI代理。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing the Stateful Runtime Environment for Agents in Amazon Bedrock
+  why: Stateful Runtime for Agents in Amazon Bedrock brings persistent orchestration,
+    memory, and secure execution to multi-step AI workflows powe…
+  takeaway: Stateful Runtime for Agents in Amazon Bedrock brings persistent orchestration,
+    memory, and secure execution to multi-step AI workflows powered by OpenAI.
+  prompt: ''
+  url: https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-27T05:30:00+00:00'
+  title_zh: 推出Amazon Bedrock中代理的有状态运行时环境
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.4
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-27T03:47:22+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.3
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-27T02:21:12+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '‘Uncanny Valley’: Pentagon vs. ‘Woke’ Anthropic, Agentic vs. Mimetic, and
+    Trump vs. State of the Union'
+  why: Our hosts unpack the news of the week, starting with the ongoing feud between
+    Anthropic and the Pentagon.
+  takeaway: 'Our hosts unpack the news of the week, starting with the ongoing feud
+    between Anthropic and the Pentagon. Plus: All you need to know about TAT-8 and
+    undersea cables.'
+  prompt: ''
+  url: https://www.wired.com/story/uncanny-valley-podcast-pentagon-anthropic-agentic-mimetic-trump-state-of-the-union/
+  source: WIRED - AI
+  published_utc: '2026-02-26T23:20:36+00:00'
+  title_zh: ‘恐怖谷’效应：五角大楼对决‘觉醒’Anthropic，代理与拟态之争，以及特朗普对阵国情咨文
+  why_zh: 我们的主持人从Anthropic与五角大楼的持续纷争开始，梳理本周新闻
+  takeaway_zh: 本期节目梳理了本周新闻，首先是Anthropic与五角大楼的持续争端。此外，还详细介绍了TAT-8及海底电缆的相关知识。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock announces OpenAI-compatible Projects API
+  why: Amazon Bedrock now supports OpenAI-compatible Projects API in the Mantle inference
+    engine in Amazon Bedrock.
+  takeaway: Amazon Bedrock now supports OpenAI-compatible Projects API in the Mantle
+    inference engine in Amazon Bedrock. Amazon Bedrock is a fully managed service
+    that offers a broad selection of best-in-class foundation models from leading
+    AI companies like Anthropic, Meta, and OpenAI, along with a broad set of specialized
+    developer tools that make it easy to build an…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-projects-api-mantle-inference-engine/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-26T23:06:00+00:00'
+  title_zh: Amazon Bedrock发布兼容OpenAI的Projects API
+  why_zh: Amazon Bedrock现支持Mantle推理引擎中的OpenAI兼容Projects API
+  takeaway_zh: Amazon Bedrock现已在Mantle推理引擎中支持OpenAI兼容的Projects API。Amazon Bedrock是一项全托管服务，提供来自Anthropic、Meta和OpenAI等领先AI公司的最佳基础模型，以及一系列专为开发者设计的工具，便于构建AI应用。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.2
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-26T22:41:34+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.15.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.15.1
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-02-26T22:01:35+00:00'
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI版本v0.15.1
+  why_zh: 发布更新（详见链接中的变更日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: This AI Agent Is Designed to Not Go Rogue
+  why: The new open source project IronCurtain uses a unique method to secure and
+    constrain AI assistant agents before they flip your digital life…
+  takeaway: The new open source project IronCurtain uses a unique method to secure
+    and constrain AI assistant agents before they flip your digital life upside down.
+  prompt: ''
+  url: https://www.wired.com/story/ironcurtain-ai-agent-security/
+  source: WIRED - AI
+  published_utc: '2026-02-26T20:54:51+00:00'
+  title_zh: 这款AI代理设计初衷是不失控
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.16.custm-auth.dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.16.custm-auth.dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-26T19:34:59+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google and the Massachusetts AI Hub are launching a new AI training initiative
+    for the Commonwealth.
+  why: Google is partnering with the Massachusetts AI Hub to provide every Baystater
+    with no-cost access to Google’s AI training.
+  takeaway: Google is partnering with the Massachusetts AI Hub to provide every Baystater
+    with no-cost access to Google’s AI training.
+  prompt: ''
+  url: https://blog.google/company-news/outreach-and-initiatives/grow-with-google/google-ai-training-massachusetts-residents/
+  source: Google AI (blog.google)
+  published_utc: '2026-02-26T18:55:00+00:00'
+  title_zh: 谷歌与马萨诸塞州AI中心启动新AI培训计划，面向联邦
+  why_zh: 谷歌与马萨诸塞州AI中心合作，为每位Baystater提供免费访问谷歌AI培训的机会
+  takeaway_zh: 谷歌与马萨诸塞州AI中心合作，为每位Baystater提供免费访问谷歌AI培训的机会
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Nano Banana 2: Combining Pro capabilities with lightning-fast speed'
+  why: Our latest image generation model offers advanced world knowledge, production
+    ready specs, subject consistency and more, all at Flash speed.
+  takeaway: Our latest image generation model offers advanced world knowledge, production
+    ready specs, subject consistency and more, all at Flash speed.
+  prompt: ''
+  url: https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/
+  source: Google DeepMind Blog
+  published_utc: '2026-02-26T16:01:50+00:00'
+  title_zh: Nano Banana 2：融合专业能力与闪电般速度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build with Nano Banana 2, our best image generation and editing model
+  why: Build with Nano Banana 2
+  takeaway: Build with Nano Banana 2
+  prompt: ''
+  url: https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/
+  source: Google AI (blog.google)
+  published_utc: '2026-02-26T16:00:00+00:00'
+  title_zh: 使用Nano Banana 2构建，我们最佳的图像生成与编辑模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8i and M8i-flex instances are available in additional regions
+  why: Starting today, Amazon EC2 M8i and M8i-flex instances are now available in
+    US West (N.
+  takeaway: Starting today, Amazon EC2 M8i and M8i-flex instances are now available
+    in US West (N. California), Europe (Paris), Asia Pacific (Hyderabad), and South
+    America (Sao Paulo) regions. These instances are powered by custom Intel Xeon
+    6 processors, available only on AWS, delivering the highest performance and fastest
+    memory bandwidth among comparable Intel proce…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-m8i-m8i-flex-instances-additional-regions/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-26T16:00:00+00:00'
+  title_zh: Amazon EC2 M8i和M8i-flex实例在更多区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: 1.81.16-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/1.81.16-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-26T13:32:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Lambda Durable Execution SDK for Java now available in Developer Preview
+  why: Today, AWS announces the developer preview of the AWS Lambda Durable Execution
+    SDK for Java.
+  takeaway: Today, AWS announces the developer preview of the AWS Lambda Durable Execution
+    SDK for Java. With this SDK, developers can build resilient multi-step applications
+    like order processing pipelines, AI-assisted workflows, and human-in-the-loop
+    approvals using Lambda durable functions, without implementing custom progress
+    tracking or integrating external orches…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/lambda-durable-execution-java-preview/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-26T07:00:00+00:00'
+  title_zh: AWS Lambda持久执行SDK for Java现提供开发者预览版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI Codex and Figma launch seamless code-to-design experience
+  why: OpenAI and Figma launch a new Codex integration that connects code and design,
+    enabling teams to move between implementation and the Figma…
+  takeaway: OpenAI and Figma launch a new Codex integration that connects code and
+    design, enabling teams to move between implementation and the Figma canvas to
+    iterate and ship faster.
+  prompt: ''
+  url: https://openai.com/index/figma-partnership
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-26T06:00:00+00:00'
+  title_zh: OpenAI Codex与Figma联合推出无缝代码转设计体验
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google API Keys Weren't Secrets. But then Gemini Changed the Rules.
+  why: Google API Keys Weren't Secrets.
+  takeaway: Google API Keys Weren't Secrets. But then Gemini Changed the Rules. Yikes!
+    It turns out Gemini and Google Maps (and other services) share the same API keys...
+    but Google Maps API keys are designed to be public, since they are embedded directly
+    in web pages. Gemini API keys can be used to access private files and make billable
+    API requests, so they absolutel…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-26T04:28:55+00:00'
+  title_zh: 谷歌API密钥本非秘密，但Gemini改变了规则
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Hundreds of thousands of travellers stranded or diverted amid air space closures
+    in Middle East
+  why: Chaos as key transit hubs in Dubai, Abu Dhabi and Doha close, and more than
+    1,000 flights by major Middle Eastern airlines cancelled Full r…
+  takeaway: 'Chaos as key transit hubs in Dubai, Abu Dhabi and Doha close, and more
+    than 1,000 flights by major Middle Eastern airlines cancelled Full report: US
+    president announces death of the ayatollah, who has ruled Iran as supreme leader
+    since 1989 Latest updates: Trump says Khamenei is dead America and Israel’s attack
+    on Iran disrupted flights across the Middle Ea…'
+  prompt: ''
+  url: https://www.theguardian.com/us-news/2026/mar/01/hundreds-of-thousands-of-travellers-stranded-or-diverted-amid-air-space-closures-in-middle-east
+  source: The Guardian - Business
+  published_utc: '2026-03-01T00:09:27+00:00'
+  title_zh: 中东空域关闭，数十万旅客滞留或改道
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The trap Anthropic built for itself
+  why: Anthropic, OpenAI, Google DeepMind and others have long promised to govern
+    themselves responsibly.
+  takeaway: Anthropic, OpenAI, Google DeepMind and others have long promised to govern
+    themselves responsibly. Now, in the absence of rules, there's not a lot to protect
+    them.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/
+  source: TechCrunch
+  published_utc: '2026-03-01T00:08:58+00:00'
+  title_zh: Anthropic为自己设下的陷阱
+  why_zh: Anthropic、OpenAI、Google DeepMind等公司长期承诺将负责任地进行自我管理
+  takeaway_zh: Anthropic、OpenAI、Google DeepMind等公司长期承诺将负责任地进行自我管理。如今，在缺乏规则的情况下，它们几乎得不到保护。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Claude surpasses ChatGPT to become the #1 app on the US App Store'
+  why: 'Article URL: https://apps.apple.com/us/iphone/charts Comments URL: https://news.ycombinator.com/item?id=47202032
+    Points: 122 # Comments: 30'
+  takeaway: 'Article URL: https://apps.apple.com/us/iphone/charts Comments URL: https://news.ycombinator.com/item?id=47202032
+    Points: 122 # Comments: 30'
+  prompt: ''
+  url: https://apps.apple.com/us/iphone/charts
+  source: Hacker News (front page)
+  published_utc: '2026-03-01T00:08:48+00:00'
+  title_zh: Claude超越ChatGPT登顶美国App Store榜首
+  why_zh: 文章链接：https://apps.apple.com/us/iphone/charts 评论链接：https://news.ycombinator.com/item?id=47202032
+    得分：122 评论数：30
+  takeaway_zh: 文章链接：https://apps.apple.com/us/iphone/charts 评论链接：https://news.ycombinator.com/item?id=47202032
+    得分：122 评论数：30
+  prompt_zh: ''
+- category: Business & economy
+  title: UK must restore ‘dynamism’ in labour market, says Tony Blair Institute
+  why: Think-tank says it should be easier to fire high earners, hold down the minimum
+    wage and hire abroad
+  takeaway: Think-tank says it should be easier to fire high earners, hold down the
+    minimum wage and hire abroad
+  prompt: ''
+  url: https://www.ft.com/content/88dc83b1-4a9b-45ed-85a5-8ddfe9642531
+  source: Financial Times - World
+  published_utc: '2026-03-01T00:01:05+00:00'
+  title_zh: 托尼·布莱尔研究所称英国须恢复劳动力市场‘活力’
+  why_zh: 智库建议应简化高薪员工解雇流程，抑制最低工资标准，并扩大海外招聘
+  takeaway_zh: 智库建议应简化高薪员工解雇流程，抑制最低工资标准，并扩大海外招聘
+  prompt_zh: ''
+- category: Tech industry
+  title: Pentagon chief blocks officers from Ivy League schools and top universities
+  why: 'Article URL: https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/
+    Comments URL: htt…'
+  takeaway: 'Article URL: https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/
+    Comments URL: https://news.ycombinator.com/item?id=47201882 Points: 17 # Comments:
+    2'
+  prompt: ''
+  url: https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T23:51:04+00:00'
+  title_zh: 五角大楼主管禁止军官就读常春藤及顶尖大学
+  why_zh: 文章链接：https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/
+    评论链接：htt…
+  takeaway_zh: 文章链接：https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/
+    评论链接：https://news.ycombinator.com/item?id=47201882 得分：17 评论数：2
+  prompt_zh: ''
+- category: Business & economy
+  title: US not planning to tap strategic reserve as Iran war risks oil surge
+  why: Trump administration holding ‘no discussions’ about using stockpiles to soothe
+    energy markets
+  takeaway: Trump administration holding ‘no discussions’ about using stockpiles to
+    soothe energy markets
+  prompt: ''
+  url: https://www.ft.com/content/e85a07da-9a74-4942-ae22-3945773aeb82
+  source: Financial Times - Markets
+  published_utc: '2026-02-28T23:50:13+00:00'
+  title_zh: 美国不计划动用战略储备，伊朗战争风险推高油价
+  why_zh: 特朗普政府‘未讨论’利用储备来稳定能源市场
+  takeaway_zh: 特朗普政府‘未讨论’利用储备来稳定能源市场
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Xmloxide – an agent made rust replacement for libxml2'
+  why: Recently several AI labs have published experiments where they tried to get
+    AI coding agents to complete large software projects.
+  takeaway: 'Recently several AI labs have published experiments where they tried
+    to get AI coding agents to complete large software projects. - Cursor attempted
+    to make a browser from scratch: https://cursor.com/blog/scaling-agents - Anthropic
+    attempted to make a C Compiler: https://www.anthropic.com/engineering/building-c-compiler
+    I have been wondering if there are so…'
+  prompt: ''
+  url: https://github.com/jonwiggins/xmloxide
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T23:44:41+00:00'
+  title_zh: 展示HN：Xmloxide——libxml2的Rust替代代理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The war against PDFs is heating up
+  why: 'Article URL: https://www.economist.com/business/2026/02/24/the-war-against-pdfs-is-heating-up
+    Comments URL: https://news.ycombinator.com/it…'
+  takeaway: 'Article URL: https://www.economist.com/business/2026/02/24/the-war-against-pdfs-is-heating-up
+    Comments URL: https://news.ycombinator.com/item?id=47201283 Points: 15 # Comments:
+    15'
+  prompt: ''
+  url: https://www.economist.com/business/2026/02/24/the-war-against-pdfs-is-heating-up
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T22:54:42+00:00'
+  title_zh: PDF之战愈演愈烈
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Panic in the Gulf as Iran lashes out at US allies
+  why: Tehran targets regional countries housing American bases despite their refusal
+    to allow attacks from their territory
+  takeaway: Tehran targets regional countries housing American bases despite their
+    refusal to allow attacks from their territory
+  prompt: ''
+  url: https://www.ft.com/content/136d9ad6-f427-4bea-bbb2-5df8fb5decec
+  source: Financial Times - World
+  published_utc: '2026-02-28T22:34:26+00:00'
+  title_zh: 伊朗反击美国盟友，海湾地区陷入恐慌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Military briefing: The US-Israeli strikes and Iran’s retaliation'
+  why: American military assets in the region and Gulf oil supplies are vulnerable
+    to attack and Israel is a renewed target
+  takeaway: American military assets in the region and Gulf oil supplies are vulnerable
+    to attack and Israel is a renewed target
+  prompt: ''
+  url: https://www.ft.com/content/be65f1b1-ed37-4821-b024-10ec7a198f25
+  source: Financial Times - Markets
+  published_utc: '2026-02-28T22:26:31+00:00'
+  title_zh: 军事简报：美以联合打击与伊朗的报复行动
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Windows 95 user interface: A case study in usability engineering (1996)'
+  why: 'Article URL: https://dl.acm.org/doi/fullHtml/10.1145/238386.238611 Comments
+    URL: https://news.ycombinator.com/item?id=47200904 Points: 78 #…'
+  takeaway: 'Article URL: https://dl.acm.org/doi/fullHtml/10.1145/238386.238611 Comments
+    URL: https://news.ycombinator.com/item?id=47200904 Points: 78 # Comments: 31'
+  prompt: ''
+  url: https://dl.acm.org/doi/fullHtml/10.1145/238386.238611
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T22:19:36+00:00'
+  title_zh: Windows 95用户界面：可用性工程案例分析（1996）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Building a Minimal Transformer for 10-digit Addition
+  why: 'Article URL: https://alexlitzenberger.com/blog/post.html?post=/building_a_minimal_transformer_for_10_digit_addition
+    Comments URL: https://n…'
+  takeaway: 'Article URL: https://alexlitzenberger.com/blog/post.html?post=/building_a_minimal_transformer_for_10_digit_addition
+    Comments URL: https://news.ycombinator.com/item?id=47200828 Points: 24 # Comments:
+    4'
+  prompt: ''
+  url: https://alexlitzenberger.com/blog/post.html?post=/building_a_minimal_transformer_for_10_digit_addition
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T22:10:21+00:00'
+  title_zh: 构建一个实现10位数加法的最小Transformer
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why did Netflix back down from its deal to acquire Warner Bros.?
+  why: Netflix's co-CEO reportedly told Trump, "I took your advice."
+  takeaway: Netflix's co-CEO reportedly told Trump, "I took your advice."
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/why-did-netflix-back-down-from-its-deal-to-acquire-warner-bros/
+  source: TechCrunch
+  published_utc: '2026-02-28T22:07:48+00:00'
+  title_zh: Netflix为何放弃收购华纳兄弟？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Netanyahu’s ‘biggest decision’: Israeli leader pursues regime change in
+    Iran'
+  why: Premier was critical in convincing Donald Trump to look beyond ending Tehran’s
+    nuclear programme
+  takeaway: Premier was critical in convincing Donald Trump to look beyond ending
+    Tehran’s nuclear programme
+  prompt: ''
+  url: https://www.ft.com/content/6a2d48ce-1505-4710-900a-25f40799b679
+  source: Financial Times - World
+  published_utc: '2026-02-28T21:53:16+00:00'
+  title_zh: 内塔尼亚胡的‘最大决策’：以色列领导人寻求伊朗政权更迭
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Iran’s supreme leader Khamenei is dead, Trump says
+  why: US and Israel launched ‘massive’ strikes on Iran, drawing retaliatory attacks
+    from Tehran
+  takeaway: US and Israel launched ‘massive’ strikes on Iran, drawing retaliatory
+    attacks from Tehran
+  prompt: ''
+  url: https://www.ft.com/content/2fb3447b-7ff7-4f9a-9068-05cfb4bf4138
+  source: Financial Times - World
+  published_utc: '2026-02-28T21:45:16+00:00'
+  title_zh: 特朗普称伊朗最高领袖哈梅内伊已去世
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What to know about the landmark Warner Bros. Discovery sale
+  why: Learn more about Paramount's planned acquisition of Warner Bros.
+  takeaway: Learn more about Paramount's planned acquisition of Warner Bros. Discovery
+    — a historic Hollywood megadeal valued at $111 billion — as it continues to develop.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/warner-bros-netflix-paramount-acquisition-timeline-wbd/
+  source: TechCrunch
+  published_utc: '2026-02-28T21:28:06+00:00'
+  title_zh: 华纳兄弟探索公司重大出售案要点解析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We do not think Anthropic should be designated as a supply chain risk
+  why: 'Article URL: https://twitter.com/OpenAI/status/2027846016423321831 Comments
+    URL: https://news.ycombinator.com/item?id=47200420 Points: 106…'
+  takeaway: 'Article URL: https://twitter.com/OpenAI/status/2027846016423321831 Comments
+    URL: https://news.ycombinator.com/item?id=47200420 Points: 106 # Comments: 33'
+  prompt: ''
+  url: https://twitter.com/OpenAI/status/2027846016423321831
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T21:24:16+00:00'
+  title_zh: 我们不认为Anthropic应被列为供应链风险
+  why_zh: 文章链接：https://twitter.com/OpenAI/status/2027846016423321831 评论链接：https://news.ycombinator.com/item?id=47200420
+    得分：106…
+  takeaway_zh: 文章链接：https://twitter.com/OpenAI/status/2027846016423321831 评论链接：https://news.ycombinator.com/item?id=47200420
+    得分：106 评论数：33
+  prompt_zh: ''
+- category: Tech industry
+  title: MinIO Is Dead, Long Live MinIO
+  why: 'Article URL: https://blog.vonng.com/en/db/minio-resurrect/ Comments URL: https://news.ycombinator.com/item?id=47200342
+    Points: 166 # Commen…'
+  takeaway: 'Article URL: https://blog.vonng.com/en/db/minio-resurrect/ Comments URL:
+    https://news.ycombinator.com/item?id=47200342 Points: 166 # Comments: 57'
+  prompt: ''
+  url: https://blog.vonng.com/en/db/minio-resurrect/
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T21:16:53+00:00'
+  title_zh: MinIO已死，MinIO永存
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute
+  why: Anthropic’s chatbot Claude seems to have benefited from the attention around
+    the company’s fraught negotiations with the Pentagon.
+  takeaway: Anthropic’s chatbot Claude seems to have benefited from the attention
+    around the company’s fraught negotiations with the Pentagon.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/
+  source: TechCrunch
+  published_utc: '2026-02-28T21:05:06+00:00'
+  title_zh: Anthropic旗下Claude应用因五角大楼争议跃居App Store第二
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Polymarket defends its decision to allow betting on war as ‘invaluable’
+  why: Polymarket has been allowing people to bet on when the US would strike Iran
+    next.
+  takeaway: Polymarket has been allowing people to bet on when the US would strike
+    Iran next. Obviously, now that it's actually happened and people have died, the
+    prediction betting market is feeling some pressure. The site has been at the center
+    of controversy before, including suspicions of insider trading on the Super Bowl
+    halftime show and […]
+  prompt: ''
+  url: https://www.theverge.com/tech/887040/polymarket-iran-war-betting-invaluable
+  source: The Verge
+  published_utc: '2026-02-28T20:46:35+00:00'
+  title_zh: Polymarket为允许战争投注辩护，称其‘价值无可估量’
+  why_zh: Polymarket平台允许用户押注美国何时会对伊朗发动下一次打击
+  takeaway_zh: Polymarket一直允许用户押注美国何时会再次打击伊朗。如今事件真实发生并造成人员伤亡，这一预测市场正面临压力。该网站此前也曾处于争议中心，包括涉嫌在超级碗中场秀进行内幕交易等。
+  prompt_zh: ''
+- category: Tech industry
+  title: The billion-dollar infrastructure deals powering the AI boom
+  why: Here's everything we know about the biggest AI infrastructure projects, including
+    major spending from Meta, Oracle, Microsoft, Google, and…
+  takeaway: Here's everything we know about the biggest AI infrastructure projects,
+    including major spending from Meta, Oracle, Microsoft, Google, and OpenAI.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/
+  source: TechCrunch
+  published_utc: '2026-02-28T20:41:55+00:00'
+  title_zh: 推动AI热潮的数十亿美元基础设施交易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Our Agreement with the Department of War
+  why: 'Article URL: https://openai.com/index/our-agreement-with-the-department-of-war
+    Comments URL: https://news.ycombinator.com/item?id=47199948…'
+  takeaway: 'Article URL: https://openai.com/index/our-agreement-with-the-department-of-war
+    Comments URL: https://news.ycombinator.com/item?id=47199948 Points: 187 # Comments:
+    169'
+  prompt: ''
+  url: https://openai.com/index/our-agreement-with-the-department-of-war
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T20:35:29+00:00'
+  title_zh: 我们与战争部的协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Qwen3.5 122B and 35B models offer Sonnet 4.5 performance on local computers
+  why: 'Article URL: https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance
+    Comments URL: h…'
+  takeaway: 'Article URL: https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance
+    Comments URL: https://news.ycombinator.com/item?id=47199781 Points: 160 # Comments:
+    104'
+  prompt: ''
+  url: https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T20:20:00+00:00'
+  title_zh: Qwen3.5的122B和35B模型在本地计算机上达到Sonnet 4.5级性能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Labour minister quits over probe into journalists
+  why: Starmer’s ethics adviser flags ‘potential reputational damage’ from Josh Simons’
+    activities before being elected as an MP
+  takeaway: Starmer’s ethics adviser flags ‘potential reputational damage’ from Josh
+    Simons’ activities before being elected as an MP
+  prompt: ''
+  url: https://www.ft.com/content/213eb2fb-3dca-4795-b535-f940090e17fd
+  source: Financial Times - World
+  published_utc: '2026-02-28T20:12:11+00:00'
+  title_zh: 劳工部长因记者调查事件辞职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump moves to ban Anthropic from the US government
+  why: The Defense Department pressured Anthropic to drop restrictions on how its
+    AI can be used by the military.
+  takeaway: The Defense Department pressured Anthropic to drop restrictions on how
+    its AI can be used by the military.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/
+  source: Ars Technica
+  published_utc: '2026-02-28T20:00:26+00:00'
+  title_zh: 特朗普拟禁止Anthropic与美国政府合作
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Strike on Iranian primary school kills 108, authorities say
+  why: Girls’ education facility hit as US and Israel launch joint military operation
+  takeaway: Girls’ education facility hit as US and Israel launch joint military operation
+  prompt: ''
+  url: https://www.ft.com/content/055d7ee1-0002-4d86-931f-18f4687d4f8b
+  source: Financial Times - World
+  published_utc: '2026-02-28T19:49:51+00:00'
+  title_zh: 当局称伊朗小学遭袭致108人死亡
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Rubin Observatory’s alert system sent 800,000 pings on its first night
+  why: The Vera C.
+  takeaway: The Vera C. Rubin Observatory's automated alert system is online and already
+    bombarding astronomers with things to look at in the night sky. The system went
+    live publicly on Tuesday, February 24th, and on the first night dropped some 800,000
+    alerts about asteroids, supernovas, and feasting black holes. And that number
+    is only expected to […]
+  prompt: ''
+  url: https://www.theverge.com/science/887037/vera-c-rubin-observatory-800000-alerts
+  source: The Verge
+  published_utc: '2026-02-28T19:33:51+00:00'
+  title_zh: 鲁宾天文台警报系统首晚发送80万条通知
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Block the “Upgrade to Tahoe” Alerts
+  why: 'Article URL: https://robservatory.com/block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator/
+    Comments URL: https://news.ycombinat…'
+  takeaway: 'Article URL: https://robservatory.com/block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator/
+    Comments URL: https://news.ycombinator.com/item?id=47198977 Points: 105 # Comments:
+    37'
+  prompt: ''
+  url: https://robservatory.com/block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator/
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T19:04:01+00:00'
+  title_zh: 屏蔽‘升级至Tahoe’提醒
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Xiangyi Cheng Is Bringing AR to Classrooms and Hospitals
+  why: When Xiangyi Cheng published her first journal paper as a principal investigator
+    in IEEE Access in 2024, it marked more than a professional…
+  takeaway: When Xiangyi Cheng published her first journal paper as a principal investigator
+    in IEEE Access in 2024, it marked more than a professional milestone. For Cheng,
+    an IEEE member and an assistant professor of mechanical engineering at Loyola
+    Marymount University , in Los Angeles, it was the latest waypoint in a career
+    shaped by curiosity, persistence, and a b…
+  prompt: ''
+  url: https://spectrum.ieee.org/xiangyi-cheng-ar-classrooms-hospitals
+  source: IEEE Spectrum
+  published_utc: '2026-02-28T19:00:02+00:00'
+  title_zh: 程湘怡将AR技术引入课堂与医院
+  why_zh: 2024年，程湘怡以首席研究员身份在IEEE Access上发表首篇期刊论文，这不仅是其职业生涯的…
+  takeaway_zh: 2024年，程湘怡作为首席研究员在IEEE Access上发表首篇期刊论文，这不仅是其职业生涯的里程碑，更是她求知、坚持与不懈探索的最新见证。程湘怡是IEEE会员，现任洛杉矶洛约拉马利蒙特大学机械工程助理教授。
+  prompt_zh: ''
+- category: Tech industry
+  title: In puzzling outbreak, officials look to cold beer, gross ice, and ChatGPT
+  why: An AI chatbot convinced health investigators they had the right answer.
+  takeaway: An AI chatbot convinced health investigators they had the right answer.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/02/did-chatgpt-help-health-officials-solve-a-weird-outbreak-maybe/
+  source: Ars Technica
+  published_utc: '2026-02-28T18:17:12+00:00'
+  title_zh: 在令人困惑的疫情中，官员们关注冷啤酒、脏冰和ChatGPT
+  why_zh: AI聊天机器人使健康调查人员确信他们得到了正确答案
+  takeaway_zh: AI聊天机器人使健康调查人员确信他们得到了正确答案
+  prompt_zh: ''
+- category: Business & economy
+  title: Greg Abel tells Berkshire investors its cash pile is not a retreat from dealmaking
+  why: New chief executive publishes his first letter to shareholders after Warren
+    Buffett’s retirement
+  takeaway: New chief executive publishes his first letter to shareholders after Warren
+    Buffett’s retirement
+  prompt: ''
+  url: https://www.ft.com/content/3fa7f344-7aa3-43c5-b1ba-56de4459ca1e
+  source: Financial Times - World
+  published_utc: '2026-02-28T18:14:54+00:00'
+  title_zh: 格雷格·阿贝尔向伯克希尔投资者表示，现金储备并非退出交易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: JPMorgan cuts services for Citadel Securities in clash over roles
+  why: Move underscores tensions between Wall Street banks and clients as businesses
+    converge
+  takeaway: Move underscores tensions between Wall Street banks and clients as businesses
+    converge
+  prompt: ''
+  url: https://www.ft.com/content/b0793528-02eb-455c-94d5-f443b2a7ee92
+  source: Financial Times - World
+  published_utc: '2026-02-28T18:05:59+00:00'
+  title_zh: 摩根大通因角色冲突削减对Citadel Securities的服务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: OpenAI to work with Pentagon after Anthropic dropped by Trump over company’s
+    ethics concerns
+  why: CEO Sam Altman claims military will not use AI product for autonomous killing
+    systems or mass surveillance OpenAI said it had struck a deal…
+  takeaway: CEO Sam Altman claims military will not use AI product for autonomous
+    killing systems or mass surveillance OpenAI said it had struck a deal with the
+    Pentagon to supply AI to classified US military networks, hours after Donald Trump
+    ordered the government to stop using the services of one of the company’s main
+    competitors. Sam Altman , OpenAI’s CEO, announce…
+  prompt: ''
+  url: https://www.theguardian.com/technology/2026/feb/28/openai-us-military-anthropic
+  source: The Guardian - Business
+  published_utc: '2026-02-28T17:06:56+00:00'
+  title_zh: OpenAI将与五角大楼合作，此前Anthropic因伦理担忧被特朗普弃用
+  why_zh: CEO Sam Altman声称军方不会将AI产品用于自主杀伤系统或大规模监控，OpenAI表示已达成协议…
+  takeaway_zh: CEO Sam Altman声称军方不会将AI产品用于自主杀伤系统或大规模监控，OpenAI表示已与五角大楼达成协议，向美国军事机密网络供应AI，几小时前，唐纳德·特朗普下令政府停止使用该公司主要竞争对手的服务。OpenAI
+    CEO Sam Altman宣布…
+  prompt_zh: ''
+- category: Tech industry
+  title: Verified Spec-Driven Development (VSDD)
+  why: 'Article URL: https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00
+    Comments URL: https://news.ycombinator.com/item?id=4719…'
+  takeaway: 'Article URL: https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00
+    Comments URL: https://news.ycombinator.com/item?id=47197595 Points: 138 # Comments:
+    66'
+  prompt: ''
+  url: https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T16:58:54+00:00'
+  title_zh: 验证驱动的规范开发（VSDD）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The whole thing was a scam
+  why: 'Article URL: https://garymarcus.substack.com/p/the-whole-thing-was-scam Comments
+    URL: https://news.ycombinator.com/item?id=47197505 Points:…'
+  takeaway: 'Article URL: https://garymarcus.substack.com/p/the-whole-thing-was-scam
+    Comments URL: https://news.ycombinator.com/item?id=47197505 Points: 542 # Comments:
+    155'
+  prompt: ''
+  url: https://garymarcus.substack.com/p/the-whole-thing-was-scam
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T16:51:49+00:00'
+  title_zh: 整件事就是个骗局
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Obsidian Sync now has a headless client
+  why: 'Article URL: https://help.obsidian.md/sync/headless Comments URL: https://news.ycombinator.com/item?id=47197267
+    Points: 360 # Comments: 129'
+  takeaway: 'Article URL: https://help.obsidian.md/sync/headless Comments URL: https://news.ycombinator.com/item?id=47197267
+    Points: 360 # Comments: 129'
+  prompt: ''
+  url: https://help.obsidian.md/sync/headless
+  source: Hacker News (front page)
+  published_utc: '2026-02-28T16:31:53+00:00'
+  title_zh: Obsidian Sync现已推出无界面客户端
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
+  why: OpenAI's CEO claims its new defense contract includes protections addressing
+    the same issues that became a flashpoint for Anthropic.
+  takeaway: OpenAI's CEO claims its new defense contract includes protections addressing
+    the same issues that became a flashpoint for Anthropic.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/
+  source: TechCrunch
+  published_utc: '2026-02-28T16:17:36+00:00'
+  title_zh: OpenAI的Sam Altman宣布与五角大楼达成‘技术保障’协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: You can still grab great deals on Bose headphones and Astro Bot this weekend
+  why: Welcome to the weekend, friends!
+  takeaway: Welcome to the weekend, friends! While the rest of our team was checking
+    out Samsung’s forthcoming Galaxy S26 lineup and prepping for Apple’s “special
+    experience” next week, we’ve been sifting through Woot’s “Video Games for All”
+    sale and a truly weird slate of deals that, frankly, don’t have a throughline.
+    (Some of us have also […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/886520/bose-quietcomfort-headphones-samsung-galaxy-s26-ultra-deal-sale
+  source: The Verge
+  published_utc: '2026-02-28T16:07:14+00:00'
+  title_zh: 本周末Bose耳机与Astro Bot仍有超值优惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Insurers to cancel policies and raise prices for ships in Gulf and Strait
+    of Hormuz
+  why: Brokers say cost of cover to increase by as much as 50% after conflict erupts
+  takeaway: Brokers say cost of cover to increase by as much as 50% after conflict
+    erupts
+  prompt: ''
+  url: https://www.ft.com/content/2dc114d0-5bb3-4fae-b538-9a050954549a
+  source: Financial Times - World
+  published_utc: '2026-02-28T16:07:08+00:00'
+  title_zh: 保险公司将取消海湾和霍尔木兹海峡船只保单并提高价格
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Why now? Trump’s shifting arguments for striking Iran
+  why: President has provided flurry of explanations for US and Israeli attack that
+    shattered negotiations with Tehran
+  takeaway: President has provided flurry of explanations for US and Israeli attack
+    that shattered negotiations with Tehran
+  prompt: ''
+  url: https://www.ft.com/content/5fd1ae94-a850-4151-9be3-0258ff222ccb
+  source: Financial Times - World
+  published_utc: '2026-02-28T15:40:04+00:00'
+  title_zh: 为何此时？特朗普对打击伊朗的理由不断变化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Xiaomi launches 17 Ultra smartphone, an AirTag clone, and an ultra slim powerbank
+  why: We round up everything Xiaomi announced at its Mobile World Congress event.
+  takeaway: We round up everything Xiaomi announced at its Mobile World Congress event.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/xiaomi-launches-17-ultra-smartphone-an-airtag-clone-and-an-ultra-slim-powerbank/
+  source: TechCrunch
+  published_utc: '2026-02-28T15:09:03+00:00'
+  title_zh: 小米发布17 Ultra智能手机、AirTag仿品及超薄移动电源
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'It’s been decreed: something must be done about student loans in England'
+  why: The education secretary wants a fairer system and the Tories have leapt in
+    with their own plan – but why now?
+  takeaway: The education secretary wants a fairer system and the Tories have leapt
+    in with their own plan – but why now? For anyone who attended university in England
+    in the last 15 or so years, the idea of student loans feeling like some sort of
+    debt trap is hardly news. But three weeks ago, when the journalist Oli Dugmore
+    discussed this on the BBC’s Question Time ,…
+  prompt: ''
+  url: https://www.theguardian.com/money/2026/feb/28/its-been-decreed-something-must-be-done-about-student-loans-in-england
+  source: The Guardian - Business
+  published_utc: '2026-02-28T15:00:14+00:00'
+  title_zh: 英格兰学生贷款问题亟待解决
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why China’s humanoid robot industry is winning the early market
+  why: China’s push into humanoid robots is accelerating, with domestic firms shipping
+    more units and iterating faster than U.S.
+  takeaway: China’s push into humanoid robots is accelerating, with domestic firms
+    shipping more units and iterating faster than U.S. competitors in a still-nascent
+    market.
+  prompt: ''
+  url: https://techcrunch.com/2026/02/28/why-chinas-humanoid-robot-industry-is-winning-the-early-market/
+  source: TechCrunch
+  published_utc: '2026-02-28T15:00:00+00:00'
+  title_zh: 中国仿人机器人产业为何抢占早期市场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Tehran started its working week. Then came the explosions
+  why: Blasts, fires, traffic jams and panic shopping as Iran’s capital comes under
+    attack
+  takeaway: Blasts, fires, traffic jams and panic shopping as Iran’s capital comes
+    under attack
+  prompt: ''
+  url: https://www.ft.com/content/97db4b54-ebd6-4210-8f66-6917f157823a
+  source: Financial Times - World
+  published_utc: '2026-02-28T14:53:01+00:00'
+  title_zh: 德黑兰开启工作周，随后爆炸声响起
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump and Netanyahu go for Iran’s jugular
+  why: Washington is ill-equipped to handle the regional conflagration it has unleashed
+  takeaway: Washington is ill-equipped to handle the regional conflagration it has
+    unleashed
+  prompt: ''
+  url: https://www.ft.com/content/1cd2ed35-869c-48c0-8899-b25ad99be066
+  source: Financial Times - World
+  published_utc: '2026-02-28T14:30:18+00:00'
+  title_zh: 特朗普与内塔尼亚胡直指伊朗要害
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Xiaomi’s tracker doesn’t need a case to clip to your keys
+  why: Xiaomi has announced its first Bluetooth tracker, and while the Xiaomi Tag
+    has a more elongated design than the Apple AirTag, that lets you…
+  takeaway: Xiaomi has announced its first Bluetooth tracker, and while the Xiaomi
+    Tag has a more elongated design than the Apple AirTag, that lets you use it in
+    more places right out of the box. On one end of the tracker you'll find an integrated
+    metal loop that can be attached to a keyring or clipped […]
+  prompt: ''
+  url: https://www.theverge.com/tech/884567/xiaomi-tag-tracker-apple-find-my-google-hub-bluetooth
+  source: The Verge
+  published_utc: '2026-02-28T14:30:00+00:00'
+  title_zh: 小米追踪器无需保护套即可挂钥匙
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Xiaomi’s Leica Leitzphone mostly earns the name
+  why: Xiaomi and Leica's long-running phone partnership just got a little closer.
+  takeaway: Xiaomi and Leica's long-running phone partnership just got a little closer.
+    Alongside the new international release of its 17 Ultra flagship, Xiaomi has been
+    entrusted with manufacturing a separate version that is the first Leica Leitzphone
+    to release outside of Japan, following three Sharp-made models exclusive to the
+    country. In truth, the Leitzphone is a…
+  prompt: ''
+  url: https://www.theverge.com/gadgets/886131/xiaomi-leica-leitzphone-17-ultra-review
+  source: The Verge
+  published_utc: '2026-02-28T14:30:00+00:00'
+  title_zh: 小米徕卡Leitzphone基本名副其实
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Xiaomi 17 is a small(ish) phone with a big(ish) battery
+  why: Xiaomi has just given a global launch to two of its latest flagship phones,
+    the Xiaomi 17 and 17 Ultra, along with a Leica-branded Leitzpho…
+  takeaway: Xiaomi has just given a global launch to two of its latest flagship phones,
+    the Xiaomi 17 and 17 Ultra, along with a Leica-branded Leitzphone edition of the
+    Ultra. There's no sign, however, of the 17 Pro, which launched in China with an
+    additional display mounted next to the rear cameras. The 17 and 17 […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/886322/xiaomi-17-release-specs-price-mwc-ultra-leica
+  source: The Verge
+  published_utc: '2026-02-28T14:30:00+00:00'
+  title_zh: 小米17：小巧机身搭载大容量电池
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: '‘A temple of food’: London’s grande dame Simpson’s in the Strand rises again'
+  why: As the storied London dining room reopens on its bicentenary, restaurateur
+    Jeremy King honours its heritage while restoring a faded icon Si…
+  takeaway: As the storied London dining room reopens on its bicentenary, restaurateur
+    Jeremy King honours its heritage while restoring a faded icon Simpson’s in the
+    Strand was the sort of London institution where nothing changed without very good
+    reason. Founded in 1828 as a coffee and chess club, the restaurant introduced
+    wheeled silver trolleys so waiters could disp…
+  prompt: ''
+  url: https://www.theguardian.com/uk-news/2026/feb/28/a-temple-of-food-london-grand-dame-simpsons-in-the-strand-rises-again
+  source: The Guardian - Business
+  published_utc: '2026-02-28T14:00:14+00:00'
+  title_zh: 伦敦美食殿堂Simpson’s in the Strand重焕新生
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Square Mile strikes back: how the City of London is fighting disinformation
+    about crime'
+  why: Panic about antisocial behaviour and theft has broken through from social media
+    to boardrooms and diplomatic circles “Just visit London and…
+  takeaway: Panic about antisocial behaviour and theft has broken through from social
+    media to boardrooms and diplomatic circles “Just visit London and you’ll see that
+    it’s filled with crime,” the tech billionaire Elon Musk said as he was beamed
+    into Tommy Robinson’s far-right rally in the UK capital last September. The comments
+    by the SpaceX and Tesla boss, part of a…
+  prompt: ''
+  url: https://www.theguardian.com/business/2026/feb/28/city-of-london-fighting-disinformation-crime
+  source: The Guardian - Business
+  published_utc: '2026-02-28T14:00:13+00:00'
+  title_zh: 伦敦金融城反击：如何应对犯罪相关的不实信息
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

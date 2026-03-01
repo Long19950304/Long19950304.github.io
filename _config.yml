@@ -41,6 +41,12 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
+# Ensure RSS/Atom metadata stays meaningful even if `site.title` is set to "blank"
+# (al-folio uses this sentinel to render first/middle/last name in the header).
+feed:
+  title: "Zhilong George Zhao"
+  description: "Communication & Digital Media | Agentic Engineering (AE+X) | LLM evaluation and reliable AI-native workflows."
+
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------

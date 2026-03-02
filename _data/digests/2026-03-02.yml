@@ -1,0 +1,155 @@
+date: '2026-03-02'
+title: Daily Digest - 2026-03-02
+title_zh: 每日简报 - 2026-03-02
+note: 'Today: privacy threat models shift (cheap de-anonymization); STT benchmarks
+  move; AI coding provenance debates; and policy pressure around datacentres + youth
+  social media use.'
+note_zh: 今日关注：隐私威胁模型变化（低成本去匿名化）；语音转写基准更新；AI写代码的‘可追溯性’讨论；以及数据中心与未成年人社媒使用的政策压力。
+items:
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.7'
+  why: Open WebUI release (self-hosted UI for local/remote LLMs); skim changelog for
+    breaking changes.
+  takeaway: If you run Open WebUI, review the release notes and upgrade with a rollback
+    plan.
+  prompt: What is your standard upgrade checklist for LLM tooling (backup, config
+    diff, smoke tests)?
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-02T01:14:18+00:00'
+  title_zh: open-webui/open-webui：v0.8.7版本发布
+  why_zh: Open WebUI发布（本地/远程LLM的自托管UI）；浏览变更日志以了解重大变化
+  takeaway_zh: 若运行Open WebUI，请查阅发布说明并制定回滚计划进行升级。
+  prompt_zh: 你用于LLM工具升级的标准清单是什么（备份、配置差异、冒烟测试等）？
+- category: AI tools & model releases
+  title: AI can link fake online names to real identities in minutes for just a few
+    dollars
+  why: Pseudonymous identities can be de-anonymized cheaply with modern models (privacy
+    threat model shift).
+  takeaway: Treat pseudonyms as weak protection; linkage attacks are getting cheaper
+    and faster.
+  prompt: 'Which mitigations help most in practice: data minimization, rate limits,
+    or DP-style noise?'
+  url: https://the-decoder.com/ai-can-link-fake-online-names-to-real-identities-in-minutes-for-just-a-few-dollars/
+  source: The Decoder (AI)
+  published_utc: '2026-03-01T11:47:40+00:00'
+  title_zh: AI能在几分钟内以几美元的成本将虚假网名与真实身份关联
+  why_zh: 现代模型可以低成本地解除匿名身份（隐私威胁模型转变）
+  takeaway_zh: 将假名视为弱保护；关联攻击正变得更廉价且迅速。
+  prompt_zh: 在实际产品中，哪些缓解手段最有效：数据最小化、速率限制，还是差分隐私式噪声？
+- category: AI tools & model releases
+  title: Quoting claude.com/import-memory
+  why: A concrete example of how LLM “memory” features raise portability + transparency
+    requirements.
+  takeaway: 'Memory/export UX matters: users will ask what you stored, why, and how
+    to delete/export it.'
+  prompt: If you store user memory, what is your minimal, auditable export format?
+  url: https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-01T11:21:45+00:00'
+  title_zh: 引用claude.com/import-memory
+  why_zh: LLM“记忆”功能如何提升可移植性和透明度要求的具体示例
+  takeaway_zh: 内存/导出用户体验重要：用户会询问存储内容、原因及删除/导出方法。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Moltbook's alleged AI civilization is just a massive void of bloated bot
+    traffic
+  why: 'A cautionary tale: lots of agent traffic can still be ‘hollow’ without learning
+    or influence.'
+  takeaway: Measure interaction effects and learning, not just post volume.
+  prompt: What metrics would show real influence/learning between agents beyond engagement
+    counts?
+  url: https://the-decoder.com/moltbooks-alleged-ai-civilization-is-just-a-massive-void-of-bloated-bot-traffic/
+  source: The Decoder (AI)
+  published_utc: '2026-03-01T10:41:51+00:00'
+  title_zh: Moltbook所谓的AI文明只是大量膨胀的机器人流量
+  why_zh: 一个警示：缺乏学习或影响力时，大量代理流量也可能只是“空转”。
+  takeaway_zh: 应衡量交互效应与学习，而不仅是发帖量。
+  prompt_zh: 除了互动计数外，哪些指标能证明代理之间存在真实影响/学习？
+- category: AI frontier
+  title: ElevenLabs and Google dominate Artificial Analysis' updated speech-to-text
+    benchmark
+  why: Speech-to-text leaderboards move fast; track accuracy vs latency/cost tradeoffs,
+    not just rank.
+  takeaway: For product choices, evaluate STT on your domain audio; leaderboard gains
+    may not transfer.
+  prompt: If you ship STT, what is your eval set (accents, noise, jargon) and failure
+    budget?
+  url: https://the-decoder.com/elevenlabs-and-google-dominate-artificial-analysis-updated-speech-to-text-benchmark/
+  source: The Decoder (AI)
+  published_utc: '2026-03-01T14:50:11+00:00'
+  title_zh: ElevenLabs和Google主导了Artificial Analysis更新的语音转文本基准测试
+  why_zh: 语音转文本排行榜变化迅速；需关注准确性与延迟/成本的权衡，而不仅仅是排名
+  takeaway_zh: 在产品选择上，针对领域音频评估STT；排行榜上的优势可能无法迁移。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Timber – Ollama for classical ML models, 336x faster than Python'
+  why: 'An interesting packaging pattern: ‘Ollama-like’ deployment ergonomics for
+    classical ML models.'
+  takeaway: 'Standardized packaging can make non-LLM ML ops faster: versioning, reproducibility,
+    and rollbacks.'
+  prompt: 'Where do you feel the biggest deployment friction: packaging, batching,
+    or observability?'
+  url: https://github.com/kossisoroyce/timber
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T00:57:40+00:00'
+  title_zh: 展示HN：Timber——经典ML模型的Ollama，比Python快336倍
+  why_zh: 一个有趣的打包模式：为经典ML模型提供‘Ollama式’的部署体验
+  takeaway_zh: 标准化包装可加速非LLM机器学习操作：版本控制、可复现性及回滚。
+  prompt_zh: ''
+- category: Tech industry
+  title: If AI writes code, should the session be part of the commit?
+  why: 'A workflow question: when AI writes code, should prompts/agent logs be part
+    of the engineering record?'
+  takeaway: Provenance helps review/debugging, but raises noise + privacy/IP concerns.
+  prompt: 'What is the right default: store nothing, store summaries, or store full
+    traces (with redaction)?'
+  url: https://github.com/mandel-macaque/memento
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T00:27:52+00:00'
+  title_zh: 如果AI编写代码，会话是否应纳入提交记录？
+  why_zh: 工作流程问题：当AI编写代码时，提示/代理日志是否应纳入工程记录？
+  takeaway_zh: 来源追踪有助于审查与调试，但会增加噪音及隐私/知识产权顾虑。
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI reveals more details about its agreement with the Pentagon
+  why: More detail on OpenAI’s DoD work; useful for tracking how frontier labs frame
+    security + governance.
+  takeaway: Expect more scrutiny around government AI contracts and how labs communicate
+    safety controls.
+  prompt: What minimum transparency should apply to public-sector AI contracts (scope,
+    auditing, safeguards)?
+  url: https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/
+  source: TechCrunch
+  published_utc: '2026-03-01T16:30:10+00:00'
+  title_zh: OpenAI透露了与五角大楼协议的更多细节
+  why_zh: 更多关于OpenAI国防部工作的细节；有助于追踪前沿实验室如何构建安全与治理框架
+  takeaway_zh: 预计政府AI合同及实验室安全控制沟通将受到更多审查。
+  prompt_zh: ''
+- category: Business & economy
+  title: Datacentre developers face calls to disclose effect on UK’s net emissions
+  why: Datacentre build-out is colliding with emissions and grid constraints; disclosure
+    standards are a policy lever.
+  takeaway: Compute expansion is increasingly an energy-policy question; reporting
+    frameworks will matter.
+  prompt: 'What should ‘responsible compute’ reporting include: carbon, water, grid
+    load, or all of them?'
+  url: https://www.theguardian.com/technology/2026/mar/01/datacentre-developers-energy-greenhouse-gas-emissions
+  source: The Guardian - Business
+  published_utc: '2026-03-01T16:00:44+00:00'
+  title_zh: 数据中心开发商被要求披露其对英国净排放的影响
+  why_zh: 数据中心建设与排放及电网限制相冲突；披露标准成为政策杠杆
+  takeaway_zh: 计算扩展日益成为能源政策问题；报告框架将至关重要。
+  prompt_zh: ''
+- category: Business & economy
+  title: Consultation on social media ban for under-16s to begin
+  why: Age-based social media restrictions are moving toward formal policy consultation.
+  takeaway: Platforms may face stronger age verification and youth safety requirements.
+  prompt: What is a workable, privacy-preserving age verification design?
+  url: https://www.bbc.com/news/articles/cvg3vjkx9d7o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-01T22:35:18+00:00'
+  title_zh: 针对16岁以下青少年社交媒体禁令的咨询即将启动
+  why_zh: 基于年龄的社交媒体限制正走向正式政策咨询
+  takeaway_zh: 平台可能面临更严格的年龄验证和青少年安全要求
+  prompt_zh: ''

@@ -1875,6 +1875,7 @@ weeks:
   end: '2026-03-08'
   issues:
   - '2026-03-02'
+  - '2026-03-03'
   highlights_news:
   - date: '2026-03-02'
     url: https://www.bbc.com/news/articles/cvg3vjkx9d7o?at_medium=RSS&at_campaign=rss
@@ -1912,6 +1913,64 @@ weeks:
     category: Tech industry
     source: Hacker News (front page)
     published_utc: '2026-03-02T00:57:40+00:00'
+  - date: '2026-03-03'
+    url: https://www.ft.com/content/28608509-8378-465e-a58d-b92775ce7e5d
+    title: China’s high-rise hog farms go international
+    title_zh: 中国高层养猪场走向国际
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-03-03T02:15:25+00:00'
+  - date: '2026-03-03'
+    url: https://www.bbc.com/news/articles/c20lz7rkqv4o?at_medium=RSS&at_campaign=rss
+    title: '''I''ve given up on hospitality. The £15,000 pay isn''t worth the stress'''
+    title_zh: ‘我已放弃酒店业，1.5万英镑的薪水不值得承受压力’
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-03-03T00:10:14+00:00'
+  - date: '2026-03-03'
+    url: https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/
+    title: ChatGPT uninstalls surged by 295% after DoD deal
+    title_zh: ChatGPT卸载量在国防部交易后激增295%
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-03T00:03:37+00:00'
+  - date: '2026-03-03'
+    url: https://www.theguardian.com/business/nils-pratley-on-finance/2026/mar/02/gas-shock-oil-iran-war-qatari-lng-strait-of-hormuz
+    title: A gas shock – not an oil shock – from the Iran war looks more threatening
+      | Nils Pratley
+    title_zh: 伊朗战争导致的天然气冲击——而非石油冲击——威胁愈显严重 | 尼尔斯·普拉特利
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-03-02T20:15:23+00:00'
+  - date: '2026-03-03'
+    url: https://www.theverge.com/ai-artificial-intelligence/887885/anthropic-claude-memory-upgrades-importing
+    title: Anthropic upgrades Claude’s memory to attract AI switchers
+    title_zh: Anthropic升级Claude记忆功能以吸引AI用户转投
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-02T22:29:46+00:00'
+  - date: '2026-03-03'
+    url: https://arstechnica.com/tech-policy/2026/03/oops-south-korean-cops-lost-5m-in-seized-crypto-after-leaking-wallet-password/
+    title: Clueless cops post seized crypto wallet password. $5M quickly stolen.
+    title_zh: 糊涂警方公开扣押加密钱包密码，500万美元瞬间被盗
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-02T22:27:52+00:00'
+  - date: '2026-03-03'
+    url: https://www.wired.com/story/joe-gebbia-mystery-metallic-device/
+    title: What Is That Mysterious Metallic Device US Chief Design Officer Joe Gebbia
+      Is Using?
+    title_zh: 揭秘：美国首席设计官乔·格比亚手中神秘金属设备为何物？
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-03T01:06:01+00:00'
+  - date: '2026-03-03'
+    url: https://www.latent.space/p/reviews-dead
+    title: How to Kill the Code Review
+    title_zh: 代码审查制度的终结之道
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-02T22:13:56+00:00'
   highlights_ai:
   - date: '2026-03-02'
     url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7
@@ -1935,3 +1994,39 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-03-01T11:21:45+00:00'
+  - date: '2026-03-03'
+    url: https://openai.com/index/amazon-partnership
+    title: OpenAI and Amazon announce strategic partnership
+    title_zh: OpenAI与亚马逊宣布战略合作
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-02-27T05:30:00+00:00'
+  - date: '2026-03-03'
+    url: https://developer.nvidia.com/blog/building-telco-reasoning-models-for-autonomous-networks-with-nvidia-nemo/
+    title: Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo
+    title_zh: 利用NVIDIA NeMo构建电信级自主网络推理模型
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-03-01T07:00:00+00:00'
+  - date: '2026-03-03'
+    url: https://www.wired.com/story/uncanny-valley-podcast-pentagon-anthropic-agentic-mimetic-trump-state-of-the-union/
+    title: '‘Uncanny Valley’: Pentagon vs. ‘Woke’ Anthropic, Agentic vs. Mimetic,
+      and Trump vs. State of the Union'
+    title_zh: 《恐怖谷》：五角大楼VS'觉醒'AI实验室、代理VS模仿、特朗普VS国情咨文
+    category: AI tools & model releases
+    source: WIRED - AI
+    published_utc: '2026-02-26T23:20:36+00:00'
+  - date: '2026-03-03'
+    url: https://github.com/microsoft/semantic-kernel/releases/tag/python-1.40.0
+    title: 'microsoft/semantic-kernel: python-1.40.0'
+    title_zh: 'microsoft/semantic-kernel: python-1.40.0版本发布'
+    category: AI tools & model releases
+    source: GitHub Releases - microsoft/semantic-kernel
+    published_utc: '2026-03-02T23:57:27+00:00'
+  - date: '2026-03-03'
+    url: https://github.com/open-webui/open-webui/releases/tag/v0.8.8
+    title: 'open-webui/open-webui: v0.8.8'
+    title_zh: 'open-webui/open-webui: v0.8.8版本更新'
+    category: AI tools & model releases
+    source: GitHub Releases - open-webui/open-webui
+    published_utc: '2026-03-02T23:33:56+00:00'

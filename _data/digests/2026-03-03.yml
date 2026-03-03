@@ -1,0 +1,876 @@
+date: '2026-03-03'
+title: Daily Digest - 2026-03-03
+title_zh: 每日简报 - 2026-03-03
+note: 'Today: ChatGPT uninstalls surged by 295% after DoD deal · Anthropic upgrades
+  Claude’s memory to attract AI switchers · AI: OpenAI and Amazon announce strategic
+  partnership.'
+note_zh: 今日关注：ChatGPT卸载量在国防部交易后激增295%；Anthropic升级Claude记忆功能以吸引AI用户转投；AI：OpenAI与亚马逊宣布战略合作。
+items:
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: python-1.40.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/python-1.40.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-03-02T23:57:27+00:00'
+  title_zh: 'microsoft/semantic-kernel: python-1.40.0版本发布'
+  why_zh: 版本更新（详见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.8'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.8
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-02T23:33:56+00:00'
+  title_zh: 'open-webui/open-webui: v0.8.8版本更新'
+  why_zh: 版本更新（详见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.17'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.17
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-02T22:48:13+00:00'
+  title_zh: 'langchain-ai/langchain: langchain-core==1.2.17核心库'
+  why_zh: 版本更新（详见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-huggingface==1.2.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-huggingface%3D%3D1.2.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-02T18:44:57+00:00'
+  title_zh: 'langchain-ai/langchain: langchain-huggingface==1.2.1适配器'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GIF optimization tool using WebAssembly and Gifsicle
+  why: Agentic Engineering Patterns > I like to include animated GIF demos in my online
+    writing, often recorded using LICEcap .
+  takeaway: Agentic Engineering Patterns > I like to include animated GIF demos in
+    my online writing, often recorded using LICEcap . There's an example in the Interactive
+    explanations chapter. These GIFs can be pretty big. I've tried a few tools for
+    optimizing GIF file size and my favorite is Gifsicle by Eddie Kohler. It compresses
+    GIFs by identifying regions of frames…
+  prompt: ''
+  url: https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-02T16:35:10+00:00'
+  title_zh: 使用WebAssembly和Gifsicle的GIF优化工具
+  why_zh: 代理工程模式 > 我习惯在在线写作中加入GIF动画演示，通常用LICEcap录制
+  takeaway_zh: 代理工程模式 > 我喜欢在在线写作中加入动画GIF演示，通常使用LICEcap录制。在《交互解释》章节中有一个示例。这些GIF文件可能相当大。我尝试了几种优化GIF文件大小的工具，最喜欢的是Eddie
+    Kohler开发的Gifsicle。它通过识别帧区域来压缩GIF...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Config now supports 30 new resource types
+  why: AWS Config now supports 30 additional AWS resource types across key services
+    including Amazon Bedrock AgentCore and Amazon Cognito.
+  takeaway: AWS Config now supports 30 additional AWS resource types across key services
+    including Amazon Bedrock AgentCore and Amazon Cognito. This expansion provides
+    greater coverage over your AWS environment, enabling you to more effectively discover,
+    assess, audit, and remediate an even broader range of resources. With this launch,
+    if you have enabled recording for…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/aws-config-new-resource-types/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-02T16:00:00+00:00'
+  title_zh: AWS Config现支持30种新资源类型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic's new prompt forces ChatGPT to reveal everything it knows about
+    you
+  why: Anthropic is capitalizing on OpenAI's bad press with a new import function
+    for Claude.
+  takeaway: Anthropic is capitalizing on OpenAI's bad press with a new import function
+    for Claude. A single prompt exports your saved context from ChatGPT or other chatbots,
+    letting you transfer it straight to Claude's memory. The article Anthropic's new
+    prompt forces ChatGPT to reveal everything it knows about you appeared first on
+    The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/anthropics-new-prompt-forces-chatgpt-to-reveal-everything-it-knows-about-you/
+  source: The Decoder (AI)
+  published_utc: '2026-03-02T14:44:25+00:00'
+  title_zh: Anthropic新提示词迫使ChatGPT泄露用户全部信息
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.5'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.5
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-03-02T05:59:48+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.7'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-02T01:14:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.6
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-01T21:04:06+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AI can link fake online names to real identities in minutes for just a few
+    dollars
+  why: Researchers from ETH Zurich and Anthropic demonstrate that pseudonymous internet
+    users can be identified using commercially available AI mo…
+  takeaway: Researchers from ETH Zurich and Anthropic demonstrate that pseudonymous
+    internet users can be identified using commercially available AI models for just
+    a few dollars per person. The results call into question fundamental assumptions
+    about online anonymity. The article AI can link fake online names to real identities
+    in minutes for just a few dollars appear…
+  prompt: ''
+  url: https://the-decoder.com/ai-can-link-fake-online-names-to-real-identities-in-minutes-for-just-a-few-dollars/
+  source: The Decoder (AI)
+  published_utc: '2026-03-01T11:47:40+00:00'
+  title_zh: AI仅需几美元即可在数分钟内将虚假网络身份关联至真实个人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Quoting claude.com/import-memory
+  why: I'm moving to another service and need to export my data.
+  takeaway: 'I''m moving to another service and need to export my data. List every
+    memory you have stored about me, as well as any context you''ve learned about
+    me from past conversations. Output everything in a single code block so I can
+    easily copy it. Format each entry as: [date saved, if available] - memory content.
+    Make sure to cover all of the following — preserve m…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-01T11:21:45+00:00'
+  title_zh: 引用claude.com/import-memory
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Moltbook's alleged AI civilization is just a massive void of bloated bot
+    traffic
+  why: Over 2.6 million AI agents interact on Moltbook with zero human involvement.
+  takeaway: Over 2.6 million AI agents interact on Moltbook with zero human involvement.
+    They post, comment, and vote, but a new study shows they never learn from each
+    other. It's hollow interaction without mutual influence, shared memory, or social
+    structures, a new study finds. The article Moltbook's alleged AI civilization
+    is just a massive void of bloated bot traff…
+  prompt: ''
+  url: https://the-decoder.com/moltbooks-alleged-ai-civilization-is-just-a-massive-void-of-bloated-bot-traffic/
+  source: The Decoder (AI)
+  published_utc: '2026-03-01T10:41:51+00:00'
+  title_zh: Moltbook所谓的人工智能文明不过是泛滥的僵尸流量堆砌的虚空
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo
+  why: Autonomous networks are quickly becoming one of the top priorities in telecommunications.
+  takeaway: Autonomous networks are quickly becoming one of the top priorities in
+    telecommunications. According to the latest NVIDIA State of AI in Telecommunications...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/building-telco-reasoning-models-for-autonomous-networks-with-nvidia-nemo/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-01T07:00:00+00:00'
+  title_zh: 利用NVIDIA NeMo构建电信级自主网络推理模型
+  why_zh: 自治网络正迅速成为电信行业最优先事项之一
+  takeaway_zh: 自主网络正迅速成为电信领域的首要任务之一。根据NVIDIA最新发布的《电信行业AI现状报告》...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 5 New Digital Twin Products Developers Can Use to Build 6G Networks
+  why: 'To make 6G a reality, the telecom industry must overcome a fundamental challenge:
+    how to design, train, and validate AI-native networks tha…'
+  takeaway: 'To make 6G a reality, the telecom industry must overcome a fundamental
+    challenge: how to design, train, and validate AI-native networks that are too
+    complex to...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/5-new-digital-twin-products-developers-can-use-to-build-6g-networks/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-01T07:00:00+00:00'
+  title_zh: 开发者可用的5款新型数字孪生产品助力6G网络建设
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Even frontier LLMs from GPT-5 onward lose up to 33% accuracy when you chat
+    too long
+  why: Even with newer models like GPT-5.2 and Claude 4.6, AI chatbots still give
+    worse answers the longer a conversation goes on.
+  takeaway: Even with newer models like GPT-5.2 and Claude 4.6, AI chatbots still
+    give worse answers the longer a conversation goes on. The article Even frontier
+    LLMs from GPT-5 onward lose up to 33% accuracy when you chat too long appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/even-frontier-llms-from-gpt-5-onward-lose-up-to-33-accuracy-when-you-chat-too-long/
+  source: The Decoder (AI)
+  published_utc: '2026-02-28T17:45:42+00:00'
+  title_zh: 即便是GPT-5等前沿大模型，长时间对话后准确率最高下降33%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12-stable.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-28T05:16:37+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.6.rc.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-28T02:56:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: An AI agent coding skeptic tries AI agent coding, in excessive detail
+  why: An AI agent coding skeptic tries AI agent coding, in excessive detail Another
+    in the genre of "OK, coding agents got good in November" post…
+  takeaway: An AI agent coding skeptic tries AI agent coding, in excessive detail
+    Another in the genre of "OK, coding agents got good in November" posts, this one
+    is by Max Woolf and is very much worth your time. He describes a sequence of coding
+    agent projects, each more ambitious than the last - starting with simple YouTube
+    metadata scrapers and eventually evolving t…
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-27T20:43:41+00:00'
+  title_zh: 一位AI代理编码怀疑论者详述亲历AI代理开发全过程
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock batch inference now supports the Converse API format
+  why: Amazon Bedrock batch inference now supports the Converse API as a model invocation
+    type, enabling you to use a consistent, model-agnostic i…
+  takeaway: Amazon Bedrock batch inference now supports the Converse API as a model
+    invocation type, enabling you to use a consistent, model-agnostic input format
+    for your batch workloads. Previously, batch inference required model-specific
+    request formats using the InvokeModel API. Now, when creating a batch inference
+    job, you can select Converse as the model invocati…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-batch-inference-supports-converse-api-format/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-02-27T19:00:00+00:00'
+  title_zh: Amazon Bedrock批量推理现支持Converse API格式
+  why_zh: Amazon Bedrock批量推理现支持Converse API作为模型调用类型，可让您使用一致的…
+  takeaway_zh: Amazon Bedrock的批量推理现在支持Converse API作为模型调用类型，使您能够为批量工作负载使用一致的、模型无关的输入格式。此前，批量推理需要使用InvokeModel
+    API的模型特定请求格式。现在，在创建批量推理任务时，您可以选择Converse作为模型调用...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14.rc.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14.rc.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-27T18:19:47+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Free Claude Max for (large project) open source maintainers
+  why: Free Claude Max for (large project) open source maintainers Anthropic are now
+    offering their $200/month Claude Max 20x plan for free to ope…
+  takeaway: 'Free Claude Max for (large project) open source maintainers Anthropic
+    are now offering their $200/month Claude Max 20x plan for free to open source
+    maintainers... for six months... and you have to meet the following criteria:
+    Maintainers: You''re a primary maintainer or core team member of a public repo
+    with 5,000+ GitHub stars or 1M+ monthly NPM downloads.…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-02-27T18:08:22+00:00'
+  title_zh: 面向（大型项目）开源维护者的Claude Max免费计划
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Develop Native Multimodal Agents with Qwen3.5 VLM Using NVIDIA GPU-Accelerated
+    Endpoints
+  why: Alibaba has introduced the new open source Qwen3.5 series built for native
+    multimodal agents.
+  takeaway: Alibaba has introduced the new open source Qwen3.5 series built for native
+    multimodal agents. The first model in this series is a ~400B parameter native...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-27T17:30:00+00:00'
+  title_zh: 基于Qwen3.5多模态模型开发原生智能体——NVIDIA GPU加速端点方案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Maximizing GPU Utilization with NVIDIA Run:ai and NVIDIA NIM
+  why: Organizations deploying LLMs are challenged by inference workloads with different
+    resource requirements.
+  takeaway: Organizations deploying LLMs are challenged by inference workloads with
+    different resource requirements. A small embedding model might use only a few
+    gigabytes...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/maximizing-gpu-utilization-with-nvidia-runai-and-nvidia-nim/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-02-27T17:00:00+00:00'
+  title_zh: 通过NVIDIA Run:ai与NIM实现GPU利用率最大化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm_presidio-dev-v1.81.16'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm_presidio-dev-v1.81.16
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-27T13:09:30+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI and Amazon announce strategic partnership
+  why: OpenAI and Amazon announce a strategic partnership bringing OpenAI’s Frontier
+    platform to AWS, expanding AI infrastructure, custom models,…
+  takeaway: OpenAI and Amazon announce a strategic partnership bringing OpenAI’s Frontier
+    platform to AWS, expanding AI infrastructure, custom models, and enterprise AI
+    agents.
+  prompt: ''
+  url: https://openai.com/index/amazon-partnership
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-27T05:30:00+00:00'
+  title_zh: OpenAI与亚马逊宣布战略合作
+  why_zh: OpenAI与亚马逊宣布战略合作，将OpenAI前沿平台引入AWS，扩展AI基础设施和定制模型…
+  takeaway_zh: OpenAI与亚马逊宣布战略合作，将OpenAI的Frontier平台引入AWS，扩展AI基础设施、定制模型及企业AI代理
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing the Stateful Runtime Environment for Agents in Amazon Bedrock
+  why: Stateful Runtime for Agents in Amazon Bedrock brings persistent orchestration,
+    memory, and secure execution to multi-step AI workflows powe…
+  takeaway: Stateful Runtime for Agents in Amazon Bedrock brings persistent orchestration,
+    memory, and secure execution to multi-step AI workflows powered by OpenAI.
+  prompt: ''
+  url: https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-02-27T05:30:00+00:00'
+  title_zh: Amazon Bedrock推出面向智能体的有状态运行时环境
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.4
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-27T03:47:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.3
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-02-27T02:21:12+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '‘Uncanny Valley’: Pentagon vs. ‘Woke’ Anthropic, Agentic vs. Mimetic, and
+    Trump vs. State of the Union'
+  why: Our hosts unpack the news of the week, starting with the ongoing feud between
+    Anthropic and the Pentagon.
+  takeaway: 'Our hosts unpack the news of the week, starting with the ongoing feud
+    between Anthropic and the Pentagon. Plus: All you need to know about TAT-8 and
+    undersea cables.'
+  prompt: ''
+  url: https://www.wired.com/story/uncanny-valley-podcast-pentagon-anthropic-agentic-mimetic-trump-state-of-the-union/
+  source: WIRED - AI
+  published_utc: '2026-02-26T23:20:36+00:00'
+  title_zh: 《恐怖谷》：五角大楼VS'觉醒'AI实验室、代理VS模仿、特朗普VS国情咨文
+  why_zh: 主持人梳理本周要闻，首谈Anthropic与五角大楼持续纠纷
+  takeaway_zh: 主持人解读本周新闻，首先是Anthropic与五角大楼的持续争端。此外，关于TAT-8和海底电缆的一切你需要了解的内容。
+  prompt_zh: ''
+- category: Tech industry
+  title: Cursor has reportedly surpassed $2B in annualized revenue
+  why: The four-year-old startup saw its revenue run rate double over the past three
+    months, according to one Bloomberg source.
+  takeaway: The four-year-old startup saw its revenue run rate double over the past
+    three months, according to one Bloomberg source.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/
+  source: TechCrunch
+  published_utc: '2026-03-03T01:53:59+00:00'
+  title_zh: Cursor年化收入据称已突破20亿美元
+  why_zh: 据彭博社消息人士透露，这家成立四年的初创公司过去三个月的年化营收增长率实现了翻倍。
+  takeaway_zh: 据彭博社消息人士透露，这家成立四年的初创公司过去三个月的年化营收增长率实现了翻倍。
+  prompt_zh: ''
+- category: Tech industry
+  title: Zuckerberg's internal emails rendered as Facebook Messenger
+  why: 'Article URL: https://zuckmail.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=47226816
+    Points: 52 # Comments: 8'
+  takeaway: 'Article URL: https://zuckmail.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=47226816
+    Points: 52 # Comments: 8'
+  prompt: ''
+  url: https://zuckmail.vercel.app/
+  source: Hacker News (front page)
+  published_utc: '2026-03-03T01:38:35+00:00'
+  title_zh: 扎克伯格内部邮件被转换成Facebook Messenger样式
+  why_zh: 文章URL：https://zuckmail.vercel.app/ 评论URL：https://news.ycombinator.com/item?id=47226816
+    积分：52 评论数：8
+  takeaway_zh: 文章URL：https://zuckmail.vercel.app/ 评论URL：https://news.ycombinator.com/item?id=47226816
+    积分：52 评论数：8
+  prompt_zh: ''
+- category: Tech industry
+  title: India’s Pronto formalizes house help as its valuation jumps 8x in under a
+    year
+  why: Pronto handles 18,000 daily bookings and plans rapid expansion as it races
+    rivals to digitize India's largely offline home services market.
+  takeaway: Pronto handles 18,000 daily bookings and plans rapid expansion as it races
+    rivals to digitize India's largely offline home services market.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/indias-pronto-formalizes-house-help-as-its-valuation-jumps-8x-in-under-a-year/
+  source: TechCrunch
+  published_utc: '2026-03-03T01:15:00+00:00'
+  title_zh: 印度Pronto规范家政服务行业，估值一年飙升8倍
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: PHP 8 disable_functions bypass PoC'
+  why: 'Article URL: https://github.com/m0x41nos/TimeAfterFree Comments URL: https://news.ycombinator.com/item?id=47226605
+    Points: 24 # Comments: 8'
+  takeaway: 'Article URL: https://github.com/m0x41nos/TimeAfterFree Comments URL:
+    https://news.ycombinator.com/item?id=47226605 Points: 24 # Comments: 8'
+  prompt: ''
+  url: https://github.com/m0x41nos/TimeAfterFree
+  source: Hacker News (front page)
+  published_utc: '2026-03-03T01:12:14+00:00'
+  title_zh: HN展示：PHP 8禁用函数绕过验证概念代码
+  why_zh: 文章链接：https://github.com/m0x41nos/TimeAfterFree 评论链接：https://news.ycombinator.com/item?id=47226605
+    点赞数：24 评论数：8
+  takeaway_zh: 文章链接：https://github.com/m0x41nos/TimeAfterFree 评论链接：https://news.ycombinator.com/item?id=47226605
+    点赞数：24 评论数：8
+  prompt_zh: ''
+- category: AI frontier
+  title: What Is That Mysterious Metallic Device US Chief Design Officer Joe Gebbia
+    Is Using?
+  why: Gebbia was reportedly spotted at a San Francisco coffee shop using an unidentified
+    pair of earbuds with a circular disc that looks similar…
+  takeaway: Gebbia was reportedly spotted at a San Francisco coffee shop using an
+    unidentified pair of earbuds with a circular disc that looks similar to the device
+    seen in a recent OpenAI hoax ad.
+  prompt: ''
+  url: https://www.wired.com/story/joe-gebbia-mystery-metallic-device/
+  source: WIRED - AI
+  published_utc: '2026-03-03T01:06:01+00:00'
+  title_zh: 揭秘：美国首席设计官乔·格比亚手中神秘金属设备为何物？
+  why_zh: 有人目睹Gebbia在旧金山咖啡馆使用外观类似…的圆形碟片状不明品牌耳机
+  takeaway_zh: 有人目睹Gebbia在旧金山咖啡馆使用外观与近期OpenAI恶搞广告中设备相似的圆形碟片状不明品牌耳机
+  prompt_zh: ''
+- category: AI frontier
+  title: This AI Agent Is Ready to Serve, Mid-Phone Call
+  why: Deutsche Telekom, the German cell provider—which holds a majority stake in
+    T-Mobile—is partnering with ElevenLabs to enable an AI assistant…
+  takeaway: Deutsche Telekom, the German cell provider—which holds a majority stake
+    in T-Mobile—is partnering with ElevenLabs to enable an AI assistant on all of
+    its network’s calls in Germany. No app required.
+  prompt: ''
+  url: https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/
+  source: WIRED - AI
+  published_utc: '2026-03-03T00:25:44+00:00'
+  title_zh: 这款AI助手能在电话中途即时响应服务需求
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ChatGPT uninstalls surged by 295% after DoD deal
+  why: Many consumers ditched ChatGPT's app after news of its DoD deal went live,
+    while Claude's downloads grew.
+  takeaway: Many consumers ditched ChatGPT's app after news of its DoD deal went live,
+    while Claude's downloads grew.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/
+  source: TechCrunch
+  published_utc: '2026-03-03T00:03:37+00:00'
+  title_zh: ChatGPT卸载量在国防部交易后激增295%
+  why_zh: 国防部合作消息曝光后，许多用户弃用ChatGPT应用，而Claude下载量增长
+  takeaway_zh: 国防部合作消息曝光后，许多用户弃用ChatGPT应用，而Claude下载量增长
+  prompt_zh: ''
+- category: Tech industry
+  title: How to Build Your Own Quantum Computer
+  why: 'Article URL: https://physics.aps.org/articles/v19/24 Comments URL: https://news.ycombinator.com/item?id=47225726
+    Points: 32 # Comments: 10'
+  takeaway: 'Article URL: https://physics.aps.org/articles/v19/24 Comments URL: https://news.ycombinator.com/item?id=47225726
+    Points: 32 # Comments: 10'
+  prompt: ''
+  url: https://physics.aps.org/articles/v19/24
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T23:22:50+00:00'
+  title_zh: 如何自行搭建量子计算机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Stripe wants to turn your AI costs into a profit center
+  why: Stripe released a preview intended to allow AI companies to easily track, pass
+    through, and make a profit on underlying AI model fees.
+  takeaway: Stripe released a preview intended to allow AI companies to easily track,
+    pass through, and make a profit on underlying AI model fees.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/stripe-wants-to-turn-your-ai-costs-into-a-profit-center/
+  source: TechCrunch
+  published_utc: '2026-03-02T23:18:27+00:00'
+  title_zh: Stripe计划将AI成本转化为盈利中心
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Closure of the Weatheradio Service in Canada
+  why: 'Article URL: https://www.rac.ca/rac-responds-to-the-closure-of-the-weatherradio-service-in-canada/
+    Comments URL: https://news.ycombinator.c…'
+  takeaway: 'Article URL: https://www.rac.ca/rac-responds-to-the-closure-of-the-weatherradio-service-in-canada/
+    Comments URL: https://news.ycombinator.com/item?id=47225505 Points: 74 # Comments:
+    32'
+  prompt: ''
+  url: https://www.rac.ca/rac-responds-to-the-closure-of-the-weatherradio-service-in-canada/
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T23:03:59+00:00'
+  title_zh: 加拿大Weather无线电服务关闭通知
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Geopolitical drama reportedly stalls IPO of SoftBank-backed PayPay
+  why: The Japan-based company reportedly aimed for a public valuation of at least
+    ¥1.5 trillion ($10 billion).
+  takeaway: The Japan-based company reportedly aimed for a public valuation of at
+    least ¥1.5 trillion ($10 billion).
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/geopolitical-drama-reportedly-stalls-ipo-of-softbank-backed-paypay/
+  source: TechCrunch
+  published_utc: '2026-03-02T23:01:57+00:00'
+  title_zh: 地缘政治风波据传导致软银投资的PayPay推迟上市
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: No one has a good plan for how AI companies should work with the government
+  why: As OpenAI transitions from a wildly successful consumer startup into a piece
+    of national security infrastructure, the company seems unequip…
+  takeaway: As OpenAI transitions from a wildly successful consumer startup into a
+    piece of national security infrastructure, the company seems unequipped to manage
+    its new responsibilities.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/openai-anthropic-department-of-defense-war-hegseth-ai-companies-work-with-us-government/
+  source: TechCrunch
+  published_utc: '2026-03-02T22:59:10+00:00'
+  title_zh: AI公司与政府如何合作？目前尚无良策
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Seed of Might Color Correction Process (2023) [pdf]
+  why: 'Article URL: https://andrewvanner.github.io/som/SoM_CC_Process_Day.pdf Comments
+    URL: https://news.ycombinator.com/item?id=47225318 Points:…'
+  takeaway: 'Article URL: https://andrewvanner.github.io/som/SoM_CC_Process_Day.pdf
+    Comments URL: https://news.ycombinator.com/item?id=47225318 Points: 73 # Comments:
+    15'
+  prompt: ''
+  url: https://andrewvanner.github.io/som/SoM_CC_Process_Day.pdf
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T22:49:47+00:00'
+  title_zh: 《力量之种》色彩校正工艺流程（2023）[PDF]
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A new app alerts you if someone nearby is wearing smart glasses
+  why: A hobbyist developer's new app, which can detect nearby smart glasses, comes
+    amid resistance to always-on recording and listening devices t…
+  takeaway: A hobbyist developer's new app, which can detect nearby smart glasses,
+    comes amid resistance to always-on recording and listening devices that invade
+    people's privacy.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/nearby-glasses-new-app-alerts-you-wearing-smart-glasses-surveillance-meta-snap-bluetooth/
+  source: TechCrunch
+  published_utc: '2026-03-02T22:40:00+00:00'
+  title_zh: 新应用程序可预警周边是否有人佩戴智能眼镜
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The workers behind Meta’s smart glasses can see everything
+  why: 'Article URL: https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything
+    Comments URL: https…'
+  takeaway: 'Article URL: https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything
+    Comments URL: https://news.ycombinator.com/item?id=47225130 Points: 588 # Comments:
+    332'
+  prompt: ''
+  url: https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T22:32:35+00:00'
+  title_zh: Meta智能眼镜背后的工作人员能看见一切
+  why_zh: 文章URL：https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything
+    评论URL：https…
+  takeaway_zh: Meta的AI智能眼镜引发数据隐私担忧，员工称‘我们能看到一切’
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic upgrades Claude’s memory to attract AI switchers
+  why: Anthropic is making it easier to switch to its Claude AI from other chatbots
+    with an update that brings Claude's memory feature to users on…
+  takeaway: Anthropic is making it easier to switch to its Claude AI from other chatbots
+    with an update that brings Claude's memory feature to users on the free plan,
+    along with a new prompt and dedicated tool for importing data from other chatbots.
+    These upgrades could allow users who have been using rivals like OpenAI's ChatGPT
+    […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/887885/anthropic-claude-memory-upgrades-importing
+  source: The Verge
+  published_utc: '2026-03-02T22:29:46+00:00'
+  title_zh: Anthropic升级Claude记忆功能以吸引AI用户转投
+  why_zh: Anthropic通过更新简化从其他聊天机器人切换至其Claude AI流程，为用户带来记忆功能…
+  takeaway_zh: Anthropic通过更新简化从其他聊天机器人切换至其Claude AI流程，免费计划用户现可使用记忆功能、新提示词及专用数据导入工具。这些升级或吸引OpenAI的ChatGPT等竞争对手用户…
+  prompt_zh: ''
+- category: Tech industry
+  title: Clueless cops post seized crypto wallet password. $5M quickly stolen.
+  why: South Korean police deeply apologized for preventable loss of seized funds.
+  takeaway: South Korean police deeply apologized for preventable loss of seized funds.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/03/oops-south-korean-cops-lost-5m-in-seized-crypto-after-leaking-wallet-password/
+  source: Ars Technica
+  published_utc: '2026-03-02T22:27:52+00:00'
+  title_zh: 糊涂警方公开扣押加密钱包密码，500万美元瞬间被盗
+  why_zh: 韩国警方就本可避免的扣押资金损失深表歉意
+  takeaway_zh: 韩国警方就本可避免的扣押资金损失深表歉意
+  prompt_zh: ''
+- category: Tech industry
+  title: Instagram tracked growing usage while targeting teens, lawyers argue
+  why: The company said usage grew from 40 minutes per day in 2023 to 46 minutes in
+    2026.
+  takeaway: The company said usage grew from 40 minutes per day in 2023 to 46 minutes
+    in 2026. Other documents referenced teens as being a top priority for the app
+    before asking existing users for birthdays.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/02/instagram-tracked-growing-usage-while-targeting-teens-lawyers-argue/
+  source: TechCrunch
+  published_utc: '2026-03-02T22:23:48+00:00'
+  title_zh: 律师指控：Instagram在瞄准青少年群体时追踪其使用增长
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: How to Kill the Code Review
+  why: Human-written code died in 2025.
+  takeaway: Human-written code died in 2025. Code reviews will die in 2026.
+  prompt: ''
+  url: https://www.latent.space/p/reviews-dead
+  source: Latent Space (AI newsletter)
+  published_utc: '2026-03-02T22:13:56+00:00'
+  title_zh: 代码审查制度的终结之道
+  why_zh: 人类编写代码于2025年消亡
+  takeaway_zh: 人类编写代码于2025年消亡。代码审查将于2026年消亡
+  prompt_zh: ''
+- category: Tech industry
+  title: The 185-Microsecond Type Hint
+  why: 'Article URL: https://blog.sturdystatistics.com/posts/type_hint/ Comments URL:
+    https://news.ycombinator.com/item?id=47224832 Points: 46 # Co…'
+  takeaway: 'Article URL: https://blog.sturdystatistics.com/posts/type_hint/ Comments
+    URL: https://news.ycombinator.com/item?id=47224832 Points: 46 # Comments: 2'
+  prompt: ''
+  url: https://blog.sturdystatistics.com/posts/type_hint/
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T22:04:56+00:00'
+  title_zh: 185微秒类型提示优化方案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple’s cheapest AirPods have hit $89
+  why: It’s a good day for Apple fans on a budget.
+  takeaway: It’s a good day for Apple fans on a budget. Not only did the company introduce
+    a new budget phone, its entry-level AirPods 4 are also on sale. Right now, you
+    can snag a pair of Apple’s AirPods 4 starting at just $89 ($30 off) at Walmart.
+    The model with active noise-cancellation are also down […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/887839/apple-airpods-4-active-noise-cancellation-deal-sale
+  source: The Verge
+  published_utc: '2026-03-02T22:03:09+00:00'
+  title_zh: 苹果最廉价AirPods降价至89美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I built a sub-500ms latency voice agent from scratch'
+  why: I built a voice agent from scratch that averages ~400ms end-to-end latency
+    (phone stop → first syllable).
+  takeaway: 'I built a voice agent from scratch that averages ~400ms end-to-end latency
+    (phone stop → first syllable). That’s with full STT → LLM → TTS in the loop, clean
+    barge-ins, and no precomputed responses. What moved the needle: Voice is a turn-taking
+    problem, not a transcription problem. VAD alone fails; you need semantic end-of-turn
+    detection. The system reduces…'
+  prompt: ''
+  url: https://www.ntik.me/posts/voice-agent
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T21:23:40+00:00'
+  title_zh: HN展示：从零打造低于500毫秒延迟的语音助手
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Welcome (back) to Macintosh
+  why: 'Article URL: https://take.surf/2026/03/01/welcome-back-to-macintosh Comments
+    URL: https://news.ycombinator.com/item?id=47224118 Points: 259…'
+  takeaway: 'Article URL: https://take.surf/2026/03/01/welcome-back-to-macintosh Comments
+    URL: https://news.ycombinator.com/item?id=47224118 Points: 259 # Comments: 166'
+  prompt: ''
+  url: https://take.surf/2026/03/01/welcome-back-to-macintosh
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T21:09:47+00:00'
+  title_zh: 欢迎（重回）麦金塔时代
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Pianoterm – Run shell commands from your Piano. A Linux CLI tool'
+  why: A little weekend project, made so I can pause/play/rewind directly on the piano,
+    when learning a song by ear.
+  takeaway: 'A little weekend project, made so I can pause/play/rewind directly on
+    the piano, when learning a song by ear. Comments URL: https://news.ycombinator.com/item?id=47223863
+    Points: 41 # Comments: 15'
+  prompt: ''
+  url: https://github.com/vustagc/pianoterm
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T20:50:03+00:00'
+  title_zh: HN展示：Pianoterm——用钢琴键盘执行Linux命令行工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How the new iPhone 17E stacks up against Apple’s pricier phones
+  why: The iPhone 17 lineup now has a “budget” option.
+  takeaway: The iPhone 17 lineup now has a “budget” option. Announced this week, the
+    iPhone 17E will hit stores on Wednesday, March 11th, starting at $599, with preorders
+    opening on March 4th. The 6.1-inch phone joins the rest of Apple’s iPhone 17 lineup,
+    which includes the iPhone 17 ($799), the more powerful iPhone 17 Pro ($1,099),
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/887570/iphone-17e-vs-17-pro-max-air-spec-comparison-price-features
+  source: The Verge
+  published_utc: '2026-03-02T20:41:50+00:00'
+  title_zh: iPhone 17E与苹果高端机型对比测评
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: British Columbia to end time changes, adopt year-round daylight time
+  why: 'Article URL: https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657
+    Comments URL: https://news.yco…'
+  takeaway: 'Article URL: https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657
+    Comments URL: https://news.ycombinator.com/item?id=47223620 Points: 449 # Comments:
+    259'
+  prompt: ''
+  url: https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T20:30:52+00:00'
+  title_zh: 加拿大BC省将取消季节性调时，永久采用夏令时
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple might use Google servers to store data for its upgraded AI Siri
+  why: Apple has asked Google to look into "setting up servers" for a new version
+    of Siri that's Gemini-powered and meets Apple's privacy requirem…
+  takeaway: Apple has asked Google to look into "setting up servers" for a new version
+    of Siri that's Gemini-powered and meets Apple's privacy requirements, The Information
+    reports. Apple had already announced in January that Google's Gemini AI models
+    would help power the upgraded version of Siri it delayed last year, but The Information's
+    report indicates Apple […]
+  prompt: ''
+  url: https://www.theverge.com/tech/887802/apple-ai-siri-google-servers
+  source: The Verge
+  published_utc: '2026-03-02T20:22:33+00:00'
+  title_zh: 苹果或使用谷歌服务器存储升级版AI助手Siri数据
+  why_zh: 据报道，苹果公司已要求谷歌研究为搭载Gemini技术的新版Siri“搭建服务器”，并使其满足苹果的隐私要求……
+  takeaway_zh: 《The Information》报道称，苹果已要求谷歌研究为Gemini驱动的新版Siri“搭建服务器”，并满足苹果的隐私要求。苹果早在1月就宣布将采用谷歌Gemini
+    AI模型强化去年推迟发布的升级版Siri，但《The Information》的报道指出苹果[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Mastodon now has a button for sharing content from other websites
+  why: Sharing content to Mastodon is getting easier with the addition of a universal
+    "Share to Mastodon" button for the decentralized social medi…
+  takeaway: Sharing content to Mastodon is getting easier with the addition of a universal
+    "Share to Mastodon" button for the decentralized social media platform. Announced
+    on Monday, the widget allows users to share content on any Mastodon server by
+    connecting your Mastodon account and redirecting you to the server that account
+    is on. The blog post […]
+  prompt: ''
+  url: https://www.theverge.com/tech/887791/mastodon-official-share-button-widget
+  source: The Verge
+  published_utc: '2026-03-02T20:18:58+00:00'
+  title_zh: Mastodon新增跨网站内容分享按钮
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: uBlock filter list to blur all Instagram Reels'
+  why: A filter list for uBO that blurs all video and non-follower content from Instagram.
+  takeaway: 'A filter list for uBO that blurs all video and non-follower content from
+    Instagram. Works on mobile with uBO Lite. related: https://news.ycombinator.com/item?id=47016443
+    Comments URL: https://news.ycombinator.com/item?id=47223147 Points: 104 # Comments:
+    28'
+  prompt: ''
+  url: https://gist.github.com/shraiwi/009c652da6ce8c99a6e1e0c86fe66886
+  source: Hacker News (front page)
+  published_utc: '2026-03-02T19:50:32+00:00'
+  title_zh: HN展示：模糊Instagram Reels的uBlock过滤规则
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

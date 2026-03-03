@@ -1184,16 +1184,16 @@ def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict
     for it in items:
         cat = (it.get("category", "") or "Misc").strip()
         groups.setdefault(cat, []).append(it)
-    # Preserve a sensible, stable ordering: CSS first, then AI, then others.
+    # Preserve a sensible, stable ordering for *social posts*: AI/CSS first, then other beats.
     order = [
-        "Business & economy",
-        "Tech industry",
-        "Security",
         "CSS / AI & society",
         "AI frontier",
         "AI tools & model releases",
+        "Security",
+        "Tech industry",
         "Digital health / health comm",
         "Education / learning sciences / edtech",
+        "Business & economy",
         "Misc",
     ]
     ordered: list[tuple[str, list[dict[str, Any]]]] = []
@@ -1949,8 +1949,19 @@ def _format_linkedin_post(
             if not cat_items:
                 continue
             lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
+            # Keep LinkedIn scannable: cap per category so "AI tools/model releases" doesn't
+            # consume the entire post, while the full list remains on the site.
+            if cat == "AI tools & model releases":
+                max_in_cat = 3
+            elif cat == "Business & economy":
+                max_in_cat = 2
+            else:
+                max_in_cat = 3
+            in_cat = 0
             for it in cat_items:
                 if rendered >= max_items_total:
+                    break
+                if in_cat >= max_in_cat:
                     break
                 t_en = (it.get("title") or "").strip()
                 t_zh = (it.get("title_zh") or "").strip()
@@ -1969,6 +1980,7 @@ def _format_linkedin_post(
                 lines.append(head)
                 lines.append(f"  {u}")
                 rendered += 1
+                in_cat += 1
             lines.append("")
             if rendered >= max_items_total:
                 break

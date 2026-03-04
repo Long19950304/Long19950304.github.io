@@ -1876,6 +1876,7 @@ weeks:
   issues:
   - '2026-03-02'
   - '2026-03-03'
+  - '2026-03-04'
   highlights_news:
   - date: '2026-03-02'
     url: https://www.bbc.com/news/articles/cvg3vjkx9d7o?at_medium=RSS&at_campaign=rss
@@ -1971,6 +1972,51 @@ weeks:
     category: AI frontier
     source: Latent Space (AI newsletter)
     published_utc: '2026-03-02T22:13:56+00:00'
+  - date: '2026-03-04'
+    url: https://www.ft.com/content/e5522178-69b3-42d4-bab0-89b54b8d7bfd
+    title: UK lifts Russia-linked sanctions on British accountant
+    title_zh: 英国解除对与俄罗斯有关的英国会计师的制裁
+    category: Business & economy
+    source: Financial Times - World
+    published_utc: '2026-03-03T19:18:44+00:00'
+  - date: '2026-03-04'
+    url: https://www.bbc.com/news/articles/cly2m5e5ke4o?at_medium=RSS&at_campaign=rss
+    title: TikTok won't protect DMs with controversial privacy tech, saying it would
+      put users at risk
+    title_zh: TikTok表示不会使用有争议的隐私技术保护私信，称这将使用户面临风险
+    category: Tech industry
+    source: BBC News - Technology
+    published_utc: '2026-03-04T00:34:49+00:00'
+  - date: '2026-03-04'
+    url: https://arstechnica.com/tech-policy/2026/03/trump-fcc-chair-paramount-warner-bros-merger-likely-to-get-quick-approval/
+    title: FCC chair calls Paramount/WBD merger "a lot cleaner" than defunct Netflix
+      deal
+    title_zh: FCC主席称派拉蒙/WBD合并比流产的Netflix交易“干净得多”
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-03T22:05:36+00:00'
+  - date: '2026-03-04'
+    url: https://techcrunch.com/2026/03/03/a-suite-of-government-hacking-tools-targeting-iphones-is-now-being-used-by-cybercriminals/
+    title: A suite of government hacking tools targeting iPhones is now being used
+      by cybercriminals
+    title_zh: 一套针对iPhone的政府黑客工具现被网络犯罪分子使用
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-03T23:27:31+00:00'
+  - date: '2026-03-04'
+    url: https://www.theguardian.com/media/2026/mar/03/banijay-group-to-form-38bn-television-super-indie-with-the-traitors-producers
+    title: Banijay Group to form £3.8bn television super-indie with The Traitors producers
+    title_zh: Banijay集团将与《叛徒》制片人组建38亿英镑的电视超级独立公司
+    category: Business & economy
+    source: The Guardian - Business
+    published_utc: '2026-03-03T19:52:44+00:00'
+  - date: '2026-03-04'
+    url: https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/
+    title: ChatGPT’s new GPT-5.3 Instant model will stop telling you to calm down
+    title_zh: ChatGPT的新GPT-5.3即时模型将不再告诉您冷静
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-03T20:20:56+00:00'
   highlights_ai:
   - date: '2026-03-02'
     url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7
@@ -2030,3 +2076,54 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - open-webui/open-webui
     published_utc: '2026-03-02T23:33:56+00:00'
+  - date: '2026-03-04'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-unified-studio-3p-catalogs/
+    title: Amazon SageMaker Unified Studio adds metadata sync with third-party catalogs
+    title_zh: Amazon SageMaker Unified Studio新增与第三方目录的元数据同步
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-03-03T23:00:00+00:00'
+  - date: '2026-03-04'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable
+    title: 'BerriAI/litellm: v1.81.14-stable'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-03-03T22:22:19+00:00'
+  - date: '2026-03-04'
+    url: https://the-decoder.com/googles-fastest-and-cheapest-model-gemini-3-1-flash-lite-got-smarter-but-also-tripled-the-price/
+    title: Google's fastest and cheapest model Gemini 3.1 Flash-Lite got smarter but
+      also tripled the price
+    title_zh: 谷歌最快最便宜的模型 Gemini 3.1 Flash-Lite 更智能但价格翻了三倍
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-03T19:34:21+00:00'
+  - date: '2026-03-04'
+    url: https://the-decoder.com/openai-releases-gpt-5-3-instant-for-smoother-everyday-conversations-and-better-search/
+    title: OpenAI releases GPT-5.3 Instant for smoother everyday conversations and
+      better search
+    title_zh: OpenAI发布GPT-5.3 Instant，优化日常对话与搜索体验
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-03T19:10:05+00:00'
+  - date: '2026-03-04'
+    url: https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything
+    title: Gemini 3.1 Flash-Lite
+    title_zh: Gemini 3.1 闪电精简版
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-03T21:53:54+00:00'
+  - date: '2026-03-04'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable_gpt-5.3.patch1
+    title: 'BerriAI/litellm: v1.81.12-stable_gpt-5.3.patch1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-03-03T19:26:48+00:00'
+  - date: '2026-03-04'
+    url: https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/
+    title: 'Gemini 3.1 Flash-Lite: Built for intelligence at scale'
+    title_zh: Gemini 3.1 Flash-Lite：为大规模智能而构建
+    category: AI tools & model releases
+    source: Google DeepMind Blog
+    published_utc: '2026-03-03T16:35:55+00:00'

@@ -1,0 +1,1174 @@
+date: '2026-03-04'
+title: Daily Digest - 2026-03-04
+title_zh: 每日简报 - 2026-03-04
+note: 'Today: UK lifts Russia-linked sanctions on British accountant · TikTok won''t
+  protect DMs with controversial privacy tech, sayin… · AI: Amazon SageMaker Unified
+  Studio adds metadata sync with t….'
+note_zh: 今日关注：英国解除对与俄罗斯有关的英国会计师的制裁；TikTok表示不会使用有争议的隐私技术保护私信，称这将使用户面临风险；AI：Amazon SageMaker
+  Unified Studio新增…。
+items:
+- category: AI tools & model releases
+  title: Amazon SageMaker Unified Studio adds metadata sync with third-party catalogs
+  why: Amazon SageMaker Unified Studio now supports metadata and context sync across
+    Atlan, Collibra, and Alation.
+  takeaway: Amazon SageMaker Unified Studio now supports metadata and context sync
+    across Atlan, Collibra, and Alation. These integrations synchronize catalog metadata
+    between Amazon SageMaker Catalog and each partner platform, giving teams a consistent
+    view of their data and AI assets regardless of which tool they use day to day.
+    Organizations can maintain aligned glo…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-unified-studio-3p-catalogs/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-03T23:00:00+00:00'
+  title_zh: Amazon SageMaker Unified Studio新增与第三方目录的元数据同步
+  why_zh: Amazon SageMaker Unified Studio现支持与Atlan、Collibra和Alation的元数据和上下文同步
+  takeaway_zh: Amazon SageMaker Unified Studio现支持与Atlan、Collibra和Alation的元数据和上下文同步。这些集成在Amazon
+    SageMaker Catalog与每个合作伙伴平台之间同步目录元数据，使团队无论使用哪种工具，都能对其数据和AI资产保持一致视图。组织可以保持一致的全局……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker Unified Studio now supports AWS Glue 5.1 for data processing
+    jobs
+  why: Amazon SageMaker Unified Studio now supports AWS Glue 5.1 for Visual ETL, notebook,
+    and code-based data processing jobs.
+  takeaway: Amazon SageMaker Unified Studio now supports AWS Glue 5.1 for Visual ETL,
+    notebook, and code-based data processing jobs. With AWS Glue 5.1 in Amazon SageMaker
+    Unified Studio, data engineers and data scientists can run jobs on Apache Spark
+    3.5.6 with Python 3.11 and Scala 2.12.18, and use updated open table format libraries
+    including Apache Iceberg 1.10.0, A…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-unified-studio-aws-glue-5-1/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-03T23:00:00+00:00'
+  title_zh: Amazon SageMaker Unified Studio现支持AWS Glue 5.1进行数据处理任务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.0-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.0-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-03T22:22:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-03T22:22:19+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.rc.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.rc.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-03T22:20:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Gemini 3.1 Flash-Lite
+  why: Gemini 3.1 Flash-Lite Google's latest model is an update to their inexpensive
+    Flash-Lite family.
+  takeaway: 'Gemini 3.1 Flash-Lite Google''s latest model is an update to their inexpensive
+    Flash-Lite family. At $0.25/million tokens of input and $1.5/million output this
+    is 1/8th the price of Gemini 3.1 Pro. It supports four different thinking levels,
+    so I had it output four different pelicans : minimal low medium high Tags: google
+    , ai , generative-ai , llms , llm ,…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-03T21:53:54+00:00'
+  title_zh: Gemini 3.1 闪电精简版
+  why_zh: Gemini 3.1闪电精简版 谷歌最新模型是其经济型闪电精简系列产品的升级
+  takeaway_zh: Gemini 3.1 Flash-Lite是Google最新推出的低成本Flash-Lite系列更新版。输入每百万token价格为0.25美元，输出为1.5美元，仅为Gemini
+    3.1 Pro价格的八分之一。它支持四种不同的思维层次，因此我让它输出了四种不同风格的鹈鹕：最低、低、中、高。标签：google、ai、生成式ai、llms、llm…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.6.rc.9'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.9
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-03T20:27:27+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How to Minimize Game Runtime Inference Costs with Coding Agents
+  why: NVIDIA ACE is a suite of technologies for building AI agents for gaming.
+  takeaway: NVIDIA ACE is a suite of technologies for building AI agents for gaming.
+    ACE provides ready-to-integrate cloud and on-device AI models for every part of
+    in-game...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/how-to-minimize-game-runtime-inference-costs-with-coding-agents/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-03T19:49:57+00:00'
+  title_zh: 如何通过编码代理最小化游戏运行推理成本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: cuTile.jl Brings NVIDIA CUDA Tile-Based Programming to Julia
+  why: NVIDIA CUDA Tile is one of the most significant additions to NVIDIA CUDA programming
+    and unlocks automatic access to tensor cores and other…
+  takeaway: NVIDIA CUDA Tile is one of the most significant additions to NVIDIA CUDA
+    programming and unlocks automatic access to tensor cores and other specialized...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/cutile-jl-brings-nvidia-cuda-tile-based-programming-to-julia/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-03T19:48:16+00:00'
+  title_zh: cuTile.jl将NVIDIA CUDA瓦片编程引入Julia
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker Unified Studio launches support for remote connection from
+    Kiro IDE
+  why: Today, AWS announces the ability to remotely connect from Kiro IDE to Amazon
+    SageMaker Unified Studio.
+  takeaway: Today, AWS announces the ability to remotely connect from Kiro IDE to
+    Amazon SageMaker Unified Studio. This new capability allows data scientists, ML
+    engineers, and developers to leverage their Kiro setup - including its spec-driven
+    development, conversational coding, and automated feature generation capabilities
+    - while accessing the scalable compute resou…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-unified-studio-kiro-ide/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-03T19:39:00+00:00'
+  title_zh: Amazon SageMaker Unified Studio 支持从 Kiro IDE 远程连接
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google's fastest and cheapest model Gemini 3.1 Flash-Lite got smarter but
+    also tripled the price
+  why: Google Deepmind has released a preview of Gemini 3.1 Flash-Lite, the fastest
+    and cheapest model in the Gemini 3 series.
+  takeaway: Google Deepmind has released a preview of Gemini 3.1 Flash-Lite, the fastest
+    and cheapest model in the Gemini 3 series. It's significantly more capable than
+    its predecessor, but output costs have more than tripled. The article Google's
+    fastest and cheapest model Gemini 3.1 Flash-Lite got smarter but also tripled
+    the price appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/googles-fastest-and-cheapest-model-gemini-3-1-flash-lite-got-smarter-but-also-tripled-the-price/
+  source: The Decoder (AI)
+  published_utc: '2026-03-03T19:34:21+00:00'
+  title_zh: 谷歌最快最便宜的模型 Gemini 3.1 Flash-Lite 更智能但价格翻了三倍
+  why_zh: Google Deepmind发布了Gemini 3.1 Flash-Lite的预览版，这是Gemini 3系列中最快且最便宜的模型
+  takeaway_zh: Google Deepmind发布了Gemini 3.1 Flash-Lite的预览版，这是Gemini 3系列中最快且最经济的模型。其性能较前代显著提升，但输出成本却增加了三倍多。文章《Google最快最便宜的模型Gemini
+    3.1 Flash-Lite变聪明了，但价格也翻了三倍》首次发表于The Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12-stable_gpt-5.3.patch1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable_gpt-5.3.patch1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-03T19:26:48+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI releases GPT-5.3 Instant for smoother everyday conversations and better
+    search
+  why: OpenAI has released GPT-5.3 Instant.
+  takeaway: OpenAI has released GPT-5.3 Instant. The model is designed to respond
+    more naturally and hallucinate less, especially when using web search. The article
+    OpenAI releases GPT-5.3 Instant for smoother everyday conversations and better
+    search appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-releases-gpt-5-3-instant-for-smoother-everyday-conversations-and-better-search/
+  source: The Decoder (AI)
+  published_utc: '2026-03-03T19:10:05+00:00'
+  title_zh: OpenAI发布GPT-5.3 Instant，优化日常对话与搜索体验
+  why_zh: OpenAI已发布GPT-5.3即时版
+  takeaway_zh: OpenAI发布了GPT-5.3 Instant。该模型旨在更自然地响应并减少幻觉，尤其是在使用网络搜索时。文章《OpenAI发布GPT-5.3
+    Instant，实现更流畅的日常对话与更好的搜索体验》首发于The Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Policy in Amazon Bedrock AgentCore is now generally available
+  why: Policy in Amazon Bedrock AgentCore is now generally available, providing organizations
+    with centralized, fine-grained controls for agent-to…
+  takeaway: Policy in Amazon Bedrock AgentCore is now generally available, providing
+    organizations with centralized, fine-grained controls for agent-tool interactions.
+    Policy operates outside your agent code, enabling security, compliance, and operations
+    teams to define tool access and input validation rules without modifying agent
+    code. Teams can author policies using…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/policy-amazon-bedrock-agentcore-generally-available/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-03T18:00:00+00:00'
+  title_zh: Amazon Bedrock AgentCore 中的策略现已全面可用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: litellm-trace-dev-v1.81.16'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/litellm-trace-dev-v1.81.16
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-03T17:47:23+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Gemini 3.1 Flash-Lite: Built for intelligence at scale'
+  why: Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series
+    model yet.
+  takeaway: Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3
+    series model yet.
+  prompt: ''
+  url: https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/
+  source: Google DeepMind Blog
+  published_utc: '2026-03-03T16:35:55+00:00'
+  title_zh: Gemini 3.1 Flash-Lite：为大规模智能而构建
+  why_zh: Gemini 3.1 Flash-Lite是我们Gemini 3系列中速度最快、成本效益最高的模型。
+  takeaway_zh: Gemini 3.1 Flash-Lite是我们Gemini 3系列中速度最快、成本效益最高的模型。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: python-1.40.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/python-1.40.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-03-02T23:57:27+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.8'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.8
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-02T23:33:56+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.17'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.17
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-02T22:48:13+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-huggingface==1.2.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-huggingface%3D%3D1.2.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-02T18:44:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GIF optimization tool using WebAssembly and Gifsicle
+  why: Agentic Engineering Patterns > I like to include animated GIF demos in my online
+    writing, often recorded using LICEcap .
+  takeaway: Agentic Engineering Patterns > I like to include animated GIF demos in
+    my online writing, often recorded using LICEcap . There's an example in the Interactive
+    explanations chapter. These GIFs can be pretty big. I've tried a few tools for
+    optimizing GIF file size and my favorite is Gifsicle by Eddie Kohler. It compresses
+    GIFs by identifying regions of frames…
+  prompt: ''
+  url: https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-02T16:35:10+00:00'
+  title_zh: 使用 WebAssembly 和 Gifsicle 的 GIF 优化工具
+  why_zh: 代理工程模式 > 我喜欢在在线写作中加入动画GIF演示，通常使用LICEcap录制
+  takeaway_zh: 代理工程模式 > 我喜欢在在线写作中加入动画GIF演示，通常使用LICEcap录制。在《交互式解释》章节中有一个示例。这些GIF文件可能相当大。我尝试了几种优化GIF文件大小的工具，最喜欢的是Eddie
+    Kohler开发的Gifsicle。它通过识别帧的区域来压缩GIF...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Config now supports 30 new resource types
+  why: AWS Config now supports 30 additional AWS resource types across key services
+    including Amazon Bedrock AgentCore and Amazon Cognito.
+  takeaway: AWS Config now supports 30 additional AWS resource types across key services
+    including Amazon Bedrock AgentCore and Amazon Cognito. This expansion provides
+    greater coverage over your AWS environment, enabling you to more effectively discover,
+    assess, audit, and remediate an even broader range of resources. With this launch,
+    if you have enabled recording for…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/aws-config-new-resource-types/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-02T16:00:00+00:00'
+  title_zh: AWS Config 现支持 30 种新资源类型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.17.5'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.17.5
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-03-02T05:59:48+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详情见链接中的更新日志）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.7'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-02T01:14:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.6
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-01T21:04:06+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Quoting claude.com/import-memory
+  why: I'm moving to another service and need to export my data.
+  takeaway: 'I''m moving to another service and need to export my data. List every
+    memory you have stored about me, as well as any context you''ve learned about
+    me from past conversations. Output everything in a single code block so I can
+    easily copy it. Format each entry as: [date saved, if available] - memory content.
+    Make sure to cover all of the following — preserve m…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-01T11:21:45+00:00'
+  title_zh: 引用 claude.com/import-memory
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo
+  why: Autonomous networks are quickly becoming one of the top priorities in telecommunications.
+  takeaway: Autonomous networks are quickly becoming one of the top priorities in
+    telecommunications. According to the latest NVIDIA State of AI in Telecommunications...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/building-telco-reasoning-models-for-autonomous-networks-with-nvidia-nemo/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-01T07:00:00+00:00'
+  title_zh: 利用NVIDIA NeMo构建电信推理模型，实现网络自治
+  why_zh: 自主网络正迅速成为电信领域的首要任务之一
+  takeaway_zh: 自主网络正迅速成为电信领域的首要任务之一。根据NVIDIA最新发布的《电信领域人工智能现状》...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 5 New Digital Twin Products Developers Can Use to Build 6G Networks
+  why: 'To make 6G a reality, the telecom industry must overcome a fundamental challenge:
+    how to design, train, and validate AI-native networks tha…'
+  takeaway: 'To make 6G a reality, the telecom industry must overcome a fundamental
+    challenge: how to design, train, and validate AI-native networks that are too
+    complex to...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/5-new-digital-twin-products-developers-can-use-to-build-6g-networks/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-01T07:00:00+00:00'
+  title_zh: 开发者可用于构建 6G 网络的 5 款新数字孪生产品
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.12-stable.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-28T05:16:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.6.rc.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-02-28T02:56:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Asia stocks fall for third day, oil edges up as markets track Iran war
+  why: The conflict in the Middle East has rattled financial markets and global energy
+    prices have soared.
+  takeaway: The conflict in the Middle East has rattled financial markets and global
+    energy prices have soared.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cwy884ekn0jo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-04T01:54:38+00:00'
+  title_zh: 亚洲股市连续第三天下跌，油价小幅上涨，市场关注伊朗战争
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US shale bosses warn they cannot replace war-hit Middle East oil
+  why: New production from Texas will take months as drillers use windfall from price
+    rise to pay investors
+  takeaway: New production from Texas will take months as drillers use windfall from
+    price rise to pay investors
+  prompt: ''
+  url: https://www.ft.com/content/7af02521-2861-4299-962d-5f731ed0a0ad
+  source: Financial Times - Markets
+  published_utc: '2026-03-04T01:22:39+00:00'
+  title_zh: 美国页岩油高管警告无法替代受战争影响的中东石油
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump says US Navy prepared to escort oil tankers in Gulf
+  why: President promises to provide insurance for vessels transiting the region as
+    Iran conflict disrupts energy flows
+  takeaway: President promises to provide insurance for vessels transiting the region
+    as Iran conflict disrupts energy flows
+  prompt: ''
+  url: https://www.ft.com/content/9a9b0127-1014-4186-99e3-893603011cef
+  source: Financial Times - Markets
+  published_utc: '2026-03-04T00:38:10+00:00'
+  title_zh: 特朗普称美国海军准备为海湾地区油轮护航
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok won't protect DMs with controversial privacy tech, saying it would
+    put users at risk
+  why: TikTok tells the BBC it won't join rival platforms such as WhatsApp and Messenger
+    in using end-to-end encryption.
+  takeaway: TikTok tells the BBC it won't join rival platforms such as WhatsApp and
+    Messenger in using end-to-end encryption.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cly2m5e5ke4o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-03-04T00:34:49+00:00'
+  title_zh: TikTok表示不会使用有争议的隐私技术保护私信，称这将使用户面临风险
+  why_zh: TikTok向BBC表示，不会像WhatsApp和Messenger等竞争对手那样采用端到端加密
+  takeaway_zh: TikTok向BBC表示，不会像WhatsApp和Messenger等竞争对手那样采用端到端加密
+  prompt_zh: ''
+- category: Tech industry
+  title: Why AI startups are selling the same equity at two different prices
+  why: Some AI founders are using a novel valuation mechanism to manufacture unicorn
+    status.
+  takeaway: Some AI founders are using a novel valuation mechanism to manufacture
+    unicorn status.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/
+  source: TechCrunch
+  published_utc: '2026-03-04T00:31:25+00:00'
+  title_zh: 为何AI初创公司以两种不同价格出售相同股权
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump administration debates allowing Tencent to keep its gaming investments
+  why: Chinese company’s investments in ‘Fortnite’ creator Epic Games and other creators
+    have faced long-running US security review
+  takeaway: Chinese company’s investments in ‘Fortnite’ creator Epic Games and other
+    creators have faced long-running US security review
+  prompt: ''
+  url: https://www.ft.com/content/dc140eb8-77e5-4b54-b643-637f66371ec2
+  source: Financial Times - Technology
+  published_utc: '2026-03-04T00:27:06+00:00'
+  title_zh: 特朗普政府讨论是否允许腾讯保留其游戏投资
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: UK to invoke ‘emergency brake’ to ban student visa applications from four
+    countries
+  why: Afghanistan, Cameroon, Myanmar and Sudan will be affected by the move
+  takeaway: Afghanistan, Cameroon, Myanmar and Sudan will be affected by the move
+  prompt: ''
+  url: https://www.ft.com/content/8fd879ac-4817-4a52-bdf7-1519b1c70cc4
+  source: Financial Times - World
+  published_utc: '2026-03-04T00:13:58+00:00'
+  title_zh: 英国将启动‘紧急刹车’机制，禁止四国学生签证申请
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Use our tax calculator to see how the Spring Statement affects you
+  why: Wages are forecast to go up over the next five years but you could pay more
+    tax because of frozen thresholds.
+  takeaway: Wages are forecast to go up over the next five years but you could pay
+    more tax because of frozen thresholds.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c99k7djlklyo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-04T00:01:44+00:00'
+  title_zh: 使用我们的税收计算器，了解春季预算案对您的影响
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Lorries with unsafe meat imports skip border checks, UK government says
+  why: Data provided to Commons committee highlights major flaw in post-Brexit inspection
+    regime
+  takeaway: Data provided to Commons committee highlights major flaw in post-Brexit
+    inspection regime
+  prompt: ''
+  url: https://www.ft.com/content/77b399cc-46a4-4429-9e3d-271ded892e16
+  source: Financial Times - World
+  published_utc: '2026-03-04T00:01:10+00:00'
+  title_zh: 英国政府称载有不安全肉类进口的卡车跳过边境检查
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Starmer’s UK-EU reset suffering from ‘lack of direction’, MPs warn
+  why: Commons foreign affairs committee calls on prime minister to ‘end secrecy’
+    around push to improve bilateral relations
+  takeaway: Commons foreign affairs committee calls on prime minister to ‘end secrecy’
+    around push to improve bilateral relations
+  prompt: ''
+  url: https://www.ft.com/content/6db99ce3-d8b4-443d-b1d0-d3b51eb39709
+  source: Financial Times - World
+  published_utc: '2026-03-04T00:01:10+00:00'
+  title_zh: 议员警告斯塔默的英欧关系重置缺乏方向
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Howard Lutnick and top Goldman lawyer to testify to Congress over Epstein
+    links
+  why: US commerce secretary will be first Trump cabinet member to face questions
+    from House panel about late child sex offender
+  takeaway: US commerce secretary will be first Trump cabinet member to face questions
+    from House panel about late child sex offender
+  prompt: ''
+  url: https://www.ft.com/content/f7247d64-ec15-4354-9947-e61f43104eef
+  source: Financial Times - World
+  published_utc: '2026-03-03T23:29:08+00:00'
+  title_zh: 霍华德·卢特尼克和高盛首席律师将就爱泼斯坦关联向国会作证
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anker’s last-gen sleep buds are nearly 40 percent off ahead of daylight saving
+    time
+  why: 'Bad news: most Americans are about to lose an hour of sleep next week.'
+  takeaway: 'Bad news: most Americans are about to lose an hour of sleep next week.
+    Good news: if you have trouble falling (or staying asleep), Newegg is currently
+    selling Anker’s Soundcore Sleep A20 earbuds for $113.99 ($66 off) when you use
+    coupon code MMSF88 at checkout, which drops them to just $6 shy of their lowest
+    […]'
+  prompt: ''
+  url: https://www.theverge.com/gadgets/888719/anker-soundcore-sleep-a20-earbuds-newegg-deal-sale
+  source: The Verge
+  published_utc: '2026-03-03T23:29:06+00:00'
+  title_zh: 安克上代睡眠耳机在夏令时前降价近40%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Does Ticketmaster have a stranglehold on concert ticketing — or is it just
+    ‘bringing joy’?
+  why: In a downtown Manhattan courtroom on Monday, lawyers for the US Justice Department
+    and 40 state and district attorneys general warned a jur…
+  takeaway: 'In a downtown Manhattan courtroom on Monday, lawyers for the US Justice
+    Department and 40 state and district attorneys general warned a jury that the
+    concert industry was being squeezed by a monopolist: Live Nation-Tickemaster.
+    After amassing dominance over ticketing and artists'' use of large amphitheaters,
+    lead DOJ counsel David Dahlquist alleged, Live Nat…'
+  prompt: ''
+  url: https://www.theverge.com/policy/888778/live-nation-ticketmaster-doj-opening-statements
+  source: The Verge
+  published_utc: '2026-03-03T23:27:59+00:00'
+  title_zh: Ticketmaster是垄断演唱会票务，还是仅仅‘带来欢乐’？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A suite of government hacking tools targeting iPhones is now being used by
+    cybercriminals
+  why: Security researchers say exploits used by governments to hack into iPhones
+    have been found to be used by cybercriminals.
+  takeaway: Security researchers say exploits used by governments to hack into iPhones
+    have been found to be used by cybercriminals. They warned of an emerging market
+    for "secondhand" exploits.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/a-suite-of-government-hacking-tools-targeting-iphones-is-now-being-used-by-cybercriminals/
+  source: TechCrunch
+  published_utc: '2026-03-03T23:27:31+00:00'
+  title_zh: 一套针对iPhone的政府黑客工具现被网络犯罪分子使用
+  why_zh: 安全研究人员称，政府用于入侵iPhone的漏洞已被网络犯罪分子利用
+  takeaway_zh: 安全研究人员称，政府用于入侵iPhone的漏洞已被网络犯罪分子利用，并警告称‘二手’漏洞市场正在兴起
+  prompt_zh: ''
+- category: Tech industry
+  title: Alibaba’s Qwen tech lead steps down after major AI push
+  why: Reactions rippled through Alibaba's Qwen team after tech lead Junyang Lin stepped
+    down following a major model launch.
+  takeaway: Reactions rippled through Alibaba's Qwen team after tech lead Junyang
+    Lin stepped down following a major model launch.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/
+  source: TechCrunch
+  published_utc: '2026-03-03T23:16:36+00:00'
+  title_zh: 阿里巴巴Qwen技术负责人在大规模AI推进后离职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'No fooling: NASA targets April 1 for Artemis II launch to the Moon'
+  why: '"Engineers are assessing what allowed the seal to become dislodged to prevent
+    the issue from recurring."'
+  takeaway: '"Engineers are assessing what allowed the seal to become dislodged to
+    prevent the issue from recurring."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/03/no-fooling-nasa-targets-april-1-for-artemis-ii-launch-to-the-moon/
+  source: Ars Technica
+  published_utc: '2026-03-03T22:54:21+00:00'
+  title_zh: 不开玩笑：NASA瞄准4月1日发射Artemis II登月任务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Just three companies dominated the $189B in VC investments last month
+  why: Crunchbase data shows a record $189 billion of global venture capital flowed
+    to startups last month, with AI startups nabbing 90% of the ca…
+  takeaway: Crunchbase data shows a record $189 billion of global venture capital
+    flowed to startups last month, with AI startups nabbing 90% of the capital.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/openai-anthropic-waymo-dominated-189-billion-vc-investments-february-crunchbase-report/
+  source: TechCrunch
+  published_utc: '2026-03-03T22:38:58+00:00'
+  title_zh: 上月1890亿美元风投中，仅三家公司占据主导
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok down for some in US, thanks to second Oracle outage since sale
+  why: TikTok experienced a similar outage just days after ByteDance divested the
+    app's U.S.
+  takeaway: TikTok experienced a similar outage just days after ByteDance divested
+    the app's U.S. operations.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/tiktok-down-for-some-in-u-s-thanks-to-second-oracle-outage-since-sale/
+  source: TechCrunch
+  published_utc: '2026-03-03T22:33:57+00:00'
+  title_zh: TikTok在美国部分地区宕机，因出售后第二次Oracle故障
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Downdetector, Speedtest sold to IT service provider Accenture in $1.2B deal
+  why: Accenture plans to buy Ookla, which also includes RootMetrics and Ekahau.
+  takeaway: Accenture plans to buy Ookla, which also includes RootMetrics and Ekahau.
+  prompt: ''
+  url: https://arstechnica.com/information-technology/2026/03/downdetector-speedtest-sold-to-it-service-provider-accenture-in-1-2b-deal/
+  source: Ars Technica
+  published_utc: '2026-03-03T22:20:06+00:00'
+  title_zh: Downdetector和Speedtest以12亿美元交易售予IT服务提供商埃森哲
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump says US Navy will protect ships in Middle East 'if necessary'
+  why: The US President said he was taking steps to keep energy supplies flowing as
+    oil and gas prices continued to surge.
+  takeaway: The US President said he was taking steps to keep energy supplies flowing
+    as oil and gas prices continued to surge.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c20zg54g5vvo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-03T22:15:33+00:00'
+  title_zh: 特朗普称美国海军将在必要时保护中东地区的船只
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What was really behind Jack Dorsey laying off nearly half of Block’s staff?
+  why: CEO cited AI advances in cutting 4,000 workers, but a weak crypto market and
+    declining stock price may also be at play Jack Dorsey cited AI…
+  takeaway: CEO cited AI advances in cutting 4,000 workers, but a weak crypto market
+    and declining stock price may also be at play Jack Dorsey cited AI as the driving
+    force behind cutting 40% of his company’s employees, but other factors such as
+    a weak crypto market, overstaffing and a declining stock price may also have motivated
+    the move. Last week, the financial tec…
+  prompt: ''
+  url: https://www.theguardian.com/technology/2026/mar/03/jack-dorsey-block-ai-worker-jobs
+  source: The Guardian - Technology
+  published_utc: '2026-03-03T22:06:19+00:00'
+  title_zh: 杰克·多尔西裁减Block近半数员工的真正原因是什么？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FCC chair calls Paramount/WBD merger "a lot cleaner" than defunct Netflix
+    deal
+  why: FCC to review foreign debt, but Carr indicates it will be a formality.
+  takeaway: FCC to review foreign debt, but Carr indicates it will be a formality.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/03/trump-fcc-chair-paramount-warner-bros-merger-likely-to-get-quick-approval/
+  source: Ars Technica
+  published_utc: '2026-03-03T22:05:36+00:00'
+  title_zh: FCC主席称派拉蒙/WBD合并比流产的Netflix交易“干净得多”
+  why_zh: FCC将审查外债，但卡尔表示这将是形式上的
+  takeaway_zh: FCC将审查外债，但卡尔表示这将是形式上的
+  prompt_zh: ''
+- category: Business & economy
+  title: 'FirstFT: Trump says US Navy could escort oil tankers in Gulf'
+  why: 'Also in today’s newsletter: China prepares law curtailing minority language
+    rights, and Pakistan urges Iran not to attack Saudi Arabia'
+  takeaway: 'Also in today’s newsletter: China prepares law curtailing minority language
+    rights, and Pakistan urges Iran not to attack Saudi Arabia'
+  prompt: ''
+  url: https://www.ft.com/content/c5928de8-cb2d-4339-811e-e4d3ce30a4fb
+  source: Financial Times - Markets
+  published_utc: '2026-03-03T22:01:07+00:00'
+  title_zh: FirstFT：特朗普称美国海军可能为海湾地区油轮护航
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Stocks and bonds stabilise as Middle East war widens
+  why: Oil briefly hit $85 a barrel as Iraqi production shuts down because so few
+    tankers risk journey through Strait of Hormuz
+  takeaway: Oil briefly hit $85 a barrel as Iraqi production shuts down because so
+    few tankers risk journey through Strait of Hormuz
+  prompt: ''
+  url: https://www.ft.com/content/48a11039-eca6-4af4-89bd-c79b4203aee8
+  source: Financial Times - Markets
+  published_utc: '2026-03-03T21:45:59+00:00'
+  title_zh: 中东战事扩大，股市和债券市场趋于稳定
+  why_zh: 由于伊拉克生产中断，且很少有油轮敢冒险通过霍尔木兹海峡，油价一度触及每桶85美元
+  takeaway_zh: 由于伊拉克生产中断，且很少有油轮敢冒险通过霍尔木兹海峡，油价一度触及每桶85美元
+  prompt_zh: ''
+- category: Business & economy
+  title: Gas and oil prices soar and shares tumble on fears conflict could escalate
+  why: Markets react as the conflict in the Middle East intensifies and concerns grow
+    over how long it will last.
+  takeaway: Markets react as the conflict in the Middle East intensifies and concerns
+    grow over how long it will last.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cr5lz0vgy52o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-03T21:44:31+00:00'
+  title_zh: 油价飙升，股市因担忧冲突升级而暴跌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI companies are spending millions to thwart this former tech exec’s congressional
+    bid
+  why: A tech billionaire-backed super PAC is spending $125 million to undercut candidates
+    pushing for AI regulation.
+  takeaway: A tech billionaire-backed super PAC is spending $125 million to undercut
+    candidates pushing for AI regulation. New York's Alex Bores, a former tech executive
+    himself, is one of them.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/ai-companies-are-spending-millions-to-thwart-this-former-tech-execs-congressional-bid/
+  source: TechCrunch
+  published_utc: '2026-03-03T21:44:09+00:00'
+  title_zh: AI公司斥资数百万阻挠前科技高管竞选国会议员
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What Trump’s war on Iran means for the US energy crunch
+  why: Fuel prices surged after the Trump administration launched strikes against
+    Iran on Saturday, immediately raising questions about whether th…
+  takeaway: Fuel prices surged after the Trump administration launched strikes against
+    Iran on Saturday, immediately raising questions about whether the war would increase
+    energy costs for Americans, put more pressure on power grids, and push companies
+    to pump out more oil and gas in the US. If conflict drags on, that could potentially
+    play into Donald […]
+  prompt: ''
+  url: https://www.theverge.com/science/888526/what-trumps-war-on-iran-means-for-the-us-energy-crunch
+  source: The Verge
+  published_utc: '2026-03-03T21:41:25+00:00'
+  title_zh: 特朗普对伊朗的战争对美国能源危机意味着什么
+  why_zh: 特朗普政府周六对伊朗发动袭击后，燃料价格飙升，立即引发了对战争是否会增加美国能源成本、给电网带来更大压力以及推动公司在美国增加石油和天然气产量的质疑
+  takeaway_zh: 特朗普政府周六对伊朗发动袭击后，燃料价格飙升，立即引发了对战争是否会增加美国能源成本、给电网带来更大压力以及推动公司在美国增加石油和天然气产量的质疑。如果冲突持续，这可能会对唐纳德·特朗普的……
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump threatens to halt trade with Spain over military base access
+  why: Trump lashed out after Spain barred the US from using its military bases to
+    carry out strikes on Iran.
+  takeaway: Trump lashed out after Spain barred the US from using its military bases
+    to carry out strikes on Iran.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c8r1mzd8vygo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-03T21:25:33+00:00'
+  title_zh: 特朗普威胁因军事基地访问问题停止与西班牙贸易
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Energy prices up, markets down
+  why: What will the war in Iran mean for markets?
+  takeaway: What will the war in Iran mean for markets?
+  prompt: ''
+  url: https://www.ft.com/content/dc190791-7427-410c-a5a7-77882b798a90
+  source: Financial Times - Markets
+  published_utc: '2026-03-03T21:00:00+00:00'
+  title_zh: 能源价格上涨，市场下跌
+  why_zh: 伊朗战争将对市场产生何种影响？
+  takeaway_zh: 伊朗战争将对市场产生何种影响？
+  prompt_zh: ''
+- category: Tech industry
+  title: The best AirPods deals you can get right now
+  why: If you know where to look, you can often score deals on Apple’s ever-expanding
+    AirPods lineup.
+  takeaway: If you know where to look, you can often score deals on Apple’s ever-expanding
+    AirPods lineup. Both the AirPods Max and AirPods 4 (with and without ANC) now
+    consistently receive discounts, as do the newer AirPods Pro 3. And while more
+    recent shopping events like Black Friday and Cyber Monday delivered some of the
+    steepest […]
+  prompt: ''
+  url: https://www.theverge.com/21302051/best-apple-airpods-deals
+  source: The Verge
+  published_utc: '2026-03-03T21:00:00+00:00'
+  title_zh: 当前最优惠的AirPods购买方案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: This Offshore Wind Turbine Will House a Data Center Underwater
+  why: 'As data-center developers frantically seek to secure power for their operations,
+    one startup is proposing a novel solution: Build them into…'
+  takeaway: 'As data-center developers frantically seek to secure power for their
+    operations, one startup is proposing a novel solution: Build them into floating
+    offshore wind turbines. San Francisco–based offshore wind-power developer Aikido
+    Technologies today announced its plans to start housing data centers in the underwater
+    tanks that keep its turbine platforms aflo…'
+  prompt: ''
+  url: https://spectrum.ieee.org/data-center-floating-wind-turbine
+  source: IEEE Spectrum
+  published_utc: '2026-03-03T20:56:45+00:00'
+  title_zh: 这台海上风力发电机将水下数据中心纳入其中
+  why_zh: 数据中心开发商急于为其运营获取电力，一家初创公司提出了一种新颖的解决方案：将其建在浮动海上风力涡轮机中
+  takeaway_zh: 数据中心开发商急于为其运营获取电力，一家初创公司提出了一种新颖的解决方案：将其建在浮动海上风力涡轮机中。总部位于旧金山的海上风电开发商Aikido
+    Technologies今天宣布，计划在其涡轮机平台的水下舱室中安置数据中心……
+  prompt_zh: ''
+- category: Business & economy
+  title: Pakistan urges Iran not to attack Saudi Arabia
+  why: Foreign minister highlights how Islamabad has a mutual defence pact with Riyadh
+  takeaway: Foreign minister highlights how Islamabad has a mutual defence pact with
+    Riyadh
+  prompt: ''
+  url: https://www.ft.com/content/3f67fdd9-8d85-485a-980a-addab8f1a540
+  source: Financial Times - World
+  published_utc: '2026-03-03T20:55:01+00:00'
+  title_zh: 巴基斯坦呼吁伊朗不要攻击沙特阿拉伯
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Capital Group’s weird passive bravado
+  why: Triggered
+  takeaway: Triggered
+  prompt: ''
+  url: https://www.ft.com/content/3fe5fe75-3557-46d0-ad2c-088d759371e9
+  source: Financial Times - Markets
+  published_utc: '2026-03-03T20:44:14+00:00'
+  title_zh: 资本集团奇怪的被动自信
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Another Oracle outage is messing up US TikTok
+  why: The US version of TikTok is once again experiencing issues due to an Oracle
+    outage, just a month after coming back online from a similar ou…
+  takeaway: The US version of TikTok is once again experiencing issues due to an Oracle
+    outage, just a month after coming back online from a similar outage in February.
+    The service disruption, impacting Oracle's Ashburn, Virginia data center, began
+    early Tuesday afternoon, with Downdetector reports spiking around 1PM Eastern.
+    TikTok USDS confirmed in a post on […]
+  prompt: ''
+  url: https://www.theverge.com/tech/888647/tiktok-us-oracle-outage-march-2026
+  source: The Verge
+  published_utc: '2026-03-03T20:26:21+00:00'
+  title_zh: 又一次Oracle故障导致美国TikTok出现问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What we can learn from scientific analysis of Renaissance recipes
+  why: Multispectral imaging, proteomics, historical texts yield new insights into
+    16th-century medical manuals.
+  takeaway: Multispectral imaging, proteomics, historical texts yield new insights
+    into 16th-century medical manuals.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/03/renaissance-diy-science-people-tested-tweaked-home-remedy-recipes/
+  source: Ars Technica
+  published_utc: '2026-03-03T20:23:23+00:00'
+  title_zh: 从文艺复兴时期食谱的科学分析中我们能学到什么
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ChatGPT’s new GPT-5.3 Instant model will stop telling you to calm down
+  why: The company says the new model will reduce the "cringe" that's been annoying
+    its users for months.
+  takeaway: The company says the new model will reduce the "cringe" that's been annoying
+    its users for months.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/
+  source: TechCrunch
+  published_utc: '2026-03-03T20:20:56+00:00'
+  title_zh: ChatGPT的新GPT-5.3即时模型将不再告诉您冷静
+  why_zh: 该公司称新模型将改善困扰用户数月之久的'尴尬'问题
+  takeaway_zh: 该公司称新模型将改善困扰用户数月之久的'尴尬'问题
+  prompt_zh: ''
+- category: Business & economy
+  title: UK to deploy a warship and counter-drone helicopters to Cyprus
+  why: France announces it is also sending air and naval assets to the Mediterranean
+    and Middle East
+  takeaway: France announces it is also sending air and naval assets to the Mediterranean
+    and Middle East
+  prompt: ''
+  url: https://www.ft.com/content/62d6373c-6870-4b9b-a6de-7ce704394e8b
+  source: Financial Times - World
+  published_utc: '2026-03-03T20:16:49+00:00'
+  title_zh: 英国将向塞浦路斯部署一艘军舰和反无人机直升机
+  why_zh: 法国宣布也将向地中海和中东派遣空中和海军力量
+  takeaway_zh: 法国宣布也将向地中海和中东派遣空中和海军力量
+  prompt_zh: ''
+- category: Tech industry
+  title: Highguard is shutting down this month
+  why: 'Another high-profile live-service game is shutting down soon after launch:
+    this time it''s the free-to-play squad shooter Highguard.'
+  takeaway: 'Another high-profile live-service game is shutting down soon after launch:
+    this time it''s the free-to-play squad shooter Highguard. Developer Wildlight
+    Entertainment says that, even though Highguard reached 2 million players, the
+    game will be shut down permanently on March 12th. That''s less than two months
+    after the game debuted on January 26th. "Despite th…'
+  prompt: ''
+  url: https://www.theverge.com/games/880206/highguard-shut-down
+  source: The Verge
+  published_utc: '2026-03-03T20:16:03+00:00'
+  title_zh: Highguard本月将关闭
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Shark’s latest robot vacuum hunts stains with UV light
+  why: The Shark PowerDetect UV Reveal is SharkNinja's latest robot vacuum and mop.
+  takeaway: The Shark PowerDetect UV Reveal is SharkNinja's latest robot vacuum and
+    mop. A flagship model with a multifunctional dock that empties the dustbin and
+    refills and washes its mop, the Reveal's signature feature is a UV light designed
+    to "find" stains on your floors. It costs $1,299.99 and is available now. Combined
+    with an RGB […]
+  prompt: ''
+  url: https://www.theverge.com/tech/888179/shark-powerdetect-uv-reveal-robot-vacuum-review
+  source: The Verge
+  published_utc: '2026-03-03T20:07:38+00:00'
+  title_zh: 鲨鱼新款扫地机器人利用紫外线追踪污渍
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anduril aims at $60 billion valuation in new funding round
+  why: The funding round would come less than a year after Anduril's Series G, which
+    closed in June with $2.5 billion against a $30 billion valuat…
+  takeaway: The funding round would come less than a year after Anduril's Series G,
+    which closed in June with $2.5 billion against a $30 billion valuation.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/anduril-aims-at-60-billion-valuation-in-new-funding-round/
+  source: TechCrunch
+  published_utc: '2026-03-03T20:06:45+00:00'
+  title_zh: Anduril新一轮融资目标估值600亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Claude Code rolls out a voice mode capability
+  why: Anthropic is stepping up its game in the AI coding space with the rollout of
+    Voice Mode in Claude Code.
+  takeaway: Anthropic is stepping up its game in the AI coding space with the rollout
+    of Voice Mode in Claude Code.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/
+  source: TechCrunch
+  published_utc: '2026-03-03T20:02:10+00:00'
+  title_zh: Claude Code推出语音模式功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: There are plenty of great choices if you want to spend less than $15K on
+    an EV
+  why: There's a lot of good Hyundai and Kia EVs in this price bracket, plus the Bolt
+    and i3.
+  takeaway: There's a lot of good Hyundai and Kia EVs in this price bracket, plus
+    the Bolt and i3.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/03/there-are-plenty-of-great-choices-if-you-want-to-spend-less-than-15k-on-an-ev/
+  source: Ars Technica
+  published_utc: '2026-03-03T19:58:10+00:00'
+  title_zh: 如果您想花不到1.5万美元购买电动车，有许多不错的选择
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Banijay Group to form £3.8bn television super-indie with The Traitors producers
+  why: Chair of merged production company says move creates a ‘world-class’ offering
+    across live events and programming The European maker of tele…
+  takeaway: Chair of merged production company says move creates a ‘world-class’ offering
+    across live events and programming The European maker of television shows ranging
+    from Peaky Blinders to Big Brother is to merge with the UK super-indie behind
+    hits including The Traitors to create a €4.4bn (£3.8bn) global TV production giant.
+    Paris-headquartered Banijay Group, wh…
+  prompt: ''
+  url: https://www.theguardian.com/media/2026/mar/03/banijay-group-to-form-38bn-television-super-indie-with-the-traitors-producers
+  source: The Guardian - Business
+  published_utc: '2026-03-03T19:52:44+00:00'
+  title_zh: Banijay集团将与《叛徒》制片人组建38亿英镑的电视超级独立公司
+  why_zh: 合并后的制作公司主席表示，此举将在现场活动和节目制作领域打造‘世界级’服务
+  takeaway_zh: 合并后的制作公司主席表示，此举将在现场活动和节目制作领域打造‘世界级’服务。欧洲电视节目制作商，从《浴血黑帮》到《老大哥》，将与英国超级独立制作公司合并，后者曾推出《叛徒》等热门节目，共同打造一家价值44亿欧元（38亿英镑）的全球电视制作巨头。总部位于巴黎的Banijay
+    Group……
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI changes deal with US military after backlash
+  why: Chief Executive Sam Altman said the group would prohibit the use of its systems
+    to spy on Americans.
+  takeaway: Chief Executive Sam Altman said the group would prohibit the use of its
+    systems to spy on Americans.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c3rz1nd0egro?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-03-03T19:37:28+00:00'
+  title_zh: OpenAI在反弹后修改与美国军方的协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'The Guardian view on Labour’s migration gamble: Denmark is no template |
+    Editorial'
+  why: Extending settlement waits risks deepening labour shortages while misreading
+    public concern about migration’s economic and demographic real…
+  takeaway: Extending settlement waits risks deepening labour shortages while misreading
+    public concern about migration’s economic and demographic realities The home secretary,
+    Shabana Mahmood, is expected this week to press ahead with plans to make it harder
+    for migrants to gain settled status, extending the wait from five to 10 years.
+    She will not change tack despite…
+  prompt: ''
+  url: https://www.theguardian.com/commentisfree/2026/mar/03/the-guardian-view-on-labours-migration-gamble-denmark-is-no-template
+  source: The Guardian - Business
+  published_utc: '2026-03-03T19:22:55+00:00'
+  title_zh: 《卫报》观点：工党的移民赌注——丹麦并非模板 | 社论
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'The Guardian view on Rachel Reeves’s spring statement: stability cannot
+    mean sacrificing living standards | Editorial'
+  why: An energy shock from war in the Gulf will expose the limits of rigid fiscal
+    rules.
+  takeaway: 'An energy shock from war in the Gulf will expose the limits of rigid
+    fiscal rules. The real question is who absorbs the loss: the state, firms or households?
+    The war in the Middle East has sent oil and gas prices soaring – and Britain remains
+    deeply exposed to global energy markets. If the shocks persist they will feed
+    directly into household bills, busines…'
+  prompt: ''
+  url: https://www.theguardian.com/commentisfree/2026/mar/03/the-guardian-view-on-rachel-reevess-spring-statement-stability-cannot-mean-sacrificing-living-standards
+  source: The Guardian - Business
+  published_utc: '2026-03-03T19:22:10+00:00'
+  title_zh: 《卫报》观点：瑞秋·里夫斯的春季预算案——稳定不应以牺牲生活水平为代价 | 社论
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: UK lifts Russia-linked sanctions on British accountant
+  why: John Michael Ormerod was added to UK sanctions lists as part of attempts to
+    disrupt Russia’s shadow fleet of vessels
+  takeaway: John Michael Ormerod was added to UK sanctions lists as part of attempts
+    to disrupt Russia’s shadow fleet of vessels
+  prompt: ''
+  url: https://www.ft.com/content/e5522178-69b3-42d4-bab0-89b54b8d7bfd
+  source: Financial Times - World
+  published_utc: '2026-03-03T19:18:44+00:00'
+  title_zh: 英国解除对与俄罗斯有关的英国会计师的制裁
+  why_zh: 约翰·迈克尔·奥默罗德被列入英国制裁名单，旨在打击俄罗斯的影子船队
+  takeaway_zh: 约翰·迈克尔·奥默罗德被列入英国制裁名单，旨在打击俄罗斯的影子船队
+  prompt_zh: ''
+- category: Business & economy
+  title: UAE projects normal life as missiles shake haven reputation
+  why: Officials urge residents to return to normal but holidaymakers are cancelling
+  takeaway: Officials urge residents to return to normal but holidaymakers are cancelling
+  prompt: ''
+  url: https://www.ft.com/content/5615f5bf-a60a-4532-ae2c-5a86e131930c
+  source: Financial Times - World
+  published_utc: '2026-03-03T19:16:58+00:00'
+  title_zh: 阿联酋在导弹震动中展现正常生活，动摇避风港声誉
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US seeks to revive battle with four law firms over executive orders
+  why: Justice department reverses decision from a day earlier to walk away from court
+    case
+  takeaway: Justice department reverses decision from a day earlier to walk away from
+    court case
+  prompt: ''
+  url: https://www.ft.com/content/f69b444f-1497-4980-bc08-69fcde8df11b
+  source: Financial Times - World
+  published_utc: '2026-03-03T19:11:24+00:00'
+  title_zh: 美国寻求重启与四家律师事务所关于行政命令的争议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: What will Rachel Reeves’s spring forecast mean for household finances?
+  why: The chancellor promises more money in people’s pockets, but the Iran crisis
+    makes steeper inflation a pressing worry Rachel Reeves used her…
+  takeaway: The chancellor promises more money in people’s pockets, but the Iran crisis
+    makes steeper inflation a pressing worry Rachel Reeves used her spring statement
+    to insist her economic policies are working and things are looking up for household
+    finances after the cost of living crisis. The chancellor said that by the next
+    general election “people will be over £…
+  prompt: ''
+  url: https://www.theguardian.com/uk-news/2026/mar/03/what-will-rachel-reevess-spring-forecast-mean-for-household-finances
+  source: The Guardian - Business
+  published_utc: '2026-03-03T19:00:44+00:00'
+  title_zh: 瑞秋·里夫斯的春季预测对家庭财务意味着什么？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

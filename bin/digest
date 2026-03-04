@@ -1308,6 +1308,11 @@ def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> 
         "energy": 6,
         # AI / platforms / infra
         "openai": 10,
+        # Model families / common release naming (helps rank model updates even when titles omit "model/release")
+        "gpt": 9,
+        "gemini": 9,
+        "claude": 8,
+        "deepmind": 8,
         "chatgpt": 9,
         "anthropic": 8,
         "nvidia": 8,
@@ -1376,10 +1381,17 @@ def _ai_item_practicality_filter(items: list[dict[str, Any]]) -> list[dict[str, 
     def _is_noisy(it: dict[str, Any]) -> bool:
         t = (it.get("title") or "").lower()
         u = (it.get("url") or "").lower()
+
+        def _has_prerelease_marker(s: str) -> bool:
+            # NOTE: Don't use a raw substring check for "rc" (it matches common words like "search").
+            if any(x in s for x in ["nightly", "beta", "alpha", "dev preview", "preview", "snapshot"]):
+                return True
+            return bool(re.search(r"(^|[^a-z0-9])rc(\d+|[^a-z0-9]|$)", s))
+
         # GitHub releases are, by definition, "tool updates"—keep them unless they are noisy pre-releases.
         if "github.com" in u and "/releases/" in u:
             # Pre-releases/nightlies are too frequent for a daily brief.
-            if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
+            if _has_prerelease_marker(t):
                 return True
             # llama.cpp-style commit-tag releases are extremely frequent; keep them out of Top unless needed.
             if ("llama.cpp" in t) and (re.search(r"\brelease:\s*b\d{4,}\b", t) or re.search(r"\bb\d{4,}\b", t)):
@@ -1410,11 +1422,23 @@ def _ai_item_practicality_filter(items: list[dict[str, Any]]) -> list[dict[str, 
             "inference",
             "open-source",
             "open source",
+            # Model family names (many release posts omit the literal word "model")
+            "gpt",
+            "gemini",
+            "claude",
+            "llama",
+            "mistral",
+            "qwen",
+            "deepseek",
+            "grok",
+            "openai",
+            "anthropic",
+            "deepmind",
         ]
         if not any(k in t for k in practical_kw):
             return True
         # Pre-releases/nightlies are too frequent for a daily brief.
-        if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
+        if _has_prerelease_marker(t):
             return True
         # llama.cpp commit-tag releases are extremely frequent; keep them out of Top unless needed.
         if "llama.cpp" in t and re.search(r"\brelease:\s*b\d{4,}\b", t):
@@ -1949,6 +1973,19 @@ def _format_linkedin_post(
             if not cat_items:
                 continue
             lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
+            # Pick the best items *within* each category for LinkedIn (the YAML order is a draft artifact).
+            cat_ranked = sorted(
+                cat_items,
+                key=lambda it: (
+                    _importance_score(it, now=now),
+                    _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
+                ),
+                reverse=True,
+            )
+            if cat == "AI tools & model releases":
+                # De-noise prereleases/commit-tag spam before we take the top 3.
+                cat_ranked = _ai_item_practicality_filter(cat_ranked)
+            cat_items = cat_ranked
             # Keep LinkedIn scannable: cap per category so "AI tools/model releases" doesn't
             # consume the entire post, while the full list remains on the site.
             if cat == "AI tools & model releases":

@@ -1877,6 +1877,7 @@ weeks:
   - '2026-03-02'
   - '2026-03-03'
   - '2026-03-04'
+  - '2026-03-05'
   highlights_news:
   - date: '2026-03-02'
     url: https://www.bbc.com/news/articles/cvg3vjkx9d7o?at_medium=RSS&at_campaign=rss
@@ -2017,6 +2018,43 @@ weeks:
     category: Tech industry
     source: TechCrunch
     published_utc: '2026-03-03T20:20:56+00:00'
+  - date: '2026-03-05'
+    url: https://www.ft.com/content/f8592f27-a1be-4299-8c76-6e1947d5beb6
+    title: OpenAI pushes to add surveillance safeguards following Pentagon deal
+    title_zh: OpenAI在与五角大楼达成合作协议后推进监控安全措施
+    category: Tech industry
+    source: Financial Times - Technology
+    published_utc: '2026-03-05T00:39:22+00:00'
+  - date: '2026-03-05'
+    url: https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/
+    title: Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic, but
+      his explanation raises more questions than it answers
+    title_zh: 黄仁勋称英伟达正减少与OpenAI和Anthropic合作，但解释引发更多疑问
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-05T01:08:28+00:00'
+  - date: '2026-03-05'
+    url: https://www.bbc.com/news/articles/cjwzzq70qgvo?at_medium=RSS&at_campaign=rss
+    title: Higher tariffs likely this week, says US Treasury
+    title_zh: 美财政部表示本周可能提高关税
+    category: Business & economy
+    source: BBC News - Business
+    published_utc: '2026-03-04T22:11:17+00:00'
+  - date: '2026-03-05'
+    url: https://arstechnica.com/gadgets/2026/03/google-and-epic-look-to-bury-the-hatchet-with-new-app-store-settlement/
+    title: Google and Epic announce settlement to end app store antitrust case
+    title_zh: 谷歌与Epic宣布和解，终结应用商店反垄断案
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-04T20:48:16+00:00'
+  - date: '2026-03-05'
+    url: https://www.theverge.com/news/889578/data-center-power-pledge-white-house-google-meta-microsoft
+    title: Seven tech giants signed Trump’s pledge to keep electricity costs from
+      spiking around data centers
+    title_zh: 七大科技巨头签署特朗普协议，防止数据中心周边电费飙升
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-05T00:17:37+00:00'
   highlights_ai:
   - date: '2026-03-02'
     url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7

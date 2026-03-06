@@ -1878,6 +1878,7 @@ weeks:
   - '2026-03-03'
   - '2026-03-04'
   - '2026-03-05'
+  - '2026-03-06'
   highlights_news:
   - date: '2026-03-02'
     url: https://www.bbc.com/news/articles/cvg3vjkx9d7o?at_medium=RSS&at_campaign=rss
@@ -2055,6 +2056,14 @@ weeks:
     category: Tech industry
     source: The Verge
     published_utc: '2026-03-05T00:17:37+00:00'
+  - date: '2026-03-06'
+    url: https://www.ft.com/content/30d0b1df-ad8c-42eb-852b-dad53acaecfc
+    title: US considers tying Nvidia and AMD AI chip exports to foreign investment
+      pledges
+    title_zh: 美国考虑将英伟达和AMD的AI芯片出口与外国投资承诺挂钩
+    category: Tech industry
+    source: Financial Times - Technology
+    published_utc: '2026-03-05T22:48:42+00:00'
   highlights_ai:
   - date: '2026-03-02'
     url: https://github.com/open-webui/open-webui/releases/tag/v0.8.7
@@ -2165,3 +2174,39 @@ weeks:
     category: AI tools & model releases
     source: Google DeepMind Blog
     published_utc: '2026-03-03T16:35:55+00:00'
+  - date: '2026-03-06'
+    url: https://openai.com/index/chatgpt-for-excel
+    title: Introducing ChatGPT for Excel and new financial data integrations
+    title_zh: 推出Excel版ChatGPT及新财务数据集成
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-03-05T00:00:00+00:00'
+  - date: '2026-03-06'
+    url: https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/
+    title: OpenAI launches GPT-5.4 Thinking and Pro combining coding, reasoning, and
+      computer use in one model
+    title_zh: OpenAI发布GPT-5.4 Thinking和Pro，集编码、推理与计算机应用于一体
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-05T19:15:40+00:00'
+  - date: '2026-03-06'
+    url: https://github.com/openai/openai-node/releases/tag/v6.27.0
+    title: 'openai/openai-node: v6.27.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-03-05T23:19:23+00:00'
+  - date: '2026-03-06'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.3
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-03-05T23:18:25+00:00'
+  - date: '2026-03-06'
+    url: https://github.com/openai/openai-python/releases/tag/v2.26.0
+    title: 'openai/openai-python: v2.26.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-03-05T23:16:58+00:00'

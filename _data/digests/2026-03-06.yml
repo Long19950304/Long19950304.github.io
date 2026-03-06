@@ -1,0 +1,1148 @@
+date: '2026-03-06'
+title: Daily Digest - 2026-03-06
+title_zh: 每日简报 - 2026-03-06
+note: 'Today: US considers tying Nvidia and AMD AI chip exports to foreign in… · TfL
+  hack in 2024 affected around 10 million people, BBC can rev… · AI: Introducing ChatGPT
+  for Excel and new financial data inte….'
+note_zh: 今日关注：美国考虑将英伟达和AMD的AI芯片出口与外国投资承诺挂钩；BBC披露：2024年TfL黑客事件影响约1000万人；AI：推出Excel版ChatGPT及新财务数据集成。
+items:
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: 1.82.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/1.82.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-06T01:14:26+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing GPT‑5.4
+  why: 'Introducing GPT‑5.4 Two new API models: gpt-5.4 and gpt-5.4-pro , also available
+    in ChatGPT and Codex CLI.'
+  takeaway: 'Introducing GPT‑5.4 Two new API models: gpt-5.4 and gpt-5.4-pro , also
+    available in ChatGPT and Codex CLI. August 31st 2025 knowledge cutoff, 1 million
+    token context window. Priced slightly higher than the GPT-5.2 family with a bump
+    in price for both models if you go above 272,000 tokens. 5.4 beats coding specialist
+    GPT-5.3-Codex on all of the relevant benc…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/5/introducing-gpt54/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-05T23:56:09+00:00'
+  title_zh: GPT-5.4 正式发布
+  why_zh: 推出GPT‑5.4 两个新API模型：gpt-5.4和gpt-5.4-pro，也适用于ChatGPT和Codex CLI。
+  takeaway_zh: 隆重推出GPT-5.4：两种全新API模型——gpt-5.4与gpt-5.4-pro，同时支持ChatGPT和Codex命令行接口。知识截止日期2025年8月31日，支持100万token上下文窗口。定价略高于GPT-5.2系列，若超出272,000
+    tokens将小幅提价。5.4版本在各项编码测评中全面超越专业代码模型GPT-5.3-Codex...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.27.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.27.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-03-05T23:19:23+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.3
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-05T23:18:25+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.26.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.26.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-03-05T23:16:58+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: ByteDance’s AI Ambitions Are Being Hampered by Compute Restraints and Copyright
+    Concerns
+  why: ByteDance’s new Seedance 2.0 AI video model seemed unstoppable—until heavy
+    demand strained the company’s compute capacity and copyright com…
+  takeaway: ByteDance’s new Seedance 2.0 AI video model seemed unstoppable—until heavy
+    demand strained the company’s compute capacity and copyright complaints began
+    piling up.
+  prompt: ''
+  url: https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/
+  source: WIRED - AI
+  published_utc: '2026-03-05T21:14:22+00:00'
+  title_zh: 字节跳动的 AI 野心受限于计算资源与版权问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4_patch'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4_patch
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-05T20:14:36+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.2
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-05T20:07:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI launches GPT-5.4 Thinking and Pro combining coding, reasoning, and
+    computer use in one model
+  why: GPT-5.4 is OpenAI's most capable model yet, combining coding, computer operation,
+    and reasoning in a single package for the first time.
+  takeaway: GPT-5.4 is OpenAI's most capable model yet, combining coding, computer
+    operation, and reasoning in a single package for the first time. The article OpenAI
+    launches GPT-5.4 Thinking and Pro combining coding, reasoning, and computer use
+    in one model appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/
+  source: The Decoder (AI)
+  published_utc: '2026-03-05T19:15:40+00:00'
+  title_zh: OpenAI发布GPT-5.4 Thinking和Pro，集编码、推理与计算机应用于一体
+  why_zh: GPT-5.4是OpenAI迄今为止最强大的模型，首次将编码、计算机操作和推理结合在一个包中。
+  takeaway_zh: GPT-5.4是OpenAI目前功能最强大的模型，首次将编码、计算机操作和推理功能集于一体。文章《OpenAI发布GPT-5.4：集编码、推理与计算机应用于一体的思维模型》率先由The
+    Decoder刊发。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/onnxruntime: ONNX Runtime v1.24.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/onnxruntime/releases/tag/v1.24.3
+  source: GitHub Releases - microsoft/onnxruntime
+  published_utc: '2026-03-05T19:00:05+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.26.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.26.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-03-05T18:35:44+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.25.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.25.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-03-05T18:34:55+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: NVIDIA Blackwell Sets STAC-AI Record for LLM Inference in Finance
+  why: Large language models (LLMs) are revolutionizing the financial trading landscape
+    by enabling sophisticated analysis of vast amounts of unst…
+  takeaway: Large language models (LLMs) are revolutionizing the financial trading
+    landscape by enabling sophisticated analysis of vast amounts of unstructured data
+    to...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/nvidia-blackwell-sets-stac-ai-record-for-llm-inference-in-finance/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-05T18:00:00+00:00'
+  title_zh: NVIDIA Blackwell 创下金融领域 LLM 推理的 STAC-AI 记录
+  why_zh: 大型语言模型（LLMs）正在通过实现对海量非结构化数据的复杂分析，彻底改变金融交易格局。
+  takeaway_zh: 大型语言模型（LLMs）正在重塑金融交易格局，其通过海量非结构化数据的精密分析能力...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'FlexAttention + FlashAttention-4: Fast and Flexible'
+  why: 'TL;DR: On Hopper and Blackwell GPUs, FlexAttention now has a FlashAttention-4
+    backend.'
+  takeaway: 'TL;DR: On Hopper and Blackwell GPUs, FlexAttention now has a FlashAttention-4
+    backend. We added support in PyTorch to automatically generate CuTeDSL score/mask
+    modification functions, and to JIT-instantiate FlashAttention-4 for custom...'
+  prompt: ''
+  url: https://pytorch.org/blog/flexattention-flashattention-4-fast-and-flexible/
+  source: PyTorch Blog
+  published_utc: '2026-03-05T17:55:43+00:00'
+  title_zh: FlexAttention + FlashAttention-4：快速与灵活
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.1
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-05T17:07:27+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Tuning Flash Attention for Peak Performance in NVIDIA CUDA Tile
+  why: 'In this post, we dive into one of the most critical workloads in modern AI:
+    Flash Attention, where you’ll learn: How to implement Flash Att…'
+  takeaway: 'In this post, we dive into one of the most critical workloads in modern
+    AI: Flash Attention, where you’ll learn: How to implement Flash Attention using
+    NVIDIA...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/tuning-flash-attention-for-peak-performance-in-nvidia-cuda-tile/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-05T17:00:00+00:00'
+  title_zh: 优化 Flash Attention 以实现 NVIDIA CUDA Tile 的峰值性能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Controlling Floating-Point Determinism in NVIDIA CCCL
+  why: A computation is considered deterministic if multiple runs with the same input
+    data produce the same bitwise result.
+  takeaway: A computation is considered deterministic if multiple runs with the same
+    input data produce the same bitwise result. While this may seem like a simple
+    property...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/controlling-floating-point-determinism-in-nvidia-cccl/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-05T17:00:00+00:00'
+  title_zh: 在 NVIDIA CCCL 中控制浮点确定性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Elastic Beanstalk now offers AI-powered environment analysis
+  why: AWS Elastic Beanstalk now offers AI-powered environment analysis to help you
+    quickly identify root causes and get recommended solutions for…
+  takeaway: AWS Elastic Beanstalk now offers AI-powered environment analysis to help
+    you quickly identify root causes and get recommended solutions for environment
+    health issues. When your environment experiences problems, Elastic Beanstalk collects
+    recent events, instance health, and logs from your environment and sends them
+    to Amazon Bedrock for analysis. This featur…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/elastic-beanstalk-ai-analysis/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-05T16:55:00+00:00'
+  title_zh: AWS Elastic Beanstalk 现提供 AI 驱动的环境分析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Can coding agents relicense open source through a “clean room” implementation
+    of code?
+  why: Over the past few months it's become clear that coding agents are extraordinarily
+    good at building a weird version of a "clean room" implem…
+  takeaway: Over the past few months it's become clear that coding agents are extraordinarily
+    good at building a weird version of a "clean room" implementation of code. The
+    most famous version of this pattern is when Compaq created a clean-room clone
+    of the IBM BIOS back in 1982 . They had one team of engineers reverse engineer
+    the BIOS to create a specification, then…
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/5/chardet/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-05T16:49:33+00:00'
+  title_zh: 编码代理能否通过“洁净室”实现代码重新授权？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'huggingface/diffusers: Diffusers 0.37.0: Modular Diffusers, New image and
+    video pipelines, multiple core library improvements, and more 🔥'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/diffusers/releases/tag/v0.37.0
+  source: GitHub Releases - huggingface/diffusers
+  published_utc: '2026-03-05T15:05:21+00:00'
+  title_zh: 'huggingface/diffusers: Diffusers 0.37.0：模块化扩散器、新图像与视频管道、多项核心库改进等 🔥'
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.0
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-05T10:35:07+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing GPT-5.4
+  why: Introducing GPT-5.4, OpenAI’s most most capable and efficient frontier model
+    for professional work, with state-of-the-art coding, computer…
+  takeaway: Introducing GPT-5.4, OpenAI’s most most capable and efficient frontier
+    model for professional work, with state-of-the-art coding, computer use, tool
+    search, and 1M-token context.
+  prompt: ''
+  url: https://openai.com/index/introducing-gpt-5-4
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-03-05T10:00:00+00:00'
+  title_zh: GPT-5.4 发布
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Reasoning models struggle to control their chains of thought, and that’s
+    good
+  why: OpenAI introduces CoT-Control and finds reasoning models struggle to control
+    their chains of thought, reinforcing monitorability as an AI s…
+  takeaway: OpenAI introduces CoT-Control and finds reasoning models struggle to control
+    their chains of thought, reinforcing monitorability as an AI safety safeguard.
+  prompt: ''
+  url: https://openai.com/index/reasoning-models-chain-of-thought-controllability
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-03-05T10:00:00+00:00'
+  title_zh: 推理模型难以控制其思维链，这或许是件好事
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GPT-5.4 Thinking System Card
+  why: ''
+  takeaway: ''
+  prompt: ''
+  url: https://openai.com/index/gpt-5-4-thinking-system-card
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-03-05T10:00:00+00:00'
+  title_zh: GPT-5.4 思维系统卡片
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerate Lambda durable functions development with new Kiro power
+  why: Today, AWS announces the Lambda durable functions Kiro power, bringing Lambda
+    durable function development expertise to agentic AI developm…
+  takeaway: Today, AWS announces the Lambda durable functions Kiro power, bringing
+    Lambda durable function development expertise to agentic AI development in Kiro.
+    With this power, you can build resilient, long-running multi-step applications
+    and AI workflows faster with AI agent-assisted development directly in your local
+    development environment. When you work with du…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/lambda-durable-kiro-power/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-05T07:00:00+00:00'
+  title_zh: 利用 Kiro 新功能加速 Lambda 持久函数开发
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.0.patch2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.0.patch2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-05T04:32:35+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.0.patch1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.0.patch1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-05T04:16:30+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14.gemini-batches'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14.gemini-batches
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-05T03:19:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-redirect-alpha'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-redirect-alpha
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-05T01:11:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing ChatGPT for Excel and new financial data integrations
+  why: OpenAI introduces ChatGPT for Excel and new financial app integrations, powered
+    by GPT-5.4 to accelerate modeling, research, and analysis i…
+  takeaway: OpenAI introduces ChatGPT for Excel and new financial app integrations,
+    powered by GPT-5.4 to accelerate modeling, research, and analysis in regulated
+    environments.
+  prompt: ''
+  url: https://openai.com/index/chatgpt-for-excel
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-03-05T00:00:00+00:00'
+  title_zh: 推出Excel版ChatGPT及新财务数据集成
+  why_zh: OpenAI推出ChatGPT for Excel及新的金融应用集成，由GPT-5.4驱动，以加速受监管环境中的建模、研究和分析。
+  takeaway_zh: OpenAI推出ChatGPT for Excel及新的金融应用集成，由GPT-5.4驱动，以加速受监管环境中的建模、研究和分析。
+  prompt_zh: ''
+- category: Business & economy
+  title: India’s energy conundrum as Middle East war hits supply
+  why: 'Also in this newsletter: Nepal votes for a new leader'
+  takeaway: 'Also in this newsletter: Nepal votes for a new leader'
+  prompt: ''
+  url: https://www.ft.com/content/be1cdbb0-003d-42ed-bc03-2b552cdf3a00
+  source: Financial Times - Markets
+  published_utc: '2026-03-06T01:30:07+00:00'
+  title_zh: 中东战争冲击供应，印度能源困境加剧
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic to challenge DOD’s supply chain label in court
+  why: Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense's
+    designation of the AI firm as a supply chain risk.
+  takeaway: Anthropic CEO Dario Amodei said he plans to challenge the Department of
+    Defense's designation of the AI firm as a supply chain risk. He claims most Anthropic
+    customers are unaffected by the label.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/
+  source: TechCrunch
+  published_utc: '2026-03-06T01:28:54+00:00'
+  title_zh: Anthropic将就DOD供应链标签问题诉诸法庭
+  why_zh: Anthropic CEO Dario Amodei表示，他计划挑战国防部将该AI公司列为供应链风险的决定。
+  takeaway_zh: Anthropic CEO Dario Amodei表示，他计划挑战国防部将该AI公司列为供应链风险的决定，并称大多数Anthropic客户不受此标签影响。
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon.com says things are fixed after some issues with logging in and checking
+    out
+  why: If you were having issues shopping on Amazon or loading your playlists on Amazon
+    Music on Thursday, you weren't alone.
+  takeaway: If you were having issues shopping on Amazon or loading your playlists
+    on Amazon Music on Thursday, you weren't alone. For over three hours today, Downdetector
+    showed a sizable spike in people reporting issues with checkout, search, and logging
+    in. The problem seemed to be affecting both the site and the mobile apps. But
+    an […]
+  prompt: ''
+  url: https://www.theverge.com/tech/890215/amazon-is-down-login-prices
+  source: The Verge
+  published_utc: '2026-03-06T01:24:36+00:00'
+  title_zh: 亚马逊.com称登录与结账问题已解决
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best iPad deals you can get right now
+  why: While the best iPad deals usually land during major sale events like Black
+    Friday, many great iPad deals are available outside of those tim…
+  takeaway: While the best iPad deals usually land during major sale events like Black
+    Friday, many great iPad deals are available outside of those times. The day-to-day
+    discounts come and go like changing winds, so there’s often some amount to be
+    saved, particularly on Apple’s most affordable iPad and the latest iPad Mini.
+    Hell, you can even […]
+  prompt: ''
+  url: https://www.theverge.com/21280354/best-ipad-deals-apple
+  source: The Verge
+  published_utc: '2026-03-06T01:08:00+00:00'
+  title_zh: 当前最佳iPad优惠一览
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What if your real computer was a super-sized Lego computer brick?
+  why: In 1979 - nearly 50 years ago - Lego jazzed up its very first spaceships with
+    an iconic sloped computer brick that was just painted plastic.
+  takeaway: In 1979 - nearly 50 years ago - Lego jazzed up its very first spaceships
+    with an iconic sloped computer brick that was just painted plastic. In 2022, we
+    introduced you to the engineer who fit an actual tiny computer inside. Now, industrial
+    designer Paul Staal has flipped the script with a working desktop PC […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/890047/what-if-your-real-computer-was-a-super-sized-lego-computer-brick
+  source: The Verge
+  published_utc: '2026-03-06T00:59:11+00:00'
+  title_zh: 如果你的真实电脑是一个超大乐高电脑积木会怎样？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Where things stand with the Department of War
+  why: 'Article URL: https://www.anthropic.com/news/where-stand-department-war Comments
+    URL: https://news.ycombinator.com/item?id=47269263 Points:…'
+  takeaway: 'Article URL: https://www.anthropic.com/news/where-stand-department-war
+    Comments URL: https://news.ycombinator.com/item?id=47269263 Points: 118 # Comments:
+    70'
+  prompt: ''
+  url: https://www.anthropic.com/news/where-stand-department-war
+  source: Hacker News (front page)
+  published_utc: '2026-03-06T00:40:41+00:00'
+  title_zh: 战争部现状如何
+  why_zh: 文章链接：https://www.anthropic.com/news/where-stand-department-war 评论链接：https://news.ycombinator.com/item?id=47269263
+    得分：
+  takeaway_zh: 文章链接：https://www.anthropic.com/news/where-stand-department-war 评论链接：https://news.ycombinator.com/item?id=47269263
+    得分：118 评论数：70
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump says Iran wants to ‘make a deal’ to end the war
+  why: Iran’s foreign minister Abbas Araghchi says the country is not asking for a
+    ceasefire
+  takeaway: Iran’s foreign minister Abbas Araghchi says the country is not asking
+    for a ceasefire
+  prompt: ''
+  url: https://www.ft.com/content/95d840fe-9838-4b52-8f81-464fe7c52902
+  source: Financial Times - Markets
+  published_utc: '2026-03-06T00:25:45+00:00'
+  title_zh: 特朗普称伊朗希望‘达成协议’结束战争
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Can snacks help you sleep?
+  why: Chocolates, bars, gummies and drinks promise to help you sleep, but is the
+    science behind them sound?
+  takeaway: Chocolates, bars, gummies and drinks promise to help you sleep, but is
+    the science behind them sound?
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cd6znvjvw3wo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-03-06T00:05:51+00:00'
+  title_zh: 零食能助眠吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: One in 7 shops in UK has turned cashless in the past year, survey finds
+  why: Some 14% of small High Street traders have gone card-only in the last year,
+    a survey suggests.
+  takeaway: Some 14% of small High Street traders have gone card-only in the last
+    year, a survey suggests.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cm211jnz568o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-06T00:05:41+00:00'
+  title_zh: 调查显示，过去一年英国七分之一的商店转向无现金支付
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Five ways the Iran war could affect you - in charts
+  why: With fuel and gas prices having risen in recent days, here are some ways the
+    conflict could affect households.
+  takeaway: With fuel and gas prices having risen in recent days, here are some ways
+    the conflict could affect households.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c4g5574pwreo?at_medium=RSS&at_campaign=rss
+  source: BBC News - Business
+  published_utc: '2026-03-06T00:05:31+00:00'
+  title_zh: 图表解析：伊朗战争可能影响你的五种方式
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TfL hack in 2024 affected around 10 million people, BBC can reveal
+  why: TfL insists it has "kept customers informed throughout this incident and will
+    continue to take all necessary action".
+  takeaway: TfL insists it has "kept customers informed throughout this incident and
+    will continue to take all necessary action".
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cz0ggkr2g77o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-03-06T00:05:12+00:00'
+  title_zh: BBC披露：2024年TfL黑客事件影响约1000万人
+  why_zh: 伦敦交通局坚称其"在整个事件中一直向乘客通报情况，并将继续采取一切必要行动"。
+  takeaway_zh: 伦敦交通局坚称其"在整个事件中一直向乘客通报情况，并将继续采取一切必要行动"。
+  prompt_zh: ''
+- category: Tech industry
+  title: Workers report watching Ray-Ban Meta-shot footage of people using the bathroom
+  why: Meta accused of "concealing the facts" about smart glass users' privacy.
+  takeaway: Meta accused of "concealing the facts" about smart glass users' privacy.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/03/workers-report-watching-ray-ban-meta-shot-footage-of-people-using-the-bathroom/
+  source: Ars Technica
+  published_utc: '2026-03-05T23:36:04+00:00'
+  title_zh: 员工报告观看Ray-Ban Meta拍摄的如厕画面
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The next generations of Bubble Tea, Lip Gloss, and Bubbles are available
+    now
+  why: 'Article URL: https://charm.land/blog/v2/ Comments URL: https://news.ycombinator.com/item?id=47268662
+    Points: 80 # Comments: 20'
+  takeaway: 'Article URL: https://charm.land/blog/v2/ Comments URL: https://news.ycombinator.com/item?id=47268662
+    Points: 80 # Comments: 20'
+  prompt: ''
+  url: https://charm.land/blog/v2/
+  source: Hacker News (front page)
+  published_utc: '2026-03-05T23:26:52+00:00'
+  title_zh: 新一代珍珠奶茶、唇彩和泡泡现已上市
+  why_zh: 文章链接：https://charm.land/blog/v2/ 评论链接：https://news.ycombinator.com/item?id=47268662
+    得分：80 评论数：20
+  takeaway_zh: 文章链接：https://charm.land/blog/v2/ 评论链接：https://news.ycombinator.com/item?id=47268662
+    得分：80 评论数：20
+  prompt_zh: ''
+- category: Business & economy
+  title: Thousands flee Beirut after sweeping Israeli evacuation order
+  why: Israel orders area of hundreds of thousands of people cleared as war rages
+    with militant group Hizbollah
+  takeaway: Israel orders area of hundreds of thousands of people cleared as war rages
+    with militant group Hizbollah
+  prompt: ''
+  url: https://www.ft.com/content/63bf2190-96f6-4192-beed-eeec0ead921d
+  source: Financial Times - World
+  published_utc: '2026-03-05T23:23:24+00:00'
+  title_zh: 以色列全面撤离令下达后，数千人逃离贝鲁特
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Lawmakers just advanced online safety laws that require age verification
+    at the app store
+  why: A package of child safety bills is headed to the House floor following an hours-long
+    session that left Democrats and Republicans divided.
+  takeaway: A package of child safety bills is headed to the House floor following
+    an hours-long session that left Democrats and Republicans divided. On Thursday,
+    lawmakers on the House Committee on Energy and Commerce voted to advance the Kids
+    Internet and Digital Safety (KIDS) Act; Sammy's Law; and the App Store Accountability
+    Act, which would require […]
+  prompt: ''
+  url: https://www.theverge.com/policy/890367/house-lawmakers-online-safety-bills-kids-act
+  source: The Verge
+  published_utc: '2026-03-05T23:16:00+00:00'
+  title_zh: 立法者推进要求应用商店进行年龄验证的在线安全法案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DiligenceSquared uses AI, voice agents to make M&A research affordable
+  why: Instead of relying on expensive management consultants, the startup uses AI
+    voice agents to conduct interviews with customers of the compan…
+  takeaway: Instead of relying on expensive management consultants, the startup uses
+    AI voice agents to conduct interviews with customers of the companies the PE firms
+    are considering buying.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/diligencesquared-uses-ai-voice-agents-to-make-ma-research-affordable/
+  source: TechCrunch
+  published_utc: '2026-03-05T23:14:04+00:00'
+  title_zh: DiligenceSquared利用AI与语音代理降低并购研究成本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'Middle East war day 6 as it happened: Azerbaijan says it was struck by Iranian
+    drone, US oil hits highest price since 2024'
+  why: Trump says Tehran wants to ‘make a deal’, but Iran’s foreign minister says
+    the country not asking for a ceasefire
+  takeaway: Trump says Tehran wants to ‘make a deal’, but Iran’s foreign minister
+    says the country not asking for a ceasefire
+  prompt: ''
+  url: https://www.ft.com/content/923c67e7-99d0-4044-9228-8ae381369822
+  source: Financial Times - Markets
+  published_utc: '2026-03-05T23:10:51+00:00'
+  title_zh: 中东战争第六天：阿塞拜疆称遭伊朗无人机袭击，美国油价创2024年以来新高
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Depleted oil reserve leaves US exposed as Iran war pushes up prices
+  why: Donald Trump has not fulfilled a vow to refill the Strategic Petroleum Reserve
+    that was drained by Joe Biden
+  takeaway: Donald Trump has not fulfilled a vow to refill the Strategic Petroleum
+    Reserve that was drained by Joe Biden
+  prompt: ''
+  url: https://www.ft.com/content/d546fd5b-4a0c-4b90-8bee-9e85b75458ed
+  source: Financial Times - Markets
+  published_utc: '2026-03-05T23:03:47+00:00'
+  title_zh: 石油储备枯竭，伊朗战争推高油价令美国暴露风险
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Pentagon formally labels Anthropic a supply-chain risk
+  why: After weeks of failed negotiations, public ultimatums, and lawsuit threats,
+    the Defense Department has formally labeled Anthropic a "supply…
+  takeaway: After weeks of failed negotiations, public ultimatums, and lawsuit threats,
+    the Defense Department has formally labeled Anthropic a "supply-chain risk", escalating
+    its fight with the AI company over their acceptable use policies and potentially
+    bringing their fight to court. The decision, first reported by The Wall Street
+    Journal on Thursday, citing one sou…
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/890347/pentagon-anthropic-supply-chain-risk
+  source: The Verge
+  published_utc: '2026-03-05T23:02:22+00:00'
+  title_zh: 五角大楼正式将Anthropic标记为供应链风险
+  why_zh: 经过数周谈判失败、公开最后通牒和诉讼威胁后，国防部正式将Anthropic标记为"供应链风险"。
+  takeaway_zh: 经过数周谈判失败、公开最后通牒和诉讼威胁后，国防部正式将Anthropic标记为"供应链风险"，升级了与该AI公司在可接受使用政策上的斗争，并可能将争端诉诸法庭。此决定首次由《华尔街日报》周四报道，引用一位消息人士的话…
+  prompt_zh: ''
+- category: Tech industry
+  title: US considers tying Nvidia and AMD AI chip exports to foreign investment pledges
+  why: Draft rule would require countries to invest in America in exchange for advanced
+    semiconductors
+  takeaway: Draft rule would require countries to invest in America in exchange for
+    advanced semiconductors
+  prompt: ''
+  url: https://www.ft.com/content/30d0b1df-ad8c-42eb-852b-dad53acaecfc
+  source: Financial Times - Technology
+  published_utc: '2026-03-05T22:48:42+00:00'
+  title_zh: 美国考虑将英伟达和AMD的AI芯片出口与外国投资承诺挂钩
+  why_zh: 草案规定要求各国投资美国以换取先进半导体
+  takeaway_zh: 草案规定要求各国投资美国以换取先进半导体
+  prompt_zh: ''
+- category: Tech industry
+  title: Cluely CEO Roy Lee admits to publicly lying about revenue numbers last year
+  why: The $7 million in annual recurring revenue that Cluely CEO Roy Lee shared last
+    summer was a lie, its founder and CEO Roy Lee admitted on Th…
+  takeaway: The $7 million in annual recurring revenue that Cluely CEO Roy Lee shared
+    last summer was a lie, its founder and CEO Roy Lee admitted on Thursday on X.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/cluely-ceo-roy-lee-admits-to-publicly-lying-about-revenue-numbers-last-year/
+  source: TechCrunch
+  published_utc: '2026-03-05T22:38:26+00:00'
+  title_zh: Cluely CEO Roy Lee承认去年公开谎报营收数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Trump says he must be ‘involved’ in choosing Iran’s next leader
+  why: President says the US would not accept Ayatollah Ali Khamenei’s son Mojtaba
+    as supreme leader
+  takeaway: President says the US would not accept Ayatollah Ali Khamenei’s son Mojtaba
+    as supreme leader
+  prompt: ''
+  url: https://www.ft.com/content/5847cc41-f655-49d4-a6f3-1674cc81dc80
+  source: Financial Times - World
+  published_utc: '2026-03-05T22:21:04+00:00'
+  title_zh: 特朗普称必须‘参与’选择伊朗下任领导人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: '‘Uncanny Valley’: Iran War in the AI Era, Prediction Market Ethics, and
+    Paramount Beats Netflix'
+  why: In this episode, our hosts unpack the ongoing conflict in the Middle East,
+    particularly as the AI industry has been entrenching itself with…
+  takeaway: In this episode, our hosts unpack the ongoing conflict in the Middle East,
+    particularly as the AI industry has been entrenching itself with the Department
+    of Defense.
+  prompt: ''
+  url: https://www.wired.com/story/uncanny-valley-podcast-iran-war-artificial-intelligence-prediction-markets-paramount-warner-bros/
+  source: WIRED - AI
+  published_utc: '2026-03-05T22:17:54+00:00'
+  title_zh: ‘恐怖谷’：AI时代的伊朗战争、预测市场伦理及派拉蒙击败Netflix
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic labelled a supply chain risk by Pentagon
+  why: The supply chain risk designation of the artificial intelligence firm is a
+    first for a US company.
+  takeaway: The supply chain risk designation of the artificial intelligence firm
+    is a first for a US company.
+  prompt: ''
+  url: https://www.bbc.com/news/articles/cn5g3z3xe65o?at_medium=RSS&at_campaign=rss
+  source: BBC News - Technology
+  published_utc: '2026-03-05T22:08:28+00:00'
+  title_zh: 五角大楼将Anthropic列为供应链风险
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: UK police search journalist’s home in China spy probe
+  why: Labour suspends Joani Reid, the MP whose husband David Taylor has been arrested
+    in the counterterrorism probe
+  takeaway: Labour suspends Joani Reid, the MP whose husband David Taylor has been
+    arrested in the counterterrorism probe
+  prompt: ''
+  url: https://www.ft.com/content/b1cdf0a0-fd91-4949-8ffc-a6e43d7c8e7b
+  source: Financial Times - World
+  published_utc: '2026-03-05T22:06:57+00:00'
+  title_zh: 英国警方在中国间谍调查中搜查记者住所
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A standard protocol to handle and discard low-effort, AI-Generated pull requests
+  why: 'Article URL: https://406.fail/ Comments URL: https://news.ycombinator.com/item?id=47267947
+    Points: 81 # Comments: 21'
+  takeaway: 'Article URL: https://406.fail/ Comments URL: https://news.ycombinator.com/item?id=47267947
+    Points: 81 # Comments: 21'
+  prompt: ''
+  url: https://406.fail/
+  source: Hacker News (front page)
+  published_utc: '2026-03-05T22:04:59+00:00'
+  title_zh: 处理与丢弃低质量AI生成拉取请求的标准协议
+  why_zh: 文章链接：https://406.fail/ 评论链接：https://news.ycombinator.com/item?id=47267947
+    得分：81 评论数：21
+  takeaway_zh: 文章链接：https://406.fail/ 评论链接：https://news.ycombinator.com/item?id=47267947
+    得分：81 评论数：21
+  prompt_zh: ''
+- category: Business & economy
+  title: Gulf states could review overseas investments to ease strains caused by Iran
+    war
+  why: Three leading Middle East economies consider options as US-Israeli campaign
+    against Tehran continues
+  takeaway: Three leading Middle East economies consider options as US-Israeli campaign
+    against Tehran continues
+  prompt: ''
+  url: https://www.ft.com/content/ab7d597d-5e72-4cbf-8d3b-53815695d68f
+  source: Financial Times - World
+  published_utc: '2026-03-05T22:02:29+00:00'
+  title_zh: 海湾国家或审查海外投资以缓解伊朗战争带来的压力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: 'FirstFT: Donald Trump has no plan for Iran war aftermath, says US senator'
+  why: 'Also in today’s newsletter: China cuts growth target, and Europe-to-Asia air
+    travel squeezed'
+  takeaway: 'Also in today’s newsletter: China cuts growth target, and Europe-to-Asia
+    air travel squeezed'
+  prompt: ''
+  url: https://www.ft.com/content/8a545566-7aae-4094-8f1f-879743a0a9c7
+  source: Financial Times - World
+  published_utc: '2026-03-05T22:00:32+00:00'
+  title_zh: FirstFT：美国参议员称特朗普对伊朗战争后果无计划
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI Had Banned Military Use. The Pentagon Tested Its Models Through Microsoft
+    Anyway
+  why: Sources allege the Defense Department experimented with Microsoft’s version
+    of OpenAI technology before the ChatGPT-maker lifted its prohib…
+  takeaway: Sources allege the Defense Department experimented with Microsoft’s version
+    of OpenAI technology before the ChatGPT-maker lifted its prohibition on military
+    applications.
+  prompt: ''
+  url: https://www.wired.com/story/openai-defense-department-ban-military-use-microsoft/
+  source: WIRED - AI
+  published_utc: '2026-03-05T22:00:00+00:00'
+  title_zh: OpenAI曾禁止军事用途，但五角大楼仍通过微软测试其模型
+  why_zh: 消息人士称，在ChatGPT制造商解除其军事应用禁令之前，国防部曾试验过微软版本的OpenAI技术。
+  takeaway_zh: 消息人士称，在ChatGPT制造商解除其军事应用禁令之前，国防部曾试验过微软版本的OpenAI技术。
+  prompt_zh: ''
+- category: Tech industry
+  title: AWS launches a new AI agent platform specifically for healthcare
+  why: AWS is launching Amazon Connect Health, an AI agent platform that will help
+    with patient scheduling, documentation, and patient verificatio…
+  takeaway: AWS is launching Amazon Connect Health, an AI agent platform that will
+    help with patient scheduling, documentation, and patient verification.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers/
+  source: TechCrunch
+  published_utc: '2026-03-05T21:54:37+00:00'
+  title_zh: AWS推出专为医疗保健设计的新AI代理平台
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Roku&#8217;s solution to streaming decision fatigue is a trivia game
+  why: Roku users who struggle to figure out what they want to watch might have an
+    answer in the form of "Roklue," a new game coming to the stream…
+  takeaway: Roku users who struggle to figure out what they want to watch might have
+    an answer in the form of "Roklue," a new game coming to the streaming platform
+    on March 7th. Announced on Thursday, Roklue is a pop culture trivia game that
+    Roku says helps users discover new content and "tests players on the […]
+  prompt: ''
+  url: https://www.theverge.com/streaming/890312/roku-roklue-trivia-game
+  source: The Verge
+  published_utc: '2026-03-05T21:42:58+00:00'
+  title_zh: Roku应对流媒体选择疲劳的解决方案是一款问答游戏
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ethiopia gets $350M World Bank financing for its digital ID project (2024)
+  why: 'Article URL: https://www.mariblock.com/stories/ethiopia-to-get-350-million-world-bank-financing-for-its-digital-id-project
+    Comments URL: ht…'
+  takeaway: 'Article URL: https://www.mariblock.com/stories/ethiopia-to-get-350-million-world-bank-financing-for-its-digital-id-project
+    Comments URL: https://news.ycombinator.com/item?id=47267694 Points: 25 # Comments:
+    18'
+  prompt: ''
+  url: https://www.mariblock.com/stories/ethiopia-to-get-350-million-world-bank-financing-for-its-digital-id-project
+  source: Hacker News (front page)
+  published_utc: '2026-03-05T21:41:31+00:00'
+  title_zh: 埃塞俄比亚获世界银行3.5亿美元资助推进数字身份证项目（2024年）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'MS exec: Microsoft''s next console will play "Xbox and PC games"'
+  why: Project Helix is set to open the closed-console ecosystem, but the details
+    will matter.
+  takeaway: Project Helix is set to open the closed-console ecosystem, but the details
+    will matter.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/03/ms-exec-microsofts-next-console-will-play-xbox-and-pc-games/
+  source: Ars Technica
+  published_utc: '2026-03-05T21:39:43+00:00'
+  title_zh: 微软高管：下一代主机将支持‘Xbox与PC游戏’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Proton Mail Helped FBI Unmask Anonymous 'Stop Cop City' Protester
+  why: 'Article URL: https://www.404media.co/proton-mail-helped-fbi-unmask-anonymous-stop-cop-city-protestor/
+    Comments URL: https://news.ycombinato…'
+  takeaway: 'Article URL: https://www.404media.co/proton-mail-helped-fbi-unmask-anonymous-stop-cop-city-protestor/
+    Comments URL: https://news.ycombinator.com/item?id=47267628 Points: 192 # Comments:
+    96'
+  prompt: ''
+  url: https://www.404media.co/proton-mail-helped-fbi-unmask-anonymous-stop-cop-city-protestor/
+  source: Hacker News (front page)
+  published_utc: '2026-03-05T21:35:40+00:00'
+  title_zh: Proton Mail协助FBI揭露匿名‘停止警察城’抗议者身份
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'FBI investigating hack on its wiretap and surveillance systems: Report'
+  why: Hackers allegedly broke into the FBI’s networks, according to a report by CNN.
+  takeaway: Hackers allegedly broke into the FBI’s networks, according to a report
+    by CNN.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/fbi-investigating-hack-on-its-wiretap-and-surveillance-systems-report/
+  source: TechCrunch
+  published_utc: '2026-03-05T21:33:24+00:00'
+  title_zh: 报告：FBI正调查其窃听与监控系统遭黑客入侵事件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: RFK Jr.’s anti-vaccine policies are "unreviewable," DOJ lawyer tells judge
+  why: The startling claim came amid a lawsuit from the American Academy of Pediatrics.
+  takeaway: The startling claim came amid a lawsuit from the American Academy of Pediatrics.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/03/rfk-jr-can-promote-getting-measles-with-impunity-doj-lawyer-tells-judge/
+  source: Ars Technica
+  published_utc: '2026-03-05T21:29:30+00:00'
+  title_zh: DOJ律师向法官表示，RFK Jr.的反疫苗政策‘不可复审’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Industry doubts Trump plan to insure Gulf oil tankers as Iran war halts transit
+  why: US lacks firepower to provide $350bn in coverage needed to revive Strait of
+    Hormuz transits, JPMorgan says
+  takeaway: US lacks firepower to provide $350bn in coverage needed to revive Strait
+    of Hormuz transits, JPMorgan says
+  prompt: ''
+  url: https://www.ft.com/content/6ddeb488-0d6f-4b6a-b419-2a2ba7437a25
+  source: Financial Times - Markets
+  published_utc: '2026-03-05T21:26:51+00:00'
+  title_zh: 行业质疑特朗普为海湾油轮投保计划，伊朗战争中断运输
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US reportedly considering sweeping new chip export controls
+  why: In an alleged drafted proposal, the U.S.
+  takeaway: In an alleged drafted proposal, the U.S. government would play a role
+    in every chip export sale regardless of which country it's coming from.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/
+  source: TechCrunch
+  published_utc: '2026-03-05T21:24:50+00:00'
+  title_zh: 据报道美国正考虑实施全面新芯片出口管制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon appears to be down, with over 20,000 reported problems
+  why: Problems viewing products and checking out.
+  takeaway: Problems viewing products and checking out.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/03/amazon-appears-to-be-down-with-over-20000-reported-problems/
+  source: Ars Technica
+  published_utc: '2026-03-05T21:06:05+00:00'
+  title_zh: 亚马逊疑似宕机，报告问题超2万例
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Structured AI (YC F25) Is Hiring
+  why: 'Article URL: https://www.ycombinator.com/companies/structured-ai/jobs/3cQY6Cu-mechanical-design-engineer-founding-team-consultant
+    Comments…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/structured-ai/jobs/3cQY6Cu-mechanical-design-engineer-founding-team-consultant
+    Comments URL: https://news.ycombinator.com/item?id=47267236 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/structured-ai/jobs/3cQY6Cu-mechanical-design-engineer-founding-team-consultant
+  source: Hacker News (front page)
+  published_utc: '2026-03-05T21:01:30+00:00'
+  title_zh: Structured AI（YC F25）正在招聘
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Pokopia made me look at Pokémon’s high-tech future in a whole new way
+  why: Pokémon Pokopia features, of all things, a 3D printer.
+  takeaway: Pokémon Pokopia features, of all things, a 3D printer. I wasn't sure why
+    this surprised me so much, given all the other high-tech gear in pretty much every
+    Pokémon game. But I was not expecting to find, inside the once-crumbling Pokémon
+    Center I'd just worked hard to restore, a kind of machine I'd never seen […]
+  prompt: ''
+  url: https://www.theverge.com/games/890131/pokopia-pokemon-high-tech-future-3d-printer
+  source: The Verge
+  published_utc: '2026-03-05T21:00:00+00:00'
+  title_zh: Pokopia让我以全新视角看待宝可梦的高科技未来
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: The case against stablecoins
+  why: Is there anything really new about them?
+  takeaway: Is there anything really new about them?
+  prompt: ''
+  url: https://www.ft.com/content/f9c8b5bd-f41c-43f1-8685-8b8133b22eaf
+  source: Financial Times - Markets
+  published_utc: '2026-03-05T21:00:00+00:00'
+  title_zh: 反对稳定币的案例
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI introduces GPT-5.4 with more knowledge-work capability
+  why: Updates come amid user blowback over the company's Pentagon deal.
+  takeaway: Updates come amid user blowback over the company's Pentagon deal.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/03/openai-introduces-gpt-5-4-with-more-knowledge-work-capability/
+  source: Ars Technica
+  published_utc: '2026-03-05T20:55:25+00:00'
+  title_zh: OpenAI推出具备更强知识工作能力的GPT-5.4
+  why_zh: 更新发布之际，用户对公司与五角大楼的交易表示强烈反对。
+  takeaway_zh: 更新发布之际，用户对公司与五角大楼的交易表示强烈反对。
+  prompt_zh: ''
+- category: Business & economy
+  title: Europe-to-Asia air travel squeezed into narrow corridor after drone attack
+  why: Drone attack on Azerbaijan puts further pressure on western airlines
+  takeaway: Drone attack on Azerbaijan puts further pressure on western airlines
+  prompt: ''
+  url: https://www.ft.com/content/10c5df21-b2d4-4338-a457-c717065679ba
+  source: Financial Times - World
+  published_utc: '2026-03-05T20:47:33+00:00'
+  title_zh: 无人机袭击后，欧洲至亚洲航空旅行被压缩至狭窄走廊
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon is rolling out a redesigned Fire TV app
+  why: With the updated Fire TV app, users can browse and discover content directly
+    from their phone, manage their watchlist on the go, and play t…
+  takeaway: With the updated Fire TV app, users can browse and discover content directly
+    from their phone, manage their watchlist on the go, and play titles on their TV
+    from the mobile app.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/amazon-is-rolling-out-a-redesigned-fire-tv-app/
+  source: TechCrunch
+  published_utc: '2026-03-05T20:45:38+00:00'
+  title_zh: 亚马逊正推出重新设计的Fire TV应用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: US states sue Trump administration over new tariffs
+  why: Democratic attorneys-general say president exceeded authority after Supreme
+    Court struck down original levies
+  takeaway: Democratic attorneys-general say president exceeded authority after Supreme
+    Court struck down original levies
+  prompt: ''
+  url: https://www.ft.com/content/fb630eba-c1ea-459f-9a48-3ce64139ecb6
+  source: Financial Times - World
+  published_utc: '2026-03-05T20:39:35+00:00'
+  title_zh: 美国多州就新关税起诉特朗普政府
+  why_zh: 民主党总检察长表示，总统在最高法院推翻原征税方案后越权行事。
+  takeaway_zh: 民主党总检察长表示，总统在最高法院推翻原征税方案后越权行事。
+  prompt_zh: ''
+- category: Tech industry
+  title: BYD rolls out EV batteries with 5-minute ‘flash charging’ — but there’s a
+    catch
+  why: The Chinese automaker's new Blade Battery 2.0 is capable of charging at up
+    to 1.5 megawatts, dramatically slashing the time it takes to fil…
+  takeaway: The Chinese automaker's new Blade Battery 2.0 is capable of charging at
+    up to 1.5 megawatts, dramatically slashing the time it takes to fill up.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/byd-rolls-out-ev-batteries-with-5-minute-flash-charging-but-theres-a-catch/
+  source: TechCrunch
+  published_utc: '2026-03-05T20:34:37+00:00'
+  title_zh: 比亚迪推出支持5分钟‘闪充’的电动车电池，但有条件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Italian prosecutors confirm journalist was hacked with Paragon spyware
+  why: Italian authorities are making progress in their investigation into a wide-ranging
+    spyware scandal in Italy involving Paragon spyware.
+  takeaway: Italian authorities are making progress in their investigation into a
+    wide-ranging spyware scandal in Italy involving Paragon spyware. But the mystery
+    of who hacked two Italian journalists with Paragon spyware continues.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/italian-prosecutors-confirm-journalist-was-hacked-with-paragon-spyware/
+  source: TechCrunch
+  published_utc: '2026-03-05T20:32:57+00:00'
+  title_zh: 意大利检方确认记者被Paragon间谍软件入侵
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Business & economy
+  title: Iran crisis shines spotlight on ‘threadbare’ Royal Navy
+  why: Delay in deploying HMS Dragon to Cyprus has triggered criticism of UK’s defence
+    capability
+  takeaway: Delay in deploying HMS Dragon to Cyprus has triggered criticism of UK’s
+    defence capability
+  prompt: ''
+  url: https://www.ft.com/content/b0f5b67d-fb0f-44ee-bd33-b446a47c8008
+  source: Financial Times - World
+  published_utc: '2026-03-05T20:24:47+00:00'
+  title_zh: 伊朗危机凸显英国皇家海军‘捉襟见肘’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'It’s official: The Pentagon has labeled Anthropic a supply-chain risk'
+  why: The Department of Defense has officially labeled Anthropic a supply-chain risk,
+    making the AI firm the first American company with the labe…
+  takeaway: The Department of Defense has officially labeled Anthropic a supply-chain
+    risk, making the AI firm the first American company with the label. Meanwhile,
+    the DOD continues to use Anthropic's AI in Iran.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/
+  source: TechCrunch
+  published_utc: '2026-03-05T20:24:25+00:00'
+  title_zh: 官方确认：五角大楼已将Anthropic列为供应链风险
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

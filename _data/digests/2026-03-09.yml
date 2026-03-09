@@ -1,0 +1,1178 @@
+date: '2026-03-09'
+title: Daily Digest - 2026-03-09
+title_zh: 每日简报 - 2026-03-09
+note: 'Today: OpenAI delays ChatGPT’s ‘adult mode’ again · Jessica Jones joins the
+  fray in Daredevil: Born Again trailer · AI: OpenAI offers open-source maintainers
+  six months of free….'
+note_zh: 今日关注：OpenAI再次推迟ChatGPT‘成人模式’上线；杰西卡·琼斯现身《夜魔侠：重生》预告片；AI：OpenAI为开源维护者提供六个月免费ChatGPT
+  Pro和Co…。
+items:
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.10'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.10
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-09T00:09:55+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4-patch6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4-patch6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-08T20:01:17+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Luma AI's new Uni-1 image model tops Nano Banana 2 and GPT Image 1.5 on logic-based
+    benchmarks
+  why: Luma AI takes on OpenAI and Google with Uni-1, a model that combines image
+    understanding and generation in a single architecture and reason…
+  takeaway: Luma AI takes on OpenAI and Google with Uni-1, a model that combines image
+    understanding and generation in a single architecture and reasons through prompts
+    as it creates. The article Luma AI's new Uni-1 image model tops Nano Banana 2
+    and GPT Image 1.5 on logic-based benchmarks appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/luma-ais-new-uni-1-image-model-tops-nano-banana-2-and-gpt-image-1-5-on-logic-based-benchmarks/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T17:08:52+00:00'
+  title_zh: Luma AI的新Uni-1图像模型在逻辑基准测试中超越Nano Banana 2和GPT Image 1.5
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: LLM text data is drying up, but Meta points to unlabeled video as the next
+    massive training frontier
+  why: A research team from Meta FAIR and New York University trained a multimodal
+    AI model from scratch and found that several common assumptions…
+  takeaway: A research team from Meta FAIR and New York University trained a multimodal
+    AI model from scratch and found that several common assumptions about how these
+    models should be built don't hold up. The article LLM text data is drying up,
+    but Meta points to unlabeled video as the next massive training frontier appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/llm-text-data-is-drying-up-but-meta-points-to-unlabeled-video-as-the-next-massive-training-frontier/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T14:21:54+00:00'
+  title_zh: LLM文本数据枯竭，但Meta指出未标记视频是下一个大规模训练前沿
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Hallucinated references are passing peer review at top AI conferences and
+    a new open tool wants to fix that
+  why: Fake citations are slipping past peer review at top AI conferences, and commercial
+    LLMs can't spot the fakes they generate.
+  takeaway: Fake citations are slipping past peer review at top AI conferences, and
+    commercial LLMs can't spot the fakes they generate. A new open-source tool called
+    CiteAudit allegedly catches what GPT, Gemini, and Claude miss. The article Hallucinated
+    references are passing peer review at top AI conferences and a new open tool wants
+    to fix that appeared first on The…
+  prompt: ''
+  url: https://the-decoder.com/hallucinated-references-are-passing-peer-review-at-top-ai-conferences-and-a-new-open-tool-wants-to-fix-that/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T09:00:25+00:00'
+  title_zh: 顶级AI会议出现虚构参考文献通过同行评审，新开源工具欲解决此问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.9'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.9
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-08T02:56:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.4
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-07T22:37:49+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.dev2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.dev2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-07T22:32:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI offers open-source maintainers six months of free ChatGPT Pro and
+    Codex access
+  why: OpenAI supports open-source developers with free access to ChatGPT Pro, Codex
+    and security tools.
+  takeaway: OpenAI supports open-source developers with free access to ChatGPT Pro,
+    Codex and security tools. The article OpenAI offers open-source maintainers six
+    months of free ChatGPT Pro and Codex access appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-offers-open-source-maintainers-six-months-of-free-chatgpt-pro-and-codex-access/
+  source: The Decoder (AI)
+  published_utc: '2026-03-07T11:44:29+00:00'
+  title_zh: OpenAI为开源维护者提供六个月免费ChatGPT Pro和Codex访问
+  why_zh: OpenAI为开源开发者提供免费访问ChatGPT Pro、Codex及安全工具的权限。
+  takeaway_zh: OpenAI为开源开发者提供免费ChatGPT Pro、Codex及安全工具使用权。文章《OpenAI向开源维护者提供六个月免费ChatGPT
+    Pro和Codex访问》首发于The Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.dev1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.dev1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-07T09:11:09+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.17.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.17.0
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-03-07T00:46:41+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==0.3.28'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.28
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-06T22:45:45+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-classic==1.0.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-06T20:20:03+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4-patch5'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4-patch5
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-06T20:11:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4_patch2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4_patch2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-06T18:09:14+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How our open-source AI model SpeciesNet is helping to promote wildlife conservation
+  why: Photos of animals being identified by the SpeciesNet AI model
+  takeaway: Photos of animals being identified by the SpeciesNet AI model
+  prompt: ''
+  url: https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/
+  source: Google AI (blog.google)
+  published_utc: '2026-03-06T18:00:00+00:00'
+  title_zh: 我们的开源AI模型SpeciesNet如何助力野生动物保护
+  why_zh: SpeciesNet AI模型识别动物照片
+  takeaway_zh: SpeciesNet AI模型识别动物照片
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic and the Pentagon
+  why: Anthropic and the Pentagon This piece by Bruce Schneier and Nathan E.
+  takeaway: Anthropic and the Pentagon This piece by Bruce Schneier and Nathan E.
+    Sanders is the most thoughtful and grounded coverage I've seen of the recent and
+    ongoing Pentagon/OpenAI/Anthropic contract situation. AI models are increasingly
+    commodified. The top-tier offerings have about the same performance, and there
+    is little to differentiate one from the other. T…
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/6/anthropic-and-the-pentagon/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-06T17:26:50+00:00'
+  title_zh: Anthropic 与五角大楼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Agentic manual testing
+  why: Agentic Engineering Patterns > The defining characteristic of a coding agent
+    is that it can execute the code that it writes.
+  takeaway: Agentic Engineering Patterns > The defining characteristic of a coding
+    agent is that it can execute the code that it writes. This is what makes coding
+    agents so much more useful than LLMs that simply spit out code without any way
+    to verify it. Never assume that code generated by an LLM works until that code
+    has been executed. Coding agents have the ability…
+  prompt: ''
+  url: https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-06T05:43:54+00:00'
+  title_zh: 智能代理手动测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Clinejection — Compromising Cline's Production Releases just by Prompting
+    an Issue Triager
+  why: Clinejection — Compromising Cline's Production Releases just by Prompting an
+    Issue Triager Adnan Khan describes a devious attack chain agai…
+  takeaway: Clinejection — Compromising Cline's Production Releases just by Prompting
+    an Issue Triager Adnan Khan describes a devious attack chain against the Cline
+    GitHub repository, which started with a prompt injection attack in the title of
+    an issue opened against the repo. Cline were running AI-powered issue triage using
+    the anthropics/claude-code-action@v1 action…
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/6/clinejection/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-06T02:39:04+00:00'
+  title_zh: Clinejection — 仅通过向问题跟踪者提问就能破坏Cline生产版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: 1.82.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/1.82.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-06T01:14:26+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing GPT‑5.4
+  why: 'Introducing GPT‑5.4 Two new API models: gpt-5.4 and gpt-5.4-pro , also available
+    in ChatGPT and Codex CLI.'
+  takeaway: 'Introducing GPT‑5.4 Two new API models: gpt-5.4 and gpt-5.4-pro , also
+    available in ChatGPT and Codex CLI. August 31st 2025 knowledge cutoff, 1 million
+    token context window. Priced slightly higher than the GPT-5.2 family with a bump
+    in price for both models if you go above 272,000 tokens. 5.4 beats coding specialist
+    GPT-5.3-Codex on all of the relevant benc…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/5/introducing-gpt54/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-05T23:56:09+00:00'
+  title_zh: GPT-5.4 正式发布
+  why_zh: 推出GPT‑5.4，新增两款API模型：gpt-5.4和gpt-5.4-pro，同时支持ChatGPT和Codex CLI。
+  takeaway_zh: GPT-5.4正式发布。新增两款API模型：gpt-5.4和gpt-5.4-pro，同时支持ChatGPT与Codex CLI。知识截止日期2025年8月31日，上下文窗口达100万token。定价略高于GPT-5.2系列，若使用超过272,000
+    token，两款模型价格均会上调。5.4在所有相关基准测试中均超越编程专家GPT-5.3-Codex。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.27.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.27.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-03-05T23:19:23+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.3
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-05T23:18:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.26.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.26.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-03-05T23:16:58+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: ByteDance’s AI Ambitions Are Being Hampered by Compute Restraints and Copyright
+    Concerns
+  why: ByteDance’s new Seedance 2.0 AI video model seemed unstoppable—until heavy
+    demand strained the company’s compute capacity and copyright com…
+  takeaway: ByteDance’s new Seedance 2.0 AI video model seemed unstoppable—until heavy
+    demand strained the company’s compute capacity and copyright complaints began
+    piling up.
+  prompt: ''
+  url: https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/
+  source: WIRED - AI
+  published_utc: '2026-03-05T21:14:22+00:00'
+  title_zh: 字节跳动的AI野心受算力限制与版权问题困扰
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4_patch'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4_patch
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-05T20:14:36+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.2
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-05T20:07:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/onnxruntime: ONNX Runtime v1.24.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/onnxruntime/releases/tag/v1.24.3
+  source: GitHub Releases - microsoft/onnxruntime
+  published_utc: '2026-03-05T19:00:05+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.26.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.26.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-03-05T18:35:44+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.25.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.25.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-03-05T18:34:55+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Claude helped select targets for Iran strikes, possibly including school
+  why: 'Article URL: https://twitter.com/robertwrighter/status/2030482402628214841
+    Comments URL: https://news.ycombinator.com/item?id=47303944 Poin…'
+  takeaway: 'Article URL: https://twitter.com/robertwrighter/status/2030482402628214841
+    Comments URL: https://news.ycombinator.com/item?id=47303944 Points: 20 # Comments:
+    12'
+  prompt: ''
+  url: https://twitter.com/robertwrighter/status/2030482402628214841
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T01:55:17+00:00'
+  title_zh: Claude协助选定伊朗打击目标，可能包括学校
+  why_zh: 文章链接：https://twitter.com/robertwrighter/status/2030482402628214841 评论链接：https://news.ycombinator.com/item?id=47303944
+    点数……
+  takeaway_zh: 文章链接：https://twitter.com/robertwrighter/status/2030482402628214841
+    评论链接：https://news.ycombinator.com/item?id=47303944 点数：20 评论数：12
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Ask HN: What Are You Working On? (March 2026)'
+  why: What are you working on?
+  takeaway: 'What are you working on? Any new ideas that you''re thinking about? Comments
+    URL: https://news.ycombinator.com/item?id=47303111 Points: 68 # Comments: 190'
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=47303111
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T00:07:18+00:00'
+  title_zh: 问HN：你在做什么？（2026年3月）
+  why_zh: 你正在做什么？
+  takeaway_zh: 你正在做什么？有什么新想法吗？评论链接：https://news.ycombinator.com/item?id=47303111 点数：68
+    评论数：190
+  prompt_zh: ''
+- category: Security
+  title: How AI Assistants are Moving the Security Goalposts
+  why: AI-based assistants or "agents" -- autonomous programs that have access to
+    the user's computer, files, online services and can automate vir…
+  takeaway: AI-based assistants or "agents" -- autonomous programs that have access
+    to the user's computer, files, online services and can automate virtually any
+    task -- are growing in popularity with developers and IT workers. But as so many
+    eyebrow-raising headlines over the past few weeks have shown, these powerful and
+    assertive new tools are rapidly shifting the se…
+  prompt: ''
+  url: https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts/
+  source: Krebs on Security
+  published_utc: '2026-03-08T23:35:42+00:00'
+  title_zh: AI助手如何重新定义安全边界
+  why_zh: 基于AI的助手或‘代理’——这些自主程序可访问用户的电脑、文件、在线服务，并能自动化几乎任何任务……
+  takeaway_zh: 基于AI的助手或‘代理’——这些自主程序可访问用户的电脑、文件、在线服务，并能自动化几乎任何任务——正受到开发者和IT工作者的青睐。但过去几周众多引人注目的头条新闻表明，这些强大且自信的新工具正在迅速改变安全格局……
+  prompt_zh: ''
+- category: Tech industry
+  title: Last Statements
+  why: 'Article URL: https://walzr.com/last-statements Comments URL: https://news.ycombinator.com/item?id=47302490
+    Points: 11 # Comments: 7'
+  takeaway: 'Article URL: https://walzr.com/last-statements Comments URL: https://news.ycombinator.com/item?id=47302490
+    Points: 11 # Comments: 7'
+  prompt: ''
+  url: https://walzr.com/last-statements
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T22:54:08+00:00'
+  title_zh: 最后陈述
+  why_zh: 文章链接：https://walzr.com/last-statements 评论链接：https://news.ycombinator.com/item?id=47302490
+    点数：11 评论数：7
+  takeaway_zh: 文章链接：https://walzr.com/last-statements 评论链接：https://news.ycombinator.com/item?id=47302490
+    点数：11 评论数：7
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Linux Internals: How /proc/self/mem writes to unwritable memory (2021)'
+  why: 'Article URL: https://offlinemark.com/an-obscure-quirk-of-proc/ Comments URL:
+    https://news.ycombinator.com/item?id=47302463 Points: 38 # Com…'
+  takeaway: 'Article URL: https://offlinemark.com/an-obscure-quirk-of-proc/ Comments
+    URL: https://news.ycombinator.com/item?id=47302463 Points: 38 # Comments: 8'
+  prompt: ''
+  url: https://offlinemark.com/an-obscure-quirk-of-proc/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T22:50:55+00:00'
+  title_zh: Linux内部机制：/proc/self/mem如何写入不可写内存（2021年）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Blacksky AppView
+  why: 'Article URL: https://github.com/blacksky-algorithms/atproto Comments URL:
+    https://news.ycombinator.com/item?id=47301808 Points: 111 # Comme…'
+  takeaway: 'Article URL: https://github.com/blacksky-algorithms/atproto Comments
+    URL: https://news.ycombinator.com/item?id=47301808 Points: 111 # Comments: 68'
+  prompt: ''
+  url: https://github.com/blacksky-algorithms/atproto
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T21:40:35+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Palmer Luckey’s retro gaming startup ModRetro reportedly seeks funding at
+    $1B valuation
+  why: The company launched its first product, a Game Boy-style handheld device called
+    the Chromatic, in 2024.
+  takeaway: The company launched its first product, a Game Boy-style handheld device
+    called the Chromatic, in 2024.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/08/palmer-luckeys-retro-gaming-startup-modretro-reportedly-seeks-funding-at-1b-valuation/
+  source: TechCrunch
+  published_utc: '2026-03-08T21:26:07+00:00'
+  title_zh: Palmer Luckey复古游戏初创公司ModRetro据传寻求10亿美元估值融资
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Lil Finder Guy
+  why: 'Article URL: https://basicappleguy.com/basicappleblog/lil-finder-guy Comments
+    URL: https://news.ycombinator.com/item?id=47301241 Points: 87…'
+  takeaway: 'Article URL: https://basicappleguy.com/basicappleblog/lil-finder-guy
+    Comments URL: https://news.ycombinator.com/item?id=47301241 Points: 87 # Comments:
+    26'
+  prompt: ''
+  url: https://basicappleguy.com/basicappleblog/lil-finder-guy
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T20:43:19+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Artificial-life: A simple (300 lines of code) reproduction of Computational
+    Life'
+  why: 'Article URL: https://github.com/Rabrg/artificial-life Comments URL: https://news.ycombinator.com/item?id=47301233
+    Points: 75 # Comments: 8'
+  takeaway: 'Article URL: https://github.com/Rabrg/artificial-life Comments URL: https://news.ycombinator.com/item?id=47301233
+    Points: 75 # Comments: 8'
+  prompt: ''
+  url: https://github.com/Rabrg/artificial-life
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T20:42:41+00:00'
+  title_zh: 人工生命：一个简单的（300行代码）计算生命再现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Agent Safehouse – macOS-native sandboxing for local agents
+  why: 'Article URL: https://agent-safehouse.dev/ Comments URL: https://news.ycombinator.com/item?id=47301085
+    Points: 385 # Comments: 88'
+  takeaway: 'Article URL: https://agent-safehouse.dev/ Comments URL: https://news.ycombinator.com/item?id=47301085
+    Points: 385 # Comments: 88'
+  prompt: ''
+  url: https://agent-safehouse.dev/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T20:30:18+00:00'
+  title_zh: Agent Safehouse——macOS原生本地代理沙箱
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Will the Pentagon’s Anthropic controversy scare startups away from defense
+    work?
+  why: On the latest episode of TechCrunch’s Equity podcast, we discussed what the
+    controversy means for other startups seeking to work with the f…
+  takeaway: On the latest episode of TechCrunch’s Equity podcast, we discussed what
+    the controversy means for other startups seeking to work with the federal government.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work/
+  source: TechCrunch
+  published_utc: '2026-03-08T20:14:42+00:00'
+  title_zh: 五角大楼与Anthropic的争议会吓退初创企业参与国防项目吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We should revisit literate programming in the agent era
+  why: 'Article URL: https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era/
+    Comments URL: https://news.ycombinator.co…'
+  takeaway: 'Article URL: https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era/
+    Comments URL: https://news.ycombinator.com/item?id=47300747 Points: 161 # Comments:
+    89'
+  prompt: ''
+  url: https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T19:58:15+00:00'
+  title_zh: 在智能体时代，我们应重新审视文学编程
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I built a real-time OSINT dashboard pulling 15 live global feeds'
+  why: Sup HN, So I got tired of bouncing between Flightradar, MarineTraffic, and
+    Twitter every time something kicked off globally, so I wrote a d…
+  takeaway: Sup HN, So I got tired of bouncing between Flightradar, MarineTraffic,
+    and Twitter every time something kicked off globally, so I wrote a dashboard to
+    aggregate it all locally. It’s called Shadowbroker. I’ll admit I leaned way too
+    hard into the "movie hacker" aesthetic for the UI, but the actual pipeline underneath
+    is real. It pulls commercial/military ADS-…
+  prompt: ''
+  url: https://github.com/BigBodyCobain/Shadowbroker
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T19:07:33+00:00'
+  title_zh: 展示HN：我构建了一个实时OSINT仪表板，整合15个全球实时信息流
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I made a programming language with M&Ms
+  why: 'Article URL: https://mufeedvh.com/posts/i-made-a-programming-language-with-mnms/
+    Comments URL: https://news.ycombinator.com/item?id=4729960…'
+  takeaway: 'Article URL: https://mufeedvh.com/posts/i-made-a-programming-language-with-mnms/
+    Comments URL: https://news.ycombinator.com/item?id=47299606 Points: 54 # Comments:
+    19'
+  prompt: ''
+  url: https://mufeedvh.com/posts/i-made-a-programming-language-with-mnms/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T18:18:40+00:00'
+  title_zh: 我用M&Ms制作了一门编程语言
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: WSL Manager
+  why: 'Article URL: https://github.com/bostrot/wsl2-distro-manager Comments URL:
+    https://news.ycombinator.com/item?id=47299505 Points: 77 # Commen…'
+  takeaway: 'Article URL: https://github.com/bostrot/wsl2-distro-manager Comments
+    URL: https://news.ycombinator.com/item?id=47299505 Points: 77 # Comments: 44'
+  prompt: ''
+  url: https://github.com/bostrot/wsl2-distro-manager
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T18:08:36+00:00'
+  title_zh: WSL管理器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple is going high-end with new ‘Ultra’ products next
+  why: Fresh off launching the low-cost MacBook Neo, Apple is reportedly preparing
+    at least three new products that will fit into its highest-end…
+  takeaway: Fresh off launching the low-cost MacBook Neo, Apple is reportedly preparing
+    at least three new products that will fit into its highest-end "ultra" lineup.
+    According to Bloomberg's Mark Gruman, the next batch of releases may not bear
+    the "ultra" name, like its Watch, but will all command price premiums over their
+    mainline counterparts. There's the […]
+  prompt: ''
+  url: https://www.theverge.com/tech/891151/apple-is-going-high-end-with-new-ultra-products-next
+  source: The Verge
+  published_utc: '2026-03-08T17:51:15+00:00'
+  title_zh: 苹果即将推出高端‘Ultra’系列新品
+  why_zh: 苹果刚推出低成本MacBook Neo，据传正筹备至少三款新产品，将纳入其最高端产品线……
+  takeaway_zh: 苹果刚推出低成本MacBook Neo，据传正筹备至少三款新产品，将纳入其最高端‘ultra’产品线。据彭博社的Mark Gruman报道，下一批发布的产品可能不会像其手表那样冠以‘ultra’之名，但都将比主流产品定价更高。其中包括……
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Skir – like Protocol Buffer but better'
+  why: 'Why I built Skir: https://medium.com/@gepheum/i-spent-15-years-with-protobuf-t...'
+  takeaway: 'Why I built Skir: https://medium.com/@gepheum/i-spent-15-years-with-protobuf-t...
+    Quick start: npx skir init All the config lives in one YML file. Website: https://skir.build
+    GitHub: https://github.com/gepheum/skir Would love feedback especially from teams
+    running mixed-language stacks. Comments URL: https://news.ycombinator.com/item?id=47299022
+    Points: 63…'
+  prompt: ''
+  url: https://skir.build/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T17:17:54+00:00'
+  title_zh: 'Show HN: Skir——比Protocol Buffer更优'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: LibreOffice Writer now supports Markdown
+  why: 'Article URL: https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/
+    Comments URL: https://news.ycombinator.com/item?…'
+  takeaway: 'Article URL: https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/
+    Comments URL: https://news.ycombinator.com/item?id=47298885 Points: 292 # Comments:
+    53'
+  prompt: ''
+  url: https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T17:01:50+00:00'
+  title_zh: LibreOffice Writer现已支持Markdown
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: My Homelab Setup
+  why: 'Article URL: https://bryananthonio.com/blog/my-homelab-setup/ Comments URL:
+    https://news.ycombinator.com/item?id=47298743 Points: 162 # Com…'
+  takeaway: 'Article URL: https://bryananthonio.com/blog/my-homelab-setup/ Comments
+    URL: https://news.ycombinator.com/item?id=47298743 Points: 162 # Comments: 128'
+  prompt: ''
+  url: https://bryananthonio.com/blog/my-homelab-setup/
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T16:46:10+00:00'
+  title_zh: 我的家庭实验室配置
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Owner of ICE detention facility sees big opportunity in AI man camps
+  why: AI data center developers are increasingly relying on a style of camp popularized
+    as housing for men working in remote oil fields.
+  takeaway: AI data center developers are increasingly relying on a style of camp
+    popularized as housing for men working in remote oil fields.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/08/owner-of-ice-detention-facility-sees-big-opportunity-in-ai-man-camps/
+  source: TechCrunch
+  published_utc: '2026-03-08T16:30:00+00:00'
+  title_zh: ICE拘留设施所有者看好AI人力营地巨大机遇
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TechCrunch Mobility: Rivian’s R2 gambit'
+  why: Welcome back to TechCrunch Mobility, your hub for all things “future of transportation.”
+  takeaway: Welcome back to TechCrunch Mobility, your hub for all things “future of
+    transportation.”
+  prompt: ''
+  url: https://techcrunch.com/2026/03/08/techcrunch-mobility-rivians-r2-gambit/
+  source: TechCrunch
+  published_utc: '2026-03-08T16:03:00+00:00'
+  title_zh: TechCrunch Mobility：Rivian的R2战略
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Listen to this: Mabe Fratti’s experimental cello pop'
+  why: The opening notes of "Kravitz", which kicks off Mabe Fratti's 2024 record Sentir
+    Que No Sabes, are lodged in my brain permanently.
+  takeaway: The opening notes of "Kravitz", which kicks off Mabe Fratti's 2024 record
+    Sentir Que No Sabes, are lodged in my brain permanently. It's not a showy album,
+    by any means. But there's something about the buzzing of her cello, plucked as
+    you might an upright bass. The way they ring out before coming to an […]
+  prompt: ''
+  url: https://www.theverge.com/column/890713/mabe-fratti-sentir-que-no-sabes-review
+  source: The Verge
+  published_utc: '2026-03-08T16:00:00+00:00'
+  title_zh: 聆听Mabe Fratti的实验性大提琴流行乐
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FrameBook
+  why: 'Article URL: https://fb.edoo.gg Comments URL: https://news.ycombinator.com/item?id=47298044
+    Points: 373 # Comments: 65'
+  takeaway: 'Article URL: https://fb.edoo.gg Comments URL: https://news.ycombinator.com/item?id=47298044
+    Points: 373 # Comments: 65'
+  prompt: ''
+  url: https://fb.edoo.gg
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T15:21:09+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Living human brain cells play DOOM on a CL1 [video]
+  why: 'Article URL: https://www.youtube.com/watch?v=yRV8fSw6HaE Comments URL: https://news.ycombinator.com/item?id=47297919
+    Points: 154 # Comments…'
+  takeaway: 'Article URL: https://www.youtube.com/watch?v=yRV8fSw6HaE Comments URL:
+    https://news.ycombinator.com/item?id=47297919 Points: 154 # Comments: 144'
+  prompt: ''
+  url: https://www.youtube.com/watch?v=yRV8fSw6HaE
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T15:07:28+00:00'
+  title_zh: 活人脑细胞在CL1上玩DOOM [视频]
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What if the Apple ][ had run on Field-Sequential?
+  why: 'Article URL: https://nicole.express/2026/the-apple-that-wasnt.html Comments
+    URL: https://news.ycombinator.com/item?id=47297913 Points: 82 #…'
+  takeaway: 'Article URL: https://nicole.express/2026/the-apple-that-wasnt.html Comments
+    URL: https://news.ycombinator.com/item?id=47297913 Points: 82 # Comments: 16'
+  prompt: ''
+  url: https://nicole.express/2026/the-apple-that-wasnt.html
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T15:05:40+00:00'
+  title_zh: 如果Apple ][运行在Field-Sequential上会怎样？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What we&#8217;re listening to, watching, and reading right now.
+  why: There is so much art out there that it’s absolutely impossible to keep up.
+  takeaway: There is so much art out there that it’s absolutely impossible to keep
+    up. Whether it’s a slept-on post-punk album from the ‘80s, a new sci-fi novel,
+    or a cult classic horror movie, we’re always finding new obsessions here at The
+    Verge — and we want to share those obsessions with you. Sometimes that might […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/891057/what-were-listening-to-watching-and-reading
+  source: The Verge
+  published_utc: '2026-03-08T15:00:00+00:00'
+  title_zh: 我们当前在听、在看、在读的内容
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The best Switch 2 controller just got better (and a little worse)
+  why: Crowning the EasySMX S10 the best Switch 2 controller last fall was easy.
+  takeaway: Crowning the EasySMX S10 the best Switch 2 controller last fall was easy.
+    The $60 wireless gamepad, which is often well below $50, mimics or improves on
+    many of the $90 Switch 2 Pro controller's best features. The S10 has great-feeling
+    rumble in games, TMR joysticks that will last longer than Nintendo's, plus amiibo
+    support, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/888482/easysmx-s10-lite-switch-2-native-wireless-controller-hands-on
+  source: The Verge
+  published_utc: '2026-03-08T14:00:00+00:00'
+  title_zh: 最佳Switch 2手柄再升级（略有退步）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Jessica Jones joins the fray in Daredevil: Born Again trailer'
+  why: '"I''m gonna take this city back."'
+  takeaway: '"I''m gonna take this city back."'
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/03/jessica-jones-joins-the-fray-in-daredevil-born-again-trailer/
+  source: Ars Technica
+  published_utc: '2026-03-08T13:13:03+00:00'
+  title_zh: 杰西卡·琼斯现身《夜魔侠：重生》预告片
+  why_zh: 我要夺回这座城市。
+  takeaway_zh: 我要夺回这座城市。
+  prompt_zh: ''
+- category: Tech industry
+  title: The cute and cursed story of Furby
+  why: The hottest toy of 1998 was sort of adorable, and sort of annoying.
+  takeaway: The hottest toy of 1998 was sort of adorable, and sort of annoying. It
+    couldn't do much - couldn't do anything, really - but it could look at you, it
+    could say some nonsense phrases, and it seemed uncannily aware of the world around
+    it. That's all Furby needed to pretty much take over the […]
+  prompt: ''
+  url: https://www.theverge.com/podcast/891124/the-cute-and-cursed-story-of-furby
+  source: The Verge
+  published_utc: '2026-03-08T12:17:40+00:00'
+  title_zh: 菲比精灵的可爱与诅咒故事
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The uncomfortable truth about hybrid vehicles
+  why: This is The Stepback, a weekly newsletter breaking down one essential story
+    from the tech world.
+  takeaway: This is The Stepback, a weekly newsletter breaking down one essential
+    story from the tech world. For more on the EV struggle, follow Andrew J. Hawkins.
+    The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback
+    here. How it started Apologies to the Toyota Prius, but the first hybrid vehicle
+    […]
+  prompt: ''
+  url: https://www.theverge.com/column/890135/truth-hybrid-vehicles
+  source: The Verge
+  published_utc: '2026-03-08T12:00:00+00:00'
+  title_zh: 混合动力汽车的不适真相
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Ask HN: How to be alone?'
+  why: For the first time in my life, at 38, I'm alone.
+  takeaway: For the first time in my life, at 38, I'm alone. When I was 18 I basically
+    moved out of my parents' straight in with my highschool sweetheart, and we were
+    together ever since. That chapter of my life is over now, and I'm finding the
+    adjustment very difficult. There are a few parts to the difficulty. One is that
+    when I have something to say about my day, the…
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=47296547
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T11:41:17+00:00'
+  title_zh: 'Ask HN: 如何独处？'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tiny, long-armed dinosaur leads to rethink of dinosaur miniaturization
+  why: Small size seems to have come before a change in diet for a tiny dinosaur lineage.
+  takeaway: Small size seems to have come before a change in diet for a tiny dinosaur
+    lineage.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/03/tiny-long-armed-dinosaur-leads-to-rethink-of-dinosaur-miniaturization/
+  source: Ars Technica
+  published_utc: '2026-03-08T11:30:06+00:00'
+  title_zh: 长臂小恐龙引发对恐龙小型化理论的重新思考
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Military AI Policy Needs Democratic Oversight
+  why: A simmering dispute between the United States Department of Defense (DOD) and
+    Anthropic has now escalated into a full-blown confrontation ,…
+  takeaway: 'A simmering dispute between the United States Department of Defense (DOD)
+    and Anthropic has now escalated into a full-blown confrontation , raising an uncomfortable
+    but important question: who gets to set the guardrails for military use of artificial
+    intelligence — the executive branch, private companies or Congress and the broader
+    democratic process? The c…'
+  prompt: ''
+  url: https://spectrum.ieee.org/military-ai-governance
+  source: IEEE Spectrum
+  published_utc: '2026-03-08T10:00:03+00:00'
+  title_zh: 军事AI政策需接受民主监督
+  why_zh: 美国国防部（DOD）与Anthropic之间的长期争端现已升级为全面对抗……
+  takeaway_zh: 美国国防部（DOD）与Anthropic之间的长期争端现已升级为全面对抗，引发了一个令人不安但重要的问题：谁有权为军事用途的人工智能设定护栏——行政部门、私营公司，还是国会及更广泛的民主进程？这一冲突……
+  prompt_zh: ''
+- category: Tech industry
+  title: Notes on writing Rust-based Wasm
+  why: 'Article URL: https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm
+    Comments URL: https://news.ycombinator.com/item?id=47295837 Point…'
+  takeaway: 'Article URL: https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm
+    Comments URL: https://news.ycombinator.com/item?id=47295837 Points: 210 # Comments:
+    90'
+  prompt: ''
+  url: https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm
+  source: Hacker News (front page)
+  published_utc: '2026-03-08T09:24:54+00:00'
+  title_zh: 关于编写基于Rust的Wasm的笔记
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI's hardware and robotics chief quits over military deal she says lacked
+    enough deliberation
+  why: OpenAI's head of robotics, Caitlin Kalinowski, is leaving the company over
+    its Pentagon deal, citing concerns about mass surveillance and l…
+  takeaway: OpenAI's head of robotics, Caitlin Kalinowski, is leaving the company
+    over its Pentagon deal, citing concerns about mass surveillance and lethal autonomy.
+    The article OpenAI's hardware and robotics chief quits over military deal she
+    says lacked enough deliberation appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openais-hardware-and-robotics-chief-quits-over-military-deal-she-says-lacked-enough-deliberation/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T08:11:09+00:00'
+  title_zh: OpenAI硬件与机器人部门负责人因不满军事合作缺乏充分审议而辞职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: AI agent benchmarks obsess over coding while ignoring 92% of the US labor
+    market, study finds
+  why: A large-scale study shows that AI agent development focuses almost entirely
+    on programming tasks, ignoring the vast majority of the labor m…
+  takeaway: A large-scale study shows that AI agent development focuses almost entirely
+    on programming tasks, ignoring the vast majority of the labor market. The article
+    AI agent benchmarks obsess over coding while ignoring 92% of the US labor market,
+    study finds appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/ai-agent-benchmarks-obsess-over-coding-while-ignoring-92-of-the-us-labor-market-study-finds/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T07:15:20+00:00'
+  title_zh: 研究发现，AI代理基准测试过度关注编码，忽视了美国92%的劳动力市场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A roadmap for AI, if anyone will listen
+  why: The Pro-Human Declaration was finalized before last week's Pentagon-Anthropic
+    standoff, but the collision of the two events wasn’t lost on…
+  takeaway: The Pro-Human Declaration was finalized before last week's Pentagon-Anthropic
+    standoff, but the collision of the two events wasn’t lost on anyone involved.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/
+  source: TechCrunch
+  published_utc: '2026-03-08T06:05:26+00:00'
+  title_zh: AI发展路线图，若有人愿倾听
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Push for $40 smartphones builds momentum, but still faces cost hurdles
+  why: A coalition of telecom operators and device makers is pushing $40 smartphones
+    to bring up to 20 million people online, but rising component…
+  takeaway: A coalition of telecom operators and device makers is pushing $40 smartphones
+    to bring up to 20 million people online, but rising component costs threaten the
+    plan.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/push-for-40-smartphones-builds-momentum-but-still-faces-cost-hurdles/
+  source: TechCrunch
+  published_utc: '2026-03-08T05:00:00+00:00'
+  title_zh: 40美元智能手机呼声渐高，成本障碍仍存
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google just gave Sundar Pichai a $692M pay package
+  why: Most of it is tied to performance, including new stock incentives linked to
+    Waymo and Wing, its drone delivery venture.
+  takeaway: Most of it is tied to performance, including new stock incentives linked
+    to Waymo and Wing, its drone delivery venture.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/
+  source: TechCrunch
+  published_utc: '2026-03-08T00:20:10+00:00'
+  title_zh: 谷歌授予Sundar Pichai 6.92亿美元薪酬包
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Grammarly’s ‘expert review’ is just missing the actual experts
+  why: A recently-added feature in Grammarly purports to improve users’ writing with
+    help from the world's great writers and thinkers — and some t…
+  takeaway: A recently-added feature in Grammarly purports to improve users’ writing
+    with help from the world's great writers and thinkers — and some tech journalists,
+    too.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/grammarlys-expert-review-is-just-missing-the-actual-experts/
+  source: TechCrunch
+  published_utc: '2026-03-07T22:56:31+00:00'
+  title_zh: Grammarly‘专家评审’功能独缺真专家
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hunting for elusive "ghost elephants"
+  why: Werner Herzog directed this evocative NatGeo documentary of an ornithologist's
+    quest to find a new species.
+  takeaway: Werner Herzog directed this evocative NatGeo documentary of an ornithologist's
+    quest to find a new species.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/03/hunting-for-elusive-ghost-elephants/
+  source: Ars Technica
+  published_utc: '2026-03-07T21:06:46+00:00'
+  title_zh: 追寻神秘的‘幽灵大象’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI hardware exec Caitlin Kalinowski quits in response to Pentagon deal
+  why: Hardware executive Caitlin Kalinowski announced today that in response to OpenAI's
+    controversial agreement with the Department of Defense,…
+  takeaway: Hardware executive Caitlin Kalinowski announced today that in response
+    to OpenAI's controversial agreement with the Department of Defense, she’s resigned
+    from her role leading the company's robotics team.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/
+  source: TechCrunch
+  published_utc: '2026-03-07T20:44:25+00:00'
+  title_zh: OpenAI硬件高管Caitlin Kalinowski因五角大楼合作辞职
+  why_zh: 硬件高管Caitlin Kalinowski今日宣布，针对OpenAI与国防部达成的争议协议……
+  takeaway_zh: 硬件部门高管Caitlin Kalinowski今日宣布，因不满OpenAI与国防部的争议性合作，已辞去公司机器人团队负责人职务。
+  prompt_zh: ''
+- category: Tech industry
+  title: PopSockets founder David Barnett talks about building a viral business
+  why: David Barnett, founder of PopSocket, stops by Equity to talk about scaling
+    the business and what he's learned as a leader.
+  takeaway: David Barnett, founder of PopSocket, stops by Equity to talk about scaling
+    the business and what he's learned as a leader.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/popsockets-founder-david-barnett-talks-about-building-a-viral-business/
+  source: TechCrunch
+  published_utc: '2026-03-07T18:40:00+00:00'
+  title_zh: PopSockets创始人David Barnett谈如何打造病毒式业务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Trump administration drafts AI contract rules requiring companies to license
+    systems for "all lawful use"
+  why: New US guidelines for AI contracts would force companies to grant the government
+    an irrevocable license for "all lawful use" and ban ideolo…
+  takeaway: New US guidelines for AI contracts would force companies to grant the
+    government an irrevocable license for "all lawful use" and ban ideological bias
+    in AI outputs, which is itself an ideological requirement with striking parallels
+    to China's approach. The article Trump administration drafts AI contract rules
+    requiring companies to license systems for "all…
+  prompt: ''
+  url: https://the-decoder.com/trump-administration-drafts-ai-contract-rules-requiring-companies-to-license-systems-for-all-lawful-use/
+  source: The Decoder (AI)
+  published_utc: '2026-03-07T18:09:33+00:00'
+  title_zh: 特朗普政府起草AI合同规则，要求企业授权系统用于‘所有合法用途’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sony appears to be testing dynamic pricing on PlayStation games
+  why: 'A site called PSprices has been tracking prices on Sony''s digital game store
+    and noticed something unusual: some games were being offered a…'
+  takeaway: 'A site called PSprices has been tracking prices on Sony''s digital game
+    store and noticed something unusual: some games were being offered at different
+    prices to different users. What''s more, those offers are tracked in the PlayStation
+    API with experiment identifiers like IPT_PILOT and IPT_OPR_TESTING. Dynamic pricing
+    is nothing new and is used across a […]'
+  prompt: ''
+  url: https://www.theverge.com/games/891085/sony-dynamic-pricing-playstation-games
+  source: The Verge
+  published_utc: '2026-03-07T17:52:10+00:00'
+  title_zh: Sony疑似在PlayStation游戏上测试动态定价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI delays ChatGPT’s ‘adult mode’ again
+  why: The feature, which will give verified adult users access to erotica and other
+    adult content, had already been delayed from December.
+  takeaway: The feature, which will give verified adult users access to erotica and
+    other adult content, had already been delayed from December.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/07/openai-delays-chatgpts-adult-mode-again/
+  source: TechCrunch
+  published_utc: '2026-03-07T17:28:41+00:00'
+  title_zh: OpenAI再次推迟ChatGPT‘成人模式’上线
+  why_zh: 该功能原定于12月推出，现已推迟，它将允许已验证的成年用户访问情色及其他成人内容。
+  takeaway_zh: 该功能原定于12月推出，现已推迟，它将允许已验证的成年用户访问情色及其他成人内容。
+  prompt_zh: ''
+- category: Tech industry
+  title: Time’s running out to get a free gift card when you preorder a new MacBook
+  why: This has been a week to remember here at The Verge.
+  takeaway: This has been a week to remember here at The Verge. MWC 2026 in Barcelona
+    lead straight into Apple’s week of product announcements. There was truly something
+    for everyone, whether you’ve been wanting a company to make a phone that can start
+    fires, or had your fingers crossed for a brand-new MacBook model that costs […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/890788/macbook-neo-air-pro-samsung-galaxy-s26-gift-card-deal-sale
+  source: The Verge
+  published_utc: '2026-03-07T17:00:00+00:00'
+  title_zh: 预购新款MacBook获赠礼品卡的活动即将结束
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic's Claude AI uncovers over 100 security vulnerabilities in Firefox
+  why: Anthropic's AI model Claude has found over 100 bugs in Firefox, including vulnerabilities
+    that decades of testing had missed.
+  takeaway: Anthropic's AI model Claude has found over 100 bugs in Firefox, including
+    vulnerabilities that decades of testing had missed. The article Anthropic's Claude
+    AI uncovers over 100 security vulnerabilities in Firefox appeared first on The
+    Decoder .
+  prompt: ''
+  url: https://the-decoder.com/anthropics-claude-ai-uncovers-over-100-security-vulnerabilities-in-firefox/
+  source: The Decoder (AI)
+  published_utc: '2026-03-07T12:39:41+00:00'
+  title_zh: Anthropic的Claude AI在Firefox中发现逾百个安全漏洞
+  why_zh: Anthropic的AI模型Claude在Firefox中发现了100多个漏洞，包括多年测试中未曾发现的漏洞。
+  takeaway_zh: Anthropic的AI模型Claude在Firefox中发现了100多个漏洞，包括多年测试中未曾发现的漏洞。文章《Anthropic的Claude
+    AI在Firefox中发现100多个安全漏洞》首次发表于The Decoder。
+  prompt_zh: ''
+- category: AI frontier
+  title: When language models hallucinate, they leave "spilled energy" in their own
+    math
+  why: When large language models hallucinate, they leave measurable traces in their
+    own computations.
+  takeaway: When large language models hallucinate, they leave measurable traces in
+    their own computations. Researchers at the Sapienza University of Rome have developed
+    a training-free method that picks up on these traces and generalizes better than
+    previous approaches. The article When language models hallucinate, they leave
+    "spilled energy" in their own math appeare…
+  prompt: ''
+  url: https://the-decoder.com/when-language-models-hallucinate-they-leave-spilled-energy-in-their-own-math/
+  source: The Decoder (AI)
+  published_utc: '2026-03-07T12:20:45+00:00'
+  title_zh: 当语言模型产生幻觉时，其数学运算中会留下‘溢出能量’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic's Claude Code subscription may consume up to $5,000 in compute
+    per month while charging the user just $200
+  why: Anthropic's $200 Claude Code subscription could consume up to $5,000 in compute
+    per user, according to Cursor's internal analysis reported…
+  takeaway: Anthropic's $200 Claude Code subscription could consume up to $5,000 in
+    compute per user, according to Cursor's internal analysis reported by Forbes.
+    The numbers reveal just how aggressively AI companies are subsidizing their coding
+    tools and what that could mean for prices once these tools become essential. The
+    article Anthropic's Claude Code subscription…
+  prompt: ''
+  url: https://the-decoder.com/anthropics-claude-code-subscription-may-consume-up-to-5000-in-compute-per-month-while-charging-the-user-just-200/
+  source: The Decoder (AI)
+  published_utc: '2026-03-07T11:34:57+00:00'
+  title_zh: Anthropic的Claude Code订阅每月计算成本或高达5000美元，而用户仅支付200美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

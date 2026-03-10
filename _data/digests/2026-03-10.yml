@@ -1,0 +1,1182 @@
+date: '2026-03-10'
+title: Daily Digest - 2026-03-10
+title_zh: 每日简报 - 2026-03-10
+note: 'Today: An iPhone-hacking toolkit used by Russian spies likely came fro… · Employees
+  across OpenAI and Google support Anthropic’s lawsuit… · AI: Luma AI''s new Uni-1
+  image model tops Nano Banana 2 and GP….'
+note_zh: 今日关注：俄罗斯间谍使用的iPhone黑客工具包疑似来自美国军事承包商；OpenAI与谷歌员工集体支持Anthropic起诉五角大楼；AI：Luma
+  AI的新Uni-1图像模型在逻辑基准测试中超越Nano…。
+items:
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-10T00:21:07+00:00'
+  title_zh: BerriAI/litellm：v1.82.dev版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Nvidia Is Planning to Launch an Open-Source AI Agent Platform
+  why: Ahead of its annual developer conference, Nvidia is readying a new approach
+    to software that embraces AI agents similar to OpenClaw.
+  takeaway: Ahead of its annual developer conference, Nvidia is readying a new approach
+    to software that embraces AI agents similar to OpenClaw.
+  prompt: ''
+  url: https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/
+  source: WIRED - AI
+  published_utc: '2026-03-09T23:11:34+00:00'
+  title_zh: Nvidia计划推出开源AI代理平台
+  why_zh: 在年度开发者大会前夕，Nvidia准备采用新软件方法，拥抱类似OpenClaw的AI代理。
+  takeaway_zh: 在年度开发者大会前夕，Nvidia准备采用新软件方法，拥抱类似OpenClaw的AI代理。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.11'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.11
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-09T23:02:48+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: CUDA 13.2 Introduces Enhanced CUDA Tile Support and New Python Features
+  why: 'CUDA 13.2 arrives with a major update: NVIDIA CUDA Tile is now supported on
+    devices of compute capability 8.X architectures (NVIDIA Ampere…'
+  takeaway: 'CUDA 13.2 arrives with a major update: NVIDIA CUDA Tile is now supported
+    on devices of compute capability 8.X architectures (NVIDIA Ampere and NVIDIA Ada),
+    as...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/cuda-13-2-introduces-enhanced-cuda-tile-support-and-new-python-features/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-09T21:13:18+00:00'
+  title_zh: CUDA 13.2引入增强的CUDA Tile支持及新Python特性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.18'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.18
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-09T20:40:19+00:00'
+  title_zh: langchain-ai/langchain：langchain-core==1.2.18版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick Suite launches User Preferences for chat personalization
+  why: We are announcing User Preferences in Amazon Quick Suite – a new feature that
+    gives users greater control over how Quick looks, feels, and…
+  takeaway: We are announcing User Preferences in Amazon Quick Suite – a new feature
+    that gives users greater control over how Quick looks, feels, and works for them.
+    With User Preferences, users can now customize their Chat panel layout by setting
+    it to open expanded or collapsed by default; Quick also automatically remembers
+    their last used setting and resumes from w…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/user-preferences-in-quick/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-09T20:03:00+00:00'
+  title_zh: 亚马逊Quick Suite推出聊天个性化用户偏好设置
+  why_zh: 我们宣布在Amazon Quick Suite中推出用户偏好设置——一项新功能，让用户更好地控制Quick的外观、感觉和…
+  takeaway_zh: 我们宣布在Amazon Quick Suite中推出用户偏好设置——这一新功能使用户能够更好地控制Quick的外观、感觉和工作方式。通过用户偏好设置，用户现在可以自定义聊天面板布局，默认设置为展开或折叠；Quick还会自动记住他们上次使用的设置，并从中恢复……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Implementing Falcon-H1 Hybrid Architecture in NVIDIA Megatron Core
+  why: In the rapidly evolving landscape of large language model (LLM) development,
+    NVIDIA Megatron Core has emerged as the foundational framework…
+  takeaway: In the rapidly evolving landscape of large language model (LLM) development,
+    NVIDIA Megatron Core has emerged as the foundational framework for training massive...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/implementing-falcon-h1-hybrid-architecture-in-nvidia-megatron-core/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-09T19:30:00+00:00'
+  title_zh: 在NVIDIA Megatron Core中实现Falcon-H1混合架构
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 G7e instances now available in Asia Pacific (Seoul) and Europe
+    (Spain) regions
+  why: Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO 6000
+    Blackwell Server Edition GPUs are now available in Asia Pacific…
+  takeaway: Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO
+    6000 Blackwell Server Edition GPUs are now available in Asia Pacific (Seoul) and
+    Europe (Spain) regions. G7e instances offer up to 2.3x inference performance compared
+    to G6e. Customers can use G7e instances to deploy large language models (LLMs),
+    agentic AI models, multimodal generative…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-ec2-g7e-seoul-spain-regions/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-09T18:00:00+00:00'
+  title_zh: 亚马逊EC2 G7e实例现已在亚太（首尔）和欧洲（西班牙）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Enhancing Distributed Inference Performance with the NVIDIA Inference Transfer
+    Library
+  why: Deploying large language models (LLMs) requires large-scale distributed inference,
+    which spreads model computation and request handling acr…
+  takeaway: Deploying large language models (LLMs) requires large-scale distributed
+    inference, which spreads model computation and request handling across many GPUs
+    and...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/enhancing-distributed-inference-performance-with-the-nvidia-inference-transfer-library/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-09T17:00:00+00:00'
+  title_zh: 利用NVIDIA推理传输库提升分布式推理性能
+  why_zh: 部署大型语言模型（LLMs）需要大规模分布式推理，将模型计算和请求处理分散进行。
+  takeaway_zh: 部署大型语言模型（LLMs）需要大规模分布式推理，将模型计算和请求处理分散到多个GPU上……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Removing the Guesswork from Disaggregated Serving
+  why: Deploying and optimizing large language models (LLMs) for high-performance,
+    cost-effective serving can be an overwhelming engineering probl…
+  takeaway: Deploying and optimizing large language models (LLMs) for high-performance,
+    cost-effective serving can be an overwhelming engineering problem. The ideal...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/removing-the-guesswork-from-disaggregated-serving/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-09T16:00:00+00:00'
+  title_zh: 消除分解式服务的猜测工作
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.rc.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.rc.3
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-09T15:53:27+00:00'
+  title_zh: BerriAI/litellm：v1.82.rc.3版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI employees hint at a new omni model
+  why: A new omni model from OpenAI?
+  takeaway: A new omni model from OpenAI? Employee posts and a leaked audio project
+    called "BiDi" suggest the company is working on its next big multimodal upgrade.
+    The article OpenAI employees hint at a new omni model appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/openai-employees-hint-at-a-new-omni-model/
+  source: The Decoder (AI)
+  published_utc: '2026-03-09T13:41:59+00:00'
+  title_zh: OpenAI员工暗示将推出新的全能模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4-patch7'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4-patch7
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-09T13:36:56+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.rc.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.rc.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-09T13:23:04+00:00'
+  title_zh: BerriAI/litellm：v1.82.rc.2版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.0.patch3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.0.patch3
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-09T11:59:00+00:00'
+  title_zh: BerriAI/litellm：v1.82.0.patch3版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.10'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.10
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-09T00:09:55+00:00'
+  title_zh: open-webui/open-webui：v0.8.10版
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4-patch6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4-patch6
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-08T20:01:17+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Luma AI's new Uni-1 image model tops Nano Banana 2 and GPT Image 1.5 on logic-based
+    benchmarks
+  why: Luma AI takes on OpenAI and Google with Uni-1, a model that combines image
+    understanding and generation in a single architecture and reason…
+  takeaway: Luma AI takes on OpenAI and Google with Uni-1, a model that combines image
+    understanding and generation in a single architecture and reasons through prompts
+    as it creates. The article Luma AI's new Uni-1 image model tops Nano Banana 2
+    and GPT Image 1.5 on logic-based benchmarks appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/luma-ais-new-uni-1-image-model-tops-nano-banana-2-and-gpt-image-1-5-on-logic-based-benchmarks/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T17:08:52+00:00'
+  title_zh: Luma AI的新Uni-1图像模型在逻辑基准测试中超越Nano Banana 2和GPT Image 1.5
+  why_zh: Luma AI推出Uni-1模型，挑战OpenAI和谷歌，该模型将图像理解与生成结合于单一架构中。
+  takeaway_zh: Luma AI推出Uni-1模型，挑战OpenAI和Google，该模型将图像理解与生成结合于单一架构，并在创作过程中通过提示进行推理。文章《Luma
+    AI的新Uni-1图像模型在逻辑基准测试中超越Nano Banana 2和GPT Image 1.5》首发于The Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: LLM text data is drying up, but Meta points to unlabeled video as the next
+    massive training frontier
+  why: A research team from Meta FAIR and New York University trained a multimodal
+    AI model from scratch and found that several common assumptions…
+  takeaway: A research team from Meta FAIR and New York University trained a multimodal
+    AI model from scratch and found that several common assumptions about how these
+    models should be built don't hold up. The article LLM text data is drying up,
+    but Meta points to unlabeled video as the next massive training frontier appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/llm-text-data-is-drying-up-but-meta-points-to-unlabeled-video-as-the-next-massive-training-frontier/
+  source: The Decoder (AI)
+  published_utc: '2026-03-08T14:21:54+00:00'
+  title_zh: LLM文本数据正在枯竭，但Meta指出未标记视频是下一个巨大的训练前沿
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.9'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.9
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-08T02:56:32+00:00'
+  title_zh: open-webui/open-webui：v0.8.9版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.16.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.4
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-07T22:37:49+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.dev2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.dev2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-07T22:32:56+00:00'
+  title_zh: BerriAI/litellm：v1.82.dev2版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.dev1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.dev1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-07T09:11:09+00:00'
+  title_zh: BerriAI/litellm：v1.82.dev1版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.17.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.17.0
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-03-07T00:46:41+00:00'
+  title_zh: vllm-project/vllm：v0.17.0版
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==0.3.28'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.28
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-06T22:45:45+00:00'
+  title_zh: langchain-ai/langchain：langchain==0.3.28版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-classic==1.0.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-06T20:20:03+00:00'
+  title_zh: langchain-ai/langchain：langchain-classic==1.0.2版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4-patch5'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4-patch5
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-06T20:11:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4_patch2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4_patch2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-06T18:09:14+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic and the Pentagon
+  why: Anthropic and the Pentagon This piece by Bruce Schneier and Nathan E.
+  takeaway: Anthropic and the Pentagon This piece by Bruce Schneier and Nathan E.
+    Sanders is the most thoughtful and grounded coverage I've seen of the recent and
+    ongoing Pentagon/OpenAI/Anthropic contract situation. AI models are increasingly
+    commodified. The top-tier offerings have about the same performance, and there
+    is little to differentiate one from the other. T…
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/6/anthropic-and-the-pentagon/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-06T17:26:50+00:00'
+  title_zh: Anthropic与五角大楼
+  why_zh: Anthropic与五角大楼 这是Bruce Schneier和Nathan E.的文章。
+  takeaway_zh: Anthropic与五角大楼 Bruce Schneier和Nathan E. Sanders的这篇文章是我所见关于近期及持续中的五角大楼/OpenAI/Anthropic合同情况最深思熟虑且扎实的报道。AI模型正日益商品化，顶级产品的性能大致相同，彼此间差异甚微。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Agentic manual testing
+  why: Agentic Engineering Patterns > The defining characteristic of a coding agent
+    is that it can execute the code that it writes.
+  takeaway: Agentic Engineering Patterns > The defining characteristic of a coding
+    agent is that it can execute the code that it writes. This is what makes coding
+    agents so much more useful than LLMs that simply spit out code without any way
+    to verify it. Never assume that code generated by an LLM works until that code
+    has been executed. Coding agents have the ability…
+  prompt: ''
+  url: https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-06T05:43:54+00:00'
+  title_zh: 代理手动测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: An iPhone-hacking toolkit used by Russian spies likely came from U.S military
+    contractor
+  why: Google found a series of hacking tools they said were used by a Russian espionage
+    group and a cybercriminal group in China.
+  takeaway: Google found a series of hacking tools they said were used by a Russian
+    espionage group and a cybercriminal group in China. Sources from a U.S. government
+    defense contractor said some of those hacking tools were theirs.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/an-iphone-hacking-toolkit-used-by-russian-spies-likely-came-from-u-s-military-contractor/
+  source: TechCrunch
+  published_utc: '2026-03-10T01:56:01+00:00'
+  title_zh: 俄罗斯间谍使用的iPhone黑客工具包疑似来自美国军事承包商
+  why_zh: 谷歌发现了一系列黑客工具，称其被俄罗斯间谍组织和中国网络犯罪团伙使用。
+  takeaway_zh: 谷歌发现了一系列黑客工具，称其被俄罗斯间谍组织和中国网络犯罪团伙使用。美国一家政府国防承包商的来源称，其中部分黑客工具属于他们。
+  prompt_zh: ''
+- category: Tech industry
+  title: Electric air taxi maker Archer hits back at Joby in countersuit alleging
+    concealed Chinese ties
+  why: Archer's countersuit comes four months after Joby sued its rival for alleged
+    'corporate espionage.'
+  takeaway: Archer's countersuit comes four months after Joby sued its rival for alleged
+    'corporate espionage.'
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/electric-air-taxi-maker-archer-hits-back-at-joby-in-countersuit-alleging-concealed-chinese-ties/
+  source: TechCrunch
+  published_utc: '2026-03-10T01:41:38+00:00'
+  title_zh: 电动飞行出租车公司Archer反诉Joby隐瞒中国关联
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Founders Fund nears $6B close for latest growth fund, sources say
+  why: The fresh fundraise comes less than a year after Founders Fund closed its third
+    growth fund, a $4.6 billion vehicle intended primarily for…
+  takeaway: The fresh fundraise comes less than a year after Founders Fund closed
+    its third growth fund, a $4.6 billion vehicle intended primarily for follow-on
+    investments in its successful late-stage companies.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/founders-fund-nears-6-billion-close-for-latest-growth-fund-sources-say/
+  source: TechCrunch
+  published_utc: '2026-03-10T01:03:48+00:00'
+  title_zh: 消息称Founders Fund新增长基金募资近60亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The “JVG algorithm” only wins on tiny numbers
+  why: 'Article URL: https://scottaaronson.blog/?p=9615 Comments URL: https://news.ycombinator.com/item?id=47317739
+    Points: 25 # Comments: 12'
+  takeaway: 'Article URL: https://scottaaronson.blog/?p=9615 Comments URL: https://news.ycombinator.com/item?id=47317739
+    Points: 25 # Comments: 12'
+  prompt: ''
+  url: https://scottaaronson.blog/?p=9615
+  source: Hacker News (front page)
+  published_utc: '2026-03-10T00:35:19+00:00'
+  title_zh: “JVG算法”仅在小数字上获胜
+  why_zh: '文章URL: https://scottaaronson.blog/?p=9615 评论URL: https://news.ycombinator.com/item?id=47317739
+    积分: 25 # 评论: 12'
+  takeaway_zh: '文章URL: https://scottaaronson.blog/?p=9615 评论URL: https://news.ycombinator.com/item?id=47317739
+    积分: 25 # 评论: 12'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full
+    Refactor'
+  why: 'Article URL: https://www.rahuljuliato.com/posts/emacs-solo-two-years Comments
+    URL: https://news.ycombinator.com/item?id=47317616 Points: 76…'
+  takeaway: 'Article URL: https://www.rahuljuliato.com/posts/emacs-solo-two-years
+    Comments URL: https://news.ycombinator.com/item?id=47317616 Points: 76 # Comments:
+    9'
+  prompt: ''
+  url: https://www.rahuljuliato.com/posts/emacs-solo-two-years
+  source: Hacker News (front page)
+  published_utc: '2026-03-10T00:16:44+00:00'
+  title_zh: 两年Emacs Solo：35个模块，零外部包，全面重构
+  why_zh: '文章URL: https://www.rahuljuliato.com/posts/emacs-solo-two-years 评论URL: https://news.ycombinator.com/item?id=47317616
+    积分: 76…'
+  takeaway_zh: '文章URL: https://www.rahuljuliato.com/posts/emacs-solo-two-years 评论URL:
+    https://news.ycombinator.com/item?id=47317616 积分: 76 # 评论: 9'
+  prompt_zh: ''
+- category: Tech industry
+  title: After falling far behind the rest of industry, Blue Origin creates new stock
+    option plan
+  why: '"It''s a big fat middle finger for those that thought they had something."'
+  takeaway: '"It''s a big fat middle finger for those that thought they had something."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/03/after-years-of-missteps-blue-origin-to-finally-offer-meaningful-stock-options/
+  source: Ars Technica
+  published_utc: '2026-03-09T23:00:18+00:00'
+  title_zh: 蓝色起源大幅落后行业后推出新股票期权计划
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Electric air taxis are about to take flight in 26 states
+  why: The federal government has selected eight proposals to test electric aircraft
+    across 26 states.
+  takeaway: The federal government has selected eight proposals to test electric aircraft
+    across 26 states.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/electric-air-taxis-are-about-to-take-flight-in-26-states/
+  source: TechCrunch
+  published_utc: '2026-03-09T22:30:35+00:00'
+  title_zh: 电动空中出租车即将在26个州投入运营
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple smart home display rumors now point to a fall launch with iOS 27
+  why: The rumored "HomePod with a screen" we've heard so much about was reportedly
+    lined up for launch in 2025, and then this spring, and now, ac…
+  takeaway: The rumored "HomePod with a screen" we've heard so much about was reportedly
+    lined up for launch in 2025, and then this spring, and now, according to the latest
+    updates, it's on the shelf until this fall. Leaker Kosutami posted as much on
+    X last week, and today, Bloomberg reporter Mark Gurman followed up with […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/891723/apple-homepad-delay-rumor
+  source: The Verge
+  published_utc: '2026-03-09T22:26:50+00:00'
+  title_zh: 苹果智能家居显示屏传闻指向秋季发布，搭载iOS 27
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The government shutdown is hitting airports — but not ICE
+  why: Chaos reigned at airports across the country last weekend, with thousands of
+    travelers reportedly waiting in hours-long security lines than…
+  takeaway: Chaos reigned at airports across the country last weekend, with thousands
+    of travelers reportedly waiting in hours-long security lines thanks to staffing
+    shortages. Transportation Security Administration (TSA) and Coast Guard workers
+    have turned to food banks for assistance after weeks without pay. But amid a partial
+    government shutdown aimed at curtailing…
+  prompt: ''
+  url: https://www.theverge.com/policy/891686/dhs-government-shutdown-ice-cbp-tsa-airports
+  source: The Verge
+  published_utc: '2026-03-09T21:52:29+00:00'
+  title_zh: 政府停摆影响机场，但ICE不受波及
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Everything from the last week of everything is gambling now
+  why: Kalshi is facing backlash from its own users after a class action lawsuit was
+    filed last week alleging it failed to pay out as promised for…
+  takeaway: Kalshi is facing backlash from its own users after a class action lawsuit
+    was filed last week alleging it failed to pay out as promised for wagers regarding
+    when Iranian Supreme Leader Ayatollah ​Ali Khamenei would leave or be removed
+    from office. Khamenei was killed in strikes on Iran last month, but according
+    to the […]
+  prompt: ''
+  url: https://www.theverge.com/tech/891676/kalshi-iran-prediction-markets
+  source: The Verge
+  published_utc: '2026-03-09T21:18:26+00:00'
+  title_zh: 过去一周的一切都变成了赌博
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI and Google employees rush to Anthropic’s defense in DOD lawsuit
+  why: More than 30 OpenAI and Google DeepMind employees signed onto a statement supporting
+    Anthropic's lawsuit against the Defense Department aft…
+  takeaway: More than 30 OpenAI and Google DeepMind employees signed onto a statement
+    supporting Anthropic's lawsuit against the Defense Department after the agency
+    labeled the AI firm a supply-chain risk, according to court filings.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/openai-and-google-employees-rush-to-anthropics-defense-in-dod-lawsuit/
+  source: TechCrunch
+  published_utc: '2026-03-09T21:15:17+00:00'
+  title_zh: OpenAI和谷歌员工紧急声援Anthropic针对国防部的诉讼
+  why_zh: 超过30名OpenAI和谷歌DeepMind员工签署声明，支持Anthropic对国防部的诉讼。
+  takeaway_zh: 根据法庭文件，超过30名OpenAI和Google DeepMind员工签署声明，支持Anthropic对国防部的诉讼，此前该机构将这家AI公司列为供应链风险。
+  prompt_zh: ''
+- category: Tech industry
+  title: So you want to write an “app” (2025)
+  why: 'Article URL: https://arcanenibble.github.io/so-you-want-to-write-an-app.html
+    Comments URL: https://news.ycombinator.com/item?id=47315341 Po…'
+  takeaway: 'Article URL: https://arcanenibble.github.io/so-you-want-to-write-an-app.html
+    Comments URL: https://news.ycombinator.com/item?id=47315341 Points: 64 # Comments:
+    26'
+  prompt: ''
+  url: https://arcanenibble.github.io/so-you-want-to-write-an-app.html
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T20:50:59+00:00'
+  title_zh: 所以你想写一个“应用”（2025）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic Claims Pentagon Feud Could Cost It Billions
+  why: Executives at the AI startup say companies paused deal talks after the Trump
+    administration labeled it a supply-chain risk, warning that th…
+  takeaway: Executives at the AI startup say companies paused deal talks after the
+    Trump administration labeled it a supply-chain risk, warning that the fallout
+    could cause a major revenue hit.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-claims-business-is-in-peril-due-to-supply-chain-risk-designation/
+  source: WIRED - AI
+  published_utc: '2026-03-09T20:49:29+00:00'
+  title_zh: Anthropic称与五角大楼的争执可能使其损失数十亿
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Employees across OpenAI and Google support Anthropic’s lawsuit against the
+    Pentagon
+  why: On Monday, Anthropic filed its lawsuit against the Department of Defense over
+    being designated as a supply chain risk.
+  takeaway: On Monday, Anthropic filed its lawsuit against the Department of Defense
+    over being designated as a supply chain risk. Hours later, nearly 40 employees
+    from OpenAI and Google - including Jeff Dean, Google's chief scientist and Gemini
+    lead - filed an amicus brief in support of Anthropic's lawsuit, detailing their
+    concerns over the Trump administration's […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google
+  source: The Verge
+  published_utc: '2026-03-09T20:45:24+00:00'
+  title_zh: OpenAI与谷歌员工集体支持Anthropic起诉五角大楼
+  why_zh: 周一，Anthropic因被列为供应链风险而对美国国防部提起诉讼。
+  takeaway_zh: 周一，Anthropic因被列为供应链风险而对美国国防部提起诉讼。数小时后，近40名OpenAI和谷歌员工——包括谷歌首席科学家兼Gemini负责人Jeff
+    Dean——提交了支持Anthropic诉讼的法庭之友陈述，详细表达了对特朗普政府[…]的担忧。
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI and Google Workers File Amicus Brief in Support of Anthropic Against
+    the US Government
+  why: Google DeepMind chief scientist Jeff Dean is among the AI researchers and engineers
+    rushing to Anthropic's defense.
+  takeaway: Google DeepMind chief scientist Jeff Dean is among the AI researchers
+    and engineers rushing to Anthropic's defense.
+  prompt: ''
+  url: https://www.wired.com/story/openai-deepmind-employees-file-amicus-brief-anthropic-dod-lawsuit/
+  source: WIRED - AI
+  published_utc: '2026-03-09T20:38:12+00:00'
+  title_zh: OpenAI与谷歌员工提交法庭之友简报，支持Anthropic对抗美国政府
+  why_zh: 谷歌DeepMind首席科学家Jeff Dean等AI研究人员和工程师迅速为Anthropic辩护。
+  takeaway_zh: 谷歌DeepMind首席科学家Jeff Dean等AI研究人员和工程师迅速为Anthropic辩护。
+  prompt_zh: ''
+- category: Tech industry
+  title: Oracle is building yesterday's data centers with tomorrow's debt
+  why: 'Article URL: https://www.cnbc.com/2026/03/09/oracle-is-building-yesterdays-data-centers-with-tomorrows-debt.html
+    Comments URL: https://news…'
+  takeaway: 'Article URL: https://www.cnbc.com/2026/03/09/oracle-is-building-yesterdays-data-centers-with-tomorrows-debt.html
+    Comments URL: https://news.ycombinator.com/item?id=47315128 Points: 236 # Comments:
+    124'
+  prompt: ''
+  url: https://www.cnbc.com/2026/03/09/oracle-is-building-yesterdays-data-centers-with-tomorrows-debt.html
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T20:36:43+00:00'
+  title_zh: 甲骨文用明天的债务建设昨天的数据中心
+  why_zh: '文章URL: https://www.cnbc.com/2026/03/09/oracle-is-building-yesterdays-data-centers-with-tomorrows-debt.html
+    评论URL: https://news…'
+  takeaway_zh: '文章URL: https://www.cnbc.com/2026/03/09/oracle-is-building-yesterdays-data-centers-with-tomorrows-debt.html
+    评论URL: https://news.ycombinator.com/item?id=47315128 积分: 236 # 评论: 124'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Quad Cortex mini amp modeler: All the power, half the size'
+  why: A warehouse of guitar gear in the palm of your hand.
+  takeaway: A warehouse of guitar gear in the palm of your hand.
+  prompt: ''
+  url: https://arstechnica.com/reviews/2026/03/quad-cortex-mini-insane-amp-modeling-power-for-the-discerning-guitarist/
+  source: Ars Technica
+  published_utc: '2026-03-09T20:36:25+00:00'
+  title_zh: Quad Cortex微型音箱建模器：性能加倍，体积减半
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The first airplane fatality
+  why: 'Article URL: https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html
+    Comments URL: https://news.ycombinator.com…'
+  takeaway: 'Article URL: https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html
+    Comments URL: https://news.ycombinator.com/item?id=47315079 Points: 61 # Comments:
+    13'
+  prompt: ''
+  url: https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T20:32:45+00:00'
+  title_zh: 首例飞机失事死亡事件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bluesky CEO Jay Graber will step aside
+  why: Jay Graber became the first CEO of Bluesky in 2021 when the network and its
+    AT Protocol spun out from life as a Twitter research project to…
+  takeaway: Jay Graber became the first CEO of Bluesky in 2021 when the network and
+    its AT Protocol spun out from life as a Twitter research project to go independent,
+    but now she's leaving that role, as reported previously by Wired. While venture
+    capitalist and former Automattic CEO Toni Schneider steps in as interim CEO until
+    […]
+  prompt: ''
+  url: https://www.theverge.com/tech/891562/bluesky-new-ceo
+  source: The Verge
+  published_utc: '2026-03-09T20:24:43+00:00'
+  title_zh: Bluesky CEO Jay Graber将卸任
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: You can get three months of Disney Plus and Hulu for $15
+  why: If you’re looking for a way to stream the Oscars this weekend, or catch up
+    on nominees like The Secret Agent, the Disney Plus and Hulu bund…
+  takeaway: If you’re looking for a way to stream the Oscars this weekend, or catch
+    up on nominees like The Secret Agent, the Disney Plus and Hulu bundle is worth
+    a look. The ceremony will stream live on Hulu for the first time on March 15th,
+    and right now, new and eligible returning subscribers can get […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/891598/disney-plus-hulu-academy-awards-deal-sale
+  source: The Verge
+  published_utc: '2026-03-09T20:14:44+00:00'
+  title_zh: 迪士尼Plus和Hulu三个月仅需15美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple&#8217;s new M5 Max feels like a huge upgrade if you bought your laptop
+    three years ago
+  why: We've been busy testing many new MacBooks, ranging from the new $1,099 M5 MacBook
+    Air, going all the way up the $6,149 16-inch MacBook Pro…
+  takeaway: 'We''ve been busy testing many new MacBooks, ranging from the new $1,099
+    M5 MacBook Air, going all the way up the $6,149 16-inch MacBook Pro with the M5
+    Max chip. While these computers are identical in design to last year''s models,
+    they have some things in common: neither delivers a significant lead over their
+    M4 […]'
+  prompt: ''
+  url: https://www.theverge.com/gadgets/891508/apple-macbook-pro-air-2026-m5-max-benchmark-comparisons-m4-m3-m2-m1
+  source: The Verge
+  published_utc: '2026-03-09T20:00:33+00:00'
+  title_zh: 苹果新款M5 Max对三年前购买笔记本的用户而言是巨大升级
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Testing Apple's 2026 16-inch MacBook Pro, M5 Max, and its new "performance"
+    cores
+  why: M5 Pro Max's "performance" CPU cores definitely aren't just rebranded E-cores.
+  takeaway: M5 Pro Max's "performance" CPU cores definitely aren't just rebranded
+    E-cores.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/03/testing-apples-2026-16-inch-macbook-pro-m5-max-and-its-new-performance-cores/
+  source: Ars Technica
+  published_utc: '2026-03-09T20:00:21+00:00'
+  title_zh: 测试苹果2026款16英寸MacBook Pro与M5 Max芯片的新性能核心
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Apple Studio Display XDR review: pro at a premium'
+  why: It's been almost exactly four years since Apple released the 5K Studio Display
+    that so many wanted, even if it didn't really deliver as a h…
+  takeaway: It's been almost exactly four years since Apple released the 5K Studio
+    Display that so many wanted, even if it didn't really deliver as a high-end display.
+    Apple has now revamped the Studio Display lineup, sort of, with another Studio
+    Display and the Studio Display XDR. They're both 27-inch 5K (5,120 x 2,880) displays
+    with […]
+  prompt: ''
+  url: https://www.theverge.com/tech/891436/apple-studio-display-xdr-review
+  source: The Verge
+  published_utc: '2026-03-09T20:00:00+00:00'
+  title_zh: 苹果Studio Display XDR评测：专业级，价格不菲
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US blindsides states with surprise settlement in Live Nation/Ticketmaster
+    trial
+  why: States seek mistrial, saying "sudden disappearance" of US will influence jury.
+  takeaway: States seek mistrial, saying "sudden disappearance" of US will influence
+    jury.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/03/us-blindsides-states-with-surprise-settlement-in-live-nation-ticketmaster-trial/
+  source: Ars Technica
+  published_utc: '2026-03-09T19:51:51+00:00'
+  title_zh: 美国突与各州就Live Nation/Ticketmaster案达成和解
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: One of this rugged phone&#8217;s cameras is a pop-out action cam
+  why: What if your smartphone's camera wasn't locked to the back of the device?
+  takeaway: What if your smartphone's camera wasn't locked to the back of the device?
+    Honor's Robot Phone, which we got to see in action at MWC 2026, features a camera
+    attached to a stabilized gimbal arm that can pop-up and look around. But it's
+    still permanently tethered to the phone. The RugOne Xsnap 7 Pro, a […]
+  prompt: ''
+  url: https://www.theverge.com/tech/891496/ulefone-rugone-xsnap-7-pro-removable-action-camera
+  source: The Verge
+  published_utc: '2026-03-09T19:43:41+00:00'
+  title_zh: 这款坚固手机的一个摄像头是弹出式运动相机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic launches code review tool to check flood of AI-generated code
+  why: Anthropic launched Code Review in Claude Code, a multi-agent system that automatically
+    analyzes AI-generated code, flags logic errors, and…
+  takeaway: Anthropic launched Code Review in Claude Code, a multi-agent system that
+    automatically analyzes AI-generated code, flags logic errors, and helps enterprise
+    developers manage the growing volume of code produced with AI.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/
+  source: TechCrunch
+  published_utc: '2026-03-09T19:41:34+00:00'
+  title_zh: Anthropic推出代码审查工具应对AI生成代码泛滥
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bluesky CEO Jay Graber steps down
+  why: Graber explained that, as a more mature company, Bluesky needs a "seasoned
+    operator focused on scaling and execution." Graber said she feel…
+  takeaway: Graber explained that, as a more mature company, Bluesky needs a "seasoned
+    operator focused on scaling and execution." Graber said she feels better suited
+    to building Bluesky's technology itself.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/bluesky-ceo-jay-graber-steps-down/
+  source: TechCrunch
+  published_utc: '2026-03-09T19:32:05+00:00'
+  title_zh: Bluesky首席执行官Jay Graber宣布离职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ‘Cash Apples’ is giving away $500,000 to people who click on trees in a web
+    browser
+  why: Want to make real money just by clicking on virtual trees?
+  takeaway: Want to make real money just by clicking on virtual trees? Starting today
+    at 1PM PT / 4PM ET, residents of the United States can begin an online hunt for
+    golden apples in a cutesy web game - collect enough of them, and Cash App will
+    send you a certain amount of cash. (The game's […]
+  prompt: ''
+  url: https://www.theverge.com/games/891544/cash-apples-is-giving-away-500000-to-people-who-click-on-trees-in-a-web-browser
+  source: The Verge
+  published_utc: '2026-03-09T19:30:06+00:00'
+  title_zh: ‘Cash Apples’向点击网页浏览器中树木的用户赠送50万美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Notes on Baking at the South Pole
+  why: 'Article URL: https://www.newyorker.com/culture/the-weekend-essay/the-most-beautiful-freezer-in-the-world
+    Comments URL: https://news.ycombin…'
+  takeaway: 'Article URL: https://www.newyorker.com/culture/the-weekend-essay/the-most-beautiful-freezer-in-the-world
+    Comments URL: https://news.ycombinator.com/item?id=47313934 Points: 36 # Comments:
+    13'
+  prompt: ''
+  url: https://www.newyorker.com/culture/the-weekend-essay/the-most-beautiful-freezer-in-the-world
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T19:12:14+00:00'
+  title_zh: 南极烘焙笔记
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI plans to acquire Promptfoo and bake AI security testing directly into
+    its Frontier enterprise platform
+  why: OpenAI is acquiring AI security platform Promptfoo to build automated vulnerability
+    testing, covering jailbreaks, prompt injections, and da…
+  takeaway: OpenAI is acquiring AI security platform Promptfoo to build automated
+    vulnerability testing, covering jailbreaks, prompt injections, and data leaks,
+    directly into its Frontier enterprise platform. The article OpenAI plans to acquire
+    Promptfoo and bake AI security testing directly into its Frontier enterprise platform
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-plans-to-acquire-promptfoo-and-bake-ai-security-testing-directly-into-its-frontier-enterprise-platform/
+  source: The Decoder (AI)
+  published_utc: '2026-03-09T19:10:08+00:00'
+  title_zh: OpenAI计划收购Promptfoo，将AI安全测试直接集成至Frontier企业平台
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bluesky CEO Jay Graber is stepping down
+  why: https://www.wired.com/story/bluesky-ceo-jay-graber-is-steppi...
+  takeaway: 'https://www.wired.com/story/bluesky-ceo-jay-graber-is-steppi... ( https://web.archive.org/web/20260309191134/https://www.wired...
+    ) https://toni.org/2026/03/09/coming-off-the-bench-for-bluesky... Comments URL:
+    https://news.ycombinator.com/item?id=47313884 Points: 313 # Comments: 273'
+  prompt: ''
+  url: https://bsky.social/about/blog/03-09-2026-a-new-chapter-for-bluesky
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T19:09:03+00:00'
+  title_zh: Bluesky CEO Jay Graber即将卸任
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Durdraw – ANSI art editor for Unix-like systems
+  why: 'Article URL: https://durdraw.org/ Comments URL: https://news.ycombinator.com/item?id=47313721
+    Points: 47 # Comments: 18'
+  takeaway: 'Article URL: https://durdraw.org/ Comments URL: https://news.ycombinator.com/item?id=47313721
+    Points: 47 # Comments: 18'
+  prompt: ''
+  url: https://durdraw.org/
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T18:59:32+00:00'
+  title_zh: Durdraw – Unix-like系统的ANSI艺术编辑器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: An unlikely set of clues helps reconstruct ancient Chinese disasters
+  why: Shang Dynasty oracle bones and modern weather models feature in the same study.
+  takeaway: Shang Dynasty oracle bones and modern weather models feature in the same
+    study.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/03/an-unlikely-set-of-clues-helps-reconstruct-ancient-chinese-disasters/
+  source: Ars Technica
+  published_utc: '2026-03-09T18:58:03+00:00'
+  title_zh: 非常规线索组合助力重构中国古代灾难事件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: It looks like the DOJ isn’t going to break up Live Nation and Ticketmaster
+  why: The DOJ and Live Nation agreed to a tentative settlement, but dozens of state
+    attorneys general don't want to drop the lawsuit.
+  takeaway: The DOJ and Live Nation agreed to a tentative settlement, but dozens of
+    state attorneys general don't want to drop the lawsuit.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/it-looks-like-the-doj-isnt-going-to-break-up-live-nation-and-ticketmaster/
+  source: TechCrunch
+  published_utc: '2026-03-09T18:49:48+00:00'
+  title_zh: 司法部似无意拆分Live Nation与Ticketmaster
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Nintendo sues to prevent Trump from dodging full tariff refunds
+  why: Nintendo may face pressure to share refunds with gamers who helped pay tariffs.
+  takeaway: Nintendo may face pressure to share refunds with gamers who helped pay
+    tariffs.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/03/nintendo-sues-for-full-tariff-refund-after-backlash-over-price-hikes/
+  source: Ars Technica
+  published_utc: '2026-03-09T18:28:13+00:00'
+  title_zh: 任天堂提起诉讼以阻止特朗普规避全额关税退款
+  why_zh: 任天堂可能面临压力，需与帮助支付关税的玩家分享退款。
+  takeaway_zh: 任天堂可能面临压力，需与帮助支付关税的玩家分享退款。
+  prompt_zh: ''
+- category: Tech industry
+  title: Periwinkle is making self-hosted social media on Bluesky’s AT Protocol even
+    easier
+  why: Periwinkle offers managed hosting for AT Protocol users who want social media
+    accounts on their own domains, with backups, storage, and mig…
+  takeaway: Periwinkle offers managed hosting for AT Protocol users who want social
+    media accounts on their own domains, with backups, storage, and migration tools.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/periwinkle-at-protocol-bluesky-self-hosted-social-media/
+  source: TechCrunch
+  published_utc: '2026-03-09T18:18:25+00:00'
+  title_zh: Periwinkle工具进一步简化Bluesky AT协议自托管社交媒体的部署
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How Cross-Cultural Engineering Drives Tech Advancement
+  why: Innovation rarely happens in isolation.
+  takeaway: Innovation rarely happens in isolation. Usually, the systems that engineers
+    design are shaped by global teams whose members’ knowledge and ideas move across
+    borders as easily as data. That is especially true in my field of robotics and
+    automation —where hardware, software, and human workflows function together. Progress
+    depends not only on technical skill b…
+  prompt: ''
+  url: https://spectrum.ieee.org/cross-cultural-engineering-tech-advancement
+  source: IEEE Spectrum
+  published_utc: '2026-03-09T18:00:04+00:00'
+  title_zh: 跨文化工程如何推动技术进步
+  why_zh: 创新很少孤立发生。
+  takeaway_zh: 创新很少孤立发生。通常，工程师设计的系统由全球团队塑造，团队成员的知识和想法像数据一样轻松跨越国界。这在我的机器人技术和自动化领域尤为明显——硬件、软件和人类工作流程协同运作。进步不仅依赖于技术技能，还…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: The Mog Programming Language'
+  why: Hi, Ted here, creator of Mog.
+  takeaway: Hi, Ted here, creator of Mog. - Mog is a statically typed, compiled, embedded
+    language (think statically typed Lua) designed to be written by LLMs -- the full
+    spec fits in 3,200 tokens. - An AI agent writes a Mog program, compiles it, and
+    dynamically loads it as a plugin, script, or hook. - The host controls exactly
+    which functions a Mog program can call (c…
+  prompt: ''
+  url: https://moglang.org
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T17:57:00+00:00'
+  title_zh: 'Show HN: Mog编程语言'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Flexible feline spines shed light on "falling cat" problem
+  why: Falling cats in the study also seemed to show a marked preference for turning
+    to the right.
+  takeaway: Falling cats in the study also seemed to show a marked preference for
+    turning to the right.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/03/tuck-and-turn-or-bend-and-twist-how-falling-cats-land-on-their-feet/
+  source: Ars Technica
+  published_utc: '2026-03-09T17:54:49+00:00'
+  title_zh: 猫科动物灵活脊椎为“下落猫”难题提供新解
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Microsoft brings Anthropic's Claude Cowork into Copilot to run tasks across
+    Outlook, Teams, and Excel
+  why: With Copilot Cowork, Microsoft taps Anthropic's Claude instead of OpenAI to
+    let AI handle tasks across Outlook, Teams, and Excel autonomous…
+  takeaway: With Copilot Cowork, Microsoft taps Anthropic's Claude instead of OpenAI
+    to let AI handle tasks across Outlook, Teams, and Excel autonomously. The article
+    Microsoft brings Anthropic's Claude Cowork into Copilot to run tasks across Outlook,
+    Teams, and Excel appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/microsoft-brings-anthropics-claude-cowork-into-copilot-to-run-tasks-across-outlook-teams-and-excel/
+  source: The Decoder (AI)
+  published_utc: '2026-03-09T17:51:16+00:00'
+  title_zh: 微软将Anthropic的Claude Cowork引入Copilot，跨Outlook、Teams和Excel执行任务
+  why_zh: 通过Copilot Cowork，微软采用Anthropic的Claude而非OpenAI，让AI自主处理Outlook、Teams和Excel中的任务。
+  takeaway_zh: 通过Copilot Cowork，微软采用Anthropic的Claude而非OpenAI，让AI自主处理Outlook、Teams和Excel中的任务。文章《微软将Anthropic的Claude
+    Cowork引入Copilot，以跨Outlook、Teams和Excel运行任务》首次发表于The Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI acquires Promptfoo to secure its AI agents
+  why: This deal underscores how frontier labs are scrambling to prove their technology
+    can be used safely in critical business operations.
+  takeaway: This deal underscores how frontier labs are scrambling to prove their
+    technology can be used safely in critical business operations.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/
+  source: TechCrunch
+  published_utc: '2026-03-09T17:49:04+00:00'
+  title_zh: OpenAI收购Promptfoo以加强其AI代理安全性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Fixfest is a global gathering of repairers, tinkerers, and activists
+  why: 'Article URL: https://fixfest.therestartproject.org/ Comments URL: https://news.ycombinator.com/item?id=47312329
+    Points: 152 # Comments: 18'
+  takeaway: 'Article URL: https://fixfest.therestartproject.org/ Comments URL: https://news.ycombinator.com/item?id=47312329
+    Points: 152 # Comments: 18'
+  prompt: ''
+  url: https://fixfest.therestartproject.org/
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T17:34:27+00:00'
+  title_zh: Fixfest：全球维修匠、修补匠与活动家的聚会
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: GM figured out how to navigate EV uncertainty with the Chevy Bolt
+  why: The 2027 Chevy Bolt might not be a groundbreaking new EV, but incremental improvements
+    have made it better without inflating the price.
+  takeaway: The 2027 Chevy Bolt might not be a groundbreaking new EV, but incremental
+    improvements have made it better without inflating the price.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/gm-figured-out-how-to-navigate-ev-uncertainty-with-the-chevy-bolt/
+  source: TechCrunch
+  published_utc: '2026-03-09T17:29:58+00:00'
+  title_zh: 通用汽车借雪佛兰Bolt探索电动汽车不确定性的应对之道
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic sues Defense Department over supply-chain risk designation
+  why: Anthropic filed suit against the Department of Defense on Monday after the
+    agency labeled it a supply-chain risk.
+  takeaway: Anthropic filed suit against the Department of Defense on Monday after
+    the agency labeled it a supply-chain risk. The complaint calls the DOD's actions
+    "unprecedented and unlawful."
+  prompt: ''
+  url: https://techcrunch.com/2026/03/09/anthropic-sues-defense-department-over-supply-chain-risk-designation/
+  source: TechCrunch
+  published_utc: '2026-03-09T17:25:40+00:00'
+  title_zh: Anthropic起诉国防部反对其供应链风险认定
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Florida judge rules red light camera tickets are unconstitutional
+  why: 'Article URL: https://cbs12.com/news/local/florida-news-judge-rules-red-light-camera-tickets-unconstitutional
+    Comments URL: https://news.yco…'
+  takeaway: 'Article URL: https://cbs12.com/news/local/florida-news-judge-rules-red-light-camera-tickets-unconstitutional
+    Comments URL: https://news.ycombinator.com/item?id=47312090 Points: 345 # Comments:
+    455'
+  prompt: ''
+  url: https://cbs12.com/news/local/florida-news-judge-rules-red-light-camera-tickets-unconstitutional
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T17:20:29+00:00'
+  title_zh: 佛罗里达州法官裁定红灯摄像头罚单违宪
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic's groundbreaking lawsuit challenges the government's power to punish
+    AI safety decisions
+  why: Anthropic is suing 17 US federal agencies.
+  takeaway: Anthropic is suing 17 US federal agencies. The 48-page complaint reveals
+    how deeply Claude is already embedded in classified Pentagon systems and how the
+    government pressured the company with contradictory threats when it refused to
+    drop its AI safety guardrails. The article Anthropic's groundbreaking lawsuit
+    challenges the government's power to punish AI s…
+  prompt: ''
+  url: https://the-decoder.com/anthropics-groundbreaking-lawsuit-challenges-the-governments-power-to-punish-ai-safety-decisions/
+  source: The Decoder (AI)
+  published_utc: '2026-03-09T17:15:22+00:00'
+  title_zh: Anthropic的突破性诉讼挑战政府对AI安全决策的惩罚权
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Building a Procedural Hex Map with Wave Function Collapse
+  why: 'Article URL: https://felixturner.github.io/hex-map-wfc/article/ Comments URL:
+    https://news.ycombinator.com/item?id=47311815 Points: 397 # C…'
+  takeaway: 'Article URL: https://felixturner.github.io/hex-map-wfc/article/ Comments
+    URL: https://news.ycombinator.com/item?id=47311815 Points: 397 # Comments: 58'
+  prompt: ''
+  url: https://felixturner.github.io/hex-map-wfc/article/
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T17:02:22+00:00'
+  title_zh: 使用波函数坍缩构建程序化六边形地图
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DARPA’s new X-76
+  why: 'Article URL: https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter
+    Comments URL: https://news.ycombinator.com/i…'
+  takeaway: 'Article URL: https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter
+    Comments URL: https://news.ycombinator.com/item?id=47311669 Points: 159 # Comments:
+    155'
+  prompt: ''
+  url: https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T16:54:31+00:00'
+  title_zh: DARPA的新X-76
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents'
+  why: Hello Hacker News!
+  takeaway: Hello Hacker News! We're Filip, Stavros, and Vivek from Terminal Use (
+    https://www.terminaluse.com/ ). We built Terminal Use to make it easier to deploy
+    agents that work in a sandboxed environment and need filesystems to do work. This
+    includes coding agents, research agents, document processing agents, and internal
+    tools that read and write files. Here's a…
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=47311657
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T16:53:52+00:00'
+  title_zh: 'Launch HN: Terminal Use (YC W26) – 文件系统代理的Vercel'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I don't know Apple's endgame for the Fn/Globe key–or if Apple does
+  why: 'Article URL: https://aresluna.org/fn/ Comments URL: https://news.ycombinator.com/item?id=47311647
+    Points: 49 # Comments: 10'
+  takeaway: 'Article URL: https://aresluna.org/fn/ Comments URL: https://news.ycombinator.com/item?id=47311647
+    Points: 49 # Comments: 10'
+  prompt: ''
+  url: https://aresluna.org/fn/
+  source: Hacker News (front page)
+  published_utc: '2026-03-09T16:53:14+00:00'
+  title_zh: 我不清楚苹果对Fn/Globe键的最终规划——或许苹果自己也不清楚
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

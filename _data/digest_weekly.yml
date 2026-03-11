@@ -2210,3 +2210,82 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - openai/openai-python
     published_utc: '2026-03-05T23:16:58+00:00'
+- week: 2026-W11
+  start: '2026-03-09'
+  end: '2026-03-15'
+  issues:
+  - '2026-03-11'
+  highlights_news:
+  - date: '2026-03-11'
+    url: https://techcrunch.com/2026/03/10/google-gemini-chrome-expands-to-india-canada-new-zealand/
+    title: Google brings Gemini in Chrome to India
+    title_zh: 谷歌将Gemini引入Chrome，登陆印度市场
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-11T02:30:00+00:00'
+  - date: '2026-03-11'
+    url: https://arstechnica.com/space/2026/03/nasa-approved-a-safety-waiver-for-this-weeks-reentry-of-van-allen-probe/
+    title: Reentry of NASA satellite will exceed the agency's own risk guidelines
+    title_zh: NASA卫星再入大气层将超出机构自身风险指南
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-10T23:01:36+00:00'
+  - date: '2026-03-11'
+    url: https://www.wired.com/story/trump-administration-refuses-to-say-it-wont-take-further-action-against-anthropic/
+    title: Trump Administration Won’t Rule Out Further Action Against Anthropic
+    title_zh: 特朗普政府不排除对Anthropic采取进一步行动
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-11T01:41:42+00:00'
+  - date: '2026-03-11'
+    url: https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/
+    title: Microsoft Patch Tuesday, March 2026 Edition
+    title_zh: 微软2026年3月补丁星期二更新
+    category: Security
+    source: Krebs on Security
+    published_utc: '2026-03-11T00:32:51+00:00'
+  - date: '2026-03-11'
+    url: https://arxiv.org/abs/2603.09403
+    title: 'LLM as a Meta-Judge: Synthetic Data for NLP Evaluation Metric Validation'
+    title_zh: LLM作为元法官：用于NLP评估指标验证的合成数据
+    category: AI frontier
+    source: arXiv cs.CL (Computation and Language)
+    published_utc: '2026-03-11T04:00:00+00:00'
+  highlights_ai:
+  - date: '2026-03-11'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-agentcore-runtime-stateful-mcp/
+    title: Amazon Bedrock AgentCore Runtime now supports stateful MCP server features
+    title_zh: Amazon Bedrock AgentCore运行时现已支持有状态MCP服务器功能
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-03-10T23:53:00+00:00'
+  - date: '2026-03-11'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.11
+    title: 'langchain-ai/langchain: langchain-openai==1.1.11'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-03-09T23:02:48+00:00'
+  - date: '2026-03-11'
+    url: https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/
+    title: I Used Google’s New Gemini-Powered ‘Help Me Create’ Tool in Docs. It’s
+      Great at Corporate-Speak
+    title_zh: 我试用了谷歌新推出的Gemini驱动的‘帮我创作’工具，它在企业用语方面表现优异
+    category: AI tools & model releases
+    source: WIRED - AI
+    published_utc: '2026-03-10T13:00:00+00:00'
+  - date: '2026-03-11'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14-stable.gpt-5.4-patch7
+    title: 'BerriAI/litellm: v1.81.14-stable.gpt-5.4-patch7'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-03-09T13:36:56+00:00'
+  - date: '2026-03-11'
+    url: https://the-decoder.com/claude-code-gets-parallel-ai-agents-that-review-code-for-bugs-and-security-gaps/
+    title: Claude Code gets parallel AI agents that review code for bugs and security
+      gaps
+    title_zh: Claude Code引入并行AI代理，用于代码漏洞和安全漏洞审查
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-10T09:12:18+00:00'

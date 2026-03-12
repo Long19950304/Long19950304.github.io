@@ -2215,6 +2215,7 @@ weeks:
   end: '2026-03-15'
   issues:
   - '2026-03-11'
+  - '2026-03-12'
   highlights_news:
   - date: '2026-03-11'
     url: https://techcrunch.com/2026/03/10/google-gemini-chrome-expands-to-india-canada-new-zealand/
@@ -2251,6 +2252,42 @@ weeks:
     category: AI frontier
     source: arXiv cs.CL (Computation and Language)
     published_utc: '2026-03-11T04:00:00+00:00'
+  - date: '2026-03-12'
+    url: https://arstechnica.com/security/2026/03/14000-routers-are-infected-by-malware-thats-highly-resistant-to-takedowns/
+    title: 14,000 routers are infected by malware that's highly resistant to takedowns
+    title_zh: 1.4万台路由器感染了恶意软件，该软件极难被清除
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-03-11T21:27:16+00:00'
+  - date: '2026-03-12'
+    url: https://techcrunch.com/2026/03/11/netflix-may-have-paid-600-million-for-ben-afflecks-ai-startup/
+    title: Netflix may have paid $600 million for Ben Affleck’s AI startup
+    title_zh: Netflix可能以6亿美元收购了本·阿弗莱克的人工智能初创公司
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-11T22:00:05+00:00'
+  - date: '2026-03-12'
+    url: https://www.theverge.com/ai-artificial-intelligence/893451/grammarly-ai-lawsuit-julia-angwin
+    title: One of Grammarly’s ‘experts’ is suing the company over its identity-stealing
+      AI feature
+    title_zh: Grammarly一名‘专家’就其窃取身份的AI功能起诉该公司
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-11T22:51:53+00:00'
+  - date: '2026-03-12'
+    url: https://github.com/manuelschipper/nah/
+    title: 'Show HN: A context-aware permission guard for Claude Code'
+    title_zh: HN展示：Claude Code的上下文感知权限防护工具
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-03-11T23:26:25+00:00'
+  - date: '2026-03-12'
+    url: https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not
+    title: Preliminary data from a longitudinal AI impact study
+    title_zh: 一项AI影响纵向研究的初步数据
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-03-11T21:23:24+00:00'
   highlights_ai:
   - date: '2026-03-11'
     url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-agentcore-runtime-stateful-mcp/
@@ -2289,3 +2326,18 @@ weeks:
     category: AI tools & model releases
     source: The Decoder (AI)
     published_utc: '2026-03-10T09:12:18+00:00'
+  - date: '2026-03-12'
+    url: https://the-decoder.com/openais-new-training-dataset-teaches-ai-models-which-instructions-to-trust/
+    title: OpenAI's new training dataset teaches AI models which instructions to trust
+    title_zh: OpenAI新训练数据集教会AI模型判断指令可信度
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-11T15:31:28+00:00'
+  - date: '2026-03-12'
+    url: https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
+    title: 'Introducing Nemotron 3 Super: An Open Hybrid Mamba-Transformer MoE for
+      Agentic Reasoning'
+    title_zh: 推出Nemotron 3 Super：用于代理推理的开放混合Mamba-Transformer MoE
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-03-11T16:00:00+00:00'

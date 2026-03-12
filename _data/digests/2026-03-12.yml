@@ -1,0 +1,883 @@
+date: '2026-03-12'
+title: Daily Digest - 2026-03-12
+title_zh: 每日简报 - 2026-03-12
+note: 'Today: 14,000 routers are infected by malware that''s highly resistant… · Netflix
+  may have paid $600 million for Ben Affleck’s AI startup · AI: OpenAI''s new training
+  dataset teaches AI models which ins….'
+note_zh: 今日关注：1.4万台路由器感染了恶意软件，该软件极难被清除；Netflix可能以6亿美元收购了本·阿弗莱克的人工智能初创公司；AI：OpenAI新训练数据集教会AI模型判断指令可信度。
+items:
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==1.2.12'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.12
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-11T22:21:17+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.1-nightly.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.1-nightly.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-11T20:31:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Neptune Database is now available in Asia Pacific (Hyderabad) region
+  why: Amazon Neptune Database is now available in the AWS Asia Pacific (Hyderabad)
+    region.
+  takeaway: Amazon Neptune Database is now available in the AWS Asia Pacific (Hyderabad)
+    region. You can now create Neptune clusters using R5, R5d, R6g, R6i, X2iedn, T4g,
+    and T3 instance types in the AWS Asia Pacific (Hyderabad) region. Amazon Neptune
+    Database is a fast, reliable, and fully managed graph database as a service that
+    makes it easy to build and run applica…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-neptune-hyderabad/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-11T20:00:00+00:00'
+  title_zh: Amazon Neptune数据库现已在亚太（海得拉巴）地区推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon CloudWatch Database Insights on-demand analysis now available in AWS
+    Govcloud (US) Regions
+  why: Amazon CloudWatch Database Insights expands the availability of its on-demand
+    analysis experience to AWS GovCloud (US-East) and AWS GovClou…
+  takeaway: Amazon CloudWatch Database Insights expands the availability of its on-demand
+    analysis experience to AWS GovCloud (US-East) and AWS GovCloud (US-West). CloudWatch
+    Database Insights is a monitoring and diagnostics solution that helps database
+    administrators and developers optimize database performance by providing comprehensive
+    visibility into database metri…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-cloudwatch-database-insights-on-demand-analysis-in-govcloud/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-11T17:00:00+00:00'
+  title_zh: Amazon CloudWatch数据库按需分析功能现已在AWS GovCloud（美国）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Introducing Nemotron 3 Super: An Open Hybrid Mamba-Transformer MoE for Agentic
+    Reasoning'
+  why: Agentic AI systems need models with the specialized depth to solve dense technical
+    problems autonomously.
+  takeaway: Agentic AI systems need models with the specialized depth to solve dense
+    technical problems autonomously. They must excel at reasoning, coding, and long-context...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-11T16:00:00+00:00'
+  title_zh: 推出Nemotron 3 Super：用于代理推理的开放混合Mamba-Transformer MoE
+  why_zh: 代理式AI系统需要具备解决复杂技术问题自主能力的深度专业化模型。
+  takeaway_zh: 代理式AI系统需要具备专业深度的模型，以自主解决复杂技术问题。它们必须在推理、编码和长上下文处理方面表现出色...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI's new training dataset teaches AI models which instructions to trust
+  why: OpenAI has released IH-Challenge, a training dataset designed to teach AI models
+    to reliably prioritize trusted instructions over untrusted…
+  takeaway: OpenAI has released IH-Challenge, a training dataset designed to teach
+    AI models to reliably prioritize trusted instructions over untrusted ones. Early
+    results show significant improvements in both security and prompt injection defense.
+    The article OpenAI's new training dataset teaches AI models which instructions
+    to trust appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openais-new-training-dataset-teaches-ai-models-which-instructions-to-trust/
+  source: The Decoder (AI)
+  published_utc: '2026-03-11T15:31:28+00:00'
+  title_zh: OpenAI新训练数据集教会AI模型判断指令可信度
+  why_zh: OpenAI发布了IH-Challenge，这是一个训练数据集，旨在教会AI模型可靠地优先处理可信指令而非不可信指令……
+  takeaway_zh: OpenAI发布了IH-Challenge，这是一个训练数据集，旨在教会AI模型可靠地优先处理可信指令而非不可信指令。早期结果显示在安全性和提示注入防御方面均有显著提升。文章《OpenAI新训练数据集教会AI模型信任哪些指令》首次发表于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Connect now provides case data in analytics data lake
+  why: Amazon Connect now provides case data in the analytics data lake, making it
+    easier for you to generate reports and insights.
+  takeaway: Amazon Connect now provides case data in the analytics data lake, making
+    it easier for you to generate reports and insights. With case data available alongside
+    other Amazon Connect analytics, you can use Amazon Athena and Amazon QuickSight
+    to build custom reports and analyze trends such as case volume by type, case handling
+    across agent shifts, or contact s…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-connect-cases-data-lake
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-11T15:00:00+00:00'
+  title_zh: Amazon Connect现可在分析数据湖中提供案例数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: This Digital Picture Frame Wants to Bring People Closer to a Holographic
+    Future
+  why: Brooklyn-based Looking Glass has been dabbling in 3D screens for nearly a decade.
+  takeaway: Brooklyn-based Looking Glass has been dabbling in 3D screens for nearly
+    a decade. It's finally launching Musubi, an AI-powered holographic frame to bring
+    your photos and videos to life.
+  prompt: ''
+  url: https://www.wired.com/story/looking-glass-musubi/
+  source: WIRED - AI
+  published_utc: '2026-03-11T13:00:00+00:00'
+  title_zh: 这款数字相框旨在让人们更接近全息未来
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.17.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.17.1
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-03-11T10:24:34+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.1-nightly.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.1-nightly.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-11T07:58:11+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.1-silent-dev2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.1-silent-dev2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-11T04:17:22+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Runtime now supports stateful MCP server features
+  why: Amazon Bedrock AgentCore Runtime now supports stateful Model Context Protocol
+    (MCP) server features, enabling developers to build MCP serve…
+  takeaway: Amazon Bedrock AgentCore Runtime now supports stateful Model Context Protocol
+    (MCP) server features, enabling developers to build MCP servers that leverage
+    elicitation, sampling, and progress notifications alongside existing support for
+    resources, prompts, and tools. These capabilities allow MCP servers deployed to
+    AgentCore Runtime to collect user input in…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-agentcore-runtime-stateful-mcp/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-10T23:53:00+00:00'
+  title_zh: Amazon Bedrock AgentCore运行时现已支持状态化MCP服务器功能
+  why_zh: Amazon Bedrock的AgentCore Runtime现已支持有状态的模型上下文协议（MCP）服务器功能，使开发者能够构建MCP服务器……
+  takeaway_zh: Amazon Bedrock的AgentCore Runtime现已支持有状态的模型上下文协议（MCP）服务器功能，使开发者能够构建MCP服务器，这些服务器利用启发、采样和进度通知，同时保留对资源、提示和工具的现有支持。这些功能使得部署到AgentCore
+    Runtime的MCP服务器能够收集用户输入……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.0.patch4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.0.patch4
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-10T23:25:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock now supports observability of First Token Latency and Quota
+    Consumption
+  why: Amazon Bedrock is a fully managed service for building generative AI applications
+    using high-performing foundation models from leading AI p…
+  takeaway: Amazon Bedrock is a fully managed service for building generative AI applications
+    using high-performing foundation models from leading AI providers. It now supports
+    two new CloudWatch metrics, TimeToFirstToken and EstimatedTPMQuotaUsage, giving
+    you deeper visibility into inference performance and quota consumption. TimeToFirstToken
+    measures the latency from…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-observability-ttft-quota/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-10T22:21:00+00:00'
+  title_zh: Amazon Bedrock现已支持首令牌延迟和配额消耗的可观测性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==1.2.11'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.11
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-10T19:46:31+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'run-llama/llama_index: v0.14.16'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/run-llama/llama_index/releases/tag/v0.14.16
+  source: GitHub Releases - run-llama/llama_index
+  published_utc: '2026-03-10T19:20:35+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Connect enhances AI-powered predictive insights
+  why: Today, Amazon Connect is announcing enhancements to AI-powered predictive insights
+    that make it easier for businesses to deliver proactive,…
+  takeaway: Today, Amazon Connect is announcing enhancements to AI-powered predictive
+    insights that make it easier for businesses to deliver proactive, personalized
+    customer experiences at scale. Building on the five recommendation algorithms
+    launched at re:Invent 2025, AI-powered predictive insights now support up to 40
+    million product catalog items (8X increase), are…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-connect-predictive-insights/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-10T16:00:00+00:00'
+  title_zh: Amazon Connect增强AI驱动的预测洞察功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: NVIDIA RTX Innovations Are Powering the Next Era of Game Development
+  why: NVIDIA RTX ray tracing and AI-powered neural rendering technologies are redefining
+    how games are made, enabling a new standard for visuals…
+  takeaway: NVIDIA RTX ray tracing and AI-powered neural rendering technologies are
+    redefining how games are made, enabling a new standard for visuals and performance.
+    At...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/nvidia-rtx-innovations-are-powering-the-next-era-of-game-development/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-10T15:30:00+00:00'
+  title_zh: 英伟达RTX创新正在推动游戏开发新时代
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Reliable AI Coding for Unreal Engine: Improving Accuracy and Reducing Token
+    Costs'
+  why: Agentic code assistants are moving into daily game development as studios build
+    larger worlds, ship more DLCs, and support distributed team…
+  takeaway: Agentic code assistants are moving into daily game development as studios
+    build larger worlds, ship more DLCs, and support distributed teams. These assistants...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/reliable-ai-coding-for-unreal-engine-improving-accuracy-and-reducing-token-costs/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-10T15:30:00+00:00'
+  title_zh: 为虚幻引擎提供可靠的AI编码：提高准确性并降低令牌成本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.1-dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.1-dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-10T13:42:30+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: 1.82.1-dev-2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/1.82.1-dev-2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-10T13:07:16+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: I Used Google’s New Gemini-Powered ‘Help Me Create’ Tool in Docs. It’s Great
+    at Corporate-Speak
+  why: Google has injected Docs, Drive, Sheets, and Slides with its Gemini assistant,
+    adding new features that can pull information from your emai…
+  takeaway: Google has injected Docs, Drive, Sheets, and Slides with its Gemini assistant,
+    adding new features that can pull information from your emails and the web to
+    help you draft content. I gave it a whirl.
+  prompt: ''
+  url: https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/
+  source: WIRED - AI
+  published_utc: '2026-03-10T13:00:00+00:00'
+  title_zh: 我试用了Google文档中Gemini驱动的‘Help Me Create’功能——它太擅长写官样文章了
+  why_zh: 谷歌已将其Gemini助手集成到Docs、Drive、Sheets和Slides中，新增功能可从您的电子邮件中提取信息……
+  takeaway_zh: 谷歌已将其Gemini助手整合进Docs、Drive、Sheets和Slides中，新增功能可从电子邮件和网络提取信息，协助用户起草内容。我已亲自试用。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.1-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.1-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-10T09:44:58+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.dev'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.dev
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-10T00:21:07+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.11'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.11
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-09T23:02:48+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: CUDA 13.2 Introduces Enhanced CUDA Tile Support and New Python Features
+  why: 'CUDA 13.2 arrives with a major update: NVIDIA CUDA Tile is now supported on
+    devices of compute capability 8.X architectures (NVIDIA Ampere…'
+  takeaway: 'CUDA 13.2 arrives with a major update: NVIDIA CUDA Tile is now supported
+    on devices of compute capability 8.X architectures (NVIDIA Ampere and NVIDIA Ada),
+    as...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/cuda-13-2-introduces-enhanced-cuda-tile-support-and-new-python-features/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-09T21:13:18+00:00'
+  title_zh: CUDA 13.2引入增强的CUDA Tile支持和新Python功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.18'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.18
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-09T20:40:19+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick Suite launches User Preferences for chat personalization
+  why: We are announcing User Preferences in Amazon Quick Suite – a new feature that
+    gives users greater control over how Quick looks, feels, and…
+  takeaway: We are announcing User Preferences in Amazon Quick Suite – a new feature
+    that gives users greater control over how Quick looks, feels, and works for them.
+    With User Preferences, users can now customize their Chat panel layout by setting
+    it to open expanded or collapsed by default; Quick also automatically remembers
+    their last used setting and resumes from w…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/user-preferences-in-quick/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-09T20:03:00+00:00'
+  title_zh: Amazon Quick Suite推出聊天个性化用户偏好设置
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Implementing Falcon-H1 Hybrid Architecture in NVIDIA Megatron Core
+  why: In the rapidly evolving landscape of large language model (LLM) development,
+    NVIDIA Megatron Core has emerged as the foundational framework…
+  takeaway: In the rapidly evolving landscape of large language model (LLM) development,
+    NVIDIA Megatron Core has emerged as the foundational framework for training massive...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/implementing-falcon-h1-hybrid-architecture-in-nvidia-megatron-core/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-09T19:30:00+00:00'
+  title_zh: 在NVIDIA Megatron Core中实现Falcon-H1混合架构
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker Unified Studio now supports faster data preview in Visual
+    ETL
+  why: Amazon SageMaker Unified Studio introduces data preview v2.0 for Visual ETL,
+    a new data preview mode that delivers near-instant results whe…
+  takeaway: Amazon SageMaker Unified Studio introduces data preview v2.0 for Visual
+    ETL, a new data preview mode that delivers near-instant results when building
+    and iterating on visual ETL jobs. With data preview v2.0, data engineers and analysts
+    can see the output of each transform in about one second, with no session startup
+    required and at no additional compute cos…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-unified-studio-faster-data-preview/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-09T18:55:00+00:00'
+  title_zh: Amazon SageMaker Unified Studio现支持在Visual ETL中更快地进行数据预览
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple releases iOS 15.8.7 to fix Coruna exploit for iPhone 6S from 2015
+  why: 'Article URL: https://support.apple.com/en-us/126632 Comments URL: https://news.ycombinator.com/item?id=47345050
+    Points: 34 # Comments: 8'
+  takeaway: 'Article URL: https://support.apple.com/en-us/126632 Comments URL: https://news.ycombinator.com/item?id=47345050
+    Points: 34 # Comments: 8'
+  prompt: ''
+  url: https://support.apple.com/en-us/126632
+  source: Hacker News (front page)
+  published_utc: '2026-03-12T01:22:26+00:00'
+  title_zh: 苹果发布iOS 15.8.7以修复2015款iPhone 6S的Coruna漏洞
+  why_zh: 文章链接：https://support.apple.com/en-us/126632 评论链接：https://news.ycombinator.com/item?id=47345050
+    得分：34 评论数：8
+  takeaway_zh: 文章链接：https://support.apple.com/en-us/126632 评论链接：https://news.ycombinator.com/item?id=47345050
+    得分：34 评论数：8
+  prompt_zh: ''
+- category: Tech industry
+  title: How much of HN is AI?
+  why: 'Article URL: https://lcamtuf.substack.com/p/how-much-of-hn-is-ai Comments
+    URL: https://news.ycombinator.com/item?id=47344999 Points: 12 # C…'
+  takeaway: 'Article URL: https://lcamtuf.substack.com/p/how-much-of-hn-is-ai Comments
+    URL: https://news.ycombinator.com/item?id=47344999 Points: 12 # Comments: 0'
+  prompt: ''
+  url: https://lcamtuf.substack.com/p/how-much-of-hn-is-ai
+  source: Hacker News (front page)
+  published_utc: '2026-03-12T01:15:40+00:00'
+  title_zh: HN有多少内容与AI相关？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: s@: decentralized social networking over static sites'
+  why: 'Article URL: http://satproto.org/ Comments URL: https://news.ycombinator.com/item?id=47344548
+    Points: 13 # Comments: 1'
+  takeaway: 'Article URL: http://satproto.org/ Comments URL: https://news.ycombinator.com/item?id=47344548
+    Points: 13 # Comments: 1'
+  prompt: ''
+  url: http://satproto.org/
+  source: Hacker News (front page)
+  published_utc: '2026-03-12T00:22:19+00:00'
+  title_zh: Show HN：s@：基于静态站点的去中心化社交网络
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI ‘actor’ Tilly Norwood put out the worst song I’ve ever heard
+  why: This song is an AI actor's rallying cry to other AI actors, urging them to
+    keep going despite the naysayers who doubt their humanity.
+  takeaway: This song is an AI actor's rallying cry to other AI actors, urging them
+    to keep going despite the naysayers who doubt their humanity. Literally no one
+    can relate to this.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/ai-actor-tilly-norwood-put-out-the-worst-song-ive-ever-heard/
+  source: TechCrunch
+  published_utc: '2026-03-11T23:35:03+00:00'
+  title_zh: AI‘演员’蒂莉·诺伍德发布了我听过的最糟糕的歌曲
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Autoresearch@home'
+  why: autoresearch@home is a collaborative research collective where AI agents share
+    GPU resources to collectively improve a language model.
+  takeaway: 'autoresearch@home is a collaborative research collective where AI agents
+    share GPU resources to collectively improve a language model. Think SETI@home,
+    but for model training. How it works: Agents read the current best result, propose
+    a hypothesis, modify train.py, run the experiment on your GPU, and publish results
+    back. When an agent beats the current bes…'
+  prompt: ''
+  url: https://www.ensue-network.ai/autoresearch
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T23:27:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: A context-aware permission guard for Claude Code'
+  why: We needed something like --dangerously-skip-permissions that doesn’t nuke your
+    untracked files, exfiltrate your keys, or install malware.
+  takeaway: We needed something like --dangerously-skip-permissions that doesn’t nuke
+    your untracked files, exfiltrate your keys, or install malware. Claude Code's
+    permission system is allow-or-deny per tool, but that doesn’t really scale. Deleting
+    some files is fine sometimes. And git checkout is sometimes not fine. Even when
+    you curate permissions, 200 IQ Opus can fi…
+  prompt: ''
+  url: https://github.com/manuelschipper/nah/
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T23:26:25+00:00'
+  title_zh: HN展示：Claude Code的上下文感知权限防护工具
+  why_zh: 我们需要一种类似--dangerously-skip-permissions的功能，它不会删除未跟踪的文件、泄露密钥或安装恶意软件。
+  takeaway_zh: 我们需要一种类似--dangerously-skip-permissions的功能，它不会删除未跟踪的文件、泄露密钥或安装恶意软件。Claude
+    Code的权限系统是按工具允许或拒绝，但这并不具备扩展性。有时删除某些文件是可以的，而git checkout有时则不行。即便精心设置权限，200 IQ的Opus也能……
+  prompt_zh: ''
+- category: Tech industry
+  title: Nuro is testing its autonomous vehicle tech on Tokyo’s streets
+  why: Nuro began testing its self-driving software on public roads in Tokyo, marking
+    the first international expansion for the AV startup.
+  takeaway: Nuro began testing its self-driving software on public roads in Tokyo,
+    marking the first international expansion for the AV startup.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/nuro-is-testing-its-autonomous-vehicle-tech-on-tokyos-streets/
+  source: TechCrunch
+  published_utc: '2026-03-11T23:09:38+00:00'
+  title_zh: Nuro正在东京街头测试其自动驾驶汽车技术
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Play is adding new paid and PC games, game trials, community posts,
+    and more
+  why: The updates indicate that Google is focused on transforming Google Play into
+    an enhanced gaming hub.
+  takeaway: The updates indicate that Google is focused on transforming Google Play
+    into an enhanced gaming hub.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/google-play-is-adding-new-paid-and-pc-games-game-trials-community-posts-and-more/
+  source: TechCrunch
+  published_utc: '2026-03-11T23:00:00+00:00'
+  title_zh: Google Play正在新增付费及PC游戏、游戏试用、社区帖子等功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: One of Grammarly’s ‘experts’ is suing the company over its identity-stealing
+    AI feature
+  why: For months, Grammarly has been using the identities of real people (including
+    us) for its "Expert Review" AI suggestions without getting th…
+  takeaway: For months, Grammarly has been using the identities of real people (including
+    us) for its "Expert Review" AI suggestions without getting their permission, and
+    now it's facing a lawsuit from one of the journalists included, as previously
+    reported by Wired. The class-action complaint filed by journalist Julia Angwin
+    on Wednesday alleges that Superhuman violat…
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/893451/grammarly-ai-lawsuit-julia-angwin
+  source: The Verge
+  published_utc: '2026-03-11T22:51:53+00:00'
+  title_zh: Grammarly一名‘专家’就其窃取身份的AI功能起诉该公司
+  why_zh: 数月来，Grammarly一直在未经许可的情况下使用真实人物（包括我们）的身份信息为其‘专家评审’AI建议服务……
+  takeaway_zh: 数月来，Grammarly一直在未经许可的情况下使用真实人物（包括我们）的身份信息为其‘专家评审’AI建议服务，现正面临其中一位被纳入的记者提起的诉讼，此前《连线》杂志已有报道。记者Julia
+    Angwin于周三提起的集体诉讼指控Superhuman侵犯……
+  prompt_zh: ''
+- category: Tech industry
+  title: Ford’s new AI assistant will help fleet owners know if seatbelts are being
+    used
+  why: Ford Pro AI debuted at Work Truck Week in Indianapolis and is now available
+    to all of its U.S.-based Pro telematics subscribers.
+  takeaway: Ford Pro AI debuted at Work Truck Week in Indianapolis and is now available
+    to all of its U.S.-based Pro telematics subscribers.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/fords-new-ai-assistant-will-help-fleet-owners-know-if-seatbelts-are-being-used/
+  source: TechCrunch
+  published_utc: '2026-03-11T22:51:39+00:00'
+  title_zh: 福特的新型AI助手将帮助车队管理者了解安全带使用情况
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Building Better Country Selects
+  why: 'Article URL: https://talysto.com/blog/building-better-country-selects/ Comments
+    URL: https://news.ycombinator.com/item?id=47343411 Points:…'
+  takeaway: 'Article URL: https://talysto.com/blog/building-better-country-selects/
+    Comments URL: https://news.ycombinator.com/item?id=47343411 Points: 8 # Comments:
+    10'
+  prompt: ''
+  url: https://talysto.com/blog/building-better-country-selects/
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T22:47:03+00:00'
+  title_zh: 构建更好的国家选择器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ride-hailing inDrive acquires Pakistan’s Krave Mart to bolster grocery delivery
+  why: inDrive has closed its acquisition of KraveMart, expanding grocery delivery
+    in a market dominated by Foodpanda.
+  takeaway: inDrive has closed its acquisition of KraveMart, expanding grocery delivery
+    in a market dominated by Foodpanda.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/ride-hailing-indrive-acquires-pakistans-kravemart-to-bolster-grocery-delivery/
+  source: TechCrunch
+  published_utc: '2026-03-11T22:45:35+00:00'
+  title_zh: 网约车平台inDrive收购巴基斯坦Krave Mart以强化生鲜配送业务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Zendesk acquires agentic customer service startup Forethought
+  why: Forethought was years ahead of its time and the 2018 winner of TechCrunch Battlefield.
+  takeaway: Forethought was years ahead of its time and the 2018 winner of TechCrunch
+    Battlefield.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought/
+  source: TechCrunch
+  published_utc: '2026-03-11T22:41:27+00:00'
+  title_zh: Zendesk收购智能客服初创公司Forethought
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Atlassian to cut roughly 1,600 jobs in pivot to AI
+  why: 'Article URL: https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/
+    Comments URL: https://news.ycombin…'
+  takeaway: 'Article URL: https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/
+    Comments URL: https://news.ycombinator.com/item?id=47343156 Points: 85 # Comments:
+    121'
+  prompt: ''
+  url: https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T22:29:42+00:00'
+  title_zh: Atlassian为转向AI将裁员约1600人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'iPhone Fold rumor: iPad-like multitasking, but no iPad apps and no Face
+    ID'
+  why: Apple's rumored foldable iPhone will come with an iPad-style interface that
+    will allow users to view apps side-by-side, according to a repo…
+  takeaway: Apple's rumored foldable iPhone will come with an iPad-style interface
+    that will allow users to view apps side-by-side, according to a report from Bloomberg's
+    Mark Gurman. Gurman also reports that the outer display will be around the size
+    of a small iPhone. The inner display will reportedly come with a wider aspect
+    ratio, similar to […]
+  prompt: ''
+  url: https://www.theverge.com/tech/893429/iphone-fold-rumor-ipad-multitasking-face-id-rumor
+  source: The Verge
+  published_utc: '2026-03-11T22:22:33+00:00'
+  title_zh: iPhone Fold传闻：iPad式多任务处理，但无iPad应用且不支持Face ID
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Report: RFK Jr.’s anti-vaccine agenda curbed as GOP realizes it''s unpopular'
+  why: Meanwhile, Kennedy's allies want all vaccine recommendations eliminated.
+  takeaway: Meanwhile, Kennedy's allies want all vaccine recommendations eliminated.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/03/report-trump-admin-trying-to-rein-in-rfk-jr-s-unpopular-anti-vaccine-agenda/
+  source: Ars Technica
+  published_utc: '2026-03-11T22:19:27+00:00'
+  title_zh: 报告：小罗伯特·F·肯尼迪的反疫苗议程因共和党认识到其不受欢迎而受阻
+  why_zh: 与此同时，肯尼迪的盟友希望取消所有疫苗推荐。
+  takeaway_zh: 与此同时，肯尼迪的盟友希望取消所有疫苗推荐。
+  prompt_zh: ''
+- category: Tech industry
+  title: India neobank Fi winds down banking services on its platform
+  why: Fi, founded by former Google Pay executives, is discontinuing banking services
+    over four years after launch.
+  takeaway: Fi, founded by former Google Pay executives, is discontinuing banking
+    services over four years after launch.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/india-neobank-fi-winds-down-banking-services-on-its-platform/
+  source: TechCrunch
+  published_utc: '2026-03-11T22:17:44+00:00'
+  title_zh: 印度数字银行Fi逐步终止其平台上的银行业务
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FCC chair blasts Amazon after it criticizes SpaceX megaconstellation
+  why: Will it really take "centuries" for SpaceX to deploy its megaconstellation?
+  takeaway: Will it really take "centuries" for SpaceX to deploy its megaconstellation?
+  prompt: ''
+  url: https://arstechnica.com/space/2026/03/fcc-chair-blasts-amazon-after-it-criticizes-spacex-megaconstellation/
+  source: Ars Technica
+  published_utc: '2026-03-11T22:04:42+00:00'
+  title_zh: FCC主席在亚马逊批评SpaceX巨型星座后猛烈抨击亚马逊
+  why_zh: SpaceX部署其巨型卫星群真的需要‘几个世纪’吗？
+  takeaway_zh: SpaceX部署其巨型卫星群真的需要‘几个世纪’吗？
+  prompt_zh: ''
+- category: Tech industry
+  title: Netflix may have paid $600 million for Ben Affleck’s AI startup
+  why: This deal could rank as among the streaming giant's largest acquisitions ever.
+  takeaway: This deal could rank as among the streaming giant's largest acquisitions
+    ever.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/netflix-may-have-paid-600-million-for-ben-afflecks-ai-startup/
+  source: TechCrunch
+  published_utc: '2026-03-11T22:00:05+00:00'
+  title_zh: Netflix可能以6亿美元收购了本·阿弗莱克的人工智能初创公司
+  why_zh: 这笔交易可能成为该流媒体巨头有史以来最大规模的收购之一。
+  takeaway_zh: 这笔交易可能成为该流媒体巨头有史以来最大规模的收购之一。
+  prompt_zh: ''
+- category: Tech industry
+  title: Some of the best horror games ever made are included in Humble’s latest $15
+    bundle
+  why: Humble has teamed up with Frictional Games for a new bundle of PC games that
+    pushed the horror genre forward.
+  takeaway: Humble has teamed up with Frictional Games for a new bundle of PC games
+    that pushed the horror genre forward. The bundle includes the Penumbra Collectors
+    Pack, all four Amnesia titles (The Dark Descent, A Machine for Pigs, The Bunker,
+    and Rebirth), and Soma, which I consider to be its opus in terms of visual […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/893314/frictional-games-amnesia-soma-humble-bundle-deal-sale-steam
+  source: The Verge
+  published_utc: '2026-03-11T21:50:28+00:00'
+  title_zh: 史上最佳恐怖游戏中的部分作品被收录进Humble最新的15美元捆绑包
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Lovable says it added $100M in revenue last month alone, with just 146 employees
+  why: Swedish vibe-coding unicorn Lovable crossed $400 million in annual recurring
+    revenue (ARR) in February.
+  takeaway: Swedish vibe-coding unicorn Lovable crossed $400 million in annual recurring
+    revenue (ARR) in February.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/lovable-says-it-added-100m-in-revenue-last-month-alone-with-just-146-employees/
+  source: TechCrunch
+  published_utc: '2026-03-11T21:40:49+00:00'
+  title_zh: Lovable宣称仅上个月就实现营收增长1亿美元，员工仅146人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: 14,000 routers are infected by malware that's highly resistant to takedowns
+  why: Most of the devices are made by Asus and are located in the US.
+  takeaway: Most of the devices are made by Asus and are located in the US.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/03/14000-routers-are-infected-by-malware-thats-highly-resistant-to-takedowns/
+  source: Ars Technica
+  published_utc: '2026-03-11T21:27:16+00:00'
+  title_zh: 1.4万台路由器感染了恶意软件，该软件极难被清除
+  why_zh: 大部分设备由华硕制造，位于美国。
+  takeaway_zh: 大部分设备由华硕制造，位于美国。
+  prompt_zh: ''
+- category: Tech industry
+  title: Valve says it will fight New York&#8217;s loot box lawsuit
+  why: Valve wants players to know that it plans on fighting New York Attorney General
+    Letitia James' lawsuit, which last month accused the compan…
+  takeaway: Valve wants players to know that it plans on fighting New York Attorney
+    General Letitia James' lawsuit, which last month accused the company of promoting
+    "illegal gambling" through its in-game loot boxes. In an email sent to Counter-Strike
+    2, Dota 2, and Team Fortress 2 players in New York, Valve says it's "disappointed"
+    in the […]
+  prompt: ''
+  url: https://www.theverge.com/games/893383/valve-steam-loot-box-gambling-cd2-dota-tf2
+  source: The Verge
+  published_utc: '2026-03-11T21:23:35+00:00'
+  title_zh: Valve表示将应对纽约州关于开箱机制的诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Preliminary data from a longitudinal AI impact study
+  why: 'Article URL: https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not
+    Comments URL: https://news.ycombinator.com/item?id=47342139 Po…'
+  takeaway: 'Article URL: https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not
+    Comments URL: https://news.ycombinator.com/item?id=47342139 Points: 31 # Comments:
+    21'
+  prompt: ''
+  url: https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T21:23:24+00:00'
+  title_zh: 一项AI影响纵向研究的初步数据
+  why_zh: 文章链接：https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not 评论链接：https://news.ycombinator.com/item?id=47342139
+    Po…
+  takeaway_zh: 文章链接：https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not
+    评论链接：https://news.ycombinator.com/item?id=47342139 得分：31 评论数：21
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Explain it like I''m 5: Why is everyone on speakerphone in public?'
+  why: Your phone still functions when held to your ear, people!
+  takeaway: Your phone still functions when held to your ear, people!
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/03/explain-it-like-im-5-why-is-everyone-on-speakerphone-in-public/
+  source: Ars Technica
+  published_utc: '2026-03-11T21:09:12+00:00'
+  title_zh: 简单解释：为什么大家都在公共场合开免提打电话？
+  why_zh: 手机贴近耳朵时仍能正常使用，大家注意！
+  takeaway_zh: 手机贴近耳朵时仍能正常使用，大家注意！
+  prompt_zh: ''
+- category: Tech industry
+  title: Britain is ejecting hereditary nobles from Parliament after 700 years
+  why: 'Article URL: https://apnews.com/article/uk-house-of-lords-hereditary-peers-expelled-535df8781dd01e8970acda1dca99d3d4
+    Comments URL: https://…'
+  takeaway: 'Article URL: https://apnews.com/article/uk-house-of-lords-hereditary-peers-expelled-535df8781dd01e8970acda1dca99d3d4
+    Comments URL: https://news.ycombinator.com/item?id=47341845 Points: 165 # Comments:
+    152'
+  prompt: ''
+  url: https://apnews.com/article/uk-house-of-lords-hereditary-peers-expelled-535df8781dd01e8970acda1dca99d3d4
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T21:06:06+00:00'
+  title_zh: 英国700年来首次将世袭贵族逐出议会
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meticulous (YC S21) is hiring to redefine software dev
+  why: 'Article URL: https://jobs.ashbyhq.com/meticulous/3197ae3d-bb26-4750-9ed7-b830f640515e
+    Comments URL: https://news.ycombinator.com/item?id=47…'
+  takeaway: 'Article URL: https://jobs.ashbyhq.com/meticulous/3197ae3d-bb26-4750-9ed7-b830f640515e
+    Comments URL: https://news.ycombinator.com/item?id=47341760 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://jobs.ashbyhq.com/meticulous/3197ae3d-bb26-4750-9ed7-b830f640515e
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T21:01:42+00:00'
+  title_zh: Meticulous（YC S21）正在招募人才以重新定义软件开发
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Many SWE-bench-Passing PRs would not be merged
+  why: 'Article URL: https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/
+    Comments URL: https://news.ycombin…'
+  takeaway: 'Article URL: https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/
+    Comments URL: https://news.ycombinator.com/item?id=47341645 Points: 133 # Comments:
+    40'
+  prompt: ''
+  url: https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/
+  source: Hacker News (front page)
+  published_utc: '2026-03-11T20:56:52+00:00'
+  title_zh: 许多通过SWE-bench的PR实际上不会被合并
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Windows 11's Steam Deck-ish, streamlined Xbox gaming UI comes to all PCs
+    in April
+  why: Running Windows on gaming handhelds is currently a blessing and a curse.
+  takeaway: Running Windows on gaming handhelds is currently a blessing and a curse.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/03/windows-11s-steam-deck-ish-streamlined-xbox-gaming-ui-comes-to-all-pcs-in-april/
+  source: Ars Technica
+  published_utc: '2026-03-11T20:55:50+00:00'
+  title_zh: Windows 11的Steam Deck式简化Xbox游戏界面将于四月登陆所有PC
+  why_zh: 在游戏掌机上运行Windows目前既是福音也是诅咒。
+  takeaway_zh: 在游戏掌机上运行Windows目前既是福音也是诅咒。
+  prompt_zh: ''
+- category: Tech industry
+  title: Quince hits $10B valuation with giant $500M round led by Iconiq
+  why: E-commerce company Quince has raised another massive round, less than a year
+    after its previous raise.
+  takeaway: E-commerce company Quince has raised another massive round, less than
+    a year after its previous raise.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/11/quince-series-e-10b-valuation-with-500m-round-led-by-iconiq/
+  source: TechCrunch
+  published_utc: '2026-03-11T20:50:17+00:00'
+  title_zh: Quince以Iconiq领投的5亿美元巨额融资达到100亿估值
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

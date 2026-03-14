@@ -2217,6 +2217,7 @@ weeks:
   - '2026-03-11'
   - '2026-03-12'
   - '2026-03-13'
+  - '2026-03-14'
   highlights_news:
   - date: '2026-03-11'
     url: https://techcrunch.com/2026/03/10/google-gemini-chrome-expands-to-india-canada-new-zealand/
@@ -2327,6 +2328,43 @@ weeks:
     category: AI frontier
     source: Latent Space (AI newsletter)
     published_utc: '2026-03-12T22:56:01+00:00'
+  - date: '2026-03-14'
+    url: https://arstechnica.com/space/2026/03/flying-to-the-moon-for-the-first-time-in-54-years-is-risky-but-how-risky/
+    title: NASA officials sidestepped questions on Artemis II risks—there's a reason
+      why
+    title_zh: NASA官员回避了有关Artemis II任务风险的问题——背后自有原因
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-14T00:17:31+00:00'
+  - date: '2026-03-14'
+    url: https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/
+    title: ‘Not built right the first time’ — Musk’s xAI is starting over again, again
+    title_zh: ‘首次未构建正确’——马斯克的xAI再次从头开始
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-14T00:12:22+00:00'
+  - date: '2026-03-14'
+    url: https://arxiv.org/abs/2603.11094
+    title: Fingerprinting Concepts in Data Streams with Supervised and Unsupervised
+      Meta-Information
+    title_zh: 利用有监督和无监督元信息在数据流中指纹化概念
+    category: AI frontier
+    source: arXiv cs.LG (Machine Learning)
+    published_utc: '2026-03-14T04:00:00+00:00'
+  - date: '2026-03-14'
+    url: https://www.latent.space/p/ainews-context-drought
+    title: '[AINews] Context Drought'
+    title_zh: '[AINews] 上下文干旱'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-14T03:25:49+00:00'
+  - date: '2026-03-14'
+    url: https://www.gopeek.ai
+    title: 'Show HN: Simple plugin to get Claude Code to listen to you'
+    title_zh: Show HN：让Claude Code听从你的简单插件
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-03-13T23:15:22+00:00'
   highlights_ai:
   - date: '2026-03-11'
     url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-agentcore-runtime-stateful-mcp/
@@ -2409,3 +2447,40 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-03-13T01:25:53+00:00'
+  - date: '2026-03-14'
+    url: https://the-decoder.com/grok-4-20-trails-gemini-and-gpt-5-4-by-a-wide-margin-but-sets-a-new-record-for-not-hallucinating/
+    title: Grok 4.20 trails Gemini and GPT-5.4 by a wide margin but sets a new record
+      for not hallucinating
+    title_zh: Grok 4.20大幅落后于Gemini和GPT-5.4，但在不产生幻觉方面创下新纪录
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-12T19:25:12+00:00'
+  - date: '2026-03-14'
+    url: https://developer.nvidia.com/blog/scale-synthetic-data-and-physical-ai-reasoning-with-nvidia-cosmos-world-foundation-models/
+    title: Scale Synthetic Data and Physical AI Reasoning with NVIDIA Cosmos World
+      Foundation Models
+    title_zh: 利用NVIDIA Cosmos世界基础模型扩展合成数据与物理AI推理
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-03-13T16:00:47+00:00'
+  - date: '2026-03-14'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/03/new-lza-mcp-server-ai-assisted/
+    title: New LZA MCP Server for AI-assisted configuration management
+    title_zh: 用于AI辅助配置管理的新LZA MCP服务器
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-03-12T19:23:00+00:00'
+  - date: '2026-03-14'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.3.5
+    title: 'langchain-ai/langchain: langchain-anthropic==1.3.5'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-03-14T03:12:45+00:00'
+  - date: '2026-03-14'
+    url: https://github.com/openai/openai-node/releases/tag/v6.29.0
+    title: 'openai/openai-node: v6.29.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-03-13T21:06:57+00:00'

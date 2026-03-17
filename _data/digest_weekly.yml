@@ -2484,3 +2484,83 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - openai/openai-node
     published_utc: '2026-03-13T21:06:57+00:00'
+- week: 2026-W12
+  start: '2026-03-16'
+  end: '2026-03-22'
+  issues:
+  - '2026-03-17'
+  highlights_news:
+  - date: '2026-03-17'
+    url: https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/
+    title: 'Nvidia’s version of OpenClaw could solve its biggest problem: security'
+    title_zh: Nvidia版OpenClaw或能解决其最大难题：安全性
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-16T22:45:51+00:00'
+  - date: '2026-03-17'
+    url: https://arstechnica.com/health/2026/03/judge-temporarily-blocks-rfk-jr-s-changes-to-cdc-vaccine-recommendations/
+    title: RFK Jr.’s anti-vaccine changes to CDC vaccine guidance blocked by judge
+    title_zh: 法官阻止了小罗伯特·F·肯尼迪对CDC疫苗指南的反疫苗修改
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-16T22:20:39+00:00'
+  - date: '2026-03-17'
+    url: https://www.theverge.com/tech/895301/nvidia-robotaxi-byd-geely-hyperion-lyft-halos
+    title: Nvidia says China’s BYD and Geely will use its robotaxi platform
+    title_zh: Nvidia称中国比亚迪和吉利将采用其自动驾驶出租车平台
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-16T20:30:00+00:00'
+  - date: '2026-03-17'
+    url: https://www.latent.space/p/ainews-nvidia-gtc-jensen-goes-hard
+    title: '[AINews] NVIDIA GTC: Jensen goes hard on OpenClaw, Vera CPU, and announces
+      $1T sales backlog in 2027'
+    title_zh: '[AINews] NVIDIA GTC：黄仁勋力推OpenClaw与Vera CPU，并宣布2027年1万亿美元销售积压'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-17T03:25:11+00:00'
+  - date: '2026-03-17'
+    url: https://spectrum.ieee.org/power-grid-attack-gridex-drone
+    title: Utilities Study How to Protect Grids From Rising Physical Threats
+    title_zh: 公用事业研究如何应对电网面临的日益增长的物理威胁
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-03-16T20:42:45+00:00'
+  highlights_ai:
+  - date: '2026-03-17'
+    url: https://the-decoder.com/openais-biggest-problem-may-not-be-building-ai-but-getting-companies-to-actually-use-it-beyond-chatgpt/
+    title: OpenAI's biggest problem may not be building AI but getting companies to
+      actually use it beyond ChatGPT
+    title_zh: OpenAI的最大挑战或许不是构建AI，而是如何让企业超越ChatGPT真正使用它
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-16T19:12:10+00:00'
+  - date: '2026-03-17'
+    url: https://github.com/openai/openai-node/releases/tag/v6.31.0
+    title: 'openai/openai-node: v6.31.0'
+    title_zh: openai/openai-node：v6.31.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-03-16T22:12:31+00:00'
+  - date: '2026-03-17'
+    url: https://simonwillison.net/2026/Mar/16/blackmail/#atom-everything
+    title: Quoting A member of Anthropic’s alignment-science team
+    title_zh: 引用Anthropic对齐科学团队成员言论
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-16T21:38:55+00:00'
+  - date: '2026-03-17'
+    url: https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/
+    title: 'Inside NVIDIA Groq 3 LPX: The Low-Latency Inference Accelerator for the
+      NVIDIA Vera Rubin Platform'
+    title_zh: 揭秘NVIDIA Groq 3 LPX：为NVIDIA Vera Rubin平台打造的低延迟推理加速器
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-03-16T20:32:26+00:00'
+  - date: '2026-03-17'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.79.0
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.79.0'
+    title_zh: anthropics/anthropic-sdk-typescript：sdk版本v0.79.0
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-03-16T17:27:52+00:00'

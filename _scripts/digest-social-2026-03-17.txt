@@ -1,0 +1,19 @@
+Daily Digest - 2026-03-17
+
+Attach images (4 cards):
+- News EN: personal-site/assets/img/digests/2026-03-17-en.png
+- News ZH: personal-site/assets/img/digests/2026-03-17-zh.png
+- AI EN:   personal-site/assets/img/digests/2026-03-17-ai-en.png
+- AI ZH:   personal-site/assets/img/digests/2026-03-17-ai-zh.png
+
+LinkedIn (English-only body; Chinese via ZH cards; images-first workflow):
+
+📣 Daily Digest — 2026-03-17
+
+Cards attached (EN + Chinese card).
+
+Today’s themes: Nvidia’s enterprise agent push + big chip-order projections, a few policy/health headlines, and notes on AI adoption.
+
+Full list + sources: https://www.zhaozhilong.com/digest/2026-03-17/
+
+#AI #NVIDIA #Tech #LLM #Cybersecurity

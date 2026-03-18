@@ -2489,6 +2489,7 @@ weeks:
   end: '2026-03-22'
   issues:
   - '2026-03-17'
+  - '2026-03-18'
   highlights_news:
   - date: '2026-03-17'
     url: https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/
@@ -2526,6 +2527,45 @@ weeks:
     category: Tech industry
     source: IEEE Spectrum
     published_utc: '2026-03-16T20:42:45+00:00'
+  - date: '2026-03-18'
+    url: https://www.technologyreview.com/2026/03/17/1134351/the-pentagon-is-planning-for-ai-companies-to-train-on-classified-data-defense-official-says/
+    title: The Pentagon is planning for AI companies to train on classified data,
+      defense official says
+    title_zh: 五角大楼计划让AI公司在机密数据上进行训练，国防官员表示
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-03-17T22:30:46+00:00'
+  - date: '2026-03-18'
+    url: https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/
+    title: Mistral bets on ‘build-your-own AI’ as it takes on OpenAI, Anthropic in
+      the enterprise
+    title_zh: Mistral押注‘自建AI’以在企业市场挑战OpenAI和Anthropic
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-17T21:00:00+00:00'
+  - date: '2026-03-18'
+    url: https://arstechnica.com/tech-policy/2026/03/judge-upholds-apple-delisting-of-free-musi-app-that-streams-songs-from-youtube/
+    title: Apple can delist apps "with or without cause," judge says in loss for Musi
+      app
+    title_zh: 法官称苹果可‘有或无理由’下架应用，Musi应用败诉
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-17T21:38:33+00:00'
+  - date: '2026-03-18'
+    url: https://www.theverge.com/policy/896312/pentagon-briefing-iran-war-pete-hegseth
+    title: I went to the Pentagon to watch Pete Hegseth scold war reporters
+    title_zh: 我前往五角大楼观看Pete Hegseth训斥战地记者
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-17T20:47:35+00:00'
+  - date: '2026-03-18'
+    url: https://www.latent.space/p/felix-anthropic
+    title: Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg
+      of Claude Cowork & Claude Code Desktop
+    title_zh: 为何Anthropic认为AI应拥有自己的计算机——Claude Cowork与Claude Code Desktop的Felix Rieseberg
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-17T21:39:16+00:00'
   highlights_ai:
   - date: '2026-03-17'
     url: https://the-decoder.com/openais-biggest-problem-may-not-be-building-ai-but-getting-companies-to-actually-use-it-beyond-chatgpt/
@@ -2564,3 +2604,39 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-03-16T17:27:52+00:00'
+  - date: '2026-03-18'
+    url: https://the-decoder.com/openai-ships-gpt-5-4-mini-and-nano-faster-and-more-capable-but-up-to-4x-pricier/
+    title: OpenAI ships GPT-5.4 mini and nano, faster and more capable but up to 4x
+      pricier
+    title_zh: OpenAI推出GPT-5.4 mini和nano版本，速度更快能力更强但价格暴涨4倍
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-17T19:17:37+00:00'
+  - date: '2026-03-18'
+    url: https://github.com/openai/openai-python/releases/tag/v2.29.0
+    title: 'openai/openai-python: v2.29.0'
+    title_zh: openai/openai-python：v2.29.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-03-17T17:53:05+00:00'
+  - date: '2026-03-18'
+    url: https://github.com/openai/openai-node/releases/tag/v6.32.0
+    title: 'openai/openai-node: v6.32.0'
+    title_zh: openai/openai-node：v6.32.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-03-17T17:53:01+00:00'
+  - date: '2026-03-18'
+    url: https://simonwillison.net/2026/Mar/17/mini-and-nano/#atom-everything
+    title: GPT-5.4 mini and GPT-5.4 nano, which can describe 76,000 photos for $52
+    title_zh: GPT-5.4 mini和GPT-5.4 nano，5.2万美元可解析7.6万张照片
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-17T19:39:17+00:00'
+  - date: '2026-03-18'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.4.0
+    title: 'langchain-ai/langchain: langchain-anthropic==1.4.0'
+    title_zh: langchain-ai/langchain：langchain-anthropic==1.4.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-03-17T18:42:48+00:00'

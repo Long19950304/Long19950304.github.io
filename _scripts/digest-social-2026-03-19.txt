@@ -1,0 +1,19 @@
+Daily Digest - 2026-03-19
+
+Attach images (4 cards):
+- News EN: personal-site/assets/img/digests/2026-03-19-en.png
+- News ZH: personal-site/assets/img/digests/2026-03-19-zh.png
+- AI EN:   personal-site/assets/img/digests/2026-03-19-ai-en.png
+- AI ZH:   personal-site/assets/img/digests/2026-03-19-ai-zh.png
+
+LinkedIn (copy/paste; English-only body; Chinese via ZH cards; images-first workflow):
+
+📣 Daily Digest — 2026-03-19
+
+Cards attached (EN + Chinese card).
+
+Themes: Nvidia’s networking push, a few AI/tech policy headlines, and model/tool updates.
+
+Full list + sources: https://www.zhaozhilong.com/digest/2026-03-19/
+
+#AI #NVIDIA #Tech #LLM

@@ -2490,6 +2490,7 @@ weeks:
   issues:
   - '2026-03-17'
   - '2026-03-18'
+  - '2026-03-19'
   highlights_news:
   - date: '2026-03-17'
     url: https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/
@@ -2566,6 +2567,44 @@ weeks:
     category: AI frontier
     source: Latent Space (AI newsletter)
     published_utc: '2026-03-17T21:39:16+00:00'
+  - date: '2026-03-19'
+    url: https://techcrunch.com/2026/03/18/nvidia-networking-division-building-a-multibillion-dollar-behemoth-to-rival-its-chips-business/
+    title: Nvidia is quietly building a multibillion-dollar behemoth to rival its
+      chips business
+    title_zh: 英伟达正悄悄打造价值数十亿美元的巨头，以抗衡其芯片业务
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-18T20:01:19+00:00'
+  - date: '2026-03-19'
+    url: https://www.theverge.com/ai-artificial-intelligence/896878/ai-did-not-cure-this-dogs-cancer
+    title: ChatGPT did not cure a dog’s cancer
+    title_zh: ChatGPT并未治愈一只狗的癌症
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-18T18:14:39+00:00'
+  - date: '2026-03-19'
+    url: https://arstechnica.com/ai/2026/03/kagi-translates-ai-answers-the-question-what-would-horny-margaret-thatcher-say/
+    title: Kagi Translate's AI answers the question "What would horny Margaret Thatcher
+      say?"
+    title_zh: Kagi翻译的AI回答了“好色的撒切尔夫人会说什么？”这一问题
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-18T22:06:32+00:00'
+  - date: '2026-03-19'
+    url: https://the-decoder.com/google-deepmind-upgrades-gemini-api-with-multi-tool-chaining-and-context-circulation/
+    title: Google Deepmind upgrades Gemini API with multi-tool chaining and context
+      circulation
+    title_zh: 谷歌Deepmind为Gemini API升级多工具链和上下文循环功能
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-03-18T19:50:24+00:00'
+  - date: '2026-03-19'
+    url: https://www.wired.com/story/ai-lab-walmart-openai-shaking-up-agentic-shopping-deal/
+    title: Why Walmart and OpenAI Are Shaking Up Their Agentic Shopping Deal
+    title_zh: 沃尔玛与OpenAI为何调整其代理购物协议
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-18T18:01:18+00:00'
   highlights_ai:
   - date: '2026-03-17'
     url: https://the-decoder.com/openais-biggest-problem-may-not-be-building-ai-but-getting-companies-to-actually-use-it-beyond-chatgpt/
@@ -2640,3 +2679,10 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-03-17T18:42:48+00:00'
+  - date: '2026-03-19'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-smus-custom-metadata-search/
+    title: Amazon SageMaker Unified Studio adds custom metadata filters
+    title_zh: Amazon SageMaker Unified Studio新增自定义元数据过滤器
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-03-18T03:49:00+00:00'

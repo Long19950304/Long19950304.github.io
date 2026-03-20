@@ -2491,6 +2491,7 @@ weeks:
   - '2026-03-17'
   - '2026-03-18'
   - '2026-03-19'
+  - '2026-03-20'
   highlights_news:
   - date: '2026-03-17'
     url: https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/
@@ -2605,6 +2606,42 @@ weeks:
     category: AI frontier
     source: WIRED - AI
     published_utc: '2026-03-18T18:01:18+00:00'
+  - date: '2026-03-20'
+    url: https://arstechnica.com/security/2026/03/hundreds-of-millions-of-iphones-can-be-hacked-with-a-new-tool-found-in-the-wild/
+    title: Millions of iPhones can be hacked with a new tool found in the wild
+    title_zh: 数百万部iPhone可通过新发现的工具被黑客入侵
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-03-19T20:11:36+00:00'
+  - date: '2026-03-20'
+    url: https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp
+    title: OpenAI is planning a desktop ‘superapp’
+    title_zh: OpenAI正计划开发一款桌面‘超级应用’
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-20T00:09:38+00:00'
+  - date: '2026-03-20'
+    url: https://techcrunch.com/2026/03/19/amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot/
+    title: Amazon acquires Rivr, maker of a stair-climbing delivery robot
+    title_zh: 亚马逊收购Rivr，一家生产爬楼梯送货机器人的公司
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-19T23:28:37+00:00'
+  - date: '2026-03-20'
+    url: https://www.wired.com/story/uncanny-valley-podcast-nvidia-gtc-tesla-disappointed-fans-meta-horizon-worlds/
+    title: '‘Uncanny Valley’: Nvidia’s ‘Super Bowl of AI,’ Tesla Disappoints, and
+      Meta’s VR Metaverse ‘Shutdown’'
+    title_zh: ‘诡异谷’：Nvidia的‘AI超级碗’，特斯拉令人失望，Meta的VR元宇宙‘关闭’
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-19T21:43:56+00:00'
+  - date: '2026-03-20'
+    url: https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/
+    title: Feds Disrupt IoT Botnets Behind Huge DDoS Attacks
+    title_zh: 联邦政府捣毁大规模DDoS攻击背后的物联网僵尸网络
+    category: Security
+    source: Krebs on Security
+    published_utc: '2026-03-20T00:49:19+00:00'
   highlights_ai:
   - date: '2026-03-17'
     url: https://the-decoder.com/openais-biggest-problem-may-not-be-building-ai-but-getting-companies-to-actually-use-it-beyond-chatgpt/
@@ -2686,3 +2723,32 @@ weeks:
     category: AI tools & model releases
     source: AWS What's New (Recent Announcements)
     published_utc: '2026-03-18T03:49:00+00:00'
+  - date: '2026-03-20'
+    url: https://the-decoder.com/cursor-takes-on-openai-and-anthropic-with-composer-2-a-code-only-model-built-to-match-rivals-at-a-fraction-of-the-cost/
+    title: Cursor takes on OpenAI and Anthropic with Composer 2, a code-only model
+      built to match rivals at a fraction of the cost
+    title_zh: Cursor 推出 Composer 2，挑战 OpenAI 和 Anthropic，以低成本匹敌对手的纯代码模型
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-19T17:52:16+00:00'
+  - date: '2026-03-20'
+    url: https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything
+    title: Thoughts on OpenAI acquiring Astral and uv/ruff/ty
+    title_zh: 关于 OpenAI 收购 Astral 及 uv/ruff/ty 的思考
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-19T16:45:15+00:00'
+  - date: '2026-03-20'
+    url: https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/
+    title: Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell
+    title_zh: 使用 NVIDIA OpenShell 更安全地运行自主、自我进化的代理
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-03-19T16:10:00+00:00'
+  - date: '2026-03-20'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.86.0
+    title: 'anthropics/anthropic-sdk-python: v0.86.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-03-18T18:42:27+00:00'

@@ -2492,6 +2492,7 @@ weeks:
   - '2026-03-18'
   - '2026-03-19'
   - '2026-03-20'
+  - '2026-03-21'
   highlights_news:
   - date: '2026-03-17'
     url: https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/
@@ -2642,6 +2643,43 @@ weeks:
     category: Security
     source: Krebs on Security
     published_utc: '2026-03-20T00:49:19+00:00'
+  - date: '2026-03-21'
+    url: https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/
+    title: Widely used Trivy scanner compromised in ongoing supply-chain attack
+    title_zh: 广泛使用的Trivy扫描器在持续供应链攻击中遭入侵
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-03-20T20:50:46+00:00'
+  - date: '2026-03-21'
+    url: https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/
+    title: New court filing reveals Pentagon told Anthropic the two sides were nearly
+      aligned — a week after Trump declared the relationship kaput
+    title_zh: 新法庭文件披露，五角大楼告知Anthropic双方近乎达成一致——特朗普宣布关系破裂一周后
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-21T01:40:28+00:00'
+  - date: '2026-03-21'
+    url: https://www.theverge.com/tech/898511/elon-musk-twitter-lawsuit
+    title: Jury finds Elon Musk&#8217;s &#8216;stupid tweets&#8217; caused Twitter
+      investors&#8217; losses
+    title_zh: 陪审团认定马斯克的‘愚蠢推文’导致Twitter投资者损失
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-20T23:46:30+00:00'
+  - date: '2026-03-21'
+    url: https://www.wired.com/story/anthropic-denies-sabotage-ai-tools-war-claude/
+    title: Anthropic Denies It Could Sabotage AI Tools During War
+    title_zh: Anthropic否认其会在战争期间破坏AI工具
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-21T00:03:20+00:00'
+  - date: '2026-03-21'
+    url: https://www.latent.space/p/dreamer
+    title: 'Dreamer: the Personal Agent OS — David Singleton'
+    title_zh: 梦想家：个人代理操作系统——David Singleton
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-20T21:03:23+00:00'
   highlights_ai:
   - date: '2026-03-17'
     url: https://the-decoder.com/openais-biggest-problem-may-not-be-building-ai-but-getting-companies-to-actually-use-it-beyond-chatgpt/
@@ -2752,3 +2790,18 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-python
     published_utc: '2026-03-18T18:42:27+00:00'
+  - date: '2026-03-21'
+    url: https://the-decoder.com/anthropic-turns-claude-code-into-an-always-on-ai-agent-with-new-channels-feature/
+    title: Anthropic turns Claude Code into an always-on AI agent with new channels
+      feature
+    title_zh: Anthropic将Claude Code转变为常驻AI代理，新增频道功能
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-20T15:33:28+00:00'
+  - date: '2026-03-21'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.18.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.18.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-03-21T01:16:27+00:00'

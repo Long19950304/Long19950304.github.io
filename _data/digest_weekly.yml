@@ -2493,6 +2493,7 @@ weeks:
   - '2026-03-19'
   - '2026-03-20'
   - '2026-03-21'
+  - '2026-03-22'
   highlights_news:
   - date: '2026-03-17'
     url: https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/
@@ -2805,3 +2806,10 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - comfyanonymous/ComfyUI
     published_utc: '2026-03-21T01:16:27+00:00'
+  - date: '2026-03-22'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.80.0
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.80.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-03-18T18:38:37+00:00'

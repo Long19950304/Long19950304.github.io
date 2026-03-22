@@ -1,0 +1,908 @@
+date: '2026-03-22'
+title: Daily Digest - 2026-03-22
+title_zh: 每日简报 - 2026-03-22
+note: 'Today: Why Wall Street wasn’t won over by Nvidia’s big conference · Halide
+  co-founder is suing former partner for bringing source c… · AI: Anthropic turns
+  Claude Code into an always-on AI agent wi….'
+note_zh: 今日关注：为何华尔街对Nvidia的盛大发布会不为所动；Halide联合创始人起诉前合伙人将源代码带至苹果；AI：Anthropic 将 Claude
+  Code 转变为常驻AI代理…。
+items:
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14.dev.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14.dev.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-21T23:38:31+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Using Git with coding agents
+  why: Agentic Engineering Patterns > Git is a key tool for working with coding agents.
+  takeaway: Agentic Engineering Patterns > Git is a key tool for working with coding
+    agents. Keeping code in version control lets us record how that code changes over
+    time and investigate and reverse any mistakes. All of the coding agents are fluent
+    in using Git's features, both basic and advanced. This fluency means we can be
+    more ambitious about how we use Git oursel…
+  prompt: ''
+  url: https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-21T22:08:24+00:00'
+  title_zh: 与编码代理一起使用 Git
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Chinese AI model MiniMax M2.7 reportedly helped develop itself
+  why: Chinese AI company MiniMax has released M2.7, a model that reportedly played
+    an active role in its own development.
+  takeaway: Chinese AI company MiniMax has released M2.7, a model that reportedly
+    played an active role in its own development. Through autonomous optimization
+    loops, it improved its own training process and posted competitive benchmark results.
+    The article Chinese AI model MiniMax M2.7 reportedly helped develop itself appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/chinese-ai-model-minimax-m2-7-reportedly-helped-develop-itself/
+  source: The Decoder (AI)
+  published_utc: '2026-03-21T11:48:16+00:00'
+  title_zh: 据报道，中国AI模型MiniMax M2.7曾协助开发自身
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: I Tried DoorDash’s Tasks App and Saw the Bleak Future of AI Gig Work
+  why: I recorded videos of myself doing laundry, scrambling eggs, and walking around
+    the park in DoorDash’s new Tasks app, where gig workers are…
+  takeaway: I recorded videos of myself doing laundry, scrambling eggs, and walking
+    around the park in DoorDash’s new Tasks app, where gig workers are paid to train
+    AI.
+  prompt: ''
+  url: https://www.wired.com/story/i-tried-doordashs-tasks-app-and-saw-the-bleak-future-of-ai-gig-work/
+  source: WIRED - AI
+  published_utc: '2026-03-21T11:00:00+00:00'
+  title_zh: 体验DoorDash任务应用：窥见AI零工经济的黯淡未来
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Cursor quietly built its new coding model on top of Chinese open-source Kimi
+    K2.5
+  why: Cursor releases Composer 2, the second generation of its own AI model for software
+    development.
+  takeaway: Cursor releases Composer 2, the second generation of its own AI model
+    for software development. The model is designed to keep pace with the leading
+    coding models from Anthropic and OpenAI at significantly lower costs. The article
+    Cursor quietly built its new coding model on top of Chinese open-source Kimi K2.5
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/cursor-quietly-built-its-new-coding-model-on-top-of-chinese-open-source-kimi-k2-5/
+  source: The Decoder (AI)
+  published_utc: '2026-03-21T08:51:16+00:00'
+  title_zh: Cursor新编程模型底层悄然采用国产开源模型Kimi K2.5
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.3.dev.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.3.dev.4
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-21T06:19:51+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.18.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.18.0
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-03-21T01:16:27+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.5-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.5-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-21T00:28:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.3.dev.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.3.dev.3
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-21T00:17:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.81.14.dev.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.81.14.dev.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-20T23:25:26+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Runtime adds WebRTC support for real-time bidirectional
+    streaming
+  why: Amazon Bedrock AgentCore Runtime now supports WebRTC for real-time bidirectional
+    streaming between clients and agents, adding to the existi…
+  takeaway: Amazon Bedrock AgentCore Runtime now supports WebRTC for real-time bidirectional
+    streaming between clients and agents, adding to the existing WebSocket protocol
+    support. With WebRTC, developers can build voice agents for browser and mobile
+    applications that stream audio and video bidirectionally with low latency using
+    peer-to-peer, UDP-based transport, enab…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-webrtc/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-20T21:54:00+00:00'
+  title_zh: Amazon Bedrock AgentCore运行时新增WebRTC支持，实现实时双向流传输
+  why_zh: Amazon Bedrock AgentCore Runtime现支持WebRTC，实现客户端与代理间实时双向流传输，进一步增强了现有功能。
+  takeaway_zh: Amazon Bedrock AgentCore Runtime现支持WebRTC，实现客户端与代理之间的实时双向流传输，补充了现有的WebSocket协议支持。借助WebRTC，开发者可为浏览器和移动应用构建语音代理，利用点对点、基于UDP的传输，低延迟地双向流式传输音频和视频，从而…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.18.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.18.0
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-03-20T21:31:36+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Neuron announces support for Dynamic Resource Allocation with Amazon
+    EKS
+  why: AWS announces the Neuron Dynamic Resource Allocation (DRA) driver for Amazon
+    Elastic Kubernetes Service (EKS), bringing Kubernetes-native h…
+  takeaway: AWS announces the Neuron Dynamic Resource Allocation (DRA) driver for
+    Amazon Elastic Kubernetes Service (EKS), bringing Kubernetes-native hardware-aware
+    scheduling to AWS Trainium-based instances. The Neuron DRA driver publishes rich
+    device attributes directly to the Kubernetes scheduler, enabling topology-aware
+    placement decisions without custom scheduler…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/neuron-eks-dra-support/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-20T18:38:00+00:00'
+  title_zh: AWS Neuron宣布支持Amazon EKS动态资源分配功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic turns Claude Code into an always-on AI agent with new channels
+    feature
+  why: Anthropic's new channels feature for Claude Code lets external events like
+    CI results or chat messages flow directly into an active session…
+  takeaway: Anthropic's new channels feature for Claude Code lets external events
+    like CI results or chat messages flow directly into an active session, so Claude
+    can keep working without anyone at the terminal. The article Anthropic turns Claude
+    Code into an always-on AI agent with new channels feature appeared first on The
+    Decoder .
+  prompt: ''
+  url: https://the-decoder.com/anthropic-turns-claude-code-into-an-always-on-ai-agent-with-new-channels-feature/
+  source: The Decoder (AI)
+  published_utc: '2026-03-20T15:33:28+00:00'
+  title_zh: Anthropic 将 Claude Code 转变为常驻AI代理，新增频道功能
+  why_zh: Anthropic为Claude Code新增的频道功能，允许CI结果或聊天消息等外部事件直接流入活跃会话。
+  takeaway_zh: Anthropic为Claude Code推出的新功能‘channels’，允许CI结果或聊天消息等外部事件直接流入活跃会话，使Claude无需终端人员值守即可持续工作。相关报道《Anthropic通过新功能‘channels’将Claude
+    Code转变为常驻AI代理》首发于The Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: dotnet-1.74.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/dotnet-1.74.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-03-20T14:54:19+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: vectordata-dotnet-10.1.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/vectordata-dotnet-10.1.0
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-03-20T14:10:45+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.3.dev.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.3.dev.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-20T11:17:44+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS adds support for NIXL with EFA to accelerate LLM inference at scale
+  why: AWS announces support for NVIDIA Inference Xfer Library (NIXL) with Elastic
+    Fabric Adapter (EFA) to accelerate disaggregated large language…
+  takeaway: 'AWS announces support for NVIDIA Inference Xfer Library (NIXL) with Elastic
+    Fabric Adapter (EFA) to accelerate disaggregated large language model (LLM) inference
+    on Amazon EC2. This integration enhances disaggregated inference serving through
+    three key improvements: increased KV-cache throughput, reduced inter-token latency,
+    and optimized KV-cache memory ut…'
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/aws-support-nixl-with-efa/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-19T18:00:00+00:00'
+  title_zh: AWS新增NIXL与EFA支持，加速大规模LLM推理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==1.2.13'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.13
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-19T17:16:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Redshift supports federated permissions with IAM Identity Center in
+    multiple AWS Regions
+  why: Amazon Redshift federated permissions are now supported with AWS IAM Identity
+    Center (IdC) in multiple AWS Regions.
+  takeaway: Amazon Redshift federated permissions are now supported with AWS IAM Identity
+    Center (IdC) in multiple AWS Regions. You can extend IdC from your primary AWS
+    Region to additional Regions for improved performance through proximity to users
+    and reliability. In the additional regions, you now have simplified administration
+    of Redshift fine-grained access contro…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/redshift-federated-permissions-idc-mrr/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-19T17:13:00+00:00'
+  title_zh: Amazon Redshift现支持跨多AWS区域通过IAM Identity Center实现联合权限管理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Thoughts on OpenAI acquiring Astral and uv/ruff/ty
+  why: 'The big news this morning: Astral to join OpenAI (on the Astral blog) and
+    OpenAI to acquire Astral (the OpenAI announcement).'
+  takeaway: 'The big news this morning: Astral to join OpenAI (on the Astral blog)
+    and OpenAI to acquire Astral (the OpenAI announcement). Astral are the company
+    behind uv , ruff , and ty - three increasingly load-bearing open source projects
+    in the Python ecosystem. I have thoughts! The official line from OpenAI and Astral
+    The Astral team will become part of the Codex…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-19T16:45:15+00:00'
+  title_zh: 关于 OpenAI 收购 Astral 和 uv/ruff/ty 的思考
+  why_zh: 今晨重磅消息：Astral将加入OpenAI（Astral博客）及OpenAI将收购Astral（OpenAI公告）。
+  takeaway_zh: 今晨重磅消息：Astral将加入OpenAI（见于Astral博客），同时OpenAI宣布收购Astral（OpenAI公告）。Astral是uv、ruff和ty背后的公司，这三个开源项目在Python生态系统中日益承担重要角色。我有话说！OpenAI与Astral官方声明：Astral团队将成为Codex的一部分…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.3.dev.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.3.dev.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-03-19T01:57:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Autoresearching Apple's "LLM in a Flash" to run Qwen 397B locally
+  why: Autoresearching Apple's "LLM in a Flash" to run Qwen 397B locally Here's a
+    fascinating piece of research by Dan Woods, who managed to get a…
+  takeaway: Autoresearching Apple's "LLM in a Flash" to run Qwen 397B locally Here's
+    a fascinating piece of research by Dan Woods, who managed to get a custom version
+    of Qwen3.5-397B-A17B running at 5.5+ tokens/second on a 48GB MacBook Pro M3 Max
+    despite that model taking up 209GB (120GB quantized) on disk. Qwen3.5-397B-A17B
+    is a Mixture-of-Experts (MoE) model, which m…
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/18/llm-in-a-flash/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-18T23:56:46+00:00'
+  title_zh: 逆向研究苹果"LLM in a Flash"技术，拟本地运行Qwen 397B
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Minimax M2.5 and GLM 5 models now available on Amazon Bedrock
+  why: Amazon Bedrock expands model selection for customers by adding support for
+    GLM 5 and Minimax M2.5.
+  takeaway: Amazon Bedrock expands model selection for customers by adding support
+    for GLM 5 and Minimax M2.5. GLM 5 is a frontier‑class, general‑purpose large language
+    model optimized for complex systems engineering and long‑horizon agentic tasks.
+    It builds on the GLM 4.5 agent‑centric lineage and is designed to support multi‑step
+    reasoning, math (including AIME‑style…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-minimax-glm/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-18T21:07:00+00:00'
+  title_zh: MiniMax M2.5与GLM 5模型现已在Amazon Bedrock上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.86.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.86.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-03-18T18:42:27+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.80.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.80.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-03-18T18:38:37+00:00'
+  title_zh: ''
+  why_zh: 发布更新（变更日志见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: NVIDIA Nemotron 3 Super now available on Amazon Bedrock
+  why: Amazon Bedrock now supports NVIDIA Nemotron 3 Super, an open hybrid Mixture-of-Experts
+    (MoE) model designed for complex multi-agent applica…
+  takeaway: Amazon Bedrock now supports NVIDIA Nemotron 3 Super, an open hybrid Mixture-of-Experts
+    (MoE) model designed for complex multi-agent applications. Built for agentic workloads,
+    Nemotron 3 Super delivers fast, and cost-efficient inference enabling AI agents
+    to maintain focus and accuracy across long, multi-step tasks without losing context.
+    Fully open with wei…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-nemotron-3-super/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-18T18:00:00+00:00'
+  title_zh: NVIDIA Nemotron 3 Super 现已在 Amazon Bedrock 上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.20'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.20
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-18T17:34:58+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain
+  why: While consumer AI offers powerful capabilities, workplace tools often suffer
+    from disjointed data and limited context.
+  takeaway: While consumer AI offers powerful capabilities, workplace tools often
+    suffer from disjointed data and limited context. Built with LangChain, the NVIDIA
+    AI-Q...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-18T16:00:00+00:00'
+  title_zh: 如何利用 NVIDIA AI-Q 和 LangChain 构建企业搜索的深度代理
+  why_zh: 尽管消费级AI功能强大，职场工具常因数据分散和上下文有限而受限。
+  takeaway_zh: 尽管消费级AI提供了强大功能，但职场工具常面临数据分散和上下文受限的问题。基于LangChain构建的NVIDIA AI-Q...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Config launches 75 new managed rules
+  why: AWS Config announces the launch of an additional 75 managed Config rules for
+    various use cases such as security, durability, and operations.
+  takeaway: AWS Config announces the launch of an additional 75 managed Config rules
+    for various use cases such as security, durability, and operations. You can now
+    search, discover, enable and manage these additional rules directly from AWS Config
+    and govern more use cases for your AWS environment. With this launch, you can
+    now enable these controls across your accoun…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/aws-config-launches-new-rules/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-18T15:00:00+00:00'
+  title_zh: AWS Config新增75条托管规则
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Storing 2 bytes of data in your Logitech mouse
+  why: 'Article URL: https://www.timwehrle.de/blog/what-if-i-stored-data-in-my-mouse/
+    Comments URL: https://news.ycombinator.com/item?id=47472630 P…'
+  takeaway: 'Article URL: https://www.timwehrle.de/blog/what-if-i-stored-data-in-my-mouse/
+    Comments URL: https://news.ycombinator.com/item?id=47472630 Points: 6 # Comments:
+    3'
+  prompt: ''
+  url: https://www.timwehrle.de/blog/what-if-i-stored-data-in-my-mouse/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T23:26:53+00:00'
+  title_zh: 在Logitech鼠标中存储2字节数据
+  why_zh: '文章URL: https://www.timwehrle.de/blog/what-if-i-stored-data-in-my-mouse/
+    评论URL: https://news.ycombinator.com/item?id=47472630'
+  takeaway_zh: '文章URL: https://www.timwehrle.de/blog/what-if-i-stored-data-in-my-mouse/
+    评论URL: https://news.ycombinator.com/item?id=47472630 得分: 6 评论数: 3'
+  prompt_zh: ''
+- category: Tech industry
+  title: The Impact of AI on Game Dev Jobs. Open to Work Crisis
+  why: 'Article URL: https://darkounity.com/blog-post?id=the-impact-of-ai-on-game-dev-jobs-open-to-work-crisis--1774128585922
+    Comments URL: https:/…'
+  takeaway: 'Article URL: https://darkounity.com/blog-post?id=the-impact-of-ai-on-game-dev-jobs-open-to-work-crisis--1774128585922
+    Comments URL: https://news.ycombinator.com/item?id=47471943 Points: 10 # Comments:
+    0'
+  prompt: ''
+  url: https://darkounity.com/blog-post?id=the-impact-of-ai-on-game-dev-jobs-open-to-work-crisis--1774128585922
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T22:03:05+00:00'
+  title_zh: AI对游戏开发岗位的影响：开放就业危机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Attempts to post the latest Trivy security incident have been marked [dead]
+  why: 'Article URL: https://news.ycombinator.com/from?site=github.com%2Faquasecurity
+    Comments URL: https://news.ycombinator.com/item?id=47471805 P…'
+  takeaway: 'Article URL: https://news.ycombinator.com/from?site=github.com%2Faquasecurity
+    Comments URL: https://news.ycombinator.com/item?id=47471805 Points: 58 # Comments:
+    10'
+  prompt: ''
+  url: https://news.ycombinator.com/from?site=github.com%2Faquasecurity
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T21:49:56+00:00'
+  title_zh: 尝试发布最新Trivy安全事件被标记为[已失效]
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Floci – A free, open-source local AWS emulator
+  why: 'Article URL: https://github.com/hectorvent/floci Comments URL: https://news.ycombinator.com/item?id=47471801
+    Points: 28 # Comments: 3'
+  takeaway: 'Article URL: https://github.com/hectorvent/floci Comments URL: https://news.ycombinator.com/item?id=47471801
+    Points: 28 # Comments: 3'
+  prompt: ''
+  url: https://github.com/hectorvent/floci
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T21:49:15+00:00'
+  title_zh: Floci——一款免费开源的本地AWS模拟器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Professional video editing, right in the browser with WebGPU and WASM
+  why: 'Article URL: https://tooscut.app/ Comments URL: https://news.ycombinator.com/item?id=47471601
+    Points: 91 # Comments: 22'
+  takeaway: 'Article URL: https://tooscut.app/ Comments URL: https://news.ycombinator.com/item?id=47471601
+    Points: 91 # Comments: 22'
+  prompt: ''
+  url: https://tooscut.app/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T21:27:50+00:00'
+  title_zh: 专业视频编辑，借助WebGPU与WASM在浏览器中实现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Halide co-founder is suing former partner for bringing source code to Apple
+  why: Lux Optics co-founder Sebastiaan de With made headlines when he joined Apple
+    in late January.
+  takeaway: Lux Optics co-founder Sebastiaan de With made headlines when he joined
+    Apple in late January. The company was behind Halide, one of the most popular
+    photography apps for the iPhone, which gained a cult following for its robust
+    pro-level controls. Apple was apparently a big enough fan that it tried to acquire
+    the developer last […]
+  prompt: ''
+  url: https://www.theverge.com/business/898687/halide-lawsuit-co-founder-apple
+  source: The Verge
+  published_utc: '2026-03-21T21:02:56+00:00'
+  title_zh: Halide联合创始人起诉前合伙人将源代码带至苹果
+  why_zh: Lux Optics联合创始人Sebastiaan de With于1月底加入Apple，成为头条新闻。
+  takeaway_zh: Lux Optics联合创始人Sebastiaan de With于1月底加入Apple，成为头条新闻。该公司开发的Halide是iPhone上最受欢迎的摄影应用之一，凭借其强大的专业级控制功能赢得了一批忠实用户。Apple显然对其青睐有加，曾试图收购该开发者。
+  prompt_zh: ''
+- category: Tech industry
+  title: Do Not Turn Child Protection into Internet Access Control
+  why: 'Article URL: https://news.dyne.org/child-protection-is-not-access-control/
+    Comments URL: https://news.ycombinator.com/item?id=47470991 Poin…'
+  takeaway: 'Article URL: https://news.dyne.org/child-protection-is-not-access-control/
+    Comments URL: https://news.ycombinator.com/item?id=47470991 Points: 382 # Comments:
+    160'
+  prompt: ''
+  url: https://news.dyne.org/child-protection-is-not-access-control/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T20:32:20+00:00'
+  title_zh: 勿将儿童保护变为互联网访问控制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: It’s been 20 years since the first tweet
+  why: 'On March 21, 2006, Jack Dorsey posted a simple message: “just setting up my
+    twittr”.'
+  takeaway: 'On March 21, 2006, Jack Dorsey posted a simple message: “just setting
+    up my twittr”.'
+  prompt: ''
+  url: https://techcrunch.com/2026/03/21/its-been-20-years-since-the-first-tweet/
+  source: TechCrunch
+  published_utc: '2026-03-21T20:30:47+00:00'
+  title_zh: 第一条推文发布已过去20年
+  why_zh: 2006年3月21日，Jack Dorsey发布了一条简短消息：“just setting up my twittr”。
+  takeaway_zh: 2006年3月21日，Jack Dorsey发布了一条简短消息：“just setting up my twittr”。
+  prompt_zh: ''
+- category: Tech industry
+  title: Tinybox- offline AI device 120B parameters
+  why: 'Article URL: https://tinygrad.org/#tinybox Comments URL: https://news.ycombinator.com/item?id=47470773
+    Points: 250 # Comments: 136'
+  takeaway: 'Article URL: https://tinygrad.org/#tinybox Comments URL: https://news.ycombinator.com/item?id=47470773
+    Points: 250 # Comments: 136'
+  prompt: ''
+  url: https://tinygrad.org/#tinybox
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T20:08:37+00:00'
+  title_zh: Tinybox——离线AI设备，支持1200亿参数
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: No evidence cannabis helps anxiety, depression, or PTSD
+  why: 'Article URL: https://www.sciencedaily.com/releases/2026/03/260319044656.htm
+    Comments URL: https://news.ycombinator.com/item?id=47470750 Poi…'
+  takeaway: 'Article URL: https://www.sciencedaily.com/releases/2026/03/260319044656.htm
+    Comments URL: https://news.ycombinator.com/item?id=47470750 Points: 136 # Comments:
+    114'
+  prompt: ''
+  url: https://www.sciencedaily.com/releases/2026/03/260319044656.htm
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T20:05:58+00:00'
+  title_zh: 无证据表明大麻有助于缓解焦虑、抑郁或PTSD
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Common Lisp Development Tooling
+  why: 'Article URL: https://www.creativetension.co/posts/common-lisp-development-tooling
+    Comments URL: https://news.ycombinator.com/item?id=474707…'
+  takeaway: 'Article URL: https://www.creativetension.co/posts/common-lisp-development-tooling
+    Comments URL: https://news.ycombinator.com/item?id=47470734 Points: 28 # Comments:
+    2'
+  prompt: ''
+  url: https://www.creativetension.co/posts/common-lisp-development-tooling
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T20:04:08+00:00'
+  title_zh: Common Lisp 开发工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hawaii's worst flooding in 20 years threatens dam, prompts evacuations
+  why: 'Article URL: https://www.nbcnews.com/weather/floods/hawaii-worst-flooding-in-20-years-rcna264573
+    Comments URL: https://news.ycombinator.com…'
+  takeaway: 'Article URL: https://www.nbcnews.com/weather/floods/hawaii-worst-flooding-in-20-years-rcna264573
+    Comments URL: https://news.ycombinator.com/item?id=47470658 Points: 54 # Comments:
+    19'
+  prompt: ''
+  url: https://www.nbcnews.com/weather/floods/hawaii-worst-flooding-in-20-years-rcna264573
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T19:55:23+00:00'
+  title_zh: 夏威夷20年来最严重洪灾威胁大坝，引发疏散
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Atomic – self-hosted, semantically-connected personal knowledge
+    base'
+  why: 'Article URL: https://github.com/kenforthewin/atomic Comments URL: https://news.ycombinator.com/item?id=47470433
+    Points: 34 # Comments: 7'
+  takeaway: 'Article URL: https://github.com/kenforthewin/atomic Comments URL: https://news.ycombinator.com/item?id=47470433
+    Points: 34 # Comments: 7'
+  prompt: ''
+  url: https://github.com/kenforthewin/atomic
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T19:31:39+00:00'
+  title_zh: 'Show HN: Atomic – 自托管、语义关联的个人知识库'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Publisher pulls horror novel ‘Shy Girl’ over AI concerns
+  why: Hachette Book Group said it will not be publishing “Shy Girl” over concerns
+    that artificial intelligence was used to generate the text.
+  takeaway: Hachette Book Group said it will not be publishing “Shy Girl” over concerns
+    that artificial intelligence was used to generate the text.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/21/publisher-pulls-horror-novel-shy-girl-over-ai-concerns/
+  source: TechCrunch
+  published_utc: '2026-03-21T19:30:27+00:00'
+  title_zh: 出版商因AI争议下架恐怖小说《害羞女孩》
+  why_zh: Hachette Book Group表示因担心文本由AI生成，将不出版《Shy Girl》。
+  takeaway_zh: Hachette Book Group表示因担心文本由AI生成，将不出版《Shy Girl》。
+  prompt_zh: ''
+- category: Tech industry
+  title: No Semicolons Needed
+  why: 'Article URL: https://terts.dev/blog/no-semicolons-needed/ Comments URL: https://news.ycombinator.com/item?id=47470200
+    Points: 34 # Comments…'
+  takeaway: 'Article URL: https://terts.dev/blog/no-semicolons-needed/ Comments URL:
+    https://news.ycombinator.com/item?id=47470200 Points: 34 # Comments: 36'
+  prompt: ''
+  url: https://terts.dev/blog/no-semicolons-needed/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T19:07:20+00:00'
+  title_zh: 无需分号
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI plans to nearly double its workforce by 2026 as it ramps up enterprise
+    push
+  why: OpenAI plans to nearly double its workforce to 8,000 by the end of 2026, with
+    a major push into enterprise AI, a market where Anthropic has…
+  takeaway: OpenAI plans to nearly double its workforce to 8,000 by the end of 2026,
+    with a major push into enterprise AI, a market where Anthropic has been steadily
+    gaining ground. The article OpenAI plans to nearly double its workforce by 2026
+    as it ramps up enterprise push appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-plans-to-nearly-double-its-workforce-by-2026-as-it-ramps-up-enterprise-push/
+  source: The Decoder (AI)
+  published_utc: '2026-03-21T18:55:44+00:00'
+  title_zh: OpenAI计划至2026年将员工规模翻倍，加速企业市场拓展
+  why_zh: OpenAI计划到2026年底将员工人数翻倍至8000人，大力进军企业AI市场，Anthropic在此领域已稳步发展。
+  takeaway_zh: OpenAI计划到2026年底将员工人数翻倍至8000人，大力进军企业AI市场，Anthropic在此领域已稳步发展。文章《OpenAI计划到2026年将员工人数翻倍，加速企业市场布局》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Termcraft – terminal-first 2D sandbox survival in Rust'
+  why: I’ve been building termcraft, a terminal-first 2D sandbox survival game in
+    Rust.
+  takeaway: 'I’ve been building termcraft, a terminal-first 2D sandbox survival game
+    in Rust. The idea is to take the classic early survival progression and adapt
+    it to a side-on terminal format instead of a tile or pixel-art engine. Current
+    build includes: - procedural Overworld, Nether, and End generation - mining, placement,
+    crafting, furnaces, brewing, and boats - h…'
+  prompt: ''
+  url: https://github.com/pagel-s/termcraft
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T18:42:38+00:00'
+  title_zh: 'Show HN: Termcraft – Rust 编写的终端优先2D沙盒生存游戏'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hide macOS Tahoe's Menu Icons
+  why: 'Article URL: https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/
+    Comments URL: https://news.ycombinator.…'
+  takeaway: 'Article URL: https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/
+    Comments URL: https://news.ycombinator.com/item?id=47469331 Points: 78 # Comments:
+    22'
+  prompt: ''
+  url: https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T17:46:00+00:00'
+  title_zh: 隐藏 macOS Tahoe 的菜单图标
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Seam carving with forward energy
+  why: 'Article URL: https://pictolab.io/seam-carving Comments URL: https://news.ycombinator.com/item?id=47468849
+    Points: 8 # Comments: 2'
+  takeaway: 'Article URL: https://pictolab.io/seam-carving Comments URL: https://news.ycombinator.com/item?id=47468849
+    Points: 8 # Comments: 2'
+  prompt: ''
+  url: https://pictolab.io/seam-carving
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T17:03:32+00:00'
+  title_zh: 前向能量下的接缝雕刻技术
+  why_zh: '文章URL: https://pictolab.io/seam-carving 评论URL: https://news.ycombinator.com/item?id=47468849
+    得分: 8 评论数: 2'
+  takeaway_zh: '文章URL: https://pictolab.io/seam-carving 评论URL: https://news.ycombinator.com/item?id=47468849
+    得分: 8 评论数: 2'
+  prompt_zh: ''
+- category: Tech industry
+  title: Delve accused of misleading customers with ‘fake compliance’
+  why: An anonymous Substack post accuses compliance startup Delve of “falsely” convincing
+    “hundreds of customers they were compliant” with privac…
+  takeaway: An anonymous Substack post accuses compliance startup Delve of “falsely”
+    convincing “hundreds of customers they were compliant” with privacy and security
+    regulations.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/21/delve-accused-of-misleading-customers-with-fake-compliance/
+  source: TechCrunch
+  published_utc: '2026-03-21T17:00:05+00:00'
+  title_zh: Delve被指以‘虚假合规’误导消费者
+  why_zh: 一篇匿名Substack文章指控合规初创公司Delve“错误地”说服“数百名客户他们符合”隐私和安全法规。
+  takeaway_zh: 一篇匿名Substack文章指控合规初创公司Delve“错误地”说服“数百名客户他们符合”隐私和安全法规。
+  prompt_zh: ''
+- category: Tech industry
+  title: The AirPods Pro 3 are $50 off right now, nearly matching their best-ever
+    price
+  why: Less than a week ago, Apple announced the forthcoming AirPods Max 2, a pair
+    of over-ear headphones that leverage the company’s H2 chip for…
+  takeaway: Less than a week ago, Apple announced the forthcoming AirPods Max 2, a
+    pair of over-ear headphones that leverage the company’s H2 chip for AI-powered
+    live translation, conversation awareness, and a host of newer features. However,
+    if you’re okay with a pair of earbuds, the AirPods Pro 3 offer access to all the
+    same features […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/898502/airpods-pro-3-amazon-big-spring-sale-2026-deal
+  source: The Verge
+  published_utc: '2026-03-21T17:00:00+00:00'
+  title_zh: AirPods Pro 3现降价50美元，接近历史最低价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why Wall Street wasn’t won over by Nvidia’s big conference
+  why: Despite investor fears of an AI bubble, Nvidia's latest conference shows that
+    most in the industry aren't concerned by that possibility.
+  takeaway: Despite investor fears of an AI bubble, Nvidia's latest conference shows
+    that most in the industry aren't concerned by that possibility.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/21/why-wall-street-wasnt-won-over-by-nvidias-big-conference/
+  source: TechCrunch
+  published_utc: '2026-03-21T16:28:00+00:00'
+  title_zh: 为何华尔街对Nvidia的盛大发布会不为所动
+  why_zh: 尽管投资者担忧AI泡沫，Nvidia最新会议显示业内多数人对此可能性并不担心。
+  takeaway_zh: 尽管投资者担忧AI泡沫，Nvidia最新会议显示业内多数人对此可能性并不担心。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Thinking Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning'
+  why: 'Article URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646 Comments
+    URL: https://news.ycombinator.com/item?id=47467913 Points…'
+  takeaway: 'Article URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646
+    Comments URL: https://news.ycombinator.com/item?id=47467913 Points: 83 # Comments:
+    48'
+  prompt: ''
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T15:30:29+00:00'
+  title_zh: 快思慢想与人工智能：AI 如何重塑人类推理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Joonote – A note-taking app on your lock screen and notification
+    panel'
+  why: I finally built this app after many years of being sick of unlocking my phone
+    every goddamn time I need to take or view my notes.
+  takeaway: I finally built this app after many years of being sick of unlocking my
+    phone every goddamn time I need to take or view my notes. It particularly sucks
+    when I'm doing my grocery and going down the list. I started building last year
+    June. This is a native app written in Kotlin. And since I'm a 100% Web dev guy,
+    I gotta say this wouldn't have been possible wi…
+  prompt: ''
+  url: https://joonote.com/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T15:02:30+00:00'
+  title_zh: 'Show HN: Joonote – 锁屏和通知面板上的笔记应用'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How Ford burned $12B in Brazil (2021)
+  why: 'Article URL: https://www.reuters.com/business/autos-transportation/how-ford-burned-12-billion-brazil-2021-05-20/
+    Comments URL: https://news…'
+  takeaway: 'Article URL: https://www.reuters.com/business/autos-transportation/how-ford-burned-12-billion-brazil-2021-05-20/
+    Comments URL: https://news.ycombinator.com/item?id=47467623 Points: 12 # Comments:
+    0'
+  prompt: ''
+  url: https://www.reuters.com/business/autos-transportation/how-ford-burned-12-billion-brazil-2021-05-20/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T14:55:42+00:00'
+  title_zh: 福特如何在巴西烧掉120亿美元（2021年）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Grafeo – A fast, lean, embeddable graph database built in Rust
+  why: 'Article URL: https://grafeo.dev/ Comments URL: https://news.ycombinator.com/item?id=47467567
+    Points: 177 # Comments: 57'
+  takeaway: 'Article URL: https://grafeo.dev/ Comments URL: https://news.ycombinator.com/item?id=47467567
+    Points: 177 # Comments: 57'
+  prompt: ''
+  url: https://grafeo.dev/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T14:50:18+00:00'
+  title_zh: Grafeo——一款用Rust构建的快速、轻量、可嵌入图数据库
+  why_zh: '文章URL: https://grafeo.dev/ 评论URL: https://news.ycombinator.com/item?id=47467567
+    得分: 177 评论数: 57'
+  takeaway_zh: '文章URL: https://grafeo.dev/ 评论URL: https://news.ycombinator.com/item?id=47467567
+    得分: 177 评论数: 57'
+  prompt_zh: ''
+- category: Tech industry
+  title: Some things just take time
+  why: 'Article URL: https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/
+    Comments URL: https://news.ycombinator.com/item?id=47467537 Poi…'
+  takeaway: 'Article URL: https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/
+    Comments URL: https://news.ycombinator.com/item?id=47467537 Points: 472 # Comments:
+    154'
+  prompt: ''
+  url: https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/
+  source: Hacker News (front page)
+  published_utc: '2026-03-21T14:46:56+00:00'
+  title_zh: 有些事情就是需要时间
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Here are 20 of our favorite outdoor deals from REI’s Member Days Sale
+  why: REI’s latest sale is in full swing.
+  takeaway: REI’s latest sale is in full swing. The outdoor retailer’s exclusive shopping
+    event runs through Monday, March 23rd, bringing with it a batch of discounts on
+    Garmin watches, tents, portable stoves, and a slew of Verge-approved goodies.
+    As expected, most deals are available only to REI members; however, you can still
+    join the co-op for […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/897628/best-outdoor-deals-rei-member-days-sale-2026
+  source: The Verge
+  published_utc: '2026-03-21T14:40:00+00:00'
+  title_zh: REI会员日促销：我们精选的20款户外好物
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The gen AI Kool-Aid tastes like eugenics
+  why: Like many people, director Valerie Veatch was intrigued when OpenAI first released
+    its Sora text-to-video generative AI model to the public…
+  takeaway: Like many people, director Valerie Veatch was intrigued when OpenAI first
+    released its Sora text-to-video generative AI model to the public in 2024. Though
+    she didn't fully understand the technology, she was curious about what it could
+    do, and she saw that other artists were building online communities to share their
+    new AI creations. The […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/897923/ghost-in-the-machine-valerie-veatch-interview
+  source: The Verge
+  published_utc: '2026-03-21T14:00:00+00:00'
+  title_zh: 生成式AI的‘酷爱’饮料尝起来像优生学
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How fusion power works and the startups pursuing it
+  why: Fusion power promises to generate large amounts of clean electricity from nearly
+    limitless fuel.
+  takeaway: Fusion power promises to generate large amounts of clean electricity from
+    nearly limitless fuel. This article explains the main approaches and the companies
+    that use them.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/21/how-fusion-power-works-and-the-startups-pursuing-it/
+  source: TechCrunch
+  published_utc: '2026-03-21T14:00:00+00:00'
+  title_zh: 核聚变发电原理及追逐它的初创企业
+  why_zh: 核聚变能源有望利用近乎无限的燃料产生大量清洁电力。
+  takeaway_zh: 核聚变能源有望利用近乎无限的燃料产生大量清洁电力。本文介绍了主要方法及采用这些方法的公司。
+  prompt_zh: ''

@@ -2813,3 +2813,81 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-03-18T18:38:37+00:00'
+- week: 2026-W13
+  start: '2026-03-23'
+  end: '2026-03-29'
+  issues:
+  - '2026-03-23'
+  highlights_news:
+  - date: '2026-03-23'
+    url: https://techcrunch.com/2026/03/22/elon-musk-unveils-chip-manufacturing-plans-for-spacex-and-tesla/
+    title: Elon Musk unveils chip manufacturing plans for SpaceX and Tesla
+    title_zh: 埃隆·马斯克公布SpaceX和特斯拉的芯片制造计划
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-22T16:20:00+00:00'
+  - date: '2026-03-23'
+    url: https://arstechnica.com/culture/2026/03/there-can-still-be-only-one-highlander-is-40/
+    title: 'There can (still) be only one: Highlander is 40'
+    title_zh: 《高地人》40周年：依然独一无二
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-22T14:10:30+00:00'
+  - date: '2026-03-23'
+    url: https://www.theverge.com/ai-artificial-intelligence/898722/musk-terafab-chip-plant
+    title: Musk says he’s building Terafab chip plant in Austin, Texas
+    title_zh: 马斯克宣布在德克萨斯州奥斯汀建设Terafab芯片工厂
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-22T14:06:48+00:00'
+  - date: '2026-03-23'
+    url: https://spectrum.ieee.org/frictionless-ai-psychology
+    title: What Happens If AI Makes Things Too Easy for Us?
+    title_zh: 如果AI让一切变得过于简单，会发生什么？
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-03-22T13:00:04+00:00'
+  - date: '2026-03-23'
+    url: https://christophermeiklejohn.com/ai/zabriskie/development/android/ios/2026/03/22/teaching-claude-to-qa-a-mobile-app.html
+    title: Teaching Claude to QA a mobile app
+    title_zh: 教Claude进行移动应用质量保证测试
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-03-22T19:04:00+00:00'
+  highlights_ai:
+  - date: '2026-03-23'
+    url: https://the-decoder.com/openai-publishes-a-prompting-playbook-that-helps-designers-get-better-frontend-results-from-gpt-5-4/
+    title: OpenAI publishes a prompting playbook that helps designers get better frontend
+      results from GPT-5.4
+    title_zh: OpenAI发布提示工程手册，助设计师获取GPT-5.4前端优化方案
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-22T10:51:07+00:00'
+  - date: '2026-03-23'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.18.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.18.0'
+    title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.18.0版本发布
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-03-21T01:16:27+00:00'
+  - date: '2026-03-23'
+    url: https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything
+    title: Thoughts on OpenAI acquiring Astral and uv/ruff/ty
+    title_zh: 关于OpenAI收购Astral以及uv/ruff/ty的思考
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-19T16:45:15+00:00'
+  - date: '2026-03-23'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.86.0
+    title: 'anthropics/anthropic-sdk-python: v0.86.0'
+    title_zh: anthropics/anthropic-sdk-python v0.86.0版本更新
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-03-18T18:42:27+00:00'
+  - date: '2026-03-23'
+    url: https://github.com/microsoft/semantic-kernel/releases/tag/vectordata-dotnet-10.1.0
+    title: 'microsoft/semantic-kernel: vectordata-dotnet-10.1.0'
+    title_zh: microsoft/semantic-kernel vectordata-dotnet-10.1.0发布
+    category: AI tools & model releases
+    source: GitHub Releases - microsoft/semantic-kernel
+    published_utc: '2026-03-20T14:10:45+00:00'

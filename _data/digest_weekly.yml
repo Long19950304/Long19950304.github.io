@@ -2819,6 +2819,7 @@ weeks:
   issues:
   - '2026-03-23'
   - '2026-03-24'
+  - '2026-03-26'
   highlights_news:
   - date: '2026-03-23'
     url: https://techcrunch.com/2026/03/22/elon-musk-unveils-chip-manufacturing-plans-for-spacex-and-tesla/
@@ -2891,6 +2892,44 @@ weeks:
     category: Tech industry
     source: Hacker News (front page)
     published_utc: '2026-03-23T21:44:20+00:00'
+  - date: '2026-03-26'
+    url: https://www.technologyreview.com/2026/03/26/1134470/the-snow-gods-how-a-couple-of-ski-bums-built-the-internets-best-weather-app/
+    title: 'The snow gods: How a couple of ski bums built the internet’s best weather
+      app'
+    title_zh: 滑雪狂热者如何打造互联网最佳天气应用
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-03-26T10:00:00+00:00'
+  - date: '2026-03-26'
+    url: https://arstechnica.com/gadgets/2026/03/brincs-new-police-drone-uses-starlink-carries-narcan-chases-vehicles-at-60mph/
+    title: BRINC's new police drone uses Starlink, carries Narcan, chases vehicles
+      at 60mph
+    title_zh: BRINC新款警用无人机搭载Starlink，携带纳洛酮，时速60英里追车
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-25T21:12:03+00:00'
+  - date: '2026-03-26'
+    url: https://techcrunch.com/2026/03/25/convicted-spyware-chief-hints-that-greeces-government-was-behind-dozens-of-phone-hacks/
+    title: Convicted spyware chief hints that Greece’s government was behind dozens
+      of phone hacks
+    title_zh: 间谍软件主谋暗示希腊政府幕后操纵数十起手机黑客事件
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-25T21:19:57+00:00'
+  - date: '2026-03-26'
+    url: https://www.theverge.com/tech/900946/meta-layoffs-hundreds-employees
+    title: Meta is laying off hundreds of employees as it pours money into AI
+    title_zh: Meta裁员数百人，同时加大对AI的投入
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-25T21:10:32+00:00'
+  - date: '2026-03-26'
+    url: https://www.latent.space/p/ainews-the-biggest-claude-launch
+    title: '[AINews] The Biggest Claude Launch of All Time'
+    title_zh: '[AINews] 史上最大规模的Claude发布'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-26T03:53:04+00:00'
   highlights_ai:
   - date: '2026-03-23'
     url: https://the-decoder.com/openai-publishes-a-prompting-playbook-that-helps-designers-get-better-frontend-results-from-gpt-5-4/
@@ -2949,3 +2988,39 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-03-22T23:57:44+00:00'
+  - date: '2026-03-26'
+    url: https://github.com/openai/openai-node/releases/tag/v6.33.0
+    title: 'openai/openai-node: v6.33.0'
+    title_zh: openai/openai-node：v6.33.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-03-25T22:08:36+00:00'
+  - date: '2026-03-26'
+    url: https://github.com/openai/openai-python/releases/tag/v2.30.0
+    title: 'openai/openai-python: v2.30.0'
+    title_zh: openai/openai-python：v2.30.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-03-25T22:08:18+00:00'
+  - date: '2026-03-26'
+    url: https://the-decoder.com/disney-pulls-out-of-openai-partnership-after-sora-app-and-api-gets-killed-just-months-after-launch/
+    title: Disney pulls out of OpenAI partnership after Sora app and API gets killed
+      just months after launch
+    title_zh: 迪士尼终止与OpenAI合作，Sora应用及API上线数月即关闭
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-25T10:52:09+00:00'
+  - date: '2026-03-26'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.18.2
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.18.2'
+    title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI：v0.18.2版本
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-03-25T04:22:37+00:00'
+  - date: '2026-03-26'
+    url: https://simonwillison.net/2026/Mar/24/auto-mode-for-claude-code/#atom-everything
+    title: Auto mode for Claude Code
+    title_zh: Claude代码自动模式上线
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-24T23:57:33+00:00'

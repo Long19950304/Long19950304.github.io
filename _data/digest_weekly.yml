@@ -2820,6 +2820,7 @@ weeks:
   - '2026-03-23'
   - '2026-03-24'
   - '2026-03-26'
+  - '2026-03-27'
   highlights_news:
   - date: '2026-03-23'
     url: https://techcrunch.com/2026/03/22/elon-musk-unveils-chip-manufacturing-plans-for-spacex-and-tesla/
@@ -2930,6 +2931,42 @@ weeks:
     category: AI frontier
     source: Latent Space (AI newsletter)
     published_utc: '2026-03-26T03:53:04+00:00'
+  - date: '2026-03-27'
+    url: https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode/
+    title: 'OpenAI abandons yet another side quest: ChatGPT’s erotic mode'
+    title_zh: OpenAI再次放弃支线任务：停用ChatGPT情色模式
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-26T18:34:02+00:00'
+  - date: '2026-03-27'
+    url: https://arstechnica.com/security/2026/03/internet-yiff-machine-we-hacked-93gb-of-anonymous-crime-tips/
+    title: 'Internet Yiff Machine: We hacked 93GB of "anonymous" crime tips'
+    title_zh: 网络荤段子机：我们破解了93GB'匿名'犯罪举报数据
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-03-26T21:04:31+00:00'
+  - date: '2026-03-27'
+    url: https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction
+    title: Judge sides with Anthropic to temporarily block the Pentagon&#8217;s ban
+    title_zh: 法官支持Anthropic，暂时叫停五角大楼禁令
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-27T00:33:44+00:00'
+  - date: '2026-03-27'
+    url: https://the-decoder.com/openai-and-anthropic-before-the-ipo-different-balance-sheets-make-comparison-difficult/
+    title: 'OpenAI and Anthropic before the IPO: Different balance sheets make comparison
+      difficult'
+    title_zh: OpenAI与Anthropic上市前对比：财务报表差异使评估困难
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-03-26T18:26:54+00:00'
+  - date: '2026-03-27'
+    url: https://www.wired.com/story/anthropic-supply-chain-risk-designation-injunction/
+    title: Anthropic Supply-Chain-Risk Designation Halted by Judge
+    title_zh: 法官暂缓对Anthropic实施供应链风险指定
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-26T23:33:05+00:00'
   highlights_ai:
   - date: '2026-03-23'
     url: https://the-decoder.com/openai-publishes-a-prompting-playbook-that-helps-designers-get-better-frontend-results-from-gpt-5-4/
@@ -3024,3 +3061,26 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-03-24T23:57:33+00:00'
+  - date: '2026-03-27'
+    url: https://the-decoder.com/google-launches-ai-music-generator-lyria-3-pro-says-it-was-trained-on-data-it-has-the-right-to-use/
+    title: Google launches AI music generator Lyria 3 Pro, says it was trained on
+      data it has the right to use
+    title_zh: 谷歌推出AI音乐生成器Lyria 3 Pro，称使用授权数据进行训练
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-25T19:12:07+00:00'
+  - date: '2026-03-27'
+    url: https://github.com/huggingface/transformers/releases/tag/v5.4.0
+    title: 'huggingface/transformers: Release v5.4.0: PaddlePaddle models 🙌, Mistral
+      4, PI0, VidEoMT, UVDoc, SLANeXt, Jina Embeddings v3'
+    title_zh: huggingface/transformers：v5.4.0发布，支持PaddlePaddle模型🙌、Mistral 4等
+    category: AI tools & model releases
+    source: GitHub Releases - huggingface/transformers
+    published_utc: '2026-03-27T00:33:02+00:00'
+  - date: '2026-03-27'
+    url: https://github.com/open-webui/open-webui/releases/tag/v0.8.12
+    title: 'open-webui/open-webui: v0.8.12'
+    title_zh: open-webui/open-webui：v0.8.12版本更新
+    category: AI tools & model releases
+    source: GitHub Releases - open-webui/open-webui
+    published_utc: '2026-03-27T00:26:52+00:00'

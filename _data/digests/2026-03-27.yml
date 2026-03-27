@@ -1,0 +1,1235 @@
+date: '2026-03-27'
+title: Daily Digest - 2026-03-27
+title_zh: 每日简报 - 2026-03-27
+note: 'Today: OpenAI abandons yet another side quest: ChatGPT’s erotic mode · Internet
+  Yiff Machine: We hacked 93GB of "anonymous" crime tips · AI: openai/openai-node:
+  v6.33.0.'
+note_zh: 今日关注：OpenAI再次放弃支线任务：停用ChatGPT情色模式；网络荤段子机：我们破解了93GB'匿名'犯罪举报数据；AI：openai/openai-node：v6.33.0发布。
+items:
+- category: AI tools & model releases
+  title: 'huggingface/transformers: Release v5.4.0: PaddlePaddle models 🙌, Mistral
+    4, PI0, VidEoMT, UVDoc, SLANeXt, Jina Embeddings v3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/transformers/releases/tag/v5.4.0
+  source: GitHub Releases - huggingface/transformers
+  published_utc: '2026-03-27T00:33:02+00:00'
+  title_zh: huggingface/transformers：v5.4.0发布，支持PaddlePaddle模型🙌、Mistral 4等
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.12'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.12
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-27T00:26:52+00:00'
+  title_zh: open-webui/open-webui：v0.8.12版本更新
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: My minute-by-minute response to the LiteLLM malware attack
+  why: My minute-by-minute response to the LiteLLM malware attack Callum McMahon reported
+    the LiteLLM malware attack to PyPI.
+  takeaway: 'My minute-by-minute response to the LiteLLM malware attack Callum McMahon
+    reported the LiteLLM malware attack to PyPI. Here he shares the Claude transcripts
+    he used to help him confirm the vulnerability and decide what to do about it.
+    Claude even suggested the PyPI security contact address after confirming the malicious
+    code in a Docker container: Confirmed…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/26/response-to-the-litellm-malware-attack/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-26T23:58:22+00:00'
+  title_zh: 我对LiteLLM恶意软件攻击的逐分钟应对实录
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker Studio launches support for Kiro and Cursor IDEs as remote
+    IDEs
+  why: Today, AWS announces the ability to remotely connect from Kiro and Cursor IDEs
+    to Amazon SageMaker Studio.
+  takeaway: Today, AWS announces the ability to remotely connect from Kiro and Cursor
+    IDEs to Amazon SageMaker Studio. This new capability allows data scientists, ML
+    engineers, and developers to leverage their Kiro and Cursor setup - including
+    its spec-driven development, conversational coding, and automated feature generation
+    capabilities - while accessing the scalabl…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-studio-kiro-cursor/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-26T19:53:00+00:00'
+  title_zh: 亚马逊SageMaker Studio现支持Kiro和Cursor IDE作为远程集成开发环境
+  why_zh: 今天，AWS宣布可以从Kiro和Cursor IDE远程连接到Amazon SageMaker Studio。
+  takeaway_zh: 'AWS宣布Kiro和Cursor IDE现可远程连接至Amazon SageMaker Studio。这一新功能使数据科学家、机器学习工程师和开发人员能够在保持Kiro与Cursor环境特性（包括规范驱动开发、对话式编程、自动化功能生成等功能）的同时，调用SageMaker
+    Studio的规模化...
+
+
+    （注：根据专业规范，"scalabl..."应是"scalability"缩写，中文技术文档通常保留英文术语或译为"可扩展性"。因原文截断，暂以"规模化..."保留技术精确性。建议用户提供完整术语确认最终译法）'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Mistral's first open-weight TTS model Voxtral clones voices from three seconds
+    of audio across nine languages
+  why: French AI startup Mistral has released Voxtral TTS, its first text-to-speech
+    model that supports nine languages and can clone voices from j…
+  takeaway: French AI startup Mistral has released Voxtral TTS, its first text-to-speech
+    model that supports nine languages and can clone voices from just three seconds
+    of audio. The article Mistral's first open-weight TTS model Voxtral clones voices
+    from three seconds of audio across nine languages appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/mistrals-first-open-weight-tts-model-voxtral-clones-voices-from-three-seconds-of-audio-across-nine-languages/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T19:16:58+00:00'
+  title_zh: Mistral首个开源权重TTS模型Voxtral实现九种语言3秒音频克隆语音
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-exa==1.1.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-exa%3D%3D1.1.0
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-26T17:00:22+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The AWS Advanced JDBC Wrapper now supports automatic query caching with Valkey
+  why: The AWS Advanced JDBC Wrapper now supports automatically caching JDBC queries
+    with Valkey , including Amazon ElastiCache for Valkey caches.
+  takeaway: The AWS Advanced JDBC Wrapper now supports automatically caching JDBC
+    queries with Valkey , including Amazon ElastiCache for Valkey caches. Previously,
+    developers who needed to cache JDBC query result sets had to manually write code
+    to store and retrieve data from the cache for each query. Now you can automatically
+    cache result sets from your Aurora and RDS…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/aws-jdbc-caching-with-valkey/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-26T15:57:00+00:00'
+  title_zh: AWS高级JDBC封装器现支持与Valkey的自动查询缓存
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8a instances now available in AWS Europe (Ireland) region
+  why: Starting today, the general-purpose Amazon EC2 M8a instances are available
+    in AWS Europe (Ireland) region.
+  takeaway: Starting today, the general-purpose Amazon EC2 M8a instances are available
+    in AWS Europe (Ireland) region. M8a instances are powered by 5th Gen AMD EPYC
+    processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver
+    up to 30% higher performance, and up to 19% better price-performance compared
+    to M7a instances. M8a instances deliver 45%…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-ec2-m8a-instances-europe-ireland-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-26T15:00:12+00:00'
+  title_zh: 亚马逊EC2 M8a实例现已在AWS欧洲（爱尔兰）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8a instances now available in AWS GovCloud (US-West) region
+  why: Starting today, the general-purpose Amazon EC2 M8a instances are available
+    in AWS GovCloud (US-West) region.
+  takeaway: Starting today, the general-purpose Amazon EC2 M8a instances are available
+    in AWS GovCloud (US-West) region. M8a instances are powered by 5th Gen AMD EPYC
+    processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver
+    up to 30% higher performance, and up to 19% better price-performance compared
+    to M7a instances. M8a instances deliver 45…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-ec2-m8a-instances-govcloud-us-west-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-26T15:00:00+00:00'
+  title_zh: 亚马逊EC2 M8a实例现已在AWS GovCloud（美国西部）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: ARC-AGI-3 offers $2M to any AI that matches untrained humans, yet every frontier
+    model scores below 1%
+  why: The new ARC-AGI-3 benchmark drops AI systems into interactive game environments
+    that humans solve with ease.
+  takeaway: The new ARC-AGI-3 benchmark drops AI systems into interactive game environments
+    that humans solve with ease. No frontier model breaks the 1 percent mark because
+    the benchmark strips away their biggest advantages. The article ARC-AGI-3 offers
+    $2M to any AI that matches untrained humans, yet every frontier model scores below
+    1% appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T11:52:55+00:00'
+  title_zh: ARC-AGI-3悬赏200万美元奖励达到未受训人类水平的AI，现有前沿模型得分均不足1%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Meta tests new way of working with "AI-native pods" to boost productivity
+  why: Meta is reshaping parts of Reality Labs into small, AI-driven teams, betting
+    it will boost productivity.
+  takeaway: Meta is reshaping parts of Reality Labs into small, AI-driven teams, betting
+    it will boost productivity. The article Meta tests new way of working with "AI-native
+    pods" to boost productivity appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/meta-tests-new-way-of-working-with-ai-native-pods-to-boost-productivity/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T09:15:26+00:00'
+  title_zh: Meta测试新型"AI原生小组"工作模式以提高效率
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.8.11'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.8.11
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-03-25T22:50:09+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.33.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.33.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-03-25T22:08:36+00:00'
+  title_zh: openai/openai-node：v6.33.0发布
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.30.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.30.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-03-25T22:08:18+00:00'
+  title_zh: openai/openai-python：v2.30.0发布
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: datasette-llm 0.1a1
+  why: 'Release: datasette-llm 0.1a1 New release of the base plugin that makes models
+    from LLM available for use by other Datasette plugins such as…'
+  takeaway: 'Release: datasette-llm 0.1a1 New release of the base plugin that makes
+    models from LLM available for use by other Datasette plugins such as datasette-enrichments-llm
+    . New register_llm_purposes() plugin hook and get_purposes() function for retrieving
+    registered purpose strings. #1 One of the responsibilities of this plugin is to
+    configure which models are u…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-25T21:24:31+00:00'
+  title_zh: datasette-llm 0.1a1版本发布
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerate AI-assisted development with Agent Plugin for AWS Serverless
+  why: AWS announces the Agent Plugin for AWS Serverless, enabling developers to easily
+    build, deploy, troubleshoot, and manage serverless applica…
+  takeaway: AWS announces the Agent Plugin for AWS Serverless, enabling developers
+    to easily build, deploy, troubleshoot, and manage serverless applications using
+    AI coding assistants like Kiro, Claude Code, and Cursor. Agent plugins extend
+    AI coding assistants with structured, reusable capabilities by packaging skills,
+    sub-agents, hooks, and Model Context Protocol (MC…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/agent-plugin-aws-serverless/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T21:00:00+00:00'
+  title_zh: 通过AWS Serverless的Agent插件加速AI辅助开发
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'run-llama/llama_index: v0.14.19'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/run-llama/llama_index/releases/tag/v0.14.19
+  source: GitHub Releases - run-llama/llama_index
+  published_utc: '2026-03-25T20:59:15+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker Unified Studio launches support for remote connection from
+    Cursor IDE
+  why: Today, AWS announces remote connection from Cursor IDE to Amazon SageMaker
+    Unified Studio via the AWS Toolkit extension.
+  takeaway: Today, AWS announces remote connection from Cursor IDE to Amazon SageMaker
+    Unified Studio via the AWS Toolkit extension. This new capability allows data
+    scientists, ML engineers, and developers to leverage their Cursor setup - including
+    its AI-powered code completion, natural language editing, and multi-file editing
+    capabilities - while accessing the scalab…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/sagemaker-unified-studio-cursor-ide/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T20:21:00+00:00'
+  title_zh: 亚马逊SageMaker统一套件现支持从Cursor IDE远程连接
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore adds support for Chrome policies and custom root
+    CA
+  why: Amazon Bedrock AgentCore now enables customers to configure Chrome Enterprise
+    policies for AgentCore Browser and specify custom root Certif…
+  takeaway: Amazon Bedrock AgentCore now enables customers to configure Chrome Enterprise
+    policies for AgentCore Browser and specify custom root Certificate Authority (CA)
+    certificates for both AgentCore Browser and Code Interpreter. These enhancements
+    help ensure enterprise requirements are met when allowing AI agents to operate
+    within organizations that have strict s…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/agentcore-browser-policies-root-ca/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T20:10:00+00:00'
+  title_zh: Amazon Bedrock AgentCore新增支持Chrome策略与自定义根CA
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google launches AI music generator Lyria 3 Pro, says it was trained on data
+    it has the right to use
+  why: 'Google is making AI music longer and more widely available: Lyria 3 Pro generates
+    songs up to three minutes long, complete with verses, cho…'
+  takeaway: 'Google is making AI music longer and more widely available: Lyria 3 Pro
+    generates songs up to three minutes long, complete with verses, choruses, and
+    bridges. Google says the model was trained on content it has the right to use.
+    That sets it apart from rival music generator Suno, which is facing legal battles
+    with record labels over potential copyright infr…'
+  prompt: ''
+  url: https://the-decoder.com/google-launches-ai-music-generator-lyria-3-pro-says-it-was-trained-on-data-it-has-the-right-to-use/
+  source: The Decoder (AI)
+  published_utc: '2026-03-25T19:12:07+00:00'
+  title_zh: 谷歌推出AI音乐生成器Lyria 3 Pro，称使用授权数据进行训练
+  why_zh: 谷歌正在使AI音乐更长且更广泛地可用：Lyria 3 Pro生成长达三分钟的歌曲，包含主歌、副歌……
+  takeaway_zh: 谷歌正在使AI音乐更长且更广泛地可用：Lyria 3 Pro生成长达三分钟的歌曲，包含主歌、副歌和桥段。谷歌表示，该模型是在其有权使用的内容上训练的。这使其与竞争对手音乐生成器Suno区别开来，后者因潜在的版权侵权问题正与唱片公司进行法律斗争……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Batch now supports quota management and preemption for SageMaker Training
+    jobs
+  why: AWS Batch now supports quota management with job preemption for SageMaker Training
+    jobs, enabling you to efficiently allocate and share com…
+  takeaway: AWS Batch now supports quota management with job preemption for SageMaker
+    Training jobs, enabling you to efficiently allocate and share compute resources
+    across your teams and projects. If you're using GPU capacity in SageMaker Training
+    jobs, you can now intelligently allocate compute resources, prioritize your business-critical
+    training jobs, and automatic…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/aws-batch-quota-management-preemption-sagemaker/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T18:40:00+00:00'
+  title_zh: AWS Batch现支持SageMaker训练任务的配额管理与抢占机制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'LiteLLM Hack: Were You One of the 47,000?'
+  why: 'LiteLLM Hack: Were You One of the 47,000?'
+  takeaway: 'LiteLLM Hack: Were You One of the 47,000? Daniel Hnyk used the BigQuery
+    PyPI dataset to determine how many downloads there were of the exploited LiteLLM
+    packages during the 46 minute period they were live on PyPI. The answer was 46,996
+    across the two compromised release versions (1.82.7 and 1.82.8). They also identified
+    2,337 packages that depended on LiteL…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-03-25T17:21:04+00:00'
+  title_zh: LiteLLM遭遇黑客攻击：您是否是47000名受影响用户之一？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick Now Available in the AWS Tokyo Region
+  why: Amazon Quick is now available in the AWS Asia Pacific (Tokyo) region (ap-northeast-1).
+  takeaway: Amazon Quick is now available in the AWS Asia Pacific (Tokyo) region (ap-northeast-1).
+    This launch allows customers in Japan to access the full power of Amazon Quick
+    while meeting local and regional requirements for data sovereignty. Amazon Quick
+    provides business users an agentic teammate that quickly answers questions at
+    work and turns those answers into…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-quick-now-available-in-the-aws-tokyo-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T17:02:00+00:00'
+  title_zh: 亚马逊Quick服务现已在AWS东京区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick Now Available in the AWS Frankfurt Region
+  why: Amazon Quick is now available in the AWS Europe (Frankfurt) region (eu-central-1).
+  takeaway: Amazon Quick is now available in the AWS Europe (Frankfurt) region (eu-central-1).
+    This launch allows customers in Germany to access the full power of Amazon Quick
+    while meeting local and regional requirements for data sovereignty. Amazon Quick
+    provides business users an agentic teammate that quickly answers questions at
+    work and turns those answers into ac…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-quick-now-available-in-the-aws-frankfurt-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T16:56:00+00:00'
+  title_zh: 亚马逊Quick服务现已在AWS法兰克福区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick Now Available in the AWS London Region
+  why: Amazon Quick is now available in the AWS Europe (London) region (eu-west-2).
+  takeaway: Amazon Quick is now available in the AWS Europe (London) region (eu-west-2).
+    This launch allows customers in the United Kingdom to access the full power of
+    Amazon Quick while meeting local and regional requirements for data sovereignty.
+    Amazon Quick provides business users an agentic teammate that quickly answers
+    questions at work and turns those answers in…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-quick-now-available-in-the-aws-london-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T16:47:00+00:00'
+  title_zh: 亚马逊Quick服务现已在AWS伦敦区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Maximize AI Infrastructure Throughput by Consolidating Underutilized GPU
+    Workloads
+  why: In production Kubernetes environments, the difference between model requirements
+    and GPU size creates inefficiencies.
+  takeaway: In production Kubernetes environments, the difference between model requirements
+    and GPU size creates inefficiencies. Lightweight automatic speech recognition...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/maximize-ai-infrastructure-throughput-by-consolidating-underutilized-gpu-workloads/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-25T16:35:43+00:00'
+  title_zh: 通过整合闲置GPU工作负载最大化AI基础设施吞吐量
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker AI now supports serverless reinforcement fine-tuning for
+    12 additional models
+  why: Amazon SageMaker AI now supports serverless model customization and reinforcement
+    fine-tuning for 12 additional open-weight models, enablin…
+  takeaway: 'Amazon SageMaker AI now supports serverless model customization and reinforcement
+    fine-tuning for 12 additional open-weight models, enabling you to fine-tune and
+    evaluate them without provisioning or managing infrastructure. The newly supported
+    models are: gpt-oss-120b, Qwen2.5 72B Instruct, DeepSeek-R1-Distill-Llama-70B,
+    Qwen3 14B, DeepSeek-R1-Distill-Qwen…'
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-ai-serverless-additional-models/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-03-25T16:25:00+00:00'
+  title_zh: 亚马逊SageMaker AI现支持12种新模型的服务器强化微调
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build with Lyria 3, our newest music generation model
+  why: Google Lyria teaser
+  takeaway: Google Lyria teaser
+  prompt: ''
+  url: https://blog.google/innovation-and-ai/technology/developers-tools/lyria-3-developers/
+  source: Google AI (blog.google)
+  published_utc: '2026-03-25T16:00:00+00:00'
+  title_zh: 使用我们最新的音乐生成模型Lyria 3进行创作
+  why_zh: 谷歌Lyria预告片
+  takeaway_zh: 谷歌Lyria预告片
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How Centralized Radar Processing on NVIDIA DRIVE Enables Safer, Smarter Level
+    4 Autonomy
+  why: In the current state of automotive radar, machine learning engineers can't
+    work with camera-equivalent raw RGB images.
+  takeaway: In the current state of automotive radar, machine learning engineers can't
+    work with camera-equivalent raw RGB images. Instead, they work with the output
+    of...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/how-centralized-radar-processing-on-nvidia-drive-enables-safer-smarter-level-4-autonomy/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-03-25T16:00:00+00:00'
+  title_zh: NVIDIA DRIVE集中式雷达处理如何实现更安全的L4级自动驾驶
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openrouter==0.2.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.0
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-03-25T15:16:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: '[AINews] Everything is CLI'
+  why: a quiet day lets us reflect on the growing trend of CLIs for ~everything~ agents
+  takeaway: a quiet day lets us reflect on the growing trend of CLIs for ~everything~
+    agents
+  prompt: ''
+  url: https://www.latent.space/p/ainews-everything-is-cli
+  source: Latent Space (AI newsletter)
+  published_utc: '2026-03-27T01:35:46+00:00'
+  title_zh: '[AINews] 万物皆命令行'
+  why_zh: 平静的一天让我们反思CLI在~一切~代理中日益增长的趋势。
+  takeaway_zh: 平静的一天让我们反思CLI在~一切~代理中日益增长的趋势。
+  prompt_zh: ''
+- category: Tech industry
+  title: David Sacks is done as AI czar — here’s what he’s doing instead
+  why: Sacks will be much further from power center in Washington than since the outset
+    of this second Trump administration.
+  takeaway: Sacks will be much further from power center in Washington than since
+    the outset of this second Trump administration.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/david-sacks-is-done-as-ai-czar-heres-what-hes-doing-instead/
+  source: TechCrunch
+  published_utc: '2026-03-27T01:26:40+00:00'
+  title_zh: David Sacks卸任AI主管职务，转型新动向曝光
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic wins injunction against Trump administration over Defense Department
+    saga
+  why: A federal judge has ordered that the Trump administration rescind recent restrictions
+    it placed on the AI company.
+  takeaway: A federal judge has ordered that the Trump administration rescind recent
+    restrictions it placed on the AI company.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga/
+  source: TechCrunch
+  published_utc: '2026-03-27T01:18:38+00:00'
+  title_zh: Anthropic胜诉获禁令，阻止特朗普政府对国防部施压
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Judge sides with Anthropic to temporarily block the Pentagon&#8217;s ban
+  why: 'After Anthropic''s weeks-long standoff with the Pentagon, the company won
+    one milestone: A judge granted Anthropic a preliminary injunction…'
+  takeaway: 'After Anthropic''s weeks-long standoff with the Pentagon, the company
+    won one milestone: A judge granted Anthropic a preliminary injunction in its lawsuit,
+    which sought to reverse its government blacklisting while the judicial process
+    plays out. "The Department of War''s records show that it designated Anthropic
+    as a supply chain risk because of its ''hostile…'
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction
+  source: The Verge
+  published_utc: '2026-03-27T00:33:44+00:00'
+  title_zh: 法官支持Anthropic，暂时叫停五角大楼禁令
+  why_zh: 在与五角大楼长达数周的对峙后，Anthropic公司赢得了一个里程碑：法官批准了Anthropic的初步禁令……
+  takeaway_zh: 在与五角大楼长达数周的对峙后，Anthropic公司赢得了一个里程碑：法官批准了Anthropic的初步禁令，该诉讼旨在撤销其政府黑名单，同时司法程序继续进行。"战争部的记录显示，它因Anthropic的'敌对……
+  prompt_zh: ''
+- category: Tech industry
+  title: Brendan Carr says his broadcast license threat wasn&#8217;t really about
+    Iran war coverage
+  why: Federal Communications Commission Chair Brendan Carr never meant to threaten
+    broadcast licenses over their coverage of the war in Iran, he…
+  takeaway: Federal Communications Commission Chair Brendan Carr never meant to threaten
+    broadcast licenses over their coverage of the war in Iran, he told reporters after
+    an event hosted by FGS and Semafor. "My comments weren't actually on the Iran
+    war," Carr said in response to a question from The Verge about his statement regarding
+    coverage of […]
+  prompt: ''
+  url: https://www.theverge.com/policy/902132/brendan-carr-iran-broadcast-license-threat
+  source: The Verge
+  published_utc: '2026-03-26T23:53:16+00:00'
+  title_zh: Brendan Carr称其广播许可证威胁与伊朗战争报道无关
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: You can now transfer your chats and personal information from other chatbots
+    directly into Gemini
+  why: Google is launching "switching tools" that, just as it sounds, will make it
+    easier for users of other chatbots to switch to Gemini.
+  takeaway: Google is launching "switching tools" that, just as it sounds, will make
+    it easier for users of other chatbots to switch to Gemini.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/you-can-now-transfer-your-chats-and-personal-information-from-other-chatbots-directly-into-gemini/
+  source: TechCrunch
+  published_utc: '2026-03-26T23:47:56+00:00'
+  title_zh: 现可将其他聊天机器人的对话记录和个人资料直接导入Gemini
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: David Sacks is no longer the White House AI and Crypto Czar
+  why: David Sacks, the venture capitalist and tech billionaire who'd become Silicon
+    Valley's primary advocate inside the White House and a key ar…
+  takeaway: David Sacks, the venture capitalist and tech billionaire who'd become
+    Silicon Valley's primary advocate inside the White House and a key architect of
+    its aggressive AI policy initiatives, revealed on Thursday that he was no longer
+    a special government employee - and therefore no longer President Donald Trump's
+    Special Advisor on AI and Crypto. Sacks' […]
+  prompt: ''
+  url: https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar
+  source: The Verge
+  published_utc: '2026-03-26T23:40:22+00:00'
+  title_zh: David Sacks不再担任白宫人工智能与加密货币事务主管
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Judge blocks Pentagon effort to 'punish' Anthropic with supply chain risk
+    label
+  why: 'Article URL: https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk
+    Comments URL: https://news.ycombinator…'
+  takeaway: 'Article URL: https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk
+    Comments URL: https://news.ycombinator.com/item?id=47537228 Points: 140 # Comments:
+    60'
+  prompt: ''
+  url: https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T23:33:53+00:00'
+  title_zh: 法官阻止五角大楼以供应链风险名义'制裁'Anthropic
+  why_zh: '文章URL: https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk
+    评论URL: https://news.ycombinator…'
+  takeaway_zh: '文章URL: https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk
+    评论URL: https://news.ycombinator.com/item?id=47537228 积分: 140 # 评论: 60'
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic Supply-Chain-Risk Designation Halted by Judge
+  why: A judge temporarily blocked the Trump administration’s designation, clearing
+    the way for Anthropic to keep doing business without the label…
+  takeaway: A judge temporarily blocked the Trump administration’s designation, clearing
+    the way for Anthropic to keep doing business without the label starting next week.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-supply-chain-risk-designation-injunction/
+  source: WIRED - AI
+  published_utc: '2026-03-26T23:33:05+00:00'
+  title_zh: 法官暂缓对Anthropic实施供应链风险指定
+  why_zh: 法官暂时阻止了特朗普政府的指定，为Anthropic继续在没有标签的情况下开展业务扫清了道路……
+  takeaway_zh: 法官暂时阻止了特朗普政府的指定，为Anthropic继续在没有标签的情况下开展业务扫清了道路，从下周开始。
+  prompt_zh: ''
+- category: Tech industry
+  title: Chicago artist creates tourism posters for city's neighborhoods
+  why: 'Article URL: https://www.chicagotribune.com/2026/03/25/chicago-neighborhood-posters/
+    Comments URL: https://news.ycombinator.com/item?id=475…'
+  takeaway: 'Article URL: https://www.chicagotribune.com/2026/03/25/chicago-neighborhood-posters/
+    Comments URL: https://news.ycombinator.com/item?id=47537106 Points: 37 # Comments:
+    16'
+  prompt: ''
+  url: https://www.chicagotribune.com/2026/03/25/chicago-neighborhood-posters/
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T23:18:38+00:00'
+  title_zh: 芝加哥艺术家为城市社区创作旅游海报
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Order Granting Preliminary Injunction – Anthropic vs. U.S. Department of
+    War [pdf]
+  why: 'Article URL: https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.134.0.pdf
+    Comments URL: https://news…'
+  takeaway: 'Article URL: https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.134.0.pdf
+    Comments URL: https://news.ycombinator.com/item?id=47537051 Points: 94 # Comments:
+    10'
+  prompt: ''
+  url: https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.134.0.pdf
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T23:11:45+00:00'
+  title_zh: 批准初步禁令令状——Anthropic诉美国战争部[pdf]
+  why_zh: '文章URL: https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.134.0.pdf
+    评论URL: https://news…'
+  takeaway_zh: '文章URL: https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.134.0.pdf
+    评论URL: https://news.ycombinator.com/item?id=47537051 积分: 94 # 评论: 10'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I put an AI agent on a $7/month VPS with IRC as its transport layer'
+  why: 'Article URL: https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/
+    Comments URL: https://news.ycombinator.com/item?id=47536761 Point…'
+  takeaway: 'Article URL: https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/
+    Comments URL: https://news.ycombinator.com/item?id=47536761 Points: 77 # Comments:
+    25'
+  prompt: ''
+  url: https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T22:41:25+00:00'
+  title_zh: '展示HN: 我在7美元/月的VPS上部署AI代理，采用IRC作为传输层'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Robot vacuums from Eufy and Roborock are over 50 percent for Amazon’s spring
+    sale
+  why: A good robovac can save you a surprising amount of time.
+  takeaway: A good robovac can save you a surprising amount of time. Luckily, Amazon’s
+    Big Spring Sale is a great time to pick one up, as you can currently find deals
+    on everything from basic, budget-friendly robovacs to high-end models that can
+    mop or pick up objects. Whether you’re looking for a completely hands-free experience
+    or […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/901792/best-robot-vacuum-mops-amazon-big-spring-sale-2026-deals
+  source: The Verge
+  published_utc: '2026-03-26T22:30:00+00:00'
+  title_zh: Eufy和Roborock的机器人吸尘器在亚马逊春季促销中降价超50%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple’s Mac Pro is dead, apparently for good this time
+  why: The most expensive Mac you could get is no longer available on Apple's website,
+    as 9to5Mac reports that the "cheese grater" Mac Pro worksta…
+  takeaway: The most expensive Mac you could get is no longer available on Apple's
+    website, as 9to5Mac reports that the "cheese grater" Mac Pro workstation has been
+    discontinued. It had been a part of the lineup since replacing the Power Mac G5
+    in 2006 when Apple shifted from Arm to Intel processors, but it's had the […]
+  prompt: ''
+  url: https://www.theverge.com/tech/902050/mac-pro-discontinued
+  source: The Verge
+  published_utc: '2026-03-26T22:21:05+00:00'
+  title_zh: 苹果Mac Pro产品线被终止，此次或成定局
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk loses big in court; X boycott perfectly legal
+  why: X admonished for "fishing expedition" as judge dismisses ad boycott lawsuit.
+  takeaway: X admonished for "fishing expedition" as judge dismisses ad boycott lawsuit.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/03/elon-musk-loses-big-in-court-x-boycott-perfectly-legal/
+  source: Ars Technica
+  published_utc: '2026-03-26T21:50:26+00:00'
+  title_zh: 埃隆·马斯克败诉，X平台抵制行动被判合法
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Wikipedia cracks down on the use of AI in article writing
+  why: The site, whose policies are subject to change, has struggled with the issue
+    of AI-generated writing.
+  takeaway: The site, whose policies are subject to change, has struggled with the
+    issue of AI-generated writing.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/
+  source: TechCrunch
+  published_utc: '2026-03-26T21:50:10+00:00'
+  title_zh: 维基百科严控AI生成内容
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google is making it easier to import another AI’s memory into Gemini
+  why: After Anthropic updated its tool for copying another AI's memory into Claude
+    earlier this month, Google Gemini is rolling out new "Import M…
+  takeaway: After Anthropic updated its tool for copying another AI's memory into
+    Claude earlier this month, Google Gemini is rolling out new "Import Memory" and
+    "Import Chat History" features on desktop that can help users quickly copy over
+    everything their current AI already knows about them. To use the "Import Memory"
+    tool, users copy and paste […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history
+  source: The Verge
+  published_utc: '2026-03-26T21:44:37+00:00'
+  title_zh: 谷歌简化流程，支持将其他AI记忆导入Gemini
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic Subprocessor Changes
+  why: 'Article URL: https://trust.anthropic.com Comments URL: https://news.ycombinator.com/item?id=47536110
+    Points: 36 # Comments: 16'
+  takeaway: 'Article URL: https://trust.anthropic.com Comments URL: https://news.ycombinator.com/item?id=47536110
+    Points: 36 # Comments: 16'
+  prompt: ''
+  url: https://trust.anthropic.com
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T21:37:15+00:00'
+  title_zh: Anthropic次级处理器变更公告
+  why_zh: '文章URL: https://trust.anthropic.com 评论URL: https://news.ycombinator.com/item?id=47536110
+    积分: 36 # 评论: 16'
+  takeaway_zh: '文章URL: https://trust.anthropic.com 评论URL: https://news.ycombinator.com/item?id=47536110
+    积分: 36 # 评论: 16'
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple will reportedly allow other AI chatbots to plug into Siri
+  why: Apple's iOS 27 update will allow users to choose the AI chatbot they want to
+    link with Siri.
+  takeaway: Apple's iOS 27 update will allow users to choose the AI chatbot they want
+    to link with Siri. That's according to a report from Bloomberg's Mark Gurman,
+    who says third-party chatbots downloaded from the App Store, like Google's Gemini
+    or Anthropic's Claude, will be able to fetch replies for Siri - similar to how
+    the […]
+  prompt: ''
+  url: https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27
+  source: The Verge
+  published_utc: '2026-03-26T21:31:27+00:00'
+  title_zh: 苹果据悉将允许第三方AI聊天机器人接入Siri
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Spotify seeks $300M from Anna's Archive, which ignores all court proceedings
+  why: Even with court orders, music firms struggle to eliminate notorious shadow
+    library.
+  takeaway: Even with court orders, music firms struggle to eliminate notorious shadow
+    library.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/03/spotify-lawsuit-tries-to-kick-annas-archive-off-the-web-without-much-success/
+  source: Ars Technica
+  published_utc: '2026-03-26T21:27:16+00:00'
+  title_zh: Spotify向Anna's Archive索赔3亿美元，后者拒不出庭
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: 'Internet Yiff Machine: We hacked 93GB of "anonymous" crime tips'
+  why: Ultra-sensitive data may have been hacked.
+  takeaway: Ultra-sensitive data may have been hacked.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/03/internet-yiff-machine-we-hacked-93gb-of-anonymous-crime-tips/
+  source: Ars Technica
+  published_utc: '2026-03-26T21:04:31+00:00'
+  title_zh: 网络荤段子机：我们破解了93GB'匿名'犯罪举报数据
+  why_zh: 超敏感数据可能已被黑客窃取。
+  takeaway_zh: 超敏感数据可能已被黑客窃取。
+  prompt_zh: ''
+- category: Tech industry
+  title: Anker’s wireless charging pad offers Qi2 speeds for $15
+  why: I’ve probably saved minutes of my life by using a wireless charging puck.
+  takeaway: I’ve probably saved minutes of my life by using a wireless charging puck.
+    Minutes! More valuable than that, I’ve saved myself from bending over numerous
+    times to pick up my USB-C cable that somehow always ends up on the floor. Those
+    with magnet-equipped phones (like the iPhone 12 or newer, or a Google Pixel 10
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/901836/anker-qi2-wireless-charging-iphone-magsafe-amazon-big-spring-sale-2026-deal
+  source: The Verge
+  published_utc: '2026-03-26T21:00:00+00:00'
+  title_zh: 安克15美元无线充电板支持Qi2标准速率
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Fio: 3D World editor/game engine – inspired by Radiant and Hammer'
+  why: A liminal brush-based CSG editor and game engine with unified (forward) renderer
+    inspired by Radiant and Worldcraft/Hammer Compact and ligh…
+  takeaway: 'A liminal brush-based CSG editor and game engine with unified (forward)
+    renderer inspired by Radiant and Worldcraft/Hammer Compact and lightweight (target:
+    Snapdragon 8CX, OpenGL 3.3) Real-time lighting with stencil shadows without the
+    need for pre-baked compilation Comments URL: https://news.ycombinator.com/item?id=47535626
+    Points: 34 # Comments: 3'
+  prompt: ''
+  url: https://github.com/ViciousSquid/Fio
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T20:58:04+00:00'
+  title_zh: '展示HN: Fio: 受Radiant和Hammer启发的3D世界编辑器/游戏引擎'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple’s AI Playlist Playground is bad at music
+  why: 'Apple Music: "What do you want to hear?" Me: "Atmospheric instrumental black
+    metal to write to." Apple Music: "Here''s three metal songs wit…'
+  takeaway: 'Apple Music: "What do you want to hear?" Me: "Atmospheric instrumental
+    black metal to write to." Apple Music: "Here''s three metal songs with vocals,
+    a field recording, an ambient electronic track, and a piece of doom jazz." I am
+    skeptical of AI''s ability to serve up the music I want to begin with, but even
+    […]'
+  prompt: ''
+  url: https://www.theverge.com/report/902005/apple-ai-playlist-playground-bad-at-music
+  source: The Verge
+  published_utc: '2026-03-26T20:51:31+00:00'
+  title_zh: 苹果AI播放列表工坊音乐生成功能表现欠佳
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: As RFK Jr.’s anti-vaccine ways turn toxic to GOP, CDC director is hard to
+    find
+  why: Wednesday was the deadline to nominate a new director.
+  takeaway: Wednesday was the deadline to nominate a new director.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/03/as-rfk-jr-s-anti-vaccine-ways-turn-toxic-to-gop-cdc-director-is-hard-to-find/
+  source: Ars Technica
+  published_utc: '2026-03-26T20:46:09+00:00'
+  title_zh: RFK Jr.反疫苗立场危及共和党，CDC主任踪迹成谜
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Mastodon is making its decentralized social network easier to use with its
+    latest revamp
+  why: Mastodon is redesigning user profiles to simplify the experience and better
+    appeal to mainstream users and organizations.
+  takeaway: Mastodon is redesigning user profiles to simplify the experience and better
+    appeal to mainstream users and organizations.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/mastodon-is-making-its-decentralized-social-network-easier-to-use-with-its-latest-revamp/
+  source: TechCrunch
+  published_utc: '2026-03-26T20:42:50+00:00'
+  title_zh: Mastodon最新改版提升去中心化社交网络易用性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Netflix confirms it’s raising prices again
+  why: The standard plan without ads now costs $19.99 per month, a $2 increase from
+    the previous $17.99 subscription fee, while the premium plan i…
+  takeaway: The standard plan without ads now costs $19.99 per month, a $2 increase
+    from the previous $17.99 subscription fee, while the premium plan is also going
+    up by $2 and will now cost $26.99 per month.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/netflix-confirms-its-raising-prices-again/
+  source: TechCrunch
+  published_utc: '2026-03-26T20:39:17+00:00'
+  title_zh: Netflix确认再次上调订阅价格
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Netflix raises prices for every subscription tier by up to 12.5 percent
+  why: Netflix last raised prices in January 2025.
+  takeaway: Netflix last raised prices in January 2025.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/03/netflix-increases-prices-for-all-plans-by-up-to-2-per-month/
+  source: Ars Technica
+  published_utc: '2026-03-26T20:30:48+00:00'
+  title_zh: Netflix全面涨价，最高涨幅达12.5%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Using FireWire on a Raspberry Pi
+  why: 'Article URL: https://www.jeffgeerling.com/blog/2026/firewire-on-a-raspberry-pi/
+    Comments URL: https://news.ycombinator.com/item?id=47535249…'
+  takeaway: 'Article URL: https://www.jeffgeerling.com/blog/2026/firewire-on-a-raspberry-pi/
+    Comments URL: https://news.ycombinator.com/item?id=47535249 Points: 54 # Comments:
+    26'
+  prompt: ''
+  url: https://www.jeffgeerling.com/blog/2026/firewire-on-a-raspberry-pi/
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T20:23:10+00:00'
+  title_zh: 在树莓派上使用FireWire接口
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Apple gets full Gemini access and uses distillation to build lightweight
+    on-device AI
+  why: Apple taps into Google's Gemini to distill smaller AI models for Siri and its
+    devices.
+  takeaway: Apple taps into Google's Gemini to distill smaller AI models for Siri
+    and its devices. In short, it's paying for what Chinese AI companies allegedly
+    do in secret. The article Apple gets full Gemini access and uses distillation
+    to build lightweight on-device AI appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/apple-gets-full-gemini-access-and-uses-distillation-to-build-lightweight-on-device-ai/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T19:54:12+00:00'
+  title_zh: 苹果获Gemini完整访问权并通过蒸馏技术开发轻量级端侧AI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We haven't seen the worst of what gambling and prediction markets will do
+  why: 'Article URL: https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
+    Comments URL: https://news.ycombinator.com/item?id=47534848 P…'
+  takeaway: 'Article URL: https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
+    Comments URL: https://news.ycombinator.com/item?id=47534848 Points: 548 # Comments:
+    392'
+  prompt: ''
+  url: https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T19:48:05+00:00'
+  title_zh: 赌博和预测市场的潜在危害尚未完全显现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How much precision can you squeeze out of a table?
+  why: 'Article URL: https://www.johndcook.com/blog/2026/03/26/table-precision/ Comments
+    URL: https://news.ycombinator.com/item?id=47534837 Points:…'
+  takeaway: 'Article URL: https://www.johndcook.com/blog/2026/03/26/table-precision/
+    Comments URL: https://news.ycombinator.com/item?id=47534837 Points: 44 # Comments:
+    4'
+  prompt: ''
+  url: https://www.johndcook.com/blog/2026/03/26/table-precision/
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T19:47:01+00:00'
+  title_zh: 一张桌子能榨取出多高的精度？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: CERN to host a new phase of Open Research Europe
+  why: 'Article URL: https://home.cern/news/news/cern/cern-host-europes-flagship-open-access-publishing-platform
+    Comments URL: https://news.ycombin…'
+  takeaway: 'Article URL: https://home.cern/news/news/cern/cern-host-europes-flagship-open-access-publishing-platform
+    Comments URL: https://news.ycombinator.com/item?id=47534629 Points: 193 # Comments:
+    16'
+  prompt: ''
+  url: https://home.cern/news/news/cern/cern-host-europes-flagship-open-access-publishing-platform
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T19:30:35+00:00'
+  title_zh: 欧洲核子研究中心将启动开放研究欧洲新阶段
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 16 of the most interesting startups from YC W26 Demo Day
+  why: From redirecting doomscrolling to training humanoid robots, these 16 startups
+    stood out as the most interesting ones from an overflowing YC…
+  takeaway: From redirecting doomscrolling to training humanoid robots, these 16 startups
+    stood out as the most interesting ones from an overflowing YC cohort.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/16-of-the-most-interesting-startups-from-yc-w26-demo-day/
+  source: TechCrunch
+  published_utc: '2026-03-26T19:30:00+00:00'
+  title_zh: YC W26演示日最值得关注的16家初创公司
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Streaming keeps getting more expensive: all the latest price hikes'
+  why: Death.
+  takeaway: Death. Taxes. All your streaming services getting a little more expensive
+    all the time. These are the new certainties in life, it seems. Netflix has raised
+    the cost of its subscription repeatedly in recent years. Disney Plus, Prime Video,
+    HBO Max, Paramount Plus, Peacock — practically any service you can name — charges
+    more per […]
+  prompt: ''
+  url: https://www.theverge.com/23901586/streaming-service-prices-netflix-disney-hulu-peacock-max
+  source: The Verge
+  published_utc: '2026-03-26T19:13:26+00:00'
+  title_zh: 流媒体服务价格持续攀升：最新涨价信息汇总
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Translate’s real-time headphone translations feature expands to iOS
+    and more countries
+  why: The real-time headphone translations experience keeps each speaker’s tone,
+    emphasis, and cadence intact, so it’s easier to follow the conve…
+  takeaway: The real-time headphone translations experience keeps each speaker’s tone,
+    emphasis, and cadence intact, so it’s easier to follow the conversation and tell
+    who’s saying what.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/google-translates-real-time-headphone-translations-feature-expands-to-ios-and-more-countries/
+  source: TechCrunch
+  published_utc: '2026-03-26T19:11:52+00:00'
+  title_zh: 谷歌翻译实时耳机翻译功能扩展至iOS及更多国家
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'You''ve got $20,000 to spend on an EV: Here are some options'
+  why: From Audis to Teslas, there's a lot available in this price range.
+  takeaway: From Audis to Teslas, there's a lot available in this price range.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/03/youve-got-20000-to-spend-on-an-ev-here-are-some-options/
+  source: Ars Technica
+  published_utc: '2026-03-26T19:06:12+00:00'
+  title_zh: 2万美元预算电动车选购指南
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Turbolite – a SQLite VFS serving sub-250ms cold JOIN queries from
+    S3'
+  why: I built a SQLite VFS in Rust that serves cold queries directly from S3 with
+    sub-second performance, and often much faster.
+  takeaway: I built a SQLite VFS in Rust that serves cold queries directly from S3
+    with sub-second performance, and often much faster. It’s called turbolite. It
+    is experimental, buggy, and may corrupt data. I would not trust it with anything
+    important yet. I wanted to explore whether object storage has gotten fast enough
+    to support embedded databases over cloud storage…
+  prompt: ''
+  url: https://github.com/russellromney/turbolite
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T18:58:19+00:00'
+  title_zh: '展示HN: Turbolite——SQLite VFS实现，从S3提供低于250毫秒的冷JOIN查询'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: John Bradley, author of xv, has died
+  why: 'Article URL: https://voxday.net/2026/03/25/rip-john-bradley/ Comments URL:
+    https://news.ycombinator.com/item?id=47534086 Points: 216 # Comm…'
+  takeaway: 'Article URL: https://voxday.net/2026/03/25/rip-john-bradley/ Comments
+    URL: https://news.ycombinator.com/item?id=47534086 Points: 216 # Comments: 68'
+  prompt: ''
+  url: https://voxday.net/2026/03/25/rip-john-bradley/
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T18:38:50+00:00'
+  title_zh: xv图像查看器作者John Bradley逝世
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'OpenAI abandons yet another side quest: ChatGPT’s erotic mode'
+  why: It's only the latest of several side projects that the AI startup has ditched
+    over the past week.
+  takeaway: It's only the latest of several side projects that the AI startup has
+    ditched over the past week.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode/
+  source: TechCrunch
+  published_utc: '2026-03-26T18:34:02+00:00'
+  title_zh: OpenAI再次放弃支线任务：停用ChatGPT情色模式
+  why_zh: 这只是这家AI初创公司过去一周放弃的几个副项目中的最新一个。
+  takeaway_zh: 这只是这家AI初创公司过去一周放弃的几个副项目中的最新一个。
+  prompt_zh: ''
+- category: AI frontier
+  title: 'OpenAI and Anthropic before the IPO: Different balance sheets make comparison
+    difficult'
+  why: OpenAI and Anthropic are both growing fast, but their revenue figures are reportedly
+    hard to compare because each company accounts for clou…
+  takeaway: 'OpenAI and Anthropic are both growing fast, but their revenue figures
+    are reportedly hard to compare because each company accounts for cloud partnerships
+    differently. The article OpenAI and Anthropic before the IPO: Different balance
+    sheets make comparison difficult appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/openai-and-anthropic-before-the-ipo-different-balance-sheets-make-comparison-difficult/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T18:26:54+00:00'
+  title_zh: OpenAI与Anthropic上市前对比：财务报表差异使评估困难
+  why_zh: OpenAI和Anthropic都在快速增长，但据报道，由于两家公司对云合作伙伴关系的会计处理方式不同，它们的收入数据难以比较……
+  takeaway_zh: OpenAI和Anthropic都在快速增长，但据报道，由于两家公司对云合作伙伴关系的会计处理方式不同，它们的收入数据难以比较。文章《OpenAI和Anthropic在IPO前：不同的资产负债表使比较变得困难》首次发表于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: Data centers get ready — the Senate wants to see your power bills
+  why: Senators Josh Hawley and Elizabeth Warren want the Energy Information Administration
+    to gather more details about how data centers use powe…
+  takeaway: Senators Josh Hawley and Elizabeth Warren want the Energy Information
+    Administration to gather more details about how data centers use power — and how
+    that affects the grid.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/data-centers-get-ready-the-senate-wants-to-see-your-power-bills/
+  source: TechCrunch
+  published_utc: '2026-03-26T18:23:31+00:00'
+  title_zh: 数据中心备战——参议院要求查看用电账单
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Study: Sycophantic AI can undermine human judgment'
+  why: Subjects who interacted with AI tools were more likely to think they were right,
+    less likely to resolve conflicts.
+  takeaway: Subjects who interacted with AI tools were more likely to think they were
+    right, less likely to resolve conflicts.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/03/study-sycophantic-ai-can-undermine-human-judgment/
+  source: Ars Technica
+  published_utc: '2026-03-26T18:14:01+00:00'
+  title_zh: 研究显示：阿谀奉承的AI会削弱人类判断力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Defense startup Shield AI lands $12.7B valuation, up 140%, after US Air Force
+    deal
+  why: In one year, Shield AI's value has leaped 140%.
+  takeaway: In one year, Shield AI's value has leaped 140%. This after it won a contract
+    to be the software provider to Anduril's Fury fighter jet for the U.S. Air Force.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/defense-startup-shield-ai-lands-12-7b-valuation-up-140-after-u-s-air-force-deal/
+  source: TechCrunch
+  published_utc: '2026-03-26T18:05:51+00:00'
+  title_zh: 国防初创公司Shield AI与美国空军达成交易后估值达127亿美元，增长140%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Meet the Tech Reporters Using AI to Help Write and Edit Their Stories
+  why: Independent writers are using AI agents all throughout their reporting process.
+  takeaway: Independent writers are using AI agents all throughout their reporting
+    process. What’s the value of a human journalist, anyway?
+  prompt: ''
+  url: https://www.wired.com/story/tech-reporters-using-ai-write-edit-stories/
+  source: WIRED - AI
+  published_utc: '2026-03-26T18:00:00+00:00'
+  title_zh: 揭秘使用AI辅助撰稿的科技记者们
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The debut of Gemini 3.1 Flash Live could make it harder to know if you're
+    talking to a robot
+  why: Google's new conversational audio AI is rolling out in search, Gemini, and
+    developer tools today.
+  takeaway: Google's new conversational audio AI is rolling out in search, Gemini,
+    and developer tools today.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/03/the-debut-of-gemini-3-1-flash-live-could-make-it-harder-to-know-if-youre-talking-to-a-robot/
+  source: Ars Technica
+  published_utc: '2026-03-26T17:44:07+00:00'
+  title_zh: Gemini 3.1 Flash Live问世，人机对话更难分辨
+  why_zh: 谷歌的新对话式音频AI今天在搜索、Gemini和开发者工具中推出。
+  takeaway_zh: 谷歌的新对话式音频AI今天在搜索、Gemini和开发者工具中推出。
+  prompt_zh: ''
+- category: AI frontier
+  title: Gemini 3.1 Flash Live is Google's most natural-sounding AI voice model yet
+  why: Google's Gemini 3.1 Flash Live promises faster, more natural voice conversations.
+  takeaway: Google's Gemini 3.1 Flash Live promises faster, more natural voice conversations.
+    Developers can trade off quality for speed, and pricing stays at Gemini 2.5 levels.
+    The article Gemini 3.1 Flash Live is Google's most natural-sounding AI voice model
+    yet appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/gemini-3-1-flash-live-is-googles-most-natural-sounding-ai-voice-model-yet/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T17:35:00+00:00'
+  title_zh: Gemini 3.1 Flash Live成为谷歌迄今最自然语音AI模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: $500 GPU outperforms Claude Sonnet on coding benchmarks
+  why: 'Article URL: https://github.com/itigges22/ATLAS Comments URL: https://news.ycombinator.com/item?id=47533297
+    Points: 62 # Comments: 13'
+  takeaway: 'Article URL: https://github.com/itigges22/ATLAS Comments URL: https://news.ycombinator.com/item?id=47533297
+    Points: 62 # Comments: 13'
+  prompt: ''
+  url: https://github.com/itigges22/ATLAS
+  source: Hacker News (front page)
+  published_utc: '2026-03-26T17:31:24+00:00'
+  title_zh: 500美元GPU在编程基准测试中超越Claude Sonnet
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple made strides with iOS 26 security, but leaked hacking tools still leave
+    millions exposed to spyware attacks
+  why: Leaked hacking tools threaten the security of millions of older iPhones.
+  takeaway: Leaked hacking tools threaten the security of millions of older iPhones.
+    Cybersecurity experts weigh in.
+  prompt: ''
+  url: https://techcrunch.com/2026/03/26/apple-made-strides-with-ios-26-security-but-leaked-hacking-tools-still-leave-millions-exposed-to-spyware-attacks/
+  source: TechCrunch
+  published_utc: '2026-03-26T17:22:01+00:00'
+  title_zh: 苹果iOS 26安全升级见成效，但泄露黑客工具仍使数百万设备面临间谍软件威胁
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Google rolls out Search Live globally, turning your phone camera into a real-time
+    AI search tool
+  why: Google is rolling out "Search Live" to more than 200 countries.
+  takeaway: Google is rolling out "Search Live" to more than 200 countries. The feature
+    lets users talk to Google Search using voice and camera. The article Google rolls
+    out Search Live globally, turning your phone camera into a real-time AI search
+    tool appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/google-rolls-out-search-live-globally-turning-your-phone-camera-into-a-real-time-ai-search-tool/
+  source: The Decoder (AI)
+  published_utc: '2026-03-26T17:08:47+00:00'
+  title_zh: 谷歌全球推出实时搜索功能，将手机摄像头变为AI搜索工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

@@ -2821,6 +2821,7 @@ weeks:
   - '2026-03-24'
   - '2026-03-26'
   - '2026-03-27'
+  - '2026-03-28'
   highlights_news:
   - date: '2026-03-23'
     url: https://techcrunch.com/2026/03/22/elon-musk-unveils-chip-manufacturing-plans-for-spacex-and-tesla/
@@ -2967,6 +2968,42 @@ weeks:
     category: AI frontier
     source: WIRED - AI
     published_utc: '2026-03-26T23:33:05+00:00'
+  - date: '2026-03-28'
+    url: https://techcrunch.com/2026/03/27/european-commission-confirms-cyberattack-after-hackers-claim-data-breach/
+    title: European Commission confirms cyberattack after hackers claim data breach
+    title_zh: 欧盟委员会确认遭受网络攻击，黑客声称数据泄露
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-27T17:59:29+00:00'
+  - date: '2026-03-28'
+    url: https://arstechnica.com/ai/2026/03/openai-brings-plugins-to-codex-closing-some-of-the-gap-with-claude-code/
+    title: With new plugins feature, OpenAI officially takes Codex beyond coding
+    title_zh: 凭借新插件功能，OpenAI正式将Codex应用扩展至编码之外
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-27T21:53:45+00:00'
+  - date: '2026-03-28'
+    url: https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy
+    title: The latest in data centers, AI, and energy
+    title_zh: 数据中心、人工智能与能源领域最新动态
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-27T18:35:53+00:00'
+  - date: '2026-03-28'
+    url: https://the-decoder.com/googles-new-gemini-update-makes-it-easy-to-import-memories-from-chatgpt-and-claude/
+    title: Google's new Gemini update makes it easy to import memories from ChatGPT
+      and Claude
+    title_zh: 谷歌Gemini新更新简化了从ChatGPT和Claude导入记忆的过程
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-03-27T19:14:00+00:00'
+  - date: '2026-03-28'
+    url: https://spectrum.ieee.org/social-media-trial
+    title: Social Media Addiction Trial Should Lead to Platform Redesigns
+    title_zh: 社交媒体成瘾审判应推动平台重新设计
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-03-27T19:05:59+00:00'
   highlights_ai:
   - date: '2026-03-23'
     url: https://the-decoder.com/openai-publishes-a-prompting-playbook-that-helps-designers-get-better-frontend-results-from-gpt-5-4/
@@ -3084,3 +3121,18 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - open-webui/open-webui
     published_utc: '2026-03-27T00:26:52+00:00'
+  - date: '2026-03-28'
+    url: https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/
+    title: Anthropic leak reveals new model "Claude Mythos" with "dramatically higher
+      scores on tests" than any previous model
+    title_zh: Anthropic泄露揭示新模型"Claude Mythos"，测试分数"远超以往任何模型"
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-27T16:24:09+00:00'
+  - date: '2026-03-28'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.23
+    title: 'langchain-ai/langchain: langchain-core==1.2.23'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-03-27T23:28:27+00:00'

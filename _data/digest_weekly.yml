@@ -3136,3 +3136,82 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-03-27T23:28:27+00:00'
+- week: 2026-W14
+  start: '2026-03-30'
+  end: '2026-04-05'
+  issues:
+  - '2026-03-30'
+  highlights_news:
+  - date: '2026-03-30'
+    url: https://www.theverge.com/column/902668/apple-antitrust-app-store-war
+    title: Apple’s long, bitter App Store antitrust war
+    title_zh: 苹果公司与App Store反垄断的漫长而激烈的斗争
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-29T12:00:00+00:00'
+  - date: '2026-03-30'
+    url: https://techcrunch.com/2026/03/29/youtube-ceo-says-the-best-youtubers-will-never-leave-their-home/
+    title: YouTube CEO says the best YouTubers will ‘never leave their home’
+    title_zh: YouTube CEO称顶级YouTuber将‘足不出户’
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-29T21:17:52+00:00'
+  - date: '2026-03-30'
+    url: https://arstechnica.com/culture/2026/03/pints-meet-prop-bets-polymarkets-situation-room-pop-up-bar-in-dc/
+    title: 'Pints meet prop bets: Polymarket’s “Situation Room” pop-up bar in DC'
+    title_zh: 品脱啤酒遇上押注：Polymarket在DC开设的“Situation Room”快闪酒吧
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-29T11:35:10+00:00'
+  - date: '2026-03-30'
+    url: https://the-decoder.com/anthropic-reportedly-views-itself-as-the-antidote-to-openais-tobacco-industry-approach-to-ai/
+    title: Anthropic reportedly views itself as the antidote to OpenAI's "tobacco
+      industry" approach to AI
+    title_zh: Anthropic自视为OpenAI“烟草行业”式AI策略的解药
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-03-28T14:45:26+00:00'
+  - date: '2026-03-30'
+    url: https://www.wired.com/story/i-asked-chatgpt-500-questions-here-are-the-ads-i-saw-most-often/
+    title: I Asked ChatGPT 500 Questions. Here Are the Ads I Saw Most Often
+    title_zh: 我向ChatGPT提了500个问题，以下是出现频率最高的广告
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-03-27T10:30:00+00:00'
+  highlights_ai:
+  - date: '2026-03-30'
+    url: https://the-decoder.com/anthropics-new-data-shows-ai-skill-builds-over-time-and-that-could-widen-the-inequality-gap/
+    title: Anthropic's new data shows AI skill builds over time, and that could widen
+      the inequality gap
+    title_zh: Anthropic新数据显示AI技能随时间累积，可能加大不平等差距
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-28T09:00:09+00:00'
+  - date: '2026-03-30'
+    url: https://github.com/openai/openai-node/releases/tag/v6.33.0
+    title: 'openai/openai-node: v6.33.0'
+    title_zh: openai/openai-node：v6.33.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-03-25T22:08:36+00:00'
+  - date: '2026-03-30'
+    url: https://github.com/openai/openai-python/releases/tag/v2.30.0
+    title: 'openai/openai-python: v2.30.0'
+    title_zh: openai/openai-python：v2.30.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-03-25T22:08:18+00:00'
+  - date: '2026-03-30'
+    url: https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/
+    title: 'Gemini 3.1 Flash Live: Making audio AI more natural and reliable'
+    title_zh: Gemini 3.1 Flash实况：让音频AI更自然可靠
+    category: AI tools & model releases
+    source: Google DeepMind Blog
+    published_utc: '2026-03-26T15:23:35+00:00'
+  - date: '2026-03-30'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.1
+    title: 'langchain-ai/langchain: langchain-openrouter==0.2.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-03-30T00:54:07+00:00'

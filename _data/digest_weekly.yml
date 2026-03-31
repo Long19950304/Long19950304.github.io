@@ -3141,6 +3141,7 @@ weeks:
   end: '2026-04-05'
   issues:
   - '2026-03-30'
+  - '2026-03-31'
   highlights_news:
   - date: '2026-03-30'
     url: https://www.theverge.com/column/902668/apple-antitrust-app-store-war
@@ -3178,6 +3179,41 @@ weeks:
     category: AI frontier
     source: WIRED - AI
     published_utc: '2026-03-27T10:30:00+00:00'
+  - date: '2026-03-31'
+    url: https://www.technologyreview.com/2026/03/30/1134881/the-pentagons-culture-war-tactic-against-anthropic-has-backfired/
+    title: The Pentagon’s culture war tactic against Anthropic has backfired
+    title_zh: 五角大楼针对Anthropic的文化战争策略适得其反
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-03-30T15:42:50+00:00'
+  - date: '2026-03-31'
+    url: https://arstechnica.com/tech-policy/2026/03/meta-hopes-scotus-piracy-ruling-will-help-it-beat-lawsuit-over-torrenting-ai-data/
+    title: Authors' lucky break in court may help class action over Meta torrenting
+    title_zh: 作家群体的法庭侥幸胜诉或助推针对Meta盗版的集体诉讼
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-03-30T19:04:01+00:00'
+  - date: '2026-03-31'
+    url: https://techcrunch.com/2026/03/30/meta-starts-testing-a-premium-subscription-on-instagram/
+    title: Meta starts testing a premium subscription on Instagram
+    title_zh: Meta开始在Instagram测试付费订阅服务
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-03-30T18:10:31+00:00'
+  - date: '2026-03-31'
+    url: https://www.theverge.com/games/903885/150-million-users-later-roblox-competitor-rec-room-is-shutting-down
+    title: 150 million users later, Roblox competitor Rec Room is shutting down
+    title_zh: 坐拥1.5亿用户后 Roblox竞品Rec Room宣布关闭
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-03-31T00:29:33+00:00'
+  - date: '2026-03-31'
+    url: https://www.latent.space/p/ainews-the-last-4-jobs-in-tech
+    title: '[AINews] The Last 4 Jobs in Tech'
+    title_zh: '[AINews] 科技行业最后的4个工作岗位'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-03-31T01:04:54+00:00'
   highlights_ai:
   - date: '2026-03-30'
     url: https://the-decoder.com/anthropics-new-data-shows-ai-skill-builds-over-time-and-that-could-widen-the-inequality-gap/
@@ -3215,3 +3251,27 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-03-30T00:54:07+00:00'
+  - date: '2026-03-31'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-data-agent-query-editor/
+    title: Amazon SageMaker Data Agent is now available in the Amazon SageMaker Unified
+      Studio Query Editor
+    title_zh: Amazon SageMaker数据代理现已在Amazon SageMaker统一工作室查询编辑器中可用
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-03-30T09:30:00+00:00'
+  - date: '2026-03-31'
+    url: https://the-decoder.com/microsoft-rolls-out-copilot-cowork-more-broadly-and-lets-ai-models-check-each-others-work/
+    title: Microsoft rolls out Copilot Cowork more broadly and lets AI models check
+      each other's work
+    title_zh: 微软广泛推出Copilot Cowork，并让AI模型互相检查工作
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-03-30T16:07:14+00:00'
+  - date: '2026-03-31'
+    url: https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything
+    title: Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can
+      run on your own computer
+    title_zh: Chatterbox先生是一款（较弱的）维多利亚时代伦理训练模型，可在个人电脑上运行
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-03-30T14:28:34+00:00'

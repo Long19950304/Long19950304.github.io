@@ -14,15 +14,53 @@ Workflow:
 
 from __future__ import annotations
 
+import os
+import sys
+from pathlib import Path
+
+
+def _maybe_reexec_into_project_venv() -> None:
+    """
+    Prefer the repo-local `.venv` when it exists.
+
+    This keeps `bin/digest` reproducible even if the system Python is missing deps.
+    Set `DIGEST_NO_VENV=1` to bypass.
+    """
+
+    if os.environ.get("DIGEST_NO_VENV") == "1":
+        return
+
+    # Detect an actually-active venv (not just an exported VIRTUAL_ENV variable).
+    base_prefix = getattr(sys, "base_prefix", sys.prefix)
+    if sys.prefix != base_prefix:
+        return
+
+    repo_root = Path(__file__).resolve().parents[1]
+    venv_dir = repo_root / ".venv"
+    venv_python = venv_dir / "bin" / "python"
+    if not venv_python.exists():
+        return
+
+    # Homebrew/system Python and the venv launcher may resolve to the same underlying
+    # interpreter binary, so compare by `sys.prefix` instead of executable path.
+    try:
+        if Path(sys.prefix).resolve() == venv_dir.resolve():
+            return
+    except Exception:
+        return
+
+    os.execv(str(venv_python), [str(venv_python), *sys.argv])
+
+
+_maybe_reexec_into_project_venv()
+
 import argparse
 import datetime as dt
 import base64
 import hashlib
 import json
-import os
 import random
 import re
-import sys
 import html
 import socket
 import shutil
@@ -32,7 +70,6 @@ import gzip
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
-from pathlib import Path
 from typing import Any, Iterable
 from types import SimpleNamespace
 

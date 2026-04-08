@@ -3281,6 +3281,7 @@ weeks:
   issues:
   - '2026-04-06'
   - '2026-04-08'
+  - '2026-04-09'
   highlights_news:
   - date: '2026-04-06'
     url: https://arstechnica.com/security/2026/04/cbp-facility-codes-sure-seem-to-have-leaked-via-online-flashcards/
@@ -3356,6 +3357,43 @@ weeks:
     category: Security
     source: Krebs on Security
     published_utc: '2026-04-07T17:02:44+00:00'
+  - date: '2026-04-09'
+    url: https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/
+    title: Iran-linked hackers disrupt operations at US critical infrastructure sites
+    title_zh: 伊朗黑客扰乱美国关键基础设施站点运营
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-04-08T20:49:11+00:00'
+  - date: '2026-04-09'
+    url: https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/
+    title: AWS boss explains why investing billions in both Anthropic and OpenAI is
+      an OK conflict
+    title_zh: AWS负责人解释为何同时投资Anthropic和OpenAI并无冲突
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-08T20:09:14+00:00'
+  - date: '2026-04-09'
+    url: https://www.theverge.com/column/908880/openai-made-economic-proposals-heres-what-dc-thinks-of-them
+    title: OpenAI made economic proposals — here’s what DC thinks of them
+    title_zh: OpenAI提出经济建议——华盛顿如何看待
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-08T20:14:00+00:00'
+  - date: '2026-04-09'
+    url: https://www.wired.com/story/anthropic-appeals-court-ruling/
+    title: Conflicting Rulings Leave Anthropic in ‘Supply-Chain Risk’ Limbo
+    title_zh: 矛盾裁决令Anthropic陷入供应链风险困境
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-04-08T22:27:26+00:00'
+  - date: '2026-04-09'
+    url: https://www.latent.space/p/ainews-meta-superintelligence-labs
+    title: '[AINews] Meta Superintelligence Labs announces Muse Spark, first frontier
+      model on their completely new stack'
+    title_zh: '[AINews]Meta超级智能实验室发布Muse Spark，全新架构首款前沿模型'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-04-08T23:23:36+00:00'
   highlights_ai:
   - date: '2026-04-06'
     url: https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything
@@ -3430,3 +3468,25 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-04-07T18:26:20+00:00'
+  - date: '2026-04-09'
+    url: https://the-decoder.com/from-gpt-2-to-claude-mythos-the-return-of-ai-models-deemed-too-dangerous-to-release/
+    title: 'From GPT-2 to Claude Mythos: The return of AI models deemed ''too dangerous
+      to release'''
+    title_zh: 从GPT-2到Claude Mythos：曾被‘认为太危险而无法发布’的AI模型回归
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-08T13:00:57+00:00'
+  - date: '2026-04-09'
+    url: https://github.com/openai/openai-node/releases/tag/v6.34.0
+    title: 'openai/openai-node: v6.34.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-04-08T21:26:04+00:00'
+  - date: '2026-04-09'
+    url: https://github.com/openai/openai-python/releases/tag/v2.31.0
+    title: 'openai/openai-python: v2.31.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-04-08T21:01:00+00:00'

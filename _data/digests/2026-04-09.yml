@@ -1,0 +1,1177 @@
+date: '2026-04-09'
+title: Daily Digest - 2026-04-09
+title_zh: 每日简报 - 2026-04-09
+note: 'Today: Iran-linked hackers disrupt operations at US critical infrastru… · AWS
+  boss explains why investing billions in both Anthropic and… · AI: Anthropic Teams
+  Up With Its Rivals to Keep AI From Hackin….'
+note_zh: 今日关注：伊朗黑客扰乱美国关键基础设施站点运营；AWS负责人解释为何同时投资Anthropic和OpenAI并无冲突；AI：Anthropic与竞争对手联手防止AI入侵一切。
+items:
+- category: AI tools & model releases
+  title: Meta's new model is Muse Spark, and meta.ai chat has some interesting tools
+  why: Meta announced Muse Spark today, their first model release since Llama 4 almost
+    exactly a year ago .
+  takeaway: Meta announced Muse Spark today, their first model release since Llama
+    4 almost exactly a year ago . It's hosted, not open weights, and the API is currently
+    "a private API preview to select users", but you can try it out today on meta.ai
+    (Facebook or Instagram login required). Meta's self-reported benchmarks show it
+    competitive with Opus 4.6, Gemini 3.1 Pro…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-08T23:07:44+00:00'
+  title_zh: Meta新模型Muse Spark发布，meta.ai聊天工具新增趣味功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.3.rc.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.3.rc.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-08T21:57:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.3-stable.patch.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.3-stable.patch.3
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-08T21:53:49+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.82.6.rc.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.82.6.rc.4
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-08T21:51:12+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.2-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.2-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-08T21:38:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.34.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.34.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-04-08T21:26:04+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.31.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.31.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-04-08T21:01:00+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: bedrock-sdk: v0.28.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.28.1
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-04-08T19:50:42+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.86.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.86.1
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-04-08T19:50:36+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: SageMaker HyperPod now supports gang scheduling for distributed training
+    workloads
+  why: Amazon SageMaker HyperPod task governance now supports gang scheduling, which
+    ensures all pods required for a distributed training job are…
+  takeaway: Amazon SageMaker HyperPod task governance now supports gang scheduling,
+    which ensures all pods required for a distributed training job are ready before
+    training begins. Administrators can configure gang scheduling to prevent wasted
+    compute from partial job runs and avoid deadlocks from jobs waiting for resources.
+    Data scientists running distributed AI/ML tr…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-hyperpod-gang-scheduling/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-08T19:26:00+00:00'
+  title_zh: SageMaker HyperPod现支持分布式训练任务的组调度
+  why_zh: Amazon SageMaker HyperPod任务治理现支持群组调度，确保分布式训练任务所需的所有Pod都能…
+  takeaway_zh: 亚马逊SageMaker HyperPod任务治理现支持群组调度，可确保分布式训练任务所需所有容器就绪后才启动训练。管理员通过配置可避免部分任务运行造成的算力浪费，并防止任务因等待资源而死锁。进行分布式AI/ML训练的数据科学家...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==0.3.84'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D0.3.84
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-08T19:14:21+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Meta’s New AI Model Gives Mark Zuckerberg a Seat at the Big Kid’s Table
+  why: Muse Spark is Meta’s first model since its AI reboot, and the benchmarks suggest
+    formidable performance.
+  takeaway: Muse Spark is Meta’s first model since its AI reboot, and the benchmarks
+    suggest formidable performance.
+  prompt: ''
+  url: https://www.wired.com/story/muse-spark-meta-open-source-closed-source/
+  source: WIRED - AI
+  published_utc: '2026-04-08T18:51:09+00:00'
+  title_zh: Meta新AI模型让扎克伯格跻身巨头行列
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.28'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.28
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-08T18:19:52+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Meta's Muse Spark is its first frontier model and its first without open
+    weights
+  why: Meta Superintelligence Labs ships Muse Spark, its first frontier model and
+    Meta's first without open weights.
+  takeaway: Meta Superintelligence Labs ships Muse Spark, its first frontier model
+    and Meta's first without open weights. Independent testing shows it closing the
+    gap to OpenAI, Anthropic, and Google, but the competition isn't standing still.
+    The article Meta's Muse Spark is its first frontier model and its first without
+    open weights appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights/
+  source: The Decoder (AI)
+  published_utc: '2026-04-08T18:00:03+00:00'
+  title_zh: Meta的Muse Spark是其首个前沿模型，也是首个不公开权重的模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: aws-sdk: v0.2.5'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.2.5
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-04-08T17:05:08+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.86.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.86.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-04-08T17:05:01+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Browser adds OS-level interaction capabilities
+  why: Amazon Bedrock AgentCore Browser now supports OS-level interaction capabilities,
+    enabling automation of browser workflows that require dire…
+  takeaway: Amazon Bedrock AgentCore Browser now supports OS-level interaction capabilities,
+    enabling automation of browser workflows that require direct operating system
+    control beyond Chrome DevTools Protocol (CDP) capabilities. This enhancement addresses
+    automation scenarios where CDP alone is insufficient, such as mouse operations,
+    print dialogs, native system aler…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-browser-os-actions/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-08T17:03:00+00:00'
+  title_zh: Amazon Bedrock AgentCore浏览器新增操作系统级交互能力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon WorkSpaces Advisor now available for AI-powered troubleshooting
+  why: Amazon WorkSpaces Advisor is a new AI-powered tool that helps administrators
+    quickly troubleshoot and resolve issues with Amazon WorkSpaces…
+  takeaway: Amazon WorkSpaces Advisor is a new AI-powered tool that helps administrators
+    quickly troubleshoot and resolve issues with Amazon WorkSpaces Personal. Using
+    generative AI capabilities, it analyzes WorkSpace configurations, identifies problems,
+    and provides actionable recommendations to restore service and optimize performance.
+    WorkSpaces Advisor streamlines…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/workspaces-advisor-ai-troubleshooting/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-08T17:00:00+00:00'
+  title_zh: Amazon WorkSpaces Advisor现提供AI驱动的故障排除功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic’s New Product Aims to Handle the Hard Part of Building AI Agents
+  why: Amid rapid enterprise growth, Anthropic is trying to lower the barrier to entry
+    for businesses to build AI agents with Claude.
+  takeaway: Amid rapid enterprise growth, Anthropic is trying to lower the barrier
+    to entry for businesses to build AI agents with Claude.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-launches-claude-managed-agents/
+  source: WIRED - AI
+  published_utc: '2026-04-08T17:00:00+00:00'
+  title_zh: Anthropic的新产品旨在解决构建AI代理的难点
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.92.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.92.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-04-08T16:55:01+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Stability AI launches Brand Studio for brand-consistent image generation
+  why: 'Stability AI is going commercial: The new "Brand Studio" lets creative teams
+    generate AI visuals that match their brand identity, using cus…'
+  takeaway: 'Stability AI is going commercial: The new "Brand Studio" lets creative
+    teams generate AI visuals that match their brand identity, using custom-trained
+    models, automated production workflows, and precision image editing tools. The
+    article Stability AI launches Brand Studio for brand-consistent image generation
+    appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/stability-ai-launches-brand-studio-for-brand-consistent-image-generation/
+  source: The Decoder (AI)
+  published_utc: '2026-04-08T16:15:42+00:00'
+  title_zh: Stability AI推出Brand Studio，实现品牌一致性图像生成
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Integrate Physical AI Capabilities into Existing Apps with NVIDIA Omniverse
+    Libraries
+  why: Physical AI—AI systems that perceive, reason, and act in physically grounded
+    simulated environments—is changing how teams design and valida…
+  takeaway: Physical AI—AI systems that perceive, reason, and act in physically grounded
+    simulated environments—is changing how teams design and validate robots and...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/integrate-physical-ai-capabilities-into-existing-apps-with-nvidia-omniverse-libraries/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-08T16:00:00+00:00'
+  title_zh: 利用NVIDIA Omniverse库将物理AI功能集成至现有应用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-tests==1.1.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-tests%3D%3D1.1.6
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-08T15:18:43+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'From GPT-2 to Claude Mythos: The return of AI models deemed ''too dangerous
+    to release'''
+  why: Seven years ago, OpenAI declared its language model GPT-2 "too dangerous to
+    release." The industry rolled its eyes.
+  takeaway: 'Seven years ago, OpenAI declared its language model GPT-2 "too dangerous
+    to release." The industry rolled its eyes. Now Anthropic is repeating the move
+    with Claude Mythos Preview - but this time there''s real evidence on the table:
+    thousands of vulnerabilities in operating systems and browsers, found by an AI
+    that barely any human could review. The article F…'
+  prompt: ''
+  url: https://the-decoder.com/from-gpt-2-to-claude-mythos-the-return-of-ai-models-deemed-too-dangerous-to-release/
+  source: The Decoder (AI)
+  published_utc: '2026-04-08T13:00:57+00:00'
+  title_zh: 从GPT-2到Claude Mythos：曾被‘认为太危险而无法发布’的AI模型回归
+  why_zh: 七年前，OpenAI宣布其语言模型GPT-2“过于危险，不宜发布”。业界对此嗤之以鼻。
+  takeaway_zh: 七年前OpenAI声称GPT-2语言模型'危险到不能发布'时，业界嗤之以鼻。如今Anthropic对Claude Mythos预览版故技重施——但这次桌上摆着真实证据：由AI发现的数千个操作系统和浏览器漏洞，其数量之多已超出人力审核范畴。文章《F...》
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'microsoft/semantic-kernel: python-1.41.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/microsoft/semantic-kernel/releases/tag/python-1.41.2
+  source: GitHub Releases - microsoft/semantic-kernel
+  published_utc: '2026-04-08T06:01:14+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.5-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.5-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-08T04:31:27+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Lambda expands response streaming support to all commercial AWS Regions
+  why: AWS Lambda response streaming is now available in all commercial AWS Regions,
+    bringing full regional parity for this capability.
+  takeaway: AWS Lambda response streaming is now available in all commercial AWS Regions,
+    bringing full regional parity for this capability. Customers in newly supported
+    Regions can use the InvokeWithResponseStream API to progressively stream response
+    payloads back to clients as data becomes available. Response streaming enables
+    functions to send partial responses to c…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/aws-lambda-response-streaming/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-07T21:00:00+00:00'
+  title_zh: AWS Lambda响应流支持扩展至所有商业AWS区域
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic's Project Glasswing - restricting Claude Mythos to security researchers
+    - sounds necessary to me
+  why: Anthropic didn't release their latest model, Claude Mythos ( system card PDF
+    ), today.
+  takeaway: Anthropic didn't release their latest model, Claude Mythos ( system card
+    PDF ), today. They have instead made it available to a very restricted set of
+    preview partners under their newly announced Project Glasswing . The model is
+    a general purpose model, similar to Claude Opus 4.6, but Anthropic claim that
+    its cyber-security research abilities are strong eno…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-07T20:52:54+00:00'
+  title_zh: Anthropic的Project Glasswing——将Claude Mythos限制给安全研究人员——在我看来是必要的
+  why_zh: Anthropic今日并未发布其最新模型Claude Mythos（系统卡PDF）。
+  takeaway_zh: Anthropic今日并未公开发布最新模型Claude Mythos（系统卡PDF），而是通过新宣布的'玻璃翼项目'向极少数预览合作伙伴开放。该通用模型与Claude
+    Opus 4.6相似，但据称其网络安全研究能力足以...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Running AI Workloads on Rack-Scale Supercomputers: From Hardware to Topology-Aware
+    Scheduling'
+  why: The NVIDIA GB200 NVL72 and NVIDIA GB300 NVL72 systems, featuring NVIDIA Blackwell
+    architecture, are rack-scale supercomputers.
+  takeaway: The NVIDIA GB200 NVL72 and NVIDIA GB300 NVL72 systems, featuring NVIDIA
+    Blackwell architecture, are rack-scale supercomputers. They’re designed with 18...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/running-ai-workloads-on-rack-scale-supercomputers-from-hardware-to-topology-aware-scheduling/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-07T18:51:01+00:00'
+  title_zh: 在机架级超级计算机上运行AI工作负载：从硬件到拓扑感知调度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic Teams Up With Its Rivals to Keep AI From Hacking Everything
+  why: The AI lab's Project Glasswing will bring together Apple, Google, and more
+    than 45 other organizations.
+  takeaway: The AI lab's Project Glasswing will bring together Apple, Google, and
+    more than 45 other organizations. They'll use the new Claude Mythos Preview model
+    to test advancing AI cybersecurity capabilities.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/
+  source: WIRED - AI
+  published_utc: '2026-04-07T18:49:50+00:00'
+  title_zh: Anthropic与竞争对手联手防止AI入侵一切
+  why_zh: AI实验室的Project Glasswing将汇聚苹果、谷歌及其他45家以上组织。
+  takeaway_zh: AI实验室的'玻璃翼项目'将汇集苹果、谷歌等超过45家机构，利用全新Claude Mythos预览模型来测试前沿AI网络安全能力。
+  prompt_zh: ''
+- category: AI frontier
+  title: '[AINews] Meta Superintelligence Labs announces Muse Spark, first frontier
+    model on their completely new stack'
+  why: a quiet day lets us reflect on MSL finally shipping!
+  takeaway: a quiet day lets us reflect on MSL finally shipping!
+  prompt: ''
+  url: https://www.latent.space/p/ainews-meta-superintelligence-labs
+  source: Latent Space (AI newsletter)
+  published_utc: '2026-04-08T23:23:36+00:00'
+  title_zh: '[AINews]Meta超级智能实验室发布Muse Spark，全新架构首款前沿模型'
+  why_zh: 平静的一天让我们反思MSL终于发货了！
+  takeaway_zh: 平静的一天让我们反思MSL终于发货了！
+  prompt_zh: ''
+- category: AI frontier
+  title: Conflicting Rulings Leave Anthropic in ‘Supply-Chain Risk’ Limbo
+  why: A US appeals court ruling is at odds with a separate, lower court decision
+    from March, leaving uncertainty about if and how the US military…
+  takeaway: A US appeals court ruling is at odds with a separate, lower court decision
+    from March, leaving uncertainty about if and how the US military can use the AI
+    company's Claude model.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-appeals-court-ruling/
+  source: WIRED - AI
+  published_utc: '2026-04-08T22:27:26+00:00'
+  title_zh: 矛盾裁决令Anthropic陷入供应链风险困境
+  why_zh: 美国上诉法院的裁决与三月下级法院的判决相左，使得美军是否及如何使用AI公司的Claude模型充满不确定性。
+  takeaway_zh: 美国上诉法院的裁决与三月下级法院的判决相左，使得美军是否及如何使用AI公司的Claude模型充满不确定性。
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump admin makes sweeping request for medical records of federal workers
+  why: The unprecedented proposal would give the Trump admin access to doctors' notes.
+  takeaway: The unprecedented proposal would give the Trump admin access to doctors'
+    notes.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/trump-admin-seeks-medical-records-of-federal-workers-for-vague-reasons/
+  source: Ars Technica
+  published_utc: '2026-04-08T22:00:11+00:00'
+  title_zh: 特朗普政府广泛要求联邦员工医疗记录
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Tired of logic in useEffect, I built a class-based React state
+    manager'
+  why: 'Article URL: https://thales.me/posts/why-i-built-snapstate/ Comments URL:
+    https://news.ycombinator.com/item?id=47696760 Points: 6 # Comment…'
+  takeaway: 'Article URL: https://thales.me/posts/why-i-built-snapstate/ Comments
+    URL: https://news.ycombinator.com/item?id=47696760 Points: 6 # Comments: 2'
+  prompt: ''
+  url: https://thales.me/posts/why-i-built-snapstate/
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T21:53:36+00:00'
+  title_zh: Show HN：厌倦了useEffect中的逻辑，我构建了一个基于类的React状态管理器
+  why_zh: '文章URL: https://thales.me/posts/why-i-built-snapstate/ 评论URL: https://news.ycombinator.com/item?id=47696760
+    积分: 6 # 评论…'
+  takeaway_zh: '文章URL: https://thales.me/posts/why-i-built-snapstate/ 评论URL: https://news.ycombinator.com/item?id=47696760
+    积分: 6 # 评论: 2'
+  prompt_zh: ''
+- category: Tech industry
+  title: WireGuard VPN developer can’t ship software updates after Microsoft locks
+    account
+  why: The popular open source VPN maker is the second high-profile developer to say
+    Microsoft locked his account without notifying him and is blo…
+  takeaway: The popular open source VPN maker is the second high-profile developer
+    to say Microsoft locked his account without notifying him and is blocking their
+    ability to send software updates to users.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/wireguard-vpn-developer-cant-ship-software-updates-after-microsoft-locks-account/
+  source: TechCrunch
+  published_utc: '2026-04-08T21:50:41+00:00'
+  title_zh: WireGuard VPN开发者无法推送软件更新，因其账户被微软冻结
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Is Hormuz open yet?'
+  why: I built this because I was interested in the data.
+  takeaway: I built this because I was interested in the data. Didn't fully get it
+    to what I wanted, but thought I'd share it nonetheless. Maybe someone has better
+    data sources they could share! Turns out live ship tracking APIs are expensive
+    so I manually just copied the json from https://www.marinetraffic.com/en/ais/home/centerx:57.4/cente...
+    I'll probably have an ai…
+  prompt: ''
+  url: https://www.ishormuzopenyet.com/
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T21:33:06+00:00'
+  title_zh: Show HN：霍尔木兹海峡开放了吗？
+  why_zh: 我构建这个是因为我对数据感兴趣。
+  takeaway_zh: 我做这个纯粹是出于对数据的兴趣，虽未完全达到预期效果，但仍决定分享出来。或许有人能提供更好的数据源？实时船只追踪API昂贵得出乎意料，我只能手动从https://www.marinetraffic.com/en/ais/home/centerx:57.4/cente...复制json数据。后续可能考虑用AI处理...
+  prompt_zh: ''
+- category: Tech industry
+  title: A self-driving car in Texas hit and killed a mother duck, sparking neighborhood
+    outrage
+  why: An Avride autonomous vehicle near Austin hit the duck, facing backlash from
+    the community.
+  takeaway: An Avride autonomous vehicle near Austin hit the duck, facing backlash
+    from the community. "It didn't slow down or hesitate at all, just steamrolled
+    right through," according to a witness.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/avride-self-driving-car-austin-kills-duck-mueller/
+  source: TechCrunch
+  published_utc: '2026-04-08T21:19:07+00:00'
+  title_zh: 得克萨斯州一辆自动驾驶汽车撞死一只母鸭，引发社区居民强烈不满
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: LinkedIn scanning users' browser extensions sparks controversy and two lawsuits
+  why: LinkedIn says claims fabricated by extension maker suspended for scraping data.
+  takeaway: LinkedIn says claims fabricated by extension maker suspended for scraping
+    data.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/linkedin-scanning-users-browser-extensions-sparks-controversy-and-two-lawsuits/
+  source: Ars Technica
+  published_utc: '2026-04-08T21:08:06+00:00'
+  title_zh: LinkedIn扫描用户浏览器扩展引发争议及两起诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI agent Poke makes setting up automations as easy as sending a text
+  why: Poke brings AI agents to everyday users via text message by handling tasks
+    and automations without complex setup, apps, or technical know-h…
+  takeaway: Poke brings AI agents to everyday users via text message by handling tasks
+    and automations without complex setup, apps, or technical know-how.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/
+  source: TechCrunch
+  published_utc: '2026-04-08T21:05:13+00:00'
+  title_zh: AI智能体Poke让自动化设置变得像发送短信一样简单
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Canva doubles down on AI and marketing automation with Simtheory, Ortto acquisitions
+  why: Canva says the acquisitions add strengths in agentic AI, data infrastructure,
+    marketing automation, and customer engagement.
+  takeaway: Canva says the acquisitions add strengths in agentic AI, data infrastructure,
+    marketing automation, and customer engagement.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/canva-doubles-down-on-ai-and-marketing-automation-with-simtheory-ortto-acquisitions/
+  source: TechCrunch
+  published_utc: '2026-04-08T21:00:00+00:00'
+  title_zh: Canva通过收购Simtheory和Ortto加大在AI与营销自动化领域的投入
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Iran-linked hackers disrupt operations at US critical infrastructure sites
+  why: As the US and Israel's war has ramped up, so too have hacks on US industrial
+    sites.
+  takeaway: As the US and Israel's war has ramped up, so too have hacks on US industrial
+    sites.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/
+  source: Ars Technica
+  published_utc: '2026-04-08T20:49:11+00:00'
+  title_zh: 伊朗黑客扰乱美国关键基础设施站点运营
+  why_zh: 随着美以战争升级，美国工业设施遭受的黑客攻击也日益增多。
+  takeaway_zh: 随着美以战争升级，美国工业设施遭受的黑客攻击也日益增多。
+  prompt_zh: ''
+- category: Tech industry
+  title: John Deere to pay $99M in right-to-repair settlement
+  why: 'Article URL: https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement
+    Comments URL: https://news…'
+  takeaway: 'Article URL: https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement
+    Comments URL: https://news.ycombinator.com/item?id=47696035 Points: 108 # Comments:
+    25'
+  prompt: ''
+  url: https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T20:46:27+00:00'
+  title_zh: John Deere将支付9900万美元以解决维修权诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI made economic proposals — here’s what DC thinks of them
+  why: Happy ceasefire day and welcome to Regulator, a newsletter for Verge subscribers
+    about Big Tech's rocky journey through the world of politi…
+  takeaway: Happy ceasefire day and welcome to Regulator, a newsletter for Verge subscribers
+    about Big Tech's rocky journey through the world of politics. If you're not a
+    subscriber yet, you can do so here, but my only request is that you sign up before
+    Donald Trump decides to revisit his previous threats toward Iran and kickstart
+    […]
+  prompt: ''
+  url: https://www.theverge.com/column/908880/openai-made-economic-proposals-heres-what-dc-thinks-of-them
+  source: The Verge
+  published_utc: '2026-04-08T20:14:00+00:00'
+  title_zh: OpenAI提出经济建议——华盛顿如何看待
+  why_zh: 停火日快乐，欢迎阅读《Regulator》，这是为Verge订阅者提供的关于科技巨头在政治世界中坎坷历程的新闻简报…
+  takeaway_zh: 停火日快乐，欢迎阅读《Regulator》，这是为Verge订阅者提供的关于科技巨头在政治世界中坎坷历程的新闻简报。若您尚未订阅，可在此注册，但我唯一的请求是您在唐纳德·特朗普决定重提对伊朗的威胁并引发…之前完成订阅。
+  prompt_zh: ''
+- category: Tech industry
+  title: AWS boss explains why investing billions in both Anthropic and OpenAI is
+    an OK conflict
+  why: AWS has an ingrained culture of handling competition, he explained, because
+    the cloud giant also competes with its partners.
+  takeaway: AWS has an ingrained culture of handling competition, he explained, because
+    the cloud giant also competes with its partners.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/
+  source: TechCrunch
+  published_utc: '2026-04-08T20:09:14+00:00'
+  title_zh: AWS负责人解释为何同时投资Anthropic和OpenAI并无冲突
+  why_zh: 他解释道，AWS具备应对竞争的深厚文化，因为这家云巨头也在与合作伙伴竞争。
+  takeaway_zh: 他解释道，AWS具备应对竞争的深厚文化，因为这家云巨头也在与合作伙伴竞争。
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta's Superintelligence Lab unveils its first public model, Muse Spark
+  why: Meta touts strong benchmarks but admits "performance gaps" in agentic and coding
+    systems.
+  takeaway: Meta touts strong benchmarks but admits "performance gaps" in agentic
+    and coding systems.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/metas-superintelligence-lab-unveils-its-first-public-model-muse-spark/
+  source: Ars Technica
+  published_utc: '2026-04-08T19:59:10+00:00'
+  title_zh: Meta超级智能实验室首次公开其模型Muse Spark
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon to end support for older Kindle devices
+  why: Amazon told Kindle owners this week that it's ending support for all e-readers
+    released in 2012 or earlier, making them virtually unable to…
+  takeaway: Amazon told Kindle owners this week that it's ending support for all e-readers
+    released in 2012 or earlier, making them virtually unable to load any new content.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/amazon-to-end-support-for-older-kindle-devices-2012/
+  source: TechCrunch
+  published_utc: '2026-04-08T19:56:16+00:00'
+  title_zh: 亚马逊将终止对旧款Kindle设备的支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I finally get the iPhone Air
+  why: 'I saw a lot of weird phones at Mobile World Congress last month: robot phones,
+    cameras disguised as phones, phones for dogs.'
+  takeaway: 'I saw a lot of weird phones at Mobile World Congress last month: robot
+    phones, cameras disguised as phones, phones for dogs. But the one that caught
+    me most off guard was the one my friend (and Verge alum) Sam Byford brought to
+    dinner: an iPhone Air. "Ha!" I said. "You actually use that thing?" […]'
+  prompt: ''
+  url: https://www.theverge.com/gadgets/908788/iphone-air-magsafe-wallet-battery-modular
+  source: The Verge
+  published_utc: '2026-04-08T19:45:00+00:00'
+  title_zh: 我终于入手了iPhone Air
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The AI RAM shortage is also driving up SSD prices
+  why: I thought the WD Black SN850X 2TB SSD in my gaming PC was pricey when I bought
+    it for $173 in 2024, but now that same SSD costs $649, more…
+  takeaway: I thought the WD Black SN850X 2TB SSD in my gaming PC was pricey when
+    I bought it for $173 in 2024, but now that same SSD costs $649, more than what
+    I paid for most of the parts in my PC combined. The price on my WD Black drive
+    nearly quadrupled since November 2025, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/908916/ssd-storage-shortages-price-increases
+  source: The Verge
+  published_utc: '2026-04-08T19:32:49+00:00'
+  title_zh: AI内存短缺同时推高SSD价格
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'USB for Software Developers: An introduction to writing userspace USB drivers'
+  why: 'Article URL: https://werwolv.net/posts/usb_for_sw_devs/ Comments URL: https://news.ycombinator.com/item?id=47695012
+    Points: 129 # Comments:…'
+  takeaway: 'Article URL: https://werwolv.net/posts/usb_for_sw_devs/ Comments URL:
+    https://news.ycombinator.com/item?id=47695012 Points: 129 # Comments: 21'
+  prompt: ''
+  url: https://werwolv.net/posts/usb_for_sw_devs/
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T19:23:34+00:00'
+  title_zh: 面向软件开发者的USB：编写用户空间USB驱动程序的入门指南
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Expanding Swift's IDE Support
+  why: 'Article URL: https://swift.org/blog/expanding-swift-ide-support/ Comments
+    URL: https://news.ycombinator.com/item?id=47694983 Points: 63 # C…'
+  takeaway: 'Article URL: https://swift.org/blog/expanding-swift-ide-support/ Comments
+    URL: https://news.ycombinator.com/item?id=47694983 Points: 63 # Comments: 32'
+  prompt: ''
+  url: https://swift.org/blog/expanding-swift-ide-support/
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T19:21:41+00:00'
+  title_zh: 扩展Swift的IDE支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How our digital devices are putting our right to privacy at risk
+  why: Law professor Andrew Guthrie Ferguson chats with Ars about his new book, Your
+    Data Will Be Used Against You .
+  takeaway: Law professor Andrew Guthrie Ferguson chats with Ars about his new book,
+    Your Data Will Be Used Against You .
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/04/how-our-digital-devices-are-putting-our-right-to-privacy-at-risk/
+  source: Ars Technica
+  published_utc: '2026-04-08T19:17:30+00:00'
+  title_zh: 数字设备如何威胁我们的隐私权
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta debuts the Muse Spark model in a ‘ground-up overhaul’ of its AI
+  why: This is the first model Meta has released under its Superintelligence Labs,
+    led by former Scale AI CEO Alexandr Wang.
+  takeaway: This is the first model Meta has released under its Superintelligence
+    Labs, led by former Scale AI CEO Alexandr Wang.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/
+  source: TechCrunch
+  published_utc: '2026-04-08T18:53:19+00:00'
+  title_zh: Meta在AI全面改革中推出Muse Spark模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hack-for-hire group caught targeting Android devices and iCloud backups
+  why: Security researchers exposed a spying campaign by a hack-for-hire group that
+    used Android spyware and phishing to steal iCloud credentials…
+  takeaway: Security researchers exposed a spying campaign by a hack-for-hire group
+    that used Android spyware and phishing to steal iCloud credentials and hack victims’
+    devices.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/hack-for-hire-group-caught-targeting-android-devices-and-icloud-backups/
+  source: TechCrunch
+  published_utc: '2026-04-08T18:51:20+00:00'
+  title_zh: 雇佣黑客组织被发现针对Android设备和iCloud备份
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Motorola suddenly raises budget phone prices up to 50%—you can probably thank
+    AI
+  why: Motorola's budget phones are much less budget-friendly today.
+  takeaway: Motorola's budget phones are much less budget-friendly today.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/motorolas-budget-phones-are-now-up-to-50-more-expensive-as-memory-shortage-drags-on/
+  source: Ars Technica
+  published_utc: '2026-04-08T18:39:08+00:00'
+  title_zh: 摩托罗拉突然将预算手机价格上调高达50%——可能归功于AI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tubi is the first streamer to launch a native app within ChatGPT
+  why: Tubi becomes the first streaming service to offer an app integration within
+    ChatGPT, the AI chatbot that millions of users turn to for answ…
+  takeaway: Tubi becomes the first streaming service to offer an app integration within
+    ChatGPT, the AI chatbot that millions of users turn to for answers.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/
+  source: TechCrunch
+  published_utc: '2026-04-08T18:23:06+00:00'
+  title_zh: Tubi成为首个在ChatGPT内推出原生应用的流媒体平台
+  why_zh: Tubi成为首个在ChatGPT内提供应用集成的流媒体服务，ChatGPT是数百万用户寻求答案的AI聊天机器人…
+  takeaway_zh: Tubi成为首个在ChatGPT平台内提供应用集成的流媒体服务，这款拥有数百万用户的AI聊天机器人现在能直接调用其功能。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Neo Effect: How Apple&#8217;s cheapest Mac is changing the PC game'
+  why: The MacBook Neo is disrupting the laptop space and putting Apple into the conversation
+    as a value option like it’s never been before.
+  takeaway: The MacBook Neo is disrupting the laptop space and putting Apple into
+    the conversation as a value option like it’s never been before. With a price starting
+    at $599 (or $499 for students and teachers), the colorful laptop’s A18 Pro chip
+    may be stolen from older iPads and iPhones, but it offers more than enough […]
+  prompt: ''
+  url: https://www.theverge.com/tech/904705/apple-macbook-neo-news-reviews-mods
+  source: The Verge
+  published_utc: '2026-04-08T18:21:50+00:00'
+  title_zh: 新Mac效应：苹果最便宜电脑如何改变PC行业格局
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Orange Juice – Small UX improvements that make HN easier to read'
+  why: 'Article URL: http://oj-hn.com/ Comments URL: https://news.ycombinator.com/item?id=47694036
+    Points: 71 # Comments: 96'
+  takeaway: 'Article URL: http://oj-hn.com/ Comments URL: https://news.ycombinator.com/item?id=47694036
+    Points: 71 # Comments: 96'
+  prompt: ''
+  url: http://oj-hn.com/
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T18:08:52+00:00'
+  title_zh: Show HN：橙汁——让HN更易读的小幅UX改进
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: The US Army Is Building Its Own Chatbot for Combat
+  why: The AI system, trained on real military data, is meant to give soldiers mission-critical
+    information.
+  takeaway: The AI system, trained on real military data, is meant to give soldiers
+    mission-critical information.
+  prompt: ''
+  url: https://www.wired.com/story/army-developing-ai-system-victor-chatbot-soldiers/
+  source: WIRED - AI
+  published_utc: '2026-04-08T18:00:00+00:00'
+  title_zh: 美国陆军正自主研发作战用聊天机器人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I've been waiting over a month for Anthropic to respond to my billing issue
+  why: 'Article URL: https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/
+    Comments URL: https://news.ycombinator.com…'
+  takeaway: 'Article URL: https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/
+    Comments URL: https://news.ycombinator.com/item?id=47693679 Points: 235 # Comments:
+    121'
+  prompt: ''
+  url: https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T17:44:25+00:00'
+  title_zh: 我已等待Anthropic处理我的账单问题超过一个月
+  why_zh: '文章URL: https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/
+    评论URL: https://news.ycombinator.com…'
+  takeaway_zh: '文章URL: https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/
+    评论URL: https://news.ycombinator.com/item?id=47693679 积分: 235 # 评论: 121'
+  prompt_zh: ''
+- category: Tech industry
+  title: To beat Altman in court, Musk offers to give all damages to OpenAI nonprofit
+  why: Musk won’t seek a “single dollar” in OpenAI suit after asking to pocket up
+    to $134 billion.
+  takeaway: Musk won’t seek a “single dollar” in OpenAI suit after asking to pocket
+    up to $134 billion.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/to-beat-altman-in-court-musk-offers-to-give-all-damages-to-open-ai-nonprofit/
+  source: Ars Technica
+  published_utc: '2026-04-08T17:37:06+00:00'
+  title_zh: 为在法庭上击败Altman，马斯克提议将所有赔偿金捐给OpenAI非营利组织
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tankers passing through Strait of Hormuz will have to pay cryptocurrency
+    toll
+  why: Any tanker passing must reveal its cargo so Iran can determine transit fee
+    amount.
+  takeaway: Any tanker passing must reveal its cargo so Iran can determine transit
+    fee amount.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/iran-demands-cryptocurrency-toll-from-tankers-passing-through-strait-of-hormuz/
+  source: Ars Technica
+  published_utc: '2026-04-08T17:25:34+00:00'
+  title_zh: 通过霍尔木兹海峡的油轮需支付加密货币通行费
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Volkswagen begins testing its self-driving microbuses in Los Angeles ahead
+    of launch with Uber
+  why: Volkswagen subsidiary MOIA America still has a long and winding regulatory
+    road before it can launch a commercial robotaxi service.
+  takeaway: Volkswagen subsidiary MOIA America still has a long and winding regulatory
+    road before it can launch a commercial robotaxi service.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/volkswagen-moia-uber-los-angeles-testing-self-driving-microbuses-id-buzz/
+  source: TechCrunch
+  published_utc: '2026-04-08T17:19:16+00:00'
+  title_zh: 大众汽车开始在洛杉矶测试其自动驾驶微型巴士，拟与优步合作推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: 5 Burning Questions About Elon Musk’s Terafab Chip Partnership with Intel
+  why: Intel’s role in Elon Musk’s ambitious chip venture is still murky, raising
+    questions about what the partnership actually entails—and whethe…
+  takeaway: Intel’s role in Elon Musk’s ambitious chip venture is still murky, raising
+    questions about what the partnership actually entails—and whether it can work
+    at all.
+  prompt: ''
+  url: https://www.wired.com/story/5-burning-questions-about-elon-musks-terafab-chip-partnership-with-intel/
+  source: WIRED - AI
+  published_utc: '2026-04-08T17:13:33+00:00'
+  title_zh: 关于马斯克与英特尔Terafab芯片合作的五大关键疑问
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Understanding the Kalman filter with a simple radar example
+  why: 'Article URL: https://kalmanfilter.net Comments URL: https://news.ycombinator.com/item?id=47693153
+    Points: 179 # Comments: 28'
+  takeaway: 'Article URL: https://kalmanfilter.net Comments URL: https://news.ycombinator.com/item?id=47693153
+    Points: 179 # Comments: 28'
+  prompt: ''
+  url: https://kalmanfilter.net
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T17:11:46+00:00'
+  title_zh: 通过简单雷达示例理解卡尔曼滤波器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft’s executive shake-up continues as developer division chief resigns
+  why: Microsoft is losing another veteran executive.
+  takeaway: Microsoft is losing another veteran executive. Julia Liuson, head of Microsoft's
+    developer division (DevDiv), is resigning from the software giant after 34 years.
+    Liuson spent the past 12 years leading Microsoft's developer business, during
+    a period Microsoft focused more on open source projects and acquired GitHub for
+    $7.5 billion. Liuson will continue as…
+  prompt: ''
+  url: https://www.theverge.com/tech/908793/microsoft-devdiv-julia-liuson-resignation
+  source: The Verge
+  published_utc: '2026-04-08T16:56:43+00:00'
+  title_zh: 微软高层持续震荡，开发者部门负责人宣布离职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: These are the countries moving to ban social media for children
+  why: Australia was the first country to issue a ban in late 2025, aiming to reduce
+    the pressures and risks that young users may face on social m…
+  takeaway: Australia was the first country to issue a ban in late 2025, aiming to
+    reduce the pressures and risks that young users may face on social media, including
+    cyberbullying, social media addiction, and exposure to predators.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/social-media-ban-children-countries-list/
+  source: TechCrunch
+  published_utc: '2026-04-08T16:30:53+00:00'
+  title_zh: 这些国家正采取措施禁止儿童使用社交媒体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta is reentering the AI race with a new model called Muse Spark
+  why: Meta Superintelligence Labs is launching its first model since Mark Zuckerberg
+    spent billions overhauling the company's AI efforts.
+  takeaway: Meta Superintelligence Labs is launching its first model since Mark Zuckerberg
+    spent billions overhauling the company's AI efforts. Called Muse Spark, the model
+    now powers the Meta AI app and the Meta AI website in the US, per the company's
+    announcement. In the coming weeks, Meta says, it will appear in WhatsApp, Instagram,
+    Facebook, Messenger, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/908769/meta-muse-spark-ai-model-launch-rollout
+  source: The Verge
+  published_utc: '2026-04-08T16:12:54+00:00'
+  title_zh: Meta携新模型Muse Spark重返AI竞赛
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: British cryptographer Adam Back denies NYT report that he is Bitcoin creator
+    Satoshi Nakamoto
+  why: Back, a long-time researcher and pioneer in cryptography, denies the allegation
+    that he is the secretive creator of Bitcoin.
+  takeaway: Back, a long-time researcher and pioneer in cryptography, denies the allegation
+    that he is the secretive creator of Bitcoin.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/british-cryptographer-adam-back-denies-nyt-report-that-he-is-bitcoin-creator-satoshi-nakamoto/
+  source: TechCrunch
+  published_utc: '2026-04-08T16:03:21+00:00'
+  title_zh: 英国密码学家亚当·巴克否认《纽约时报》关于他是比特币创始人中本聪的报道
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: One in four quotes in AI chatbot responses comes from journalism, Muckrack
+    study finds
+  why: Where do ChatGPT, Claude, and Gemini get their information?
+  takeaway: Where do ChatGPT, Claude, and Gemini get their information? An analysis
+    of 15 million AI citations shows that one in four source references traces back
+    to journalism. Trade publications and specialist journalists benefit most, while
+    general news outlets tend to rank lower. The article One in four quotes in AI
+    chatbot responses comes from journalism, Muckrac…
+  prompt: ''
+  url: https://the-decoder.com/one-in-four-quotes-in-ai-chatbot-responses-comes-from-journalism-muckrack-study-finds/
+  source: The Decoder (AI)
+  published_utc: '2026-04-08T16:01:47+00:00'
+  title_zh: Muckrack研究发现：AI聊天应答中四分之一引述来自新闻内容
+  why_zh: ChatGPT、Claude和Gemini的信息来源是哪里？
+  takeaway_zh: ChatGPT、Claude和Gemini的信息来源是哪里？一项针对1500万次AI引用的分析显示，四分之一的来源可追溯至新闻业。行业出版物和专业记者受益最多，而综合新闻媒体排名往往较低。文章《AI聊天机器人回应中四分之一的引用来自新闻业》，Muckrac…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Muse Spark: Scaling towards personal superintelligence'
+  why: 'https://meta.ai/ Comments URL: https://news.ycombinator.com/item?id=47692043
+    Points: 234 # Comments: 272'
+  takeaway: 'https://meta.ai/ Comments URL: https://news.ycombinator.com/item?id=47692043
+    Points: 234 # Comments: 272'
+  prompt: ''
+  url: https://ai.meta.com/blog/introducing-muse-spark-msl/?_fb_noscript=1
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T16:01:32+00:00'
+  title_zh: Muse Spark：迈向个人超级智能的扩展
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Astropad’s Workbench reimagines remote desktop for AI agents, not IT support
+  why: Astropad’s Workbench lets users remotely monitor and control AI agents on Mac
+    Minis from iPhone or iPad, with low-latency streaming and mob…
+  takeaway: Astropad’s Workbench lets users remotely monitor and control AI agents
+    on Mac Minis from iPhone or iPad, with low-latency streaming and mobile access.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/astropads-workbench-reimagines-remote-desktop-for-ai-agents-not-it-support/
+  source: TechCrunch
+  published_utc: '2026-04-08T16:01:09+00:00'
+  title_zh: Astropad的Workbench为AI智能体重新构想远程桌面，而非IT支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: 'Nudifying bots, deepfakes, and automated archives: how AI powers a monetized
+    abuse ecosystem on Telegram'
+  why: An analysis of 2.8 million Telegram messages in Italy and Spain documents how
+    AI tools are fueling a monetized ecosystem built around non-c…
+  takeaway: 'An analysis of 2.8 million Telegram messages in Italy and Spain documents
+    how AI tools are fueling a monetized ecosystem built around non-consensual intimate
+    imagery. The article Nudifying bots, deepfakes, and automated archives: how AI
+    powers a monetized abuse ecosystem on Telegram appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/nudifying-bots-deepfakes-and-automated-archives-how-ai-powers-a-monetized-abuse-ecosystem-on-telegram/
+  source: The Decoder (AI)
+  published_utc: '2026-04-08T16:00:55+00:00'
+  title_zh: 裸体生成机器人、深度伪造与自动化存档：揭秘Telegram上AI驱动的流量变现作恶产业链
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon’s Smart Thermostat can help lower your energy bills, and it’s down
+    to $62
+  why: With temperatures on the rise and Earth Day right around the corner, now’s
+    a good time to invest in a smart thermostat if you haven’t alrea…
+  takeaway: With temperatures on the rise and Earth Day right around the corner, now’s
+    a good time to invest in a smart thermostat if you haven’t already. A good one
+    like Amazon’s Smart Thermostat can help reduce energy use and lower your bills
+    without sacrificing comfort, and right now it’s just $61.99 ($18 off) at Amazon.
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/908742/amazon-smart-thermostat-samsung-galaxy-buds-4-pro-deal-sale
+  source: The Verge
+  published_utc: '2026-04-08T15:56:34+00:00'
+  title_zh: 亚马逊智能恒温器可助降低能源账单，现价降至62美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I ported Mac OS X to the Nintendo Wii
+  why: 'Article URL: https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway: 'Article URL: https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html
+    Comments URL: https://news.ycombinator.com/item?id=47691730 Points: 1117 # Comments:
+    204'
+  prompt: ''
+  url: https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html
+  source: Hacker News (front page)
+  published_utc: '2026-04-08T15:40:00+00:00'
+  title_zh: 我将Mac OS X移植到了任天堂Wii上
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hackers steal and leak sensitive LAPD police documents
+  why: The LAPD said the breach affected “a digital storage system” belonging to the
+    city’s Attorney's Office.
+  takeaway: The LAPD said the breach affected “a digital storage system” belonging
+    to the city’s Attorney's Office. The World Leaks extortion gang was reported to
+    be behind the attack.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/hackers-steal-and-leak-sensitive-lapd-police-documents/
+  source: TechCrunch
+  published_utc: '2026-04-08T15:38:34+00:00'
+  title_zh: 黑客窃取并泄露洛杉矶警察局敏感文件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Steam client files point to "framerate estimator" feature in the works
+  why: JSON text strings suggest performance charts based on "framerates of other
+    Steam users."
+  takeaway: JSON text strings suggest performance charts based on "framerates of other
+    Steam users."
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/04/steam-client-files-point-to-framerate-estimator-feature-in-the-works/
+  source: Ars Technica
+  published_utc: '2026-04-08T15:37:04+00:00'
+  title_zh: Steam客户端文件指向正在开发的“帧率估算器”功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: For the first time ever, Amazon is cutting old Kindles off from the Kindle
+    Store
+  why: Post-2013 Kindles will continue to work, even if they no longer receive updates.
+  takeaway: Post-2013 Kindles will continue to work, even if they no longer receive
+    updates.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/starting-in-may-pre-2013-kindles-wont-be-able-to-buy-or-download-new-books/
+  source: Ars Technica
+  published_utc: '2026-04-08T15:26:57+00:00'
+  title_zh: 亚马逊首次将旧款Kindle与Kindle商店断开连接
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI releases a new safety blueprint to address the rise in child sexual
+    exploitation
+  why: OpenAI's new Child Safety Blueprint aims to tackle the alarming rise in child
+    sexual exploitation linked to advancements in AI.
+  takeaway: OpenAI's new Child Safety Blueprint aims to tackle the alarming rise in
+    child sexual exploitation linked to advancements in AI.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/openai-releases-a-new-safety-blueprint-to-address-the-rise-in-child-sexual-exploitation/
+  source: TechCrunch
+  published_utc: '2026-04-08T15:23:44+00:00'
+  title_zh: OpenAI发布新安全蓝图以应对儿童性剥削上升问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Developer of VeraCrypt encryption software says Windows users may face boot-up
+    issues after Microsoft locked his account
+  why: The maker of the popular open source file encryption software VeraCrypt said
+    Microsoft locked his online account, which may prevent device…
+  takeaway: The maker of the popular open source file encryption software VeraCrypt
+    said Microsoft locked his online account, which may prevent device owners from
+    booting up their computers.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/08/veracrypt-encryption-software-windows-microsoft-lock-boot-issues/
+  source: TechCrunch
+  published_utc: '2026-04-08T15:21:13+00:00'
+  title_zh: VeraCrypt加密软件开发人员表示，用户可能在微软冻结其账户后遇到开机问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'No big trucks for little roads: American OEMs say EU is blocking imports'
+  why: European buyers aren't interested in full-size trucks; US car industry doesn't
+    care.
+  takeaway: European buyers aren't interested in full-size trucks; US car industry
+    doesn't care.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/04/no-f-150-in-france-us-automakers-complain-the-eu-blocks-big-trucks/
+  source: Ars Technica
+  published_utc: '2026-04-08T15:13:20+00:00'
+  title_zh: 美国OEM称欧盟阻止大卡车进入小路
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

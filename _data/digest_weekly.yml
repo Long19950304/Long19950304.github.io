@@ -3564,3 +3564,83 @@ weeks:
     category: AI tools & model releases
     source: WIRED - AI
     published_utc: '2026-04-10T18:08:37+00:00'
+- week: 2026-W16
+  start: '2026-04-13'
+  end: '2026-04-19'
+  issues:
+  - '2026-04-13'
+  highlights_news:
+  - date: '2026-04-13'
+    url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
+    title: Trump officials may be encouraging banks to test Anthropic’s Mythos model
+    title_zh: 特朗普政府官员或鼓励银行测试Anthropic公司的Mythos模型
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-12T21:14:38+00:00'
+  - date: '2026-04-13'
+    url: https://arxiv.org/abs/2510.22293
+    title: 'Predicting Metabolic Dysfunction-Associated Steatotic Liver Disease using
+      Machine Learning Methods: A Retrospective Cohort Study'
+    title_zh: 基于机器学习方法预测代谢功能障碍相关脂肪性肝病：一项回顾性队列研究
+    category: CSS / AI & society
+    source: arXiv cs.CY (Computers & Society)
+    published_utc: '2026-04-13T04:00:00+00:00'
+  - date: '2026-04-13'
+    url: https://www.viktorcessan.com/the-economics-of-software-teams/
+    title: 'The Economics of Software Teams: Why Most Engineering Orgs Are Flying
+      Blind'
+    title_zh: 软件团队经济学：为何大多数工程组织在盲目飞行
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-13T05:45:32+00:00'
+  - date: '2026-04-13'
+    url: https://old.reddit.com/r/LinusTechTips/comments/1rsdk7i/anybody_here_talking_about_the_massive/
+    title: X Randomly Banning Users for "Inauthentic Behavior"
+    title_zh: X平台因‘非真实行为’随机封禁用户
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-13T05:39:24+00:00'
+  - date: '2026-04-13'
+    url: https://haunt.madebywindmill.com
+    title: Haunt, the 70s text adventure game, is now playable on a website
+    title_zh: 70年代文字冒险游戏《Haunt》现可在网站上体验
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-13T03:31:02+00:00'
+  highlights_ai:
+  - date: '2026-04-13'
+    url: https://openai.com/academy/data-analysis
+    title: Analyzing data with ChatGPT
+    title_zh: 使用ChatGPT分析数据
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-04-10T00:00:00+00:00'
+  - date: '2026-04-13'
+    url: https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything
+    title: ChatGPT voice mode is a weaker model
+    title_zh: ChatGPT语音模式为较弱模型
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-10T15:56:02+00:00'
+  - date: '2026-04-13'
+    url: https://developer.nvidia.com/blog/minimax-m2-7-advances-scalable-agentic-workflows-on-nvidia-platforms-for-complex-ai-applications/
+    title: MiniMax M2.7 Advances Scalable Agentic Workflows on NVIDIA Platforms for
+      Complex AI Applications
+    title_zh: MiniMax M2.7在NVIDIA平台上推进可扩展的代理工作流，适用于复杂AI应用
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-04-12T01:02:44+00:00'
+  - date: '2026-04-13'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.0
+    title: 'anthropics/anthropic-sdk-python: v0.94.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-04-10T22:27:28+00:00'
+  - date: '2026-04-13'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.0
+    title: 'anthropics/anthropic-sdk-typescript: vertex-sdk: v0.16.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-04-10T22:26:23+00:00'

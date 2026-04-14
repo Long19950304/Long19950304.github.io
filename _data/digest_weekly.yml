@@ -3569,6 +3569,7 @@ weeks:
   end: '2026-04-19'
   issues:
   - '2026-04-13'
+  - '2026-04-14'
   highlights_news:
   - date: '2026-04-13'
     url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
@@ -3607,6 +3608,42 @@ weeks:
     category: Tech industry
     source: Hacker News (front page)
     published_utc: '2026-04-13T03:31:02+00:00'
+  - date: '2026-04-14'
+    url: https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/
+    title: OpenAI has bought AI personal finance startup Hiro
+    title_zh: OpenAI收购了个人理财AI初创公司Hiro
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-14T00:23:33+00:00'
+  - date: '2026-04-14'
+    url: https://www.theverge.com/ai-artificial-intelligence/911423/openai-sam-altman-attack
+    title: Daniel Moreno-Gama is facing federal charges for attacking Sam Altman&#8217;s
+      home and OpenAI’s HQ
+    title_zh: Daniel Moreno-Gama因袭击Sam Altman住所及OpenAI总部面临联邦指控
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-14T00:02:38+00:00'
+  - date: '2026-04-14'
+    url: https://arstechnica.com/gaming/2026/04/retro-rewind-re-creates-the-glorious-drudgery-of-working-a-90s-video-store/
+    title: Retro Rewind re-creates the glorious drudgery of working a '90s video store
+    title_zh: Retro Rewind重现90年代音像店工作的怀旧艰辛
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-13T21:58:41+00:00'
+  - date: '2026-04-14'
+    url: https://www.wired.com/story/unitree-r1-humanoid-robot-for-sale-on-aliexpress/
+    title: You Can Soon Buy a $4,370 Humanoid Robot on AliExpress
+    title_zh: 阿里速卖通即将发售售价4370美元的人形机器人
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-04-13T23:37:38+00:00'
+  - date: '2026-04-14'
+    url: https://kirancodes.me/posts/log-who-watches-the-watchers.html
+    title: Lean proved this program correct; then I found a bug
+    title_zh: Lean证明了该程序的正确性，随后我发现了一个错误
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-14T00:25:08+00:00'
   highlights_ai:
   - date: '2026-04-13'
     url: https://openai.com/academy/data-analysis
@@ -3644,3 +3681,32 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-typescript
     published_utc: '2026-04-10T22:26:23+00:00'
+  - date: '2026-04-14'
+    url: https://openai.com/academy/operations
+    title: ChatGPT for operations teams
+    title_zh: ChatGPT面向运维团队的应用
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-04-10T00:00:00+00:00'
+  - date: '2026-04-14'
+    url: https://the-decoder.com/openais-leaked-memo-says-new-spud-model-will-make-all-its-products-significantly-better/
+    title: OpenAI's leaked memo says new "Spud" model will make all its products "significantly
+      better"
+    title_zh: OpenAI泄露备忘录称新“Spud”模型将显著提升所有产品
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-13T19:06:34+00:00'
+  - date: '2026-04-14'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-04-13T07:50:34+00:00'
+  - date: '2026-04-14'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.1
+    title: 'anthropics/anthropic-sdk-python: v0.94.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-04-13T18:07:46+00:00'

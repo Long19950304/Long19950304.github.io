@@ -3570,6 +3570,7 @@ weeks:
   issues:
   - '2026-04-13'
   - '2026-04-14'
+  - '2026-04-15'
   highlights_news:
   - date: '2026-04-13'
     url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
@@ -3644,6 +3645,43 @@ weeks:
     category: Tech industry
     source: Hacker News (front page)
     published_utc: '2026-04-14T00:25:08+00:00'
+  - date: '2026-04-15'
+    url: https://arstechnica.com/ai/2026/04/ukraines-military-robot-surge-aims-to-offset-drone-risks-to-humans/
+    title: Ukraine’s military robot surge aims to offset drone risks to humans
+    title_zh: 乌克兰军用机器人激增旨在降低无人机对人员的威胁
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-14T22:42:22+00:00'
+  - date: '2026-04-15'
+    url: https://www.technologyreview.com/2026/04/14/1134397/redefining-the-future-of-software-engineering/
+    title: Redefining the future of software engineering
+    title_zh: 重新定义软件工程的未来
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-04-14T18:00:00+00:00'
+  - date: '2026-04-15'
+    url: https://www.theverge.com/news/911789/eff-google-giving-data-ice-california-new-york
+    title: Privacy advocates want Google to stop handing consumer data over to ICE
+    title_zh: 隐私倡导者要求谷歌停止向移民海关执法局移交消费者数据
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-14T18:20:00+00:00'
+  - date: '2026-04-15'
+    url: https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/
+    title: Anthropic co-founder confirms the company briefed the Trump administration
+      on Mythos
+    title_zh: Anthropic联合创始人确认曾向特朗普政府简报Mythos项目
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-14T18:09:12+00:00'
+  - date: '2026-04-15'
+    url: https://www.latent.space/p/notion
+    title: 'Notion’s Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software
+      Factory Future — Simon Last & Sarah Sachs of Notion'
+    title_zh: Notion的Token Town：5次重构、100+工具，MCP vs CLI与软件工厂未来——Notion的西蒙·拉斯特与莎拉·萨克斯
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-04-15T00:31:14+00:00'
   highlights_ai:
   - date: '2026-04-13'
     url: https://openai.com/academy/data-analysis
@@ -3710,3 +3748,24 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-python
     published_utc: '2026-04-13T18:07:46+00:00'
+  - date: '2026-04-15'
+    url: https://openai.com/index/cloudflare-openai-agent-cloud
+    title: Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI
+    title_zh: 企业在Cloudflare Agent Cloud中利用OpenAI驱动代理工作流
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-04-13T06:00:00+00:00'
+  - date: '2026-04-15'
+    url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.89.0
+    title: 'anthropics/anthropic-sdk-typescript: sdk: v0.89.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-typescript
+    published_utc: '2026-04-14T19:08:56+00:00'
+  - date: '2026-04-15'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.95.0
+    title: 'anthropics/anthropic-sdk-python: v0.95.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-04-14T19:04:01+00:00'

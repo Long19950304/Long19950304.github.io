@@ -1,0 +1,876 @@
+date: '2026-04-16'
+title: Daily Digest - 2026-04-16
+title_zh: 每日简报 - 2026-04-16
+note: 'Today: "TotalRecall Reloaded" tool finds a side entrance to Windows 11… · OpenAI
+  updates its Agents SDK to help enterprises build safer,… · AI: openai/openai-python:
+  v2.32.0.'
+note_zh: '今日关注：TotalRecall Reloaded工具找到访问Windows 11召…；OpenAI升级其代理SDK，助力企业打造更安全、强大的代理程序；AI：openai/openai-python:
+  v2.32.0。'
+items:
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.32.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.32.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-04-15T22:27:40+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.30'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.30
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-15T20:37:29+00:00'
+  title_zh: langchain-ai/langchain：langchain-core 1.2.30 版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.8-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.8-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-15T20:07:13+00:00'
+  title_zh: BerriAI/litellm：v1.83.8 夜间构建版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Gemini 3.1 Flash TTS
+  why: Gemini 3.1 Flash TTS Google released Gemini 3.1 Flash TTS today, a new text-to-speech
+    model that can be directed using prompts.
+  takeaway: Gemini 3.1 Flash TTS Google released Gemini 3.1 Flash TTS today, a new
+    text-to-speech model that can be directed using prompts. It's presented via the
+    standard Gemini API using gemini-3.1-flash-tts-preview as the model ID, but can
+    only output audio files. The prompting guide is surprising, to say the least.
+    Here's their example prompt to generate just a few…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-15T17:13:14+00:00'
+  title_zh: ''
+  why_zh: Google今日发布Gemini 3.1 Flash TTS，这是一款可通过提示指令的新型文本转语音模型。
+  takeaway_zh: 谷歌今日发布了Gemini 3.1 Flash TTS，这款新型文本转语音模型支持提示词定向控制。该模型通过标准Gemini API提供（model
+    ID为gemini-3.1-flash-tts-preview），但仅能输出音频文件。其提示指南颇为颠覆——以下是他们生成少量音频的示例提示...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick Introduces Sheet Tooltips for Rich, Contextual Data Exploration
+  why: Quick Sight in Amazon Quick now supports sheet tooltips, enabling authors to
+    surface rich, contextual detail when viewers hover over data p…
+  takeaway: Quick Sight in Amazon Quick now supports sheet tooltips, enabling authors
+    to surface rich, contextual detail when viewers hover over data points — without
+    disrupting their analysis flow. Sheet tooltips allow authors to create dedicated
+    tooltip sheets containing visuals, text boxes, and images arranged in a free-form
+    layout. When a viewer hovers over a data…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/quick-sheet-tooltips/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-15T15:00:00+00:00'
+  title_zh: Amazon Quick 推出数据透视表提示功能，助力深度数据探索
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The next evolution of the Agents SDK
+  why: OpenAI updates the Agents SDK with native sandbox execution and a model-native
+    harness, helping developers build secure, long-running agent…
+  takeaway: OpenAI updates the Agents SDK with native sandbox execution and a model-native
+    harness, helping developers build secure, long-running agents across files and
+    tools.
+  prompt: ''
+  url: https://openai.com/index/the-next-evolution-of-the-agents-sdk
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-04-15T10:00:00+00:00'
+  title_zh: 智能体 SDK 的下一代进化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.13'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.13
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-15T01:37:32+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 P6-B300 instances are now available in the AWS GovCloud (US-East)
+    Region
+  why: Starting today, Amazon Elastic Cloud Compute (Amazon EC2) P6-B300 instances
+    are available in the AWS GovCloud (US-East) Region.
+  takeaway: Starting today, Amazon Elastic Cloud Compute (Amazon EC2) P6-B300 instances
+    are available in the AWS GovCloud (US-East) Region. P6-B300 instances provide
+    8x NVIDIA Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps
+    EFA networking, 300 Gbps dedicated ENA throughput, and 4 TB of system memory.
+    P6-B300 instances deliver 2x networking bandwidt…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-p6-b300-govcloud-us-east/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-14T21:00:00+00:00'
+  title_zh: Amazon EC2 P6-B300 实例现已在 AWS GovCloud（美国东部）区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.29'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.29
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-14T20:45:15+00:00'
+  title_zh: langchain-ai/langchain：langchain-core 1.2.29 版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.89.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.89.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-04-14T19:08:56+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.95.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.95.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-04-14T19:04:01+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How to Use Google Chrome’s New AI-Powered ‘Skills’
+  why: The premade Skills available through the Gemini sidebar in Chrome include ways
+    to maximize protein in recipes or summarize YouTube videos.
+  takeaway: The premade Skills available through the Gemini sidebar in Chrome include
+    ways to maximize protein in recipes or summarize YouTube videos.
+  prompt: ''
+  url: https://www.wired.com/story/how-to-use-google-chrome-ai-powered-skills/
+  source: WIRED - AI
+  published_utc: '2026-04-14T17:00:00+00:00'
+  title_zh: 如何使用谷歌 Chrome 新一代 AI 驱动的‘智能技能’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Building Custom Atomistic Simulation Workflows for Chemistry and Materials
+    Science with NVIDIA ALCHEMI Toolkit
+  why: For decades, computational chemistry has faced a tug-of-war between accuracy
+    and speed.
+  takeaway: For decades, computational chemistry has faced a tug-of-war between accuracy
+    and speed. Ab initio methods like density functional theory (DFT) provide high...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/building-custom-atomistic-simulation-workflows-for-chemistry-and-materials-science-with-nvidia-alchemi-toolkit/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-14T16:30:00+00:00'
+  title_zh: 利用NVIDIA ALCHEMI工具包构建化学与材料科学的定制原子模拟工作流
+  why_zh: 数十年来，计算化学一直在准确性与速度之间拉锯。
+  takeaway_zh: 数十年来，计算化学始终面临精度与速度的拉锯战。密度泛函理论(DFT)等从头算方法虽能提供高精度...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'NVIDIA NVbandwidth: Your Essential Tool for Measuring GPU Interconnect and
+    Memory Performance'
+  why: When you’re writing CUDA applications, one of the most important things you
+    need to focus on to write great code is data transfer performan…
+  takeaway: When you’re writing CUDA applications, one of the most important things
+    you need to focus on to write great code is data transfer performance. This applies
+    to...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/nvidia-nvbandwidth-your-essential-tool-for-measuring-gpu-interconnect-and-memory-performance/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-14T16:00:00+00:00'
+  title_zh: NVIDIA NVbandwidth：测量GPU互连与内存性能的必备工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: NVIDIA Ising Introduces AI-Powered Workflows to Build Fault-Tolerant Quantum
+    Systems
+  why: 'NVIDIA Ising is the world''s first family of open AI models for building quantum
+    processors, launching with two model domains: Ising Calibra…'
+  takeaway: 'NVIDIA Ising is the world''s first family of open AI models for building
+    quantum processors, launching with two model domains: Ising Calibration and Ising...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-14T14:15:56+00:00'
+  title_zh: NVIDIA Ising引入AI驱动的工作流以构建容错量子系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.3-stable'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.3-stable
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-14T03:19:31+00:00'
+  title_zh: BerriAI/litellm：v1.83.3 稳定版
+  why_zh: 版本更新（详情见更新日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Trusted access for the next era of cyber defense
+  why: OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber
+    to vetted defenders and strengthening safeguards as AI cyber…
+  takeaway: OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber
+    to vetted defenders and strengthening safeguards as AI cybersecurity capabilities
+    advance.
+  prompt: ''
+  url: https://openai.com/index/scaling-trusted-access-for-cyber-defense
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-04-14T00:00:00+00:00'
+  title_zh: 可信访问：网络安全防御新纪元的钥匙
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: NVIDIA Nemotron-3-Super-120B, Qwen3.5-9B, and Qwen3.5-27B models now available
+    on Amazon SageMaker JumpStart
+  why: NVIDIA’s Nemotron-3-Super-120B, Qwen3.5-9B, and Qwen3.5-27B models are now
+    available on Amazon SageMaker JumpStart, expanding the portfolio…
+  takeaway: NVIDIA’s Nemotron-3-Super-120B, Qwen3.5-9B, and Qwen3.5-27B models are
+    now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation
+    models available to AWS customers. These three models bring specialized capabilities
+    spanning agentic reasoning, multilingual coding, and advanced instruction following,
+    enabling customers to deploy high-p…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/nemotron3super-120b-qwen3.5-9b-qwen3.5-27b-on-sagemaker-jumpstart/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-13T23:40:00+00:00'
+  title_zh: NVIDIA Nemotron-3-Super-120B、Qwen3.5-9B 和 Qwen3.5-27B 模型现已在 Amazon SageMaker
+    JumpStart 上线
+  why_zh: NVIDIA的Nemotron-3-Super-120B、Qwen3.5-9B及Qwen3.5-27B模型现已登陆Amazon SageMaker
+    JumpStart，进一步丰富了产品线…
+  takeaway_zh: 英伟达Nemotron-3-Super-120B、Qwen3.5-9B及Qwen3.5-27B模型现已登陆Amazon SageMaker
+    JumpStart，丰富了AWS客户可用的基础模型组合。这三款模型具备代理推理、多语言编程和高级指令跟随等专项能力，助力客户部署高性能...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.20.7'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.20.7
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-04-13T23:33:00+00:00'
+  title_zh: ollama/ollama：v0.20.7 版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Redshift introduces key performance optimization for Top-K queries
+  why: Amazon Redshift further optimizes the processing of top-k queries (queries
+    with ORDER BY and LIMIT clauses) by intelligently skipping irrel…
+  takeaway: Amazon Redshift further optimizes the processing of top-k queries (queries
+    with ORDER BY and LIMIT clauses) by intelligently skipping irrelevant data blocks
+    to return results faster, dramatically reducing the amount of data processed.
+    This optimization reorders and efficiently adjusts the data blocks to be read
+    based on the ORDER BY column's min/max values,…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-redshift-topk-optimization/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-13T18:58:00+00:00'
+  title_zh: Amazon Redshift 针对 Top-K 查询推出关键性能优化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick now supports document-level access controls for Google Drive
+    knowledge bases
+  why: Amazon Quick now supports document-level access controls (ACLs) for Google
+    Drive knowledge bases, enabling organizations to maintain native…
+  takeaway: Amazon Quick now supports document-level access controls (ACLs) for Google
+    Drive knowledge bases, enabling organizations to maintain native Google Drive
+    permissions when indexing content. Quick combines ACL replication for efficient
+    pre-retrieval filtering with an additional layer of real-time permission checks
+    directly with Google Drive at query time. This…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-document-level-access-controls-google-drive/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-13T18:35:00+00:00'
+  title_zh: Amazon Quick 现支持 Google Drive 知识库的文档级访问控制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.94.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.1
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-04-13T18:07:46+00:00'
+  title_zh: anthropics/anthropic-sdk-python：版本 0.94.1
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-West)
+    Region
+  why: Starting today, Amazon EC2 M8i and M8i-flex instances are now available in
+    AWS GovCloud (US-West) Region.
+  takeaway: Starting today, Amazon EC2 M8i and M8i-flex instances are now available
+    in AWS GovCloud (US-West) Region. These instances are powered by custom Intel
+    Xeon 6 processors, available only on AWS, delivering the highest performance and
+    fastest memory bandwidth among comparable Intel processors in the cloud. The M8i
+    and M8i-flex instances offer up to 15% better p…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-m8i-flex-govcloud-us-west/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-13T17:00:00+00:00'
+  title_zh: Amazon EC2 M8i 和 M8i-flex 实例现已在 AWS GovCloud（美国西部）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 R8i and R8i-flex instances are now available in AWS GovCloud (US-West)
+    Region
+  why: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex
+    instances are available in the AWS GovCloud (US-West) Region.
+  takeaway: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex
+    instances are available in the AWS GovCloud (US-West) Region. These instances
+    are powered by custom Intel Xeon 6 processors, available only on AWS, delivering
+    the highest performance and fastest memory bandwidth among comparable Intel processors
+    in the cloud. The R8i and R8i-flex ins…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-r8i-instances-govcloud-us-west/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-13T17:00:00+00:00'
+  title_zh: Amazon EC2 R8i 和 R8i-flex 实例现已在 AWS GovCloud（美国西部）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'huggingface/transformers: Patch release v5.5.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/transformers/releases/tag/v5.5.4
+  source: GitHub Releases - huggingface/transformers
+  published_utc: '2026-04-13T16:58:06+00:00'
+  title_zh: huggingface/transformers：补丁版本 v5.5.4
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.0a2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.0a2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-13T14:38:14+00:00'
+  title_zh: langchain-ai/langchain：langchain-core 1.3.0 alpha2 版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The Internet's Most Powerful Archiving Tool Is in Peril
+  why: As major news outlets cut off the Wayback Machine, journalists and advocacy
+    groups are rallying to protect the Internet Archive’s vast coll…
+  takeaway: As major news outlets cut off the Wayback Machine, journalists and advocacy
+    groups are rallying to protect the Internet Archive’s vast collection of web pages.
+  prompt: ''
+  url: https://www.wired.com/story/the-internets-most-powerful-archiving-tool-is-in-mortal-peril/
+  source: WIRED - AI
+  published_utc: '2026-04-13T11:00:00+00:00'
+  title_zh: 互联网最强大的存档工具濒临危机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.0
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-04-13T07:50:34+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI
+  why: Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises
+    to build, deploy, and scale AI agents for real-world task…
+  takeaway: Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling
+    enterprises to build, deploy, and scale AI agents for real-world tasks with speed
+    and security.
+  prompt: ''
+  url: https://openai.com/index/cloudflare-openai-agent-cloud
+  source: OpenAI Blog (releases-only)
+  published_utc: '2026-04-13T06:00:00+00:00'
+  title_zh: 企业利用OpenAI在Cloudflare Agent Cloud中驱动代理工作流
+  why_zh: Cloudflare将OpenAI的GPT-5.4和Codex引入Agent Cloud，助力企业构建、部署及扩展AI代理以执行现实任务…
+  takeaway_zh: Cloudflare将OpenAI的GPT-5.4和Codex引入Agent Cloud平台，使企业能够快速安全地构建、部署和扩展用于现实任务的人工智能代理。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.20.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.20.6
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-04-12T22:59:47+00:00'
+  title_zh: ollama/ollama：v0.20.6 版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Universal Constraint Engine: Neuromorphic Computing Without Neural Networks'
+  why: 'Article URL: https://zenodo.org/records/19600206 Comments URL: https://news.ycombinator.com/item?id=47786836
+    Points: 6 # Comments: 1'
+  takeaway: 'Article URL: https://zenodo.org/records/19600206 Comments URL: https://news.ycombinator.com/item?id=47786836
+    Points: 6 # Comments: 1'
+  prompt: ''
+  url: https://zenodo.org/records/19600206
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T23:42:06+00:00'
+  title_zh: 通用约束引擎：无需神经网络的神经形态计算
+  why_zh: '文章链接：https://zenodo.org/records/19600206 评论链接：https://news.ycombinator.com/item?id=47786836
+    得分：6 # 评论：1'
+  takeaway_zh: '文章链接：https://zenodo.org/records/19600206 评论链接：https://news.ycombinator.com/item?id=47786836
+    得分：6 # 评论：1'
+  prompt_zh: ''
+- category: Tech industry
+  title: YouTube now lets you turn off Shorts
+  why: 'Article URL: https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes
+    Comments URL: https://news.ycombinator.com/it…'
+  takeaway: 'Article URL: https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes
+    Comments URL: https://news.ycombinator.com/item?id=47786791 Points: 158 # Comments:
+    68'
+  prompt: ''
+  url: https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T23:36:56+00:00'
+  title_zh: YouTube新增关闭Shorts短视频功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Atlassian defends firing engineer for suggesting CEO is 'rich jerk'
+  why: 'Article URL: https://www.afr.com/technology/atlassian-defends-firing-engineer-for-suggesting-ceo-is-rich-jerk-20260317-p5ob1w
+    Comments URL:…'
+  takeaway: 'Article URL: https://www.afr.com/technology/atlassian-defends-firing-engineer-for-suggesting-ceo-is-rich-jerk-20260317-p5ob1w
+    Comments URL: https://news.ycombinator.com/item?id=47786700 Points: 37 # Comments:
+    21'
+  prompt: ''
+  url: https://www.afr.com/technology/atlassian-defends-firing-engineer-for-suggesting-ceo-is-rich-jerk-20260317-p5ob1w
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T23:26:01+00:00'
+  title_zh: Atlassian为解雇称CEO为‘有钱混蛋’的工程师辩护
+  why_zh: 文章链接：https://www.afr.com/technology/atlassian-defends-firing-engineer-for-suggesting-ceo-is-rich-jerk-20260317-p5ob1w
+    评论链接：…
+  takeaway_zh: '文章链接：https://www.afr.com/technology/atlassian-defends-firing-engineer-for-suggesting-ceo-is-rich-jerk-20260317-p5ob1w
+    评论链接：https://news.ycombinator.com/item?id=47786700 得分：37 # 评论：21'
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon-backed X-energy files to raise up to $800M in IPO
+  why: Nuclear startup X-energy hit the road today to sell prospective investors on
+    its initial public offering.
+  takeaway: Nuclear startup X-energy hit the road today to sell prospective investors
+    on its initial public offering.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/amazon-backed-x-energy-files-to-raise-up-to-800m-in-ipo/
+  source: TechCrunch
+  published_utc: '2026-04-15T22:44:26+00:00'
+  title_zh: 亚马逊投资的X-energy申请IPO，拟募资8亿美元
+  why_zh: 核能初创公司X-energy今日启动路演，向潜在投资者推销其首次公开募股。
+  takeaway_zh: 核能初创公司X-energy今日启动路演，向潜在投资者推销其首次公开募股。
+  prompt_zh: ''
+- category: Tech industry
+  title: I made a terminal pager
+  why: 'Article URL: https://theleo.zone/posts/pager/ Comments URL: https://news.ycombinator.com/item?id=47786164
+    Points: 59 # Comments: 10'
+  takeaway: 'Article URL: https://theleo.zone/posts/pager/ Comments URL: https://news.ycombinator.com/item?id=47786164
+    Points: 59 # Comments: 10'
+  prompt: ''
+  url: https://theleo.zone/posts/pager/
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T22:27:54+00:00'
+  title_zh: 我制作了一个终端分页器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Florida surgeon charged with killing man after removing liver instead of
+    spleen
+  why: It wasn't the first time the surgeon cut out the wrong organ.
+  takeaway: It wasn't the first time the surgeon cut out the wrong organ.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/florida-surgeon-charged-with-killing-man-after-removing-liver-instead-of-spleen/
+  source: Ars Technica
+  published_utc: '2026-04-15T22:25:30+00:00'
+  title_zh: 佛罗里达州外科医生被指控误切肝脏致患者死亡
+  why_zh: 这并非外科医生首次误切器官。
+  takeaway_zh: 这并非外科医生首次误切器官。
+  prompt_zh: ''
+- category: Tech industry
+  title: Jury finds Live Nation/Ticketmaster is illegal monopoly that overcharged
+    fans
+  why: Trump administration dropped out of the trial, but 33 states kept fighting.
+  takeaway: Trump administration dropped out of the trial, but 33 states kept fighting.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/jury-finds-live-nation-ticketmaster-is-illegal-monopoly-that-overcharged-fans/
+  source: Ars Technica
+  published_utc: '2026-04-15T22:06:23+00:00'
+  title_zh: 陪审团裁定Live Nation/Ticketmaster构成哄抬票价的非法垄断
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ohio prison inmates 'built computers and hid them in ceiling (2017)
+  why: 'Article URL: https://www.bbc.com/news/technology-39576394 Comments URL: https://news.ycombinator.com/item?id=47785948
+    Points: 63 # Comments…'
+  takeaway: 'Article URL: https://www.bbc.com/news/technology-39576394 Comments URL:
+    https://news.ycombinator.com/item?id=47785948 Points: 63 # Comments: 44'
+  prompt: ''
+  url: https://www.bbc.com/news/technology-39576394
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T22:05:44+00:00'
+  title_zh: 俄亥俄州监狱囚犯‘建造电脑并藏于天花板内’（2017年）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ford EV and tech chief leaving automaker
+  why: Doug Field had stints at Apple and Tesla before joining Ford in 2021.
+  takeaway: Doug Field had stints at Apple and Tesla before joining Ford in 2021.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/ford-ev-and-tech-chief-leaving-automaker/
+  source: TechCrunch
+  published_utc: '2026-04-15T21:52:05+00:00'
+  title_zh: 福特电动车与技术主管即将离职
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The buns in McDonald's Japan's burger photos are all slightly askew
+  why: 'Article URL: https://www.mcdonalds.co.jp/en/menu/burger/ Comments URL: https://news.ycombinator.com/item?id=47785738
+    Points: 221 # Comments…'
+  takeaway: 'Article URL: https://www.mcdonalds.co.jp/en/menu/burger/ Comments URL:
+    https://news.ycombinator.com/item?id=47785738 Points: 221 # Comments: 130'
+  prompt: ''
+  url: https://www.mcdonalds.co.jp/en/menu/burger/
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T21:48:18+00:00'
+  title_zh: 日本麦当劳汉堡照片中的面包都略微倾斜
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Wait, could they still actually break up Live Nation?
+  why: A federal jury found that Live Nation has acted illegally as a monopoly --
+    but the company just came to a tentative settlement with the DOJ…
+  takeaway: A federal jury found that Live Nation has acted illegally as a monopoly
+    -- but the company just came to a tentative settlement with the DOJ last month.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/wait-could-they-still-actually-break-up-live-nation/
+  source: TechCrunch
+  published_utc: '2026-04-15T21:38:09+00:00'
+  title_zh: 等等，Live Nation真的有可能被拆分吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hacker News CLI
+  why: 'Article URL: https://pythonhosted.org/hackernews-cli/commands.html Comments
+    URL: https://news.ycombinator.com/item?id=47785582 Points: 33 #…'
+  takeaway: 'Article URL: https://pythonhosted.org/hackernews-cli/commands.html Comments
+    URL: https://news.ycombinator.com/item?id=47785582 Points: 33 # Comments: 13'
+  prompt: ''
+  url: https://pythonhosted.org/hackernews-cli/commands.html
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T21:35:38+00:00'
+  title_zh: 黑客新闻命令行版
+  why_zh: '文章链接：https://pythonhosted.org/hackernews-cli/commands.html 评论链接：https://news.ycombinator.com/item?id=47785582
+    得分：33 #…'
+  takeaway_zh: '文章链接：https://pythonhosted.org/hackernews-cli/commands.html 评论链接：https://news.ycombinator.com/item?id=47785582
+    得分：33 # 评论：13'
+  prompt_zh: ''
+- category: Tech industry
+  title: Monarch Tractor’s collapse ends with an acquisition by Caterpillar
+  why: The startup had faced mounting pressure from dealers, farmers, and a co-founder
+    who complained that Monarch's tech didn't work properly.
+  takeaway: The startup had faced mounting pressure from dealers, farmers, and a co-founder
+    who complained that Monarch's tech didn't work properly.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/monarch-tractors-collapse-ends-in-with-an-acquisition-by-caterpillar/
+  source: TechCrunch
+  published_utc: '2026-04-15T21:05:21+00:00'
+  title_zh: Monarch Tractor破产终局：被卡特彼勒收购
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Does Gas Town 'steal' usage from users' LLM credits to improve itself?
+  why: 'Article URL: https://github.com/gastownhall/gastown/issues/3649 Comments URL:
+    https://news.ycombinator.com/item?id=47785053 Points: 210 # C…'
+  takeaway: 'Article URL: https://github.com/gastownhall/gastown/issues/3649 Comments
+    URL: https://news.ycombinator.com/item?id=47785053 Points: 210 # Comments: 105'
+  prompt: ''
+  url: https://github.com/gastownhall/gastown/issues/3649
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T20:49:48+00:00'
+  title_zh: Gas Town是否‘窃取’用户LLM积分以自我提升？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '"TotalRecall Reloaded" tool finds a side entrance to Windows 11''s Recall
+    database'
+  why: '"The vault is solid.'
+  takeaway: '"The vault is solid. The delivery truck is not."'
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/totalrecall-reloaded-tool-finds-a-side-entrance-to-windows-11s-recall-database/
+  source: Ars Technica
+  published_utc: '2026-04-15T20:36:28+00:00'
+  title_zh: TotalRecall Reloaded工具找到访问Windows 11召回数据库的旁路
+  why_zh: 金库坚固可靠。
+  takeaway_zh: 金库坚不可摧，但送货卡车并非如此。
+  prompt_zh: ''
+- category: Tech industry
+  title: Ford’s EV and software chief Doug Field is leaving the company
+  why: Ford is shaking things up as it relates to its EV and software teams.
+  takeaway: Ford is shaking things up as it relates to its EV and software teams.
+    Doug Field, who left Apple five years ago to helm Ford's multibillion-dollar bet
+    on electric vehicles and software, is stepping down next month. Getting a promotion
+    will be Alan Clarke, the ex-Tesla engineer who now leads Ford's California-based
+    skunkworks lab. Clarke's […]
+  prompt: ''
+  url: https://www.theverge.com/transportation/912647/ford-doug-field-leaving-ev-software
+  source: The Verge
+  published_utc: '2026-04-15T20:05:00+00:00'
+  title_zh: 福特电动车与软件主管Doug Field将离职
+  why_zh: 福特正对其电动车和软件团队进行重大调整。
+  takeaway_zh: 福特正对其电动车和软件团队进行重大调整。五年前离开苹果、执掌福特数十亿美元电动车与软件投资的Doug Field将于下月卸任。Alan
+    Clarke，这位前特斯拉工程师，现任福特加州秘密实验室负责人，将获得晋升。Clarke的[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: One interface, every protocol
+  why: 'Article URL: https://openbindings.com/blog/one-interface-every-protocol Comments
+    URL: https://news.ycombinator.com/item?id=47784397 Points:…'
+  takeaway: 'Article URL: https://openbindings.com/blog/one-interface-every-protocol
+    Comments URL: https://news.ycombinator.com/item?id=47784397 Points: 39 # Comments:
+    5'
+  prompt: ''
+  url: https://openbindings.com/blog/one-interface-every-protocol
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T19:56:36+00:00'
+  title_zh: 一个接口，所有协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump’s posting even more AI-generated Trump-Jesus fan art
+  why: Hello and welcome to Regulator, a newsletter for Verge subscribers about Big
+    Tech power plays in Washington and beyond.
+  takeaway: Hello and welcome to Regulator, a newsletter for Verge subscribers about
+    Big Tech power plays in Washington and beyond. (And when I say beyond, I mean
+    the great beyond, like Heaven, maybe.) If you've found your way to this newsletter
+    from the wild, annual subscriptions are currently 50 percent off. That's $30 a
+    year for […]
+  prompt: ''
+  url: https://www.theverge.com/column/912627/trump-jesus-ai-whcd-penguin-meme
+  source: The Verge
+  published_utc: '2026-04-15T19:50:31+00:00'
+  title_zh: 特朗普持续发布AI生成的特朗普-耶稣同框幻想图
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google releases new apps for Windows and MacOS
+  why: Google mostly creates products for the web, but it has some new desktop apps
+    today.
+  takeaway: Google mostly creates products for the web, but it has some new desktop
+    apps today.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/google-launches-search-app-for-windows-gemini-app-for-mac/
+  source: Ars Technica
+  published_utc: '2026-04-15T19:46:43+00:00'
+  title_zh: 谷歌发布Windows和MacOS新版应用套件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: PiCore - Raspberry Pi Port of Tiny Core Linux
+  why: 'Article URL: http://tinycorelinux.net/5.x/armv6/releases/README Comments URL:
+    https://news.ycombinator.com/item?id=47784244 Points: 82 # Co…'
+  takeaway: 'Article URL: http://tinycorelinux.net/5.x/armv6/releases/README Comments
+    URL: https://news.ycombinator.com/item?id=47784244 Points: 82 # Comments: 7'
+  prompt: ''
+  url: http://tinycorelinux.net/5.x/armv6/releases/README
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T19:45:47+00:00'
+  title_zh: PiCore - Tiny Core Linux的树莓派移植版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Boston Dynamics’ robot dog now reads gauges and thermometers with Google's
+    AI
+  why: Google's AI enables robots to read gauges while inspecting industrial facilities.
+  takeaway: Google's AI enables robots to read gauges while inspecting industrial
+    facilities.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/robot-dogs-now-read-gauges-and-thermometers-using-google-gemini/
+  source: Ars Technica
+  published_utc: '2026-04-15T19:34:33+00:00'
+  title_zh: 波士顿动力机器狗现可借助谷歌AI读取仪表数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI updates its Agents SDK to help enterprises build safer, more capable
+    agents
+  why: OpenAI has expanded the capabilities of its agent-building toolkit, as agentic
+    AI continues to grow in popularity.
+  takeaway: OpenAI has expanded the capabilities of its agent-building toolkit, as
+    agentic AI continues to grow in popularity.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/
+  source: TechCrunch
+  published_utc: '2026-04-15T19:28:36+00:00'
+  title_zh: OpenAI升级其代理SDK，助力企业打造更安全、强大的代理程序
+  why_zh: 随着代理式AI日益流行，OpenAI已扩展其代理构建工具包的功能。
+  takeaway_zh: 随着代理式AI日益流行，OpenAI已扩展其代理构建工具包的功能。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Ask HN: Who is using OpenClaw?'
+  why: I don't use it personally, and neither does anyone in my circle...even though
+    I feel like I'm super plugged into the ai world Comments URL:…
+  takeaway: 'I don''t use it personally, and neither does anyone in my circle...even
+    though I feel like I''m super plugged into the ai world Comments URL: https://news.ycombinator.com/item?id=47783940
+    Points: 213 # Comments: 257'
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=47783940
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T19:22:10+00:00'
+  title_zh: 问HN：谁在使用OpenClaw？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Prime Video shows “technical difficulties” sign instead of NBA game in overtime
+  why: '"Am I trippin??" asks LeBron James.'
+  takeaway: '"Am I trippin??" asks LeBron James.'
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/nba-fans-cry-foul-as-prime-video-cuts-out-during-overtime-fails-to-sync-audio/
+  source: Ars Technica
+  published_utc: '2026-04-15T19:16:43+00:00'
+  title_zh: Prime Video加时赛时段误播技术故障提示而非NBA赛事
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ticketmaster is an illegal monopoly, jury finds
+  why: Live Nation-Ticketmaster is an illegal monopolist, a Manhattan jury found,
+    according to Bloomberg.
+  takeaway: 'Live Nation-Ticketmaster is an illegal monopolist, a Manhattan jury found,
+    according to Bloomberg. The jury found the company liable on three counts: illegally
+    monopolizing the market for live event ticketing, amphitheaters, and tying its
+    concert promotions business with the use of its venues, Bloomberg reported. The
+    verdict, reached after several days of d…'
+  prompt: ''
+  url: https://www.theverge.com/policy/912689/live-nation-ticketmaster-antitrust-monopoly-trial-verdict
+  source: The Verge
+  published_utc: '2026-04-15T19:09:17+00:00'
+  title_zh: 陪审团裁定Ticketmaster构成非法垄断
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Live Nation illegally monopolized ticketing market, jury finds
+  why: https://www.nytimes.com/2026/04/15/arts/music/live-nation-an...
+  takeaway: 'https://www.nytimes.com/2026/04/15/arts/music/live-nation-an... , https://archive.ph/KA1wV
+    https://www.theverge.com/policy/912689/live-nation-ticketmas... Comments URL:
+    https://news.ycombinator.com/item?id=47783713 Points: 399 # Comments: 117'
+  prompt: ''
+  url: https://www.bloomberg.com/news/articles/2026-04-15/live-nation-illegally-monopolized-ticketing-market-jury-finds
+  source: Hacker News (front page)
+  published_utc: '2026-04-15T19:06:39+00:00'
+  title_zh: 陪审团裁定Live Nation非法垄断票务市场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FTC pushes ad agencies into dropping brand safety rules
+  why: The Federal Trade Commission (FTC) and a group of eight states have announced
+    a proposed settlement with big ad agencies that will prevent…
+  takeaway: The Federal Trade Commission (FTC) and a group of eight states have announced
+    a proposed settlement with big ad agencies that will prevent them from working
+    together to avoid certain platforms like X based on their political viewpoints.
+    In a complaint, the FTC argues that ad agencies violated antitrust rules by agreeing
+    to a common […]
+  prompt: ''
+  url: https://www.theverge.com/policy/912680/ftc-ad-agency-settlement-trust-safety
+  source: The Verge
+  published_utc: '2026-04-15T19:00:23+00:00'
+  title_zh: FTC施压广告代理商放弃品牌安全准则
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hightouch reaches $100M ARR fueled by marketing tools powered by AI
+  why: The startup says it grew its ARR by $70 million in just 20 months after launching
+    an AI agent platform for marketers.
+  takeaway: The startup says it grew its ARR by $70 million in just 20 months after
+    launching an AI agent platform for marketers.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/hightouch-reaches-100m-arr-fueled-by-marketing-tools-powered-by-ai/
+  source: TechCrunch
+  published_utc: '2026-04-15T18:55:12+00:00'
+  title_zh: Hightouch依托AI营销工具实现年营收破亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: LinkedIn data shows AI isn’t to blame for hiring decline… yet
+  why: LinkedIn says hiring is down 20% since 2022, but blames higher interest rates
+    — not AI — for the slowdown.
+  takeaway: LinkedIn says hiring is down 20% since 2022, but blames higher interest
+    rates — not AI — for the slowdown.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/linkedin-data-shows-ai-isnt-to-blame-for-hiring-decline-yet/
+  source: TechCrunch
+  published_utc: '2026-04-15T18:51:54+00:00'
+  title_zh: LinkedIn数据显示AI尚未导致招聘下滑…但前景未卜
+  why_zh: LinkedIn表示，自2022年以来招聘下降了20%，但将放缓归咎于高利率而非AI。
+  takeaway_zh: LinkedIn表示，自2022年以来招聘下降了20%，但将放缓归咎于高利率而非AI。
+  prompt_zh: ''
+- category: Tech industry
+  title: Feds will require data centers to show their power bills
+  why: In a first, the U.S.
+  takeaway: In a first, the U.S. Energy Information Agency said it will require data
+    centers to disclose details of their energy use.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/15/feds-will-require-data-centers-to-show-their-power-bills/
+  source: TechCrunch
+  published_utc: '2026-04-15T18:50:48+00:00'
+  title_zh: 美国联邦政府要求数据中心公示电费账单
+  why_zh: 美国首次…
+  takeaway_zh: 美国能源信息署首次宣布，将要求数据中心披露其能源使用详情。
+  prompt_zh: ''

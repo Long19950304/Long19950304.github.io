@@ -3571,6 +3571,7 @@ weeks:
   - '2026-04-13'
   - '2026-04-14'
   - '2026-04-15'
+  - '2026-04-16'
   highlights_news:
   - date: '2026-04-13'
     url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
@@ -3682,6 +3683,44 @@ weeks:
     category: AI frontier
     source: Latent Space (AI newsletter)
     published_utc: '2026-04-15T00:31:14+00:00'
+  - date: '2026-04-16'
+    url: https://arstechnica.com/gadgets/2026/04/totalrecall-reloaded-tool-finds-a-side-entrance-to-windows-11s-recall-database/
+    title: '"TotalRecall Reloaded" tool finds a side entrance to Windows 11''s Recall
+      database'
+    title_zh: TotalRecall Reloaded工具找到访问Windows 11召回数据库的旁路
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-15T20:36:28+00:00'
+  - date: '2026-04-16'
+    url: https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/
+    title: OpenAI updates its Agents SDK to help enterprises build safer, more capable
+      agents
+    title_zh: OpenAI升级其代理SDK，助力企业打造更安全、强大的代理程序
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-15T19:28:36+00:00'
+  - date: '2026-04-16'
+    url: https://www.theverge.com/transportation/912647/ford-doug-field-leaving-ev-software
+    title: Ford’s EV and software chief Doug Field is leaving the company
+    title_zh: 福特电动车与软件主管Doug Field将离职
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-15T20:05:00+00:00'
+  - date: '2026-04-16'
+    url: https://pythonhosted.org/hackernews-cli/commands.html
+    title: Hacker News CLI
+    title_zh: 黑客新闻命令行版
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-15T21:35:38+00:00'
+  - date: '2026-04-16'
+    url: https://zenodo.org/records/19600206
+    title: 'The Universal Constraint Engine: Neuromorphic Computing Without Neural
+      Networks'
+    title_zh: 通用约束引擎：无需神经网络的神经形态计算
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-15T23:42:06+00:00'
   highlights_ai:
   - date: '2026-04-13'
     url: https://openai.com/academy/data-analysis
@@ -3769,3 +3808,24 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-python
     published_utc: '2026-04-14T19:04:01+00:00'
+  - date: '2026-04-16'
+    url: https://github.com/openai/openai-python/releases/tag/v2.32.0
+    title: 'openai/openai-python: v2.32.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-04-15T22:27:40+00:00'
+  - date: '2026-04-16'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.13
+    title: 'langchain-ai/langchain: langchain-openai==1.1.13'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-15T01:37:32+00:00'
+  - date: '2026-04-16'
+    url: https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/#atom-everything
+    title: Gemini 3.1 Flash TTS
+    title_zh: ''
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-15T17:13:14+00:00'

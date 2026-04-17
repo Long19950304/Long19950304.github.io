@@ -3572,6 +3572,7 @@ weeks:
   - '2026-04-14'
   - '2026-04-15'
   - '2026-04-16'
+  - '2026-04-17'
   highlights_news:
   - date: '2026-04-13'
     url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
@@ -3721,6 +3722,43 @@ weeks:
     category: Tech industry
     source: Hacker News (front page)
     published_utc: '2026-04-15T23:42:06+00:00'
+  - date: '2026-04-17'
+    url: https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/
+    title: OpenAI takes aim at Anthropic with beefed-up Codex that gives it more power
+      over your desktop
+    title_zh: OpenAI强化Codex功能，剑指Anthropic，增强桌面控制力
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-16T19:18:41+00:00'
+  - date: '2026-04-17'
+    url: https://arstechnica.com/science/2026/04/openai-starts-offering-a-biology-tuned-llm/
+    title: OpenAI starts offering a biology-tuned LLM
+    title_zh: OpenAI推出专为生物学优化的LLM
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-16T21:17:47+00:00'
+  - date: '2026-04-17'
+    url: https://www.theverge.com/streaming/913611/youtube-mobile-app-share-at-timestamp-clips
+    title: YouTube’s mobile app finally lets you share timestamped videos
+    title_zh: YouTube移动应用终可分享带时间戳的视频
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-16T23:32:16+00:00'
+  - date: '2026-04-17'
+    url: https://lucasgerads.com/blog/lecroy-mcp-spice-demo/
+    title: 'Show HN: Spice simulation → oscilloscope → verification with Claude Code'
+    title_zh: Show HN：Spice模拟→示波器→使用Claude Code验证
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-17T00:37:47+00:00'
+  - date: '2026-04-17'
+    url: https://github.com/gainsec/autoprober
+    title: Guy builds AI driven hardware hacker arm from duct tape, old cam and CNC
+      machine
+    title_zh: 男子用胶带、旧摄像头和CNC机制作AI驱动的硬件黑客手臂
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-16T21:56:37+00:00'
   highlights_ai:
   - date: '2026-04-13'
     url: https://openai.com/academy/data-analysis
@@ -3829,3 +3867,32 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-04-15T17:13:14+00:00'
+  - date: '2026-04-17'
+    url: https://the-decoder.com/openai-wants-to-sell-more-ads-in-chatgpt-but-advertisers-are-struggling-with-basic-tools/
+    title: OpenAI wants to sell more ads in ChatGPT, but advertisers are struggling
+      with basic tools
+    title_zh: OpenAI拟在ChatGPT增加广告位遇冷，广告主抱怨工具基础功能欠缺
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-16T15:23:44+00:00'
+  - date: '2026-04-17'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.14
+    title: 'langchain-ai/langchain: langchain-openai==1.1.14'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-16T14:55:44+00:00'
+  - date: '2026-04-17'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.1
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-04-16T14:11:33+00:00'
+  - date: '2026-04-17'
+    url: https://openai.com/index/introducing-gpt-rosalind
+    title: Introducing GPT-Rosalind for life sciences research
+    title_zh: 重磅推出：生命科学研究专用GPT-Rosalind模型
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-04-16T01:00:00+00:00'

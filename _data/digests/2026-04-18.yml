@@ -1,0 +1,891 @@
+date: '2026-04-18'
+title: Daily Digest - 2026-04-18
+title_zh: 每日简报 - 2026-04-18
+note: 'Today: US-sanctioned currency exchange says $15 million heist done by… · Kevin
+  Weil and Bill Peebles exit OpenAI as company continues to… · AI: OpenAI launches
+  GPT-Rosalind, a reasoning model built for….'
+note_zh: 今日关注：受美国制裁的货币交易所称1500万美元盗窃案系‘不友好国家’所为；凯文·韦尔与比尔·皮布尔斯离职OpenAI，公司持续精简‘支线业务’；AI：OpenAI推出面向生命科学研究的推理模型GPT-Rosalind。
+items:
+- category: AI tools & model releases
+  title: Full-Stack Optimizations for Agentic Inference with NVIDIA Dynamo
+  why: Coding agents are starting to write production code at scale.
+  takeaway: Coding agents are starting to write production code at scale. Stripe’s
+    agents generate 1,300+ PRs per week. Ramp attributes 30% of merged PRs to agents....
+  prompt: ''
+  url: https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-17T22:52:47+00:00'
+  title_zh: 使用NVIDIA Dynamo实现代理推理的全栈优化
+  why_zh: 编程代理开始大规模编写生产代码
+  takeaway_zh: 编程代理开始大规模编写生产代码。Stripe的代理每周生成1300多个PR。Ramp将30%的合并PR归功于代理...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.3
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-04-17T20:06:34+00:00'
+  title_zh: ''
+  why_zh: 版本更新（变更详情见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker HyperPod now supports flexible instance groups
+  why: Amazon SageMaker HyperPod now supports flexible instance groups, enabling customers
+    to specify multiple instance types and multiple subnets…
+  takeaway: Amazon SageMaker HyperPod now supports flexible instance groups, enabling
+    customers to specify multiple instance types and multiple subnets within a single
+    instance group. Customers running training and inference workloads on HyperPod
+    often need to span multiple instance types and availability zones for capacity
+    resilience, cost optimization, and subnet uti…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-hyperpod-flexible-instance-groups/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-17T20:03:00+00:00'
+  title_zh: Amazon SageMaker HyperPod 现已支持灵活的实例组
+  why_zh: 亚马逊SageMaker HyperPod现支持灵活实例组，客户可指定多种实例类型和子网...
+  takeaway_zh: 亚马逊SageMaker HyperPod现已支持灵活的实例组配置，客户可在单个实例组内指定多种实例类型和多个子网。在HyperPod上运行训练和推理工作负载的客户通常需要跨多种实例类型和可用区，以实现容量弹性、成本优化和子网利用率最大化...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw
+  why: Agents are evolving from question-and-answer systems into long-running autonomous
+    assistants that read files, call APIs, and drive multi-st…
+  takeaway: Agents are evolving from question-and-answer systems into long-running
+    autonomous assistants that read files, call APIs, and drive multi-step workflows....
+  prompt: ''
+  url: https://developer.nvidia.com/blog/build-a-secure-always-on-local-ai-agent-with-nvidia-nemoclaw-and-openclaw/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-17T18:59:12+00:00'
+  title_zh: 利用OpenClaw与NVIDIA NemoClaw构建更安全、持续运行的本地AI代理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The White House weighs whether Anthropic's Mythos is too valuable for the
+    federal government to refuse
+  why: Anthropic CEO Dario Amodei is meeting Trump's Chief of Staff Susie Wiles at
+    the White House to end a months-long standoff with the Pentagon.
+  takeaway: Anthropic CEO Dario Amodei is meeting Trump's Chief of Staff Susie Wiles
+    at the White House to end a months-long standoff with the Pentagon. The new Mythos
+    model's cybersecurity chops reportedly opened the door. The article The White
+    House weighs whether Anthropic's Mythos is too valuable for the federal government
+    to refuse appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/the-white-house-weighs-whether-anthropics-mythos-is-too-valuable-for-the-federal-government-to-refuse/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T18:30:49+00:00'
+  title_zh: 白宫评估Anthropic的Mythos是否值得联邦政府破例接纳
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Alibaba's open model Qwen3.6 leads Google's Gemma 4 across agentic coding
+    benchmarks
+  why: Alibaba's new open-source Qwen3.6-35B-A3B activates just three of its 35 billion
+    parameters at a time, yet beats Google's larger Gemma 4-31…
+  takeaway: Alibaba's new open-source Qwen3.6-35B-A3B activates just three of its
+    35 billion parameters at a time, yet beats Google's larger Gemma 4-31B on coding
+    and reasoning benchmarks. The article Alibaba's open model Qwen3.6 leads Google's
+    Gemma 4 across agentic coding benchmarks appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/alibabas-open-model-qwen3-6-leads-googles-gemma-4-across-agentic-coding-benchmarks/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T18:11:25+00:00'
+  title_zh: 阿里巴巴的开源模型 Qwen3.6 在代理编码基准测试中领先于 Google 的 Gemma 4
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Deadline Cloud announces AI-powered troubleshooting assistant for render
+    jobs
+  why: Today, AWS Deadline Cloud announces an AI-powered troubleshooting assistant
+    that helps you quickly diagnose and resolve render job failures.
+  takeaway: Today, AWS Deadline Cloud announces an AI-powered troubleshooting assistant
+    that helps you quickly diagnose and resolve render job failures. AWS Deadline
+    Cloud is a fully managed service that simplifies render management for computer-generated
+    2D/3D graphics and visual effects for films, TV shows, commercials, games, and
+    industrial design. Render job failur…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/deadline-cloud-ai-troubleshooting/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-17T16:40:00+00:00'
+  title_zh: AWS Deadline Cloud 推出 AI 驱动的渲染任务故障排除助手
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Anthropic's Claude Design turns chatbot conversations into prototypes, slide
+    decks, and marketing assets
+  why: Anthropic is launching Claude Design, a new tool that lets users create and
+    refine designs, interactive prototypes, presentation slides, an…
+  takeaway: Anthropic is launching Claude Design, a new tool that lets users create
+    and refine designs, interactive prototypes, presentation slides, and one-pagers
+    through a back-and-forth conversation with Claude. The tool can pull in codebases,
+    design files, and live websites to match existing brand styles. The article Anthropic's
+    Claude Design turns chatbot conversa…
+  prompt: ''
+  url: https://the-decoder.com/anthropics-claude-design-turns-chatbot-conversations-into-prototypes-slide-decks-and-marketing-assets/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T16:16:44+00:00'
+  title_zh: Anthropic的Claude Design将聊天机器人对话转化为原型、幻灯片与营销素材
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.2
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-04-17T15:34:59+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Accelerate Clean, Modular, Nuclear Reactor Design with AI Physics
+  why: The development of socially acceptable nuclear reactors requires that they
+    are safe, clean, efficient, economical, and sustainable.
+  takeaway: The development of socially acceptable nuclear reactors requires that
+    they are safe, clean, efficient, economical, and sustainable. Meeting these requirements...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/accelerate-clean-modular-nuclear-reactor-design-with-ai-physics/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-17T15:00:00+00:00'
+  title_zh: 利用 AI 物理加速清洁、模块化核反应堆设计
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.0
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-17T14:51:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-anthropic==1.4.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.4.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-17T14:26:31+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Physical Intelligence shows robot model with LLM-like generalization, flaws
+    included
+  why: US start-up Physical Intelligence has introduced π0.7, a new robot foundation
+    model designed to recombine skills learned during training, s…
+  takeaway: US start-up Physical Intelligence has introduced π0.7, a new robot foundation
+    model designed to recombine skills learned during training, similar to how a language
+    model reassembles text fragments from its training data. The researchers describe
+    this as early signs of "compositional generalization" in robotics. The article
+    Physical Intelligence shows robot…
+  prompt: ''
+  url: https://the-decoder.com/physical-intelligence-shows-robot-model-with-llm-like-generalization-flaws-included/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T11:57:54+00:00'
+  title_zh: Physical Intelligence 展示具有类似 LLM 泛化能力的机器人模型，包括缺陷
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI launches GPT-Rosalind, a reasoning model built for life sciences research
+  why: OpenAI has introduced GPT-Rosalind, a reasoning model tailored for the life
+    sciences.
+  takeaway: OpenAI has introduced GPT-Rosalind, a reasoning model tailored for the
+    life sciences. It's designed to help researchers move faster from hypothesis to
+    experiment. Access is tightly controlled for now. The article OpenAI launches
+    GPT-Rosalind, a reasoning model built for life sciences research appeared first
+    on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-launches-gpt-rosalind-a-reasoning-model-built-for-life-sciences-research/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T11:00:37+00:00'
+  title_zh: OpenAI推出面向生命科学研究的推理模型GPT-Rosalind
+  why_zh: OpenAI推出专为生命科学设计的推理模型GPT-Rosalind
+  takeaway_zh: OpenAI发布了GPT-Rosalind，一款面向生命科学研究的推理模型，旨在帮助研究人员加速从假设到实验的过程。目前该模型的访问受到严格限制。OpenAI推出面向生命科学研究的推理模型GPT-Rosalind一文首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.9-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.9-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-17T04:06:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: SageMaker JumpStart now offers optimized deployments for foundation models
+  why: SageMaker JumpStart now offers optimized deployments, enabling customers to
+    deploy foundation models with pre-configured settings tailored…
+  takeaway: SageMaker JumpStart now offers optimized deployments, enabling customers
+    to deploy foundation models with pre-configured settings tailored to specific
+    use cases and performance constraints. SageMaker JumpStart optimized deployments
+    simplify model deployment by offering task-aware configurations that optimize
+    for cost, throughput, or latency based on your wo…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-jumpstart-optimized-deployments/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-17T00:00:00+00:00'
+  title_zh: SageMaker JumpStart 现在提供针对基础模型的优化部署
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.21.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.21.0
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-04-16T22:00:17+00:00'
+  title_zh: ''
+  why_zh: 版本更新（变更详情见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: llm-anthropic 0.25
+  why: 'Release: llm-anthropic 0.25 New model: claude-opus-4.7 , which supports thinking_effort
+    : xhigh .'
+  takeaway: 'Release: llm-anthropic 0.25 New model: claude-opus-4.7 , which supports
+    thinking_effort : xhigh . #66 New thinking_display and thinking_adaptive boolean
+    options. thinking_display summarized output is currently only available in JSON
+    output or JSON logs. Increased default max_tokens to the maximum allowed for each
+    model. No longer uses obsolete structured-ou…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/16/llm-anthropic/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-16T20:37:12+00:00'
+  title_zh: ''
+  why_zh: '发布：llm-anthropic 0.25 新模型：claude-opus-4.7，支持thinking_effort: xhigh'
+  takeaway_zh: 发布：llm-anthropic 0.25 新模型：claude-opus-4.7，支持thinking_effort：xhigh。#66
+    新增thinking_display和thinking_adaptive布尔选项。thinking_display摘要输出目前仅支持JSON输出或JSON日志。默认max_tokens已提升至各模型允许的最大值。不再使用废弃的structured-ou…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-huggingface==1.2.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-huggingface%3D%3D1.2.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-16T19:57:52+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.0a3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.0a3
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-16T19:40:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7
+  why: For anyone who has been (inadvisably) taking my pelican riding a bicycle benchmark
+    seriously as a robust way to test models, here are pelic…
+  takeaway: For anyone who has been (inadvisably) taking my pelican riding a bicycle
+    benchmark seriously as a robust way to test models, here are pelicans from this
+    morning's two big model releases - Qwen3.6-35B-A3B from Alibaba and Claude Opus
+    4.7 from Anthropic . Here's the Qwen 3.6 pelican, generated using this 20.9GB
+    Qwen3.6-35B-A3B-UD-Q4_K_S.gguf quantized model b…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/16/qwen-beats-opus/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-16T17:16:52+00:00'
+  title_zh: Qwen3.6-35B-A3B 在我的笔记本电脑上画出的鹈鹕比 Claude Opus 4.7 更好
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google's AI Mode Update Tries to Kill Tab Hopping in Chrome
+  why: Google latest update to AI Mode in its Chrome browser is designed to keep the
+    chatbot-style search tool always around once you start an onl…
+  takeaway: Google latest update to AI Mode in its Chrome browser is designed to keep
+    the chatbot-style search tool always around once you start an online search journey.
+  prompt: ''
+  url: https://www.wired.com/story/google-ai-mode-update-tries-to-kill-tab-hopping-in-chrome/
+  source: WIRED - AI
+  published_utc: '2026-04-16T17:00:00+00:00'
+  title_zh: Google 的 AI 模式更新试图阻止 Chrome 中的标签页跳转
+  why_zh: 谷歌Chrome浏览器AI模式最新升级旨在让聊天式搜索工具在开始上网后保持常驻
+  takeaway_zh: 谷歌最新升级了Chrome浏览器的AI模式，设计目标是一旦用户开始在线搜索，就能始终保持这个聊天机器人风格的搜索工具可用。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-classic==1.0.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.4
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-16T16:58:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How to Build Vision AI Pipelines Using NVIDIA DeepStream Coding Agents
+  why: Developing real-time vision AI applications presents a significant challenge
+    for developers, often demanding intricate data pipelines, coun…
+  takeaway: Developing real-time vision AI applications presents a significant challenge
+    for developers, often demanding intricate data pipelines, countless lines of code,...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/how-to-build-vision-ai-pipelines-using-deepstream-coding-agents/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-16T15:00:00+00:00'
+  title_zh: 如何使用 NVIDIA DeepStream 编码代理构建视觉 AI 管道
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.14'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.14
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-16T14:55:44+00:00'
+  title_zh: ''
+  why_zh: 版本更新（变更详情见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-python: v0.96.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.96.0
+  source: GitHub Releases - anthropics/anthropic-sdk-python
+  published_utc: '2026-04-16T14:27:28+00:00'
+  title_zh: ''
+  why_zh: 版本更新（变更详情见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'anthropics/anthropic-sdk-typescript: sdk: v0.90.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.90.0
+  source: GitHub Releases - anthropics/anthropic-sdk-typescript
+  published_utc: '2026-04-16T14:26:59+00:00'
+  title_zh: ''
+  why_zh: 版本更新（变更详情见链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-text-splitters==1.1.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-16T14:20:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.1
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-04-16T14:11:33+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.2.31'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.31
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-16T13:26:42+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How to Host a Blog on a Subdirectory Instead of a Subdomain
+  why: 'Article URL: https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/
+    Comments URL: https://news.ycombinator.com/item?id=4…'
+  takeaway: 'Article URL: https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/
+    Comments URL: https://news.ycombinator.com/item?id=47811442 Points: 13 # Comments:
+    10'
+  prompt: ''
+  url: https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T22:53:18+00:00'
+  title_zh: 如何在子目录而非子域名上托管博客
+  why_zh: 文章链接：https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/
+    评论链接：https://news.ycombinator.com/item?id=4...
+  takeaway_zh: 文章网址：https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/
+    评论网址：https://news.ycombinator.com/item?id=47811442 点赞数：13 评论数：10
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Sam Altman’s project World looks to scale its human verification empire.
+    First stop: Tinder.'
+  why: World, which has raised eyebrows (but also a lot of interest) with its Orb-centered
+    anonymous verification project, is looking to expand it…
+  takeaway: World, which has raised eyebrows (but also a lot of interest) with its
+    Orb-centered anonymous verification project, is looking to expand its influence
+    via a bevy of new partnerships.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/
+  source: TechCrunch
+  published_utc: '2026-04-17T22:34:02+00:00'
+  title_zh: 山姆·奥特曼World项目拓展人类验证帝国，首站锁定Tinder
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Landmark ancient-genome study shows surprise acceleration of human evolution
+  why: 'Related: Ancient DNA reveals pervasive directional selection across West Eurasia
+    [pdf] - https://news.ycombinator.com/item?id=47791282 (64…'
+  takeaway: 'Related: Ancient DNA reveals pervasive directional selection across West
+    Eurasia [pdf] - https://news.ycombinator.com/item?id=47791282 (64 comments) https://x.com/doctorveera/status/2044679999450664967
+    ( https://xcancel.com/doctorveera/status/2044679999450664967 ) Comments URL: https://news.ycombinator.com/item?id=47811283
+    Points: 43 # Comments: 24'
+  prompt: ''
+  url: https://www.nature.com/articles/d41586-026-01204-5
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T22:30:28+00:00'
+  title_zh: 里程碑式古基因组研究揭示人类进化意外加速现象
+  why_zh: 相关：古代DNA揭示西亚普遍存在定向选择[pdf] - https://news.ycombinator.com/item?id=47791282
+    (64...)
+  takeaway_zh: 相关：古代DNA揭示欧亚大陆西部普遍存在定向选择[pdf] - https://news.ycombinator.com/item?id=47791282
+    (64条评论) https://x.com/doctorveera/status/2044679999450664967 ( https://xcancel.com/doctorveera/status/2044679999450664967
+    ) 评论网址：https://news.ycombinator.com/item?id=47811283 点赞数：43 评论数：24
+  prompt_zh: ''
+- category: Tech industry
+  title: A simplified model of Fil-C
+  why: 'Article URL: https://www.corsix.org/content/simplified-model-of-fil-c Comments
+    URL: https://news.ycombinator.com/item?id=47810872 Points: 1…'
+  takeaway: 'Article URL: https://www.corsix.org/content/simplified-model-of-fil-c
+    Comments URL: https://news.ycombinator.com/item?id=47810872 Points: 105 # Comments:
+    51'
+  prompt: ''
+  url: https://www.corsix.org/content/simplified-model-of-fil-c
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T21:38:20+00:00'
+  title_zh: Fil-C的简化模型
+  why_zh: 文章链接：https://www.corsix.org/content/simplified-model-of-fil-c 评论链接：https://news.ycombinator.com/item?id=47810872
+    积分：1...
+  takeaway_zh: 文章网址：https://www.corsix.org/content/simplified-model-of-fil-c 评论网址：https://news.ycombinator.com/item?id=47810872
+    点赞数：105 评论数：51
+  prompt_zh: ''
+- category: Security
+  title: US-sanctioned currency exchange says $15 million heist done by "unfriendly
+    states"
+  why: Grinex says needed hacking resources "available exclusively to ...
+  takeaway: Grinex says needed hacking resources "available exclusively to ... unfriendly
+    states."
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/
+  source: Ars Technica
+  published_utc: '2026-04-17T21:28:35+00:00'
+  title_zh: 受美国制裁的货币交易所称1500万美元盗窃案系‘不友好国家’所为
+  why_zh: Grinex称所需黑客资源"仅对...开放"
+  takeaway_zh: Grinex称所需黑客资源"仅对...不友好国家开放"
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI’s former Sora boss is leaving
+  why: Last month, OpenAI gave up on its Sora video generation tool, and on Friday,
+    the Sora team's leader, Bill Peebles, announced that he is lea…
+  takeaway: Last month, OpenAI gave up on its Sora video generation tool, and on Friday,
+    the Sora team's leader, Bill Peebles, announced that he is leaving the company.
+    OpenAI has been shifting its priorities as part of an effort to avoid "side quests,"
+    and Peebles' departure is just one of many recent changes as the company […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/914463/openai-sora-bill-peebles-kevin-weil-leaving-departing
+  source: The Verge
+  published_utc: '2026-04-17T21:13:25+00:00'
+  title_zh: OpenAI前Sora项目负责人即将离职
+  why_zh: 上月OpenAI放弃了其Sora视频生成工具，周五该团队负责人比尔·皮布尔斯宣布离职...
+  takeaway_zh: 上月OpenAI放弃了其Sora视频生成工具，周五该团队负责人比尔·皮布尔斯宣布离职。OpenAI一直在调整优先级以避免"支线任务"，皮布尔斯的离职只是公司近来众多变革中的一项...
+  prompt_zh: ''
+- category: Tech industry
+  title: Arc Prize Foundation (YC W26) Is Hiring a Platform Engineer for ARC-AGI-4
+  why: 'Article URL: https://www.ycombinator.com/companies/arc-prize-foundation/jobs/AKZRZDN-platform-engineer-benchmark-lead
+    Comments URL: https:/…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/arc-prize-foundation/jobs/AKZRZDN-platform-engineer-benchmark-lead
+    Comments URL: https://news.ycombinator.com/item?id=47810507 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/arc-prize-foundation/jobs/AKZRZDN-platform-engineer-benchmark-lead
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T21:00:08+00:00'
+  title_zh: Arc Prize基金会（YC W26）正在招聘ARC-AGI-4平台工程师
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Should you stare into Sam Altman&#8217;s orb before your next date?
+  why: Tinder users who prove they're a real person by visiting an identity-verifying
+    orb will soon be able to get five free boosts in the app - a…
+  takeaway: Tinder users who prove they're a real person by visiting an identity-verifying
+    orb will soon be able to get five free boosts in the app - and it's just the latest
+    service to embrace the orb. World, which was co-founded by OpenAI CEO Sam Altman,
+    initially tested Tinder verification using its facial scanning orbs through […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity-verifying-orb
+  source: The Verge
+  published_utc: '2026-04-17T20:42:47+00:00'
+  title_zh: 约会前该凝视山姆·奥特曼的水晶球吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Kevin Weil and Bill Peebles exit OpenAI as company continues to shed ‘side
+    quests’
+  why: Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down Sora
+    and folds its science team, signaling a sharp pivot away from…
+  takeaway: Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down
+    Sora and folds its science team, signaling a sharp pivot away from consumer moonshots
+    toward enterprise AI.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/
+  source: TechCrunch
+  published_utc: '2026-04-17T20:38:17+00:00'
+  title_zh: 凯文·韦尔与比尔·皮布尔斯离职OpenAI，公司持续精简‘支线业务’
+  why_zh: 随着公司关闭Sora项目并解散科学团队，凯文·韦尔和比尔·皮布尔斯将离开OpenAI，这标志着该公司的重心正从...急剧转变
+  takeaway_zh: 随着公司关闭Sora项目并解散科学团队，凯文·韦尔和比尔·皮布尔斯将离开OpenAI，这标志着该公司的重心正从消费级探索急剧转向企业级AI
+  prompt_zh: ''
+- category: Tech industry
+  title: Man who hacked US Supreme Court filing system sentenced to probation
+  why: Nicholas Moore hacked into three U.S.
+  takeaway: Nicholas Moore hacked into three U.S. government networks using stolen
+    credentials, and then bragged about it and posted victims' personal data on Instagram
+    under the handle @ihackedthegovernment.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/man-who-hacked-us-supreme-court-filing-system-sentenced-to-probation/
+  source: TechCrunch
+  published_utc: '2026-04-17T20:16:13+00:00'
+  title_zh: 黑客入侵美国最高法院备案系统案被告获判缓刑
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic’s new cybersecurity model could get it back in the government’s
+    good graces
+  why: The Trump administration has spent nearly two months fighting with AI company
+    Anthropic.
+  takeaway: 'The Trump administration has spent nearly two months fighting with AI
+    company Anthropic. It''s dubbed the company a "RADICAL LEFT, WOKE COMPANY" full
+    of "Leftwing nut jobs" and a menace to national security. But some of the ice
+    may reportedly be melting between the two, thanks to Anthropic''s buzzy new cybersecurity-focused
+    model: Claude Mythos Preview. […]'
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/914229/tides-turning-anthropic-trump-administration-cybersecurity-mythos-preview
+  source: The Verge
+  published_utc: '2026-04-17T20:14:21+00:00'
+  title_zh: Anthropic新网络安全模型或助其重获政府青睐
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI Executive Kevin Weil Is Leaving the Company
+  why: The former Instagram VP is departing the ChatGPT-maker, which is folding the
+    AI science application he led into Codex.
+  takeaway: The former Instagram VP is departing the ChatGPT-maker, which is folding
+    the AI science application he led into Codex.
+  prompt: ''
+  url: https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/
+  source: WIRED - AI
+  published_utc: '2026-04-17T19:56:42+00:00'
+  title_zh: OpenAI高管凯文·威尔即将离职
+  why_zh: 这位Instagram前副总裁将离开ChatGPT开发商，其领导的AI科学应用将被并入Codex
+  takeaway_zh: 这位Instagram前副总裁将离开ChatGPT开发商，其领导的AI科学应用将被并入Codex
+  prompt_zh: ''
+- category: Tech industry
+  title: Man with @ihackedthegovernment Instagram account tells judge, “I made a mistake"
+  why: Probation for man who used stolen logins and posted private info on social
+    media.
+  takeaway: Probation for man who used stolen logins and posted private info on social
+    media.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/man-with-ihackedthegovernment-instagram-account-tells-judge-i-made-a-mistake/
+  source: Ars Technica
+  published_utc: '2026-04-17T19:31:48+00:00'
+  title_zh: 拥有@ihackedthegovernment账号的男子向法官承认‘我犯了错’
+  why_zh: 男子因使用被盗账号在社交媒体发布私人信息被判缓刑
+  takeaway_zh: 男子因使用被盗账号在社交媒体发布私人信息被判缓刑
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump picks qualified, normal health leader to head CDC; experts still cautious
+  why: She's well qualified but will need to navigate RFK Jr.'s anti-vaccine agenda.
+  takeaway: She's well qualified but will need to navigate RFK Jr.'s anti-vaccine
+    agenda.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/trump-picks-qualified-normal-health-leader-to-head-cdc-experts-still-cautious/
+  source: Ars Technica
+  published_utc: '2026-04-17T19:19:47+00:00'
+  title_zh: 特朗普提名资质正常的卫生官员执掌CDC，专家仍持谨慎态度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth
+    surges'
+  why: Returning backers a16z and Thrive are expected to lead the round.
+  takeaway: Returning backers a16z and Thrive are expected to lead the round.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/
+  source: TechCrunch
+  published_utc: '2026-04-17T19:17:26+00:00'
+  title_zh: 知情人士：Cursor拟以500亿估值融资逾20亿美元，企业业务激增
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Google Deepmind's Gemini Robotics-ER 1.6 gives robots a sharper brain for
+    planning and perception
+  why: Google Deepmind's Gemini Robotics-ER 1.6 helps robots plan and act more precisely,
+    with a new knack for reading measuring instruments.
+  takeaway: Google Deepmind's Gemini Robotics-ER 1.6 helps robots plan and act more
+    precisely, with a new knack for reading measuring instruments. The article Google
+    Deepmind's Gemini Robotics-ER 1.6 gives robots a sharper brain for planning and
+    perception appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/google-deepminds-gemini-robotics-er-1-6-gives-robots-a-sharper-brain-for-planning-and-perception/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T18:59:56+00:00'
+  title_zh: 谷歌DeepMind的Gemini Robotics-ER 1.6为机器人提供更强大的规划与感知能力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Google finds new ways to keep you from ever visiting a website directly again
+  why: 'Google is pushing AI mode deeper into Chrome: websites will soon open directly
+    next to the AI response.'
+  takeaway: 'Google is pushing AI mode deeper into Chrome: websites will soon open
+    directly next to the AI response. That makes the traditional page visit even less
+    relevant. The article Google finds new ways to keep you from ever visiting a website
+    directly again appeared first on The Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/google-finds-new-ways-to-keep-you-from-ever-visiting-a-website-directly-again/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T18:45:35+00:00'
+  title_zh: 谷歌推出新方法，让你无需直接访问网站
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Even "cat readme.txt" is not safe
+  why: 'Article URL: https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not Comments
+    URL: https://news.ycombinator.com/item?id=47809190 Points:…'
+  takeaway: 'Article URL: https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not
+    Comments URL: https://news.ycombinator.com/item?id=47809190 Points: 78 # Comments:
+    40'
+  prompt: ''
+  url: https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T18:43:32+00:00'
+  title_zh: 就连'cat readme.txt'都不再安全
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ‘Tokenmaxxing’ is making developers less productive than they think
+  why: There's a lot more code — but it's a lot more expensive and requires a lot
+    more rewriting.
+  takeaway: There's a lot more code — but it's a lot more expensive and requires a
+    lot more rewriting.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/
+  source: TechCrunch
+  published_utc: '2026-04-17T18:42:45+00:00'
+  title_zh: ‘代币最大化’正使开发者陷入效率虚高的错觉
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '$25,000 buys plenty of used EVs: Here are some options'
+  why: Is $20,000–$25,000 a sweet spot for secondhand electric cars?
+  takeaway: Is $20,000–$25,000 a sweet spot for secondhand electric cars? We think
+    so.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/04/25000-buys-plenty-of-used-evs-here-are-some-options/
+  source: Ars Technica
+  published_utc: '2026-04-17T18:31:48+00:00'
+  title_zh: 2.5万美元可购多款二手电动车：这些车型值得考虑
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: All 12 moonwalkers had "lunar hay fever" from dust smelling like gunpowder
+    (2018)
+  why: 'Article URL: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon
+    Comments URL: https://news.yc…'
+  takeaway: 'Article URL: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon
+    Comments URL: https://news.ycombinator.com/item?id=47808913 Points: 219 # Comments:
+    127'
+  prompt: ''
+  url: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T18:17:01+00:00'
+  title_zh: 所有12位登月宇航员都因闻起来像火药味的月尘患上'月球花粉症'(2018)
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Satellite and drone images reveal big delays in US data center construction
+  why: Data centers face construction delays and energy bottleneck as resistance grows.
+  takeaway: Data centers face construction delays and energy bottleneck as resistance
+    grows.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/construction-delays-hit-40-of-us-data-centers-planned-for-2026/
+  source: Ars Technica
+  published_utc: '2026-04-17T18:08:25+00:00'
+  title_zh: 卫星与无人机影像显示美国数据中心建设进度大幅滞后
+  why_zh: 随着抵制加剧，数据中心面临建设延迟和能源瓶颈
+  takeaway_zh: 随着抵制加剧，数据中心面临建设延迟和能源瓶颈
+  prompt_zh: ''
+- category: Tech industry
+  title: Betting on the news raises ethical questions for journalists
+  why: 'Prediction market exchanges have created an environment where just about any
+    piece of information is potentially monetizable: How well will…'
+  takeaway: 'Prediction market exchanges have created an environment where just about
+    any piece of information is potentially monetizable: How well will BTS''s new
+    song perform this week? How hot will Los Angeles get? Will Donald Trump be impeached?
+    Users can wager on all of that and, on some platforms, more gruesome and violent
+    outcomes in the […]'
+  prompt: ''
+  url: https://www.theverge.com/report/914157/prediction-markets-news-outlet-ethics-policy-propublica-kalshi-polymarket
+  source: The Verge
+  published_utc: '2026-04-17T18:07:43+00:00'
+  title_zh: 新闻赌博引发记者伦理争议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Hackers are abusing unpatched Windows security flaws to hack into organizations
+  why: A security researcher published details of three security vulnerabilities in
+    Windows Defender, and the code used to exploit them.
+  takeaway: A security researcher published details of three security vulnerabilities
+    in Windows Defender, and the code used to exploit them. Now, hackers are taking
+    advantage of the vulnerabilities in real-life attacks, according to a cybersecurity
+    firm.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/hackers-are-abusing-unpatched-windows-security-flaws-to-hack-into-organizations/
+  source: TechCrunch
+  published_utc: '2026-04-17T17:48:46+00:00'
+  title_zh: 黑客正利用未修补的Windows漏洞入侵各类组织
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: ChatGPT bleeds market share as Claude posts explosive monthly growth
+  why: Claude doubles its market share in a single month, jumping past Deepseek and
+    Grok.
+  takeaway: Claude doubles its market share in a single month, jumping past Deepseek
+    and Grok. ChatGPT still leads the pack but is losing ground fast, especially to
+    Google Gemini, which now captures a quarter of all AI traffic. The article ChatGPT
+    bleeds market share as Claude posts explosive monthly growth appeared first on
+    The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/chatgpt-bleeds-market-share-as-claude-posts-explosive-monthly-growth/
+  source: The Decoder (AI)
+  published_utc: '2026-04-17T17:44:22+00:00'
+  title_zh: ChatGPT市场份额下滑，Claude月度增速迅猛
+  why_zh: Claude市场份额单月翻番，超越Deepseek和Grok
+  takeaway_zh: Claude市场份额单月翻番，超越Deepseek和Grok。ChatGPT仍居榜首但优势快速消退，特别是面对占据四分之一AI流量的谷歌Gemini。报道《ChatGPT市场份额流失，Claude月度增长爆发》首发于The
+    Decoder
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon won’t release Fire Sticks that support sideloading anymore
+  why: The two newest Fire Sticks block apps from outside of Amazon's store.
+  takeaway: The two newest Fire Sticks block apps from outside of Amazon's store.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/amazon-wont-release-fire-sticks-that-support-sideloading-anymore/
+  source: Ars Technica
+  published_utc: '2026-04-17T17:42:42+00:00'
+  title_zh: 亚马逊将不再发布支持侧载应用的Fire TV Stick
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ridley Scott's post-apocalyptic The Dog Stars drops first trailer
+  why: '"The world that was, doesn''t exist.'
+  takeaway: '"The world that was, doesn''t exist. It''s just us, trying to hold onto
+    what was."'
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/04/ridley-scotts-post-apocalyptic-the-dog-stars-drops-first-trailer/
+  source: Ars Technica
+  published_utc: '2026-04-17T17:32:55+00:00'
+  title_zh: 雷德利·斯科特后末日新作《群星之间》首发预告
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: This charming gadget writes bad AI poetry
+  why: I've never been as charmed and frustrated by one gadget as I have with the
+    Poetry Camera.
+  takeaway: I've never been as charmed and frustrated by one gadget as I have with
+    the Poetry Camera. It's a delightful object. White and cherry red with a color-matched
+    woven strap, it looks playful and adorably lo-fi. If I saw it on a store shelf,
+    I'd absolutely pick it up. But aside from obviously appealing, I'm […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/913981/poetry-camera-ai-hands-on
+  source: The Verge
+  published_utc: '2026-04-17T17:30:00+00:00'
+  title_zh: 这款可爱设备会写拙劣的AI诗歌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Smol machines – subsecond coldstart, portable virtual machines'
+  why: 'Article URL: https://github.com/smol-machines/smolvm Comments URL: https://news.ycombinator.com/item?id=47808268
+    Points: 215 # Comments: 89'
+  takeaway: 'Article URL: https://github.com/smol-machines/smolvm Comments URL: https://news.ycombinator.com/item?id=47808268
+    Points: 215 # Comments: 89'
+  prompt: ''
+  url: https://github.com/smol-machines/smolvm
+  source: Hacker News (front page)
+  published_utc: '2026-04-17T17:18:58+00:00'
+  title_zh: Show HN：Smol machines——亚秒级冷启动的便携式虚拟机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Zoom teams up with World to verify humans in meetings
+  why: Meeting platform Zoom has announced a partnership with World, Sam Altman's
+    human ID verification company, to ensure that the people attendi…
+  takeaway: Meeting platform Zoom has announced a partnership with World, Sam Altman's
+    human ID verification company, to ensure that the people attending meetings are
+    actually human and not AI-generated imposters. Zoom will show a badge on verified
+    participants' tile.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/
+  source: TechCrunch
+  published_utc: '2026-04-17T17:15:00+00:00'
+  title_zh: Zoom与World合作实现会议人脸验证
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

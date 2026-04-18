@@ -3573,6 +3573,7 @@ weeks:
   - '2026-04-15'
   - '2026-04-16'
   - '2026-04-17'
+  - '2026-04-18'
   highlights_news:
   - date: '2026-04-13'
     url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
@@ -3896,3 +3897,32 @@ weeks:
     category: AI tools & model releases
     source: OpenAI Blog (releases-only)
     published_utc: '2026-04-16T01:00:00+00:00'
+  - date: '2026-04-18'
+    url: https://the-decoder.com/openai-launches-gpt-rosalind-a-reasoning-model-built-for-life-sciences-research/
+    title: OpenAI launches GPT-Rosalind, a reasoning model built for life sciences
+      research
+    title_zh: OpenAI推出面向生命科学研究的推理模型GPT-Rosalind
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-17T11:00:37+00:00'
+  - date: '2026-04-18'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.3
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-04-17T20:06:34+00:00'
+  - date: '2026-04-18'
+    url: https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/
+    title: Full-Stack Optimizations for Agentic Inference with NVIDIA Dynamo
+    title_zh: 使用NVIDIA Dynamo实现代理推理的全栈优化
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-04-17T22:52:47+00:00'
+  - date: '2026-04-18'
+    url: https://simonwillison.net/2026/Apr/16/llm-anthropic/#atom-everything
+    title: llm-anthropic 0.25
+    title_zh: ''
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-16T20:37:12+00:00'

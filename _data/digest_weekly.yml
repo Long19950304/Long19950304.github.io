@@ -3574,6 +3574,7 @@ weeks:
   - '2026-04-16'
   - '2026-04-17'
   - '2026-04-18'
+  - '2026-04-19'
   highlights_news:
   - date: '2026-04-13'
     url: https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
@@ -3926,3 +3927,18 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-04-16T20:37:12+00:00'
+  - date: '2026-04-19'
+    url: https://the-decoder.com/the-myth-of-claude-mythos-crumbles-as-small-open-models-hunt-the-same-cybersecurity-bugs-anthropic-showcased/
+    title: The myth of Claude Mythos crumbles as small open models hunt the same cybersecurity
+      bugs Anthropic showcased
+    title_zh: Claude Mythos神话破灭，小型开源模型同样捕捉Anthropic展示的网络安全漏洞
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-18T08:48:05+00:00'
+  - date: '2026-04-19'
+    url: https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything
+    title: Changes in the system prompt between Claude Opus 4.6 and 4.7
+    title_zh: Claude Opus 4.6与4.7系统提示的变化
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-18T23:59:40+00:00'

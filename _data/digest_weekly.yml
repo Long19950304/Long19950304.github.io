@@ -3942,3 +3942,80 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-04-18T23:59:40+00:00'
+- week: 2026-W17
+  start: '2026-04-20'
+  end: '2026-04-26'
+  issues:
+  - '2026-04-20'
+  highlights_news:
+  - date: '2026-04-20'
+    url: https://techcrunch.com/2026/04/19/openais-existential-questions/
+    title: OpenAI’s existential questions
+    title_zh: OpenAI的存在主义问题
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-19T21:24:06+00:00'
+  - date: '2026-04-20'
+    url: https://www.theverge.com/tech/914723/vercel-hacked
+    title: Cloud development platform Vercel was hacked
+    title_zh: 云开发平台Vercel遭黑客入侵
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-19T19:54:52+00:00'
+  - date: '2026-04-20'
+    url: https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/
+    title: Blue Origin's rocket reuse achievement marred by upper stage failure
+    title_zh: 蓝色起源火箭复用壮举因上级故障蒙阴影
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-19T18:19:19+00:00'
+  - date: '2026-04-20'
+    url: https://the-decoder.com/anthropics-revenue-surge-reportedly-fuels-talk-of-trillion-dollar-valuation/
+    title: Anthropic's revenue surge reportedly fuels talk of trillion-dollar valuation
+    title_zh: 据报道Anthropic营收激增引发万亿估值讨论
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-04-19T14:40:00+00:00'
+  - date: '2026-04-20'
+    url: https://spectrum.ieee.org/francis-bacon-scientific-method
+    title: How Engineers Kick-Started the Scientific Method
+    title_zh: 工程师如何开创科学方法论
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-04-19T13:00:02+00:00'
+  highlights_ai:
+  - date: '2026-04-20'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.3
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.19.3'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-04-17T20:06:34+00:00'
+  - date: '2026-04-20'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.14
+    title: 'langchain-ai/langchain: langchain-openai==1.1.14'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-16T14:55:44+00:00'
+  - date: '2026-04-20'
+    url: https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything
+    title: Claude system prompts as a git timeline
+    title_zh: Claude系统提示的Git时间线
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-18T12:25:00+00:00'
+  - date: '2026-04-20'
+    url: https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/
+    title: Full-Stack Optimizations for Agentic Inference with NVIDIA Dynamo
+    title_zh: 使用NVIDIA Dynamo进行代理推理的全栈优化
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-04-17T22:52:47+00:00'
+  - date: '2026-04-20'
+    url: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.96.0
+    title: 'anthropics/anthropic-sdk-python: v0.96.0'
+    title_zh: anthropics/anthropic-sdk-python：v0.96.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - anthropics/anthropic-sdk-python
+    published_utc: '2026-04-16T14:27:28+00:00'

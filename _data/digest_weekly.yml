@@ -3947,6 +3947,7 @@ weeks:
   end: '2026-04-26'
   issues:
   - '2026-04-20'
+  - '2026-04-21'
   highlights_news:
   - date: '2026-04-20'
     url: https://techcrunch.com/2026/04/19/openais-existential-questions/
@@ -3983,6 +3984,42 @@ weeks:
     category: Tech industry
     source: IEEE Spectrum
     published_utc: '2026-04-19T13:00:02+00:00'
+  - date: '2026-04-21'
+    url: https://arstechnica.com/tech-policy/2026/04/us-opens-refund-portal-to-start-paying-back-trumps-illegal-tariffs/
+    title: US opens refund portal to start paying back Trump's illegal tariffs
+    title_zh: 美国开通退款门户，开始退还特朗普非法关税
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-20T18:53:21+00:00'
+  - date: '2026-04-21'
+    url: https://techcrunch.com/2026/04/20/google-rolls-out-gemini-in-chrome-in-seven-new-countries/
+    title: Google rolls out Gemini in Chrome in 7 new countries
+    title_zh: 谷歌在7个新国家推出Chrome中的Gemini功能
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-20T22:00:00+00:00'
+  - date: '2026-04-21'
+    url: https://www.theverge.com/policy/915422/tim-cook-apple-chairman-trump-policy
+    title: Tim Cook will still be Apple’s Trump whisperer
+    title_zh: 蒂姆·库克仍将是苹果的“特朗普密语者”
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-21T00:14:45+00:00'
+  - date: '2026-04-21'
+    url: https://www.adweek.com/media/exclusive-leaked-deck-reveals-stackadapts-playbook-for-chatgpt-ads/
+    title: OpenAI ad partner now selling ChatGPT ad placements based on “prompt relevance”
+    title_zh: OpenAI广告合作伙伴现根据“提示相关性”销售ChatGPT广告位
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-20T21:20:52+00:00'
+  - date: '2026-04-21'
+    url: https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds
+    title: '[AINews] Moonshot Kimi K2.6: the world''s leading Open Model refreshes
+      to catch up to Opus 4.6 (ahead of DeepSeek v4?)'
+    title_zh: '[AINews] Moonshot Kimi K2.6：全球领先的开放模型更新，追赶Opus 4.6（领先于DeepSeek v4？）'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-04-21T00:19:33+00:00'
   highlights_ai:
   - date: '2026-04-20'
     url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.3
@@ -4019,3 +4056,31 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - anthropics/anthropic-sdk-python
     published_utc: '2026-04-16T14:27:28+00:00'
+  - date: '2026-04-21'
+    url: https://the-decoder.com/open-weight-kimi-k2-6-takes-on-gpt-5-4-and-claude-opus-4-6-with-agent-swarms/
+    title: Open-weight Kimi K2.6 takes on GPT-5.4 and Claude Opus 4.6 with agent swarms
+    title_zh: 开放权重的Kimi K2.6以代理群组挑战GPT-5.4和Claude Opus 4.6
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-20T17:13:04+00:00'
+  - date: '2026-04-21'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.15
+    title: 'langchain-ai/langchain: langchain-openai==1.1.15'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-20T19:57:23+00:00'
+  - date: '2026-04-21'
+    url: https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise
+    title: OpenAI helps Hyatt advance AI among colleagues
+    title_zh: OpenAI助力凯悦酒店在同事间推进AI应用
+    category: AI tools & model releases
+    source: OpenAI Blog (releases-only)
+    published_utc: '2026-04-20T00:00:00+00:00'
+  - date: '2026-04-21'
+    url: https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/
+    title: Maximizing Memory Efficiency to Run Bigger Models on NVIDIA Jetson
+    title_zh: 最大化内存效率，在NVIDIA Jetson上运行更大模型
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-04-20T23:01:04+00:00'

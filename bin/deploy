@@ -81,12 +81,6 @@ else
   git checkout -b "${SRC_BRANCH}"
 fi
 
-# Checkout DEPLOY_BRANCH branch (recreate it fresh each deploy)
-if git show-ref --verify --quiet "refs/heads/${DEPLOY_BRANCH}"; then
-  git branch -D "${DEPLOY_BRANCH}"
-fi
-git checkout -b "${DEPLOY_BRANCH}"
-
 # Export JEKYLL_ENV=production
 export JEKYLL_ENV=production
 
@@ -100,8 +94,14 @@ else
   echo "[WARN] purgecss not found; skipping CSS purge."
 fi
 
+# Checkout DEPLOY_BRANCH branch (recreate it fresh each deploy)
+if git show-ref --verify --quiet "refs/heads/${DEPLOY_BRANCH}"; then
+  git branch -D "${DEPLOY_BRANCH}"
+fi
+git checkout -b "${DEPLOY_BRANCH}"
+
 # Delete and move files
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
+find . -mindepth 1 -maxdepth 1 ! -name '_site' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
 mv _site/* .
 rm -R _site/
 

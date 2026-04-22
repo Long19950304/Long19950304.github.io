@@ -3948,6 +3948,7 @@ weeks:
   issues:
   - '2026-04-20'
   - '2026-04-21'
+  - '2026-04-22'
   highlights_news:
   - date: '2026-04-20'
     url: https://techcrunch.com/2026/04/19/openais-existential-questions/
@@ -4020,6 +4021,42 @@ weeks:
     category: AI frontier
     source: Latent Space (AI newsletter)
     published_utc: '2026-04-21T00:19:33+00:00'
+  - date: '2026-04-22'
+    url: https://arstechnica.com/tech-policy/2026/04/florida-probes-chatgpt-role-in-mass-shooting-openai-says-bot-not-responsible/
+    title: Florida probes ChatGPT role in mass shooting. OpenAI says bot "not responsible."
+    title_zh: 佛罗里达州调查ChatGPT在大规模枪击案中的作用，OpenAI称该聊天机器人“不负有责任”
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-21T20:01:36+00:00'
+  - date: '2026-04-22'
+    url: https://www.technologyreview.com/2026/04/21/1135486/roundtables-unveiling-the-10-things-that-matter-in-ai-right-now/
+    title: 'Roundtables: Unveiling The 10 Things That Matter in AI Right Now'
+    title_zh: 圆桌会议：揭示当前AI领域最重要的10大议题
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-04-21T22:09:25+00:00'
+  - date: '2026-04-22'
+    url: https://techcrunch.com/2026/04/21/redwood-materials-lays-off-10-in-restructuring-to-chase-energy-storage-business/
+    title: Redwood Materials lays off 10% in restructuring to chase energy storage
+      business
+    title_zh: Redwood Materials裁员10%以重组能源存储业务
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-22T00:37:33+00:00'
+  - date: '2026-04-22'
+    url: https://www.theverge.com/science/916427/spacex-cursor-potential-deal-acquisition
+    title: SpaceX cuts a deal to maybe buy Cursor for $60 billion
+    title_zh: SpaceX达成协议，或将以600亿美元收购Cursor
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-21T22:45:37+00:00'
+  - date: '2026-04-22'
+    url: https://www.latent.space/p/ainews-openai-launches-gpt-image
+    title: '[AINews] OpenAI launches GPT-Image-2'
+    title_zh: '[AINews] OpenAI发布GPT-Image-2'
+    category: AI frontier
+    source: Latent Space (AI newsletter)
+    published_utc: '2026-04-22T00:23:52+00:00'
   highlights_ai:
   - date: '2026-04-20'
     url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.19.3
@@ -4084,3 +4121,17 @@ weeks:
     category: AI tools & model releases
     source: NVIDIA Developer Blog
     published_utc: '2026-04-20T23:01:04+00:00'
+  - date: '2026-04-22'
+    url: https://simonwillison.net/2026/Apr/21/gpt-image-2/#atom-everything
+    title: Where's the raccoon with the ham radio? (ChatGPT Images 2.0)
+    title_zh: 那只拿着业余无线电设备的浣熊去哪了？（ChatGPT Images 2.0）
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-21T20:32:24+00:00'
+  - date: '2026-04-22'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.16
+    title: 'langchain-ai/langchain: langchain-openai==1.1.16'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-21T19:26:40+00:00'

@@ -2,7 +2,7 @@
 layout: page
 title: Digest
 permalink: /digest/
-description: Daily digest archive (news + sources), plus a separate AI tools/model updates section per day.
+description: Daily (high-signal) research briefs curated across AI, CSS/AI & society, digital health, and education.
 nav: true
 nav_order: 7
 lang: en
@@ -10,13 +10,13 @@ translation_key: digest
 ---
 
 <p class="small">
-Daily digest archive. Each day includes a news section and (when available) an AI tools/model updates section.
+Archive of daily digests (news + sources), plus a separate AI tools/model updates section per day.
 </p>
 
-<div class="digest-index-meta small">
-  <a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
-  · <a href="{{ '/digest/feed.xml' | relative_url }}">RSS</a>
-</div>
+<p class="small">
+<a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
+ · <a href="{{ '/digest/feed.xml' | relative_url }}">RSS</a>
+</p>
 
 {% assign digests = site.digests | sort: "name" | reverse %}
 
@@ -26,10 +26,7 @@ Daily digest archive. Each day includes a news section and (when available) an A
 <div class="digest-index" data-digest-index>
   <div class="digest-index-controls">
     <div class="digest-index-controls__row">
-      <input class="form-control form-control-sm digest-index-search" type="search" placeholder="Search news & AI tools…" data-digest-search>
-    </div>
-    <div class="digest-index-controls__row">
-      <div class="digest-search-results" data-digest-results hidden></div>
+      <input class="form-control form-control-sm digest-index-search" type="search" placeholder="Search…" data-digest-search>
     </div>
     <div class="digest-index-controls__row digest-index-filters" role="group" aria-label="Digest filters">
       <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="all">All</button>
@@ -43,7 +40,7 @@ Daily digest archive. Each day includes a news section and (when available) an A
     </div>
   </div>
 
-  <div class="digest-index-list" data-digest-grid>
+  <div class="row">
 {% for d in digests %}
   {% assign date_key = d.digest_date | date: "%Y-%m-%d" %}
   {% assign zh = site.digests_zh | where: "digest_date", d.digest_date | first %}
@@ -66,60 +63,56 @@ Daily digest archive. Each day includes a news section and (when available) an A
     {% endfor %}
   {% endif %}
   {% assign tags = tags | strip %}
-  {%- comment -%}Keep the `data-tags` attribute small and stable for filtering.{%- endcomment -%}
-  {% assign tags = tags | split: " " | uniq | join: " " | strip %}
   {% assign thumb_path = '/assets/img/digests/' | append: date_key | append: '-en.png' %}
   {% assign thumb_webp_path = '/assets/img/digests/' | append: date_key | append: '-en.webp' %}
   {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}
   {% assign thumb_webp_file = site.static_files | where: "path", thumb_webp_path | first %}
   {% assign ai_path = '/assets/img/digests/' | append: date_key | append: '-ai-en.png' %}
   {% assign ai_file = site.static_files | where: "path", ai_path | first %}
-  <div class="digest-index-entry" data-digest-col>
-    <div class="digest-index-row" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
-      <a class="digest-index-row__thumb" href="{{ d.url }}">
+  <div class="col-12 col-md-6 col-lg-4 mb-4" data-digest-col>
+    <div class="card h-100 digest-index-card" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
+      <a href="{{ d.url }}">
         {% if thumb_file %}
           {% if thumb_webp_file %}
             <picture>
               <source type="image/webp" srcset="{{ thumb_webp_path | relative_url }}">
               <img
-                class="digest-index-thumb"
+                class="card-img-top digest-card-thumb"
                 src="{{ thumb_path | relative_url }}"
                 alt="Daily Digest {{ d.digest_date }} card"
                 loading="lazy">
             </picture>
           {% else %}
             <img
-              class="digest-index-thumb"
+              class="card-img-top digest-card-thumb"
               src="{{ thumb_path | relative_url }}"
               alt="Daily Digest {{ d.digest_date }} card"
               loading="lazy">
           {% endif %}
         {% else %}
-          <div class="digest-index-thumb digest-index-thumb--placeholder">
+          <div class="digest-card-thumb digest-card-thumb--placeholder">
             <div class="digest-card-thumb__date">{{ d.digest_date }}</div>
           </div>
         {% endif %}
       </a>
-      <div class="digest-index-row__body">
-        <div class="digest-index-row__meta">
-          <span class="digest-index-row__date">{{ d.digest_date }}</span>
-          <span class="digest-index-row__badges">
-            <span class="badge badge-light">News</span>
-            {% if ai_file %}
-              <span class="badge badge-light">AI tools</span>
-            {% endif %}
-          </span>
-        </div>
-        <div class="digest-index-row__title"><a href="{{ d.url }}">{{ d.title }}</a></div>
+      <div class="card-body">
+        <div class="small text-muted mb-1">{{ d.digest_date }}</div>
+        <h5 class="card-title mb-0"><a href="{{ d.url }}">{{ d.title }}</a></h5>
         {% if tagline %}
-          <div class="digest-index-row__tagline">{{ tagline | strip | truncate: 140 }}</div>
+          <div class="digest-card-tagline mt-2">{{ tagline | strip | truncate: 120 }}</div>
         {% endif %}
-        <div class="digest-index-row__actions">
-          <a class="btn btn-sm btn-outline-primary" href="{{ d.url }}">Open</a>
-          {% if zh %}
-            <a class="btn btn-sm btn-outline-secondary" href="{{ zh.url }}">中文</a>
+        <div class="mt-2">
+          <span class="badge badge-light">News</span>
+          {% if ai_file %}
+            <span class="badge badge-light">AI tools</span>
           {% endif %}
         </div>
+      </div>
+      <div class="card-footer bg-transparent border-top-0 pt-0">
+        <a class="btn btn-sm btn-outline-primary" href="{{ d.url }}">Open</a>
+        {% if zh %}
+          <a class="btn btn-sm btn-outline-secondary" href="{{ zh.url }}">中文</a>
+        {% endif %}
       </div>
     </div>
   </div>

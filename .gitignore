@@ -15,8 +15,5 @@ vendor
 __pycache__/
 .pytest_cache/
 *.baiduyun.uploading.cfg
-# Digest card background cache (keep the pinned global background in git)
-assets/img/digests/_bg/*
-!assets/img/digests/_bg/global-bg.png
+assets/img/digests/_bg/
 _data/digests/*.draft.yml
-_data/digests/*.yml.bak-*

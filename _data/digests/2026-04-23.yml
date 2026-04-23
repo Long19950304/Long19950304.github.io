@@ -1,0 +1,1511 @@
+date: '2026-04-23'
+title: Daily Digest - 2026-04-23
+title_zh: 每日简报 - 2026-04-23
+note: 'Today: OpenAI workspace agents, Anthropic Claude Code plan changes, and emergency
+  ASP.NET fixes on macOS/Linux.'
+note_zh: 今日关注：OpenAI workspace agents、Anthropic 调整 Claude Code 方案，以及 macOS/Linux 上
+  ASP.NET 紧急安全更新。
+items:
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.2.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.0
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-23T00:43:46+00:00'
+  title_zh: '英文标题：langchain-ai/langchain: langchain-openai==1.2.0'
+  why_zh: 英文摘要：Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Simplify Sparse Deep Learning with Universal Sparse Tensor in nvmath-python
+  why: In a previous post, we introduced the Universal Sparse Tensor (UST), enabling
+    developers to decouple a tensor’s sparsity from its memory la…
+  takeaway: In a previous post, we introduced the Universal Sparse Tensor (UST), enabling
+    developers to decouple a tensor’s sparsity from its memory layout for greater...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/simplify-sparse-deep-learning-with-universal-sparse-tensor-in-nvmath-python/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-22T23:50:10+00:00'
+  title_zh: 英文标题：Simplify Sparse Deep Learning with Universal Sparse Tensor in nvmath-python
+  why_zh: 英文摘要：In a previous post, we introduced the Universal Sparse Tensor (UST),
+    enabling developers to decouple a tensor’s sparsity from its memory la…
+  takeaway_zh: 英文要点：In a previous post, we introduced the Universal Sparse Tensor
+    (UST), enabling developers to decouple a tensor’s sparsity from its memory layout
+    for greater...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker Unified Studio now supports multiple code spaces within
+    projects for IAM domains
+  why: Amazon SageMaker Unified Studio now lets data workers create and manage multiple
+    code spaces (individually configured development environme…
+  takeaway: Amazon SageMaker Unified Studio now lets data workers create and manage
+    multiple code spaces (individually configured development environments) within
+    a single project for IAM domains. Previously, projects were limited to one JupyterLab
+    space and one Code Editor space embedded in the project. With this launch, you
+    can now parallelly work on different workst…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-code-spaces/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T20:31:00+00:00'
+  title_zh: 英文标题：Amazon SageMaker Unified Studio now supports multiple code spaces
+    within projects for IAM domains
+  why_zh: 英文摘要：Amazon SageMaker Unified Studio now lets data workers create and manage
+    multiple code spaces (individually configured development environme…
+  takeaway_zh: 英文要点：Amazon SageMaker Unified Studio now lets data workers create and
+    manage multiple code spaces (individually configured development environments)
+    within a single project for IAM domains. Previously, projects were limited to
+    one JupyterLab space and one Code Editor space embedded in the project. With this
+    launch, you can now parallelly work on different workst…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Scaling the AI-Ready Data Center with NVIDIA RTX PRO 4500 Blackwell Server
+    Edition and NVIDIA vGPU 20
+  why: AI integration is redefining mainstream enterprise applications, from productivity
+    software like Microsoft Office to more complex design an…
+  takeaway: AI integration is redefining mainstream enterprise applications, from
+    productivity software like Microsoft Office to more complex design and engineering
+    tools....
+  prompt: ''
+  url: https://developer.nvidia.com/blog/scaling-the-ai-ready-data-center-with-nvidia-rtx-pro-4500-blackwell-server-edition-and-nvidia-vgpu-20/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-22T20:30:00+00:00'
+  title_zh: 英文标题：Scaling the AI-Ready Data Center with NVIDIA RTX PRO 4500 Blackwell
+    Server Edition and NVIDIA vGPU 20
+  why_zh: 英文摘要：AI integration is redefining mainstream enterprise applications, from
+    productivity software like Microsoft Office to more complex design an…
+  takeaway_zh: 英文要点：AI integration is redefining mainstream enterprise applications,
+    from productivity software like Microsoft Office to more complex design and engineering
+    tools....
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Advancing Emerging Optimizers for Accelerated LLM Training with NVIDIA Megatron
+  why: Higher-order optimization algorithms such as Shampoo have been effectively
+    applied in neural network training for at least a decade.
+  takeaway: Higher-order optimization algorithms such as Shampoo have been effectively
+    applied in neural network training for at least a decade. These methods have achieved...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/advancing-emerging-optimizers-for-accelerated-llm-training-with-nvidia-megatron/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-22T20:01:03+00:00'
+  title_zh: 英文标题：Advancing Emerging Optimizers for Accelerated LLM Training with NVIDIA
+    Megatron
+  why_zh: 英文摘要：Higher-order optimization algorithms such as Shampoo have been effectively
+    applied in neural network training for at least a decade.
+  takeaway_zh: 英文要点：Higher-order optimization algorithms such as Shampoo have been
+    effectively applied in neural network training for at least a decade. These methods
+    have achieved...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 C8i-flex instances are now available in Europe (Ireland, London),
+    and Asia Pacific (New Zealand) regions
+  why: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i-flex instances
+    are available in the Europe (Ireland, London), and Asia Pacifi…
+  takeaway: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i-flex instances
+    are available in the Europe (Ireland, London), and Asia Pacific (New Zealand)
+    regions. These instances are powered by custom Intel Xeon 6 processors, available
+    only on AWS, delivering the highest performance and fastest memory bandwidth among
+    comparable Intel processors in the clou…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-c8i-flex-instances-europe-ireland-europe-london-asia-pacific-new-zealand-regions/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T19:46:00+00:00'
+  title_zh: 英文标题：Amazon EC2 C8i-flex instances are now available in Europe (Ireland,
+    London), and Asia Pacific (New Zealand) regions
+  why_zh: 英文摘要：Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i-flex
+    instances are available in the Europe (Ireland, London), and Asia Pacifi…
+  takeaway_zh: 英文要点：Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i-flex
+    instances are available in the Europe (Ireland, London), and Asia Pacific (New
+    Zealand) regions. These instances are powered by custom Intel Xeon 6 processors,
+    available only on AWS, delivering the highest performance and fastest memory bandwidth
+    among comparable Intel processors in the clou…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 C8i instances are now available in Europe (Ireland) and Asia Pacific
+    (New Zealand) regions
+  why: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i instances are
+    available in the Europe (Ireland) and Asia Pacific (New Zealand…
+  takeaway: Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i instances
+    are available in the Europe (Ireland) and Asia Pacific (New Zealand) regions.
+    These instances are powered by custom Intel Xeon 6 processors, available only
+    on AWS, delivering the highest performance and fastest memory bandwidth among
+    comparable Intel processors in the cloud. C8i instanc…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-c8i-instances-europe-ireland-asia-pacific-new-zealand-regions/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T19:31:00+00:00'
+  title_zh: 英文标题：Amazon EC2 C8i instances are now available in Europe (Ireland) and
+    Asia Pacific (New Zealand) regions
+  why_zh: 英文摘要：Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i instances
+    are available in the Europe (Ireland) and Asia Pacific (New Zealand…
+  takeaway_zh: 英文要点：Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i
+    instances are available in the Europe (Ireland) and Asia Pacific (New Zealand)
+    regions. These instances are powered by custom Intel Xeon 6 processors, available
+    only on AWS, delivering the highest performance and fastest memory bandwidth among
+    comparable Intel processors in the cloud. C8i instanc…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI launches workspace agents that turn ChatGPT from a chatbot into a
+    team automation platform
+  why: OpenAI is rolling out workspace agents in ChatGPT, an evolution of custom GPTs.
+  takeaway: OpenAI is rolling out workspace agents in ChatGPT, an evolution of custom
+    GPTs. Powered by Codex, the agents automate complex team workflows and keep running
+    even when no one is watching. Existing custom GPTs will stick around for now,
+    with a migration path coming later. The article OpenAI launches workspace agents
+    that turn ChatGPT from a chatbot into a te…
+  prompt: ''
+  url: https://the-decoder.com/openai-launches-workspace-agents-that-turn-chatgpt-from-a-chatbot-into-a-team-automation-platform/
+  source: The Decoder (AI)
+  published_utc: '2026-04-22T18:23:33+00:00'
+  title_zh: 英文标题：OpenAI launches workspace agents that turn ChatGPT from a chatbot
+    into a team automation platform
+  why_zh: 英文摘要：OpenAI is rolling out workspace agents in ChatGPT, an evolution of
+    custom GPTs.
+  takeaway_zh: 英文要点：OpenAI is rolling out workspace agents in ChatGPT, an evolution
+    of custom GPTs. Powered by Codex, the agents automate complex team workflows and
+    keep running even when no one is watching. Existing custom GPTs will stick around
+    for now, with a migration path coming later. The article OpenAI launches workspace
+    agents that turn ChatGPT from a chatbot into a te…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 announces Managed resource visibility settings
+  why: Amazon EC2 now lets you control whether resources provisioned by managed instance
+    offerings appear in your Amazon EC2 console views and API…
+  takeaway: Amazon EC2 now lets you control whether resources provisioned by managed
+    instance offerings appear in your Amazon EC2 console views and API list operations.
+    Amazon EC2 Managed Instances are instances provisioned and managed by a designated
+    service provider, such as Amazon EKS, Amazon ECS, AWS Lambda or Amazon Workspaces.
+    AWS is responsible for the configura…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-managed-resource-visibility/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T17:53:00+00:00'
+  title_zh: 英文标题：Amazon EC2 announces Managed resource visibility settings
+  why_zh: 英文摘要：Amazon EC2 now lets you control whether resources provisioned by managed
+    instance offerings appear in your Amazon EC2 console views and API…
+  takeaway_zh: 英文要点：Amazon EC2 now lets you control whether resources provisioned
+    by managed instance offerings appear in your Amazon EC2 console views and API
+    list operations. Amazon EC2 Managed Instances are instances provisioned and managed
+    by a designated service provider, such as Amazon EKS, Amazon ECS, AWS Lambda or
+    Amazon Workspaces. AWS is responsible for the configura…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker AI now supports serverless model customization for Qwen3.5
+    models
+  why: Amazon SageMaker AI now supports serverless model customization for Qwen3.5,
+    enabling you to fine-tune Qwen3.5 4B, 9B, and 27B parameter mo…
+  takeaway: Amazon SageMaker AI now supports serverless model customization for Qwen3.5,
+    enabling you to fine-tune Qwen3.5 4B, 9B, and 27B parameter models using supervised
+    fine-tuning (SFT) and reinforcement fine-tuning (RFT). Qwen3.5 is a popular open-weight
+    model family from Alibaba Cloud. Before this launch, you could deploy these base
+    models on SageMaker AI and no…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-ft-qwen3-5/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T17:53:00+00:00'
+  title_zh: 英文标题：Amazon SageMaker AI now supports serverless model customization for
+    Qwen3.5 models
+  why_zh: 英文摘要：Amazon SageMaker AI now supports serverless model customization for
+    Qwen3.5, enabling you to fine-tune Qwen3.5 4B, 9B, and 27B parameter mo…
+  takeaway_zh: 英文要点：Amazon SageMaker AI now supports serverless model customization
+    for Qwen3.5, enabling you to fine-tune Qwen3.5 4B, 9B, and 27B parameter models
+    using supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). Qwen3.5
+    is a popular open-weight model family from Alibaba Cloud. Before this launch,
+    you could deploy these base models on SageMaker AI and no…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google's new AI tools put film scouting in Street View and promise to cut
+    weeks of satellite analysis to minutes
+  why: At Cloud Next, Google unveiled three new AI imaging tools.
+  takeaway: At Cloud Next, Google unveiled three new AI imaging tools. Creatives can
+    drop AI-generated images into real Street View locations, Google says city planners
+    will be able to analyze satellite imagery in minutes instead of weeks, and developers
+    get new models that can identify objects like bridges and power lines. The article
+    Google's new AI tools put film sc…
+  prompt: ''
+  url: https://the-decoder.com/googles-new-ai-tools-put-film-scouting-in-street-view-and-promise-to-cut-weeks-of-satellite-analysis-to-minutes/
+  source: The Decoder (AI)
+  published_utc: '2026-04-22T17:22:59+00:00'
+  title_zh: 英文标题：Google's new AI tools put film scouting in Street View and promise
+    to cut weeks of satellite analysis to minutes
+  why_zh: 英文摘要：At Cloud Next, Google unveiled three new AI imaging tools.
+  takeaway_zh: 英文要点：At Cloud Next, Google unveiled three new AI imaging tools. Creatives
+    can drop AI-generated images into real Street View locations, Google says city
+    planners will be able to analyze satellite imagery in minutes instead of weeks,
+    and developers get new models that can identify objects like bridges and power
+    lines. The article Google's new AI tools put film sc…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Introducing GPU Health Monitoring and Auto Repair for Amazon ECS Managed
+    Instances
+  why: Amazon Elastic Container Service (Amazon ECS) now offers NVIDIA GPU health
+    monitoring and auto repair functionality for Amazon ECS Managed…
+  takeaway: Amazon Elastic Container Service (Amazon ECS) now offers NVIDIA GPU health
+    monitoring and auto repair functionality for Amazon ECS Managed Instances. The
+    new capability automatically detects critical NVIDIA GPU hardware failures and
+    replaces impaired instances, helping customers improve the availability and reliability
+    of their GPU-accelerated containerized…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ecs-gpu-auto-repair/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T17:00:00+00:00'
+  title_zh: 英文标题：Introducing GPU Health Monitoring and Auto Repair for Amazon ECS
+    Managed Instances
+  why_zh: 英文摘要：Amazon Elastic Container Service (Amazon ECS) now offers NVIDIA GPU
+    health monitoring and auto repair functionality for Amazon ECS Managed…
+  takeaway_zh: 英文要点：Amazon Elastic Container Service (Amazon ECS) now offers NVIDIA
+    GPU health monitoring and auto repair functionality for Amazon ECS Managed Instances.
+    The new capability automatically detects critical NVIDIA GPU hardware failures
+    and replaces impaired instances, helping customers improve the availability and
+    reliability of their GPU-accelerated containerized…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model'
+  why: 'Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model Big claims from Qwen
+    about their latest open weight model: Qwen3.6-27B delivers fla…'
+  takeaway: 'Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model Big claims from
+    Qwen about their latest open weight model: Qwen3.6-27B delivers flagship-level
+    agentic coding performance, surpassing the previous-generation open-source flagship
+    Qwen3.5-397B-A17B (397B total / 17B active MoE) across all major coding benchmarks.
+    On Hugging Face Qwen3.5-397B-A17B is 807…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-22T16:45:23+00:00'
+  title_zh: '英文标题：Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model'
+  why_zh: '英文摘要：Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model Big claims
+    from Qwen about their latest open weight model: Qwen3.6-27B delivers fla…'
+  takeaway_zh: '英文要点：Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model Big claims
+    from Qwen about their latest open weight model: Qwen3.6-27B delivers flagship-level
+    agentic coding performance, surpassing the previous-generation open-source flagship
+    Qwen3.5-397B-A17B (397B total / 17B active MoE) across all major coding benchmarks.
+    On Hugging Face Qwen3.5-397B-A17B is 807…'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore adds new features to help developers build agents
+    faster
+  why: Today, Amazon Bedrock AgentCore introduces new features to help developers
+    go from an idea to working agent prototype faster and manage the…
+  takeaway: 'Today, Amazon Bedrock AgentCore introduces new features to help developers
+    go from an idea to working agent prototype faster and manage the full agent lifecycle
+    from a single platform: a managed harness (in preview), the AgentCore CLI, and
+    AgentCore skills for coding assistants. The managed harness (preview) lets developers
+    define an agent by specifying a m…'
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-new-features-to-build-agents-faster/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T16:00:00+00:00'
+  title_zh: 英文标题：Amazon Bedrock AgentCore adds new features to help developers build
+    agents faster
+  why_zh: 英文摘要：Today, Amazon Bedrock AgentCore introduces new features to help developers
+    go from an idea to working agent prototype faster and manage the…
+  takeaway_zh: '英文要点：Today, Amazon Bedrock AgentCore introduces new features to help
+    developers go from an idea to working agent prototype faster and manage the full
+    agent lifecycle from a single platform: a managed harness (in preview), the AgentCore
+    CLI, and AgentCore skills for coding assistants. The managed harness (preview)
+    lets developers define an agent by specifying a m…'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'huggingface/transformers: Release v5.6.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/huggingface/transformers/releases/tag/v5.6.0
+  source: GitHub Releases - huggingface/transformers
+  published_utc: '2026-04-22T15:52:30+00:00'
+  title_zh: '英文标题：huggingface/transformers: Release v5.6.0'
+  why_zh: 英文摘要：Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google unveils 8th-gen TPUs, agent platform, and Workspace AI layer at Cloud
+    Next '26
+  why: Google used its Cloud Next '26 conference to unveil its eighth-generation TPUs,
+    a revamped agent platform, and a new AI layer for Workspace.
+  takeaway: Google used its Cloud Next '26 conference to unveil its eighth-generation
+    TPUs, a revamped agent platform, and a new AI layer for Workspace. The company
+    is pitching the whole package under the banner "Agentic Enterprise." The article
+    Google unveils 8th-gen TPUs, agent platform, and Workspace AI layer at Cloud Next
+    '26 appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/google-unveils-8th-gen-tpus-agent-platform-and-workspace-ai-layer-at-cloud-next-26/
+  source: The Decoder (AI)
+  published_utc: '2026-04-22T15:34:51+00:00'
+  title_zh: 英文标题：Google unveils 8th-gen TPUs, agent platform, and Workspace AI layer
+    at Cloud Next '26
+  why_zh: 英文摘要：Google used its Cloud Next '26 conference to unveil its eighth-generation
+    TPUs, a revamped agent platform, and a new AI layer for Workspace.
+  takeaway_zh: 英文要点：Google used its Cloud Next '26 conference to unveil its eighth-generation
+    TPUs, a revamped agent platform, and a new AI layer for Workspace. The company
+    is pitching the whole package under the banner "Agentic Enterprise." The article
+    Google unveils 8th-gen TPUs, agent platform, and Workspace AI layer at Cloud Next
+    '26 appeared first on The Decoder .
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Unauthorized users breach Anthropic's restricted Mythos AI model
+  why: A small group of unauthorized users gained access to Anthropic's new AI model
+    Claude Mythos, Bloomberg reports.
+  takeaway: A small group of unauthorized users gained access to Anthropic's new AI
+    model Claude Mythos, Bloomberg reports. The article Unauthorized users breach
+    Anthropic's restricted Mythos AI model appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/unauthorized-users-breach-anthropics-restricted-mythos-ai-model/
+  source: The Decoder (AI)
+  published_utc: '2026-04-22T12:54:43+00:00'
+  title_zh: 英文标题：Unauthorized users breach Anthropic's restricted Mythos AI model
+  why_zh: 英文摘要：A small group of unauthorized users gained access to Anthropic's new
+    AI model Claude Mythos, Bloomberg reports.
+  takeaway_zh: 英文要点：A small group of unauthorized users gained access to Anthropic's
+    new AI model Claude Mythos, Bloomberg reports. The article Unauthorized users
+    breach Anthropic's restricted Mythos AI model appeared first on The Decoder .
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Meta tracks US employees' clicks and keystrokes to train AI agents
+  why: Meta is installing new surveillance software on its US employees' computers
+    that captures mouse movements, clicks, and keystrokes to train…
+  takeaway: Meta is installing new surveillance software on its US employees' computers
+    that captures mouse movements, clicks, and keystrokes to train AI models. The
+    article Meta tracks US employees' clicks and keystrokes to train AI agents appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/meta-tracks-us-employees-clicks-and-keystrokes-to-train-ai-agents/
+  source: The Decoder (AI)
+  published_utc: '2026-04-22T12:43:38+00:00'
+  title_zh: 英文标题：Meta tracks US employees' clicks and keystrokes to train AI agents
+  why_zh: 英文摘要：Meta is installing new surveillance software on its US employees' computers
+    that captures mouse movements, clicks, and keystrokes to train…
+  takeaway_zh: 英文要点：Meta is installing new surveillance software on its US employees'
+    computers that captures mouse movements, clicks, and keystrokes to train AI models.
+    The article Meta tracks US employees' clicks and keystrokes to train AI agents
+    appeared first on The Decoder .
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The Pope’s Warnings About AI Were AI-Generated, a Detection Tool Claims
+  why: Pangram Labs’ updated Chrome extension puts warning labels on AI slop as you
+    scroll your social feeds.
+  takeaway: Pangram Labs’ updated Chrome extension puts warning labels on AI slop
+    as you scroll your social feeds.
+  prompt: ''
+  url: https://www.wired.com/story/pope-tweets-ai-generated-pangram-chrome-extension/
+  source: WIRED - AI
+  published_utc: '2026-04-22T09:30:00+00:00'
+  title_zh: 英文标题：The Pope’s Warnings About AI Were AI-Generated, a Detection Tool
+    Claims
+  why_zh: 英文摘要：Pangram Labs’ updated Chrome extension puts warning labels on AI slop
+    as you scroll your social feeds.
+  takeaway_zh: 英文要点：Pangram Labs’ updated Chrome extension puts warning labels on
+    AI slop as you scroll your social feeds.
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.11-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.11-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-22T06:47:13+00:00'
+  title_zh: '英文标题：BerriAI/litellm: v1.83.11-nightly'
+  why_zh: 英文摘要：Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Lambda durable functions are now available in 16 additional AWS Regions
+  why: AWS Lambda durable functions are now available in 16 additional AWS Regions.
+  takeaway: 'AWS Lambda durable functions are now available in 16 additional AWS Regions.
+    Lambda durable functions enable developers to build reliable multi-step applications
+    and AI workflows within the Lambda developer experience, and with this expansion,
+    you can now use durable functions in 16 additional AWS Regions: Africa (Cape Town),
+    Asia Pacific (Hyderabad), Asia…'
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/lambda-durable-functions-16-new-regions/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-22T06:00:00+00:00'
+  title_zh: 英文标题：AWS Lambda durable functions are now available in 16 additional AWS
+    Regions
+  why_zh: 英文摘要：AWS Lambda durable functions are now available in 16 additional AWS
+    Regions.
+  takeaway_zh: '英文要点：AWS Lambda durable functions are now available in 16 additional
+    AWS Regions. Lambda durable functions enable developers to build reliable multi-step
+    applications and AI workflows within the Lambda developer experience, and with
+    this expansion, you can now use durable functions in 16 additional AWS Regions:
+    Africa (Cape Town), Asia Pacific (Hyderabad), Asia…'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Is Claude Code going to cost $100/month? Probably not - it's all very confusing
+  why: Anthropic today quietly (as in silently , no announcement anywhere at all)
+    updated their claude.com/pricing page (but not their Choosing a…
+  takeaway: 'Anthropic today quietly (as in silently , no announcement anywhere at
+    all) updated their claude.com/pricing page (but not their Choosing a Claude plan
+    page , which shows up first for me on Google) to add this tiny but significant
+    detail (arrow is mine, and it''s already reverted ): The Internet Archive copy
+    from yesterday shows a checkbox there. Claude Code…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/22/claude-code-confusion/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-22T02:07:34+00:00'
+  title_zh: 英文标题：Is Claude Code going to cost $100/month? Probably not - it's all
+    very confusing
+  why_zh: 英文摘要：Anthropic today quietly (as in silently , no announcement anywhere
+    at all) updated their claude.com/pricing page (but not their Choosing a…
+  takeaway_zh: '英文要点：Anthropic today quietly (as in silently , no announcement anywhere
+    at all) updated their claude.com/pricing page (but not their Choosing a Claude
+    plan page , which shows up first for me on Google) to add this tiny but significant
+    detail (arrow is mine, and it''s already reverted ): The Internet Archive copy
+    from yesterday shows a checkbox there. Claude Code…'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.21.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.21.1
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-04-22T00:18:02+00:00'
+  title_zh: '英文标题：ollama/ollama: v0.21.1'
+  why_zh: 英文摘要：Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker AI launches optimized generative AI inference recommendations
+  why: Amazon SageMaker AI now supports inference recommendations, a new capability
+    that eliminates manual optimization and benchmarking to delive…
+  takeaway: Amazon SageMaker AI now supports inference recommendations, a new capability
+    that eliminates manual optimization and benchmarking to deliver optimal inference
+    performance. By delivering validated, optimal deployment configurations with performance
+    metrics, SageMaker AI accelerates the path to production and keeps your model
+    developers focused on building ac…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-ai-inference-rec/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-21T22:38:00+00:00'
+  title_zh: 英文标题：Amazon SageMaker AI launches optimized generative AI inference recommendations
+  why_zh: 英文摘要：Amazon SageMaker AI now supports inference recommendations, a new capability
+    that eliminates manual optimization and benchmarking to delive…
+  takeaway_zh: 英文要点：Amazon SageMaker AI now supports inference recommendations, a
+    new capability that eliminates manual optimization and benchmarking to deliver
+    optimal inference performance. By delivering validated, optimal deployment configurations
+    with performance metrics, SageMaker AI accelerates the path to production and
+    keeps your model developers focused on building ac…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker now supports multi-region replication from IAM Identity
+    Center
+  why: Amazon SageMaker now supports multi-region replication from IAM Identity Center
+    (IdC), enabling you to deploy SageMaker Unified Studio doma…
+  takeaway: Amazon SageMaker now supports multi-region replication from IAM Identity
+    Center (IdC), enabling you to deploy SageMaker Unified Studio domains in different
+    regions from your IdC instance. This new capability empowers enterprise customers,
+    particularly those in regulated industries like financial services and healthcare,
+    to maintain compliance while leveragi…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/smus-identity-center/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-21T21:00:00+00:00'
+  title_zh: 英文标题：Amazon SageMaker now supports multi-region replication from IAM Identity
+    Center
+  why_zh: 英文摘要：Amazon SageMaker now supports multi-region replication from IAM Identity
+    Center (IdC), enabling you to deploy SageMaker Unified Studio doma…
+  takeaway_zh: 英文要点：Amazon SageMaker now supports multi-region replication from IAM
+    Identity Center (IdC), enabling you to deploy SageMaker Unified Studio domains
+    in different regions from your IdC instance. This new capability empowers enterprise
+    customers, particularly those in regulated industries like financial services
+    and healthcare, to maintain compliance while leveragi…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Where's the raccoon with the ham radio? (ChatGPT Images 2.0)
+  why: OpenAI released ChatGPT Images 2.0 today , their latest image generation model.
+  takeaway: 'OpenAI released ChatGPT Images 2.0 today , their latest image generation
+    model. On the livestream Sam Altman said that the leap from gpt-image-1 to gpt-image-2
+    was equivalent to jumping from GPT-3 to GPT-5. Here''s how I put it to the test.
+    My prompt: Do a where''s Waldo style image but it''s where is the raccoon holding
+    a ham radio gpt-image-1 First as a base…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/21/gpt-image-2/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-21T20:32:24+00:00'
+  title_zh: 英文标题：Where's the raccoon with the ham radio? (ChatGPT Images 2.0)
+  why_zh: 英文摘要：OpenAI released ChatGPT Images 2.0 today , their latest image generation
+    model.
+  takeaway_zh: '英文要点：OpenAI released ChatGPT Images 2.0 today , their latest image
+    generation model. On the livestream Sam Altman said that the leap from gpt-image-1
+    to gpt-image-2 was equivalent to jumping from GPT-3 to GPT-5. Here''s how I put
+    it to the test. My prompt: Do a where''s Waldo style image but it''s where is
+    the raccoon holding a ham radio gpt-image-1 First as a base…'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Five new Qwen models for coding agents and efficient reasoning are now available
+    in Amazon SageMaker JumpStart
+  why: Today, AWS announced the availability of Qwen3-Coder-Next, Qwen3-30B-A3B, Qwen3-30B-A3B-Thinking-2507,
+    Qwen3-Coder-30B-A3B-Instruct, and Qw…
+  takeaway: Today, AWS announced the availability of Qwen3-Coder-Next, Qwen3-30B-A3B,
+    Qwen3-30B-A3B-Thinking-2507, Qwen3-Coder-30B-A3B-Instruct, and Qwen3.5-4B in Amazon
+    SageMaker JumpStart, expanding the portfolio of foundation models available to
+    AWS customers. These five models from Qwen bring specialized capabilities spanning
+    agentic coding, efficient reasoning, ex…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/qwen-models-on-sagemaker-jumpstart/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-21T20:05:00+00:00'
+  title_zh: 英文标题：Five new Qwen models for coding agents and efficient reasoning are
+    now available in Amazon SageMaker JumpStart
+  why_zh: 英文摘要：Today, AWS announced the availability of Qwen3-Coder-Next, Qwen3-30B-A3B,
+    Qwen3-30B-A3B-Thinking-2507, Qwen3-Coder-30B-A3B-Instruct, and Qw…
+  takeaway_zh: 英文要点：Today, AWS announced the availability of Qwen3-Coder-Next, Qwen3-30B-A3B,
+    Qwen3-30B-A3B-Thinking-2507, Qwen3-Coder-30B-A3B-Instruct, and Qwen3.5-4B in Amazon
+    SageMaker JumpStart, expanding the portfolio of foundation models available to
+    AWS customers. These five models from Qwen bring specialized capabilities spanning
+    agentic coding, efficient reasoning, ex…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.1.16'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.16
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-21T19:26:40+00:00'
+  title_zh: '英文标题：langchain-ai/langchain: langchain-openai==1.1.16'
+  why_zh: 英文摘要：Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google launches Deep Research and Deep Research Max agents to automate complex
+    research
+  why: Google Deepmind is rolling out Deep Research Max, a new AI agent built on Gemini
+    3.1 Pro that runs autonomous research across the web and p…
+  takeaway: Google Deepmind is rolling out Deep Research Max, a new AI agent built
+    on Gemini 3.1 Pro that runs autonomous research across the web and proprietary
+    data sources. For the first time, developers can plug in financial feeds and other
+    specialized sources through the Model Context Protocol. The benchmarks come with
+    the usual lack of transparency. The article G…
+  prompt: ''
+  url: https://the-decoder.com/google-launches-deep-research-and-deep-research-max-agents-to-automate-complex-research/
+  source: The Decoder (AI)
+  published_utc: '2026-04-21T18:11:38+00:00'
+  title_zh: 英文标题：Google launches Deep Research and Deep Research Max agents to automate
+    complex research
+  why_zh: 英文摘要：Google Deepmind is rolling out Deep Research Max, a new AI agent built
+    on Gemini 3.1 Pro that runs autonomous research across the web and p…
+  takeaway_zh: 英文要点：Google Deepmind is rolling out Deep Research Max, a new AI agent
+    built on Gemini 3.1 Pro that runs autonomous research across the web and proprietary
+    data sources. For the first time, developers can plug in financial feeds and other
+    specialized sources through the Model Context Protocol. The benchmarks come with
+    the usual lack of transparency. The article G…
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Lambda functions can now mount Amazon S3 buckets as file systems with
+    S3 Files
+  why: AWS Lambda now supports Amazon S3 Files , enabling your Lambda functions to
+    mount Amazon S3 buckets as file systems and perform standard fi…
+  takeaway: AWS Lambda now supports Amazon S3 Files , enabling your Lambda functions
+    to mount Amazon S3 buckets as file systems and perform standard file operations
+    without downloading data for processing. Built using Amazon EFS, S3 Files gives
+    you the performance and simplicity of a file system with the scalability, durability,
+    and cost-effectiveness of S3. Multiple L…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/aws-lambda-amazon-s3/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-21T17:00:00+00:00'
+  title_zh: 英文标题：AWS Lambda functions can now mount Amazon S3 buckets as file systems
+    with S3 Files
+  why_zh: 英文摘要：AWS Lambda now supports Amazon S3 Files , enabling your Lambda functions
+    to mount Amazon S3 buckets as file systems and perform standard fi…
+  takeaway_zh: 英文要点：AWS Lambda now supports Amazon S3 Files , enabling your Lambda
+    functions to mount Amazon S3 buckets as file systems and perform standard file
+    operations without downloading data for processing. Built using Amazon EFS, S3
+    Files gives you the performance and simplicity of a file system with the scalability,
+    durability, and cost-effectiveness of S3. Multiple L…
+  prompt_zh: ''
+- category: AI frontier
+  title: '[AINews] Tasteful Tokenmaxxing'
+  why: a quiet day lets us reflect on the top conversation that AI leaders are having
+    everywhere.
+  takeaway: a quiet day lets us reflect on the top conversation that AI leaders are
+    having everywhere.
+  prompt: ''
+  url: https://www.latent.space/p/ainews-tasteful-tokenmaxxing
+  source: Latent Space (AI newsletter)
+  published_utc: '2026-04-23T02:45:37+00:00'
+  title_zh: 英文标题：[AINews] Tasteful Tokenmaxxing
+  why_zh: 英文摘要：a quiet day lets us reflect on the top conversation that AI leaders
+    are having everywhere.
+  takeaway_zh: 英文要点：a quiet day lets us reflect on the top conversation that AI leaders
+    are having everywhere.
+  prompt_zh: ''
+- category: Tech industry
+  title: The Iranian women Trump &#8216;saved&#8217; from execution are simultaneously
+    real and AI-manipulated
+  why: On Wednesday, President Donald Trump claimed to have secured the release of
+    eight Iranian women condemned to execution for protesting the r…
+  takeaway: On Wednesday, President Donald Trump claimed to have secured the release
+    of eight Iranian women condemned to execution for protesting the regime. Only
+    the night before, he had posted on Truth Social about the imminent executions
+    of these women, quoting a screenshot that included a collage of eight glamorously
+    backlit, soft-focus portraits. The photos of […]
+  prompt: ''
+  url: https://www.theverge.com/policy/917180/trump-iran-ai-women-bita-hemmati
+  source: The Verge
+  published_utc: '2026-04-23T01:53:24+00:00'
+  title_zh: 英文标题：The Iranian women Trump &#8216;saved&#8217; from execution are simultaneously
+    real and AI-manipulated
+  why_zh: 英文摘要：On Wednesday, President Donald Trump claimed to have secured the release
+    of eight Iranian women condemned to execution for protesting the r…
+  takeaway_zh: 英文要点：On Wednesday, President Donald Trump claimed to have secured the
+    release of eight Iranian women condemned to execution for protesting the regime.
+    Only the night before, he had posted on Truth Social about the imminent executions
+    of these women, quoting a screenshot that included a collage of eight glamorously
+    backlit, soft-focus portraits. The photos of […]
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Tempest vs. Tempest: The Making and Remaking of Atari''s Iconic Video Game'
+  why: 'Article URL: https://tempest.homemade.systems Comments URL: https://news.ycombinator.com/item?id=47871195
+    Points: 24 # Comments: 3'
+  takeaway: 'Article URL: https://tempest.homemade.systems Comments URL: https://news.ycombinator.com/item?id=47871195
+    Points: 24 # Comments: 3'
+  prompt: ''
+  url: https://tempest.homemade.systems
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T01:02:32+00:00'
+  title_zh: '英文标题：Tempest vs. Tempest: The Making and Remaking of Atari''s Iconic
+    Video Game'
+  why_zh: '英文摘要：Article URL: https://tempest.homemade.systems Comments URL: https://news.ycombinator.com/item?id=47871195
+    Points: 24 # Comments: 3'
+  takeaway_zh: '英文要点：Article URL: https://tempest.homemade.systems Comments URL: https://news.ycombinator.com/item?id=47871195
+    Points: 24 # Comments: 3'
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI's response to the Axios developer tool compromise
+  why: 'Article URL: https://openai.com/index/axios-developer-tool-compromise/ Comments
+    URL: https://news.ycombinator.com/item?id=47871077 Points:…'
+  takeaway: 'Article URL: https://openai.com/index/axios-developer-tool-compromise/
+    Comments URL: https://news.ycombinator.com/item?id=47871077 Points: 18 # Comments:
+    1'
+  prompt: ''
+  url: https://openai.com/index/axios-developer-tool-compromise/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T00:45:01+00:00'
+  title_zh: 英文标题：OpenAI's response to the Axios developer tool compromise
+  why_zh: '英文摘要：Article URL: https://openai.com/index/axios-developer-tool-compromise/
+    Comments URL: https://news.ycombinator.com/item?id=47871077 Points:…'
+  takeaway_zh: '英文要点：Article URL: https://openai.com/index/axios-developer-tool-compromise/
+    Comments URL: https://news.ycombinator.com/item?id=47871077 Points: 18 # Comments:
+    1'
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla just increased its spending plan to $25B — here’s where the money is
+    going
+  why: Tesla's planned capex for 2026 is three times higher than what the company
+    has historically spent.
+  takeaway: Tesla's planned capex for 2026 is three times higher than what the company
+    has historically spent. Its CFO said, as a result, Tesla will have a negative
+    free cash flow the rest of the year.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/tesla-just-increased-its-capex-to-25b-heres-where-the-money-is-going/
+  source: TechCrunch
+  published_utc: '2026-04-22T23:56:52+00:00'
+  title_zh: 英文标题：Tesla just increased its spending plan to $25B — here’s where the
+    money is going
+  why_zh: 英文摘要：Tesla's planned capex for 2026 is three times higher than what the
+    company has historically spent.
+  takeaway_zh: 英文要点：Tesla's planned capex for 2026 is three times higher than what
+    the company has historically spent. Its CFO said, as a result, Tesla will have
+    a negative free cash flow the rest of the year.
+  prompt_zh: ''
+- category: Tech industry
+  title: Approximating Hyperbolic Tangent
+  why: 'Article URL: https://jtomschroeder.com/blog/approximating-tanh/ Comments URL:
+    https://news.ycombinator.com/item?id=47870709 Points: 26 # Co…'
+  takeaway: 'Article URL: https://jtomschroeder.com/blog/approximating-tanh/ Comments
+    URL: https://news.ycombinator.com/item?id=47870709 Points: 26 # Comments: 4'
+  prompt: ''
+  url: https://jtomschroeder.com/blog/approximating-tanh/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T23:46:38+00:00'
+  title_zh: 英文标题：Approximating Hyperbolic Tangent
+  why_zh: '英文摘要：Article URL: https://jtomschroeder.com/blog/approximating-tanh/ Comments
+    URL: https://news.ycombinator.com/item?id=47870709 Points: 26 # Co…'
+  takeaway_zh: '英文要点：Article URL: https://jtomschroeder.com/blog/approximating-tanh/
+    Comments URL: https://news.ycombinator.com/item?id=47870709 Points: 26 # Comments:
+    4'
+  prompt_zh: ''
+- category: Tech industry
+  title: Google updates Workspace to make AI your new office intern
+  why: Google has introduced a host of new automated functions into Workspace, all
+    of which are driven by Workspace Intelligence, its new AI syste…
+  takeaway: Google has introduced a host of new automated functions into Workspace,
+    all of which are driven by Workspace Intelligence, its new AI system.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/google-updates-workspace-to-make-ai-your-new-office-intern/
+  source: TechCrunch
+  published_utc: '2026-04-22T22:44:26+00:00'
+  title_zh: 英文标题：Google updates Workspace to make AI your new office intern
+  why_zh: 英文摘要：Google has introduced a host of new automated functions into Workspace,
+    all of which are driven by Workspace Intelligence, its new AI syste…
+  takeaway_zh: 英文要点：Google has introduced a host of new automated functions into Workspace,
+    all of which are driven by Workspace Intelligence, its new AI system.
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk admits millions of Tesla owners need upgrades for true ‘Full Self-Driving’
+  why: The admission could open Tesla to legal challenges after it spent years promising
+    customers they were just one software update away from ow…
+  takeaway: The admission could open Tesla to legal challenges after it spent years
+    promising customers they were just one software update away from owning fully
+    autonomous cars.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/elon-musk-admits-millions-of-tesla-owners-need-upgrades-for-true-full-self-driving/
+  source: TechCrunch
+  published_utc: '2026-04-22T22:39:58+00:00'
+  title_zh: 英文标题：Elon Musk admits millions of Tesla owners need upgrades for true
+    ‘Full Self-Driving’
+  why_zh: 英文摘要：The admission could open Tesla to legal challenges after it spent years
+    promising customers they were just one software update away from ow…
+  takeaway_zh: 英文要点：The admission could open Tesla to legal challenges after it spent
+    years promising customers they were just one software update away from owning
+    fully autonomous cars.
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk admits that millions of Tesla vehicles won&#8217;t get unsupervised
+    FSD
+  why: Tesla vehicles with the company's Hardware 3 (HW3) computer actually won't
+    receive unsupervised Full Self-Driving (FSD), CEO Elon Musk said…
+  takeaway: Tesla vehicles with the company's Hardware 3 (HW3) computer actually won't
+    receive unsupervised Full Self-Driving (FSD), CEO Elon Musk said on Wednesday's
+    Q1 2026 earnings call. Approximately 4 million Tesla vehicles operate on the HW3
+    platform, meaning that a significant chunk of Tesla owners - including customers
+    that paid for the feature when they bought…
+  prompt: ''
+  url: https://www.theverge.com/transportation/917167/elon-musk-tesla-hw3-fsd
+  source: The Verge
+  published_utc: '2026-04-22T22:38:31+00:00'
+  title_zh: 英文标题：Elon Musk admits that millions of Tesla vehicles won&#8217;t get
+    unsupervised FSD
+  why_zh: 英文摘要：Tesla vehicles with the company's Hardware 3 (HW3) computer actually
+    won't receive unsupervised Full Self-Driving (FSD), CEO Elon Musk said…
+  takeaway_zh: 英文要点：Tesla vehicles with the company's Hardware 3 (HW3) computer actually
+    won't receive unsupervised Full Self-Driving (FSD), CEO Elon Musk said on Wednesday's
+    Q1 2026 earnings call. Approximately 4 million Tesla vehicles operate on the HW3
+    platform, meaning that a significant chunk of Tesla owners - including customers
+    that paid for the feature when they bought…
+  prompt_zh: ''
+- category: Tech industry
+  title: Hands on with X’s new AI-powered custom feeds
+  why: X's AI-powered custom timelines are replacing Communities, with Grok-curated
+    feeds...and new ad slots.
+  takeaway: X's AI-powered custom timelines are replacing Communities, with Grok-curated
+    feeds...and new ad slots.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/hands-on-with-xs-new-ai-powered-custom-feeds/
+  source: TechCrunch
+  published_utc: '2026-04-22T22:25:53+00:00'
+  title_zh: 英文标题：Hands on with X’s new AI-powered custom feeds
+  why_zh: 英文摘要：X's AI-powered custom timelines are replacing Communities, with Grok-curated
+    feeds...and new ad slots.
+  takeaway_zh: 英文要点：X's AI-powered custom timelines are replacing Communities, with
+    Grok-curated feeds...and new ad slots.
+  prompt_zh: ''
+- category: Tech industry
+  title: Bring your own Agent to MS Teams
+  why: 'Article URL: https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/
+    Comments URL: https://news.ycombinator.com/item?id=47870…'
+  takeaway: 'Article URL: https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/
+    Comments URL: https://news.ycombinator.com/item?id=47870108 Points: 22 # Comments:
+    7'
+  prompt: ''
+  url: https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T22:25:28+00:00'
+  title_zh: 英文标题：Bring your own Agent to MS Teams
+  why_zh: '英文摘要：Article URL: https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/
+    Comments URL: https://news.ycombinator.com/item?id=47870…'
+  takeaway_zh: '英文要点：Article URL: https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/
+    Comments URL: https://news.ycombinator.com/item?id=47870108 Points: 22 # Comments:
+    7'
+  prompt_zh: ''
+- category: AI frontier
+  title: Sam Altman’s Orb Company Promoted a Bruno Mars Partnership That Doesn't Exist
+  why: “To be clear, we were never approached … nor were we in any discussions regarding
+    a partnership or tour access,” a spokesperson for the art…
+  takeaway: “To be clear, we were never approached … nor were we in any discussions
+    regarding a partnership or tour access,” a spokesperson for the artist tells WIRED.
+  prompt: ''
+  url: https://www.wired.com/story/sam-altman-orb-company-bruno-mars-partnership-fake/
+  source: WIRED - AI
+  published_utc: '2026-04-22T22:11:15+00:00'
+  title_zh: 英文标题：Sam Altman’s Orb Company Promoted a Bruno Mars Partnership That Doesn't
+    Exist
+  why_zh: 英文摘要：“To be clear, we were never approached … nor were we in any discussions
+    regarding a partnership or tour access,” a spokesperson for the art…
+  takeaway_zh: 英文要点：“To be clear, we were never approached … nor were we in any discussions
+    regarding a partnership or tour access,” a spokesperson for the artist tells WIRED.
+  prompt_zh: ''
+- category: Security
+  title: Crypto scam lures ships into Strait of Hormuz, falsely promising safe passage
+  why: Ship attacked by Iran after possibly falling for safe passage crypto scam.
+  takeaway: Ship attacked by Iran after possibly falling for safe passage crypto scam.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/crypto-scam-lures-ships-into-strait-of-hormuz-falsely-promising-safe-passage/
+  source: Ars Technica
+  published_utc: '2026-04-22T22:07:54+00:00'
+  title_zh: 英文标题：Crypto scam lures ships into Strait of Hormuz, falsely promising
+    safe passage
+  why_zh: 英文摘要：Ship attacked by Iran after possibly falling for safe passage crypto
+    scam.
+  takeaway_zh: 英文要点：Ship attacked by Iran after possibly falling for safe passage
+    crypto scam.
+  prompt_zh: ''
+- category: Tech industry
+  title: LinkedIn’s CEO is moving on; please hold your tearful video tributes
+  why: Ryan Roslansky has stepped down as LinkedIn's CEO after six years running the
+    world's largest professional network.
+  takeaway: Ryan Roslansky has stepped down as LinkedIn's CEO after six years running
+    the world's largest professional network. Dan Shapero, the company's COO, takes
+    over immediately.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/linkedins-ceo-is-moving-on-please-hold-your-tearful-video-tributes/
+  source: TechCrunch
+  published_utc: '2026-04-22T21:37:34+00:00'
+  title_zh: 英文标题：LinkedIn’s CEO is moving on; please hold your tearful video tributes
+  why_zh: 英文摘要：Ryan Roslansky has stepped down as LinkedIn's CEO after six years running
+    the world's largest professional network.
+  takeaway_zh: 英文要点：Ryan Roslansky has stepped down as LinkedIn's CEO after six years
+    running the world's largest professional network. Dan Shapero, the company's COO,
+    takes over immediately.
+  prompt_zh: ''
+- category: Tech industry
+  title: The Neon King of New Orleans
+  why: 'Article URL: https://gardenandgun.com/new-orleans-neon-king Comments URL:
+    https://news.ycombinator.com/item?id=47869496 Points: 37 # Commen…'
+  takeaway: 'Article URL: https://gardenandgun.com/new-orleans-neon-king Comments
+    URL: https://news.ycombinator.com/item?id=47869496 Points: 37 # Comments: 6'
+  prompt: ''
+  url: https://gardenandgun.com/new-orleans-neon-king
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T21:26:38+00:00'
+  title_zh: 英文标题：The Neon King of New Orleans
+  why_zh: '英文摘要：Article URL: https://gardenandgun.com/new-orleans-neon-king Comments
+    URL: https://news.ycombinator.com/item?id=47869496 Points: 37 # Commen…'
+  takeaway_zh: '英文要点：Article URL: https://gardenandgun.com/new-orleans-neon-king Comments
+    URL: https://news.ycombinator.com/item?id=47869496 Points: 37 # Comments: 6'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Tesla reports Q1 2026 earnings: Still profitable'
+  why: Car sales are up, battery sales and emissions credits are down.
+  takeaway: Car sales are up, battery sales and emissions credits are down.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/04/tesla-reports-q1-2026-earnings-still-profitable/
+  source: Ars Technica
+  published_utc: '2026-04-22T21:16:05+00:00'
+  title_zh: '英文标题：Tesla reports Q1 2026 earnings: Still profitable'
+  why_zh: 英文摘要：Car sales are up, battery sales and emissions credits are down.
+  takeaway_zh: 英文要点：Car sales are up, battery sales and emissions credits are down.
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla Q1 revenue rises, driven by EV sales and FSD subscriptions
+  why: Sales rebounded a bit from the first quarter of 2025, as Tesla throws a ton
+    of money at massive bets like robotics, AI, and its own chip fa…
+  takeaway: Sales rebounded a bit from the first quarter of 2025, as Tesla throws
+    a ton of money at massive bets like robotics, AI, and its own chip fab.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/tesla-q1-revenue-rises-driven-by-ev-sales-and-fsd-subscriptions/
+  source: TechCrunch
+  published_utc: '2026-04-22T20:57:21+00:00'
+  title_zh: 英文标题：Tesla Q1 revenue rises, driven by EV sales and FSD subscriptions
+  why_zh: 英文摘要：Sales rebounded a bit from the first quarter of 2025, as Tesla throws
+    a ton of money at massive bets like robotics, AI, and its own chip fa…
+  takeaway_zh: 英文要点：Sales rebounded a bit from the first quarter of 2025, as Tesla
+    throws a ton of money at massive bets like robotics, AI, and its own chip fab.
+  prompt_zh: ''
+- category: Tech industry
+  title: X is going to let Grok curate your timeline
+  why: X is putting its AI chatbot, Grok, in charge of your timeline.
+  takeaway: X is putting its AI chatbot, Grok, in charge of your timeline. In an announcement
+    on Wednesday, X product head Nikita Bier says Premium subscribers on iOS can get
+    early access to a feature that allows users to pin specific topics to their home
+    tab, which Grok will then use to curate the posts you […]
+  prompt: ''
+  url: https://www.theverge.com/tech/917113/x-ai-grok-timeline-curation
+  source: The Verge
+  published_utc: '2026-04-22T20:49:38+00:00'
+  title_zh: 英文标题：X is going to let Grok curate your timeline
+  why_zh: 英文摘要：X is putting its AI chatbot, Grok, in charge of your timeline.
+  takeaway_zh: 英文要点：X is putting its AI chatbot, Grok, in charge of your timeline.
+    In an announcement on Wednesday, X product head Nikita Bier says Premium subscribers
+    on iOS can get early access to a feature that allows users to pin specific topics
+    to their home tab, which Grok will then use to curate the posts you […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Our newsroom AI policy
+  why: How Ars Technica uses, and doesn't use, generative AI.
+  takeaway: How Ars Technica uses, and doesn't use, generative AI.
+  prompt: ''
+  url: https://arstechnica.com/staff/2026/04/our-newsroom-ai-policy/
+  source: Ars Technica
+  published_utc: '2026-04-22T20:40:59+00:00'
+  title_zh: 英文标题：Our newsroom AI policy
+  why_zh: 英文摘要：How Ars Technica uses, and doesn't use, generative AI.
+  takeaway_zh: 英文要点：How Ars Technica uses, and doesn't use, generative AI.
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla&#8217;s revenue rises again as it prepares for more AI and robotics
+  why: Tesla released its 2026 first-quarter financial earnings today, providing another
+    look at the progress of Elon Musk's $1 trillion bet to tr…
+  takeaway: Tesla released its 2026 first-quarter financial earnings today, providing
+    another look at the progress of Elon Musk's $1 trillion bet to transform his company
+    into a leader of AI and robotics. Tesla said it earned $477 million in net income
+    on $22.4 billion in revenue in the quarter that ended in April 2026. That's a
+    […]
+  prompt: ''
+  url: https://www.theverge.com/transportation/915217/tesla-q1-2026-earnings-profit-revenue
+  source: The Verge
+  published_utc: '2026-04-22T20:36:17+00:00'
+  title_zh: 英文标题：Tesla&#8217;s revenue rises again as it prepares for more AI and
+    robotics
+  why_zh: 英文摘要：Tesla released its 2026 first-quarter financial earnings today, providing
+    another look at the progress of Elon Musk's $1 trillion bet to tr…
+  takeaway_zh: 英文要点：Tesla released its 2026 first-quarter financial earnings today,
+    providing another look at the progress of Elon Musk's $1 trillion bet to transform
+    his company into a leader of AI and robotics. Tesla said it earned $477 million
+    in net income on $22.4 billion in revenue in the quarter that ended in April 2026.
+    That's a […]
+  prompt_zh: ''
+- category: Tech industry
+  title: AI failure could trigger the next financial crisis, warns Elizabeth Warren
+  why: '"I know a bubble when I see one." That''s what Sen.'
+  takeaway: '"I know a bubble when I see one." That''s what Sen. Elizabeth Warren
+    (D-MA), who led the push to create a new consumer financial regulator in the wake
+    of the 2008 recession, told a crowd at a Vanderbilt Policy Accelerator event in
+    Washington, DC on Wednesday. Warren warned of what she called "striking" parallels
+    to […]'
+  prompt: ''
+  url: https://www.theverge.com/policy/917026/ai-economy-bubble-elizabeth-warren
+  source: The Verge
+  published_utc: '2026-04-22T20:29:05+00:00'
+  title_zh: 英文标题：AI failure could trigger the next financial crisis, warns Elizabeth
+    Warren
+  why_zh: 英文摘要："I know a bubble when I see one." That's what Sen.
+  takeaway_zh: 英文要点："I know a bubble when I see one." That's what Sen. Elizabeth Warren
+    (D-MA), who led the push to create a new consumer financial regulator in the wake
+    of the 2008 recession, told a crowd at a Vanderbilt Policy Accelerator event in
+    Washington, DC on Wednesday. Warren warned of what she called "striking" parallels
+    to […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple fixes bug that cops used to extract deleted chat messages from iPhones
+  why: 'Article URL: https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/
+    Comments URL:…'
+  takeaway: 'Article URL: https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/
+    Comments URL: https://news.ycombinator.com/item?id=47868867 Points: 394 # Comments:
+    101'
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T20:27:31+00:00'
+  title_zh: 英文标题：Apple fixes bug that cops used to extract deleted chat messages from
+    iPhones
+  why_zh: '英文摘要：Article URL: https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/
+    Comments URL:…'
+  takeaway_zh: '英文要点：Article URL: https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/
+    Comments URL: https://news.ycombinator.com/item?id=47868867 Points: 394 # Comments:
+    101'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Lawsuit: Nintendo is getting tariff refunds—its customers should get them
+    instead'
+  why: Lawsuit demands Nintendo pass Trump tariff refunds on to its customers.
+  takeaway: Lawsuit demands Nintendo pass Trump tariff refunds on to its customers.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/lawsuit-nintendo-is-getting-tariff-refunds-its-customers-should-get-them-instead/
+  source: Ars Technica
+  published_utc: '2026-04-22T20:27:24+00:00'
+  title_zh: '英文标题：Lawsuit: Nintendo is getting tariff refunds—its customers should
+    get them instead'
+  why_zh: 英文摘要：Lawsuit demands Nintendo pass Trump tariff refunds on to its customers.
+  takeaway_zh: 英文要点：Lawsuit demands Nintendo pass Trump tariff refunds on to its customers.
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Illuminated Man: an unconventional portrait of JG Ballard'
+  why: 'Article URL: https://www.theguardian.com/books/2026/apr/20/the-illuminated-man-by-christopher-priest-and-nina-allan-review-an-unconventiona…'
+  takeaway: 'Article URL: https://www.theguardian.com/books/2026/apr/20/the-illuminated-man-by-christopher-priest-and-nina-allan-review-an-unconventional-portrait-of-jg-ballard
+    Comments URL: https://news.ycombinator.com/item?id=47868832 Points: 49 # Comments:
+    17'
+  prompt: ''
+  url: https://www.theguardian.com/books/2026/apr/20/the-illuminated-man-by-christopher-priest-and-nina-allan-review-an-unconventional-portrait-of-jg-ballard
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T20:24:05+00:00'
+  title_zh: '英文标题：The Illuminated Man: an unconventional portrait of JG Ballard'
+  why_zh: '英文摘要：Article URL: https://www.theguardian.com/books/2026/apr/20/the-illuminated-man-by-christopher-priest-and-nina-allan-review-an-unconventiona…'
+  takeaway_zh: '英文要点：Article URL: https://www.theguardian.com/books/2026/apr/20/the-illuminated-man-by-christopher-priest-and-nina-allan-review-an-unconventional-portrait-of-jg-ballard
+    Comments URL: https://news.ycombinator.com/item?id=47868832 Points: 49 # Comments:
+    17'
+  prompt_zh: ''
+- category: Tech industry
+  title: NASA’s Artemis II moon mission shows space-to-Earth laser comms can scale
+  why: Observable Space and Quantum Opus teamed up to capture data beamed back from
+    space.
+  takeaway: Observable Space and Quantum Opus teamed up to capture data beamed back
+    from space.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/nasas-artemis-ii-moon-mission-shows-space-to-earth-laser-comms-can-scale/
+  source: TechCrunch
+  published_utc: '2026-04-22T20:09:45+00:00'
+  title_zh: 英文标题：NASA’s Artemis II moon mission shows space-to-Earth laser comms can
+    scale
+  why_zh: 英文摘要：Observable Space and Quantum Opus teamed up to capture data beamed
+    back from space.
+  takeaway_zh: 英文要点：Observable Space and Quantum Opus teamed up to capture data beamed
+    back from space.
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI now lets teams make custom bots that can do work on their own
+  why: OpenAI is giving users of its Business, Enterprise, Edu, and Teachers plans
+    access to cloud-based "workspace" agents available in ChatGPT t…
+  takeaway: OpenAI is giving users of its Business, Enterprise, Edu, and Teachers
+    plans access to cloud-based "workspace" agents available in ChatGPT that can perform
+    business tasks. In its blog post, OpenAI gives examples of agents like one that
+    finds product feedback on the web and sends a report in Slack and a sales agent
+    that can […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots
+  source: The Verge
+  published_utc: '2026-04-22T20:09:02+00:00'
+  title_zh: 英文标题：OpenAI now lets teams make custom bots that can do work on their
+    own
+  why_zh: 英文摘要：OpenAI is giving users of its Business, Enterprise, Edu, and Teachers
+    plans access to cloud-based "workspace" agents available in ChatGPT t…
+  takeaway_zh: 英文要点：OpenAI is giving users of its Business, Enterprise, Edu, and Teachers
+    plans access to cloud-based "workspace" agents available in ChatGPT that can perform
+    business tasks. In its blog post, OpenAI gives examples of agents like one that
+    finds product feedback on the web and sends a report in Slack and a sales agent
+    that can […]
+  prompt_zh: ''
+- category: Tech industry
+  title: RFK Jr. won't back CDC director on vaccines as agency scraps positive data
+  why: Kennedy's tesimony sets up another clash over vaccines with next CDC director.
+  takeaway: Kennedy's tesimony sets up another clash over vaccines with next CDC director.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/rfk-jr-doubles-down-on-vaccine-meddling-as-cdc-junks-scientific-study/
+  source: Ars Technica
+  published_utc: '2026-04-22T20:06:49+00:00'
+  title_zh: 英文标题：RFK Jr. won't back CDC director on vaccines as agency scraps positive
+    data
+  why_zh: 英文摘要：Kennedy's tesimony sets up another clash over vaccines with next CDC
+    director.
+  takeaway_zh: 英文要点：Kennedy's tesimony sets up another clash over vaccines with next
+    CDC director.
+  prompt_zh: ''
+- category: Tech industry
+  title: Alexis Ohanian shocks Washington with pro-immigration remarks
+  why: Hello and welcome to Regulator, a newsletter for Verge readers about tech politics,
+    political tech, and how they're muddying the waters of…
+  takeaway: Hello and welcome to Regulator, a newsletter for Verge readers about tech
+    politics, political tech, and how they're muddying the waters of Washington, DC.
+    My birthday is this week, and if you're not a Verge subscriber but would like
+    to wish me a happy birthday, you should subscribe here, because that would be
+    the best […]
+  prompt: ''
+  url: https://www.theverge.com/column/916949/alexis-ohanian-pro-immigration-remarks
+  source: The Verge
+  published_utc: '2026-04-22T20:04:45+00:00'
+  title_zh: 英文标题：Alexis Ohanian shocks Washington with pro-immigration remarks
+  why_zh: 英文摘要：Hello and welcome to Regulator, a newsletter for Verge readers about
+    tech politics, political tech, and how they're muddying the waters of…
+  takeaway_zh: 英文要点：Hello and welcome to Regulator, a newsletter for Verge readers
+    about tech politics, political tech, and how they're muddying the waters of Washington,
+    DC. My birthday is this week, and if you're not a Verge subscriber but would like
+    to wish me a happy birthday, you should subscribe here, because that would be
+    the best […]
+  prompt_zh: ''
+- category: Tech industry
+  title: How SpaceX preempted a $2B fundraise with a $60B buyout offer
+  why: Cursor was on track to close a $2 billion funding round this week but chose
+    to halt discussions after SpaceX offered a $10 billion "collabo…
+  takeaway: Cursor was on track to close a $2 billion funding round this week but
+    chose to halt discussions after SpaceX offered a $10 billion "collaboration fee"
+    and a path to a $60 billion acquisition.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/how-spacex-preempted-a-2b-fundraise-with-a-60b-buyout-offer/
+  source: TechCrunch
+  published_utc: '2026-04-22T19:51:51+00:00'
+  title_zh: 英文标题：How SpaceX preempted a $2B fundraise with a $60B buyout offer
+  why_zh: 英文摘要：Cursor was on track to close a $2 billion funding round this week but
+    chose to halt discussions after SpaceX offered a $10 billion "collabo…
+  takeaway_zh: 英文要点：Cursor was on track to close a $2 billion funding round this week
+    but chose to halt discussions after SpaceX offered a $10 billion "collaboration
+    fee" and a path to a $60 billion acquisition.
+  prompt_zh: ''
+- category: Tech industry
+  title: You want your Moon landings in HD? So does NASA—here's how it's happening.
+  why: '"You just push this button, and in three hours, you''re counting photons."'
+  takeaway: '"You just push this button, and in three hours, you''re counting photons."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/you-want-your-moon-landings-in-hdtv-so-does-nasa-heres-how-its-happening/
+  source: Ars Technica
+  published_utc: '2026-04-22T19:42:13+00:00'
+  title_zh: 英文标题：You want your Moon landings in HD? So does NASA—here's how it's happening.
+  why_zh: 英文摘要："You just push this button, and in three hours, you're counting photons."
+  takeaway_zh: 英文要点："You just push this button, and in three hours, you're counting
+    photons."
+  prompt_zh: ''
+- category: Tech industry
+  title: France confirms data breach at government agency that manages citizens’ IDs
+  why: The French government agency that issues and manages national IDs, passports,
+    and other documents announced that hackers stole the personal…
+  takeaway: The French government agency that issues and manages national IDs, passports,
+    and other documents announced that hackers stole the personal information of an
+    unspecified number of citizens.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/france-confirms-data-breach-at-government-agency-that-manages-citizens-ids/
+  source: TechCrunch
+  published_utc: '2026-04-22T19:34:41+00:00'
+  title_zh: 英文标题：France confirms data breach at government agency that manages citizens’
+    IDs
+  why_zh: 英文摘要：The French government agency that issues and manages national IDs,
+    passports, and other documents announced that hackers stole the personal…
+  takeaway_zh: 英文要点：The French government agency that issues and manages national
+    IDs, passports, and other documents announced that hackers stole the personal
+    information of an unspecified number of citizens.
+  prompt_zh: ''
+- category: AI frontier
+  title: 'Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6
+    Token Budget, Tangle, Tangent, SimGym — with Mikhail Parakhin, Shopify CTO'
+  why: A rare interview with Shopify's CTO on -everything- that Shopify is doing to
+    maximize AI for their customers, with exclusive data on their…
+  takeaway: A rare interview with Shopify's CTO on -everything- that Shopify is doing
+    to maximize AI for their customers, with exclusive data on their own AI adoption.
+  prompt: ''
+  url: https://www.latent.space/p/shopify
+  source: Latent Space (AI newsletter)
+  published_utc: '2026-04-22T19:33:49+00:00'
+  title_zh: '英文标题：Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6
+    Token Budget, Tangle, Tangent, SimGym — with Mikhail Parakhin, Shopify CTO'
+  why_zh: 英文摘要：A rare interview with Shopify's CTO on -everything- that Shopify is
+    doing to maximize AI for their customers, with exclusive data on their…
+  takeaway_zh: 英文要点：A rare interview with Shopify's CTO on -everything- that Shopify
+    is doing to maximize AI for their customers, with exclusive data on their own
+    AI adoption.
+  prompt_zh: ''
+- category: Security
+  title: Microsoft issues emergency update for macOS and Linux ASP.NET threat
+  why: When authentication fails, things can go very, very wrong.
+  takeaway: When authentication fails, things can go very, very wrong.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/
+  source: Ars Technica
+  published_utc: '2026-04-22T19:32:56+00:00'
+  title_zh: 英文标题：Microsoft issues emergency update for macOS and Linux ASP.NET threat
+  why_zh: 英文摘要：When authentication fails, things can go very, very wrong.
+  takeaway_zh: 英文要点：When authentication fails, things can go very, very wrong.
+  prompt_zh: ''
+- category: Tech industry
+  title: New study compares growing corn for energy to solar production
+  why: 'Article URL: https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/
+    Co…'
+  takeaway: 'Article URL: https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/
+    Comments URL: https://news.ycombinator.com/item?id=47868063 Points: 71 # Comments:
+    110'
+  prompt: ''
+  url: https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T19:21:46+00:00'
+  title_zh: 英文标题：New study compares growing corn for energy to solar production
+  why_zh: '英文摘要：Article URL: https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/
+    Co…'
+  takeaway_zh: '英文要点：Article URL: https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/
+    Comments URL: https://news.ycombinator.com/item?id=47868063 Points: 71 # Comments:
+    110'
+  prompt_zh: ''
+- category: Tech industry
+  title: Former MrBeast exec sues over ‘years’ of alleged harassment
+  why: A former employee of Jimmy "MrBeast" Donaldson has filed a lawsuit alleging
+    that she faced "intentional infliction of emotional distress" f…
+  takeaway: A former employee of Jimmy "MrBeast" Donaldson has filed a lawsuit alleging
+    that she faced "intentional infliction of emotional distress" from harassment
+    at the YouTuber's production company, was asked to work during maternity leave,
+    and was wrongfully fired just a few weeks after returning from leave. According
+    to the lawsuit, plaintiff Lorrayne Mavromatis…
+  prompt: ''
+  url: https://www.theverge.com/tech/916903/mrbeast-sexual-harassment-lawsuit
+  source: The Verge
+  published_utc: '2026-04-22T18:49:02+00:00'
+  title_zh: 英文标题：Former MrBeast exec sues over ‘years’ of alleged harassment
+  why_zh: 英文摘要：A former employee of Jimmy "MrBeast" Donaldson has filed a lawsuit
+    alleging that she faced "intentional infliction of emotional distress" f…
+  takeaway_zh: 英文要点：A former employee of Jimmy "MrBeast" Donaldson has filed a lawsuit
+    alleging that she faced "intentional infliction of emotional distress" from harassment
+    at the YouTuber's production company, was asked to work during maternity leave,
+    and was wrongfully fired just a few weeks after returning from leave. According
+    to the lawsuit, plaintiff Lorrayne Mavromatis…
+  prompt_zh: ''
+- category: AI frontier
+  title: Ex-OpenAI researcher Jerry Tworek launches Core Automation to build the most
+    automated AI lab in the world
+  why: 'New AI lab, familiar face: former OpenAI researcher Jerry Tworek wants to
+    push past the limits of today''s AI architectures with a small tea…'
+  takeaway: 'New AI lab, familiar face: former OpenAI researcher Jerry Tworek wants
+    to push past the limits of today''s AI architectures with a small team and new
+    learning methods. The article Ex-OpenAI researcher Jerry Tworek launches Core
+    Automation to build the most automated AI lab in the world appeared first on The
+    Decoder .'
+  prompt: ''
+  url: https://the-decoder.com/ex-openai-researcher-jerry-tworek-launches-core-automation-to-build-the-most-automated-ai-lab-in-the-world/
+  source: The Decoder (AI)
+  published_utc: '2026-04-22T18:44:36+00:00'
+  title_zh: 英文标题：Ex-OpenAI researcher Jerry Tworek launches Core Automation to build
+    the most automated AI lab in the world
+  why_zh: '英文摘要：New AI lab, familiar face: former OpenAI researcher Jerry Tworek wants
+    to push past the limits of today''s AI architectures with a small tea…'
+  takeaway_zh: '英文要点：New AI lab, familiar face: former OpenAI researcher Jerry Tworek
+    wants to push past the limits of today''s AI architectures with a small team and
+    new learning methods. The article Ex-OpenAI researcher Jerry Tworek launches Core
+    Automation to build the most automated AI lab in the world appeared first on The
+    Decoder .'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'From the stage to the future: Where are Startup Battlefield’s alumni now?'
+  why: We wanted to show you what happens after the confetti falls.
+  takeaway: 'We wanted to show you what happens after the confetti falls. We checked
+    in with some of our recent alumni, many of whom have sat down with us on Build
+    Mode: The Founder Survival Guide, TechCrunch''s podcast for founders at every
+    stage.'
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/from-the-stage-to-the-future-where-are-startup-battlefields-alumni-now/
+  source: TechCrunch
+  published_utc: '2026-04-22T18:42:26+00:00'
+  title_zh: '英文标题：From the stage to the future: Where are Startup Battlefield’s alumni
+    now?'
+  why_zh: 英文摘要：We wanted to show you what happens after the confetti falls.
+  takeaway_zh: '英文要点：We wanted to show you what happens after the confetti falls.
+    We checked in with some of our recent alumni, many of whom have sat down with
+    us on Build Mode: The Founder Survival Guide, TechCrunch''s podcast for founders
+    at every stage.'
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Cloud launches two new AI chips to compete with Nvidia
+  why: Google's newest TPUs are faster and cheaper than the previous versions.
+  takeaway: Google's newest TPUs are faster and cheaper than the previous versions.
+    But the company is still embracing Nvidia in its cloud — for now.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/
+  source: TechCrunch
+  published_utc: '2026-04-22T18:39:27+00:00'
+  title_zh: 英文标题：Google Cloud launches two new AI chips to compete with Nvidia
+  why_zh: 英文摘要：Google's newest TPUs are faster and cheaper than the previous versions.
+  takeaway_zh: 英文要点：Google's newest TPUs are faster and cheaper than the previous
+    versions. But the company is still embracing Nvidia in its cloud — for now.
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic tested removing Claude Code from the Pro plan
+  why: Untenable demand has Anthropic exploring new approaches to rationing its service.
+  takeaway: Untenable demand has Anthropic exploring new approaches to rationing its
+    service.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/anthropic-tested-removing-claude-code-from-the-pro-plan/
+  source: Ars Technica
+  published_utc: '2026-04-22T18:34:16+00:00'
+  title_zh: 英文标题：Anthropic tested removing Claude Code from the Pro plan
+  why_zh: 英文摘要：Untenable demand has Anthropic exploring new approaches to rationing
+    its service.
+  takeaway_zh: 英文要点：Untenable demand has Anthropic exploring new approaches to rationing
+    its service.
+  prompt_zh: ''
+- category: Tech industry
+  title: Website streamed live directly from a model
+  why: 'https://x.com/zan2434/status/2046982383430496444 ( https://xcancel.com/zan2434/status/2046982383430496444
+    ) Comments URL: https://news.ycom…'
+  takeaway: 'https://x.com/zan2434/status/2046982383430496444 ( https://xcancel.com/zan2434/status/2046982383430496444
+    ) Comments URL: https://news.ycombinator.com/item?id=47867048 Points: 173 # Comments:
+    61'
+  prompt: ''
+  url: https://flipbook.page/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T18:01:18+00:00'
+  title_zh: 英文标题：Website streamed live directly from a model
+  why_zh: '英文摘要：https://x.com/zan2434/status/2046982383430496444 ( https://xcancel.com/zan2434/status/2046982383430496444
+    ) Comments URL: https://news.ycom…'
+  takeaway_zh: '英文要点：https://x.com/zan2434/status/2046982383430496444 ( https://xcancel.com/zan2434/status/2046982383430496444
+    ) Comments URL: https://news.ycombinator.com/item?id=47867048 Points: 173 # Comments:
+    61'
+  prompt_zh: ''
+- category: AI frontier
+  title: 5 AI Models Tried to Scam Me. Some of Them Were Scary Good
+  why: The cyber capabilities of AI models have experts rattled.
+  takeaway: The cyber capabilities of AI models have experts rattled. AI’s social
+    skills may be just as dangerous.
+  prompt: ''
+  url: https://www.wired.com/story/ai-model-phishing-attack-cybersecurity/
+  source: WIRED - AI
+  published_utc: '2026-04-22T18:00:00+00:00'
+  title_zh: 英文标题：5 AI Models Tried to Scam Me. Some of Them Were Scary Good
+  why_zh: 英文摘要：The cyber capabilities of AI models have experts rattled.
+  takeaway_zh: 英文要点：The cyber capabilities of AI models have experts rattled. AI’s
+    social skills may be just as dangerous.
+  prompt_zh: ''
+- category: Tech industry
+  title: Ember’s self-heating smart mug is more than $50 off ahead of Mother’s Day
+  why: Coffee is what gets many of us through the workday, and a proper smart mug
+    can keep it hot for hours so you can maintain your focus without…
+  takeaway: Coffee is what gets many of us through the workday, and a proper smart
+    mug can keep it hot for hours so you can maintain your focus without constantly
+    getting up to reheat your cup. Thankfully, if you don’t own one, the 14-ounce
+    Ember Mug 2 is now available for $97.49 ($52 off) from Amazon, […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/916818/ember-smart-mug-2-mothers-day-sale-2026-deal
+  source: The Verge
+  published_utc: '2026-04-22T17:58:23+00:00'
+  title_zh: 英文标题：Ember’s self-heating smart mug is more than $50 off ahead of Mother’s
+    Day
+  why_zh: 英文摘要：Coffee is what gets many of us through the workday, and a proper smart
+    mug can keep it hot for hours so you can maintain your focus without…
+  takeaway_zh: 英文要点：Coffee is what gets many of us through the workday, and a proper
+    smart mug can keep it hot for hours so you can maintain your focus without constantly
+    getting up to reheat your cup. Thankfully, if you don’t own one, the 14-ounce
+    Ember Mug 2 is now available for $97.49 ($52 off) from Amazon, […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Coyote vs. Acme is finally getting released—with a killer trailer
+  why: What was Warner Bros.
+  takeaway: What was Warner Bros. even thinking, shelving this film for so many years?
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/04/coyote-vs-acme-is-finally-getting-released-with-a-killer-trailer/
+  source: Ars Technica
+  published_utc: '2026-04-22T17:55:09+00:00'
+  title_zh: 英文标题：Coyote vs. Acme is finally getting released—with a killer trailer
+  why_zh: 英文摘要：What was Warner Bros.
+  takeaway_zh: 英文要点：What was Warner Bros. even thinking, shelving this film for so
+    many years?
+  prompt_zh: ''
+- category: Tech industry
+  title: Over-editing refers to a model modifying code beyond what is necessary
+  why: 'Article URL: https://nrehiew.github.io/blog/minimal_editing/ Comments URL:
+    https://news.ycombinator.com/item?id=47866913 Points: 306 # Comm…'
+  takeaway: 'Article URL: https://nrehiew.github.io/blog/minimal_editing/ Comments
+    URL: https://news.ycombinator.com/item?id=47866913 Points: 306 # Comments: 173'
+  prompt: ''
+  url: https://nrehiew.github.io/blog/minimal_editing/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T17:51:17+00:00'
+  title_zh: 英文标题：Over-editing refers to a model modifying code beyond what is necessary
+  why_zh: '英文摘要：Article URL: https://nrehiew.github.io/blog/minimal_editing/ Comments
+    URL: https://news.ycombinator.com/item?id=47866913 Points: 306 # Comm…'
+  takeaway_zh: '英文要点：Article URL: https://nrehiew.github.io/blog/minimal_editing/
+    Comments URL: https://news.ycombinator.com/item?id=47866913 Points: 306 # Comments:
+    173'
+  prompt_zh: ''
+- category: Tech industry
+  title: Workspace Agents in ChatGPT
+  why: 'Article URL: https://openai.com/index/introducing-workspace-agents-in-chatgpt/
+    Comments URL: https://news.ycombinator.com/item?id=47866860…'
+  takeaway: 'Article URL: https://openai.com/index/introducing-workspace-agents-in-chatgpt/
+    Comments URL: https://news.ycombinator.com/item?id=47866860 Points: 110 # Comments:
+    43'
+  prompt: ''
+  url: https://openai.com/index/introducing-workspace-agents-in-chatgpt/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T17:47:07+00:00'
+  title_zh: 英文标题：Workspace Agents in ChatGPT
+  why_zh: '英文摘要：Article URL: https://openai.com/index/introducing-workspace-agents-in-chatgpt/
+    Comments URL: https://news.ycombinator.com/item?id=47866860…'
+  takeaway_zh: '英文要点：Article URL: https://openai.com/index/introducing-workspace-agents-in-chatgpt/
+    Comments URL: https://news.ycombinator.com/item?id=47866860 Points: 110 # Comments:
+    43'
+  prompt_zh: ''
+- category: Tech industry
+  title: Watch Sony’s elite ping-pong robot beat top-ranked players
+  why: Humans have been building ping-pong playing robots for decades, such as Omron's
+    FORPHEUS that challenged amateur competitors at CES 2017.
+  takeaway: Humans have been building ping-pong playing robots for decades, such as
+    Omron's FORPHEUS that challenged amateur competitors at CES 2017. What sets Ace
+    apart from the rest is that the robot, which was developed by Sony's AI division,
+    is the first that can hold its own against top-ranked human players and occasionally
+    even beat them […]
+  prompt: ''
+  url: https://www.theverge.com/tech/916800/sony-ai-ace-ping-pong-table-tennis-robot-cameras
+  source: The Verge
+  published_utc: '2026-04-22T17:43:38+00:00'
+  title_zh: 英文标题：Watch Sony’s elite ping-pong robot beat top-ranked players
+  why_zh: 英文摘要：Humans have been building ping-pong playing robots for decades, such
+    as Omron's FORPHEUS that challenged amateur competitors at CES 2017.
+  takeaway_zh: 英文要点：Humans have been building ping-pong playing robots for decades,
+    such as Omron's FORPHEUS that challenged amateur competitors at CES 2017. What
+    sets Ace apart from the rest is that the robot, which was developed by Sony's
+    AI division, is the first that can hold its own against top-ranked human players
+    and occasionally even beat them […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Parallel agents in Zed
+  why: 'Article URL: https://zed.dev/blog/parallel-agents Comments URL: https://news.ycombinator.com/item?id=47866750
+    Points: 175 # Comments: 105'
+  takeaway: 'Article URL: https://zed.dev/blog/parallel-agents Comments URL: https://news.ycombinator.com/item?id=47866750
+    Points: 175 # Comments: 105'
+  prompt: ''
+  url: https://zed.dev/blog/parallel-agents
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T17:38:57+00:00'
+  title_zh: 英文标题：Parallel agents in Zed
+  why_zh: '英文摘要：Article URL: https://zed.dev/blog/parallel-agents Comments URL: https://news.ycombinator.com/item?id=47866750
+    Points: 175 # Comments: 105'
+  takeaway_zh: '英文要点：Article URL: https://zed.dev/blog/parallel-agents Comments URL:
+    https://news.ycombinator.com/item?id=47866750 Points: 175 # Comments: 105'
+  prompt_zh: ''
+- category: Tech industry
+  title: We found a stable Firefox identifier linking all your private Tor identities
+  why: 'Article URL: https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/
+    Comments URL: https://news.ycombinator.com/item?id=4…'
+  takeaway: 'Article URL: https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/
+    Comments URL: https://news.ycombinator.com/item?id=47866697 Points: 465 # Comments:
+    139'
+  prompt: ''
+  url: https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/
+  source: Hacker News (front page)
+  published_utc: '2026-04-22T17:35:03+00:00'
+  title_zh: 英文标题：We found a stable Firefox identifier linking all your private Tor
+    identities
+  why_zh: '英文摘要：Article URL: https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/
+    Comments URL: https://news.ycombinator.com/item?id=4…'
+  takeaway_zh: '英文要点：Article URL: https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/
+    Comments URL: https://news.ycombinator.com/item?id=47866697 Points: 465 # Comments:
+    139'
+  prompt_zh: ''
+- category: Education / learning sciences / edtech
+  title: Autonomous LLM-generated Feedback for Student Exercises in Introductory Software
+    Engineering Courses
+  why: Introductory Software Engineering (SE) courses face rapidly increasing student
+    enrollment numbers, participants with diverse backgrounds an…
+  takeaway: Introductory Software Engineering (SE) courses face rapidly increasing
+    student enrollment numbers, participants with diverse backgrounds and the influence
+    of Generative AI (GenAI) solutions. High teacher-to-student ratios often challenge
+    providing timely, high-quality, and personalized feedback a significant challenge
+    for educators. To address these challen…
+  prompt: ''
+  url: https://arxiv.org/abs/2604.20803v1
+  source: 'arXiv search: education AND (LLM OR AI)'
+  published_utc: '2026-04-22T17:34:58+00:00'
+  title_zh: 英文标题：Autonomous LLM-generated Feedback for Student Exercises in Introductory
+    Software Engineering Courses
+  why_zh: 英文摘要：Introductory Software Engineering (SE) courses face rapidly increasing
+    student enrollment numbers, participants with diverse backgrounds an…
+  takeaway_zh: 英文要点：Introductory Software Engineering (SE) courses face rapidly increasing
+    student enrollment numbers, participants with diverse backgrounds and the influence
+    of Generative AI (GenAI) solutions. High teacher-to-student ratios often challenge
+    providing timely, high-quality, and personalized feedback a significant challenge
+    for educators. To address these challen…
+  prompt_zh: ''
+- category: Tech industry
+  title: Google turns Chrome into an AI co-worker for the workplace
+  why: Google brings Gemini-powered "auto browse" capabilities to Chrome for enterprise
+    users, letting workers automate tasks like research, data…
+  takeaway: Google brings Gemini-powered "auto browse" capabilities to Chrome for
+    enterprise users, letting workers automate tasks like research, data entry, and
+    more.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/22/google-turns-chrome-into-an-ai-coworker-for-the-workplace/
+  source: TechCrunch
+  published_utc: '2026-04-22T17:30:00+00:00'
+  title_zh: 英文标题：Google turns Chrome into an AI co-worker for the workplace
+  why_zh: 英文摘要：Google brings Gemini-powered "auto browse" capabilities to Chrome for
+    enterprise users, letting workers automate tasks like research, data…
+  takeaway_zh: 英文要点：Google brings Gemini-powered "auto browse" capabilities to Chrome
+    for enterprise users, letting workers automate tasks like research, data entry,
+    and more.
+  prompt_zh: ''

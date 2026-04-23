@@ -14,53 +14,15 @@ Workflow:
 
 from __future__ import annotations
 
-import os
-import sys
-from pathlib import Path
-
-
-def _maybe_reexec_into_project_venv() -> None:
-    """
-    Prefer the repo-local `.venv` when it exists.
-
-    This keeps `bin/digest` reproducible even if the system Python is missing deps.
-    Set `DIGEST_NO_VENV=1` to bypass.
-    """
-
-    if os.environ.get("DIGEST_NO_VENV") == "1":
-        return
-
-    # Detect an actually-active venv (not just an exported VIRTUAL_ENV variable).
-    base_prefix = getattr(sys, "base_prefix", sys.prefix)
-    if sys.prefix != base_prefix:
-        return
-
-    repo_root = Path(__file__).resolve().parents[1]
-    venv_dir = repo_root / ".venv"
-    venv_python = venv_dir / "bin" / "python"
-    if not venv_python.exists():
-        return
-
-    # Homebrew/system Python and the venv launcher may resolve to the same underlying
-    # interpreter binary, so compare by `sys.prefix` instead of executable path.
-    try:
-        if Path(sys.prefix).resolve() == venv_dir.resolve():
-            return
-    except Exception:
-        return
-
-    os.execv(str(venv_python), [str(venv_python), *sys.argv])
-
-
-_maybe_reexec_into_project_venv()
-
 import argparse
 import datetime as dt
 import base64
 import hashlib
 import json
+import os
 import random
 import re
+import sys
 import html
 import socket
 import shutil
@@ -70,6 +32,7 @@ import gzip
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any, Iterable
 from types import SimpleNamespace
 
@@ -817,7 +780,7 @@ def _draft_items(
 
     # Keep the AI tools section practical: we want tool/model release updates.
     # For AI-news feeds that also publish commentary, reclassify non-release items into AI frontier.
-    ai_tools_news_ids = {"decoder-ai", "wired-ai-tag", "venturebeat-ai", "latent-space"}
+    ai_tools_news_ids = {"decoder-ai", "wired-ai-tag", "venturebeat-ai"}
     ai_tools_misc_ids = {"simon-willison"}
     # Stricter heuristic: require at least one "action" and one "object" keyword
     # to keep an item in the AI tools/model releases section.
@@ -1009,10 +972,6 @@ def _draft_items(
     # High-volume sources (e.g., Hacker News, FT) can otherwise dominate the most-recent slice,
     # leading to a Top 10 that feels single-source. Apply simple caps here to keep candidates diverse.
     total = int(max_items or 200)
-    # Ensure the draft still contains enough AI tool/model release candidates even if
-    # the non-AI news volume is very high. This matters because AI tool updates can be
-    # "bursty" and may land earlier than the main news cycle, especially with a longer lookback.
-    min_ai = int(os.environ.get("DIGEST_DRAFT_MIN_AI_ITEMS", "30") or "30")
     cap_per_source = int(os.environ.get("DIGEST_DRAFT_MAX_PER_SOURCE", "20") or "20")
     cap_per_domain = int(os.environ.get("DIGEST_DRAFT_MAX_PER_DOMAIN", "20") or "20")
     cap_github_domain = int(os.environ.get("DIGEST_DRAFT_MAX_GITHUB_PER_DOMAIN", "80") or "80")
@@ -1020,54 +979,21 @@ def _draft_items(
     by_src: dict[str, int] = {}
     by_dom: dict[str, int] = {}
     out: list[dict[str, Any]] = []
-    seen_final_url: set[str] = set()
-    seen_final_title: set[str] = set()
-
-    def _try_add(it: dict[str, Any]) -> bool:
+    for it in deduped:
         if len(out) >= total:
-            return False
-        url = (it.get("url") or "").strip()
-        tnorm = _norm(it.get("title", ""))
-        if url and url in seen_final_url:
-            return False
-        if tnorm and tnorm in seen_final_title:
-            return False
+            break
         src = (it.get("source") or "").strip()
         dom = (urlparse((it.get("url") or "").strip()).netloc or "").lower()
         if src and by_src.get(src, 0) >= cap_per_source:
-            return False
+            continue
         cap_dom = cap_github_domain if dom == "github.com" else cap_per_domain
         if dom and by_dom.get(dom, 0) >= cap_dom:
-            return False
+            continue
         out.append(it)
-        if url:
-            seen_final_url.add(url)
-        if tnorm:
-            seen_final_title.add(tnorm)
         if src:
             by_src[src] = by_src.get(src, 0) + 1
         if dom:
             by_dom[dom] = by_dom.get(dom, 0) + 1
-        return True
-
-    ai_cat = "AI tools & model releases"
-    ai_items = [it for it in deduped if (it.get("category") or "").strip() == ai_cat]
-    other_items = [it for it in deduped if (it.get("category") or "").strip() != ai_cat]
-
-    # Pass 1: reserve space for AI tool/model updates.
-    want_ai = min(min_ai, total)
-    ai_added = 0
-    for it in ai_items:
-        if ai_added >= want_ai:
-            break
-        if _try_add(it):
-            ai_added += 1
-
-    # Pass 2: fill the rest with everything else (including any remaining AI items).
-    for it in other_items + ai_items:
-        if len(out) >= total:
-            break
-        _try_add(it)
 
     return out
 
@@ -1221,16 +1147,16 @@ def _group_by_category(items: list[dict[str, Any]]) -> list[tuple[str, list[dict
     for it in items:
         cat = (it.get("category", "") or "Misc").strip()
         groups.setdefault(cat, []).append(it)
-    # Preserve a sensible, stable ordering for *social posts*: AI/CSS first, then other beats.
+    # Preserve a sensible, stable ordering: CSS first, then AI, then others.
     order = [
+        "Business & economy",
+        "Tech industry",
+        "Security",
         "CSS / AI & society",
         "AI frontier",
         "AI tools & model releases",
-        "Security",
-        "Tech industry",
         "Digital health / health comm",
         "Education / learning sciences / edtech",
-        "Business & economy",
         "Misc",
     ]
     ordered: list[tuple[str, list[dict[str, Any]]]] = []
@@ -1345,11 +1271,6 @@ def _importance_score(it: dict[str, Any], *, now: dt.datetime | None = None) -> 
         "energy": 6,
         # AI / platforms / infra
         "openai": 10,
-        # Model families / common release naming (helps rank model updates even when titles omit "model/release")
-        "gpt": 9,
-        "gemini": 9,
-        "claude": 8,
-        "deepmind": 8,
         "chatgpt": 9,
         "anthropic": 8,
         "nvidia": 8,
@@ -1418,20 +1339,13 @@ def _ai_item_practicality_filter(items: list[dict[str, Any]]) -> list[dict[str, 
     def _is_noisy(it: dict[str, Any]) -> bool:
         t = (it.get("title") or "").lower()
         u = (it.get("url") or "").lower()
-
-        def _has_prerelease_marker(s: str) -> bool:
-            # NOTE: Don't use a raw substring check for "rc" (it matches common words like "search").
-            if any(x in s for x in ["nightly", "beta", "alpha", "dev preview", "preview", "snapshot"]):
-                return True
-            return bool(re.search(r"(^|[^a-z0-9])rc(\d+|[^a-z0-9]|$)", s))
-
         # GitHub releases are, by definition, "tool updates"—keep them unless they are noisy pre-releases.
         if "github.com" in u and "/releases/" in u:
             # Pre-releases/nightlies are too frequent for a daily brief.
-            if _has_prerelease_marker(t):
+            if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
                 return True
-            # llama.cpp-style commit-tag releases are extremely frequent; keep them out of Top unless needed.
-            if ("llama.cpp" in t) and (re.search(r"\brelease:\s*b\d{4,}\b", t) or re.search(r"\bb\d{4,}\b", t)):
+            # llama.cpp commit-tag releases are extremely frequent; keep them out of Top unless needed.
+            if "llama.cpp" in t and re.search(r"\brelease:\s*b\d{4,}\b", t):
                 return True
             return False
         # Keep Top list practical: require at least one tooling/release cue.
@@ -1459,23 +1373,11 @@ def _ai_item_practicality_filter(items: list[dict[str, Any]]) -> list[dict[str, 
             "inference",
             "open-source",
             "open source",
-            # Model family names (many release posts omit the literal word "model")
-            "gpt",
-            "gemini",
-            "claude",
-            "llama",
-            "mistral",
-            "qwen",
-            "deepseek",
-            "grok",
-            "openai",
-            "anthropic",
-            "deepmind",
         ]
         if not any(k in t for k in practical_kw):
             return True
         # Pre-releases/nightlies are too frequent for a daily brief.
-        if _has_prerelease_marker(t):
+        if any(x in t for x in ["nightly", "rc", "beta", "alpha", "dev preview", "preview", "snapshot"]):
             return True
         # llama.cpp commit-tag releases are extremely frequent; keep them out of Top unless needed.
         if "llama.cpp" in t and re.search(r"\brelease:\s*b\d{4,}\b", t):
@@ -2010,32 +1912,8 @@ def _format_linkedin_post(
             if not cat_items:
                 continue
             lines.append(f"{cat} / {CAT_ZH.get(cat, cat)}")
-            # Pick the best items *within* each category for LinkedIn (the YAML order is a draft artifact).
-            cat_ranked = sorted(
-                cat_items,
-                key=lambda it: (
-                    _importance_score(it, now=now),
-                    _parse_published_utc(it) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
-                ),
-                reverse=True,
-            )
-            if cat == "AI tools & model releases":
-                # De-noise prereleases/commit-tag spam before we take the top 3.
-                cat_ranked = _ai_item_practicality_filter(cat_ranked)
-            cat_items = cat_ranked
-            # Keep LinkedIn scannable: cap per category so "AI tools/model releases" doesn't
-            # consume the entire post, while the full list remains on the site.
-            if cat == "AI tools & model releases":
-                max_in_cat = 3
-            elif cat == "Business & economy":
-                max_in_cat = 2
-            else:
-                max_in_cat = 3
-            in_cat = 0
             for it in cat_items:
                 if rendered >= max_items_total:
-                    break
-                if in_cat >= max_in_cat:
                     break
                 t_en = (it.get("title") or "").strip()
                 t_zh = (it.get("title_zh") or "").strip()
@@ -2054,7 +1932,6 @@ def _format_linkedin_post(
                 lines.append(head)
                 lines.append(f"  {u}")
                 rendered += 1
-                in_cat += 1
             lines.append("")
             if rendered >= max_items_total:
                 break
@@ -2495,11 +2372,6 @@ def render_card(
         max_per_category=mpc,
     )
 
-    if not ranked:
-        # Avoid "blank" cards when a section has no items.
-        empty = "(No items in this window.)" if lang != "zh" else "（此时间窗内无条目。）"
-        _draw_text(draw, (x, y + 6), empty, font=font_item_body, fill=sub, stroke_width=1)
-
     # Footer anchored at the bottom to avoid a large empty block below the content.
     footer1 = "Zhilong George Zhao · @longlalaland"
     digest_path = f"/digest/{date.isoformat()}/" if lang != "zh" else f"/zh/digest/{date.isoformat()}/"
@@ -2882,11 +2754,7 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
             CARD_DIR / f"{date.isoformat()}-ai-en.png",
             lang="en",
             title_override="AI Tools & Model Updates",
-            subtitle_override=(
-                "New tools/models/releases (see site for the full list)."
-                if items_ai
-                else "No tool/model release updates selected for this issue."
-            ),
+            subtitle_override="New tools/models/releases (see site for the full list).",
             max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
             max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),
@@ -2897,11 +2765,7 @@ def build_digest(date: dt.date, digest: dict[str, Any]) -> list[tuple[str, Path]
             CARD_DIR / f"{date.isoformat()}-ai-zh.png",
             lang="zh",
             title_override="AI 工具 / 模型更新",
-            subtitle_override=(
-                "今日工具/模型发布（完整版见网站）。"
-                if items_ai
-                else "本期未选择工具/模型发布更新。"
-            ),
+            subtitle_override="今日工具/模型发布（完整版见网站）。",
             max_per_source=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_SOURCE", "1") or "1"),
             max_per_domain=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_DOMAIN", "20") or "20"),
             max_per_category=int(os.environ.get("DIGEST_AI_CARD_MAX_PER_CATEGORY", "10") or "10"),

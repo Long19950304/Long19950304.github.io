@@ -2,7 +2,7 @@
 layout: page
 title: 简报
 permalink: /zh/digest/
-description: 每日简报归档（新闻 + 来源），并单列当日 AI 工具 / 模型更新。
+description: 每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。
 nav: true
 nav_order: 7
 lang: zh
@@ -10,13 +10,13 @@ translation_key: digest
 ---
 
 <p class="small">
-每日简报归档。每期包含“新闻”板块，并在有更新时单列“AI 工具 / 模型”。
+每日简报归档（新闻 + 来源），并单列当日 AI 工具 / 模型更新。
 </p>
 
-<div class="digest-index-meta small">
-  <a href="{{ '/zh/digest/weekly/' | relative_url }}">每周汇总</a>
-  · <a href="{{ '/zh/digest/feed.xml' | relative_url }}">RSS</a>
-</div>
+<p class="small">
+<a href="{{ '/zh/digest/weekly/' | relative_url }}">每周汇总</a>
+ · <a href="{{ '/zh/digest/feed.xml' | relative_url }}">RSS</a>
+</p>
 
 {% assign digests = site.digests_zh | sort: "name" | reverse %}
 
@@ -26,10 +26,7 @@ translation_key: digest
 <div class="digest-index" data-digest-index>
   <div class="digest-index-controls">
     <div class="digest-index-controls__row">
-      <input class="form-control form-control-sm digest-index-search" type="search" placeholder="搜索新闻与 AI 工具…" data-digest-search>
-    </div>
-    <div class="digest-index-controls__row">
-      <div class="digest-search-results" data-digest-results hidden></div>
+      <input class="form-control form-control-sm digest-index-search" type="search" placeholder="搜索…" data-digest-search>
     </div>
     <div class="digest-index-controls__row digest-index-filters" role="group" aria-label="简报筛选">
       <button type="button" class="btn btn-sm btn-outline-secondary" data-digest-filter="all">全部</button>
@@ -43,7 +40,7 @@ translation_key: digest
     </div>
   </div>
 
-  <div class="digest-index-list" data-digest-grid>
+  <div class="row">
 {% for d in digests %}
   {% assign date_key = d.digest_date | date: "%Y-%m-%d" %}
   {% assign en = site.digests | where: "digest_date", d.digest_date | first %}
@@ -69,8 +66,6 @@ translation_key: digest
     {% endfor %}
   {% endif %}
   {% assign tags = tags | strip %}
-  {%- comment -%}保持 `data-tags` 简洁，便于筛选与缓存。{%- endcomment -%}
-  {% assign tags = tags | split: " " | uniq | join: " " | strip %}
 
   {% assign thumb_path = '/assets/img/digests/' | append: date_key | append: '-zh.png' %}
   {% assign thumb_webp_path = '/assets/img/digests/' | append: date_key | append: '-zh.webp' %}
@@ -78,52 +73,50 @@ translation_key: digest
   {% assign thumb_webp_file = site.static_files | where: "path", thumb_webp_path | first %}
   {% assign ai_path = '/assets/img/digests/' | append: date_key | append: '-ai-zh.png' %}
   {% assign ai_file = site.static_files | where: "path", ai_path | first %}
-  <div class="digest-index-entry" data-digest-col>
-    <div class="digest-index-row" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
-      <a class="digest-index-row__thumb" href="{{ d.url }}">
+  <div class="col-12 col-md-6 col-lg-4 mb-4" data-digest-col>
+    <div class="card h-100 digest-index-card" data-digest-card data-tags="{{ tags }}" data-title="{{ d.title }}" data-tagline="{{ tagline | strip }}">
+      <a href="{{ d.url }}">
         {% if thumb_file %}
           {% if thumb_webp_file %}
             <picture>
               <source type="image/webp" srcset="{{ thumb_webp_path | relative_url }}">
               <img
-                class="digest-index-thumb"
+                class="card-img-top digest-card-thumb"
                 src="{{ thumb_path | relative_url }}"
                 alt="每日简报 {{ d.digest_date }} 卡片"
                 loading="lazy">
             </picture>
           {% else %}
             <img
-              class="digest-index-thumb"
+              class="card-img-top digest-card-thumb"
               src="{{ thumb_path | relative_url }}"
               alt="每日简报 {{ d.digest_date }} 卡片"
               loading="lazy">
           {% endif %}
         {% else %}
-          <div class="digest-index-thumb digest-index-thumb--placeholder">
+          <div class="digest-card-thumb digest-card-thumb--placeholder">
             <div class="digest-card-thumb__date">{{ d.digest_date }}</div>
           </div>
         {% endif %}
       </a>
-      <div class="digest-index-row__body">
-        <div class="digest-index-row__meta">
-          <span class="digest-index-row__date">{{ d.digest_date }}</span>
-          <span class="digest-index-row__badges">
-            <span class="badge badge-light">新闻</span>
-            {% if ai_file %}
-              <span class="badge badge-light">AI 工具</span>
-            {% endif %}
-          </span>
-        </div>
-        <div class="digest-index-row__title"><a href="{{ d.url }}">{{ d.title }}</a></div>
+      <div class="card-body">
+        <div class="small text-muted mb-1">{{ d.digest_date }}</div>
+        <h5 class="card-title mb-0"><a href="{{ d.url }}">{{ d.title }}</a></h5>
         {% if tagline %}
-          <div class="digest-index-row__tagline">{{ tagline | strip | truncate: 120 }}</div>
+          <div class="digest-card-tagline mt-2">{{ tagline | strip | truncate: 80 }}</div>
         {% endif %}
-        <div class="digest-index-row__actions">
-          <a class="btn btn-sm btn-outline-primary" href="{{ d.url }}">打开</a>
-          {% if en %}
-            <a class="btn btn-sm btn-outline-secondary" href="{{ en.url }}">EN</a>
+        <div class="mt-2">
+          <span class="badge badge-light">新闻</span>
+          {% if ai_file %}
+            <span class="badge badge-light">AI 工具</span>
           {% endif %}
         </div>
+      </div>
+      <div class="card-footer bg-transparent border-top-0 pt-0">
+        <a class="btn btn-sm btn-outline-primary" href="{{ d.url }}">打开</a>
+        {% if en %}
+          <a class="btn btn-sm btn-outline-secondary" href="{{ en.url }}">EN</a>
+        {% endif %}
       </div>
     </div>
   </div>

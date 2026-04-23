@@ -1,5 +1,3 @@
-feedparser
 nbconvert
-Pillow
 pyyaml
 scholarly

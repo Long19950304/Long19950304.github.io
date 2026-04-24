@@ -1,0 +1,1217 @@
+date: '2026-04-24'
+title: Daily Digest - 2026-04-24
+title_zh: 每日简报 - 2026-04-24
+note: 'Today: In a first, a ransomware family is confirmed to be quantum-safe · Vercel
+  says some of its customers’ data was stolen prior to its… · AI: OpenAI unveils GPT-5.5,
+  claims a "new class of intelligen….'
+note_zh: 今日关注：首例确认具备量子安全性的勒索软件家族出现；Vercel称部分客户数据在近期黑客攻击前已遭窃取；AI：OpenAI发布GPT-5.5，宣称开启'新型智能等级'并双倍提高…。
+items:
+- category: Tech industry
+  title: Why I Write (1946)
+  why: 'Article URL: https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/why-i-write/
+    Comments URL: https://news.y…'
+  takeaway: 'Article URL: https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/why-i-write/
+    Comments URL: https://news.ycombinator.com/item?id=47884768 Points: 9 # Comments:
+    0'
+  prompt: ''
+  url: https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/why-i-write/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T02:26:23+00:00'
+  title_zh: 我为何写作（1946）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: An update on recent Claude Code quality reports
+  why: An update on recent Claude Code quality reports It turns out the high volume
+    of complaints that Claude Code was providing worse quality res…
+  takeaway: An update on recent Claude Code quality reports It turns out the high
+    volume of complaints that Claude Code was providing worse quality results over
+    the past two months was grounded in real problems. The models themselves were
+    not to blame, but three separate issues in the Claude Code harness caused complex
+    but material problems which directly affected user…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-24T01:31:25+00:00'
+  title_zh: 关于近期Claude代码质量报告的更新说明
+  why_zh: 关于近期Claude代码质量报告的更新 事实证明大量投诉指出Claude代码生成质量下降…
+  takeaway_zh: 近期Claude代码质量报告更新显示，过去两个月用户对Claude代码输出质量下降的大量投诉确有其因。问题并非源于模型本身，而是Claude代码框架中存在的三个独立问题，这些复杂但实质性的缺陷直接影响了用户体验。
+  prompt_zh: ''
+- category: Tech industry
+  title: Bob Iger rejoins Thrive Capital as advisor after Disney exit
+  why: The former Disney CEO hold a stake in Thrive, and has previously held the role
+    of the venture partner at the firm.
+  takeaway: The former Disney CEO hold a stake in Thrive, and has previously held
+    the role of the venture partner at the firm.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/bob-iger-rejoins-thrive-capital-as-advisor-after-disney-exit/
+  source: TechCrunch
+  published_utc: '2026-04-24T00:11:25+00:00'
+  title_zh: 鲍勃·艾格退出迪士尼后，以顾问身份重返Thrive Capital
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.7-stable.patch.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.7-stable.patch.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-23T23:36:37+00:00'
+  title_zh: BerriAI/litellm：v1.83.7-stable.patch.1版本
+  why_zh: 版本更新说明（详见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Authorities arrest special forces soldier who allegedly made $400K on Polymarket
+    bet involving Maduro operation
+  why: The soldier is accused of using classified government information to inform
+    a wager on the prediction market Polymarket.
+  takeaway: The soldier is accused of using classified government information to inform
+    a wager on the prediction market Polymarket.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/authorities-arrest-special-forces-soldier-who-allegedly-made-400k-on-polymarket-bet-involving-maduro-operation/
+  source: TechCrunch
+  published_utc: '2026-04-23T23:32:33+00:00'
+  title_zh: 当局逮捕涉嫌通过Polymarket押注马杜罗行动获利40万美元的特种部队士兵
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.12-nightly'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.12-nightly
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-23T23:29:45+00:00'
+  title_zh: BerriAI/litellm：v1.83.12-nightly版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US arrests soldier who allegedly made $400K on Maduro Polymarket bets
+  why: We knew someone made over $400,000 on suspicious Polymarket bets around the
+    US operation to capture Venezuelan president Nicolas Maduro, bu…
+  takeaway: 'We knew someone made over $400,000 on suspicious Polymarket bets around
+    the US operation to capture Venezuelan president Nicolas Maduro, but now we have
+    a name: Gannon Ken Van Dyke. The US Attorney for the Southern District of New
+    York announced Thursday that Van Dyke is in custody, on several charges, including
+    using confidential government […]'
+  prompt: ''
+  url: https://www.theverge.com/policy/917910/polymarket-maduro-bets-arrest-van-dyke
+  source: The Verge
+  published_utc: '2026-04-23T22:49:11+00:00'
+  title_zh: 美国逮捕涉嫌通过马杜罗Polymarket投注获利40万美元士兵
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Redwood Materials loses COO amid layoffs, restructuring
+  why: Former Tesla executive Chris Lister is retiring, and at least three other VPs
+    have left Redwood around the recent restructuring, TechCrunch…
+  takeaway: Former Tesla executive Chris Lister is retiring, and at least three other
+    VPs have left Redwood around the recent restructuring, TechCrunch has learned.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/redwood-materials-loses-coo-amid-layoffs-restructuring/
+  source: TechCrunch
+  published_utc: '2026-04-23T22:44:12+00:00'
+  title_zh: Redwood Materials首席运营官离职，伴随裁员与重组
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Leak reveals new Xbox Game Pass ‘Starter Edition’ that’s part of Discord
+    Nitro
+  why: Microsoft started teasing a mysterious Discord and Xbox Game Pass partnership
+    yesterday, and a new leak appears to have detailed exactly wh…
+  takeaway: Microsoft started teasing a mysterious Discord and Xbox Game Pass partnership
+    yesterday, and a new leak appears to have detailed exactly what's coming. Discord
+    Previews has uncovered a new Xbox Game Pass "Starter Edition" that is bundled
+    with Discord Nitro. The Starter Edition reportedly includes "access to over 50
+    games from the Game Pass library," […]
+  prompt: ''
+  url: https://www.theverge.com/news/917880/xbox-game-pass-starter-edition-discord-nitro-bundle
+  source: The Verge
+  published_utc: '2026-04-23T22:36:39+00:00'
+  title_zh: 泄露消息揭示Xbox Game Pass'Starter Edition'将作为Discord Nitro组成部分
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Claude is connecting directly to your personal apps like Spotify, Uber Eats,
+    and TurboTax
+  why: Claude users can access more apps with Anthropic's AI now thanks to new connectors
+    for everything from hiking to grocery shopping.
+  takeaway: Claude users can access more apps with Anthropic's AI now thanks to new
+    connectors for everything from hiking to grocery shopping. Anthropic already supported
+    connecting numerous work-related apps to Claude, like Microsoft apps, but this
+    expansion focuses on personal apps like Audible, Spotify, Uber, AllTrails, TripAdvisor,
+    Instacart, TurboTax, and others.…
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors
+  source: The Verge
+  published_utc: '2026-04-23T22:27:11+00:00'
+  title_zh: Claude正直接接入Spotify、Uber Eats和TurboTax等个人应用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Visitors to this private space station won't be wearing shorts and T-shirts
+  why: Can you wear white after Labor Day if your destination is Earth orbit?
+  takeaway: Can you wear white after Labor Day if your destination is Earth orbit?
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/vast-reveals-flight-suit-tests-timepiece-for-commercial-space-station/
+  source: Ars Technica
+  published_utc: '2026-04-23T22:14:16+00:00'
+  title_zh: 私人空间站访客将不再身着短裤T恤
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Tolaria – Open-source macOS app to manage Markdown knowledge bases'
+  why: Hey there!
+  takeaway: Hey there! I am Luca, I write https://refactoring.fm/ and I built Tolaria
+    for myself to manage my own knowledge base (10K notes, 300+ articles written in
+    over 6 years of newslettering) and work well with AI. Tolaria is offline-first,
+    file-based, has first-class support for git, and has strong opinions about how
+    you should organize notes (types, relationship…
+  prompt: ''
+  url: https://github.com/refactoringhq/tolaria
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T22:01:59+00:00'
+  title_zh: 'Show HN: Tolaria——开源macOS应用，用于管理Markdown知识库'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US accuses China of “industrial-scale” AI theft. China says it’s “slander.”
+  why: Trump-Xi summit may be rocked by US mulling huge sanctions.
+  takeaway: Trump-Xi summit may be rocked by US mulling huge sanctions.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/us-accuses-china-of-industrial-scale-ai-theft-china-says-its-slander/
+  source: Ars Technica
+  published_utc: '2026-04-23T21:45:10+00:00'
+  title_zh: 美国指控中国进行“工业规模”AI窃取，中方称此为“诽谤”
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Brendan Carr’s war on wokeness targets inclusive children&#8217;s television
+  why: Under the guidance of consummate bully / chairman Brendan Carr, the FCC is
+    taking steps towards cracking down on children's entertainment t…
+  takeaway: Under the guidance of consummate bully / chairman Brendan Carr, the FCC
+    is taking steps towards cracking down on children's entertainment that in any
+    way explores the complexities of gender identity. On Wednesday, the FCC's Media
+    Bureau announced that it is soliciting comments from the public about whether
+    the TV ratings system has made sound […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/917810/brendan-carr-fcc-transgender-nonbinary-childrens-programming
+  source: The Verge
+  published_utc: '2026-04-23T21:36:46+00:00'
+  title_zh: Brendan Carr发起'反觉醒运动' targeting包容性儿童电视节目
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: These are the countries moving to ban social media for children
+  why: Australia was the first country to issue a ban in late 2025, aiming to reduce
+    the pressures and risks that young users may face on social m…
+  takeaway: Australia was the first country to issue a ban in late 2025, aiming to
+    reduce the pressures and risks that young users may face on social media, including
+    cyberbullying, social media addiction, and exposure to predators.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/social-media-ban-children-countries-list/
+  source: TechCrunch
+  published_utc: '2026-04-23T21:33:51+00:00'
+  title_zh: 这些国家正采取措施禁止儿童使用社交媒体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Carbon nanotube wiring gets closer to competing with copper
+  why: While this material degrades over time, it could point to better ones.
+  takeaway: While this material degrades over time, it could point to better ones.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/04/researchers-get-carbon-nanotube-wiring-to-conduct-more-like-copper/
+  source: Ars Technica
+  published_utc: '2026-04-23T21:22:09+00:00'
+  title_zh: 碳纳米管导线性能逼近铜线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bret Taylor’s Sierra buys YC-backed AI startup Fragment
+  why: Sierra, the AI customer service agent startup founded by technologist Bret
+    Taylor, announced today that it has acquired the YC-backed Frenc…
+  takeaway: Sierra, the AI customer service agent startup founded by technologist
+    Bret Taylor, announced today that it has acquired the YC-backed French startup
+    Fragment.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/
+  source: TechCrunch
+  published_utc: '2026-04-23T21:00:00+00:00'
+  title_zh: Bret Taylor的Sierra收购YC支持的AI初创Fragment
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We still don't have a more precise value for "Big G"
+  why: Such experiments bring "order to the universe, whether or not the number agrees
+    with the expected value.”
+  takeaway: Such experiments bring "order to the universe, whether or not the number
+    agrees with the expected value.”
+  prompt: ''
+  url: https://arstechnica.com/science/2026/04/we-still-dont-have-a-more-precise-value-for-big-g/
+  source: Ars Technica
+  published_utc: '2026-04-23T20:57:35+00:00'
+  title_zh: 我们仍未获得“大G”更精确的数值
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-fireworks==1.2.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.2.0
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-23T20:54:01+00:00'
+  title_zh: langchain-ai/langchain：langchain-fireworks==1.2.0版本
+  why_zh: 版本更新说明（详见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TorchTPU: Running PyTorch Natively on TPUs at Google Scale'
+  why: 'Article URL: https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/
+    Comments URL: https://news.ycombi…'
+  takeaway: 'Article URL: https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/
+    Comments URL: https://news.ycombinator.com/item?id=47881786 Points: 70 # Comments:
+    2'
+  prompt: ''
+  url: https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T20:53:27+00:00'
+  title_zh: TorchTPU：在谷歌规模上原生运行PyTorch于TPU
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: In a first, a ransomware family is confirmed to be quantum-safe
+  why: Technically speaking, there's no practical benefit to use PQC.
+  takeaway: Technically speaking, there's no practical benefit to use PQC. So why
+    is it being used?
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/
+  source: Ars Technica
+  published_utc: '2026-04-23T20:41:23+00:00'
+  title_zh: 首例确认具备量子安全性的勒索软件家族出现
+  why_zh: 严格来说，使用后量子密码（PQC）并无实际益处。
+  takeaway_zh: 严格来说，采用后量子密码（PQC）并无实际价值。那为何还要使用？
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Winning a Kaggle Competition with Generative AI–Assisted Coding
+  why: In March 2026, three LLM agents generated over 600,000 lines of code, ran 850
+    experiments, and helped secure a first-place finish in a Kagg…
+  takeaway: In March 2026, three LLM agents generated over 600,000 lines of code,
+    ran 850 experiments, and helped secure a first-place finish in a Kaggle playground...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-23T20:15:02+00:00'
+  title_zh: 使用生成式AI辅助编码赢得Kaggle竞赛
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Using the internet like it's 1999
+  why: 'Article URL: https://joshblais.com/blog/using-the-internet-like-its-1999/
+    Comments URL: https://news.ycombinator.com/item?id=47881198 Point…'
+  takeaway: 'Article URL: https://joshblais.com/blog/using-the-internet-like-its-1999/
+    Comments URL: https://news.ycombinator.com/item?id=47881198 Points: 104 # Comments:
+    68'
+  prompt: ''
+  url: https://joshblais.com/blog/using-the-internet-like-its-1999/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T20:14:29+00:00'
+  title_zh: 像1999年那样使用互联网
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Instagram tests a new ‘Instants’ app for sharing disappearing photos
+  why: The app lets users share disappearing photos with their friends that can be
+    viewed only once and remain available for 24 hours.
+  takeaway: The app lets users share disappearing photos with their friends that can
+    be viewed only once and remain available for 24 hours.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/instagram-tests-a-new-instants-app-for-sharing-disappearing-photos/
+  source: TechCrunch
+  published_utc: '2026-04-23T20:03:53+00:00'
+  title_zh: Instagram测试新应用'Instants'，用于分享阅后即焚照片
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker HyperPod now supports automatic Slurm topology management
+  why: Amazon SageMaker HyperPod now automatically selects and continuously maintains
+    the optimal network topology configuration for Slurm cluster…
+  takeaway: Amazon SageMaker HyperPod now automatically selects and continuously maintains
+    the optimal network topology configuration for Slurm clusters based on the GPU
+    instance types in the cluster. Network topology directly impacts distributed training
+    performance — when jobs are placed on nodes that are topologically close, GPU-to-GPU
+    communication is faster, NCCL…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-hyperpod-automatic-slurm-topology/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-23T20:00:00+00:00'
+  title_zh: 亚马逊SageMaker HyperPod现支持Slurm拓扑自动管理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Parallel Computing Service now supports Slurm 25.11
+  why: AWS Parallel Computing Service (AWS PCS) now supports Slurm version 25.11,
+    with support for a Prometheus-compatible OpenMetrics endpoint, a…
+  takeaway: AWS Parallel Computing Service (AWS PCS) now supports Slurm version 25.11,
+    with support for a Prometheus-compatible OpenMetrics endpoint, and introduces
+    new log types including scheduler audit logs. This release of Slurm 25.11 introduces
+    expedited re-queue, which can automatically reschedule jobs affected by node issues
+    at the highest priority to help your…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/aws-pcs-slurm-25-11/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-23T20:00:00+00:00'
+  title_zh: AWS并行计算服务现支持Slurm 25.11版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: A pelican for GPT-5.5 via the semi-official Codex backdoor API
+  why: GPT-5.5 is out .
+  takeaway: GPT-5.5 is out . It's available in OpenAI Codex and is rolling out to
+    paid ChatGPT subscribers. I've had some preview access and found it to be a fast,
+    effective and highly capable model. As is usually the case these days, it's hard
+    to put into words what's good about it - I ask it to build things and it builds
+    exactly what I ask for! There's one notable om…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/23/gpt-5-5/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-23T19:59:47+00:00'
+  title_zh: 通过半官方Codex后门API获取适用于GPT-5.5的鹈鹕工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sonos’ big sale on refurbished speakers is about to end
+  why: Portable audio and home theater upgrades can be very pricey, which is why we
+    make a habit out of telling readers when there are good deals…
+  takeaway: Portable audio and home theater upgrades can be very pricey, which is
+    why we make a habit out of telling readers when there are good deals happening.
+    With that in mind, here’s a friendly reminder that a heap of refurbished Sonos
+    gear is steeply discounted, and will be until the company’s sale ends April 24th.
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/917611/sonos-refurbished-era-beam-move-speaker-deal-sale
+  source: The Verge
+  published_utc: '2026-04-23T19:54:04+00:00'
+  title_zh: Sonos翻新音响大促销即将结束
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta is laying off 10 percent of its staff
+  why: Meta is planning to layoff around 10 percent of employees in May, according
+    to a memo from the company's chief people officer, Janelle Gale…
+  takeaway: Meta is planning to layoff around 10 percent of employees in May, according
+    to a memo from the company's chief people officer, Janelle Gale, published by
+    Bloomberg. That means approximately 8,000 people will see their jobs cut. Meta
+    will also be closing around 6,000 open roles, according to Gale. The cuts follow
+    Meta's significant investments […]
+  prompt: ''
+  url: https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff
+  source: The Verge
+  published_utc: '2026-04-23T19:41:07+00:00'
+  title_zh: Meta裁员10%
+  why_zh: 据公司人力资源总监Janelle Gale发布的备忘录，Meta计划于五月裁员约10%…
+  takeaway_zh: 据彭博社披露的公司人力资源总监Janelle Gale备忘录，Meta计划五月裁员约10%。这意味着约8000名员工将被裁撤。另据Gale称，Meta还将取消6000个空缺岗位。此次裁员紧随Meta重大投资之后…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Meet Noscroll, an AI bot that does your doomscrolling for you
+  why: Noscroll wants to cure doomscrolling with an AI bot that reads the internet
+    for you.
+  takeaway: Noscroll wants to cure doomscrolling with an AI bot that reads the internet
+    for you.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/meet-noscroll-an-ai-bot-that-does-your-doomscrolling-for-you/
+  source: TechCrunch
+  published_utc: '2026-04-23T19:38:25+00:00'
+  title_zh: 认识Noscroll：一款为你刷屏的AI机器人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'AIE Europe Debrief + Agent Labs Thesis: Unsupervised Learning x Latent Space
+    Crossover Special (2026)'
+  why: 'Note: This episode was recorded just after AIE Europe, but before the Cursor-xAI
+    deal.'
+  takeaway: 'Note: This episode was recorded just after AIE Europe, but before the
+    Cursor-xAI deal.'
+  prompt: ''
+  url: https://www.latent.space/p/unsupervised-learning-2026
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-04-23T19:37:19+00:00'
+  title_zh: AIE欧洲总结报告+Agent实验室论文：《无监督学习x潜空间交叉特刊》(2026)
+  why_zh: 注：本集录制于AIE欧洲大会刚结束后，但早于Cursor-xAI交易达成前。
+  takeaway_zh: 注：本集录制于AIE欧洲大会刚结束后，但早于Cursor-xAI交易达成前。
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump’s pick to run US cyber agency CISA asks to drop out
+  why: Sean Plankey has requested to withdraw his name to run the U.S.
+  takeaway: Sean Plankey has requested to withdraw his name to run the U.S. cybersecurity
+    agency after a tumultuous year of chaotic temporary leadership.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/trumps-pick-to-run-us-cyber-agency-cisa-asks-to-drop-out/
+  source: TechCrunch
+  published_utc: '2026-04-23T19:33:48+00:00'
+  title_zh: 特朗普提名管理CISA网络机构的候选人请求退出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Apple’s Next Chapter, SpaceX and Cursor Strike a Deal, and Palantir’s Controversial
+    Manifesto
+  why: In this week’s episode of Uncanny Valley, we talk about Tim Cook’s legacy as
+    CEO at Apple and what his long-rumored departure means for the…
+  takeaway: In this week’s episode of Uncanny Valley, we talk about Tim Cook’s legacy
+    as CEO at Apple and what his long-rumored departure means for the future of one
+    of the world's biggest companies.
+  prompt: ''
+  url: https://www.wired.com/story/uncanny-valley-podcast-apple-next-chapter-spacex-cursor-deal-palantir-manifesto/
+  source: WIRED - AI
+  published_utc: '2026-04-23T19:26:11+00:00'
+  title_zh: 苹果的新篇章，SpaceX与Cursor达成协议，Palantir的争议宣言
+  why_zh: 本期《Uncanny Valley》节目中，我们将探讨蒂姆·库克在苹果CEO任上的遗产及其传闻离职对…
+  takeaway_zh: 在本期《神秘谷》节目中，我们将探讨蒂姆·库克作为苹果CEO留下的印记，以及他传闻已久的离职对这家全球巨头意味着什么。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker supports notebooks and data agent for IdC domains
+  why: Amazon SageMaker Unified Studio now supports serverless notebooks with a built-in
+    data agent for AWS IAM Identity Center (IdC) domains.
+  takeaway: Amazon SageMaker Unified Studio now supports serverless notebooks with
+    a built-in data agent for AWS IAM Identity Center (IdC) domains. Previously, the
+    notebook experience and data agent were available only in IAM domains. With this
+    launch, customers who use IdC for authentication and access management can access
+    the high-performance, serverless notebook en…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-idc/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-23T19:13:00+00:00'
+  title_zh: 亚马逊SageMaker支持IdC域的数据代理和笔记本功能
+  why_zh: 亚马逊SageMaker统一工作室现支持无服务器笔记本，并为AWS IAM身份中心（IdC）域内置数据代理。
+  takeaway_zh: Amazon SageMaker Unified Studio现支持配备内置数据代理的无服务器笔记本，适用于AWS IAM Identity
+    Center（IdC）域。此前，笔记本体验和数据代理仅在IAM域中提供。此次更新后，使用IdC进行身份验证和访问管理的客户也能享受到高性能的无服务器笔记本功能。
+  prompt_zh: ''
+- category: Tech industry
+  title: Girl, 10, finds rare Mexican axolotl under Welsh bridge
+  why: 'Article URL: https://www.bbc.com/news/articles/c9d4zgnqpqeo Comments URL:
+    https://news.ycombinator.com/item?id=47880189 Points: 182 # Comme…'
+  takeaway: 'Article URL: https://www.bbc.com/news/articles/c9d4zgnqpqeo Comments
+    URL: https://news.ycombinator.com/item?id=47880189 Points: 182 # Comments: 148'
+  prompt: ''
+  url: https://www.bbc.com/news/articles/c9d4zgnqpqeo
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T19:09:40+00:00'
+  title_zh: 10岁女孩在威尔士桥下发现稀有墨西哥蝾螈
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI unveils GPT-5.5, claims a "new class of intelligence" at double the
+    API price
+  why: OpenAI has announced GPT-5.5, an agentic model designed to work through complex
+    tasks autonomously by switching between multiple tools.
+  takeaway: OpenAI has announced GPT-5.5, an agentic model designed to work through
+    complex tasks autonomously by switching between multiple tools. The article OpenAI
+    unveils GPT-5.5, claims a "new class of intelligence" at double the API price
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-unveils-gpt-5-5-claims-a-new-class-of-intelligence-at-double-the-api-price/
+  source: The Decoder (AI)
+  published_utc: '2026-04-23T19:01:07+00:00'
+  title_zh: OpenAI发布GPT-5.5，宣称开启'新型智能等级'并双倍提高API价格
+  why_zh: OpenAI宣布推出GPT-5.5，这是一个能通过多工具切换自主处理复杂任务的智能体模型。
+  takeaway_zh: OpenAI发布GPT-5.5，该模型具备自主切换多种工具以处理复杂任务的能力。文章《OpenAI推出GPT-5.5，宣称“新型智能”且API价格翻倍》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: '‘We Are Xbox’: read the memo defining Microsoft’s gaming future'
+  why: Microsoft's new Xbox CEO Asha Sharma has laid out a new strategy for what she
+    describes as a "return of Xbox." In a joint memo with Xbox Ch…
+  takeaway: Microsoft's new Xbox CEO Asha Sharma has laid out a new strategy for what
+    she describes as a "return of Xbox." In a joint memo with Xbox Chief Content Officer
+    Matt Booty, Sharma and Booty lay out their vision for the future of Xbox that
+    will be judged on daily active players and the priorities […]
+  prompt: ''
+  url: https://www.theverge.com/news/917689/microsoft-xbox-gaming-future-memo-asha-sharma-matt-booty
+  source: The Verge
+  published_utc: '2026-04-23T18:59:12+00:00'
+  title_zh: '''我们是Xbox''：阅读定义微软游戏未来的备忘录'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta tells staff it will cut 10% of jobs
+  why: https://techcrunch.com/2026/04/23/meta-job-cuts-10-percent-8...
+  takeaway: 'https://techcrunch.com/2026/04/23/meta-job-cuts-10-percent-8... Comments
+    URL: https://news.ycombinator.com/item?id=47879986 Points: 409 # Comments: 379'
+  prompt: ''
+  url: https://www.bloomberg.com/news/articles/2026-04-23/meta-tells-staff-it-will-cut-10-of-jobs-in-push-for-efficiency
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T18:55:32+00:00'
+  title_zh: Meta通知员工将裁员10%
+  why_zh: ''
+  takeaway_zh: Meta宣布裁员10%，涉及8000个岗位。评论链接：https://news.ycombinator.com/item?id=47879986
+    得分：409 评论数：379
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-23T18:54:22+00:00'
+  title_zh: langchain-ai/langchain：langchain-core==1.3.1版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft’s new Xbox chief is ‘reevaluating’ exclusive games
+  why: Xbox CEO Asha Sharma held an all-hands meeting this morning and laid out her
+    strategy for a "return of Xbox" with employees.
+  takeaway: Xbox CEO Asha Sharma held an all-hands meeting this morning and laid out
+    her strategy for a "return of Xbox" with employees. While rebranding Microsoft
+    Gaming back to Xbox was part of the agenda, Sharma also revealed that Xbox is
+    looking into "reevaluating" Xbox exclusive games and windowed releases of titles.
+    It's a hot topic […]
+  prompt: ''
+  url: https://www.theverge.com/tech/917657/microsoft-xbox-exclusive-games-windowing-comments-asha-sharma
+  source: The Verge
+  published_utc: '2026-04-23T18:51:14+00:00'
+  title_zh: 微软新任Xbox负责人正在'重新评估'独占游戏策略
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Don’t stop hiring humans — stop hiring the wrong humans, Artisan’s founder
+    says
+  why: Artisan may be known for their bold “Stop Hiring Humans” campaign but the reality
+    is every founder needs to assemble the right team if they…
+  takeaway: Artisan may be known for their bold “Stop Hiring Humans” campaign but
+    the reality is every founder needs to assemble the right team if they want to
+    scale.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/dont-stop-hiring-humans-stop-hiring-the-wrong-humans-artisans-founder-says/
+  source: TechCrunch
+  published_utc: '2026-04-23T18:49:38+00:00'
+  title_zh: Artisan创始人表示：不要停止招聘人类，而是停止招聘错误的人选
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Democrats want to ban ICE from turning warehouses into detention centers
+  why: A bill introduced by Rep.
+  takeaway: A bill introduced by Rep. Rashida Tlaib (D-MI) would prohibit the Department
+    of Homeland Security from converting warehouses and similar buildings into immigrant
+    detention centers, an attempt to slow President Donald Trump's mass deportations
+    campaign. The Ban Warehouse Detention Act would also forbid Immigration and Customs
+    Enforcement from developing othe…
+  prompt: ''
+  url: https://www.theverge.com/policy/917643/ban-warehouse-detention-act-ice-dhs
+  source: The Verge
+  published_utc: '2026-04-23T18:35:00+00:00'
+  title_zh: 民主党人欲禁止ICE将仓库改造为拘留中心
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI releases GPT-5.5, bringing company one step closer to an AI ‘super
+    app’
+  why: OpenAI says its latest model offers increased capabilities across a broad variety
+    of categories.
+  takeaway: OpenAI says its latest model offers increased capabilities across a broad
+    variety of categories.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/
+  source: TechCrunch
+  published_utc: '2026-04-23T18:29:29+00:00'
+  title_zh: OpenAI发布GPT-5.5，向AI‘超级应用’迈进一大步
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Spirit is broken
+  why: The bright yellow livery of Spirit Airlines may soon disappear from the skies.
+  takeaway: 'The bright yellow livery of Spirit Airlines may soon disappear from the
+    skies. The country''s seventh-largest airline has been in financial trouble for
+    years: It hasn''t turned a profit since 2019 and filed for bankruptcy twice in
+    the last two years. Despite all that, its leaders predicted that the airline could
+    exit bankruptcy and return […]'
+  prompt: ''
+  url: https://www.theverge.com/transportation/917629/spirit-airlines-bankrupt-bailout-merger-ultra-low-cost
+  source: The Verge
+  published_utc: '2026-04-23T18:27:35+00:00'
+  title_zh: 精神崩溃
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: At 'AI Coachella,' Stanford Students Line Up to Learn From Silicon Valley
+    Royalty
+  why: CS 153 has gone viral on the Palo Alto campus—and on X.
+  takeaway: CS 153 has gone viral on the Palo Alto campus—and on X. Not everyone is
+    happy about it.
+  prompt: ''
+  url: https://www.wired.com/story/stanford-cs-class-ai-coachella-ben-horowitz/
+  source: WIRED - AI
+  published_utc: '2026-04-23T18:24:37+00:00'
+  title_zh: 在‘AI科切拉’上，斯坦福学生排队向硅谷精英学习
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Astronomers find the edge of the Milky Way
+  why: 'Article URL: https://skyandtelescope.org/astronomy-news/astronomers-find-the-edge-of-the-milky-way/
+    Comments URL: https://news.ycombinator.…'
+  takeaway: 'Article URL: https://skyandtelescope.org/astronomy-news/astronomers-find-the-edge-of-the-milky-way/
+    Comments URL: https://news.ycombinator.com/item?id=47879239 Points: 88 # Comments:
+    13'
+  prompt: ''
+  url: https://skyandtelescope.org/astronomy-news/astronomers-find-the-edge-of-the-milky-way/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T18:11:29+00:00'
+  title_zh: 天文学家发现银河系的边缘
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta to cut 10% of jobs, or 8,000 employees, report says
+  why: According to an internal memo, Meta plans to begin its sweeping layoffs on
+    May 20.
+  takeaway: According to an internal memo, Meta plans to begin its sweeping layoffs
+    on May 20.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/meta-job-cuts-10-percent-8000-employees/
+  source: TechCrunch
+  published_utc: '2026-04-23T18:08:16+00:00'
+  title_zh: 据报道，Meta将裁员10%，约8000名员工
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: RFK Jr.’s rejection of germ theory debunked in Senate hearing
+  why: Kennedy falsely argues that vaccines did little to lower childhood deaths.
+  takeaway: Kennedy falsely argues that vaccines did little to lower childhood deaths.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/rfk-jr-s-rejection-of-germ-theory-debunked-in-senate-hearing/
+  source: Ars Technica
+  published_utc: '2026-04-23T18:05:53+00:00'
+  title_zh: 参议院听证会上，RFK Jr.否认病菌理论的观点被驳斥
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Trump science advisor says Chinese actors are copying American AI at massive
+    scale
+  why: The US government says it has evidence of large-scale, industrial distillation
+    campaigns targeting American frontier models, with China as…
+  takeaway: The US government says it has evidence of large-scale, industrial distillation
+    campaigns targeting American frontier models, with China as the primary culprit.
+    Now the Trump administration is moving to fight back. The article Trump science
+    advisor says Chinese actors are copying American AI at massive scale appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/trump-science-advisor-says-chinese-actors-are-copying-american-ai-at-massive-scale/
+  source: The Decoder (AI)
+  published_utc: '2026-04-23T18:04:39+00:00'
+  title_zh: 特朗普科学顾问称中国正大规模复制美国AI技术
+  why_zh: 美国政府宣布掌握了针对美国前沿模型的大规模工业化蒸馏活动证据，并指认中国…
+  takeaway_zh: 美国政府宣称掌握证据表明存在针对美国前沿模型的大规模工业化蒸馏活动，并将矛头直指中国。特朗普政府正着手反击。《解码者》独家披露：特朗普科学顾问指控中方行为人正在大规模复制美国AI技术。
+  prompt_zh: ''
+- category: Tech industry
+  title: GPT-5.5
+  why: 'Article URL: https://openai.com/index/introducing-gpt-5-5/ Comments URL: https://news.ycombinator.com/item?id=47879092
+    Points: 1138 # Comme…'
+  takeaway: 'Article URL: https://openai.com/index/introducing-gpt-5-5/ Comments URL:
+    https://news.ycombinator.com/item?id=47879092 Points: 1138 # Comments: 789'
+  prompt: ''
+  url: https://openai.com/index/introducing-gpt-5-5/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T18:01:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Palantir employees are starting to wonder if they're the bad guys
+  why: 'Article URL: https://www.wired.com/story/palantir-employees-are-starting-to-wonder-if-theyre-the-bad-guys/
+    Comments URL: https://news.ycomb…'
+  takeaway: 'Article URL: https://www.wired.com/story/palantir-employees-are-starting-to-wonder-if-theyre-the-bad-guys/
+    Comments URL: https://news.ycombinator.com/item?id=47878633 Points: 770 # Comments:
+    523'
+  prompt: ''
+  url: https://www.wired.com/story/palantir-employees-are-starting-to-wonder-if-theyre-the-bad-guys/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T17:30:05+00:00'
+  title_zh: Palantir员工开始怀疑自己是否成了反派
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google's open-source DESIGN.md gives AI agents a prompt-ready blueprint for
+    brand-consistent design
+  why: Google is open-sourcing the agent prompt behind its AI design tool Stitch.
+  takeaway: Google is open-sourcing the agent prompt behind its AI design tool Stitch.
+    The DESIGN.md format is built to teach AI agents how to follow brand rules. The
+    article Google's open-source DESIGN.md gives AI agents a prompt-ready blueprint
+    for brand-consistent design appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/googles-open-source-design-md-gives-ai-agents-a-prompt-ready-blueprint-for-brand-consistent-design/
+  source: The Decoder (AI)
+  published_utc: '2026-04-23T17:20:06+00:00'
+  title_zh: 谷歌开源DESIGN.md为AI智能体提供品牌一致性设计蓝图
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why are the Mac mini and Mac Studio gradually becoming impossible to buy?
+  why: Pending refresh?
+  takeaway: Pending refresh? RAM shortage? AI agents? There are many possible explanations.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/apples-m4-mac-mini-including-the-599-one-is-gradually-becoming-impossible-to-buy/
+  source: Ars Technica
+  published_utc: '2026-04-23T17:06:08+00:00'
+  title_zh: 为何Mac mini与Mac Studio逐渐一机难求？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: MeshCore development team splits over trademark dispute and AI-generated
+    code
+  why: 'Article URL: https://blog.meshcore.io/2026/04/23/the-split Comments URL: https://news.ycombinator.com/item?id=47878117
+    Points: 162 # Commen…'
+  takeaway: 'Article URL: https://blog.meshcore.io/2026/04/23/the-split Comments URL:
+    https://news.ycombinator.com/item?id=47878117 Points: 162 # Comments: 96'
+  prompt: ''
+  url: https://blog.meshcore.io/2026/04/23/the-split
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T16:55:13+00:00'
+  title_zh: MeshCore开发团队因商标纠纷和AI生成代码分道扬镳
+  why_zh: '文章链接：https://blog.meshcore.io/2026/04/23/the-split 评论区链接：https://news.ycombinator.com/item?id=47878117
+    热度：162 #评论…'
+  takeaway_zh: '文章链接：https://blog.meshcore.io/2026/04/23/the-split
+
+    评论链接：https://news.ycombinator.com/item?id=47878117
+
+    得票：162
+
+    评论数：96'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'US Space Command: Russia is now operationalizing co-orbital ASAT weapons'
+  why: '"They’re putting operational systems up within orbit reach of our high-value
+    satellites."'
+  takeaway: '"They’re putting operational systems up within orbit reach of our high-value
+    satellites."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/us-space-command-russia-is-now-operationalizing-co-orbital-asat-weapons/
+  source: Ars Technica
+  published_utc: '2026-04-23T16:52:09+00:00'
+  title_zh: 美国太空司令部：俄罗斯正实战化部署共轨反卫星武器
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bluesky now supports better-quality photos
+  why: The max size is now 2MB and max resolution is 4000 x 4000.
+  takeaway: The max size is now 2MB and max resolution is 4000 x 4000.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/bluesky-now-supports-better-quality-photos/
+  source: TechCrunch
+  published_utc: '2026-04-23T16:41:14+00:00'
+  title_zh: Bluesky现已支持更高质量的照片
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft offers buyout for up to 7% of US employees
+  why: If a worker's years of service at Microsoft plus their age equals 70 or more,
+    they will be eligible for a voluntary retirement buyout.
+  takeaway: If a worker's years of service at Microsoft plus their age equals 70 or
+    more, they will be eligible for a voluntary retirement buyout.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/microsoft-offers-buyout-for-up-to-7-of-u-s-employees/
+  source: TechCrunch
+  published_utc: '2026-04-23T16:38:49+00:00'
+  title_zh: 微软向多达7%的美国员工提供买断计划
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple stops weirdly storing data that let cops spy on Signal chats
+  why: Signal “very happy” Apple fixed bug storing private chats after app was deleted.
+  takeaway: Signal “very happy” Apple fixed bug storing private chats after app was
+    deleted.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/apple-stops-weirdly-storing-data-that-let-cops-spy-on-signal-chats/
+  source: Ars Technica
+  published_utc: '2026-04-23T16:37:23+00:00'
+  title_zh: 苹果停止存储可让警方窥探Signal聊天的异常数据
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Eight months early and under budget, the Roman Telescope is ready to launch
+  why: Spy satellite hardware has been repurposed to scan the Universe in the infrared.
+  takeaway: Spy satellite hardware has been repurposed to scan the Universe in the
+    infrared.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/04/eight-months-early-and-under-budget-the-roman-telescope-is-ready-to-launch/
+  source: Ars Technica
+  published_utc: '2026-04-23T16:27:07+00:00'
+  title_zh: 提前八个月且低于预算，罗马望远镜准备发射
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: My phone replaced a brass plug
+  why: 'Article URL: https://drobinin.com/posts/my-phone-replaced-a-brass-plug/ Comments
+    URL: https://news.ycombinator.com/item?id=47877715 Points:…'
+  takeaway: 'Article URL: https://drobinin.com/posts/my-phone-replaced-a-brass-plug/
+    Comments URL: https://news.ycombinator.com/item?id=47877715 Points: 88 # Comments:
+    13'
+  prompt: ''
+  url: https://drobinin.com/posts/my-phone-replaced-a-brass-plug/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T16:27:07+00:00'
+  title_zh: 我的手机替换了一个黄铜插头
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Incident with multple GitHub services
+  why: 'Article URL: https://www.githubstatus.com/incidents/myrbk7jvvs6p Comments
+    URL: https://news.ycombinator.com/item?id=47877644 Points: 216 #…'
+  takeaway: 'Article URL: https://www.githubstatus.com/incidents/myrbk7jvvs6p Comments
+    URL: https://news.ycombinator.com/item?id=47877644 Points: 216 # Comments: 107'
+  prompt: ''
+  url: https://www.githubstatus.com/incidents/myrbk7jvvs6p
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T16:21:55+00:00'
+  title_zh: GitHub多项服务故障事件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI's new Trusted Access program gives Microsoft its most capable models
+    for cyber defense
+  why: OpenAI and Microsoft are joining forces to shore up cybersecurity as AI models
+    become a bigger threat.
+  takeaway: OpenAI and Microsoft are joining forces to shore up cybersecurity as AI
+    models become a bigger threat. The debate started with Anthropic's Mythos model,
+    which is designed to hunt down security flaws on its own. The article OpenAI's
+    new Trusted Access program gives Microsoft its most capable models for cyber defense
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openais-new-trusted-access-program-gives-microsoft-its-most-capable-models-for-cyber-defense/
+  source: The Decoder (AI)
+  published_utc: '2026-04-23T16:09:29+00:00'
+  title_zh: OpenAI新推'可信访问计划'为微软提供最强网络防御模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Era raises $11M to build a software platform for AI gadgets
+  why: Era thinks that we will see many form factors of AI hardware, including glasses,
+    rings, and pendants.
+  takeaway: Era thinks that we will see many form factors of AI hardware, including
+    glasses, rings, and pendants.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/era-computer-raises-11m-to-build-a-software-platform-for-ai-gadgets/
+  source: TechCrunch
+  published_utc: '2026-04-23T16:00:00+00:00'
+  title_zh: Era融资1100万美元构建AI设备软件平台
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta is revamping its cross-app management system
+  why: Meta's Accounts Center will transition to the Meta Account, which is supposed
+    to make it easier to manage your experience on various Meta a…
+  takeaway: Meta's Accounts Center will transition to the Meta Account, which is supposed
+    to make it easier to manage your experience on various Meta apps and devices.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/meta-is-revamping-its-cross-app-management-system/
+  source: TechCrunch
+  published_utc: '2026-04-23T16:00:00+00:00'
+  title_zh: Meta正对其跨应用管理系统进行改造
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Elastic Beanstalk AI-powered environment analysis now supports Windows
+  why: AWS Elastic Beanstalk AI-powered environment analysis is now available on Windows
+    Server platforms.
+  takeaway: AWS Elastic Beanstalk AI-powered environment analysis is now available
+    on Windows Server platforms. Previously available on Amazon Linux 2 and AL2023,
+    this feature now extends to Windows-based environments, enabling you to quickly
+    identify root causes and get recommended solutions for environment health issues.
+    Elastic Beanstalk collects recent events, inst…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/elastic-beanstalk-ai-analysis-windows/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-23T16:00:00+00:00'
+  title_zh: AWS Elastic Beanstalk AI环境分析功能现支持Windows系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: French government agency confirms breach as hacker offers to sell data
+  why: 'Article URL: https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/
+    Comments URL:…'
+  takeaway: 'Article URL: https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/
+    Comments URL: https://news.ycombinator.com/item?id=47877366 Points: 361 # Comments:
+    122'
+  prompt: ''
+  url: https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T15:59:55+00:00'
+  title_zh: 法国政府机构确认数据泄露，黑客公开兜售信息
+  why_zh: 文章链接：https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/
+    评论区链接：…
+  takeaway_zh: '文章链接：https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/
+    评论区链接：https://news.ycombinator.com/item?id=47877366 热度：361 #评论数：122'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick now supports multiple owners for admin-managed SharePoint and
+    Google Drive knowledge bases
+  why: Amazon Quick now enables you to add co-owners to knowledge bases and data source
+    connections for admin-managed Microsoft SharePoint Online…
+  takeaway: 'Amazon Quick now enables you to add co-owners to knowledge bases and
+    data source connections for admin-managed Microsoft SharePoint Online and Google
+    Drive integrations. This makes it easier to collaborate across teams and reuse
+    existing connections without re-entering credentials. Knowledge base owners can
+    share their knowledge bases with two roles: Owner…'
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-sharepoint/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-23T15:59:00+00:00'
+  title_zh: Amazon Quick现支持多所有者管理SharePoint和Google Drive知识库
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: X is shutting down Communities because of low usage and lots of spam
+  why: X Communities are no more.
+  takeaway: X Communities are no more. Only a fraction of X users were using Communities,
+    and much of that use was spam, the company said.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/x-is-shutting-down-communities-because-of-low-usage-and-lots-of-spam/
+  source: TechCrunch
+  published_utc: '2026-04-23T15:32:10+00:00'
+  title_zh: X因使用率低下和大量垃圾信息将关闭社群功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: BMW bumps the 7 Series for 2027, adds all-new battery
+  why: The 2027 7 Series is available as an EV, with an inline-six, or an inline-six
+    PHEV.
+  takeaway: The 2027 7 Series is available as an EV, with an inline-six, or an inline-six
+    PHEV.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/04/bmw-bumps-the-7-series-for-2027-adds-all-new-battery/
+  source: Ars Technica
+  published_utc: '2026-04-23T15:01:11+00:00'
+  title_zh: 宝马2027年款7系升级，新增全新电池
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick now supports permission verification for ACL-enabled knowledge
+    bases
+  why: Amazon Quick now provides ACL verification for ACL enabled knowledge bases,
+    enabling administrators to check whether a specific user has ac…
+  takeaway: Amazon Quick now provides ACL verification for ACL enabled knowledge bases,
+    enabling administrators to check whether a specific user has access to a specific
+    document. This feature simplifies troubleshooting access issues and helps confirm
+    that sensitive documents are properly restricted, without manually tracing permission
+    inheritance across your data sour…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-acl/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-23T14:56:00+00:00'
+  title_zh: Amazon Quick现支持ACL知识库的权限验证功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Salmon raises $100M in equity and debt to bring digital credit to underbanked
+    Filipinos
+  why: Salmon is targeting underbanked Filipinos, with little to no credit history,
+    as well as people unhappy with the incumbent lenders' reliabil…
+  takeaway: Salmon is targeting underbanked Filipinos, with little to no credit history,
+    as well as people unhappy with the incumbent lenders' reliability issues.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/salmon-raises-100m-in-equity-and-debt-to-bring-digital-credit-to-underbanked-filipinos/
+  source: TechCrunch
+  published_utc: '2026-04-23T14:55:49+00:00'
+  title_zh: Salmon通过股权和债务融资1亿美元为菲律宾无银行账户人群提供数字信贷
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Greenhouse gases from data center boom could outpace entire nations
+  why: Plants from OpenAI, Meta, xAI, and Microsoft could emit more than 129M tons
+    annually.
+  takeaway: Plants from OpenAI, Meta, xAI, and Microsoft could emit more than 129M
+    tons annually.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/greenhouse-gases-from-data-center-boom-could-outpace-entire-nations/
+  source: Ars Technica
+  published_utc: '2026-04-23T14:51:16+00:00'
+  title_zh: 数据中心激增的温室气体排放或将超越某些国家总量
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Vercel says some of its customers’ data was stolen prior to its recent hack
+  why: The app and website hosting company has found evidence of a second compromise
+    of customer accounts after expanding its initial investigatio…
+  takeaway: The app and website hosting company has found evidence of a second compromise
+    of customer accounts after expanding its initial investigation following a breach
+    in early April.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/vercel-says-some-of-its-customers-data-was-stolen-prior-to-its-recent-hack/
+  source: TechCrunch
+  published_utc: '2026-04-23T14:43:42+00:00'
+  title_zh: Vercel称部分客户数据在近期黑客攻击前已遭窃取
+  why_zh: 该应用及网站托管公司在扩大初步调查后发现客户账户二次入侵的证据…
+  takeaway_zh: 该应用及网站托管公司在四月初发生数据泄露后扩大调查范围，发现了客户账户二次入侵的新证据。
+  prompt_zh: ''
+- category: Education / learning sciences / edtech
+  title: 'Enabling and Inhibitory Pathways of University Students'' Willingness to
+    Disclose AI Use: A Cognition-Affect-Conation Perspective'
+  why: The increasing integration of artificial intelligence (AI) in higher education
+    has raised important questions regarding students' transpare…
+  takeaway: The increasing integration of artificial intelligence (AI) in higher education
+    has raised important questions regarding students' transparency in reporting AI-assisted
+    work. This study investigates the psychological mechanisms underlying university
+    students' willingness to disclose AI use by applying the Cognition--Affect--Conation
+    (CAC) framework. A sequen…
+  prompt: ''
+  url: https://arxiv.org/abs/2604.21733v1
+  source: 'arXiv search: education AND (LLM OR AI)'
+  published_utc: '2026-04-23T14:38:15+00:00'
+  title_zh: 大学生披露AI使用意愿的促进与抑制路径：认知-情感-意动视角
+  why_zh: 人工智能（AI）在高等教育领域的日益普及引发了关于学生透明度的重要议题…
+  takeaway_zh: 人工智能（AI）在高等教育领域的日益普及，引发了关于学生AI辅助作业透明度的深刻讨论。本研究基于认知-情感-意动（CAC）理论框架，通过序列...探讨大学生披露AI使用意愿的心理机制。
+  prompt_zh: ''
+- category: Tech industry
+  title: Bitwarden CLI compromised in ongoing Checkmarx supply chain campaign
+  why: 'Article URL: https://socket.dev/blog/bitwarden-cli-compromised Comments URL:
+    https://news.ycombinator.com/item?id=47876043 Points: 665 # Co…'
+  takeaway: 'Article URL: https://socket.dev/blog/bitwarden-cli-compromised Comments
+    URL: https://news.ycombinator.com/item?id=47876043 Points: 665 # Comments: 330'
+  prompt: ''
+  url: https://socket.dev/blog/bitwarden-cli-compromised
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T14:17:08+00:00'
+  title_zh: Bitwarden CLI在持续进行的Checkmarx供应链攻击中遭到入侵
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: 'Claude survey: new capabilities beat speed as top AI benefit, but creatives
+    feel left behind'
+  why: A survey of 81,000 Claude users shows that gaining new capabilities ranks slightly
+    ahead of speed as the most common productivity benefit.
+  takeaway: 'A survey of 81,000 Claude users shows that gaining new capabilities ranks
+    slightly ahead of speed as the most common productivity benefit. Creatives, meanwhile,
+    feel both limited and threatened by AI. The sample, however, has a significant
+    bias. The article Claude survey: new capabilities beat speed as top AI benefit,
+    but creatives feel left behind appeared…'
+  prompt: ''
+  url: https://the-decoder.com/claude-survey-new-capabilities-beat-speed-as-top-ai-benefit-but-creatives-feel-left-behind/
+  source: The Decoder (AI)
+  published_utc: '2026-04-23T14:10:54+00:00'
+  title_zh: Claude调查：新功能超越速度成为AI首要优势，但创意工作者感到被忽视
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What Anthropic’s Mythos Means for the Future of Cybersecurity
+  why: Two weeks ago, Anthropic announced that its new model, Claude Mythos Preview,
+    can autonomously find and weaponize software vulnerabilities,…
+  takeaway: Two weeks ago, Anthropic announced that its new model, Claude Mythos Preview,
+    can autonomously find and weaponize software vulnerabilities, turning them into
+    working exploits without expert guidance. These were vulnerabilities in key software
+    like operating systems and internet infrastructure that thousands of software
+    developers working on those systems fa…
+  prompt: ''
+  url: https://spectrum.ieee.org/ai-cybersecurity-mythos
+  source: IEEE Spectrum
+  published_utc: '2026-04-23T14:00:01+00:00'
+  title_zh: Anthropic的Mythos对网络安全的未来意味着什么
+  why_zh: 两周前Anthropic宣布其新模型Claude Mythos Preview可自主发现并武器化软件漏洞…
+  takeaway_zh: 两周前Anthropic宣布，其新模型Claude Mythos Preview可自主发现操作系统等关键软件漏洞并将其武器化为有效攻击代码，无需专家指导。这些恰是数千名相关软件开发人员长期...
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Grab a ticket today: The first StrictlyVC of 2026 kicks off in just a week
+    in San Francisco'
+  why: StrictlyVC San Francisco is in just a week.
+  takeaway: StrictlyVC San Francisco is in just a week. Now’s the time to grab yourself
+    a ticket. Join VCs and founders at Sentro Filipino Cultural Center on April 30.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/grab-a-ticket-today-the-first-strictlyvc-of-2026-kicks-off-in-just-a-week-in-san-francisco/
+  source: TechCrunch
+  published_utc: '2026-04-23T14:00:00+00:00'
+  title_zh: 立即抢票：2026年首届StrictlyVC大会将于一周后在旧金山开幕
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Another customer of troubled startup Delve suffered a big security incident
+  why: TechCrunch has confirmed that Delve was the compliance company that performed
+    the security certifications for Context AI, the AI agent trai…
+  takeaway: TechCrunch has confirmed that Delve was the compliance company that performed
+    the security certifications for Context AI, the AI agent training startup that
+    last week disclosed a security incident.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/23/another-customer-of-troubled-startup-delve-suffered-a-big-security-incident/
+  source: TechCrunch
+  published_utc: '2026-04-23T14:00:00+00:00'
+  title_zh: 陷入困境的初创公司Delve又一位客户遭遇重大安全事件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: UK Biobank health data keeps ending up on GitHub
+  why: I'm a researcher studying privacy, and I started tracking the DMCA notices
+    that UK Biobank sends to GitHub.
+  takeaway: I'm a researcher studying privacy, and I started tracking the DMCA notices
+    that UK Biobank sends to GitHub. I tracked 110 notices filed so far, targeting
+    197 code repositories by 170 developers across the world. The exposure of Biobank
+    data on GitHub is the latest in a long series of governance challenges for UK
+    Biobank. (My colleague and I have an editoria…
+  prompt: ''
+  url: https://biobank.rocher.lc
+  source: Hacker News (front page)
+  published_utc: '2026-04-23T13:58:03+00:00'
+  title_zh: 英国生物银行健康数据屡次出现在GitHub上
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

@@ -315,3 +315,82 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-01-12T21:46:13+00:00'
+- week: 2026-W17
+  start: '2026-04-20'
+  end: '2026-04-26'
+  issues:
+  - '2026-04-24'
+  highlights_news:
+  - date: '2026-04-24'
+    url: https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/
+    title: In a first, a ransomware family is confirmed to be quantum-safe
+    title_zh: 首例确认具备量子安全性的勒索软件家族出现
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-04-23T20:41:23+00:00'
+  - date: '2026-04-24'
+    url: https://techcrunch.com/2026/04/23/vercel-says-some-of-its-customers-data-was-stolen-prior-to-its-recent-hack/
+    title: Vercel says some of its customers’ data was stolen prior to its recent
+      hack
+    title_zh: Vercel称部分客户数据在近期黑客攻击前已遭窃取
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-23T14:43:42+00:00'
+  - date: '2026-04-24'
+    url: https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff
+    title: Meta is laying off 10 percent of its staff
+    title_zh: Meta裁员10%
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-23T19:41:07+00:00'
+  - date: '2026-04-24'
+    url: https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/
+    title: French government agency confirms breach as hacker offers to sell data
+    title_zh: 法国政府机构确认数据泄露，黑客公开兜售信息
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-04-23T15:59:55+00:00'
+  - date: '2026-04-24'
+    url: https://spectrum.ieee.org/ai-cybersecurity-mythos
+    title: What Anthropic’s Mythos Means for the Future of Cybersecurity
+    title_zh: Anthropic的Mythos对网络安全的未来意味着什么
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-04-23T14:00:01+00:00'
+  highlights_ai:
+  - date: '2026-04-24'
+    url: https://the-decoder.com/openai-unveils-gpt-5-5-claims-a-new-class-of-intelligence-at-double-the-api-price/
+    title: OpenAI unveils GPT-5.5, claims a "new class of intelligence" at double
+      the API price
+    title_zh: OpenAI发布GPT-5.5，宣称开启'新型智能等级'并双倍提高API价格
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-04-23T19:01:07+00:00'
+  - date: '2026-04-24'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-idc/
+    title: Amazon SageMaker supports notebooks and data agent for IdC domains
+    title_zh: 亚马逊SageMaker支持IdC域的数据代理和笔记本功能
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-04-23T19:13:00+00:00'
+  - date: '2026-04-24'
+    url: https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything
+    title: An update on recent Claude Code quality reports
+    title_zh: 关于近期Claude代码质量报告的更新说明
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-24T01:31:25+00:00'
+  - date: '2026-04-24'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.83.7-stable.patch.1
+    title: 'BerriAI/litellm: v1.83.7-stable.patch.1'
+    title_zh: BerriAI/litellm：v1.83.7-stable.patch.1版本
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-04-23T23:36:37+00:00'
+  - date: '2026-04-24'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.2.0
+    title: 'langchain-ai/langchain: langchain-fireworks==1.2.0'
+    title_zh: langchain-ai/langchain：langchain-fireworks==1.2.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-23T20:54:01+00:00'

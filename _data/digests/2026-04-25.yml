@@ -1,0 +1,1418 @@
+date: '2026-04-25'
+title: Daily Digest - 2026-04-25
+title_zh: 每日简报 - 2026-04-25
+note: 'Today: In another wild turn for AI chips, Meta signs deal for millions… · Google
+  will invest as much as $40 billion in Anthropic · AI: langchain-ai/langchain: langchain-openai==1.2.1.'
+note_zh: '今日关注：In another wild turn for AI chips, Me…；Google will invest as much as
+  $40 bil…；AI：langchain-ai/langchain: langchain…。'
+items:
+- category: Tech industry
+  title: 'Steve Ballmer blasts founder he backed who pleaded guilty to fraud: ‘I was
+    duped and feel silly’'
+  why: Steve Ballmer wrote a fiery letter in the sentencing of disgraced founder Joseph
+    Sanberg documenting all the harm that's befalling him as a…
+  takeaway: Steve Ballmer wrote a fiery letter in the sentencing of disgraced founder
+    Joseph Sanberg documenting all the harm that's befalling him as an investor.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/steve-ballmer-blasts-founder-he-backed-who-pleaded-guilty-to-fraud-i-was-duped-and-feel-silly/
+  source: TechCrunch
+  published_utc: '2026-04-24T23:32:11+00:00'
+  title_zh: 'Steve Ballmer blasts founder he backed who pleaded guilty to fraud: ‘I
+    was duped and feel silly’'
+  why_zh: Steve Ballmer wrote a fiery letter in the sentencing of disgraced founder
+    Joseph Sanberg documenting all the harm that's befalling him as a…
+  takeaway_zh: Steve Ballmer wrote a fiery letter in the sentencing of disgraced founder
+    Joseph Sanberg documenting all the harm that's befalling him as an investor.
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints
+  why: DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro
+    and DeepSeek-V4-Flash, both targeted at enabling highl…
+  takeaway: DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro
+    and DeepSeek-V4-Flash, both targeted at enabling highly efficient...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-24T23:29:56+00:00'
+  title_zh: Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints
+  why_zh: DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro
+    and DeepSeek-V4-Flash, both targeted at enabling highl…
+  takeaway_zh: DeepSeek just launched its fourth generation of flagship models with
+    DeepSeek-V4-Pro and DeepSeek-V4-Flash, both targeted at enabling highly efficient...
+  prompt_zh: ''
+- category: Tech industry
+  title: 'FusionCore: ROS 2 sensor fusion (IMU and GPS and encoders)'
+  why: 'Article URL: https://github.com/manankharwar/fusioncore Comments URL: https://news.ycombinator.com/item?id=47896670
+    Points: 6 # Comments: 1'
+  takeaway: 'Article URL: https://github.com/manankharwar/fusioncore Comments URL:
+    https://news.ycombinator.com/item?id=47896670 Points: 6 # Comments: 1'
+  prompt: ''
+  url: https://github.com/manankharwar/fusioncore
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T22:36:38+00:00'
+  title_zh: 'FusionCore: ROS 2 sensor fusion (IMU and GPS and encoders)'
+  why_zh: 'Article URL: https://github.com/manankharwar/fusioncore Comments URL: https://news.ycombinator.com/item?id=47896670
+    Points: 6 # Comments: 1'
+  takeaway_zh: 'Article URL: https://github.com/manankharwar/fusioncore Comments URL:
+    https://news.ycombinator.com/item?id=47896670 Points: 6 # Comments: 1'
+  prompt_zh: ''
+- category: Tech industry
+  title: Google will invest as much as $40 billion in Anthropic
+  why: This follows a similar, but smaller, investment by Amazon just days ago.
+  takeaway: This follows a similar, but smaller, investment by Amazon just days ago.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/
+  source: Ars Technica
+  published_utc: '2026-04-24T22:05:45+00:00'
+  title_zh: Google will invest as much as $40 billion in Anthropic
+  why_zh: This follows a similar, but smaller, investment by Amazon just days ago.
+  takeaway_zh: This follows a similar, but smaller, investment by Amazon just days
+    ago.
+  prompt_zh: ''
+- category: Tech industry
+  title: Palantir is reportedly helping the IRS investigate financial crimes
+  why: The IRS has used Palantir's software since at least 2018, The Intercept reports.
+  takeaway: The IRS has used Palantir's software since at least 2018, The Intercept
+    reports.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/palantir-is-reportedly-helping-the-irs-investigate-financial-crimes/
+  source: TechCrunch
+  published_utc: '2026-04-24T21:53:44+00:00'
+  title_zh: Palantir is reportedly helping the IRS investigate financial crimes
+  why_zh: The IRS has used Palantir's software since at least 2018, The Intercept
+    reports.
+  takeaway_zh: The IRS has used Palantir's software since at least 2018, The Intercept
+    reports.
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I''ve built a nice home server OS'
+  why: ohai!
+  takeaway: ohai! I've released Lightwhale 3, which is possibly the easiest way to
+    self-host Docker containers. It's a free, immutable Linux system purpose-built
+    to live-boot straight into a working Docker Engine, thereby shortcutting the need
+    for installation, configuration, and maintenance. Its simple design makes it easy
+    to learn, and its low memory footprint should…
+  prompt: ''
+  url: https://lightwhale.asklandd.dk/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T21:42:26+00:00'
+  title_zh: 'Show HN: I''ve built a nice home server OS'
+  why_zh: ohai!
+  takeaway_zh: ohai! I've released Lightwhale 3, which is possibly the easiest way
+    to self-host Docker containers. It's a free, immutable Linux system purpose-built
+    to live-boot straight into a working Docker Engine, thereby shortcutting the need
+    for installation, configuration, and maintenance. Its simple design makes it easy
+    to learn, and its low memory footprint should…
+  prompt_zh: ''
+- category: Tech industry
+  title: Three reasons why DeepSeek’s new model matters
+  why: On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited
+    new flagship model.
+  takeaway: On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited
+    new flagship model. Notably, the model can process much longer prompts than its
+    last generation, thanks to a new design that helps it handle large amounts of
+    text more efficiently. Like DeepSeek’s previous models, V4 is open source, meaning
+    it is available…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/
+  source: MIT Technology Review
+  published_utc: '2026-04-24T21:40:58+00:00'
+  title_zh: Three reasons why DeepSeek’s new model matters
+  why_zh: On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited
+    new flagship model.
+  takeaway_zh: On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited
+    new flagship model. Notably, the model can process much longer prompts than its
+    last generation, thanks to a new design that helps it handle large amounts of
+    text more efficiently. Like DeepSeek’s previous models, V4 is open source, meaning
+    it is available…
+  prompt_zh: ''
+- category: Tech industry
+  title: Cohere acquires, merges with Germany-based startup to create a ‘transatlantic
+    AI powerhouse’
+  why: Cohere, the Canada-based AI company that makes AI tools for businesses in regulated
+    industries, announced Friday it would merge with Aleph…
+  takeaway: Cohere, the Canada-based AI company that makes AI tools for businesses
+    in regulated industries, announced Friday it would merge with Aleph Alpha, a German
+    company that also builds AI systems for businesses and governments.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/
+  source: TechCrunch
+  published_utc: '2026-04-24T21:35:30+00:00'
+  title_zh: Cohere acquires, merges with Germany-based startup to create a ‘transatlantic
+    AI powerhouse’
+  why_zh: Cohere, the Canada-based AI company that makes AI tools for businesses in
+    regulated industries, announced Friday it would merge with Aleph…
+  takeaway_zh: Cohere, the Canada-based AI company that makes AI tools for businesses
+    in regulated industries, announced Friday it would merge with Aleph Alpha, a German
+    company that also builds AI systems for businesses and governments.
+  prompt_zh: ''
+- category: Tech industry
+  title: Europe—not US—first to authorize Moderna's combo mRNA flu-COVID vaccine
+  why: Amid RFK Jr.'s anti-vaccine agenda, Moderna withdrew its FDA application last
+    year.
+  takeaway: Amid RFK Jr.'s anti-vaccine agenda, Moderna withdrew its FDA application
+    last year.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/europe-not-us-first-to-authorize-modernas-combo-mrna-flu-covid-vaccine/
+  source: Ars Technica
+  published_utc: '2026-04-24T21:11:43+00:00'
+  title_zh: Europe—not US—first to authorize Moderna's combo mRNA flu-COVID vaccine
+  why_zh: Amid RFK Jr.'s anti-vaccine agenda, Moderna withdrew its FDA application
+    last year.
+  takeaway_zh: Amid RFK Jr.'s anti-vaccine agenda, Moderna withdrew its FDA application
+    last year.
+  prompt_zh: ''
+- category: Tech industry
+  title: Two college kids raise a $5.1 million pre-seed to build an AI social network
+    in iMessage
+  why: Series, a social networking app that's grown popular on college campuses, announced
+    a $5.1 million pre-seed round from some big names in te…
+  takeaway: Series, a social networking app that's grown popular on college campuses,
+    announced a $5.1 million pre-seed round from some big names in tech.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/
+  source: TechCrunch
+  published_utc: '2026-04-24T21:05:59+00:00'
+  title_zh: Two college kids raise a $5.1 million pre-seed to build an AI social network
+    in iMessage
+  why_zh: Series, a social networking app that's grown popular on college campuses,
+    announced a $5.1 million pre-seed round from some big names in te…
+  takeaway_zh: Series, a social networking app that's grown popular on college campuses,
+    announced a $5.1 million pre-seed round from some big names in tech.
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick now integrates with Visier’s Vee agent for workforce intelligence
+  why: Amazon Quick now integrates with Vee, the AI assistant from Visier's people
+    analytics platform, through the model context protocol (MCP).
+  takeaway: Amazon Quick now integrates with Vee, the AI assistant from Visier's people
+    analytics platform, through the model context protocol (MCP). HR business partners,
+    finance managers, and operations leaders can now get governed access to live workforce
+    intelligence from Visier directly within their Amazon Quick workspace without
+    switching tools. After setting up…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-visier-vee/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-24T21:03:00+00:00'
+  title_zh: Amazon Quick now integrates with Visier’s Vee agent for workforce intelligence
+  why_zh: Amazon Quick now integrates with Vee, the AI assistant from Visier's people
+    analytics platform, through the model context protocol (MCP).
+  takeaway_zh: Amazon Quick now integrates with Vee, the AI assistant from Visier's
+    people analytics platform, through the model context protocol (MCP). HR business
+    partners, finance managers, and operations leaders can now get governed access
+    to live workforce intelligence from Visier directly within their Amazon Quick
+    workspace without switching tools. After setting up…
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Flow Music
+  why: 'Article URL: https://www.flowmusic.app/ Comments URL: https://news.ycombinator.com/item?id=47895765
+    Points: 64 # Comments: 32'
+  takeaway: 'Article URL: https://www.flowmusic.app/ Comments URL: https://news.ycombinator.com/item?id=47895765
+    Points: 64 # Comments: 32'
+  prompt: ''
+  url: https://www.flowmusic.app/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T21:01:50+00:00'
+  title_zh: Google Flow Music
+  why_zh: 'Article URL: https://www.flowmusic.app/ Comments URL: https://news.ycombinator.com/item?id=47895765
+    Points: 64 # Comments: 32'
+  takeaway_zh: 'Article URL: https://www.flowmusic.app/ Comments URL: https://news.ycombinator.com/item?id=47895765
+    Points: 64 # Comments: 32'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Gateway and Identity support VPC egress
+  why: Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled
+    egress traffic management for your applications, enabling s…
+  takeaway: Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled
+    egress traffic management for your applications, enabling seamless communication
+    with resources in your Virtual Private Cloud (VPC). VPC egress for AgentCore Gateway
+    targets and Identity credential providers are offered in both managed and self-managed
+    configurations. With VPC e…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2024/04/agentcore-gateway-identity-vpc/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-24T21:00:00+00:00'
+  title_zh: Amazon Bedrock AgentCore Gateway and Identity support VPC egress
+  why_zh: Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled
+    egress traffic management for your applications, enabling s…
+  takeaway_zh: Amazon Bedrock AgentCore Gateway and Identity now provide secure and
+    controlled egress traffic management for your applications, enabling seamless
+    communication with resources in your Virtual Private Cloud (VPC). VPC egress for
+    AgentCore Gateway targets and Identity credential providers are offered in both
+    managed and self-managed configurations. With VPC e…
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta’s loss is Thinking Machines’ gain
+  why: Meta has been poaching talent from Thinking Machines Lab.
+  takeaway: Meta has been poaching talent from Thinking Machines Lab. But it's a two-way
+    street.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/
+  source: TechCrunch
+  published_utc: '2026-04-24T20:52:07+00:00'
+  title_zh: Meta’s loss is Thinking Machines’ gain
+  why_zh: Meta has been poaching talent from Thinking Machines Lab.
+  takeaway_zh: Meta has been poaching talent from Thinking Machines Lab. But it's
+    a two-way street.
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft will let you pause Windows Updates indefinitely, 35 days at a time
+  why: Windows users will no longer be forced to run automatic updates in the middle
+    of a game or a busy day.
+  takeaway: Windows users will no longer be forced to run automatic updates in the
+    middle of a game or a busy day. Microsoft is rolling out some long-awaited changes
+    to Windows Update to users on its Dev and Experimental Windows Insider channels,
+    including the ability to indefinitely delay updates up to 35 days at a time. […]
+  prompt: ''
+  url: https://www.theverge.com/tech/918572/microsoft-windows-updates-pause-35-days
+  source: The Verge
+  published_utc: '2026-04-24T20:45:58+00:00'
+  title_zh: Microsoft will let you pause Windows Updates indefinitely, 35 days at
+    a time
+  why_zh: Windows users will no longer be forced to run automatic updates in the middle
+    of a game or a busy day.
+  takeaway_zh: Windows users will no longer be forced to run automatic updates in
+    the middle of a game or a busy day. Microsoft is rolling out some long-awaited
+    changes to Windows Update to users on its Dev and Experimental Windows Insider
+    channels, including the ability to indefinitely delay updates up to 35 days at
+    a time. […]
+  prompt_zh: ''
+- category: Tech industry
+  title: X-energy stock pops 27% on first day of trading following upsized IPO
+  why: Investors flocked to nuclear power startup X-energy in its first day of public
+    trading on the Nasdaq.
+  takeaway: Investors flocked to nuclear power startup X-energy in its first day of
+    public trading on the Nasdaq.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/
+  source: TechCrunch
+  published_utc: '2026-04-24T20:10:54+00:00'
+  title_zh: X-energy stock pops 27% on first day of trading following upsized IPO
+  why_zh: Investors flocked to nuclear power startup X-energy in its first day of
+    public trading on the Nasdaq.
+  takeaway_zh: Investors flocked to nuclear power startup X-energy in its first day
+    of public trading on the Nasdaq.
+  prompt_zh: ''
+- category: Tech industry
+  title: Alex Jones has uncovered another massive conspiracy
+  why: Alex Jones may soon lose Infowars, the digital perch that he's used for decades
+    to traffic in conspiracy theories, to The Onion, the satiri…
+  takeaway: 'Alex Jones may soon lose Infowars, the digital perch that he''s used
+    for decades to traffic in conspiracy theories, to The Onion, the satirical newspaper.
+    But not before he''s uncovered something truly dastardly: comedian Tim Heidecker''s
+    past (publicly available) work. "The Onion newspaper has been rocked by the discovery
+    that their new creative director, pro…'
+  prompt: ''
+  url: https://www.theverge.com/news/918527/alex-jones-infowars-takeover-the-onion-tim-heidecker
+  source: The Verge
+  published_utc: '2026-04-24T20:10:00+00:00'
+  title_zh: Alex Jones has uncovered another massive conspiracy
+  why_zh: Alex Jones may soon lose Infowars, the digital perch that he's used for
+    decades to traffic in conspiracy theories, to The Onion, the satiri…
+  takeaway_zh: 'Alex Jones may soon lose Infowars, the digital perch that he''s used
+    for decades to traffic in conspiracy theories, to The Onion, the satirical newspaper.
+    But not before he''s uncovered something truly dastardly: comedian Tim Heidecker''s
+    past (publicly available) work. "The Onion newspaper has been rocked by the discovery
+    that their new creative director, pro…'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Tell HN: Claude 4.7 is ignoring stop hooks'
+  why: I've been using Anthropic's hook features [0] since they were introduced.
+  takeaway: I've been using Anthropic's hook features [0] since they were introduced.
+    It allows me to inject determinism into my workflows. This worked perfectly until
+    4.7. Now, Claude routinely ignores the hook rules. For example, I have a stop
+    hook that prevents Claude from stopping if a source file has been changed and
+    no tests have been run. Here's the relvant part…
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=47895029
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T19:55:09+00:00'
+  title_zh: 'Tell HN: Claude 4.7 is ignoring stop hooks'
+  why_zh: I've been using Anthropic's hook features [0] since they were introduced.
+  takeaway_zh: I've been using Anthropic's hook features [0] since they were introduced.
+    It allows me to inject determinism into my workflows. This worked perfectly until
+    4.7. Now, Claude routinely ignores the hook rules. For example, I have a stop
+    hook that prevents Claude from stopping if a source file has been changed and
+    no tests have been run. Here's the relvant part…
+  prompt_zh: ''
+- category: Tech industry
+  title: ComfyUI hits $500M valuation as creators seek more control over AI-generated
+    media
+  why: ComfyUI, whose tools give creators more control over AI image, video, and audio
+    generation, just raised $30 million.
+  takeaway: ComfyUI, whose tools give creators more control over AI image, video,
+    and audio generation, just raised $30 million.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/
+  source: TechCrunch
+  published_utc: '2026-04-24T19:49:35+00:00'
+  title_zh: ComfyUI hits $500M valuation as creators seek more control over AI-generated
+    media
+  why_zh: ComfyUI, whose tools give creators more control over AI image, video, and
+    audio generation, just raised $30 million.
+  takeaway_zh: ComfyUI, whose tools give creators more control over AI image, video,
+    and audio generation, just raised $30 million.
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.2.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-24T19:46:59+00:00'
+  title_zh: 'langchain-ai/langchain: langchain-openai==1.2.1'
+  why_zh: Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: X launches stand-alone XChat app on iOS
+  why: X's new app promises private chats, disappearing messages, audio and video
+    calls, and more.
+  takeaway: X's new app promises private chats, disappearing messages, audio and video
+    calls, and more.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/x-launches-xchat-app-ios-messaging-iphone/
+  source: TechCrunch
+  published_utc: '2026-04-24T19:46:58+00:00'
+  title_zh: X launches stand-alone XChat app on iOS
+  why_zh: X's new app promises private chats, disappearing messages, audio and video
+    calls, and more.
+  takeaway_zh: X's new app promises private chats, disappearing messages, audio and
+    video calls, and more.
+  prompt_zh: ''
+- category: Tech industry
+  title: The person who allegedly leaked Paramount’s new Avatar movie has been arrested
+  why: 'Following Paramount Skydance''s move to launch an investigation into how its
+    upcoming Avatar Aang: The Last Airbender animated feature leake…'
+  takeaway: 'Following Paramount Skydance''s move to launch an investigation into
+    how its upcoming Avatar Aang: The Last Airbender animated feature leaked onto
+    the internet, a suspect has been taken into custody by police. The Straits Times
+    reports Singaporean police have arrested a 26-year-old man who is alleged to have
+    uploaded the new Avatar movie (previously titled […'
+  prompt: ''
+  url: https://www.theverge.com/entertainment/918250/avatar-aang-the-last-airbender-leaks-arrest-paramount-plus
+  source: The Verge
+  published_utc: '2026-04-24T19:45:01+00:00'
+  title_zh: The person who allegedly leaked Paramount’s new Avatar movie has been
+    arrested
+  why_zh: 'Following Paramount Skydance''s move to launch an investigation into how
+    its upcoming Avatar Aang: The Last Airbender animated feature leake…'
+  takeaway_zh: 'Following Paramount Skydance''s move to launch an investigation into
+    how its upcoming Avatar Aang: The Last Airbender animated feature leaked onto
+    the internet, a suspect has been taken into custody by police. The Straits Times
+    reports Singaporean police have arrested a 26-year-old man who is alleged to have
+    uploaded the new Avatar movie (previously titled […'
+  prompt_zh: ''
+- category: Tech industry
+  title: My audio interface has SSH enabled by default
+  why: 'Article URL: https://hhh.hn/rodecaster-duo-fw/ Comments URL: https://news.ycombinator.com/item?id=47894747
+    Points: 129 # Comments: 27'
+  takeaway: 'Article URL: https://hhh.hn/rodecaster-duo-fw/ Comments URL: https://news.ycombinator.com/item?id=47894747
+    Points: 129 # Comments: 27'
+  prompt: ''
+  url: https://hhh.hn/rodecaster-duo-fw/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T19:30:46+00:00'
+  title_zh: My audio interface has SSH enabled by default
+  why_zh: 'Article URL: https://hhh.hn/rodecaster-duo-fw/ Comments URL: https://news.ycombinator.com/item?id=47894747
+    Points: 129 # Comments: 27'
+  takeaway_zh: 'Article URL: https://hhh.hn/rodecaster-duo-fw/ Comments URL: https://news.ycombinator.com/item?id=47894747
+    Points: 129 # Comments: 27'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'FCC: Router ban includes portable hotspots, but not phones with hotspot
+    features'
+  why: FCC defines consumer routers expansively, updates FAQ to include Wi-Fi hotspots.
+  takeaway: FCC defines consumer routers expansively, updates FAQ to include Wi-Fi
+    hotspots.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/fcc-says-ban-on-foreign-made-routers-includes-portable-wi-fi-hotspots/
+  source: Ars Technica
+  published_utc: '2026-04-24T19:30:14+00:00'
+  title_zh: 'FCC: Router ban includes portable hotspots, but not phones with hotspot
+    features'
+  why_zh: FCC defines consumer routers expansively, updates FAQ to include Wi-Fi hotspots.
+  takeaway_zh: FCC defines consumer routers expansively, updates FAQ to include Wi-Fi
+    hotspots.
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment'
+  why: 'Article URL: https://gdm-tipsv2.github.io/ Comments URL: https://news.ycombinator.com/item?id=47894734
+    Points: 18 # Comments: 1'
+  takeaway: 'Article URL: https://gdm-tipsv2.github.io/ Comments URL: https://news.ycombinator.com/item?id=47894734
+    Points: 18 # Comments: 1'
+  prompt: ''
+  url: https://gdm-tipsv2.github.io/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T19:28:32+00:00'
+  title_zh: 'TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text
+    Alignment'
+  why_zh: 'Article URL: https://gdm-tipsv2.github.io/ Comments URL: https://news.ycombinator.com/item?id=47894734
+    Points: 18 # Comments: 1'
+  takeaway_zh: 'Article URL: https://gdm-tipsv2.github.io/ Comments URL: https://news.ycombinator.com/item?id=47894734
+    Points: 18 # Comments: 1'
+  prompt_zh: ''
+- category: Tech industry
+  title: The Classic American Diner
+  why: 'Article URL: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+    Comments URL: https://news.ycombinator.com/item?id=47894…'
+  takeaway: 'Article URL: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+    Comments URL: https://news.ycombinator.com/item?id=47894435 Points: 130 # Comments:
+    73'
+  prompt: ''
+  url: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T19:01:09+00:00'
+  title_zh: The Classic American Diner
+  why_zh: 'Article URL: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+    Comments URL: https://news.ycombinator.com/item?id=47894…'
+  takeaway_zh: 'Article URL: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+    Comments URL: https://news.ycombinator.com/item?id=47894435 Points: 130 # Comments:
+    73'
+  prompt_zh: ''
+- category: Security
+  title: Why are top university websites serving porn? It comes down to shoddy housekeeping.
+  why: Hundreds of subdomains from dozens of universities have been hijacked by scammers.
+  takeaway: Hundreds of subdomains from dozens of universities have been hijacked
+    by scammers.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/
+  source: Ars Technica
+  published_utc: '2026-04-24T19:00:39+00:00'
+  title_zh: Why are top university websites serving porn? It comes down to shoddy
+    housekeeping.
+  why_zh: Hundreds of subdomains from dozens of universities have been hijacked by
+    scammers.
+  takeaway_zh: Hundreds of subdomains from dozens of universities have been hijacked
+    by scammers.
+  prompt_zh: ''
+- category: Tech industry
+  title: In rare chickenpox case, itchy blisters mushroom into large, rubbery nodules
+  why: Treatment options are tricky.
+  takeaway: Treatment options are tricky. The teen opted to live with the masses.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/04/in-rare-chickenpox-case-itchy-blisters-mushroom-into-large-rubbery-nodules/
+  source: Ars Technica
+  published_utc: '2026-04-24T18:44:53+00:00'
+  title_zh: In rare chickenpox case, itchy blisters mushroom into large, rubbery nodules
+  why_zh: Treatment options are tricky.
+  takeaway_zh: Treatment options are tricky. The teen opted to live with the masses.
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI's chief scientist says AI progress has been "surprisingly slow" and
+    promises big leaps ahead
+  why: OpenAI has released GPT-5.5, and the company's leadership says the real breakthroughs
+    are still ahead.
+  takeaway: OpenAI has released GPT-5.5, and the company's leadership says the real
+    breakthroughs are still ahead. Chief scientist Jakub Pachocki expects "extremely
+    significant improvements" in the medium term, calling recent AI progress "surprisingly
+    slow." The article OpenAI's chief scientist says AI progress has been "surprisingly
+    slow" and promises big leaps ahead…
+  prompt: ''
+  url: https://the-decoder.com/openais-chief-scientist-says-ai-progress-has-been-surprisingly-slow-and-promises-big-leaps-ahead/
+  source: The Decoder (AI)
+  published_utc: '2026-04-24T18:31:15+00:00'
+  title_zh: OpenAI's chief scientist says AI progress has been "surprisingly slow"
+    and promises big leaps ahead
+  why_zh: OpenAI has released GPT-5.5, and the company's leadership says the real
+    breakthroughs are still ahead.
+  takeaway_zh: OpenAI has released GPT-5.5, and the company's leadership says the
+    real breakthroughs are still ahead. Chief scientist Jakub Pachocki expects "extremely
+    significant improvements" in the medium term, calling recent AI progress "surprisingly
+    slow." The article OpenAI's chief scientist says AI progress has been "surprisingly
+    slow" and promises big leaps ahead…
+  prompt_zh: ''
+- category: Tech industry
+  title: SFO Quiet Airport (2025)
+  why: 'Article URL: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+    Comme…'
+  takeaway: 'Article URL: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+    Comments URL: https://news.ycombinator.com/item?id=47894081 Points: 123 # Comments:
+    73'
+  prompt: ''
+  url: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T18:29:53+00:00'
+  title_zh: SFO Quiet Airport (2025)
+  why_zh: 'Article URL: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+    Comme…'
+  takeaway_zh: 'Article URL: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+    Comments URL: https://news.ycombinator.com/item?id=47894081 Points: 123 # Comments:
+    73'
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API
+  why: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026 (1010
+    comments) Comments URL: https://news.ycombinator.com/item?id=478…'
+  takeaway: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026
+    (1010 comments) Comments URL: https://news.ycombinator.com/item?id=47894000 Points:
+    198 # Comments: 110'
+  prompt: ''
+  url: https://developers.openai.com/api/docs/changelog
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T18:23:32+00:00'
+  title_zh: OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API
+  why_zh: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026 (1010
+    comments) Comments URL: https://news.ycombinator.com/item?id=478…'
+  takeaway_zh: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026
+    (1010 comments) Comments URL: https://news.ycombinator.com/item?id=47894000 Points:
+    198 # Comments: 110'
+  prompt_zh: ''
+- category: Tech industry
+  title: There Will Be a Scientific Theory of Deep Learning
+  why: 'Article URL: https://arxiv.org/abs/2604.21691 Comments URL: https://news.ycombinator.com/item?id=47893779
+    Points: 100 # Comments: 39'
+  takeaway: 'Article URL: https://arxiv.org/abs/2604.21691 Comments URL: https://news.ycombinator.com/item?id=47893779
+    Points: 100 # Comments: 39'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.21691
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T18:06:05+00:00'
+  title_zh: There Will Be a Scientific Theory of Deep Learning
+  why_zh: 'Article URL: https://arxiv.org/abs/2604.21691 Comments URL: https://news.ycombinator.com/item?id=47893779
+    Points: 100 # Comments: 39'
+  takeaway_zh: 'Article URL: https://arxiv.org/abs/2604.21691 Comments URL: https://news.ycombinator.com/item?id=47893779
+    Points: 100 # Comments: 39'
+  prompt_zh: ''
+- category: Tech industry
+  title: Google to invest up to $40B in Anthropic in cash and compute
+  why: Google plans up to $40B investment in Anthropic as AI rivals race to secure
+    massive compute capacity, following the limited release of its…
+  takeaway: Google plans up to $40B investment in Anthropic as AI rivals race to secure
+    massive compute capacity, following the limited release of its powerful, cybersecurity-focused
+    Mythos model.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/
+  source: TechCrunch
+  published_utc: '2026-04-24T18:00:03+00:00'
+  title_zh: Google to invest up to $40B in Anthropic in cash and compute
+  why_zh: Google plans up to $40B investment in Anthropic as AI rivals race to secure
+    massive compute capacity, following the limited release of its…
+  takeaway_zh: Google plans up to $40B investment in Anthropic as AI rivals race to
+    secure massive compute capacity, following the limited release of its powerful,
+    cybersecurity-focused Mythos model.
+  prompt_zh: ''
+- category: Tech industry
+  title: Yong Wang Turns Information Into Insights
+  why: When Yong Wang recently received one of the highest honors for early-career
+    data visualization researchers, it marked a milestone in an ext…
+  takeaway: When Yong Wang recently received one of the highest honors for early-career
+    data visualization researchers, it marked a milestone in an extraordinary journey
+    that began far from the world’s technology hubs. Wang was born in a small farming
+    village in southwestern China to parents with little formal education and few
+    electronic devices. Today the IEEE member…
+  prompt: ''
+  url: https://spectrum.ieee.org/yong-wang-data-visualization
+  source: IEEE Spectrum
+  published_utc: '2026-04-24T18:00:02+00:00'
+  title_zh: Yong Wang Turns Information Into Insights
+  why_zh: When Yong Wang recently received one of the highest honors for early-career
+    data visualization researchers, it marked a milestone in an ext…
+  takeaway_zh: When Yong Wang recently received one of the highest honors for early-career
+    data visualization researchers, it marked a milestone in an extraordinary journey
+    that began far from the world’s technology hubs. Wang was born in a small farming
+    village in southwestern China to parents with little formal education and few
+    electronic devices. Today the IEEE member…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'CC-Canary: Detect early signs of regressions in Claude Code'
+  why: 'Article URL: https://github.com/delta-hq/cc-canary Comments URL: https://news.ycombinator.com/item?id=47893620
+    Points: 37 # Comments: 17'
+  takeaway: 'Article URL: https://github.com/delta-hq/cc-canary Comments URL: https://news.ycombinator.com/item?id=47893620
+    Points: 37 # Comments: 17'
+  prompt: ''
+  url: https://github.com/delta-hq/cc-canary
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T17:53:37+00:00'
+  title_zh: 'CC-Canary: Detect early signs of regressions in Claude Code'
+  why_zh: 'Article URL: https://github.com/delta-hq/cc-canary Comments URL: https://news.ycombinator.com/item?id=47893620
+    Points: 37 # Comments: 17'
+  takeaway_zh: 'Article URL: https://github.com/delta-hq/cc-canary Comments URL: https://news.ycombinator.com/item?id=47893620
+    Points: 37 # Comments: 17'
+  prompt_zh: ''
+- category: Tech industry
+  title: Soldier won $410K in Polymarket bets on timing of Maduro capture, US alleges
+  why: It's like "Pete Rose betting on his own team," Trump says of arrested soldier.
+  takeaway: It's like "Pete Rose betting on his own team," Trump says of arrested
+    soldier.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/soldier-won-410k-in-polymarket-bets-on-timing-of-maduro-capture-us-alleges/
+  source: Ars Technica
+  published_utc: '2026-04-24T17:41:43+00:00'
+  title_zh: Soldier won $410K in Polymarket bets on timing of Maduro capture, US alleges
+  why_zh: It's like "Pete Rose betting on his own team," Trump says of arrested soldier.
+  takeaway_zh: It's like "Pete Rose betting on his own team," Trump says of arrested
+    soldier.
+  prompt_zh: ''
+- category: Tech industry
+  title: CSS as a Query Language
+  why: 'Article URL: https://evdc.me/blog/css-query Comments URL: https://news.ycombinator.com/item?id=47893427
+    Points: 54 # Comments: 19'
+  takeaway: 'Article URL: https://evdc.me/blog/css-query Comments URL: https://news.ycombinator.com/item?id=47893427
+    Points: 54 # Comments: 19'
+  prompt: ''
+  url: https://evdc.me/blog/css-query
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T17:39:37+00:00'
+  title_zh: CSS as a Query Language
+  why_zh: 'Article URL: https://evdc.me/blog/css-query Comments URL: https://news.ycombinator.com/item?id=47893427
+    Points: 54 # Comments: 19'
+  takeaway_zh: 'Article URL: https://evdc.me/blog/css-query Comments URL: https://news.ycombinator.com/item?id=47893427
+    Points: 54 # Comments: 19'
+  prompt_zh: ''
+- category: Tech industry
+  title: BMW is one step closer to selling you a color-changing car
+  why: At CES 2022, BMW debuted its BMW iX Flow concept car that could dynamically
+    change its appearance using the same grayscale E Ink panels fou…
+  takeaway: At CES 2022, BMW debuted its BMW iX Flow concept car that could dynamically
+    change its appearance using the same grayscale E Ink panels found in e-readers
+    like the Kindle. It was followed by the BMW i Vision Dee concept and the BMW i5
+    Flow Nostokana that were both upgraded with color E Ink panels. […]
+  prompt: ''
+  url: https://www.theverge.com/tech/918216/bmw-ix3-flow-edition-concept-car-2026-beijing-auto-show-e-ink-color-changing
+  source: The Verge
+  published_utc: '2026-04-24T17:31:44+00:00'
+  title_zh: BMW is one step closer to selling you a color-changing car
+  why_zh: At CES 2022, BMW debuted its BMW iX Flow concept car that could dynamically
+    change its appearance using the same grayscale E Ink panels fou…
+  takeaway_zh: At CES 2022, BMW debuted its BMW iX Flow concept car that could dynamically
+    change its appearance using the same grayscale E Ink panels found in e-readers
+    like the Kindle. It was followed by the BMW i Vision Dee concept and the BMW i5
+    Flow Nostokana that were both upgraded with color E Ink panels. […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Google’s handsome Pixel Watch 4 is on sale for $40 off in both size configurations
+  why: Spring has sprung, as they say, and to mark the occasion, Google is running
+    a spring-centric promo until Sunday, April 26th.
+  takeaway: Spring has sprung, as they say, and to mark the occasion, Google is running
+    a spring-centric promo until Sunday, April 26th. The limited-time discounts apply
+    to a number of Google’s first-party devices, from the Pixel 10 Pro to the Pixel
+    Buds Pro 2, as well as the wearables like the Pixel Watch 4. In fact, […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/917924/google-pixel-watch-4-apple-airpods-deal-sale
+  source: The Verge
+  published_utc: '2026-04-24T17:25:49+00:00'
+  title_zh: Google’s handsome Pixel Watch 4 is on sale for $40 off in both size configurations
+  why_zh: Spring has sprung, as they say, and to mark the occasion, Google is running
+    a spring-centric promo until Sunday, April 26th.
+  takeaway_zh: Spring has sprung, as they say, and to mark the occasion, Google is
+    running a spring-centric promo until Sunday, April 26th. The limited-time discounts
+    apply to a number of Google’s first-party devices, from the Pixel 10 Pro to the
+    Pixel Buds Pro 2, as well as the wearables like the Pixel Watch 4. In fact, […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Meet the 19-meter Cretaceous kraken that swam with mosasaurs
+  why: Layer by layer, researchers revealed the jaws of an ancient predator.
+  takeaway: Layer by layer, researchers revealed the jaws of an ancient predator.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/04/meet-the-19-meter-cretaceous-kraken-that-swam-with-mosasaurs/
+  source: Ars Technica
+  published_utc: '2026-04-24T17:23:49+00:00'
+  title_zh: Meet the 19-meter Cretaceous kraken that swam with mosasaurs
+  why_zh: Layer by layer, researchers revealed the jaws of an ancient predator.
+  takeaway_zh: Layer by layer, researchers revealed the jaws of an ancient predator.
+  prompt_zh: ''
+- category: AI frontier
+  title: AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials
+  why: Isomorphic Labs president Max Jaderberg said at WIRED Health in London that
+    the startup has built a “broad and exciting pipeline of new med…
+  takeaway: Isomorphic Labs president Max Jaderberg said at WIRED Health in London
+    that the startup has built a “broad and exciting pipeline of new medicines.”
+  prompt: ''
+  url: https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/
+  source: WIRED - AI
+  published_utc: '2026-04-24T17:17:36+00:00'
+  title_zh: AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials
+  why_zh: Isomorphic Labs president Max Jaderberg said at WIRED Health in London that
+    the startup has built a “broad and exciting pipeline of new med…
+  takeaway_zh: Isomorphic Labs president Max Jaderberg said at WIRED Health in London
+    that the startup has built a “broad and exciting pipeline of new medicines.”
+  prompt_zh: ''
+- category: Tech industry
+  title: The RAM shortage could get even worse if Samsung labor protests cut production
+  why: The RAM shortage caused by demand from AI datacenters is already driving up
+    prices on phones, PS5s, and Raspberry Pis, but it could be abou…
+  takeaway: The RAM shortage caused by demand from AI datacenters is already driving
+    up prices on phones, PS5s, and Raspberry Pis, but it could be about to get even
+    worse. Samsung is facing employee protests over demands for wages that are more
+    competitive with rival chip manufacturer SK Hynix, including removing Samsung's
+    cap on bonus pay, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/918301/samsung-south-korea-union-protests
+  source: The Verge
+  published_utc: '2026-04-24T17:11:33+00:00'
+  title_zh: The RAM shortage could get even worse if Samsung labor protests cut production
+  why_zh: The RAM shortage caused by demand from AI datacenters is already driving
+    up prices on phones, PS5s, and Raspberry Pis, but it could be abou…
+  takeaway_zh: The RAM shortage caused by demand from AI datacenters is already driving
+    up prices on phones, PS5s, and Raspberry Pis, but it could be about to get even
+    worse. Samsung is facing employee protests over demands for wages that are more
+    competitive with rival chip manufacturer SK Hynix, including removing Samsung's
+    cap on bonus pay, […]
+  prompt_zh: ''
+- category: Tech industry
+  title: How Project Maven taught the military to love AI
+  why: In the first 24 hours of the assault on Iran, the US military struck more than
+    1,000 targets, nearly double the scale of the "shock and awe…
+  takeaway: In the first 24 hours of the assault on Iran, the US military struck more
+    than 1,000 targets, nearly double the scale of the "shock and awe" attack on Iraq
+    over two decades ago. This acceleration was made possible by AI systems that speed
+    up the targeting process. Chief among them is the Maven Smart […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson
+  source: The Verge
+  published_utc: '2026-04-24T17:00:00+00:00'
+  title_zh: How Project Maven taught the military to love AI
+  why_zh: In the first 24 hours of the assault on Iran, the US military struck more
+    than 1,000 targets, nearly double the scale of the "shock and awe…
+  takeaway_zh: In the first 24 hours of the assault on Iran, the US military struck
+    more than 1,000 targets, nearly double the scale of the "shock and awe" attack
+    on Iraq over two decades ago. This acceleration was made possible by AI systems
+    that speed up the targeting process. Chief among them is the Maven Smart […]
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Report: Samsung execs worried company could lose money on smartphones for
+    the first time'
+  why: The AI-driven memory shortage is hitting Samsung's bottom line.
+  takeaway: The AI-driven memory shortage is hitting Samsung's bottom line.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/samsung-may-be-bracing-for-first-ever-annual-loss-in-smartphone-business/
+  source: Ars Technica
+  published_utc: '2026-04-24T16:58:45+00:00'
+  title_zh: 'Report: Samsung execs worried company could lose money on smartphones
+    for the first time'
+  why_zh: The AI-driven memory shortage is hitting Samsung's bottom line.
+  takeaway_zh: The AI-driven memory shortage is hitting Samsung's bottom line.
+  prompt_zh: ''
+- category: Tech industry
+  title: Redesigning the Recurse Center application to inspire curious programmers
+  why: 'Article URL: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway: 'Article URL: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+    Comments URL: https://news.ycombinator.com/item?id=47892660 Points: 53 # Comments:
+    9'
+  prompt: ''
+  url: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T16:45:10+00:00'
+  title_zh: Redesigning the Recurse Center application to inspire curious programmers
+  why_zh: 'Article URL: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway_zh: 'Article URL: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+    Comments URL: https://news.ycombinator.com/item?id=47892660 Points: 53 # Comments:
+    9'
+  prompt_zh: ''
+- category: Tech industry
+  title: Marked-up Mac minis flood eBay amid shortages driven by AI
+  why: Apple’s sold-out Mac mini is spawning marked-up eBay listings as demand surges
+    for the compact desktop, now favored for running local AI mo…
+  takeaway: Apple’s sold-out Mac mini is spawning marked-up eBay listings as demand
+    surges for the compact desktop, now favored for running local AI models and tools.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/
+  source: TechCrunch
+  published_utc: '2026-04-24T16:42:19+00:00'
+  title_zh: Marked-up Mac minis flood eBay amid shortages driven by AI
+  why_zh: Apple’s sold-out Mac mini is spawning marked-up eBay listings as demand
+    surges for the compact desktop, now favored for running local AI mo…
+  takeaway_zh: Apple’s sold-out Mac mini is spawning marked-up eBay listings as demand
+    surges for the compact desktop, now favored for running local AI models and tools.
+  prompt_zh: ''
+- category: Tech industry
+  title: Xreal’s best AR glasses are $599 for good now
+  why: The Xreal One Pro are the company’s best AR glasses, touting thin optics that
+    keep out reflections so you can enjoy a crisp, contrast-rich…
+  takeaway: The Xreal One Pro are the company’s best AR glasses, touting thin optics
+    that keep out reflections so you can enjoy a crisp, contrast-rich image of whatever
+    content you’re watching. Xreal has permanently cut their price from $649 to $599,
+    making them $150 more than its entry-level (but still good) 1S glasses that debuted
+    shortly […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/918169/xreal-one-pro-ar-glasses-price-cut-deal-sale
+  source: The Verge
+  published_utc: '2026-04-24T16:33:30+00:00'
+  title_zh: Xreal’s best AR glasses are $599 for good now
+  why_zh: The Xreal One Pro are the company’s best AR glasses, touting thin optics
+    that keep out reflections so you can enjoy a crisp, contrast-rich…
+  takeaway_zh: The Xreal One Pro are the company’s best AR glasses, touting thin optics
+    that keep out reflections so you can enjoy a crisp, contrast-rich image of whatever
+    content you’re watching. Xreal has permanently cut their price from $649 to $599,
+    making them $150 more than its entry-level (but still good) 1S glasses that debuted
+    shortly […]
+  prompt_zh: ''
+- category: Tech industry
+  title: SDL Now Supports DOS
+  why: 'Article URL: https://github.com/libsdl-org/SDL/pull/15377 Comments URL: https://news.ycombinator.com/item?id=47892291
+    Points: 211 # Comment…'
+  takeaway: 'Article URL: https://github.com/libsdl-org/SDL/pull/15377 Comments URL:
+    https://news.ycombinator.com/item?id=47892291 Points: 211 # Comments: 74'
+  prompt: ''
+  url: https://github.com/libsdl-org/SDL/pull/15377
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T16:20:15+00:00'
+  title_zh: SDL Now Supports DOS
+  why_zh: 'Article URL: https://github.com/libsdl-org/SDL/pull/15377 Comments URL:
+    https://news.ycombinator.com/item?id=47892291 Points: 211 # Comment…'
+  takeaway_zh: 'Article URL: https://github.com/libsdl-org/SDL/pull/15377 Comments
+    URL: https://news.ycombinator.com/item?id=47892291 Points: 211 # Comments: 74'
+  prompt_zh: ''
+- category: Tech industry
+  title: Diatec, known for its mechanical keyboard brand FILCO, has ceased operations
+  why: 'Article URL: https://gigazine.net/gsc_news/en/20260424-filco-diatec/ Comments
+    URL: https://news.ycombinator.com/item?id=47892236 Points: 86…'
+  takeaway: 'Article URL: https://gigazine.net/gsc_news/en/20260424-filco-diatec/
+    Comments URL: https://news.ycombinator.com/item?id=47892236 Points: 86 # Comments:
+    28'
+  prompt: ''
+  url: https://gigazine.net/gsc_news/en/20260424-filco-diatec/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T16:16:49+00:00'
+  title_zh: Diatec, known for its mechanical keyboard brand FILCO, has ceased operations
+  why_zh: 'Article URL: https://gigazine.net/gsc_news/en/20260424-filco-diatec/ Comments
+    URL: https://news.ycombinator.com/item?id=47892236 Points: 86…'
+  takeaway_zh: 'Article URL: https://gigazine.net/gsc_news/en/20260424-filco-diatec/
+    Comments URL: https://news.ycombinator.com/item?id=47892236 Points: 86 # Comments:
+    28'
+  prompt_zh: ''
+- category: Tech industry
+  title: Google plans to invest up to $40B in Anthropic
+  why: 'Article URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+    Comments URL: https://…'
+  takeaway: 'Article URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+    Comments URL: https://news.ycombinator.com/item?id=47892074 Points: 246 # Comments:
+    306'
+  prompt: ''
+  url: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T16:04:41+00:00'
+  title_zh: Google plans to invest up to $40B in Anthropic
+  why_zh: 'Article URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+    Comments URL: https://…'
+  takeaway_zh: 'Article URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+    Comments URL: https://news.ycombinator.com/item?id=47892074 Points: 246 # Comments:
+    306'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'I cancelled Claude: Token issues, declining quality, and poor support'
+  why: 'Article URL: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/ Comments
+    URL: https://news.ycombinator.com/item?id=47892019 Points:…'
+  takeaway: 'Article URL: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
+    Comments URL: https://news.ycombinator.com/item?id=47892019 Points: 738 # Comments:
+    438'
+  prompt: ''
+  url: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T15:59:19+00:00'
+  title_zh: 'I cancelled Claude: Token issues, declining quality, and poor support'
+  why_zh: 'Article URL: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
+    Comments URL: https://news.ycombinator.com/item?id=47892019 Points:…'
+  takeaway_zh: 'Article URL: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
+    Comments URL: https://news.ycombinator.com/item?id=47892019 Points: 738 # Comments:
+    438'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-24T15:49:42+00:00'
+  title_zh: 'langchain-ai/langchain: langchain-core==1.3.2'
+  why_zh: Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I'm done making desktop applications (2009)
+  why: 'Article URL: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
+    Comments URL: https://news.ycombinator.com/item?id=47891801…'
+  takeaway: 'Article URL: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
+    Comments URL: https://news.ycombinator.com/item?id=47891801 Points: 136 # Comments:
+    153'
+  prompt: ''
+  url: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T15:44:03+00:00'
+  title_zh: I'm done making desktop applications (2009)
+  why_zh: 'Article URL: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
+    Comments URL: https://news.ycombinator.com/item?id=47891801…'
+  takeaway_zh: 'Article URL: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
+    Comments URL: https://news.ycombinator.com/item?id=47891801 Points: 136 # Comments:
+    153'
+  prompt_zh: ''
+- category: Tech industry
+  title: 360-degree cameras have a new superpower
+  why: Imagine Google Street View, except you can walk around like it's a video game.
+  takeaway: Imagine Google Street View, except you can walk around like it's a video
+    game. Now imagine you don't need to wait for Google to come film because it's
+    completely DIY. Insta360, the leading maker of 360-degree cameras, is now partnered
+    with a 12-person UK startup called Splatica to help creators do just that. Last
+    January, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/914730/splatica-gaussian-splats-insta360-antigravity
+  source: The Verge
+  published_utc: '2026-04-24T15:30:00+00:00'
+  title_zh: 360-degree cameras have a new superpower
+  why_zh: Imagine Google Street View, except you can walk around like it's a video
+    game.
+  takeaway_zh: Imagine Google Street View, except you can walk around like it's a
+    video game. Now imagine you don't need to wait for Google to come film because
+    it's completely DIY. Insta360, the leading maker of 360-degree cameras, is now
+    partnered with a 12-person UK startup called Splatica to help creators do just
+    that. Last January, […]
+  prompt_zh: ''
+- category: AI frontier
+  title: GPT-5.5 tops benchmarks but still hallucinates frequently and costs 20 percent
+    more over the API
+  why: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks.
+  takeaway: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks. The price
+    went up, but it still looks like the best bang for your buck among proprietary
+    models. The article GPT-5.5 tops benchmarks but still hallucinates frequently
+    and costs 20 percent more over the API appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-and-costs-20-percent-more-over-the-api/
+  source: The Decoder (AI)
+  published_utc: '2026-04-24T15:20:49+00:00'
+  title_zh: GPT-5.5 tops benchmarks but still hallucinates frequently and costs 20
+    percent more over the API
+  why_zh: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks.
+  takeaway_zh: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks. The price
+    went up, but it still looks like the best bang for your buck among proprietary
+    models. The article GPT-5.5 tops benchmarks but still hallucinates frequently
+    and costs 20 percent more over the API appeared first on The Decoder .
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesla’s Cybercab goes into production — so why is Musk tapping the brakes?
+  why: Tesla's Cybercab is now in production at the company's Gigafactory in Austin,
+    Texas, but Elon Musk is sounding unusually cautious about the…
+  takeaway: Tesla's Cybercab is now in production at the company's Gigafactory in
+    Austin, Texas, but Elon Musk is sounding unusually cautious about the rollout.
+    The robotaxi's start of production was announced Thursday on X, with Tesla posting
+    a video shot from inside a steering wheel-less Cybercab as it drove out of the
+    factory with the caption, […]
+  prompt: ''
+  url: https://www.theverge.com/transportation/918106/tesla-cybercab-production-robotaxi-elon-musk-earnings
+  source: The Verge
+  published_utc: '2026-04-24T15:17:27+00:00'
+  title_zh: Tesla’s Cybercab goes into production — so why is Musk tapping the brakes?
+  why_zh: Tesla's Cybercab is now in production at the company's Gigafactory in Austin,
+    Texas, but Elon Musk is sounding unusually cautious about the…
+  takeaway_zh: Tesla's Cybercab is now in production at the company's Gigafactory
+    in Austin, Texas, but Elon Musk is sounding unusually cautious about the rollout.
+    The robotaxi's start of production was announced Thursday on X, with Tesla posting
+    a video shot from inside a steering wheel-less Cybercab as it drove out of the
+    factory with the caption, […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Nuclear startup X-energy raises $1B in data center-driven IPO
+  why: Amazon-backed X-energy was able to raise around 20% more money in its IPO as
+    demand for nuclear power surges.
+  takeaway: Amazon-backed X-energy was able to raise around 20% more money in its
+    IPO as demand for nuclear power surges.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/nuclear-startup-x-energy-raises-1b-in-data-center-driven-ipo/
+  source: TechCrunch
+  published_utc: '2026-04-24T15:06:00+00:00'
+  title_zh: Nuclear startup X-energy raises $1B in data center-driven IPO
+  why_zh: Amazon-backed X-energy was able to raise around 20% more money in its IPO
+    as demand for nuclear power surges.
+  takeaway_zh: Amazon-backed X-energy was able to raise around 20% more money in its
+    IPO as demand for nuclear power surges.
+  prompt_zh: ''
+- category: Tech industry
+  title: Man faces 5 years in prison for using AI to fake sighting of runaway wolf
+  why: Beloved wolf gripped the nation after burrowing out of the zoo.
+  takeaway: Beloved wolf gripped the nation after burrowing out of the zoo.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/after-wolf-escaped-zoo-man-arrested-for-creating-fake-ai-sighting-for-fun/
+  source: Ars Technica
+  published_utc: '2026-04-24T15:05:23+00:00'
+  title_zh: Man faces 5 years in prison for using AI to fake sighting of runaway wolf
+  why_zh: Beloved wolf gripped the nation after burrowing out of the zoo.
+  takeaway_zh: Beloved wolf gripped the nation after burrowing out of the zoo.
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE
+  why: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
+    response to a hard constraint: the most valuable data is often t…'
+  takeaway: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
+    response to a hard constraint: the most valuable data is often the least movable....'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-24T15:00:00+00:00'
+  title_zh: Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE
+  why_zh: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
+    response to a hard constraint: the most valuable data is often t…'
+  takeaway_zh: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
+    response to a hard constraint: the most valuable data is often the least movable....'
+  prompt_zh: ''
+- category: AI frontier
+  title: Apple's Next CEO Needs to Launch a Killer AI Product
+  why: Tim Cook was a great CEO, but he didn’t crack AI.
+  takeaway: Tim Cook was a great CEO, but he didn’t crack AI. It’s job number 1 for
+    John Ternus.
+  prompt: ''
+  url: https://www.wired.com/story/apples-next-ceo-needs-to-launch-a-killer-ai-product/
+  source: WIRED - AI
+  published_utc: '2026-04-24T15:00:00+00:00'
+  title_zh: Apple's Next CEO Needs to Launch a Killer AI Product
+  why_zh: Tim Cook was a great CEO, but he didn’t crack AI.
+  takeaway_zh: Tim Cook was a great CEO, but he didn’t crack AI. It’s job number 1
+    for John Ternus.
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Well, this is embarrassing: The Lunar Gateway''s primary modules are corroded'
+  why: '"Preliminary findings indicate that the issue likely results from a combination
+    of factors."'
+  takeaway: '"Preliminary findings indicate that the issue likely results from a combination
+    of factors."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/well-this-is-embarrassing-the-lunar-gateways-primary-modules-are-corroded/
+  source: Ars Technica
+  published_utc: '2026-04-24T14:47:19+00:00'
+  title_zh: 'Well, this is embarrassing: The Lunar Gateway''s primary modules are
+    corroded'
+  why_zh: '"Preliminary findings indicate that the issue likely results from a combination
+    of factors."'
+  takeaway_zh: '"Preliminary findings indicate that the issue likely results from
+    a combination of factors."'
+  prompt_zh: ''
+- category: Tech industry
+  title: Different Language Models Learn Similar Number Representations
+  why: 'Article URL: https://arxiv.org/abs/2604.20817 Comments URL: https://news.ycombinator.com/item?id=47890873
+    Points: 89 # Comments: 35'
+  takeaway: 'Article URL: https://arxiv.org/abs/2604.20817 Comments URL: https://news.ycombinator.com/item?id=47890873
+    Points: 89 # Comments: 35'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.20817
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T14:34:23+00:00'
+  title_zh: Different Language Models Learn Similar Number Representations
+  why_zh: 'Article URL: https://arxiv.org/abs/2604.20817 Comments URL: https://news.ycombinator.com/item?id=47890873
+    Points: 89 # Comments: 35'
+  takeaway_zh: 'Article URL: https://arxiv.org/abs/2604.20817 Comments URL: https://news.ycombinator.com/item?id=47890873
+    Points: 89 # Comments: 35'
+  prompt_zh: ''
+- category: AI frontier
+  title: China moves to block tech firms from taking US money without government approval
+  why: China plans to block tech companies from accepting US capital without government
+    approval, according to Bloomberg.
+  takeaway: China plans to block tech companies from accepting US capital without
+    government approval, according to Bloomberg. The article China moves to block
+    tech firms from taking US money without government approval appeared first on
+    The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/china-moves-to-block-tech-firms-from-taking-us-money-without-government-approval/
+  source: The Decoder (AI)
+  published_utc: '2026-04-24T14:33:59+00:00'
+  title_zh: China moves to block tech firms from taking US money without government
+    approval
+  why_zh: China plans to block tech companies from accepting US capital without government
+    approval, according to Bloomberg.
+  takeaway_zh: China plans to block tech companies from accepting US capital without
+    government approval, according to Bloomberg. The article China moves to block
+    tech firms from taking US money without government approval appeared first on
+    The Decoder .
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Browser Harness – Gives LLM freedom to complete any browser task'
+  why: Hey HN, We got tired of browser frameworks restricting the LLM, so we removed
+    the framework and gave the LLM maximum freedom to do whatever…
+  takeaway: Hey HN, We got tired of browser frameworks restricting the LLM, so we
+    removed the framework and gave the LLM maximum freedom to do whatever it's trained
+    on. We gave the harness the ability to self correct and add new tools if the LLM
+    wants (is pre-trained on) that. Our Browser Use library is tens of thousands of
+    lines of deterministic heuristics wrapping Ch…
+  prompt: ''
+  url: https://github.com/browser-use/browser-harness
+  source: Hacker News (front page)
+  published_utc: '2026-04-24T14:31:38+00:00'
+  title_zh: 'Show HN: Browser Harness – Gives LLM freedom to complete any browser
+    task'
+  why_zh: Hey HN, We got tired of browser frameworks restricting the LLM, so we removed
+    the framework and gave the LLM maximum freedom to do whatever…
+  takeaway_zh: Hey HN, We got tired of browser frameworks restricting the LLM, so
+    we removed the framework and gave the LLM maximum freedom to do whatever it's
+    trained on. We gave the harness the ability to self correct and add new tools
+    if the LLM wants (is pre-trained on) that. Our Browser Use library is tens of
+    thousands of lines of deterministic heuristics wrapping Ch…
+  prompt_zh: ''
+- category: Tech industry
+  title: Another spyware maker caught distributing fake Android snooping apps
+  why: Researchers have found a new case where government authorities used a fake
+    Android app to plant spyware on a target’s phone.
+  takeaway: Researchers have found a new case where government authorities used a
+    fake Android app to plant spyware on a target’s phone. The company that allegedly
+    developed the spyware was not previously known to sell this type of software.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/another-spyware-maker-caught-distributing-fake-android-snooping-apps/
+  source: TechCrunch
+  published_utc: '2026-04-24T14:17:55+00:00'
+  title_zh: Another spyware maker caught distributing fake Android snooping apps
+  why_zh: Researchers have found a new case where government authorities used a fake
+    Android app to plant spyware on a target’s phone.
+  takeaway_zh: Researchers have found a new case where government authorities used
+    a fake Android app to plant spyware on a target’s phone. The company that allegedly
+    developed the spyware was not previously known to sell this type of software.
+  prompt_zh: ''
+- category: AI frontier
+  title: Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
+  why: Meta is purchasing tens of millions of AWS Graviton 5 processor cores from
+    Amazon, making it one of the largest Graviton customers in the w…
+  takeaway: Meta is purchasing tens of millions of AWS Graviton 5 processor cores
+    from Amazon, making it one of the largest Graviton customers in the world. The
+    article Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/meta-buys-tens-of-millions-of-aws-graviton-5-processor-cores-from-amazon/
+  source: The Decoder (AI)
+  published_utc: '2026-04-24T14:12:58+00:00'
+  title_zh: Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
+  why_zh: Meta is purchasing tens of millions of AWS Graviton 5 processor cores from
+    Amazon, making it one of the largest Graviton customers in the w…
+  takeaway_zh: Meta is purchasing tens of millions of AWS Graviton 5 processor cores
+    from Amazon, making it one of the largest Graviton customers in the world. The
+    article Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
+    appeared first on The Decoder .
+  prompt_zh: ''
+- category: Tech industry
+  title: Uber CTO Praveen Neppalli Naga joins stacked StrictlyVC SF lineup for April
+    30 event
+  why: Surprise!
+  takeaway: Surprise! StrictlyVC San Francisco, which will kick off this year’s events
+    lineup for TechCrunch on April 30 at the Sentro Filipino Cultural Center, is getting
+    a new addition to its increasingly stacked lineup of speakers. Uber CTO Praveen
+    Neppalli Naga will join the rest of the lineup to discuss operating at scale in
+    the age of AI.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/uber-cto-praveen-neppalli-naga-joins-stacked-strictlyvc-sf-lineup-for-april-30-event/
+  source: TechCrunch
+  published_utc: '2026-04-24T14:00:00+00:00'
+  title_zh: Uber CTO Praveen Neppalli Naga joins stacked StrictlyVC SF lineup for
+    April 30 event
+  why_zh: Surprise!
+  takeaway_zh: Surprise! StrictlyVC San Francisco, which will kick off this year’s
+    events lineup for TechCrunch on April 30 at the Sentro Filipino Cultural Center,
+    is getting a new addition to its increasingly stacked lineup of speakers. Uber
+    CTO Praveen Neppalli Naga will join the rest of the lineup to discuss operating
+    at scale in the age of AI.
+  prompt_zh: ''
+- category: Tech industry
+  title: Tim Cook is stepping down. What happens to Apple now?
+  why: Tim Cook plans to step down from his CEO role in September, handing the reins
+    to hardware chief John Ternus.
+  takeaway: Tim Cook plans to step down from his CEO role in September, handing the
+    reins to hardware chief John Ternus. Ternus may be inheriting one of the most
+    durable businesses in tech, but he’s also stepping into a very different ecosystemthan
+    the one Cook spent decades shaping. The App Store’s 30% cut is under pressure,
+    the behind-the-scenes power Apple once […]
+  prompt: ''
+  url: https://techcrunch.com/video/tim-cook-is-stepping-down-what-happens-to-apple-now/
+  source: TechCrunch
+  published_utc: '2026-04-24T14:00:00+00:00'
+  title_zh: Tim Cook is stepping down. What happens to Apple now?
+  why_zh: Tim Cook plans to step down from his CEO role in September, handing the
+    reins to hardware chief John Ternus.
+  takeaway_zh: Tim Cook plans to step down from his CEO role in September, handing
+    the reins to hardware chief John Ternus. Ternus may be inheriting one of the most
+    durable businesses in tech, but he’s also stepping into a very different ecosystemthan
+    the one Cook spent decades shaping. The App Store’s 30% cut is under pressure,
+    the behind-the-scenes power Apple once […]
+  prompt_zh: ''
+- category: Tech industry
+  title: As electric aspirations fade, Porsche sells its stake in Bugatti
+  why: Porsche's stake in Bugatti and Rimac Group have been sold to private equity.
+  takeaway: Porsche's stake in Bugatti and Rimac Group have been sold to private equity.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/04/as-electric-aspirations-fade-porsche-sells-its-stake-in-bugatti/
+  source: Ars Technica
+  published_utc: '2026-04-24T13:54:17+00:00'
+  title_zh: As electric aspirations fade, Porsche sells its stake in Bugatti
+  why_zh: Porsche's stake in Bugatti and Rimac Group have been sold to private equity.
+  takeaway_zh: Porsche's stake in Bugatti and Rimac Group have been sold to private
+    equity.
+  prompt_zh: ''
+- category: Tech industry
+  title: Nothing introduces an AI-powered dictation tool
+  why: Nothing's new on-device dictation tool supports over 100 languages.
+  takeaway: Nothing's new on-device dictation tool supports over 100 languages.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/nothing-introduces-an-ai-powered-dictation-tool/
+  source: TechCrunch
+  published_utc: '2026-04-24T13:41:42+00:00'
+  title_zh: Nothing introduces an AI-powered dictation tool
+  why_zh: Nothing's new on-device dictation tool supports over 100 languages.
+  takeaway_zh: Nothing's new on-device dictation tool supports over 100 languages.
+  prompt_zh: ''
+- category: Tech industry
+  title: Six things I'll remember when I think about Tim Cook's version of Apple
+  why: Under Cook, Apple became hugely successful, if not always surprising.
+  takeaway: Under Cook, Apple became hugely successful, if not always surprising.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/six-things-ill-remember-when-i-think-about-tim-cooks-version-of-apple/
+  source: Ars Technica
+  published_utc: '2026-04-24T13:40:50+00:00'
+  title_zh: Six things I'll remember when I think about Tim Cook's version of Apple
+  why_zh: Under Cook, Apple became hugely successful, if not always surprising.
+  takeaway_zh: Under Cook, Apple became hugely successful, if not always surprising.
+  prompt_zh: ''
+- category: Tech industry
+  title: DeepSeek previews new AI model that ‘closes the gap’ with frontier models
+  why: DeepSeek says both models are more efficient and performant than DeepSeek V3.2
+    due to architectural improvements, and have almost "closed t…
+  takeaway: DeepSeek says both models are more efficient and performant than DeepSeek
+    V3.2 due to architectural improvements, and have almost "closed the gap" with
+    current leading models, both open and closed, on reasoning benchmarks.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/
+  source: TechCrunch
+  published_utc: '2026-04-24T13:30:59+00:00'
+  title_zh: DeepSeek previews new AI model that ‘closes the gap’ with frontier models
+  why_zh: DeepSeek says both models are more efficient and performant than DeepSeek
+    V3.2 due to architectural improvements, and have almost "closed t…
+  takeaway_zh: DeepSeek says both models are more efficient and performant than DeepSeek
+    V3.2 due to architectural improvements, and have almost "closed the gap" with
+    current leading models, both open and closed, on reasoning benchmarks.
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump administration attempt to gut Endangered Species Act hits roadblock
+  why: House vote to defang the Endangered Species Act was unexpectedly cancelled
+  takeaway: House vote to defang the Endangered Species Act was unexpectedly cancelled
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/trump-administration-attempt-to-gut-endangered-species-act-hits-roadblock/
+  source: Ars Technica
+  published_utc: '2026-04-24T13:17:00+00:00'
+  title_zh: Trump administration attempt to gut Endangered Species Act hits roadblock
+  why_zh: House vote to defang the Endangered Species Act was unexpectedly cancelled
+  takeaway_zh: House vote to defang the Endangered Species Act was unexpectedly cancelled
+  prompt_zh: ''
+- category: AI frontier
+  title: Cohere takes over Aleph Alpha shortly after the German startup ousted its
+    original founder
+  why: Just months after founder Jonas Andrulis was pushed out, Canadian AI company
+    Cohere is taking over Aleph Alpha - once hailed as Germany's a…
+  takeaway: Just months after founder Jonas Andrulis was pushed out, Canadian AI company
+    Cohere is taking over Aleph Alpha - once hailed as Germany's answer to OpenAI.
+    The Schwarz Group is putting $600 million into the deal. The article Cohere takes
+    over Aleph Alpha shortly after the German startup ousted its original founder
+    appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/cohere-takes-over-aleph-alpha-shortly-after-the-german-startup-ousted-its-original-founder/
+  source: The Decoder (AI)
+  published_utc: '2026-04-24T12:55:19+00:00'
+  title_zh: Cohere takes over Aleph Alpha shortly after the German startup ousted
+    its original founder
+  why_zh: Just months after founder Jonas Andrulis was pushed out, Canadian AI company
+    Cohere is taking over Aleph Alpha - once hailed as Germany's a…
+  takeaway_zh: Just months after founder Jonas Andrulis was pushed out, Canadian AI
+    company Cohere is taking over Aleph Alpha - once hailed as Germany's answer to
+    OpenAI. The Schwarz Group is putting $600 million into the deal. The article Cohere
+    takes over Aleph Alpha shortly after the German startup ousted its original founder
+    appeared first on The Decoder .
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Download: supercharged scams and studying AI healthcare'
+  why: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology.
+  takeaway: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology. We’re in a new era
+    of AI-driven scams When ChatGPT was released in late 2022, it showed how easily
+    generative AI could create human-like text. This quickly caught the eye of…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/04/24/1136400/the-download-supercharged-scams-questionable-ai-healthcare/
+  source: MIT Technology Review
+  published_utc: '2026-04-24T12:10:00+00:00'
+  title_zh: 'The Download: supercharged scams and studying AI healthcare'
+  why_zh: This is today’s edition of The Download, our weekday newsletter that provides
+    a daily dose of what’s going on in the world of technology.
+  takeaway_zh: This is today’s edition of The Download, our weekday newsletter that
+    provides a daily dose of what’s going on in the world of technology. We’re in
+    a new era of AI-driven scams When ChatGPT was released in late 2022, it showed
+    how easily generative AI could create human-like text. This quickly caught the
+    eye of…
+  prompt_zh: ''
+- category: Tech industry
+  title: In another wild turn for AI chips, Meta signs deal for millions of Amazon
+    AI CPUs
+  why: Meta has commandeered a big chunk of Amazon's homegrown CPUs (not GPUs) for
+    AI agentic workloads, signaling that a new kind of chip race ha…
+  takeaway: Meta has commandeered a big chunk of Amazon's homegrown CPUs (not GPUs)
+    for AI agentic workloads, signaling that a new kind of chip race has begun.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/24/in-another-wild-turn-for-ai-chips-meta-signs-deal-for-millions-of-amazon-ai-cpus/
+  source: TechCrunch
+  published_utc: '2026-04-24T12:00:00+00:00'
+  title_zh: In another wild turn for AI chips, Meta signs deal for millions of Amazon
+    AI CPUs
+  why_zh: Meta has commandeered a big chunk of Amazon's homegrown CPUs (not GPUs)
+    for AI agentic workloads, signaling that a new kind of chip race ha…
+  takeaway_zh: Meta has commandeered a big chunk of Amazon's homegrown CPUs (not GPUs)
+    for AI agentic workloads, signaling that a new kind of chip race has begun.
+  prompt_zh: ''
+- category: Security
+  title: CISA Adds Four Known Exploited Vulnerabilities to Catalog
+  why: CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities
+    (KEV) Catalog , based on evidence of active exploitation.
+  takeaway: CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities
+    (KEV) Catalog , based on evidence of active exploitation. CVE-2024-7399 Samsung
+    MagicINFO 9 Server Path Traversal Vulnerability CVE-2024-57726 SimpleHelp Missing
+    Authorization Vulnerability CVE-2024-57728 SimpleHelp Path Traversal Vulnerability
+    CVE-2025-29635 D-Link DIR-823X Comm…
+  prompt: ''
+  url: https://www.cisa.gov/news-events/alerts/2026/04/24/cisa-adds-four-known-exploited-vulnerabilities-catalog
+  source: CISA Current Activity
+  published_utc: '2026-04-24T12:00:00+00:00'
+  title_zh: CISA Adds Four Known Exploited Vulnerabilities to Catalog
+  why_zh: CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities
+    (KEV) Catalog , based on evidence of active exploitation.
+  takeaway_zh: CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities
+    (KEV) Catalog , based on evidence of active exploitation. CVE-2024-7399 Samsung
+    MagicINFO 9 Server Path Traversal Vulnerability CVE-2024-57726 SimpleHelp Missing
+    Authorization Vulnerability CVE-2024-57728 SimpleHelp Path Traversal Vulnerability
+    CVE-2025-29635 D-Link DIR-823X Comm…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI company'
+  why: '"If it doesn’t rely on a solid, there’s no reason why we can’t launch."'
+  takeaway: '"If it doesn’t rely on a solid, there’s no reason why we can’t launch."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/rocket-report-some-canadians-dont-want-a-spaceport-falcon-hits-600-landings/
+  source: Ars Technica
+  published_utc: '2026-04-24T11:00:36+00:00'
+  title_zh: 'Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI
+    company'
+  why_zh: '"If it doesn’t rely on a solid, there’s no reason why we can’t launch."'
+  takeaway_zh: '"If it doesn’t rely on a solid, there’s no reason why we can’t launch."'
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic confirms Claude Code problems and promises stricter quality controls
+  why: Users complained about declining quality in Claude Code.
+  takeaway: Users complained about declining quality in Claude Code. Anthropic identified
+    and fixed three separate sources of error. The company promises stricter quality
+    controls going forward. The article Anthropic confirms Claude Code problems and
+    promises stricter quality controls appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/anthropic-confirms-claude-code-problems-and-promises-stricter-quality-controls/
+  source: The Decoder (AI)
+  published_utc: '2026-04-24T10:52:07+00:00'
+  title_zh: Anthropic confirms Claude Code problems and promises stricter quality
+    controls
+  why_zh: Users complained about declining quality in Claude Code.
+  takeaway_zh: Users complained about declining quality in Claude Code. Anthropic
+    identified and fixed three separate sources of error. The company promises stricter
+    quality controls going forward. The article Anthropic confirms Claude Code problems
+    and promises stricter quality controls appeared first on The Decoder .
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.9.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.9.2
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-04-24T09:56:14+00:00'
+  title_zh: 'open-webui/open-webui: v0.9.2'
+  why_zh: Release update (see link for changelog).
+  takeaway_zh: ''
+  prompt_zh: ''

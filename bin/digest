@@ -2462,11 +2462,14 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     max_ai = int(digest.get("max_items_ai", 0) or DEFAULT_MAX_AI_ITEMS_ON_SITE)
 
     if lang == "zh":
-        # For zh pages, ensure visible text is Chinese (don't fall back to EN).
+        # Prefer Chinese fields when available, but never render an empty zh page just because
+        # translation is temporarily unavailable. In that case, keep the issue readable by
+        # falling back to whatever text we have (often EN copied into *_zh fields).
         ranked_zh: list[dict[str, Any]] = []
         for it in ranked:
             t_zh = (it.get("title_zh") or "").strip()
-            if not t_zh or not _has_cjk(t_zh):
+            t_en = (it.get("title") or "").strip()
+            if not t_zh and not t_en:
                 continue
             ranked_zh.append(it)
         items_news = [it for it in ranked_zh if (it.get("category") or "").strip() != ai_cat][:max_news]
@@ -2565,10 +2568,16 @@ def _md_for_lang(date: dt.date, digest: dict[str, Any], *, lang: str) -> Path:
     def _short(it: dict[str, Any]) -> str:
         if lang == "zh":
             why = (it.get("why_zh") or "").strip()
-            if why and _has_cjk(why):
+            if why:
                 return why
             take = (it.get("takeaway_zh") or "").strip()
-            return _first_sentence(take, 120) if take and _has_cjk(take) else ""
+            if take:
+                return _first_sentence(take, 120)
+            why_en = (it.get("why") or "").strip()
+            if why_en:
+                return why_en
+            take_en = (it.get("takeaway") or "").strip()
+            return _first_sentence(take_en, 120) if take_en else ""
         why = _pick_lang(it, "why", "why_zh", lang)
         if why:
             return why

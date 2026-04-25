@@ -58,7 +58,6 @@ DEFAULT_MAX_AI_ITEMS_ON_SITE = 80
 DEFAULT_TRANSLATE_MODEL = "deepseek/deepseek-chat"
 DEFAULT_TRANSLATE_FALLBACK_MODELS = [
     "qwen/qwen-2.5-7b-instruct",
-    "mistralai/mistral-7b-instruct",
 ]
 
 # feedparser uses urllib under the hood and may otherwise block indefinitely on slow/blocked feeds.
@@ -241,7 +240,8 @@ def _openrouter_key() -> str | None:
         env = _parse_dotenv(p)
         key2 = (env.get("OPENROUTER_API_KEY") or "").strip()
         if key2 and not key2.lower().startswith("your_") and not key2.startswith("<"):
-            os.environ.setdefault("OPENROUTER_API_KEY", key2)
+            # Prefer the freshest discovered key over a stale inherited env var.
+            os.environ["OPENROUTER_API_KEY"] = key2
             return key2
 
     return None
@@ -2191,10 +2191,12 @@ def render_card(
             im = ImageEnhance.Contrast(im).enhance(0.95)
             return im
 
-        # 2) Optionally auto-generate a vivid background using an image-capable Gemini model
+        # 2) Optionally auto-generate a vivid background using an image-capable model
         # (then blur it so it behaves like a background, not a poster).
-        # Default: if OPENROUTER_API_KEY is available, we generate (unless explicitly disabled).
-        do_generate = _as_bool_default(os.environ.get("DIGEST_CARD_BG_GENERATE"), default=bool(_openrouter_key()))
+        #
+        # Keep this opt-in. Some OpenRouter image models are region-restricted, and a failed
+        # background request should never block the daily digest pipeline.
+        do_generate = _as_bool_default(os.environ.get("DIGEST_CARD_BG_GENERATE"), default=False)
         if do_generate and _openrouter_key():
             bg_cache_dir = CARD_DIR / "_bg"
             bg_cache_dir.mkdir(parents=True, exist_ok=True)
@@ -2202,22 +2204,30 @@ def render_card(
             if cached.exists():
                 im = _resize_to_cover(Image.open(cached), w, h)
             else:
-                model = (os.environ.get("DIGEST_CARD_BG_MODEL") or "google/gemini-2.5-flash-image").strip()
+                model = (os.environ.get("DIGEST_CARD_BG_MODEL") or "openai/gpt-image-1").strip()
                 prompt = (os.environ.get("DIGEST_CARD_BG_PROMPT") or "").strip() or (
                     "Create an abstract, colorful background suitable for a professional news digest card. "
                     "Style: modern academic, rich color, soft gradients + subtle bokeh, faint data-network vibe. "
                     "No people, no objects, no logos. Square composition."
                 )
-                png = _openrouter_generate_image_png(model=model, prompt=prompt)
-                cached.write_bytes(png)
-                im = _resize_to_cover(Image.open(cached), w, h)
+                try:
+                    png = _openrouter_generate_image_png(model=model, prompt=prompt)
+                    cached.write_bytes(png)
+                    im = _resize_to_cover(Image.open(cached), w, h)
+                except Exception as e:
+                    print(f"warn: card background generation failed ({e}); falling back to local gradient", file=sys.stderr)
+                    im = None
 
-            # Make it behave like a background: blur + slight brighten; keep color but avoid overpowering text.
-            im = im.filter(ImageFilter.GaussianBlur(radius=18))
-            im = ImageEnhance.Color(im).enhance(0.80)
-            im = ImageEnhance.Brightness(im).enhance(1.08)
-            im = ImageEnhance.Contrast(im).enhance(0.95)
-            return im
+            if im is None:
+                # Fall through to the local gradient below.
+                pass
+            else:
+                # Make it behave like a background: blur + slight brighten; keep color but avoid overpowering text.
+                im = im.filter(ImageFilter.GaussianBlur(radius=18))
+                im = ImageEnhance.Color(im).enhance(0.80)
+                im = ImageEnhance.Brightness(im).enhance(1.08)
+                im = ImageEnhance.Contrast(im).enhance(0.95)
+                return im
 
         # Default: subtle gradient + pattern.
         base = Image.new("RGB", (w, h), bg)

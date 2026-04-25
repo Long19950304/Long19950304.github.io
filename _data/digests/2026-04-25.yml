@@ -3,8 +3,8 @@ title: Daily Digest - 2026-04-25
 title_zh: 每日简报 - 2026-04-25
 note: 'Today: In another wild turn for AI chips, Meta signs deal for millions… · Google
   will invest as much as $40 billion in Anthropic · AI: langchain-ai/langchain: langchain-openai==1.2.1.'
-note_zh: '今日关注：In another wild turn for AI chips, Me…；Google will invest as much as
-  $40 bil…；AI：langchain-ai/langchain: langchain…。'
+note_zh: '今日关注：AI芯片领域再掀波澜，Meta签署协议采购数百万亚马逊AI CPU；谷歌将向Anthropic投资多达400亿美元；AI：langchain-ai/langchain:
+  langchain…。'
 items:
 - category: Tech industry
   title: 'Steve Ballmer blasts founder he backed who pleaded guilty to fraud: ‘I was
@@ -17,12 +17,9 @@ items:
   url: https://techcrunch.com/2026/04/24/steve-ballmer-blasts-founder-he-backed-who-pleaded-guilty-to-fraud-i-was-duped-and-feel-silly/
   source: TechCrunch
   published_utc: '2026-04-24T23:32:11+00:00'
-  title_zh: 'Steve Ballmer blasts founder he backed who pleaded guilty to fraud: ‘I
-    was duped and feel silly’'
-  why_zh: Steve Ballmer wrote a fiery letter in the sentencing of disgraced founder
-    Joseph Sanberg documenting all the harm that's befalling him as a…
-  takeaway_zh: Steve Ballmer wrote a fiery letter in the sentencing of disgraced founder
-    Joseph Sanberg documenting all the harm that's befalling him as an investor.
+  title_zh: 史蒂夫·鲍尔默痛斥其支持的诈骗认罪创始人：‘我被骗了，感觉很蠢’
+  why_zh: 史蒂夫·鲍尔默在声讨声名狼藉的创始人约瑟夫·桑伯格的量刑听证会上撰写了一封激烈的信，详述了作为……所遭受的一切伤害
+  takeaway_zh: 史蒂夫·鲍尔默在声讨声名狼藉的创始人约瑟夫·桑伯格的量刑听证会上撰写了一封激烈的信，详述了作为投资者所遭受的一切伤害
   prompt_zh: ''
 - category: AI tools & model releases
   title: Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints
@@ -34,11 +31,9 @@ items:
   url: https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/
   source: NVIDIA Developer Blog
   published_utc: '2026-04-24T23:29:56+00:00'
-  title_zh: Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints
-  why_zh: DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro
-    and DeepSeek-V4-Flash, both targeted at enabling highl…
-  takeaway_zh: DeepSeek just launched its fourth generation of flagship models with
-    DeepSeek-V4-Pro and DeepSeek-V4-Flash, both targeted at enabling highly efficient...
+  title_zh: 使用NVIDIA Blackwell与GPU加速终端构建DeepSeek V4
+  why_zh: DeepSeek刚刚推出第四代旗舰模型——DeepSeek-V4-Pro与DeepSeek-V4-Flash，均旨在实现高……
+  takeaway_zh: DeepSeek刚刚推出第四代旗舰模型——DeepSeek-V4-Pro与DeepSeek-V4-Flash，均旨在实现高效……
   prompt_zh: ''
 - category: Tech industry
   title: 'FusionCore: ROS 2 sensor fusion (IMU and GPS and encoders)'
@@ -50,11 +45,11 @@ items:
   url: https://github.com/manankharwar/fusioncore
   source: Hacker News (front page)
   published_utc: '2026-04-24T22:36:38+00:00'
-  title_zh: 'FusionCore: ROS 2 sensor fusion (IMU and GPS and encoders)'
-  why_zh: 'Article URL: https://github.com/manankharwar/fusioncore Comments URL: https://news.ycombinator.com/item?id=47896670
-    Points: 6 # Comments: 1'
-  takeaway_zh: 'Article URL: https://github.com/manankharwar/fusioncore Comments URL:
-    https://news.ycombinator.com/item?id=47896670 Points: 6 # Comments: 1'
+  title_zh: FusionCore：ROS 2传感器融合（IMU、GPS与编码器）
+  why_zh: '文章链接：https://github.com/manankharwar/fusioncore 评论链接：https://news.ycombinator.com/item?id=47896670
+    积分：6 # 评论数：1'
+  takeaway_zh: '文章链接：https://github.com/manankharwar/fusioncore 评论链接：https://news.ycombinator.com/item?id=47896670
+    积分：6 # 评论数：1'
   prompt_zh: ''
 - category: Tech industry
   title: Google will invest as much as $40 billion in Anthropic
@@ -64,10 +59,9 @@ items:
   url: https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/
   source: Ars Technica
   published_utc: '2026-04-24T22:05:45+00:00'
-  title_zh: Google will invest as much as $40 billion in Anthropic
-  why_zh: This follows a similar, but smaller, investment by Amazon just days ago.
-  takeaway_zh: This follows a similar, but smaller, investment by Amazon just days
-    ago.
+  title_zh: 谷歌将向Anthropic投资多达400亿美元
+  why_zh: 就在几天前，亚马逊也进行了类似但规模较小的投资。
+  takeaway_zh: 就在几天前，亚马逊也进行了类似但规模较小的投资。
   prompt_zh: ''
 - category: Tech industry
   title: Palantir is reportedly helping the IRS investigate financial crimes
@@ -78,11 +72,9 @@ items:
   url: https://techcrunch.com/2026/04/24/palantir-is-reportedly-helping-the-irs-investigate-financial-crimes/
   source: TechCrunch
   published_utc: '2026-04-24T21:53:44+00:00'
-  title_zh: Palantir is reportedly helping the IRS investigate financial crimes
-  why_zh: The IRS has used Palantir's software since at least 2018, The Intercept
-    reports.
-  takeaway_zh: The IRS has used Palantir's software since at least 2018, The Intercept
-    reports.
+  title_zh: 据报道，Palantir正在协助美国国税局调查金融犯罪
+  why_zh: 据The Intercept披露，美国国税局至少在2018年就已开始使用Palantir的软件。
+  takeaway_zh: 据The Intercept披露，美国国税局至少在2018年就已开始使用Palantir的软件。
   prompt_zh: ''
 - category: Tech industry
   title: 'Show HN: I''ve built a nice home server OS'
@@ -96,13 +88,9 @@ items:
   url: https://lightwhale.asklandd.dk/
   source: Hacker News (front page)
   published_utc: '2026-04-24T21:42:26+00:00'
-  title_zh: 'Show HN: I''ve built a nice home server OS'
-  why_zh: ohai!
-  takeaway_zh: ohai! I've released Lightwhale 3, which is possibly the easiest way
-    to self-host Docker containers. It's a free, immutable Linux system purpose-built
-    to live-boot straight into a working Docker Engine, thereby shortcutting the need
-    for installation, configuration, and maintenance. Its simple design makes it easy
-    to learn, and its low memory footprint should…
+  title_zh: Show HN：我开发了一款不错的家用服务器操作系统
+  why_zh: 哦嗨！
+  takeaway_zh: 哦嗨！我刚刚发布了Lightwhale 3——这可能是自托管Docker容器最简易的方案。这款免费的、不可变的Linux系统专为直接启动进入可运行的Docker引擎而设计，省去了安装、配置和维护的繁琐步骤。其简洁的设计易于上手，低内存占用特性还能...
   prompt_zh: ''
 - category: Tech industry
   title: Three reasons why DeepSeek’s new model matters
@@ -117,14 +105,9 @@ items:
   url: https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/
   source: MIT Technology Review
   published_utc: '2026-04-24T21:40:58+00:00'
-  title_zh: Three reasons why DeepSeek’s new model matters
-  why_zh: On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited
-    new flagship model.
-  takeaway_zh: On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited
-    new flagship model. Notably, the model can process much longer prompts than its
-    last generation, thanks to a new design that helps it handle large amounts of
-    text more efficiently. Like DeepSeek’s previous models, V4 is open source, meaning
-    it is available…
+  title_zh: 深度求索新模型为何重要的三个原因
+  why_zh: 1. 上周五，中国AI公司深度求索发布了其备受期待的新旗舰模型V4的预览版。
+  takeaway_zh: 2. 上周五，中国AI公司深度求索发布了其备受期待的新旗舰模型V4的预览版。值得注意的是，由于采用了能更高效处理大量文本的新设计，该模型比上一代能处理的提示词长度大幅提升。与深度求索之前的模型一样，V4也是开源的，这意味着...
   prompt_zh: ''
 - category: Tech industry
   title: Cohere acquires, merges with Germany-based startup to create a ‘transatlantic
@@ -138,13 +121,9 @@ items:
   url: https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/
   source: TechCrunch
   published_utc: '2026-04-24T21:35:30+00:00'
-  title_zh: Cohere acquires, merges with Germany-based startup to create a ‘transatlantic
-    AI powerhouse’
-  why_zh: Cohere, the Canada-based AI company that makes AI tools for businesses in
-    regulated industries, announced Friday it would merge with Aleph…
-  takeaway_zh: Cohere, the Canada-based AI company that makes AI tools for businesses
-    in regulated industries, announced Friday it would merge with Aleph Alpha, a German
-    company that also builds AI systems for businesses and governments.
+  title_zh: 3. Cohere收购并合并德国初创公司，打造“跨大西洋AI巨头”
+  why_zh: 4. 为受监管行业企业提供AI工具的加拿大AI公司Cohere上周五宣布，将与Aleph公司合并...
+  takeaway_zh: 5. 为受监管行业企业提供AI工具的加拿大AI公司Cohere上周五宣布，将与同样为企业及政府开发AI系统的德国公司Aleph Alpha合并。
   prompt_zh: ''
 - category: Tech industry
   title: Europe—not US—first to authorize Moderna's combo mRNA flu-COVID vaccine
@@ -156,11 +135,9 @@ items:
   url: https://arstechnica.com/health/2026/04/europe-not-us-first-to-authorize-modernas-combo-mrna-flu-covid-vaccine/
   source: Ars Technica
   published_utc: '2026-04-24T21:11:43+00:00'
-  title_zh: Europe—not US—first to authorize Moderna's combo mRNA flu-COVID vaccine
-  why_zh: Amid RFK Jr.'s anti-vaccine agenda, Moderna withdrew its FDA application
-    last year.
-  takeaway_zh: Amid RFK Jr.'s anti-vaccine agenda, Moderna withdrew its FDA application
-    last year.
+  title_zh: 6. 欧洲——而非美国——率先批准Moderna的mRNA流感-新冠组合疫苗
+  why_zh: 7. 在小罗伯特·肯尼迪反疫苗议程背景下，Moderna于去年撤回了向美国FDA提交的申请。
+  takeaway_zh: 7. 在小罗伯特·肯尼迪反疫苗议程背景下，Moderna于去年撤回了向美国FDA提交的申请。
   prompt_zh: ''
 - category: Tech industry
   title: Two college kids raise a $5.1 million pre-seed to build an AI social network
@@ -173,12 +150,9 @@ items:
   url: https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/
   source: TechCrunch
   published_utc: '2026-04-24T21:05:59+00:00'
-  title_zh: Two college kids raise a $5.1 million pre-seed to build an AI social network
-    in iMessage
-  why_zh: Series, a social networking app that's grown popular on college campuses,
-    announced a $5.1 million pre-seed round from some big names in te…
-  takeaway_zh: Series, a social networking app that's grown popular on college campuses,
-    announced a $5.1 million pre-seed round from some big names in tech.
+  title_zh: 8. 两名大学生筹资510万美元种子前资金，拟在iMessage平台打造AI社交网络
+  why_zh: Series，一款在大学校园中广受欢迎的社交应用，宣布获得510万美元的pre-seed轮融资，投资方包括科技界的一些知名人士。
+  takeaway_zh: Series，一款在大学校园中广受欢迎的社交应用，宣布获得510万美元的pre-seed轮融资，投资方包括科技界的一些知名人士。
   prompt_zh: ''
 - category: AI tools & model releases
   title: Amazon Quick now integrates with Visier’s Vee agent for workforce intelligence
@@ -193,14 +167,10 @@ items:
   url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-visier-vee/
   source: AWS What's New (Recent Announcements)
   published_utc: '2026-04-24T21:03:00+00:00'
-  title_zh: Amazon Quick now integrates with Visier’s Vee agent for workforce intelligence
-  why_zh: Amazon Quick now integrates with Vee, the AI assistant from Visier's people
-    analytics platform, through the model context protocol (MCP).
-  takeaway_zh: Amazon Quick now integrates with Vee, the AI assistant from Visier's
-    people analytics platform, through the model context protocol (MCP). HR business
-    partners, finance managers, and operations leaders can now get governed access
-    to live workforce intelligence from Visier directly within their Amazon Quick
-    workspace without switching tools. After setting up…
+  title_zh: Amazon Quick现已与Visier的Vee智能助手集成，用于劳动力智能分析。
+  why_zh: Amazon Quick现已通过模型上下文协议（MCP）与Visier人员分析平台的AI助手Vee集成。
+  takeaway_zh: Amazon Quick现已通过模型上下文协议（MCP）与Visier人员分析平台的AI助手Vee集成。人力资源业务伙伴、财务经理和运营领导者现在可以直接在Amazon
+    Quick工作区中获取Visier的实时劳动力智能数据，无需切换工具。设置完成后…
   prompt_zh: ''
 - category: Tech industry
   title: Google Flow Music
@@ -212,11 +182,11 @@ items:
   url: https://www.flowmusic.app/
   source: Hacker News (front page)
   published_utc: '2026-04-24T21:01:50+00:00'
-  title_zh: Google Flow Music
-  why_zh: 'Article URL: https://www.flowmusic.app/ Comments URL: https://news.ycombinator.com/item?id=47895765
-    Points: 64 # Comments: 32'
-  takeaway_zh: 'Article URL: https://www.flowmusic.app/ Comments URL: https://news.ycombinator.com/item?id=47895765
-    Points: 64 # Comments: 32'
+  title_zh: ''
+  why_zh: 文章链接：https://www.flowmusic.app/ 评论链接：https://news.ycombinator.com/item?id=47895765
+    得分：64 评论数：32
+  takeaway_zh: 文章链接：https://www.flowmusic.app/ 评论链接：https://news.ycombinator.com/item?id=47895765
+    得分：64 评论数：32
   prompt_zh: ''
 - category: AI tools & model releases
   title: Amazon Bedrock AgentCore Gateway and Identity support VPC egress
@@ -231,14 +201,10 @@ items:
   url: https://aws.amazon.com/about-aws/whats-new/2024/04/agentcore-gateway-identity-vpc/
   source: AWS What's New (Recent Announcements)
   published_utc: '2026-04-24T21:00:00+00:00'
-  title_zh: Amazon Bedrock AgentCore Gateway and Identity support VPC egress
-  why_zh: Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled
-    egress traffic management for your applications, enabling s…
-  takeaway_zh: Amazon Bedrock AgentCore Gateway and Identity now provide secure and
-    controlled egress traffic management for your applications, enabling seamless
-    communication with resources in your Virtual Private Cloud (VPC). VPC egress for
-    AgentCore Gateway targets and Identity credential providers are offered in both
-    managed and self-managed configurations. With VPC e…
+  title_zh: Amazon Bedrock AgentCore Gateway和Identity支持VPC出口流量。
+  why_zh: Amazon Bedrock AgentCore Gateway与Identity现为您的应用程序提供安全可控的出口流量管理，使…
+  takeaway_zh: Amazon Bedrock AgentCore Gateway与Identity现为您的应用程序提供安全可控的出口流量管理，实现与虚拟私有云（VPC）内资源的无缝通信。AgentCore
+    Gateway目标与Identity凭证提供商的VPC出口功能，均支持托管与自托管两种配置。借助VPC…
   prompt_zh: ''
 - category: Tech industry
   title: Meta’s loss is Thinking Machines’ gain
@@ -249,10 +215,9 @@ items:
   url: https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/
   source: TechCrunch
   published_utc: '2026-04-24T20:52:07+00:00'
-  title_zh: Meta’s loss is Thinking Machines’ gain
-  why_zh: Meta has been poaching talent from Thinking Machines Lab.
-  takeaway_zh: Meta has been poaching talent from Thinking Machines Lab. But it's
-    a two-way street.
+  title_zh: Meta的损失是Thinking Machines的收获
+  why_zh: Meta一直在从Thinking Machines Lab挖角人才。
+  takeaway_zh: Meta一直在从Thinking Machines Lab挖角人才，但这是一条双向道。
   prompt_zh: ''
 - category: Tech industry
   title: Microsoft will let you pause Windows Updates indefinitely, 35 days at a time
@@ -266,15 +231,10 @@ items:
   url: https://www.theverge.com/tech/918572/microsoft-windows-updates-pause-35-days
   source: The Verge
   published_utc: '2026-04-24T20:45:58+00:00'
-  title_zh: Microsoft will let you pause Windows Updates indefinitely, 35 days at
-    a time
-  why_zh: Windows users will no longer be forced to run automatic updates in the middle
-    of a game or a busy day.
-  takeaway_zh: Windows users will no longer be forced to run automatic updates in
-    the middle of a game or a busy day. Microsoft is rolling out some long-awaited
-    changes to Windows Update to users on its Dev and Experimental Windows Insider
-    channels, including the ability to indefinitely delay updates up to 35 days at
-    a time. […]
+  title_zh: 微软将允许您无限期暂停Windows更新，每次最多35天
+  why_zh: Windows用户将不再被迫在游戏或忙碌时段运行自动更新。
+  takeaway_zh: Windows用户将不再被迫在游戏或忙碌时段运行自动更新。微软正面向Dev和Experimental Windows Insider渠道的用户推出一些期待已久的Windows
+    Update变更，包括每次最多35天的无限期更新延迟功能。[…]
   prompt_zh: ''
 - category: Tech industry
   title: X-energy stock pops 27% on first day of trading following upsized IPO
@@ -286,11 +246,9 @@ items:
   url: https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/
   source: TechCrunch
   published_utc: '2026-04-24T20:10:54+00:00'
-  title_zh: X-energy stock pops 27% on first day of trading following upsized IPO
-  why_zh: Investors flocked to nuclear power startup X-energy in its first day of
-    public trading on the Nasdaq.
-  takeaway_zh: Investors flocked to nuclear power startup X-energy in its first day
-    of public trading on the Nasdaq.
+  title_zh: X-energy股票在扩大规模IPO后首日交易大涨27%
+  why_zh: 投资者在纳斯达克首日公开交易中蜂拥抢购核能初创公司X-energy的股票
+  takeaway_zh: 投资者在纳斯达克首日公开交易中蜂拥抢购核能初创公司X-energy的股票
   prompt_zh: ''
 - category: Tech industry
   title: Alex Jones has uncovered another massive conspiracy
@@ -305,14 +263,10 @@ items:
   url: https://www.theverge.com/news/918527/alex-jones-infowars-takeover-the-onion-tim-heidecker
   source: The Verge
   published_utc: '2026-04-24T20:10:00+00:00'
-  title_zh: Alex Jones has uncovered another massive conspiracy
-  why_zh: Alex Jones may soon lose Infowars, the digital perch that he's used for
-    decades to traffic in conspiracy theories, to The Onion, the satiri…
-  takeaway_zh: 'Alex Jones may soon lose Infowars, the digital perch that he''s used
-    for decades to traffic in conspiracy theories, to The Onion, the satirical newspaper.
-    But not before he''s uncovered something truly dastardly: comedian Tim Heidecker''s
-    past (publicly available) work. "The Onion newspaper has been rocked by the discovery
-    that their new creative director, pro…'
+  title_zh: Alex Jones揭露了另一场大规模阴谋
+  why_zh: Alex Jones可能很快将失去Infowars，这个他数十年来用于传播阴谋论的数字平台，转而落入讽刺媒体The Onion之手…
+  takeaway_zh: Alex Jones可能很快将失去Infowars，这个他数十年来用于传播阴谋论的数字平台，转而落入讽刺报纸The Onion之手。但在此之前，他揭露了喜剧演员Tim
+    Heidecker过去（公开可查）的作品。"The Onion报纸因发现其新任创意总监的过往而震动…"
   prompt_zh: ''
 - category: Tech industry
   title: 'Tell HN: Claude 4.7 is ignoring stop hooks'
@@ -326,13 +280,9 @@ items:
   url: https://news.ycombinator.com/item?id=47895029
   source: Hacker News (front page)
   published_utc: '2026-04-24T19:55:09+00:00'
-  title_zh: 'Tell HN: Claude 4.7 is ignoring stop hooks'
-  why_zh: I've been using Anthropic's hook features [0] since they were introduced.
-  takeaway_zh: I've been using Anthropic's hook features [0] since they were introduced.
-    It allows me to inject determinism into my workflows. This worked perfectly until
-    4.7. Now, Claude routinely ignores the hook rules. For example, I have a stop
-    hook that prevents Claude from stopping if a source file has been changed and
-    no tests have been run. Here's the relvant part…
+  title_zh: 告诉HN：Claude 4.7正在忽略停止钩子
+  why_zh: 自Anthropic的钩子功能[0]推出以来，我一直在使用它们
+  takeaway_zh: 自Anthropic的钩子功能[0]推出以来，我一直在使用它们。它让我能够将确定性注入工作流程。这在4.7版本之前一直运行良好。现在，Claude经常忽略钩子规则。例如，我有一个停止钩子，用于防止在源文件已更改且未运行测试时Claude停止。以下是相关部分…
   prompt_zh: ''
 - category: Tech industry
   title: ComfyUI hits $500M valuation as creators seek more control over AI-generated
@@ -345,12 +295,9 @@ items:
   url: https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/
   source: TechCrunch
   published_utc: '2026-04-24T19:49:35+00:00'
-  title_zh: ComfyUI hits $500M valuation as creators seek more control over AI-generated
-    media
-  why_zh: ComfyUI, whose tools give creators more control over AI image, video, and
-    audio generation, just raised $30 million.
-  takeaway_zh: ComfyUI, whose tools give creators more control over AI image, video,
-    and audio generation, just raised $30 million.
+  title_zh: ComfyUI估值达5亿美元，创作者寻求对AI生成媒体更多控制权
+  why_zh: ComfyUI工具赋予创作者对AI图像、视频及音频生成更多掌控，刚获3000万美元融资
+  takeaway_zh: ComfyUI工具赋予创作者对AI图像、视频及音频生成更多掌控，刚获3000万美元融资
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'langchain-ai/langchain: langchain-openai==1.2.1'
@@ -360,8 +307,8 @@ items:
   url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
   source: GitHub Releases - langchain-ai/langchain
   published_utc: '2026-04-24T19:46:59+00:00'
-  title_zh: 'langchain-ai/langchain: langchain-openai==1.2.1'
-  why_zh: Release update (see link for changelog).
+  title_zh: ''
+  why_zh: 版本更新（详情见链接中的更新日志）
   takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
@@ -374,11 +321,9 @@ items:
   url: https://techcrunch.com/2026/04/24/x-launches-xchat-app-ios-messaging-iphone/
   source: TechCrunch
   published_utc: '2026-04-24T19:46:58+00:00'
-  title_zh: X launches stand-alone XChat app on iOS
-  why_zh: X's new app promises private chats, disappearing messages, audio and video
-    calls, and more.
-  takeaway_zh: X's new app promises private chats, disappearing messages, audio and
-    video calls, and more.
+  title_zh: X在iOS平台推出独立应用XChat
+  why_zh: X新应用承诺提供私密聊天、消息自毁、音视频通话等功能
+  takeaway_zh: X新应用承诺提供私密聊天、消息自毁、音视频通话等功能
   prompt_zh: ''
 - category: Tech industry
   title: The person who allegedly leaked Paramount’s new Avatar movie has been arrested
@@ -393,15 +338,9 @@ items:
   url: https://www.theverge.com/entertainment/918250/avatar-aang-the-last-airbender-leaks-arrest-paramount-plus
   source: The Verge
   published_utc: '2026-04-24T19:45:01+00:00'
-  title_zh: The person who allegedly leaked Paramount’s new Avatar movie has been
-    arrested
-  why_zh: 'Following Paramount Skydance''s move to launch an investigation into how
-    its upcoming Avatar Aang: The Last Airbender animated feature leake…'
-  takeaway_zh: 'Following Paramount Skydance''s move to launch an investigation into
-    how its upcoming Avatar Aang: The Last Airbender animated feature leaked onto
-    the internet, a suspect has been taken into custody by police. The Straits Times
-    reports Singaporean police have arrested a 26-year-old man who is alleged to have
-    uploaded the new Avatar movie (previously titled […'
+  title_zh: 涉嫌泄露派拉蒙新片《阿凡达》者已被逮捕
+  why_zh: 继派拉蒙Skydance对即将上映的动画电影《阿凡达：最后的气宗》泄露事件展开调查后…
+  takeaway_zh: 派拉蒙天空舞步公司对即将上映的动画电影《降世神通：最后的气宗》泄露事件展开调查后，警方已拘留一名嫌疑人。据《海峡时报》报道，新加坡警方逮捕了一名26岁男子，其涉嫌上传了这部新《降世神通》电影（原名为[…]
   prompt_zh: ''
 - category: Tech industry
   title: My audio interface has SSH enabled by default
@@ -413,11 +352,11 @@ items:
   url: https://hhh.hn/rodecaster-duo-fw/
   source: Hacker News (front page)
   published_utc: '2026-04-24T19:30:46+00:00'
-  title_zh: My audio interface has SSH enabled by default
-  why_zh: 'Article URL: https://hhh.hn/rodecaster-duo-fw/ Comments URL: https://news.ycombinator.com/item?id=47894747
-    Points: 129 # Comments: 27'
-  takeaway_zh: 'Article URL: https://hhh.hn/rodecaster-duo-fw/ Comments URL: https://news.ycombinator.com/item?id=47894747
-    Points: 129 # Comments: 27'
+  title_zh: 我的音频接口默认启用了SSH
+  why_zh: 文章链接：https://hhh.hn/rodecaster-duo-fw/ 评论链接：https://news.ycombinator.com/item?id=47894747
+    得分：129 评论数：27
+  takeaway_zh: 文章链接：https://hhh.hn/rodecaster-duo-fw/ 评论链接：https://news.ycombinator.com/item?id=47894747
+    得分：129 评论数：27
   prompt_zh: ''
 - category: Tech industry
   title: 'FCC: Router ban includes portable hotspots, but not phones with hotspot
@@ -429,11 +368,9 @@ items:
   url: https://arstechnica.com/tech-policy/2026/04/fcc-says-ban-on-foreign-made-routers-includes-portable-wi-fi-hotspots/
   source: Ars Technica
   published_utc: '2026-04-24T19:30:14+00:00'
-  title_zh: 'FCC: Router ban includes portable hotspots, but not phones with hotspot
-    features'
-  why_zh: FCC defines consumer routers expansively, updates FAQ to include Wi-Fi hotspots.
-  takeaway_zh: FCC defines consumer routers expansively, updates FAQ to include Wi-Fi
-    hotspots.
+  title_zh: FCC：路由器禁令涵盖便携式热点设备，但不包括具备热点功能的手机
+  why_zh: FCC广泛定义消费级路由器，更新FAQ以纳入Wi-Fi热点
+  takeaway_zh: FCC广泛定义消费级路由器，更新FAQ以纳入Wi-Fi热点
   prompt_zh: ''
 - category: Tech industry
   title: 'TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment'
@@ -445,12 +382,11 @@ items:
   url: https://gdm-tipsv2.github.io/
   source: Hacker News (front page)
   published_utc: '2026-04-24T19:28:32+00:00'
-  title_zh: 'TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text
-    Alignment'
-  why_zh: 'Article URL: https://gdm-tipsv2.github.io/ Comments URL: https://news.ycombinator.com/item?id=47894734
-    Points: 18 # Comments: 1'
-  takeaway_zh: 'Article URL: https://gdm-tipsv2.github.io/ Comments URL: https://news.ycombinator.com/item?id=47894734
-    Points: 18 # Comments: 1'
+  title_zh: TIPSv2：通过增强的补丁-文本对齐推进视觉-语言预训练
+  why_zh: 文章链接：https://gdm-tipsv2.github.io/ 评论链接：https://news.ycombinator.com/item?id=47894734
+    得分：18 评论数：1
+  takeaway_zh: 文章链接：https://gdm-tipsv2.github.io/ 评论链接：https://news.ycombinator.com/item?id=47894734
+    得分：18 评论数：1
   prompt_zh: ''
 - category: Tech industry
   title: The Classic American Diner
@@ -463,12 +399,11 @@ items:
   url: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
   source: Hacker News (front page)
   published_utc: '2026-04-24T19:01:09+00:00'
-  title_zh: The Classic American Diner
-  why_zh: 'Article URL: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
-    Comments URL: https://news.ycombinator.com/item?id=47894…'
-  takeaway_zh: 'Article URL: https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
-    Comments URL: https://news.ycombinator.com/item?id=47894435 Points: 130 # Comments:
-    73'
+  title_zh: 经典美式餐厅
+  why_zh: 文章链接：https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+    评论链接：https://news.ycombinator.com/item?id=47894…
+  takeaway_zh: 文章链接：https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/
+    评论链接：https://news.ycombinator.com/item?id=47894435 得分：130 评论数：73
   prompt_zh: ''
 - category: Security
   title: Why are top university websites serving porn? It comes down to shoddy housekeeping.
@@ -479,12 +414,9 @@ items:
   url: https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/
   source: Ars Technica
   published_utc: '2026-04-24T19:00:39+00:00'
-  title_zh: Why are top university websites serving porn? It comes down to shoddy
-    housekeeping.
-  why_zh: Hundreds of subdomains from dozens of universities have been hijacked by
-    scammers.
-  takeaway_zh: Hundreds of subdomains from dozens of universities have been hijacked
-    by scammers.
+  title_zh: 为何顶尖大学网站会提供色情内容？原因在于管理不善。
+  why_zh: 数十所大学的数百个子域名已被诈骗者劫持。
+  takeaway_zh: 数十所大学的数百个子域名已被诈骗者劫持。
   prompt_zh: ''
 - category: Tech industry
   title: In rare chickenpox case, itchy blisters mushroom into large, rubbery nodules
@@ -494,9 +426,9 @@ items:
   url: https://arstechnica.com/health/2026/04/in-rare-chickenpox-case-itchy-blisters-mushroom-into-large-rubbery-nodules/
   source: Ars Technica
   published_utc: '2026-04-24T18:44:53+00:00'
-  title_zh: In rare chickenpox case, itchy blisters mushroom into large, rubbery nodules
-  why_zh: Treatment options are tricky.
-  takeaway_zh: Treatment options are tricky. The teen opted to live with the masses.
+  title_zh: 罕见水痘病例中，瘙痒水疱迅速膨胀成大型橡胶状结节
+  why_zh: 治疗方案颇为棘手。
+  takeaway_zh: 治疗方案颇为棘手。这名青少年选择与肿块共存。
   prompt_zh: ''
 - category: AI frontier
   title: OpenAI's chief scientist says AI progress has been "surprisingly slow" and
@@ -512,15 +444,9 @@ items:
   url: https://the-decoder.com/openais-chief-scientist-says-ai-progress-has-been-surprisingly-slow-and-promises-big-leaps-ahead/
   source: The Decoder (AI)
   published_utc: '2026-04-24T18:31:15+00:00'
-  title_zh: OpenAI's chief scientist says AI progress has been "surprisingly slow"
-    and promises big leaps ahead
-  why_zh: OpenAI has released GPT-5.5, and the company's leadership says the real
-    breakthroughs are still ahead.
-  takeaway_zh: OpenAI has released GPT-5.5, and the company's leadership says the
-    real breakthroughs are still ahead. Chief scientist Jakub Pachocki expects "extremely
-    significant improvements" in the medium term, calling recent AI progress "surprisingly
-    slow." The article OpenAI's chief scientist says AI progress has been "surprisingly
-    slow" and promises big leaps ahead…
+  title_zh: OpenAI首席科学家称AI进展“出人意料地缓慢”，并承诺未来将有重大突破
+  why_zh: OpenAI发布了GPT-5.5，公司领导层表示真正的突破还在后面。
+  takeaway_zh: OpenAI发布了GPT-5.5，公司领导层表示真正的突破还在后面。首席科学家Jakub Pachocki预计中期将有‘极其显著的改进’，并称近期AI进展‘出人意料地缓慢’。文章《OpenAI首席科学家称AI进展‘出人意料地缓慢’，并承诺未来将有重大飞跃》…
   prompt_zh: ''
 - category: Tech industry
   title: SFO Quiet Airport (2025)
@@ -533,12 +459,11 @@ items:
   url: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
   source: Hacker News (front page)
   published_utc: '2026-04-24T18:29:53+00:00'
-  title_zh: SFO Quiet Airport (2025)
-  why_zh: 'Article URL: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
-    Comme…'
-  takeaway_zh: 'Article URL: https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
-    Comments URL: https://news.ycombinator.com/item?id=47894081 Points: 123 # Comments:
-    73'
+  title_zh: SFO静音机场（2025年）
+  why_zh: 文章链接：https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+    Comme…
+  takeaway_zh: '文章链接：https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/
+    评论链接：https://news.ycombinator.com/item?id=47894081 积分：123 # 评论：73'
   prompt_zh: ''
 - category: Tech industry
   title: OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API
@@ -551,12 +476,10 @@ items:
   url: https://developers.openai.com/api/docs/changelog
   source: Hacker News (front page)
   published_utc: '2026-04-24T18:23:32+00:00'
-  title_zh: OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API
-  why_zh: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026 (1010
-    comments) Comments URL: https://news.ycombinator.com/item?id=478…'
-  takeaway_zh: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026
-    (1010 comments) Comments URL: https://news.ycombinator.com/item?id=47894000 Points:
-    198 # Comments: 110'
+  title_zh: OpenAI在API中发布了GPT-5.5和GPT-5.5 Pro
+  why_zh: GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - 2026年4月（1010条评论）评论链接：https://news.ycombinator.com/item?id=478…
+  takeaway_zh: 'GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - 2026年4月（1010条评论）评论链接：https://news.ycombinator.com/item?id=47894000
+    积分：198 # 评论：110'
   prompt_zh: ''
 - category: Tech industry
   title: There Will Be a Scientific Theory of Deep Learning
@@ -568,11 +491,11 @@ items:
   url: https://arxiv.org/abs/2604.21691
   source: Hacker News (front page)
   published_utc: '2026-04-24T18:06:05+00:00'
-  title_zh: There Will Be a Scientific Theory of Deep Learning
-  why_zh: 'Article URL: https://arxiv.org/abs/2604.21691 Comments URL: https://news.ycombinator.com/item?id=47893779
-    Points: 100 # Comments: 39'
-  takeaway_zh: 'Article URL: https://arxiv.org/abs/2604.21691 Comments URL: https://news.ycombinator.com/item?id=47893779
-    Points: 100 # Comments: 39'
+  title_zh: 深度学习将形成科学理论
+  why_zh: 文章链接：https://arxiv.org/abs/2604.21691 评论链接：https://news.ycombinator.com/item?id=47893779
+    得分：100 评论数：39
+  takeaway_zh: 文章链接：https://arxiv.org/abs/2604.21691 评论链接：https://news.ycombinator.com/item?id=47893779
+    得分：100 评论数：39
   prompt_zh: ''
 - category: Tech industry
   title: Google to invest up to $40B in Anthropic in cash and compute
@@ -585,12 +508,9 @@ items:
   url: https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/
   source: TechCrunch
   published_utc: '2026-04-24T18:00:03+00:00'
-  title_zh: Google to invest up to $40B in Anthropic in cash and compute
-  why_zh: Google plans up to $40B investment in Anthropic as AI rivals race to secure
-    massive compute capacity, following the limited release of its…
-  takeaway_zh: Google plans up to $40B investment in Anthropic as AI rivals race to
-    secure massive compute capacity, following the limited release of its powerful,
-    cybersecurity-focused Mythos model.
+  title_zh: 谷歌将向Anthropic投资高达400亿美元，包括现金和计算资源
+  why_zh: 谷歌计划向Anthropic投资高达400亿美元，AI竞争对手正竞相确保大规模计算能力，此前其…
+  takeaway_zh: 谷歌计划向Anthropic投资高达400亿美元，AI竞争对手正竞相确保大规模计算能力，此前其专注于网络安全的强大模型Mythos已有限发布。
   prompt_zh: ''
 - category: Tech industry
   title: Yong Wang Turns Information Into Insights
@@ -605,14 +525,9 @@ items:
   url: https://spectrum.ieee.org/yong-wang-data-visualization
   source: IEEE Spectrum
   published_utc: '2026-04-24T18:00:02+00:00'
-  title_zh: Yong Wang Turns Information Into Insights
-  why_zh: When Yong Wang recently received one of the highest honors for early-career
-    data visualization researchers, it marked a milestone in an ext…
-  takeaway_zh: When Yong Wang recently received one of the highest honors for early-career
-    data visualization researchers, it marked a milestone in an extraordinary journey
-    that began far from the world’s technology hubs. Wang was born in a small farming
-    village in southwestern China to parents with little formal education and few
-    electronic devices. Today the IEEE member…
+  title_zh: 王勇将信息转化为洞察
+  why_zh: 王勇近期获得数据可视化领域早期职业研究者的最高荣誉之一，这标志着他从世界技术中心之外开始的非凡旅程中的一个里程碑…
+  takeaway_zh: 王勇近期获得数据可视化领域早期职业研究者的最高荣誉之一，这标志着他从世界技术中心之外开始的非凡旅程中的一个里程碑。王勇出生于中国西南部的一个小农村，父母受教育程度不高，家中几乎没有电子设备。如今，这位IEEE成员…
   prompt_zh: ''
 - category: Tech industry
   title: 'CC-Canary: Detect early signs of regressions in Claude Code'
@@ -624,11 +539,11 @@ items:
   url: https://github.com/delta-hq/cc-canary
   source: Hacker News (front page)
   published_utc: '2026-04-24T17:53:37+00:00'
-  title_zh: 'CC-Canary: Detect early signs of regressions in Claude Code'
-  why_zh: 'Article URL: https://github.com/delta-hq/cc-canary Comments URL: https://news.ycombinator.com/item?id=47893620
-    Points: 37 # Comments: 17'
-  takeaway_zh: 'Article URL: https://github.com/delta-hq/cc-canary Comments URL: https://news.ycombinator.com/item?id=47893620
-    Points: 37 # Comments: 17'
+  title_zh: CC-Canary：检测Claude代码中的早期回归迹象
+  why_zh: 文章链接：https://github.com/delta-hq/cc-canary 评论链接：https://news.ycombinator.com/item?id=47893620
+    得分：37 评论数：17
+  takeaway_zh: 文章链接：https://github.com/delta-hq/cc-canary 评论链接：https://news.ycombinator.com/item?id=47893620
+    得分：37 评论数：17
   prompt_zh: ''
 - category: Tech industry
   title: Soldier won $410K in Polymarket bets on timing of Maduro capture, US alleges
@@ -639,10 +554,9 @@ items:
   url: https://arstechnica.com/tech-policy/2026/04/soldier-won-410k-in-polymarket-bets-on-timing-of-maduro-capture-us-alleges/
   source: Ars Technica
   published_utc: '2026-04-24T17:41:43+00:00'
-  title_zh: Soldier won $410K in Polymarket bets on timing of Maduro capture, US alleges
-  why_zh: It's like "Pete Rose betting on his own team," Trump says of arrested soldier.
-  takeaway_zh: It's like "Pete Rose betting on his own team," Trump says of arrested
-    soldier.
+  title_zh: 士兵在Polymarket上押注马杜罗被捕时间获利41万美元，美国检方指控
+  why_zh: 特朗普评价被捕士兵："就像皮特·罗斯赌自己球队输赢"
+  takeaway_zh: 特朗普评价被捕士兵："就像皮特·罗斯赌自己球队输赢"
   prompt_zh: ''
 - category: Tech industry
   title: CSS as a Query Language
@@ -654,11 +568,11 @@ items:
   url: https://evdc.me/blog/css-query
   source: Hacker News (front page)
   published_utc: '2026-04-24T17:39:37+00:00'
-  title_zh: CSS as a Query Language
-  why_zh: 'Article URL: https://evdc.me/blog/css-query Comments URL: https://news.ycombinator.com/item?id=47893427
-    Points: 54 # Comments: 19'
-  takeaway_zh: 'Article URL: https://evdc.me/blog/css-query Comments URL: https://news.ycombinator.com/item?id=47893427
-    Points: 54 # Comments: 19'
+  title_zh: CSS作为一种查询语言
+  why_zh: 文章链接：https://evdc.me/blog/css-query 评论链接：https://news.ycombinator.com/item?id=47893427
+    得分：54 评论数：19
+  takeaway_zh: 文章链接：https://evdc.me/blog/css-query 评论链接：https://news.ycombinator.com/item?id=47893427
+    得分：54 评论数：19
   prompt_zh: ''
 - category: Tech industry
   title: BMW is one step closer to selling you a color-changing car
@@ -672,13 +586,10 @@ items:
   url: https://www.theverge.com/tech/918216/bmw-ix3-flow-edition-concept-car-2026-beijing-auto-show-e-ink-color-changing
   source: The Verge
   published_utc: '2026-04-24T17:31:44+00:00'
-  title_zh: BMW is one step closer to selling you a color-changing car
-  why_zh: At CES 2022, BMW debuted its BMW iX Flow concept car that could dynamically
-    change its appearance using the same grayscale E Ink panels fou…
-  takeaway_zh: At CES 2022, BMW debuted its BMW iX Flow concept car that could dynamically
-    change its appearance using the same grayscale E Ink panels found in e-readers
-    like the Kindle. It was followed by the BMW i Vision Dee concept and the BMW i5
-    Flow Nostokana that were both upgraded with color E Ink panels. […]
+  title_zh: 宝马离量产变色汽车更近一步
+  why_zh: 在2022年CES展上，宝马推出iX Flow概念车，通过灰度电子墨水屏实现外观动态变化
+  takeaway_zh: 在2022年国际消费电子展上，宝马首次展示了BMW iX Flow概念车，该车采用与Kindle电子阅读器相同的灰度电子墨水屏技术实现动态外观变化。随后推出的BMW
+    i Vision Dee概念车和BMW i5 Flow Nostokana均升级搭载了彩色电子墨水面板。[…]
   prompt_zh: ''
 - category: Tech industry
   title: Google’s handsome Pixel Watch 4 is on sale for $40 off in both size configurations
@@ -692,13 +603,10 @@ items:
   url: https://www.theverge.com/gadgets/917924/google-pixel-watch-4-apple-airpods-deal-sale
   source: The Verge
   published_utc: '2026-04-24T17:25:49+00:00'
-  title_zh: Google’s handsome Pixel Watch 4 is on sale for $40 off in both size configurations
-  why_zh: Spring has sprung, as they say, and to mark the occasion, Google is running
-    a spring-centric promo until Sunday, April 26th.
-  takeaway_zh: Spring has sprung, as they say, and to mark the occasion, Google is
-    running a spring-centric promo until Sunday, April 26th. The limited-time discounts
-    apply to a number of Google’s first-party devices, from the Pixel 10 Pro to the
-    Pixel Buds Pro 2, as well as the wearables like the Pixel Watch 4. In fact, […]
+  title_zh: 谷歌高颜值Pixel Watch 4智能手表全线降价40美元，两种尺寸版本同步优惠
+  why_zh: 俗话说春回大地，为庆祝这一时节，谷歌正开展以春日为主题的促销活动，持续至4月26日周日。
+  takeaway_zh: 俗话说春回大地，为庆祝这一时节，谷歌正开展以春日为主题的促销活动，持续至4月26日周日。限时折扣涵盖多款谷歌自有设备，从Pixel 10
+    Pro手机到Pixel Buds Pro 2耳机，乃至Pixel Watch 4等可穿戴设备。事实上，[…]
   prompt_zh: ''
 - category: Tech industry
   title: Meet the 19-meter Cretaceous kraken that swam with mosasaurs
@@ -708,9 +616,9 @@ items:
   url: https://arstechnica.com/science/2026/04/meet-the-19-meter-cretaceous-kraken-that-swam-with-mosasaurs/
   source: Ars Technica
   published_utc: '2026-04-24T17:23:49+00:00'
-  title_zh: Meet the 19-meter Cretaceous kraken that swam with mosasaurs
-  why_zh: Layer by layer, researchers revealed the jaws of an ancient predator.
-  takeaway_zh: Layer by layer, researchers revealed the jaws of an ancient predator.
+  title_zh: 认识这只与沧龙共游的白垩纪巨型掠食者——体长19米的远古海怪
+  why_zh: 研究人员逐层揭开了这尊远古掠食者颌骨的神秘面纱。
+  takeaway_zh: 研究人员逐层揭开了这尊远古掠食者颌骨的神秘面纱。
   prompt_zh: ''
 - category: AI frontier
   title: AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials
@@ -722,11 +630,9 @@ items:
   url: https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/
   source: WIRED - AI
   published_utc: '2026-04-24T17:17:36+00:00'
-  title_zh: AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials
-  why_zh: Isomorphic Labs president Max Jaderberg said at WIRED Health in London that
-    the startup has built a “broad and exciting pipeline of new med…
-  takeaway_zh: Isomorphic Labs president Max Jaderberg said at WIRED Health in London
-    that the startup has built a “broad and exciting pipeline of new medicines.”
+  title_zh: DeepMind分拆公司研发的AI设计药物即将进入人体试验阶段
+  why_zh: 同构实验室总裁马克斯·雅德伯格在伦敦举行的《连线》健康大会上表示，这家初创公司已建立'广泛且令人兴奋的新药研发管线'
+  takeaway_zh: Isomorphic Labs总裁Max Jaderberg在伦敦WIRED Health大会上表示，这家初创公司已构建了一条‘广泛且令人兴奋的新药研发管线’。
   prompt_zh: ''
 - category: Tech industry
   title: The RAM shortage could get even worse if Samsung labor protests cut production
@@ -741,14 +647,9 @@ items:
   url: https://www.theverge.com/tech/918301/samsung-south-korea-union-protests
   source: The Verge
   published_utc: '2026-04-24T17:11:33+00:00'
-  title_zh: The RAM shortage could get even worse if Samsung labor protests cut production
-  why_zh: The RAM shortage caused by demand from AI datacenters is already driving
-    up prices on phones, PS5s, and Raspberry Pis, but it could be abou…
-  takeaway_zh: The RAM shortage caused by demand from AI datacenters is already driving
-    up prices on phones, PS5s, and Raspberry Pis, but it could be about to get even
-    worse. Samsung is facing employee protests over demands for wages that are more
-    competitive with rival chip manufacturer SK Hynix, including removing Samsung's
-    cap on bonus pay, […]
+  title_zh: 若三星员工抗议导致减产，内存短缺问题可能进一步加剧。
+  why_zh: AI数据中心需求引发内存短缺，已推高手机、PS5和树莓派的价格，且情况可能进一步恶化。
+  takeaway_zh: AI数据中心需求引发内存短缺，已推高手机、PS5和树莓派的价格，且情况可能进一步恶化。三星正面临员工抗议，要求提高薪资以与竞争对手SK海力士看齐，包括取消三星的奖金上限。
   prompt_zh: ''
 - category: Tech industry
   title: How Project Maven taught the military to love AI
@@ -762,13 +663,9 @@ items:
   url: https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson
   source: The Verge
   published_utc: '2026-04-24T17:00:00+00:00'
-  title_zh: How Project Maven taught the military to love AI
-  why_zh: In the first 24 hours of the assault on Iran, the US military struck more
-    than 1,000 targets, nearly double the scale of the "shock and awe…
-  takeaway_zh: In the first 24 hours of the assault on Iran, the US military struck
-    more than 1,000 targets, nearly double the scale of the "shock and awe" attack
-    on Iraq over two decades ago. This acceleration was made possible by AI systems
-    that speed up the targeting process. Chief among them is the Maven Smart […]
+  title_zh: ‘Maven项目’如何让军方爱上AI
+  why_zh: 在袭击伊朗的前24小时内，美军打击了1000多个目标，规模几乎是20多年前对伊拉克‘震慑’行动的两倍。
+  takeaway_zh: 在袭击伊朗的前24小时内，美军打击了1000多个目标，规模几乎是20多年前对伊拉克‘震慑’行动的两倍。这一加速得益于AI系统加快了目标锁定过程，其中最重要的是Maven智能系统。
   prompt_zh: ''
 - category: Tech industry
   title: 'Report: Samsung execs worried company could lose money on smartphones for
@@ -779,10 +676,9 @@ items:
   url: https://arstechnica.com/gadgets/2026/04/samsung-may-be-bracing-for-first-ever-annual-loss-in-smartphone-business/
   source: Ars Technica
   published_utc: '2026-04-24T16:58:45+00:00'
-  title_zh: 'Report: Samsung execs worried company could lose money on smartphones
-    for the first time'
-  why_zh: The AI-driven memory shortage is hitting Samsung's bottom line.
-  takeaway_zh: The AI-driven memory shortage is hitting Samsung's bottom line.
+  title_zh: 报告：三星高管担心公司智能手机业务可能首次出现亏损
+  why_zh: 人工智能驱动的存储器短缺正冲击三星的盈利状况
+  takeaway_zh: 人工智能驱动的存储器短缺正冲击三星的盈利状况
   prompt_zh: ''
 - category: Tech industry
   title: Redesigning the Recurse Center application to inspire curious programmers
@@ -795,12 +691,11 @@ items:
   url: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
   source: Hacker News (front page)
   published_utc: '2026-04-24T16:45:10+00:00'
-  title_zh: Redesigning the Recurse Center application to inspire curious programmers
-  why_zh: 'Article URL: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
-    Comments URL: https://news.ycombinator.com/item?id…'
-  takeaway_zh: 'Article URL: https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
-    Comments URL: https://news.ycombinator.com/item?id=47892660 Points: 53 # Comments:
-    9'
+  title_zh: 重塑Recurse中心申请流程，激发程序员的好奇心
+  why_zh: 文章链接：https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+    评论链接：https://news.ycombinator.com/item?id…
+  takeaway_zh: 文章链接：https://www.recurse.com/blog/192-redesigning-the-recurse-center-application
+    评论链接：https://news.ycombinator.com/item?id=47892660 评分：53 评论数：9
   prompt_zh: ''
 - category: Tech industry
   title: Marked-up Mac minis flood eBay amid shortages driven by AI
@@ -812,11 +707,9 @@ items:
   url: https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/
   source: TechCrunch
   published_utc: '2026-04-24T16:42:19+00:00'
-  title_zh: Marked-up Mac minis flood eBay amid shortages driven by AI
-  why_zh: Apple’s sold-out Mac mini is spawning marked-up eBay listings as demand
-    surges for the compact desktop, now favored for running local AI mo…
-  takeaway_zh: Apple’s sold-out Mac mini is spawning marked-up eBay listings as demand
-    surges for the compact desktop, now favored for running local AI models and tools.
+  title_zh: Mac mini加价机涌入eBay，AI热潮致货源紧缺
+  why_zh: 苹果售罄的Mac mini引发eBay加价潮，这款紧凑型台式机因适合本地AI运算而需求激增
+  takeaway_zh: 苹果Mac mini售罄导致eBay加价转售激增，这款紧凑型台式机现因适合运行本地AI模型和工具而备受青睐
   prompt_zh: ''
 - category: Tech industry
   title: Xreal’s best AR glasses are $599 for good now
@@ -831,14 +724,9 @@ items:
   url: https://www.theverge.com/gadgets/918169/xreal-one-pro-ar-glasses-price-cut-deal-sale
   source: The Verge
   published_utc: '2026-04-24T16:33:30+00:00'
-  title_zh: Xreal’s best AR glasses are $599 for good now
-  why_zh: The Xreal One Pro are the company’s best AR glasses, touting thin optics
-    that keep out reflections so you can enjoy a crisp, contrast-rich…
-  takeaway_zh: The Xreal One Pro are the company’s best AR glasses, touting thin optics
-    that keep out reflections so you can enjoy a crisp, contrast-rich image of whatever
-    content you’re watching. Xreal has permanently cut their price from $649 to $599,
-    making them $150 more than its entry-level (but still good) 1S glasses that debuted
-    shortly […]
+  title_zh: Xreal旗舰AR眼镜限时优惠价599美元
+  why_zh: Xreal One Pro是该公司最佳的增强现实眼镜，采用超薄光学镜片阻挡反光，让您享受清晰、对比度强烈的视觉体验……
+  takeaway_zh: Xreal One Pro是该公司最佳的增强现实眼镜，采用超薄光学镜片阻挡反光，让您无论观看何种内容都能享受清晰、对比度强烈的画面。Xreal已将其价格从649美元永久下调至599美元，比其不久前推出的入门级（但仍出色的）1S眼镜高出150美元。
   prompt_zh: ''
 - category: Tech industry
   title: SDL Now Supports DOS
@@ -850,11 +738,11 @@ items:
   url: https://github.com/libsdl-org/SDL/pull/15377
   source: Hacker News (front page)
   published_utc: '2026-04-24T16:20:15+00:00'
-  title_zh: SDL Now Supports DOS
-  why_zh: 'Article URL: https://github.com/libsdl-org/SDL/pull/15377 Comments URL:
-    https://news.ycombinator.com/item?id=47892291 Points: 211 # Comment…'
-  takeaway_zh: 'Article URL: https://github.com/libsdl-org/SDL/pull/15377 Comments
-    URL: https://news.ycombinator.com/item?id=47892291 Points: 211 # Comments: 74'
+  title_zh: SDL现已支持DOS系统
+  why_zh: '文章链接: https://github.com/libsdl-org/SDL/pull/15377  评论链接: https://news.ycombinator.com/item?id=47892291  评分:
+    211  # 评论……'
+  takeaway_zh: '文章链接: https://github.com/libsdl-org/SDL/pull/15377  评论链接: https://news.ycombinator.com/item?id=47892291  评分:
+    211  # 评论数: 74'
   prompt_zh: ''
 - category: Tech industry
   title: Diatec, known for its mechanical keyboard brand FILCO, has ceased operations
@@ -867,12 +755,11 @@ items:
   url: https://gigazine.net/gsc_news/en/20260424-filco-diatec/
   source: Hacker News (front page)
   published_utc: '2026-04-24T16:16:49+00:00'
-  title_zh: Diatec, known for its mechanical keyboard brand FILCO, has ceased operations
-  why_zh: 'Article URL: https://gigazine.net/gsc_news/en/20260424-filco-diatec/ Comments
-    URL: https://news.ycombinator.com/item?id=47892236 Points: 86…'
-  takeaway_zh: 'Article URL: https://gigazine.net/gsc_news/en/20260424-filco-diatec/
-    Comments URL: https://news.ycombinator.com/item?id=47892236 Points: 86 # Comments:
-    28'
+  title_zh: 以机械键盘品牌FILCO闻名的Diatec公司已停止运营
+  why_zh: '文章链接: https://gigazine.net/gsc_news/en/20260424-filco-diatec/  评论链接: https://news.ycombinator.com/item?id=47892236  评分:
+    86……'
+  takeaway_zh: '文章链接: https://gigazine.net/gsc_news/en/20260424-filco-diatec/  评论链接:
+    https://news.ycombinator.com/item?id=47892236  评分: 86  # 评论数: 28'
   prompt_zh: ''
 - category: Tech industry
   title: Google plans to invest up to $40B in Anthropic
@@ -885,12 +772,11 @@ items:
   url: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
   source: Hacker News (front page)
   published_utc: '2026-04-24T16:04:41+00:00'
-  title_zh: Google plans to invest up to $40B in Anthropic
-  why_zh: 'Article URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
-    Comments URL: https://…'
-  takeaway_zh: 'Article URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
-    Comments URL: https://news.ycombinator.com/item?id=47892074 Points: 246 # Comments:
-    306'
+  title_zh: 谷歌计划向Anthropic投资高达400亿美元
+  why_zh: 文章链接：https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+    评论链接：https://……
+  takeaway_zh: 文章链接：https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+    评论链接：https://news.ycombinator.com/item?id=47892074 点赞数：246 评论数：306
   prompt_zh: ''
 - category: Tech industry
   title: 'I cancelled Claude: Token issues, declining quality, and poor support'
@@ -903,12 +789,11 @@ items:
   url: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
   source: Hacker News (front page)
   published_utc: '2026-04-24T15:59:19+00:00'
-  title_zh: 'I cancelled Claude: Token issues, declining quality, and poor support'
-  why_zh: 'Article URL: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
-    Comments URL: https://news.ycombinator.com/item?id=47892019 Points:…'
-  takeaway_zh: 'Article URL: https://nickyreinert.de/en/2026/2026-04-24-claude-critics/
-    Comments URL: https://news.ycombinator.com/item?id=47892019 Points: 738 # Comments:
-    438'
+  title_zh: 我已停用Claude：Token问题、质量下降及糟糕的客服
+  why_zh: 文章链接：https://nickyreinert.de/en/2026/2026-04-24-claude-critics/ 评论链接：https://news.ycombinator.com/item?id=47892019
+    点赞数：……
+  takeaway_zh: 文章链接：https://nickyreinert.de/en/2026/2026-04-24-claude-critics/ 评论链接：https://news.ycombinator.com/item?id=47892019
+    点赞数：738 评论数：438
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'langchain-ai/langchain: langchain-core==1.3.2'
@@ -918,8 +803,8 @@ items:
   url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.2
   source: GitHub Releases - langchain-ai/langchain
   published_utc: '2026-04-24T15:49:42+00:00'
-  title_zh: 'langchain-ai/langchain: langchain-core==1.3.2'
-  why_zh: Release update (see link for changelog).
+  title_zh: ''
+  why_zh: 版本更新（详情见链接中的更新日志）
   takeaway_zh: ''
   prompt_zh: ''
 - category: Tech industry
@@ -933,12 +818,10 @@ items:
   url: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
   source: Hacker News (front page)
   published_utc: '2026-04-24T15:44:03+00:00'
-  title_zh: I'm done making desktop applications (2009)
-  why_zh: 'Article URL: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
-    Comments URL: https://news.ycombinator.com/item?id=47891801…'
-  takeaway_zh: 'Article URL: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
-    Comments URL: https://news.ycombinator.com/item?id=47891801 Points: 136 # Comments:
-    153'
+  title_zh: 我再也不开发桌面应用程序了（2009年）
+  why_zh: 文章链接：https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/ 评论链接：https://news.ycombinator.com/item?id=47891801…
+  takeaway_zh: '文章链接：https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
+    评论链接：https://news.ycombinator.com/item?id=47891801 得分：136 # 评论数：153'
   prompt_zh: ''
 - category: Tech industry
   title: 360-degree cameras have a new superpower
@@ -952,14 +835,9 @@ items:
   url: https://www.theverge.com/tech/914730/splatica-gaussian-splats-insta360-antigravity
   source: The Verge
   published_utc: '2026-04-24T15:30:00+00:00'
-  title_zh: 360-degree cameras have a new superpower
-  why_zh: Imagine Google Street View, except you can walk around like it's a video
-    game.
-  takeaway_zh: Imagine Google Street View, except you can walk around like it's a
-    video game. Now imagine you don't need to wait for Google to come film because
-    it's completely DIY. Insta360, the leading maker of 360-degree cameras, is now
-    partnered with a 12-person UK startup called Splatica to help creators do just
-    that. Last January, […]
+  title_zh: 360度相机有了新超能力
+  why_zh: 想象一下谷歌街景，但你可以像在视频游戏中一样四处走动。
+  takeaway_zh: 想象一下谷歌街景，但你可以像在视频游戏中一样四处走动。现在想象一下，你不需要等待谷歌来拍摄，因为它是完全DIY的。360度相机的领先制造商Insta360，现已与一家名为Splatica的12人英国初创公司合作，帮助创作者实现这一目标。去年一月，[…]
   prompt_zh: ''
 - category: AI frontier
   title: GPT-5.5 tops benchmarks but still hallucinates frequently and costs 20 percent
@@ -973,13 +851,10 @@ items:
   url: https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-and-costs-20-percent-more-over-the-api/
   source: The Decoder (AI)
   published_utc: '2026-04-24T15:20:49+00:00'
-  title_zh: GPT-5.5 tops benchmarks but still hallucinates frequently and costs 20
-    percent more over the API
-  why_zh: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks.
-  takeaway_zh: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks. The price
-    went up, but it still looks like the best bang for your buck among proprietary
-    models. The article GPT-5.5 tops benchmarks but still hallucinates frequently
-    and costs 20 percent more over the API appeared first on The Decoder .
+  title_zh: GPT-5.5在基准测试中领先，但仍频繁出现幻觉，且API成本增加了20%
+  why_zh: GPT-5.5将OpenAI重新推上AI基准测试的榜首。
+  takeaway_zh: GPT-5.5将OpenAI重新推上AI基准测试的榜首。虽然价格上涨，但在专有模型中，它仍然是最具性价比的选择。文章《GPT-5.5在基准测试中领先，但仍频繁出现幻觉，且API成本增加了20%》首次发表于The
+    Decoder。
   prompt_zh: ''
 - category: Tech industry
   title: Tesla’s Cybercab goes into production — so why is Musk tapping the brakes?
@@ -994,14 +869,9 @@ items:
   url: https://www.theverge.com/transportation/918106/tesla-cybercab-production-robotaxi-elon-musk-earnings
   source: The Verge
   published_utc: '2026-04-24T15:17:27+00:00'
-  title_zh: Tesla’s Cybercab goes into production — so why is Musk tapping the brakes?
-  why_zh: Tesla's Cybercab is now in production at the company's Gigafactory in Austin,
-    Texas, but Elon Musk is sounding unusually cautious about the…
-  takeaway_zh: Tesla's Cybercab is now in production at the company's Gigafactory
-    in Austin, Texas, but Elon Musk is sounding unusually cautious about the rollout.
-    The robotaxi's start of production was announced Thursday on X, with Tesla posting
-    a video shot from inside a steering wheel-less Cybercab as it drove out of the
-    factory with the caption, […]
+  title_zh: 特斯拉Cybercab投产，为何马斯克却踩刹车？
+  why_zh: 特斯拉Cybercab现已在德克萨斯州奥斯汀的Gigafactory投产，但埃隆·马斯克对此次发布显得异常谨慎……
+  takeaway_zh: 特斯拉Cybercab现已在德克萨斯州奥斯汀的Gigafactory投产，但埃隆·马斯克对此次发布显得异常谨慎。周四，特斯拉在X平台上宣布了这款机器人出租车的生产启动，并发布了一段视频，展示了一辆无方向盘的Cybercab驶出工厂，配文为……
   prompt_zh: ''
 - category: Tech industry
   title: Nuclear startup X-energy raises $1B in data center-driven IPO
@@ -1013,11 +883,9 @@ items:
   url: https://techcrunch.com/2026/04/24/nuclear-startup-x-energy-raises-1b-in-data-center-driven-ipo/
   source: TechCrunch
   published_utc: '2026-04-24T15:06:00+00:00'
-  title_zh: Nuclear startup X-energy raises $1B in data center-driven IPO
-  why_zh: Amazon-backed X-energy was able to raise around 20% more money in its IPO
-    as demand for nuclear power surges.
-  takeaway_zh: Amazon-backed X-energy was able to raise around 20% more money in its
-    IPO as demand for nuclear power surges.
+  title_zh: 核能初创公司X-energy在数据中心驱动下IPO融资10亿美元
+  why_zh: 亚马逊支持的X-energy在IPO中筹集了约20%的额外资金，因核能需求激增。
+  takeaway_zh: 亚马逊支持的X-energy在IPO中筹集了约20%的额外资金，因核能需求激增。
   prompt_zh: ''
 - category: Tech industry
   title: Man faces 5 years in prison for using AI to fake sighting of runaway wolf
@@ -1027,9 +895,9 @@ items:
   url: https://arstechnica.com/tech-policy/2026/04/after-wolf-escaped-zoo-man-arrested-for-creating-fake-ai-sighting-for-fun/
   source: Ars Technica
   published_utc: '2026-04-24T15:05:23+00:00'
-  title_zh: Man faces 5 years in prison for using AI to fake sighting of runaway wolf
-  why_zh: Beloved wolf gripped the nation after burrowing out of the zoo.
-  takeaway_zh: Beloved wolf gripped the nation after burrowing out of the zoo.
+  title_zh: 男子因使用AI伪造逃逸狼的目击证据面临5年监禁
+  why_zh: 一只深受喜爱的狼在挖洞逃出动物园后牵动了全国的心。
+  takeaway_zh: 一只深受喜爱的狼在挖洞逃出动物园后牵动了全国的心。
   prompt_zh: ''
 - category: AI tools & model releases
   title: Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE
@@ -1041,11 +909,9 @@ items:
   url: https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/
   source: NVIDIA Developer Blog
   published_utc: '2026-04-24T15:00:00+00:00'
-  title_zh: Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE
-  why_zh: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
-    response to a hard constraint: the most valuable data is often t…'
-  takeaway_zh: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
-    response to a hard constraint: the most valuable data is often the least movable....'
+  title_zh: 无需重构开销，使用NVIDIA FLARE实现联邦学习
+  why_zh: 联邦学习（FL）已不再是研究中的新奇事物，而是对硬性约束的实际回应：最有价值的数据往往是最难迁移的……
+  takeaway_zh: 联邦学习（FL）已不再是研究中的新奇事物，而是对硬性约束的实际回应：最有价值的数据往往是最难迁移的。
   prompt_zh: ''
 - category: AI frontier
   title: Apple's Next CEO Needs to Launch a Killer AI Product
@@ -1056,10 +922,9 @@ items:
   url: https://www.wired.com/story/apples-next-ceo-needs-to-launch-a-killer-ai-product/
   source: WIRED - AI
   published_utc: '2026-04-24T15:00:00+00:00'
-  title_zh: Apple's Next CEO Needs to Launch a Killer AI Product
-  why_zh: Tim Cook was a great CEO, but he didn’t crack AI.
-  takeaway_zh: Tim Cook was a great CEO, but he didn’t crack AI. It’s job number 1
-    for John Ternus.
+  title_zh: 苹果下一任CEO需要推出一款杀手级AI产品
+  why_zh: 蒂姆·库克是一位出色的CEO，但他并未在AI领域取得突破。
+  takeaway_zh: 蒂姆·库克是一位出色的CEO，但他并未在AI领域取得突破。这是约翰·特努斯的首要任务。
   prompt_zh: ''
 - category: Tech industry
   title: 'Well, this is embarrassing: The Lunar Gateway''s primary modules are corroded'
@@ -1071,12 +936,9 @@ items:
   url: https://arstechnica.com/space/2026/04/well-this-is-embarrassing-the-lunar-gateways-primary-modules-are-corroded/
   source: Ars Technica
   published_utc: '2026-04-24T14:47:19+00:00'
-  title_zh: 'Well, this is embarrassing: The Lunar Gateway''s primary modules are
-    corroded'
-  why_zh: '"Preliminary findings indicate that the issue likely results from a combination
-    of factors."'
-  takeaway_zh: '"Preliminary findings indicate that the issue likely results from
-    a combination of factors."'
+  title_zh: 嗯，这有点尴尬：月球门户的主要模块已经腐蚀
+  why_zh: 初步调查结果表明，该问题可能由多种因素共同导致。
+  takeaway_zh: 初步调查结果表明，该问题可能由多种因素共同导致。
   prompt_zh: ''
 - category: Tech industry
   title: Different Language Models Learn Similar Number Representations
@@ -1088,11 +950,11 @@ items:
   url: https://arxiv.org/abs/2604.20817
   source: Hacker News (front page)
   published_utc: '2026-04-24T14:34:23+00:00'
-  title_zh: Different Language Models Learn Similar Number Representations
-  why_zh: 'Article URL: https://arxiv.org/abs/2604.20817 Comments URL: https://news.ycombinator.com/item?id=47890873
-    Points: 89 # Comments: 35'
-  takeaway_zh: 'Article URL: https://arxiv.org/abs/2604.20817 Comments URL: https://news.ycombinator.com/item?id=47890873
-    Points: 89 # Comments: 35'
+  title_zh: 不同的语言模型学习相似的数字表示
+  why_zh: 文章链接：https://arxiv.org/abs/2604.20817 评论链接：https://news.ycombinator.com/item?id=47890873
+    得分：89 评论数：35
+  takeaway_zh: 文章链接：https://arxiv.org/abs/2604.20817 评论链接：https://news.ycombinator.com/item?id=47890873
+    得分：89 评论数：35
   prompt_zh: ''
 - category: AI frontier
   title: China moves to block tech firms from taking US money without government approval
@@ -1106,14 +968,10 @@ items:
   url: https://the-decoder.com/china-moves-to-block-tech-firms-from-taking-us-money-without-government-approval/
   source: The Decoder (AI)
   published_utc: '2026-04-24T14:33:59+00:00'
-  title_zh: China moves to block tech firms from taking US money without government
-    approval
-  why_zh: China plans to block tech companies from accepting US capital without government
-    approval, according to Bloomberg.
-  takeaway_zh: China plans to block tech companies from accepting US capital without
-    government approval, according to Bloomberg. The article China moves to block
-    tech firms from taking US money without government approval appeared first on
-    The Decoder .
+  title_zh: 中国拟禁止科技公司在未经政府批准的情况下接受美国资金
+  why_zh: 据彭博社报道，中国计划禁止科技公司在未经政府批准的情况下接受美国资本。
+  takeaway_zh: 据彭博社报道，中国计划禁止科技公司在未经政府批准的情况下接受美国资本。文章《中国拟禁止科技公司在未经政府批准的情况下接受美国资金》首次发表于The
+    Decoder。
   prompt_zh: ''
 - category: Tech industry
   title: 'Show HN: Browser Harness – Gives LLM freedom to complete any browser task'
@@ -1128,15 +986,9 @@ items:
   url: https://github.com/browser-use/browser-harness
   source: Hacker News (front page)
   published_utc: '2026-04-24T14:31:38+00:00'
-  title_zh: 'Show HN: Browser Harness – Gives LLM freedom to complete any browser
-    task'
-  why_zh: Hey HN, We got tired of browser frameworks restricting the LLM, so we removed
-    the framework and gave the LLM maximum freedom to do whatever…
-  takeaway_zh: Hey HN, We got tired of browser frameworks restricting the LLM, so
-    we removed the framework and gave the LLM maximum freedom to do whatever it's
-    trained on. We gave the harness the ability to self correct and add new tools
-    if the LLM wants (is pre-trained on) that. Our Browser Use library is tens of
-    thousands of lines of deterministic heuristics wrapping Ch…
+  title_zh: 展示HN：浏览器工具——赋予LLM完成任何浏览器任务的自由
+  why_zh: 嘿HN，我们厌倦了浏览器框架对LLM的限制，因此移除了框架，赋予LLM最大自由去做任何它想做的事……
+  takeaway_zh: 嘿HN，我们厌倦了浏览器框架对LLM的限制，因此移除了框架，赋予LLM最大自由去做任何它训练过的事。我们让工具具备自我修正的能力，并允许LLM根据需要（如果预训练过）添加新工具。我们的浏览器使用库是围绕Chrome的数万行确定性启发式代码……
   prompt_zh: ''
 - category: Tech industry
   title: Another spyware maker caught distributing fake Android snooping apps
@@ -1149,12 +1001,9 @@ items:
   url: https://techcrunch.com/2026/04/24/another-spyware-maker-caught-distributing-fake-android-snooping-apps/
   source: TechCrunch
   published_utc: '2026-04-24T14:17:55+00:00'
-  title_zh: Another spyware maker caught distributing fake Android snooping apps
-  why_zh: Researchers have found a new case where government authorities used a fake
-    Android app to plant spyware on a target’s phone.
-  takeaway_zh: Researchers have found a new case where government authorities used
-    a fake Android app to plant spyware on a target’s phone. The company that allegedly
-    developed the spyware was not previously known to sell this type of software.
+  title_zh: 又一家间谍软件制造商被发现分发假冒的Android监控应用
+  why_zh: 研究人员发现一起新案例，政府机构通过伪造安卓应用向目标手机植入间谍软件。
+  takeaway_zh: 研究人员发现一起新案例，政府机构通过伪造安卓应用向目标手机植入间谍软件。涉嫌开发该间谍软件的公司此前并未被发现销售此类软件。
   prompt_zh: ''
 - category: AI frontier
   title: Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
@@ -1168,13 +1017,10 @@ items:
   url: https://the-decoder.com/meta-buys-tens-of-millions-of-aws-graviton-5-processor-cores-from-amazon/
   source: The Decoder (AI)
   published_utc: '2026-04-24T14:12:58+00:00'
-  title_zh: Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
-  why_zh: Meta is purchasing tens of millions of AWS Graviton 5 processor cores from
-    Amazon, making it one of the largest Graviton customers in the w…
-  takeaway_zh: Meta is purchasing tens of millions of AWS Graviton 5 processor cores
-    from Amazon, making it one of the largest Graviton customers in the world. The
-    article Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon
-    appeared first on The Decoder .
+  title_zh: Meta从亚马逊购入数千万颗AWS Graviton5处理器核心
+  why_zh: Meta正从亚马逊购入数千万颗AWS Graviton5处理器核心，这使其成为全球最大的Graviton客户之一……
+  takeaway_zh: Meta正从亚马逊购入数千万颗AWS Graviton5处理器核心，这使其成为全球最大的Graviton客户之一。本文'Meta从亚马逊购入数千万颗AWS
+    Graviton5处理器核心'首发于The Decoder。
   prompt_zh: ''
 - category: Tech industry
   title: Uber CTO Praveen Neppalli Naga joins stacked StrictlyVC SF lineup for April
@@ -1189,14 +1035,10 @@ items:
   url: https://techcrunch.com/2026/04/24/uber-cto-praveen-neppalli-naga-joins-stacked-strictlyvc-sf-lineup-for-april-30-event/
   source: TechCrunch
   published_utc: '2026-04-24T14:00:00+00:00'
-  title_zh: Uber CTO Praveen Neppalli Naga joins stacked StrictlyVC SF lineup for
-    April 30 event
-  why_zh: Surprise!
-  takeaway_zh: Surprise! StrictlyVC San Francisco, which will kick off this year’s
-    events lineup for TechCrunch on April 30 at the Sentro Filipino Cultural Center,
-    is getting a new addition to its increasingly stacked lineup of speakers. Uber
-    CTO Praveen Neppalli Naga will join the rest of the lineup to discuss operating
-    at scale in the age of AI.
+  title_zh: Uber首席技术官Praveen Neppalli Naga加入4月30日StrictlyVC SF明星阵容
+  why_zh: 惊喜！
+  takeaway_zh: 惊喜！作为TechCrunch今年系列活动的揭幕场，4月30日在Sentro Filipino文化中心举办的StrictlyVC旧金山站迎来重磅嘉宾加盟。Uber首席技术官Praveen
+    Neppalli Naga将与嘉宾阵容共同探讨AI时代的大规模运营实践。
   prompt_zh: ''
 - category: Tech industry
   title: Tim Cook is stepping down. What happens to Apple now?
@@ -1211,14 +1053,9 @@ items:
   url: https://techcrunch.com/video/tim-cook-is-stepping-down-what-happens-to-apple-now/
   source: TechCrunch
   published_utc: '2026-04-24T14:00:00+00:00'
-  title_zh: Tim Cook is stepping down. What happens to Apple now?
-  why_zh: Tim Cook plans to step down from his CEO role in September, handing the
-    reins to hardware chief John Ternus.
-  takeaway_zh: Tim Cook plans to step down from his CEO role in September, handing
-    the reins to hardware chief John Ternus. Ternus may be inheriting one of the most
-    durable businesses in tech, but he’s also stepping into a very different ecosystemthan
-    the one Cook spent decades shaping. The App Store’s 30% cut is under pressure,
-    the behind-the-scenes power Apple once […]
+  title_zh: 蒂姆·库克即将卸任，苹果公司将何去何从？
+  why_zh: 蒂姆·库克计划于九月卸任CEO一职，将权杖交给硬件主管约翰·特努斯。
+  takeaway_zh: 蒂姆·库克计划于九月卸任CEO一职，将权杖交给硬件主管约翰·特努斯。特努斯或将继承科技界最具韧性的企业之一，但他接手的生态与库克数十年塑造的体系已截然不同。应用商店30%抽成正面临压力，苹果曾经……
   prompt_zh: ''
 - category: Tech industry
   title: As electric aspirations fade, Porsche sells its stake in Bugatti
@@ -1228,10 +1065,9 @@ items:
   url: https://arstechnica.com/cars/2026/04/as-electric-aspirations-fade-porsche-sells-its-stake-in-bugatti/
   source: Ars Technica
   published_utc: '2026-04-24T13:54:17+00:00'
-  title_zh: As electric aspirations fade, Porsche sells its stake in Bugatti
-  why_zh: Porsche's stake in Bugatti and Rimac Group have been sold to private equity.
-  takeaway_zh: Porsche's stake in Bugatti and Rimac Group have been sold to private
-    equity.
+  title_zh: 电动化壮志未酬，保时捷出售布加迪股权
+  why_zh: 保时捷持有的布加迪及锐马克集团股权已售予私募机构。
+  takeaway_zh: 保时捷持有的布加迪及锐马克集团股权已售予私募机构。
   prompt_zh: ''
 - category: Tech industry
   title: Nothing introduces an AI-powered dictation tool
@@ -1241,9 +1077,9 @@ items:
   url: https://techcrunch.com/2026/04/24/nothing-introduces-an-ai-powered-dictation-tool/
   source: TechCrunch
   published_utc: '2026-04-24T13:41:42+00:00'
-  title_zh: Nothing introduces an AI-powered dictation tool
-  why_zh: Nothing's new on-device dictation tool supports over 100 languages.
-  takeaway_zh: Nothing's new on-device dictation tool supports over 100 languages.
+  title_zh: Nothing公司推出AI驱动的听写工具
+  why_zh: Nothing新款设备端听写工具支持超100种语言。
+  takeaway_zh: Nothing新款设备端听写工具支持超100种语言。
   prompt_zh: ''
 - category: Tech industry
   title: Six things I'll remember when I think about Tim Cook's version of Apple
@@ -1253,9 +1089,9 @@ items:
   url: https://arstechnica.com/gadgets/2026/04/six-things-ill-remember-when-i-think-about-tim-cooks-version-of-apple/
   source: Ars Technica
   published_utc: '2026-04-24T13:40:50+00:00'
-  title_zh: Six things I'll remember when I think about Tim Cook's version of Apple
-  why_zh: Under Cook, Apple became hugely successful, if not always surprising.
-  takeaway_zh: Under Cook, Apple became hugely successful, if not always surprising.
+  title_zh: 回顾蒂姆·库克时代的苹果，我会记住这六件事
+  why_zh: 库克领导下的苹果公司取得了巨大成功，即便并不总是出人意料。
+  takeaway_zh: 库克领导下的苹果公司取得了巨大成功，即便并不总是出人意料。
   prompt_zh: ''
 - category: Tech industry
   title: DeepSeek previews new AI model that ‘closes the gap’ with frontier models
@@ -1268,12 +1104,9 @@ items:
   url: https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/
   source: TechCrunch
   published_utc: '2026-04-24T13:30:59+00:00'
-  title_zh: DeepSeek previews new AI model that ‘closes the gap’ with frontier models
-  why_zh: DeepSeek says both models are more efficient and performant than DeepSeek
-    V3.2 due to architectural improvements, and have almost "closed t…
-  takeaway_zh: DeepSeek says both models are more efficient and performant than DeepSeek
-    V3.2 due to architectural improvements, and have almost "closed the gap" with
-    current leading models, both open and closed, on reasoning benchmarks.
+  title_zh: DeepSeek预览新款AI模型，‘缩小差距’接近前沿水平
+  why_zh: DeepSeek表示，得益于架构改进，两款模型比DeepSeek V3.2效率更高、性能更强，且几乎‘填补了差距’……
+  takeaway_zh: DeepSeek表示，相比V3.2版本，新模型因架构改进而效能跃升，在推理基准测试中已基本'追平'当前闭源与开源领域的顶尖模型。
   prompt_zh: ''
 - category: Tech industry
   title: Trump administration attempt to gut Endangered Species Act hits roadblock
@@ -1283,9 +1116,9 @@ items:
   url: https://arstechnica.com/tech-policy/2026/04/trump-administration-attempt-to-gut-endangered-species-act-hits-roadblock/
   source: Ars Technica
   published_utc: '2026-04-24T13:17:00+00:00'
-  title_zh: Trump administration attempt to gut Endangered Species Act hits roadblock
-  why_zh: House vote to defang the Endangered Species Act was unexpectedly cancelled
-  takeaway_zh: House vote to defang the Endangered Species Act was unexpectedly cancelled
+  title_zh: 特朗普政府削弱《濒危物种法案》的企图遭遇阻碍
+  why_zh: 众议院撤销《濒危物种法案》削减案投票，事出突然
+  takeaway_zh: 众议院撤销《濒危物种法案》削减案投票，事出突然
   prompt_zh: ''
 - category: AI frontier
   title: Cohere takes over Aleph Alpha shortly after the German startup ousted its
@@ -1301,15 +1134,10 @@ items:
   url: https://the-decoder.com/cohere-takes-over-aleph-alpha-shortly-after-the-german-startup-ousted-its-original-founder/
   source: The Decoder (AI)
   published_utc: '2026-04-24T12:55:19+00:00'
-  title_zh: Cohere takes over Aleph Alpha shortly after the German startup ousted
-    its original founder
-  why_zh: Just months after founder Jonas Andrulis was pushed out, Canadian AI company
-    Cohere is taking over Aleph Alpha - once hailed as Germany's a…
-  takeaway_zh: Just months after founder Jonas Andrulis was pushed out, Canadian AI
-    company Cohere is taking over Aleph Alpha - once hailed as Germany's answer to
-    OpenAI. The Schwarz Group is putting $600 million into the deal. The article Cohere
-    takes over Aleph Alpha shortly after the German startup ousted its original founder
-    appeared first on The Decoder .
+  title_zh: 德国初创企业Aleph Alpha创始人离职仅数月，加拿大AI公司Cohere即完成接管
+  why_zh: 创始人Jonas Andrulis遭驱逐后不到半年，曾被誉德国AI之光的Aleph Alpha已被加拿大Cohere收入麾下
+  takeaway_zh: 在创始人Jonas Andrulis被解雇仅数月后，加拿大AI公司Cohere正接管Aleph Alpha——这家曾被誉德国版OpenAI的企业。Schwarz
+    Group为此交易投入6亿美元。文章《Cohere在德国初创公司驱逐原创始人后迅速接管Aleph Alpha》首发于The Decoder。
   prompt_zh: ''
 - category: Tech industry
   title: 'The Download: supercharged scams and studying AI healthcare'
@@ -1323,14 +1151,9 @@ items:
   url: https://www.technologyreview.com/2026/04/24/1136400/the-download-supercharged-scams-questionable-ai-healthcare/
   source: MIT Technology Review
   published_utc: '2026-04-24T12:10:00+00:00'
-  title_zh: 'The Download: supercharged scams and studying AI healthcare'
-  why_zh: This is today’s edition of The Download, our weekday newsletter that provides
-    a daily dose of what’s going on in the world of technology.
-  takeaway_zh: This is today’s edition of The Download, our weekday newsletter that
-    provides a daily dose of what’s going on in the world of technology. We’re in
-    a new era of AI-driven scams When ChatGPT was released in late 2022, it showed
-    how easily generative AI could create human-like text. This quickly caught the
-    eye of…
+  title_zh: 今日下载：超级诈骗与AI医疗研究
+  why_zh: 这是今天的《The Download》版块，我们的工作日通讯，每日为您带来科技界的最新动态。
+  takeaway_zh: 这是今天的《The Download》版块，我们的工作日通讯，每日为您带来科技界的最新动态。我们正步入AI驱动诈骗的新时代。2022年底ChatGPT发布时，展示了生成式AI如何轻松创作类人文本，迅速引起了关注……
   prompt_zh: ''
 - category: Tech industry
   title: In another wild turn for AI chips, Meta signs deal for millions of Amazon
@@ -1343,12 +1166,9 @@ items:
   url: https://techcrunch.com/2026/04/24/in-another-wild-turn-for-ai-chips-meta-signs-deal-for-millions-of-amazon-ai-cpus/
   source: TechCrunch
   published_utc: '2026-04-24T12:00:00+00:00'
-  title_zh: In another wild turn for AI chips, Meta signs deal for millions of Amazon
-    AI CPUs
-  why_zh: Meta has commandeered a big chunk of Amazon's homegrown CPUs (not GPUs)
-    for AI agentic workloads, signaling that a new kind of chip race ha…
-  takeaway_zh: Meta has commandeered a big chunk of Amazon's homegrown CPUs (not GPUs)
-    for AI agentic workloads, signaling that a new kind of chip race has begun.
+  title_zh: AI芯片领域再掀波澜，Meta签署协议采购数百万亚马逊AI CPU
+  why_zh: Meta已占据亚马逊自研CPU（非GPU）的很大一部分，用于AI代理工作负载，预示着一种新型芯片竞赛的开启……
+  takeaway_zh: Meta已占据亚马逊自研CPU（非GPU）的很大一部分，用于AI代理工作负载，标志着一种新型芯片竞赛的开始。
   prompt_zh: ''
 - category: Security
   title: CISA Adds Four Known Exploited Vulnerabilities to Catalog
@@ -1363,14 +1183,10 @@ items:
   url: https://www.cisa.gov/news-events/alerts/2026/04/24/cisa-adds-four-known-exploited-vulnerabilities-catalog
   source: CISA Current Activity
   published_utc: '2026-04-24T12:00:00+00:00'
-  title_zh: CISA Adds Four Known Exploited Vulnerabilities to Catalog
-  why_zh: CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities
-    (KEV) Catalog , based on evidence of active exploitation.
-  takeaway_zh: CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities
-    (KEV) Catalog , based on evidence of active exploitation. CVE-2024-7399 Samsung
-    MagicINFO 9 Server Path Traversal Vulnerability CVE-2024-57726 SimpleHelp Missing
-    Authorization Vulnerability CVE-2024-57728 SimpleHelp Path Traversal Vulnerability
-    CVE-2025-29635 D-Link DIR-823X Comm…
+  title_zh: CISA将四个已知被利用的漏洞添加到目录中
+  why_zh: CISA在其已知利用漏洞(KEV)目录中新增了四项漏洞，基于活跃攻击的证据。
+  takeaway_zh: CISA在其已知利用漏洞(KEV)目录中新增了四项漏洞，基于活跃攻击的证据。包括：CVE-2024-7399三星MagicINFO 9服务器路径遍历漏洞、CVE-2024-57726
+    SimpleHelp授权缺失漏洞、CVE-2024-57728 SimpleHelp路径遍历漏洞、CVE-2025-29635 D-Link DIR-823X命令...
   prompt_zh: ''
 - category: Tech industry
   title: 'Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI company'
@@ -1380,10 +1196,9 @@ items:
   url: https://arstechnica.com/space/2026/04/rocket-report-some-canadians-dont-want-a-spaceport-falcon-hits-600-landings/
   source: Ars Technica
   published_utc: '2026-04-24T11:00:36+00:00'
-  title_zh: 'Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI
-    company'
-  why_zh: '"If it doesn’t rely on a solid, there’s no reason why we can’t launch."'
-  takeaway_zh: '"If it doesn’t rely on a solid, there’s no reason why we can’t launch."'
+  title_zh: 火箭报告：阿尔忒弥斯III号火箭准备就绪；SpaceX现转型人工智能企业
+  why_zh: '"只要不依赖固体燃料，就没有理由不能发射。"'
+  takeaway_zh: '"只要不依赖固体燃料，就没有理由不能发射。"'
   prompt_zh: ''
 - category: AI frontier
   title: Anthropic confirms Claude Code problems and promises stricter quality controls
@@ -1396,13 +1211,10 @@ items:
   url: https://the-decoder.com/anthropic-confirms-claude-code-problems-and-promises-stricter-quality-controls/
   source: The Decoder (AI)
   published_utc: '2026-04-24T10:52:07+00:00'
-  title_zh: Anthropic confirms Claude Code problems and promises stricter quality
-    controls
-  why_zh: Users complained about declining quality in Claude Code.
-  takeaway_zh: Users complained about declining quality in Claude Code. Anthropic
-    identified and fixed three separate sources of error. The company promises stricter
-    quality controls going forward. The article Anthropic confirms Claude Code problems
-    and promises stricter quality controls appeared first on The Decoder .
+  title_zh: Anthropic确认Claude代码问题并承诺加强质量控制
+  why_zh: 用户抱怨Claude代码质量下降。
+  takeaway_zh: 用户抱怨Claude代码质量下降的问题。Anthropic发现并修复了三处错误源头，公司承诺未来将实施更严格的质量控制措施。该报道《Anthropic确认Claude代码问题并承诺加强质量控制》首发于The
+    Decoder。
   prompt_zh: ''
 - category: AI tools & model releases
   title: 'open-webui/open-webui: v0.9.2'
@@ -1412,7 +1224,7 @@ items:
   url: https://github.com/open-webui/open-webui/releases/tag/v0.9.2
   source: GitHub Releases - open-webui/open-webui
   published_utc: '2026-04-24T09:56:14+00:00'
-  title_zh: 'open-webui/open-webui: v0.9.2'
-  why_zh: Release update (see link for changelog).
+  title_zh: ''
+  why_zh: 版本更新（详情见链接中的更新日志）
   takeaway_zh: ''
   prompt_zh: ''

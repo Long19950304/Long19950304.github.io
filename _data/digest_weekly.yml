@@ -321,6 +321,7 @@ weeks:
   issues:
   - '2026-04-24'
   - '2026-04-25'
+  - '2026-04-26'
   highlights_news:
   - date: '2026-04-24'
     url: https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/
@@ -396,6 +397,42 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-04-24T18:31:15+00:00'
+  - date: '2026-04-26'
+    url: https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/
+    title: OpenAI CEO apologizes to Tumbler Ridge community
+    title_zh: OpenAI CEO向Tumbler Ridge社区致歉
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-25T17:17:56+00:00'
+  - date: '2026-04-26'
+    url: https://arstechnica.com/science/2026/04/artemis-ii-broke-fred-haises-distance-record-but-he-is-happy-to-pass-it-on/
+    title: Artemis II broke Fred Haise's distance record, but he is happy to pass
+      it on
+    title_zh: 阿尔忒弥斯2号打破了弗雷德·海斯的飞行距离纪录，但他很乐意传递这一荣誉
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-25T11:40:58+00:00'
+  - date: '2026-04-26'
+    url: https://www.theverge.com/science/918769/trump-fires-the-entire-national-science-board
+    title: Trump fires the entire National Science Board
+    title_zh: 特朗普解雇国家科学委员会全体成员
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-25T19:20:15+00:00'
+  - date: '2026-04-26'
+    url: https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/
+    title: Google pours up to $40 billion into ChatGPT rival Anthropic
+    title_zh: 谷歌斥资400亿美元押注ChatGPT竞争者Anthropic
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-04-25T08:26:11+00:00'
+  - date: '2026-04-26'
+    url: https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/
+    title: Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos
+    title_zh: Discord侦探未经授权访问Anthropic的Mythos系统
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-04-25T10:30:00+00:00'
   highlights_ai:
   - date: '2026-04-24'
     url: https://the-decoder.com/openai-unveils-gpt-5-5-claims-a-new-class-of-intelligence-at-double-the-api-price/

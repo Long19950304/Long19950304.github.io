@@ -491,3 +491,66 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - open-webui/open-webui
     published_utc: '2026-04-24T09:56:14+00:00'
+- week: 2026-W18
+  start: '2026-04-27'
+  end: '2026-05-03'
+  issues:
+  - '2026-04-27'
+  highlights_news:
+  - date: '2026-04-27'
+    url: https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/
+    title: To buy this Bay Area home, you’ll need Anthropic equity
+    title_zh: 要购买这处湾区住宅，你需要Anthropic的股权。
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-26T15:30:00+00:00'
+  - date: '2026-04-27'
+    url: https://arstechnica.com/culture/2026/04/strange-new-worlds-s4-teaser-strikes-a-more-serious-tone/
+    title: Strange New Worlds S4 teaser strikes a more serious tone
+    title_zh: 《星际迷航：奇异新世界》第四季预告片基调转向严肃
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-26T19:52:22+00:00'
+  - date: '2026-04-27'
+    url: https://www.theverge.com/tech/918852/googles-new-gradient-icon-design-is-coming-to-more-apps
+    title: Google’s new gradient icon design is coming to more apps
+    title_zh: 谷歌全新渐变色图标设计将推广至更多应用
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-26T18:34:26+00:00'
+  - date: '2026-04-27'
+    url: https://the-decoder.com/openai-kills-its-dedicated-coding-model-codex-again-folding-it-into-gpt-5-5/
+    title: OpenAI kills its dedicated coding model Codex again, folding it into GPT-5.5
+    title_zh: OpenAI再次终止其专用编程模型Codex，将其并入GPT-5.5
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-04-26T12:49:27+00:00'
+  - date: '2026-04-27'
+    url: https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/
+    title: Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos
+    title_zh: Discord侦探未经授权访问了Anthropic的Mythos系统。
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-04-25T10:30:00+00:00'
+  highlights_ai:
+  - date: '2026-04-27'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
+    title: 'langchain-ai/langchain: langchain-openai==1.2.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-24T19:46:59+00:00'
+  - date: '2026-04-27'
+    url: https://aws.amazon.com/about-aws/whats-new/2024/04/agentcore-gateway-identity-vpc/
+    title: Amazon Bedrock AgentCore Gateway and Identity support VPC egress
+    title_zh: Amazon Bedrock AgentCore Gateway与Identity功能支持VPC出口流量
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-04-24T21:00:00+00:00'
+  - date: '2026-04-27'
+    url: https://github.com/open-webui/open-webui/releases/tag/v0.9.2
+    title: 'open-webui/open-webui: v0.9.2'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - open-webui/open-webui
+    published_utc: '2026-04-24T09:56:14+00:00'

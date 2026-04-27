@@ -1,0 +1,952 @@
+date: '2026-04-27'
+title: Daily Digest - 2026-04-27
+title_zh: 每日简报 - 2026-04-27
+note: 'Today: To buy this Bay Area home, you’ll need Anthropic equity · Strange New
+  Worlds S4 teaser strikes a more serious tone · AI: langchain-ai/langchain: langchain-openai==1.2.1.'
+note_zh: '今日关注：要购买这处湾区住宅，你需要Anthropic的股权；《星际迷航：奇异新世界》第四季预告片基调转向严肃；AI：langchain-ai/langchain:
+  langchain…。'
+items:
+- category: Tech industry
+  title: Google banks on AI edge to catch up to cloud rivals Amazon and Microsoft
+  why: 'Article URL: https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c
+    Comments URL: https://news.ycombinator.com/item?id=47916410 Po…'
+  takeaway: 'Article URL: https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c
+    Comments URL: https://news.ycombinator.com/item?id=47916410 Points: 49 # Comments:
+    13'
+  prompt: ''
+  url: https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c
+  source: Hacker News (front page)
+  published_utc: '2026-04-27T00:34:30+00:00'
+  title_zh: 谷歌依靠人工智能优势追赶云服务竞争对手亚马逊和微软
+  why_zh: 文章链接：https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c 评论链接：https://news.ycombinator.com/item?id=47916410
+  takeaway_zh: 文章链接：https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c
+    评论链接：https://news.ycombinator.com/item?id=47916410 点赞数：49 评论数：13
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Startup Equity Adventure Game'
+  why: I put this together (with Claude) as a semi-gamified way for folks to learn
+    about startup equity.
+  takeaway: 'I put this together (with Claude) as a semi-gamified way for folks to
+    learn about startup equity. Take a look, and share your scorecard :) Comments
+    URL: https://news.ycombinator.com/item?id=47915274 Points: 14 # Comments: 7'
+  prompt: ''
+  url: https://options-game-polymathrobotics.pythonanywhere.com/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T22:14:59+00:00'
+  title_zh: HN展示：创业股权冒险游戏
+  why_zh: 我与Claude合作开发了这个半游戏化的学习工具，帮助大家了解创业股权知识。
+  takeaway_zh: 我与Claude合作开发了这个半游戏化的学习工具，帮助大家了解创业股权知识。来试试看，分享你的成绩单吧 :) 评论链接：https://news.ycombinator.com/item?id=47915274
+    点赞数：14 评论数：7
+  prompt_zh: ''
+- category: Tech industry
+  title: The Stanford freshmen who want to rule the world . . . will probably read
+    this book and try even harder
+  why: Can a book like this actually change anything?
+  takeaway: Can a book like this actually change anything? Or does the spotlight,
+    as it always seems to, send more students racing to the place?
+  prompt: ''
+  url: https://techcrunch.com/2026/04/26/the-stanford-freshmen-who-want-to-rule-the-world-will-probably-read-this-book-and-try-even-harder/
+  source: TechCrunch
+  published_utc: '2026-04-26T22:00:46+00:00'
+  title_zh: 斯坦福大一新生想要统治世界...可能会读这本书并更加努力
+  why_zh: 这种书真能改变什么吗？
+  takeaway_zh: 这样一本书真能带来改变吗？还是说，聚光灯下，一如既往地吸引更多学生蜂拥而至？
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Amazon’s new podcast strategy: Monetize everything'
+  why: Amazon's podcasting business seems to have transformed over the past six months.
+  takeaway: Amazon's podcasting business seems to have transformed over the past six
+    months.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/26/amazons-new-podcast-strategy-monetize-everything/
+  source: TechCrunch
+  published_utc: '2026-04-26T21:38:08+00:00'
+  title_zh: 亚马逊的新播客战略：全面货币化
+  why_zh: 过去六个月，亚马逊的播客业务似乎发生了转变。
+  takeaway_zh: 过去六个月，亚马逊的播客业务似乎发生了转变。
+  prompt_zh: ''
+- category: Tech industry
+  title: Butterflies are in decline across North America, a look at the Western Monarch
+  why: 'Article URL: https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-wes…'
+  takeaway: 'Article URL: https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/
+    Comments URL: https://news.ycombinator.com/item?id=47914677 Points: 121 # Comments:
+    31'
+  prompt: ''
+  url: https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T21:23:20+00:00'
+  title_zh: 北美蝴蝶数量普遍下降，聚焦西部帝王蝶
+  why_zh: 文章链接：https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-wes…
+  takeaway_zh: 文章链接：https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/
+    评论链接：https://news.ycombinator.com/item?id=47914677 得分：121 评论数：31
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Tiao, A two-player turn-based board game'
+  why: Hi HN, I built this digital version of Tiao, a two-player turn based strategy
+    board game.
+  takeaway: Hi HN, I built this digital version of Tiao, a two-player turn based strategy
+    board game. Think Checkers meets Go. It's free, runs in the browser, has multiplayer,
+    AI, over the board mode and a lot of other neat things. The source is on GitHub
+    (AGPL). The game was originally designed by my friend Andreas Edmeier. He created
+    the rules and has been playtestin…
+  prompt: ''
+  url: https://playtiao.com
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:59:07+00:00'
+  title_zh: 展示HN：Tiao，一款双人回合制棋盘游戏
+  why_zh: 大家好，我制作了Tiao的数字版本，这是一款双人回合制策略棋盘游戏。
+  takeaway_zh: 大家好，我开发了Tiao的数字版本，这是一款双人回合制策略棋盘游戏，融合了跳棋与围棋的元素。游戏免费，可在浏览器中运行，支持多人模式、AI对战、实体棋盘模式等多种功能。源代码已发布在GitHub（AGPL协议）。游戏最初由我的朋友Andreas
+    Edmeier设计，他制定了规则并进行了多次测试…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: AI memory with biological decay (52% recall)'
+  why: Most RAG setups fail because they treat memory like a static filing cabinet.
+  takeaway: Most RAG setups fail because they treat memory like a static filing cabinet.
+    When every transient bug fix or abandoned rule is stored forever, the context
+    window eventually chokes on noise, spiking token costs and degrading the agent's
+    reasoning. This implementation experiments with a biological approach by using
+    the Ebbinghaus forgetting curve to manage co…
+  prompt: ''
+  url: https://github.com/sachitrafa/YourMemory
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:58:31+00:00'
+  title_zh: 展示HN：具有生物衰减特性的AI记忆系统（召回率52%）
+  why_zh: 大多数RAG系统失败的原因在于它们将记忆视为静态的文件柜。
+  takeaway_zh: 大多数RAG系统失败的原因在于它们将记忆视为静态的文件柜。当每一个临时的错误修复或废弃的规则都被永久存储时，上下文窗口最终会被噪音淹没，导致令牌成本飙升并削弱代理的推理能力。本实现尝试采用生物学方法，利用艾宾浩斯遗忘曲线来管理…
+  prompt_zh: ''
+- category: Tech industry
+  title: Sawe becomes first athlete to run a sub-two-hour marathon in a competitive
+    race
+  why: https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-sh...
+  takeaway: 'https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-sh... https://news.adidas.com/running/two-adidas-athletes-sabastia...
+    Comments URL: https://news.ycombinator.com/item?id=47914350 Points: 244 # Comments:
+    197'
+  prompt: ''
+  url: https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:56:30+00:00'
+  title_zh: Sawe成为首位在正式比赛中跑进两小时大关的马拉松运动员
+  why_zh: ''
+  takeaway_zh: 'https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-sh... https://news.adidas.com/running/two-adidas-athletes-sabastia...
+    评论链接：https://news.ycombinator.com/item?id=47914350 积分：244 # 评论数：197'
+  prompt_zh: ''
+- category: Tech industry
+  title: I bought Friendster for $30k – Here's what I'm doing with it
+  why: 'Article URL: https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
+    Comments URL: https://news.y…'
+  takeaway: 'Article URL: https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
+    Comments URL: https://news.ycombinator.com/item?id=47914165 Points: 382 # Comments:
+    215'
+  prompt: ''
+  url: https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:41:06+00:00'
+  title_zh: 我以3万美元收购了Friendster——这是我接下来的计划
+  why_zh: '文章URL: https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
+    评论URL: https://news.y…'
+  takeaway_zh: '文章URL: https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
+    评论URL: https://news.ycombinator.com/item?id=47914165 得分: 382 # 评论: 215'
+  prompt_zh: ''
+- category: Tech industry
+  title: MoQ Boy
+  why: 'Article URL: https://moq.dev/blog/moq-boy/ Comments URL: https://news.ycombinator.com/item?id=47914161
+    Points: 36 # Comments: 3'
+  takeaway: 'Article URL: https://moq.dev/blog/moq-boy/ Comments URL: https://news.ycombinator.com/item?id=47914161
+    Points: 36 # Comments: 3'
+  prompt: ''
+  url: https://moq.dev/blog/moq-boy/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:40:50+00:00'
+  title_zh: ''
+  why_zh: '文章URL: https://moq.dev/blog/moq-boy/ 评论URL: https://news.ycombinator.com/item?id=47914161
+    得分: 36 # 评论: 3'
+  takeaway_zh: '文章URL: https://moq.dev/blog/moq-boy/ 评论URL: https://news.ycombinator.com/item?id=47914161
+    得分: 36 # 评论: 3'
+  prompt_zh: ''
+- category: Tech industry
+  title: What Tim Cook built
+  why: On the latest episode of Equity, we discuss how Apple has changed since Cook
+    became CEO in 2011, and what challenges incoming CEO John Tern…
+  takeaway: On the latest episode of Equity, we discuss how Apple has changed since
+    Cook became CEO in 2011, and what challenges incoming CEO John Ternus will be
+    facing.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/26/what-tim-cook-built/
+  source: TechCrunch
+  published_utc: '2026-04-26T20:22:51+00:00'
+  title_zh: 蒂姆·库克的成就
+  why_zh: 在最新一期的Equity节目中，我们讨论了自2011年库克接任CEO以来苹果的变化，以及即将上任的CEO约翰·特努斯将面临的挑战。
+  takeaway_zh: 在最新一期的Equity节目中，我们讨论了自2011年库克接任CEO以来苹果的变化，以及即将上任的CEO约翰·特努斯将面临的挑战。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Fast16: High-precision software sabotage 5 years before Stuxnet'
+  why: 'Article URL: https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-befor…'
+  takeaway: 'Article URL: https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/
+    Comments URL: https://news.ycombinator.com/item?id=47913855 Points: 147 # Comments:
+    43'
+  prompt: ''
+  url: https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:18:37+00:00'
+  title_zh: Fast16：Stuxnet事件五年前的高精度软件破坏
+  why_zh: 文章网址：https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-befor…
+  takeaway_zh: '文章网址：https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/
+    评论专区：https://news.ycombinator.com/item?id=47913855 得分：147 #评论数：43'
+  prompt_zh: ''
+- category: Tech industry
+  title: AI should elevate your thinking, not replace it
+  why: 'Article URL: https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/
+    Comments URL: https://news.ycombinator.com/item…'
+  takeaway: 'Article URL: https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/
+    Comments URL: https://news.ycombinator.com/item?id=47913650 Points: 278 # Comments:
+    226'
+  prompt: ''
+  url: https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T20:03:12+00:00'
+  title_zh: 人工智能应提升人类思维，而非取代之
+  why_zh: 文章网址：https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/
+    评论专区：https://news.ycombinator.com/item…
+  takeaway_zh: '文章网址：https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/
+    评论专区：https://news.ycombinator.com/item?id=47913650 得分：278 #评论数：226'
+  prompt_zh: ''
+- category: Tech industry
+  title: Strange New Worlds S4 teaser strikes a more serious tone
+  why: '"I have ever been prone to seek adventure and to investigate where wiser men
+    would have left well enough alone."'
+  takeaway: '"I have ever been prone to seek adventure and to investigate where wiser
+    men would have left well enough alone."'
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/04/strange-new-worlds-s4-teaser-strikes-a-more-serious-tone/
+  source: Ars Technica
+  published_utc: '2026-04-26T19:52:22+00:00'
+  title_zh: 《星际迷航：奇异新世界》第四季预告片基调转向严肃
+  why_zh: '"我素来热衷冒险，偏要探究那些聪明人避之不及的奥秘。"'
+  takeaway_zh: '"我素来热衷冒险，偏要探究那些聪明人避之不及的奥秘。"'
+  prompt_zh: ''
+- category: Tech industry
+  title: Chernobyl Wildlife Forty Years On
+  why: 'Article URL: https://www.bbc.com/future/article/20260424-chernobyl-wildlife-forty-years-on
+    Comments URL: https://news.ycombinator.com/item?…'
+  takeaway: 'Article URL: https://www.bbc.com/future/article/20260424-chernobyl-wildlife-forty-years-on
+    Comments URL: https://news.ycombinator.com/item?id=47913382 Points: 39 # Comments:
+    1'
+  prompt: ''
+  url: https://www.bbc.com/future/article/20260424-chernobyl-wildlife-forty-years-on
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T19:42:59+00:00'
+  title_zh: 切尔诺贝利事故四十年后：野生动物的现状
+  why_zh: 文章链接：https://www.bbc.com/future/article/20260424-chernobyl-wildlife-forty-years-on
+    评论区链接：https://news.ycombinator.com/item?…
+  takeaway_zh: 文章链接：https://www.bbc.com/future/article/20260424-chernobyl-wildlife-forty-years-on
+    评论区链接：https://news.ycombinator.com/item?id=47913382 点赞数：39 评论数：1
+  prompt_zh: ''
+- category: Tech industry
+  title: Google’s new gradient icon design is coming to more apps
+  why: In late 2025, Google started rolling out new icons with a gradient design.
+  takeaway: In late 2025, Google started rolling out new icons with a gradient design.
+    Now it seems the new look is coming to the rest of Google's apps. 9to5Google got
+    its hands on images of the new icons that ditch the uniform circle design that
+    tries to cram in every color of the Google logo. In […]
+  prompt: ''
+  url: https://www.theverge.com/tech/918852/googles-new-gradient-icon-design-is-coming-to-more-apps
+  source: The Verge
+  published_utc: '2026-04-26T18:34:26+00:00'
+  title_zh: 谷歌全新渐变色图标设计将推广至更多应用
+  why_zh: 2025年末，谷歌开始推出采用渐变色设计的新图标。
+  takeaway_zh: 2025年末，谷歌开始推出采用渐变色设计的新图标。如今，这一新设计似乎将扩展至谷歌旗下其他应用。9to5Google网站获取了这些新图标的设计图，取代了原本试图塞入谷歌标志所有颜色的统一圆形设计。更新内容包括[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Prime Video drops full trailer for Spider-Noir
+  why: It's "a detective story, but the detective happens to also have spider powers.”—EP
+    Chris Miller
+  takeaway: It's "a detective story, but the detective happens to also have spider
+    powers.”—EP Chris Miller
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/04/prime-video-drops-full-trailer-for-spider-noir/
+  source: Ars Technica
+  published_utc: '2026-04-26T17:20:55+00:00'
+  title_zh: Prime Video发布《蜘蛛侠：暗影之谜》完整预告片
+  why_zh: 这是一个侦探故事，只不过侦探恰好还有蜘蛛超能力。——执行制片人克里斯·米勒
+  takeaway_zh: 这是一个侦探故事，只不过侦探恰好还有蜘蛛超能力。——执行制片人克里斯·米勒
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Visible Zorker: Zork 1'
+  why: 'Article URL: https://eblong.com/infocom/visi/zork1/ Comments URL: https://news.ycombinator.com/item?id=47911644
+    Points: 106 # Comments: 18'
+  takeaway: 'Article URL: https://eblong.com/infocom/visi/zork1/ Comments URL: https://news.ycombinator.com/item?id=47911644
+    Points: 106 # Comments: 18'
+  prompt: ''
+  url: https://eblong.com/infocom/visi/zork1/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T16:42:19+00:00'
+  title_zh: 《显形的祖克人：Zork 1》
+  why_zh: 文章链接：https://eblong.com/infocom/visi/zork1/ 评论链接：https://news.ycombinator.com/item?id=47911644
+    点赞数：106 评论数：18
+  takeaway_zh: 文章链接：https://eblong.com/infocom/visi/zork1/ 评论链接：https://news.ycombinator.com/item?id=47911644
+    点赞数：106 评论数：18
+  prompt_zh: ''
+- category: Tech industry
+  title: An AI agent deleted our production database. The agent's confession is below
+  why: 'Article URL: https://twitter.com/lifeof_jer/status/2048103471019434248 Comments
+    URL: https://news.ycombinator.com/item?id=47911524 Points:…'
+  takeaway: 'Article URL: https://twitter.com/lifeof_jer/status/2048103471019434248
+    Comments URL: https://news.ycombinator.com/item?id=47911524 Points: 448 # Comments:
+    616'
+  prompt: ''
+  url: https://twitter.com/lifeof_jer/status/2048103471019434248
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T16:27:29+00:00'
+  title_zh: 一个AI代理删除了我们的生产数据库。下面是该代理的自述。
+  why_zh: 文章链接：https://twitter.com/lifeof_jer/status/2048103471019434248 评论链接：https://news.ycombinator.com/item?id=47911524
+    点赞数：…
+  takeaway_zh: 文章链接：https://twitter.com/lifeof_jer/status/2048103471019434248 评论链接：https://news.ycombinator.com/item?id=47911524
+    点赞数：448 评论数：616
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump turns the WHCD shooting into a pitch for the White House ballroom
+  why: Within hours of an armed gunman's attempt to enter the White House Correspondents
+    Dinner, attended by top administration officials and hund…
+  takeaway: 'Within hours of an armed gunman''s attempt to enter the White House Correspondents
+    Dinner, attended by top administration officials and hundreds of journalists,
+    President Donald Trump did what he does best: use the assassination attempt to
+    defend his ballroom project. During a White House press conference just hours
+    after he and several cabinet members were…'
+  prompt: ''
+  url: https://www.theverge.com/policy/918843/trump-whcd-attack-white-house-ballroom
+  source: The Verge
+  published_utc: '2026-04-26T16:18:02+00:00'
+  title_zh: 特朗普将白宫记者协会晚宴枪击事件作为竞选白宫宴会厅的筹码
+  why_zh: 就在一名持枪男子试图闯入白宫记者协会晚宴的数小时后，这场汇聚了政府高层官员和数百名记者的活动…
+  takeaway_zh: 就在一名持枪男子试图闯入白宫记者协会晚宴的数小时后，这场汇聚了政府高层官员和数百名记者的活动上，唐纳德·特朗普总统展现了其惯用手段：借此次暗杀企图为其宴会厅项目辩护。事发几小时后，在与多名内阁成员共同出席的白宫记者会上…
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TechCrunch Mobility: Elon’s admission'
+  why: Welcome back to TechCrunch Mobility — your central hub for news and insights
+    on the future of transportation.
+  takeaway: Welcome back to TechCrunch Mobility — your central hub for news and insights
+    on the future of transportation.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/26/techcrunch-mobility-elons-admission/
+  source: TechCrunch
+  published_utc: '2026-04-26T16:03:00+00:00'
+  title_zh: TechCrunch移动领域动态：埃隆的公开声明
+  why_zh: 欢迎回到TechCrunch Mobility——您获取未来交通新闻与洞见的中心平台。
+  takeaway_zh: 欢迎回到TechCrunch Mobility——您获取未来交通新闻与洞见的中心平台。
+  prompt_zh: ''
+- category: Tech industry
+  title: Clay PCB Tutorial
+  why: 'Article URL: https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial Comments
+    URL: https://news.ycombinator.com/item?id=47911350 Points:…'
+  takeaway: 'Article URL: https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial
+    Comments URL: https://news.ycombinator.com/item?id=47911350 Points: 193 # Comments:
+    120'
+  prompt: ''
+  url: https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T16:02:14+00:00'
+  title_zh: 粘土PCB教程
+  why_zh: 文章链接：https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial 评论链接：https://news.ycombinator.com/item?id=47911350
+    得分：…
+  takeaway_zh: 文章链接：https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial 评论链接：https://news.ycombinator.com/item?id=47911350
+    得分：193 评论数：120
+  prompt_zh: ''
+- category: Tech industry
+  title: Tomora’s Come Closer is an ecstatic love letter to 90s dance music
+  why: Before Coachella, Tomora wasn't on my radar at all.
+  takeaway: Before Coachella, Tomora wasn't on my radar at all. It's actually only
+    by chance that I stumbled upon them - I opened the wrong stream because my TV
+    was lagging like a MFer. I paused for a few moments, entranced by the two ethereal
+    Nordic women banging on giant drums to a techno beat. I […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/918826/tomora-come-closer-review-90s-dance-music
+  source: The Verge
+  published_utc: '2026-04-26T16:00:00+00:00'
+  title_zh: Tomora的《Come Closer》是对90年代舞曲的狂热情书
+  why_zh: 在Coachella之前，Tomora完全不在我的关注范围内。
+  takeaway_zh: 在Coachella之前，Tomora完全不在我的关注范围内。实际上，我只是偶然发现了他们——因为我的电视卡得像什么似的，我打开了错误的直播。我停顿了几秒，被两位北欧女性在电子节奏中敲击巨大鼓点的空灵场景所吸引。我……
+  prompt_zh: ''
+- category: AI frontier
+  title: Our principles
+  why: Our mission is to ensure that AGI benefits all of humanity.
+  takeaway: Our mission is to ensure that AGI benefits all of humanity. Sam Altman
+    shares five principles that guide our work.
+  prompt: ''
+  url: https://openai.com/index/our-principles
+  source: OpenAI Blog
+  published_utc: '2026-04-26T16:00:00+00:00'
+  title_zh: 我们的原则
+  why_zh: 我们的使命是确保AGI惠及全人类。
+  takeaway_zh: 我们的使命是确保AGI惠及全人类。Sam Altman分享了指导我们工作的五项原则。
+  prompt_zh: ''
+- category: Tech industry
+  title: To buy this Bay Area home, you’ll need Anthropic equity
+  why: Someone’s offering an unusual deal for a 13-acre property in Mill Valley, just
+    north of South Francisco.
+  takeaway: Someone’s offering an unusual deal for a 13-acre property in Mill Valley,
+    just north of South Francisco.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/
+  source: TechCrunch
+  published_utc: '2026-04-26T15:30:00+00:00'
+  title_zh: 要购买这处湾区住宅，你需要Anthropic的股权。
+  why_zh: 有人为南旧金山以北Mill Valley的一处13英亩地产提供了一项不寻常的交易。
+  takeaway_zh: 有人为南旧金山以北Mill Valley的一处13英亩地产提供了一项不寻常的交易。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Free textbook on engineering thermodynamics'
+  why: Author here.
+  takeaway: 'Author here. Feel free to send questions of any kind. Comments URL: https://news.ycombinator.com/item?id=47911013
+    Points: 106 # Comments: 29'
+  prompt: ''
+  url: https://thermodynamicsbook.com/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T15:17:34+00:00'
+  title_zh: 展示HN：免费工程热力学教科书
+  why_zh: 作者在此。
+  takeaway_zh: '作者在此。欢迎提出任何问题。评论链接：https://news.ycombinator.com/item?id=47911013 积分：106
+    # 评论：29'
+  prompt_zh: ''
+- category: Tech industry
+  title: SpeakOn’s dictation device is a good idea marred by platform limitations
+  why: This $129 device uses MagSafe to stick on the back of an iPhone to power transcription
+    across apps
+  takeaway: This $129 device uses MagSafe to stick on the back of an iPhone to power
+    transcription across apps
+  prompt: ''
+  url: https://techcrunch.com/2026/04/26/speakons-dictation-device-is-a-good-idea-marred-by-platform-limitations/
+  source: TechCrunch
+  published_utc: '2026-04-26T15:00:00+00:00'
+  title_zh: SpeakOn的听写设备是个好主意，但受限于平台功能。
+  why_zh: 这款129美元的设备利用MagSafe吸附在iPhone背面，实现跨应用的转录供电
+  takeaway_zh: 这款129美元的设备利用MagSafe吸附在iPhone背面，实现跨应用的转录供电
+  prompt_zh: ''
+- category: Tech industry
+  title: Lessons from building multiplayer browsers
+  why: 'Article URL: https://www.alejandro.pe/writing/sail-muddy-lessons Comments
+    URL: https://news.ycombinator.com/item?id=47910877 Points: 6 # Co…'
+  takeaway: 'Article URL: https://www.alejandro.pe/writing/sail-muddy-lessons Comments
+    URL: https://news.ycombinator.com/item?id=47910877 Points: 6 # Comments: 1'
+  prompt: ''
+  url: https://www.alejandro.pe/writing/sail-muddy-lessons
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T14:59:37+00:00'
+  title_zh: 构建多人浏览器的经验教训
+  why_zh: '文章链接：https://www.alejandro.pe/writing/sail-muddy-lessons 评论链接：https://news.ycombinator.com/item?id=47910877
+    得分：6 # 评论…'
+  takeaway_zh: '文章链接：https://www.alejandro.pe/writing/sail-muddy-lessons 评论链接：https://news.ycombinator.com/item?id=47910877
+    得分：6 # 评论数：1'
+  prompt_zh: ''
+- category: Tech industry
+  title: Skylight’s 15-inch smart calendar is down to its lowest price to date
+  why: When you’re juggling more than just your own calendar, staying organized can
+    be overwhelming.
+  takeaway: When you’re juggling more than just your own calendar, staying organized
+    can be overwhelming. Fortunately, the Skylight Calendar 2 can help simplify things
+    by syncing multiple calendars in a single spot, and now through May 7th, it’s
+    available directly from Skylight for $259.99 ($40 off), its best price to date.
+    Skylight’s 15-inch smart calendar improves […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/918544/skylight-15-inch-smart-calendar-2-mothers-day-deal-2026-sale
+  source: The Verge
+  published_utc: '2026-04-26T14:05:03+00:00'
+  title_zh: Skylight 15英寸智能日历迎来历史最低价
+  why_zh: 当需要协调的不只是个人日程时，保持条理可能令人应接不暇
+  takeaway_zh: 面对多重日程管理时，保持条理往往令人力不从心。Skylight Calendar 2智能日历通过多日程同步功能提供解决方案，且在5月7日前直购优惠价259.99美元（立减40美元），创历史新低。这款15英寸智能日历…]
+  prompt_zh: ''
+- category: Tech industry
+  title: SWE-bench Verified no longer measures frontier coding capabilities
+  why: 'Article URL: https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+    Comments URL: https://news.ycombinator.com/item?id=4791…'
+  takeaway: 'Article URL: https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+    Comments URL: https://news.ycombinator.com/item?id=47910388 Points: 247 # Comments:
+    139'
+  prompt: ''
+  url: https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T13:58:13+00:00'
+  title_zh: SWE-bench Verified已不再评估前沿编码能力
+  why_zh: 文章链接：https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+    评论链接：https://news.ycombinator.com/item?id=4791…
+  takeaway_zh: '文章链接：https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+    评论链接：https://news.ycombinator.com/item?id=47910388 积分：247 # 评论数：139'
+  prompt_zh: ''
+- category: Tech industry
+  title: The fastest Linux timestamps
+  why: 'Article URL: https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/
+    Comments URL: https://news.ycombinator.com/item?id=47909979…'
+  takeaway: 'Article URL: https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/
+    Comments URL: https://news.ycombinator.com/item?id=47909979 Points: 13 # Comments:
+    2'
+  prompt: ''
+  url: https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T13:00:50+00:00'
+  title_zh: Linux最快时间戳
+  why_zh: 文章链接：https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/
+    评论链接：https://news.ycombinator.com/item?id=47909979…
+  takeaway_zh: '文章链接：https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/
+    评论链接：https://news.ycombinator.com/item?id=47909979 积分：13 # 评论数：2'
+  prompt_zh: ''
+- category: Tech industry
+  title: After three months on Linux, I don’t miss Windows at all
+  why: In January I finally made good on my threat/promise to install Linux on my
+    desktop.
+  takeaway: 'In January I finally made good on my threat/promise to install Linux
+    on my desktop. I wanted to see how far I could get using a Linux PC as my main
+    computer without doing a bunch of research beforehand or troubleshooting afterwards.
+    Since then I have booted into Windows exactly twice: once to scan a […]'
+  prompt: ''
+  url: https://www.theverge.com/tech/918797/switched-to-linux-dont-miss-windows
+  source: The Verge
+  published_utc: '2026-04-26T13:00:00+00:00'
+  title_zh: 使用Linux三个月后，我彻底不再怀念Windows
+  why_zh: 一月时我终于兑现了安装Linux桌面的威胁/承诺。
+  takeaway_zh: 一月时我终于兑现了安装Linux桌面的威胁/承诺。我想试试在不预先调研、事后也不折腾的前提下，能用Linux电脑坚持多久。此后我只启动过Windows两次：一次是为了扫描[…]
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI kills its dedicated coding model Codex again, folding it into GPT-5.5
+  why: OpenAI has once again retired its dedicated Codex coding model, folding its
+    capabilities directly into the main model.
+  takeaway: OpenAI has once again retired its dedicated Codex coding model, folding
+    its capabilities directly into the main model. GPT-5.5 promises stronger agentic
+    coding and lower token usage, OpenAI says. The article OpenAI kills its dedicated
+    coding model Codex again, folding it into GPT-5.5 appeared first on The Decoder
+    .
+  prompt: ''
+  url: https://the-decoder.com/openai-kills-its-dedicated-coding-model-codex-again-folding-it-into-gpt-5-5/
+  source: The Decoder (AI)
+  published_utc: '2026-04-26T12:49:27+00:00'
+  title_zh: OpenAI再次终止其专用编程模型Codex，将其并入GPT-5.5
+  why_zh: OpenAI再次放弃了其专用的Codex编程模型，将其功能直接纳入主模型。
+  takeaway_zh: OpenAI再次放弃了其专用的Codex编程模型，将其功能直接纳入主模型。OpenAI表示，GPT-5.5将提供更强大的代理编码能力和更低的token消耗。有关OpenAI终止其专用编程模型Codex并将其并入GPT-5.5的报道最早出现在The
+    Decoder上。
+  prompt_zh: ''
+- category: Tech industry
+  title: The plan to quietly kill Coyote v. Acme blew up in David Zaslav&#8217;s face
+  why: This is The Stepback, a weekly newsletter breaking down one essential story
+    from the tech world.
+  takeaway: This is The Stepback, a weekly newsletter breaking down one essential
+    story from the tech world. For more on Hollywood trends and streaming culture,
+    follow Charles Pulliam-Moore. The Stepback arrives in our subscribers' inboxes
+    on Sundays at 8AM ET. Opt in for The Stepback here. How it started Under David
+    Zaslav's leadership, WBD got very […]
+  prompt: ''
+  url: https://www.theverge.com/column/918079/david-zaslav-warner-bros-discovery-coyote-v-acme-batgirl-tax-writeoffs
+  source: The Verge
+  published_utc: '2026-04-26T12:00:00+00:00'
+  title_zh: 悄然扼杀《Coyote v. Acme》的计划在David Zaslav面前搞砸了
+  why_zh: 这里是The Stepback，一份每周解析科技界一个重要故事的新闻简报。
+  takeaway_zh: 这里是The Stepback，一份每周解析科技界一个重要故事的新闻简报。了解更多关于好莱坞趋势和流媒体文化的动态，请关注Charles
+    Pulliam-Moore。The Stepback将于每周日东部时间上午8点送达订阅者的邮箱。点击此处订阅The Stepback。事情起因是在David
+    Zaslav的领导下，华纳兄弟探索公司（WBD）变得非常[...]
+  prompt_zh: ''
+- category: Tech industry
+  title: New robotic control software avoids jamming their joints
+  why: Software lets robots learn from each other even if they have different hardware.
+  takeaway: Software lets robots learn from each other even if they have different
+    hardware.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/04/kinematic-intelligence-helps-robots-learn-their-limits/
+  source: Ars Technica
+  published_utc: '2026-04-26T11:09:29+00:00'
+  title_zh: 新型机器人控制软件避免关节卡顿
+  why_zh: 该软件能让机器人相互学习，即使它们的硬件不同。
+  takeaway_zh: 该软件能让机器人相互学习，即使它们的硬件不同。
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI says old prompts are holding GPT-5.5 back and developers need a fresh
+    baseline
+  why: OpenAI says developers shouldn't carry over old prompts for GPT-5.5.
+  takeaway: OpenAI says developers shouldn't carry over old prompts for GPT-5.5. Instead,
+    start minimal and from scratch. Role definitions, which some had written off as
+    unnecessary, are back at the front of the framework. The article OpenAI says old
+    prompts are holding GPT-5.5 back and developers need a fresh baseline appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/openai-says-old-prompts-are-holding-gpt-5-5-back-and-developers-need-a-fresh-baseline/
+  source: The Decoder (AI)
+  published_utc: '2026-04-26T10:20:04+00:00'
+  title_zh: OpenAI表示旧提示阻碍了GPT-5.5的发展，开发者需要新的基准
+  why_zh: OpenAI建议开发者不要将旧提示延续到GPT-5.5中
+  takeaway_zh: OpenAI建议开发者不要将旧提示延续到GPT-5.5中，而应从零开始最小化构建。曾被一些人认为不必要的角色定义，现重回框架核心。本文《OpenAI称旧提示阻碍GPT-5.5发展，开发者需要新基准》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Statecharts: hierarchical state machines'
+  why: 'Article URL: https://statecharts.dev/ Comments URL: https://news.ycombinator.com/item?id=47908833
+    Points: 278 # Comments: 79'
+  takeaway: 'Article URL: https://statecharts.dev/ Comments URL: https://news.ycombinator.com/item?id=47908833
+    Points: 278 # Comments: 79'
+  prompt: ''
+  url: https://statecharts.dev/
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T09:32:22+00:00'
+  title_zh: 状态图：分层状态机
+  why_zh: 文章链接：https://statecharts.dev/ 评论链接：https://news.ycombinator.com/item?id=47908833
+    得分：278 评论数：79
+  takeaway_zh: 文章链接：https://statecharts.dev/ 评论链接：https://news.ycombinator.com/item?id=47908833
+    得分：278 评论数：79
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 500 investment bankers review AI outputs and find none ready for client delivery
+  why: A new benchmark puts top models like GPT-5.4 and Claude Opus 4.6 to work on
+    the kinds of tasks junior investment bankers handle every day.
+  takeaway: A new benchmark puts top models like GPT-5.4 and Claude Opus 4.6 to work
+    on the kinds of tasks junior investment bankers handle every day. Not a single
+    AI output was rated ready to send to a client; the results are too imprecise or
+    flat-out wrong. Still, more than half of the bankers said they'd use the output
+    as a starting point. The article 500 investment…
+  prompt: ''
+  url: https://the-decoder.com/500-investment-bankers-review-ai-outputs-and-find-none-ready-for-client-delivery/
+  source: The Decoder (AI)
+  published_utc: '2026-04-26T09:18:16+00:00'
+  title_zh: 500名投行人士评估AI输出，发现无一达到交付客户标准
+  why_zh: 新基准测试让GPT-5.4和Claude Opus 4.6等顶级模型处理投行助理的日常任务
+  takeaway_zh: 新基准测试让GPT-5.4和Claude Opus 4.6等顶级模型处理投行助理日常任务。所有AI输出均未获准发送给客户，因其结果不够精确或完全错误。但超半数银行家表示会将其作为起草基础。原文《500名投行...》
+  prompt_zh: ''
+- category: AI frontier
+  title: Survey finds Claude's weekly active users in the US skew far wealthier than
+    any rival AI assistant
+  why: A survey shows Claude users earn significantly more than users of other AI
+    services.
+  takeaway: A survey shows Claude users earn significantly more than users of other
+    AI services. Here's how income breaks down across ChatGPT, Gemini, and the rest.
+    The article Survey finds Claude's weekly active users in the US skew far wealthier
+    than any rival AI assistant appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/survey-finds-claudes-weekly-active-users-in-the-us-skew-far-wealthier-than-any-rival-ai-assistant/
+  source: The Decoder (AI)
+  published_utc: '2026-04-26T08:50:02+00:00'
+  title_zh: 调查发现Claude在美国的周活跃用户比其他AI助手用户富裕程度显著更高
+  why_zh: 一项调查显示，Claude用户收入明显高于其他AI服务的用户
+  takeaway_zh: 调查显示Claude用户收入远超其他AI服务用户。以下是ChatGPT、Gemini等平台的收入细分情况。本文《调查发现Claude的美国周活跃用户收入断层领先所有竞品》首发于The
+    Decoder
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AI agents aren't replacing software engineering but expanding it far beyond
+    code, researchers argue
+  why: The popular story goes that AI agents are swallowing up more programming work
+    and developers are headed for obsolescence.
+  takeaway: The popular story goes that AI agents are swallowing up more programming
+    work and developers are headed for obsolescence. A new paper from researchers
+    at Chalmers University of Technology and the Volvo Group argues that view misses
+    the mark. The article AI agents aren't replacing software engineering but expanding
+    it far beyond code, researchers argue appea…
+  prompt: ''
+  url: https://the-decoder.com/ai-agents-arent-replacing-software-engineering-but-expanding-it-far-beyond-code-researchers-argue/
+  source: The Decoder (AI)
+  published_utc: '2026-04-26T08:12:17+00:00'
+  title_zh: 研究人员称：AI代理不会取代软件工程，而是将其拓展至代码之外
+  why_zh: 普遍说法认为AI代理正在吞噬编程工作，开发者将面临淘汰
+  takeaway_zh: 主流观点认为AI代理正接管编程工作，开发者终将被淘汰。但查尔姆斯理工大学和沃尔沃集团研究人员的新论文指出这种观点有失偏颇。本文《研究人员称：AI代理不会取代软件工程而是大幅拓展其边界》登载于…
+  prompt_zh: ''
+- category: Tech industry
+  title: Self-updating screenshots
+  why: 'Article URL: https://interblah.net/self-updating-screenshots Comments URL:
+    https://news.ycombinator.com/item?id=47908051 Points: 42 # Comme…'
+  takeaway: 'Article URL: https://interblah.net/self-updating-screenshots Comments
+    URL: https://news.ycombinator.com/item?id=47908051 Points: 42 # Comments: 8'
+  prompt: ''
+  url: https://interblah.net/self-updating-screenshots
+  source: Hacker News (front page)
+  published_utc: '2026-04-26T07:00:39+00:00'
+  title_zh: 自动更新的屏幕截图
+  why_zh: '文章链接：https://interblah.net/self-updating-screenshots 评论链接：https://news.ycombinator.com/item?id=47908051
+    点赞数：42 #评论…'
+  takeaway_zh: 文章链接：https://interblah.net/self-updating-screenshots 评论链接：https://news.ycombinator.com/item?id=47908051
+    分数：42 评论数：8
+  prompt_zh: ''
+- category: AI frontier
+  title: GPT-5.5 tops benchmarks but still hallucinates frequently at a 20 percent
+    higher API cost
+  why: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks.
+  takeaway: GPT-5.5 pushes OpenAI back to the top of the AI benchmarks. The price
+    went up, but it still looks like the best bang for your buck among proprietary
+    models. The article GPT-5.5 tops benchmarks but still hallucinates frequently
+    at a 20 percent higher API cost appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-at-a-20-percent-higher-api-cost/
+  source: The Decoder (AI)
+  published_utc: '2026-04-25T16:50:49+00:00'
+  title_zh: GPT-5.5在基准测试中表现最优，但幻觉频率仍高，API成本增加20%
+  why_zh: GPT-5.5助力OpenAI重回AI基准测试榜首
+  takeaway_zh: GPT-5.5助力OpenAI重回AI基准测试榜首。虽然价格上调，但在专有模型中仍具最佳性价比。文章《GPT-5.5登顶基准测试但幻觉率仍高，API成本增加20%》首发于The
+    Decoder.
+  prompt_zh: ''
+- category: AI frontier
+  title: US programmer job growth nearly halved since ChatGPT launched, Fed study
+    finds
+  why: Programmers are among the professional groups whose everyday lives have changed
+    the most as a result of generative AI.
+  takeaway: Programmers are among the professional groups whose everyday lives have
+    changed the most as a result of generative AI. A new study by the Federal Reserve
+    Board now provides evidence that this is also reflected in employment figures.
+    The article US programmer job growth nearly halved since ChatGPT launched, Fed
+    study finds appeared first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/us-programmer-job-growth-nearly-halved-since-chatgpt-launched-fed-study-finds/
+  source: The Decoder (AI)
+  published_utc: '2026-04-25T12:44:29+00:00'
+  title_zh: 美联储研究显示：ChatGPT发布后美国程序员岗位增长率骤降近半
+  why_zh: 程序员是因生成式AI而日常工作变化最大的职业群体之一。
+  takeaway_zh: 程序员是因生成式AI而日常工作变化最大的职业群体之一。美联储委员会最新研究证实，这一现象已体现在就业数据中。文章《美联储研究显示：ChatGPT发布后美国程序员岗位增长率骤降近半》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Qwen3.6-27B beats much larger predecessor on most coding benchmarks
+  why: Alibaba's new open-source model Qwen3.6-27B beats its 15-times-larger predecessor
+    across coding benchmarks with just 27 billion parameters.
+  takeaway: Alibaba's new open-source model Qwen3.6-27B beats its 15-times-larger
+    predecessor across coding benchmarks with just 27 billion parameters. The article
+    Qwen3.6-27B beats much larger predecessor on most coding benchmarks appeared first
+    on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/qwen3-6-27b-beats-much-larger-predecessor-on-most-coding-benchmarks/
+  source: The Decoder (AI)
+  published_utc: '2026-04-25T12:16:13+00:00'
+  title_zh: Qwen3.6-27B在多数编程基准测试中击败了规模更大的前代模型
+  why_zh: 阿里巴巴新开源模型Qwen3.6-27B仅凭270亿参数，在编码基准测试中击败了规模是其15倍的前代模型。
+  takeaway_zh: 阿里巴巴新开源模型Qwen3.6-27B仅凭270亿参数，在编码基准测试中击败了规模是其15倍的前代模型。文章《Qwen3.6-27B在多数编码基准测试中超越更大前代模型》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: AI frontier
+  title: Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos
+  why: 'Plus: Spy firms tap into a global telecom weakness to track targets, 500,000
+    UK health records go up for sale on Alibaba, Apple patches a r…'
+  takeaway: 'Plus: Spy firms tap into a global telecom weakness to track targets,
+    500,000 UK health records go up for sale on Alibaba, Apple patches a revealing
+    notification bug, and more.'
+  prompt: ''
+  url: https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/
+  source: WIRED - AI
+  published_utc: '2026-04-25T10:30:00+00:00'
+  title_zh: Discord侦探未经授权访问了Anthropic的Mythos系统。
+  why_zh: 此外：间谍公司利用全球电信漏洞追踪目标，50万英国健康记录在阿里巴巴上架销售，苹果修复了一个…
+  takeaway_zh: 此外：间谍公司利用全球电信漏洞追踪目标，50万英国健康记录在阿里巴巴上架销售，苹果修复了一个暴露通知的漏洞，以及更多内容。
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic says stronger AI models cut better deals, and the losers don't
+    even notice
+  why: Anthropic let 69 AI agents trade on behalf of employees in an internal marketplace
+    for a week.
+  takeaway: Anthropic let 69 AI agents trade on behalf of employees in an internal
+    marketplace for a week. Stronger models scored better deals, and the people stuck
+    with weaker agents never noticed. If AI models start handling real transactions
+    for humans, these dynamics could deepen existing economic inequalities. The article
+    Anthropic says stronger AI models cut bett…
+  prompt: ''
+  url: https://the-decoder.com/anthropic-says-stronger-ai-models-cut-better-deals-and-the-losers-dont-even-notice/
+  source: The Decoder (AI)
+  published_utc: '2026-04-25T10:18:31+00:00'
+  title_zh: Anthropic称更强的AI模型能达成更优交易，而弱势方甚至毫无察觉。
+  why_zh: Anthropic让69个AI代理在内部市场代表员工交易了一周。
+  takeaway_zh: Anthropic让69个AI代理在内部市场代表员工交易了一周。更强的模型达成了更优交易，而使用较弱代理的员工却浑然不觉。若AI模型开始为人类处理真实交易，这些动态可能加剧现有的经济不平等。文章《Anthropic称更强的AI模型能达成更优交易…》
+  prompt_zh: ''
+- category: AI frontier
+  title: Ace the Ping-Pong Robot Can Whup Your Ass
+  why: Ace can read the trajectory of a ball, adjust the racket angle, and respond
+    with strokes that keep the exchange alive with real players.
+  takeaway: Ace can read the trajectory of a ball, adjust the racket angle, and respond
+    with strokes that keep the exchange alive with real players.
+  prompt: ''
+  url: https://www.wired.com/story/ace-the-robot-wants-to-become-the-world-table-tennis-champion/
+  source: WIRED - AI
+  published_utc: '2026-04-25T09:30:00+00:00'
+  title_zh: Ace乒乓球机器人能让你甘拜下风
+  why_zh: Ace能读取球的轨迹，调整球拍角度，并以击球动作与真人保持对打
+  takeaway_zh: Ace能读取球的轨迹，调整球拍角度，并以击球动作与真人保持对打
+  prompt_zh: ''
+- category: AI frontier
+  title: The UAE wants half its government run by autonomous AI agents within two
+    years
+  why: The United Arab Emirates plans to shift half of its government operations to
+    autonomous AI systems within two years.
+  takeaway: The United Arab Emirates plans to shift half of its government operations
+    to autonomous AI systems within two years. The article The UAE wants half its
+    government run by autonomous AI agents within two years appeared first on The
+    Decoder .
+  prompt: ''
+  url: https://the-decoder.com/the-uae-wants-half-its-government-run-by-autonomous-ai-agents-within-two-years/
+  source: The Decoder (AI)
+  published_utc: '2026-04-25T09:08:57+00:00'
+  title_zh: 阿联酋计划两年内半数政府由自主AI代理运行
+  why_zh: 阿联酋计划两年内将半数政府运作转移至自主AI系统
+  takeaway_zh: 阿联酋计划两年内将半数政府运作转移至自主AI系统。文章《阿联酋计划两年内半数政府由自主AI代理运行》首发于The Decoder。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '[AINews] DeepSeek V4 Pro (1.6T-A49B) and Flash (284B-A13B), Base and Instruct
+    — runnable on Huawei Ascend chips'
+  why: The prodigal Tiger returns...
+  takeaway: The prodigal Tiger returns... but is no longer the benchmarks leader.
+  prompt: ''
+  url: https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-04-25T05:00:48+00:00'
+  title_zh: '[AINews] DeepSeek V4 Pro (1.6T-A49B) 和 Flash (284B-A13B)，Base 和 Instruct
+    版本——可在华为昇腾芯片上运行'
+  why_zh: 浪子老虎归来...
+  takeaway_zh: 浪子老虎归来...但已不再是基准测试的领跑者
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GPT-5.5 prompting guide
+  why: GPT-5.5 prompting guide Now that GPT-5.5 is available in the API , OpenAI have
+    released a wealth of useful tips on how best to prompt the n…
+  takeaway: 'GPT-5.5 prompting guide Now that GPT-5.5 is available in the API , OpenAI
+    have released a wealth of useful tips on how best to prompt the new model. Here''s
+    a neat trick they recommend for applications that might spend considerable time
+    thinking before returning a user-visible response: Before any tool calls for a
+    multi-step task, send a short user-visible u…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-25T04:13:36+00:00'
+  title_zh: GPT-5.5提示指南
+  why_zh: GPT-5.5提示指南：随着GPT-5.5在API中的推出，OpenAI发布了一系列关于如何最佳提示新模型的有用技巧。
+  takeaway_zh: GPT-5.5提示指南：随着GPT-5.5在API中的推出，OpenAI发布了一系列关于如何最佳提示新模型的有用技巧。他们推荐了一个巧妙的方法，适用于那些可能在返回用户可见响应之前花费大量时间思考的应用：在进行多步骤任务之前，先发送一个简短的用户可见提示。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: llm 0.31
+  why: 'Release: llm 0.31 New GPT-5.5 OpenAI model: llm -m gpt-5.5 .'
+  takeaway: 'Release: llm 0.31 New GPT-5.5 OpenAI model: llm -m gpt-5.5 . #1418 New
+    option to set the text verbosity level for GPT-5+ OpenAI models: -o verbosity
+    low . Values are low , medium , high . New option for setting the image detail
+    level used for image attachments to OpenAI models: -o image_detail low - values
+    are low , high and auto , and GPT-5.4 and 5.5 also…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/24/llm/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-24T23:35:07+00:00'
+  title_zh: ''
+  why_zh: 发布：llm 0.31 新增GPT-5.5 OpenAI模型：llm -m gpt-5.5。
+  takeaway_zh: 发布：llm 0.31 新增GPT-5.5 OpenAI模型：llm -m gpt-5.5。#1418 新增选项用于设置GPT-5+
+    OpenAI模型的文本详细程度：-o verbosity low。可选值为low、medium、high。新增选项用于设置OpenAI模型图像附件的图像细节级别：-o
+    image_detail low，可选值为low、high和auto，GPT-5.4和5.5也支持。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints
+  why: DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro
+    and DeepSeek-V4-Flash, both targeted at enabling highl…
+  takeaway: DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro
+    and DeepSeek-V4-Flash, both targeted at enabling highly efficient...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-24T23:29:56+00:00'
+  title_zh: 使用NVIDIA Blackwell和GPU加速端点构建DeepSeek V4
+  why_zh: DeepSeek刚刚推出了其第四代旗舰模型DeepSeek-V4-Pro和DeepSeek-V4-Flash，两者都旨在实现高性能。
+  takeaway_zh: DeepSeek近日推出第四代旗舰模型DeepSeek-V4-Pro和DeepSeek-V4-Flash，均致力于实现高效...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick now integrates with Visier’s Vee agent for workforce intelligence
+  why: Amazon Quick now integrates with Vee, the AI assistant from Visier's people
+    analytics platform, through the model context protocol (MCP).
+  takeaway: Amazon Quick now integrates with Vee, the AI assistant from Visier's people
+    analytics platform, through the model context protocol (MCP). HR business partners,
+    finance managers, and operations leaders can now get governed access to live workforce
+    intelligence from Visier directly within their Amazon Quick workspace without
+    switching tools. After setting up…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-visier-vee/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-24T21:03:00+00:00'
+  title_zh: Amazon Quick现已集成Visier旗下的Vee智能助手获取人力数据分析
+  why_zh: Amazon Quick通过模型上下文协议（MCP）接入了Visier人力分析平台的AI助手Vee
+  takeaway_zh: Amazon Quick通过模型上下文协议（MCP）接入Visier人力分析平台的AI助手Vee后，人力资源业务伙伴、财务经理和运营主管无需切换工具，即可在Amazon
+    Quick工作区直接获取Visier实时人力数据洞察且受管控的访问权限。设置完成后...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Gateway and Identity support VPC egress
+  why: Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled
+    egress traffic management for your applications, enabling s…
+  takeaway: Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled
+    egress traffic management for your applications, enabling seamless communication
+    with resources in your Virtual Private Cloud (VPC). VPC egress for AgentCore Gateway
+    targets and Identity credential providers are offered in both managed and self-managed
+    configurations. With VPC e…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2024/04/agentcore-gateway-identity-vpc/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-24T21:00:00+00:00'
+  title_zh: Amazon Bedrock AgentCore Gateway与Identity功能支持VPC出口流量
+  why_zh: Amazon Bedrock AgentCore Gateway与Identity现为应用程序提供安全可控的出口流量管理，实现流...
+  takeaway_zh: Amazon Bedrock AgentCore Gateway与Identity现可为应用程序提供安全可控的出口流量管理，实现与虚拟私有云（VPC）资源无缝通信。AgentCore
+    Gateway目标与Identity凭证提供者的VPC出口流量功能均支持托管和自主管理配置。借助VPC出...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-openai==1.2.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-24T19:46:59+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: AI-Designed Drugs by a DeepMind Spinoff Are Headed to Human Trials
+  why: Isomorphic Labs president Max Jaderberg said at WIRED Health in London that
+    the startup has built a “broad and exciting pipeline of new med…
+  takeaway: Isomorphic Labs president Max Jaderberg said at WIRED Health in London
+    that the startup has built a “broad and exciting pipeline of new medicines.”
+  prompt: ''
+  url: https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/
+  source: WIRED - AI
+  published_utc: '2026-04-24T17:17:36+00:00'
+  title_zh: DeepMind分拆公司研发的AI设计药物即将进入人体试验阶段
+  why_zh: Isomorphic Labs总裁Max Jaderberg在伦敦WIRED Health大会上表示，该初创公司已构建了一条“广泛且令人兴奋的新药研发管线”…
+  takeaway_zh: Isomorphic Labs总裁Max Jaderberg在伦敦WIRED Health大会上表示，该初创公司已构建了一条“广泛且令人兴奋的新药研发管线”。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-04-24T15:49:42+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE
+  why: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
+    response to a hard constraint: the most valuable data is often t…'
+  takeaway: 'Federated learning (FL) is no longer a research curiosity—it’s a practical
+    response to a hard constraint: the most valuable data is often the least movable....'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-04-24T15:00:00+00:00'
+  title_zh: 利用NVIDIA FLARE实现无需重构开销的联邦学习
+  why_zh: 联邦学习（FL）已不再是研究探索，而是对一项严峻挑战的实际回应：最有价值的数据往往最难迁移…
+  takeaway_zh: 联邦学习（FL）已不再是研究探索，而是对一项严峻挑战的实际回应：最有价值的数据往往最难迁移。
+  prompt_zh: ''
+- category: AI frontier
+  title: Apple's Next CEO Needs to Launch a Killer AI Product
+  why: Tim Cook was a great CEO, but he didn’t crack AI.
+  takeaway: Tim Cook was a great CEO, but he didn’t crack AI. It’s job number 1 for
+    John Ternus.
+  prompt: ''
+  url: https://www.wired.com/story/apples-next-ceo-needs-to-launch-a-killer-ai-product/
+  source: WIRED - AI
+  published_utc: '2026-04-24T15:00:00+00:00'
+  title_zh: 苹果下任CEO需推出一款杀手级AI产品
+  why_zh: 蒂姆·库克是位出色的CEO，但他在AI领域未能取得突破
+  takeaway_zh: 蒂姆·库克是位出色的CEO，但他在AI领域未能取得突破，这是约翰·特努斯的首要任务
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'open-webui/open-webui: v0.9.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/open-webui/open-webui/releases/tag/v0.9.2
+  source: GitHub Releases - open-webui/open-webui
+  published_utc: '2026-04-24T09:56:14+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详情见更新日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''

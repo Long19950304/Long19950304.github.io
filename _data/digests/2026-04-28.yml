@@ -1,0 +1,955 @@
+date: '2026-04-28'
+title: Daily Digest - 2026-04-28
+title_zh: 每日简报 - 2026-04-28
+note: 'Today: Elon Musk and Sam Altman are going to court over OpenAI’s future · Musk
+  and Altman face off in trial that will determine OpenAI''s… · AI: Comfy-Org/ComfyUI:
+  comfyanonymous/ComfyUI: v0.20.1.'
+note_zh: 今日关注：埃隆·马斯克与山姆·阿尔特曼将就OpenAI的未来对簿公堂；马斯克与阿尔特曼对簿公堂，审判将决定OpenAI的未来；AI：Comfy-Org/ComfyUI：comfyanonymous/…。
+items:
+- category: CSS / AI & society
+  title: Implicit Humanization in Everyday LLM Moral Judgments
+  why: 'arXiv:2604.22764v1 Announce Type: new Abstract: Recent adoption of conversational
+    information systems has expanded the scope of user querie…'
+  takeaway: 'arXiv:2604.22764v1 Announce Type: new Abstract: Recent adoption of conversational
+    information systems has expanded the scope of user queries to include complex
+    tasks such as personal advice-seeking. However, we identify a specific type of
+    sought advice-a request for a moral judgment (i.e. "who was wrong?") in a social
+    conflict-as an implicitly humanizing qu…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22764
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 日常LLM道德判断中的隐性拟人化倾向
+  why_zh: arXiv:2604.22764v1 公告类型：新 摘要：会话式信息系统的广泛应用使得用户查询范围扩展至…
+  takeaway_zh: arXiv:2604.22764v1 公告类型：新 摘要：会话式信息系统的普及使用户查询范围扩展至寻求个人建议等复杂任务。但我们发现一种特殊建议类型——针对社会冲突的道德判断请求（如“谁错了？”）——构成了一种隐性拟人化特…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Algorithmic Administration and the EU AI Act: Legal Principles for Public
+    Sector Use of AI'
+  why: 'arXiv:2604.22765v1 Announce Type: new Abstract: The increasing use of artificial
+    intelligence (AI) by public authorities introduces both op…'
+  takeaway: 'arXiv:2604.22765v1 Announce Type: new Abstract: The increasing use of
+    artificial intelligence (AI) by public authorities introduces both opportunities
+    for innovation and significant challenges for the administrative rule of law.
+    This article examines how the EU AI Act interacts with the fundamental principles
+    of administrative law, with a particular focus o…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22765
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 算法化行政与欧盟AI法案：公共部门使用AI的法律原则
+  why_zh: arXiv:2604.22765v1 公告类型：新 摘要：公共机构对人工智能（AI）的日益广泛应用既带来了创新机遇…
+  takeaway_zh: arXiv:2604.22765v1 公告类型：新 摘要：公共机构对人工智能（AI）的广泛应用既带来创新机遇，也对行政法治构成重大挑战。本文探讨欧盟AI法案如何与行政法基本原则相互作用，特别聚焦于…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Artificial General Intelligence Forecasting and Scenario Analysis: State
+    of the Field, Methodological Gaps, and Strategic Implications'
+  why: 'arXiv:2604.22766v1 Announce Type: new Abstract: In this report, we review
+    the current state of methodologies to forecast the arrival of art…'
+  takeaway: 'arXiv:2604.22766v1 Announce Type: new Abstract: In this report, we review
+    the current state of methodologies to forecast the arrival of artificial general
+    intelligence, assess their reliability, and analyze the implications for strategy
+    and policy. We synthesize diverse forecasting approaches, document significant
+    limitations in existing methods, and propos…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22766
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 通用人工智能预测与情景分析：领域现状、方法论缺口及战略影响
+  why_zh: arXiv:2604.22766v1 公告类型：新 摘要：本报告梳理了当前预测通用人工智能（AGI）出现时机的各类方法…
+  takeaway_zh: arXiv:2604.22766v1 公告类型：新 摘要：本报告审视了当前预测人工通用智能到来方法论的现状，评估其可靠性，并分析其对战略和政策的影响。我们综合了多种预测方法，记录了现有方法的显著局限性，并提出了...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Secure On-Premise Deployment of Open-Weights Large Language Models in Radiology:
+    An Isolation-First Architecture with Prospective Pilot Evaluation'
+  why: 'arXiv:2604.22768v1 Announce Type: new Abstract: Purpose: To design, implement,
+    evaluate, and report on the regulatory requirements of a sel…'
+  takeaway: 'arXiv:2604.22768v1 Announce Type: new Abstract: Purpose: To design, implement,
+    evaluate, and report on the regulatory requirements of a self-hosted LLM infrastructure
+    for radiology adhering to the principle of least privilege, emphasizing technical
+    feasibility, network isolation, and clinical utility. Materials and Methods: The
+    isolation-first, containerize…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22768
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 放射学中开放权重大语言模型的安全本地部署：采用隔离优先架构与前瞻性试点评估
+  why_zh: arXiv:2604.22768v1 公告类型：新 摘要：目的：设计、实施、评估并报告...
+  takeaway_zh: arXiv:2604.22768v1 公告类型：新 摘要：目的：依据最小权限原则，设计、实施、评估并报告放射学领域自托管大语言模型基础设施的监管要求，重点考察技术可行性、网络隔离和临床实用性。材料与方法：采用隔离优先的容器化...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Nexus of Science Fiction, Box Office Success and Technology Representation:
+    A Case Study of the Marvel Cinematic Universe'
+  why: 'arXiv:2604.22769v1 Announce Type: new Abstract: This paper investigated the
+    applied science domains and subjects depicted in Marvel Cinemat…'
+  takeaway: 'arXiv:2604.22769v1 Announce Type: new Abstract: This paper investigated
+    the applied science domains and subjects depicted in Marvel Cinematic Universe
+    (MCU) movies and assessed the relationship between technological portrayal and
+    box office success. The study looked at 164 publications in academic literature
+    that employed MCU movies. In addition to the fore…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22769
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 科幻、票房成功与技术表现的联结：漫威电影宇宙案例研究
+  why_zh: arXiv:2604.22769v1 公告类型：新 摘要：本文研究了漫威电影...
+  takeaway_zh: arXiv:2604.22769v1 公告类型：新 摘要：本文研究了漫威电影宇宙（MCU）影片中描绘的应用科学领域及主题，并评估了技术呈现与票房成功的关系。研究考察了学术文献中164篇使用MCU影片的出版物。除前述...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Learning in Blocks: A Multi Agent Debate Assisted Personalized Adaptive
+    Learning Framework for Language Learning'
+  why: 'arXiv:2604.22770v1 Announce Type: new Abstract: Most digital language learning
+    curricula rely on discrete-item quizzes that test recall rat…'
+  takeaway: 'arXiv:2604.22770v1 Announce Type: new Abstract: Most digital language
+    learning curricula rely on discrete-item quizzes that test recall rather than
+    applied conversational proficiency. When progression is driven by quiz performance,
+    learners can advance despite persistent gaps in using grammar and vocabulary during
+    interaction. Recent work on LLM-based judgi…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22770
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 区块化学习：基于多智能体辩论辅助的个性化自适应语言学习框架
+  why_zh: arXiv:2604.22770v1 公告类型：新 摘要：多数数字化语言学习课程依赖于离散项目的测试，这些测试侧重于记忆而非实际对话能力的考核。当学习进度由测验成绩驱动时，学习者可能在语法和词汇的实际运用上仍有显著不足。近期基于大语言模型（LLM）评判的研究…
+  takeaway_zh: arXiv:2604.22770v1 公告类型：新 摘要：多数数字化语言学习课程依赖于离散项目的测试，这些测试侧重于记忆而非实际对话能力的考核。当学习进度由测验成绩驱动时，学习者可能在语法和词汇的实际运用上仍有显著不足。近期基于大语言模型（LLM）评判的研究…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Early Academic Capital as the Causal Origin of Dropout in Constrained Educational
+    Systems -- Evidence from Longitudinal Data and Structural Causal Models
+  why: 'arXiv:2604.22772v1 Announce Type: new Abstract: Dropout in higher education
+    is commonly analysed through observable academic events such as…'
+  takeaway: 'arXiv:2604.22772v1 Announce Type: new Abstract: Dropout in higher education
+    is commonly analysed through observable academic events such as course failure
+    or repetition. However, these event-based perspectives may obscure the underlying
+    structural dynamics that shape student trajectories. In this study, we adopt a
+    causal computational social science approac…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22772
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 学术资本早期积累作为受限教育系统中辍学的因果起源——来自纵向数据与结构因果模型的证据
+  why_zh: arXiv:2604.22772v1 公告类型：新 摘要：高等教育辍学通常通过如课程不及格或重修等可观测学业事件来分析…
+  takeaway_zh: arXiv:2604.22772v1 公告类型：新 摘要：高等教育辍学通常通过如课程不及格或重修等可观测学业事件来分析。然而，这类基于事件的视角可能遮蔽了塑造学生发展轨迹的深层结构性动力。本研究采用计算社会科学因果推断方法…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'When VLMs ''Fix'' Students: Identifying and Penalizing Over-Correction in
+    the Evaluation of Multi-line Handwritten Math OCR'
+  why: 'arXiv:2604.22774v1 Announce Type: new Abstract: Accurate transcription of
+    handwritten mathematics is crucial for educational AI systems, ye…'
+  takeaway: 'arXiv:2604.22774v1 Announce Type: new Abstract: Accurate transcription
+    of handwritten mathematics is crucial for educational AI systems, yet current
+    benchmarks fail to evaluate this capability properly. Most prior studies focus
+    on single-line expressions and rely on lexical metrics such as BLEU, which fail
+    to assess the semantic reasoning across multi-line…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22774
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 当视觉语言模型‘修正’学生作业：手写数学公式OCR评估中的过度矫正识别与惩罚
+  why_zh: arXiv:2604.22774v1 公告类型：新 摘要：手写数学公式的精准转录对教育AI系统至关重要，然而…
+  takeaway_zh: arXiv:2604.22774v1 公告类型：新 摘要：手写数学公式的精准转录对教育AI系统至关重要，然而现有基准测试未能有效评估该能力。既往研究多集中于单行表达式，并依赖BLEU等词汇指标，这些指标无法评估跨多行公式的语义推演能力…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Epicure: Multidimensional Flavor Structure in Food Ingredient Embeddings'
+  why: 'arXiv:2604.22776v1 Announce Type: new Abstract: A chef''s intuition about
+    flavor, texture, and cultural identity represents tacit knowledge…'
+  takeaway: 'arXiv:2604.22776v1 Announce Type: new Abstract: A chef''s intuition about
+    flavor, texture, and cultural identity represents tacit knowledge that is difficult
+    to articulate yet central to culinary practice. We show that this knowledge is
+    already encoded in FlavorGraph''s 300-dimensional ingredient embeddings, trained
+    on recipe cooccurrence and food chemistry,…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22776
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: Epicure：食材嵌入中的多维风味结构
+  why_zh: arXiv:2604.22776v1 公告类型：新 摘要：厨师对风味、质地和文化认同的直觉代表了一种隐性知识……
+  takeaway_zh: arXiv:2604.22776v1 公告类型：新 摘要：厨师对风味、质地和文化认同的直觉代表了一种隐性知识，虽难以言传却是烹饪实践的核心。我们证明这种知识已被编码在FlavorGraph的300维食材嵌入中，该模型基于食谱共现和食品化学数据训练而成……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'UGAF-ITS: A Standards Harmonization Framework and Validation Tool for Multi-Framework
+    AI Governance in Distributed Intelligent Transportation Systems'
+  why: 'arXiv:2604.22789v1 Announce Type: new Abstract: Organizations deploying AI-enabled
+    Intelligent Transportation Systems face fragmented gover…'
+  takeaway: 'arXiv:2604.22789v1 Announce Type: new Abstract: Organizations deploying
+    AI-enabled Intelligent Transportation Systems face fragmented governance: ISO/IEC
+    42001 demands a certifiable management system, the EU AI Act imposes binding high-risk
+    obligations from August 2026, and the NIST AI Risk Management Framework structures
+    voluntary practice. Each instrument…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22789
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: UGAF-ITS：分布式智能交通系统中多框架AI治理的标准协调框架与验证工具
+  why_zh: arXiv:2604.22789v1 公告类型：新 摘要：部署人工智能智能交通系统的机构正面临治理碎片化问题……
+  takeaway_zh: arXiv:2604.22789v1 公告类型：新 摘要：部署人工智能智能交通系统的机构面临治理碎片化：ISO/IEC 42001要求可认证的管理体系，欧盟《人工智能法案》将从2026年8月起施加高风险强制义务，而NIST人工智能风险管理框架则规范自愿实践。每项工具……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Cross-Course Generalizability of SRL-Aligned Predictive Models Using Digital
+    Learning Traces
+  why: 'arXiv:2604.22812v1 Announce Type: new Abstract: STEM dropout rates remain
+    high at universities, particularly in computer science programs w…'
+  takeaway: 'arXiv:2604.22812v1 Announce Type: new Abstract: STEM dropout rates remain
+    high at universities, particularly in computer science programs with theory-intensive
+    courses. Digital learning environments now capture rich behavioral data that could
+    help identify struggling students early, yet the generalizability of data-driven
+    prediction models across courses an…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22812
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 基于数字学习轨迹的自我调节学习对齐预测模型的跨课程泛化性研究
+  why_zh: arXiv:2604.22812v1 公告类型：新 摘要：高校STEM学科（尤其是计算机专业）的辍学率仍居高不下……
+  takeaway_zh: 'arXiv:2604.22812v1 公告类型: 新论文 摘要: 高校STEM课程辍学率居高不下，尤以计算机科学专业中理论密集型课程为甚。当前数字学习环境能够捕捉丰富的学生行为数据，有助于及早识别学业困难者，但数据驱动的预测模型在不同课程间的泛化能力仍需探究…'
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: A pragmatic approach to regulating AI agents
+  why: 'arXiv:2604.22819v1 Announce Type: new Abstract: The current advancement in
+    and deployment of agentic AI systems has created a set of key ch…'
+  takeaway: 'arXiv:2604.22819v1 Announce Type: new Abstract: The current advancement
+    in and deployment of agentic AI systems has created a set of key challenges for
+    the legal frameworks that govern their use. We cover two central components: first,
+    the regulatory classification of agents under the EU AI Act, and second, the legal
+    status and validity of autonomous action…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22819
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 人工智能代理监管的务实路径
+  why_zh: 'arXiv:2604.22819v1 公告类型: 新论文 摘要: 当前具备自主能力的人工智能系统快速发展与部署，带来一系列关键挑…'
+  takeaway_zh: 'arXiv:2604.22819v1 公告类型: 新论文 摘要: 自主人工智能系统的发展与部署为现行法律框架带来了核心挑战。我们聚焦两大关键：一是欧盟人工智能法案对代理的监管分类，二是自主行动的法律效力认定…'
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Institutions for the Post-Scarcity of Judgment
+  why: 'arXiv:2604.22966v1 Announce Type: new Abstract: Each major technological revolution
+    inverts a particular scarcity and rebuilds institutions…'
+  takeaway: 'arXiv:2604.22966v1 Announce Type: new Abstract: Each major technological
+    revolution inverts a particular scarcity and rebuilds institutions around the
+    shift. The near-consensus diagnosis of the AI revolution holds that AI collapses
+    the cost of prediction while judgment remains scarce. This Opinion argues the
+    inversion has now flipped: competent-looking judg…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22966
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 后判断力稀缺时代的制度构建
+  why_zh: 'arXiv:2604.22966v1 公告类型: 新论文 摘要: 每次重大技术革命都会颠覆特定稀缺性并重构相应制度体…'
+  takeaway_zh: 'arXiv:2604.22966v1 公告类型: 新论文 摘要: 每次重大技术革命通过重塑稀缺性范式推动制度革新。当前共识认为AI革命极大降低预测成本，而判断力仍保持稀缺。本观点指出范式已发生逆转：看似合理的判断充斥市场，真相反成稀缺资源…'
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Peer Identity Bias in Multi-Agent LLM Evaluation: An Empirical Study Using
+    the TRUST Democratic Discourse Analysis Pipeline'
+  why: 'arXiv:2604.22971v1 Announce Type: new Abstract: The TRUST democratic discourse
+    analysis pipeline exposes its large language model (LLM) com…'
+  takeaway: 'arXiv:2604.22971v1 Announce Type: new Abstract: The TRUST democratic
+    discourse analysis pipeline exposes its large language model (LLM) components
+    to peer model identity through multiple structural channels -- a design feature
+    whose bias implications have not previously been empirically tested. We provide
+    the first systematic measurement of identity-depende…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.22971
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 多智能体LLM评估中的同伴身份偏差：基于TRUST民主话语分析管道的实证研究
+  why_zh: arXiv:2604.22971v1 公告类型：新 摘要：TRUST民主话语分析管道通过多个结构渠道将其大型语言模型（LLM）组件暴露给同行模型身份——这一设计特征的偏见影响此前尚未经过实证检验。我们首次系统性地测量了身份依赖…
+  takeaway_zh: arXiv:2604.22971v1 公告类型：新 摘要：TRUST民主话语分析管道通过多个结构渠道将其大型语言模型（LLM）组件暴露给同行模型身份——这一设计特征的偏见影响此前尚未经过实证检验。我们首次系统性地测量了身份依赖性…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: What Should Frontier AI Developers Disclose About Internal Deployments?
+  why: 'arXiv:2604.23065v1 Announce Type: new Abstract: Frontier AI developers are
+    increasingly deploying highly capable models internally to autom…'
+  takeaway: 'arXiv:2604.23065v1 Announce Type: new Abstract: Frontier AI developers
+    are increasingly deploying highly capable models internally to automate AI R&D,
+    but these deployments currently face limited external oversight. It is essential,
+    therefore, that developers provide evidence that internally deployed models are
+    safe. While recent work has highlighted the ri…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.23065
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 前沿AI开发者应如何披露内部部署情况？
+  why_zh: arXiv:2604.23065v1 公告类型：新 摘要：前沿AI开发者越来越多地在内部部署高能力模型以自动化AI研发，但这些部署目前面临有限的外部监督。因此，开发者必须提供证据证明内部部署的模型是安全的。尽管最近的研究强调了风险…
+  takeaway_zh: arXiv:2604.23065v1 公告类型：新 摘要：前沿AI开发者越来越多地在内部部署高能力模型以自动化AI研发，但这些部署目前面临有限的外部监督。因此，开发者必须提供证据证明内部部署的模型是安全的。尽管最近的研究强调了风险…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'How Researchers Navigate Accountability, Transparency, and Trust When Using
+    AI Tools in Early-Stage Research: A Think-Aloud Study'
+  why: 'arXiv:2604.23136v1 Announce Type: new Abstract: In the early stages of scientific
+    research, researchers rely on core scholarly judgments to…'
+  takeaway: 'arXiv:2604.23136v1 Announce Type: new Abstract: In the early stages of
+    scientific research, researchers rely on core scholarly judgments to identify
+    relevant literature, assess credible evidence, and determine which directions
+    merit pursuit. As AI tools become increasingly integrated into these early-stage
+    workflows, the scholarly judgments that were once t…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.23136
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 研究人员如何在早期研究中使用AI工具时应对问责、透明与信任：一项出声思考研究
+  why_zh: arXiv:2604.23136v1 公告类型：新 摘要：在科学研究的早期阶段，研究人员依赖核心学术判断来识别相关文献、评估可信证据并确定值得探索的方向。随着AI工具逐渐融入这些早期工作流程，曾经由人类主导的学术判断…
+  takeaway_zh: arXiv:2604.23136v1 公告类型：新 摘要：在科学研究的早期阶段，研究人员依赖核心学术判断来识别相关文献、评估可信证据并确定值得探索的方向。随着AI工具逐渐融入这些早期工作流程，曾经由人类主导的学术判断…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: A satellite foundation model for improved wealth monitoring
+  why: 'arXiv:2604.23166v1 Announce Type: new Abstract: Poverty statistics guide social
+    policy, but in many low- and middle-income countries, censu…'
+  takeaway: 'arXiv:2604.23166v1 Announce Type: new Abstract: Poverty statistics guide
+    social policy, but in many low- and middle-income countries, censuses and household
+    surveys that collect these data are costly, infrequent, quickly outdated, and
+    sometimes error-prone. Satellite imagery offers global coverage and the possibility
+    of predicting economic livelihoods at sc…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.23166
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 用于改进财富监测的卫星基础模型
+  why_zh: arXiv:2604.23166v1 公告类型：新 摘要：贫困统计数据指导社会政策，但在许多低收入和中等收入国家，收集这些数据的人口普查和家庭调查成本高昂、频率低、迅速过时，有时还容易出错。
+  takeaway_zh: arXiv:2604.23166v1 公告类型：新 摘要：贫困统计数据指导社会政策，但在许多低收入和中等收入国家，收集这些数据的人口普查和家庭调查成本高昂、频率低、迅速过时，有时还容易出错。卫星图像提供了全球覆盖，并有可能在广泛范围内预测经济生活水平。
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Designing escalation criteria for international AI incident response: criteria,
+    triggers, and thresholds'
+  why: 'arXiv:2604.23183v1 Announce Type: new Abstract: AI incident reporting requirements
+    are emerging in regulation and policy, yet no operationa…'
+  takeaway: 'arXiv:2604.23183v1 Announce Type: new Abstract: AI incident reporting
+    requirements are emerging in regulation and policy, yet no operational criteria
+    exist for determining when a detected AI incident warrants escalation beyond national
+    handling to international coordination. This paper proposes an escalation framework
+    to address this gap, intended as a comm…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.23183
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 设计国际AI事件响应的升级标准：标准、触发条件和阈值
+  why_zh: arXiv:2604.23183v1 公告类型：新 摘要：AI事件报告要求正在法规和政策中涌现，但目前尚无操作标准来确定何时应将检测到的AI事件升级到国际协调层面。
+  takeaway_zh: arXiv:2604.23183v1 公告类型：新 摘要：AI事件报告要求正在法规和政策中涌现，但目前尚无操作标准来确定何时应将检测到的AI事件升级到国际协调层面。本文提出了一个升级框架，旨在填补这一空白，作为共同参考。
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: The Collapse of Heterogeneity in Silicon Philosophers
+  why: 'arXiv:2604.23575v1 Announce Type: new Abstract: Silicon samples are increasingly
+    used as a low-cost substitute for human panels and have be…'
+  takeaway: 'arXiv:2604.23575v1 Announce Type: new Abstract: Silicon samples are increasingly
+    used as a low-cost substitute for human panels and have been shown to reproduce
+    aggregate human opinion with high fidelity. We show that, in the alignment-relevant
+    domain of philosophy, silicon samples systematically collapse heterogeneity. Using
+    data from $N = {277}$ professio…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.23575
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 硅哲学家中的异质性崩溃
+  why_zh: arXiv:2604.23575v1 公告类型：新 摘要：硅样本越来越多地被用作人类面板的低成本替代品，并且已经…
+  takeaway_zh: arXiv:2604.23575v1 公告类型：新研究 摘要：硅基样本正日益作为人类调研的低成本替代方案被采用，已证明能以高保真度复现群体人类观点。我们证明在哲学这一涉及价值校准的领域，硅基样本会系统性压缩异质性。基于N=277名专业...
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: The Limits of Artificial Companionship
+  why: 'arXiv:2604.23601v1 Announce Type: new Abstract: This Article argues that conversations
+    with companion chatbot should be subject to a clear…'
+  takeaway: 'arXiv:2604.23601v1 Announce Type: new Abstract: This Article argues that
+    conversations with companion chatbot should be subject to a clear structural distinction
+    between commercial and non-commercial contexts. The insertion of undisclosed promotional
+    content into affective or relational exchanges should be prohibited, as it collapses
+    the boundary between ma…'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.23601
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-04-28T04:00:00+00:00'
+  title_zh: 人工智能陪伴的局限
+  why_zh: arXiv:2604.23601v1 公告类型：新研究 摘要：本文主张伴侣聊天机器人的对话应明确区分商业与非商业场景...
+  takeaway_zh: arXiv:2604.23601v1 公告类型：新研究 摘要：本文主张伴侣聊天机器人的对话应明确区分商业与非商业场景的结构性差异。禁止在情感或关系互动中插入未披露的推广内容，这种行为会模糊市...
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Jury selection in Musk v. Altman: ‘People don’t like him’'
+  why: On Monday, the courtroom battle between Elon Musk and Sam Altman over alleged
+    broken promises at OpenAI started, as usual, with jury select…
+  takeaway: On Monday, the courtroom battle between Elon Musk and Sam Altman over
+    alleged broken promises at OpenAI started, as usual, with jury selection. The
+    only tricky part? A lot of the prospective jurors already have an opinion about
+    Elon Musk, and it's not a good one. The Verge reporter Elizabeth Lopatto, who
+    was there at […]
+  prompt: ''
+  url: https://www.theverge.com/tech/919469/elon-musk-dont-like
+  source: The Verge
+  published_utc: '2026-04-28T03:39:33+00:00'
+  title_zh: 马斯克诉阿尔特曼案陪审团遴选：'大家不喜欢他'
+  why_zh: 周一，埃隆·马斯克与萨姆·阿尔特曼就OpenAI涉嫌违约展开的法庭对决如常从陪审团遴选开始...
+  takeaway_zh: 周一，埃隆·马斯克与萨姆·阿尔特曼就OpenAI涉嫌违约展开的法庭对决如常从陪审团遴选开始。唯一棘手的是？许多候选陪审员早已对埃隆·马斯克形成负面看法。《The
+    Verge》记者伊丽莎白·洛帕托现场报道[...]
+  prompt_zh: ''
+- category: Tech industry
+  title: India’s Snabbit closes $56M round as investor interest in on-demand home
+    services heats up
+  why: Snabbit now processes over 40,000 daily jobs and has cut costs sharply as it
+    expands across cities and services.
+  takeaway: Snabbit now processes over 40,000 daily jobs and has cut costs sharply
+    as it expands across cities and services.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/indias-snabbit-closes-56m-round-as-investor-interest-heats-up-in-on-demand-home-services/
+  source: TechCrunch
+  published_utc: '2026-04-28T03:30:00+00:00'
+  title_zh: 印度按需家政服务平台Snabbit完成5600万美元融资，家庭服务投资热潮持续升温
+  why_zh: Snabbit目前已覆盖多个城市和服务领域，每日处理超过4万份任务，同时大幅削减了成本。
+  takeaway_zh: Snabbit目前已覆盖多个城市和服务领域，每日处理超过4万份任务，同时大幅削减了成本。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Introducing talkie: a 13B vintage language model from 1930'
+  why: 'Introducing talkie: a 13B vintage language model from 1930 New project from
+    Nick Levine , David Duvenaud , and Alec Radford (of GPT, GPT-2,…'
+  takeaway: 'Introducing talkie: a 13B vintage language model from 1930 New project
+    from Nick Levine , David Duvenaud , and Alec Radford (of GPT, GPT-2, Whisper fame).
+    talkie-1930-13b-base (53.1 GB) is a "13B language model trained on 260B tokens
+    of historical pre-1931 English text". talkie-1930-13b-it (26.6 GB) is a checkpoint
+    "finetuned using a novel dataset of instru…'
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/28/talkie/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-28T02:47:42+00:00'
+  title_zh: 介绍来自1930年的复古语言模型talkie：13B参数版本
+  why_zh: 介绍来自1930年的复古语言模型talkie：13B参数版本 这是尼克·莱文、大卫·杜文诺和亚历克·拉德福德（曾参与GPT、GPT-2等项目）的新项目
+  takeaway_zh: 介绍来自1930年的复古语言模型talkie：13B参数版本 这是尼克·莱文、大卫·杜文诺和亚历克·拉德福德（曾参与GPT、GPT-2、Whisper等项目）的新成果。talkie-1930-13b-base（53.1
+    GB）是"基于2600亿词历史语料（1931年前英文文本）训练的13B语言模型"。talkie-1930-13b-it（26.6 GB）是"采用新型指令数据集微调的检查点"
+  prompt_zh: ''
+- category: AI frontier
+  title: Some Musk v. Altman Jurors Don't Like Elon Musk
+  why: Musk’s lawsuit challenges OpenAI’s evolution under Sam Altman.
+  takeaway: Musk’s lawsuit challenges OpenAI’s evolution under Sam Altman. But during
+    jury selection, several potential jurors voiced negative views of Musk himself.
+  prompt: ''
+  url: https://www.wired.com/story/some-musk-v-altman-jurors-dont-like-elon-musk/
+  source: WIRED - AI
+  published_utc: '2026-04-28T00:39:30+00:00'
+  title_zh: 部分马斯克诉阿尔特曼案陪审员不喜欢埃隆·马斯克
+  why_zh: 马斯克的诉讼质疑萨姆·阿尔特曼领导下的OpenAI发展轨迹
+  takeaway_zh: 马斯克的诉讼质疑萨姆·阿尔特曼领导下的OpenAI发展轨迹。但在陪审团遴选过程中，多名候选陪审员对马斯克本人表达了负面看法
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Put it in pencil: NASA''s Artemis III mission will launch no earlier than
+    late 2027'
+  why: SpaceX and Blue Origin tell NASA their lunar landers will be ready for Artemis
+    III in late 2027.
+  takeaway: SpaceX and Blue Origin tell NASA their lunar landers will be ready for
+    Artemis III in late 2027.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/put-it-in-pencil-nasas-artemis-iii-mission-will-launch-no-earlier-than-late-2027/
+  source: Ars Technica
+  published_utc: '2026-04-28T00:14:09+00:00'
+  title_zh: 暂记时间表：NASA阿尔忒弥斯III任务最早将于2027年底发射
+  why_zh: SpaceX和Blue Origin向NASA表示，他们的月球着陆器将为2027年底的阿耳忒弥斯III号任务做好准备。
+  takeaway_zh: SpaceX和Blue Origin向NASA表示，他们的月球着陆器将为2027年底的阿耳忒弥斯III号任务做好准备。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google is testing AI chatbot search for YouTube
+  why: Google is trying out an AI Mode-like search experience for YouTube.
+  takeaway: Google is trying out an AI Mode-like search experience for YouTube. The
+    company is now testing "a new way to search on YouTube that feels more like a
+    conversation," with results pulling in things like longform videos, YouTube Shorts,
+    and text about what you're searching for. The "experiment" is now available if
+    you're a YouTube […]
+  prompt: ''
+  url: https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search
+  source: The Verge
+  published_utc: '2026-04-28T00:01:54+00:00'
+  title_zh: 谷歌正在测试YouTube的AI聊天机器人搜索功能。
+  why_zh: 谷歌正尝试为YouTube推出类似AI模式的搜索体验。
+  takeaway_zh: 谷歌正在尝试为YouTube推出类似AI模式的搜索体验。该公司正在测试"一种更像对话的全新YouTube搜索方式"，搜索结果将整合长视频、YouTube
+    Shorts等内容以及关于你搜索主题的文本。如果您是YouTube[...]用户，现可参与这项"实验"。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Physical AI that Moves the World — Qasar Younis & Peter Ludwig, Applied Intuition
+  why: Applied Intuition puts the AI in mining rigs, drones, trucks, warships and
+    physical vehicles in the most adversarial environments imaginabl…
+  takeaway: Applied Intuition puts the AI in mining rigs, drones, trucks, warships
+    and physical vehicles in the most adversarial environments imaginable. We dive
+    in with their CEO and CTO as they emerge.
+  prompt: ''
+  url: https://www.latent.space/p/appliedintuition
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-04-27T23:02:37+00:00'
+  title_zh: 改变世界的实体AI —— Applied Intuition的Qasar Younis与Peter Ludwig
+  why_zh: Applied Intuition将AI应用于采矿设备、无人机、卡车、军舰以及各类能在最严苛环境中运行的实体载具...
+  takeaway_zh: Applied Intuition将AI应用于采矿设备、无人机、卡车、军舰以及能在最严苛环境中运行的所有实体载具。我们与其CEO和CTO深入探讨了他们的崛起之路。
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk and Sam Altman are going to court over OpenAI’s future
+  why: After a yearslong legal feud, Elon Musk and OpenAI CEO Sam Altman are heading
+    to trial this week in Northern California in a case that coul…
+  takeaway: After a yearslong legal feud, Elon Musk and OpenAI CEO Sam Altman are
+    heading to trial this week in Northern California in a case that could have sweeping
+    consequences. Ahead of OpenAI’s highly anticipated IPO, the court could rule on
+    whether the company is allowed to exist as a for-profit enterprise and might even
+    oust…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/
+  source: MIT Technology Review
+  published_utc: '2026-04-27T22:52:57+00:00'
+  title_zh: 埃隆·马斯克与山姆·阿尔特曼将就OpenAI的未来对簿公堂。
+  why_zh: 经过长达数年的法律纠纷，埃隆·马斯克与OpenAI首席执行官萨姆·奥尔特曼本周将在北加州对簿公堂，此案可能……
+  takeaway_zh: 经过长达数年的法律纠纷，埃隆·马斯克与OpenAI首席执行官萨姆·奥尔特曼本周将在北加州对簿公堂。在OpenAI备受期待的首次公开募股前夕，法院或将裁定该公司是否能够继续作为营利性企业存在，甚至可能罢免……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.20.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.20.1
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-04-27T21:53:26+00:00'
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI版本v0.20.1
+  why_zh: 版本更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.20.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.20.0
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-04-27T21:20:28+00:00'
+  title_zh: vllm-project/vllm版本v0.20.0
+  why_zh: 版本更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Open source package with 1 million monthly downloads stole user credentials
+  why: If you're one of millions using element-data, it's time to check for compromise.
+  takeaway: If you're one of millions using element-data, it's time to check for compromise.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/
+  source: Ars Technica
+  published_utc: '2026-04-27T21:04:03+00:00'
+  title_zh: 月下载量达百万的开源软件包窃取用户凭证
+  why_zh: 如果您是element-data的数百万用户之一，现在是时候检查是否遭遇数据泄露了。
+  takeaway_zh: 如果您是element-data的数百万用户之一，现在是时候检查是否遭遇数据泄露了。
+  prompt_zh: ''
+- category: Tech industry
+  title: Canonical lays out a plan for AI in Ubuntu Linux
+  why: One of the most popular Linux distributions is about to get an influx of AI
+    features.
+  takeaway: One of the most popular Linux distributions is about to get an influx
+    of AI features. As reported by Phoronix, Jon Seager, VP of engineering at Ubuntu
+    developer Canonical, shared a blog post on Monday detailing plans to add AI features
+    to the Linux distro over the next year. As the post states, the AI […]
+  prompt: ''
+  url: https://www.theverge.com/tech/919411/canonical-ubuntu-linux-ai-features
+  source: The Verge
+  published_utc: '2026-04-27T20:47:45+00:00'
+  title_zh: Canonical公布Ubuntu Linux人工智能发展路线图
+  why_zh: 一款最受欢迎的Linux发行版即将迎来大量AI功能。
+  takeaway_zh: 据Phoronix报道，Ubuntu开发商Canonical的工程副总裁Jon Seager周一发布了一篇博客文章，详细介绍了未来一年内为Linux发行版添加AI功能的计划。正如文章所述，AI
+    […]
+  prompt_zh: ''
+- category: Tech industry
+  title: Musk and Altman face off in trial that will determine OpenAI's future
+  why: Musk’s shifting stance on AI dangers may complicate trial over OpenAI’s mission.
+  takeaway: Musk’s shifting stance on AI dangers may complicate trial over OpenAI’s
+    mission.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/04/musk-and-altman-face-off-in-trial-that-will-determine-openais-future/
+  source: Ars Technica
+  published_utc: '2026-04-27T20:45:18+00:00'
+  title_zh: 马斯克与阿尔特曼对簿公堂，审判将决定OpenAI的未来。
+  why_zh: 马斯克对AI风险的立场变化可能使OpenAI使命审判复杂化。
+  takeaway_zh: 马斯克对AI风险的立场变化可能使OpenAI使命审判复杂化。
+  prompt_zh: ''
+- category: Tech industry
+  title: Letterboxd, the social platform for film buffs, reportedly looking for new
+    owner
+  why: Potential buyers of Letterboxd include Versant, the parent company of CNBC
+    and MS NOW, and Hollywood media company The Ankler, according to…
+  takeaway: Potential buyers of Letterboxd include Versant, the parent company of
+    CNBC and MS NOW, and Hollywood media company The Ankler, according to Semafor.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/letterboxd-sale-film-social-media-semafor-versant-ankler/
+  source: TechCrunch
+  published_utc: '2026-04-27T20:37:49+00:00'
+  title_zh: 据报道，电影爱好者社交平台Letterboxd正在寻找新东家。
+  why_zh: 据…消息，Letterboxd的潜在买家包括CNBC和MS NOW的母公司Versant，以及好莱坞媒体公司The Ankler。
+  takeaway_zh: 据Semafor报道，Letterboxd的潜在买家包括CNBC和MS NOW的母公司Versant，以及好莱坞媒体公司The Ankler。
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI ends its exclusive partnership with Microsoft
+  why: Amended agreement clears the way for OpenAI models to run on Amazon Bedrock.
+  takeaway: Amended agreement clears the way for OpenAI models to run on Amazon Bedrock.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/no-longer-exclusive-microsoft-agrees-to-let-openai-see-other-cloud-providers/
+  source: Ars Technica
+  published_utc: '2026-04-27T20:10:11+00:00'
+  title_zh: OpenAI终止了与微软的独家合作伙伴关系。
+  why_zh: 修订后的协议为OpenAI模型在Amazon Bedrock上运行扫清障碍
+  takeaway_zh: 修订后的协议为OpenAI模型在Amazon Bedrock上运行扫清障碍
+  prompt_zh: ''
+- category: AI frontier
+  title: Elon Musk Boosts New Yorker’s Sam Altman Exposé on X as Trial Begins
+  why: The move comes as the trial for Elon Musk’s lawsuit against OpenAI kicks off
+    in federal court in Oakland.
+  takeaway: The move comes as the trial for Elon Musk’s lawsuit against OpenAI kicks
+    off in federal court in Oakland.
+  prompt: ''
+  url: https://www.wired.com/story/elon-musk-boost-new-yorker-article-sam-altman-x/
+  source: WIRED - AI
+  published_utc: '2026-04-27T20:08:51+00:00'
+  title_zh: 埃隆·马斯克在X平台力推《纽约客》山姆·奥特曼调查报道，庭审同日启动
+  why_zh: 此举正值埃隆·马斯克起诉OpenAI案于奥克兰联邦法院开审
+  takeaway_zh: 此举正值埃隆·马斯克起诉OpenAI案于奥克兰联邦法院开审
+  prompt_zh: ''
+- category: Tech industry
+  title: EU tells Google to open up AI on Android; Google says that's "unwarranted
+    intervention"
+  why: Gemini gets preferential treatment on Android, but maybe not for long (in Europe).
+  takeaway: Gemini gets preferential treatment on Android, but maybe not for long
+    (in Europe).
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/europe-could-force-google-to-open-android-to-other-ai-assistants/
+  source: Ars Technica
+  published_utc: '2026-04-27T20:03:49+00:00'
+  title_zh: 欧盟要求谷歌开放Android系统AI功能，谷歌称这是"无端干预"
+  why_zh: Gemini在Android系统享有优待，但（欧洲市场）或难维持
+  takeaway_zh: Gemini在Android系统享有优待，但（欧洲市场）或难维持
+  prompt_zh: ''
+- category: Tech industry
+  title: With new patch design, the Crew-13 astronauts clearly aren't superstitious
+  why: Houston, we have another "13."
+  takeaway: Houston, we have another "13."
+  prompt: ''
+  url: https://arstechnica.com/space/2026/04/nasas-spacex-crew-13-pays-homage-to-apollo-13-on-mission-patch/
+  source: Ars Technica
+  published_utc: '2026-04-27T19:45:06+00:00'
+  title_zh: 新版徽章设计表明，Crew-13宇航员显然不迷信数字13
+  why_zh: 休斯顿，我们又迎来一个"13号"
+  takeaway_zh: 休斯顿，我们又迎来一个"13号"
+  prompt_zh: ''
+- category: Tech industry
+  title: Consumers lost $2.1B to social media scams in 2025, FTC reports
+  why: The agency reports that losses from social media scams have increased eightfold
+    and that social media scams resulted in higher losses than…
+  takeaway: The agency reports that losses from social media scams have increased
+    eightfold and that social media scams resulted in higher losses than any other
+    method scammers used to contact consumers.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/consumers-lost-2-1-billion-to-social-media-scams-in-2025-ftc-reports/
+  source: TechCrunch
+  published_utc: '2026-04-27T19:09:53+00:00'
+  title_zh: 美国联邦贸易委员会报告：2025年社交媒体诈骗致消费者损失21亿美元
+  why_zh: 该机构报告称，社交媒体诈骗造成的损失增长了八倍，且其导致的损失超过了……
+  takeaway_zh: 该机构报告称，社交媒体诈骗造成的损失增长了八倍，且其导致的损失远超诈骗者联系消费者的其他任何手段。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Tracking the history of the now-deceased OpenAI Microsoft AGI clause
+  why: For many years, Microsoft and OpenAI's relationship has included a weird clause
+    saying that, should AGI be achieved, Microsoft's commercial…
+  takeaway: For many years, Microsoft and OpenAI's relationship has included a weird
+    clause saying that, should AGI be achieved, Microsoft's commercial IP rights to
+    OpenAI's technology would be null and void. That clause appeared to end today.
+    I decided to try and track its expression over time on openai.com . OpenAI, July
+    22nd 2019 in Microsoft invests in and partners…
+  prompt: ''
+  url: https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-04-27T18:38:17+00:00'
+  title_zh: 追踪现已失效的OpenAI微软人工通用智能条款的历史
+  why_zh: 多年来，微软与OpenAI的合作关系中存在一项奇特条款：若实现人工通用智能（AGI），微软对OpenAI技术的商业知识产权将自动失效。今日这条款似乎已被废止。我试图通过openai.com的历史记录追溯其演变过程。OpenAI官网2019年7月22日载明：微软投资并建立合作伙伴关系……
+  takeaway_zh: 多年来，微软与OpenAI的合作关系中存在一项奇特条款：若实现人工通用智能（AGI），微软对OpenAI技术的商业知识产权将自动失效。今日这条款似乎已被废止。我试图通过openai.com的历史记录追溯其演变过程。OpenAI官网2019年7月22日载明：微软投资并建立合作伙伴关系……
+  prompt_zh: ''
+- category: Tech industry
+  title: '"Super ZSNES" is a stab at a modern SNES emulator from the original developers'
+  why: Upgrades to SNES graphics and sound go way beyond the typical screen filtering.
+  takeaway: Upgrades to SNES graphics and sound go way beyond the typical screen filtering.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/04/super-zsnes-is-a-stab-at-a-modern-snes-emulator-from-the-original-developers/
+  source: Ars Technica
+  published_utc: '2026-04-27T18:30:14+00:00'
+  title_zh: “超级ZSNES”是原开发团队对现代SNES模拟器的全新尝试
+  why_zh: 对SNES图形与音效的升级突破常规屏幕滤镜的局限
+  takeaway_zh: 对SNES图形与音效的升级突破常规屏幕滤镜的局限
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump demands ABC fire Jimmy Kimmel
+  why: President Donald Trump is calling for Disney to fire Jimmy Kimmel.
+  takeaway: President Donald Trump is calling for Disney to fire Jimmy Kimmel. On
+    Thursday, Kimmel joked that Melania Trump had looked like an "expectant widow"
+    in a skit about the upcoming White House Correspondents' Dinner. The skit aired
+    days before an armed gunman made an assassination attempt at the event, which
+    President Trump and Melania Trump […]
+  prompt: ''
+  url: https://www.theverge.com/policy/919337/president-trump-jimmy-kimmel-fire-abc
+  source: The Verge
+  published_utc: '2026-04-27T18:18:17+00:00'
+  title_zh: 特朗普要求ABC电视台解雇吉米·坎摩尔
+  why_zh: 特朗普总统呼吁迪士尼解雇吉米·坎摩尔。
+  takeaway_zh: 特朗普总统呼吁迪士尼解雇吉米·坎摩尔。周四，坎摩尔在一段关于即将举行的白宫记者协会晚宴的短剧中调侃梅拉尼娅·特朗普看起来像一位‘期待中的寡妇’。该短剧播出几天后，一名持枪者在晚宴上企图刺杀特朗普总统和梅拉尼娅·特朗普[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Google employees ask Sundar Pichai to say no to classified military AI use
+  why: Over 600 Google employees signed a letter to CEO Sundar Pichai demanding that
+    Google block the Pentagon from using its AI models for classi…
+  takeaway: Over 600 Google employees signed a letter to CEO Sundar Pichai demanding
+    that Google block the Pentagon from using its AI models for classified purposes,
+    reports the The Washington Post. Its organizers claim many of the signers work
+    in Google's DeepMind AI lab, and include more than 20 principals, directors, and
+    vice presidents. According to […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/919326/google-ai-pentagon-classified-letter
+  source: The Verge
+  published_utc: '2026-04-27T18:17:12+00:00'
+  title_zh: 谷歌员工要求桑达尔·皮查伊拒绝将AI技术用于军事机密用途。
+  why_zh: 超过600名谷歌员工签署了一封致CEO桑达尔·皮查伊的信，要求谷歌阻止五角大楼将其AI模型用于机密用途[…]
+  takeaway_zh: 据《华盛顿邮报》报道，超过600名谷歌员工签署了一封致CEO桑达尔·皮查伊的信，要求谷歌阻止五角大楼将其AI模型用于机密用途。组织者称，许多签名者来自谷歌的DeepMind
+    AI实验室，其中包括20多位负责人、总监和副总裁。根据[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: China kills Meta’s acquisition of Manus as US-China AI rivalry deepens
+  why: The unwinding of Meta’s deal shows how tech founders struggle to cut China
+    ties.
+  takeaway: The unwinding of Meta’s deal shows how tech founders struggle to cut China
+    ties.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/04/china-kills-metas-acquisition-of-manus-as-us-china-ai-rivalry-deepens/
+  source: Ars Technica
+  published_utc: '2026-04-27T18:12:04+00:00'
+  title_zh: 随着中美AI竞争加剧，中国叫停了Meta收购Manus的交易。
+  why_zh: Meta交易的取消表明科技创始人难以切断与中国的关系。
+  takeaway_zh: Meta交易的取消表明科技创始人难以切断与中国的关系。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Study: Infrasound likely a key factor in alleged hauntings'
+  why: Low-frequency infrasound (below 20 Hz) can raise cortisol levels in saliva
+    and increase irritability.
+  takeaway: Low-frequency infrasound (below 20 Hz) can raise cortisol levels in saliva
+    and increase irritability.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/04/that-spooky-sensation-likely-due-to-rumbling-pipes-not-spirits/
+  source: Ars Technica
+  published_utc: '2026-04-27T18:00:35+00:00'
+  title_zh: 研究：次声波可能是所谓闹鬼现象的关键因素。
+  why_zh: 低频次声波（低于20赫兹）可能导致唾液皮质醇水平升高并增加烦躁情绪。
+  takeaway_zh: 低频次声波（低于20赫兹）可能导致唾液皮质醇水平升高并增加烦躁情绪。
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI ends Microsoft legal peril over its $50B Amazon deal
+  why: OpenAI has won major concessions from its largest shareholder, Microsoft, that
+    will allow it to sell products on AWS, while Microsoft gets…
+  takeaway: OpenAI has won major concessions from its largest shareholder, Microsoft,
+    that will allow it to sell products on AWS, while Microsoft gets more cash in
+    a revenue-share agreement.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/
+  source: TechCrunch
+  published_utc: '2026-04-27T17:40:38+00:00'
+  title_zh: OpenAI终结了与微软围绕其500亿美元亚马逊交易的法律风险
+  why_zh: OpenAI已从其最大股东微软处赢得重大让步，这将允许其在AWS上销售产品，同时微软获得……
+  takeaway_zh: OpenAI已从其最大股东微软处赢得重大让步，允许其在AWS上销售产品，而微软则通过收入分成协议获得更多资金。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Steam Controller: The Ars Technica review'
+  why: Valve's new hardware is solid but might not justify its $99 price.
+  takeaway: Valve's new hardware is solid but might not justify its $99 price.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/04/steam-controller-the-ars-technica-review/
+  source: Ars Technica
+  published_utc: '2026-04-27T17:36:33+00:00'
+  title_zh: Steam控制器：Ars Technica测评报告
+  why_zh: Valve的新硬件表现稳定，但可能难以证明其99美元的定价合理性。
+  takeaway_zh: Valve的新硬件表现稳定，但可能难以证明其99美元的定价合理性。
+  prompt_zh: ''
+- category: Tech industry
+  title: DeepMind’s David Silver just raised $1.1B to build an AI that learns without
+    human data
+  why: Ineffable Intelligence, a British AI lab founded a mere few months ago by former
+    DeepMind researcher David Silver, has raised $1.1 billion…
+  takeaway: Ineffable Intelligence, a British AI lab founded a mere few months ago
+    by former DeepMind researcher David Silver, has raised $1.1 billion in funding
+    at a valuation of $5.1 billion.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/
+  source: TechCrunch
+  published_utc: '2026-04-27T17:24:21+00:00'
+  title_zh: DeepMind的大卫·席尔瓦刚筹集11亿美元，旨在开发无需人类数据学习的AI
+  why_zh: 由DeepMind前研究员大卫·席尔瓦数月前创立的英国AI实验室'Ineffable Intelligence'已筹集11亿美元……
+  takeaway_zh: 由DeepMind前研究员David Silver仅数月前创立的英国AI实验室Ineffable Intelligence，已筹集11亿美元资金，估值达51亿美元。
+  prompt_zh: ''
+- category: Tech industry
+  title: Conspiracy theories are swirling about the White House Correspondents’ Dinner
+    shooting
+  why: On Saturday evening, a room full of journalists, media personalities, and senior
+    members of Donald Trump's administration descended into ch…
+  takeaway: On Saturday evening, a room full of journalists, media personalities,
+    and senior members of Donald Trump's administration descended into chaos as gunshots
+    rang out at the White House Correspondents' Dinner. Nobody was hurt, and the suspect
+    was taken into custody - but it didn't take long for a narrative of doubt to take
+    hold online. […]
+  prompt: ''
+  url: https://www.theverge.com/news/919244/whcd-shooting-trump-social-media-conspiracy-theories
+  source: The Verge
+  published_utc: '2026-04-27T17:11:44+00:00'
+  title_zh: 关于白宫记者协会晚宴枪击事件的阴谋论甚嚣尘上
+  why_zh: 周六晚间，本应汇聚记者、媒体名流及特朗普政府高官的宴会厅内突发枪响……
+  takeaway_zh: 周六晚间，本是记者、媒体名流与特朗普政府高层齐聚的白宫记者协会晚宴现场突发枪响，陷入混乱。事件未造成人员伤亡，嫌犯已被拘押——但网络上很快涌现质疑的声浪。[...]
+  prompt_zh: ''
+- category: Tech industry
+  title: Hacker who allegedly carried out cyberattacks for China is extradited to
+    US
+  why: Xu Zewei is accused of participating in a Chinese government hacking group
+    that broke into thousands of U.S.
+  takeaway: Xu Zewei is accused of participating in a Chinese government hacking group
+    that broke into thousands of U.S. organizations and stole COVID-19-related research.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/hacker-who-allegedly-carried-out-cyberattacks-for-china-is-extradited-to-u-s/
+  source: TechCrunch
+  published_utc: '2026-04-27T17:07:06+00:00'
+  title_zh: 涉嫌为中国实施网络攻击的黑客被引渡至美国
+  why_zh: 许泽伟被指控参与某中国政府支持的黑客组织，入侵了数千家美国机构
+  takeaway_zh: 许泽伟被指控参与某中国政府支持的黑客组织，入侵数千家美国机构并窃取新冠相关研究资料。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.14.rc.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.14.rc.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-27T17:01:41+00:00'
+  title_zh: BerriAI/litellm：v1.83.14.rc.1版本发布
+  why_zh: 版本更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.10-stable'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.10-stable
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-04-27T17:01:01+00:00'
+  title_zh: BerriAI/litellm: v1.83.10稳定版
+  why_zh: 版本更新（详见链接中的变更日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why the Steam Controller is (and isn’t) a big deal
+  why: Most PC gamers already have a controller they love using with Steam - a Sony
+    DualSense, a 8BitDo Ultimate, a Nintendo Switch Pro, or someth…
+  takeaway: Most PC gamers already have a controller they love using with Steam -
+    a Sony DualSense, a 8BitDo Ultimate, a Nintendo Switch Pro, or something else.
+    Part of that love comes from Steam treating them like "native" controllers. They
+    can do the things that made the first Steam Controller worth buying. Namely, they
+    offer a […]
+  prompt: ''
+  url: https://www.theverge.com/tech/918115/steam-controller-2026-pc-deck-machine-hands-on-features
+  source: The Verge
+  published_utc: '2026-04-27T17:00:00+00:00'
+  title_zh: 为何Steam控制器既是（又不是）件大事
+  why_zh: 多数PC玩家已拥有心仪的Steam操控设备——可能是索尼DualSense、八位堂Ultimate、任天堂Switch Pro，或是其……
+  takeaway_zh: 多数PC玩家已拥有心仪的Steam操控设备——可能是索尼DualSense、八位堂Ultimate、任天堂Switch Pro或其他设备。这份偏爱部分源于Steam将它们视作「原生」控制器对待。这些设备能实现初代Steam控制器的核心价值，具体而言，它们提供了【……】
+  prompt_zh: ''
+- category: Tech industry
+  title: Valve’s new Steam Controller isn’t perfect, but I’m buying one anyway
+  why: After my brief hands-on last year with Valve's new Steam Controller, I said
+    it might be my dream controller.
+  takeaway: After my brief hands-on last year with Valve's new Steam Controller, I
+    said it might be my dream controller. I've been looking for a controller with
+    the customization and sheer function available on Valve's Steam Deck while I'm
+    playing games on the TV. You, me, and a lot of other people have been waiting
+    for […]
+  prompt: ''
+  url: https://www.theverge.com/games/918610/valve-steam-controller-review
+  source: The Verge
+  published_utc: '2026-04-27T17:00:00+00:00'
+  title_zh: Valve的新款Steam控制器虽不尽完美，但我仍决定入手一个
+  why_zh: 去年短暂体验过Valve的新款Steam控制器后，我曾表示它可能是我梦寐以求的游戏手柄
+  takeaway_zh: 去年短暂体验过Valve的新款Steam控制器后，我曾表示它可能是我梦寐以求的游戏手柄。我一直在寻找一款能在电视游戏时提供定制化功能和强大操控性的手柄——就像Valve
+    Steam Deck那样。你、我以及许多玩家始终在等待[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: Valve launches the Steam Controller without the Steam Machine
+  why: 'Last November, Valve introduced the world to its new vision of living room
+    gaming: the Steam Machine and Steam Controller.'
+  takeaway: 'Last November, Valve introduced the world to its new vision of living
+    room gaming: the Steam Machine and Steam Controller. Then, RAMageddon. Memory
+    shortages forced Valve to delay all its hardware and reset expectations. Now,
+    Valve is releasing the Steam Controller without the Steam Machine. The Steam Controller
+    is officially going on sale May 4th […]'
+  prompt: ''
+  url: https://www.theverge.com/games/918622/valve-steam-controller-price-release-date-steam-machine-delay
+  source: The Verge
+  published_utc: '2026-04-27T17:00:00+00:00'
+  title_zh: Valve在不推出Steam主机的情况下单独发布了Steam控制器
+  why_zh: 去年11月，Valve向世界展示了其对客厅游戏的全新构想：Steam Machine游戏主机与Steam Controller控制器。
+  takeaway_zh: 去年11月，Valve向世界推出了客厅游戏新概念：Steam Machine主机与Steam Controller控制器。随后内存危机爆发——内存短缺迫使Valve推迟所有硬件计划并重新调整预期。如今Valve决定单独发售Steam
+    Controller，该控制器将于5月4日正式上市[…]。
+  prompt_zh: ''
+- category: Tech industry
+  title: We reviewed Valve’s new Steam Controller, ask us anything
+  why: Hey hey, it's Jay Peters, senior reporter at The Verge.
+  takeaway: Hey hey, it's Jay Peters, senior reporter at The Verge. Today, Valve finally
+    announced that the second version of the Steam Controller - and the first piece
+    of Valve's slate of new gaming hardware set to launch this year - is finally going
+    on sale for $99 on May 4th. My colleague Cameron Faulkner and […]
+  prompt: ''
+  url: https://www.theverge.com/games/919157/valve-steam-controller-ask-us-anything-ama
+  source: The Verge
+  published_utc: '2026-04-27T17:00:00+00:00'
+  title_zh: 我们已经测评了Valve的新款Steam Controller控制器，欢迎随时提问
+  why_zh: 大家好，我是The Verge高级记者Jay Peters。
+  takeaway_zh: 大家好，我是The Verge高级记者Jay Peters。Valve今日正式宣布，第二代Steam Controller控制器——也是Valve今年计划发布的多款游戏硬件中的首款产品——将于5月4日以99美元的价格发售。我的同事Cameron
+    Faulkner与[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: The missing step between hype and profit
+  why: This story originally appeared in The Algorithm, our weekly newsletter on AI.
+  takeaway: This story originally appeared in The Algorithm, our weekly newsletter
+    on AI. To get stories like this in your inbox first, sign up here. In February,
+    I picked up a flyer at an anti-AI march in London. I can’t say for sure whether
+    or not its writers meant to riff on South Park’s underpants gnomes. But…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/04/27/1136456/the-missing-step-between-hype-and-profit/
+  source: MIT Technology Review
+  published_utc: '2026-04-27T16:13:41+00:00'
+  title_zh: 噱头与利润之间缺失的一环
+  why_zh: 本文原载于我们的人工智能周刊《The Algorithm》。
+  takeaway_zh: 本文原载于我们的人工智能周刊《The Algorithm》。欲优先获取此类报道，请点击此处订阅。今年二月，我在伦敦一场反AI游行中拿到一份传单。虽无法确定作者是否借鉴了《南方公园》的内裤精灵梗，但...
+  prompt_zh: ''
+- category: Tech industry
+  title: Investors back Skye’s AI home screen app for iPhone ahead of launch
+  why: Skye's new AI app attracted investors before it even launched — a sign of interest
+    in a more AI-aware iPhone.
+  takeaway: Skye's new AI app attracted investors before it even launched — a sign
+    of interest in a more AI-aware iPhone.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/investors-back-skye-signull-labs-ai-home-screen-app-for-iphone-ahead-of-launch/
+  source: TechCrunch
+  published_utc: '2026-04-27T16:13:02+00:00'
+  title_zh: 投资者在Skye人工智能iPhone主屏应用发布前予以支持
+  why_zh: Skye的新AI应用未发布即获投资者青睐，表明市场对更具AI感知的iPhone兴趣浓厚
+  takeaway_zh: Skye的新AI应用未发布即获投资者青睐，表明市场对更具AI感知的iPhone兴趣浓厚
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon SageMaker HyperPod now supports G7e and r5d.16xlarge instances
+  why: Amazon SageMaker HyperPod now supports G7e and r5d.16xlarge instances.
+  takeaway: Amazon SageMaker HyperPod now supports G7e and r5d.16xlarge instances.
+    SageMaker HyperPod is a purpose-built infrastructure for developing, training,
+    and deploying foundation models at scale. It provides a resilient and performant
+    environment with built-in fault tolerance, automated cluster recovery, and optimized
+    distributed training libraries, reducing th…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-hyperpod-g7e-r5d/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-04-27T15:30:00+00:00'
+  title_zh: Amazon SageMaker HyperPod现支持G7e和r5d.16xlarge实例
+  why_zh: Amazon SageMaker HyperPod现支持G7e和r5d.16xlarge实例
+  takeaway_zh: Amazon SageMaker HyperPod现支持G7e和r5d.16xlarge实例。该平台是为大规模开发、训练和部署基础模型而构建的专业基础设施，提供具有内置容错、自动集群恢复及优化分布式训练库的高性能环境，可降低...
+  prompt_zh: ''
+- category: Tech industry
+  title: Data center demand drives 66% surge in natural gas power plant costs
+  why: Natural gas power plant costs have nearly doubled in two years and take 23%
+    longer to build as data center electricity demand skyrockets.
+  takeaway: Natural gas power plant costs have nearly doubled in two years and take
+    23% longer to build as data center electricity demand skyrockets.
+  prompt: ''
+  url: https://techcrunch.com/2026/04/27/data-center-demand-drives-66-surge-in-natural-gas-power-plant-costs/
+  source: TechCrunch
+  published_utc: '2026-04-27T15:27:52+00:00'
+  title_zh: 数据中心需求致天然气发电厂成本激增66%
+  why_zh: 天然气发电厂成本两年内翻倍，建造周期延长23%，因数据中心电力需求飙升
+  takeaway_zh: 天然气发电厂成本两年内翻倍，建造周期延长23%，因数据中心电力需求飙升
+  prompt_zh: ''

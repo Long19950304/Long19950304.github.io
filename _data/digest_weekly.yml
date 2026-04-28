@@ -496,6 +496,7 @@ weeks:
   end: '2026-05-03'
   issues:
   - '2026-04-27'
+  - '2026-04-28'
   highlights_news:
   - date: '2026-04-27'
     url: https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/
@@ -532,6 +533,41 @@ weeks:
     category: AI frontier
     source: WIRED - AI
     published_utc: '2026-04-25T10:30:00+00:00'
+  - date: '2026-04-28'
+    url: https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/
+    title: Elon Musk and Sam Altman are going to court over OpenAI’s future
+    title_zh: 埃隆·马斯克与山姆·阿尔特曼将就OpenAI的未来对簿公堂。
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-04-27T22:52:57+00:00'
+  - date: '2026-04-28'
+    url: https://arstechnica.com/tech-policy/2026/04/musk-and-altman-face-off-in-trial-that-will-determine-openais-future/
+    title: Musk and Altman face off in trial that will determine OpenAI's future
+    title_zh: 马斯克与阿尔特曼对簿公堂，审判将决定OpenAI的未来。
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-27T20:45:18+00:00'
+  - date: '2026-04-28'
+    url: https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/
+    title: OpenAI ends Microsoft legal peril over its $50B Amazon deal
+    title_zh: OpenAI终结了与微软围绕其500亿美元亚马逊交易的法律风险
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-27T17:40:38+00:00'
+  - date: '2026-04-28'
+    url: https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search
+    title: Google is testing AI chatbot search for YouTube
+    title_zh: 谷歌正在测试YouTube的AI聊天机器人搜索功能。
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-28T00:01:54+00:00'
+  - date: '2026-04-28'
+    url: https://www.wired.com/story/some-musk-v-altman-jurors-dont-like-elon-musk/
+    title: Some Musk v. Altman Jurors Don't Like Elon Musk
+    title_zh: 部分马斯克诉阿尔特曼案陪审员不喜欢埃隆·马斯克
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-04-28T00:39:30+00:00'
   highlights_ai:
   - date: '2026-04-27'
     url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
@@ -554,3 +590,38 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - open-webui/open-webui
     published_utc: '2026-04-24T09:56:14+00:00'
+  - date: '2026-04-28'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.20.1
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.20.1'
+    title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI版本v0.20.1
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-04-27T21:53:26+00:00'
+  - date: '2026-04-28'
+    url: https://simonwillison.net/2026/Apr/28/talkie/#atom-everything
+    title: 'Introducing talkie: a 13B vintage language model from 1930'
+    title_zh: 介绍来自1930年的复古语言模型talkie：13B参数版本
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-04-28T02:47:42+00:00'
+  - date: '2026-04-28'
+    url: https://github.com/vllm-project/vllm/releases/tag/v0.20.0
+    title: 'vllm-project/vllm: v0.20.0'
+    title_zh: vllm-project/vllm版本v0.20.0
+    category: AI tools & model releases
+    source: GitHub Releases - vllm-project/vllm
+    published_utc: '2026-04-27T21:20:28+00:00'
+  - date: '2026-04-28'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.83.10-stable
+    title: 'BerriAI/litellm: v1.83.10-stable'
+    title_zh: BerriAI/litellm: v1.83.10稳定版
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-04-27T17:01:01+00:00'
+  - date: '2026-04-28'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-hyperpod-g7e-r5d/
+    title: Amazon SageMaker HyperPod now supports G7e and r5d.16xlarge instances
+    title_zh: Amazon SageMaker HyperPod现支持G7e和r5d.16xlarge实例
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-04-27T15:30:00+00:00'

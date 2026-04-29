@@ -497,6 +497,7 @@ weeks:
   issues:
   - '2026-04-27'
   - '2026-04-28'
+  - '2026-04-29'
   highlights_news:
   - date: '2026-04-27'
     url: https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/
@@ -568,6 +569,42 @@ weeks:
     category: AI frontier
     source: WIRED - AI
     published_utc: '2026-04-28T00:39:30+00:00'
+  - date: '2026-04-29'
+    url: https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/
+    title: At his OpenAI trial, Musk relitigates an old friendship
+    title_zh: 在OpenAI庭审中，马斯克重提一段旧日友情
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-04-29T00:40:16+00:00'
+  - date: '2026-04-29'
+    url: https://arstechnica.com/gadgets/2026/04/no-fly-zones-around-moving-ice-vehicles-this-drone-pilot-fought-back-and-won/
+    title: Drone pilot makes US rescind no-fly zones around unmarked, moving ICE vehicles
+    title_zh: 无人机飞行员促使美国撤销对无标识移动ICE车辆的禁飞区
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-04-28T19:37:09+00:00'
+  - date: '2026-04-29'
+    url: https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit
+    title: Live updates from Elon Musk and Sam Altman’s court battle over the future
+      of OpenAI
+    title_zh: 埃隆·马斯克与萨姆·奥特曼关于OpenAI未来的法庭对决实时更新
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-04-28T19:27:50+00:00'
+  - date: '2026-04-29'
+    url: https://www.wired.com/story/model-behavior-elon-musk-testifies-at-musk-v-altman-trial/
+    title: Elon Musk Testifies That He Started OpenAI to Prevent a ‘Terminator Outcome’
+    title_zh: 埃隆·马斯克作证称他创办OpenAI是为了避免‘终结者式的结局’
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-04-28T21:35:17+00:00'
+  - date: '2026-04-29'
+    url: https://spectrum.ieee.org/fpga-chip-ieee-milestone
+    title: The Chip That Made Hardware Rewriteable
+    title_zh: 改写硬件历史的芯片
+    category: Tech industry
+    source: IEEE Spectrum
+    published_utc: '2026-04-28T18:00:02+00:00'
   highlights_ai:
   - date: '2026-04-27'
     url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
@@ -625,3 +662,31 @@ weeks:
     category: AI tools & model releases
     source: AWS What's New (Recent Announcements)
     published_utc: '2026-04-27T15:30:00+00:00'
+  - date: '2026-04-29'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.4.2
+    title: 'langchain-ai/langchain: langchain-anthropic==1.4.2'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-04-28T20:50:54+00:00'
+  - date: '2026-04-29'
+    url: https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo/
+    title: Scaling Biomolecular Modeling Using Context Parallelism in NVIDIA BioNeMo
+    title_zh: 利用NVIDIA BioNeMo中的上下文并行性扩展生物分子建模
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-04-28T19:00:00+00:00'
+  - date: '2026-04-29'
+    url: https://github.com/BerriAI/litellm/releases/tag/1.84.0-dev.1
+    title: 'BerriAI/litellm: 1.84.0-dev.1'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-04-29T02:47:24+00:00'
+  - date: '2026-04-29'
+    url: https://github.com/ollama/ollama/releases/tag/v0.22.0
+    title: 'ollama/ollama: v0.22.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - ollama/ollama
+    published_utc: '2026-04-28T15:00:25+00:00'

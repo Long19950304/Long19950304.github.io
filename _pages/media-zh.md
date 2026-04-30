@@ -103,3 +103,45 @@ translation_key: media
   {% if xx3 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep03-poster.jpg" alt="先贤对谈 EP03 海报" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
   {% if xx4 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep04-poster.jpg" alt="先贤对谈 EP04 海报" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
 </div>
+
+### *通鉴史案 / LongXiGE Reads Zizhi Tongjian*
+
+- 基于《资治通鉴》的中英双语历史视频节目
+- 形态：史案复盘 + 文本解读 + 决策分析
+
+**海报与剧照**
+
+{% assign tj_poster = site.static_files | where: "path", "/assets/img/media/tongjian-shian/poster-zh.jpg" | first %}
+{% assign tj1 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-1.jpg" | first %}
+{% assign tj2 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-2.jpg" | first %}
+{% assign tj3 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-3.jpg" | first %}
+{% assign tj4 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-4.jpg" | first %}
+
+<div class="media-work__gallery">
+  <div class="media-work__poster">
+    {% if tj_poster %}
+      {% include figure.liquid
+        path="assets/img/media/tongjian-shian/poster-zh.jpg"
+        alt="通鉴史案 海报"
+        class="media-work__img media-work__img--poster"
+        sizes="(min-width: 992px) 40vw, 95vw"
+        zoomable=true
+      %}
+    {% endif %}
+  </div>
+
+  <div class="media-work__stills">
+    <div class="media-work__still">
+      {% if tj1 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-1.jpg" alt="通鉴史案 剧照 1" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+    <div class="media-work__still">
+      {% if tj2 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-2.jpg" alt="通鉴史案 剧照 2" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+    <div class="media-work__still">
+      {% if tj3 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-3.jpg" alt="通鉴史案 剧照 3" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+    <div class="media-work__still">
+      {% if tj4 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-4.jpg" alt="通鉴史案 剧照 4" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+  </div>
+</div>

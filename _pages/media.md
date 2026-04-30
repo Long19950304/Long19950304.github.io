@@ -160,3 +160,45 @@ translation_key: media
   {% if xx3 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep03-poster.jpg" alt="Xianxian Dialogues EP03 poster" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
   {% if xx4 %}{% include figure.liquid path="assets/img/media/xianxian-dialogues/ep04-poster.jpg" alt="Xianxian Dialogues EP04 poster" class="media-gallery__img" sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
 </div>
+
+### *LongXiGE Reads Zizhi Tongjian / 通鉴史案*
+
+- Bilingual history video-podcast series based on *Zizhi Tongjian*
+- Format: historical case reconstruction, close reading, and decision analysis
+
+**Poster & stills**
+
+{% assign tj_poster = site.static_files | where: "path", "/assets/img/media/tongjian-shian/poster-en.jpg" | first %}
+{% assign tj1 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-1.jpg" | first %}
+{% assign tj2 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-2.jpg" | first %}
+{% assign tj3 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-3.jpg" | first %}
+{% assign tj4 = site.static_files | where: "path", "/assets/img/media/tongjian-shian/still-4.jpg" | first %}
+
+<div class="media-work__gallery">
+  <div class="media-work__poster">
+    {% if tj_poster %}
+      {% include figure.liquid
+        path="assets/img/media/tongjian-shian/poster-en.jpg"
+        alt="LongXiGE Reads Zizhi Tongjian poster"
+        class="media-work__img media-work__img--poster"
+        sizes="(min-width: 992px) 40vw, 95vw"
+        zoomable=true
+      %}
+    {% endif %}
+  </div>
+
+  <div class="media-work__stills">
+    <div class="media-work__still">
+      {% if tj1 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-1.jpg" alt="LongXiGE Reads Zizhi Tongjian still 1" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+    <div class="media-work__still">
+      {% if tj2 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-2.jpg" alt="LongXiGE Reads Zizhi Tongjian still 2" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+    <div class="media-work__still">
+      {% if tj3 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-3.jpg" alt="LongXiGE Reads Zizhi Tongjian still 3" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+    <div class="media-work__still">
+      {% if tj4 %}{% include figure.liquid path="assets/img/media/tongjian-shian/still-4.jpg" alt="LongXiGE Reads Zizhi Tongjian still 4" class="media-work__img" sizes="(min-width: 992px) 26vw, (min-width: 576px) 45vw, 95vw" zoomable=true %}{% endif %}
+    </div>
+  </div>
+</div>

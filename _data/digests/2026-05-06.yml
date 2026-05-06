@@ -1,0 +1,900 @@
+date: '2026-05-06'
+title: Daily Digest - 2026-05-06
+title_zh: 每日简报 - 2026-05-06
+note: 'Today: OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT · OpenAI
+  claims ChatGPT’s new default model hallucinates way less · AI: OpenAI''s first hardware
+  play might be a phone that replac….'
+note_zh: 今日关注：OpenAI发布GPT-5.5 Instant，成为ChatGPT的新默认…；OpenAI称ChatGPT的新默认模型幻觉大幅减少；AI：OpenAI的首款硬件产品或是一款用智能体任务流取代应用网格的手机。
+items:
+- category: Tech industry
+  title: 'Ombudsman column: The Pentagon is trying to silence me'
+  why: 'Article URL: https://www.stripes.com/opinion/2026-04-23/stripes-former-ombudsman-pentagon-trying-to-silence-21465037.html
+    Comments URL: htt…'
+  takeaway: 'Article URL: https://www.stripes.com/opinion/2026-04-23/stripes-former-ombudsman-pentagon-trying-to-silence-21465037.html
+    Comments URL: https://news.ycombinator.com/item?id=48031769 Points: 6 # Comments:
+    0'
+  prompt: ''
+  url: https://www.stripes.com/opinion/2026-04-23/stripes-former-ombudsman-pentagon-trying-to-silence-21465037.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T03:24:49+00:00'
+  title_zh: 监察专员专栏：五角大楼试图让我噤声
+  why_zh: 文章链接：https://www.stripes.com/opinion/2026-04-23/stripes-former-ombudsman-pentagon-trying-to-silence-21465037.html
+    评论链接：htt…
+  takeaway_zh: '文章链接：https://www.stripes.com/opinion/2026-04-23/stripes-former-ombudsman-pentagon-trying-to-silence-21465037.html
+    评论链接：https://news.ycombinator.com/item?id=48031769 积分：6 # 评论：0'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Update on "Co-authored-by: Copilot" in commit messages'
+  why: 'Article URL: https://github.com/microsoft/vscode/issues/314311 Comments URL:
+    https://news.ycombinator.com/item?id=48031707 Points: 4 # Comm…'
+  takeaway: 'Article URL: https://github.com/microsoft/vscode/issues/314311 Comments
+    URL: https://news.ycombinator.com/item?id=48031707 Points: 4 # Comments: 0'
+  prompt: ''
+  url: https://github.com/microsoft/vscode/issues/314311
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T03:15:05+00:00'
+  title_zh: '关于提交信息中''Co-authored-by: Copilot''的更新说明'
+  why_zh: '文章链接：https://github.com/microsoft/vscode/issues/314311 评论链接：https://news.ycombinator.com/item?id=48031707
+    积分：4 # 评论…'
+  takeaway_zh: '文章链接：https://github.com/microsoft/vscode/issues/314311 评论链接：https://news.ycombinator.com/item?id=48031707
+    积分：4 # 评论：0'
+  prompt_zh: ''
+- category: Tech industry
+  title: Agents can now create Cloudflare accounts, buy domains, and deploy
+  why: 'Article URL: https://blog.cloudflare.com/agents-stripe-projects/ Comments
+    URL: https://news.ycombinator.com/item?id=48031684 Points: 9 # Co…'
+  takeaway: 'Article URL: https://blog.cloudflare.com/agents-stripe-projects/ Comments
+    URL: https://news.ycombinator.com/item?id=48031684 Points: 9 # Comments: 2'
+  prompt: ''
+  url: https://blog.cloudflare.com/agents-stripe-projects/
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T03:10:33+00:00'
+  title_zh: 代理现可创建Cloudflare账户、购买域名并部署
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.10-stable.patch.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.10-stable.patch.1
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-05-06T02:53:37+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.83.14-stable.patch.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.83.14-stable.patch.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-05-06T02:37:47+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: StarFighter 16-Inch
+  why: 'Article URL: https://us.starlabs.systems/pages/starfighter Comments URL: https://news.ycombinator.com/item?id=48031261
+    Points: 74 # Comment…'
+  takeaway: 'Article URL: https://us.starlabs.systems/pages/starfighter Comments URL:
+    https://news.ycombinator.com/item?id=48031261 Points: 74 # Comments: 56'
+  prompt: ''
+  url: https://us.starlabs.systems/pages/starfighter
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T02:03:44+00:00'
+  title_zh: StarFighter 16英寸版
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Telus Uses AI to Alter Call-Agent Accents
+  why: 'Article URL: https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63
+    Comments URL: https://news.ycombinator.com…'
+  takeaway: 'Article URL: https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63
+    Comments URL: https://news.ycombinator.com/item?id=48031109 Points: 49 # Comments:
+    19'
+  prompt: ''
+  url: https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T01:38:44+00:00'
+  title_zh: Telus运用AI技术改变客服代表口音
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Nuro receives driverless testing permit ahead of Uber robotaxi service launch
+  why: The Silicon Valley AV startup has not started driverless testing yet.
+  takeaway: The Silicon Valley AV startup has not started driverless testing yet.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/nuro-receives-driverless-testing-permit-ahead-of-uber-robotaxi-service-launch/
+  source: TechCrunch
+  published_utc: '2026-05-06T00:07:47+00:00'
+  title_zh: Nuro获无人驾驶测试许可，Uber机器人出租车服务即将推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SAP bets $1.16B on 18-month-old German AI lab and says yes to NemoClaw
+  why: SAP plans to buy German AI startup Prior Labs and invest heavily in it.
+  takeaway: SAP plans to buy German AI startup Prior Labs and invest heavily in it.
+    It is also prohibiting customers' agents use to a select few like Nvidia's NemoClaw.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/
+  source: TechCrunch
+  published_utc: '2026-05-05T23:50:10+00:00'
+  title_zh: SAP豪掷11.6亿美元押注18个月大的德国AI实验室，并确认支持NemoClaw
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: ‘I Actually Thought He Was Going to Hit Me,’ OpenAI’s Greg Brockman Says
+    of Elon Musk
+  why: OpenAI’s president wrapped his testimony on Tuesday by revealing a fiery meeting
+    with Musk in 2017 and subsequent efforts to remove several…
+  takeaway: OpenAI’s president wrapped his testimony on Tuesday by revealing a fiery
+    meeting with Musk in 2017 and subsequent efforts to remove several board members.
+  prompt: ''
+  url: https://www.wired.com/story/greg-brockman-testifies-elon-musk-fight-trial/
+  source: WIRED - AI
+  published_utc: '2026-05-05T23:24:58+00:00'
+  title_zh: '''我原以为他会动手''——OpenAI格雷格·布罗克曼谈埃隆·马斯克'
+  why_zh: OpenAI总裁周二结束作证时，透露了2017年与马斯克的一次激烈会议，以及随后试图移除几名董事会成员的努力……
+  takeaway_zh: OpenAI总裁周二结束作证时，透露了2017年与马斯克的一次激烈会议，以及随后试图移除几名董事会成员的努力。
+  prompt_zh: ''
+- category: Tech industry
+  title: Bumble’s paying users are slipping as it bets on an overhaul later this year
+  why: The company is making a big bet that the swiping model is outdated and most
+    matches never turn into actual dates.
+  takeaway: The company is making a big bet that the swiping model is outdated and
+    most matches never turn into actual dates. The company wants to fix that by redesigning
+    profiles, changing how people interact, and focusing a lot more on getting users
+    to meet in real life.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/bumbles-paying-users-are-slipping-as-it-bets-on-an-overhaul-later-this-year/
+  source: TechCrunch
+  published_utc: '2026-05-05T23:05:50+00:00'
+  title_zh: Bumble付费用户流失，寄希望于今年晚些时候的全面改革
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Altara secures $7M to bridge the data gap that’s slowing down physical sciences
+  why: Altara’s AI aims to diagnose failures and help speed up R&D by unifying data
+    siloed across spreadsheets and legacy systems.
+  takeaway: Altara’s AI aims to diagnose failures and help speed up R&D by unifying
+    data siloed across spreadsheets and legacy systems.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/altara-secures-7m-to-bridge-the-data-gap-thats-slowing-down-physical-sciences/
+  source: TechCrunch
+  published_utc: '2026-05-05T22:57:41+00:00'
+  title_zh: Altara获700万美元融资，致力于弥合阻碍物理科学发展的数据鸿沟
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Lucid Motors doesn’t know how many EVs it will build this year
+  why: Lucid Motors pulled its guidance for the year, as it navigates swelling inventory
+    and a companywide cost-cutting measure.
+  takeaway: Lucid Motors pulled its guidance for the year, as it navigates swelling
+    inventory and a companywide cost-cutting measure.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/lucid-motors-doesnt-know-how-many-evs-it-will-build-this-year/
+  source: TechCrunch
+  published_utc: '2026-05-05T22:31:57+00:00'
+  title_zh: Lucid Motors尚未确定今年将生产多少辆电动汽车
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI president forced to read his personal diary entries to jury
+  why: Elon Musk argued the journals show the moment when OpenAI abandoned its mission.
+  takeaway: Elon Musk argued the journals show the moment when OpenAI abandoned its
+    mission.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/openai-president-explains-to-jury-why-his-diary-entries-sound-greedy/
+  source: Ars Technica
+  published_utc: '2026-05-05T22:28:12+00:00'
+  title_zh: OpenAI总裁被迫向陪审团宣读个人日记内容
+  why_zh: 埃隆·马斯克认为这些文件揭示了OpenAI背离其使命的时刻。
+  takeaway_zh: 埃隆·马斯克认为这些文件揭示了OpenAI背离其使命的时刻。
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Home&#8217;s Gemini AI can handle more complicated requests
+  why: Google Home users can now ask Gemini to complete more complex, multi-step tasks
+    and combine multiple tasks in a single command.
+  takeaway: Google Home users can now ask Gemini to complete more complex, multi-step
+    tasks and combine multiple tasks in a single command. Google has updated Gemini
+    for Home to Gemini 3.1, which it says will improve the smart home assistant's
+    ability to interpret and act on requests. The upgrade will also make Gemini for
+    Home better […]
+  prompt: ''
+  url: https://www.theverge.com/tech/924755/google-home-gemini-3-1-upgrade
+  source: The Verge
+  published_utc: '2026-05-05T21:46:04+00:00'
+  title_zh: Google Home的Gemini AI现可处理更复杂请求
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Silicon Valley bets $200M on AI data centers floating in the ocean
+  why: Panthalassa aims to test floating AI computing nodes in the Pacific in 2026.
+  takeaway: Panthalassa aims to test floating AI computing nodes in the Pacific in
+    2026.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/05/silicon-valley-bets-on-floating-ai-data-centers-powered-by-ocean-waves/
+  source: Ars Technica
+  published_utc: '2026-05-05T21:41:32+00:00'
+  title_zh: 硅谷豪掷2亿美元押注海上漂浮的AI数据中心
+  why_zh: Panthalassa计划于2026年在太平洋测试浮动AI计算节点。
+  takeaway_zh: Panthalassa计划于2026年在太平洋测试浮动AI计算节点。
+  prompt_zh: ''
+- category: Tech industry
+  title: Write some software, give it away for free
+  why: 'Article URL: https://nonogra.ph/write-some-software-give-it-away-for-free-05-05-2026
+    Comments URL: https://news.ycombinator.com/item?id=480…'
+  takeaway: 'Article URL: https://nonogra.ph/write-some-software-give-it-away-for-free-05-05-2026
+    Comments URL: https://news.ycombinator.com/item?id=48028842 Points: 165 # Comments:
+    123'
+  prompt: ''
+  url: https://nonogra.ph/write-some-software-give-it-away-for-free-05-05-2026
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T21:26:50+00:00'
+  title_zh: 编写软件并免费发布
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple agrees to pay iPhone owners $250 million for not delivering AI Siri
+  why: Apple has agreed to pay $250 million to settle a class action lawsuit that
+    accused it of misleading customers about the availability of its…
+  takeaway: Apple has agreed to pay $250 million to settle a class action lawsuit
+    that accused it of misleading customers about the availability of its Apple Intelligence
+    features. The proposed settlement would apply to people in the US who purchased
+    all models of the iPhone 16 and the iPhone 15 Pro between June 10th, 2024 and
+    […]
+  prompt: ''
+  url: https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement
+  source: The Verge
+  published_utc: '2026-05-05T21:18:23+00:00'
+  title_zh: 苹果同意向iPhone用户支付2.5亿美元，因未兑现AI语音助手Siri承诺
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: As crypto cools, a16z crypto raises a $2.2B fund
+  why: As some of the biggest VCs in crypto start to consider funding AI startups,
+    a16z crypto's new fund will stay the course.
+  takeaway: As some of the biggest VCs in crypto start to consider funding AI startups,
+    a16z crypto's new fund will stay the course.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/as-crypto-cools-a16zcrypto-raises-a-2-2b-fund/
+  source: TechCrunch
+  published_utc: '2026-05-05T21:15:56+00:00'
+  title_zh: 加密货币降温之际，a16z crypto筹集22亿美元基金
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why most product tours get skipped
+  why: 'Article URL: https://productonboarding.com/articles/why-product-tours-get-skipped
+    Comments URL: https://news.ycombinator.com/item?id=480285…'
+  takeaway: 'Article URL: https://productonboarding.com/articles/why-product-tours-get-skipped
+    Comments URL: https://news.ycombinator.com/item?id=48028546 Points: 92 # Comments:
+    81'
+  prompt: ''
+  url: https://productonboarding.com/articles/why-product-tours-get-skipped
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T21:05:19+00:00'
+  title_zh: 为何大多数产品导览会被跳过
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-classic==1.0.6'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.6
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-05-05T21:02:41+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==0.3.29'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.29
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-05-05T21:02:15+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Character.AI sued over chatbot that claims to be a real doctor with a license
+  why: State says chatbot claimed to practice medicine, gave invalid license number.
+  takeaway: State says chatbot claimed to practice medicine, gave invalid license
+    number.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/character-ai-sued-over-chatbot-that-claims-to-be-a-real-doctor-with-a-license/
+  source: Ars Technica
+  published_utc: '2026-05-05T20:58:56+00:00'
+  title_zh: Character.AI因声称拥有执照的真实医生聊天机器人被起诉
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple plans to make iOS 27 a Choose Your Own Adventure of AI models
+  why: With Apple's latest operating system updates, users will reportedly have their
+    pick of which third-party AI models they want to use for a h…
+  takeaway: With Apple's latest operating system updates, users will reportedly have
+    their pick of which third-party AI models they want to use for a host of tasks.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/
+  source: TechCrunch
+  published_utc: '2026-05-05T20:56:41+00:00'
+  title_zh: 苹果计划将iOS 27打造成AI模型的‘选择你自己的冒险’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==0.3.85'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D0.3.85
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-05-05T20:43:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 🔬Doing Vibe Physics — Alex Lupsasca, OpenAI
+  why: The full story of how GPT‑5.x derived new results in theoretical physics and
+    quantum gravity.
+  takeaway: The full story of how GPT‑5.x derived new results in theoretical physics
+    and quantum gravity.
+  prompt: ''
+  url: https://www.latent.space/p/lupsasca
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-05-05T20:34:11+00:00'
+  title_zh: 🔬振动物理学研究 —— Alex Lupsasca，OpenAI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: .de TLD offline due to DNSSEC?
+  why: 'Article URL: https://dnssec-analyzer.verisignlabs.com/nic.de Comments URL:
+    https://news.ycombinator.com/item?id=48027897 Points: 560 # Comm…'
+  takeaway: 'Article URL: https://dnssec-analyzer.verisignlabs.com/nic.de Comments
+    URL: https://news.ycombinator.com/item?id=48027897 Points: 560 # Comments: 271'
+  prompt: ''
+  url: https://dnssec-analyzer.verisignlabs.com/nic.de
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T20:16:35+00:00'
+  title_zh: .de顶级域名因DNSSEC故障下线？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming
+    for us'
+  why: Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade
+    at the company, sat down with this editor on the rooftop deck of…
+  takeaway: Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade
+    at the company, sat down with this editor on the rooftop deck of his Beverly Hills
+    hotel Tuesday morning ahead of his appearance at the Milken Institute Global Conference.
+    Dressed in a blue suit and white shirt, he was relaxed — even when the conversation
+    turned to the rivals.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us/
+  source: TechCrunch
+  published_utc: '2026-05-05T20:06:40+00:00'
+  title_zh: ASML CEO Christophe Fouquet谈公司垄断地位：无人能撼动
+  why_zh: Christophe Fouquet于2024年成为ASML CEO，在公司任职十多年后，周二上午在比佛利山庄酒店的屋顶露台与这位编辑进行了交谈……
+  takeaway_zh: Christophe Fouquet于2024年成为ASML CEO，在公司任职十多年后，周二上午在比佛利山庄酒店的屋顶露台与这位编辑进行了交谈，随后他将在米尔肯研究所全球会议上发表演讲。他身着蓝色西装和白衬衫，显得很放松——即使话题转向竞争对手时也是如此。
+  prompt_zh: ''
+- category: Tech industry
+  title: Volkswagen becomes Rivian’s top shareholder, displacing Amazon
+  why: VW Group's stake will continue to grow under the $5.8 billion joint venture
+    with Rivian.
+  takeaway: VW Group's stake will continue to grow under the $5.8 billion joint venture
+    with Rivian.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/volkswagen-becomes-rivians-top-shareholder-displacing-amazon/
+  source: TechCrunch
+  published_utc: '2026-05-05T19:58:57+00:00'
+  title_zh: 大众汽车取代亚马逊，成为Rivian最大股东
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft gives up on Xbox Copilot AI
+  why: Xbox is "winding down Copilot on mobile" and "will stop development of Copilot
+    on console," new Xbox CEO Asha Sharma announced on Tuesday.
+  takeaway: Xbox is "winding down Copilot on mobile" and "will stop development of
+    Copilot on console," new Xbox CEO Asha Sharma announced on Tuesday. The move follows
+    Sharma's reorganization of the Xbox platform team earlier on Tuesday, which added
+    executives from Microsoft's CoreAI team - where Sharma worked before taking over
+    Xbox - to the Xbox […]
+  prompt: ''
+  url: https://www.theverge.com/games/924551/microsoft-xbox-ceo-copilot-ai-asha-sharma
+  source: The Verge
+  published_utc: '2026-05-05T19:54:37+00:00'
+  title_zh: 微软放弃Xbox Copilot AI项目
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Widely used Daemon Tools disk app backdoored in monthlong supply-chain attack
+  why: 'Daemon Tools users: It''s time to check your machines for stealthy infections,
+    stat.'
+  takeaway: 'Daemon Tools users: It''s time to check your machines for stealthy infections,
+    stat.'
+  prompt: ''
+  url: https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/
+  source: Ars Technica
+  published_utc: '2026-05-05T19:46:15+00:00'
+  title_zh: 广泛使用的Daemon Tools磁盘应用在长达一个月的供应链攻击中被植入后门
+  why_zh: Daemon Tools用户：是时候立即检查你的设备是否存在隐形感染了。
+  takeaway_zh: Daemon Tools用户：是时候立即检查你的设备是否存在隐形感染了。
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple could let you pick a favorite AI model in iOS 27
+  why: The next update to Apple's operating systems could allow users to choose their
+    preferred AI model for running Apple Intelligence.
+  takeaway: The next update to Apple's operating systems could allow users to choose
+    their preferred AI model for running Apple Intelligence. According to Bloomberg's
+    Mark Gurman, Apple is planning to allow third-party chatbots to power its AI features
+    system-wide in iOS 27, iPadOS 27, and macOS 27, all expected for this fall. In
+    addition to running […]
+  prompt: ''
+  url: https://www.theverge.com/tech/924515/apple-intelligence-third-party-chatbot-extensions-ios-27
+  source: The Verge
+  published_utc: '2026-05-05T19:45:30+00:00'
+  title_zh: 苹果或在iOS 27中允许用户选择偏好AI模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: RFK Jr. plans to curb antidepressants, which he falsely compares to heroin
+  why: Kennedy has made—and continues to make—many false claims about SSRIs.
+  takeaway: Kennedy has made—and continues to make—many false claims about SSRIs.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/05/rfk-jr-plans-to-curb-antidepressants-which-he-falsely-compares-to-heroin/
+  source: Ars Technica
+  published_utc: '2026-05-05T19:32:38+00:00'
+  title_zh: 小罗伯特·F·肯尼迪计划限制抗抑郁药使用，错误将其与海洛因相提并论
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-core==1.3.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.3
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-05-05T19:02:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS SAM CLI adds BuildKit support for AWS Lambda functions packaged as container
+    images
+  why: AWS Serverless Application Model Command Line Interface (SAM CLI) now supports
+    BuildKit for building container images from Dockerfiles, ena…
+  takeaway: AWS Serverless Application Model Command Line Interface (SAM CLI) now
+    supports BuildKit for building container images from Dockerfiles, enabling faster,
+    more efficient container image builds for Lambda functions packaged as container
+    images. SAM CLI is a command-line tool for building, testing, debugging, and packaging
+    serverless applications locally before…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-cli-buildkit-aws-lambda/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-05-05T18:50:00+00:00'
+  title_zh: AWS SAM CLI为容器镜像打包的Lambda函数添加BuildKit支持
+  why_zh: AWS无服务器应用模型命令行界面（SAM CLI）现已支持BuildKit，用于从Dockerfile构建容器镜像，实现……
+  takeaway_zh: AWS无服务器应用模型命令行界面（SAM CLI）现已支持BuildKit，用于从Dockerfile构建容器镜像，从而为打包为容器镜像的Lambda函数提供更快、更高效的镜像构建。SAM
+    CLI是一款命令行工具，用于在本地构建、测试、调试和打包无服务器应用……
+  prompt_zh: ''
+- category: Tech industry
+  title: Threads finally brings messaging to the web
+  why: By bringing messaging to the web, Threads is aligning its desktop experience
+    more closely with competitors like X and Bluesky.
+  takeaway: By bringing messaging to the web, Threads is aligning its desktop experience
+    more closely with competitors like X and Bluesky.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/threads-finally-brings-messaging-to-the-web/
+  source: TechCrunch
+  published_utc: '2026-05-05T18:34:20+00:00'
+  title_zh: Threads终于推出网页版消息功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS SAM now supports WebSocket APIs for Amazon API Gateway
+  why: AWS Serverless Application Model (AWS SAM) now supports WebSocket APIs for
+    Amazon API Gateway, enabling you to define complete WebSocket AP…
+  takeaway: AWS Serverless Application Model (AWS SAM) now supports WebSocket APIs
+    for Amazon API Gateway, enabling you to define complete WebSocket APIs with minimal
+    configuration in your SAM template. AWS SAM is a collection of open-source tools
+    that make it easy for you to build and manage serverless applications. WebSocket
+    APIs are critical for real-time applicatio…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-websocket-apis-api-gateway/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-05-05T18:31:00+00:00'
+  title_zh: AWS SAM现支持API Gateway的WebSocket APIs
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Threads is finally getting DMs on the web
+  why: Nearly a year after rolling out Threads direct messaging to everyone on mobile,
+    Meta is finally bringing the feature to the web.
+  takeaway: Nearly a year after rolling out Threads direct messaging to everyone on
+    mobile, Meta is finally bringing the feature to the web. Meta says it's "testing"
+    DMs on the web now, but plans to make the feature "available to more people soon."
+    In your DM page on the web, you can see your inbox and […]
+  prompt: ''
+  url: https://www.theverge.com/tech/924436/meta-threads-web-dms-direct-messages
+  source: The Verge
+  published_utc: '2026-05-05T18:30:42+00:00'
+  title_zh: Threads网页版终将支持私信功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: US government now has pre-release access to AI models from five major labs
+    for national security testing
+  why: 'The US Department of Commerce is expanding its AI safety testing: Following
+    Anthropic and OpenAI, Google Deepmind, Microsoft, and xAI have…'
+  takeaway: 'The US Department of Commerce is expanding its AI safety testing: Following
+    Anthropic and OpenAI, Google Deepmind, Microsoft, and xAI have now signed agreements
+    with the Center for AI Standards and Innovation. The companies provide models
+    with reduced safety guardrails for testing in classified environments amid growing
+    cybersecurity risks and an intensifyi…'
+  prompt: ''
+  url: https://the-decoder.com/us-government-now-has-pre-release-access-to-ai-models-from-five-major-labs-for-national-security-testing/
+  source: The Decoder (AI)
+  published_utc: '2026-05-05T18:28:29+00:00'
+  title_zh: 美国政府现可提前获取五大实验室AI模型进行国家安全测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: California farmers to destroy 420k peach trees following Del Monte bankruptcy
+  why: 'Article URL: https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php
+    Comments URL: https://news.ycombinator.co…'
+  takeaway: 'Article URL: https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php
+    Comments URL: https://news.ycombinator.com/item?id=48026349 Points: 288 # Comments:
+    344'
+  prompt: ''
+  url: https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T18:13:47+00:00'
+  title_zh: 加州果农将在德尔蒙特破产后铲除42万棵桃树
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Explore color palettes inspired by 3000 master painter artworks'
+  why: I built PaletteInspiration.com, a browsable archive of color palettes pulled
+    from artworks by 3,000+ master painters (Monet, Vermeer, Rapha…
+  takeaway: 'I built PaletteInspiration.com, a browsable archive of color palettes
+    pulled from artworks by 3,000+ master painters (Monet, Vermeer, Raphael, Van Gogh).
+    Why I built it: every color palette generator I tried converged on the same five
+    muted pastels. Painters spent centuries figuring out color and we mostly ignore
+    that body of work when picking colors for di…'
+  prompt: ''
+  url: https://paletteinspiration.com/
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T18:13:14+00:00'
+  title_zh: Show HN：探索受3000幅大师画作启发的色彩调色板
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Airbnb co-founder taps Peter Arnell as first US chief brand architect
+  why: Arnell joins Gebbia’s National Design Studio under Trump to unify UX across
+    27,000 federal sites and streamline how Americans use governmen…
+  takeaway: Arnell joins Gebbia’s National Design Studio under Trump to unify UX across
+    27,000 federal sites and streamline how Americans use government services.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/airbnb-co-founder-taps-peter-arnell-as-first-u-s-chief-brand-architect/
+  source: TechCrunch
+  published_utc: '2026-05-05T18:09:03+00:00'
+  title_zh: Airbnb联合创始人聘请彼得·阿内尔担任首位美国首席品牌架构师
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: ChatGPT update rolls out GPT-5.5 Instant with fewer hallucinations and more
+    personalized answers
+  why: OpenAI is swapping out ChatGPT's default model for GPT-5.5 Instant.
+  takeaway: OpenAI is swapping out ChatGPT's default model for GPT-5.5 Instant. In
+    internal testing, the update produced 52.5 percent fewer hallucinated claims on
+    high-risk topics like medicine and law. A new feature called "memory sources"
+    lets users see which stored context shaped a given response. The model is rolling
+    out to all ChatGPT users right away, though pers…
+  prompt: ''
+  url: https://the-decoder.com/chatgpt-update-rolls-out-gpt-5-5-instant-with-fewer-hallucinations-and-more-personalized-answers/
+  source: The Decoder (AI)
+  published_utc: '2026-05-05T18:04:50+00:00'
+  title_zh: ChatGPT更新推出GPT-5.5 Instant，减少幻觉并增加个性化答案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Zuckerberg 'Personally Authorized and Encouraged' Meta's Copyright Infringement
+  why: https://apnews.com/article/meta-mark-zuckerberg-ai-publisher...
+  takeaway: 'https://apnews.com/article/meta-mark-zuckerberg-ai-publisher... Comments
+    URL: https://news.ycombinator.com/item?id=48026207 Points: 289 # Comments: 272'
+  prompt: ''
+  url: https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T18:04:25+00:00'
+  title_zh: 扎克伯格'亲自批准并鼓励'Meta的版权侵权行为
+  why_zh: ''
+  takeaway_zh: 'https://apnews.com/article/meta-mark-zuckerberg-ai-publisher... 评论链接：https://news.ycombinator.com/item?id=48026207
+    积分：289 # 评论：272'
+  prompt_zh: ''
+- category: Tech industry
+  title: 'GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents'
+  why: 'Article URL: https://arxiv.org/abs/2604.26752 Comments URL: https://news.ycombinator.com/item?id=48026021
+    Points: 123 # Comments: 25'
+  takeaway: 'Article URL: https://arxiv.org/abs/2604.26752 Comments URL: https://news.ycombinator.com/item?id=48026021
+    Points: 123 # Comments: 25'
+  prompt: ''
+  url: https://arxiv.org/abs/2604.26752
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T17:52:31+00:00'
+  title_zh: GLM-5V-Turbo：迈向多模态智能体的原生基础模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Pennsylvania sues Character.AI after a chatbot allegedly posed as a doctor
+  why: According to Pennsylvania's filing, a Character.AI chatbot presented itself
+    as a licensed psychiatrist during a state investigation, and al…
+  takeaway: According to Pennsylvania's filing, a Character.AI chatbot presented itself
+    as a licensed psychiatrist during a state investigation, and also fabricated a
+    serial number for its state medical license.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/
+  source: TechCrunch
+  published_utc: '2026-05-05T17:46:10+00:00'
+  title_zh: 宾夕法尼亚州起诉Character.AI，指控其聊天机器人冒充医生
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Live updates from Elon Musk and Sam Altman’s court battle over the future
+    of OpenAI
+  why: Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter
+    the future of OpenAI and its most well-known product, ChatG…
+  takeaway: Sam Altman and Elon Musk are facing off in a high-stakes trial that could
+    alter the future of OpenAI and its most well-known product, ChatGPT. In 2024,
+    Musk filed a lawsuit accusing OpenAI of abandoning its founding mission of developing
+    AI to benefit humanity and shifting focus to boosting profits instead. Elon Musk
+    took the […]
+  prompt: ''
+  url: https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit
+  source: The Verge
+  published_utc: '2026-05-05T17:28:52+00:00'
+  title_zh: 埃隆·马斯克与山姆·奥特曼关于OpenAI未来的法庭对决实时更新
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: IBM didn't want Microsoft to use the Tab key to move between dialog fields
+  why: 'Article URL: https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298
+    Comments URL: https://news.ycombinator.com/item?id=48025687 P…'
+  takeaway: 'Article URL: https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298
+    Comments URL: https://news.ycombinator.com/item?id=48025687 Points: 314 # Comments:
+    182'
+  prompt: ''
+  url: https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T17:28:18+00:00'
+  title_zh: IBM曾反对微软使用Tab键在对话框字段间切换
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon WorkSpaces now lets AI agents operate desktop applications (Preview)
+  why: Amazon WorkSpaces, AWS's fully managed cloud desktop service, now enables AI
+    agents to securely access and operate desktop applications thr…
+  takeaway: Amazon WorkSpaces, AWS's fully managed cloud desktop service, now enables
+    AI agents to securely access and operate desktop applications through managed
+    WorkSpaces environments. Many enterprises run critical business processes on desktop
+    applications—mainframes, ERP systems, and proprietary tools—that lack modern APIs,
+    creating a "last-mile challenge" for AI…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/05/workspaces-ai-agents/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-05-05T17:25:00+00:00'
+  title_zh: Amazon WorkSpaces现允许AI智能体操作桌面应用（预览版）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Home gets upgraded Gemini voice assistant and new camera controls
+  why: Google's smart home ecosystem is getting its biggest update since the AI-fueled
+    2025 revamp.
+  takeaway: Google's smart home ecosystem is getting its biggest update since the
+    AI-fueled 2025 revamp.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/05/google-home-gets-upgraded-gemini-voice-assistant-and-new-camera-controls/
+  source: Ars Technica
+  published_utc: '2026-05-05T17:17:25+00:00'
+  title_zh: Google Home升级Gemini语音助手并新增摄像头控制功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI's first hardware play might be a phone that replaces your app grid
+    with an agent task stream
+  why: OpenAI is reportedly planning its own AI smartphone, with chips from MediaTek
+    and Qualcomm and manufacturing by Luxshare.
+  takeaway: OpenAI is reportedly planning its own AI smartphone, with chips from MediaTek
+    and Qualcomm and manufacturing by Luxshare. According to analyst Ming-Chi Kuo,
+    mass production could start as early as the first half of 2027, with up to 30
+    million devices shipped in the first two years. The form factor choice is also
+    an admission that more experimental AI hardwa…
+  prompt: ''
+  url: https://the-decoder.com/openais-first-hardware-play-might-be-a-phone-that-replaces-your-app-grid-with-an-agent-task-stream/
+  source: The Decoder (AI)
+  published_utc: '2026-05-05T17:14:51+00:00'
+  title_zh: OpenAI的首款硬件产品或是一款用智能体任务流取代应用网格的手机
+  why_zh: 据报道，OpenAI正计划推出自己的AI智能手机，采用联发科和高通的芯片，并由立讯精密制造。
+  takeaway_zh: 据报道，OpenAI正计划推出其自研AI智能手机，采用联发科和高通的芯片，并由立讯精密负责制造。分析师郭明錤称，大规模生产最早可能在2027年上半年启动，前两年出货量可达3000万台。其形态选择也表明了对更具实验性AI硬件的认可……
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.23.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.23.1
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-05-05T17:13:31+00:00'
+  title_zh: ''
+  why_zh: 发布更新（详见链接中的更新日志）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump SEC lets Musk settle $150 million Twitter lawsuit for $1.5 million
+  why: SEC alleged Musk's late disclosure cheated Twitter investors out of $150 million.
+  takeaway: SEC alleged Musk's late disclosure cheated Twitter investors out of $150
+    million.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/trump-sec-lets-musk-settle-150-million-twitter-lawsuit-for-1-5-million/
+  source: Ars Technica
+  published_utc: '2026-05-05T17:07:32+00:00'
+  title_zh: 特朗普时期的SEC允许马斯克以150万美元和解1.5亿美元的Twitter诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Proliferate (YC S25) Is Hiring- 200k for junior engineers
+  why: 'Article URL: https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer
+    Comments URL: https://news.ycombinator.com/it…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer
+    Comments URL: https://news.ycombinator.com/item?id=48025244 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T17:00:16+00:00'
+  title_zh: Proliferate（YC S25）正在招聘初级工程师，年薪20万美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT
+  why: The company said the model reduces hallucination in sensitive areas such as
+    law, medicine, and finance, while maintaining the low latency o…
+  takeaway: The company said the model reduces hallucination in sensitive areas such
+    as law, medicine, and finance, while maintaining the low latency of its predecessor.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/
+  source: TechCrunch
+  published_utc: '2026-05-05T17:00:00+00:00'
+  title_zh: OpenAI发布GPT-5.5 Instant，成为ChatGPT的新默认模型
+  why_zh: 公司表示，该模型在法律、医学和金融等敏感领域减少了幻觉现象，同时保持了低延迟……
+  takeaway_zh: 公司表示，该模型在法律、医学和金融等敏感领域减少了幻觉现象，同时保持了与前代产品相同的低延迟。
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI claims ChatGPT’s new default model hallucinates way less
+  why: OpenAI's newest default model for ChatGPT might not make stuff up as much.
+  takeaway: OpenAI's newest default model for ChatGPT might not make stuff up as much.
+    Hallucinations have been an ongoing problem for AI models, but OpenAI says its
+    new GPT-5.5 Instant model has "significant improvements in factuality across the
+    board." The company claims that, based on "internal evaluations," GPT-5.5 Instant
+    produced "52.5% fewer hallucinated claims"…
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/924225/openai-chatgpt-default-model-gpt-5-5-instant
+  source: The Verge
+  published_utc: '2026-05-05T17:00:00+00:00'
+  title_zh: OpenAI称ChatGPT的新默认模型幻觉大幅减少
+  why_zh: OpenAI为ChatGPT推出的最新默认模型可能减少了虚构内容。
+  takeaway_zh: OpenAI为ChatGPT推出的最新默认模型可能减少了虚构内容。幻觉一直是AI模型的一个持续问题，但OpenAI表示其新的GPT-5.5
+    Instant模型在“事实性方面有了显著提升”。公司声称，基于“内部评估”，GPT-5.5 Instant产生的“虚构声明减少了52.5%”……
+  prompt_zh: ''
+- category: Tech industry
+  title: Book publishers sue Meta over AI&#8217;s &#8216;word-for-word&#8217; copying
+  why: Meta is facing a class action lawsuit filed by five major book publishers and
+    one author over claims the company "engaged in one of the mos…
+  takeaway: Meta is facing a class action lawsuit filed by five major book publishers
+    and one author over claims the company "engaged in one of the most massive infringements
+    of copyrighted materials in history" when training its Llama AI models, as reported
+    earlier by The New York Times. In their suit, Macmillan, McGraw Hill, Elsevier,
+    Hachette, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/924230/meta-publishers-lawsuit-ai-copyright
+  source: The Verge
+  published_utc: '2026-05-05T16:52:38+00:00'
+  title_zh: 图书出版商起诉Meta，指控其AI‘逐字复制’内容
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft’s new Xbox shake-up is all about platform changes
+  why: Microsoft's new Xbox chief, Asha Sharma, has spent the past couple of months
+    making her mark on the Xbox organization.
+  takeaway: Microsoft's new Xbox chief, Asha Sharma, has spent the past couple of
+    months making her mark on the Xbox organization. After focusing on highly requested
+    Xbox console features, reducing the price of Game Pass, and moving Microsoft Gaming
+    back to Xbox, Sharma is reorganizing the Xbox platform team at Microsoft today.
+    The changes will see […]
+  prompt: ''
+  url: https://www.theverge.com/news/923908/microsoft-xbox-reorg-platform-changes
+  source: The Verge
+  published_utc: '2026-05-05T16:46:39+00:00'
+  title_zh: 微软Xbox全新调整聚焦平台变革
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Quick now integrates with New Relic for observability-driven AI agents
+  why: Amazon Quick, your AI assistant for work, now integrates with New Relic's AI
+    agents, enabling on-call engineers, SREs, and engineering lead…
+  takeaway: Amazon Quick, your AI assistant for work, now integrates with New Relic's
+    AI agents, enabling on-call engineers, SREs, and engineering leaders to investigate
+    incidents, generate root cause analysis briefs, and create tracked tasks without
+    leaving their Amazon Quick workspace. After connecting to New Relic's remote model
+    context protocol (MCP) server, you ca…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-quick-new-relic/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-05-05T16:35:00+00:00'
+  title_zh: Amazon Quick现已集成New Relic实现可观测性驱动的AI智能体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Computer Use is 45x more expensive than structured APIs
+  why: 'Article URL: https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/
+    Comments URL: https://news.ycombinator.com/it…'
+  takeaway: 'Article URL: https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/
+    Comments URL: https://news.ycombinator.com/item?id=48024859 Points: 345 # Comments:
+    198'
+  prompt: ''
+  url: https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/
+  source: Hacker News (front page)
+  published_utc: '2026-05-05T16:34:48+00:00'
+  title_zh: 计算机使用成本比结构化API高出45倍
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

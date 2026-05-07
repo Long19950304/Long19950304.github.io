@@ -690,3 +690,68 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - ollama/ollama
     published_utc: '2026-04-28T15:00:25+00:00'
+- week: 2026-W19
+  start: '2026-05-04'
+  end: '2026-05-10'
+  issues:
+  - '2026-05-07'
+  highlights_news:
+  - date: '2026-05-07'
+    url: https://techcrunch.com/2026/05/06/doj-says-ransomware-gang-tapped-into-russian-government-databases/
+    title: DOJ says ransomware gang tapped into Russian government databases
+    title_zh: 司法部称勒索软件团伙入侵了俄罗斯政府数据库
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-05-06T18:20:21+00:00'
+  - date: '2026-05-07'
+    url: https://arstechnica.com/gadgets/2026/05/tsmc-taps-wind-power-as-ai-chip-demand-soars-taiwan-feels-energy-crunch/
+    title: TSMC taps wind power as AI chip demand soars, Taiwan feels energy crunch
+    title_zh: 台积电借助风力发电应对AI芯片需求激增，台湾面临能源紧张
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-05-06T21:47:27+00:00'
+  - date: '2026-05-07'
+    url: https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony
+    title: Musk’s biggest loyalist became his biggest liability
+    title_zh: 马斯克最忠诚的支持者成了他最大的负担
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-05-06T23:37:02+00:00'
+  - date: '2026-05-07'
+    url: https://the-decoder.com/openai-built-a-networking-protocol-with-amd-broadcom-intel-microsoft-and-nvidia-to-fix-ai-supercomputer-bottlenecks/
+    title: OpenAI built a networking protocol with AMD, Broadcom, Intel, Microsoft,
+      and NVIDIA to fix AI supercomputer bottlenecks
+    title_zh: OpenAI与AMD、博通、英特尔、微软及英伟达合作构建网络协议，解决AI超级计算机瓶颈
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-05-06T19:13:21+00:00'
+  - date: '2026-05-07'
+    url: https://www.wired.com/story/elon-musk-recruit-sam-altman-tesla-ai-lab-trial/
+    title: 'Elon Musk’s Last-Ditch Effort to Control OpenAI: Recruit Sam Altman to
+      Tesla'
+    title_zh: 埃隆·马斯克控制OpenAI的最后一搏：招募山姆·阿尔特曼加入特斯拉
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-05-06T23:23:45+00:00'
+  highlights_ai:
+  - date: '2026-05-07'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-longterm-memory-metadata
+    title: Amazon Bedrock AgentCore Memory announces metadata for long-term memory
+    title_zh: 亚马逊Bedrock AgentCore记忆功能推出长期记忆元数据
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-05-06T17:00:00+00:00'
+  - date: '2026-05-07'
+    url: https://github.com/openai/openai-python/releases/tag/v2.35.1
+    title: 'openai/openai-python: v2.35.1'
+    title_zh: openai/openai-python：v2.35.1版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-05-06T21:37:58+00:00'
+  - date: '2026-05-07'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.0a2
+    title: 'langchain-ai/langchain: langchain==1.3.0a2'
+    title_zh: langchain-ai/langchain：langchain==1.3.0a2版本
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-05-06T18:54:44+00:00'

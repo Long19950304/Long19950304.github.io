@@ -1,0 +1,892 @@
+date: '2026-05-07'
+title: Daily Digest - 2026-05-07
+title_zh: 每日简报 - 2026-05-07
+note: 'Today: DOJ says ransomware gang tapped into Russian government databas… · TSMC
+  taps wind power as AI chip demand soars, Taiwan feels ener… · AI: Amazon Bedrock
+  AgentCore Memory announces metadata for lo….'
+note_zh: 今日关注：司法部称勒索软件团伙入侵俄罗斯政府数据库；台积电因AI芯片需求激增转投风电，台湾面临能源紧张；AI：Amazon Bedrock AgentCore
+  Memory宣布…。
+items:
+- category: Tech industry
+  title: The Vatican's Website in Latin
+  why: 'Article URL: https://www.vatican.va/latin/latin_index.html Comments URL: https://news.ycombinator.com/item?id=48044311
+    Points: 30 # Comment…'
+  takeaway: 'Article URL: https://www.vatican.va/latin/latin_index.html Comments URL:
+    https://news.ycombinator.com/item?id=48044311 Points: 30 # Comments: 13'
+  prompt: ''
+  url: https://www.vatican.va/latin/latin_index.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-07T01:26:03+00:00'
+  title_zh: 梵蒂冈拉丁文官网
+  why_zh: '文章链接：https://www.vatican.va/latin/latin_index.html 评论链接：https://news.ycombinator.com/item?id=48044311
+    评分：30 #评论…'
+  takeaway_zh: '文章链接：https://www.vatican.va/latin/latin_index.html 评论链接：https://news.ycombinator.com/item?id=48044311
+    评分：30 #评论数：13'
+  prompt_zh: ''
+- category: Digital health / health comm
+  title: Statement on the M/V Hondius Cruise Ship
+  why: The Administration is closely monitoring the situation with U.S.
+  takeaway: The Administration is closely monitoring the situation with U.S. travelers.
+  prompt: ''
+  url: https://tools.cdc.gov/api/embed/downloader/download.asp?m=132608&c=765383
+  source: CDC MMWR (Public Health)
+  published_utc: '2026-05-07T00:23:00+00:00'
+  title_zh: 关于M/V Hondius游轮的声明
+  why_zh: 美国政府正密切监控事态发展。
+  takeaway_zh: 美国政府正密切关注涉及美国旅客的局势。
+  prompt_zh: ''
+- category: Tech industry
+  title: Iran hit more U.S. military targets than has been reported, satellite images
+  why: 'Article URL: https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/
+    Comments URL: https://news.ycombinato…'
+  takeaway: 'Article URL: https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/
+    Comments URL: https://news.ycombinator.com/item?id=48043736 Points: 81 # Comments:
+    40'
+  prompt: ''
+  url: https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/
+  source: Hacker News (front page)
+  published_utc: '2026-05-07T00:16:37+00:00'
+  title_zh: 卫星图像显示，伊朗袭击的美军目标数量超出此前报道
+  why_zh: 文章链接：https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/
+    评论链接：https://news.ycombinato…
+  takeaway_zh: 文章链接：https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/
+    评论链接：https://news.ycombinator.com/item?id=48043736 得分：81 评论数：40
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Old Guard: Confronting America''s Gerontocratic Crisis'
+  why: 'Article URL: https://harpers.org/archive/2026/05/the-old-guard-samuel-moyn-gerontocracy/
+    Comments URL: https://news.ycombinator.com/item?id…'
+  takeaway: 'Article URL: https://harpers.org/archive/2026/05/the-old-guard-samuel-moyn-gerontocracy/
+    Comments URL: https://news.ycombinator.com/item?id=48043706 Points: 32 # Comments:
+    15'
+  prompt: ''
+  url: https://harpers.org/archive/2026/05/the-old-guard-samuel-moyn-gerontocracy/
+  source: Hacker News (front page)
+  published_utc: '2026-05-07T00:12:23+00:00'
+  title_zh: 《老卫士：直面美国的老年统治危机》
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ADT says customer data stolen in cyber intrusion
+  why: 'Article URL: https://therecord.media/ADT-data-breach-cyberattack Comments
+    URL: https://news.ycombinator.com/item?id=48043487 Points: 19 # C…'
+  takeaway: 'Article URL: https://therecord.media/ADT-data-breach-cyberattack Comments
+    URL: https://news.ycombinator.com/item?id=48043487 Points: 19 # Comments: 3'
+  prompt: ''
+  url: https://therecord.media/ADT-data-breach-cyberattack
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T23:51:05+00:00'
+  title_zh: ADT证实客户数据遭网络入侵窃取
+  why_zh: '文章链接：https://therecord.media/ADT-data-breach-cyberattack 评论链接：https://news.ycombinator.com/item?id=48043487
+    评分：19 #评论…'
+  takeaway_zh: '文章链接：https://therecord.media/ADT-data-breach-cyberattack 评论链接：https://news.ycombinator.com/item?id=48043487
+    评分：19 #评论数：3'
+  prompt_zh: ''
+- category: Tech industry
+  title: Musk’s biggest loyalist became his biggest liability
+  why: I sat down in the Musk v.
+  takeaway: 'I sat down in the Musk v. Altman trial courtroom today, painfully aware
+    that no one was going to ask Shivon Zilis the question on everyone''s minds: Girl,
+    what the fuck are you doing? Zilis, who testified under oath that she is the mother
+    of four of Musk''s children, was… what''s the best way to […]'
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony
+  source: The Verge
+  published_utc: '2026-05-06T23:37:02+00:00'
+  title_zh: 马斯克头号追随者成其最大负累
+  why_zh: 我坐在马斯克对某某案的法庭上。
+  takeaway_zh: 今日马斯克诉阿尔特曼案庭审现场，我如坐针毡地意识到没人会质问希旺·齐里斯那个众人皆疑的问题：姑娘你到底图什么？这位宣誓作证称是马斯克四个孩子母亲的证人，当时…最佳表述方式是
+    […]
+  prompt_zh: ''
+- category: AI frontier
+  title: 'Elon Musk’s Last-Ditch Effort to Control OpenAI: Recruit Sam Altman to Tesla'
+  why: Messages between Shivon Zilis and Tesla executives reveal plans in 2017 to
+    start a rival AI lab, potentially led by Altman or Demis Hassabi…
+  takeaway: Messages between Shivon Zilis and Tesla executives reveal plans in 2017
+    to start a rival AI lab, potentially led by Altman or Demis Hassabis.
+  prompt: ''
+  url: https://www.wired.com/story/elon-musk-recruit-sam-altman-tesla-ai-lab-trial/
+  source: WIRED - AI
+  published_utc: '2026-05-06T23:23:45+00:00'
+  title_zh: 马斯克控制OpenAI的最后尝试：招揽萨姆·奥特曼加入特斯拉
+  why_zh: 希旺·齐里斯与特斯拉高管的往来邮件揭露了2017年筹建竞争性AI实验室的计划，该项目可能由阿尔特曼或德米斯·哈萨比斯领导…
+  takeaway_zh: 希旺·齐里斯与特斯拉高管的通信显示，2017年曾计划创立竞争性AI实验室，可能由阿尔特曼或德米斯·哈萨比斯领导。
+  prompt_zh: ''
+- category: Tech industry
+  title: A 20-minute pitch wins Indian startup Pronto backing from Lachy Groom
+  why: The investment comes as Pronto scales to 26,000 daily bookings and the market
+    heads toward a potential $18 billion size.
+  takeaway: The investment comes as Pronto scales to 26,000 daily bookings and the
+    market heads toward a potential $18 billion size.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/a-20-minute-pitch-wins-indian-startup-pronto-backing-from-lachy-groom/
+  source: TechCrunch
+  published_utc: '2026-05-06T22:30:00+00:00'
+  title_zh: 20分钟路演为印度初创Pronto赢得Lachy Groom投资
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX is starting to move on from the world's most successful rocket
+  why: Vandenberg Space Force Base in California is set to become SpaceX's busiest
+    launch site—for now.
+  takeaway: Vandenberg Space Force Base in California is set to become SpaceX's busiest
+    launch site—for now.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/05/spacex-is-starting-to-move-on-from-the-worlds-most-successful-rocket/
+  source: Ars Technica
+  published_utc: '2026-05-06T22:28:47+00:00'
+  title_zh: SpaceX开始逐步淘汰世界上最成功的火箭
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic raises Claude Code usage limits, credits new deal with SpaceX
+  why: Deal follows others with Microsoft, Amazon, and more.
+  takeaway: Deal follows others with Microsoft, Amazon, and more.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/05/anthropic-raises-claude-code-usage-limits-credits-new-deal-with-spacex/
+  source: Ars Technica
+  published_utc: '2026-05-06T22:09:14+00:00'
+  title_zh: Anthropic提高Claude代码使用限制，归因于与SpaceX的新协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Nintendo announces a new Star Fox for the Switch 2
+  why: 'It turns out Fox McCloud''s appearance in the Super Mario Galaxy Movie was
+    a tease of things to come: Nintendo just surprise announced the f…'
+  takeaway: 'It turns out Fox McCloud''s appearance in the Super Mario Galaxy Movie
+    was a tease of things to come: Nintendo just surprise announced the first new
+    Star Fox game in a decade. The game is called, simply, Star Fox, and it''s out
+    very soon, launching on June 25th. Nintendo says that it''s "based" on the […]'
+  prompt: ''
+  url: https://www.theverge.com/entertainment/925601/star-fox-nintendo-switch-2
+  source: The Verge
+  published_utc: '2026-05-06T22:07:46+00:00'
+  title_zh: 任天堂宣布将为Switch 2推出新版《星际火狐》
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SQLite Is a Library of Congress Recommended Storage Format
+  why: 'Article URL: https://sqlite.org/locrsf.html Comments URL: https://news.ycombinator.com/item?id=48042434
+    Points: 16 # Comments: 3'
+  takeaway: 'Article URL: https://sqlite.org/locrsf.html Comments URL: https://news.ycombinator.com/item?id=48042434
+    Points: 16 # Comments: 3'
+  prompt: ''
+  url: https://sqlite.org/locrsf.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T21:58:43+00:00'
+  title_zh: SQLite被美国国会图书馆推荐为存储格式
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Barry Diller trusts Sam Altman. But ‘trust is irrelevant’ as AGI nears, he
+    says.
+  why: Barry Diller defended OpenAI CEO Sam Altman, while warning that AGI remains
+    an unpredictable force needing guardrails.
+  takeaway: Barry Diller defended OpenAI CEO Sam Altman, while warning that AGI remains
+    an unpredictable force needing guardrails.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/barry-diller-trusts-sam-altman-but-trust-is-irrelevant-as-agi-nears-he-says/
+  source: TechCrunch
+  published_utc: '2026-05-06T21:57:56+00:00'
+  title_zh: 巴里·迪勒信任山姆·奥特曼，但他表示'信任在AGI临近时无关紧要'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TSMC taps wind power as AI chip demand soars, Taiwan feels energy crunch
+  why: TSMC backs renewables during record demand for energy-hungry chip manufacturing.
+  takeaway: TSMC backs renewables during record demand for energy-hungry chip manufacturing.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/05/tsmc-taps-wind-power-as-ai-chip-demand-soars-taiwan-feels-energy-crunch/
+  source: Ars Technica
+  published_utc: '2026-05-06T21:47:27+00:00'
+  title_zh: 台积电因AI芯片需求激增转投风电，台湾面临能源紧张
+  why_zh: 台积电在芯片制造高耗能需求创纪录之际支持可再生能源。
+  takeaway_zh: 台积电在芯片制造高耗能需求创纪录之际支持可再生能源。
+  prompt_zh: ''
+- category: Tech industry
+  title: Snap says its $400M deal with Perplexity ‘amicably ended’
+  why: The deal, announced last November, would have seen Perplexity's AI search engine
+    integrated directly into Snapchat.
+  takeaway: The deal, announced last November, would have seen Perplexity's AI search
+    engine integrated directly into Snapchat.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/
+  source: TechCrunch
+  published_utc: '2026-05-06T21:43:24+00:00'
+  title_zh: Snap表示与Perplexity的4亿美元交易'友好终止'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.35.1'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.35.1
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-05-06T21:37:58+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Court strikes down FCC anti-discrimination rule opposed by Internet providers
+  why: Chairman Brendan Carr celebrates FCC court loss in case over Biden-era rule.
+  takeaway: Chairman Brendan Carr celebrates FCC court loss in case over Biden-era
+    rule.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/court-strikes-down-fcc-anti-discrimination-rule-opposed-by-internet-providers/
+  source: Ars Technica
+  published_utc: '2026-05-06T21:33:39+00:00'
+  title_zh: 法院驳回FCC网络服务商反对的防歧视规定
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Is xAI a neocloud now?
+  why: xAI's real business may be more about building data centers than training AI
+    models.
+  takeaway: xAI's real business may be more about building data centers than training
+    AI models.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now/
+  source: TechCrunch
+  published_utc: '2026-05-06T21:32:55+00:00'
+  title_zh: xAI现在是新政云吗？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google shuts down Project Mariner
+  why: Google has pulled the plug on Project Mariner, an experimental feature designed
+    to perform tasks for you across the web, as reported earlie…
+  takeaway: 'Google has pulled the plug on Project Mariner, an experimental feature
+    designed to perform tasks for you across the web, as reported earlier by Wired''s
+    Maxwell Zeff. The Project Mariner landing page now contains a message that says:
+    "Thank you for using Project Mariner. It was shut down on May 4th, 2026 and its
+    technology […]'
+  prompt: ''
+  url: https://www.theverge.com/tech/925559/google-project-mariner-shut-down
+  source: The Verge
+  published_utc: '2026-05-06T21:21:45+00:00'
+  title_zh: 谷歌关停Project Mariner项目
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Spooked by Mythos, Trump suddenly realized AI safety testing might be good
+  why: Trump forced to admit Biden was right on AI safety testing.
+  takeaway: Trump forced to admit Biden was right on AI safety testing.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/everything-that-could-go-wrong-with-trumps-ai-safety-tests-according-to-experts/
+  source: Ars Technica
+  published_utc: '2026-05-06T21:20:14+00:00'
+  title_zh: 受Mythos事件惊吓，特朗普突然意识到AI安全测试或许有必要
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Insurance startup Corgi hits $1.3B valuation 4 months after its Series A
+  why: Corgi announced on Wednesday a $160 million Series B, led by TCV, valuing the
+    startup at $1.3 billion.
+  takeaway: Corgi announced on Wednesday a $160 million Series B, led by TCV, valuing
+    the startup at $1.3 billion.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/insurance-startup-corgi-hits-1-3b-valuation-4-months-after-its-series-a/
+  source: TechCrunch
+  published_utc: '2026-05-06T20:39:16+00:00'
+  title_zh: 保险初创Corgi完成A轮融资4个月后估值达13亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: PHP-fts – Full-text search engine in pure PHP, no extensions'
+  why: 'Article URL: https://github.com/olivier-ls/php-fts Comments URL: https://news.ycombinator.com/item?id=48041316
+    Points: 31 # Comments: 7'
+  takeaway: 'Article URL: https://github.com/olivier-ls/php-fts Comments URL: https://news.ycombinator.com/item?id=48041316
+    Points: 31 # Comments: 7'
+  prompt: ''
+  url: https://github.com/olivier-ls/php-fts
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T20:28:17+00:00'
+  title_zh: 'Show HN: PHP-fts——纯PHP实现的全文本搜索引擎，无需扩展'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How David Sacks crashed and burned in the White House
+  why: Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers
+    about tech, politics, and Washington intrigue.
+  takeaway: Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers
+    about tech, politics, and Washington intrigue. (It's basically House of Cards,
+    but for nerds.) Not a subscriber yet? You really should become one, and to save
+    you a Google search, here is the direct link to do so! And do you think I should
+    […]
+  prompt: ''
+  url: https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review
+  source: The Verge
+  published_utc: '2026-05-06T20:18:00+00:00'
+  title_zh: 大卫·萨克斯如何白宫折戟沉沙
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft’s AI data center push is colliding with its clean power goals
+  why: The push for new data centers at Microsoft is putting its key clean power goals
+    at risk.
+  takeaway: The push for new data centers at Microsoft is putting its key clean power
+    goals at risk.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/microsofts-ai-data-center-push-is-colliding-with-its-clean-power-goals/
+  source: TechCrunch
+  published_utc: '2026-05-06T19:57:31+00:00'
+  title_zh: 微软AI数据中心推进计划与清洁能源目标产生冲突
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Inkscape 1.4.4
+  why: 'Article URL: https://inkscape.org/doc/release_notes/1.4.4/Inkscape_1.4.4.html
+    Comments URL: https://news.ycombinator.com/item?id=48040622 P…'
+  takeaway: 'Article URL: https://inkscape.org/doc/release_notes/1.4.4/Inkscape_1.4.4.html
+    Comments URL: https://news.ycombinator.com/item?id=48040622 Points: 217 # Comments:
+    59'
+  prompt: ''
+  url: https://inkscape.org/doc/release_notes/1.4.4/Inkscape_1.4.4.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T19:33:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 P6-B300 instances are now available in the US East (N. Virginia)
+    Region
+  why: Starting today, Amazon Elastic Cloud Compute (Amazon EC2) P6-B300 instances
+    are available in the US East (N.
+  takeaway: Starting today, Amazon Elastic Cloud Compute (Amazon EC2) P6-B300 instances
+    are available in the US East (N. Virginia) Region. P6-B300 instances provide 8xNVIDIA
+    Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps EFA networking,
+    300 Gbps dedicated ENA throughput, and 4 TB of system memory. P6-B300 instances
+    deliver 2x networking bandwidth,…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-p6-b300-us-east
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-05-06T19:24:00+00:00'
+  title_zh: Amazon EC2 P6-B300实例现已在美东（北弗吉尼亚）区域上线
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI built a networking protocol with AMD, Broadcom, Intel, Microsoft,
+    and NVIDIA to fix AI supercomputer bottlenecks
+  why: OpenAI has teamed up with AMD, Broadcom, Intel, Microsoft, and NVIDIA to develop
+    MRC, an open source network protocol that sends data acros…
+  takeaway: OpenAI has teamed up with AMD, Broadcom, Intel, Microsoft, and NVIDIA
+    to develop MRC, an open source network protocol that sends data across hundreds
+    of paths simultaneously between GPUs. Instead of three or four switch layers,
+    MRC needs only two to connect over 100,000 GPUs, cutting both power and costs.
+    The protocol is already running on OpenAI's Stargate…
+  prompt: ''
+  url: https://the-decoder.com/openai-built-a-networking-protocol-with-amd-broadcom-intel-microsoft-and-nvidia-to-fix-ai-supercomputer-bottlenecks/
+  source: The Decoder (AI)
+  published_utc: '2026-05-06T19:13:21+00:00'
+  title_zh: OpenAI联合AMD/博通/英特尔/微软/NVIDIA开发解决AI超算瓶颈的网络协议
+  why_zh: OpenAI联手AMD、博通、英特尔、微软和英伟达共同开发MRC开源网络协议，该协议支持在GPU间通过数百条路径同步传输数据…
+  takeaway_zh: OpenAI联合AMD、博通、英特尔、微软和英伟达开发的MRC开源网络协议，可在GPU间通过数百路径同步传输数据。该协议仅需两层交换结构即可连接超10万块GPU，较传统三四层结构显著降低能耗与成本。目前协议已在OpenAI的Stargate系统运行…
+  prompt_zh: ''
+- category: Tech industry
+  title: Robinhood’s venture fund IPO attracted 150,000+ retail investors, CEO says
+  why: Robinhood CEO Vlad Tenev says more than 150,000 retail investors joined the
+    fintech’s new venture fund, which offers exposure to private te…
+  takeaway: Robinhood CEO Vlad Tenev says more than 150,000 retail investors joined
+    the fintech’s new venture fund, which offers exposure to private tech companies
+    like OpenAI, Stripe, Databricks, and Oura before they go public.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/robinhoods-venture-fund-ipo-attracted-150000-retail-investors-ceo-says/
+  source: TechCrunch
+  published_utc: '2026-05-06T19:10:09+00:00'
+  title_zh: Robinhood CEO表示其风投基金IPO吸引超15万散户投资者
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Programming Still Sucks
+  why: 'Article URL: https://www.stvn.sh/writing/programming-still-sucks-fqffhyp Comments
+    URL: https://news.ycombinator.com/item?id=48040269 Points…'
+  takeaway: 'Article URL: https://www.stvn.sh/writing/programming-still-sucks-fqffhyp
+    Comments URL: https://news.ycombinator.com/item?id=48040269 Points: 102 # Comments:
+    18'
+  prompt: ''
+  url: https://www.stvn.sh/writing/programming-still-sucks-fqffhyp
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T19:06:41+00:00'
+  title_zh: 编程依然令人头疼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The latest Tile Pro is down to $25 — its best price of the year
+  why: If you’re struggling to find a Mother’s Day gift under $30, location trackers
+    are a good investment, helping mom keep tabs on keys, bags, l…
+  takeaway: If you’re struggling to find a Mother’s Day gift under $30, location trackers
+    are a good investment, helping mom keep tabs on keys, bags, luggage, and other
+    valuables. The latest Tile Pro is one of the best on the market, and it’s on sale
+    for $24.99 ($10 off) at Amazon and directly from Tile. While […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/925294/tile-pro-mothers-day-gift-bluetooth-tracker-deal-sale
+  source: The Verge
+  published_utc: '2026-05-06T19:00:00+00:00'
+  title_zh: Tile Pro最新款降价至25美元——年度最低价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain==1.3.0a2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.0a2
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-05-06T18:54:44+00:00'
+  title_zh: ''
+  why_zh: 版本更新（详见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Learning the Integral of a Diffusion Model
+  why: 'Article URL: https://sander.ai/2026/05/06/flow-maps.html Comments URL: https://news.ycombinator.com/item?id=48040002
+    Points: 94 # Comments:…'
+  takeaway: 'Article URL: https://sander.ai/2026/05/06/flow-maps.html Comments URL:
+    https://news.ycombinator.com/item?id=48040002 Points: 94 # Comments: 17'
+  prompt: ''
+  url: https://sander.ai/2026/05/06/flow-maps.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T18:46:27+00:00'
+  title_zh: 学习扩散模型的积分
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic taps SpaceX's Colossus-1 data center for 220,000 GPUs to power
+    Claude
+  why: Anthropic is taking over the full computing capacity of SpaceX's Colossus 1
+    data center, more than 300 megawatts and over 220,000 NVIDIA GP…
+  takeaway: Anthropic is taking over the full computing capacity of SpaceX's Colossus
+    1 data center, more than 300 megawatts and over 220,000 NVIDIA GPUs, expected
+    to come online within a month. The company is also doubling rate limits for Claude
+    Code and significantly raising API limits for Opus models. The article Anthropic
+    taps SpaceX's Colossus-1 data center for 22…
+  prompt: ''
+  url: https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude/
+  source: The Decoder (AI)
+  published_utc: '2026-05-06T18:42:24+00:00'
+  title_zh: Anthropic启用SpaceX巨像一号数据中心22万块GPU为Claude供能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic Gets in Bed With SpaceX as the AI Race Turns Weird
+  why: In an unexpected turn, the two companies signed a deal for Anthropic to use
+    computing resources from Elon Musk’s xAI.
+  takeaway: In an unexpected turn, the two companies signed a deal for Anthropic to
+    use computing resources from Elon Musk’s xAI.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/
+  source: WIRED - AI
+  published_utc: '2026-05-06T18:28:52+00:00'
+  title_zh: AI竞赛白热化：Anthropic与SpaceX达成奇特合作
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How Elon Musk left OpenAI, according to Greg Brockman
+  why: Cutthroat negotiations between startup founders are rarely shared so publicly,
+    especially when a company becomes as world-changing as OpenA…
+  takeaway: Cutthroat negotiations between startup founders are rarely shared so publicly,
+    especially when a company becomes as world-changing as OpenAI.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/
+  source: TechCrunch
+  published_utc: '2026-05-06T18:23:54+00:00'
+  title_zh: 格雷格·布罗克曼讲述埃隆·马斯克如何离开OpenAI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DOJ says ransomware gang tapped into Russian government databases
+  why: U.S.
+  takeaway: U.S. prosecutors said a ransomware gang fueled Russian government corruption,
+    and allowed the gang's leaders to avoid paying taxes and dodge the country's military
+    draft.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/doj-says-ransomware-gang-tapped-into-russian-government-databases/
+  source: TechCrunch
+  published_utc: '2026-05-06T18:20:21+00:00'
+  title_zh: 司法部称勒索软件团伙入侵俄罗斯政府数据库
+  why_zh: 美国
+  takeaway_zh: 美国检察官称某勒索软件团伙助长了俄罗斯政府腐败，并使团伙头目得以逃税避兵役。
+  prompt_zh: ''
+- category: Tech industry
+  title: AI evaluation startup Braintrust confirms breach, tells every customer to
+    rotate sensitive keys
+  why: Braintrust, a startup that makes an “operating system for engineers building
+    AI software,” notified customers that hackers broke into one o…
+  takeaway: Braintrust, a startup that makes an “operating system for engineers building
+    AI software,” notified customers that hackers broke into one of its Amazon cloud
+    environments, and is asking customers to rotate their API keys.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/
+  source: TechCrunch
+  published_utc: '2026-05-06T18:05:41+00:00'
+  title_zh: AI评估初创公司Braintrust确认数据泄露，通知所有客户更换敏感密钥
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What we’re hearing about the new homepage
+  why: We’ve been reading your feedback on the new homepage.
+  takeaway: We’ve been reading your feedback on the new homepage. All of it. The kind
+    and encouraging comments, the brutal ones, the “actually this rules,” the “please
+    undo this immediately,” the bug reports, the feature ideas, and yes, the eternal
+    request for dark mode. We appreciate it. A lot of you took the time to share […]
+  prompt: ''
+  url: https://www.theverge.com/verge-product-updates/923754/what-we-are-hearing-about-the-new-homepage
+  source: The Verge
+  published_utc: '2026-05-06T18:05:13+00:00'
+  title_zh: 关于新版首页的传闻汇总
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Learn What It Takes to Become a Cybersecurity Consultant
+  why: Cybersecurity consultants have never been more in demand.
+  takeaway: Cybersecurity consultants have never been more in demand. Information
+    security analyst roles are projected to grow nearly 30 percent between now and
+    2034 , according to the U.S. Bureau of Labor Statistics . More than 15 million
+    cybercrime incidents occurred worldwide in 2024, Statista reported. Data breaches
+    are costly and pose direct safety risks. Statista…
+  prompt: ''
+  url: https://spectrum.ieee.org/ieee-guide-cybersecurity-consultant
+  source: IEEE Spectrum
+  published_utc: '2026-05-06T18:00:01+00:00'
+  title_zh: 网络安全顾问职业进阶指南
+  why_zh: 网络安全顾问的需求达到历史峰值。
+  takeaway_zh: 网络安全顾问需求达历史顶峰。据美国劳工统计局预测，信息安全分析师岗位在2034年前将增长近30%。Statista数据显示2024年全球发生超1500万起网络犯罪案件。数据泄露不仅代价高昂，更直接危及安全…
+  prompt_zh: ''
+- category: AI frontier
+  title: Using AI for Just 10 Minutes Might Make You Lazy and Dumb, Study Shows
+  why: New research suggests that reliance on AI assistants can have a negative impact
+    on people’s ability to think and problem solve.
+  takeaway: New research suggests that reliance on AI assistants can have a negative
+    impact on people’s ability to think and problem solve.
+  prompt: ''
+  url: https://www.wired.com/story/using-ai-negative-impact-thinking-problem-solving-study/
+  source: WIRED - AI
+  published_utc: '2026-05-06T18:00:00+00:00'
+  title_zh: 研究显示使用AI仅10分钟可能导致思维惰化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google Cloud fraud defense, the next evolution of reCAPTCHA
+  why: 'Article URL: https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptch…'
+  takeaway: 'Article URL: https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/
+    Comments URL: https://news.ycombinator.com/item?id=48039362 Points: 213 # Comments:
+    205'
+  prompt: ''
+  url: https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T17:59:33+00:00'
+  title_zh: Google Cloud欺诈防御：reCAPTCHA的下一代进化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Mira Murati tells the court that she couldn’t trust Sam Altman’s words
+  why: Mira Murati, OpenAI's former CTO, has testified under oath that CEO Sam Altman
+    lied to her about the safety standards for a new AI model.
+  takeaway: Mira Murati, OpenAI's former CTO, has testified under oath that CEO Sam
+    Altman lied to her about the safety standards for a new AI model. In a video deposition
+    shown during the ongoing Musk v. Altman trial on Wednesday, Murati said Altman
+    falsely stated that OpenAI's legal department determined a new AI model did not
+    […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati
+  source: The Verge
+  published_utc: '2026-05-06T17:55:53+00:00'
+  title_zh: 米拉·穆拉蒂向法庭表示不再相信萨姆·奥特曼的说辞
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The 44 best last-minute Mother’s Day gift ideas for 2026
+  why: Whether it's managing a busy home or looking out for everyone around them,
+    moms spend a lot of time every day caring for others.
+  takeaway: Whether it's managing a busy home or looking out for everyone around them,
+    moms spend a lot of time every day caring for others. This Sunday, Mother's Day,
+    is an opportunity to return the favor, so we've rounded up practical gadgets and
+    little luxuries that can lighten her load. This year's picks are designed to […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/907032/best-mothers-day-gift-ideas-2026-mom-tech-gadgets
+  source: The Verge
+  published_utc: '2026-05-06T17:34:00+00:00'
+  title_zh: 2026年母亲节44款最佳临期礼物推荐
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX may spend up to $119B on ‘Terafab’ chip factory in Texas
+  why: The project would be a "multi-phase, next-generation, vertically integrated
+    semiconductor manufacturing and advanced computing fabrication…
+  takeaway: The project would be a "multi-phase, next-generation, vertically integrated
+    semiconductor manufacturing and advanced computing fabrication facility," according
+    to the proposal.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/spacex-may-spend-up-to-119-billion-on-terafab-chip-factory-in-texas/
+  source: TechCrunch
+  published_utc: '2026-05-06T17:23:08+00:00'
+  title_zh: SpaceX可能在德州投资高达1190亿美元建设'Terafab'芯片工厂
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Here&#8217;s what Microsoft is offering long-serving employees to voluntarily
+    retire
+  why: Microsoft revealed last month that it's planning to offer long-serving employees
+    in the US the ability to voluntarily retire.
+  takeaway: Microsoft revealed last month that it's planning to offer long-serving
+    employees in the US the ability to voluntarily retire. While the terms of the
+    buyout were supposed to be announced to employees tomorrow, sources at Microsoft
+    tell me the company has posted them on its internal HR website a little earlier
+    than expected. US employees […]
+  prompt: ''
+  url: https://www.theverge.com/report/925218/microsoft-voluntary-retirement-program-package-details
+  source: The Verge
+  published_utc: '2026-05-06T17:22:19+00:00'
+  title_zh: 微软向资深员工提供自愿退休方案
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DeepSeek could hit $45B valuation from its first investment round
+  why: The Chinese AI lab came to prominence in early 2025 after launching a large
+    language model that trained on a fraction of the compute power…
+  takeaway: The Chinese AI lab came to prominence in early 2025 after launching a
+    large language model that trained on a fraction of the compute power and at a
+    fraction of the cost of the big U.S. models like those from OpenAI and Anthropic.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/
+  source: TechCrunch
+  published_utc: '2026-05-06T17:20:34+00:00'
+  title_zh: DeepSeek首轮融资后估值或冲至450亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Report: SpaceX IPO gives Musk unchecked power and forbids investor lawsuits'
+  why: Anyone who buys into SpaceX IPO must waive right to sue the firm, report says.
+  takeaway: Anyone who buys into SpaceX IPO must waive right to sue the firm, report
+    says.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/report-spacex-ipo-gives-musk-unchecked-power-and-forbids-investor-lawsuits/
+  source: Ars Technica
+  published_utc: '2026-05-06T17:20:06+00:00'
+  title_zh: 报告：SpaceX IPO赋予马斯克绝对权力并禁止投资者诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: From Supabase to Clerk to Better Auth
+  why: 'Article URL: https://blog.val.town/better-auth Comments URL: https://news.ycombinator.com/item?id=48038827
+    Points: 205 # Comments: 130'
+  takeaway: 'Article URL: https://blog.val.town/better-auth Comments URL: https://news.ycombinator.com/item?id=48038827
+    Points: 205 # Comments: 130'
+  prompt: ''
+  url: https://blog.val.town/better-auth
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T17:19:34+00:00'
+  title_zh: 从Supabase到Clerk，迈向更优身份验证
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'SoundOff: Low-Cost Passive Ultrasound Tags'
+  why: 'Article URL: https://yibo-fu.com/SoundOff-Low-cost-Passive-Ultrasound-Tags-for-Non-invasive-and-Non
+    Comments URL: https://news.ycombinator.…'
+  takeaway: 'Article URL: https://yibo-fu.com/SoundOff-Low-cost-Passive-Ultrasound-Tags-for-Non-invasive-and-Non
+    Comments URL: https://news.ycombinator.com/item?id=48038750 Points: 36 # Comments:
+    1'
+  prompt: ''
+  url: https://yibo-fu.com/SoundOff-Low-cost-Passive-Ultrasound-Tags-for-Non-invasive-and-Non
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T17:13:54+00:00'
+  title_zh: SoundOff：低成本被动超声标签
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock AgentCore Memory announces metadata for long-term memory
+  why: Amazon Bedrock AgentCore Memory now supports metadata on long-term memory (LTM)
+    records, enabling agents to tag, filter, and retrieve memor…
+  takeaway: Amazon Bedrock AgentCore Memory now supports metadata on long-term memory
+    (LTM) records, enabling agents to tag, filter, and retrieve memories using structured
+    attributes alongside semantic search. You can define up to ten indexed keys per
+    memory resource - with support for STRING, NUMBER, and STRING_LIST types - and
+    use different operator types to filter r…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-longterm-memory-metadata
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-05-06T17:00:00+00:00'
+  title_zh: Amazon Bedrock AgentCore Memory宣布长期记忆的元数据支持
+  why_zh: 亚马逊Bedrock AgentCore Memory现支持长期记忆(LTM)记录元数据，可实现代理对记忆的标记、筛选及检索…
+  takeaway_zh: Amazon Bedrock AgentCore Memory 现支持长期记忆（LTM）记录的元数据，使代理能够使用结构化属性标记、过滤和检索记忆，同时结合语义搜索。您可为每个记忆资源定义最多十个索引键——支持STRING、NUMBER和STRING_LIST类型——并使用不同的操作符类型进行过滤…
+  prompt_zh: ''
+- category: Tech industry
+  title: Google DeepMind partners with EVE Online for AI model testing
+  why: Move comes as CCP Games spends $120M to go independent, rebrands as Fenris
+    Creations.
+  takeaway: Move comes as CCP Games spends $120M to go independent, rebrands as Fenris
+    Creations.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/05/google-deepmind-partners-with-eve-online-for-ai-model-testing/
+  source: Ars Technica
+  published_utc: '2026-05-06T16:56:49+00:00'
+  title_zh: Google DeepMind与EVE Online合作测试AI模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: I Am Begging AI Companies to Stop Naming Features After Human Processes
+  why: Anthropic announced “dreaming” for AI agents to sort through “memories” at
+    its developer conference.
+  takeaway: Anthropic announced “dreaming” for AI agents to sort through “memories”
+    at its developer conference. Can we not?
+  prompt: ''
+  url: https://www.wired.com/story/i-am-begging-ai-companies-to-stop-naming-features-after-human-processes/
+  source: WIRED - AI
+  published_utc: '2026-05-06T16:51:12+00:00'
+  title_zh: 我恳求AI公司停止以人类流程命名功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The animated version of the iconic "Hello, world" image reveals striking
+    new details
+  why: What's going on with those satellites, anyway?
+  takeaway: What's going on with those satellites, anyway?
+  prompt: ''
+  url: https://arstechnica.com/space/2026/05/the-animated-version-of-artemis-hello-world-is-even-better-than-the-original/
+  source: Ars Technica
+  published_utc: '2026-05-06T16:42:30+00:00'
+  title_zh: 经典'Hello, world'图像动画版揭示惊人新细节
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Hallucinopedia'
+  why: 'Article URL: http://halupedia.com/ Comments URL: https://news.ycombinator.com/item?id=48038257
+    Points: 151 # Comments: 155'
+  takeaway: 'Article URL: http://halupedia.com/ Comments URL: https://news.ycombinator.com/item?id=48038257
+    Points: 151 # Comments: 155'
+  prompt: ''
+  url: http://halupedia.com/
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T16:37:52+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Native Instruments Komplete 26 adds weird new synths and experimental piano
+    sounds
+  why: The latest version of Native Instruments' Komplete music production bundle
+    is here with 62 new additions, including the wonderfully weird A…
+  takeaway: 'The latest version of Native Instruments'' Komplete music production
+    bundle is here with 62 new additions, including the wonderfully weird Absynth
+    6. Komplete 26 comes in several flavors, starting with three $99 Select bundles:
+    Beats, Band, and Electronic. Prices jump pretty steeply from there, with Standard
+    costing $549, Ultimate costing $1,249, and the Col…'
+  prompt: ''
+  url: https://www.theverge.com/tech/925211/native-instruments-komplete-26-absynth-massive-kontakt
+  source: The Verge
+  published_utc: '2026-05-06T16:37:40+00:00'
+  title_zh: Native Instruments Komplete 26新增怪异合成器与实验性钢琴音色
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.35.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.35.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-05-06T16:36:40+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: I built an open-source email builder, alternative to Beefree/Unlayer'
+  why: 'Article URL: https://play.templatical.com Comments URL: https://news.ycombinator.com/item?id=48038019
+    Points: 101 # Comments: 25'
+  takeaway: 'Article URL: https://play.templatical.com Comments URL: https://news.ycombinator.com/item?id=48038019
+    Points: 101 # Comments: 25'
+  prompt: ''
+  url: https://play.templatical.com
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T16:20:00+00:00'
+  title_zh: 'Show HN: 我构建了一个开源邮件编辑器，作为Beefree/Unlayer的替代品'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FDA vaccine studies censored by Trump admin after finding benefits of shots
+  why: FDA has suppressed studies on COVID-19 vaccines and Shingrix, a shingles vaccine.
+  takeaway: FDA has suppressed studies on COVID-19 vaccines and Shingrix, a shingles
+    vaccine.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/05/trump-admin-censors-more-studies-conflicting-with-rfk-jr-s-anti-vaccine-views/
+  source: Ars Technica
+  published_utc: '2026-05-06T16:19:58+00:00'
+  title_zh: FDA疫苗研究在发现接种益处后被特朗普政府审查
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Appearing productive in the workplace
+  why: 'Article URL: https://nooneshappy.com/article/appearing-productive-in-the-workplace/
+    Comments URL: https://news.ycombinator.com/item?id=4803…'
+  takeaway: 'Article URL: https://nooneshappy.com/article/appearing-productive-in-the-workplace/
+    Comments URL: https://news.ycombinator.com/item?id=48038001 Points: 727 # Comments:
+    284'
+  prompt: ''
+  url: https://nooneshappy.com/article/appearing-productive-in-the-workplace/
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T16:18:29+00:00'
+  title_zh: 职场中如何显得高效
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Higher usage limits for Claude and a compute deal with SpaceX
+  why: 'Article URL: https://www.anthropic.com/news/higher-limits-spacex Comments
+    URL: https://news.ycombinator.com/item?id=48037986 Points: 389 #…'
+  takeaway: 'Article URL: https://www.anthropic.com/news/higher-limits-spacex Comments
+    URL: https://news.ycombinator.com/item?id=48037986 Points: 389 # Comments: 336'
+  prompt: ''
+  url: https://www.anthropic.com/news/higher-limits-spacex
+  source: Hacker News (front page)
+  published_utc: '2026-05-06T16:17:33+00:00'
+  title_zh: Claude使用限制提升，并与SpaceX达成计算资源协议
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

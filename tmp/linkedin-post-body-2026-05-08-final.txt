@@ -1,0 +1,38 @@
+==== Attach images (4 cards) ====
+News EN: /Volumes/long1/desk1/找工作/personal-site-main-2026-05-08/assets/img/digests/2026-05-08-en.png
+News ZH: /Volumes/long1/desk1/找工作/personal-site-main-2026-05-08/assets/img/digests/2026-05-08-zh.png
+AI EN:   /Volumes/long1/desk1/找工作/personal-site-main-2026-05-08/assets/img/digests/2026-05-08-ai-en.png
+AI ZH:   /Volumes/long1/desk1/找工作/personal-site-main-2026-05-08/assets/img/digests/2026-05-08-ai-zh.png
+
+==== LinkedIn (copy/paste) ====
+Daily Digest - 2026-05-08
+
+Cards attached (EN + Chinese card).
+
+Today: The Download: AI malaise and babymaking tech · Everyone’s a loser in Strait of Hormuz game that simulates glob… · AI: langchain-ai/langchain: langchain==1.2.18.
+
+Links (full list): https://www.zhaozhilong.com/digest/2026-05-08/
+
+Links:
+
+- The Download: AI malaise and babymaking tech
+  https://www.technologyreview.com/2026/05/08/1136985/the-download-ai-malaise-babymaking-ivf-tech/
+- Here’s how technology transformed babymaking
+  https://www.technologyreview.com/2026/05/08/1136974/heres-how-technology-transformed-babymaking-ivf/
+- Everyone’s a loser in Strait of Hormuz game that simulates global crisis
+  https://arstechnica.com/gaming/2026/05/everyones-a-loser-in-straight-of-hormuz-game-that-simulates-global-crisis/
+- Rocket Report: Alpha Block 2 coming this summer; Falcon sets booster landing mark
+  https://arstechnica.com/space/2026/05/rocket-report-flying-past-peak-falcon-9-rocket-lab-revenue-soars/
+- Last 24 hours to get 50% off a second pass to TechCrunch Disrupt 2026
+  https://techcrunch.com/2026/05/08/last-24-hours-to-get-50-off-a-second-pass-to-techcrunch-disrupt-2026/
+- Lime, the Uber-backed micromobility company, files for IPO
+  https://techcrunch.com/2026/05/08/lime-the-uber-backed-micromobility-company-files-for-ipo/
+- The biggest U.S. power grid is under strain from AI — and no one is happy
+  https://techcrunch.com/2026/05/08/the-biggest-u-s-power-grid-is-under-strain-from-ai-and-no-one-is-happy/
+- Airbnb says AI now writes 60% of its new code
+  https://techcrunch.com/2026/05/08/airbnb-says-ai-now-writes-60-of-its-new-code/
+- Why you can never get your doctor to call you back
+  https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/
+- Boox’s new page-turning e-reader remote is a tiny two-button keyboard
+  https://www.theverge.com/tech/926240/boox-tappy-page-turn-scroll-button-bluetooth-remote
+

@@ -695,6 +695,7 @@ weeks:
   end: '2026-05-10'
   issues:
   - '2026-05-07'
+  - '2026-05-08'
   highlights_news:
   - date: '2026-05-07'
     url: https://techcrunch.com/2026/05/06/doj-says-ransomware-gang-tapped-into-russian-government-databases/
@@ -733,6 +734,41 @@ weeks:
     category: AI frontier
     source: WIRED - AI
     published_utc: '2026-05-06T23:23:45+00:00'
+  - date: '2026-05-08'
+    url: https://www.technologyreview.com/2026/05/08/1136985/the-download-ai-malaise-babymaking-ivf-tech/
+    title: 'The Download: AI malaise and babymaking tech'
+    title_zh: AI低迷与生育技术
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-05-08T12:10:00+00:00'
+  - date: '2026-05-08'
+    url: https://arstechnica.com/gaming/2026/05/everyones-a-loser-in-straight-of-hormuz-game-that-simulates-global-crisis/
+    title: Everyone’s a loser in Strait of Hormuz game that simulates global crisis
+    title_zh: 霍尔木兹海峡模拟全球危机，无人胜出
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-05-08T11:15:42+00:00'
+  - date: '2026-05-08'
+    url: https://techcrunch.com/2026/05/08/last-24-hours-to-get-50-off-a-second-pass-to-techcrunch-disrupt-2026/
+    title: Last 24 hours to get 50% off a second pass to TechCrunch Disrupt 2026
+    title_zh: 最后24小时，TechCrunch Disrupt 2026第二张门票半价
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-05-08T14:00:00+00:00'
+  - date: '2026-05-08'
+    url: https://www.theverge.com/tech/926240/boox-tappy-page-turn-scroll-button-bluetooth-remote
+    title: Boox’s new page-turning e-reader remote is a tiny two-button keyboard
+    title_zh: Boox新款翻页遥控器：双键迷你键盘
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-05-08T14:00:00+00:00'
+  - date: '2026-05-08'
+    url: https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/
+    title: Canvas Breach Disrupts Schools & Colleges Nationwide
+    title_zh: Canvas数据泄露影响全国学校与学院
+    category: Security
+    source: Krebs on Security
+    published_utc: '2026-05-08T02:58:46+00:00'
   highlights_ai:
   - date: '2026-05-07'
     url: https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-longterm-memory-metadata
@@ -755,3 +791,33 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-05-06T18:54:44+00:00'
+  - date: '2026-05-08'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.18
+    title: 'langchain-ai/langchain: langchain==1.2.18'
+    title_zh: langchain-ai/langchain：langchain==1.2.18版本
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-05-08T13:59:43+00:00'
+  - date: '2026-05-08'
+    url: https://the-decoder.com/ai-safety-tests-have-a-new-problem-models-are-now-faking-their-own-reasoning-traces/
+    title: 'AI safety tests have a new problem: Models are now faking their own reasoning
+      traces'
+    title_zh: AI安全测试新难题：模型开始伪造自身推理痕迹
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-05-08T13:21:02+00:00'
+  - date: '2026-05-08'
+    url: https://www.latent.space/p/ainews-gpt-realtime-2-translate-and
+    title: '[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice
+      APIs'
+    title_zh: '[AI动态] GPT实时2.0、翻译和语音识别：新一代实时语音API'
+    category: AI tools & model releases
+    source: Latent Space (LLM/tools)
+    published_utc: '2026-05-08T07:11:24+00:00'
+  - date: '2026-05-08'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.83.14-stable.patch.3
+    title: 'BerriAI/litellm: v1.83.14-stable.patch.3'
+    title_zh: BerriAI/litellm：v1.83.14稳定修补版本3
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-05-07T23:42:51+00:00'

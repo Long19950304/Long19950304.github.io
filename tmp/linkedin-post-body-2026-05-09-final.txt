@@ -1,0 +1,38 @@
+==== Attach images (4 cards) ====
+News EN: /Volumes/long1/desk1/找工作/personal-site-main-2026-05-09/assets/img/digests/2026-05-09-en.png
+News ZH: /Volumes/long1/desk1/找工作/personal-site-main-2026-05-09/assets/img/digests/2026-05-09-zh.png
+AI EN:   /Volumes/long1/desk1/找工作/personal-site-main-2026-05-09/assets/img/digests/2026-05-09-ai-en.png
+AI ZH:   /Volumes/long1/desk1/找工作/personal-site-main-2026-05-09/assets/img/digests/2026-05-09-ai-zh.png
+
+==== LinkedIn (copy/paste) ====
+Daily Digest - 2026-05-09
+
+Cards attached (EN + Chinese card).
+
+Today: Poland says hackers breached water treatment plants, and the US… · Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reve… · AI: [AINews] Anthropic growing 10x/year while everyone else i….
+
+Links (full list): https://www.zhaozhilong.com/digest/2026-05-09/
+
+Links:
+
+- Poland says hackers breached water treatment plants, and the US is facing the same threat
+  https://techcrunch.com/2026/05/08/poland-says-hackers-breached-water-treatment-plants-and-the-u-s-is-facing-the-same-threat/
+- Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman
+  https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/
+- US defense contractor who sold hacking tools to Russian broker ordered to pay $10M to former employers
+  https://techcrunch.com/2026/05/08/u-s-defense-contractor-who-sold-hacking-tools-to-russian-broker-ordered-to-pay-10-million-to-former-employers/
+- Court rules Trump's 10% tariff is just as illegal as the tariff it replaced
+  https://arstechnica.com/tech-policy/2026/05/trumps-10-global-tariff-is-illegal-court-rules/
+- Here’s what you need to know about the cruise ship hantavirus outbreak
+  https://www.technologyreview.com/2026/05/08/1136988/heres-what-you-need-to-know-about-the-cruise-ship-hantavirus-outbreak/
+- Prime Video follows Netflix and Disney by adding a TikTok-like ‘Clips’ feed in its app
+  https://techcrunch.com/2026/05/08/prime-video-follows-netflix-and-disney-by-adding-a-tiktok-like-clips-feed-in-its-app/
+- Chaos erupts as cyberattack disrupts learning platform Canvas amid finals
+  https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/
+- DOGE used ChatGPT in a way that was both dumb and illegal, judge rules
+  https://www.theverge.com/policy/927071/doge-chatgpt-grants-canceled
+- Manufacturing qubits that can move
+  https://arstechnica.com/science/2026/05/manufacturing-qubits-that-can-move/
+- Trump reportedly plans to fire FDA Commissioner Marty Makary
+  https://arstechnica.com/health/2026/05/trump-reportedly-plans-to-fire-fda-commissioner-marty-makary/
+

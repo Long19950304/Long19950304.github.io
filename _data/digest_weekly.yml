@@ -696,6 +696,7 @@ weeks:
   issues:
   - '2026-05-07'
   - '2026-05-08'
+  - '2026-05-09'
   highlights_news:
   - date: '2026-05-07'
     url: https://techcrunch.com/2026/05/06/doj-says-ransomware-gang-tapped-into-russian-government-databases/
@@ -769,6 +770,44 @@ weeks:
     category: Security
     source: Krebs on Security
     published_utc: '2026-05-08T02:58:46+00:00'
+  - date: '2026-05-09'
+    url: https://techcrunch.com/2026/05/08/poland-says-hackers-breached-water-treatment-plants-and-the-u-s-is-facing-the-same-threat/
+    title: Poland says hackers breached water treatment plants, and the US is facing
+      the same threat
+    title_zh: 波兰称黑客入侵水处理厂，美国面临相同威胁
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-05-08T17:20:37+00:00'
+  - date: '2026-05-09'
+    url: https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/
+    title: 'Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that
+      Musk tried to poach Sam Altman'
+    title_zh: 马斯克与阿尔特曼对决第二周：OpenAI反击，希冯·齐利斯透露马斯克曾试图挖角山姆·阿尔特曼
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-05-08T23:59:19+00:00'
+  - date: '2026-05-09'
+    url: https://arstechnica.com/tech-policy/2026/05/trumps-10-global-tariff-is-illegal-court-rules/
+    title: Court rules Trump's 10% tariff is just as illegal as the tariff it replaced
+    title_zh: 法院裁定特朗普的10%关税与被其取代的关税同样非法
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-05-08T19:25:30+00:00'
+  - date: '2026-05-09'
+    url: https://www.theverge.com/policy/927071/doge-chatgpt-grants-canceled
+    title: DOGE used ChatGPT in a way that was both dumb and illegal, judge rules
+    title_zh: 法官裁定DOGE使用ChatGPT既愚蠢又违法
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-05-08T18:02:44+00:00'
+  - date: '2026-05-09'
+    url: https://the-decoder.com/softbank-reportedly-slashes-openai-backed-loan-from-10-billion-to-6-billion-as-lenders-balk-at-private-ai-valuations/
+    title: SoftBank reportedly slashes OpenAI-backed loan from $10 billion to $6 billion
+      as lenders balk at private AI valuations
+    title_zh: 据报道，软银因贷款方对私人AI估值持保留态度，将OpenAI支持的贷款从100亿美元削减至60亿美元
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-05-08T16:26:58+00:00'
   highlights_ai:
   - date: '2026-05-07'
     url: https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-longterm-memory-metadata
@@ -821,3 +860,26 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-05-07T23:42:51+00:00'
+  - date: '2026-05-09'
+    url: https://www.latent.space/p/ainews-anthropic-growing-10xyear
+    title: '[AINews] Anthropic growing 10x/year while everyone else is laying off
+      >10% of their workforce'
+    title_zh: '[AINews] Anthropic年增长10倍，而其他公司裁员超10%'
+    category: AI tools & model releases
+    source: Latent Space (LLM/tools)
+    published_utc: '2026-05-09T01:08:28+00:00'
+  - date: '2026-05-09'
+    url: https://developer.nvidia.com/blog/streaming-tokens-and-tools-multi-turn-agentic-harness-support-in-nvidia-dynamo/
+    title: 'Streaming Tokens and Tools: Multi-Turn Agentic Harness Support in NVIDIA
+      Dynamo'
+    title_zh: 流式令牌与工具：NVIDIA Dynamo中的多轮代理支持
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-05-08T15:59:16+00:00'
+  - date: '2026-05-09'
+    url: https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything
+    title: 'Using Claude Code: The Unreasonable Effectiveness of HTML'
+    title_zh: 使用Claude代码：HTML的惊人有效性
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-05-08T21:00:11+00:00'

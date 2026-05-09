@@ -1,0 +1,913 @@
+date: '2026-05-09'
+title: Daily Digest - 2026-05-09
+title_zh: 每日简报 - 2026-05-09
+note: 'Today: Poland says hackers breached water treatment plants, and the US… · Musk
+  v. Altman week 2: OpenAI fires back, and Shivon Zilis reve… · AI: [AINews] Anthropic
+  growing 10x/year while everyone else i….'
+note_zh: 今日关注：波兰称黑客入侵水处理厂，美国面临相同威胁；马斯克与阿尔特曼对决第二周：OpenAI反击，希冯·齐利斯透露马斯克曾试图…；AI：[AINews]
+  Anthropic年增长10倍，而其他公司裁员超…。
+items:
+- category: Tech industry
+  title: Over 97% of the 'Linux' Foundation's Budget Goes Not to Linux
+  why: 'Article URL: https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml
+    Comments URL: https://new…'
+  takeaway: 'Article URL: https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml
+    Comments URL: https://news.ycombinator.com/item?id=48071496 Points: 23 # Comments:
+    6'
+  prompt: ''
+  url: https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml
+  source: Hacker News (front page)
+  published_utc: '2026-05-09T03:21:06+00:00'
+  title_zh: Linux基金会超97%的预算未用于Linux
+  why_zh: 文章链接：https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml
+    评论链接：https://new……
+  takeaway_zh: '文章链接：https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml
+    评论链接：https://news.ycombinator.com/item?id=48071496 得分：23 # 评论数：6'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '[AINews] Anthropic growing 10x/year while everyone else is laying off >10%
+    of their workforce'
+  why: A quiet day lets us reflect on an interesting dichotomy in the economy.
+  takeaway: A quiet day lets us reflect on an interesting dichotomy in the economy.
+  prompt: ''
+  url: https://www.latent.space/p/ainews-anthropic-growing-10xyear
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-05-09T01:08:28+00:00'
+  title_zh: '[AINews] Anthropic年增长10倍，而其他公司裁员超10%'
+  why_zh: 平静的交易日让我们得以审视经济中耐人寻味的二元现象。
+  takeaway_zh: 平静的交易日让我们得以审视经济中耐人寻味的二元现象。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that
+    Musk tried to poach Sam Altman'
+  why: In the second week of the landmark trial between Elon Musk and OpenAI, Musk’s
+    motivations for bringing the suit were under scrutiny.
+  takeaway: In the second week of the landmark trial between Elon Musk and OpenAI,
+    Musk’s motivations for bringing the suit were under scrutiny. Last week, Musk
+    took the stand, alleging that OpenAI CEO Sam Altman and president Greg Brockman
+    had deceived him into donating $38 million to the company. He claimed that they’d
+    promised to maintain…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/
+  source: MIT Technology Review
+  published_utc: '2026-05-08T23:59:19+00:00'
+  title_zh: 马斯克与阿尔特曼对决第二周：OpenAI反击，希冯·齐利斯透露马斯克曾试图挖角山姆·阿尔特曼
+  why_zh: 在埃隆·马斯克与OpenAI具有里程碑意义的诉讼案第二周庭审中，马斯克提起诉讼的动机受到质疑。
+  takeaway_zh: 在埃隆·马斯克与OpenAI里程碑式诉讼案第二周庭审中，马斯克起诉动机引发审查。上周马斯克出庭作证，指控OpenAI首席执行官萨姆·奥尔特曼与总裁格雷格·布罗克曼欺骗其向公司捐赠3800万美元，称对方曾承诺保持……
+  prompt_zh: ''
+- category: Tech industry
+  title: Manufacturing qubits that can move
+  why: It's hard to mix electronic manufacturing and flexible geometry.
+  takeaway: It's hard to mix electronic manufacturing and flexible geometry.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/05/manufacturing-qubits-that-can-move/
+  source: Ars Technica
+  published_utc: '2026-05-08T23:13:57+00:00'
+  title_zh: 制造可移动的量子比特
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Laid-off Oracle workers tried to negotiate better severance. Oracle said
+    no.
+  why: Some found out they didn't qualify for WARN Act protections like two-months
+    notice because the company had classified them as remote worker…
+  takeaway: Some found out they didn't qualify for WARN Act protections like two-months
+    notice because the company had classified them as remote workers.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/laid-off-oracle-workers-tried-to-negotiate-better-severance-oracle-said-no/
+  source: TechCrunch
+  published_utc: '2026-05-08T22:59:05+00:00'
+  title_zh: 甲骨文被裁员工试图争取更优遣散费，公司未予同意
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: San Francisco’s housing market has lost its mind
+  why: The invisible force behind all of this is no mystery to anyone paying attention
+    to the city's tech economy.
+  takeaway: The invisible force behind all of this is no mystery to anyone paying
+    attention to the city's tech economy. San Francisco is home to some of the most
+    valuable private companies in the world, and their employees have been quietly
+    accumulating — and, increasingly, cashing out — fortunes.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/san-franciscos-housing-market-has-lost-its-mind/
+  source: TechCrunch
+  published_utc: '2026-05-08T22:32:31+00:00'
+  title_zh: 旧金山房地产市场已陷入疯狂
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump reportedly plans to fire FDA Commissioner Marty Makary
+  why: The plan isn't final and could change, but his ouster would be no surprise.
+  takeaway: The plan isn't final and could change, but his ouster would be no surprise.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/05/trump-reportedly-plans-to-fire-fda-commissioner-marty-makary/
+  source: Ars Technica
+  published_utc: '2026-05-08T22:10:58+00:00'
+  title_zh: 据报道特朗普计划解雇FDA局长马蒂·马卡里
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta Shuts Down End-to-End Encryption for Instagram Messaging
+  why: 'Article URL: https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging
+    Comments URL: https://news.ycombi…'
+  takeaway: 'Article URL: https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging
+    Comments URL: https://news.ycombinator.com/item?id=48069192 Points: 194 # Comments:
+    127'
+  prompt: ''
+  url: https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T21:47:47+00:00'
+  title_zh: Meta关闭Instagram消息的端到端加密功能
+  why_zh: 文章链接：https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging
+    评论链接：https://news.ycombi……
+  takeaway_zh: '文章链接：https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging
+    评论链接：https://news.ycombinator.com/item?id=48069192 票数：194 # 评论数：127'
+  prompt_zh: ''
+- category: Tech industry
+  title: Non-determinism is an issue with patching CVEs
+  why: 'Article URL: https://flox.dev/blog/achieving-rapid-cve-remediation-in-an-era-of-escalating-vulnerabilities/
+    Comments URL: https://news.ycom…'
+  takeaway: 'Article URL: https://flox.dev/blog/achieving-rapid-cve-remediation-in-an-era-of-escalating-vulnerabilities/
+    Comments URL: https://news.ycombinator.com/item?id=48068947 Points: 42 # Comments:
+    12'
+  prompt: ''
+  url: https://flox.dev/blog/achieving-rapid-cve-remediation-in-an-era-of-escalating-vulnerabilities/
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T21:23:07+00:00'
+  title_zh: 非确定性是修补CVE时的一个问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ABC refuses to capitulate to Trump admin, fights FCC probe into The View
+  why: FCC chair hasn't been able to bully ABC and owner Disney into submission.
+  takeaway: FCC chair hasn't been able to bully ABC and owner Disney into submission.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/abc-fights-trump-fccs-attempt-to-control-content-of-broadcast-tv-shows/
+  source: Ars Technica
+  published_utc: '2026-05-08T21:08:42+00:00'
+  title_zh: ABC拒绝向特朗普政府屈服，对抗FCC对《The View》的调查
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Mux (YC W16) Is Hiring
+  why: 'Article URL: https://www.mux.com/jobs Comments URL: https://news.ycombinator.com/item?id=48068732
+    Points: 0 # Comments: 0'
+  takeaway: 'Article URL: https://www.mux.com/jobs Comments URL: https://news.ycombinator.com/item?id=48068732
+    Points: 0 # Comments: 0'
+  prompt: ''
+  url: https://www.mux.com/jobs
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T21:02:32+00:00'
+  title_zh: Mux（YC W16）正在招聘
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Using Claude Code: The Unreasonable Effectiveness of HTML'
+  why: 'Using Claude Code: The Unreasonable Effectiveness of HTML Thought-provoking
+    piece by Thariq Shihipar (on the Claude Code team at Anthropic)…'
+  takeaway: 'Using Claude Code: The Unreasonable Effectiveness of HTML Thought-provoking
+    piece by Thariq Shihipar (on the Claude Code team at Anthropic) advocating for
+    HTML over Markdown as an output format to request from Claude. The article is
+    crammed with interesting examples (collected on this site ) and prompt suggestions
+    like this one: Help me review this PR by cr…'
+  prompt: ''
+  url: https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-05-08T21:00:11+00:00'
+  title_zh: 使用Claude代码：HTML的惊人有效性
+  why_zh: 《使用Claude代码：HTML的惊人有效性》 Anthropic公司Claude代码团队成员塔里克·希帕尔的发人深省之作……
+  takeaway_zh: 使用Claude代码：HTML的惊人有效性 Thariq Shihipar（Anthropic公司Claude代码团队成员）撰写的发人深省的文章，主张在请求Claude输出时选择HTML而非Markdown格式。文章充满了有趣的示例（收集于本网站）以及类似以下的提示建议：帮我审查这个PR...
+  prompt_zh: ''
+- category: Tech industry
+  title: Sony says "efficient" AI tools will lead to even more games flooding the
+    market
+  why: But human artists still "must remain at the center," PlayStation maker says.
+  takeaway: But human artists still "must remain at the center," PlayStation maker
+    says.
+  prompt: ''
+  url: https://arstechnica.com/gaming/2026/05/sony-says-efficient-ai-tools-will-lead-to-even-more-games-flooding-the-market/
+  source: Ars Technica
+  published_utc: '2026-05-08T20:51:17+00:00'
+  title_zh: 索尼称‘高效’AI工具将导致更多游戏涌入市场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Prime Video follows Netflix and Disney by adding a TikTok-like ‘Clips’ feed
+    in its app
+  why: The Clips feed aims to enable discovery by offering users a scrollable feed
+    with short snippets of shows and movies.
+  takeaway: The Clips feed aims to enable discovery by offering users a scrollable
+    feed with short snippets of shows and movies.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/prime-video-follows-netflix-and-disney-by-adding-a-tiktok-like-clips-feed-in-its-app/
+  source: TechCrunch
+  published_utc: '2026-05-08T20:50:03+00:00'
+  title_zh: Prime Video效仿Netflix和Disney，在应用中添加类似TikTok的‘Clips’视频流
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The unprecedented and deadly cruise ship hantavirus outbreak, explained
+  why: '"This is not COVID," and other reasons why risk to the public is currently
+    low.'
+  takeaway: '"This is not COVID," and other reasons why risk to the public is currently
+    low.'
+  prompt: ''
+  url: https://arstechnica.com/health/2026/05/everything-you-need-to-know-about-the-hantavirus-cruise-ship-outbreak/
+  source: Ars Technica
+  published_utc: '2026-05-08T20:42:35+00:00'
+  title_zh: 前所未有且致命的邮轮汉坦病毒疫情解析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Asus chases Elgato with its own secondary touchscreen display
+  why: Asus's latest gaming monitor is a little smaller than usual.
+  takeaway: Asus's latest gaming monitor is a little smaller than usual. The ROG Strix
+    XG129C, announced on Friday, is a 12.3-inch touchscreen IPS display that's intended
+    to be a sidekick for a larger main monitor, similar to the 14.1-inch secondary
+    display in the 2020 Asus ROG Zephyrus Duo 15. It's a slightly smaller competitor
+    to Corsair's […]
+  prompt: ''
+  url: https://www.theverge.com/games/927333/asus-rog-strix-xg129c-secondary-display
+  source: The Verge
+  published_utc: '2026-05-08T20:34:24+00:00'
+  title_zh: 华硕推出自有副触控屏，追赶Elgato
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Amazon is adding a vertical video feed to Prime Video
+  why: Amazon Prime Video is joining Netflix and Disney Plus in adding a vertical
+    feed of videos to its streaming app.
+  takeaway: Amazon Prime Video is joining Netflix and Disney Plus in adding a vertical
+    feed of videos to its streaming app. The new "Clips" feed will offer a stream
+    of short-form videos from shows and movies, with options to jump into the full
+    title, rent, or buy it. Prime Video previously offered a TikTok-style feed with
+    […]
+  prompt: ''
+  url: https://www.theverge.com/streaming/927327/amazon-prime-video-vertical-video-feed
+  source: The Verge
+  published_utc: '2026-05-08T20:19:57+00:00'
+  title_zh: 亚马逊为Prime Video新增垂直视频流
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: When is your birthday? The math behind hash collisions
+  why: 'Article URL: https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html
+    Comments URL: https://news.ycombinator.com/ite…'
+  takeaway: 'Article URL: https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html
+    Comments URL: https://news.ycombinator.com/item?id=48068254 Points: 29 # Comments:
+    4'
+  prompt: ''
+  url: https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T20:18:39+00:00'
+  title_zh: 你的生日是哪天？哈希碰撞背后的数学原理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Intel’s comeback story is even wilder than it seems
+  why: Intel's stock has risen a stunning 490% over the past year, a bet by Wall Street
+    that may be running well ahead of the company's actual tur…
+  takeaway: Intel's stock has risen a stunning 490% over the past year, a bet by Wall
+    Street that may be running well ahead of the company's actual turnaround.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/intels-comeback-story-is-even-wilder-than-it-seems/
+  source: TechCrunch
+  published_utc: '2026-05-08T20:02:52+00:00'
+  title_zh: 英特尔的复兴故事比表面看来更为惊人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Course correction: Google to link more sources in AI Overviews'
+  why: Google's AI search will start citing its sources in several new ways.
+  takeaway: Google's AI search will start citing its sources in several new ways.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/
+  source: Ars Technica
+  published_utc: '2026-05-08T19:43:47+00:00'
+  title_zh: 课程修正：谷歌将在AI概览中链接更多来源
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: You gave me a u32. I gave you root. (io_uring ZCRX freelist LPE)
+  why: 'Article URL: https://ze3tar.github.io/post-zcrx.html Comments URL: https://news.ycombinator.com/item?id=48067734
+    Points: 155 # Comments: 90'
+  takeaway: 'Article URL: https://ze3tar.github.io/post-zcrx.html Comments URL: https://news.ycombinator.com/item?id=48067734
+    Points: 155 # Comments: 90'
+  prompt: ''
+  url: https://ze3tar.github.io/post-zcrx.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T19:40:39+00:00'
+  title_zh: 你给我一个u32，我给你root权限（io_uring ZCRX freelist LPE）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: My first in-prod corrupted hard drive problem
+  why: 'Article URL: https://blog.pavementlink.ch/2026/05/07/my-first-corrupted-hard-drive-problem/
+    Comments URL: https://news.ycombinator.com/item…'
+  takeaway: 'Article URL: https://blog.pavementlink.ch/2026/05/07/my-first-corrupted-hard-drive-problem/
+    Comments URL: https://news.ycombinator.com/item?id=48067686 Points: 40 # Comments:
+    27'
+  prompt: ''
+  url: https://blog.pavementlink.ch/2026/05/07/my-first-corrupted-hard-drive-problem/
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T19:35:36+00:00'
+  title_zh: 我首次在生产环境中遇到的硬盘损坏问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Court rules Trump's 10% tariff is just as illegal as the tariff it replaced
+  why: Trump's vow to impose tariffs a "different way" already has the tech industry
+    on edge.
+  takeaway: Trump's vow to impose tariffs a "different way" already has the tech industry
+    on edge.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/trumps-10-global-tariff-is-illegal-court-rules/
+  source: Ars Technica
+  published_utc: '2026-05-08T19:25:30+00:00'
+  title_zh: 法院裁定特朗普的10%关税与被其取代的关税同样非法
+  why_zh: 特朗普宣称将以'不同方式'加征关税的承诺已让科技行业如坐针毡。
+  takeaway_zh: 特朗普宣称将以'不同方式'加征关税的承诺已让科技行业如坐针毡。
+  prompt_zh: ''
+- category: Tech industry
+  title: Here is Yarbo’s promise to fix the robot mower that ran me over
+  why: Yesterday, I told you how a hacker ran me over with a robot lawn mower.
+  takeaway: Yesterday, I told you how a hacker ran me over with a robot lawn mower.
+    We explained how thousands of these bladed Chinese robots, made by Yarbo, could
+    be hijacked with ease - exposing people's GPS coordinates, Wi-Fi passwords, email
+    addresses, and more to any casual hacker who comes along. Today, Yarbo has issued
+    a […]
+  prompt: ''
+  url: https://www.theverge.com/tech/926989/yarbo-robot-lawn-mower-hack-company-update-security-promise
+  source: The Verge
+  published_utc: '2026-05-08T19:14:34+00:00'
+  title_zh: Yarbo承诺修复曾碾压我的机器人割草机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google broke reCAPTCHA for de-googled Android users
+  why: 'Related: Google Cloud fraud defense, the next evolution of reCAPTCHA - https://news.ycombinator.com/item?id=48039362
+    also: Google Cloud Fra…'
+  takeaway: 'Related: Google Cloud fraud defense, the next evolution of reCAPTCHA
+    - https://news.ycombinator.com/item?id=48039362 also: Google Cloud Fraud Defence
+    is just WEI repackaged - https://news.ycombinator.com/item?id=48063199 Comments
+    URL: https://news.ycombinator.com/item?id=48067119 Points: 764 # Comments: 260'
+  prompt: ''
+  url: https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T18:45:58+00:00'
+  title_zh: 谷歌使去谷歌化的Android用户无法使用reCAPTCHA
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: All the latest updates on AI data centers
+  why: Massive new data centers are the physical foundation for tech companies’ hopes
+    and dreams for AI.
+  takeaway: Massive new data centers are the physical foundation for tech companies’
+    hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry
+    servers has also kicked up fights across the world over their impact on power
+    grids, utility bills, nearby communities, and the environment. From audacious
+    plans to launch data centers into […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy
+  source: The Verge
+  published_utc: '2026-05-08T18:45:08+00:00'
+  title_zh: 人工智能数据中心最新动态一览
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Chaos erupts as cyberattack disrupts learning platform Canvas amid finals
+  why: Across the country, schools and colleges postpone year-end tests.
+  takeaway: Across the country, schools and colleges postpone year-end tests.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/
+  source: Ars Technica
+  published_utc: '2026-05-08T18:33:48+00:00'
+  title_zh: 网络攻击扰乱学习平台Canvas，期末考试期间陷入混乱
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record
+    high
+  why: Cloudflare announced its first large-scale layoff.
+  takeaway: Cloudflare announced its first large-scale layoff. CEO Matthew Prince
+    says because of AI efficiency gains, the company doesn't need as many support
+    roles.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/
+  source: TechCrunch
+  published_utc: '2026-05-08T18:33:21+00:00'
+  title_zh: Cloudflare称AI淘汰了1100个岗位，尽管收入创新高
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Porsche shutters e-bike, battery, software subsidiaries as part of company
+    overhaul
+  why: More than 500 people will be affected by the closures.
+  takeaway: More than 500 people will be affected by the closures. “We must refocus
+    on our core business,” Porsche CEO and executive chair Michael Leiters said in
+    a statement. "This is the indispensable foundation for a successful strategic
+    realignment. This forces us to make painful cuts — including our subsidiaries."
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/porsche-shutters-e-bike-battery-software-subsidiaries-as-part-of-company-overhaul/
+  source: TechCrunch
+  published_utc: '2026-05-08T18:25:29+00:00'
+  title_zh: 保时捷关闭电动自行车、电池及软件子公司，作为公司重组的一部分
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DOGE used ChatGPT in a way that was both dumb and illegal, judge rules
+  why: The Department of Government Efficiency's cancellation of over $100 million
+    in grants was unconstitutional, according to a ruling on Thursd…
+  takeaway: The Department of Government Efficiency's cancellation of over $100 million
+    in grants was unconstitutional, according to a ruling on Thursday. In the 143-page
+    decision, US District Judge Colleen McMahon cites DOGE's process for eliminating
+    grants, which involved using ChatGPT to determine if something is related to diversity,
+    equity, and inclusion (DEI). Th…
+  prompt: ''
+  url: https://www.theverge.com/policy/927071/doge-chatgpt-grants-canceled
+  source: The Verge
+  published_utc: '2026-05-08T18:02:44+00:00'
+  title_zh: 法官裁定DOGE使用ChatGPT既愚蠢又违法
+  why_zh: 政府效率部撤销超1亿美元拨款的决定被周四裁决认定违宪……
+  takeaway_zh: 政府效率部撤销超1亿美元拨款的决定被周四裁决认定违宪。143页判决书中，美国地区法官科琳·麦克马洪指出该部门使用ChatGPT判定项目是否涉及多元化、公平与包容(DEI)的决策流程……
+  prompt_zh: ''
+- category: Tech industry
+  title: Ana Inês Inácio Designs the Future of Wireless
+  why: When Ana Inês Inácio goes to work at the Netherlands Organization for Applied
+    Scientific Research (TNO) in The Hague, she thinks about sign…
+  takeaway: 'When Ana Inês Inácio goes to work at the Netherlands Organization for
+    Applied Scientific Research (TNO) in The Hague, she thinks about signals most
+    people never notice: radio waves moving between satellites , sensors , and future
+    wireless networks. The integrated circuits the research scientist designs lay
+    the foundation for next-generation RF sensor system…'
+  prompt: ''
+  url: https://spectrum.ieee.org/ana-ines-inacio-wireless
+  source: IEEE Spectrum
+  published_utc: '2026-05-08T18:00:01+00:00'
+  title_zh: Ana Inês Inácio设计无线未来
+  why_zh: 当安娜·伊内斯·伊纳西奥前往海牙荷兰应用科学研究组织(TNO)工作时，她思考的是大多数人从未注意的信号……
+  takeaway_zh: 当安娜·伊内斯·伊纳西奥前往海牙荷兰应用科学研究组织(TNO)工作时，她专注研究常人未曾留意的信号：卫星间传输的无线电波、传感器与未来无线网络。这位研究科学家设计的集成电路为下一代射频传感系统奠定基础……
+  prompt_zh: ''
+- category: Tech industry
+  title: Teaching Claude Why
+  why: 'Article URL: https://www.anthropic.com/research/teaching-claude-why Comments
+    URL: https://news.ycombinator.com/item?id=48066592 Points: 110…'
+  takeaway: 'Article URL: https://www.anthropic.com/research/teaching-claude-why Comments
+    URL: https://news.ycombinator.com/item?id=48066592 Points: 110 # Comments: 43'
+  prompt: ''
+  url: https://www.anthropic.com/research/teaching-claude-why
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T17:59:41+00:00'
+  title_zh: 教导Claude理解原因
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI is breaking two vulnerability cultures
+  why: 'Article URL: https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures
+    Comments URL: https://news.ycombinator.com/item?id=48066524…'
+  takeaway: 'Article URL: https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures
+    Comments URL: https://news.ycombinator.com/item?id=48066524 Points: 283 # Comments:
+    124'
+  prompt: ''
+  url: https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T17:55:08+00:00'
+  title_zh: AI正在打破两种脆弱性文化
+  why_zh: 文章链接：https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures
+    评论链接：https://news.ycombinator.com/item?id=48066524……
+  takeaway_zh: '文章链接：https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures
+    评论链接：https://news.ycombinator.com/item?id=48066524 票数：283 # 评论数：124'
+  prompt_zh: ''
+- category: Tech industry
+  title: ABC and Disney accuse Trump admin of violating First Amendment rights
+  why: ABC is accusing the Federal Communications Commission (FCC) of violating its
+    First Amendment rights by making "major shifts in policy and p…
+  takeaway: ABC is accusing the Federal Communications Commission (FCC) of violating
+    its First Amendment rights by making "major shifts in policy and practice" that
+    the network claims will chill free speech. The network is asking the FCC to "affirm
+    its long-standing approach to the bona fide news interview exemption" for daytime
+    talk show The View and […]
+  prompt: ''
+  url: https://www.theverge.com/policy/927002/abc-disney-fcc-first-amendment-the-view
+  source: The Verge
+  published_utc: '2026-05-08T17:52:28+00:00'
+  title_zh: ABC与迪士尼指控特朗普政府侵犯第一修正案权利
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: AI money keeps flowing as Deepseek plans record raise and Core Automation
+    quadruples valuation in weeks
+  why: Deepseek is planning a funding round of up to $7.35 billion, the largest ever
+    for a Chinese AI company.
+  takeaway: Deepseek is planning a funding round of up to $7.35 billion, the largest
+    ever for a Chinese AI company. Deepseek V4.1 is set to launch in June. Meanwhile,
+    Core Automation, founded by ex-OpenAI researcher Jerry Tworek just six weeks ago,
+    is already targeting a $4 billion valuation. The article AI money keeps flowing
+    as Deepseek plans record raise and Core Au…
+  prompt: ''
+  url: https://the-decoder.com/ai-money-keeps-flowing-as-deepseek-plans-record-raise-and-core-automation-quadruples-valuation-in-weeks/
+  source: The Decoder (AI)
+  published_utc: '2026-05-08T17:50:53+00:00'
+  title_zh: AI资金持续涌入，Deepseek计划创纪录融资，Core Automation估值数周内翻四倍
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Mother Ventures is looking at moms as the ‘economic engine’
+  why: The VC firm, which focuses on mothers as consumers, raised a $10 million debut
+    fund.
+  takeaway: The VC firm, which focuses on mothers as consumers, raised a $10 million
+    debut fund.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/mother-ventures-is-looking-at-moms-as-the-economic-engine/
+  source: TechCrunch
+  published_utc: '2026-05-08T17:46:08+00:00'
+  title_zh: Mother Ventures视母亲群体为‘经济引擎’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Someone out-Trumped the Trump phone
+  why: Where's the Trump phone?
+  takeaway: Where's the Trump phone? We're going to keep talking about it every week.
+    We've reached out, as usual, to ask about the Trump phone's whereabouts. This
+    week, Trump Mobile has been trumped. It's been another long week without the Trump
+    phone, but it's no longer the only nonexistent phone I have to worry about. Robot
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/926968/trump-mobile-t1-phone-dreame-aurora-phones
+  source: The Verge
+  published_utc: '2026-05-08T17:38:53+00:00'
+  title_zh: 有人超越了特朗普手机的风头
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Uber partner Avride is under investigation for self-driving crashes
+  why: The National Highway Traffic Safety Administration has opened an investigation
+    into Avride after identifying more than a dozen crashes and…
+  takeaway: The National Highway Traffic Safety Administration has opened an investigation
+    into Avride after identifying more than a dozen crashes and one minor injury.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/uber-partner-avride-is-under-investigation-for-self-driving-crashes/
+  source: TechCrunch
+  published_utc: '2026-05-08T17:33:46+00:00'
+  title_zh: Uber合作伙伴Avride因自动驾驶事故接受调查
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Elon Musk faces criminal probe in France after ignoring summons in X case
+  why: France threatens criminal charges if Musk doesn't appear for questioning.
+  takeaway: France threatens criminal charges if Musk doesn't appear for questioning.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/elon-musk-faces-criminal-probe-in-france-after-ignoring-summons-in-x-case/
+  source: Ars Technica
+  published_utc: '2026-05-08T17:32:58+00:00'
+  title_zh: 因无视X案件传票，埃隆·马斯克在法国面临刑事调查
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple reportedly has a deal to use Intel-made chips again
+  why: Apple and Intel reached a "preliminary agreement" for Intel to make chips for
+    Apple hardware, The Wall Street Journal reported Friday.
+  takeaway: Apple and Intel reached a "preliminary agreement" for Intel to make chips
+    for Apple hardware, The Wall Street Journal reported Friday. Apple had famously
+    moved on from Intel-powered computers with its highly successful transition to
+    Apple Silicon, but now it appears the two companies will be working closely together
+    again. Intel appointed Lip-Bu Tan as […]
+  prompt: ''
+  url: https://www.theverge.com/tech/926988/apple-intel-chips
+  source: The Verge
+  published_utc: '2026-05-08T17:22:04+00:00'
+  title_zh: 据报道苹果已达成协议将再次使用英特尔芯片
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Poland says hackers breached water treatment plants, and the US is facing
+    the same threat
+  why: A report by Poland’s top intelligence agency accused Russia of sabotage and
+    hacking activities against the country’s military and civilian…
+  takeaway: A report by Poland’s top intelligence agency accused Russia of sabotage
+    and hacking activities against the country’s military and civilian infrastructure.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/poland-says-hackers-breached-water-treatment-plants-and-the-u-s-is-facing-the-same-threat/
+  source: TechCrunch
+  published_utc: '2026-05-08T17:20:37+00:00'
+  title_zh: 波兰称黑客入侵水处理厂，美国面临相同威胁
+  why_zh: 波兰最高情报机构的一份报告指控俄罗斯对该国防务及民用设施实施破坏和网络攻击活动……
+  takeaway_zh: 波兰最高情报机构报告指控俄罗斯对该国军事及民用基础设施实施破坏和网络攻击活动。
+  prompt_zh: ''
+- category: Tech industry
+  title: Chrome's 4GB AI model isn't new, but you're not wrong for being confused
+  why: You can stop Chrome from taking up 4GB of storage for local AI, but that shouldn't
+    be your problem.
+  takeaway: You can stop Chrome from taking up 4GB of storage for local AI, but that
+    shouldn't be your problem.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever/
+  source: Ars Technica
+  published_utc: '2026-05-08T17:17:17+00:00'
+  title_zh: Chrome的4GB AI模型并非新事物，但你的困惑并非无理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Improving Bash Generation in Small Language Models with Grammar-Constrained
+    Decoding
+  why: Bash is one of the most flexible and powerful interfaces exposed to AI agents.
+  takeaway: Bash is one of the most flexible and powerful interfaces exposed to AI
+    agents. In the right system, a model that emits grep, curl, tar, or a shell pipeline
+    is...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/improving-bash-generation-in-small-language-models-with-grammar-constrained-decoding/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-05-08T17:13:33+00:00'
+  title_zh: 通过语法约束解码提升小型语言模型的Bash生成能力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How do I deal with memory leaks? (2022)
+  why: 'Article URL: https://www.stroustrup.com/bs_faq2.html#memory-leaks Comments
+    URL: https://news.ycombinator.com/item?id=48065916 Points: 79 #…'
+  takeaway: 'Article URL: https://www.stroustrup.com/bs_faq2.html#memory-leaks Comments
+    URL: https://news.ycombinator.com/item?id=48065916 Points: 79 # Comments: 67'
+  prompt: ''
+  url: https://www.stroustrup.com/bs_faq2.html#memory-leaks
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T17:06:59+00:00'
+  title_zh: 如何处理内存泄漏？（2022年）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Steam Controller’s reservation queue is open
+  why: After quickly selling out of the Steam Controller on May 4th, Valve has launched
+    a reservation system to ensure that you can get one withou…
+  takeaway: After quickly selling out of the Steam Controller on May 4th, Valve has
+    launched a reservation system to ensure that you can get one without too much
+    hassle. You may not get one as quickly as you'd like to, but at least you can
+    now easily reserve the $99 controller. If your Steam account is […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/924672/steam-controller-reservation-queue-buy
+  source: The Verge
+  published_utc: '2026-05-08T16:59:42+00:00'
+  title_zh: Steam控制器预订队列现已开放
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The 46 best last-minute Mother’s Day gift ideas for 2026
+  why: Whether it's managing a busy home or looking out for everyone around them,
+    moms spend a lot of time every day caring for others.
+  takeaway: Whether it's managing a busy home or looking out for everyone around them,
+    moms spend a lot of time every day caring for others. This Sunday, Mother's Day,
+    is an opportunity to return the favor, so we've rounded up practical gadgets and
+    little luxuries that can lighten her load. This year's picks are designed to […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/907032/best-mothers-day-gift-ideas-2026-mom-tech-gadgets
+  source: The Verge
+  published_utc: '2026-05-08T16:46:00+00:00'
+  title_zh: 2026年母亲节最佳最后一刻礼物创意46选
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: US defense contractor who sold hacking tools to Russian broker ordered to
+    pay $10M to former employers
+  why: Former cybersecurity executive Peter Williams stole several surveillance and
+    hacking tools and sold them for $1.3 million to a Russian brok…
+  takeaway: Former cybersecurity executive Peter Williams stole several surveillance
+    and hacking tools and sold them for $1.3 million to a Russian broker that works
+    with Putin’s government.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/u-s-defense-contractor-who-sold-hacking-tools-to-russian-broker-ordered-to-pay-10-million-to-former-employers/
+  source: TechCrunch
+  published_utc: '2026-05-08T16:43:19+00:00'
+  title_zh: 向俄罗斯经纪人出售黑客工具的美国国防承包商被判向前雇主支付1000万美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The React2Shell Story
+  why: 'Article URL: https://lachlan.nz/blog/the-react2shell-story/ Comments URL:
+    https://news.ycombinator.com/item?id=48065511 Points: 85 # Commen…'
+  takeaway: 'Article URL: https://lachlan.nz/blog/the-react2shell-story/ Comments
+    URL: https://news.ycombinator.com/item?id=48065511 Points: 85 # Comments: 5'
+  prompt: ''
+  url: https://lachlan.nz/blog/the-react2shell-story/
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T16:39:48+00:00'
+  title_zh: React2Shell的故事
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Cartoon Network Flash Games
+  why: 'Article URL: https://www.webdesignmuseum.org/flash-game-exhibitions/cartoon-network-flash-games
+    Comments URL: https://news.ycombinator.com/…'
+  takeaway: 'Article URL: https://www.webdesignmuseum.org/flash-game-exhibitions/cartoon-network-flash-games
+    Comments URL: https://news.ycombinator.com/item?id=48065360 Points: 304 # Comments:
+    102'
+  prompt: ''
+  url: https://www.webdesignmuseum.org/flash-game-exhibitions/cartoon-network-flash-games
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T16:29:52+00:00'
+  title_zh: 卡通网络Flash游戏
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: SoftBank reportedly slashes OpenAI-backed loan from $10 billion to $6 billion
+    as lenders balk at private AI valuations
+  why: SoftBank has reduced a loan secured by OpenAI shares from 10 to around 6 billion
+    dollars.
+  takeaway: SoftBank has reduced a loan secured by OpenAI shares from 10 to around
+    6 billion dollars. Lenders are apparently reluctant to reliably assess the value
+    of an unlisted company like OpenAI. The article SoftBank reportedly slashes OpenAI-backed
+    loan from $10 billion to $6 billion as lenders balk at private AI valuations appeared
+    first on The Decoder .
+  prompt: ''
+  url: https://the-decoder.com/softbank-reportedly-slashes-openai-backed-loan-from-10-billion-to-6-billion-as-lenders-balk-at-private-ai-valuations/
+  source: The Decoder (AI)
+  published_utc: '2026-05-08T16:26:58+00:00'
+  title_zh: 据报道，软银因贷款方对私人AI估值持保留态度，将OpenAI支持的贷款从100亿美元削减至60亿美元
+  why_zh: 软银将以OpenAI股份为抵押的贷款额度从100亿缩减至约60亿美元。
+  takeaway_zh: 软银将以OpenAI股份为抵押的贷款从100亿缩减至约60亿美元。贷款方显然难以可靠评估OpenAI等非上市公司的估值。该报道《软银据传将OpenAI担保贷款从100亿砍至60亿，因贷款方抗拒私有AI估值》首发于The
+    Decoder。
+  prompt_zh: ''
+- category: Tech industry
+  title: Can LLMs model real-world systems in TLA+?
+  why: 'Article URL: https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/
+    Comments URL: https://news.ycombinator.com/item?id=48065…'
+  takeaway: 'Article URL: https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/
+    Comments URL: https://news.ycombinator.com/item?id=48065254 Points: 53 # Comments:
+    6'
+  prompt: ''
+  url: https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T16:21:56+00:00'
+  title_zh: LLM能否用TLA+模拟现实世界系统？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Here’s what you need to know about the cruise ship hantavirus outbreak
+  why: 'MIT Technology Review Explains: Let our writers untangle the complex, messy
+    world of technology to help you understand what’s coming next.'
+  takeaway: 'MIT Technology Review Explains: Let our writers untangle the complex,
+    messy world of technology to help you understand what’s coming next. You can read
+    more from the series here. Eight passengers aboard a Dutch-flagged cruise ship
+    have contracted a type of hantavirus, a rare virus transmitted by rats. Three
+    of them have died. As the ship…'
+  prompt: ''
+  url: https://www.technologyreview.com/2026/05/08/1136988/heres-what-you-need-to-know-about-the-cruise-ship-hantavirus-outbreak/
+  source: MIT Technology Review
+  published_utc: '2026-05-08T16:19:40+00:00'
+  title_zh: 关于邮轮汉坦病毒疫情，你需要了解这些
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Streaming Tokens and Tools: Multi-Turn Agentic Harness Support in NVIDIA
+    Dynamo'
+  why: 'An agentic exchange must preserve a structured interaction: assistant turns
+    interleave reasoning with one or more tool calls, and subsequen…'
+  takeaway: 'An agentic exchange must preserve a structured interaction: assistant
+    turns interleave reasoning with one or more tool calls, and subsequent user turns
+    return...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/streaming-tokens-and-tools-multi-turn-agentic-harness-support-in-nvidia-dynamo/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-05-08T15:59:16+00:00'
+  title_zh: 流式令牌与工具：NVIDIA Dynamo中的多轮代理支持
+  why_zh: 智能体交互必须保持结构化：助手在推理过程中穿插一个或多个工具调用，随后……
+  takeaway_zh: 代理式交互必须保持结构化的互动：助手的回应需穿插推理与一个或多个工具调用，随后的用户回应则返回...
+  prompt_zh: ''
+- category: Tech industry
+  title: Pentagon releases UFO files on new website
+  why: The initial set of files housed on the site will include those containing unidentified
+    anomalous phenomena (UAP) videos, photos, and origin…
+  takeaway: The initial set of files housed on the site will include those containing
+    unidentified anomalous phenomena (UAP) videos, photos, and original source documents
+    from across the entire U.S. government. The materials have been reviewed for security
+    purposes, but many have "not yet been analyzed for resolution of any anomalies,"
+    the Department's statement read.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/08/pentagon-releases-ufo-files-on-new-website/
+  source: TechCrunch
+  published_utc: '2026-05-08T15:56:36+00:00'
+  title_zh: 五角大楼在新网站上发布UFO文件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Engineers at NASA's Jet Propulsion Lab make a breakthrough in rotor technology
+  why: Testing shows rotor blades won't disintegrate when they spin at supersonic
+    speed.
+  takeaway: Testing shows rotor blades won't disintegrate when they spin at supersonic
+    speed.
+  prompt: ''
+  url: https://arstechnica.com/space/2026/05/engineers-at-nasas-jet-propulsion-lab-make-a-breakthrough-in-rotor-technology/
+  source: Ars Technica
+  published_utc: '2026-05-08T15:46:27+00:00'
+  title_zh: NASA喷气推进实验室工程师在转子技术领域取得突破
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DNA identifies four more crew members of doomed Franklin expedition
+  why: Three served on the HMS Erebus ; the fourth was Petty Officer Harry Peglar
+    of the HMS Terror .
+  takeaway: Three served on the HMS Erebus ; the fourth was Petty Officer Harry Peglar
+    of the HMS Terror .
+  prompt: ''
+  url: https://arstechnica.com/science/2026/05/dna-identifies-four-more-crew-members-of-doomed-franklin-expedition/
+  source: Ars Technica
+  published_utc: '2026-05-08T15:15:21+00:00'
+  title_zh: DNA鉴定确认富兰克林探险队四名船员身份
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Serving a website on a Raspberry Pi Zero running in RAM
+  why: 'Article URL: https://btxx.org/posts/memory/ Comments URL: https://news.ycombinator.com/item?id=48064312
+    Points: 200 # Comments: 84'
+  takeaway: 'Article URL: https://btxx.org/posts/memory/ Comments URL: https://news.ycombinator.com/item?id=48064312
+    Points: 200 # Comments: 84'
+  prompt: ''
+  url: https://btxx.org/posts/memory/
+  source: Hacker News (front page)
+  published_utc: '2026-05-08T15:10:35+00:00'
+  title_zh: 在运行于RAM的Raspberry Pi Zero上托管网站
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Which Macs are suffering from shortages—and where are things getting worse?
+  why: There are a couple signs of strain beyond the MacBook Neo and the desktops.
+  takeaway: There are a couple signs of strain beyond the MacBook Neo and the desktops.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/05/were-tracking-423-mac-configurations-to-see-how-apple-is-handling-shortages/
+  source: Ars Technica
+  published_utc: '2026-05-08T15:00:27+00:00'
+  title_zh: 哪些Mac面临短缺——且情况在何处恶化？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Nick Bostrom Has a Plan for Humanity’s ‘Big Retirement’
+  why: The philosopher thinks humans should pursue advanced AI and the promise of
+    a “solved world.”
+  takeaway: The philosopher thinks humans should pursue advanced AI and the promise
+    of a “solved world.”
+  prompt: ''
+  url: https://www.wired.com/story/nick-bostrom-has-a-plan-for-humanitys-big-retirement/
+  source: WIRED - AI
+  published_utc: '2026-05-08T15:00:00+00:00'
+  title_zh: 尼克·博斯特罗姆为人类‘大退休’制定计划
+  why_zh: 这位哲学家认为人类应当追求先进人工智能及'问题全解世界'的愿景。
+  takeaway_zh: 这位哲学家认为人类应当追求先进人工智能及'问题全解世界'的愿景。
+  prompt_zh: ''
+- category: AI frontier
+  title: There’s a Long-Shot Proposal to Protect California Workers From AI
+  why: California gubernatorial candidate Tom Steyer is proposing a new jobs guarantee
+    for workers displaced by artificial intelligence.
+  takeaway: California gubernatorial candidate Tom Steyer is proposing a new jobs
+    guarantee for workers displaced by artificial intelligence.
+  prompt: ''
+  url: https://www.wired.com/story/tom-steyer-proposes-jobs-guarantee-to-protect-california-workers-from-ai/
+  source: WIRED - AI
+  published_utc: '2026-05-08T15:00:00+00:00'
+  title_zh: 加州提出一项保护工人免受AI影响的提案，但通过希望渺茫
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

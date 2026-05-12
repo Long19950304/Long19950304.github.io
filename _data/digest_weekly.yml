@@ -883,3 +883,78 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-05-08T21:00:11+00:00'
+- week: 2026-W20
+  start: '2026-05-11'
+  end: '2026-05-17'
+  issues:
+  - '2026-05-12'
+  highlights_news:
+  - date: '2026-05-12'
+    url: https://techcrunch.com/2026/05/12/instructure-strikes-deal-with-hackers-who-breached-it-twice/
+    title: Instructure strikes deal with hackers who breached it twice
+    title_zh: Instructure两度遭黑客入侵后与攻击者达成协议
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-05-12T13:34:04+00:00'
+  - date: '2026-05-12'
+    url: https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/
+    title: Linux bitten by second severe vulnerability in as many weeks
+    title_zh: Linux两周内接连爆出第二个高危漏洞
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-05-11T22:28:19+00:00'
+  - date: '2026-05-12'
+    url: https://www.theverge.com/tech/928470/instructure-canvas-hack-shinyhunters-ransom-agreement
+    title: Canvas owner reaches &#8216;agreement&#8217; with hackers to secure stolen
+      data
+    title_zh: Canvas所有者与黑客'达成协议'确保被盗数据安全
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-05-12T13:23:10+00:00'
+  - date: '2026-05-12'
+    url: https://www.technologyreview.com/2026/05/12/1137103/the-download-nobel-winner-ai-maintenance-of-everything/
+    title: 'The Download: a Nobel winner on AI, and the case for fixing everything'
+    title_zh: 今日下载：诺贝尔奖得主谈AI及万物维修之道
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-05-12T12:10:00+00:00'
+  - date: '2026-05-12'
+    url: https://the-decoder.com/sam-altmans-personal-investments-face-political-scrutiny-ahead-of-openais-planned-ipo/
+    title: Sam Altman's personal investments face political scrutiny ahead of OpenAI's
+      planned IPO
+    title_zh: Sam Altman个人投资在OpenAI计划IPO前受到政治审查
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-05-12T10:13:23+00:00'
+  highlights_ai:
+  - date: '2026-05-12'
+    url: https://the-decoder.com/thinking-machines-lab-ships-its-first-model-and-argues-interactivity-is-what-openai-gets-wrong-about-voice/
+    title: Thinking Machines Lab ships its first model and argues interactivity is
+      what OpenAI gets wrong about voice
+    title_zh: Thinking Machines Lab发布首款模型，认为OpenAI在语音交互上存在误区
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-05-12T13:16:03+00:00'
+  - date: '2026-05-12'
+    url: https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/
+    title: Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility
+      and Optimization
+    title_zh: NVIDIA推出Fleet Intelligence，实现GPU集群实时可视与优化
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-05-11T19:44:27+00:00'
+  - date: '2026-05-12'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.0
+    title: 'langchain-ai/langchain: langchain==1.3.0'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-05-12T14:46:03+00:00'
+  - date: '2026-05-12'
+    url: https://www.latent.space/p/ainews-thinking-machines-native-interaction
+    title: '[AINews] Thinking Machines'' Native Interaction Models - TML-Interaction-Small
+      276B-A12B - advances SOTA Realtime Voice and kills standard VAD'
+    title_zh: '[AINews] Thinking Machines原生交互模型TML-Interaction-Small 276B-A12B推进实时语音SOTA，淘汰传统VAD'
+    category: AI tools & model releases
+    source: Latent Space (LLM/tools)
+    published_utc: '2026-05-12T04:33:46+00:00'

@@ -888,6 +888,7 @@ weeks:
   end: '2026-05-17'
   issues:
   - '2026-05-12'
+  - '2026-05-13'
   highlights_news:
   - date: '2026-05-12'
     url: https://techcrunch.com/2026/05/12/instructure-strikes-deal-with-hackers-who-breached-it-twice/
@@ -926,6 +927,44 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-05-12T10:13:23+00:00'
+  - date: '2026-05-13'
+    url: https://arstechnica.com/tech-policy/2026/05/will-i-be-ok-teen-died-after-chatgpt-pushed-deadly-mix-of-drugs-lawsuit-says/
+    title: “Will I be OK?” Teen died after ChatGPT pushed deadly mix of drugs, lawsuit
+      says
+    title_zh: “我会没事吗？”AI致未成年服药过量致死案开审，亲属索赔
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-05-12T19:00:25+00:00'
+  - date: '2026-05-13'
+    url: https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/
+    title: Musk mulled handing OpenAI to his children, Altman testifies
+    title_zh: 马斯克曾考虑将OpenAI交由子女接管，阿尔特曼作证
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-05-12T18:05:15+00:00'
+  - date: '2026-05-13'
+    url: https://www.theverge.com/ai-artificial-intelligence/928861/openai-sam-altman-elon-musk-damage
+    title: Sam Altman says Elon Musk’s mind games were damaging OpenAI
+    title_zh: 阿尔特曼称马斯克的心理战术损害了OpenAI
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-05-12T17:34:09+00:00'
+  - date: '2026-05-13'
+    url: https://www.wired.com/story/sam-altman-testifies-musk-v-altman-trial/
+    title: Elon Musk Had ‘Hair-Raising’ Idea of Passing OpenAI On to His Kids, Sam
+      Altman Says
+    title_zh: 马斯克曾提出让子女接管OpenAI的大胆想法，奥特曼透露
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-05-13T00:10:05+00:00'
+  - date: '2026-05-13'
+    url: https://the-decoder.com/google-says-it-stopped-a-mass-cyberattack-after-ai-was-used-to-discover-a-zero-day-exploit/
+    title: Google says it stopped a mass cyberattack after AI was used to discover
+      a zero-day exploit
+    title_zh: 谷歌宣称利用AI发现零日漏洞后成功阻断大规模网络攻击
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-05-12T18:17:42+00:00'
   highlights_ai:
   - date: '2026-05-12'
     url: https://the-decoder.com/thinking-machines-lab-ships-its-first-model-and-argues-interactivity-is-what-openai-gets-wrong-about-voice/
@@ -958,3 +997,24 @@ weeks:
     category: AI tools & model releases
     source: Latent Space (LLM/tools)
     published_utc: '2026-05-12T04:33:46+00:00'
+  - date: '2026-05-13'
+    url: https://the-decoder.com/anthropic-expands-legal-ai-offerings-with-new-cowork-plugins/
+    title: Anthropic expands legal AI offerings with new Claude Cowork plugins
+    title_zh: Anthropic推出新版Claude Cowork插件扩展法律AI服务
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-05-12T18:41:05+00:00'
+  - date: '2026-05-13'
+    url: https://developer.nvidia.com/blog/how-to-eliminate-pipeline-friction-in-ai-model-serving/
+    title: How to Eliminate Pipeline Friction in AI Model Serving
+    title_zh: 如何消除AI模型服务中的管道摩擦
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-05-12T18:00:00+00:00'
+  - date: '2026-05-13'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-feature-store-pyv3/
+    title: Amazon SageMaker Feature Store now supports SageMaker Python SDK V3
+    title_zh: 亚马逊SageMaker特征存储现已支持Python SDK V3
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-05-12T17:12:00+00:00'

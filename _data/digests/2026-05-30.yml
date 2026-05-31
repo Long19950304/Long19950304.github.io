@@ -1,0 +1,918 @@
+date: '2026-05-30'
+title: Daily Digest - 2026-05-30
+title_zh: 每日简报 - 2026-05-30
+note: 'Today: Google’s AI search and Gemini push, NVIDIA’s infra cadence, and fresh model/research tooling dominate the cycle, while security and platform shifts continue in the background.'
+note_zh: '今日关注：Google 的 AI 搜索与 Gemini 推进、NVIDIA 的基础设施节奏，以及新一轮模型/研究工具继续主导视线，安全与平台变化则穿插其间。'
+items:
+- category: AI frontier
+  title: Terence Tao argues AI could bring division of labor to math for the first
+    time in history
+  why: Mathematician Terence Tao describes how AI could reshape math research by enabling
+    division of labor for the first time.
+  takeaway: 'Mathematician Terence Tao describes how AI could reshape math research
+    by enabling division of labor for the first time. Until now, researchers had to
+    master every step themselves, from framing problems to verifying results. Tao
+    sees "industrial mathematics" emerging: large AI-supported teams instead of lone
+    geniuses, with humans staying indispensable for "…'
+  prompt: ''
+  url: https://the-decoder.com/terence-tao-argues-ai-could-bring-division-of-labor-to-math-for-the-first-time-in-history/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T12:04:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sometimes, a short game hits the spot
+  why: Slots & Daggers, a low-key, fantasy-themed slot machine roguelike, was one
+    of my favorite games last year.
+  takeaway: Slots & Daggers, a low-key, fantasy-themed slot machine roguelike, was
+    one of my favorite games last year. That may sound like a complicated description,
+    but the game mixes ideas from deckbuilding roguelikes with slot machines to create
+    an engrossing loop, and there's steady meta-progression that helps you push further
+    with just about every run. Perhaps […]
+  prompt: ''
+  url: https://www.theverge.com/games/937499/slots-and-daggers-review-nintendo-switch-ps5-xbox-series-x-s-pc
+  source: The Verge
+  published_utc: '2026-05-30T12:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The SpaceX IPO is great for Elon Musk and terrible for you
+  why: I haven't seen anything as stupid as the WeWork IPO document in a very long
+    time - that is, until Elon Musk filed to take SpaceX public.
+  takeaway: I haven't seen anything as stupid as the WeWork IPO document in a very
+    long time - that is, until Elon Musk filed to take SpaceX public. WeWork was a
+    joke. SpaceX is a threat. And if Musk and his bankers have their way, you are
+    going to be their bagholder. Lots of the top-line […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai
+  source: The Verge
+  published_utc: '2026-05-30T12:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: This is the James Bond game we’ve been waiting for
+  why: Hi, friends!
+  takeaway: Hi, friends! Welcome to Installer No. 130, your guide to the best and
+    Verge-iest stuff in the world. (If you're new here, welcome, don't forget to hydrate,
+    and also you can read all the old editions at the Installer homepage.) This week,
+    I've been reading about Victor Wembanyama and mahjong and Merlin Mann's pearls
+    of […]
+  prompt: ''
+  url: https://www.theverge.com/tech/940092/007-first-light-oura-ring-5-installer
+  source: The Verge
+  published_utc: '2026-05-30T12:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Proposed new US funding rules: We can cancel any grant at any time'
+  why: 'Article URL: https://arstechnica.com/science/2026/05/the-office-of-management-and-budget-tries-again-to-cripple-us-science/
+    Comments URL: h…'
+  takeaway: 'Article URL: https://arstechnica.com/science/2026/05/the-office-of-management-and-budget-tries-again-to-cripple-us-science/
+    Comments URL: https://news.ycombinator.com/item?id=48335135 Points: 51 # Comments:
+    17'
+  prompt: ''
+  url: https://arstechnica.com/science/2026/05/the-office-of-management-and-budget-tries-again-to-cripple-us-science/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T11:41:29+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Helios – what plug-in solar could generate for any address in Britain'
+  why: Plug-in solar panels (no electrician needed) have just become legal in the
+    UK and will go on sale soon.
+  takeaway: Plug-in solar panels (no electrician needed) have just become legal in
+    the UK and will go on sale soon. Helios estimates how much electricity a typical
+    installation could generate at a given address and what that's worth against your
+    tariff. It uses UK government LIDAR data to reflect the actual skyline, so it
+    knows whether there's a building or a hill bloc…
+  prompt: ''
+  url: https://helios.southlondonscientific.com/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T11:08:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Grifters, cynics, and true believers: The family tree of vaccine opponents'
+  why: A new book looks into the long history of people who have opposed vaccines.
+  takeaway: A new book looks into the long history of people who have opposed vaccines.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/05/grifters-cynics-and-true-believers-the-family-tree-of-vaccine-opponents/
+  source: Ars Technica
+  published_utc: '2026-05-30T11:00:05+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Attackers abuse shared ChatGPT and Claude chats to spread malware
+  why: Attackers are exploiting the chat-sharing features in ChatGPT and Claude to
+    spread malware through shared conversations.
+  takeaway: Attackers are exploiting the chat-sharing features in ChatGPT and Claude
+    to spread malware through shared conversations. The chats mimic error messages
+    or install guides and slip past security tools undetected because they're hosted
+    on trusted domains. The article Attackers abuse shared ChatGPT and Claude chats
+    to spread malware appeared first on The Decode…
+  prompt: ''
+  url: https://the-decoder.com/attackers-abuse-shared-chatgpt-and-claude-chats-to-spread-malware/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T10:32:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Leo's first encyclical attacks technological messianism
+  why: 'Article URL: https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism
+    Comments URL: https://news.…'
+  takeaway: 'Article URL: https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism
+    Comments URL: https://news.ycombinator.com/item?id=48334710 Points: 17 # Comments:
+    3'
+  prompt: ''
+  url: https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T10:30:50+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI's Codex can now operate your Windows PC autonomously, hunting bugs
+    and testing apps on its own
+  why: 'OpenAI''s Codex app now runs on Windows 11 with "Computer Use": the AI can
+    independently control programs, test apps, and hunt for bugs.'
+  takeaway: 'OpenAI''s Codex app now runs on Windows 11 with "Computer Use": the AI
+    can independently control programs, test apps, and hunt for bugs. When no one''s
+    at the PC, the ChatGPT mobile app lets users start and monitor tasks remotely
+    from their phone. The article OpenAI''s Codex can now operate your Windows PC
+    autonomously, hunting bugs and testing apps on its own…'
+  prompt: ''
+  url: https://the-decoder.com/openais-codex-can-now-operate-your-windows-pc-autonomously-hunting-bugs-and-testing-apps-on-its-own/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T10:16:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Environmentalists turn out in force to oppose Trump coal ash rollbacks
+  why: Trump admin wants to rely on states for coal ash monitoring, enforcement, allow
+    them to bypass national standards.
+  takeaway: Trump admin wants to rely on states for coal ash monitoring, enforcement,
+    allow them to bypass national standards.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/environmentalists-turn-out-in-force-to-oppose-trump-coal-ash-rollbacks/
+  source: Ars Technica
+  published_utc: '2026-05-30T10:00:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Pandoc Templates
+  why: 'Article URL: https://pandoc-templates.org/ Comments URL: https://news.ycombinator.com/item?id=48334515
+    Points: 94 # Comments: 7'
+  takeaway: 'Article URL: https://pandoc-templates.org/ Comments URL: https://news.ycombinator.com/item?id=48334515
+    Points: 94 # Comments: 7'
+  prompt: ''
+  url: https://pandoc-templates.org/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T09:56:42+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Salesforce claims AI agents cut a 231-day migration to 13 days with fewer
+    incidents
+  why: Salesforce says it moved its entire dev org to Anthropic's Claude Code with
+    no token limits and reports massive productivity gains for Apri…
+  takeaway: 'Salesforce says it moved its entire dev org to Anthropic''s Claude Code
+    with no token limits and reports massive productivity gains for April 2026: 79
+    percent more pull requests per developer, five percent fewer incidents. The numbers
+    can''t be independently verified. The case shows just how divided the coding world
+    is over the agentic shift: real revolution…'
+  prompt: ''
+  url: https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T09:32:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Do You Actually Need to Pay for Transcription Software?
+  why: I tested Wispr Flow and various AI-powered transcription software to see whether
+    you should bother subscribing or stick with free services.
+  takeaway: I tested Wispr Flow and various AI-powered transcription software to see
+    whether you should bother subscribing or stick with free services.
+  prompt: ''
+  url: https://www.wired.com/story/do-you-actually-need-to-pay-for-transcription-software/
+  source: WIRED - AI
+  published_utc: '2026-05-30T09:30:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Kaiser and a "Mediocre Man" Theory of History
+  why: 'Article URL: https://www.deadcarl.com/p/the-kaiser-and-a-mediocre-man-theory
+    Comments URL: https://news.ycombinator.com/item?id=48334283 Po…'
+  takeaway: 'Article URL: https://www.deadcarl.com/p/the-kaiser-and-a-mediocre-man-theory
+    Comments URL: https://news.ycombinator.com/item?id=48334283 Points: 55 # Comments:
+    45'
+  prompt: ''
+  url: https://www.deadcarl.com/p/the-kaiser-and-a-mediocre-man-theory
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T09:18:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Zig: Build System Reworked'
+  why: 'Article URL: https://ziglang.org/devlog/2026/#2026-05-26 Comments URL: https://news.ycombinator.com/item?id=48334048
+    Points: 142 # Comments…'
+  takeaway: 'Article URL: https://ziglang.org/devlog/2026/#2026-05-26 Comments URL:
+    https://news.ycombinator.com/item?id=48334048 Points: 142 # Comments: 38'
+  prompt: ''
+  url: https://ziglang.org/devlog/2026/#2026-05-26
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T08:38:28+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Meta's leaked memo reveals AI pendant, supersensing glasses, and enterprise
+    wearables strategy
+  why: Meta has poured billions into AI with little commercial payoff so far.
+  takeaway: Meta has poured billions into AI with little commercial payoff so far.
+    Its open-source strategy hasn't panned out, and research breakthroughs haven't
+    turned into shipping products. Now the company is betting on AI hardware. The
+    article Meta's leaked memo reveals AI pendant, supersensing glasses, and enterprise
+    wearables strategy appeared first on The Decode…
+  prompt: ''
+  url: https://the-decoder.com/metas-leaked-memo-reveals-ai-pendant-supersensing-glasses-and-enterprise-wearables-strategy/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T08:37:42+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Danish pension fund excludes SpaceX citing governance and valuation
+  why: 'Article URL: https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/
+    Commen…'
+  takeaway: 'Article URL: https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/
+    Comments URL: https://news.ycombinator.com/item?id=48333820 Points: 246 # Comments:
+    185'
+  prompt: ''
+  url: https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T08:00:20+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenRCT2 v0.5.1 "Swamp Castle" released Last version to support Windows 7
+  why: 'Article URL: https://openrct2.io/blog/2026/05/openrct2-v0.5.1-released Comments
+    URL: https://news.ycombinator.com/item?id=48333096 Points:…'
+  takeaway: 'Article URL: https://openrct2.io/blog/2026/05/openrct2-v0.5.1-released
+    Comments URL: https://news.ycombinator.com/item?id=48333096 Points: 19 # Comments:
+    11'
+  prompt: ''
+  url: https://openrct2.io/blog/2026/05/openrct2-v0.5.1-released
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T06:00:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Perry Compiles TypeScript directly to executables using SWC and LLVM
+  why: 'Article URL: https://www.perryts.com/ Comments URL: https://news.ycombinator.com/item?id=48332151
+    Points: 107 # Comments: 83'
+  takeaway: 'Article URL: https://www.perryts.com/ Comments URL: https://news.ycombinator.com/item?id=48332151
+    Points: 107 # Comments: 83'
+  prompt: ''
+  url: https://www.perryts.com/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T03:14:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Naphtha shortages in Japan
+  why: 'Article URL: https://www.nippon.com/en/japan-data/h02783/ Comments URL: https://news.ycombinator.com/item?id=48331786
+    Points: 131 # Comment…'
+  takeaway: 'Article URL: https://www.nippon.com/en/japan-data/h02783/ Comments URL:
+    https://news.ycombinator.com/item?id=48331786 Points: 131 # Comments: 91'
+  prompt: ''
+  url: https://www.nippon.com/en/japan-data/h02783/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T02:20:40+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Founders seize on Indian court ruling to revive criticism of Google’s ad
+    business
+  why: The ruling drew support from founders, while lawyers said it could force platforms
+    to revisit how they handle trademarked keywords.
+  takeaway: The ruling drew support from founders, while lawyers said it could force
+    platforms to revisit how they handle trademarked keywords.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/founders-seize-on-indian-court-ruling-to-revive-criticism-of-googles-ad-business/
+  source: TechCrunch
+  published_utc: '2026-05-30T02:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '[AINews] Founders and Forward Deployed Engineers'
+  why: a quiet day lets us highlight the new AIE WF focuses
+  takeaway: a quiet day lets us highlight the new AIE WF focuses
+  prompt: ''
+  url: https://www.latent.space/p/ainews-founders-and-forward-deployed
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-05-30T01:57:15+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I went to the so-called ‘steroid Olympics,’ to understand why Silicon Valley
+    is obsessed with peptides
+  why: The Enhanced Games — a singular sporting competition where a majority of the
+    athletes were on performance enhancing drugs — may herald a ne…
+  takeaway: The Enhanced Games — a singular sporting competition where a majority
+    of the athletes were on performance enhancing drugs — may herald a new business
+    model that the tech industry is ready to embrace.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/i-went-to-the-so-called-steroid-olympics-to-understand-why-silicon-valley-is-obsessed-with-peptides/
+  source: TechCrunch
+  published_utc: '2026-05-30T00:39:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Nvidia, Microsoft, and Arm are all teasing Nvidia’s new N1X laptop processors
+  why: It's the world's worst kept secret that Nvidia is about to announce its own
+    Arm-powered laptop chips at Computex this weekend, and now Micr…
+  takeaway: It's the world's worst kept secret that Nvidia is about to announce its
+    own Arm-powered laptop chips at Computex this weekend, and now Microsoft, Nvidia,
+    and Arm are all openly teasing the announcement. The Windows and Nvidia GeForce
+    accounts on X both posted "A new era of PC" earlier today, and now Arm has followed
+    […]
+  prompt: ''
+  url: https://www.theverge.com/news/940275/nvidia-n1x-laptop-processor-arm-microsoft-teaser
+  source: The Verge
+  published_utc: '2026-05-29T23:03:29+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: MCP is dead?
+  why: 'Article URL: https://www.quandri.io/engineering-blog/mcp-is-dead Comments
+    URL: https://news.ycombinator.com/item?id=48330436 Points: 272 #…'
+  takeaway: 'Article URL: https://www.quandri.io/engineering-blog/mcp-is-dead Comments
+    URL: https://news.ycombinator.com/item?id=48330436 Points: 272 # Comments: 252'
+  prompt: ''
+  url: https://www.quandri.io/engineering-blog/mcp-is-dead
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T22:56:49+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Open-source private home security camera system (end-to-end encryption)'
+  why: 'Hey everyone, I previously introduced an open source private home security
+    camera in 2024, which uses OpenMLS for end-to-end encryption: ht…'
+  takeaway: 'Hey everyone, I previously introduced an open source private home security
+    camera in 2024, which uses OpenMLS for end-to-end encryption: https://news.ycombinator.com/item?id=42284412
+    . It was called Privastead then and it''s now renamed to Secluso. John Kaczman
+    found my project from here and has been working on it with me over the last year
+    and half. We''ve m…'
+  prompt: ''
+  url: https://github.com/secluso/core
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T22:32:29+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'DynoSim: Simulating the Pareto Frontier'
+  why: 'Modern LLM serving is hard to tune because each deployment is a stack of interacting
+    choices: model backend, tensor-parallel shape, prefill…'
+  takeaway: 'Modern LLM serving is hard to tune because each deployment is a stack
+    of interacting choices: model backend, tensor-parallel shape, prefill/decode split,
+    worker...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/dynosim-simulating-the-pareto-frontier/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-05-29T22:31:03+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX awarded $6.45B in Space Force contracts ahead of IPO
+  why: SpaceX already generated one-fifth of its 2025 revenue from government contracts,
+    the company revealed in its IPO filing.
+  takeaway: SpaceX already generated one-fifth of its 2025 revenue from government
+    contracts, the company revealed in its IPO filing.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/spacex-awarded-6-45b-in-space-force-contracts-ahead-of-ipo/
+  source: TechCrunch
+  published_utc: '2026-05-29T22:21:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Coders are refusing to work without AI — and that could come back to bite
+    them
+  why: While AI is helping coders produce code faster, it may not be producing better
+    code, researchers warn.
+  takeaway: While AI is helping coders produce code faster, it may not be producing
+    better code, researchers warn. And that could cause problems down the road for
+    them.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/
+  source: TechCrunch
+  published_utc: '2026-05-29T22:14:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX gets $4 billion contract to build missile-tracking ‘Golden Dome’ satellites
+  why: The Pentagon awarded SpaceX a $4.16 billion contract to build missile-tracking
+    satellites linked with President Donald Trump's planned "Gol…
+  takeaway: The Pentagon awarded SpaceX a $4.16 billion contract to build missile-tracking
+    satellites linked with President Donald Trump's planned "Golden Dome" defense
+    system, as reported earlier by Bloomberg. In an announcement on Friday, the US
+    Space Force says the sensor-equipped satellites will allow it to detect and track
+    targets from space. The Elon Musk-owned S…
+  prompt: ''
+  url: https://www.theverge.com/science/940207/spacex-golden-dome-satellite-contract
+  source: The Verge
+  published_utc: '2026-05-29T21:48:52+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Kenyan court blocks Trump admin from dumping Ebola-exposed Americans there
+  why: The US has previously built specialized facilities just for this purpose.
+  takeaway: The US has previously built specialized facilities just for this purpose.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/05/kenyan-court-blocks-trump-admin-from-dumping-ebola-exposed-americans-there/
+  source: Ars Technica
+  published_utc: '2026-05-29T21:17:09+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Amazon Is Making an AI-Animated ‘Good Advice Cupcake’ TV Show. Its Original
+    Creator Is Furious
+  why: Loryn Brantz created The Good Advice Cupcake for BuzzFeed years ago.
+  takeaway: Loryn Brantz created The Good Advice Cupcake for BuzzFeed years ago. The
+    company licensed the character for a new Amazon series—made with AI—without her
+    consent.
+  prompt: ''
+  url: https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/
+  source: WIRED - AI
+  published_utc: '2026-05-29T20:56:59+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Last Technical Interview
+  why: 'Article URL: https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564
+    Comments URL: https://news.ycombinator.com/item?id=48…'
+  takeaway: 'Article URL: https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564
+    Comments URL: https://news.ycombinator.com/item?id=48328405 Points: 136 # Comments:
+    106'
+  prompt: ''
+  url: https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T19:58:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Tiny-vLLM – high performance LLM inference engine in C++ and CUDA'
+  why: 'Article URL: https://github.com/jmaczan/tiny-vllm Comments URL: https://news.ycombinator.com/item?id=48328184
+    Points: 155 # Comments: 13'
+  takeaway: 'Article URL: https://github.com/jmaczan/tiny-vllm Comments URL: https://news.ycombinator.com/item?id=48328184
+    Points: 155 # Comments: 13'
+  prompt: ''
+  url: https://github.com/jmaczan/tiny-vllm
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T19:38:27+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Shift will clean homes for free to train future robots
+  why: 'Article URL: https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning
+    Comments URL: https://…'
+  takeaway: 'Article URL: https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning
+    Comments URL: https://news.ycombinator.com/item?id=48327962 Points: 151 # Comments:
+    209'
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T19:16:32+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Hands-On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned
+    My Boyfriend'
+  why: Google’s new AI agent combed through my emails, documents, and calendar to
+    plan a birthday party and still didn’t clock the person most imp…
+  takeaway: Google’s new AI agent combed through my emails, documents, and calendar
+    to plan a birthday party and still didn’t clock the person most important to me.
+  prompt: ''
+  url: https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/
+  source: WIRED - AI
+  published_utc: '2026-05-29T19:07:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Acer’s launching a Linux handheld for streaming your PC games
+  why: The Acer Nitro Blaze Link might run on Linux, but it's no Steam Deck.
+  takeaway: The Acer Nitro Blaze Link might run on Linux, but it's no Steam Deck.
+    Acer says it's a "streaming-first handheld and companion device," like a PlayStation
+    Portal for your PC. Announced ahead of Computex on Friday, it's launching in Q4
+    2026 with a 7-inch (1920 x 1200) display, Wi-Fi 6, just 1GB of LPDDR4 RAM, […]
+  prompt: ''
+  url: https://www.theverge.com/games/940091/acer-nitro-blaze-link-linux-handheld
+  source: The Verge
+  published_utc: '2026-05-29T19:01:48+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: So you’ve heard these AI terms and nodded along; let’s fix that
+  why: The rise of AI has brought an avalanche of new terms and slang.
+  takeaway: The rise of AI has brought an avalanche of new terms and slang. Here is
+    a glossary with definitions of some of the most important words and phrases you
+    might encounter.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
+  source: TechCrunch
+  published_utc: '2026-05-29T18:49:19+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Botnet of more than 17 million devices dismantled
+  why: The botnet was reportedly tied to a Russia-based residential proxy network.
+  takeaway: The botnet was reportedly tied to a Russia-based residential proxy network.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled/
+  source: Ars Technica
+  published_utc: '2026-05-29T18:46:33+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Analysis of Texas measles outbreak shows just how dangerous virus is
+  why: About 1 in 5 cases were hospitalized and most of those developed complications.
+  takeaway: About 1 in 5 cases were hospitalized and most of those developed complications.
+  prompt: ''
+  url: https://arstechnica.com/health/2026/05/analysis-of-texas-measles-outbreak-shows-just-how-dangerous-virus-is/
+  source: Ars Technica
+  published_utc: '2026-05-29T18:35:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: House of the Dragon S3 trailer revels in dragons, fire, and blood
+  why: '"The crown is a weight that crushes.'
+  takeaway: '"The crown is a weight that crushes. You''ll do things that spell death
+    for all involved."'
+  prompt: ''
+  url: https://arstechnica.com/culture/2026/05/house-of-the-dragon-s3-trailer-revels-in-dragons-fire-and-blood/
+  source: Ars Technica
+  published_utc: '2026-05-29T18:21:44+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI gives GPT-5.5 Instant a readability upgrade while phasing out two
+    older models
+  why: OpenAI is updating GPT-5.5 Instant for more natural responses and dropping
+    the Canvas feature from its latest models.
+  takeaway: OpenAI is updating GPT-5.5 Instant for more natural responses and dropping
+    the Canvas feature from its latest models. Writing and coding tasks will run directly
+    in the chat instead. The company is also retiring the older o3 and GPT-4.5 models
+    from ChatGPT, with both shutting down by August 2026 at the latest. The article
+    OpenAI gives GPT-5.5 Instant a reada…
+  prompt: ''
+  url: https://the-decoder.com/openai-gives-gpt-5-5-instant-a-readability-upgrade-while-phasing-out-two-older-models/
+  source: The Decoder (AI)
+  published_utc: '2026-05-29T18:11:34+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump FCC warns all broadcasters to follow orders or be punished like ABC
+  why: ABC says early renewal for all stations is unprecedented, has no legitimate
+    purpose.
+  takeaway: ABC says early renewal for all stations is unprecedented, has no legitimate
+    purpose.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/trump-fcc-warns-all-broadcasters-to-follow-orders-or-be-punished-like-abc/
+  source: Ars Technica
+  published_utc: '2026-05-29T18:09:43+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What happens when companies become too AI-pilled?
+  why: The people deciding that AI can replace your job are also the ones least likely
+    to understand what your job truly involves, according to Bo…
+  takeaway: The people deciding that AI can replace your job are also the ones least
+    likely to understand what your job truly involves, according to Box founder Aaron
+    Levie, who pointed to this as an example of “AI psychosis.” Indeed, ClickUp recently
+    cut 22% of its workforce for AI agents, tech layoffs in 2026 are already nearly
+    matching all of 2025, […]
+  prompt: ''
+  url: https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/
+  source: TechCrunch
+  published_utc: '2026-05-29T17:57:05+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SQLite is all you need for durable workflows
+  why: 'Article URL: https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/
+    Comments URL: https://news.ycombinator.com/item?id=4832680…'
+  takeaway: 'Article URL: https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/
+    Comments URL: https://news.ycombinator.com/item?id=48326802 Points: 575 # Comments:
+    298'
+  prompt: ''
+  url: https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T17:54:50+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Google fixes several bugs in Gemini usage limits that burned through quotas
+    too fast
+  why: A bug in Google's Gemini app caused just one or two Omni videos to eat up the
+    entire usage quota.
+  takeaway: A bug in Google's Gemini app caused just one or two Omni videos to eat
+    up the entire usage quota. Google has fixed the bug, Ultra members now get twice
+    as many video generations, and failed requests are no longer charged. Google also
+    plans to add more transparency around other usage. The article Google fixes several
+    bugs in Gemini usage limits that burned t…
+  prompt: ''
+  url: https://the-decoder.com/google-fixes-several-bugs-in-gemini-usage-limits-that-burned-through-quotas-too-fast/
+  source: The Decoder (AI)
+  published_utc: '2026-05-29T17:51:46+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: DOJ sues states that rejected ICE requests for undercover license plates
+  why: DOJ keeps accusing ICE monitoring sites of doxing, but evidence remains scarce.
+  takeaway: DOJ keeps accusing ICE monitoring sites of doxing, but evidence remains
+    scarce.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/doj-sues-states-that-rejected-ice-requests-for-undercover-license-plates/
+  source: Ars Technica
+  published_utc: '2026-05-29T17:41:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tech companies desperately want to film you doing chores
+  why: This week, an AI training startup called Shift said it would clean New Yorkers'
+    homes for free.
+  takeaway: This week, an AI training startup called Shift said it would clean New
+    Yorkers' homes for free. It has plans to expand into other cities as well, including
+    London, and looking around my flat, I get the appeal. But there's a catch. There's
+    always a catch. In exchange for the cleaning, Shift wants footage of […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data
+  source: The Verge
+  published_utc: '2026-05-29T17:37:43+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: One company reportedly spent $500 million on Claude in one month after failing
+    to cap AI usage
+  why: An unnamed company allegedly blew half a billion dollars on Claude licenses
+    in a single month because nobody set usage limits.
+  takeaway: An unnamed company allegedly blew half a billion dollars on Claude licenses
+    in a single month because nobody set usage limits. Cases like this show that without
+    real AI expertise in model selection and context engineering, productivity promises
+    just turn into runaway costs. The article One company reportedly spent $500 million
+    on Claude in one month after f…
+  prompt: ''
+  url: https://the-decoder.com/one-company-reportedly-spent-500-million-on-claude-in-one-month-after-failing-to-cap-ai-usage/
+  source: The Decoder (AI)
+  published_utc: '2026-05-29T17:35:26+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising
+    $650M
+  why: Chipmaker Groq is looking to raise $650 million in internal funding as it pivots
+    from hardware to focus more on AI inference, the process o…
+  takeaway: Chipmaker Groq is looking to raise $650 million in internal funding as
+    it pivots from hardware to focus more on AI inference, the process of refining
+    the way AI models respond to prompted requests, per Axios.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/
+  source: TechCrunch
+  published_utc: '2026-05-29T17:27:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft under fire for threatening security researcher with criminal investigation
+  why: A public spat between Microsoft and an independent security researcher reopens
+    a long-running debate over who is responsible for securing s…
+  takeaway: A public spat between Microsoft and an independent security researcher
+    reopens a long-running debate over who is responsible for securing software.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/microsoft-under-fire-for-threatening-security-researcher-with-criminal-investigation/
+  source: TechCrunch
+  published_utc: '2026-05-29T17:03:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Verge’s 2026 high school graduation gift guide
+  why: High school graduation is a time of change that might be felt more deeply by
+    family members than by the grads themselves.
+  takeaway: High school graduation is a time of change that might be felt more deeply
+    by family members than by the grads themselves. While some grads may immediately
+    embark on a career path, many continue their education and delve deeper into their
+    studies at college. Either way, they'll be taking on more responsibility, meaning
+    it's up […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/932602/best-high-school-graduation-gift-ideas
+  source: The Verge
+  published_utc: '2026-05-29T17:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI is giving away its life sciences AI model to help governments prepare
+    for the next pandemic
+  why: OpenAI is offering its life sciences model GPT-Rosalind for free through the
+    new Rosalind Biodefense program, aimed at pandemic preparednes…
+  takeaway: OpenAI is offering its life sciences model GPT-Rosalind for free through
+    the new Rosalind Biodefense program, aimed at pandemic preparedness and biodefense.
+    Early partners include Lawrence Livermore National Laboratory, Johns Hopkins,
+    and vaccine initiative CEPI. Applications are open worldwide. The article OpenAI
+    is giving away its life sciences AI model t…
+  prompt: ''
+  url: https://the-decoder.com/openai-is-giving-away-its-life-sciences-ai-model-to-help-governments-prepare-for-the-next-pandemic/
+  source: The Decoder (AI)
+  published_utc: '2026-05-29T16:51:30+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft delays Fable (again) to avoid GTA VI
+  why: Microsoft has delayed its upcoming Fable reboot once again.
+  takeaway: Microsoft has delayed its upcoming Fable reboot once again. The game was
+    set to launch in autumn 2026, but Microsoft now says that Fable will come out
+    in February 2027. However, it will show a "new look" at the game at its Xbox Games
+    Showcase on June 7th. "​​This is year is packed with incredible […]
+  prompt: ''
+  url: https://www.theverge.com/games/939991/microsoft-fable-xbox-delay-gta-vi
+  source: The Verge
+  published_utc: '2026-05-29T16:51:08+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: We Asked the ‘Future of Truth’ Author to Explain How He Used AI. It Didn’t
+    Go Well
+  why: A book about how AI shapes perceptions of reality came under fire for using
+    AI-generated quotes.
+  takeaway: A book about how AI shapes perceptions of reality came under fire for
+    using AI-generated quotes. Its problems go beyond that.
+  prompt: ''
+  url: https://www.wired.com/story/future-of-truth-ai-interview/
+  source: WIRED - AI
+  published_utc: '2026-05-29T16:30:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Notes from the Mistral AI Now Summit
+  why: 'Article URL: https://koenvangilst.nl/lab/mistral-ai-now-summit Comments URL:
+    https://news.ycombinator.com/item?id=48325340 Points: 397 # Co…'
+  takeaway: 'Article URL: https://koenvangilst.nl/lab/mistral-ai-now-summit Comments
+    URL: https://news.ycombinator.com/item?id=48325340 Points: 397 # Comments: 171'
+  prompt: ''
+  url: https://koenvangilst.nl/lab/mistral-ai-now-summit
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T16:22:01+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft teases new Surface hardware and ‘a new era of PC’
+  why: I pondered the other day what's next for Microsoft's Surface PC lineup, and
+    it looks like we're about to find out.
+  takeaway: I pondered the other day what's next for Microsoft's Surface PC lineup,
+    and it looks like we're about to find out. Windows and Surface chief Pavan Davuluri
+    has just teased "something new is coming for developers," complete with a mysterious
+    image of what looks like a curved display edge. Davuluri notes that whatever is
+    coming […]
+  prompt: ''
+  url: https://www.theverge.com/news/939960/microsoft-computex-teaser-surface-nvidia-windows-rumors
+  source: The Verge
+  published_utc: '2026-05-29T16:21:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Liquid AI reveals 8B-A1B MoE trained on 38T
+  why: 'Article URL: https://www.liquid.ai/blog/lfm2-5-8b-a1b Comments URL: https://news.ycombinator.com/item?id=48325306
+    Points: 199 # Comments: 75'
+  takeaway: 'Article URL: https://www.liquid.ai/blog/lfm2-5-8b-a1b Comments URL: https://news.ycombinator.com/item?id=48325306
+    Points: 199 # Comments: 75'
+  prompt: ''
+  url: https://www.liquid.ai/blog/lfm2-5-8b-a1b
+  source: Hacker News (front page)
+  published_utc: '2026-05-29T16:19:54+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Startup offers free home cleaning—if it can record it all for robot training
+  why: The latest twist in paying humans to wear head cameras for robot training data.
+  takeaway: The latest twist in paying humans to wear head cameras for robot training
+    data.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/05/robot-training-startup-will-send-humans-wearing-cameras-to-clean-your-home/
+  source: Ars Technica
+  published_utc: '2026-05-29T16:16:14+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

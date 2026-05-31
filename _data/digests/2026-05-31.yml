@@ -1,0 +1,916 @@
+date: '2026-05-31'
+title: Daily Digest - 2026-05-31
+title_zh: 每日简报 - 2026-05-31
+note: 'Today: Google’s Gemini push, NVIDIA’s infra cadence, fresh model-tooling updates, and security/platform shifts continue to dominate the cycle.'
+note_zh: '今日关注：Google 的 Gemini 推进、NVIDIA 的基础设施节奏、新一轮模型工具更新，以及安全与平台变化继续主导视线。'
+items:
+- category: AI tools & model releases
+  title: AI search agents often confirm what they already know instead of actually
+    researching the web
+  why: Leading AI search agents like GPT-5.4 and Kimi K2.6 don't appear to do much
+    actual research on established benchmarks.
+  takeaway: Leading AI search agents like GPT-5.4 and Kimi K2.6 don't appear to do
+    much actual research on established benchmarks. They mostly just use the web to
+    confirm what they already learned during training. Researchers at the Harbin Institute
+    of Technology found this using a new time-based benchmark called LiveBrowseComp,
+    which only asks about events from the la…
+  prompt: ''
+  url: https://the-decoder.com/ai-search-agents-often-confirm-what-they-already-know-instead-of-actually-researching-the-web/
+  source: The Decoder (AI)
+  published_utc: '2026-05-31T07:48:41+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Website Specification
+  why: 'Article URL: https://specification.website/ Comments URL: https://news.ycombinator.com/item?id=48343683
+    Points: 53 # Comments: 14'
+  takeaway: 'Article URL: https://specification.website/ Comments URL: https://news.ycombinator.com/item?id=48343683
+    Points: 53 # Comments: 14'
+  prompt: ''
+  url: https://specification.website/
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T07:09:50+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Telli (YC F24) is hiring in engineering, design, and GTM [Berlin, on-site]
+  why: 'Article URL: https://hi.telli.com/join-us Comments URL: https://news.ycombinator.com/item?id=48343635
+    Points: 0 # Comments: 0'
+  takeaway: 'Article URL: https://hi.telli.com/join-us Comments URL: https://news.ycombinator.com/item?id=48343635
+    Points: 0 # Comments: 0'
+  prompt: ''
+  url: https://hi.telli.com/join-us
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T07:00:50+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'abakh/nbsdgames: The ~500kB NBSDGames 6 managed to be published ahead of
+    GTA 6'
+  why: 'Article URL: https://github.com/abakh/nbsdgames/releases Comments URL: https://news.ycombinator.com/item?id=48343445
+    Points: 5 # Comments: 1'
+  takeaway: 'Article URL: https://github.com/abakh/nbsdgames/releases Comments URL:
+    https://news.ycombinator.com/item?id=48343445 Points: 5 # Comments: 1'
+  prompt: ''
+  url: https://github.com/abakh/nbsdgames/releases
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T06:18:28+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Avian Visitors
+  why: 'Article URL: https://theodore.net/projects/AvianVisitors/ Comments URL: https://news.ycombinator.com/item?id=48343424
+    Points: 19 # Comments…'
+  takeaway: 'Article URL: https://theodore.net/projects/AvianVisitors/ Comments URL:
+    https://news.ycombinator.com/item?id=48343424 Points: 19 # Comments: 0'
+  prompt: ''
+  url: https://theodore.net/projects/AvianVisitors/
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T06:13:59+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A pictorial introduction to differential geometry (2017)
+  why: 'Article URL: https://arxiv.org/abs/1709.08492 Comments URL: https://news.ycombinator.com/item?id=48343287
+    Points: 20 # Comments: 0'
+  takeaway: 'Article URL: https://arxiv.org/abs/1709.08492 Comments URL: https://news.ycombinator.com/item?id=48343287
+    Points: 20 # Comments: 0'
+  prompt: ''
+  url: https://arxiv.org/abs/1709.08492
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T05:30:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Komi-learn – continuous memory and self-improvement for coding
+    agents'
+  why: 'Article URL: https://github.com/kurikomi-labs/komi-learn Comments URL: https://news.ycombinator.com/item?id=48343216
+    Points: 10 # Comments:…'
+  takeaway: 'Article URL: https://github.com/kurikomi-labs/komi-learn Comments URL:
+    https://news.ycombinator.com/item?id=48343216 Points: 10 # Comments: 1'
+  prompt: ''
+  url: https://github.com/kurikomi-labs/komi-learn
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T05:11:40+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Ahoy, DECmate II the little PDP-8 that could
+  why: 'Article URL: http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html
+    Comments URL: https://news.ycombinator.com/ite…'
+  takeaway: 'Article URL: http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html
+    Comments URL: https://news.ycombinator.com/item?id=48343078 Points: 30 # Comments:
+    2'
+  prompt: ''
+  url: http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T04:42:14+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.84.4'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.84.4
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-05-31T04:10:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Please Do Not Vibe Fuck Up This Software
+  why: 'Article URL: https://github.com/RsyncProject/rsync/issues/929 Comments URL:
+    https://news.ycombinator.com/item?id=48342705 Points: 101 # Com…'
+  takeaway: 'Article URL: https://github.com/RsyncProject/rsync/issues/929 Comments
+    URL: https://news.ycombinator.com/item?id=48342705 Points: 101 # Comments: 30'
+  prompt: ''
+  url: https://github.com/RsyncProject/rsync/issues/929
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T03:16:48+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Mechanical Pencil: An illustrated celebration of the engineering around
+    us'
+  why: 'Article URL: https://mechanical-pencil.com/ Comments URL: https://news.ycombinator.com/item?id=48341932
+    Points: 57 # Comments: 7'
+  takeaway: 'Article URL: https://mechanical-pencil.com/ Comments URL: https://news.ycombinator.com/item?id=48341932
+    Points: 57 # Comments: 7'
+  prompt: ''
+  url: https://mechanical-pencil.com/
+  source: Hacker News (front page)
+  published_utc: '2026-05-31T00:25:12+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft Office 2019 and 2021 for Mac view-only conversion
+  why: 'Article URL: https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)
+    Comments URL: https://news.yc…'
+  takeaway: 'Article URL: https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)
+    Comments URL: https://news.ycombinator.com/item?id=48341578 Points: 808 # Comments:
+    285'
+  prompt: ''
+  url: https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T23:26:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Cheese Paper: a text editor specifically designed for writing'
+  why: 'Article URL: https://brie.gay/cheese-paper/ Comments URL: https://news.ycombinator.com/item?id=48341407
+    Points: 99 # Comments: 23'
+  takeaway: 'Article URL: https://brie.gay/cheese-paper/ Comments URL: https://news.ycombinator.com/item?id=48341407
+    Points: 99 # Comments: 23'
+  prompt: ''
+  url: https://brie.gay/cheese-paper/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T22:58:41+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Shantell Sans (2023)
+  why: 'Article URL: https://shantellsans.com/process Comments URL: https://news.ycombinator.com/item?id=48341062
+    Points: 212 # Comments: 18'
+  takeaway: 'Article URL: https://shantellsans.com/process Comments URL: https://news.ycombinator.com/item?id=48341062
+    Points: 212 # Comments: 18'
+  prompt: ''
+  url: https://shantellsans.com/process
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T22:06:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The AV2 Video Standard Has Released (Final v1.0 Specification)
+  why: 'Article URL: https://av2.aomedia.org Comments URL: https://news.ycombinator.com/item?id=48340910
+    Points: 163 # Comments: 57'
+  takeaway: 'Article URL: https://av2.aomedia.org Comments URL: https://news.ycombinator.com/item?id=48340910
+    Points: 163 # Comments: 57'
+  prompt: ''
+  url: https://av2.aomedia.org
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T21:46:18+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SoftBank says it will invest up to €75 billion to build French data centers
+  why: The goal, the firm said, is to develop and operate up to 5 gigawatts of additional
+    data center capacity.
+  takeaway: The goal, the firm said, is to develop and operate up to 5 gigawatts of
+    additional data center capacity.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/
+  source: TechCrunch
+  published_utc: '2026-05-30T21:45:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: How we contain Claude across products
+  why: How we contain Claude across products A complaint I often have about sandboxing
+    products is that they are rarely thoroughly documented , an…
+  takeaway: How we contain Claude across products A complaint I often have about sandboxing
+    products is that they are rarely thoroughly documented , and in the absence of
+    detailed documentation it's hard to know how much I can trust them. Anthropic
+    just published a fantastic overview of how their various sandbox techniques work
+    across Claude.ai , Claude Code, and Cowor…
+  prompt: ''
+  url: https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-05-30T21:36:24+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: This weekend’s two biggest movies were both directed by YouTubers
+  why: The YouTube-to-prestige-horror pipeline is looking very strong.
+  takeaway: The YouTube-to-prestige-horror pipeline is looking very strong.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/this-weekends-two-biggest-movies-were-both-directed-by-youtubers/
+  source: TechCrunch
+  published_utc: '2026-05-30T21:12:37+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack
+  why: 'Article URL: https://github.com/wolfSSL/wolfCOSE Comments URL: https://news.ycombinator.com/item?id=48340422
+    Points: 87 # Comments: 17'
+  takeaway: 'Article URL: https://github.com/wolfSSL/wolfCOSE Comments URL: https://news.ycombinator.com/item?id=48340422
+    Points: 87 # Comments: 17'
+  prompt: ''
+  url: https://github.com/wolfSSL/wolfCOSE
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T20:42:28+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Domain expertise has always been the real moat
+  why: 'Article URL: https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/
+    Comments URL: https://news.ycombinat…'
+  takeaway: 'Article URL: https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/
+    Comments URL: https://news.ycombinator.com/item?id=48340411 Points: 527 # Comments:
+    311'
+  prompt: ''
+  url: https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T20:40:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Breathe CLI – Paced resonance breathing in the macOS terminal'
+  why: I built a terminal app that paces slow breathing at 6 breaths per minute for
+    vagal tone training.
+  takeaway: I built a terminal app that paces slow breathing at 6 breaths per minute
+    for vagal tone training. It's a single Python file, stdlib only, no dependencies
+    — just run breathe and follow the bar. I'm a cardiology patient (HFrEF). Slow
+    breathing at resonance frequency is one of the few non-pharmacological interventions
+    shown to improve cardiac vagal tone and ba…
+  prompt: ''
+  url: https://github.com/marekkowalczyk/breathe-cli
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T20:30:53+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Dusklight – GC Twilight Princess Decompiled
+  why: 'Article URL: https://twilitrealm.dev/ Comments URL: https://news.ycombinator.com/item?id=48340262
+    Points: 95 # Comments: 11'
+  takeaway: 'Article URL: https://twilitrealm.dev/ Comments URL: https://news.ycombinator.com/item?id=48340262
+    Points: 95 # Comments: 11'
+  prompt: ''
+  url: https://twilitrealm.dev/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T20:24:26+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Parallel Reconstruction of Lawful TLS Wiretapping
+  why: 'Article URL: https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/
+    Comments URL: https://news.ycombinator.com/item?id=48339943 Poin…'
+  takeaway: 'Article URL: https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/
+    Comments URL: https://news.ycombinator.com/item?id=48339943 Points: 90 # Comments:
+    40'
+  prompt: ''
+  url: https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T19:47:36+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Jef Raskin, the Visionary Behind the Mac (2013)
+  why: 'Article URL: https://lowendmac.com/2013/jef-raskin-the-visionary-behind-the-mac/
+    Comments URL: https://news.ycombinator.com/item?id=4833989…'
+  takeaway: 'Article URL: https://lowendmac.com/2013/jef-raskin-the-visionary-behind-the-mac/
+    Comments URL: https://news.ycombinator.com/item?id=48339894 Points: 99 # Comments:
+    42'
+  prompt: ''
+  url: https://lowendmac.com/2013/jef-raskin-the-visionary-behind-the-mac/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T19:42:33+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: 500 years of Joseon court omens as an observability dashboard'
+  why: 'Article URL: https://ajin.im/is/building/omen.ops/ Comments URL: https://news.ycombinator.com/item?id=48339753
+    Points: 115 # Comments: 19'
+  takeaway: 'Article URL: https://ajin.im/is/building/omen.ops/ Comments URL: https://news.ycombinator.com/item?id=48339753
+    Points: 115 # Comments: 19'
+  prompt: ''
+  url: https://ajin.im/is/building/omen.ops/
+  source: Hacker News (front page)
+  published_utc: '2026-05-30T19:23:36+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Snap alums unveil Ghost Angels fund
+  why: A group of 20 Snap alumni has come together to launch a fund called Ghost Angels
+    to back the next generation of social media.
+  takeaway: A group of 20 Snap alumni has come together to launch a fund called Ghost
+    Angels to back the next generation of social media.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/snap-alums-unveil-ghost-angels-fund/
+  source: TechCrunch
+  published_utc: '2026-05-30T17:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Backrooms is a certified blockbuster with a $38 million opening day
+  why: The Kane Parsons' film Backrooms is expected to earn up to $90 million in its
+    opening weekend after pulling down $38 million on Friday alon…
+  takeaway: The Kane Parsons' film Backrooms is expected to earn up to $90 million
+    in its opening weekend after pulling down $38 million on Friday alone. That's
+    not only above expectations, but absolutely obliterates A24's previous opening
+    weekend record of $25.5 million for Alex Garland's Civil War. It's also a better
+    opening day than The Mandalorian […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/940421/backrooms-blockbuster-38-million-opening
+  source: The Verge
+  published_utc: '2026-05-30T16:58:51+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '‘What a joke’: Github Copilot’s new token-based billing spurs consternation
+    among devs'
+  why: The golden age of Microsoft's Github Copilot appears to be at an end.
+  takeaway: The golden age of Microsoft's Github Copilot appears to be at an end.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/
+  source: TechCrunch
+  published_utc: '2026-05-30T16:30:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Microsoft and Nvidia reportedly team up on AI PCs that run actual agents
+    instead of Copilot
+  why: Nvidia is pushing into the PC market with its own chips as the main processor.
+  takeaway: Nvidia is pushing into the PC market with its own chips as the main processor.
+    The first Windows computers from Dell and Microsoft's Surface line are set to
+    be unveiled next week at Computex and Build. Microsoft is also planning new software
+    likely based on the OpenClaw framework that lets AI agents handle tasks locally
+    on Windows PCs, a second shot after t…
+  prompt: ''
+  url: https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T16:18:56+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Welcome to Night Vale host Cecil Baldwin shares his tech pet peeves
+  why: Cecil Baldwin's résumé includes appearances on Gravity Falls, narrating the
+    documentary Scream, Queen!
+  takeaway: Cecil Baldwin's résumé includes appearances on Gravity Falls, narrating
+    the documentary Scream, Queen! My Nightmare on Elm Street, and performing as part
+    of the New York Neo-Futurists theater company. But he is best known as the host
+    of the podcast Welcome to Night Vale, a long-running fiction show that blends
+    macabre Lovecraftian horror with absurdist […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/939930/welcome-to-night-vale-host-cecil-baldwin-shares-his-tech-pet-peeves
+  source: The Verge
+  published_utc: '2026-05-30T16:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Meta is reportedly developing an AI pendant
+  why: Meta seems to be making big bets on AI-powered hardware.
+  takeaway: Meta seems to be making big bets on AI-powered hardware.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/
+  source: TechCrunch
+  published_utc: '2026-05-30T15:59:58+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually
+    pretty useful
+  why: Gemini Spark helps automate everyday tasks, from inbox summaries to local event
+    planning, but it’s unclear why Google made it a separate pr…
+  takeaway: Gemini Spark helps automate everyday tasks, from inbox summaries to local
+    event planning, but it’s unclear why Google made it a separate product.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/
+  source: TechCrunch
+  published_utc: '2026-05-30T15:30:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft is threatening legal action for disclosing exploits
+  why: Microsoft is facing criticism for its handling of zero-day exploits.
+  takeaway: Microsoft is facing criticism for its handling of zero-day exploits. Someone
+    going by the name Nightmare Eclipse has been publicly feuding with the company,
+    posting proof-of-concept exploit code. Some of their posts suggest that they're
+    a disgruntled former employee. But what caught cyber security researcher Kevin
+    Beaumont's eye was how Microsoft has respon…
+  prompt: ''
+  url: https://www.theverge.com/tech/940416/microsoft-nightmare-eclipse-zero-day-vulnerability
+  source: The Verge
+  published_utc: '2026-05-30T15:19:50+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Poetry for Engineers: Cyborg Laboratory'
+  why: This is the place where you face yourself, the you that could be you with a
+    few different parts, a pump for your heart, eyes off color, and…
+  takeaway: This is the place where you face yourself, the you that could be you with
+    a few different parts, a pump for your heart, eyes off color, and fresh off the
+    shelf fake hair (a bit obvious), skin smoothed. You’re not perfect, but it’s a
+    good start. Down to small digits, you’ll be improved. Memory maintained by small
+    motors, as long as these gizmos don’t glitch.…
+  prompt: ''
+  url: https://spectrum.ieee.org/poetry-for-engineers-cyborg-laboratory
+  source: IEEE Spectrum
+  published_utc: '2026-05-30T15:13:01+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Two of our favorite art TVs are more than 40 percent off this weekend
+  why: Art TVs aren’t exactly known for being affordable, which is why Woot’s latest
+    sale is notable.
+  takeaway: Art TVs aren’t exactly known for being affordable, which is why Woot’s
+    latest sale is notable. Now through June 26th, the retailer is discounting Samsung’s
+    2025 Frame TV and Hisense’s 2025 CanvasTV. The 65-inch CanvasTV is down to $779.99
+    ($520 off) — its best price of the year — while Samsung’s like-minded Frame TV
+    is […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/940211/samsung-frame-hisense-canvastv-art-tv-sale-deal
+  source: The Verge
+  published_utc: '2026-05-30T15:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The groupthink boom: what three top VCs really think about the AI frenzy'
+  why: '"If you''re 22 years old in San Francisco and building something in AI, there
+    may be a seed term sheet in your inbox — but if you''re 19, oh…'
+  takeaway: '"If you''re 22 years old in San Francisco and building something in AI,
+    there may be a seed term sheet in your inbox — but if you''re 19, oh my God, this
+    means you''re really good; you might already have a Series A [offer]," said one,
+    half-kiddingly.'
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/
+  source: TechCrunch
+  published_utc: '2026-05-30T14:49:27+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Listen to the new Steam Controller buzz to the tune of Doom
+  why: You may have heard that Valve's new Steam Controller can ring like a telephone
+    or do the Wilhelm scream.
+  takeaway: 'You may have heard that Valve''s new Steam Controller can ring like a
+    telephone or do the Wilhelm scream. But did you know it can sing songs, too? Let
+    me show you. Here''s the new Steam Controller performing the "Ground Theme" from
+    Super Mario Bros. 2: Here is "Still Alive" from Portal - fitting for […]'
+  prompt: ''
+  url: https://www.theverge.com/games/940157/valve-steam-controller-singing-music-doom
+  source: The Verge
+  published_utc: '2026-05-30T14:02:51+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Pebblebee’s Halo watches my back and my belongings
+  why: I live in a part of Los Angeles where I feel safer bringing pepper spray on
+    walks.
+  takeaway: I live in a part of Los Angeles where I feel safer bringing pepper spray
+    on walks. The problem is, I don't always remember to bring it with me, and it's
+    not legal to carry it everywhere I go. Pebblebee's $59.99 Halo Bluetooth tracker
+    surprised me by being a suitable replacement because it doubles as […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/938254/pebblebee-halo-bluetooth-tracker-personal-safety-hands-on-review
+  source: The Verge
+  published_utc: '2026-05-30T14:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Arduboy FX-C is an excellent time killer you might forget you’re carrying
+  why: As handheld consoles continue to grow and push the limits of what you can actually
+    hold in your hands, the Arduboy FX-C comes in a refreshi…
+  takeaway: As handheld consoles continue to grow and push the limits of what you
+    can actually hold in your hands, the Arduboy FX-C comes in a refreshingly pocketable
+    package. It manages to squeeze the best features of past models and some welcome
+    upgrades into a handheld that’s still no larger or thicker than a few credit […]
+  prompt: ''
+  url: https://www.theverge.com/tech/939782/arduboy-fx-c-arduino-handheld-hands-on
+  source: The Verge
+  published_utc: '2026-05-30T14:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: As the browser wars heat up, here are the hottest alternatives to Chrome
+    and Safari in 2026
+  why: We’ve compiled an overview of some of the top alternative browsers available
+    today aiming to challenge Chrome and Safari.
+  takeaway: We’ve compiled an overview of some of the top alternative browsers available
+    today aiming to challenge Chrome and Safari.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/
+  source: TechCrunch
+  published_utc: '2026-05-30T13:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: This $300 pizza oven can easily help elevate your summer pizza nights
+  why: The Ninja Artisan Outdoor Pizza Oven is aimed at people who want delicious
+    pizza nights without having to deal with things like propane or…
+  takeaway: The Ninja Artisan Outdoor Pizza Oven is aimed at people who want delicious
+    pizza nights without having to deal with things like propane or wood pellets,
+    unlike many other pizza ovens.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/this-300-pizza-oven-can-easily-help-elevate-your-summer-pizza-nights/
+  source: TechCrunch
+  published_utc: '2026-05-30T13:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: TikTok’s road to becoming a super app
+  why: TikTok may be working to become the app that people use for most of their digital
+    activities.
+  takeaway: TikTok may be working to become the app that people use for most of their
+    digital activities.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/30/tiktoks-road-to-becoming-a-super-app/
+  source: TechCrunch
+  published_utc: '2026-05-30T13:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How one founder’s bet on ‘the old school web’ is paying off
+  why: Craig Campbell walked away from the river of investor money flowing into AI
+    to create, of all things, a website.
+  takeaway: Craig Campbell walked away from the river of investor money flowing into
+    AI to create, of all things, a website. Sure, Campbell probably could have started
+    an AI company. He's a former engineer at Meta and an experienced tech founder
+    who in 2022 sold his last venture - an e-commerce tool for businesses that use
+    […]
+  prompt: ''
+  url: https://www.theverge.com/tech/938245/past-maps-website-google-zero-ai
+  source: The Verge
+  published_utc: '2026-05-30T13:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI grifters are creating fake Black people to sell Shein junk
+  why: Aliyah, a light-skinned Black woman dressed in country-western gear, is struggling
+    to sell metal buckles she handmade on TikTok.
+  takeaway: 'Aliyah, a light-skinned Black woman dressed in country-western gear,
+    is struggling to sell metal buckles she handmade on TikTok. In a video for the
+    social media platform from March, she cries to the camera and pleads for views:
+    "Even as a black woman, I have more faith that white women will stay 13 seconds
+    [on […]'
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping
+  source: The Verge
+  published_utc: '2026-05-30T13:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Making AI chatbots helpful weakens their ability to simulate human behavior,
+    large-scale study finds
+  why: A large-scale study covering 208,000 participants and 26 million responses
+    shows that the very training that turns language models into hel…
+  takeaway: A large-scale study covering 208,000 participants and 26 million responses
+    shows that the very training that turns language models into helpful chatbots
+    weakens their ability to replicate human behavior. The effect gets worse with
+    each new model generation. Even the popular persona trick, feeding models demographic
+    profiles, brings practically no benefit fo…
+  prompt: ''
+  url: https://the-decoder.com/making-ai-chatbots-helpful-weakens-their-ability-to-simulate-human-behavior-large-scale-study-finds/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T12:44:12+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Terence Tao argues AI could bring division of labor to math for the first
+    time in history
+  why: Mathematician Terence Tao describes how AI could reshape math research by enabling
+    division of labor for the first time.
+  takeaway: 'Mathematician Terence Tao describes how AI could reshape math research
+    by enabling division of labor for the first time. Until now, researchers had to
+    master every step themselves, from framing problems to verifying results. Tao
+    sees "industrial mathematics" emerging: large AI-supported teams instead of lone
+    geniuses, with humans staying indispensable for "…'
+  prompt: ''
+  url: https://the-decoder.com/terence-tao-argues-ai-could-bring-division-of-labor-to-math-for-the-first-time-in-history/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T12:04:25+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sometimes, a short game hits the spot
+  why: Slots & Daggers, a low-key, fantasy-themed slot machine roguelike, was one
+    of my favorite games last year.
+  takeaway: Slots & Daggers, a low-key, fantasy-themed slot machine roguelike, was
+    one of my favorite games last year. That may sound like a complicated description,
+    but the game mixes ideas from deckbuilding roguelikes with slot machines to create
+    an engrossing loop, and there's steady meta-progression that helps you push further
+    with just about every run. Perhaps […]
+  prompt: ''
+  url: https://www.theverge.com/games/937499/slots-and-daggers-review-nintendo-switch-ps5-xbox-series-x-s-pc
+  source: The Verge
+  published_utc: '2026-05-30T12:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Grifters, cynics, and true believers: The family tree of vaccine opponents'
+  why: A new book looks into the long history of people who have opposed vaccines.
+  takeaway: A new book looks into the long history of people who have opposed vaccines.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/05/grifters-cynics-and-true-believers-the-family-tree-of-vaccine-opponents/
+  source: Ars Technica
+  published_utc: '2026-05-30T11:00:05+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Attackers abuse shared ChatGPT and Claude chats to spread malware
+  why: Attackers are exploiting the chat-sharing features in ChatGPT and Claude to
+    spread malware through shared conversations.
+  takeaway: Attackers are exploiting the chat-sharing features in ChatGPT and Claude
+    to spread malware through shared conversations. The chats mimic error messages
+    or install guides and slip past security tools undetected because they're hosted
+    on trusted domains. The article Attackers abuse shared ChatGPT and Claude chats
+    to spread malware appeared first on The Decode…
+  prompt: ''
+  url: https://the-decoder.com/attackers-abuse-shared-chatgpt-and-claude-chats-to-spread-malware/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T10:32:22+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: OpenAI's Codex can now operate your Windows PC autonomously, hunting bugs
+    and testing apps on its own
+  why: 'OpenAI''s Codex app now runs on Windows 11 with "Computer Use": the AI can
+    independently control programs, test apps, and hunt for bugs.'
+  takeaway: 'OpenAI''s Codex app now runs on Windows 11 with "Computer Use": the AI
+    can independently control programs, test apps, and hunt for bugs. When no one''s
+    at the PC, the ChatGPT mobile app lets users start and monitor tasks remotely
+    from their phone. The article OpenAI''s Codex can now operate your Windows PC
+    autonomously, hunting bugs and testing apps on its own…'
+  prompt: ''
+  url: https://the-decoder.com/openais-codex-can-now-operate-your-windows-pc-autonomously-hunting-bugs-and-testing-apps-on-its-own/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T10:16:39+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Environmentalists turn out in force to oppose Trump coal ash rollbacks
+  why: Trump admin wants to rely on states for coal ash monitoring, enforcement, allow
+    them to bypass national standards.
+  takeaway: Trump admin wants to rely on states for coal ash monitoring, enforcement,
+    allow them to bypass national standards.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/05/environmentalists-turn-out-in-force-to-oppose-trump-coal-ash-rollbacks/
+  source: Ars Technica
+  published_utc: '2026-05-30T10:00:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Salesforce claims AI agents cut a 231-day migration to 13 days with fewer
+    incidents
+  why: Salesforce says it moved its entire dev org to Anthropic's Claude Code with
+    no token limits and reports massive productivity gains for Apri…
+  takeaway: 'Salesforce says it moved its entire dev org to Anthropic''s Claude Code
+    with no token limits and reports massive productivity gains for April 2026: 79
+    percent more pull requests per developer, five percent fewer incidents. The numbers
+    can''t be independently verified. The case shows just how divided the coding world
+    is over the agentic shift: real revolution…'
+  prompt: ''
+  url: https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T09:32:57+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Do You Actually Need to Pay for Transcription Software?
+  why: I tested Wispr Flow and various AI-powered transcription software to see whether
+    you should bother subscribing or stick with free services.
+  takeaway: I tested Wispr Flow and various AI-powered transcription software to see
+    whether you should bother subscribing or stick with free services.
+  prompt: ''
+  url: https://www.wired.com/story/do-you-actually-need-to-pay-for-transcription-software/
+  source: WIRED - AI
+  published_utc: '2026-05-30T09:30:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Meta's leaked memo reveals AI pendant, supersensing glasses, and enterprise
+    wearables strategy
+  why: Meta has poured billions into AI with little commercial payoff so far.
+  takeaway: Meta has poured billions into AI with little commercial payoff so far.
+    Its open-source strategy hasn't panned out, and research breakthroughs haven't
+    turned into shipping products. Now the company is betting on AI hardware. The
+    article Meta's leaked memo reveals AI pendant, supersensing glasses, and enterprise
+    wearables strategy appeared first on The Decode…
+  prompt: ''
+  url: https://the-decoder.com/metas-leaked-memo-reveals-ai-pendant-supersensing-glasses-and-enterprise-wearables-strategy/
+  source: The Decoder (AI)
+  published_utc: '2026-05-30T08:37:42+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Founders seize on Indian court ruling to revive criticism of Google’s ad
+    business
+  why: The ruling drew support from founders, while lawyers said it could force platforms
+    to revisit how they handle trademarked keywords.
+  takeaway: The ruling drew support from founders, while lawyers said it could force
+    platforms to revisit how they handle trademarked keywords.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/founders-seize-on-indian-court-ruling-to-revive-criticism-of-googles-ad-business/
+  source: TechCrunch
+  published_utc: '2026-05-30T02:00:00+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '[AINews] Founders and Forward Deployed Engineers'
+  why: a quiet day lets us highlight the new AIE WF focuses
+  takeaway: a quiet day lets us highlight the new AIE WF focuses
+  prompt: ''
+  url: https://www.latent.space/p/ainews-founders-and-forward-deployed
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-05-30T01:57:15+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I went to the so-called ‘steroid Olympics,’ to understand why Silicon Valley
+    is obsessed with peptides
+  why: The Enhanced Games — a singular sporting competition where a majority of the
+    athletes were on performance enhancing drugs — may herald a ne…
+  takeaway: The Enhanced Games — a singular sporting competition where a majority
+    of the athletes were on performance enhancing drugs — may herald a new business
+    model that the tech industry is ready to embrace.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/i-went-to-the-so-called-steroid-olympics-to-understand-why-silicon-valley-is-obsessed-with-peptides/
+  source: TechCrunch
+  published_utc: '2026-05-30T00:39:13+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Proposed new US funding rules: We can cancel any grant at any time'
+  why: Peer review now optional, political staff would screen grants for forbidden
+    topics.
+  takeaway: Peer review now optional, political staff would screen grants for forbidden
+    topics.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/05/the-office-of-management-and-budget-tries-again-to-cripple-us-science/
+  source: Ars Technica
+  published_utc: '2026-05-29T22:58:29+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'DynoSim: Simulating the Pareto Frontier'
+  why: 'Modern LLM serving is hard to tune because each deployment is a stack of interacting
+    choices: model backend, tensor-parallel shape, prefill…'
+  takeaway: 'Modern LLM serving is hard to tune because each deployment is a stack
+    of interacting choices: model backend, tensor-parallel shape, prefill/decode split,
+    worker...'
+  prompt: ''
+  url: https://developer.nvidia.com/blog/dynosim-simulating-the-pareto-frontier/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-05-29T22:31:03+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX awarded $6.45B in Space Force contracts ahead of IPO
+  why: SpaceX already generated one-fifth of its 2025 revenue from government contracts,
+    the company revealed in its IPO filing.
+  takeaway: SpaceX already generated one-fifth of its 2025 revenue from government
+    contracts, the company revealed in its IPO filing.
+  prompt: ''
+  url: https://techcrunch.com/2026/05/29/spacex-awarded-6-45b-in-space-force-contracts-ahead-of-ipo/
+  source: TechCrunch
+  published_utc: '2026-05-29T22:21:38+00:00'
+  title_zh: ''
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

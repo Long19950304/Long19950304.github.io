@@ -1209,3 +1209,68 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-05-30T21:36:24+00:00'
+- week: 2026-W23
+  start: '2026-06-01'
+  end: '2026-06-07'
+  issues:
+  - '2026-06-01'
+  highlights_news:
+  - date: '2026-06-01'
+    url: https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/
+    title: Meta is reportedly developing an AI pendant
+    title_zh: ''
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-05-30T15:59:58+00:00'
+  - date: '2026-06-01'
+    url: https://www.theverge.com/tech/940540/how-to-watch-nvidias-computex-keynote
+    title: How to watch Nvidia&#8217;s Computex keynote
+    title_zh: ''
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-05-31T20:20:35+00:00'
+  - date: '2026-06-01'
+    url: https://arstechnica.com/culture/2026/05/on-its-40th-anniversary-we-reassess-1986s-spacecamp/
+    title: On its 40th anniversary, we reassess 1986's SpaceCamp
+    title_zh: ''
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-05-31T11:15:12+00:00'
+  - date: '2026-06-01'
+    url: https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/
+    title: How Turkey Hacked the Hair Transplant Industry
+    title_zh: ''
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-05-31T09:00:00+00:00'
+  - date: '2026-06-01'
+    url: https://the-decoder.com/anthropic-bans-ai-tools-during-job-interviews-to-see-how-candidates-actually-think/
+    title: Anthropic bans AI tools during job interviews to see how candidates actually
+      think
+    title_zh: ''
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-05-31T10:10:14+00:00'
+  highlights_ai:
+  - date: '2026-06-01'
+    url: https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/
+    title: Microsoft and Nvidia reportedly team up on AI PCs that run actual agents
+      instead of Copilot
+    title_zh: ''
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-05-30T16:18:56+00:00'
+  - date: '2026-06-01'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.84.4
+    title: 'BerriAI/litellm: v1.84.4'
+    title_zh: ''
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-05-31T04:10:25+00:00'
+  - date: '2026-06-01'
+    url: https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything
+    title: How we contain Claude across products
+    title_zh: ''
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-05-30T21:36:24+00:00'

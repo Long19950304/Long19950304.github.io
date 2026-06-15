@@ -1274,3 +1274,141 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-05-30T21:36:24+00:00'
+- week: 2026-W24
+  start: '2026-06-08'
+  end: '2026-06-14'
+  issues:
+  - '2026-06-08'
+  highlights_news:
+  - date: '2026-06-08'
+    url: https://techcrunch.com/2026/06/07/the-worst-hacks-and-breaches-of-2026-so-far/
+    title: 'Hacked, leaked, and held for ransom: the worst breaches of 2026 so far'
+    title_zh: 黑客攻击、数据泄露与勒索赎金：2026年迄今最严重的安全漏洞事件
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-07T14:00:00+00:00'
+  - date: '2026-06-08'
+    url: https://arstechnica.com/culture/2026/06/rip-anthony-head-our-10-favorite-moments-of-buffys-giles/
+    title: 'RIP Anthony Head: Our 10 favorite moments of Buffy''s Giles'
+    title_zh: 纪念安东尼·海德：盘点《吸血鬼猎人巴菲》中Giles的十大经典时刻
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-06-07T19:34:05+00:00'
+  - date: '2026-06-08'
+    url: https://the-decoder.com/anthropic-poaches-openais-second-ever-chip-engineer-as-both-companies-race-toward-ipos/
+    title: Anthropic poaches OpenAI's second-ever chip engineer as both companies
+      race toward IPOs
+    title_zh: Anthropic挖角OpenAI创始芯片工程师 两家公司竞速IPO
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-06-07T08:33:06+00:00'
+  - date: '2026-06-08'
+    url: https://www.theverge.com/design/945540/nasa-axiom-space-prada-lcvg-spacesuit-moon-artemis
+    title: NASA will wear high-tech Prada long johns to the Moon
+    title_zh: NASA将穿着普拉达高科技保暖内衣登月
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-07T22:16:41+00:00'
+  - date: '2026-06-08'
+    url: https://www.wired.com/story/openai-and-anthropic-may-be-rivals-but-their-investors-arent-choosing-sides/
+    title: OpenAI and Anthropic May Be Rivals, but Investors Aren’t Picking Sides
+    title_zh: OpenAI与Anthropic虽为竞争对手 资本却未站队
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-06-05T10:30:00+00:00'
+  highlights_ai:
+  - date: '2026-06-08'
+    url: https://the-decoder.com/openai-says-chat-is-dead-and-plans-to-rebuild-chatgpt-as-a-full-blown-agent-app/
+    title: OpenAI says "chat is dead" and plans to rebuild ChatGPT as a full-blown
+      agent app
+    title_zh: OpenAI宣称'聊天已死'，计划将ChatGPT重构为全能代理应用
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-06-07T11:15:28+00:00'
+  - date: '2026-06-08'
+    url: https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything
+    title: datasette-agent-edit 0.1a0
+    title_zh: datasette-agent-edit 0.1a0版本发布
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-06-07T23:56:38+00:00'
+  - date: '2026-06-08'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.88.0
+    title: 'BerriAI/litellm: v1.88.0'
+    title_zh: BerriAI/litellm：v1.88.0版本更新
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-06-06T23:43:20+00:00'
+  - date: '2026-06-08'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-agentcore-runtime/
+    title: Amazon Bedrock AgentCore Runtime introduces interactive shells for terminal
+      access into agent sessions
+    title_zh: Amazon Bedrock AgentCore运行时推出交互式终端，支持直接接入代理会话
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-06-05T22:25:00+00:00'
+  - date: '2026-06-08'
+    url: https://github.com/ollama/ollama/releases/tag/v0.30.6
+    title: 'ollama/ollama: v0.30.6'
+    title_zh: ollama/ollama：v0.30.6版本发布
+    category: AI tools & model releases
+    source: GitHub Releases - ollama/ollama
+    published_utc: '2026-06-05T20:00:18+00:00'
+- week: 2026-W25
+  start: '2026-06-15'
+  end: '2026-06-21'
+  issues:
+  - '2026-06-15'
+  highlights_news:
+  - date: '2026-06-15'
+    url: https://arstechnica.com/science/2026/06/did-a-medieval-flying-monk-spot-halleys-comet-twice-its-complicated/
+    title: Did a medieval flying monk spot Halley's comet, twice? It's complicated
+    title_zh: 中世纪飞行僧侣是否两次观测到哈雷彗星？情况复杂
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-06-14T16:02:53+00:00'
+  - date: '2026-06-15'
+    url: https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/
+    title: The AI layoff wave is becoming a powder keg
+    title_zh: AI裁员潮正演变为火药桶
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-15T07:25:41+00:00'
+  - date: '2026-06-15'
+    url: https://www.theverge.com/policy/949679/uk-under-16-social-media-ban-announcement
+    title: Under-16 social media ban announced by UK government
+    title_zh: 英国政府宣布禁止16岁以下儿童使用社交媒体
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-15T08:19:09+00:00'
+  - date: '2026-06-15'
+    url: https://openai.com/index/introducing-openai-partner-network
+    title: Introducing the OpenAI Partner Network
+    title_zh: 推出OpenAI合作伙伴网络
+    category: AI frontier
+    source: OpenAI Blog
+    published_utc: '2026-06-14T17:00:00+00:00'
+  - date: '2026-06-15'
+    url: https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model/
+    title: Amazon and five other companies reportedly triggered the government crackdown
+      on Anthropic's Fable model
+    title_zh: 亚马逊等六家公司据称引发政府对Anthropic Fable模型的打压
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-06-14T08:35:02+00:00'
+  highlights_ai:
+  - date: '2026-06-15'
+    url: https://github.com/vllm-project/vllm/releases/tag/v0.23.0
+    title: 'vllm-project/vllm: v0.23.0'
+    title_zh: vllm-project/vllm版本v0.23.0发布
+    category: AI tools & model releases
+    source: GitHub Releases - vllm-project/vllm
+    published_utc: '2026-06-15T05:27:20+00:00'
+  - date: '2026-06-15'
+    url: https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents/
+    title: Google Cloud's Open Knowledge Format turns scattered docs into Markdown
+      files for AI agents
+    title_zh: 谷歌云开放知识格式将零散文档转换为AI代理可读的Markdown文件
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-06-14T13:29:52+00:00'

@@ -1,0 +1,963 @@
+date: '2026-06-15'
+title: Daily Digest - 2026-06-15
+title_zh: 每日简报 - 2026-06-15
+note: 'Today: Did a medieval flying monk spot Halley''s comet, twice? It''s com… ·
+  The AI layoff wave is becoming a powder keg · AI: vllm-project/vllm: v0.23.0.'
+note_zh: 今日关注：中世纪飞行僧侣是否两次观测到哈雷彗星？情况复杂；AI裁员潮正演变为火药桶；AI：vllm-project/vllm版本v0.23.0发布。
+items:
+- category: Tech industry
+  title: Under-16 social media ban announced by UK government
+  why: The UK is the latest country to follow Australia in implementing a total social
+    media ban for children under 16, Prime Minister Keir Starme…
+  takeaway: The UK is the latest country to follow Australia in implementing a total
+    social media ban for children under 16, Prime Minister Keir Starmer has announced.
+    The ban, which could take effect from early next year, will be joined by wider
+    measures that will also prevent children from talking to strangers in online games,
+    livestreaming, […]
+  prompt: ''
+  url: https://www.theverge.com/policy/949679/uk-under-16-social-media-ban-announcement
+  source: The Verge
+  published_utc: '2026-06-15T08:19:09+00:00'
+  title_zh: 英国政府宣布禁止16岁以下儿童使用社交媒体
+  why_zh: 英国成为继澳大利亚后最新一个全面禁止16岁以下儿童使用社交媒体的国家，首相基尔·斯塔默…
+  takeaway_zh: 英国首相基尔·斯塔默宣布，该国将效仿澳大利亚，全面禁止16岁以下儿童使用社交媒体。该禁令最快明年年初生效，配套措施还包括禁止儿童在网络游戏中进行陌生人社交和直播[…]
+  prompt_zh: ''
+- category: Tech industry
+  title: The AI layoff wave is becoming a powder keg
+  why: 'What makes this combustible: at the very moment that tens of thousands of
+    workers are being shown the door, a small cohort of AI insiders i…'
+  takeaway: 'What makes this combustible: at the very moment that tens of thousands
+    of workers are being shown the door, a small cohort of AI insiders is becoming
+    wealthy on a scale that''s hard to comprehend.'
+  prompt: ''
+  url: https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/
+  source: TechCrunch
+  published_utc: '2026-06-15T07:25:41+00:00'
+  title_zh: AI裁员潮正演变为火药桶
+  why_zh: 引发矛盾的焦点在于：数以万计工人正遭遇裁员之际，一小批AI从业者却…
+  takeaway_zh: 矛盾爆发的根源：当数以万计员工被裁撤的同时，一小批AI从业者正以难以想象的规模积累财富
+  prompt_zh: ''
+- category: Tech industry
+  title: Dalus (YC W25) Is Hiring a Senior Software Engineer in Germany
+  why: 'Article URL: https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+    Comments URL: https:…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+    Comments URL: https://news.ycombinator.com/item?id=48537556 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+  source: Hacker News (front page)
+  published_utc: '2026-06-15T07:00:22+00:00'
+  title_zh: Dalus（YC W25）正在德国招聘高级软件工程师
+  why_zh: 文章链接：https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+    评论链接：https:…
+  takeaway_zh: 文章链接：https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+    评论链接：https://news.ycombinator.com/item?id=48537556 评分：0 评论数：0
+  prompt_zh: ''
+- category: Tech industry
+  title: Curl will not accept vulnerability reports during July 2026
+  why: 'Article URL: https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/
+    Comments URL: https://news.ycombinator.com/item?id=48537165 Point…'
+  takeaway: 'Article URL: https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/
+    Comments URL: https://news.ycombinator.com/item?id=48537165 Points: 343 # Comments:
+    94'
+  prompt: ''
+  url: https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/
+  source: Hacker News (front page)
+  published_utc: '2026-06-15T06:02:57+00:00'
+  title_zh: Curl将于2026年7月期间不接受漏洞报告
+  why_zh: 文章链接：https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/ 评论链接：https://news.ycombinator.com/item?id=48537165
+    评分…
+  takeaway_zh: 文章链接：https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/ 评论链接：https://news.ycombinator.com/item?id=48537165
+    评分：343 评论数：94
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'vllm-project/vllm: v0.23.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.23.0
+  source: GitHub Releases - vllm-project/vllm
+  published_utc: '2026-06-15T05:27:20+00:00'
+  title_zh: vllm-project/vllm版本v0.23.0发布
+  why_zh: 版本更新公告（详见变更日志链接）
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple Foundation Models
+  why: 'Article URL: https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models
+    Comments URL: https://news.ycombinato…'
+  takeaway: 'Article URL: https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models
+    Comments URL: https://news.ycombinator.com/item?id=48536776 Points: 88 # Comments:
+    21'
+  prompt: ''
+  url: https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models
+  source: Hacker News (front page)
+  published_utc: '2026-06-15T04:55:34+00:00'
+  title_zh: 苹果基础模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Orbio raises $21 million to automate hiring and onboarding for frontline
+    workers
+  why: Orbio announces $21 Million Series A in round led by Dawn Capital.
+  takeaway: Orbio announces $21 Million Series A in round led by Dawn Capital.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/14/orbio-raises-21-million-to-automate-hiring-and-onboarding-for-frontline-workers/
+  source: TechCrunch
+  published_utc: '2026-06-15T04:01:00+00:00'
+  title_zh: Orbio融资2100万美元，用于自动化一线员工的招聘与入职
+  why_zh: Orbio宣布获得由Dawn Capital领投的2100万美元A轮融资
+  takeaway_zh: Orbio宣布获得由Dawn Capital领投的2100万美元A轮融资
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Cross-Dataset Bloom Question Classification: Supervised Models and Prompted
+    LLMs'
+  why: 'arXiv:2606.13684v1 Announce Type: new Abstract: Automatic Bloom''s taxonomy
+    classification of assessment questions can substantially reduce…'
+  takeaway: 'arXiv:2606.13684v1 Announce Type: new Abstract: Automatic Bloom''s taxonomy
+    classification of assessment questions can substantially reduce instructor workload,
+    but labeling is subjective and teacher-dependent. Prior machine learning (ML)
+    and deep learning (DL) approaches reported strong within-dataset results, yet
+    were rarely evaluated in cross-dataset sett…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13684
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 跨数据集布鲁姆问题分类：监督模型与提示型大语言模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Picturing Perceptions: An Open-Source Toolkit to Uncover Bias in Humans
+    and Machines'
+  why: 'arXiv:2606.13688v1 Announce Type: new Abstract: Bias in human judgment and
+    artificial intelligence systems poses critical challenges across…'
+  takeaway: 'arXiv:2606.13688v1 Announce Type: new Abstract: Bias in human judgment
+    and artificial intelligence systems poses critical challenges across consequential
+    domains like hiring, loans, and criminal justice. However, traditional bias measurement
+    tools face fundamental limitations: they struggle to capture intersectional identities,
+    cannot evaluate AI systems, l…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13688
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 描绘认知：开源工具包揭示人类与机器的偏见
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Empirical Evidence on Genre-Time Correlation in Box-Office Success Using
+    Exploratory Data Analysis and Machine Learning
+  why: 'arXiv:2606.13689v1 Announce Type: new Abstract: The movie industry is one
+    of the fastest-growing global sectors, characterized by high prod…'
+  takeaway: 'arXiv:2606.13689v1 Announce Type: new Abstract: The movie industry is
+    one of the fastest-growing global sectors, characterized by high production costs
+    and significant financial risk. Given the capital-intensive nature of filmmaking,
+    accurately predicting box office success is of critical importance for stakeholders
+    ranging from producers to investors. This…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13689
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 基于探索性数据分析和机器学习的票房成功与类型时序关联实证研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Indirect Computing Model with Indirect Formal Method
+  why: 'arXiv:2606.13690v1 Announce Type: new Abstract: This paper,from the perspective
+    of a collaborative intelligent computing system formed by c…'
+  takeaway: 'arXiv:2606.13690v1 Announce Type: new Abstract: This paper,from the perspective
+    of a collaborative intelligent computing system formed by combining human-computer
+    interface and collaborative computing programs, discusses the principles of optimized
+    cloud computing technology supported by the combination of an indirect computing
+    model and an indirect formal…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13690
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 间接计算模型与间接形式化方法
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Incentives Of EdTech: A Systematic Review Of EduNLP Research'
+  why: 'arXiv:2606.13691v1 Announce Type: new Abstract: While the Natural Language
+    Processing community has dedicated significant resources in deve…'
+  takeaway: 'arXiv:2606.13691v1 Announce Type: new Abstract: While the Natural Language
+    Processing community has dedicated significant resources in developing educational
+    technologies (EdTech) that support this shift, it remains unclear whose interests
+    are being best served among the stakeholders of education. In this paper, we present
+    a systematic literature review of…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13691
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 教育科技激励：教育自然语言处理研究的系统性回顾
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Limited Marginal Benefit of Reasoning-Heavy LLM Deployment in ESG Narrative
+    Scoring: A 4-Model Consensus Study on Japanese Listed Firms'
+  why: 'arXiv:2606.13693v1 Announce Type: new Abstract: Automated scoring of ESG narrative
+    disclosures with large language models (LLMs) is gaining…'
+  takeaway: 'arXiv:2606.13693v1 Announce Type: new Abstract: Automated scoring of
+    ESG narrative disclosures with large language models (LLMs) is gaining traction,
+    yet whether reasoning-heavy frontier models add value commensurate with their
+    cost remains empirically unsettled. We evaluate this question on a corpus of ten
+    Japanese listed firms across three rubric axes --…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13693
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 推理密集型大语言模型在ESG叙事评分中的边际效益局限：基于四模型共识的日本上市公司研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'AGORA: Can Deliberation and Governance Gates Absorb Participation Bias in
+    Transit Planning?'
+  why: 'arXiv:2606.13696v1 Announce Type: new Abstract: Transit network design depends
+    not only on the optimization algorithm but also on who shows…'
+  takeaway: 'arXiv:2606.13696v1 Announce Type: new Abstract: Transit network design
+    depends not only on the optimization algorithm but also on who shows up to the
+    public hearing. Current practice often collects one-directional comments from
+    self-selected attendees, leaving participant mix as an uncontrolled source of
+    outcome variation. We present AGORA, a framework that…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13696
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: AGORA：审议机制与治理闸门能否消解交通规划中的参与偏见？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Position: AI Must Become Planet-Centered, Not Just Human-Centered'
+  why: 'arXiv:2606.13704v1 Announce Type: new Abstract: This position paper argues
+    that contemporary AI paradigms are insufficient for supporting c…'
+  takeaway: 'arXiv:2606.13704v1 Announce Type: new Abstract: This position paper argues
+    that contemporary AI paradigms are insufficient for supporting complex global
+    goals and introduces Planet-Centered AI (PCAI) as a design philosophy and research
+    agenda that reorients AI toward planetary-scale socio-ecological systems and their
+    long-term trajectories. A planet-centere…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13704
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 立场：人工智能必须转向以地球为中心，而非仅以人类为中心
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: A Virtuous AI is an Existential Risk
+  why: 'arXiv:2606.13739v1 Announce Type: new Abstract: This paper examines trade-offs
+    between AI safety and well-being relative to (i) one of the…'
+  takeaway: 'arXiv:2606.13739v1 Announce Type: new Abstract: This paper examines trade-offs
+    between AI safety and well-being relative to (i) one of the most promising methods
+    for finetuning super-capable AIs, ''Constitutional AI'', and (ii) one of the most
+    influential approaches to understanding complex ethical decision making and the
+    conditions for the well-being of rati…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13739
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 完美道德的AI构成生存风险
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Position: Align AI to Our Aspirations, Not Our Flaws'
+  why: 'arXiv:2606.13755v1 Announce Type: new Abstract: We argue that aligning AI
+    to aggregated human preferences is the wrong target.'
+  takeaway: 'arXiv:2606.13755v1 Announce Type: new Abstract: We argue that aligning
+    AI to aggregated human preferences is the wrong target. With current technology,
+    one can train AIs to share the values of a Silicon Valley techno-optimist, a degrowth
+    environmentalist, a national-conservative culture warrior, a single-party state
+    cadre, or a devout religious traditionali…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13755
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 立场：让人工智能对齐我们的理想，而非我们的缺陷
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Stability and Political Orientation of International LLMs: An Exploratory
+    Multi-Run Study Conducted in French'
+  why: 'arXiv:2606.13760v1 Announce Type: new Abstract: This study explores the stability
+    and ideological orientation of political responses produc…'
+  takeaway: 'arXiv:2606.13760v1 Announce Type: new Abstract: This study explores the
+    stability and ideological orientation of political responses produced by various
+    large language models (LLMs) in French. We designed a standardised experimental
+    protocol based on a questionnaire inspired by the Political Compass, aimed at
+    measuring the economic and socio-cultural positi…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13760
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 国际大语言模型的稳定性与政治倾向：基于法语的多轮探索性研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Time Without Death: Finitude, Social Order, and What Machines Lack'
+  why: 'arXiv:2606.13988v1 Announce Type: new Abstract: Machine collectives increasingly
+    coordinate, reciprocate, and form shared conventions on th…'
+  takeaway: 'arXiv:2606.13988v1 Announce Type: new Abstract: Machine collectives increasingly
+    coordinate, reciprocate, and form shared conventions on their own, tempting us
+    to call them societies like ours. We argue that this conflates two registers of
+    social order and misses what the human one is for. Human sociality is the way
+    a finite, natal, generational form of lif…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13988
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 无死亡的时间：有限性、社会秩序与机器的缺失
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Minimal Effort to Consensus (MEC) polarization measure
+  why: 'arXiv:2606.13997v1 Announce Type: new Abstract: We introduce the Minimum Effort
+    to Consensus (MEC), a measure that quantifies polarization…'
+  takeaway: 'arXiv:2606.13997v1 Announce Type: new Abstract: We introduce the Minimum
+    Effort to Consensus (MEC), a measure that quantifies polarization as resistance
+    to consensus: a population is highly polarized when much effort is needed to bring
+    its members to a common position, and weakly polarized when little is needed.
+    Given an opinion distribution, MEC is the min…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13997
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 最小努力共识（MEC）极化测量法
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: '''AI Alignment'' Encompasses Competing Technical Priorities'
+  why: 'arXiv:2606.14315v1 Announce Type: new Abstract: The ML literature contains
+    many distinct concepts falling under the heading of ''AI alignmen…'
+  takeaway: 'arXiv:2606.14315v1 Announce Type: new Abstract: The ML literature contains
+    many distinct concepts falling under the heading of ''AI alignment''. After noting
+    three concepts of AI alignment in the context of their corresponding research
+    programs, we claim that realistic interventions may promote ''AI alignment'' under
+    one conception while being actively counterp…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.14315
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: '''AI对齐''涵盖相互竞争的技术优先级'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Observing Teachers'' Instrumental Pedagogical Orchestration in Synchronous
+    Online Learning: A Multimodal Grid Based on Videoconferencing Traces'
+  why: 'arXiv:2606.14358v1 Announce Type: new Abstract: Synchronous online teaching
+    environments pose specific challenges for the analysis of pedag…'
+  takeaway: 'arXiv:2606.14358v1 Announce Type: new Abstract: Synchronous online teaching
+    environments pose specific challenges for the analysis of pedagogical activity
+    as teaching takes place via videoconferencing platforms and interactions are multimodal.
+    While pedagogical orchestration has been extensively studied in the context of
+    face-to-face courses and at the leve…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.14358
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 同步在线学习中教师工具性教学编排的观察：基于视频会议痕迹的多模态网格分析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Shadows of Transparency: Signaling Transparency-Impeding Behavior Using
+    Public Data'
+  why: 'arXiv:2606.14377v1 Announce Type: new Abstract: Freedom of Information (FOI)
+    laws aim to increase government transparency, yet existing ass…'
+  takeaway: 'arXiv:2606.14377v1 Announce Type: new Abstract: Freedom of Information
+    (FOI) laws aim to increase government transparency, yet existing assessments focus
+    mainly on legal compliance and procedural outcomes, leaving organizational behavior
+    underexamined. As FOI processes are increasingly mediated through digital information
+    systems, public response data offer…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.14377
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 透明性的阴影：利用公开数据揭示阻碍透明的信号行为
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Redistricting from the Bottom Up: Sampling Communities of Interest with
+    Differential Privacy'
+  why: 'arXiv:2606.14453v1 Announce Type: new Abstract: Independent Redistricting
+    Commissions (IRCs) are a promising tool for bottom-up redistricti…'
+  takeaway: 'arXiv:2606.14453v1 Announce Type: new Abstract: Independent Redistricting
+    Commissions (IRCs) are a promising tool for bottom-up redistricting, but their
+    public testimony processes are vulnerable to adversarial manipulation. We propose
+    using differential privacy to draw redistricting plans that incorporate community
+    of interest (COI) testimonies while remain…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.14453
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 自下而上的选区重划：采用差分隐私对利益社区进行采样
+  why_zh: arXiv:2606.14453v1 公告类型：新论文 摘要：独立选区划分委员会（IRCs）作为自下而上选区重划工具有显著潜力，但…
+  takeaway_zh: arXiv:2606.14453v1 公告类型：新论文 摘要：独立选区划分委员会（IRCs）作为自下而上的选区划定工具具有潜力，但其公众听证流程易受恶意操纵。我们提出采用差分隐私技术来制定既包含社区利益（COI）证词又能…
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Demographic Patterns in Cybersecurity Culture: Insights from a Global Organisation
+    Supporting Safety-Critical and Critical Infrastructure Sectors'
+  why: 'arXiv:2606.14462v1 Announce Type: new Abstract: This study investigates demographic
+    differences in cybersecurity culture in a large global…'
+  takeaway: 'arXiv:2606.14462v1 Announce Type: new Abstract: This study investigates
+    demographic differences in cybersecurity culture in a large global organisation
+    supporting safety critical and critical infrastructure sectors to target CSC improvement.
+    A global survey was administered to all internal and external employees of a total
+    of 21148 employees, with 6502 resp…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.14462
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 网络安全文化的人口统计模式：来自全球关键基础设施支持组织的洞见
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces
+  why: 'arXiv:2606.13686v1 Announce Type: cross Abstract: As autonomous web agents
+    are increasingly deployed to perform real-world tasks, ensuring…'
+  takeaway: 'arXiv:2606.13686v1 Announce Type: cross Abstract: As autonomous web agents
+    are increasingly deployed to perform real-world tasks, ensuring their safety has
+    become a critical concern. In this work, we study web agent behavior under realistic
+    deceptive interfaces in the e-commerce domain. We introduce WebDecept, a lightweight
+    and configurable plugin framework…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13686
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 电子商务欺骗性界面下网络智能体安全性的基准测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Choric Masking in Ambient Release Systems: A Finite Certificate Calculus
+    for Trace Indistinguishability under Bounded Audiences'
+  why: 'arXiv:2606.13967v1 Announce Type: cross Abstract: This paper develops a finite
+    certificate calculus for ambient release systems, staged pro…'
+  takeaway: 'arXiv:2606.13967v1 Announce Type: cross Abstract: This paper develops
+    a finite certificate calculus for ambient release systems, staged probabilistic
+    environments in which a protected coordinate is not observed directly but can
+    remain statistically readable through visible roles, timing, repeated movement,
+    bounded attention, linked rooms, and post-release s…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.13967
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-15T04:00:00+00:00'
+  title_zh: 环境释放系统中的合唱掩盖：有限证书演算用于受众有限情况下的痕迹不可区分性
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Even more batteries included with Emacs
+  why: 'Article URL: https://karthinks.com/software/even-more-batteries-included-with-emacs/
+    Comments URL: https://news.ycombinator.com/item?id=485…'
+  takeaway: 'Article URL: https://karthinks.com/software/even-more-batteries-included-with-emacs/
+    Comments URL: https://news.ycombinator.com/item?id=48535886 Points: 181 # Comments:
+    34'
+  prompt: ''
+  url: https://karthinks.com/software/even-more-batteries-included-with-emacs/
+  source: Hacker News (front page)
+  published_utc: '2026-06-15T02:30:25+00:00'
+  title_zh: Emacs迎来更全面的内置插件支持
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 21 years and counting of 'eight fallacies of distributed computing' (2025)
+  why: 'Article URL: https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/
+    Comments URL: https://new…'
+  takeaway: 'Article URL: https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/
+    Comments URL: https://news.ycombinator.com/item?id=48534628 Points: 78 # Comments:
+    15'
+  prompt: ''
+  url: https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/
+  source: Hacker News (front page)
+  published_utc: '2026-06-15T00:07:32+00:00'
+  title_zh: '''分布式计算的八大谬论''走过21年（2025）'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Your ePub Is fine
+  why: 'Article URL: https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/
+    Comments URL: https://news.ycombinator.com/item?id=485338…'
+  takeaway: 'Article URL: https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/
+    Comments URL: https://news.ycombinator.com/item?id=48533848 Points: 551 # Comments:
+    187'
+  prompt: ''
+  url: https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T22:54:55+00:00'
+  title_zh: 你的 ePub 文件没问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Startup CEO Charlie Javice is reportedly angling for a Trump pardon
+  why: JPMorgan can't be pleased by any of this.
+  takeaway: JPMorgan can't be pleased by any of this.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/14/startup-ceo-charlie-javice-is-reportedly-angling-for-a-trump-pardon/
+  source: TechCrunch
+  published_utc: '2026-06-14T21:55:34+00:00'
+  title_zh: 据报道，初创公司CEO Charlie Javice正寻求特朗普特赦
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Windows 11 users are tired of MS account requirements creeping into everything
+  why: 'Article URL: https://www.windowscentral.com/microsoft/windows-11/windows-11-users-are-tired-of-microsoft-account-requirements-and-workaroun…'
+  takeaway: 'Article URL: https://www.windowscentral.com/microsoft/windows-11/windows-11-users-are-tired-of-microsoft-account-requirements-and-workarounds
+    Comments URL: https://news.ycombinator.com/item?id=48533101 Points: 306 # Comments:
+    208'
+  prompt: ''
+  url: https://www.windowscentral.com/microsoft/windows-11/windows-11-users-are-tired-of-microsoft-account-requirements-and-workarounds
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T21:42:12+00:00'
+  title_zh: Windows 11用户厌倦了微软账户的无孔不入
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The FBI built a small town to simulate cyberattacks
+  why: Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating
+    cyberattacks.
+  takeaway: Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating
+    cyberattacks. Think of it sort of like the famous Hogan's Alley, but for modern
+    digital crime training. It's a massive 22,000 square-foot replica of an entire
+    town, complete with a convenience store, gas station, hospital, and even fully
+    furnished houses. It's a […]
+  prompt: ''
+  url: https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range
+  source: The Verge
+  published_utc: '2026-06-14T20:35:41+00:00'
+  title_zh: FBI建造小镇模拟网络攻击
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: UK may ban social media for children under 16
+  why: The U.K.
+  takeaway: The U.K. seems to be following Australia's lead in banning a wide swath
+    of social media for teens.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/14/uk-may-ban-social-media-for-children-under-16/
+  source: TechCrunch
+  published_utc: '2026-06-14T20:17:00+00:00'
+  title_zh: 英国或禁止16岁以下儿童使用社交媒体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Chaosnet (1981)
+  why: https://bitsavers.trailing-edge.com/pdf/mit/ai/AIM-628_chaos...
+  takeaway: 'https://bitsavers.trailing-edge.com/pdf/mit/ai/AIM-628_chaos... Comments
+    URL: https://news.ycombinator.com/item?id=48531449 Points: 82 # Comments: 12'
+  prompt: ''
+  url: https://tumbleweed.nu/r/lm-3/uv/amber.html
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T19:14:21+00:00'
+  title_zh: 混沌网络（1981）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: China may have accessed Mythos
+  why: According to a new report from Semafor, the White House's decision to impose
+    export restrictions on Anthropic's Mythos was driven in part b…
+  takeaway: According to a new report from Semafor, the White House's decision to
+    impose export restrictions on Anthropic's Mythos was driven in part by fears that
+    it had been accessed by a group linked to China. If the Chinese government actually
+    had access to Mythos 5 or Fable 5, it would present a serious national security
+    […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos
+  source: The Verge
+  published_utc: '2026-06-14T18:27:55+00:00'
+  title_zh: 中国可能已访问Mythos
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Discover Wikipedia articles popular on Hacker News'
+  why: 'Article URL: https://www.orangecrumbs.com/ Comments URL: https://news.ycombinator.com/item?id=48530382
+    Points: 110 # Comments: 26'
+  takeaway: 'Article URL: https://www.orangecrumbs.com/ Comments URL: https://news.ycombinator.com/item?id=48530382
+    Points: 110 # Comments: 26'
+  prompt: ''
+  url: https://www.orangecrumbs.com/
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T17:54:17+00:00'
+  title_zh: HN展示：发现Hacker News上热门的维基百科文章
+  why_zh: 文章链接：https://www.orangecrumbs.com/ 评论链接：https://news.ycombinator.com/item?id=48530382
+    评分：110 评论数：26
+  takeaway_zh: 文章链接：https://www.orangecrumbs.com/ 评论链接：https://news.ycombinator.com/item?id=48530382
+    评分：110 评论数：26
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: Kage – Shadow any website to a single binary for offline viewing'
+  why: 'Article URL: https://github.com/tamnd/kage Comments URL: https://news.ycombinator.com/item?id=48529990
+    Points: 552 # Comments: 108'
+  takeaway: 'Article URL: https://github.com/tamnd/kage Comments URL: https://news.ycombinator.com/item?id=48529990
+    Points: 552 # Comments: 108'
+  prompt: ''
+  url: https://github.com/tamnd/kage
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T17:25:38+00:00'
+  title_zh: Show HN：Kage——将任何网站镜像为离线浏览的独立二进制文件
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Introducing the OpenAI Partner Network
+  why: OpenAI launches the Partner Network, investing $150M to help global partners
+    accelerate enterprise AI adoption, deployment, and transformat…
+  takeaway: OpenAI launches the Partner Network, investing $150M to help global partners
+    accelerate enterprise AI adoption, deployment, and transformation.
+  prompt: ''
+  url: https://openai.com/index/introducing-openai-partner-network
+  source: OpenAI Blog
+  published_utc: '2026-06-14T17:00:00+00:00'
+  title_zh: 推出OpenAI合作伙伴网络
+  why_zh: OpenAI启动合作伙伴网络，投资1.5亿美元助力全球合作伙伴加速企业级AI的应用、部署与转型…
+  takeaway_zh: OpenAI启动合作伙伴网络，投资1.5亿美元用于加速全球合作伙伴的企业级AI应用、部署与转型进程
+  prompt_zh: ''
+- category: Tech industry
+  title: As AI companies race to go public, who else is along for the ride?
+  why: Startups are trying to "ride that SpaceX IPO wave."
+  takeaway: Startups are trying to "ride that SpaceX IPO wave."
+  prompt: ''
+  url: https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/
+  source: TechCrunch
+  published_utc: '2026-06-14T16:38:09+00:00'
+  title_zh: AI公司争相上市，谁将搭上这班车？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Conclave is the sound of a NYC summer block party
+  why: I have this vivid memory of walking to pick up my oldest from school in June
+    of 2022.
+  takeaway: I have this vivid memory of walking to pick up my oldest from school in
+    June of 2022. For a variety of reasons, I was in a very bad place mentally. And
+    to make matters worse, it was brutally hot. I was depressed, angry with the world,
+    sunburned, and soaked through with sweat. But as […]
+  prompt: ''
+  url: https://www.theverge.com/entertainment/949621/conclave-nyc-summer-block-party-album-review
+  source: The Verge
+  published_utc: '2026-06-14T16:30:00+00:00'
+  title_zh: Conclave是纽约夏日街区派对的音乐之声
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Ask HN: What are you working on? (June 2026)'
+  why: What are you working on?
+  takeaway: 'What are you working on? Any new ideas that you''re thinking about? Comments
+    URL: https://news.ycombinator.com/item?id=48528779 Points: 222 # Comments: 812'
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=48528779
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T16:05:28+00:00'
+  title_zh: Ask HN：最近在做什么？（2026年6月）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TechCrunch Mobility: SpaceX rockets past Tesla'
+  why: Welcome back to TechCrunch Mobility, your hub for the future of transportation
+    and now, more than ever, how AI is playing a part.
+  takeaway: Welcome back to TechCrunch Mobility, your hub for the future of transportation
+    and now, more than ever, how AI is playing a part.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/
+  source: TechCrunch
+  published_utc: '2026-06-14T16:05:00+00:00'
+  title_zh: TechCrunch Mobility：SpaceX超越特斯拉
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Did a medieval flying monk spot Halley's comet, twice? It's complicated
+  why: 'University of Leicester historian thinks Eilmer of Malmesbury saw two different
+    comets: in 1018 and 1066'
+  takeaway: 'University of Leicester historian thinks Eilmer of Malmesbury saw two
+    different comets: in 1018 and 1066'
+  prompt: ''
+  url: https://arstechnica.com/science/2026/06/did-a-medieval-flying-monk-spot-halleys-comet-twice-its-complicated/
+  source: Ars Technica
+  published_utc: '2026-06-14T16:02:53+00:00'
+  title_zh: 中世纪飞行僧侣是否两次观测到哈雷彗星？情况复杂
+  why_zh: 莱斯特大学历史学家认为马尔姆斯伯里的艾尔默见过两颗不同的彗星：分别出现于1018年和1066年
+  takeaway_zh: 莱斯特大学历史学家认为马尔姆斯伯里的艾尔默见过两颗不同的彗星：分别出现于1018年和1066年
+  prompt_zh: ''
+- category: Tech industry
+  title: How to watch most of the World Cup matches with free trials
+  why: Hoping to catch some World Cup matches while spending as little money as possible?
+  takeaway: Hoping to catch some World Cup matches while spending as little money
+    as possible? You have a few options for finding a few days of free streaming,
+    although you may choose to eventually pony up some money. That, or get creative
+    by combining multiple offers to make it through the whole tournament. We found
+    a […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/948871/world-cup-streaming-free-trial-deal-sale
+  source: The Verge
+  published_utc: '2026-06-14T16:00:00+00:00'
+  title_zh: 如何通过免费试用观看大部分世界杯比赛
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Rio de Janeiro's "homegrown" LLM appears to be a merge of an existing model
+  why: 'Article URL: https://github.com/nex-agi/Nex-N2/issues/4 Comments URL: https://news.ycombinator.com/item?id=48528371
+    Points: 340 # Comments:…'
+  takeaway: 'Article URL: https://github.com/nex-agi/Nex-N2/issues/4 Comments URL:
+    https://news.ycombinator.com/item?id=48528371 Points: 340 # Comments: 184'
+  prompt: ''
+  url: https://github.com/nex-agi/Nex-N2/issues/4
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T15:37:31+00:00'
+  title_zh: 里约热内卢'本土化'大语言模型疑似合并现有模型产物
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML
+    models
+  why: 'TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting
+    moments from my cycling journey.'
+  takeaway: 'TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting
+    moments from my cycling journey. I built a project to index them locally on my
+    M1 Max using open-source ML models, search for those moments, and send the best
+    clips straight to my DaVinci Resolve timeline. I indexed 628 videos (668.68 GB,
+    15h 13m 18s of footage duration), more de…'
+  prompt: ''
+  url: https://news.ycombinator.com/item?id=48528029
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T15:13:57+00:00'
+  title_zh: 我用M1 Max电脑和本地机器学习模型索引了669GB的GoPro视频
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Perlisisms (1982)
+  why: 'Article URL: https://www.cs.yale.edu/homes/perlis-alan/quotes.html Comments
+    URL: https://news.ycombinator.com/item?id=48527820 Points: 114…'
+  takeaway: 'Article URL: https://www.cs.yale.edu/homes/perlis-alan/quotes.html Comments
+    URL: https://news.ycombinator.com/item?id=48527820 Points: 114 # Comments: 56'
+  prompt: ''
+  url: https://www.cs.yale.edu/homes/perlis-alan/quotes.html
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T14:56:56+00:00'
+  title_zh: 佩利斯箴言集（1982）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FarOutCompany
+  why: 'Article URL: https://faroutcompany.com/ Comments URL: https://news.ycombinator.com/item?id=48527360
+    Points: 118 # Comments: 19'
+  takeaway: 'Article URL: https://faroutcompany.com/ Comments URL: https://news.ycombinator.com/item?id=48527360
+    Points: 118 # Comments: 19'
+  prompt: ''
+  url: https://faroutcompany.com/
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T14:09:29+00:00'
+  title_zh: 远见公司
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The new Sonos Play has become my go-to desk and kitchen speaker
+  why: The new Sonos Play can act as a portable speaker inside and outside your home.
+  takeaway: The new Sonos Play can act as a portable speaker inside and outside your
+    home.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/14/the-new-sonos-play-has-become-my-go-to-desk-and-kitchen-speaker/
+  source: TechCrunch
+  published_utc: '2026-06-14T14:00:00+00:00'
+  title_zh: 新款Sonos Play成为我办公桌和厨房的首选音箱
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Microsoft Research's Mirage gives video generation a persistent spatial memory
+    that doesn't forget what's around the corner
+  why: Mirage, a video world model from Microsoft Research and several universities,
+    stores scene information directly in latent space instead of…
+  takeaway: Mirage, a video world model from Microsoft Research and several universities,
+    stores scene information directly in latent space instead of pixel-based point
+    clouds. That slashes compute time and graphics memory while keeping scenes spatially
+    consistent through long camera moves. It still can't reliably track moving objects
+    across segments. The article Micro…
+  prompt: ''
+  url: https://the-decoder.com/microsoft-researchs-mirage-gives-video-generation-a-persistent-spatial-memory-that-doesnt-forget-whats-around-the-corner/
+  source: The Decoder (AI)
+  published_utc: '2026-06-14T13:58:17+00:00'
+  title_zh: 微软研究院的Mirage为视频生成赋予持久空间记忆，不忘转角之物
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Caddy compatibility for zeroserve: 3x throughput and 70% lower latency'
+  why: 'Article URL: https://su3.io/posts/zeroserve-caddy-compat Comments URL: https://news.ycombinator.com/item?id=48527145
+    Points: 183 # Comments…'
+  takeaway: 'Article URL: https://su3.io/posts/zeroserve-caddy-compat Comments URL:
+    https://news.ycombinator.com/item?id=48527145 Points: 183 # Comments: 52'
+  prompt: ''
+  url: https://su3.io/posts/zeroserve-caddy-compat
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T13:43:08+00:00'
+  title_zh: Zeroserve适配Caddy：吞吐量提升3倍，延迟降低70%
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The impossible dream of the universal remote
+  why: You don't really ever have to explain why a universal remote is a good idea.
+  takeaway: You don't really ever have to explain why a universal remote is a good
+    idea. You have a bunch of stuff that needs controlling; this thing controls them
+    all. Many companies have set out to build a product worthy of this idea, and one
+    product came much closer than most. It was called the Harmony, […]
+  prompt: ''
+  url: https://www.theverge.com/podcast/949620/harmony-universal-remote-version-history
+  source: The Verge
+  published_utc: '2026-06-14T13:42:07+00:00'
+  title_zh: 万能遥控器的梦想遥不可及
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Google Cloud's Open Knowledge Format turns scattered docs into Markdown files
+    for AI agents
+  why: Google Cloud's new Open Knowledge Format (OKF) standardizes scattered organizational
+    knowledge as Markdown files with YAML frontmatter, mak…
+  takeaway: Google Cloud's new Open Knowledge Format (OKF) standardizes scattered
+    organizational knowledge as Markdown files with YAML frontmatter, making it portable
+    and usable for AI agents. The minimalist spec formalizes a pattern Andrej Karpathy
+    recently popularized as the "LLM Wiki." The article Google Cloud's Open Knowledge
+    Format turns scattered docs into Markdo…
+  prompt: ''
+  url: https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents/
+  source: The Decoder (AI)
+  published_utc: '2026-06-14T13:29:52+00:00'
+  title_zh: 谷歌云开放知识格式将零散文档转换为AI代理可读的Markdown文件
+  why_zh: 谷歌云推出开放式知识格式（OKF），将零散的组织知识标准化为带YAML元数据的Markdown文件，使…
+  takeaway_zh: 谷歌云的新型开放式知识格式（OKF）通过带YAML元数据的Markdown文件标准化零散组织知识，使其便于AI代理移植使用。这套极简规范正式确立了Andrej
+    Karpathy近期推广的「LLM维基」模式。谷歌云的OKF将零散文档转化为Markdo…
+  prompt_zh: ''
+- category: Tech industry
+  title: Formal methods and the future of programming
+  why: 'Article URL: https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1
+    Comments URL: https://news.ycombinator.co…'
+  takeaway: 'Article URL: https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1
+    Comments URL: https://news.ycombinator.com/item?id=48526633 Points: 259 # Comments:
+    92'
+  prompt: ''
+  url: https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T12:35:27+00:00'
+  title_zh: 形式化方法与编程的未来
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Solid-state batteries still aren’t ready, but gels are
+  why: This is The Stepback, a weekly newsletter breaking down one essential story
+    from the tech world.
+  takeaway: This is The Stepback, a weekly newsletter breaking down one essential
+    story from the tech world. For more on e-bikes, power stations, and how to work
+    anywhere, follow Thomas Ricker. The Stepback arrives in our subscribers' inboxes
+    at 8AM ET. Opt in for The Stepback here. How it started Lithium-ion batteries
+    are everywhere as we […]
+  prompt: ''
+  url: https://www.theverge.com/column/948594/solid-state-batteries-semi-solid-state
+  source: The Verge
+  published_utc: '2026-06-14T12:00:00+00:00'
+  title_zh: 固态电池尚未成熟，但凝胶电池已准备好
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How to earn a billion dollars
+  why: 'Article URL: https://paulgraham.com/earn.html Comments URL: https://news.ycombinator.com/item?id=48526360
+    Points: 618 # Comments: 1622'
+  takeaway: 'Article URL: https://paulgraham.com/earn.html Comments URL: https://news.ycombinator.com/item?id=48526360
+    Points: 618 # Comments: 1622'
+  prompt: ''
+  url: https://paulgraham.com/earn.html
+  source: Hacker News (front page)
+  published_utc: '2026-06-14T11:50:48+00:00'
+  title_zh: 如何赚取十亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: KPMG fabricated AI case studies in a report designed to sell clients on AI
+    adoption
+  why: KPMG published a report on AI in business that contained fabricated case studies
+    involving UBS, the NHS, and other organizations.
+  takeaway: KPMG published a report on AI in business that contained fabricated case
+    studies involving UBS, the NHS, and other organizations. GPTZero CEO Edward Tian,
+    who helped uncover the errors, warns of "secondary hallucinations," flawed claims
+    from trusted consulting firms that spread unchecked. KPMG has since pulled the
+    report. The article KPMG fabricated AI case…
+  prompt: ''
+  url: https://the-decoder.com/kpmg-fabricated-ai-case-studies-in-a-report-designed-to-sell-clients-on-ai-adoption/
+  source: The Decoder (AI)
+  published_utc: '2026-06-14T09:40:37+00:00'
+  title_zh: 毕马威在推广AI应用的报告中捏造AI案例研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AI coding agents find the right file but miss the exact lines that matter,
+    study shows
+  why: AI coding agents like Claude Code or Codex reliably find the right file but
+    miss most of the critical lines within it.
+  takeaway: AI coding agents like Claude Code or Codex reliably find the right file
+    but miss most of the critical lines within it. The new SWE-Explore benchmark is
+    the first to test code search separately from the actual repair, and it shows
+    that without enough context, even the best fix will fail. The article AI coding
+    agents find the right file but miss the exact lin…
+  prompt: ''
+  url: https://the-decoder.com/ai-coding-agents-find-the-right-file-but-miss-the-exact-lines-that-matter-study-shows/
+  source: The Decoder (AI)
+  published_utc: '2026-06-14T08:54:47+00:00'
+  title_zh: 研究表明：AI编程代理能定位正确文件但忽略关键代码行
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Amazon and five other companies reportedly triggered the government crackdown
+    on Anthropic's Fable model
+  why: Amazon CEO Andy Jassy and executives from other tech companies reportedly warned
+    the Trump administration about security vulnerabilities in…
+  takeaway: Amazon CEO Andy Jassy and executives from other tech companies reportedly
+    warned the Trump administration about security vulnerabilities in Anthropic's
+    Fable model, even though Amazon is one of Anthropic's largest investors. Within
+    hours, the White House forced the model offline through an export control order.
+    The move may well be a legitimate security pol…
+  prompt: ''
+  url: https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model/
+  source: The Decoder (AI)
+  published_utc: '2026-06-14T08:35:02+00:00'
+  title_zh: 亚马逊等六家公司据称引发政府对Anthropic Fable模型的打压
+  why_zh: 亚马逊CEO安迪·贾西与多家科技公司高管曾向特朗普政府警告 Anthropic 公司的Fable模型存在安全隐患…
+  takeaway_zh: 据报道，亚马逊CEO安迪·贾西与其他科技公司高管曾警告特朗普政府Anthropic的Fable模型存在安全漏洞。尽管亚马逊是Anthropic主要投资者，白宫仍通过出口管制令在数小时内迫使该模型下线，此举可能涉及正当的…
+  prompt_zh: ''

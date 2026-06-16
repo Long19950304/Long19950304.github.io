@@ -1359,6 +1359,7 @@ weeks:
   end: '2026-06-21'
   issues:
   - '2026-06-15'
+  - '2026-06-16'
   highlights_news:
   - date: '2026-06-15'
     url: https://arstechnica.com/science/2026/06/did-a-medieval-flying-monk-spot-halleys-comet-twice-its-complicated/
@@ -1396,6 +1397,42 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-06-14T08:35:02+00:00'
+  - date: '2026-06-16'
+    url: https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/
+    title: Chipmaker Nvidia seeks to raise over $25B in first bond deal since 2021
+    title_zh: 芯片制造商英伟达寻求通过2021年以来的首次债券发行筹集逾250亿美元
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-06-15T19:07:02+00:00'
+  - date: '2026-06-16'
+    url: https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/
+    title: Why do South Koreans love AI so much?
+    title_zh: 韩国人为何如此痴迷AI？
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-06-15T18:46:08+00:00'
+  - date: '2026-06-16'
+    url: https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/
+    title: The US government’s Anthropic models ban was never about an AI jailbreak
+    title_zh: 美国政府禁购Anthropic模型无关AI系统破解
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-15T21:50:21+00:00'
+  - date: '2026-06-16'
+    url: https://www.theverge.com/ai-artificial-intelligence/950026/anthropic-fable-mythos-ban-ai-shutdown
+    title: All the news about Anthropic&#8217;s new AI fight with the White House
+    title_zh: 关于Anthropic与白宫AI争端的所有消息
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-15T19:04:53+00:00'
+  - date: '2026-06-16'
+    url: https://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms/
+    title: The US government may be asking Anthropic the impossible by demanding unhackable
+      LLMs
+    title_zh: 美国政府可能正要求Anthropic实现不可能任务：开发牢不可破的大语言模型
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-06-15T18:06:33+00:00'
   highlights_ai:
   - date: '2026-06-15'
     url: https://github.com/vllm-project/vllm/releases/tag/v0.23.0
@@ -1412,3 +1449,26 @@ weeks:
     category: AI tools & model releases
     source: The Decoder (AI)
     published_utc: '2026-06-14T13:29:52+00:00'
+  - date: '2026-06-16'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-memory-scmetadata
+    title: Amazon Bedrock AgentCore Memory now supports strictly consistent metadata
+      for long-term memory
+    title_zh: 亚马逊Bedrock AgentCore Memory现支持长期记忆的强一致性元数据
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-06-15T20:00:00+00:00'
+  - date: '2026-06-16'
+    url: https://developer.nvidia.com/blog/fine-tuning-biological-foundation-models-with-lora-using-nvidia-bionemo-recipes/
+    title: Fine-Tuning Biological Foundation Models with LoRA Using NVIDIA BioNeMo
+      Recipes
+    title_zh: 使用NVIDIA BioNeMo配方微调生物基础模型的LoRA方法
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-06-15T18:07:31+00:00'
+  - date: '2026-06-16'
+    url: https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything
+    title: '"They screwed us": Personality clashes sent Anthropic''s models offline'
+    title_zh: 「他们搞砸了」：个性冲突导致Anthropic模型下线事件
+    category: AI tools & model releases
+    source: Simon Willison (LLM/tools)
+    published_utc: '2026-06-15T14:57:33+00:00'

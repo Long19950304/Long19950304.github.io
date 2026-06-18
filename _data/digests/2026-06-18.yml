@@ -1,0 +1,908 @@
+date: '2026-06-18'
+title: Daily Digest - 2026-06-18
+title_zh: 每日简报 - 2026-06-18
+note: 'Today: Massive breach spills credentials for thousands of sensitive ne… · Cybercriminals
+  allegedly hacked tens of thousands of Fortinet f… · AI: openai/openai-python: v2.43.0.'
+note_zh: 今日关注：大规模数据泄露事件曝光数千敏感网络凭证；网络犯罪分子据称入侵了全球各大企业使用的数万台Fortinet防火墙；AI：openai/openai-python：v2.43.0版本。
+items:
+- category: Tech industry
+  title: Midjourney Medical goes from generating ‘cat images’ to full-body ultrasound
+    scans
+  why: Midjourney CEO David Holz just showed off the company's first hardware product
+    and plans to build a San Francisco spa, which he admitted is…
+  takeaway: Midjourney CEO David Holz just showed off the company's first hardware
+    product and plans to build a San Francisco spa, which he admitted is a bit different
+    from the "cat pictures" produced by its AI image generator. Dubbed The Midjourney
+    Scanner, it's an ultrasound-based full-body scanner that uses a ring of sensors
+    to capture vertical […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan
+  source: The Verge
+  published_utc: '2026-06-18T03:12:31+00:00'
+  title_zh: Midjourney Medical从生成'猫图'进阶至全身超声扫描
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.89.2'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.89.2
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-06-18T02:46:30+00:00'
+  title_zh: BerriAI/litellm：v1.89.2版本
+  why_zh: 版本更新（详情参见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '[x86] AI Compute Extensions (ACE) Specification'
+  why: 'Article URL: https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/
+    Comments URL: https://news.ycombinator.com/item?id=…'
+  takeaway: 'Article URL: https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/
+    Comments URL: https://news.ycombinator.com/item?id=48579913 Points: 8 # Comments:
+    2'
+  prompt: ''
+  url: https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/
+  source: Hacker News (front page)
+  published_utc: '2026-06-18T02:32:01+00:00'
+  title_zh: '[x86]AI计算扩展(ACE)规范'
+  why_zh: 文章链接：https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/
+    评论链接：https://news.ycombinator.com/item?id=48579913
+  takeaway_zh: '文章链接：https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/
+    评论链接：https://news.ycombinator.com/item?id=48579913 热度：8 #评论数：2'
+  prompt_zh: ''
+- category: Tech industry
+  title: Midjourney Medical
+  why: 'https://www.midjourney.com/medical Video: https://x.com/midjourney/status/2067422898407837797
+    Comments URL: https://news.ycombinator.com/it…'
+  takeaway: 'https://www.midjourney.com/medical Video: https://x.com/midjourney/status/2067422898407837797
+    Comments URL: https://news.ycombinator.com/item?id=48579650 Points: 183 # Comments:
+    177'
+  prompt: ''
+  url: https://www.midjourney.com/medical/blogpost
+  source: Hacker News (front page)
+  published_utc: '2026-06-18T01:59:51+00:00'
+  title_zh: ''
+  why_zh: 链接：https://www.midjourney.com/medical 视频：https://x.com/midjourney/status/2067422898407837797
+    评论链接：https://news.ycombinator.com/item?id=48579650
+  takeaway_zh: '链接：https://www.midjourney.com/medical 视频：https://x.com/midjourney/status/2067422898407837797
+    评论链接：https://news.ycombinator.com/item?id=48579650 热度：183 #评论数：177'
+  prompt_zh: ''
+- category: Tech industry
+  title: How to turn off AI in your Google Docs
+  why: Here's what you need to do to get those pesky "write with Gemini" pop-ups to
+    go away.
+  takeaway: Here's what you need to do to get those pesky "write with Gemini" pop-ups
+    to go away.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/how-to-turn-off-ai-in-your-google-docs/
+  source: TechCrunch
+  published_utc: '2026-06-18T01:23:51+00:00'
+  title_zh: 如何禁用Google文档中的AI功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: ChatGPT's image generator can be manipulated to produce violent, sexual content
+  why: 'Article URL: https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt
+    Comments URL: https://news.ycombin…'
+  takeaway: 'Article URL: https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt
+    Comments URL: https://news.ycombinator.com/item?id=48578894 Points: 68 # Comments:
+    91'
+  prompt: ''
+  url: https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt
+  source: Hacker News (front page)
+  published_utc: '2026-06-18T00:24:04+00:00'
+  title_zh: ChatGPT图像生成器可被操纵输出暴力色情内容
+  why_zh: 文章链接：https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt
+    评论链接：https://news.ycombinator.com/item?id=48578894
+  takeaway_zh: '文章链接：https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt
+    评论链接：https://news.ycombinator.com/item?id=48578894 热度：68 #评论数：91'
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: GLM-5.2 is probably the most powerful text-only open weights LLM
+  why: Chinese AI lab Z.ai released GLM-5.2 to their coding plan subscribers on June
+    13th, and then yesterday (June 16th) released the full open w…
+  takeaway: Chinese AI lab Z.ai released GLM-5.2 to their coding plan subscribers
+    on June 13th, and then yesterday (June 16th) released the full open weights under
+    an MIT license. Similar in size to their previous GLM-5 and GLM-5.1 releases,
+    this is 753B parameter, 1.51TB monster - with 40 active parameters (Mixture of
+    Experts). GLM-5.2 is a text input only model - Z.a…
+  prompt: ''
+  url: https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything
+  source: Simon Willison (LLM/tools)
+  published_utc: '2026-06-17T23:58:39+00:00'
+  title_zh: GLM-5.2可能是目前最强的纯文本开源权重LLM
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'AI is hurting Apple in more ways than one: it may force iPhone price increases'
+  why: CEO Tim Cook said in a recent interview that the situation is "unsustainable."
+  takeaway: CEO Tim Cook said in a recent interview that the situation is "unsustainable."
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/ai-is-hurting-apple-in-more-ways-than-one-it-may-force-iphone-price-increases/
+  source: TechCrunch
+  published_utc: '2026-06-17T23:28:21+00:00'
+  title_zh: AI正以多种方式伤害苹果：或将迫使iPhone涨价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Taxonomy of the Occlupanida (parasitoids on bread bag tags)
+  why: 'Article URL: https://www.horg.com/horg/?page_id=921 Comments URL: https://news.ycombinator.com/item?id=48578388
+    Points: 86 # Comments: 16'
+  takeaway: 'Article URL: https://www.horg.com/horg/?page_id=921 Comments URL: https://news.ycombinator.com/item?id=48578388
+    Points: 86 # Comments: 16'
+  prompt: ''
+  url: https://www.horg.com/horg/?page_id=921
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T23:20:38+00:00'
+  title_zh: 面包袋标签寄生生物Occlupanida分类学
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Clojure Hosted on Go
+  why: 'Article URL: https://github.com/glojurelang/glojure Comments URL: https://news.ycombinator.com/item?id=48578326
+    Points: 48 # Comments: 7'
+  takeaway: 'Article URL: https://github.com/glojurelang/glojure Comments URL: https://news.ycombinator.com/item?id=48578326
+    Points: 48 # Comments: 7'
+  prompt: ''
+  url: https://github.com/glojurelang/glojure
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T23:14:49+00:00'
+  title_zh: 在Go语言上运行的Clojure
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy
+  why: Days before Anthropic took its most advanced AI models offline, the White House
+    ordered the company to revoke SK Telecom’s access to Claude…
+  takeaway: Days before Anthropic took its most advanced AI models offline, the White
+    House ordered the company to revoke SK Telecom’s access to Claude Mythos over
+    claims of alleged ties to China.
+  prompt: ''
+  url: https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/
+  source: WIRED - AI
+  published_utc: '2026-06-17T22:52:00+00:00'
+  title_zh: 处于Anthropic神话争议中心的韩国电信巨头
+  why_zh: 在Anthropic将其最先进AI模型下线前几天，白宫以涉嫌与中国有关联为由下令该公司终止SK电讯(SK Telecom)对Claude的访问权限……
+  takeaway_zh: 在Anthropic将其最先进AI模型离线前几天，白宫以涉嫌与中国有关联为由，下令该公司终止SK电讯对Claude Mythos的访问权限。
+  prompt_zh: ''
+- category: Tech industry
+  title: Second carcass-eating fly species cleared by FDA for maggot wound therapy
+  why: Maggot therapy lacks robust data, but it has fans and a fail-safe "bacon therapy."
+  takeaway: Maggot therapy lacks robust data, but it has fans and a fail-safe "bacon
+    therapy."
+  prompt: ''
+  url: https://arstechnica.com/health/2026/06/second-carcass-eating-fly-species-cleared-by-fda-for-maggot-wound-therapy/
+  source: Ars Technica
+  published_utc: '2026-06-17T22:11:20+00:00'
+  title_zh: 第二种食腐蝇获FDA批准用于蛆虫伤口疗法
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Storied Colors – a catalogue of named colors
+  why: 'Article URL: https://storiedcolors.com/ Comments URL: https://news.ycombinator.com/item?id=48577374
+    Points: 111 # Comments: 25'
+  takeaway: 'Article URL: https://storiedcolors.com/ Comments URL: https://news.ycombinator.com/item?id=48577374
+    Points: 111 # Comments: 25'
+  prompt: ''
+  url: https://storiedcolors.com/
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T21:49:03+00:00'
+  title_zh: 传奇色彩 —— 命名颜色大全
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tim Cook says RAM expenses are &#8216;unsustainable&#8217; and Apple is going
+    to raise prices
+  why: Apple is planning to raise prices in response to the ongoing memory shortage.
+  takeaway: Apple is planning to raise prices in response to the ongoing memory shortage.
+    In an interview with The Wall Street Journal, Apple CEO Tim Cook says "price increases
+    are unavoidable:" We're doing our best to mitigate the huge increases that are
+    being passed to us, and we've been trying to shield our customers from the […]
+  prompt: ''
+  url: https://www.theverge.com/tech/951948/apple-tim-cook-price-increases-ram
+  source: The Verge
+  published_utc: '2026-06-17T21:42:21+00:00'
+  title_zh: 蒂姆·库克称内存成本'不可持续'，苹果将提高产品售价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Chi-Hua Chien saw Facebook coming — now he says the real AI winners won’t
+    be selling AI
+  why: Chi-Hua Chien has spent more than two decades as a venture capitalist, but
+    he thinks like a cultural anthropologist.
+  takeaway: Chi-Hua Chien has spent more than two decades as a venture capitalist,
+    but he thinks like a cultural anthropologist.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/chi-hua-chien-saw-facebook-coming-now-he-says-the-real-ai-winners-wont-be-selling-ai/
+  source: TechCrunch
+  published_utc: '2026-06-17T21:30:50+00:00'
+  title_zh: 简立峰曾预见Facebook崛起——如今他认为真正的AI赢家不会销售AI技术
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Tesco moving 40k server workloads off VMware amid Broadcom's abusive conduct
+  why: 'Article URL: https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-c…'
+  takeaway: 'Article URL: https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/
+    Comments URL: https://news.ycombinator.com/item?id=48576838 Points: 196 # Comments:
+    112'
+  prompt: ''
+  url: https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T21:00:53+00:00'
+  title_zh: Tesco因博通滥用行为将4万服务器工作负载迁离VMware
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: A robot is sprinting towards you. Do you want it running on Claude or Grok?
+  why: 'Article URL: https://openrouter.ai/blog/insights/royale-last-agent-standing/
+    Comments URL: https://news.ycombinator.com/item?id=48576824 Po…'
+  takeaway: 'Article URL: https://openrouter.ai/blog/insights/royale-last-agent-standing/
+    Comments URL: https://news.ycombinator.com/item?id=48576824 Points: 190 # Comments:
+    161'
+  prompt: ''
+  url: https://openrouter.ai/blog/insights/royale-last-agent-standing/
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T21:00:07+00:00'
+  title_zh: 机器人正向你奔来，你想让它运行克劳德还是Grok系统？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sooner than expected? Useful quantum error correction promised for 2028.
+  why: Elsewhere, beyond-classical quantum hardware, plus classical computing fires
+    back.
+  takeaway: Elsewhere, beyond-classical quantum hardware, plus classical computing
+    fires back.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/06/amazon-quera-promise-useful-quantum-error-correction-by-2028/
+  source: Ars Technica
+  published_utc: '2026-06-17T20:44:32+00:00'
+  title_zh: 比预期更早？2028年有望实现实用量子纠错
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: VSCO launches Studio Pro mobile photo editing app and plans $500 per year
+    subscription
+  why: VSCO is taking on Adobe with a new Studio Pro editing app rolling out today
+    on iOS and coming to macOS later this year, as Bloomberg report…
+  takeaway: VSCO is taking on Adobe with a new Studio Pro editing app rolling out
+    today on iOS and coming to macOS later this year, as Bloomberg reports. At launch,
+    the app offers tools for batch editing, style matching from a reference image,
+    and sharing images through VSCO Galleries. VSCO says more features are coming
+    later, […]
+  prompt: ''
+  url: https://www.theverge.com/tech/951863/vsco-studio-pro-vsco-one-subscription
+  source: The Verge
+  published_utc: '2026-06-17T20:43:28+00:00'
+  title_zh: VSCO推出Studio Pro移动修图应用，计划推出500美元年费订阅
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Roelof Botha joins SpaceX’s board of directors
+  why: The former Sequoia Capital leader is filling an "existing vacancy" on SpaceX's
+    board, days after the company went public in the largest IPO…
+  takeaway: The former Sequoia Capital leader is filling an "existing vacancy" on
+    SpaceX's board, days after the company went public in the largest IPO ever.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/
+  source: TechCrunch
+  published_utc: '2026-06-17T20:32:52+00:00'
+  title_zh: 罗洛夫·博塔加入SpaceX董事会
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Loreline – Tools for writing interactive fiction
+  why: 'Article URL: https://loreline.app/en/ Comments URL: https://news.ycombinator.com/item?id=48576395
+    Points: 91 # Comments: 10'
+  takeaway: 'Article URL: https://loreline.app/en/ Comments URL: https://news.ycombinator.com/item?id=48576395
+    Points: 91 # Comments: 10'
+  prompt: ''
+  url: https://loreline.app/en/
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T20:29:15+00:00'
+  title_zh: Loreline —— 互动小说创作工具集
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive
+  why: Snap's long-awaited smart glasses debut hasn't exactly done wonders for the
+    company's stock.
+  takeaway: Snap's long-awaited smart glasses debut hasn't exactly done wonders for
+    the company's stock.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/
+  source: TechCrunch
+  published_utc: '2026-06-17T20:24:28+00:00'
+  title_zh: 发布天价AR眼镜后 Snap股价应声下跌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: NEA’s Tiffany Luck says enterprises are still figuring out their AI ROI
+  why: Tokenmaxxing was the hottest trend in Silicon Valley earlier this year, with
+    CEOs encouraging employees to push AI usage as far as it would…
+  takeaway: Tokenmaxxing was the hottest trend in Silicon Valley earlier this year,
+    with CEOs encouraging employees to push AI usage as far as it would go. Then the
+    bill came due. Uber reportedly blew through its annual AI budget in a few months,
+    some companies cut Claude licenses for parts of their org, and Meta killed its
+    internal leaderboard. This tension between […]
+  prompt: ''
+  url: https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/
+  source: TechCrunch
+  published_utc: '2026-06-17T20:17:38+00:00'
+  title_zh: NEA的陆天仪称企业仍在评估AI投资回报率
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: California says AT&T lied to FCC in attempt to shut off old phone network
+  why: FCC considers AT&T petitions to preempt state rules and discontinue phone service.
+  takeaway: FCC considers AT&T petitions to preempt state rules and discontinue phone
+    service.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/06/california-says-att-lied-to-fcc-in-attempt-to-shut-off-old-phone-network/
+  source: Ars Technica
+  published_utc: '2026-06-17T20:07:40+00:00'
+  title_zh: 加州指控AT&T向联邦通信委员会撒谎以试图关闭旧电话网络
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'BerriAI/litellm: v1.88.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.88.3
+  source: GitHub Releases - BerriAI/litellm
+  published_utc: '2026-06-17T20:06:39+00:00'
+  title_zh: BerriAI/litellm：v1.88.3版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: How Madrid built its metro cheaply
+  why: 'Article URL: https://worksinprogress.co/issue/how-madrid-built-its-metro-cheaply/
+    Comments URL: https://news.ycombinator.com/item?id=485759…'
+  takeaway: 'Article URL: https://worksinprogress.co/issue/how-madrid-built-its-metro-cheaply/
+    Comments URL: https://news.ycombinator.com/item?id=48575997 Points: 49 # Comments:
+    13'
+  prompt: ''
+  url: https://worksinprogress.co/issue/how-madrid-built-its-metro-cheaply/
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T19:59:27+00:00'
+  title_zh: 马德里如何低成本建成地铁系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Security
+  title: Massive breach spills credentials for thousands of sensitive networks
+  why: The affected include Oracle, Lenovo, FedEx, a NATO contractor, and Fortinet.
+  takeaway: The affected include Oracle, Lenovo, FedEx, a NATO contractor, and Fortinet.
+  prompt: ''
+  url: https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/
+  source: Ars Technica
+  published_utc: '2026-06-17T19:54:31+00:00'
+  title_zh: 大规模数据泄露事件曝光数千敏感网络凭证
+  why_zh: 受影响者包括甲骨文、联想、联邦快递、北约一家承包商以及飞塔信息(Fortinet)。
+  takeaway_zh: 受影响者包括甲骨文、联想、联邦快递、北约一家承包商以及飞塔信息(Fortinet)。
+  prompt_zh: ''
+- category: Tech industry
+  title: Made a free macOS menu bar app that fixes typing in the wrong keyboard layout
+  why: 'Article URL: https://flickey.site Comments URL: https://news.ycombinator.com/item?id=48575878
+    Points: 54 # Comments: 29'
+  takeaway: 'Article URL: https://flickey.site Comments URL: https://news.ycombinator.com/item?id=48575878
+    Points: 54 # Comments: 29'
+  prompt: ''
+  url: https://flickey.site
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T19:50:11+00:00'
+  title_zh: 开发了一款免费macOS菜单栏应用，解决键盘布局误输问题
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FTC lawsuit reveals how subscription scam networks evade app store enforcement
+  why: A new FTC lawsuit reveals how sophisticated subscription app operators can
+    allegedly use shell companies and payment infrastructure to stay…
+  takeaway: A new FTC lawsuit reveals how sophisticated subscription app operators
+    can allegedly use shell companies and payment infrastructure to stay active on
+    app stores despite mounting consumer complaints.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/ftc-lawsuit-reveals-how-subscription-scam-networks-evade-app-store-enforcement/
+  source: TechCrunch
+  published_utc: '2026-06-17T19:46:16+00:00'
+  title_zh: FTC诉讼揭露订阅诈骗网络如何规避应用商店监管
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: AI coding agents taught robots how to install GPUs and cut zip ties
+  why: Nvidia's self-improvement program for robots enlists teams of AI coding agents.
+  takeaway: Nvidia's self-improvement program for robots enlists teams of AI coding
+    agents.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training/
+  source: Ars Technica
+  published_utc: '2026-06-17T19:25:19+00:00'
+  title_zh: AI编程代理教会机器人安装GPU和剪断尼龙扎带
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Glue Interactive Sessions now support Spark Connect for interactive workloads
+  why: AWS Glue Interactive Sessions now support Apache Spark Connect, using which
+    you can now develop and run Apache Spark applications from your…
+  takeaway: AWS Glue Interactive Sessions now support Apache Spark Connect, using
+    which you can now develop and run Apache Spark applications from your preferred
+    environment, including managed notebooks in Amazon SageMaker Unified Studio, or
+    your preferred notebook environments and IDEs like Jupyter, Visual Studio Code,
+    while running them on AWS Glue's serverless infra…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/06/aws-glue-interactive-sessions-spark-connect-smus-notebooks
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-06-17T19:15:00+00:00'
+  title_zh: AWS Glue交互式会话现支持Spark Connect处理交互负载
+  why_zh: AWS Glue交互式会话现支持Apache Spark Connect，您现在可以通过该功能直接开发运行Apache Spark应用程序……
+  takeaway_zh: AWS Glue交互式会话现已支持Apache Spark Connect功能。借助此项功能，您可以从首选环境（包括Amazon SageMaker统一工作室中的托管笔记本，或Jupyter、Visual
+    Studio Code等常用笔记本环境与IDE）开发并运行Apache Spark应用程序，同时依托AWS Glue的无服务器基础设施执行计算任务。
+  prompt_zh: ''
+- category: Tech industry
+  title: Epic wants to let you bring your Fortnite skins to other games
+  why: Epic Games has been touting the potential of an interoperable metaverse for
+    years, though that vision hasn't yet become a reality.
+  takeaway: 'Epic Games has been touting the potential of an interoperable metaverse
+    for years, though that vision hasn''t yet become a reality. But with Unreal Engine
+    6, the next major version of its game development engine, Epic plans to take a
+    big step toward that theoretical future: it will let developers make games that
+    can use […]'
+  prompt: ''
+  url: https://www.theverge.com/games/951785/epic-games-fortnite-unreal-fest-2026-unreal-engine-6-ai-metaverse
+  source: The Verge
+  published_utc: '2026-06-17T19:09:00+00:00'
+  title_zh: Epic拟实现《堡垒之夜》皮肤跨游戏通用
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: World leaders want American AI. They just don’t want America to be able to
+    turn it off.
+  why: French President Macron and Indian PM Modi raised alarms at the G7 summit that
+    the U.S.
+  takeaway: French President Macron and Indian PM Modi raised alarms at the G7 summit
+    that the U.S. could cut off access to American AI overnight — a fear the Anthropic
+    blackout just made real.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/
+  source: TechCrunch
+  published_utc: '2026-06-17T19:01:19+00:00'
+  title_zh: 多国领导人渴望获取美国AI技术 但不愿接受美国的管辖开关
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Microsoft researcher builds a working neural network out of goats in Age
+    of Empires II to critique AI science
+  why: A Microsoft researcher built a working neural network out of goats, bridges,
+    and ice ramps in the Age of Empires II map editor.
+  takeaway: A Microsoft researcher built a working neural network out of goats, bridges,
+    and ice ramps in the Age of Empires II map editor. What looks like a joke is a
+    pointed critique of AI research methods. His analysis of 315 papers found that
+    more than half already assume language models have human-like traits before the
+    experiment even starts. Replace the chat int…
+  prompt: ''
+  url: https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science/
+  source: The Decoder (AI)
+  published_utc: '2026-06-17T18:43:47+00:00'
+  title_zh: 微软研究员在《帝国时代II》中用山羊构建神经网络批判AI科学
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic becomes first AI startup to join the Frontier carbon removal coalition
+  why: Anthropic has joined the Frontier coalition, which received another $915M in
+    pledges to fund carbon removal projects.
+  takeaway: Anthropic has joined the Frontier coalition, which received another $915M
+    in pledges to fund carbon removal projects.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition/
+  source: TechCrunch
+  published_utc: '2026-06-17T18:30:56+00:00'
+  title_zh: Anthropic成为首个加入Frontier碳清除联盟的AI初创公司
+  why_zh: Anthropic已加入Frontier联盟，该联盟新获得9.15亿美元承诺资金用于碳清除项目。
+  takeaway_zh: Anthropic已加入Frontier联盟，该联盟新获得9.15亿美元承诺资金用于碳清除项目。
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic got hit by export rules nobody understands
+  why: Anthropic has spent much of this week fighting to get its newest AI models
+    back online after the Trump administration abruptly ordered the…
+  takeaway: Anthropic has spent much of this week fighting to get its newest AI models
+    back online after the Trump administration abruptly ordered the company to cut
+    access for all foreign nationals, including users inside the US and its own employees,
+    forcing Anthropic to block access to Fable 5 and Mythos 5 for everyone. "To my
+    […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls
+  source: The Verge
+  published_utc: '2026-06-17T18:28:50+00:00'
+  title_zh: Anthropic遭遇无人理解的出口管制规则打击
+  why_zh: Anthropic本周大部分时间都在努力让其最新AI模型重新上线，此前特朗普政府突然下令要求该公司……
+  takeaway_zh: Anthropic本周大部分时间都在努力恢复其最新AI模型的在线访问，此前特朗普政府突然下令要求该公司切断所有外国用户的访问权限——包括美国境内用户及其自家员工，迫使Anthropic全面封锁对Fable
+    5和Mythos 5的访问。"据我[…]
+  prompt_zh: ''
+- category: AI frontier
+  title: Operating a Humanoid With Your Body Is a Hot Job in China’s Hardware Capital
+  why: In Shenzhen, workers at IO-AI Tech control humanoid robots using a VR rig reminiscent
+    of Ready Player One.
+  takeaway: In Shenzhen, workers at IO-AI Tech control humanoid robots using a VR
+    rig reminiscent of Ready Player One.
+  prompt: ''
+  url: https://www.wired.com/story/humanoid-robot-training-in-chinas-hardware-capital/
+  source: WIRED - AI
+  published_utc: '2026-06-17T18:25:35+00:00'
+  title_zh: 在中国硬件之都，用人体制控人形机器人成热门职业
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Slate Truck's price may have leaked, starts at $24,950
+  why: The official launch takes place next week.
+  takeaway: The official launch takes place next week.
+  prompt: ''
+  url: https://arstechnica.com/cars/2026/06/the-slate-trucks-price-may-have-leaked-starts-at-24950/
+  source: Ars Technica
+  published_utc: '2026-06-17T18:23:21+00:00'
+  title_zh: Slate卡车售价疑似泄露 起价24,950美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Amazon, Nvidia, and AMD bet $310 million on AI startup building 3D world
+    models
+  why: Amazon, Nvidia, and AMD are putting $310 million into world model startup Odyssey
+    ML, now valued at $1.45 billion.
+  takeaway: Amazon, Nvidia, and AMD are putting $310 million into world model startup
+    Odyssey ML, now valued at $1.45 billion. CIA-linked fund IQT and Google chief
+    scientist Jeff Dean are also backing the round. World models are shaping up to
+    be the next big AI bet after pure language models. The article Amazon, Nvidia,
+    and AMD bet $310 million on AI startup building 3…
+  prompt: ''
+  url: https://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models/
+  source: The Decoder (AI)
+  published_utc: '2026-06-17T18:21:23+00:00'
+  title_zh: 亚马逊、英伟达和AMD向构建3D世界模型的AI初创公司投资3.1亿美元
+  why_zh: 亚马逊、英伟达和AMD正向世界模型初创公司Odyssey ML注资3.1亿美元，该公司目前估值达14.5亿美元。
+  takeaway_zh: 亚马逊、英伟达和AMD正向世界模型初创公司Odyssey ML注资3.1亿美元，该公司估值达14.5亿美元。中情局关联基金IQT与谷歌首席科学家Jeff
+    Dean也参与本轮投资。世界模型正成为继纯语言模型之后AI领域的下一个重大赌注。亚马逊、英伟达和AMD豪赌3.1亿美元押注构建三维世界的AI初创公司...
+  prompt_zh: ''
+- category: Tech industry
+  title: Cybercriminals allegedly hacked tens of thousands of Fortinet firewalls used
+    by major companies all over the world
+  why: An alleged Russian-speaking group of cybercriminals is reportedly compromising
+    and targeting several major companies that use Fortinet Fire…
+  takeaway: An alleged Russian-speaking group of cybercriminals is reportedly compromising
+    and targeting several major companies that use Fortinet Firewalls and VPNs through
+    previously known passwords.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/cybercriminals-allegedly-hacked-tens-of-thousands-of-fortinet-firewalls-used-by-major-companies-all-over-the-world/
+  source: TechCrunch
+  published_utc: '2026-06-17T18:20:06+00:00'
+  title_zh: 网络犯罪分子据称入侵了全球各大企业使用的数万台Fortinet防火墙
+  why_zh: 据报道，一个据称讲俄语的网络犯罪团体正在利用先前已知的密码，入侵并针对多家使用飞塔防火墙的大型企业……
+  takeaway_zh: 据报道，一个据称讲俄语的网络犯罪团体正在利用已知密码入侵多家使用飞塔防火墙和VPN的大型企业。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Social media’s next evolution: user-controlled algorithms'
+  why: Social media feeds are becoming more customizable as platforms like Threads,
+    Instagram, and TikTok introduce tools that let users directly…
+  takeaway: Social media feeds are becoming more customizable as platforms like Threads,
+    Instagram, and TikTok introduce tools that let users directly influence the algorithms
+    powering their recommendations.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/
+  source: TechCrunch
+  published_utc: '2026-06-17T18:19:48+00:00'
+  title_zh: 社交媒体下一阶段进化：用户可控算法
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: IEEE’s 2026 Education Week Events Emphasized Lifelong Learning
+  why: The rapid evolution of the global engineering landscape requires continuous
+    education.
+  takeaway: The rapid evolution of the global engineering landscape requires continuous
+    education. For one week in April, the IEEE community focuses on its educational
+    frameworks. IEEE Education Week , which just concluded its fifth year, provided
+    a comprehensive overview of the resources available to professionals and students.
+    From 11 to 19 April, the organization su…
+  prompt: ''
+  url: https://spectrum.ieee.org/ieee-education-week
+  source: IEEE Spectrum
+  published_utc: '2026-06-17T18:00:02+00:00'
+  title_zh: IEEE 2026教育周活动强调终身学习理念
+  why_zh: 全球工程领域的快速发展要求持续进行教育更新。
+  takeaway_zh: 全球工程领域的快速发展要求持续进行知识更新。今年四月，IEEE社区开展了为期一周的专题教育活动。刚结束第五届的IEEE教育周活动全面展示了面向专业人士和学生的资源体系。在4月11日至19日期间，该组织举...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 🔬 The Self-Driving Lab — Joseph Krause, Radical AI
+  why: Radical AI's Joseph Krause on why the moat in materials is the lab, not the
+    model
+  takeaway: Radical AI's Joseph Krause on why the moat in materials is the lab, not
+    the model
+  prompt: ''
+  url: https://www.latent.space/p/radical-ai
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-06-17T17:58:06+00:00'
+  title_zh: 🔬 自动驾驶实验室 —— Joseph Krause，激进AI
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '"Dangerous" AI models are coming no matter what'
+  why: AI models with advanced hacking capabilities will soon be the norm.
+  takeaway: AI models with advanced hacking capabilities will soon be the norm.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/
+  source: Ars Technica
+  published_utc: '2026-06-17T17:50:46+00:00'
+  title_zh: '''危险''AI模型无论如何都将问世'
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: World model maker Odyssey nabs $1.45B valuation backed by Amazon and other
+    big names
+  why: World models are the next big thing in AI beyond LLMs and, with this round,
+    Odyssey has cemented itself as one of the startups to watch.
+  takeaway: World models are the next big thing in AI beyond LLMs and, with this round,
+    Odyssey has cemented itself as one of the startups to watch.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/
+  source: TechCrunch
+  published_utc: '2026-06-17T17:43:07+00:00'
+  title_zh: 世界模型制造商Odyssey获亚马逊等巨头投资，估值达14.5亿美元
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Mastodon looks to newsletters to help revive the open social web
+  why: Mastodon’s newly launched newsletter feature lets anyone subscribe to creators
+    by email, even without a Mastodon account.
+  takeaway: Mastodon’s newly launched newsletter feature lets anyone subscribe to
+    creators by email, even without a Mastodon account.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/mastodon-looks-to-newsletters-to-help-revive-the-open-social-web/
+  source: TechCrunch
+  published_utc: '2026-06-17T17:38:01+00:00'
+  title_zh: Mastodon拟通过新闻通讯服务重振开放社交网络
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Zhipu AI's GLM-5.2 closes in on closed-source leaders in coding marathons
+  why: Chinese AI lab Zhipu AI releases GLM-5.2 with a stable 1-million-token context
+    under the MIT license.
+  takeaway: Chinese AI lab Zhipu AI releases GLM-5.2 with a stable 1-million-token
+    context under the MIT license. On FrontierSWE, a benchmark for hours-long coding
+    tasks, the open-source model trails Anthropic's Claude Opus 4.8 by just one percentage
+    point. On reasoning, it still falls well behind closed-source rivals. The article
+    Zhipu AI's GLM-5.2 closes in on closed…
+  prompt: ''
+  url: https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons/
+  source: The Decoder (AI)
+  published_utc: '2026-06-17T17:30:00+00:00'
+  title_zh: 智谱AI的GLM-5.2在编程马拉松中逼近闭源领头羊
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Two-thirds of Americans think AI is advancing too quickly
+  why: According to the latest Pew Research poll, 49 percent of Americans report using
+    chatbots at least occasionally, but 63 percent think the te…
+  takeaway: According to the latest Pew Research poll, 49 percent of Americans report
+    using chatbots at least occasionally, but 63 percent think the tech is advancing
+    too quickly. Overall, use of AI chatbots has increased dramatically since 2024,
+    when only 33 percent reported using them. Specifically, ChatGPT's usage has doubled
+    since 2023, with 44 percent of […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly
+  source: The Verge
+  published_utc: '2026-06-17T17:20:24+00:00'
+  title_zh: 三分之二美国人认为AI发展速度过快
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.43.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.43.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-06-17T17:05:59+00:00'
+  title_zh: openai/openai-python：v2.43.0版本
+  why_zh: 版本更新（详情参见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.44.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.44.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-06-17T17:05:53+00:00'
+  title_zh: openai/openai-node：v6.44.0版本
+  why_zh: 版本更新（详情参见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trellis AI (YC W24) hiring a product lead to build agents for healthcare
+    access
+  why: 'Article URL: https://www.ycombinator.com/companies/trellis-ai/jobs/Cg94htp-product-lead
+    Comments URL: https://news.ycombinator.com/item?id=…'
+  takeaway: 'Article URL: https://www.ycombinator.com/companies/trellis-ai/jobs/Cg94htp-product-lead
+    Comments URL: https://news.ycombinator.com/item?id=48573221 Points: 0 # Comments:
+    0'
+  prompt: ''
+  url: https://www.ycombinator.com/companies/trellis-ai/jobs/Cg94htp-product-lead
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T17:00:02+00:00'
+  title_zh: Trellis AI（YC W24）招募产品负责人开发医疗接入智能体
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Only 16 percent of Americans think AI will have a positive impact on society,
+    a new study shows
+  why: Although Wall Street loves AI, every day Americans are significantly less optimistic
+    about the industry, a new report from Pew Research sho…
+  takeaway: Although Wall Street loves AI, every day Americans are significantly less
+    optimistic about the industry, a new report from Pew Research shows.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/only-16-percent-of-americans-think-ai-will-have-a-positive-impact-on-society-a-new-study-shows/
+  source: TechCrunch
+  published_utc: '2026-06-17T17:00:01+00:00'
+  title_zh: 新研究显示仅16%美国人认为AI将对社会产生积极影响
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: The White House Wants Anthropic to Block All Jailbreaks. That May Not Be
+    Possible
+  why: Trump administration officials tell WIRED that if Anthropic wants to rerelease
+    Fable 5, it will need to ensure the model's guardrails can't…
+  takeaway: Trump administration officials tell WIRED that if Anthropic wants to rerelease
+    Fable 5, it will need to ensure the model's guardrails can't be circumvented.
+    Security experts say that can't be done.
+  prompt: ''
+  url: https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/
+  source: WIRED - AI
+  published_utc: '2026-06-17T17:00:00+00:00'
+  title_zh: 白宫要求Anthropic封锁所有越狱手段，这或许无法实现
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Two Stanford grads raise $11M to build a noninvasive wearable for hormone
+    tracking
+  why: Clair Health will track inflammation and bloating markers, energy levels, and
+    cycle phase classification to give insights into cycle irregu…
+  takeaway: Clair Health will track inflammation and bloating markers, energy levels,
+    and cycle phase classification to give insights into cycle irregularities and
+    perimenopause, as well as hormonal fluctuations, and how to navigate those changes.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/two-stanford-grads-raise-11m-to-build-a-noninvasive-wearable-for-hormone-tracking/
+  source: TechCrunch
+  published_utc: '2026-06-17T16:54:48+00:00'
+  title_zh: 两名斯坦福校友筹资1100万美元开发无创可穿戴激素追踪设备
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Echo Dot Max is cheaper than ever in an early Prime Day sale
+  why: We’re seeing good early Prime Day deals ahead of the event next week, and unsurprisingly,
+    some of the best deals are on Amazon’s own device…
+  takeaway: We’re seeing good early Prime Day deals ahead of the event next week,
+    and unsurprisingly, some of the best deals are on Amazon’s own devices. Several
+    Echo speakers have dropped to new low prices, including the Echo Dot Max, which
+    is on sale for $64.99 ($35 off) at Amazon. Our smart home reviewer Jennifer Pattison
+    […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/951602/amazon-echo-dot-max-early-prime-day-deal-sale
+  source: The Verge
+  published_utc: '2026-06-17T16:47:43+00:00'
+  title_zh: Echo Dot Max在Prime会员日预热活动中创价格新低
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: An 8-bit live gamecast for baseball'
+  why: Hey HN, I built a website to watch live baseball games in an 8-bit broadcast.
+  takeaway: 'Hey HN, I built a website to watch live baseball games in an 8-bit broadcast.
+    It takes live MLB data streams and converts them into near real-time pixel art
+    gamecasts. Been waiting to share this for when there’s actually a good slate of
+    games happening since the site is pretty bare otherwise. Here is today''s schedule:
+    Mets @ Reds - 9:40am PDT https://ribbie…'
+  prompt: ''
+  url: https://ribbie.tv/watch
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T16:44:15+00:00'
+  title_zh: Show HN：一款8位实时棒球解说游戏
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google bets on Gemini to reinvent the smart home speaker
+  why: Google is betting generative AI can breathe new life into the smart speaker.
+  takeaway: Google is betting generative AI can breathe new life into the smart speaker.
+    The company's new $99.99 Google Home Speaker replaces the rigid commands of the
+    Google Assistant era with more conversational Gemini interactions.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker/
+  source: TechCrunch
+  published_utc: '2026-06-17T16:30:09+00:00'
+  title_zh: 谷歌押注Gemini重塑智能家居音箱
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Vibe-decoding the White House-Anthropic fight over Fable
+  why: Hello and welcome to Regulator, an email for Verge subscribers about technology,
+    politics, and what happens when science crashes headlong i…
+  takeaway: Hello and welcome to Regulator, an email for Verge subscribers about technology,
+    politics, and what happens when science crashes headlong into self-interest. Not
+    a subscriber? Sign up here today! Got the scoop on a petty feud that's going to
+    somehow fundamentally reshape the entire field of frontier AI development? Send
+    'em over to tina.nguyen+tips@theverge…
+  prompt: ''
+  url: https://www.theverge.com/column/951516/trump-anthropic-feud-mythos-fable-white-house
+  source: The Verge
+  published_utc: '2026-06-17T16:27:00+00:00'
+  title_zh: 解读白宫与Anthropic围绕Fable的博弈暗流
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'ollama/ollama: v0.30.10'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/ollama/ollama/releases/tag/v0.30.10
+  source: GitHub Releases - ollama/ollama
+  published_utc: '2026-06-17T16:22:02+00:00'
+  title_zh: ollama/ollama：v0.30.10版本
+  why_zh: 版本更新（详情参见变更日志链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Launch HN: Adam (YC W25) – Open-Source AI CAD'
+  why: Hey HN!
+  takeaway: 'Hey HN! I''m Zach from Adam ( https://adam.new/ ). We''re building AI
+    agents for mechanical CAD software. We’ve built the company on two fundamental
+    beliefs: - AI will be the primary medium for creating mechanical designs just
+    like it is in software today. - The best paradigm for CAD generation is to generate
+    CAD as code (text -> code -> CAD). We’re building…'
+  prompt: ''
+  url: https://github.com/Adam-CAD/CADAM
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T16:14:04+00:00'
+  title_zh: Launch HN：Adam（YC W25）——开源AI CAD工具
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

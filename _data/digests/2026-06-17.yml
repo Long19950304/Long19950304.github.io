@@ -1,0 +1,912 @@
+date: '2026-06-17'
+title: Daily Digest - 2026-06-17
+title_zh: 每日简报 - 2026-06-17
+note: 'Today: Leaked financial docs show OpenAI is losing billions of dollars… · Anthropic’s
+  latest feud with the Trump admin may actually help… · AI: openai/openai-python:
+  v2.42.0.'
+note_zh: 今日关注：泄露的财务文件显示OpenAI每年亏损数十亿美元；销售数据表明，Anthropic与特朗普政府的最新争执可能反而对其有利；AI：openai/openai-python：v2.42.0版本发布。
+items:
+- category: Tech industry
+  title: Stop Killing Games fails to secure EU law despite 1.3M signatures
+  why: 'Article URL: https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/
+    Comments URL: https:…'
+  takeaway: 'Article URL: https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/
+    Comments URL: https://news.ycombinator.com/item?id=48564696 Points: 45 # Comments:
+    8'
+  prompt: ''
+  url: https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/
+  source: Hacker News (front page)
+  published_utc: '2026-06-17T01:40:22+00:00'
+  title_zh: Stop Killing Games运动虽获130万签名仍未促成欧盟立法
+  why_zh: 文章链接：https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/
+    评论链接：https:…
+  takeaway_zh: 文章链接：https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/
+    评论链接：https://news.ycombinator.com/item?id=48564696 分数：45 评论数：8
+  prompt_zh: ''
+- category: Tech industry
+  title: Wolfram Language and Mathematica Version 15, AI Assistant, Symbolic Music,
+    More
+  why: 'Article URL: https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-ne…'
+  takeaway: 'Article URL: https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/
+    Comments URL: https://news.ycombinator.com/item?id=48563609 Points: 107 # Comments:
+    29'
+  prompt: ''
+  url: https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T23:15:44+00:00'
+  title_zh: Wolfram语言和Mathematica第15版：AI助手、符号音乐等新功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: NLnet announces funding for 67 more open-source projects
+  why: 'Article URL: https://nlnet.nl/news/2026/20260616-67-new-projects.html Comments
+    URL: https://news.ycombinator.com/item?id=48563569 Points: 8…'
+  takeaway: 'Article URL: https://nlnet.nl/news/2026/20260616-67-new-projects.html
+    Comments URL: https://news.ycombinator.com/item?id=48563569 Points: 88 # Comments:
+    13'
+  prompt: ''
+  url: https://nlnet.nl/news/2026/20260616-67-new-projects.html
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T23:12:09+00:00'
+  title_zh: NLnet宣布为67个开源项目提供新资助
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Humiliating IIS servers for fun and jail time
+  why: 'Article URL: https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/
+    Comments URL: https://news.ycombinator.com/item?id=48563394 Poin…'
+  takeaway: 'Article URL: https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/
+    Comments URL: https://news.ycombinator.com/item?id=48563394 Points: 130 # Comments:
+    24'
+  prompt: ''
+  url: https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T22:53:34+00:00'
+  title_zh: 戏弄IIS服务器的乐趣与牢狱之灾
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon Bedrock Guardrails announces a new API targeting agentic AI workflows
+  why: Amazon Bedrock Guardrails now offers the InvokeGuardrailChecks API, a new resourceless
+    API that lets you apply individual safeguards at any…
+  takeaway: Amazon Bedrock Guardrails now offers the InvokeGuardrailChecks API, a
+    new resourceless API that lets you apply individual safeguards at any point in
+    your agentic AI applications without creating guardrail resources. The API provides
+    granular, per-request control over which safeguards to run at each step of your
+    agent loop, returning numeric severity and con…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-guardrails-api-ai/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-06-16T22:53:00+00:00'
+  title_zh: Amazon Bedrock Guardrails发布面向智能体工作流的新API
+  why_zh: Amazon Bedrock Guardrails现推出InvokeGuardrailChecks API，这种无资源API可随时启用独立安全措施...
+  takeaway_zh: Amazon Bedrock Guardrails现已推出InvokeGuardrailChecks API——这种无资源型新接口可让您在代理型AI应用中随时随地实施单独防护策略，无需创建防护资源。该API提供细粒度的请求级控制，可决定在代理循环的每个步骤运行哪些防护措施，并返回数值化的严重性等级与合...
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic’s latest feud with the Trump admin may actually help it, sales
+    data suggests
+  why: Anthropic's popularity with business users is growing so well that the latest
+    beef with the government might actually boost it, data from R…
+  takeaway: Anthropic's popularity with business users is growing so well that the
+    latest beef with the government might actually boost it, data from Ramp suggests.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/
+  source: TechCrunch
+  published_utc: '2026-06-16T22:34:17+00:00'
+  title_zh: 销售数据表明，Anthropic与特朗普政府的最新争执可能反而对其有利
+  why_zh: Anthropic在企业用户中的受欢迎程度正迅速攀升，Ramp数据显示最近的政府争议可能反而会助推其增长。
+  takeaway_zh: Anthropic在企业用户中的受欢迎程度正迅速攀升，Ramp数据显示最近的政府争议可能反而会助推其增长。
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Building AI Agents for AR Glasses and XR Devices with NVIDIA XR AI
+  why: Developers building for AR glasses and wearable devices face an infrastructure
+    gap.
+  takeaway: Developers building for AR glasses and wearable devices face an infrastructure
+    gap. The hardware is ready, but creating AI experiences requires integrating live...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/building-ai-agents-for-ar-glasses-and-xr-devices-with-nvidia-xr-ai/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-06-16T22:30:00+00:00'
+  title_zh: 基于NVIDIA XR AI构建AR眼镜与XR设备智能体
+  why_zh: 为AR眼镜和可穿戴设备开发的程序员正面临基础设施缺口。
+  takeaway_zh: 为AR眼镜和可穿戴设备开发应用的开发者面临基础设施缺口。硬件已准备就绪，但打造AI体验需要整合实时...
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump admin tries to block Clean Air Act lawsuit over xAI's gas turbines
+  why: NAACP lawsuit says xAI uses gas turbines without permits for Grok data center.
+  takeaway: NAACP lawsuit says xAI uses gas turbines without permits for Grok data
+    center.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/06/trump-admin-helps-xai-fight-pollution-lawsuit-says-military-needs-grok-for-war/
+  source: Ars Technica
+  published_utc: '2026-06-16T22:22:44+00:00'
+  title_zh: 特朗普政府试图阻挠针对xAI燃气轮机的《清洁空气法》诉讼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Year of free HPE software a “step in the correct direction” in VMware rivalry
+  why: Partner tells Ars that HPE should be giving out more free VM Essentials licenses.
+  takeaway: Partner tells Ars that HPE should be giving out more free VM Essentials
+    licenses.
+  prompt: ''
+  url: https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/
+  source: Ars Technica
+  published_utc: '2026-06-16T22:11:15+00:00'
+  title_zh: HPE免费软件年被视为对抗VMware竞争的“正确方向一步”
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple plans to change its Hide My Email privacy feature that could make it
+    less effective
+  why: In the coming weeks, Apple will move anonymously generated emails addresses
+    to a different domain.
+  takeaway: In the coming weeks, Apple will move anonymously generated emails addresses
+    to a different domain.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/apple-plans-to-change-its-hide-my-email-privacy-feature-that-could-make-it-less-effective/
+  source: TechCrunch
+  published_utc: '2026-06-16T22:09:32+00:00'
+  title_zh: 苹果计划修改隐藏邮箱隐私功能，可能导致其效果减弱
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: AWS Transform now supports model-to-model migration assessment for generative
+    AI workloads
+  why: AWS Transform now offers a model-to-model migration custom transformation that
+    assesses your generative AI workloads and produces a compreh…
+  takeaway: AWS Transform now offers a model-to-model migration custom transformation
+    that assesses your generative AI workloads and produces a comprehensive migration
+    plan for moving from third-party providers to Amazon Bedrock. The AI-powered agent
+    scans your codebase, identifies every AI SDK and model in use, gathers your migration
+    requirements through interactive q…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/06/aws-transform-model-to-model-assessments
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-06-16T21:55:00+00:00'
+  title_zh: AWS Transform现支持生成式AI负载的模型迁移评估
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Cockroaches scurry around with thousands of pieces of bacterial genomes
+  why: Transferring genes across species doesn't just happen in microbes.
+  takeaway: Transferring genes across species doesn't just happen in microbes.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/06/cockroaches-scurry-around-with-thousands-of-pieces-of-bacterial-genomes/
+  source: Ars Technica
+  published_utc: '2026-06-16T21:54:41+00:00'
+  title_zh: 蟑螂携带数千种细菌基因组四处爬行
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-python: v2.42.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-python/releases/tag/v2.42.0
+  source: GitHub Releases - openai/openai-python
+  published_utc: '2026-06-16T21:51:39+00:00'
+  title_zh: openai/openai-python：v2.42.0版本发布
+  why_zh: 版本更新（变更日志详见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'openai/openai-node: v6.43.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/openai/openai-node/releases/tag/v6.43.0
+  source: GitHub Releases - openai/openai-node
+  published_utc: '2026-06-16T21:51:00+00:00'
+  title_zh: openai/openai-node：v6.43.0版本发布
+  why_zh: 版本更新（变更日志详见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Unlocking UK house-building with AI-accelerated planning
+  why: UK government partners with Google DeepMind to build a new AI-powered prototype
+    aimed at faster housing decisions.
+  takeaway: UK government partners with Google DeepMind to build a new AI-powered
+    prototype aimed at faster housing decisions.
+  prompt: ''
+  url: https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/
+  source: Google DeepMind Blog
+  published_utc: '2026-06-16T21:29:50+00:00'
+  title_zh: AI加速规划审批：解锁英国住宅建设瓶颈
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Among the large new rockets Amazon was counting on, only Europe has delivered
+  why: '"As for Arianespace, they have definitely stepped up."'
+  takeaway: '"As for Arianespace, they have definitely stepped up."'
+  prompt: ''
+  url: https://arstechnica.com/space/2026/06/amid-launch-bottleneck-amazon-has-hundreds-of-satellites-waiting-to-fly/
+  source: Ars Technica
+  published_utc: '2026-06-16T21:14:08+00:00'
+  title_zh: 在亚马逊寄予厚望的大型新型火箭中，仅欧洲实现交付
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Anthropic "pauses" token-based billing for its Claude Agent SDK
+  why: Move originally planned for Monday would have heavily increased power users'
+    costs.
+  takeaway: Move originally planned for Monday would have heavily increased power
+    users' costs.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/
+  source: Ars Technica
+  published_utc: '2026-06-16T21:00:35+00:00'
+  title_zh: Anthropic为其Claude Agent SDK“暂停”基于代币的计费
+  why_zh: 原定周一动用的方案将大幅增加高级用户的使用成本。
+  takeaway_zh: 原定周一动用的方案将大幅增加高级用户的使用成本。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Exclusive eBook: How AI is becoming the next military advisor'
+  why: A collection of stories about how militaries are using AI models to make decisions.
+  takeaway: A collection of stories about how militaries are using AI models to make
+    decisions. This subscriber-only eBook is a package of six stories that were originally
+    published in MIT Technology Review between April 11, 2025, and April 21, 2026,
+    and have been updated to reflect recent developments. by James O’Donnell Choose
+    which file format to…
+  prompt: ''
+  url: https://www.technologyreview.com/2026/06/16/1138905/exclusive-ebook-how-ai-is-becoming-the-next-military-advisor/
+  source: MIT Technology Review
+  published_utc: '2026-06-16T20:35:02+00:00'
+  title_zh: 独家电子书：AI如何成为下一代军事顾问
+  why_zh: 一系列关于军队如何利用AI模型辅助决策的报道集。
+  takeaway_zh: 本订阅者专属电子书收录六篇报道，讲述军队如何利用AI模型辅助决策。这些报道最初发表于2025年4月11日至2026年4月21日间的《MIT科技评论》，现已根据最新动态更新。作者James
+    O’Donnell提供多格式下载选项...
+  prompt_zh: ''
+- category: Tech industry
+  title: GrapheneOS has been ported to Android 17
+  why: 'Article URL: https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon
+    Comments…'
+  takeaway: 'Article URL: https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon
+    Comments URL: https://news.ycombinator.com/item?id=48561654 Points: 486 # Comments:
+    199'
+  prompt: ''
+  url: https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T20:34:35+00:00'
+  title_zh: GrapheneOS已移植至Android 17
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build Your Own Transaction Foundation Model for Financial Intelligence
+  why: Every swipe, transfer, and payment on a modern financial network encodes a
+    pattern of human behavior.
+  takeaway: Every swipe, transfer, and payment on a modern financial network encodes
+    a pattern of human behavior. Transaction data is one of the richest signals an...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/build-your-own-transaction-foundation-model-for-financial-intelligence/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-06-16T20:30:08+00:00'
+  title_zh: 构建金融情报领域的自主交易基础模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Show HN: cuTile Rust: Safe, data-race-free GPU kernels in Rust'
+  why: 'Article URL: https://github.com/nvlabs/cutile-rs Comments URL: https://news.ycombinator.com/item?id=48561410
+    Points: 45 # Comments: 12'
+  takeaway: 'Article URL: https://github.com/nvlabs/cutile-rs Comments URL: https://news.ycombinator.com/item?id=48561410
+    Points: 45 # Comments: 12'
+  prompt: ''
+  url: https://github.com/nvlabs/cutile-rs
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T20:17:42+00:00'
+  title_zh: 展示HN：cuTile Rust：用Rust编写安全无数据竞争的GPU内核
+  why_zh: 文章链接：https://github.com/nvlabs/cutile-rs 评论链接：https://news.ycombinator.com/item?id=48561410
+    分数：45 评论数：12
+  takeaway_zh: 文章链接：https://github.com/nvlabs/cutile-rs 评论链接：https://news.ycombinator.com/item?id=48561410
+    分数：45 评论数：12
+  prompt_zh: ''
+- category: Tech industry
+  title: Frood, an Alpine Initramfs NAS (2024)
+  why: 'Article URL: https://words.filippo.io/frood/ Comments URL: https://news.ycombinator.com/item?id=48561402
+    Points: 36 # Comments: 11'
+  takeaway: 'Article URL: https://words.filippo.io/frood/ Comments URL: https://news.ycombinator.com/item?id=48561402
+    Points: 36 # Comments: 11'
+  prompt: ''
+  url: https://words.filippo.io/frood/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T20:17:04+00:00'
+  title_zh: Frood：基于Alpine Initramfs的NAS解决方案（2024版）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX valuation balloons to $2.6T, briefly passes Amazon
+  why: SpaceX's valuation has increased by $1 trillion since its shares started trading
+    on Friday.
+  takeaway: SpaceX's valuation has increased by $1 trillion since its shares started
+    trading on Friday.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/
+  source: TechCrunch
+  published_utc: '2026-06-16T20:11:00+00:00'
+  title_zh: SpaceX估值飙升至2.6万亿美元，短暂超越亚马逊
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Complete Calvin and Hobbes is a great last-minute Father’s Day gift
+  why: Father’s Day is nearly here.
+  takeaway: Father’s Day is nearly here. Hopefully, you already got a gift for dads
+    you care about, but if not, here’s a quick, easy recommendation for anyone who
+    enjoys a good comic strip. The Complete Calvin and Hobbes contains every one of
+    Bill Watterson’s beloved strips made during the comic’s ten-year run from 1985
+    through 1995, […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/950958/calvin-and-hobbes-fathers-day-gift-idea-deal-sale
+  source: The Verge
+  published_utc: '2026-06-16T20:00:00+00:00'
+  title_zh: 《卡尔文与霍布斯大全》是最后一刻父亲节礼物的绝佳选择
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Microsoft's Copilot Cowork moves to usage-based billing and may tap DeepSeek
+  why: Microsoft is weighing a fine-tuned version of Deepseek V4 as a cheaper model
+    option for Copilot Cowork.
+  takeaway: Microsoft is weighing a fine-tuned version of Deepseek V4 as a cheaper
+    model option for Copilot Cowork. The company is also switching to usage-based
+    billing, since Copilot head Charles Lamanna says flat-rate pricing isn't sustainable.
+    The move fits a broader pattern in the industry. The article Microsoft's Copilot
+    Cowork moves to usage-based billing and may…
+  prompt: ''
+  url: https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/
+  source: The Decoder (AI)
+  published_utc: '2026-06-16T19:32:38+00:00'
+  title_zh: 微软Copilot Cowork转向用量计费并可能整合DeepSeek技术
+  why_zh: 微软考虑采用微调版Deepseek V4作为Copilot Cowork的低成本模型选项。
+  takeaway_zh: 微软正考虑采用微调版Deepseek V4作为Copilot Cowork低成本选项，同时转向按量计费。负责人Charles Lamanna表示固定定价不可持续，这符合行业整体趋势。
+  prompt_zh: ''
+- category: Tech industry
+  title: US approval of Paramount/Warner Bros. deal surprised DOJ lawyers, report
+    says
+  why: Trump admin green-lighting $111B deal "reeks of corruption," Sen.
+  takeaway: Trump admin green-lighting $111B deal "reeks of corruption," Sen. Warren
+    says.
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/06/us-approval-of-paramount-warner-bros-deal-surprised-doj-lawyers-report-says/
+  source: Ars Technica
+  published_utc: '2026-06-16T18:48:45+00:00'
+  title_zh: 报道称派拉蒙/华纳兄弟交易获批令美国司法部律师意外
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple is about to make Hide My Email useless
+  why: 'Article URL: https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/
+    Comments URL: https://news.ycombinator.c…'
+  takeaway: 'Article URL: https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/
+    Comments URL: https://news.ycombinator.com/item?id=48559935 Points: 417 # Comments:
+    264'
+  prompt: ''
+  url: https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T18:37:21+00:00'
+  title_zh: 苹果即将让「隐藏我的电子邮件」功能形同虚设
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: All the latest news on Android 17, Wear OS 7, and Android XR
+  why: Google’s Android 17 update includes highlights like new floating “Bubble” app
+    windows for easier multitasking, a Screen Reaction recording…
+  takeaway: Google’s Android 17 update includes highlights like new floating “Bubble”
+    app windows for easier multitasking, a Screen Reaction recording mode, and a 50/50
+    split gaming mode for foldable phones. Meanwhile, Wear OS 7 brings Live Updates
+    and better battery life for smart watches, and it prepares connections for new
+    Android XR smart glasses that will […]
+  prompt: ''
+  url: https://www.theverge.com/tech/950936/google-android-17-wear-os-android-xr
+  source: The Verge
+  published_utc: '2026-06-16T18:30:00+00:00'
+  title_zh: 关于Android 17、Wear OS 7和Android XR的最新消息汇总
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Qualcomm wants to be the chip inside whatever replaces your smartphone, and
+    it just announced two products toward that end
+  why: Qualcomm CEO Cristiano Amon said Tuesday that the company is working on over
+    40 different AI wearable devices — including jewelry, earbuds…
+  takeaway: Qualcomm CEO Cristiano Amon said Tuesday that the company is working on
+    over 40 different AI wearable devices — including jewelry, earbuds with cameras,
+    pins, and watches — a sign of how aggressively the chipmaker is betting that the
+    next major computing platform won't be a phone.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/
+  source: TechCrunch
+  published_utc: '2026-06-16T18:22:24+00:00'
+  title_zh: 高通力图成为替代智能手机设备的核心芯片厂商，并为此发布了两款新产品
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Berlin court rules Google's AI Overviews are just a new search format, not
+    original content
+  why: A Berlin court has ruled that Google's AI-generated summaries are just a "new
+    search result format" and that Google has no "decisive influe…
+  takeaway: A Berlin court has ruled that Google's AI-generated summaries are just
+    a "new search result format" and that Google has no "decisive influence" over
+    the content. A perfume company had sued because AI search displayed its brand
+    names alongside cheaper knockoffs and linked to their websites. The ruling partly
+    contradicts a recent Munich decision that held Goo…
+  prompt: ''
+  url: https://the-decoder.com/berlin-court-rules-googles-ai-overviews-are-just-a-new-search-format-not-original-content/
+  source: The Decoder (AI)
+  published_utc: '2026-06-16T18:19:40+00:00'
+  title_zh: 柏林法院裁定谷歌AI概览属于新搜索格式而非原创内容
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Bug in FIFA World Cup internal system gave anyone ability to modify TV stream
+  why: A security researcher said a flaw in FIFA’s online platforms allowed her to
+    access several internal systems, including one that could have…
+  takeaway: A security researcher said a flaw in FIFA’s online platforms allowed her
+    to access several internal systems, including one that could have allowed her
+    to take control of the TV stream of every World Cup match.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/bug-in-fifa-world-cup-internal-system-gave-anyone-ability-to-modify-tv-stream/
+  source: TechCrunch
+  published_utc: '2026-06-16T18:13:49+00:00'
+  title_zh: 世界杯内部系统漏洞曾让任何人能修改电视转播内容
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Pentagon boasts of using AI to write reports mandated by Congress
+  why: Pentagon also claims 1.5 million personnel are using generative AI tools.
+  takeaway: Pentagon also claims 1.5 million personnel are using generative AI tools.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/06/pentagon-boasts-of-using-ai-to-write-reports-mandated-by-congress/
+  source: Ars Technica
+  published_utc: '2026-06-16T18:11:05+00:00'
+  title_zh: 五角大楼宣称使用AI撰写国会要求的报告
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Android 17 starts hitting Pixel phones and watches today
+  why: Pixels will get their OTA in the coming weeks, but don't expect monumental
+    changes.
+  takeaway: Pixels will get their OTA in the coming weeks, but don't expect monumental
+    changes.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/06/android-17-starts-hitting-pixel-phones-and-watches-today/
+  source: Ars Technica
+  published_utc: '2026-06-16T18:00:08+00:00'
+  title_zh: Android 17系统今日开始推送至Pixel手机及手表
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Android 17 launches with new multitasking tools as Google expands Gemini
+    features
+  why: Google has released Android 17 and Wear OS 7, introducing new multitasking
+    features, parental controls, security tools, and smartwatch upgr…
+  takeaway: Google has released Android 17 and Wear OS 7, introducing new multitasking
+    features, parental controls, security tools, and smartwatch upgrades. The launch
+    is also accompanied by a Pixel Drop that brings Google’s latest AI models to its
+    devices.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/
+  source: TechCrunch
+  published_utc: '2026-06-16T18:00:00+00:00'
+  title_zh: Android 17发布，配备多任务工具并扩展Gemini功能
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Android 17 arrives on Pixel phones today
+  why: Following its official debut last month, Google is now rolling out Android
+    17 to compatible Pixel phones, alongside additional exclusive fe…
+  takeaway: Following its official debut last month, Google is now rolling out Android
+    17 to compatible Pixel phones, alongside additional exclusive features as part
+    of the June Pixel Drop. Not every feature announced alongside the OS at the pre-I/O
+    Android Show is available today, though. Android 17 itself is arriving on Pixel
+    phones today, and Google […]
+  prompt: ''
+  url: https://www.theverge.com/tech/950651/android-17-release-pixel-drop-google-bubble-screen-reaction
+  source: The Verge
+  published_utc: '2026-06-16T18:00:00+00:00'
+  title_zh: Android 17今日登陆Pixel手机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google launches Wear OS 7 with Live Updates and a battery life boost
+  why: Google's Wear OS 7 update is starting to roll out today for the Pixel Watch
+    2, 3, and 4, adding a new Live Updates feature that tracks live…
+  takeaway: Google's Wear OS 7 update is starting to roll out today for the Pixel
+    Watch 2, 3, and 4, adding a new Live Updates feature that tracks live events from
+    your Android smartwatch. Live Updates will now sync with Wear OS devices, so updates
+    like sports scores or an ongoing meal delivery will show up […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/950671/wear-os-7-pixel-watches-launch
+  source: The Verge
+  published_utc: '2026-06-16T18:00:00+00:00'
+  title_zh: 谷歌推出Wear OS 7，支持实时更新并提升续航
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'GPT‑NL: a sovereign language model for the Netherlands'
+  why: 'Article URL: https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/
+    Comments URL: https://news.ycombinator.com/item?id=48559188 Poin…'
+  takeaway: 'Article URL: https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/
+    Comments URL: https://news.ycombinator.com/item?id=48559188 Points: 153 # Comments:
+    142'
+  prompt: ''
+  url: https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T17:54:02+00:00'
+  title_zh: GPT-NL：面向荷兰的国家主权语言模型
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: ‘Dangerous’ AI Models Are Coming No Matter What
+  why: 'The US government crackdown on Anthropic’s Claude Fable 5 and Mythos 5 hides
+    a glaring truth: AI models with advanced hacking capabilities…'
+  takeaway: 'The US government crackdown on Anthropic’s Claude Fable 5 and Mythos
+    5 hides a glaring truth: AI models with advanced hacking capabilities will soon
+    be the norm.'
+  prompt: ''
+  url: https://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/
+  source: WIRED - AI
+  published_utc: '2026-06-16T17:50:52+00:00'
+  title_zh: ‘危险’AI模型终将到来
+  why_zh: 美国政府打压Anthropic的Claude Fable 5和Mythos 5背后隐藏着残酷现实：具备高级黑客能力的AI模型将很快普及。
+  takeaway_zh: 美国政府打压Anthropic的Claude Fable 5和Mythos 5背后隐藏残酷现实：具备高级黑客能力的AI模型将很快成为常态。
+  prompt_zh: ''
+- category: Tech industry
+  title: Mobileye’s US robotaxi launch will put it on both sides of the AV business
+  why: Mobileye apparently wants to own some of the robotaxi market, even if that
+    puts it in direct competition with companies it supplies its sel…
+  takeaway: Mobileye apparently wants to own some of the robotaxi market, even if
+    that puts it in direct competition with companies it supplies its self-driving
+    system to.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/mobileye-us-robotaxi-launch-will-put-it-on-both-sides-of-the-av-business/
+  source: TechCrunch
+  published_utc: '2026-06-16T17:50:23+00:00'
+  title_zh: Mobileye将在美推出机器人出租车，涉足自动驾驶业务两端
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: '10Gb/s Ethernet: switching to a Broadcom SFP+ module'
+  why: 'Article URL: https://www.gilesthomas.com/2026/06/10g-ethernet-switching-to-broadcom-sfp-plus
+    Comments URL: https://news.ycombinator.com/ite…'
+  takeaway: 'Article URL: https://www.gilesthomas.com/2026/06/10g-ethernet-switching-to-broadcom-sfp-plus
+    Comments URL: https://news.ycombinator.com/item?id=48559083 Points: 113 # Comments:
+    101'
+  prompt: ''
+  url: https://www.gilesthomas.com/2026/06/10g-ethernet-switching-to-broadcom-sfp-plus
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T17:48:42+00:00'
+  title_zh: 10Gb/s以太网：改用博通SFP+模块实战
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Rivian cuts hundreds of workers after R2 deliveries start
+  why: The company said the cuts were part of a restructuring meant to help scale
+    to profitability.
+  takeaway: The company said the cuts were part of a restructuring meant to help scale
+    to profitability. Rivian recently pushed back its profitability goal to invest
+    in autonomy.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/rivian-cuts-hundreds-of-workers-after-r2-deliveries-start/
+  source: TechCrunch
+  published_utc: '2026-06-16T17:48:20+00:00'
+  title_zh: Rivian开始交付R2后裁员数百人
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Verizon&#8217;s &#8216;Simplicity&#8217; flat-rate plan starts at $30 per
+    month for new customers
+  why: Verizon is launching a new Simplicity plan that starts at $30 / month for new
+    customers, or $45 / month for existing ones.
+  takeaway: Verizon is launching a new Simplicity plan that starts at $30 / month
+    for new customers, or $45 / month for existing ones. In its announcement, Verizon
+    says the plan drops activation and upgrade fees, while offering one flat price
+    for each line. The $30 price for new customers is an "initial promotional offer"
+    that […]
+  prompt: ''
+  url: https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch
+  source: The Verge
+  published_utc: '2026-06-16T17:19:35+00:00'
+  title_zh: Verizon新用户'简享'套餐每月30美元起
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Has AI already killed self-help nonfiction books?
+  why: 'Article URL: https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/
+    Comments URL: https://news.ycombinator.com/item?id=48558489 Poin…'
+  takeaway: 'Article URL: https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/
+    Comments URL: https://news.ycombinator.com/item?id=48558489 Points: 191 # Comments:
+    203'
+  prompt: ''
+  url: https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T17:11:05+00:00'
+  title_zh: AI是否已终结自助类非虚构图书？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.25.0'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.25.0
+  source: GitHub Releases - comfyanonymous/ComfyUI
+  published_utc: '2026-06-16T17:05:41+00:00'
+  title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.25.0版本
+  why_zh: 版本更新（变更日志详见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Apple 2027 rumors: AirPods with cameras for AI and the second folding iPhone'
+  why: Now that we're clear of WWDC and all of the new AI-powered features coming
+    to Apple's platforms, Bloomberg reporter Mark Gurman has more de…
+  takeaway: Now that we're clear of WWDC and all of the new AI-powered features coming
+    to Apple's platforms, Bloomberg reporter Mark Gurman has more details about rumored
+    new hardware, like the camera-equipped AirPods he'd previously written about.
+    He says they are currently on schedule for a late 2027 launch, and that while
+    we're checking out beta […]
+  prompt: ''
+  url: https://www.theverge.com/tech/950826/apple-airpod-camera-ai-foldable-iphone-rumor
+  source: The Verge
+  published_utc: '2026-06-16T17:04:05+00:00'
+  title_zh: 2027年苹果传闻：搭载摄像头的AI AirPods和第二款折叠iPhone
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren’t
+    cheap
+  why: For over a decade now, Snap has been working on this device.
+  takeaway: For over a decade now, Snap has been working on this device. Now the glasses
+    are finally here. So what stands out on first impression?
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+  source: TechCrunch
+  published_utc: '2026-06-16T17:00:00+00:00'
+  title_zh: Snap终于推出期待已久的AR眼镜Specs，呃，价格不菲
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Qualcomm’s latest chip hints that more powerful smart glasses could be on
+    the way
+  why: Smart glasses are still a nascent category, but chipmaker Qualcomm is hard
+    at work upgrading the silicon to power the next wave of XR devic…
+  takeaway: 'Smart glasses are still a nascent category, but chipmaker Qualcomm is
+    hard at work upgrading the silicon to power the next wave of XR devices: the Snapdragon
+    Reality Elite. Although Qualcomm is announcing the chip today at Augmented World
+    Expo, we''ve technically already gotten a hands-on with a device powered by the
+    new chip at […]'
+  prompt: ''
+  url: https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables
+  source: The Verge
+  published_utc: '2026-06-16T17:00:00+00:00'
+  title_zh: 高通新款芯片暗示或将推出功能更强的智能眼镜
+  why_zh: 智能眼镜仍是新兴品类，但芯片制造商高通正全力升级Snapdragon Reality Elite芯片以驱动下一代XR设备。
+  takeaway_zh: 智能眼镜仍是新兴品类，但芯片制造商高通在Augmented World Expo大会上宣布Snapdragon Reality Elite芯片，我们已提前体验搭载该芯片的设备...
+  prompt_zh: ''
+- category: Tech industry
+  title: The Google / Xreal Aura XR glasses are now available to preorder
+  why: The Project Aura glasses collaboration between Xreal and Google is now one
+    step closer to being something you can buy.
+  takeaway: The Project Aura glasses collaboration between Xreal and Google is now
+    one step closer to being something you can buy. Reservations for the second Android
+    XR device, now dubbed the Xreal Aura, are available for $99 starting today, with
+    a full launch in the US, UK, Japan, Canada, and South Korea expected sometime
+    this Fall. […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/950597/xreal-google-aura-xr-glasses-deposit-scheme
+  source: The Verge
+  published_utc: '2026-06-16T17:00:00+00:00'
+  title_zh: 谷歌/Xreal Aura XR眼镜现已开放预购
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Build On-Device AI Companions with the NVIDIA ACE Game Agent SDK and Unreal
+    Engine 5 Plugins
+  why: NVIDIA RTX technologies are deeply integrated into Unreal Engine 5 through
+    the NVIDIA RTX Branch of Unreal Engine and the NVIDIA DLSS Unrea…
+  takeaway: NVIDIA RTX technologies are deeply integrated into Unreal Engine 5 through
+    the NVIDIA RTX Branch of Unreal Engine and the NVIDIA DLSS Unreal Engine plugin.
+    This...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/build-on-device-ai-companions-with-the-nvidia-ace-game-agent-sdk-and-unreal-engine-5-plugins/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-06-16T17:00:00+00:00'
+  title_zh: 使用NVIDIA ACE游戏智能体SDK和UE5插件打造本地AI伙伴
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Snap is finally about to ship AR glasses — and they cost a fortune
+  why: Snap is finally launching augmented glasses for the public.
+  takeaway: Snap is finally launching augmented glasses for the public. Specs, which
+    Snap describes as "a wearable computer built into see-through augmented reality
+    glasses," will cost $2,195. You can preorder a pair of Specs now at specs.com
+    with a $200 refundable deposit, and Snap says they're expected to ship "this fall"
+    in the US, UK, and […]
+  prompt: ''
+  url: https://www.theverge.com/tech/950492/snap-specs-ar-glasses-launch-date-preorder
+  source: The Verge
+  published_utc: '2026-06-16T16:50:00+00:00'
+  title_zh: Snap即将发售AR眼镜——而且价格高昂
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Stop Using JWTs
+  why: 'Article URL: https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452
+    Comments URL: https://news.ycombinator.com/item?id=48558147 Po…'
+  takeaway: 'Article URL: https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452
+    Comments URL: https://news.ycombinator.com/item?id=48558147 Points: 282 # Comments:
+    162'
+  prompt: ''
+  url: https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T16:49:46+00:00'
+  title_zh: 请停止使用JWT令牌
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Sixty percent of US consumers say ‘AI’ in brand messaging is a turnoff, survey
+    finds
+  why: WordPress VIP’s latest survey suggests consumers are wary of AI-generated answers
+    even as companies increasingly view AI search as an impor…
+  takeaway: WordPress VIP’s latest survey suggests consumers are wary of AI-generated
+    answers even as companies increasingly view AI search as an important referral
+    channel.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/
+  source: TechCrunch
+  published_utc: '2026-06-16T16:49:44+00:00'
+  title_zh: 调查显示60%的美国消费者反感品牌宣传中的'AI'字眼
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Trump admin abandons fight against wind energy as clean energy output surges
+  why: Legal victories have dampened the Trump admin’s efforts to halt wind and solar
+    power.
+  takeaway: Legal victories have dampened the Trump admin’s efforts to halt wind and
+    solar power.
+  prompt: ''
+  url: https://arstechnica.com/science/2026/06/trump-admin-abandons-fight-against-wind-energy-as-clean-energy-output-surges/
+  source: Ars Technica
+  published_utc: '2026-06-16T16:49:09+00:00'
+  title_zh: 特朗普政府放弃对抗风能，因清洁能源产出激增
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Is Meta destroying its engineering organization?
+  why: 'Article URL: https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering
+    Comments URL: https://news.ycombinator.com/i…'
+  takeaway: 'Article URL: https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering
+    Comments URL: https://news.ycombinator.com/item?id=48558045 Points: 459 # Comments:
+    422'
+  prompt: ''
+  url: https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T16:42:32+00:00'
+  title_zh: Meta正在摧毁自己的工程体系吗？
+  why_zh: 文章链接：https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering
+    评论链接：https://news.ycombinator.com/i…
+  takeaway_zh: 文章链接：https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering
+    评论链接：https://news.ycombinator.com/item?id=48558045 分数：459 评论数：422
+  prompt_zh: ''
+- category: Tech industry
+  title: 'TIL: You can make HTTP requests without curl using Bash /dev/TCP'
+  why: 'Article URL: https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/ Comments
+    URL: https://news.ycombinator.com/item?id=48558018 Points:…'
+  takeaway: 'Article URL: https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/
+    Comments URL: https://news.ycombinator.com/item?id=48558018 Points: 304 # Comments:
+    150'
+  prompt: ''
+  url: https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T16:40:58+00:00'
+  title_zh: 今日发现：无需curl，通过Bash的/dev/TCP实现HTTP请求
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: SpaceX to acquire AI coding platform Cursor for $60 billion
+  why: Separately, neither could compete.
+  takeaway: Separately, neither could compete. Now they hope they can.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/06/spacex-will-acquire-coding-tool-cursor-to-compete-with-anthropic-openai/
+  source: Ars Technica
+  published_utc: '2026-06-16T16:37:45+00:00'
+  title_zh: SpaceX拟以600亿美元收购AI编码平台Cursor
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Everything you need to know about Prime Day 2026
+  why: Amazon Prime Day 2026 is getting closer, and it’s possible you might have some
+    questions about the sale.
+  takeaway: Amazon Prime Day 2026 is getting closer, and it’s possible you might have
+    some questions about the sale. When does it start? Why is it in June instead of
+    July? And, most importantly, when will the deals go live? We have concrete answers
+    to those questions, and we’ll have a lot more Prime Day coverage […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/945942/prime-day-2026-frequently-asked-questions
+  source: The Verge
+  published_utc: '2026-06-16T16:31:40+00:00'
+  title_zh: 关于2026年Prime Day你需要知道的一切
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Making ast.walk 220x Faster
+  why: 'Article URL: https://reflex.dev/blog/why-ast-walk-when-you-can-ast-sprint/
+    Comments URL: https://news.ycombinator.com/item?id=48557768 Poin…'
+  takeaway: 'Article URL: https://reflex.dev/blog/why-ast-walk-when-you-can-ast-sprint/
+    Comments URL: https://news.ycombinator.com/item?id=48557768 Points: 97 # Comments:
+    16'
+  prompt: ''
+  url: https://reflex.dev/blog/why-ast-walk-when-you-can-ast-sprint/
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T16:25:28+00:00'
+  title_zh: ast.walk性能优化220倍实录
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Leaked financial docs show OpenAI is losing billions of dollars a year
+  why: Audited accounting shows growing revenues being dwarfed by R&D, other expenses.
+  takeaway: Audited accounting shows growing revenues being dwarfed by R&D, other
+    expenses.
+  prompt: ''
+  url: https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/
+  source: Ars Technica
+  published_utc: '2026-06-16T16:18:07+00:00'
+  title_zh: 泄露的财务文件显示OpenAI每年亏损数十亿美元
+  why_zh: 审计财报显示，收入增长被研发及其他支出大幅超越。
+  takeaway_zh: 审计财报显示，收入增长被研发及其他支出大幅超越。
+  prompt_zh: ''
+- category: Tech industry
+  title: Apple's weird anti-nausea dots cured my car sickness
+  why: 'Article URL: https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work
+    Comments URL: https://news.ycombinator.com/i…'
+  takeaway: 'Article URL: https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work
+    Comments URL: https://news.ycombinator.com/item?id=48557530 Points: 618 # Comments:
+    197'
+  prompt: ''
+  url: https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work
+  source: Hacker News (front page)
+  published_utc: '2026-06-16T16:12:06+00:00'
+  title_zh: 苹果神秘抗晕眩斑点治愈了我的晕车症
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

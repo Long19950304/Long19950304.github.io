@@ -1360,6 +1360,8 @@ weeks:
   issues:
   - '2026-06-15'
   - '2026-06-16'
+  - '2026-06-17'
+  - '2026-06-18'
   highlights_news:
   - date: '2026-06-15'
     url: https://arstechnica.com/science/2026/06/did-a-medieval-flying-monk-spot-halleys-comet-twice-its-complicated/
@@ -1433,6 +1435,80 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-06-15T18:06:33+00:00'
+  - date: '2026-06-17'
+    url: https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/
+    title: Leaked financial docs show OpenAI is losing billions of dollars a year
+    title_zh: 泄露的财务文件显示OpenAI每年亏损数十亿美元
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-06-16T16:18:07+00:00'
+  - date: '2026-06-17'
+    url: https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/
+    title: Anthropic’s latest feud with the Trump admin may actually help it, sales
+      data suggests
+    title_zh: 销售数据表明，Anthropic与特朗普政府的最新争执可能反而对其有利
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-16T22:34:17+00:00'
+  - date: '2026-06-17'
+    url: https://www.technologyreview.com/2026/06/16/1138905/exclusive-ebook-how-ai-is-becoming-the-next-military-advisor/
+    title: 'Exclusive eBook: How AI is becoming the next military advisor'
+    title_zh: 独家电子书：AI如何成为下一代军事顾问
+    category: Tech industry
+    source: MIT Technology Review
+    published_utc: '2026-06-16T20:35:02+00:00'
+  - date: '2026-06-17'
+    url: https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables
+    title: Qualcomm’s latest chip hints that more powerful smart glasses could be
+      on the way
+    title_zh: 高通新款芯片暗示或将推出功能更强的智能眼镜
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-16T17:00:00+00:00'
+  - date: '2026-06-17'
+    url: https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/
+    title: Microsoft's Copilot Cowork moves to usage-based billing and may tap DeepSeek
+    title_zh: 微软Copilot Cowork转向用量计费并可能整合DeepSeek技术
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-06-16T19:32:38+00:00'
+  - date: '2026-06-18'
+    url: https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/
+    title: Massive breach spills credentials for thousands of sensitive networks
+    title_zh: 大规模数据泄露事件曝光数千敏感网络凭证
+    category: Security
+    source: Ars Technica
+    published_utc: '2026-06-17T19:54:31+00:00'
+  - date: '2026-06-18'
+    url: https://techcrunch.com/2026/06/17/cybercriminals-allegedly-hacked-tens-of-thousands-of-fortinet-firewalls-used-by-major-companies-all-over-the-world/
+    title: Cybercriminals allegedly hacked tens of thousands of Fortinet firewalls
+      used by major companies all over the world
+    title_zh: 网络犯罪分子据称入侵了全球各大企业使用的数万台Fortinet防火墙
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-17T18:20:06+00:00'
+  - date: '2026-06-18'
+    url: https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls
+    title: Anthropic got hit by export rules nobody understands
+    title_zh: Anthropic遭遇无人理解的出口管制规则打击
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-17T18:28:50+00:00'
+  - date: '2026-06-18'
+    url: https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/
+    title: The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy
+    title_zh: 处于Anthropic神话争议中心的韩国电信巨头
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-06-17T22:52:00+00:00'
+  - date: '2026-06-18'
+    url: https://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models/
+    title: Amazon, Nvidia, and AMD bet $310 million on AI startup building 3D world
+      models
+    title_zh: 亚马逊、英伟达和AMD向构建3D世界模型的AI初创公司投资3.1亿美元
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-06-17T18:21:23+00:00'
   highlights_ai:
   - date: '2026-06-15'
     url: https://github.com/vllm-project/vllm/releases/tag/v0.23.0
@@ -1472,3 +1548,74 @@ weeks:
     category: AI tools & model releases
     source: Simon Willison (LLM/tools)
     published_utc: '2026-06-15T14:57:33+00:00'
+  - date: '2026-06-17'
+    url: https://github.com/openai/openai-python/releases/tag/v2.42.0
+    title: 'openai/openai-python: v2.42.0'
+    title_zh: openai/openai-python：v2.42.0版本发布
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-06-16T21:51:39+00:00'
+  - date: '2026-06-17'
+    url: https://github.com/openai/openai-node/releases/tag/v6.43.0
+    title: 'openai/openai-node: v6.43.0'
+    title_zh: openai/openai-node：v6.43.0版本发布
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-06-16T21:51:00+00:00'
+  - date: '2026-06-17'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.25.0
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.25.0'
+    title_zh: Comfy-Org/ComfyUI：comfyanonymous/ComfyUI v0.25.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-06-16T17:05:41+00:00'
+  - date: '2026-06-17'
+    url: https://developer.nvidia.com/blog/building-ai-agents-for-ar-glasses-and-xr-devices-with-nvidia-xr-ai/
+    title: Building AI Agents for AR Glasses and XR Devices with NVIDIA XR AI
+    title_zh: 基于NVIDIA XR AI构建AR眼镜与XR设备智能体
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-06-16T22:30:00+00:00'
+  - date: '2026-06-17'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-guardrails-api-ai/
+    title: Amazon Bedrock Guardrails announces a new API targeting agentic AI workflows
+    title_zh: Amazon Bedrock Guardrails发布面向智能体工作流的新API
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-06-16T22:53:00+00:00'
+  - date: '2026-06-18'
+    url: https://github.com/openai/openai-python/releases/tag/v2.43.0
+    title: 'openai/openai-python: v2.43.0'
+    title_zh: openai/openai-python：v2.43.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-python
+    published_utc: '2026-06-17T17:05:59+00:00'
+  - date: '2026-06-18'
+    url: https://github.com/openai/openai-node/releases/tag/v6.44.0
+    title: 'openai/openai-node: v6.44.0'
+    title_zh: openai/openai-node：v6.44.0版本
+    category: AI tools & model releases
+    source: GitHub Releases - openai/openai-node
+    published_utc: '2026-06-17T17:05:53+00:00'
+  - date: '2026-06-18'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.89.2
+    title: 'BerriAI/litellm: v1.89.2'
+    title_zh: BerriAI/litellm：v1.89.2版本
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-06-18T02:46:30+00:00'
+  - date: '2026-06-18'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/06/aws-glue-interactive-sessions-spark-connect-smus-notebooks
+    title: AWS Glue Interactive Sessions now support Spark Connect for interactive
+      workloads
+    title_zh: AWS Glue交互式会话现支持Spark Connect处理交互负载
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-06-17T19:15:00+00:00'
+  - date: '2026-06-18'
+    url: https://github.com/ollama/ollama/releases/tag/v0.30.10
+    title: 'ollama/ollama: v0.30.10'
+    title_zh: ollama/ollama：v0.30.10版本
+    category: AI tools & model releases
+    source: GitHub Releases - ollama/ollama
+    published_utc: '2026-06-17T16:22:02+00:00'

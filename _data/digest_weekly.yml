@@ -473,7 +473,7 @@ weeks:
   - date: '2026-04-25'
     url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
     title: 'langchain-ai/langchain: langchain-openai==1.2.1'
-    title_zh: ''
+    title_zh: LangChain 1.3.10 发布
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-04-24T19:46:59+00:00'
@@ -609,7 +609,7 @@ weeks:
   - date: '2026-04-27'
     url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.1
     title: 'langchain-ai/langchain: langchain-openai==1.2.1'
-    title_zh: ''
+    title_zh: LangChain 1.3.10 发布
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-04-24T19:46:59+00:00'
@@ -665,7 +665,7 @@ weeks:
   - date: '2026-04-29'
     url: https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.4.2
     title: 'langchain-ai/langchain: langchain-anthropic==1.4.2'
-    title_zh: ''
+    title_zh: LangChain 1.3.10 发布
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-04-28T20:50:54+00:00'
@@ -679,7 +679,7 @@ weeks:
   - date: '2026-04-29'
     url: https://github.com/BerriAI/litellm/releases/tag/1.84.0-dev.1
     title: 'BerriAI/litellm: 1.84.0-dev.1'
-    title_zh: ''
+    title_zh: BerriAI/litellm v1.89.3 发布
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-04-29T02:47:24+00:00'
@@ -985,7 +985,7 @@ weeks:
   - date: '2026-05-12'
     url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.0
     title: 'langchain-ai/langchain: langchain==1.3.0'
-    title_zh: ''
+    title_zh: LangChain 1.3.10 发布
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-05-12T14:46:03+00:00'
@@ -1073,7 +1073,7 @@ weeks:
   - date: '2026-05-24'
     url: https://github.com/BerriAI/litellm/releases/tag/v1.86.0
     title: 'BerriAI/litellm: v1.86.0'
-    title_zh: ''
+    title_zh: BerriAI/litellm v1.89.3 发布
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-05-24T04:59:28+00:00'
@@ -1198,7 +1198,7 @@ weeks:
   - date: '2026-05-31'
     url: https://github.com/BerriAI/litellm/releases/tag/v1.84.4
     title: 'BerriAI/litellm: v1.84.4'
-    title_zh: ''
+    title_zh: BerriAI/litellm v1.89.3 发布
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-05-31T04:10:25+00:00'
@@ -1263,7 +1263,7 @@ weeks:
   - date: '2026-06-01'
     url: https://github.com/BerriAI/litellm/releases/tag/v1.84.4
     title: 'BerriAI/litellm: v1.84.4'
-    title_zh: ''
+    title_zh: BerriAI/litellm v1.89.3 发布
     category: AI tools & model releases
     source: GitHub Releases - BerriAI/litellm
     published_utc: '2026-05-31T04:10:25+00:00'
@@ -1362,6 +1362,7 @@ weeks:
   - '2026-06-16'
   - '2026-06-17'
   - '2026-06-18'
+  - '2026-06-21'
   highlights_news:
   - date: '2026-06-15'
     url: https://arstechnica.com/science/2026/06/did-a-medieval-flying-monk-spot-halleys-comet-twice-its-complicated/
@@ -1509,6 +1510,44 @@ weeks:
     category: AI frontier
     source: The Decoder (AI)
     published_utc: '2026-06-17T18:21:23+00:00'
+  - date: '2026-06-21'
+    url: https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/
+    title: Nobel laureate John Jumper is leaving DeepMind for rival Anthropic
+    title_zh: 诺贝尔奖得主John Jumper离开DeepMind，转投竞争对手Anthropic
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-20T16:39:57+00:00'
+  - date: '2026-06-21'
+    url: https://arstechnica.com/tech-policy/2026/06/the-uk-will-scan-asylum-seekers-faces-for-age-checks-despite-knowing-the-tech-is-flawed/
+    title: The UK will scan asylum-seekers’ faces for age checks—despite knowing the
+      tech is flawed
+    title_zh: 英国将扫描寻求庇护者的面部以进行年龄验证，尽管明知技术存在缺陷
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-06-20T11:15:09+00:00'
+  - date: '2026-06-21'
+    url: https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data
+    title: The Atlantic created a searchable database of the music used to train AI
+    title_zh: 《大西洋月刊》创建了一个可搜索的数据库，收录了用于训练AI的音乐
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-20T18:46:48+00:00'
+  - date: '2026-06-21'
+    url: https://the-decoder.com/openai-tripled-revenue-to-5-7-billion-in-q1-but-burned-through-3-7-billion-to-get-there/
+    title: OpenAI tripled revenue to $5.7 billion in Q1 but burned through $3.7 billion
+      to get there
+    title_zh: OpenAI第一季度收入翻三倍至57亿美元，但为此烧掉了37亿美元
+    category: AI frontier
+    source: The Decoder (AI)
+    published_utc: '2026-06-20T08:02:07+00:00'
+  - date: '2026-06-21'
+    url: https://www.wired.com/story/uncanny-valley-podcast-meta-ai-workers-revolting-peter-thiel-secret-society-sbf-plea-to-trump/
+    title: Meta’s AI Workers Are Revolting, Peter Thiel’s Secret Society, and SBF’s
+      Plea to Trump
+    title_zh: Meta的AI员工正在反抗，Peter Thiel的秘密社团，以及SBF向特朗普的恳求
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-06-18T19:29:51+00:00'
   highlights_ai:
   - date: '2026-06-15'
     url: https://github.com/vllm-project/vllm/releases/tag/v0.23.0
@@ -1619,3 +1658,40 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - ollama/ollama
     published_utc: '2026-06-17T16:22:02+00:00'
+  - date: '2026-06-21'
+    url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.25.1
+    title: 'Comfy-Org/ComfyUI: comfyanonymous/ComfyUI: v0.25.1'
+    title_zh: ComfyUI v0.25.1 发布
+    category: AI tools & model releases
+    source: GitHub Releases - comfyanonymous/ComfyUI
+    published_utc: '2026-06-18T18:32:30+00:00'
+  - date: '2026-06-21'
+    url: https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents/
+    title: Data2Story turns a CSV file into a verified interactive news article using
+      seven AI agents
+    title_zh: Data2Story用七个AI代理将CSV文件转为可验证的交互式新闻
+    category: AI tools & model releases
+    source: The Decoder (AI)
+    published_utc: '2026-06-20T09:51:55+00:00'
+  - date: '2026-06-21'
+    url: https://github.com/BerriAI/litellm/releases/tag/v1.89.3
+    title: 'BerriAI/litellm: v1.89.3'
+    title_zh: BerriAI/litellm v1.89.3 发布
+    category: AI tools & model releases
+    source: GitHub Releases - BerriAI/litellm
+    published_utc: '2026-06-20T23:00:10+00:00'
+  - date: '2026-06-21'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.10
+    title: 'langchain-ai/langchain: langchain==1.3.10'
+    title_zh: LangChain 1.3.10 发布
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-06-18T19:43:17+00:00'
+  - date: '2026-06-21'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/06/ministral-3-14b-on-sagemaker-jumpstart/
+    title: Ministral-3-14B-Instruct for multimodal reasoning and agentic AI is now
+      available in Amazon SageMaker JumpStart
+    title_zh: 多模态推理与代理AI模型Ministral-3-14B-Instruct现登陆Amazon SageMaker JumpStart
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-06-18T18:30:00+00:00'

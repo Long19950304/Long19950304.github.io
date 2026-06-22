@@ -2229,15 +2229,43 @@ def render_card(
                 im = ImageEnhance.Contrast(im).enhance(0.95)
                 return im
 
-        # Default: subtle gradient + pattern.
-        base = Image.new("RGB", (w, h), bg)
-        # Light blue top → near-white bottom.
-        top = Image.new("RGB", (w, h), (244, 247, 255))
-        grad = Image.linear_gradient("L").resize((w, h))
-        base = Image.composite(top, base, grad)
+        # Default: colorful fallback background.
+        #
+        # The pinned background is preferred, but in a clean checkout it may not exist.
+        # Do not fall back to a near-white card: after the dark overlay that reads as
+        # a flat gray poster. Use a richer deterministic gradient with soft color
+        # fields so the daily cards keep the intended digest identity.
+        palette = [
+            ((32, 76, 179), (124, 58, 237), (236, 72, 153)),
+            ((14, 116, 144), (37, 99, 235), (168, 85, 247)),
+            ((15, 118, 110), (59, 130, 246), (245, 158, 11)),
+            ((88, 28, 135), (29, 78, 216), (225, 29, 72)),
+            ((2, 132, 199), (109, 40, 217), (22, 163, 74)),
+        ]
+        rnd = random.Random(_seed())
+        c1, c2, c3 = palette[_seed() % len(palette)]
+        base = Image.new("RGB", (w, h), c1)
+        grad_v = Image.linear_gradient("L").resize((1, h)).resize((w, h))
+        grad_h = Image.linear_gradient("L").rotate(90).resize((w, 1)).resize((w, h))
+        layer2 = Image.new("RGB", (w, h), c2)
+        layer3 = Image.new("RGB", (w, h), c3)
+        base = Image.composite(layer2, base, grad_v)
+        base = Image.composite(layer3, base, grad_h.point(lambda p: int(p * 0.55)))
+        base = base.filter(ImageFilter.GaussianBlur(radius=6))
+
+        # Soft bokeh-like fields; subtle but enough to avoid the flat gray look.
+        glow = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        gd = ImageDraw.Draw(glow)
+        for _ in range(10):
+            cx = rnd.randint(-80, w + 80)
+            cy = rnd.randint(-80, h + 80)
+            r = rnd.randint(120, 300)
+            color = rnd.choice([c1, c2, c3])
+            alpha = rnd.randint(22, 48)
+            gd.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(*color, alpha))
+        base = Image.alpha_composite(base.convert("RGBA"), glow.filter(ImageFilter.GaussianBlur(radius=28))).convert("RGB")
 
         style = (os.environ.get("DIGEST_CARD_STYLE") or "grid").strip().lower()
-        rnd = random.Random(_seed())
 
         overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         od = ImageDraw.Draw(overlay)
@@ -2277,9 +2305,9 @@ def render_card(
         """
         rgba = im.convert("RGBA")
 
-        # Vertical gradient: slightly dark at top, darker at bottom.
+        # Vertical gradient: keep color visible while preserving text contrast.
         g = Image.linear_gradient("L").resize((1, h)).resize((w, h))
-        alpha = g.point(lambda p: int(55 + (p / 255.0) * 155))  # 55..210
+        alpha = g.point(lambda p: int(35 + (p / 255.0) * 135))  # 35..170
         overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         overlay.putalpha(alpha)
         rgba = Image.alpha_composite(rgba, overlay)
@@ -2290,7 +2318,7 @@ def render_card(
         steps = 8
         for i in range(steps):
             inset = int((i / (steps - 1)) * 120)
-            a = int((i / (steps - 1)) * 75)  # edge darkening strength
+            a = int((i / (steps - 1)) * 48)  # edge darkening strength
             vd.rectangle((inset, inset, w - inset, h - inset), outline=a, width=34)
         v_rgba = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         v_rgba.putalpha(vignette.filter(ImageFilter.GaussianBlur(radius=18)))
@@ -2304,13 +2332,13 @@ def render_card(
         *,
         font: ImageFont.FreeTypeFont,
         fill: tuple[int, int, int, int],
-        stroke_width: int = 2,
-        stroke_fill: tuple[int, int, int, int] = (0, 0, 0, 210),
+        stroke_width: int = 1,
+        stroke_fill: tuple[int, int, int, int] = (0, 0, 0, 185),
         shadow: bool = True,
     ) -> None:
         x0, y0 = xy
         if shadow:
-            draw.text((x0 + 2, y0 + 2), text, fill=(0, 0, 0, 150), font=font)
+            draw.text((x0 + 2, y0 + 2), text, fill=(0, 0, 0, 135), font=font)
         draw.text(
             (x0, y0),
             text,
@@ -2327,7 +2355,7 @@ def render_card(
     font_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 54) if fonts else ImageFont.load_default()
     font_h2 = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
     font_small = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 21) if fonts else ImageFont.load_default()
-    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 28) if fonts else ImageFont.load_default()
+    font_item_title = ImageFont.truetype(str(fonts.get("bold", fonts.get("regular"))), 30) if fonts else ImageFont.load_default()
     font_item_body = ImageFont.truetype(str(fonts.get("regular", fonts.get("bold"))), 22) if fonts else ImageFont.load_default()
     font_mono = (
         ImageFont.truetype(str(fonts["mono"]), 20)
@@ -2358,7 +2386,7 @@ def render_card(
     y += 20
 
     # Keep cards low-cognitive-load: show only top N items (titles + source), no long blurbs.
-    default_max = 10
+    default_max = 7
     max_items_total = int((os.environ.get("DIGEST_CARD_MAX_ITEMS") or "").strip() or default_max)
     now = _score_now_for_date(date)
     ranked_all = sorted(

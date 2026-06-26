@@ -1,11 +1,8 @@
 date: '2026-06-26'
 title: Daily Digest - 2026-06-26
 title_zh: 每日简报 - 2026-06-26
-note: 'Today: The White House is asking OpenAI to slow roll the release of it… · YouTube
-  updates Shorts to make it even more like TikTok · AI: OpenAI GPT, OpenAI GPT OSS,
-  and NVIDIA Nemotron models on….'
-note_zh: 今日关注：白宫因安全顾虑要求OpenAI放缓新模型发布；YouTube更新Shorts功能，使其更趋近TikTok；AI：16. OpenAI GPT、OpenAI
-  GPT OSS及NVI…。
+note: 'Today: The White House is asking OpenAI to slow-roll a new model release over safety concerns · YouTube is making Shorts more TikTok-like · AI: GPT/NVIDIA Nemotron models gain FedRAMP/DoD approval on Amazon Bedrock.'
+note_zh: '今日关注：白宫因安全顾虑要求 OpenAI 放缓新模型发布；YouTube Shorts 继续向 TikTok 靠拢；AI：OpenAI GPT、GPT OSS 与 NVIDIA Nemotron 模型在 Amazon Bedrock 获 FedRAMP/DoD 授权。'
 items:
 - category: AI tools & model releases
   title: 'langchain-ai/langchain: langchain-fireworks==1.4.3'

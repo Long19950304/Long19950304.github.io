@@ -1,0 +1,966 @@
+date: '2026-06-26'
+title: Daily Digest - 2026-06-26
+title_zh: 每日简报 - 2026-06-26
+note: 'Today: The White House is asking OpenAI to slow roll the release of it… · YouTube
+  updates Shorts to make it even more like TikTok · AI: OpenAI GPT, OpenAI GPT OSS,
+  and NVIDIA Nemotron models on….'
+note_zh: 今日关注：白宫因安全顾虑要求OpenAI放缓新模型发布；YouTube更新Shorts功能，使其更趋近TikTok；AI：16. OpenAI GPT、OpenAI
+  GPT OSS及NVI…。
+items:
+- category: AI tools & model releases
+  title: 'langchain-ai/langchain: langchain-fireworks==1.4.3'
+  why: Release update (see link for changelog).
+  takeaway: ''
+  prompt: ''
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.3
+  source: GitHub Releases - langchain-ai/langchain
+  published_utc: '2026-06-26T06:52:05+00:00'
+  title_zh: ''
+  why_zh: 版本更新（变更详情见链接）。
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Micron locks in historically high memory prices for five years
+  why: 'Article URL: https://www.theregister.com/systems/2026/06/25/micron-locks-in-historically-high-memory-prices-for-five-years/5261854
+    Comments…'
+  takeaway: 'Article URL: https://www.theregister.com/systems/2026/06/25/micron-locks-in-historically-high-memory-prices-for-five-years/5261854
+    Comments URL: https://news.ycombinator.com/item?id=48683041 Points: 13 # Comments:
+    3'
+  prompt: ''
+  url: https://www.theregister.com/systems/2026/06/25/micron-locks-in-historically-high-memory-prices-for-five-years/5261854
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T06:27:25+00:00'
+  title_zh: 美光锁定五年内存历史高价
+  why_zh: 文章链接：https://www.theregister.com/systems/2026/06/25/micron-locks-in-historically-high-memory-prices-for-five-years/5261854
+    评论…
+  takeaway_zh: 文章链接：https://www.theregister.com/systems/2026/06/25/micron-locks-in-historically-high-memory-prices-for-five-years/5261854
+    评论链接：https://news.ycombinator.com/item?id=48683041 得分：13 评论数：3
+  prompt_zh: ''
+- category: Tech industry
+  title: US Govt to individually approve who gets GPT 5.6
+  why: 'Article URL: https://old.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56/
+    Comments URL: https://ne…'
+  takeaway: 'Article URL: https://old.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56/
+    Comments URL: https://news.ycombinator.com/item?id=48683021 Points: 23 # Comments:
+    17'
+  prompt: ''
+  url: https://old.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56/
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T06:24:39+00:00'
+  title_zh: 美国政府将逐案审批GPT 5.6使用权限
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: We All Depend on Open Source. We Will Defend It Together
+  why: 'Article URL: https://akrites.org/letter/ Comments URL: https://news.ycombinator.com/item?id=48682737
+    Points: 19 # Comments: 9'
+  takeaway: 'Article URL: https://akrites.org/letter/ Comments URL: https://news.ycombinator.com/item?id=48682737
+    Points: 19 # Comments: 9'
+  prompt: ''
+  url: https://akrites.org/letter/
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T05:40:36+00:00'
+  title_zh: 我们依存开源，我们共同捍卫
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Benchmarking Open-Weight Foundation Models for Global AI Technical Governance
+  why: 'arXiv:2606.26099v1 Announce Type: new Abstract: Large language models (LLMs)
+    are increasingly deployed in artificial intelligence (AI) gove…'
+  takeaway: 'arXiv:2606.26099v1 Announce Type: new Abstract: Large language models
+    (LLMs) are increasingly deployed in artificial intelligence (AI) governance analysis
+    across national and international organisations. There is, however, growing evidence
+    that such models produce significantly less accurate responses for countries that
+    are underrepresented in their trainin…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26099
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 全球AI技术治理中开放权重基础模型的基准测试
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Simulating Eating Disorder Patients with LLMs: Evaluating Psychological
+    Persona Stability in Multi-Turn Conversations'
+  why: 'arXiv:2606.26109v1 Announce Type: new Abstract: Large language model (LLM)-based
+    simulations of clinical patients are increasingly used for…'
+  takeaway: 'arXiv:2606.26109v1 Announce Type: new Abstract: Large language model
+    (LLM)-based simulations of clinical patients are increasingly used for research
+    and training, yet their validity requires persona stability: coherent maintenance
+    of an assigned psychological profile across and within conversations. We evaluate
+    this prerequisite using eating disorder person…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26109
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 用LLMs模拟饮食失调患者：多轮对话中心理角色稳定性评估
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Generative AI and Copyright Infringement: A Legal-Technical Analysis of
+    AI Music Generation Systems Under 17 U.S.C. Title 17'
+  why: 'arXiv:2606.26111v1 Announce Type: new Abstract: Generative artificial intelligence
+    (GenAI) has enabled users to synthesize music with text…'
+  takeaway: 'arXiv:2606.26111v1 Announce Type: new Abstract: Generative artificial
+    intelligence (GenAI) has enabled users to synthesize music with text prompts,
+    combining copyrighted lyrics, AI-composed melodies, and synthetic vocals that
+    imitate real artists. This paper examines the legal and technical dimensions of
+    AI-based music creation (e.g., Google Gemini''s music…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26111
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 生成式AI与版权侵权：基于美国法典第17编的AI音乐生成系统法律技术分析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Dream machine -- the next creative economy
+  why: 'arXiv:2606.26114v1 Announce Type: new Abstract: We examine the structural
+    transformation of creative industries under generative artificial…'
+  takeaway: 'arXiv:2606.26114v1 Announce Type: new Abstract: We examine the structural
+    transformation of creative industries under generative artificial intelligence,
+    drawing on 374 primary sources spanning policy documents, industry data, creator
+    surveys, and platform analytics. Beginning with the December 2024 release of OpenAI''s
+    Sora video model as a watershed event,…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26114
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 造梦机器——下一个创意经济
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: A Multi-Layer AI Framework for Information Landscape Analysis
+  why: 'arXiv:2606.26115v1 Announce Type: new Abstract: This paper proposes a multi-layer
+    AI framework for information landscape analysis in the co…'
+  takeaway: 'arXiv:2606.26115v1 Announce Type: new Abstract: This paper proposes a
+    multi-layer AI framework for information landscape analysis in the context of
+    information disorder. Rather than treating misinformation detection as a binary
+    fact-checking task, the framework analyzes political and media content across
+    multiple dimensions, including source reliability, fa…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26115
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 信息景观分析的多层AI框架
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Divergent Recommendations, Convergent Diagnoses: Cross-Provider Failure-Mode
+    Convergence in AI Commercial Recommendation'
+  why: 'arXiv:2606.26116v1 Announce Type: new Abstract: A brand whose customers use
+    both ChatGPT and Claude for product recommendations faces a str…'
+  takeaway: 'arXiv:2606.26116v1 Announce Type: new Abstract: A brand whose customers
+    use both ChatGPT and Claude for product recommendations faces a strategic choice:
+    a single optimization playbook, or one per provider? Across 215 commercially-framed
+    prompts in four measurement batches, the two providers disagree on which brands
+    they recommend roughly two-thirds of the…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26116
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 分歧推荐，趋同诊断：AI商业推荐中的跨提供商故障模式趋同
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Governance Inversion Hypothesis: Why More AI Regulation May Produce
+    Less Organisational Control'
+  why: 'arXiv:2606.26117v1 Announce Type: new Abstract: This paper introduces the
+    Governance Inversion Hypothesis (GIH) to explain a growing parado…'
+  takeaway: 'arXiv:2606.26117v1 Announce Type: new Abstract: This paper introduces
+    the Governance Inversion Hypothesis (GIH) to explain a growing paradox in artificial
+    intelligence (AI) governance: under conditions of increasing regulatory expansion
+    and technological complexity, organisations may become more formally governed
+    while simultaneously experiencing a decline…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26117
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 治理反转假说：为何更多AI监管可能导致更少的组织控制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: The Open Source Economic Index of AI Adoption and Capability
+  why: 'arXiv:2606.26118v1 Announce Type: new Abstract: We work towards measuring
+    both AI adoption and the capability of AI to perform discrete lab…'
+  takeaway: 'arXiv:2606.26118v1 Announce Type: new Abstract: We work towards measuring
+    both AI adoption and the capability of AI to perform discrete labor tasks across
+    various occupations. To measure adoption, we develop an open-source economic index
+    that uses publicly available user-LLM chat data and O*NET tasks to replicate studies
+    produced by frontier AI labs, findin…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26118
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: AI采用与能力的开源经济指数
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'The Effortless Trap: Productive Struggle, AI, and the Illusion of Learning'
+  why: 'arXiv:2606.26181v1 Announce Type: new Abstract: With AI advancing fast, educators
+    face a dilemma: allow the tool or ban it.'
+  takeaway: 'arXiv:2606.26181v1 Announce Type: new Abstract: With AI advancing fast,
+    educators face a dilemma: allow the tool or ban it. Conflicting evidence that
+    it both helps and hurts learning only deepens the confusion. The allow-or-ban
+    framing is a false dichotomy; the relevant design question is placement. Used
+    well, AI can scale feedback, examples, practice, and…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26181
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 轻松陷阱：生产性挣扎、AI与学习的幻觉
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Enterprise Data Asset Quality: A Management-Standard Conformity-Benefit
+    Realization Framework and Formation Mechanisms'
+  why: 'arXiv:2606.26186v1 Announce Type: new Abstract: Motivated by the limited standardization
+    of enterprise data asset quality evaluation and th…'
+  takeaway: 'arXiv:2606.26186v1 Announce Type: new Abstract: Motivated by the limited
+    standardization of enterprise data asset quality evaluation and the unclear relationship
+    between assessment outcomes and value realization, this study develops a three-dimensional
+    framework comprising Data Asset Management Capability, Data Quality Standard Conformity,
+    and Data Asset Be…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26186
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 企业数据资产质量：管理标准一致性效益实现框架与形成机制
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: The Tilted Playing Field for Women in Science
+  why: 'arXiv:2606.26469v1 Announce Type: new Abstract: Institutional prestige shapes
+    access to resources, visibility, and collaboration opportunit…'
+  takeaway: 'arXiv:2606.26469v1 Announce Type: new Abstract: Institutional prestige
+    shapes access to resources, visibility, and collaboration opportunities in science.
+    Yet whether prestige benefits researchers equally, and how it relates to differences
+    in scientific productivity and collaboration, remains unclear. Here, we quantify
+    prestige advantage as the relative lik…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26469
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 科学领域女性面临的倾斜竞技场
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Do more heads imply better performance? An empirical study of team thought
+    leaders' impact on scientific team performance
+  why: 'arXiv:2606.26483v1 Announce Type: new Abstract: Thought leadership plays a
+    crucial role in boosting team performance; thus, teams with more…'
+  takeaway: 'arXiv:2606.26483v1 Announce Type: new Abstract: Thought leadership plays
+    a crucial role in boosting team performance; thus, teams with more thought leaders
+    may perform better. However, the impact of the number of thought leaders on team
+    performance in a scientific context remains understudied. In this study, we consider
+    the authors of a publication as a sci…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26483
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 更多头脑意味着更好表现吗？团队思想领袖对科研团队绩效影响的实证研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Pingquanqi (Equalizer): A Cross-Domain Sociotechnical Framework for Human-Agent
+    Interaction Governance'
+  why: 'arXiv:2606.26573v1 Announce Type: new Abstract: LLM agents are transitioning
+    from experimental tools to permanent infrastructure -- a compu…'
+  takeaway: 'arXiv:2606.26573v1 Announce Type: new Abstract: LLM agents are transitioning
+    from experimental tools to permanent infrastructure -- a computational layer as
+    enduring as the electrical grid. Like any infrastructure, they carry a cost chain
+    from physical capital through enterprise investment to user consumption, ending
+    at the user''s most irreplaceable resourc…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26573
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 平权器（Equalizer）：跨领域人机交互治理的社会技术框架
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Human--LLM Collaboration Is Transforming Complexity Metrics in Scientific
+    Texts
+  why: 'arXiv:2606.27052v1 Announce Type: new Abstract: While human language has long
+    been studied as a complex system, Large Language Models (LLMs…'
+  takeaway: 'arXiv:2606.27052v1 Announce Type: new Abstract: While human language
+    has long been studied as a complex system, Large Language Models (LLMs) are rapidly
+    becoming contributors to its dynamics. Because LLMs are trained on human language
+    use, their effects on the broader human-AI linguistic ecosystem are likely subtle
+    at first. As their use becomes more widesp…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.27052
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 人类与LLM协作正在改变科学文本的复杂性度量
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'From Celebrities to Anyone: Characterizing AI Nudification Content, Technology,
+    and Community Dynamics on 4chan'
+  why: 'arXiv:2606.27234v1 Announce Type: new Abstract: AI nudification uses generative
+    models to create synthetic non-consensual sexually explicit…'
+  takeaway: 'arXiv:2606.27234v1 Announce Type: new Abstract: AI nudification uses
+    generative models to create synthetic non-consensual sexually explicit imagery
+    (SNEACI) of real individuals. Prior work has examined dedicated nudification platforms
+    and model repositories, finding that most targets are female celebrities. However,
+    the anonymous content community, where SN…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.27234
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 从名人到普通人：4chan上AI换脸内容、技术与社区动态特征分析
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Helpfulness Hurts: Domain-Dependent Degradation of Mid-Trained Compassion
+    Values Under Post-Training'
+  why: 'arXiv:2606.26102v1 Announce Type: cross Abstract: Standard post-training pipelines
+    apply supervised fine-tuning (SFT) and reinforcement lea…'
+  takeaway: 'arXiv:2606.26102v1 Announce Type: cross Abstract: Standard post-training
+    pipelines apply supervised fine-tuning (SFT) and reinforcement learning (RL) to
+    make language models helpful, but these processes may inadvertently degrade values
+    instilled during pre-training. We investigate whether the domain of post-training
+    data differentially affects the retention…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26102
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 助人之弊：领域依赖性导致训练后模型同情心价值退化
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'RoboTales: ROBOTic Anthropomorphic LEarning Systems'
+  why: 'arXiv:2606.26213v1 Announce Type: cross Abstract: RoboTales is a low-cost
+    robotic storytelling system that animates narratives using expres…'
+  takeaway: 'arXiv:2606.26213v1 Announce Type: cross Abstract: RoboTales is a low-cost
+    robotic storytelling system that animates narratives using expressive sock puppetry.
+    Implemented autonomously on a Baxter robot as a test case, RoboTales synchronizes
+    narration, gestures, and mouth movements to perform character-driven stories.
+    In a pilot study, puppet-based storytell…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26213
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 机器人童话：ROBOT智能化拟人学习系统
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Narration-of-Thought: Inference-Time Scaffolding for Defeasible Ethical
+    Reasoning in Large Language Models'
+  why: 'arXiv:2606.26366v1 Announce Type: cross Abstract: Standard chain-of-thought
+    on moral dilemmas exhibits two failure modes: stakeholder colla…'
+  takeaway: 'arXiv:2606.26366v1 Announce Type: cross Abstract: Standard chain-of-thought
+    on moral dilemmas exhibits two failure modes: stakeholder collapse (the trace
+    names at most one party with a stake in the outcome) and uncertainty suppression
+    (no explicit unknowns or hedges before committing to an action). We introduce
+    narration-of-thought (NoT), a system prompt th…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26366
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 叙述性思维：大型语言模型中可废止伦理推理的推断时支架
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: 'Scoring Is Not Enough: Addressing Gaps in Utility-fairness Trade-offs for
+    Ranking'
+  why: 'arXiv:2606.26369v1 Announce Type: cross Abstract: Scoring functions are used
+    to represent the relevance of individual documents.'
+  takeaway: 'arXiv:2606.26369v1 Announce Type: cross Abstract: Scoring functions are
+    used to represent the relevance of individual documents. In modern information
+    retrieval or recommendation systems, they are often learned from data and play
+    a pivotal role in ranking sets of documents or items in a way that maximizes utility
+    to a query or user. With the recent interest…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26369
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 评分不足：解决排名中效用与公平性权衡的缺口
+  why_zh: arXiv:2606.26369v1 公告类型：交叉 摘要：评分函数用于表征单个文档的相关性。
+  takeaway_zh: arXiv:2606.26369v1 公告类型：交叉 摘要：评分函数用于表征单个文档的相关性。在现代信息检索或推荐系统中，这类函数通常通过数据学习获得，其核心作用是通过对文档或项目集的排序，实现查询或用户效用最大化。随着近期……
+  prompt_zh: ''
+- category: CSS / AI & society
+  title: Can Large Language Models Reliably Code Qualitative Humanitarian Data? A
+    Benchmark Study Against Human Expert Adjudication
+  why: 'arXiv:2606.26541v1 Announce Type: cross Abstract: Data from affected populations
+    are crucial for informing humanitarian response, but their…'
+  takeaway: 'arXiv:2606.26541v1 Announce Type: cross Abstract: Data from affected
+    populations are crucial for informing humanitarian response, but their value depends
+    on timely and consistent interpretation of nuanced accounts of need. Humanitarian
+    organizations often lack the staff, time, and specialist expertise required to
+    analyze this information at scale. Large lan…'
+  prompt: ''
+  url: https://arxiv.org/abs/2606.26541
+  source: arXiv cs.CY (Computers & Society)
+  published_utc: '2026-06-26T04:00:00+00:00'
+  title_zh: 大型语言模型能否可靠编码定性人道主义数据？与人类专家裁决的基准研究
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Why are we so obsessed with lawns?
+  why: 'Article URL: https://www.gardensillustrated.com/features/the-history-of-lawns
+    Comments URL: https://news.ycombinator.com/item?id=48682066 P…'
+  takeaway: 'Article URL: https://www.gardensillustrated.com/features/the-history-of-lawns
+    Comments URL: https://news.ycombinator.com/item?id=48682066 Points: 13 # Comments:
+    15'
+  prompt: ''
+  url: https://www.gardensillustrated.com/features/the-history-of-lawns
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T03:35:49+00:00'
+  title_zh: 为何我们对草坪如此痴迷？
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Libre Barcode Project
+  why: 'Article URL: https://graphicore.github.io/librebarcode/ Comments URL: https://news.ycombinator.com/item?id=48681949
+    Points: 98 # Comments: 7'
+  takeaway: 'Article URL: https://graphicore.github.io/librebarcode/ Comments URL:
+    https://news.ycombinator.com/item?id=48681949 Points: 98 # Comments: 7'
+  prompt: ''
+  url: https://graphicore.github.io/librebarcode/
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T03:12:42+00:00'
+  title_zh: Libre条形码项目
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: What happened after 2k people tried to hack my AI assistant
+  why: 'Article URL: https://www.fernandoi.cl/posts/hackmyclaw/ Comments URL: https://news.ycombinator.com/item?id=48681687
+    Points: 101 # Comments:…'
+  takeaway: 'Article URL: https://www.fernandoi.cl/posts/hackmyclaw/ Comments URL:
+    https://news.ycombinator.com/item?id=48681687 Points: 101 # Comments: 37'
+  prompt: ''
+  url: https://www.fernandoi.cl/posts/hackmyclaw/
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T02:29:23+00:00'
+  title_zh: 2000人试图入侵我的AI助手后发生了什么
+  why_zh: 文章链接：https://www.fernandoi.cl/posts/hackmyclaw/ 评论链接：https://news.ycombinator.com/item?id=48681687
+    点赞数：101 评论数：…
+  takeaway_zh: 文章链接：https://www.fernandoi.cl/posts/hackmyclaw/ 评论链接：https://news.ycombinator.com/item?id=48681687
+    点赞数：101 评论数：37
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: '[AINews] OpenAI reports median internal Codex output tokens grew 56x in
+    Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since
+    November 2025.'
+  why: It's happening.
+  takeaway: It's happening.
+  prompt: ''
+  url: https://www.latent.space/p/ainews-openai-reports-median-internal
+  source: Latent Space (LLM/tools)
+  published_utc: '2026-06-26T01:12:30+00:00'
+  title_zh: 【AI快讯】OpenAI报告自2025年11月以来，Codex内部输出中位数令牌数在研究领域增长56倍、客户支持32倍、工程27倍、法律13倍
+  why_zh: 要来了。
+  takeaway_zh: 要来了。
+  prompt_zh: ''
+- category: Tech industry
+  title: Framework's 10G Ethernet module exposes USB-C's complexity
+  why: 'Article URL: https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/
+    Comments URL: https://news.ycombinator.…'
+  takeaway: 'Article URL: https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/
+    Comments URL: https://news.ycombinator.com/item?id=48681220 Points: 136 # Comments:
+    71'
+  prompt: ''
+  url: https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/
+  source: Hacker News (front page)
+  published_utc: '2026-06-26T01:10:52+00:00'
+  title_zh: Framework的10G以太网模块暴露USB-C复杂度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI frontier
+  title: Anthropic Thinks Its Own Success Is Key to Making AI Safe
+  why: Anthropic's critics argue it's rapidly accumulating power.
+  takeaway: Anthropic's critics argue it's rapidly accumulating power. The company
+    says that's what responsible AI development looks like.
+  prompt: ''
+  url: https://www.wired.com/story/anthropic-thinks-ai-can-only-be-safe-under-its-control/
+  source: WIRED - AI
+  published_utc: '2026-06-26T00:49:13+00:00'
+  title_zh: Anthropic认为自身成功是确保AI安全的关键
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The White House is asking OpenAI to slow roll the release of its new model
+    over safety concerns
+  why: OpenAI reportedly plans to share its newest model, GPT 5.6, with a select group
+    of partners instead of with the broader public.
+  takeaway: 'OpenAI reportedly plans to share its newest model, GPT 5.6, with a select
+    group of partners instead of with the broader public. The reason: the Trump administration
+    told it to.'
+  prompt: ''
+  url: https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/
+  source: TechCrunch
+  published_utc: '2026-06-25T23:34:39+00:00'
+  title_zh: 白宫因安全顾虑要求OpenAI放缓新模型发布
+  why_zh: 据报道，OpenAI计划仅向特定合作伙伴而非公众分享其最新模型GPT 5.6。
+  takeaway_zh: 据报道，OpenAI计划仅向特定合作伙伴分享最新模型GPT 5.6而非公众开放——原因是特朗普政府下达了相关指令。
+  prompt_zh: ''
+- category: AI frontier
+  title: Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and
+    Meta Leaks Employee Data
+  why: The decision by Amazon-owned MGM Studios to drop the OpenAI movie is just part
+    of AI and film industries becoming increasingly intertwined.
+  takeaway: The decision by Amazon-owned MGM Studios to drop the OpenAI movie is just
+    part of AI and film industries becoming increasingly intertwined. On Uncanny Valley,
+    we look at where this is all headed.
+  prompt: ''
+  url: https://www.wired.com/story/uncanny-valley-podcast-amazon-mgm-openai-movie-data-center-workers-fight-back-meta-leaks-employee-data/
+  source: WIRED - AI
+  published_utc: '2026-06-25T23:13:45+00:00'
+  title_zh: 亚马逊为何放弃OpenAI电影，数据中心工人反击，Meta泄露员工数据
+  why_zh: 亚马逊旗下米高梅影业放弃OpenAI电影的决定，只是人工智能与电影产业日益交融的一个缩影。
+  takeaway_zh: 亚马逊旗下米高梅放弃OpenAI电影项目的决定，折射出人工智能与电影产业日益紧密的纠缠关系。本期《恐怖谷》将解析这一切的走向。
+  prompt_zh: ''
+- category: Tech industry
+  title: 'The Garbage Collection Handbook: The Art of Automatic Memory Management
+    (2nd Ed) (2023)'
+  why: 'Article URL: https://gchandbook.org/ Comments URL: https://news.ycombinator.com/item?id=48680370
+    Points: 120 # Comments: 15'
+  takeaway: 'Article URL: https://gchandbook.org/ Comments URL: https://news.ycombinator.com/item?id=48680370
+    Points: 120 # Comments: 15'
+  prompt: ''
+  url: https://gchandbook.org/
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T23:10:30+00:00'
+  title_zh: 《垃圾回收手册：自动内存管理艺术（第二版）》（2023）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: This year’s Prime Day deals on Apple products are the best I’ve seen
+  why: Amazon’s Prime Day is now in its third day, and whether you’re looking for
+    a new pair of wireless earbuds or a smartwatch, there’s a good c…
+  takeaway: Amazon’s Prime Day is now in its third day, and whether you’re looking
+    for a new pair of wireless earbuds or a smartwatch, there’s a good chance you’ll
+    find a discount. The Apple Watch Series 11 has already dropped to a new low price,
+    while the AirPods Pro 3 are discounted to $179. With Apple […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/949350/amazon-prime-day-sale-best-apple-deals-2026
+  source: The Verge
+  published_utc: '2026-06-25T23:04:23+00:00'
+  title_zh: 今年Prime Day苹果产品优惠力度空前
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Android 17&#8217;s new foldable gaming mode could make flippy phones more
+    fun
+  why: Android 17 is getting a dedicated gaming mode for foldables that will put a
+    virtual gamepad with touch controls on half of your screen to t…
+  takeaway: Android 17 is getting a dedicated gaming mode for foldables that will
+    put a virtual gamepad with touch controls on half of your screen to theoretically
+    make it easier to play games. With foldable gaming mode, which is set to launch
+    in the coming months, the virtual controller emulates physical button presses
+    at a system […]
+  prompt: ''
+  url: https://www.theverge.com/tech/957450/android-17-foldable-gaming-mode-virtual-controller
+  source: The Verge
+  published_utc: '2026-06-25T22:33:54+00:00'
+  title_zh: Android 17新折叠游戏模式或让翻盖手机更有趣
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Streamlining Resource Binding with End-to-End Support for Vulkan Descriptor
+    Heaps
+  why: Shaders are GPU programs that process visual data—such as rays, pixels, geometry,
+    and textures—to produce specific rendering effects.
+  takeaway: Shaders are GPU programs that process visual data—such as rays, pixels,
+    geometry, and textures—to produce specific rendering effects. Shaders find necessary...
+  prompt: ''
+  url: https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps/
+  source: NVIDIA Developer Blog
+  published_utc: '2026-06-25T22:25:51+00:00'
+  title_zh: 通过端到端支持Vulkan描述符堆实现资源绑定简化
+  why_zh: 着色器是处理光线、像素、几何图形及纹理等视觉数据的GPU程序，用以实现特定渲染效果。
+  takeaway_zh: 着色器是处理光线、像素、几何体及纹理等视觉数据的GPU程序，用于实现特定渲染效果。着色器能够自动提取所需...
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: Amazon EC2 M8a instances now available in the Asia Pacific (Mumbai) region
+  why: Starting today, the general-purpose Amazon EC2 M8a instances are available
+    in AWS Asia Pacific (Mumbai) region.
+  takeaway: Starting today, the general-purpose Amazon EC2 M8a instances are available
+    in AWS Asia Pacific (Mumbai) region. M8a instances are powered by 5th Gen AMD
+    EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz,
+    deliver up to 30% higher performance, and up to 19% better price-performance compared
+    to M7a instances. M8a instances deliver…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-m8a-instances-asia-pacific-mumbai-region/
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-06-25T22:15:00+00:00'
+  title_zh: 亚马逊EC2 M8a实例现已在亚太（孟买）区域推出
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: YouTube updates Shorts to make it even more like TikTok
+  why: YouTube is adding even more TikTok-like features to Shorts, including a new
+    "clear screen" mode that removes the icons and text from the vi…
+  takeaway: YouTube is adding even more TikTok-like features to Shorts, including
+    a new "clear screen" mode that removes the icons and text from the video you're
+    watching. In a blog post on Thursday, YouTube says it's also replacing the "thumbs-up"
+    button with a "heart" icon, and is introducing a new option that lets you watch
+    Shorts […]
+  prompt: ''
+  url: https://www.theverge.com/streaming/957422/youtube-shorts-update-tiktok
+  source: The Verge
+  published_utc: '2026-06-25T22:08:30+00:00'
+  title_zh: YouTube更新Shorts功能，使其更趋近TikTok
+  why_zh: YouTube正为其Shorts功能增设更多类似TikTok的元素，包括清除观看视频时界面图标与文字的"清净模式"。
+  takeaway_zh: YouTube正为Shorts引入更多TikTok式功能：新增"清净模式"可隐藏观看视频时的图标与文字。周四的博客中，YouTube宣布将点赞按钮改为心形图标，并推出……
+  prompt_zh: ''
+- category: Tech industry
+  title: YouTube Shorts are getting even shorter with an update that lets you double
+    the playback speed
+  why: YouTube Shorts is getting a makeover.
+  takeaway: YouTube Shorts is getting a makeover.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/25/youtube-shorts-are-getting-even-shorter-with-an-update-that-lets-you-double-the-playback-speed/
+  source: TechCrunch
+  published_utc: '2026-06-25T22:02:12+00:00'
+  title_zh: YouTube Shorts更新后更短，支持双倍播放速度
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: OpenAI will delay GPT-5.6 after Trump administration request
+  why: The Trump administration, apprehensive of potential security issues, has reportedly
+    asked OpenAI to stagger the release of its next big-tic…
+  takeaway: The Trump administration, apprehensive of potential security issues, has
+    reportedly asked OpenAI to stagger the release of its next big-ticket model, GPT-5.6.
+    The Information reported that OpenAI CEO Sam Altman told employees Wednesday in
+    a company Q&A that it would release GPT-5.6 in limited preview form - granting
+    access only to a small group of […]
+  prompt: ''
+  url: https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request
+  source: The Verge
+  published_utc: '2026-06-25T21:57:06+00:00'
+  title_zh: OpenAI将推迟GPT-5.6发布，应特朗普政府要求
+  why_zh: 出于安全隐患考虑，特朗普政府据传已要求OpenAI分阶段发布其重大更新……
+  takeaway_zh: 据The Information报道，出于对潜在安全问题的担忧，特朗普政府已要求OpenAI分阶段发布其重磅新模型GPT-5.6。OpenAI首席执行官Sam
+    Altman在周三的公司问答会上向员工表示，GPT-5.6将以限量预览形式发布，仅向小范围[...]开放访问。
+  prompt_zh: ''
+- category: Tech industry
+  title: The 'papers, please' era of the internet will decimate your privacy
+  why: 'Article URL: https://expression.fire.org/p/the-papers-please-era-of-the-internet
+    Comments URL: https://news.ycombinator.com/item?id=4867960…'
+  takeaway: 'Article URL: https://expression.fire.org/p/the-papers-please-era-of-the-internet
+    Comments URL: https://news.ycombinator.com/item?id=48679608 Points: 631 # Comments:
+    288'
+  prompt: ''
+  url: https://expression.fire.org/p/the-papers-please-era-of-the-internet
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T21:44:55+00:00'
+  title_zh: 互联网‘请出示证件’时代将严重削弱你的隐私
+  why_zh: 文章链接：https://expression.fire.org/p/the-papers-please-era-of-the-internet
+    评论链接：https://news.ycombinator.com/item?id=4867960…
+  takeaway_zh: 文章链接：https://expression.fire.org/p/the-papers-please-era-of-the-internet
+    评论链接：https://news.ycombinator.com/item?id=48679608 点赞数：631 评论数：288
+  prompt_zh: ''
+- category: Tech industry
+  title: Framework has good news and bad news
+  why: Thanks to the component crisis, it's a bad time to want a new computer.
+  takeaway: Thanks to the component crisis, it's a bad time to want a new computer.
+    But if you are waiting on a preorder for the Framework Laptop 13 Pro - which Framework's
+    CEO has called the "MacBook Pro for Linux users" - the company shared good news
+    on Thursday that might mean yours will cost less […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/957338/framework-laptop-13-pro-ssd-price-cpu
+  source: The Verge
+  published_utc: '2026-06-25T21:23:47+00:00'
+  title_zh: Framework传来喜忧参半的消息
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: AI tools & model releases
+  title: OpenAI GPT, OpenAI GPT OSS, and NVIDIA Nemotron models on Amazon Bedrock
+    receive FedRAMP High and DoD IL-4/5 approval in AWS GovCloud (US)
+  why: OpenAI GPT, OpenAI GPT OSS, and NVIDIA Nemotron models are now FedRAMP High
+    and Department of Defense Cloud Computing Security Requirements…
+  takeaway: OpenAI GPT, OpenAI GPT OSS, and NVIDIA Nemotron models are now FedRAMP
+    High and Department of Defense Cloud Computing Security Requirements Guide (DoD
+    CC SRG) Impact Level (IL) 4 and 5 approved within Amazon Bedrock in the AWS GovCloud
+    (US) Regions. Federal agencies, public sector organizations, and other enterprises
+    with FedRAMP High and DoD CC SRG IL-4/5…
+  prompt: ''
+  url: https://aws.amazon.com/about-aws/whats-new/2026/06/addl-bedrock-model-fedramp-il-5-govcloud
+  source: AWS What's New (Recent Announcements)
+  published_utc: '2026-06-25T21:00:00+00:00'
+  title_zh: OpenAI GPT、OpenAI GPT OSS及NVIDIA Nemotron模型获AWS GovCloud(US) FedRAMP
+    High与DoD IL-4/5认证
+  why_zh: OpenAI GPT、OpenAI GPT OSS及英伟达Nemotron模型现已通过FedRAMP High认证和国防部云计算安全要求……
+  takeaway_zh: OpenAI GPT、OpenAI GPT开源版本及NVIDIA Nemotron系列模型现已在AWS GovCloud（美国）区域的Amazon
+    Bedrock服务中获得FedRAMP High认证，并符合美国国防部云计算安全要求指南（DoD CC SRG）影响等级4级和5级标准。这意味着联邦机构、公共部门组织及其他需要满足FedRAMP
+    High与DoD CC SRG IL-4/5要求的企业[...]
+  prompt_zh: ''
+- category: Tech industry
+  title: 'Un-0: Generating Images with Coupled Oscillators'
+  why: 'Article URL: https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/
+    Comments URL: https://news.ycombinator.com…'
+  takeaway: 'Article URL: https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/
+    Comments URL: https://news.ycombinator.com/item?id=48679007 Points: 139 # Comments:
+    33'
+  prompt: ''
+  url: https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T20:50:02+00:00'
+  title_zh: Un-0：用耦合振荡器生成图像
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Om Malik has died
+  why: https://runtimewire.com/article/om-malik-taught-silicon-vall...
+  takeaway: 'https://runtimewire.com/article/om-malik-taught-silicon-vall... Comments
+    URL: https://news.ycombinator.com/item?id=48678852 Points: 810 # Comments: 89'
+  prompt: ''
+  url: https://om.co/2026/06/24/1966-2026/
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T20:33:37+00:00'
+  title_zh: Om Malik逝世
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Microsoft adds another year to Windows 10 extended update program
+  why: About a quarter of PCs are still running Microsoft's previous operating system.
+  takeaway: About a quarter of PCs are still running Microsoft's previous operating
+    system.
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/06/microsoft-adds-another-year-to-windows-10-extended-update-program/
+  source: Ars Technica
+  published_utc: '2026-06-25T20:24:09+00:00'
+  title_zh: 微软将Windows 10扩展更新计划延长一年
+  why_zh: 约四分之一的个人电脑仍在运行微软上一代操作系统。
+  takeaway_zh: 约四分之一的个人电脑仍在运行微软上一代操作系统。
+  prompt_zh: ''
+- category: Tech industry
+  title: Patronus AI lands $50M to build ‘digital worlds’ that stress-test AI agents
+  why: Agent-testing startup Patronus AI, founded by former Meta AI researchers, is
+    experiencing nearly insatiable demand, its investor says.
+  takeaway: Agent-testing startup Patronus AI, founded by former Meta AI researchers,
+    is experiencing nearly insatiable demand, its investor says.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/
+  source: TechCrunch
+  published_utc: '2026-06-25T20:19:25+00:00'
+  title_zh: Patronus AI获5000万美元融资，构建测试AI代理的‘数字世界’
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Score a discounted Xbox console before the prices jump
+  why: Microsoft announced today that the price of all Xbox models will rise in August,
+    the second time in less than a year as memory prices conti…
+  takeaway: Microsoft announced today that the price of all Xbox models will rise
+    in August, the second time in less than a year as memory prices continue to wreak
+    havoc on every industry from cars to computing. Thankfully, we’re already out
+    looking for Prime Day deals, and we were able to find some discounts on both […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/957170/xbox-series-s-x-prime-day-deal-sale
+  source: The Verge
+  published_utc: '2026-06-25T20:18:47+00:00'
+  title_zh: 在Xbox涨价前抢购折扣主机
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: An oral history of Bank Python (2021)
+  why: 'Article URL: https://calpaterson.com/bank-python.html Comments URL: https://news.ycombinator.com/item?id=48678645
+    Points: 103 # Comments: 33'
+  takeaway: 'Article URL: https://calpaterson.com/bank-python.html Comments URL: https://news.ycombinator.com/item?id=48678645
+    Points: 103 # Comments: 33'
+  prompt: ''
+  url: https://calpaterson.com/bank-python.html
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T20:14:35+00:00'
+  title_zh: Bank Python口述史（2021）
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Parallel Parentheses Matching
+  why: 'Article URL: https://williamdue.github.io/blog/parallel-parentheses-matching
+    Comments URL: https://news.ycombinator.com/item?id=48678623 Po…'
+  takeaway: 'Article URL: https://williamdue.github.io/blog/parallel-parentheses-matching
+    Comments URL: https://news.ycombinator.com/item?id=48678623 Points: 82 # Comments:
+    10'
+  prompt: ''
+  url: https://williamdue.github.io/blog/parallel-parentheses-matching
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T20:12:24+00:00'
+  title_zh: 并行括号匹配
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Instagram wants to monopolize your attention
+  why: This week, Instagram launched a series of new features for its smart TV app
+    that are all designed to get people to spend more time on the p…
+  takeaway: This week, Instagram launched a series of new features for its smart TV
+    app that are all designed to get people to spend more time on the platform through
+    the biggest screens in their homes. In addition to vertical Reels, Instagram for
+    TV - which is currently available for Amazon Fire TV, Google TV, and […]
+  prompt: ''
+  url: https://www.theverge.com/tech/956456/instagram-for-tv-youtube-microdramas-longform-video
+  source: The Verge
+  published_utc: '2026-06-25T20:10:24+00:00'
+  title_zh: Instagram意图独占你的注意力
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: FCC may kill $2B program that connects schools and libraries to Internet
+  why: Carr cites screen time concerns, is accused of trying to be "the nation’s parent."
+  takeaway: Carr cites screen time concerns, is accused of trying to be "the nation’s
+    parent."
+  prompt: ''
+  url: https://arstechnica.com/tech-policy/2026/06/fcc-may-kill-2b-program-that-connects-schools-and-libraries-to-internet/
+  source: Ars Technica
+  published_utc: '2026-06-25T20:01:08+00:00'
+  title_zh: FCC可能取消20亿美元连接学校与图书馆的互联网项目
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The Doorman's Fallacy in action
+  why: 'Article URL: https://rozumem.xyz/posts/17 Comments URL: https://news.ycombinator.com/item?id=48678495
+    Points: 98 # Comments: 135'
+  takeaway: 'Article URL: https://rozumem.xyz/posts/17 Comments URL: https://news.ycombinator.com/item?id=48678495
+    Points: 98 # Comments: 135'
+  prompt: ''
+  url: https://rozumem.xyz/posts/17
+  source: Hacker News (front page)
+  published_utc: '2026-06-25T20:00:35+00:00'
+  title_zh: 看门人谬误实证
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: RAMageddon just got extremely real
+  why: As far as prices go, Apple is kind of a reverse canary in the coal mine.
+  takeaway: As far as prices go, Apple is kind of a reverse canary in the coal mine.
+    With its famously generous margins and immense purchasing volume, it can afford
+    to ride out price fluctuations in its supply chain in a way no other consumer
+    tech company can. So when Apple raises prices across nearly all of […]
+  prompt: ''
+  url: https://www.theverge.com/tech/956950/ram-crisis-apple-price-increase
+  source: The Verge
+  published_utc: '2026-06-25T20:00:00+00:00'
+  title_zh: RAMageddon变得异常真实
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Polymarket says hackers stole users’ funds
+  why: The prediction market giant Polymarket said it's refunding users who had funds
+    stolen due to a third-party breach.
+  takeaway: The prediction market giant Polymarket said it's refunding users who had
+    funds stolen due to a third-party breach.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/25/polymarket-says-hackers-stole-users-funds/
+  source: TechCrunch
+  published_utc: '2026-06-25T19:58:46+00:00'
+  title_zh: Polymarket称黑客窃取了用户资金
+  why_zh: 预测市场巨头Polymarket宣布将向因第三方数据泄露遭受资金损失的用户退款。
+  takeaway_zh: 预测市场巨头Polymarket宣布将向因第三方数据泄露遭受资金损失的用户退款。
+  prompt_zh: ''
+- category: Tech industry
+  title: Xbox follows Apple with price increases
+  why: The company says the increases are being driven by rising memory and console
+    storage prices, with costs more than 2.5x higher than previous…
+  takeaway: The company says the increases are being driven by rising memory and console
+    storage prices, with costs more than 2.5x higher than previous levels.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/25/xbox-follows-apple-with-price-increases/
+  source: TechCrunch
+  published_utc: '2026-06-25T19:39:55+00:00'
+  title_zh: Xbox效仿苹果，宣布涨价
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Notion Mail shuts down amid agent takeover
+  why: The company said it is discontinuing its email inbox in favor of its AI agent
+    offering as users are increasingly handing over the reins of…
+  takeaway: The company said it is discontinuing its email inbox in favor of its AI
+    agent offering as users are increasingly handing over the reins of their email
+    to the agents.
+  prompt: ''
+  url: https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/
+  source: TechCrunch
+  published_utc: '2026-06-25T19:14:46+00:00'
+  title_zh: Notion Mail在代理接管浪潮中关闭
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Notion killing Skiff-influenced email app since most users use AI agents
+    instead
+  why: Notion is "going all in on using agents to run your inbox."
+  takeaway: Notion is "going all in on using agents to run your inbox."
+  prompt: ''
+  url: https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/
+  source: Ars Technica
+  published_utc: '2026-06-25T19:04:57+00:00'
+  title_zh: Notion关闭受Skiff启发的邮件应用，因多数用户转向AI代理
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: The 16 best robot vacuum deals available during Prime Day
+  why: If you’ve been wanting to buy a robot vacuum but have been put off by how much
+    it can cost to get a good one, now is not a bad time to star…
+  takeaway: If you’ve been wanting to buy a robot vacuum but have been put off by
+    how much it can cost to get a good one, now is not a bad time to start looking.
+    We’re now on day three of Prime Day, and Amazon, along with retailers like Best
+    Buy and Walmart, is offering discounts […]
+  prompt: ''
+  url: https://www.theverge.com/gadgets/951081/robot-vacuum-mop-deals-amazon-prime-day-2026
+  source: The Verge
+  published_utc: '2026-06-25T18:47:26+00:00'
+  title_zh: Prime Day期间最值得入手的16款扫地机器人优惠
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''
+- category: Tech industry
+  title: Google finally releases a Finance Android app, promises iOS version later
+    in 2026
+  why: It took 20 years, but the Finance app arrives just in time to be packed full
+    of AI.
+  takeaway: It took 20 years, but the Finance app arrives just in time to be packed
+    full of AI.
+  prompt: ''
+  url: https://arstechnica.com/google/2026/06/google-finance-finally-gets-a-mobile-app-as-ai-powered-overhaul-leaves-beta/
+  source: Ars Technica
+  published_utc: '2026-06-25T18:38:51+00:00'
+  title_zh: Google终于发布Android版Finance应用，承诺2026年推出iOS版本
+  why_zh: ''
+  takeaway_zh: ''
+  prompt_zh: ''

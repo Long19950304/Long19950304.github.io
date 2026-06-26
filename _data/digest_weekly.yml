@@ -157,7 +157,7 @@ weeks:
   - date: '2026-01-24'
     url: https://www.ft.com/content/21a7ac07-c388-41e3-a447-ed850cb0f624
     title: Poor wage growth estimates led to inflation forecast errors, BoE says
-    title_zh: 1. 英国央行称，工资增长预估不足导致通胀预测失误
+    title_zh: 英国央行称，工资增长预估不足导致通胀预测失误
     category: Business & economy
     source: Financial Times - World
     published_utc: '2026-01-23T16:56:22+00:00'
@@ -1700,6 +1700,7 @@ weeks:
   end: '2026-06-28'
   issues:
   - '2026-06-22'
+  - '2026-06-26'
   highlights_news:
   - date: '2026-06-22'
     url: https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/
@@ -1737,6 +1738,43 @@ weeks:
     category: AI frontier
     source: OpenAI Blog
     published_utc: '2026-06-21T23:00:00+00:00'
+  - date: '2026-06-26'
+    url: https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/
+    title: The White House is asking OpenAI to slow roll the release of its new model
+      over safety concerns
+    title_zh: 白宫因安全顾虑要求OpenAI放缓新模型发布
+    category: Tech industry
+    source: TechCrunch
+    published_utc: '2026-06-25T23:34:39+00:00'
+  - date: '2026-06-26'
+    url: https://www.theverge.com/streaming/957422/youtube-shorts-update-tiktok
+    title: YouTube updates Shorts to make it even more like TikTok
+    title_zh: YouTube更新Shorts功能，使其更趋近TikTok
+    category: Tech industry
+    source: The Verge
+    published_utc: '2026-06-25T22:08:30+00:00'
+  - date: '2026-06-26'
+    url: https://arstechnica.com/gadgets/2026/06/microsoft-adds-another-year-to-windows-10-extended-update-program/
+    title: Microsoft adds another year to Windows 10 extended update program
+    title_zh: 微软将Windows 10扩展更新计划延长一年
+    category: Tech industry
+    source: Ars Technica
+    published_utc: '2026-06-25T20:24:09+00:00'
+  - date: '2026-06-26'
+    url: https://www.wired.com/story/uncanny-valley-podcast-amazon-mgm-openai-movie-data-center-workers-fight-back-meta-leaks-employee-data/
+    title: Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and
+      Meta Leaks Employee Data
+    title_zh: 亚马逊为何放弃OpenAI电影，数据中心工人反击，Meta泄露员工数据
+    category: AI frontier
+    source: WIRED - AI
+    published_utc: '2026-06-25T23:13:45+00:00'
+  - date: '2026-06-26'
+    url: https://www.fernandoi.cl/posts/hackmyclaw/
+    title: What happened after 2k people tried to hack my AI assistant
+    title_zh: 2000人试图入侵我的AI助手后发生了什么
+    category: Tech industry
+    source: Hacker News (front page)
+    published_utc: '2026-06-26T02:29:23+00:00'
   highlights_ai:
   - date: '2026-06-22'
     url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.25.1
@@ -1774,3 +1812,36 @@ weeks:
     category: AI tools & model releases
     source: GitHub Releases - langchain-ai/langchain
     published_utc: '2026-06-18T19:43:17+00:00'
+  - date: '2026-06-26'
+    url: https://aws.amazon.com/about-aws/whats-new/2026/06/addl-bedrock-model-fedramp-il-5-govcloud
+    title: OpenAI GPT, OpenAI GPT OSS, and NVIDIA Nemotron models on Amazon Bedrock
+      receive FedRAMP High and DoD IL-4/5 approval in AWS GovCloud (US)
+    title_zh: OpenAI GPT、OpenAI GPT OSS及NVIDIA Nemotron模型获AWS GovCloud(US) FedRAMP
+      High与DoD IL-4/5认证
+    category: AI tools & model releases
+    source: AWS What's New (Recent Announcements)
+    published_utc: '2026-06-25T21:00:00+00:00'
+  - date: '2026-06-26'
+    url: https://www.latent.space/p/ainews-openai-reports-median-internal
+    title: '[AINews] OpenAI reports median internal Codex output tokens grew 56x in
+      Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since
+      November 2025.'
+    title_zh: 【AI快讯】OpenAI报告自2025年11月以来，Codex内部输出中位数令牌数在研究领域增长56倍、客户支持32倍、工程27倍、法律13倍
+    category: AI tools & model releases
+    source: Latent Space (LLM/tools)
+    published_utc: '2026-06-26T01:12:30+00:00'
+  - date: '2026-06-26'
+    url: https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.3
+    title: 'langchain-ai/langchain: langchain-fireworks==1.4.3'
+    title_zh: LangChain Fireworks 1.4.3 发布
+    category: AI tools & model releases
+    source: GitHub Releases - langchain-ai/langchain
+    published_utc: '2026-06-26T06:52:05+00:00'
+  - date: '2026-06-26'
+    url: https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps/
+    title: Streamlining Resource Binding with End-to-End Support for Vulkan Descriptor
+      Heaps
+    title_zh: 通过端到端支持Vulkan描述符堆实现资源绑定简化
+    category: AI tools & model releases
+    source: NVIDIA Developer Blog
+    published_utc: '2026-06-25T22:25:51+00:00'

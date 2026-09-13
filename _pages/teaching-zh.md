@@ -13,7 +13,15 @@ translation_key: teaching
   <img src="/assets/img/teaching/studio-teams-zh.svg" alt="工作室式教学：团队协作 + 结构化竞赛" style="width: 100%; height: auto; border-radius: 14px;">
 </div>
 
-我设计的课程强调 **AI-forward**、**产品/成果导向**，并突出 **团队合作 + 结构化竞赛**（团队内强协作；团队间透明竞争）。
+我主要讲授媒体创作、编剧、影视文化及大学语文等课程，结合实践制作、批判性观影与项目制学习。
+
+## 当前课程
+
+- 数字摄影与摄像
+- 微电影制作
+- 编剧艺术
+- 影视文化
+- 大学语文
 
 ## 教学方向
 

@@ -13,7 +13,15 @@ translation_key: teaching
   <img src="/assets/img/teaching/studio-teams.svg" alt="Studio teaching: teams + competition" style="width: 100%; height: auto; border-radius: 14px;">
 </div>
 
-I design applied-learning courses that are **AI-forward**, **product/outcome oriented**, and emphasize **teamwork with structured competition** (strong collaboration within teams; transparent competition between teams).
+I teach applied courses in media creation, screenwriting, and film and television culture, alongside general education in Chinese. My teaching combines hands-on production, critical viewing, and structured project work.
+
+## Current courses
+
+- Digital Photography and Videography
+- Microfilm Production
+- Art of Screenwriting
+- Film and Television Culture
+- College Chinese
 
 ## Teaching directions
 

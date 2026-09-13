@@ -12,8 +12,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Guangzhou, China (UTC+8)</p>
-    <p><a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a></p>
+    <p>Jiangmen, Guangdong, China (UTC+8)</p>
+    <p><a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -43,7 +43,7 @@ I build <strong>evaluation-first multi-agent systems</strong> for research and A
       I am <strong>Zhilong George Zhao (赵志龙)</strong>, a communication and digital media researcher working at the intersection of <strong>AI-native workflows</strong>, <strong>LLM evaluation</strong>, and <strong>multi-agent systems</strong>. My next 3–5 year agenda is <strong>Agentic Engineering (AE+X)</strong>: designing, testing, and deploying multi-agent architectures that deliver reliable outcomes in real research and production workflows.
     </p>
     <p>
-      I am currently a <strong>Postdoctoral Researcher and Assistant Researcher</strong> at the School of Journalism and Communication, South China University of Technology (SCUT), and I am preparing faculty applications in Communication & Digital Media.
+      I am a <strong>Lecturer</strong> in the School of Humanities and Law at <strong>Wuyi University</strong>. My teaching includes digital photography and videography, microfilm production, screenwriting, film and television culture, and college Chinese.
     </p>
   </div>
 </details>

@@ -12,8 +12,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>中国广州（UTC+8）</p>
-    <p><a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a></p>
+    <p>中国广东江门（UTC+8）</p>
+    <p><a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a></p>
 
 selected_papers: true
 social: true
@@ -43,7 +43,7 @@ latest_posts:
       我是<strong>赵志龙（Zhilong George Zhao）</strong>，研究兴趣位于<strong>传播与数字媒体</strong>领域，并聚焦于<strong>AI-native 工作流</strong>、<strong>大语言模型评估</strong>与<strong>多智能体系统</strong>的交叉。
     </p>
     <p>
-      我目前在华南理工大学新闻与传播学院担任<strong>博士后研究人员/助理研究员</strong>，并在准备传播与数字媒体方向的教职申请。
+      我目前在<strong>五邑大学人文与政法学院</strong>担任<strong>讲师</strong>，承担数字摄影与摄像、微电影制作、编剧艺术、影视文化和大学语文等课程教学。
     </p>
   </div>
 </details>
@@ -59,4 +59,3 @@ latest_posts:
 - 用于标注、评估与质量保障的多智能体工作流（人类/LLM 混合）。
 - 尽量减少“传统工具依赖”、强调可复现性的 AI-native 媒体生产流水线。
 - 强调<strong>团队内协作</strong>与<strong>团队间竞争</strong>的课程设计（以成果/评估为导向）。
-

@@ -18,5 +18,5 @@ translation_key: cv
 {% else %}
 The public CV PDF is available upon request.
 
-Email: <a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a>
+Email: <a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a>
 {% endif %}

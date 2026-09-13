@@ -18,6 +18,5 @@ translation_key: cv
 {% else %}
 公开版本简历（PDF）可按需提供。
 
-邮箱：<a href="mailto:yb87315@umac.mo">yb87315@umac.mo</a>
+邮箱：<a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a>
 {% endif %}
-

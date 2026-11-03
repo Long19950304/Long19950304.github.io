@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>小k历险记 · 羊皮卷寻宝图</title>
+<style>
+/* ============ 基础 ============ */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  overflow:hidden;
+  font-family:"Times New Roman",Georgia,"KaiTi","STKaiti","Songti SC",serif;
+  color:#3c2a18;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(150,105,60,.32), transparent 62%),
+    repeating-linear-gradient(90deg,#1a110a 0 6px,#20150d 6px 12px,#160e08 12px 19px);
+}
+
+/* ============ 羊皮卷纸面 ============ */
+.sheet{
+  position:fixed; inset:8px;
+  display:flex; flex-direction:column; gap:8px;
+  padding:8px;
+  border-radius:6px;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 16% 6%, rgba(255,252,232,.75), rgba(255,252,232,0) 52%),
+    radial-gradient(ellipse at 88% 96%, rgba(255,244,214,.5), rgba(255,244,214,0) 55%),
+    radial-gradient(ellipse at 50% 48%, #f0e0bc 0%, #e6d3ab 42%, #d5ba8b 76%, #bd9e6c 100%);
+  box-shadow:
+    inset 0 0 130px rgba(122,80,38,.55),
+    inset 0 0 30px rgba(92,60,28,.32),
+    0 18px 60px rgba(0,0,0,.7);
+}
+.sheet::before{
+  content:''; position:absolute; inset:0; pointer-events:none; z-index:1;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(120,85,45,.055) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, rgba(120,85,45,.045) 0 1px, transparent 1px 6px);
+  mix-blend-mode:multiply;
+}
+.sheet::after{
+  content:''; position:absolute; inset:0; pointer-events:none; z-index:1; opacity:.15;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/></filter><rect width='260' height='260' filter='url(%23n)' opacity='0.6'/></svg>");
+}
+.frame{
+  position:absolute; inset:5px; border:1px solid rgba(120,84,44,.4);
+  border-radius:4px; pointer-events:none; z-index:2;
+  box-shadow:inset 0 0 0 3px rgba(240,228,200,.35);
+}
+.sheet > *{position:relative; z-index:3}
+
+/* ============ 顶部状态栏 ============ */
+.hud{
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  padding:7px 14px; border-radius:7px; flex:0 0 auto;
+  background:linear-gradient(#513722 0%, #38241a 55%, #25160c 100%);
+  border:2px solid #7d5a30;
+  box-shadow:
+    inset 0 1px 0 rgba(255,225,170,.3),
+    inset 0 -6px 14px rgba(0,0,0,.45),
+    0 3px 0 #1a1008,
+    0 9px 16px rgba(0,0,0,.35);
+  color:#f0dcb0;
+}
+.hud::after{
+  content:''; position:absolute; right:12px; top:6px; bottom:6px; width:1px;
+  background:linear-gradient(transparent,rgba(220,190,130,.12),transparent); display:none;
+}
+.brand{display:flex;align-items:center;gap:9px;flex:0 0 auto}
+.brand-mark{
+  width:33px;height:33px;display:grid;place-items:center;border-radius:50%;
+  font-family:"Times New Roman",Georgia,serif;font-size:19px;font-weight:700;color:#3a2312;
+  background:radial-gradient(circle at 34% 28%,#f2d693,#bf8f3f);
+  box-shadow:0 0 0 2px #6d4a24, 0 0 16px rgba(240,200,120,.35), inset 0 1px 3px rgba(255,255,255,.55);
+}
+.brand-name{font-size:16px;letter-spacing:3px;color:#f6e2ab;text-shadow:0 1px 0 #170d05, 0 0 12px rgba(240,200,120,.25)}
+.brand-sub{font-size:9px;letter-spacing:2.6px;color:#a98757;margin-top:1px;font-family:Georgia,serif}
+.levels{display:flex;gap:5px;flex-wrap:wrap;margin:0 auto}
+.chip{
+  display:flex;align-items:center;gap:4px;
+  padding:3px 8px 3px 6px;border-radius:20px;font-size:11px;letter-spacing:.6px;
+  border:1px solid rgba(205,165,105,.22);background:rgba(0,0,0,.25);color:#c0a37a;
+  transition:.35s;white-space:nowrap;
+}
+.chip-num{
+  width:15px;height:15px;border-radius:50%;display:grid;place-items:center;
+  font-size:9px;font-family:Georgia,serif;background:rgba(230,196,130,.14);color:#d9bc8c;
+}
+.chip.active{
+  color:#3a2311;background:linear-gradient(#f1d699,#cd9c51);border-color:#8d6533;
+  box-shadow:0 0 16px rgba(240,200,120,.55), inset 0 1px 0 rgba(255,255,255,.6);
+}
+.chip.active .chip-num{background:#3a2311;color:#f1d699}
+.chip.done{color:#b6cfae;border-color:rgba(130,180,125,.35)}
+.stats{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.hearts{display:flex;gap:2px;align-items:center}
+.hearts.shake{animation:shake .45s}
+.heart{width:21px;height:21px;display:block;transition:.35s;filter:drop-shadow(0 1px 0 rgba(0,0,0,.5))}
+.heart.lost{opacity:.42;transform:scale(.9)}
+.score{
+  display:flex;align-items:baseline;gap:6px;padding:3px 10px;border-radius:6px;
+  background:rgba(0,0,0,.3);border:1px solid rgba(205,165,105,.22);
+}
+.score-label{font-size:10px;letter-spacing:1.6px;color:#a98757}
+.score-val{font-family:Georgia,serif;font-size:16px;color:#f0cd84;min-width:34px;text-align:right}
+.icon-btn{
+  width:30px;height:30px;border-radius:7px;display:grid;place-items:center;
+  font-size:14px;cursor:pointer;color:#e6cf9f;
+  background:linear-gradient(#4a3320,#2e1d11);
+  border:1px solid #7d5a30;
+  box-shadow:inset 0 1px 0 rgba(255,225,170,.2),0 2px 0 #170e07;
+  transition:.15s;
+}
+.icon-btn:hover{color:#fff2cb;border-color:#a9824e}
+.icon-btn:active{transform:translateY(2px);box-shadow:none}
+
+/* ============ 地图 ============ */
+.mapWrap{
+  position:relative; flex:1 1 auto; min-height:120px;
+  display:flex; align-items:center; justify-content:center;
+}
+#map{width:100%;height:100%;display:block;overflow:visible}
+
+/* 地图线稿配色 */
+.map-ink{stroke:#7a5a34}
+.contour{stroke:#8a6a42;opacity:.2;fill:none;stroke-width:1.2}
+.zone-shape{fill:rgba(186,148,96,.18);stroke:#9a7b4b;stroke-width:1.2;stroke-dasharray:4 5}
+.zone-txt{fill:#4a3119;font-family:KaiTi,STKaiti,serif;font-size:19px;letter-spacing:5px}
+.zone-sub{fill:#7d5f3a;font-family:Georgia,serif;font-size:9px;letter-spacing:3px}
+.zone-label{opacity:.62;transition:opacity .5s}
+.zone-label.active{opacity:1}
+.trail-base{
+  fill:none;stroke:#a78654;stroke-width:8;stroke-linecap:round;opacity:.35;
+}
+.trail-dots{
+  fill:none;stroke:#6b4a2a;stroke-width:3;stroke-linecap:round;
+  stroke-dasharray:1 10;
+}
+.trail-done{
+  fill:none;stroke:url(#gGold);stroke-width:3.4;stroke-linecap:round;
+  filter:drop-shadow(0 0 5px rgba(220,170,90,.55));
+}
+.node circle{fill:url(#nodeFill);stroke:#8a6538;stroke-width:1.6}
+.node text{fill:#6b4a2a;font-family:Georgia,serif;font-size:11px;text-anchor:middle;dominant-baseline:central}
+.node.done circle{fill:url(#gGold);stroke:#6d4a24;stroke-width:1.8}
+.node.done text{fill:#3a2311;font-weight:bold}
+.node{opacity:.85}
+
+/* ============ 题目面板 ============ */
+.dock{
+  position:relative; flex:0 0 auto; min-height:0;
+  max-height:58vh; overflow-y:auto; overflow-x:hidden;
+  padding:11px 18px 14px; border-radius:9px;
+  background:linear-gradient(#f7ead0 0%, #ecdbb6 55%, #e4cfa4 100%);
+  border:2px solid #9a7746;
+  box-shadow:
+    0 -6px 22px rgba(80,50,20,.16),
+    inset 0 0 50px rgba(160,120,70,.22),
+    inset 0 2px 0 rgba(255,255,255,.65),
+    0 6px 0 rgba(122,90,50,.18);
+  scrollbar-width:thin;
+  scrollbar-color:rgba(150,115,70,.45) transparent;
+}
+.dock::-webkit-scrollbar{width:8px}
+.dock::-webkit-scrollbar-thumb{background:rgba(150,115,70,.42);border-radius:4px}
+.dock::-webkit-scrollbar-track{background:transparent}
+.dock::before{
+  content:''; position:absolute; inset:4px; border:1px solid rgba(150,115,70,.35);
+  border-radius:5px; pointer-events:none;
+}
+.dock.shake{animation:shake .4s}
+.q-head{
+  display:flex; justify-content:space-between; align-items:center; gap:12px;
+  padding-bottom:7px; margin-bottom:9px; border-bottom:1px dashed rgba(140,105,62,.45);
+  font-size:11.5px; letter-spacing:1.6px; color:#846342;
+}
+.q-tag{display:flex;align-items:center;gap:7px}
+.q-tag .dot{width:6px;height:6px;background:#a33a2a;transform:rotate(45deg);box-shadow:0 0 6px rgba(163,58,42,.5)}
+.q-step{font-family:Georgia,serif;color:#96714a}
+.q-right{display:flex;align-items:center;gap:12px}
+.timer{
+  display:flex;align-items:center;gap:3px;
+  font-family:Georgia,serif;font-size:13px;letter-spacing:1px;color:#7a5a38;
+  padding:2px 8px;border-radius:20px;border:1px solid rgba(140,105,62,.35);
+  background:rgba(255,250,235,.5);transition:.25s;
+}
+.timer .t-ico{font-size:11px}
+.timer.warn{color:#a33a2a;border-color:rgba(163,58,42,.5);background:rgba(255,232,222,.7);animation:tick 1s infinite}
+.tbar{height:5px;border-radius:3px;background:rgba(140,105,62,.22);overflow:hidden;margin:-3px 0 10px}
+.tbar i{display:block;height:100%;width:100%;border-radius:3px;background:linear-gradient(90deg,#c9a45a,#e3c483);transition:width .12s linear}
+.tbar.low i{background:linear-gradient(90deg,#b4552f,#a33a2a)}
+
+.q-prompt{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+.q-label{font-size:13px;letter-spacing:2px;color:#7a5a38}
+.q-wordline{display:flex;align-items:center;gap:12px}
+.q-word{
+  font-family:"Times New Roman",Georgia,serif;font-size:clamp(28px,3.4vw,42px);
+  letter-spacing:2px;color:#2e1d0d;line-height:1.05;
+  text-shadow:0 1px 0 rgba(255,255,255,.7);
+}
+.q-ask{font-size:clamp(14px,1.4vw,17px);letter-spacing:1.4px;line-height:1.6;color:#3f2c18}
+.q-hint{display:block;font-size:12px;letter-spacing:1px;color:#8d6f4d;margin-top:3px}
+.pic-frame{
+  width:clamp(76px,8vw,100px);height:clamp(76px,8vw,100px);
+  display:grid;place-items:center;border-radius:8px;
+  background:linear-gradient(#fdf5e2,#eddfc0);
+  border:2px solid #b99a6a;
+  box-shadow:inset 0 0 16px rgba(150,115,70,.28), 0 3px 0 #cdb184;
+}
+.q-emoji{font-size:clamp(38px,4.6vw,52px);line-height:1}
+
+.speak{
+  width:48px;height:48px;flex:0 0 auto;border-radius:50%;cursor:pointer;
+  display:grid;place-items:center;font-size:19px;
+  background:radial-gradient(circle at 34% 28%,#faeecb,#d8b884);
+  border:2px solid #8e6b3c;
+  box-shadow:0 3px 0 #b08c58, inset 0 1px 2px rgba(255,255,255,.7);
+  transition:.15s;
+}
+.speak:hover{transform:translateY(-2px)}
+.speak:active{transform:translateY(2px);box-shadow:none}
+.speak.playing{animation:ping .9s infinite}
+
+/* 选项 */
+.options{display:grid;gap:10px}
+.options.cols4{grid-template-columns:repeat(4,1fr)}
+.options.cols2{grid-template-columns:repeat(2,1fr)}
+.opt{
+  position:relative;cursor:pointer;padding:10px 8px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  border:2px solid #bc9d6d;border-radius:9px;
+  background:linear-gradient(#fdf4df,#eddfbe);
+  box-shadow:0 2px 0 #cdb184, 0 6px 12px rgba(120,80,40,.12);
+  transition:transform .15s, box-shadow .2s, border-color .2s, background .2s;
+  color:#33210f;
+  animation:optIn .4s backwards;
+  min-height:64px;
+}
+.opt:hover:not(:disabled){transform:translateY(-3px);border-color:#8e6b3c;box-shadow:0 5px 0 #cdb184,0 12px 18px rgba(120,80,40,.18)}
+.opt:disabled{cursor:default}
+.opt .emoji{font-size:clamp(30px,3.6vw,42px);line-height:1;filter:drop-shadow(0 2px 1px rgba(90,60,25,.25))}
+.opt .word{font-family:"Times New Roman",Georgia,serif;font-size:clamp(19px,2.2vw,27px);letter-spacing:1.6px}
+.opt.word-only{padding:15px 8px}
+.opt .zh{font-size:12px;letter-spacing:1px;color:#8a7052}
+.q-sentence{
+  font-family:"Times New Roman",Georgia,serif;
+  font-size:clamp(21px,2.4vw,30px);letter-spacing:.5px;color:#2e1d0d;line-height:1.45;
+  text-shadow:0 1px 0 rgba(255,255,255,.7);
+}
+.q-sentence .blank{
+  display:inline-block;min-width:78px;border-bottom:2.4px solid #8a6538;
+  margin:0 5px;
+}
+.def-box{
+  flex:1 1 320px;padding:9px 15px;border-radius:8px;
+  background:linear-gradient(#fdf5e2,#efe0bc);
+  border:2px dashed #bb9a68;
+  display:flex;flex-direction:column;gap:3px;
+  box-shadow:inset 0 0 18px rgba(150,115,70,.16);
+}
+.def-en{font-family:"Times New Roman",Georgia,serif;font-size:clamp(16px,1.8vw,21px);color:#3a2311;line-height:1.35}
+.def-zh{font-size:12px;letter-spacing:1px;color:#8a7052}
+.opt.correct{
+  border-color:#3f6b4a;background:linear-gradient(#eef6e3,#dcecc7);
+  box-shadow:0 0 0 3px rgba(63,107,74,.18), 0 2px 0 #b6cfae, 0 8px 16px rgba(63,107,74,.2);
+}
+.opt.wrong{
+  border-color:#a33a2a;background:linear-gradient(#f6e2d8,#e8c6b4);
+  opacity:.85;filter:saturate(.8);
+}
+.opt.correct::after,.opt.wrong::after{
+  position:absolute;top:-9px;right:-7px;width:22px;height:22px;border-radius:50%;
+  display:grid;place-items:center;color:#fff8ea;font-size:13px;font-family:Georgia,serif;
+  box-shadow:0 2px 6px rgba(0,0,0,.25);
+}
+.opt.correct::after{content:'✓';background:#3f6b4a}
+.opt.wrong::after{content:'✕';background:#a33a2a}
+
+.feedback{
+  min-height:22px;margin-top:9px;font-size:13px;letter-spacing:1.6px;color:#8a7052;
+  display:flex;align-items:center;gap:8px;
+}
+.feedback.ok{color:#2f6b3f}
+.feedback.bad{color:#9c3a2a}
+
+/* ============ 关卡横幅 ============ */
+.banner{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+  opacity:0;transition:opacity .3s;z-index:4;
+}
+.banner.show{opacity:1}
+.banner .inner{
+  padding:14px 38px;border-radius:8px;text-align:center;
+  background:linear-gradient(#f8ecd0,#e3cfa4);
+  border:2px solid #8a6538;
+  box-shadow:0 0 0 6px rgba(242,230,200,.45), 0 16px 40px rgba(50,25,5,.4);
+  transform:scale(.92);transition:transform .35s cubic-bezier(.2,1.4,.5,1);
+}
+.banner.show .inner{transform:scale(1)}
+.banner .b-top{font-family:Georgia,serif;font-size:10px;letter-spacing:4px;color:#96714a}
+.banner .b-main{font-size:clamp(17px,2.2vw,24px);letter-spacing:5px;color:#3a2311;margin-top:5px}
+.banner .b-deco{color:#a98a58;letter-spacing:6px;font-size:11px;margin-top:6px}
+
+/* ============ 遮罩层 ============ */
+.overlay{
+  position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:18px;
+  background:rgba(22,13,6,.74);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  opacity:0;pointer-events:none;transition:opacity .35s;
+}
+.overlay.show{opacity:1;pointer-events:auto}
+.card{
+  position:relative;width:min(720px,95vw);max-height:94vh;overflow-y:auto;
+  padding:26px 30px 24px;border-radius:10px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,252,236,.8), transparent 60%),
+    linear-gradient(#f7ead0,#e2cda0);
+  border:2px solid #8a6538;
+  box-shadow:0 0 0 7px rgba(244,232,202,.35), 0 0 0 9px rgba(120,84,44,.5), 0 30px 70px rgba(0,0,0,.55);
+  transform:translateY(10px) scale(.98);transition:transform .35s;
+}
+.overlay.show .card{transform:none}
+.card.pause-card{width:min(400px,92vw);padding:26px 28px 22px;text-align:center}
+.pause-mark{font-size:30px;font-family:Georgia,serif;letter-spacing:2px;color:#8a6538}
+.card.pause-card h3{font-size:22px;letter-spacing:6px;color:#2e1d0d;margin:8px 0 6px}
+.card.pause-card p{font-size:13px;line-height:1.9;letter-spacing:1px;color:#7a5a38;margin-bottom:18px}
+.card::before{
+  content:'';position:absolute;inset:7px;border:1px solid rgba(140,105,62,.45);border-radius:5px;pointer-events:none;
+}
+.eyebrow{font-family:Georgia,serif;font-size:10px;letter-spacing:5px;color:#96714a;text-align:center}
+.title{
+  text-align:center;font-size:clamp(30px,5.4vw,46px);letter-spacing:.22em;
+  color:#2e1d0d;margin:6px 0 2px;text-shadow:0 1px 0 #fff, 0 2px 3px rgba(120,80,40,.22);
+}
+.title .k{color:#a33a2a;font-family:"Times New Roman",Georgia,serif;letter-spacing:0}
+.subtitle{text-align:center;font-size:12px;letter-spacing:4px;color:#8a6a42}
+.rule{display:flex;align-items:center;gap:12px;justify-content:center;margin:12px 0;color:#a98a58}
+.rule::before,.rule::after{content:'';height:1px;flex:1;max-width:170px;background:linear-gradient(90deg,transparent,rgba(140,105,62,.6),transparent)}
+.rule span{font-size:12px;letter-spacing:6px}
+
+.intro-list{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:14px 0 4px}
+.intro-item{
+  text-align:center;padding:9px 3px;border-radius:8px;
+  background:rgba(255,250,232,.5);border:1px dashed rgba(140,105,62,.5);
+}
+.intro-item .n{font-family:Georgia,serif;font-size:9px;letter-spacing:1.4px;color:#96714a}
+.intro-item .t{font-size:12.5px;letter-spacing:.6px;color:#3f2c18;margin:3px 0}
+.intro-item .d{font-size:10px;letter-spacing:0;color:#8a7052;line-height:1.45}
+.intro-note{font-size:12px;line-height:1.9;letter-spacing:.8px;color:#7a5a38;margin:12px 0 16px;text-align:center}
+.intro-note b{color:#a33a2a;font-weight:normal}
+.name-row{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.name-row label{font-size:12px;letter-spacing:2px;color:#7a5a38}
+input.name{
+  width:190px;padding:7px 12px;font-family:inherit;font-size:16px;letter-spacing:1px;
+  color:#3a2311;background:#fdf6e5;border:2px solid #b99a6a;border-radius:7px;outline:none;
+  box-shadow:inset 0 2px 5px rgba(140,105,62,.15);
+}
+input.name:focus{border-color:#8a6538}
+.btn{
+  font-family:inherit;cursor:pointer;border-radius:8px;padding:11px 34px;
+  font-size:17px;letter-spacing:5px;color:#2e1b0b;
+  background:linear-gradient(#f3d99f,#c8994f);
+  border:2px solid #6d4a24;
+  box-shadow:0 4px 0 #7d5a30, 0 10px 20px rgba(60,30,5,.3), inset 0 1px 0 rgba(255,255,255,.55);
+  transition:transform .12s, box-shadow .12s;
+}
+.btn:hover{filter:brightness(1.05)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #7d5a30}
+.btn.ghost{background:transparent;box-shadow:none;border-color:#9a7746;color:#6b4a2a;letter-spacing:3px}
+.btn.ghost:hover{background:rgba(200,170,120,.18)}
+.center{text-align:center}
+
+/* ============ 证书 ============ */
+.cert-card{
+  width:min(760px,96vw);padding:22px 34px 20px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,253,240,.9), transparent 55%),
+    linear-gradient(#f9efd6,#e6d2a6 70%, #dcc494);
+  border:3px double #8a6538;
+  box-shadow:0 0 0 6px rgba(246,236,210,.5), 0 0 0 8px rgba(120,84,44,.45), 0 30px 70px rgba(0,0,0,.6);
+}
+.cert-eyebrow{font-family:Georgia,serif;text-align:center;font-size:10px;letter-spacing:5px;color:#96714a}
+.cert-title{text-align:center;font-size:clamp(28px,4.6vw,40px);letter-spacing:.3em;color:#2e1d0d;margin:8px 0 0}
+.cert-rule{display:flex;align-items:center;gap:12px;justify-content:center;margin:8px 0 14px;color:#a98a58}
+.cert-rule::before,.cert-rule::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(140,105,62,.65),transparent)}
+.cert-line{text-align:center;font-size:15px;line-height:2;letter-spacing:1.4px;color:#4b3520;margin:2px 0}
+.cert-line b{font-size:20px;color:#a33a2a;letter-spacing:3px;padding:0 6px;border-bottom:1px solid rgba(163,58,42,.35)}
+.cert-stars{text-align:center;font-size:30px;letter-spacing:12px;color:#c99a45;margin:8px 0 4px;text-shadow:0 2px 4px rgba(140,100,40,.35)}
+.cert-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+  margin:14px 0 16px;padding:12px 6px;
+  border-top:1px solid rgba(140,105,62,.35);border-bottom:1px solid rgba(140,105,62,.35);
+}
+.cert-stats > div{text-align:center}
+.cert-stats .k{display:block;font-size:10px;letter-spacing:2px;color:#96714a}
+.cert-stats .v{display:block;font-family:Georgia,"Times New Roman",serif;font-size:17px;color:#3a2311;margin-top:3px}
+.cert-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:6px}
+.cert-sign{font-size:13px;letter-spacing:3px;color:#6b4a2a;border-top:1px solid rgba(140,105,62,.5);padding-top:6px}
+.seal{
+  width:88px;height:88px;border-radius:50%;display:grid;place-items:center;align-content:center;
+  color:#a33a2a;border:3px double #a33a2a;transform:rotate(-11deg);
+  box-shadow:0 0 0 3px rgba(163,58,42,.18), inset 0 0 12px rgba(163,58,42,.15);
+  opacity:.85;
+}
+.seal span{font-size:22px;letter-spacing:2px;line-height:1}
+.seal em{font-size:8px;letter-spacing:1.5px;font-style:normal;margin-top:3px}
+.cert-actions{display:flex;gap:10px;justify-content:center;margin-top:16px}
+
+/* ============ 动画 ============ */
+@keyframes shake{
+  0%,100%{transform:translateX(0)}
+  20%{transform:translateX(-7px)}40%{transform:translateX(6px)}
+  60%{transform:translateX(-4px)}80%{transform:translateX(3px)}
+}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(163,58,42,.5)}70%{box-shadow:0 0 0 14px rgba(163,58,42,0)}100%{box-shadow:0 0 0 0 rgba(163,58,42,0)}}
+@keyframes tick{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@keyframes optIn{from{opacity:0;transform:translateY(10px)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+#avatar .bob{animation:bob 2.6s ease-in-out infinite}
+.spark{animation:sparkle 2.4s ease-in-out infinite}
+@keyframes sparkle{0%,100%{opacity:.2}50%{opacity:.9}}
+
+/* ============ 响应式 ============ */
+@media (max-width:880px){
+  .brand-sub{display:none}
+  .levels{order:3;width:100%;justify-content:center;margin:4px 0 0}
+  .stats{margin-left:auto}
+  .dock{padding:10px 12px 12px}
+  .options.cols4,.options.cols2{grid-template-columns:repeat(2,1fr)}
+  .q-prompt{gap:12px}
+  .intro-list{grid-template-columns:1fr}
+  .cert-stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-height:700px){
+  .hud{padding:4px 12px}
+  .brand-mark{width:28px;height:28px;font-size:16px}
+  .brand-name{font-size:14px}
+  .dock{max-height:60vh}
+  .q-word{font-size:clamp(24px,3vw,34px)}
+}
+@media print{
+  body *{visibility:hidden}
+  #cert,#cert *{visibility:visible}
+  #cert{position:absolute;inset:0;background:#fff;padding:0;display:block}
+  .cert-card{box-shadow:none;margin:20px auto;width:96%;max-height:none}
+  .cert-actions{display:none!important}
+  .overlay{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="frame"></div>
+
+  <!-- ===== 顶部状态栏 ===== -->
+  <header class="hud">
+    <div class="brand">
+      <div class="brand-mark">K</div>
+      <div>
+        <div class="brand-name">小k历险记</div>
+        <div class="brand-sub">PARCHMENT QUEST</div>
+      </div>
+    </div>
+    <div class="levels" id="levelChips"></div>
+    <div class="stats">
+      <div class="hearts" id="hearts" title="三次机会"></div>
+      <div class="score"><span class="score-label">宝物值</span><span class="score-val" id="scoreVal">0</span></div>
+      <button class="icon-btn" id="pauseBtn" title="暂停 / 继续（Esc）">⏸</button>
+      <button class="icon-btn" id="soundBtn" title="音效开关">🔊</button>
+      <button class="icon-btn" id="restartBtn" title="重新开始">⟲</button>
+    </div>
+  </header>
+
+  <!-- ===== 羊皮卷地图 ===== -->
+  <div class="mapWrap" id="mapWrap">
+    <svg id="map" viewBox="0 0 1300 460" preserveAspectRatio="xMidYMid meet" aria-label="羊皮卷寻宝地图">
+      <defs>
+        <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#e9c774"/>
+          <stop offset="1" stop-color="#b07f36"/>
+        </linearGradient>
+        <radialGradient id="nodeFill" cx="35%" cy="30%" r="80%">
+          <stop offset="0" stop-color="#fdf5e1"/>
+          <stop offset="1" stop-color="#e0c595"/>
+        </radialGradient>
+        <symbol id="pine" viewBox="0 0 22 30">
+          <path d="M11 2 L18 14 H14 L20 24 H2 L8 14 H4 Z" fill="#6d5232" opacity=".72"/>
+          <rect x="10" y="24" width="2" height="6" fill="#5a4227" opacity=".78"/>
+        </symbol>
+        <symbol id="peak" viewBox="0 0 90 54">
+          <path d="M2 50 L27 8 L47 32 L60 17 L88 50" fill="none" stroke="#6b4a2a" stroke-width="2.3" stroke-linejoin="round"/>
+          <path d="M19 26 L29 38 M33 25 L24 36 M55 33 L47 43 M62 38 L54 46" fill="none" stroke="#6b4a2a" stroke-width="1.1" opacity=".7"/>
+          <path d="M22 14 L32 22" fill="none" stroke="#6b4a2a" stroke-width="1.1" opacity=".55"/>
+        </symbol>
+      </defs>
+
+      <!-- 经纬网格 -->
+      <g class="contour">
+        <path d="M0 110 C 300 62, 900 168, 1300 104"/>
+        <path d="M0 396 C 340 350, 900 452, 1300 402"/>
+        <path d="M20 214 C 300 196, 700 236, 1280 210"/>
+      </g>
+
+      <!-- 内框 -->
+      <rect x="14" y="14" width="1272" height="432" rx="5" fill="none" stroke="#8a6a42" stroke-width="1.2" stroke-dasharray="9 7" opacity=".3"/>
+      <rect x="22" y="22" width="1264" height="416" rx="4" fill="none" stroke="#8a6a42" stroke-width=".8" opacity=".2"/>
+
+      <!-- 指南针 -->
+      <g transform="translate(1216 396)" opacity=".82" stroke="#6d4a26" fill="none">
+        <circle r="36" stroke-width="1.4"/><circle r="27" stroke-width=".7" opacity=".65"/>
+        <path d="M0 -36 L8 -8 L0 0 L-8 -8 Z" fill="#8a6538" stroke="none"/>
+        <path d="M0 36 L8 8 L0 0 L-8 8 Z" fill="#8a6538" stroke="none" opacity=".5"/>
+        <path d="M-36 0 L-8 -8 L0 0 L-8 8 Z" fill="#8a6538" stroke="none" opacity=".4"/>
+        <path d="M36 0 L8 -8 L0 0 L8 8 Z" fill="#8a6538" stroke="none" opacity=".4"/>
+        <text y="-43" font-size="9" fill="#6d4a26" stroke="none" font-family="Georgia,serif" text-anchor="middle">N</text>
+        <text y="50" font-size="8" fill="#6d4a26" stroke="none" font-family="Georgia,serif" text-anchor="middle">S</text>
+        <text x="-46" y="3" font-size="8" fill="#6d4a26" stroke="none" font-family="Georgia,serif">W</text>
+        <text x="40" y="3" font-size="8" fill="#6d4a26" stroke="none" font-family="Georgia,serif">E</text>
+      </g>
+
+      <!-- 第一关 词汇密林 -->
+      <g class="zone-label active" id="zone0">
+        <path class="zone-shape" d="M54 40 H226 Q240 40 240 54 V80 Q240 94 226 94 H54 Q40 94 40 80 V54 Q40 40 54 40 Z"/>
+        <text class="zone-txt" x="140" y="73" text-anchor="middle">词 汇 密 林</text>
+        <text class="zone-sub" x="140" y="113" text-anchor="middle">LEVEL 1 · WORD &amp; PICTURE</text>
+        <use href="#pine" x="78" y="200" width="22" height="30"/>
+        <use href="#pine" x="118" y="216" width="20" height="27"/>
+        <use href="#pine" x="158" y="192" width="23" height="31"/>
+        <use href="#pine" x="200" y="220" width="21" height="28"/>
+        <use href="#pine" x="238" y="202" width="19" height="26"/>
+      </g>
+
+      <!-- 第二关 真伪峡谷 -->
+      <g class="zone-label" id="zone1">
+        <path class="zone-shape" d="M304 40 H476 Q490 40 490 54 V80 Q490 94 476 94 H304 Q290 94 290 80 V54 Q290 40 304 40 Z"/>
+        <text class="zone-txt" x="390" y="73" text-anchor="middle">真 伪 峡 谷</text>
+        <text class="zone-sub" x="390" y="113" text-anchor="middle">LEVEL 2 · LOOK &amp; CHOOSE</text>
+        <use href="#peak" x="292" y="176" width="86" height="52"/>
+        <use href="#peak" x="362" y="156" width="96" height="58"/>
+        <use href="#peak" x="440" y="182" width="80" height="48"/>
+      </g>
+
+      <!-- 第三关 回声古庙 -->
+      <g class="zone-label" id="zone2">
+        <path class="zone-shape" d="M554 40 H726 Q740 40 740 54 V80 Q740 94 726 94 H554 Q540 94 540 80 V54 Q540 40 554 40 Z"/>
+        <text class="zone-txt" x="640" y="73" text-anchor="middle">回 声 古 庙</text>
+        <text class="zone-sub" x="640" y="113" text-anchor="middle">LEVEL 3 · LISTEN &amp; PICK</text>
+        <!-- 小塔 -->
+        <g transform="translate(618 168)" fill="none" stroke="#7a5a34" stroke-width="1.6" opacity=".85">
+          <path d="M-22 40 h44 M-17 40 V22 h34 V40 M-13 22 V12 h26 V22 M-9 12 V4 h18 V12"/>
+          <path d="M-24 4 h48 M-16 -2 h32"/>
+          <path d="M0 -2 V-12 M-8 -12 H8"/>
+          <path d="M-10 30 h6 v6 h-6 z M4 30 h6 v6 h-6 z" fill="#7a5a34" opacity=".3"/>
+        </g>
+        <g class="spark" stroke="#a98a58" stroke-width="1" fill="none" opacity=".5">
+          <path d="M682 150 q10 -8 20 0 t20 0"/>
+          <path d="M690 166 q10 -8 20 0 t20 0"/>
+        </g>
+      </g>
+
+      <!-- 第四关 语法石阵 -->
+      <g class="zone-label" id="zone3">
+        <path class="zone-shape" d="M804 40 H976 Q990 40 990 54 V80 Q990 94 976 94 H804 Q790 94 790 80 V54 Q790 40 804 40 Z"/>
+        <text class="zone-txt" x="890" y="73" text-anchor="middle">语 法 石 阵</text>
+        <text class="zone-sub" x="890" y="113" text-anchor="middle">LEVEL 4 · GRAMMAR CHOICE</text>
+        <g transform="translate(884 172)" fill="none" stroke="#6b4a2a" stroke-width="1.8" stroke-linejoin="round" opacity=".85">
+          <path d="M-28 28 h44 v-10 h-44 z" fill="#a98a58" fill-opacity=".28"/>
+          <path d="M-34 -2 h22 v-22 h-22 z" fill="#a98a58" fill-opacity=".22"/>
+          <path d="M-26 -24 h60 v10 h-60 z" fill="#a98a58" fill-opacity=".3"/>
+          <path d="M20 -24 h14 v34 h-14 z" fill="#a98a58" fill-opacity=".2"/>
+          <path d="M-38 32 h64 M-12 32 v-4 M2 32 v-4"/>
+        </g>
+      </g>
+
+      <!-- 第五关 词义集市 -->
+      <g class="zone-label" id="zone4">
+        <path class="zone-shape" d="M1054 40 H1226 Q1240 40 1240 54 V80 Q1240 94 1226 94 H1054 Q1040 94 1040 80 V54 Q1040 40 1054 40 Z"/>
+        <text class="zone-txt" x="1140" y="73" text-anchor="middle">词 义 集 市</text>
+        <text class="zone-sub" x="1140" y="113" text-anchor="middle">LEVEL 5 · DEFINITION MATCH</text>
+        <g transform="translate(1124 180)" fill="none" stroke="#6b4a2a" stroke-width="1.7" stroke-linejoin="round" opacity=".85">
+          <path d="M-32 28 L0 -4 L32 28 Z" fill="#b98f5a" fill-opacity=".25"/>
+          <path d="M0 -4 V28 M-34 28 H34"/>
+          <path d="M-12 28 V16 h24 V28" stroke-width="1.2" fill="#b98f5a" fill-opacity=".18"/>
+          <path d="M0 -4 V-24 M0 -24 l15 6 l-15 6" stroke-width="1.4"/>
+        </g>
+      </g>
+
+      <!-- 古老海怪涂鸦 -->
+      <g transform="translate(636 414)" opacity=".32" fill="none" stroke="#6b4a2a" stroke-width="2" stroke-linecap="round">
+        <path d="M-64 6 q18 -20 36 0 t36 0 t36 0"/>
+        <path d="M-64 6 q-16 10 -24 2"/>
+        <path d="M44 6 q6 -16 18 -18 q14 -3 12 10"/>
+        <circle cx="68" cy="-12" r="1.5" fill="#6b4a2a" stroke="none"/>
+        <path d="M62 -20 l6 6 M74 -22 l-4 6"/>
+      </g>
+      <text x="636" y="444" text-anchor="middle" font-size="8" letter-spacing="3" fill="#8a6a42" opacity=".5" font-family="Georgia,serif">HIC SUNT DRACONES</text>
+
+      <!-- 藏宝路径 -->
+      <path id="trail" class="trail-base" d="M62 386 C120 326,178 322,238 356 C306 394,330 314,400 294 C460 276,510 308,574 314 C646 320,664 250,734 242 C804 234,820 294,886 296 C956 298,972 234,1040 224 C1098 216,1124 240,1154 264 C1186 290,1200 300,1232 302"/>
+      <path id="trailDots" class="trail-dots" d="M62 386 C120 326,178 322,238 356 C306 394,330 314,400 294 C460 276,510 308,574 314 C646 320,664 250,734 242 C804 234,820 294,886 296 C956 298,972 234,1040 224 C1098 216,1124 240,1154 264 C1186 290,1200 300,1232 302"/>
+      <path id="trailDone" class="trail-done" d=""/>
+
+      <!-- 起点营地 -->
+      <g id="camp" transform="translate(58 382)">
+        <path d="M-16 4 L0 -18 L16 4 Z" fill="#a9773f" stroke="#4a2c14" stroke-width="1.5"/>
+        <path d="M0 -18 V4" stroke="#4a2c14" stroke-width="1.2"/>
+        <path d="M-18 4 H18" stroke="#4a2c14" stroke-width="1.6" stroke-linecap="round"/>
+        <text y="20" text-anchor="middle" font-size="10" fill="#6b4a2a" font-family="KaiTi,serif" letter-spacing="2">营地</text>
+      </g>
+
+      <!-- 节点层 -->
+      <g id="nodes"></g>
+
+      <!-- 宝藏 -->
+      <g id="treasure" transform="translate(1232 302)">
+        <circle r="36" fill="rgba(196,154,86,.16)"/>
+        <circle r="26" fill="none" stroke="#a98a58" stroke-width=".8" stroke-dasharray="3 5"/>
+        <path d="M-24 -4 H24 V18 H-24 Z" fill="#a8763a" stroke="#4a2c14" stroke-width="1.6"/>
+        <path d="M-24 -4 A24 13 0 0 1 24 -4 Z" fill="#c2924c" stroke="#4a2c14" stroke-width="1.6"/>
+        <rect x="-4" y="-9" width="8" height="14" rx="1.5" fill="#e6c783" stroke="#4a2c14" stroke-width="1.1"/>
+        <circle cx="0" cy="1" r="1.8" fill="#4a2c14"/>
+        <text y="34" text-anchor="middle" font-size="10" fill="#6b4a2a" font-family="KaiTi,serif" letter-spacing="3">宝 藏</text>
+      </g>
+
+      <!-- 小k -->
+      <g id="avatar" transform="translate(62 386)">
+        <g transform="scale(1.24)">
+        <ellipse cx="0" cy="2" rx="19" ry="6" fill="#6b4a2a" opacity=".22"/>
+        <circle cx="0" cy="-16" r="22" fill="#fff3d0" opacity=".28"/>
+        <g class="bob">
+          <path d="M-11 -20 q11 -7 22 0 l4 19 q-15 5 -30 0 z" fill="#8a5a30" stroke="#4a2c14" stroke-width="1.5" stroke-linejoin="round"/>
+          <rect x="8" y="-19" width="9" height="14" rx="3" fill="#6d4a26" stroke="#4a2c14" stroke-width="1.2"/>
+          <circle cx="0" cy="-30" r="9" fill="#f7dbb6" stroke="#4a2c14" stroke-width="1.4"/>
+          <circle cx="-3" cy="-31" r="1.25" fill="#3a2714"/>
+          <circle cx="3.6" cy="-31" r="1.25" fill="#3a2714"/>
+          <path d="M-2 -26 q2 2 4 0" stroke="#3a2714" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M-9 -21 q9 4 18 0" stroke="#a33a2a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="0" cy="-36" rx="14.5" ry="4.4" fill="#c9a15e" stroke="#4a2c14" stroke-width="1.4"/>
+          <path d="M-8 -37 q8 -11 16 0 z" fill="#dcb877" stroke="#4a2c14" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="M-8 -37 q8 -4 16 0" stroke="#8a6538" stroke-width="1.1" fill="none"/>
+          <rect x="-8" y="-4" width="7" height="5" rx="2" fill="#4a2c14"/>
+          <rect x="2" y="-4" width="7" height="5" rx="2" fill="#4a2c14"/>
+        </g>
+        </g>
+      </g>
+    </svg>
+
+    <div class="banner" id="banner">
+      <div class="inner">
+        <div class="b-top">CHAPTER CLEARED</div>
+        <div class="b-main" id="bannerMain">第一关 通过</div>
+        <div class="b-deco">◆ ◆ ◆</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 题目面板 ===== -->
+  <section class="dock" id="dock">
+    <div class="q-head">
+      <div class="q-tag"><span class="dot"></span>准备出发</div>
+      <div class="q-step">PARCHMENT QUEST</div>
+    </div>
+    <div class="q-prompt">
+      <div class="q-ask">点击下方的「开始探险」，展开羊皮卷寻宝之旅。</div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 开场 ===== -->
+<div class="overlay show" id="intro">
+  <div class="card">
+    <div class="eyebrow">AN ANCIENT PARCHMENT MAP</div>
+    <h1 class="title">小<span class="k">k</span>历险记</h1>
+    <div class="subtitle">羊 皮 卷 寻 宝 图</div>
+    <div class="rule"><span>◆</span></div>
+    <p class="intro-note" style="margin-top:0">
+      探险家小k在一只旧木箱里发现了一张羊皮卷。<br>
+      沿着卷上的虚线穿过 <b>五片区域</b>，就能找到传说中的宝藏。
+    </p>
+    <div class="intro-list">
+      <div class="intro-item">
+        <div class="n">LEVEL 1</div>
+        <div class="t">词汇密林</div>
+        <div class="d">看单词<br>选图片</div>
+      </div>
+      <div class="intro-item">
+        <div class="n">LEVEL 2</div>
+        <div class="t">真伪峡谷</div>
+        <div class="d">看图片<br>辨形似词</div>
+      </div>
+      <div class="intro-item">
+        <div class="n">LEVEL 3</div>
+        <div class="t">回声古庙</div>
+        <div class="d">听语音<br>选图与词</div>
+      </div>
+      <div class="intro-item">
+        <div class="n">LEVEL 4</div>
+        <div class="t">语法石阵</div>
+        <div class="d">选对时态<br>填空</div>
+      </div>
+      <div class="intro-item">
+        <div class="n">LEVEL 5</div>
+        <div class="t">词义集市</div>
+        <div class="d">按释义<br>配对词与义</div>
+      </div>
+    </div>
+    <p class="intro-note">
+      共 <b>20</b> 道题 · 每题 <b>10 秒</b> · 头顶 <b>3 次机会</b><br>
+      答对前进一步；答错或超时会退回一步，并失去一次机会 · 每题随机抽取
+    </p>
+    <div class="name-row">
+      <label for="playerName">探险家姓名</label>
+      <input class="name" id="playerName" maxlength="12" placeholder="小k" value="小k">
+    </div>
+    <div class="center">
+      <button class="btn" id="startBtn">开 始 探 险</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 失败 ===== -->
+<div class="overlay" id="fail">
+  <div class="card" style="width:min(520px,94vw);text-align:center">
+    <div class="eyebrow">THE MAP FADES AWAY</div>
+    <h2 class="title" style="font-size:32px;letter-spacing:.16em">探 险 失 败</h2>
+    <div class="rule"><span>✕</span></div>
+    <p class="intro-note">
+      三次机会都用完了，羊皮卷上的路线渐渐隐去……<br>
+      别灰心，记住刚才的单词，再来一次一定可以走到宝藏。
+    </p>
+    <button class="btn" id="retryBtn">重 新 出 发</button>
+  </div>
+</div>
+
+<!-- ===== 暂停 ===== -->
+<div class="overlay" id="pause">
+  <div class="card pause-card">
+    <div class="pause-mark">❚❚</div>
+    <h3>探 险 暂 停</h3>
+    <p>小k在树荫下歇一会儿，<br>沙漏和地图都为你停住。</p>
+    <button class="btn" id="resumeBtn">继 续 探 险</button>
+  </div>
+</div>
+
+<!-- ===== 通关证书 ===== -->
+<div class="overlay" id="cert">
+  <div class="card cert-card" id="certCard">
+    <div class="cert-eyebrow">PARCHMENT QUEST · CERTIFICATE OF ADVENTURE</div>
+    <h1 class="cert-title">通 关 证 书</h1>
+    <div class="cert-rule"><span>❖</span></div>
+    <p class="cert-line">兹证明探险家 <b id="certName">小k</b></p>
+    <p class="cert-line">沿羊皮卷走完全程，穿越词汇密林、真伪峡谷、回声古庙、</p>
+    <p class="cert-line">语法石阵与词义集市，答对全部题目，成功开启宝藏，特发此证。</p>
+    <div class="cert-stars" id="certStars">★★★</div>
+    <div class="cert-stats">
+      <div><span class="k">通关关卡</span><span class="v">5 / 5</span></div>
+      <div><span class="k">宝物值</span><span class="v" id="certScore">0</span></div>
+      <div><span class="k">剩余机会</span><span class="v" id="certLives">3</span></div>
+      <div><span class="k">颁发日期</span><span class="v" id="certDate">—</span></div>
+    </div>
+    <div class="cert-foot">
+      <div class="cert-sign">羊皮卷探险公会 · 颁发</div>
+      <div class="seal"><span>小k</span><em>探险印章</em></div>
+    </div>
+    <div class="cert-actions">
+      <button class="btn" id="printBtn">打 印 证 书</button>
+      <button class="btn ghost" id="againBtn">再 玩 一 次</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ================= 题库（小学常考词汇与句型） ================= */
+  const LEVELS = [
+    {
+      num:1, name:'词汇密林', en:'FOREST OF WORDS',
+      questions:[
+        { type:'word2pic', word:'apple', options:[
+          {e:'🍎',t:'apple'},{e:'🍌',t:'banana'},{e:'🍊',t:'orange'},{e:'🍇',t:'grape'}]},
+        { type:'word2pic', word:'elephant', options:[
+          {e:'🐘',t:'elephant'},{e:'🐯',t:'tiger'},{e:'🐵',t:'monkey'},{e:'🐰',t:'rabbit'}]},
+        { type:'word2pic', word:'umbrella', options:[
+          {e:'☔',t:'umbrella'},{e:'👒',t:'hat'},{e:'👢',t:'boot'},{e:'🧥',t:'coat'}]},
+        { type:'word2pic', word:'bicycle', options:[
+          {e:'🚲',t:'bicycle'},{e:'🚌',t:'bus'},{e:'🚂',t:'train'},{e:'✈️',t:'plane'}]},
+        { type:'word2pic', word:'pencil', options:[
+          {e:'✏️',t:'pencil'},{e:'📕',t:'book'},{e:'📏',t:'ruler'},{e:'✂️',t:'scissors'}]},
+        { type:'word2pic', word:'dog', options:[
+          {e:'🐶',t:'dog'},{e:'🐱',t:'cat'},{e:'🐷',t:'pig'},{e:'🐮',t:'cow'}]},
+        { type:'word2pic', word:'cake', options:[
+          {e:'🍰',t:'cake'},{e:'🍞',t:'bread'},{e:'🍕',t:'pizza'},{e:'🍔',t:'hamburger'}]},
+        { type:'word2pic', word:'fish', options:[
+          {e:'🐟',t:'fish'},{e:'🐦',t:'bird'},{e:'🐢',t:'turtle'},{e:'🐸',t:'frog'}]}
+      ]
+    },
+    {
+      num:2, name:'真伪峡谷', en:'CANYON OF TRUTH',
+      questions:[
+        { type:'pic2word', emoji:'🧢', answer:'cap', zh:'帽子', options:['cap','cup','cat','car']},
+        { type:'pic2word', emoji:'🐑', answer:'sheep', zh:'绵羊', options:['sheep','ship','shop','shoe']},
+        { type:'pic2word', emoji:'🐴', answer:'horse', zh:'马', options:['horse','house','mouse','horn']},
+        { type:'pic2word', emoji:'🍞', answer:'bread', zh:'面包', options:['bread','beard','bead','broad']},
+        { type:'pic2word', emoji:'🦆', answer:'duck', zh:'鸭子', options:['duck','dark','deck','dock']},
+        { type:'pic2word', emoji:'🐻', answer:'bear', zh:'熊', options:['bear','pear','beer','bean']},
+        { type:'pic2word', emoji:'🐭', answer:'mouse', zh:'老鼠', options:['mouse','mouth','house','horse']},
+        { type:'pic2word', emoji:'🐱', answer:'cat', zh:'猫', options:['cat','cap','cut','cot']}
+      ]
+    },
+    {
+      num:3, name:'回声古庙', en:'TEMPLE OF ECHOES',
+      questions:[
+        { type:'listen', answer:'tiger', options:[
+          {e:'🐯',w:'tiger'},{e:'🦁',w:'lion'},{e:'🐻',w:'bear'},{e:'🐺',w:'wolf'}]},
+        { type:'listen', answer:'bridge', options:[
+          {e:'🌉',w:'bridge'},{e:'🏦',w:'bank'},{e:'🏫',w:'school'},{e:'🏠',w:'house'}]},
+        { type:'listen', answer:'hospital', options:[
+          {e:'🏥',w:'hospital'},{e:'🏨',w:'hotel'},{e:'🏪',w:'shop'},{e:'🏰',w:'castle'}]},
+        { type:'listen', answer:'guitar', options:[
+          {e:'🎸',w:'guitar'},{e:'🎹',w:'piano'},{e:'🎻',w:'violin'},{e:'🥁',w:'drum'}]},
+        { type:'listen', answer:'book', options:[
+          {e:'📕',w:'book'},{e:'🎒',w:'bag'},{e:'📦',w:'box'},{e:'🛏️',w:'bed'}]},
+        { type:'listen', answer:'rabbit', options:[
+          {e:'🐰',w:'rabbit'},{e:'🤖',w:'robot'},{e:'🚀',w:'rocket'},{e:'🏞️',w:'river'}]},
+        { type:'listen', answer:'clock', options:[
+          {e:'⏰',w:'clock'},{e:'☁️',w:'cloud'},{e:'👩‍🏫',w:'class'},{e:'🧹',w:'clean'}]},
+        { type:'listen', answer:'panda', options:[
+          {e:'🐼',w:'panda'},{e:'✏️',w:'pencil'},{e:'🟣',w:'purple'},{e:'📄',w:'paper'}]}
+      ]
+    },
+    {
+      num:4, name:'语法石阵', en:'STONE CIRCLE',
+      questions:[
+        { type:'grammar', text:'She ___ to school every day.', answer:'goes',
+          options:['goes','go','going','went'], tip:'一般现在时 · 第三人称单数' },
+        { type:'grammar', text:'My mother ___ TV every evening.', answer:'watches',
+          options:['watches','watch','watching','watched'], tip:'一般现在时 · 第三人称单数' },
+        { type:'grammar', text:'We ___ to the zoo last Sunday.', answer:'went',
+          options:['went','go','goes','going'], tip:'一般过去时 · last Sunday' },
+        { type:'grammar', text:'They ___ very happy at the party last night.', answer:'were',
+          options:['were','are','is','be'], tip:'一般过去时 · be 动词' },
+        { type:'grammar', text:'He ___ his homework after dinner every day.', answer:'does',
+          options:['does','do','did','doing'], tip:'一般现在时 · 第三人称单数' },
+        { type:'grammar', text:'I ___ a birthday cake for you yesterday.', answer:'made',
+          options:['made','make','makes','making'], tip:'一般过去时 · yesterday' },
+        { type:'grammar', text:'Tom ___ English every morning.', answer:'reads',
+          options:['reads','read','reading','readed'], tip:'一般现在时 · 第三人称单数' },
+        { type:'grammar', text:'There ___ a book and two pens on the desk.', answer:'is',
+          options:['is','are','be','am'], tip:'There be 句型 · 就近原则' }
+      ]
+    },
+    {
+      num:5, name:'词义集市', en:'WORD MARKET',
+      questions:[
+        { type:'match', def:'It is a fruit. It is red and round.',
+          defZh:'一种红色的圆形水果', answer:'apple',
+          options:[{w:'apple',zh:'苹果'},{w:'banana',zh:'香蕉'},{w:'orange',zh:'橙子'},{w:'grape',zh:'葡萄'}]},
+        { type:'match', def:'It is a big animal. It has a long nose.',
+          defZh:'一种鼻子很长的大动物', answer:'elephant',
+          options:[{w:'elephant',zh:'大象'},{w:'tiger',zh:'老虎'},{w:'monkey',zh:'猴子'},{w:'rabbit',zh:'兔子'}]},
+        { type:'match', def:'You use it on a rainy day.',
+          defZh:'下雨天你会用到它', answer:'umbrella',
+          options:[{w:'umbrella',zh:'雨伞'},{w:'hat',zh:'帽子'},{w:'coat',zh:'外套'},{w:'boot',zh:'靴子'}]},
+        { type:'match', def:'It has two wheels. You ride it to school.',
+          defZh:'它有两个轮子，可以骑着去上学', answer:'bicycle',
+          options:[{w:'bicycle',zh:'自行车'},{w:'bus',zh:'公共汽车'},{w:'train',zh:'火车'},{w:'plane',zh:'飞机'}]},
+        { type:'match', def:'It is a bird. It can swim.',
+          defZh:'一种会游泳的鸟', answer:'duck',
+          options:[{w:'duck',zh:'鸭子'},{w:'bird',zh:'鸟'},{w:'fish',zh:'鱼'},{w:'cat',zh:'猫'}]},
+        { type:'match', def:'He helps sick people in a hospital.',
+          defZh:'他在医院里帮助病人', answer:'doctor',
+          options:[{w:'doctor',zh:'医生'},{w:'teacher',zh:'老师'},{w:'farmer',zh:'农民'},{w:'driver',zh:'司机'}]},
+        { type:'match', def:'It is the coldest season. It snows.',
+          defZh:'最冷的季节，会下雪', answer:'winter',
+          options:[{w:'winter',zh:'冬天'},{w:'summer',zh:'夏天'},{w:'spring',zh:'春天'},{w:'autumn',zh:'秋天'}]},
+        { type:'match', def:'You go there to study every day.',
+          defZh:'你每天去那里学习', answer:'school',
+          options:[{w:'school',zh:'学校'},{w:'park',zh:'公园'},{w:'zoo',zh:'动物园'},{w:'library',zh:'图书馆'}]}
+      ]
+    }
+  ];
+
+  const PER_LEVEL = 4;   // 每关随机抽 4 题
+  LEVELS.forEach(function(lv){ lv.run = shuffle(lv.questions.slice()).slice(0, PER_LEVEL); });
+
+  const TOTAL_STEPS = LEVELS.reduce(function(s, l){ return s + l.run.length; }, 0);  // 题目数即地图节点数
+  const SEGS = TOTAL_STEPS + 1;  // 路径分段（最后一段通向宝藏）
+  const SAMPLES = 480;
+  const TIME_LIMIT = 10;    // 每题限时（秒）
+
+  const state = {
+    level:0, q:0, lives:3, maxLives:3, score:0,
+    progress:0, wrongs:0, soundOn:true, locked:false, running:false, paused:false, name:'小k'
+  };
+
+  let actx = null;
+  let trailLen = 0;
+  let samples = [];
+  let avatarIdx = 0;
+  let animId = 0;
+  let timerId = null;
+  let lastTick = 0;
+  let timeLeft = TIME_LIMIT;
+
+  const $ = function(sel, root){ return (root||document).querySelector(sel); };
+  const $$ = function(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); };
+
+  const el = {
+    hearts: $('#hearts'),
+    score: $('#scoreVal'),
+    chips: $('#levelChips'),
+    dock: $('#dock'),
+    trail: $('#trail'),
+    trailDone: $('#trailDone'),
+    nodes: $('#nodes'),
+    avatar: $('#avatar'),
+    banner: $('#banner'),
+    bannerMain: $('#bannerMain'),
+    mapWrap: $('#mapWrap')
+  };
+
+  /* ================= 音效 ================= */
+  function audio(){
+    if(!state.soundOn) return null;
+    if(!actx){
+      const C = window.AudioContext || window.webkitAudioContext;
+      if(!C) return null;
+      try{ actx = new C(); }catch(e){ return null; }
+    }
+    if(actx.state === 'suspended'){ actx.resume(); }
+    return actx;
+  }
+
+  function tone(freq, at, dur, type, vol, slideTo){
+    const ctx = audio();
+    if(!ctx) return;
+    const o = ctx.createOscillator();
+    const g = ctx.createGain();
+    o.type = type || 'triangle';
+    o.frequency.setValueAtTime(freq, at);
+    if(slideTo) o.frequency.exponentialRampToValueAtTime(slideTo, at + dur);
+    g.gain.setValueAtTime(0.0001, at);
+    g.gain.exponentialRampToValueAtTime(vol || 0.14, at + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
+    o.connect(g);
+    g.connect(ctx.destination);
+    o.start(at);
+    o.stop(at + dur + 0.03);
+  }
+
+  // 答对：上扬的提示音
+  function playCorrect(){
+    const ctx = audio(); if(!ctx) return;
+    const t = ctx.currentTime + 0.01;
+    [523.25, 659.25, 783.99, 1046.5].forEach(function(f, i){
+      tone(f, t + i * 0.078, 0.3, 'triangle', 0.17);
+    });
+    tone(1567.98, t + 0.33, 0.45, 'sine', 0.08);
+    tone(2093.00, t + 0.40, 0.4, 'sine', 0.05);
+  }
+
+  // 答错：低沉的错误音
+  function playWrong(){
+    const ctx = audio(); if(!ctx) return;
+    const t = ctx.currentTime + 0.01;
+    tone(196, t, 0.42, 'sawtooth', 0.11, 82);
+    tone(98, t + 0.02, 0.4, 'square', 0.075, 58);
+    tone(147, t + 0.14, 0.3, 'triangle', 0.06, 70);
+  }
+
+  function playStep(){
+    const ctx = audio(); if(!ctx) return;
+    const t = ctx.currentTime;
+    tone(240, t, 0.11, 'sine', 0.05, 150);
+  }
+
+  // 倒计时滴答
+  function playTick(){
+    const ctx = audio(); if(!ctx) return;
+    const t = ctx.currentTime;
+    tone(1180, t, 0.07, 'sine', 0.045);
+  }
+
+  // 时间到：短促的低沉三连音
+  function playTimeUp(){
+    const ctx = audio(); if(!ctx) return;
+    const t = ctx.currentTime + 0.01;
+    tone(330, t, 0.16, 'square', 0.08, 240);
+    tone(262, t + 0.18, 0.16, 'square', 0.08, 190);
+    tone(196, t + 0.36, 0.42, 'sawtooth', 0.1, 90);
+  }
+
+  function playBell(){
+    const ctx = audio(); if(!ctx) return;
+    const t = ctx.currentTime + 0.01;
+    tone(880, t, 0.7, 'sine', 0.08);
+    tone(1320, t + 0.01, 0.5, 'sine', 0.04);
+  }
+
+  /* ================= 语音朗读 ================= */
+  const speechOK = ('speechSynthesis' in window) && ('SpeechSynthesisUtterance' in window);
+  let voices = [];
+  function loadVoices(){
+    if(!speechOK) return;
+    try{ voices = window.speechSynthesis.getVoices() || []; }catch(e){ voices = []; }
+  }
+  if(speechOK){
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+  }
+  function pickVoice(){
+    if(!voices.length) loadVoices();
+    const en = voices.filter(function(v){ return /^en(-|_)/i.test(v.lang); });
+    const prefer = en.find(function(v){ return /Samantha|Zira|Aria|Google US|Jenny|Natural/i.test(v.name); });
+    return prefer || en[0] || null;
+  }
+  function speak(text){
+    if(!state.soundOn) return;
+    playBell();
+    if(!speechOK) return;
+    try{
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      u.rate = 0.78;
+      u.pitch = 1.05;
+      u.volume = 1;
+      const v = pickVoice();
+      if(v) u.voice = v;
+      window.speechSynthesis.speak(u);
+    }catch(e){ /* 静默失败 */ }
+  }
+
+  /* ================= 地图 ================= */
+  function pointAt(idx){
+    const frac = Math.max(0, Math.min(1, idx / SEGS)) * SAMPLES;
+    const i = Math.min(SAMPLES - 1, Math.floor(frac));
+    const t = frac - i;
+    const a = samples[i], b = samples[i + 1] || a;
+    return { x:a.x + (b.x - a.x) * t, y:a.y + (b.y - a.y) * t };
+  }
+
+  function placeAvatar(idx){
+    const p = pointAt(idx);
+    el.avatar.setAttribute('transform', 'translate(' + p.x.toFixed(1) + ' ' + p.y.toFixed(1) + ')');
+    el.trailDone.style.strokeDasharray = String(trailLen);
+    el.trailDone.style.strokeDashoffset = String(trailLen * (1 - idx / SEGS));
+  }
+
+  function animateTo(target, dur){
+    const from = avatarIdx;
+    const duration = dur || 620;
+    const start = performance.now();
+    const id = ++animId;
+    function frame(now){
+      if(id !== animId) return;
+      const k = Math.min(1, (now - start) / duration);
+      const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      avatarIdx = from + (target - from) * e;
+      placeAvatar(avatarIdx);
+      if(k < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  function initMap(){
+    trailLen = el.trail.getTotalLength();
+    samples = [];
+    for(let i = 0; i <= SAMPLES; i++){
+      samples.push(el.trail.getPointAtLength(trailLen * i / SAMPLES));
+    }
+    el.trailDone.setAttribute('d', el.trail.getAttribute('d'));
+    el.trailDone.style.strokeDasharray = String(trailLen);
+    el.trailDone.style.strokeDashoffset = String(trailLen);
+
+    // 15 个关卡节点
+    const frag = document.createDocumentFragment();
+    for(let i = 1; i <= TOTAL_STEPS; i++){
+      const p = pointAt(i);
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'node');
+      g.setAttribute('data-step', String(i));
+      g.setAttribute('transform', 'translate(' + p.x.toFixed(1) + ' ' + p.y.toFixed(1) + ')');
+      const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('r', '12');
+      const tx = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      tx.textContent = String(i);
+      g.appendChild(c);
+      g.appendChild(tx);
+      frag.appendChild(g);
+    }
+    el.nodes.appendChild(frag);
+    placeAvatar(0);
+  }
+
+  function refreshNodes(){
+    $$('.node', el.nodes).forEach(function(n){
+      const step = Number(n.getAttribute('data-step'));
+      n.classList.toggle('done', step <= state.progress);
+    });
+  }
+
+  function refreshZones(){
+    LEVELS.forEach(function(_, i){
+      const z = document.getElementById('zone' + i);
+      if(z) z.classList.toggle('active', i === state.level);
+    });
+  }
+
+  /* ================= 状态栏 ================= */
+  const HEARTS = 3;
+  function heartSVG(lost){
+    return '<svg class="heart' + (lost ? ' lost' : '') + '" viewBox="0 0 24 24" aria-hidden="true">' +
+      '<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"' +
+      ' fill="' + (lost ? '#5b4430' : '#a33a2a') + '" stroke="#4a2c14" stroke-width="1.1"/>' +
+      (lost ? '<path d="M12.4 4 L9.8 11.2 L14 12.8 L10.8 20" fill="none" stroke="#c8b08a" stroke-width="1"/>' : '') +
+      '</svg>';
+  }
+
+  function updateHUD(){
+    let h = '';
+    for(let i = 0; i < HEARTS; i++){ h += heartSVG(i >= state.lives); }
+    el.hearts.innerHTML = h;
+    el.score.textContent = String(state.score);
+    $$('.chip', el.chips).forEach(function(c, i){
+      c.classList.toggle('active', i === state.level);
+      c.classList.toggle('done', i < state.level);
+    });
+    refreshZones();
+  }
+
+  function buildChips(){
+    el.chips.innerHTML = LEVELS.map(function(l, i){
+      return '<div class="chip" data-i="' + i + '"><span class="chip-num">' + l.num + '</span>' + l.name + '</div>';
+    }).join('');
+  }
+
+  /* ================= 出题 ================= */
+  function shuffle(arr){
+    const a = arr.slice();
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function setFeedback(kind, text){
+    const fb = document.getElementById('fb');
+    if(!fb) return;
+    fb.className = 'feedback' + (kind ? ' ' + kind : '');
+    fb.textContent = text || '';
+  }
+
+  /* ================= 限时答题 ================= */
+  function stopTimer(){
+    if(timerId){ clearInterval(timerId); timerId = null; }
+  }
+
+  function startTimer(from){
+    stopTimer();
+    if(state.paused) return;
+    const num = document.getElementById('timerNum');
+    const bar = document.getElementById('timerBar');
+    const wrap = document.getElementById('timer');
+    const track = document.getElementById('tbar');
+    if(!num || !bar) return;
+    const total = (typeof from === 'number' && from > 0) ? Math.min(from, TIME_LIMIT) : TIME_LIMIT;
+    const t0 = performance.now();
+    lastTick = total;
+    timeLeft = total;
+    num.textContent = String(Math.ceil(total));
+    bar.style.width = (total / TIME_LIMIT * 100).toFixed(1) + '%';
+    track.classList.remove('low');
+    wrap.classList.remove('warn');
+
+    timerId = setInterval(function(){
+      const left = Math.max(0, total - (performance.now() - t0) / 1000);
+      timeLeft = left;
+      num.textContent = String(Math.ceil(left));
+      bar.style.width = (left / TIME_LIMIT * 100).toFixed(1) + '%';
+      if(left <= 5){
+        track.classList.add('low');
+        wrap.classList.add('warn');
+        const c = Math.ceil(left);
+        if(c !== lastTick && c > 0){ lastTick = c; playTick(); }
+      }
+      if(left <= 0){
+        stopTimer();
+        onTimeout();
+      }
+    }, 100);
+  }
+
+  /* ================= 暂停 ================= */
+  function togglePause(){
+    if(!state.running) return;
+    if(state.paused) resumeGame();
+    else pauseGame();
+  }
+
+  function pauseGame(){
+    if(!state.running || state.paused || state.locked) return;
+    state.paused = true;
+    stopTimer();
+    $('#pause').classList.add('show');
+    $('#pauseBtn').textContent = '▶';
+  }
+
+  function resumeGame(){
+    if(!state.paused) return;
+    state.paused = false;
+    $('#pause').classList.remove('show');
+    $('#pauseBtn').textContent = '⏸';
+    if(state.running && !state.locked) startTimer(Math.max(timeLeft, 1.5));
+  }
+
+  // 超时：标出正确答案、扣一次机会并后退一步
+  function onTimeout(){
+    if(state.locked || !state.running) return;
+    stopTimer();
+    state.locked = true;
+    state.lives = Math.max(0, state.lives - 1);
+    state.wrongs++;
+    playTimeUp();
+    updateHUD();
+    el.hearts.classList.add('shake');
+    el.dock.classList.add('shake');
+    setTimeout(function(){
+      el.hearts.classList.remove('shake');
+      el.dock.classList.remove('shake');
+    }, 460);
+    if(speechOK){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+
+    $$('.opt', el.dock).forEach(function(b){
+      b.disabled = true;
+      if(b.getAttribute('data-correct') === 'true') b.classList.add('correct');
+    });
+
+    if(state.progress > 0){
+      state.progress -= 1;
+      refreshNodes();
+      animateTo(state.progress, 760);
+    }
+    setFeedback('bad', '⏱ 时间到了！正确答案已标出，下一题要快一点。');
+
+    if(state.lives <= 0){ setTimeout(showFail, 1100); return; }
+    setTimeout(advance, 1500);
+  }
+
+  function renderQuestion(){
+    const lv = LEVELS[state.level];
+    const q = lv.run[state.q];
+    state.locked = false;
+
+    const head =
+      '<div class="q-head">' +
+        '<div class="q-tag"><span class="dot"></span>第 ' + lv.num + ' 关 · ' + lv.name + '</div>' +
+        '<div class="q-right">' +
+          '<div class="q-step">第 ' + (state.q + 1) + ' / ' + lv.run.length + ' 题 · 全程 ' + state.progress + '/' + TOTAL_STEPS + '</div>' +
+          '<div class="timer" id="timer"><span class="t-ico">⏱</span><span id="timerNum">' + TIME_LIMIT + '</span><span>s</span></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="tbar" id="tbar"><i id="timerBar"></i></div>';
+
+    let body = '';
+    if(q.type === 'word2pic'){
+      body =
+        '<div class="q-prompt">' +
+          '<div>' +
+            '<span class="q-label">请选出正确的图片</span>' +
+            '<div class="q-wordline">' +
+              '<span class="q-word">' + q.word + '</span>' +
+              '<button class="speak" id="speakBtn" title="听发音" aria-label="听发音">🔊</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="options cols4">' +
+          shuffle(q.options).map(function(o, i){
+            return '<button class="opt pic" data-correct="' + (o.t === q.word) + '" style="animation-delay:' + (i * 55) + 'ms">' +
+              '<span class="emoji">' + o.e + '</span></button>';
+          }).join('') +
+        '</div>';
+    } else if(q.type === 'pic2word'){
+      body =
+        '<div class="q-prompt">' +
+          '<div class="pic-frame"><span class="q-emoji">' + q.emoji + '</span></div>' +
+          '<div class="q-ask">图中的事物是哪一个单词？' +
+            '<span class="q-hint">四个选项长得很像，要看清楚每一个字母</span></div>' +
+        '</div>' +
+        '<div class="options cols2">' +
+          shuffle(q.options).map(function(w, i){
+            return '<button class="opt word-only" data-correct="' + (w === q.answer) + '" style="animation-delay:' + (i * 55) + 'ms">' +
+              '<span class="word">' + w + '</span></button>';
+          }).join('') +
+        '</div>';
+    } else if(q.type === 'grammar'){
+      body =
+        '<div class="q-prompt">' +
+          '<div>' +
+            '<span class="q-label">选一选：横线上该填哪个词？</span>' +
+            '<div class="q-sentence">' + q.text.replace('___', '<i class="blank"></i>') + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="options cols4">' +
+          shuffle(q.options).map(function(w, i){
+            return '<button class="opt word-only" data-correct="' + (w === q.answer) + '" style="animation-delay:' + (i * 55) + 'ms">' +
+              '<span class="word">' + w + '</span></button>';
+          }).join('') +
+        '</div>';
+    } else if(q.type === 'match'){
+      body =
+        '<div class="q-prompt">' +
+          '<div class="def-box">' +
+            '<span class="def-en">' + q.def + '</span>' +
+            '<span class="def-zh">' + q.defZh + '</span>' +
+          '</div>' +
+          '<div class="q-ask">根据释义，选出对应的单词和中文' +
+            '<span class="q-hint">单词和中文都要对得上</span></div>' +
+        '</div>' +
+        '<div class="options cols4">' +
+          shuffle(q.options).map(function(o, i){
+            return '<button class="opt" data-correct="' + (o.w === q.answer) + '" style="animation-delay:' + (i * 55) + 'ms">' +
+              '<span class="word">' + o.w + '</span>' +
+              '<span class="zh">' + o.zh + '</span></button>';
+          }).join('') +
+        '</div>';
+    } else {
+      body =
+        '<div class="q-prompt">' +
+          '<button class="speak" id="speakBtn" title="再听一次" aria-label="再听一次">🔊</button>' +
+          '<div class="q-ask">听语音，选出对应的图片和单词' +
+            '<span class="q-hint">没听清？点一下喇叭再听一次</span></div>' +
+        '</div>' +
+        '<div class="options cols4">' +
+          shuffle(q.options).map(function(o, i){
+            return '<button class="opt" data-correct="' + (o.w === q.answer) + '" style="animation-delay:' + (i * 55) + 'ms">' +
+              '<span class="emoji">' + o.e + '</span>' +
+              '<span class="word">' + o.w + '</span></button>';
+          }).join('') +
+        '</div>';
+    }
+
+    el.dock.innerHTML = head + body + '<div class="feedback" id="fb"></div>';
+    el.dock.scrollTop = 0;
+
+    $$('.opt', el.dock).forEach(function(btn){
+      btn.addEventListener('click', function(){
+        onAnswer(btn, btn.getAttribute('data-correct') === 'true');
+      });
+    });
+
+    const sb = document.getElementById('speakBtn');
+    if(sb){
+      sb.addEventListener('click', function(){
+        sb.classList.add('playing');
+        setTimeout(function(){ sb.classList.remove('playing'); }, 1000);
+        speak(q.type === 'word2pic' ? q.word : q.answer);
+      });
+    }
+
+    if(q.type === 'listen'){
+      setTimeout(function(){
+        if(!state.running || state.locked) return;
+        if(sb) sb.classList.add('playing');
+        speak(q.answer);
+        setTimeout(function(){ if(sb) sb.classList.remove('playing'); }, 1400);
+      }, 420);
+    }
+
+    updateHUD();
+    startTimer();
+  }
+
+  /* ================= 答题 ================= */
+  function onAnswer(btn, correct){
+    if(state.locked || btn.disabled) return;
+    stopTimer();
+
+    if(correct){
+      state.locked = true;
+      btn.classList.add('correct');
+      $$('.opt', el.dock).forEach(function(b){ b.disabled = true; });
+      playCorrect();
+      state.score += 100;
+      state.progress = Math.min(TOTAL_STEPS, state.progress + 1);
+      refreshNodes();
+      updateHUD();
+      animateTo(state.progress, 620);
+      playStep();
+      setFeedback('ok', '✔ 答对了，小k沿着虚线前进了一步！');
+      setTimeout(advance, 920);
+    } else {
+      btn.classList.add('wrong');
+      btn.disabled = true;
+      state.lives = Math.max(0, state.lives - 1);
+      state.wrongs++;
+      playWrong();
+      updateHUD();
+      el.hearts.classList.add('shake');
+      el.dock.classList.add('shake');
+      setTimeout(function(){
+        el.hearts.classList.remove('shake');
+        el.dock.classList.remove('shake');
+      }, 460);
+
+      if(state.progress > 0){
+        state.progress -= 1;
+        refreshNodes();
+        animateTo(state.progress, 760);
+      } else {
+        animateTo(0, 300);
+      }
+      setFeedback('bad', '✘ 不对哦，小k被藤蔓缠住退回了一步，再想一想。');
+
+      if(state.lives <= 0){
+        state.locked = true;
+        if(speechOK){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+        setTimeout(showFail, 900);
+      } else {
+        // 再给一次作答时间
+        startTimer();
+      }
+    }
+  }
+
+  function advance(){
+    const lv = LEVELS[state.level];
+    if(state.q < lv.run.length - 1){
+      state.q++;
+      renderQuestion();
+      return;
+    }
+    if(state.level < LEVELS.length - 1){
+      state.level++;
+      state.q = 0;
+      showBanner();
+      return;
+    }
+    finale();
+  }
+
+  function showBanner(){
+    stopTimer();
+    const lv = LEVELS[state.level];
+    el.bannerMain.textContent = '第 ' + (lv.num - 1) + ' 关 通过 · 进入' + lv.name;
+    el.banner.classList.add('show');
+    updateHUD();
+    playCorrect();
+    setTimeout(function(){
+      el.banner.classList.remove('show');
+      renderQuestion();
+    }, 1650);
+  }
+
+  /* ================= 结局 ================= */
+  function stars(){
+    if(state.wrongs === 0) return 3;
+    if(state.wrongs <= 2) return 2;
+    return 1;
+  }
+
+  function finale(){
+    stopTimer();
+    state.locked = true;
+    state.running = false;
+    animateTo(SEGS, 1000);
+    playStep();
+    setFeedback('ok', '★ 宝箱就在前方——');
+    setTimeout(function(){
+      const name = state.name || '小k';
+      $('#certName').textContent = name;
+      $('#certScore').textContent = String(state.score);
+      $('#certLives').textContent = String(state.lives);
+      $('#certStars').textContent = '★★★'.slice(0, stars()) + '☆☆'.slice(0, 3 - stars());
+      const d = new Date();
+      $('#certDate').textContent = d.getFullYear() + '.' + (d.getMonth() + 1) + '.' + d.getDate();
+      $('#cert').classList.add('show');
+      playCorrect();
+      setTimeout(playBell, 500);
+    }, 1150);
+  }
+
+  function showFail(){
+    state.running = false;
+    stopTimer();
+    $('#fail').classList.add('show');
+  }
+
+  /* ================= 流程 ================= */
+  function startGame(){
+    stopTimer();
+    state.level = 0;
+    state.q = 0;
+    state.lives = state.maxLives;
+    state.score = 0;
+    state.progress = 0;
+    state.wrongs = 0;
+    state.locked = false;
+    state.running = true;
+    state.paused = false;
+    LEVELS.forEach(function(lv){ lv.run = shuffle(lv.questions.slice()).slice(0, PER_LEVEL); });
+    const nm = $('#playerName').value.trim();
+    state.name = nm || '小k';
+
+    $('#intro').classList.remove('show');
+    $('#fail').classList.remove('show');
+    $('#cert').classList.remove('show');
+    $('#pause').classList.remove('show');
+    $('#pauseBtn').textContent = '⏸';
+
+    avatarIdx = 0;
+    placeAvatar(0);
+    refreshNodes();
+    updateHUD();
+    renderQuestion();
+    playBell();
+  }
+
+  function bind(){
+    $('#startBtn').addEventListener('click', startGame);
+    $('#pauseBtn').addEventListener('click', togglePause);
+    $('#resumeBtn').addEventListener('click', resumeGame);
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' || e.key === 'Esc'){
+        if(!state.running) return;
+        e.preventDefault();
+        togglePause();
+      }
+    });
+    $('#retryBtn').addEventListener('click', function(){
+      $('#fail').classList.remove('show');
+      $('#intro').classList.add('show');
+    });
+    $('#againBtn').addEventListener('click', function(){
+      $('#cert').classList.remove('show');
+      $('#intro').classList.add('show');
+    });
+    $('#printBtn').addEventListener('click', function(){ window.print(); });
+    $('#soundBtn').addEventListener('click', function(){
+      state.soundOn = !state.soundOn;
+      this.textContent = state.soundOn ? '🔊' : '🔇';
+      this.title = state.soundOn ? '关闭音效' : '开启音效';
+      if(!state.soundOn){
+        if(actx && actx.state === 'running'){ actx.suspend(); }
+        if(speechOK){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+      } else {
+        audio();
+      }
+    });
+    $('#restartBtn').addEventListener('click', function(){
+      const ok = window.confirm('要重新开始探险吗？当前进度会清空。');
+      if(!ok) return;
+      state.running = false;
+      state.paused = false;
+      stopTimer();
+      if(speechOK){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+      $('#cert').classList.remove('show');
+      $('#fail').classList.remove('show');
+      $('#pause').classList.remove('show');
+      $('#pauseBtn').textContent = '⏸';
+      $('#intro').classList.add('show');
+      $('#playerName').value = state.name;
+    });
+  }
+
+  /* ================= 启动 ================= */
+  buildChips();
+  initMap();
+  updateHUD();
+  bind();
+  window.addEventListener('resize', function(){ placeAvatar(avatarIdx); });
+})();
+</script>
+</body>
+</html>

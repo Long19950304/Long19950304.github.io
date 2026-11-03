@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>警察抓小偷 · Unit 2 单词</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --cell: 86px;
+    --purple: #6A1B9A;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.page { display: none; }
+.page.active { display: block; }
+
+/* ============ 设置页 ============ */
+#setup-page {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 60%, #5b3a8e 100%);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+#setup-page.active { display: flex; }
+
+.setup-card {
+    width: 100%;
+    max-width: 620px;
+    padding: 26px;
+    margin-bottom: 26px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.setup-card h2 { color: #2c3e50; font-size: 2em; margin-bottom: 10px; font-weight: 800; }
+.setup-sub { color: #7f8c8d; font-size: 14px; margin-bottom: 18px; }
+
+.bank-badge {
+    display: inline-block;
+    background: #ede7f6;
+    color: var(--purple);
+    font-weight: bold;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.setup-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 26px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.setup-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.file-type-info { font-size: 13px; color: #7f8c8d; }
+#word-file { display: none; }
+.file-name-display { font-size: 13px; color: #2e7d32; font-weight: bold; min-height: 1.2em; }
+
+.action-button {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 12px 26px; font-size: 16px; font-weight: 600;
+    border-radius: 14px; border: none; cursor: pointer;
+    min-width: 200px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.action-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); }
+.download-btn { background: linear-gradient(135deg, #66bb6a, #43a047); }
+.upload-btn { background: linear-gradient(135deg, #42a5f5, #1e88e5); }
+
+.start-button {
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    color: white; border: none; padding: 16px 60px;
+    font-size: 1.3em; font-weight: bold; border-radius: 50px; cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(244, 81, 30, 0.4);
+}
+.start-button:hover { transform: scale(1.05); box-shadow: 0 8px 25px rgba(244, 81, 30, 0.5); }
+
+.word-preview {
+    max-height: 170px; overflow-y: auto;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 6px; text-align: left; padding: 8px;
+    background: #faf7fd; border-radius: 12px; border: 1px dashed #d1c4e9;
+}
+.word-chip {
+    font-size: 13px; color: #4A148C; background: #fff;
+    padding: 5px 8px; border-radius: 8px;
+    display: flex; justify-content: space-between; gap: 6px;
+}
+.word-chip b { font-weight: 700; }
+.word-chip span { color: #7f8c8d; }
+
+/* ============ 游戏页 ============ */
+#game-page {
+    max-width: 1200px; margin: 0 auto;
+    background: white; border-radius: 18px; padding: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.game-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.victory-condition p {
+    background: #fff5f5; padding: 7px 14px; border-radius: 8px;
+    font-weight: bold; color: #e74c3c; font-size: 0.98em;
+    border-left: 4px solid #e74c3c;
+}
+.header-buttons { display: flex; gap: 8px; }
+.sound-btn, #fullscreen-btn, #back-to-setup {
+    background: #eee; border: none; padding: 8px 14px; border-radius: 6px;
+    cursor: pointer; font-size: 13px; transition: all .25s;
+}
+.sound-btn:hover, #fullscreen-btn:hover, #back-to-setup:hover { background: #e0e0e0; }
+
+.game-container { display: flex; gap: 18px; align-items: flex-start; }
+
+.game-board-container { flex: 2; display: flex; flex-direction: column; align-items: center; min-width: 0; }
+
+.board-wrapper {
+    background: #F3E5F5;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    width: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(8, var(--cell));
+    grid-template-rows: repeat(6, var(--cell));
+    gap: 5px;
+    justify-content: center;
+}
+
+.board-center {
+    grid-column: 2 / 8;
+    grid-row: 2 / 6;
+    background: linear-gradient(145deg, #F8EEFC, #F1DEF8);
+    border-radius: 20px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    margin: 5px;
+    padding: 8px;
+    overflow: hidden;
+}
+.board-center h2 {
+    font-size: calc(var(--cell) * 0.36);
+    color: var(--purple);
+    font-weight: 800;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.board-center .center-sub {
+    margin-top: 8px;
+    font-size: calc(var(--cell) * 0.16);
+    color: #8e5fb0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.board-cell {
+    width: var(--cell); height: var(--cell);
+    background: #E1BEE7;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    font-size: calc(var(--cell) * 0.165);
+    line-height: 1.15;
+    font-weight: 700;
+    border-radius: 14px;
+    color: #4A148C;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transition: all 0.3s ease;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.special-icon { font-size: calc(var(--cell) * 0.34); line-height: 1; margin-bottom: 3px; }
+.special-label { font-size: calc(var(--cell) * 0.145); }
+
+.cell-diamond { background: linear-gradient(135deg, #e0f7fa, #4dd0e1) !important; color: #006064; border-color: #00bcd4; }
+.cell-bomb    { background: linear-gradient(135deg, #ffebee, #ef5350) !important; color: #b71c1c; border-color: #f44336; }
+.cell-rocket  { background: linear-gradient(135deg, #fff3e0, #ffb74d) !important; color: #e65100; border-color: #ff9800; }
+.cell-chain   { background: linear-gradient(135deg, #f5f5f5, #9e9e9e) !important; color: #212121; border-color: #757575; }
+
+.police-start { background: linear-gradient(45deg, #2196F3, #1976D2) !important; color: #fff; font-size: calc(var(--cell) * 0.17); }
+.thief-start  { background: linear-gradient(45deg, #F44336, #D32F2F) !important; color: #fff; font-size: calc(var(--cell) * 0.17); }
+
+/* 玩家棋子 */
+.player-piece {
+    position: absolute;
+    width: calc(var(--cell) * 0.72);
+    height: calc(var(--cell) * 0.72);
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: calc(var(--cell) * 0.44);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+    border: 2px solid #fff;
+    z-index: 100;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+    transform: scale(0.5);
+}
+.player-piece.active { opacity: 1; transform: scale(1); }
+.police-piece { border-color: #2196F3; }
+.thief-piece  { border-color: #F44336; }
+
+/* 控制面板 */
+.game-controls { flex: 1; display: flex; flex-direction: column; gap: 14px; width: 280px; min-width: 240px; }
+
+.dice-section {
+    text-align: center; padding: 16px;
+    background: #f7f7f9; border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+#current-turn { font-size: 1.05em; color: #2c3e50; margin-bottom: 14px; }
+
+.dice {
+    width: 92px; height: 92px;
+    margin: 0 auto 16px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.dice-face {
+    position: absolute; width: 100%; height: 100%;
+    background: white; border: 2px solid #333; border-radius: 10px;
+    display: flex; justify-content: center; align-items: center;
+}
+.dice-face-1 { transform: translateZ(46px); }
+.dice-face-2 { transform: rotateX(180deg) translateZ(46px); }
+.dice-face-3 { transform: rotateY(90deg) translateZ(46px); }
+.dice-face-4 { transform: rotateY(-90deg) translateZ(46px); }
+.dice-face-5 { transform: rotateX(90deg) translateZ(46px); }
+.dice-face-6 { transform: rotateX(-90deg) translateZ(46px); }
+.dice-dot { width: 14px; height: 14px; background-color: #e74c3c; border-radius: 50%; position: absolute; }
+.dice-face-1 .dice-dot { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.dice-face-2 .dice-dot:nth-child(1) { top: 22%; left: 22%; }
+.dice-face-2 .dice-dot:nth-child(2) { bottom: 22%; right: 22%; }
+.dice-face-3 .dice-dot:nth-child(1) { top: 18%; left: 18%; }
+.dice-face-3 .dice-dot:nth-child(2) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.dice-face-3 .dice-dot:nth-child(3) { bottom: 18%; right: 18%; }
+.dice-face-4 .dice-dot:nth-child(1) { top: 22%; left: 22%; }
+.dice-face-4 .dice-dot:nth-child(2) { top: 22%; right: 22%; }
+.dice-face-4 .dice-dot:nth-child(3) { bottom: 22%; left: 22%; }
+.dice-face-4 .dice-dot:nth-child(4) { bottom: 22%; right: 22%; }
+.dice-face-5 .dice-dot:nth-child(1) { top: 18%; left: 18%; }
+.dice-face-5 .dice-dot:nth-child(2) { top: 18%; right: 18%; }
+.dice-face-5 .dice-dot:nth-child(3) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.dice-face-5 .dice-dot:nth-child(4) { bottom: 18%; left: 18%; }
+.dice-face-5 .dice-dot:nth-child(5) { bottom: 18%; right: 18%; }
+.dice-face-6 .dice-dot:nth-child(1) { top: 18%; left: 20%; }
+.dice-face-6 .dice-dot:nth-child(2) { top: 18%; right: 20%; }
+.dice-face-6 .dice-dot:nth-child(3) { top: 50%; left: 20%; transform: translateY(-50%); }
+.dice-face-6 .dice-dot:nth-child(4) { top: 50%; right: 20%; transform: translateY(-50%); }
+.dice-face-6 .dice-dot:nth-child(5) { bottom: 18%; left: 20%; }
+.dice-face-6 .dice-dot:nth-child(6) { bottom: 18%; right: 20%; }
+
+@keyframes rolling {
+    0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    100% { transform: rotateX(720deg) rotateY(1080deg) rotateZ(360deg); }
+}
+
+#roll-dice {
+    background: linear-gradient(45deg, #FF9800, #F57C00);
+    color: white; border: none; padding: 12px 10px;
+    border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: bold;
+    width: 130px; margin-bottom: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 124, 0, 0.3);
+}
+#roll-dice:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245, 124, 0, 0.4); }
+#roll-dice:disabled { background: linear-gradient(45deg, #bdc3c7, #95a5a6); cursor: not-allowed; opacity: .85; box-shadow: none; }
+.dice-result { padding: 8px; background: #4CAF50; border-radius: 8px; color: white; font-weight: bold; }
+
+.chase-info { display: flex; flex-direction: column; gap: 12px; }
+.police-chase { background: linear-gradient(45deg, #BBDEFB, #90CAF9); padding: 12px; border-radius: 10px; text-align: center; }
+.thief-escape { background: linear-gradient(45deg, #FFCDD2, #EF9A9A); padding: 12px; border-radius: 10px; text-align: center; }
+.chase-info h3 { font-size: 0.95em; color: #34495e; }
+.steps-display { font-size: 28px; font-weight: bold; }
+.chase-icon { font-size: 1.3em; vertical-align: middle; margin-right: 4px; }
+
+.game-rules-box {
+    background: linear-gradient(45deg, #fef9e7, #fdebd0);
+    padding: 12px; border-radius: 10px; text-align: center;
+    border: 2px dashed #f39c12;
+}
+.rules-btn {
+    background: #f39c12; color: white; padding: 10px 20px;
+    border-radius: 25px; font-size: 15px; font-weight: bold;
+    border: none; cursor: pointer; width: 100%;
+    transition: all .3s ease;
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+.rules-btn:hover { background: #e67e22; transform: scale(1.03); }
+
+/* ============ 弹窗 ============ */
+.modern-modal {
+    display: none;
+    position: fixed; inset: 0; z-index: 3000;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    justify-content: center; align-items: center;
+}
+.modern-modal.active { display: flex; animation: modalFadeIn .3s ease; }
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+.modern-modal-content {
+    background: white; border-radius: 22px; text-align: center;
+    max-width: 560px; width: 92%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+.modern-modal-header {
+    background: linear-gradient(135deg, #ff9800, #f57c00);
+    color: white; padding: 18px; font-size: 1.35em; font-weight: bold;
+}
+.event-police .modern-modal-header  { background: linear-gradient(135deg, #2196F3, #1565C0); }
+.event-thief .modern-modal-header   { background: linear-gradient(135deg, #F44336, #C62828); }
+.event-special .modern-modal-header { background: linear-gradient(135deg, #FF9800, #F57C00); }
+.event-success .modern-modal-header { background: linear-gradient(135deg, #4CAF50, #2E7D32); }
+
+.modern-modal-body { padding: 26px 24px; font-size: 1.1em; color: #2c3e50; line-height: 1.6; }
+.modern-modal-footer { padding: 16px; background: #f8f9fa; display: flex; justify-content: center; gap: 14px; }
+.modern-modal-btn {
+    padding: 11px 32px; border: none; border-radius: 50px;
+    font-size: 15px; font-weight: bold; cursor: pointer; transition: all .2s;
+}
+.confirm-btn { background: #4CAF50; color: #fff; }
+.confirm-btn:hover { background: #45a049; transform: translateY(-2px); }
+.cancel-btn { background: #bdc3c7; color: #fff; }
+.cancel-btn:hover { background: #a9b3b7; }
+
+#challenge-word {
+    font-size: 2.1em; font-weight: 800; color: #2c3e50;
+    margin: 8px 0 4px; word-break: break-word;
+}
+#challenge-reward-desc { color: #e67e22; font-weight: bold; margin-bottom: 8px; }
+
+/* 彩带 */
+#confetti-container { position: fixed; inset: 0; pointer-events: none; z-index: 5000; overflow: hidden; }
+.confetti { position: absolute; width: 10px; height: 20px; top: -20px; opacity: .85; }
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg) translateX(0); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg) translateX(50px); opacity: 0; }
+}
+@keyframes fall-alt {
+    0% { transform: translateY(0) rotate(0deg) translateX(0); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg) translateX(-50px); opacity: 0; }
+}
+
+/* 自适应 */
+@media (max-width: 1050px) {
+    :root { --cell: 68px; }
+    .game-container { flex-direction: column; align-items: center; }
+    .game-controls { width: 100%; max-width: 560px; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .dice-section { flex: 1; min-width: 220px; }
+    .chase-info { flex: 1; min-width: 220px; }
+}
+@media (max-width: 640px) {
+    :root { --cell: 42px; }
+    body { padding: 8px; }
+    .board-wrapper { padding: 8px; border-radius: 14px; }
+    .board-grid { gap: 2px; }
+    .board-cell { border-width: 2px; border-radius: 8px; }
+    .board-center { border-width: 2px; border-radius: 10px; margin: 2px; }
+    .board-center h2 { letter-spacing: 0; }
+    .game-controls { flex-direction: column; }
+    .victory-condition p { font-size: .8em; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ========== 设置页 ========== -->
+    <div id="setup-page" class="page active">
+        <div class="setup-card">
+            <h2>警察抓小偷 · 单词棋盘</h2>
+            <p class="setup-sub">掷骰子前进，答对单词才能移动！</p>
+            <div class="bank-badge" id="bank-badge">当前词库：Unit 2 · 22 个单词</div>
+
+            <div class="setup-actions">
+                <div class="setup-item">
+                    <button id="download-template" class="action-button download-btn">
+                        <span>📥</span> 下载模板
+                    </button>
+                    <p class="file-type-info">模板内含 Unit 2 单词</p>
+                </div>
+                <div class="setup-item">
+                    <div class="upload-container">
+                        <input type="file" id="word-file" accept=".csv,.txt">
+                        <label for="word-file" id="file-label" class="action-button upload-btn">
+                            <span>📤</span> 上传词库
+                        </label>
+                    </div>
+                    <p class="file-type-info">支持 CSV（英文,中文）</p>
+                    <div id="file-name" class="file-name-display"></div>
+                </div>
+            </div>
+
+            <div class="word-preview" id="word-preview"></div>
+        </div>
+
+        <button id="start-game" class="start-button">开始游戏</button>
+    </div>
+
+    <!-- ========== 游戏页 ========== -->
+    <div id="game-page" class="page">
+        <div class="game-header">
+            <div class="victory-condition">
+                <p>胜利条件：追上对方即可获胜！</p>
+            </div>
+            <div class="header-buttons">
+                <button id="sound-toggle" class="sound-btn">🔊</button>
+                <button id="fullscreen-btn">全屏</button>
+                <button id="back-to-setup">返回设置</button>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="game-board-container">
+                <div class="board-wrapper">
+                    <div id="police-piece" class="player-piece police-piece">👮</div>
+                    <div id="thief-piece" class="player-piece thief-piece">🏃</div>
+
+                    <div class="board-grid">
+                        <div class="board-center">
+                            <h2>警察抓小偷</h2>
+                            <div class="center-sub">UNIT 2 单词挑战</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <div class="dice-section">
+                    <h3 id="current-turn">轮到警察</h3>
+                    <div id="dice" class="dice">
+                        <div class="dice-face dice-face-1"><div class="dice-dot"></div></div>
+                        <div class="dice-face dice-face-2"><div class="dice-dot"></div><div class="dice-dot"></div></div>
+                        <div class="dice-face dice-face-3"><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div></div>
+                        <div class="dice-face dice-face-4"><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div></div>
+                        <div class="dice-face dice-face-5"><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div></div>
+                        <div class="dice-face dice-face-6"><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div><div class="dice-dot"></div></div>
+                    </div>
+                    <button id="roll-dice">掷骰子</button>
+                    <div id="dice-result" class="dice-result">
+                        <span>点数: </span><span id="dice-number">-</span>
+                    </div>
+                </div>
+
+                <div class="chase-info">
+                    <div class="police-chase">
+                        <h3><span class="chase-icon">👮</span>警察追捕距离</h3>
+                        <div id="police-steps" class="steps-display">0</div>
+                    </div>
+                    <div class="thief-escape">
+                        <h3><span class="chase-icon">🏃</span>小偷逃脱距离</h3>
+                        <div id="thief-steps" class="steps-display">0</div>
+                    </div>
+                    <div class="game-rules-box">
+                        <button id="show-rules" class="rules-btn">📖 游戏规则</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="confetti-container"></div>
+
+<!-- 通用提示框 -->
+<div id="modern-modal" class="modern-modal">
+    <div class="modern-modal-content">
+        <div class="modern-modal-header"><h2 id="modern-modal-title">提示</h2></div>
+        <div class="modern-modal-body"><p id="modern-modal-message"></p></div>
+        <div class="modern-modal-footer">
+            <button id="modern-modal-cancel" class="modern-modal-btn cancel-btn">取消</button>
+            <button id="modern-modal-confirm" class="modern-modal-btn confirm-btn">确定</button>
+        </div>
+    </div>
+</div>
+
+<!-- 单词挑战框 -->
+<div id="challenge-modal" class="modern-modal">
+    <div class="modern-modal-content">
+        <div id="challenge-header" class="modern-modal-header">
+            <span id="challenge-type-title">单词挑战</span>
+        </div>
+        <div class="modern-modal-body">
+            <p id="challenge-reward-desc" style="display:none;"></p>
+            <div id="challenge-word"></div>
+        </div>
+        <div class="modern-modal-footer">
+            <button id="challenge-success" class="modern-modal-btn confirm-btn">挑战成功</button>
+            <button id="challenge-fail" class="modern-modal-btn cancel-btn">挑战失败</button>
+        </div>
+    </div>
+</div>
+
+<script>
+/* ================= 音效（WebAudio 合成，无需外部文件） ================= */
+const audioManager = {
+    soundEnabled: true,
+    ctx: null,
+    ensureCtx() {
+        if (!this.ctx) {
+            const AC = window.AudioContext || window.webkitAudioContext;
+            if (AC) this.ctx = new AC();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();
+        return this.ctx;
+    },
+    beep(freq, duration, type = 'sine', volume = 0.18, delay = 0) {
+        if (!this.soundEnabled) return;
+        const ctx = this.ensureCtx();
+        if (!ctx) return;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.value = freq;
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        const start = ctx.currentTime + delay;
+        gain.gain.setValueAtTime(0, start);
+        gain.gain.linearRampToValueAtTime(volume, start + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.001, start + duration);
+        osc.start(start);
+        osc.stop(start + duration + 0.02);
+    },
+    diceRoll() { this.beep(320, .08, 'square', .12, 0); this.beep(420, .08, 'square', .12, .08); this.beep(260, .1, 'square', .12, .16); },
+    move() { this.beep(660, .08, 'triangle', .15); },
+    win() {
+        [523, 659, 784, 1046].forEach((f, i) => this.beep(f, .22, 'sine', .2, i * .14));
+    },
+    fail() { this.beep(220, .18, 'sawtooth', .12); this.beep(160, .25, 'sawtooth', .12, .16); }
+};
+
+/* ================= Unit 2 单词库 ================= */
+const U2_WORDS = [
+    { en: 'Monday',    zh: '星期一' },
+    { en: 'Tuesday',   zh: '星期二' },
+    { en: 'Wednesday', zh: '星期三' },
+    { en: 'Thursday',  zh: '星期四' },
+    { en: 'Friday',    zh: '星期五' },
+    { en: 'PE',        zh: '体育' },
+    { en: 'maths',     zh: '数学' },
+    { en: 'subject',   zh: '科目；课程' },
+    { en: 'scientist', zh: '科学家' },
+    { en: 'learn',     zh: '学；学习；学会' },
+    { en: 'English',   zh: '英语' },
+    { en: 'their',     zh: '他们的' },
+    { en: 'paint',     zh: '绘画' },
+    { en: 'weekend',   zh: '周末' },
+    { en: 'Saturday',  zh: '星期六' },
+    { en: 'Sunday',    zh: '星期天' },
+    { en: 'film',      zh: '电影' },
+    { en: 'tomorrow',  zh: '明天' },
+    { en: 'leave',     zh: '离开；离去' },
+    { en: 'Finland',   zh: '芬兰' },
+    { en: 'village',   zh: '村庄' },
+    { en: 'so',        zh: '因此；所以' }
+];
+
+/* ================= 游戏状态 ================= */
+const BOARD_SIZE = 24;
+const STORAGE_KEY = 'u2-catch-thief-used-words';
+
+let gameState = {
+    words: U2_WORDS.slice(),
+    policePosition: 0,
+    thiefPosition: 12,
+    currentPlayer: 'police',
+    diceValue: 0,
+    isDiceRolling: false,
+    gameOver: false,
+    immobilized: { police: false, thief: false },
+    extraTurn: false,
+    currentSpecials: {},
+    allUsedWordIndices: []
+};
+
+// 功能格定义
+const specialDefinitions = [
+    { type: 'diamond', icon: '💎', label: '再掷一次', rewardDesc: '答对单词可获得【再掷一次】奖励！' },
+    { type: 'bomb',    icon: '💣', label: '后退2步' },
+    { type: 'rocket',  icon: '🚀', label: '前进3格', rewardDesc: '答对单词可获得【前进3格】奖励！' },
+    { type: 'chain',   icon: '⛓️', label: '禁锢一轮' }
+];
+
+/* ================= 跨局单词记忆 ================= */
+function loadUsedWords() {
+    try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        gameState.allUsedWordIndices = raw ? JSON.parse(raw) : [];
+    } catch (e) {
+        gameState.allUsedWordIndices = [];
+    }
+}
+function saveUsedWords() {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(gameState.allUsedWordIndices));
+    } catch (e) { /* 忽略隐私模式异常 */ }
+}
+function markWordAsUsed(i) {
+    if (!gameState.allUsedWordIndices.includes(i)) {
+        gameState.allUsedWordIndices.push(i);
+        saveUsedWords();
+    }
+}
+function getRandomAvailableWord() {
+    let available = gameState.words.map((_, i) => i).filter(i => !gameState.allUsedWordIndices.includes(i));
+    if (available.length === 0) {
+        gameState.allUsedWordIndices = [];
+        saveUsedWords();
+        available = gameState.words.map((_, i) => i);
+    }
+    const idx = available[Math.floor(Math.random() * available.length)];
+    markWordAsUsed(idx);
+    return { word: gameState.words[idx], index: idx };
+}
+
+/* ================= 初始化 ================= */
+document.addEventListener('DOMContentLoaded', () => {
+    loadUsedWords();
+    renderWordPreview();
+    initSetupPage();
+    initGamePage();
+});
+
+function renderWordPreview() {
+    const box = document.getElementById('word-preview');
+    if (!box) return;
+    box.innerHTML = gameState.words.map(w =>
+        `<div class="word-chip"><b>${escapeHTML(w.en)}</b><span>${escapeHTML(w.zh)}</span></div>`
+    ).join('');
+    const badge = document.getElementById('bank-badge');
+    if (badge) badge.textContent = `当前词库：Unit 2 · ${gameState.words.length} 个单词`;
+}
+
+function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+}
+
+function initSetupPage() {
+    document.getElementById('start-game').onclick = switchToGamePage;
+
+    document.getElementById('download-template').onclick = () => {
+        const rows = ['English,Chinese', ...U2_WORDS.map(w => `${w.en},${w.zh}`)];
+        const blob = new Blob(['\uFEFF' + rows.join('\n')], { type: 'text/csv;charset=utf-8' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'Unit2单词模板.csv';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(link.href);
+    };
+
+    const fileInput = document.getElementById('word-file');
+    const fileNameDisplay = document.getElementById('file-name');
+
+    fileInput.onchange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        fileNameDisplay.textContent = `已选择：${file.name}`;
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const bytes = new Uint8Array(event.target.result);
+            let encoding = 'utf-8';
+            try {
+                new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+            } catch (err) {
+                encoding = 'gbk';
+            }
+            parseCSV(new TextDecoder(encoding).decode(bytes));
+        };
+        reader.readAsArrayBuffer(file);
+    };
+}
+
+function parseCSV(text) {
+    const lines = text.replace(/^\uFEFF/, '').split(/\r?\n/);
+    const words = [];
+
+    lines.forEach((raw, i) => {
+        const line = raw.trim();
+        if (!line) return;
+        if (i === 0 && /english|单词|word/i.test(line) && !/[\u4e00-\u9fa5]{2,}/.test(line)) return; // 跳过表头
+
+        const m = line.match(/^(.+?)[,，\t;；](.+)$/);
+        if (!m) return;
+        const en = m[1].trim();
+        const zh = m[2].trim().replace(/^[,，\t;；]+/, '');
+        if (en && zh) words.push({ en, zh });
+    });
+
+    if (words.length > 0) {
+        gameState.words = words;
+        gameState.allUsedWordIndices = [];
+        saveUsedWords();
+        renderWordPreview();
+        showMessage('✅ 上传成功', `成功导入 ${words.length} 个单词！`, 'success');
+    } else {
+        showMessage('❌ 上传失败', '请使用「英文,中文」每行一对的 CSV 格式。', 'thief');
+    }
+}
+
+function initGamePage() {
+    document.getElementById('roll-dice').onclick = rollDice;
+    document.getElementById('challenge-success').onclick = () => completeChallenge(true);
+    document.getElementById('challenge-fail').onclick = () => completeChallenge(false);
+    document.getElementById('back-to-setup').onclick = switchToSetupPage;
+    document.getElementById('fullscreen-btn').onclick = toggleFullscreen;
+
+    document.getElementById('sound-toggle').onclick = function () {
+        audioManager.soundEnabled = !audioManager.soundEnabled;
+        this.textContent = audioManager.soundEnabled ? '🔊' : '🔇';
+    };
+
+    document.getElementById('show-rules').onclick = () => {
+        const rulesHTML = `
+            <div style="text-align:left;font-size:.86em;line-height:1.7;color:#34495e;">
+                <p><b>1. 获胜目标：</b><br>警察追上小偷，或小偷成功逃脱，即获得胜利。</p>
+                <p style="margin-top:10px;"><b>2. 移动逻辑：</b><br>
+                • <b>掷骰子</b>：决定预想前进步数。<br>
+                • <b>答题挑战</b>：<b>答对</b>才能前进；答错原地踏步。</p>
+                <p style="margin-top:10px;"><b>3. 功能格（落点生效）：</b><br>
+                • 💎 <b>再掷一次</b>：答对后额外获得一次行动机会。<br>
+                • 🚀 <b>前进3格</b>：答对后直接冲刺 3 格，可触发连锁。<br>
+                • 💣 <b>后退2步</b>：被迫倒退 2 步。<br>
+                • ⛓️ <b>禁锢一轮</b>：下回合停止行动一次。</p>
+                <p style="margin-top:10px;"><b>4. 题目要求：</b><br>
+                • 显示英文：说出中文意思。<br>
+                • 显示中文：读出单词并拼写英文。</p>
+            </div>`;
+        showMessage('📜 游戏规则', rulesHTML, 'special');
+    };
+
+    document.getElementById('modern-modal-cancel').onclick = () => {
+        document.querySelectorAll('.modern-modal').forEach(m => m.classList.remove('active'));
+    };
+}
+
+function switchToGamePage() {
+    document.getElementById('setup-page').classList.remove('active');
+    document.getElementById('game-page').classList.add('active');
+    resetGame();
+    initGameBoard();
+    setTimeout(() => {
+        document.getElementById('police-piece').classList.add('active');
+        document.getElementById('thief-piece').classList.add('active');
+        updatePlayerPositions();
+    }, 100);
+}
+
+function switchToSetupPage() {
+    showMessage('🏠 返回设置', '确定要返回设置吗？当前进度将丢失。', 'special', () => {
+        document.getElementById('setup-page').classList.add('active');
+        document.getElementById('game-page').classList.remove('active');
+        resetGame();
+    }, () => {});
+}
+
+/* ================= 棋盘 ================= */
+function initGameBoard() {
+    const grid = document.querySelector('.board-grid');
+    const center = grid.querySelector('.board-center');
+    grid.innerHTML = '';
+    if (center) grid.appendChild(center);
+
+    generateRandomSpecials();
+    generateCellWords();
+    for (let i = 0; i < BOARD_SIZE; i++) createCell(i, grid);
+
+    updatePlayerPositions();
+    updateChaseInfo();
+}
+
+function generateRandomSpecials() {
+    gameState.currentSpecials = {};
+    const pool = [];
+    for (let i = 0; i < BOARD_SIZE; i++) {
+        if (i !== 0 && i !== 12) pool.push(i);
+    }
+    // 洗牌
+    for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    specialDefinitions.forEach((spec, i) => {
+        gameState.currentSpecials[pool[i]] = spec;
+    });
+}
+
+function cellGridPosition(index) {
+    if (index <= 7) return { row: 1, col: index + 1 };
+    if (index <= 11) return { row: index - 6, col: 8 };
+    if (index <= 19) return { row: 6, col: 8 - (index - 12) };
+    return { row: 6 - (index - 19), col: 1 };
+}
+
+function generateCellWords() {
+    // 把单词洗牌后依次铺到普通格子上，尽量让每个单词只出现一次
+    const deck = [];
+    while (deck.length < BOARD_SIZE) {
+        const round = gameState.words.map((_, i) => i);
+        for (let i = round.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [round[i], round[j]] = [round[j], round[i]];
+        }
+        deck.push(...round);
+    }
+
+    gameState.cellWords = {};
+    let cursor = 0;
+    for (let i = 0; i < BOARD_SIZE; i++) {
+        if (i === 0 || i === 12 || gameState.currentSpecials[i]) continue;
+        gameState.cellWords[i] = gameState.words[deck[cursor++]];
+    }
+}
+
+function createCell(index, container) {
+    const cell = document.createElement('div');
+    cell.className = 'board-cell';
+    cell.dataset.index = index;
+
+    const { row, col } = cellGridPosition(index);
+    cell.style.gridRow = row;
+    cell.style.gridColumn = col;
+
+    const pair = gameState.cellWords[index];
+    const showChinese = Math.random() > 0.5;
+    if (pair) {
+        cell.dataset.en = pair.en;
+        cell.dataset.zh = pair.zh;
+        cell.dataset.display = showChinese ? 'zh' : 'en';
+    }
+
+    const special = gameState.currentSpecials[index];
+
+    if (index === 0) {
+        cell.classList.add('police-start');
+        cell.textContent = '警察起点';
+    } else if (index === 12) {
+        cell.classList.add('thief-start');
+        cell.textContent = '小偷起点';
+    } else if (special) {
+        cell.classList.add(`cell-${special.type}`);
+        cell.innerHTML = `<div class="special-icon">${special.icon}</div><div class="special-label">${special.label}</div>`;
+    } else {
+        cell.textContent = showChinese ? pair.zh : pair.en;
+    }
+
+    container.appendChild(cell);
+}
+
+function updatePlayerPositions() {
+    const wrapper = document.querySelector('.board-wrapper');
+    if (!wrapper) return;
+
+    const place = (id, pos) => {
+        const piece = document.getElementById(id);
+        const cell = document.querySelector(`.board-cell[data-index="${pos}"]`);
+        if (!piece || !cell) return;
+        const rect = cell.getBoundingClientRect();
+        const wrapRect = wrapper.getBoundingClientRect();
+        const x = rect.left - wrapRect.left + rect.width / 2 - piece.offsetWidth / 2;
+        const y = rect.top - wrapRect.top + rect.height / 2 - piece.offsetHeight / 2;
+        piece.style.left = `${x}px`;
+        piece.style.top = `${y}px`;
+    };
+
+    place('police-piece', gameState.policePosition);
+    place('thief-piece', gameState.thiefPosition);
+}
+
+/* ================= 通用弹窗 ================= */
+function showMessage(title, message, type = 'special', onConfirm = null, onCancel = null) {
+    const modal = document.getElementById('modern-modal');
+    modal.className = 'modern-modal active';
+    modal.classList.add(`event-${type}`);
+    document.getElementById('modern-modal-title').textContent = title;
+    document.getElementById('modern-modal-message').innerHTML = message;
+
+    const cancelBtn = document.getElementById('modern-modal-cancel');
+    const confirmBtn = document.getElementById('modern-modal-confirm');
+
+    cancelBtn.style.display = onCancel ? 'inline-block' : 'none';
+    cancelBtn.onclick = () => {
+        modal.classList.remove('active');
+        if (onCancel) onCancel();
+    };
+    confirmBtn.onclick = () => {
+        modal.classList.remove('active');
+        if (onConfirm) onConfirm();
+    };
+}
+
+/* ================= 掷骰子 ================= */
+function rollDice() {
+    if (gameState.gameOver || gameState.isDiceRolling) return;
+
+    const rollBtn = document.getElementById('roll-dice');
+    rollBtn.disabled = true;
+
+    if (gameState.immobilized[gameState.currentPlayer]) {
+        const name = gameState.currentPlayer === 'police' ? '警察' : '小偷';
+        showMessage('⛓️ 禁锢状态', `${name}被铁链锁住，跳过本回合！`, gameState.currentPlayer, () => {
+            gameState.immobilized[gameState.currentPlayer] = false;
+            endTurn();
+        });
+        return;
+    }
+
+    audioManager.diceRoll();
+    gameState.isDiceRolling = true;
+
+    const dice = document.getElementById('dice');
+    dice.style.animation = 'rolling 1s linear infinite';
+
+    setTimeout(() => {
+        gameState.diceValue = Math.floor(Math.random() * 6) + 1;
+        dice.style.animation = 'none';
+        applyDiceRotation(gameState.diceValue);
+        document.getElementById('dice-number').textContent = gameState.diceValue;
+
+        setTimeout(() => {
+            const currentPos = gameState.currentPlayer === 'police' ? gameState.policePosition : gameState.thiefPosition;
+            const targetPos = getNextPos(currentPos, gameState.diceValue);
+            showChallenge({ targetPos, title: '移动挑战' });
+        }, 600);
+    }, 1000);
+}
+
+function applyDiceRotation(value) {
+    const rotations = {
+        1: 'rotateX(0deg) rotateY(0deg)',
+        2: 'rotateX(-180deg) rotateY(0deg)',
+        3: 'rotateX(0deg) rotateY(-90deg)',
+        4: 'rotateX(0deg) rotateY(90deg)',
+        5: 'rotateX(-90deg) rotateY(0deg)',
+        6: 'rotateX(90deg) rotateY(0deg)'
+    };
+    document.getElementById('dice').style.transform = rotations[value];
+}
+
+/* ================= 单词挑战 ================= */
+let challengeContext = null;
+
+function showChallenge({ targetPos, title, rewardDesc, onSuccess, onFail }) {
+    const modal = document.getElementById('challenge-modal');
+    const typeTitle = document.getElementById('challenge-type-title');
+    const descEl = document.getElementById('challenge-reward-desc');
+    const wordEl = document.getElementById('challenge-word');
+
+    const { word } = getRandomAvailableWord();
+    const showChinese = Math.random() > 0.5;
+    const displayWord = showChinese ? word.zh : word.en;
+    const displayType = showChinese ? 'zh' : 'en';
+
+    modal.className = 'modern-modal active';
+    modal.classList.add(`event-${gameState.currentPlayer}`);
+
+    typeTitle.textContent = title || '单词挑战';
+    if (displayType === 'zh') {
+        descEl.textContent = rewardDesc || '请读出对应的单词，并拼写英文！';
+    } else {
+        descEl.textContent = rewardDesc || '请说出对应的中文意思！';
+    }
+    descEl.style.display = 'block';
+    wordEl.textContent = displayWord;
+
+    challengeContext = {
+        targetPos: targetPos ?? null,
+        displayType,
+        onSuccess: onSuccess || null,
+        onFail: onFail || null
+    };
+}
+
+async function completeChallenge(success) {
+    const modal = document.getElementById('challenge-modal');
+    modal.classList.remove('active');
+
+    const ctx = challengeContext;
+    challengeContext = null;
+    if (!ctx) {
+        endTurn();
+        return;
+    }
+
+    if (success) {
+        audioManager.move();
+        if (ctx.onSuccess) {
+            await ctx.onSuccess();
+        } else {
+            await handleMoveStart();
+            updateCellContent(ctx.targetPos);
+        }
+    } else {
+        audioManager.fail();
+        if (ctx.onFail) {
+            await ctx.onFail();
+        } else {
+            endTurn();
+        }
+    }
+}
+
+/* ================= 移动 ================= */
+function getNextPos(current, steps) {
+    return (current + steps + BOARD_SIZE) % BOARD_SIZE;
+}
+
+async function handleMoveStart() {
+    try {
+        const steps = gameState.diceValue;
+        for (let i = 1; i <= steps; i++) {
+            if (gameState.currentPlayer === 'police') {
+                gameState.policePosition = getNextPos(gameState.policePosition, 1);
+            } else {
+                gameState.thiefPosition = getNextPos(gameState.thiefPosition, 1);
+            }
+            updatePlayerPositions();
+            updateChaseInfo();
+            audioManager.move();
+            if (checkWinCondition()) return;
+            await wait(380);
+        }
+
+        const finalPos = gameState.currentPlayer === 'police' ? gameState.policePosition : gameState.thiefPosition;
+        const special = gameState.currentSpecials[finalPos];
+        if (special) {
+            await handleImmediateSpecial(special);
+        } else {
+            endTurn();
+        }
+    } catch (err) {
+        console.error('移动出错:', err);
+        endTurn();
+    }
+}
+
+async function performExtraSteps(steps) {
+    const forward = steps > 0;
+    const count = Math.abs(steps);
+    for (let i = 0; i < count; i++) {
+        const dir = forward ? 1 : -1;
+        if (gameState.currentPlayer === 'police') {
+            gameState.policePosition = getNextPos(gameState.policePosition, dir);
+        } else {
+            gameState.thiefPosition = getNextPos(gameState.thiefPosition, dir);
+        }
+        updatePlayerPositions();
+        updateChaseInfo();
+        audioManager.move();
+        if (checkWinCondition()) return;
+        await wait(380);
+    }
+}
+
+async function handleImmediateSpecial(special) {
+    const chain = async () => {
+        if (gameState.gameOver) return;
+        const pos = gameState.currentPlayer === 'police' ? gameState.policePosition : gameState.thiefPosition;
+        const next = gameState.currentSpecials[pos];
+        if (next) {
+            await handleImmediateSpecial(next);
+        } else {
+            endTurn();
+        }
+    };
+
+    if (special.type === 'bomb') {
+        showMessage('💣 爆炸', '踩到炸弹！直接后退 2 步！', 'thief', async () => {
+            await performExtraSteps(-2);
+            if (!gameState.gameOver) await chain();
+        });
+    } else if (special.type === 'chain') {
+        showMessage('⛓️ 束缚', '被铁链锁住！下回合禁锢一轮！', 'police', () => {
+            gameState.immobilized[gameState.currentPlayer] = true;
+            endTurn();
+        });
+    } else if (special.type === 'diamond') {
+        showChallenge({
+            title: '💎 奖励挑战',
+            rewardDesc: special.rewardDesc,
+            onSuccess: async () => {
+                showMessage('💎 奖励', '答对啦！获得一次额外掷骰子的机会！', 'success', () => {
+                    gameState.extraTurn = true;
+                    endTurn();
+                });
+            },
+            onFail: () => {
+                showMessage('💎 错失奖励', '答错了，本次没有额外机会，继续努力！', 'thief', () => {
+                    endTurn();
+                });
+            }
+        });
+    } else if (special.type === 'rocket') {
+        showChallenge({
+            title: '🚀 奖励挑战',
+            rewardDesc: special.rewardDesc,
+            onSuccess: async () => {
+                showMessage('🚀 奖励', '太棒了！动力推进，直接前进 3 格！', 'success', async () => {
+                    await performExtraSteps(3);
+                    if (!gameState.gameOver) await chain();
+                });
+            },
+            onFail: () => {
+                showMessage('🚀 错失奖励', '答错了，本次没能启动火箭。', 'thief', () => {
+                    endTurn();
+                });
+            }
+        });
+    } else {
+        endTurn();
+    }
+}
+
+function updateCellContent(index) {
+    const cell = document.querySelector(`.board-cell[data-index="${index}"]`);
+    if (!cell) return;
+    if (index === 0 || index === 12 || gameState.currentSpecials[index]) return;
+
+    const { word } = getRandomAvailableWord();
+    const showChinese = Math.random() > 0.5;
+
+    cell.dataset.en = word.en;
+    cell.dataset.zh = word.zh;
+    cell.dataset.display = showChinese ? 'zh' : 'en';
+
+    cell.style.transition = 'transform .3s cubic-bezier(.175,.885,.32,1.275)';
+    cell.style.transform = 'scale(.5)';
+    setTimeout(() => {
+        cell.textContent = showChinese ? word.zh : word.en;
+        cell.style.transform = 'scale(1)';
+    }, 300);
+}
+
+/* ================= 胜负与回合 ================= */
+function checkWinCondition() {
+    if (gameState.policePosition !== gameState.thiefPosition) return false;
+
+    gameState.gameOver = true;
+    audioManager.win();
+    const winner = gameState.currentPlayer === 'police' ? '警察' : '小偷';
+    const action = gameState.currentPlayer === 'police' ? '抓到了小偷！' : '成功逃脱！';
+
+    setTimeout(() => {
+        launchConfetti();
+        showMessage('🏆 胜负已分', `${winner}${action}`, 'success', () => {
+            location.reload();
+        });
+    }, 500);
+    return true;
+}
+
+function endTurn() {
+    gameState.isDiceRolling = false;
+    if (gameState.gameOver) return;
+
+    const turnEl = document.getElementById('current-turn');
+
+    if (gameState.extraTurn) {
+        gameState.extraTurn = false;
+        turnEl.textContent = `(奖励) 轮到${gameState.currentPlayer === 'police' ? '警察' : '小偷'}再掷一次`;
+    } else {
+        gameState.currentPlayer = gameState.currentPlayer === 'police' ? 'thief' : 'police';
+        turnEl.textContent = `轮到${gameState.currentPlayer === 'police' ? '警察' : '小偷'}`;
+    }
+
+    document.getElementById('roll-dice').disabled = false;
+}
+
+function updateChaseInfo() {
+    const p = document.getElementById('police-steps');
+    const t = document.getElementById('thief-steps');
+    if (!p || !t) return;
+    let d1 = (gameState.thiefPosition - gameState.policePosition + BOARD_SIZE) % BOARD_SIZE;
+    let d2 = (gameState.policePosition - gameState.thiefPosition + BOARD_SIZE) % BOARD_SIZE;
+    p.textContent = d1 === 0 ? BOARD_SIZE : d1;
+    t.textContent = d2 === 0 ? BOARD_SIZE : d2;
+}
+
+function resetGame() {
+    gameState.policePosition = 0;
+    gameState.thiefPosition = 12;
+    gameState.gameOver = false;
+    gameState.currentPlayer = 'police';
+    gameState.isDiceRolling = false;
+    gameState.diceValue = 0;
+    gameState.immobilized = { police: false, thief: false };
+    gameState.extraTurn = false;
+    gameState.currentSpecials = {};
+
+    document.getElementById('roll-dice').disabled = false;
+    document.getElementById('dice-number').textContent = '-';
+    document.getElementById('current-turn').textContent = '轮到警察';
+    document.getElementById('dice').style.transform = 'rotateX(0deg) rotateY(0deg)';
+
+    const confetti = document.getElementById('confetti-container');
+    if (confetti) confetti.innerHTML = '';
+
+    updateChaseInfo();
+    updatePlayerPositions();
+}
+
+/* ================= 彩带 ================= */
+function launchConfetti() {
+    const container = document.getElementById('confetti-container');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const colors = ['#f1c40f', '#e67e22', '#e74c3c', '#9b59b6', '#3498db', '#2ecc71', '#1abc9c'];
+    for (let i = 0; i < 100; i++) {
+        const c = document.createElement('div');
+        c.className = 'confetti';
+        c.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        c.style.left = `${Math.random() * 100}%`;
+        c.style.width = `${Math.random() * 10 + 5}px`;
+        c.style.height = `${Math.random() * 20 + 10}px`;
+        c.style.animationName = Math.random() > 0.5 ? 'fall' : 'fall-alt';
+        c.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        c.style.animationDelay = `${Math.random() * 2}s`;
+        c.style.animationIterationCount = 'infinite';
+        c.style.animationTimingFunction = 'linear';
+        container.appendChild(c);
+    }
+}
+
+/* ================= 工具 ================= */
+function wait(ms) {
+    return new Promise(r => setTimeout(r, ms));
+}
+
+function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen?.();
+    } else {
+        document.exitFullscreen?.();
+    }
+}
+
+window.addEventListener('resize', updatePlayerPositions);
+</script>
+</body>
+</html>

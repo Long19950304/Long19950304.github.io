@@ -34,3 +34,7 @@ Replace the avatar image here:
 - `assets/img/prof_pic.jpg`
 
 Tip: use a square headshot.
+
+## Course showcases and Tencent Cloud
+
+The reusable student game showcase lives at `/teaching/games/` and `/zh/teaching/games/`. Published games are copied to `assets/games/`; the original local archive is ignored. The optional Tencent Cloud deployment files are in `infra/tencent-cloud/`, and the dependency-free likes API is in `server/api/`.

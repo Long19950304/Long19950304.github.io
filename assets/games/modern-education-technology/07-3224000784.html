@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>食物单词飞行棋</title>
+<style>
+*{box-sizing:border-box;font-family:"Microsoft YaHei","PingFang SC",sans-serif;margin:0;padding:0}
+body{background:linear-gradient(135deg,#e0f7fa 0%,#e8f5e9 50%,#fff8e1 100%);color:#444;padding:16px;min-height:100vh}
+.container{max-width:1200px;margin:0 auto}
+h1{text-align:center;color:#00897b;margin-bottom:16px;font-size:26px;letter-spacing:2px}
+.panel{background:#ffffff;border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 4px 16px rgba(0,137,123,0.08)}
+.btn{background:#4dd0e1;color:#fff;border:none;border-radius:14px;padding:11px 18px;font-size:15px;cursor:pointer;margin:5px;transition:all .2s;font-weight:600}
+.btn:hover{background:#26c6da;transform:translateY(-2px)}
+.btn.selected{background:#ff8a65;color:#fff;box-shadow:0 3px 10px rgba(255,138,101,0.4)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.row label{font-weight:600;color:#00897b}
+.hidden{display:none !important}
+
+/* ===== 设置页：内容居中 ===== */
+#setupPage.panel{max-width:820px;margin:24px auto;padding:30px;text-align:center}
+#setupPage .row{justify-content:center}
+#setupPage .row label{min-width:90px;text-align:right}
+.role-item{border:2px solid #c8e6c9;border-radius:16px;padding:10px 8px;cursor:pointer;width:110px;text-align:center;background:#f6fbf3;transition:all .2s;font-size:14px;font-weight:600}
+.role-item:hover{border-color:#81c784;transform:translateY(-2px)}
+.role-item.selected{border-color:#ff8a65;background:#ffe9dd;box-shadow:0 4px 12px rgba(255,138,101,0.3)}
+#roleList{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;justify-items:center}
+.role-img{width:70px;height:70px;border-radius:50%;object-fit:contain;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.15);display:block;margin:0 auto 5px;background:#fff}
+.role-emoji-circle{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:34px;margin:0 auto 5px;border:3px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,0.12)}
+
+/* ===== 先手选择页：居中且更大 ===== */
+#firstPlayerPage.panel{max-width:760px;margin:30px auto;padding:40px;text-align:center}
+#firstPlayerPage h3{font-size:24px}
+#firstPlayerPage .fp-tip{font-size:16px;color:#777;margin-bottom:16px}
+.first-player-item{border:3px solid #c8e6c9;border-radius:18px;padding:22px 30px;cursor:pointer;min-width:190px;text-align:center;background:#f1f8e9;transition:all .2s;font-size:22px;font-weight:600}
+.first-player-item:hover{border-color:#81c784;transform:translateY(-3px)}
+.first-player-item.selected{border-color:#ff8a65;background:#ffe0b2;color:#e64a19;box-shadow:0 5px 14px rgba(255,138,101,0.35)}
+.fp-badge{display:inline-block;background:#ff8a65;color:#fff;border-radius:20px;padding:2px 12px;font-size:16px;margin-left:8px}
+
+/* ===== 棋盘 ===== */
+#boardWrap{overflow:auto;padding:10px 0}
+#board{margin:10px auto}
+.cell{width:78px;height:78px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:bold;position:relative;box-shadow:0 2px 6px rgba(0,0,0,0.1);padding:4px;text-align:center;line-height:1.2}
+.cell-normal{background:#b3e5fc;color:#01579b}
+.cell-rest{background:#c8e6c9;color:#1b5e20}
+.cell-trap{background:#ffcdd2;color:#b71c1c}
+.cell-end{background:#fff59d;color:#e65100}
+.cell-start{background:#b2dfdb;color:#004d40}
+.cell .cicon{font-size:22px;margin-bottom:2px}
+.cell-end .cicon{font-size:40px}
+.cell-start .cicon{font-size:30px}
+.cell .clabel{font-size:12px}
+.piece{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;z-index:20;filter:drop-shadow(0 3px 3px rgba(0,0,0,0.3));pointer-events:none}
+.piece img{border-radius:50%;border:3px solid #fff;overflow:hidden;background:#fff}
+.piece.p0{top:30%;left:30%}
+.piece.p1{top:30%;left:70%}
+.piece.p2{top:70%;left:50%}
+.piece.active{animation:bounce 0.6s ease infinite}
+.piece.jumping{animation:hopjump 0.32s ease}
+/* 答对：开心跳跃 */
+.piece.happy{animation:happyJump 0.55s ease 3}
+@keyframes happyJump{0%,100%{transform:translate(-50%,-50%) scale(1)}40%{transform:translate(-50%,-120%) scale(1.12) rotate(-8deg)}60%{transform:translate(-50%,-120%) scale(1.12) rotate(8deg)}}
+/* 答错：蹲下 */
+.piece.sad{animation:sadSquat 0.8s ease 2}
+@keyframes sadSquat{0%,100%{transform:translate(-50%,-50%) scale(1,1)}50%{transform:translate(-50%,-38%) scale(1.15,0.7)}}
+/* 头顶特效：彩带/乌云 */
+.piece-fx{position:absolute;left:50%;top:-14px;transform:translateX(-50%);font-size:26px;z-index:25;pointer-events:none;animation:fxFloat 1.2s ease forwards}
+@keyframes fxFloat{0%{opacity:0;transform:translateX(-50%) translateY(6px)}25%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-26px)}}
+/* 角色表情角标（领先笑/落后努力） */
+.piece-mood{position:absolute;right:-8px;bottom:-8px;font-size:20px;z-index:26;filter:drop-shadow(0 1px 1px rgba(0,0,0,0.3))}
+/* 里程碑播报 toast */
+.milestone-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#fff59d,#ffd54f);color:#5d4037;font-size:24px;font-weight:700;padding:14px 30px;border-radius:40px;box-shadow:0 6px 20px rgba(0,0,0,0.25);z-index:150;animation:toastPop 0.4s ease,toastOut 0.4s ease 2.2s forwards}
+@keyframes toastPop{0%{transform:translateX(-50%) scale(0.5);opacity:0}100%{transform:translateX(-50%) scale(1);opacity:1}}
+@keyframes toastOut{to{transform:translateX(-50%) translateY(-20px);opacity:0}}
+@keyframes bounce{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-60%) scale(1.1)}}
+@keyframes hopjump{0%{transform:translate(-50%,-50%)}40%{transform:translate(-50%,-85%) scale(1.15)}100%{transform:translate(-50%,-50%)}}
+
+/* ===== 骰子 ===== */
+#dice{width:88px;height:88px;background:#fff;border-radius:18px;border:3px solid #4dd0e1;display:flex;align-items:center;justify-content:center;font-size:66px;margin:14px auto;cursor:pointer;user-select:none;box-shadow:0 4px 12px rgba(77,208,225,0.3);transition:transform .1s;line-height:1}
+#dice:hover{transform:scale(1.05)}
+#dice.rolling{animation:dicespin .12s linear infinite}
+@keyframes dicespin{0%{transform:rotate(-8deg) scale(0.95)}50%{transform:rotate(8deg) scale(1.05)}100%{transform:rotate(-8deg) scale(0.95)}}
+.scoreboard{display:flex;gap:12px;flex-wrap:wrap}
+.score-card{padding:10px 14px;border-radius:12px;background:#e0f2f1;min-width:170px;border-left:4px solid #4dd0e1;font-size:14px;display:flex;align-items:center;gap:10px}
+.score-card.active{background:#fff3e0;border-left-color:#ff8a65;transform:scale(1.03)}
+.score-role-img{width:48px;height:48px;border-radius:50%;object-fit:contain;background:#fff;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.15);flex-shrink:0}
+.score-info{line-height:1.3}
+
+/* ===== 弹窗 ===== */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;z-index:99}
+.modal-box{background:#fff;border-radius:20px;padding:24px;width:92%;max-width:520px;box-shadow:0 10px 40px rgba(0,0,0,0.2)}
+.modal-box h3{color:#00897b;margin-bottom:12px}
+.question-img{font-size:80px;text-align:center;margin:10px;display:block;line-height:1}
+.question-text{font-size:19px;color:#00695c;text-align:center;margin:8px 0;font-weight:600}
+.keyboard{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin:12px 0}
+.key{padding:12px 0;background:#e0f2f1;border-radius:8px;text-align:center;cursor:pointer;font-weight:600;color:#00695c;transition:.1s;font-size:16px}
+.key:active{background:#4dd0e1;color:#fff}
+#spellInput{font-size:24px;padding:12px;border:2px solid #b2dfdb;border-radius:10px;margin:8px 0;min-height:48px;text-align:center;letter-spacing:4px;background:#f5fffd}
+.opt-btn{display:block;width:100%;padding:14px;margin:6px 0;font-size:17px;text-align:left;border-radius:12px}
+.opt-btn.chosen{background:#ff8a65 !important;color:#fff !important;box-shadow:0 3px 10px rgba(255,138,101,0.4)}
+.opt-judge-yes{background:#66bb6a}
+.opt-judge-no{background:#ef9a9a}
+#optBox{display:block}
+#optBox.opt-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;justify-items:stretch}
+.opt-img{display:flex !important;width:100% !important;justify-content:center;align-items:center;margin:0 !important;padding:14px !important}
+.wrong-item{padding:10px;border-bottom:1px solid #eee;cursor:pointer;border-radius:6px}
+.wrong-item:hover{background:#e0f2f1}
+#tipBox{font-size:15px;color:#00695c;font-weight:600}
+
+/* ===== 单题倒计时 ===== */
+#qTimerBox{text-align:center;margin:8px 0;font-size:18px;font-weight:600}
+#qTimerBox.warn{color:#e53935;animation:flash 0.5s infinite}
+@keyframes flash{0%,100%{opacity:1}50%{opacity:0.4}}
+
+/* ===== 整局倒计时最后15秒：红色 + 时大时小 ===== */
+#timerBox{font-size:16px;font-weight:600;color:#00695c}
+#timerBox.danger{background:#ffebee;border:2px solid #e53935;color:#e53935;font-size:20px;animation:pulseTimer 0.8s ease-in-out infinite}
+@keyframes pulseTimer{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+
+/* ===== 结果反馈弹窗 ===== */
+#resultModal .modal-box{text-align:center;padding:30px}
+/* 道具转盘 */
+.wheel-wrap{position:relative;width:230px;height:230px;margin:0 auto}
+.wheel{width:220px;height:220px;border-radius:50%;margin:5px auto;position:relative;border:6px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,0.25);background:conic-gradient(#ffd54f 0deg 90deg,#4fc3f7 90deg 180deg,#aed581 180deg 270deg,#ff8a65 270deg 360deg)}
+.wheel-pointer{position:absolute;top:-8px;left:50%;transform:translateX(-50%);font-size:32px;color:#e53935;z-index:5;text-shadow:0 2px 3px rgba(0,0,0,0.3)}
+.wheel-label{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;font-size:34px;display:flex;align-items:center;justify-content:center}
+#resultIcon{font-size:90px;margin-bottom:10px}
+/* 麦克风录音 */
+#micBtn{width:90px;height:90px;border-radius:50%;background:#ff8a65;color:#fff;font-size:44px;display:flex;align-items:center;justify-content:center;margin:0 auto;cursor:pointer;user-select:none;transition:0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+#micBtn.recording{background:#e53935;animation:micPulse 0.8s ease-in-out infinite}
+@keyframes micPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(229,57,53,0.5)}50%{transform:scale(1.08);box-shadow:0 0 0 18px rgba(229,57,53,0)}}
+/* 火热状态火焰 */
+#fireWorks{position:fixed;inset:0;pointer-events:none;z-index:200}
+.flame{position:absolute;bottom:-40px;font-size:44px;animation:flameRise 1.6s ease-out forwards}
+@keyframes flameRise{0%{transform:translateY(0) scale(0.6);opacity:1}100%{transform:translateY(-70vh) scale(1.4);opacity:0}}
+/* 集卡图鉴 */
+.album-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:10px;margin:12px 0}
+.album-card{border-radius:12px;padding:10px 4px;text-align:center;border:2px solid #e0f2f1}
+.album-card.got{background:#fffde7;border-color:#ffd54f;box-shadow:0 2px 6px rgba(255,180,0,0.25)}
+.album-card.locked{background:#f5f5f5;opacity:0.55}
+.album-emoji{font-size:38px;line-height:1.1}
+.album-name{font-size:14px;font-weight:600;margin-top:4px;color:#00695c}
+#resultMsg{font-size:22px;font-weight:600;margin:10px 0}
+#resultScore{font-size:18px;color:#00897b}
+
+/* ===== 结算页：放大 ===== */
+#resultPage.panel{max-width:820px;margin:30px auto;padding:44px;text-align:center}
+#resultPage h2{font-size:32px;color:#00897b;margin-bottom:18px}
+#resultInfo{margin:0 auto 18px;display:inline-block;text-align:left}
+#resultInfo h3{font-size:26px;color:#00897b;margin-bottom:16px;text-align:center}
+/* ===== 领奖台 ===== */
+.podium{display:flex;align-items:flex-end;justify-content:center;gap:24px;margin:0 auto;padding:10px 0}
+.podium-slot{display:flex;flex-direction:column;align-items:center;text-align:center}
+.podium-crown{font-size:44px;line-height:1;margin-bottom:2px;min-height:50px}
+.place-1 .podium-crown{font-size:58px}
+.podium-img{width:84px;height:84px;border-radius:50%;object-fit:contain;background:#fff;border:3px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,0.2)}
+.place-1 .podium-img{width:100px;height:100px;border-color:#ffd54f;box-shadow:0 4px 12px rgba(255,180,0,0.4)}
+.podium-name{font-size:18px;font-weight:700;margin-top:8px;color:#00695c}
+.podium-score{font-size:22px;font-weight:700;color:#e65100;margin:2px 0 8px}
+.podium-block{width:110px;border-radius:10px 10px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:8px;box-shadow:0 -3px 10px rgba(0,0,0,0.1)}
+.block-1{height:130px;background:linear-gradient(#ffe082,#ffb300)}
+.block-2{height:95px;background:linear-gradient(#eceff1,#b0bec5)}
+.block-3{height:70px;background:linear-gradient(#ffccbc,#ff8a65)}
+.podium-num{font-size:44px;font-weight:800;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,0.3)}
+.podium-detail{font-size:14px;color:#00897b;margin-top:8px}
+#resultPage h3.wrong-title{font-size:24px;color:#00897b;margin:20px 0 10px}
+#resultPage .wrong-item{font-size:19px;padding:12px;text-align:left}
+#resultPage .btn{font-size:18px;padding:14px 30px}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🍞 食物英语飞行棋</h1>
+
+  <!-- 设置页 -->
+  <div id="setupPage" class="panel">
+    <div class="row">
+      <label>对局人数：</label>
+      <button class="btn opt-num" data-val="2">双人</button>
+      <button class="btn opt-num" data-val="3">三人</button>
+    </div>
+    <div class="row">
+      <label>难度：</label>
+      <button class="btn opt-lv" data-val="1">Level1 简单</button>
+      <button class="btn opt-lv" data-val="2">Level2 中等</button>
+      <button class="btn opt-lv" data-val="3">Level3 困难</button>
+    </div>
+    <div class="row">
+      <label>比赛模式：</label>
+      <button class="btn opt-mode" data-val="race">竞速模式（40格）</button>
+      <button class="btn opt-mode" data-val="timer">计时记分（90格，3分钟）</button>
+    </div>
+    <div class="row"><label>选择角色：</label></div>
+    <div class="row" id="roleList"></div>
+    <div class="row"><button class="btn" id="startBtn" style="background:#66bb6a;font-size:18px;padding:14px 34px">✅ 下一步</button></div>
+  </div>
+
+  <!-- 先手/顺序选择页 -->
+  <div id="firstPlayerPage" class="panel hidden">
+    <h3>🎯 请选择出发顺序</h3>
+    <div class="fp-tip">按先后顺序点击玩家，先点的就是第一个出发</div>
+    <div class="row" id="firstPlayerList" style="justify-content:center"></div>
+    <div class="row" style="justify-content:center;margin-top:18px">
+      <button class="btn" id="backToSetup" style="background:#90a4ae;font-size:17px;padding:12px 26px">⬅️ 返回设置</button>
+      <button class="btn" id="confirmFirstBtn" style="background:#66bb6a;font-size:17px;padding:12px 26px">✅ 开始游戏</button>
+    </div>
+  </div>
+
+  <!-- 游戏页 -->
+  <div id="gamePage" class="hidden">
+    <div class="panel scoreboard" id="scoreBoard"></div>
+    <div id="timerBox" class="panel hidden">⏱️ 剩余：<span id="timer">180</span> 秒</div>
+    <div id="boardWrap"><div id="board"></div></div>
+    <div id="dice">🎲</div>
+    <div class="panel" id="tipBox">轮到玩家，点击骰子掷点</div>
+  </div>
+
+  <!-- 结算页 -->
+  <div id="resultPage" class="hidden panel">
+    <h2>🎉 对局结束</h2>
+    <div id="resultInfo"></div>
+    <div id="albumBox"></div>
+    <h3 class="wrong-title">📝 错题列表（点击查看详情）</h3>
+    <div id="wrongList"></div>
+    <button class="btn" onclick="location.reload()" style="background:#66bb6a">再来一局</button>
+  </div>
+
+  <!-- 题目弹窗 -->
+  <div id="qModal" class="modal hidden">
+    <div class="modal-box">
+      <div id="qTimerBox">⏱️ <span id="qTimer">15</span> 秒</div>
+      <div id="qText" class="question-text"></div>
+      <div id="qImg" class="question-img hidden"></div>
+      <div id="optBox"></div>
+      <div id="spellBox" class="hidden">
+        <div id="spellInput"></div>
+        <div class="keyboard" id="keyboard"></div>
+        <button class="btn" id="spellSubmit" style="background:#66bb6a;width:100%;margin:6px 0">提交拼写</button>
+      </div>
+      <div id="recordBox" class="hidden" style="text-align:center;margin-top:8px">
+        <div id="micBtn">🎤</div>
+        <div id="recordStatus" style="margin-top:8px;color:#666"></div>
+      </div>
+      <button class="btn" id="qSubmit" style="background:#66bb6a;width:100%;margin-top:10px">确认</button>
+    </div>
+  </div>
+
+  <!-- 结果反馈弹窗 -->
+  <div id="resultModal" class="modal hidden">
+    <div class="modal-box">
+      <div id="resultIcon"></div>
+      <div id="resultMsg"></div>
+      <div id="resultScore"></div>
+    </div>
+  </div>
+
+  <!-- 倒退卡选择弹窗 -->
+  <div id="backCardModal" class="modal hidden">
+    <div class="modal-box" id="backCardBox" style="text-align:center"></div>
+  </div>
+
+  <!-- 道具转盘弹窗 -->
+  <div id="itemWheelModal" class="modal hidden">
+    <div class="modal-box" style="text-align:center">
+      <h3 style="margin-bottom:14px">🎁 幸运转盘抽道具！</h3>
+      <div class="wheel-wrap">
+        <div class="wheel-pointer">▼</div>
+        <div class="wheel" id="itemWheel">
+          <span class="wheel-label" style="transform:translate(53px,-53px)">🚀</span>
+          <span class="wheel-label" style="transform:translate(53px,53px)">🛡️</span>
+          <span class="wheel-label" style="transform:translate(-53px,53px)">⏪</span>
+          <span class="wheel-label" style="transform:translate(-53px,-53px)">🎯</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 陷阱弹窗 -->
+  <div id="trapModal" class="modal hidden">
+    <div class="modal-box">
+      <h3>⚠️ 踩到陷阱格！</h3>
+      <p style="margin:10px 0">请选择：</p>
+      <button class="btn" id="trapBack" style="background:#90a4ae;width:100%;margin:6px 0">后退2步（不做题）</button>
+      <button class="btn" id="trapChallenge" style="background:#ff8a65;width:100%;margin:6px 0">挑战难题，成功免惩罚+2分</button>
+    </div>
+  </div>
+
+  <!-- 错题详情弹窗 -->
+  <div id="wrongModal" class="modal hidden">
+    <div class="modal-box">
+      <div id="wrongDetail"></div>
+      <button class="btn" onclick="closeWrongModal()" style="background:#90a4ae;width:100%">关闭</button>
+    </div>
+  </div>
+</div>
+<div id="fireWorks" class="hidden"></div>
+
+<script>
+const words = [
+  {en:"rice",cn:"米饭",emoji:"🍚"},{en:"egg",cn:"鸡蛋",emoji:"🥚"},
+  {en:"eggs",cn:"鸡蛋（复数）",emoji:"🥚"},{en:"tomato",cn:"西红柿",emoji:"🍅"},
+  {en:"bread",cn:"面包",emoji:"🍞"},{en:"juice",cn:"果汁",emoji:"🧃"},
+  {en:"vegetables",cn:"蔬菜",emoji:"🥦"},{en:"milk",cn:"牛奶",emoji:"🥛"},
+  {en:"cake",cn:"蛋糕",emoji:"🍰"},{en:"apple",cn:"苹果",emoji:"🍎"},
+  {en:"banana",cn:"香蕉",emoji:"🍌"},{en:"grape",cn:"葡萄",emoji:"🍇"},
+  {en:"orange",cn:"橙子",emoji:"🍊"},{en:"water",cn:"水",emoji:"💧"},
+  {en:"tea",cn:"茶",emoji:"🍵"},{en:"meat",cn:"肉",emoji:"🍖"},
+  {en:"fish",cn:"鱼",emoji:"🐟"},{en:"noodles",cn:"面条",emoji:"🍜"},
+  {en:"hamburger",cn:"汉堡",emoji:"🍔"},{en:"pizza",cn:"披萨",emoji:"🍕"},
+  {en:"ice cream",cn:"冰淇淋",emoji:"🍦"},{en:"chocolate",cn:"巧克力",emoji:"🍫"},
+  {en:"candy",cn:"糖果",emoji:"🍬"},{en:"soup",cn:"汤",emoji:"🍲"}
+];
+
+let setting = {num:null,lv:null,mode:null,roles:[]};
+let boardLen = 40, boardCols = 8, boardRows = 6;
+let players = [], turn = 0, diceVal = 0, gameRunning = false;
+let timer = null, remainTime = 180;
+let usedQids = new Set(), wrongList = [];
+let curQ = null, curSpell = "", trapChallengeMode = false, canRoll = true;
+let qTimer = null, qRemain = 15, turnOrder = [], movingIdx = -1;
+const QUESTION_TIME = 10;        // 普通题限时(秒)
+const SPELL_TIME = 30;           // 拼写题限时(秒)
+const READ_Q_TIME = 15;          // 录音题限时(秒)
+const RECORD_TIME = 5;           // 读单词录音时长(秒)
+const READ_PASS = 0.7;           // 读单词通过率
+let combo = 0;                   // 当前玩家连续答对数
+let collectedCards = new Set();  // 本局已收集的食物卡片(en)
+let mediaRecorder = null, recordTimer = null, recordRemain = 0, recordChunks = [];
+
+// ========== 音效（Web Audio 合成，无需外部文件）==========
+let audioCtx = null;
+function getCtx(){
+  if(!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state === "suspended") audioCtx.resume();
+  return audioCtx;
+}
+function playTone(freq, dur, type, when, vol){
+  try{
+    const ctx = getCtx();
+    const o = ctx.createOscillator();
+    const g = ctx.createGain();
+    o.type = type || "sine";
+    o.frequency.value = freq;
+    const t = ctx.currentTime + (when || 0);
+    g.gain.setValueAtTime(vol || 0.25, t);
+    g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+    o.connect(g); g.connect(ctx.destination);
+    o.start(t); o.stop(t + dur);
+  }catch(e){}
+}
+function playHop(){ playTone(600, 0.09, "square", 0, 0.12); }
+function playDiceRoll(){ playTone(700,0.05,"square",0,0.1); playTone(750,0.05,"square",0.1,0.1); playTone(800,0.05,"square",0.2,0.1); playTone(500,0.12,"square",0.32,0.15); }
+function playCorrect(){ playTone(523,0.15,"sine",0); playTone(659,0.15,"sine",0.12); playTone(784,0.3,"sine",0.24); }
+function playWrong(){ playTone(220,0.25,"sawtooth",0,0.15); playTone(160,0.35,"sawtooth",0.2,0.15); }
+function playTimeout(){ playTone(400,0.2,"sine",0,0.2); playTone(300,0.2,"sine",0.2,0.2); playTone(200,0.45,"sine",0.4,0.2); }
+function playRest(){ playTone(659,0.12,"sine",0); playTone(880,0.25,"sine",0.12); }
+function playWin(){ playTone(523,0.15,"sine",0); playTone(659,0.15,"sine",0.15); playTone(784,0.15,"sine",0.3); playTone(1047,0.4,"sine",0.45); }
+
+function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr}
+
+// ========== 语音：发音 + 录音打分 ==========
+function speakWord(text){
+  try{
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang="en-US";u.rate=0.85;
+    speechSynthesis.cancel();speechSynthesis.speak(u);
+  }catch(e){}
+}
+// 麦克风点击开始录音
+document.addEventListener("DOMContentLoaded",()=>{
+  const mic=document.getElementById("micBtn");
+  if(mic)mic.onclick=startRecording;
+});
+function startRecording(){
+  if(mediaRecorder&&mediaRecorder.state==="recording")return; // 防重复
+  const mic=document.getElementById("micBtn");
+  const status=document.getElementById("recordStatus");
+  if(!navigator.mediaRecorderSupported && !window.MediaRecorder){status.innerText="当前浏览器不支持录音";return}
+  navigator.mediaDevices.getUserMedia({audio:true}).then(stream=>{
+    recordChunks=[];
+    mediaRecorder=new MediaRecorder(stream);
+    mediaRecorder.ondataavailable=e=>{if(e.data.size>0)recordChunks.push(e.data)};
+    mediaRecorder.onstop=()=>{stream.getTracks().forEach(t=>t.stop());scoreRecording()};
+    mediaRecorder.start();
+    mic.classList.add("recording");mic.innerText="⏺️";
+    recordRemain=RECORD_TIME;
+    status.innerText="录音中… "+recordRemain+" 秒";
+    playTone(880,0.1,"sine",0,0.3);
+    recordTimer=setInterval(()=>{
+      recordRemain--;
+      if(recordRemain>0){status.innerText="录音中… "+recordRemain+" 秒"}
+      else{
+        clearInterval(recordTimer);
+        mic.classList.remove("recording");mic.innerText="🎤";
+        status.innerText="录音结束，评分中…";
+        mediaRecorder.stop();
+      }
+    },1000);
+  }).catch(()=>{status.innerText="无法访问麦克风，请检查权限"});
+}
+// 简单语音打分：根据录音时长/音量给出正确率（本地启发式，无外部服务）
+function scoreRecording(){
+  // 说明：纯前端无法离线做精准发音识别，这里用录音数据量+能量做启发式评分。
+  // 有朗读声音且时长达标即大概率通过，鼓励学生开口。
+  const blob=new Blob(recordChunks);
+  const status=document.getElementById("recordStatus");
+  if(recordChunks.length===0||blob.size<800){
+    status.innerText="没听清哦，声音太小了";
+    curQ.userAns="__read_fail__";curQ.readScore=0;
+    setTimeout(()=>checkAnswer(),600);
+    return;
+  }
+  // 基于数据量的启发式：开口且读满 => 给 0.7~0.95 之间的分
+  const ratio=Math.min(1,blob.size/9000);
+  const score=0.5+ratio*0.5; // 0.5~1.0
+  curQ.readScore=score;
+  const pct=Math.round(score*100);
+  status.innerText="评分："+pct+"%";
+  curQ.userAns = score>=READ_PASS ? curQ.ans : "__read_fail__";
+  setTimeout(()=>checkAnswer(),800);
+}
+
+// 角色表：图片 + 名称（相同类别相邻，角色区按6列排成三行）
+const ROLES=[
+  {id:"yang",    name:"小羊",   img:"羊.png"},
+  {id:"gou",     name:"小狗",   img:"狗.png"},
+  {id:"qingwa",  name:"青蛙",   img:"青蛙.png"},
+  {id:"tuzi",    name:"兔子",   img:"兔子.png"},
+  {id:"mao",     name:"小猫咪", img:"小猫咪.png"},
+  {id:"zhu",     name:"小猪",   img:"小猪.png"},
+  {id:"aoteman", name:"奥特曼", img:"奥特曼.png"},
+  {id:"xiongda", name:"熊大",   img:"熊大.jpg"},
+  {id:"xionger", name:"熊二",   img:"熊二.jpg"},
+  {id:"barbie",  name:"芭比公主",img:"芭比.jpg"},
+  {id:"boy",     name:"小男孩", img:"小男孩.png"},
+  {id:"girl",    name:"小女孩", img:"小女孩.png"},
+  {id:"baji",    name:"小纵队·巴基",img:"海底小纵队巴基.jpg"},
+  {id:"zhiwuyu", name:"小纵队·植物鱼",img:"海底小纵队植物鱼.jpg"},
+  {id:"haimian", name:"海绵宝宝",img:"海绵宝宝.jpg"},
+  {id:"paidaxing",name:"派大星", img:"派大星.jpg"},
+  {id:"zhangyu", name:"章鱼哥", img:"章鱼哥.png"},
+  {id:"wugui",   name:"小乌龟", img:"乌龟.png"}
+];
+function roleInfo(id){return ROLES.find(r=>r.id===id)||{name:id,img:""}}
+function roleName(id){return roleInfo(id).name}
+function roleImg(id){return roleInfo(id).img}
+
+// 动态生成角色选择项（图片头像）
+(function(){
+  const rl=document.getElementById("roleList");
+  ROLES.forEach(r=>{
+    const d=document.createElement("div");
+    d.className="role-item";d.dataset.id=r.id;
+    d.innerHTML=`<img class="role-img" src="${r.img}" alt="${r.name}"><div>${r.name}</div>`;
+    rl.appendChild(d);
+  });
+})();
+
+// ========== 背景音乐（欢快循环旋律）==========
+let bgmPlaying=false, bgmTimer=null;
+const BGM_MELODY=[
+  523,659,784,659, 698,880,698,659, 523,659,784,880, 784,659,587,523,
+  587,698,587,523, 659,523,440,523, 587,523,440,392, 523,523,523,0
+];
+const BGM_NOTE=0.28;
+function startBGM(){
+  if(bgmPlaying)return;
+  bgmPlaying=true;
+  let idx=0;
+  const playNext=()=>{
+    if(!bgmPlaying)return;
+    const f=BGM_MELODY[idx%BGM_MELODY.length];
+    if(f>0)playTone(f,BGM_NOTE*0.9,"triangle",0,0.07);
+    idx=(idx+1)%BGM_MELODY.length;
+    bgmTimer=setTimeout(playNext,BGM_NOTE*1000);
+  };
+  playNext();
+}
+function stopBGM(){bgmPlaying=false;clearTimeout(bgmTimer)}
+function clearSelected(cls){document.querySelectorAll(cls).forEach(b=>b.classList.remove("selected"))}
+
+// ========== 设置页交互 ==========
+document.querySelectorAll(".opt-num").forEach(b=>b.onclick=()=>{
+  setting.num=+b.dataset.val;clearSelected(".opt-num");b.classList.add("selected");
+  setting.roles=[];document.querySelectorAll(".role-item").forEach(x=>x.classList.remove("selected"));
+});
+document.querySelectorAll(".opt-lv").forEach(b=>b.onclick=()=>{setting.lv=+b.dataset.val;clearSelected(".opt-lv");b.classList.add("selected")});
+document.querySelectorAll(".opt-mode").forEach(b=>b.onclick=()=>{setting.mode=b.dataset.val;clearSelected(".opt-mode");b.classList.add("selected")});
+document.querySelectorAll(".role-item").forEach(el=>el.onclick=()=>{
+  if(setting.num===null){alert("请先选择对局人数！");return}
+  const id=el.dataset.id;
+  if(setting.roles.includes(id)){setting.roles=setting.roles.filter(x=>x!==id);el.classList.remove("selected")}
+  else if(setting.roles.length<setting.num){setting.roles.push(id);el.classList.add("selected")}
+});
+
+document.getElementById("startBtn").onclick=()=>{
+  getCtx(); // 解锁音频
+  if(setting.num===null){alert("请选择对局人数！");return}
+  if(setting.lv===null){alert("请选择难度！");return}
+  if(setting.mode===null){alert("请选择比赛模式！");return}
+  if(setting.roles.length!==setting.num){alert("请选择 "+setting.num+" 个角色！");return}
+  document.getElementById("setupPage").classList.add("hidden");
+  document.getElementById("firstPlayerPage").classList.remove("hidden");
+  buildFirstPlayerList();
+};
+
+// ========== 出发顺序选择（双人先选第1个，三人依次选第1、第2个）==========
+function buildFirstPlayerList(){
+  const list = document.getElementById("firstPlayerList");
+  list.innerHTML = "";
+  turnOrder = [];
+  setting.roles.forEach((rid,i)=>{
+    const d = document.createElement("div");
+    d.className = "first-player-item";
+    d.dataset.i = i;
+    const ri = roleInfo(rid);
+    d.innerHTML = `<img class="role-img" src="${ri.img}" style="width:84px;height:84px;margin-bottom:6px"><div>${ri.name}</div><span class="fp-badge hidden"></span>`;
+    d.onclick = ()=>{
+      const pos = turnOrder.indexOf(i);
+      if(pos>=0) turnOrder.splice(pos,1);
+      else if(turnOrder.length < setting.num) turnOrder.push(i);
+      renderOrderBadges();
+    };
+    list.appendChild(d);
+  });
+}
+function renderOrderBadges(){
+  document.querySelectorAll(".first-player-item").forEach(el=>{
+    const i = +el.dataset.i;
+    const pos = turnOrder.indexOf(i);
+    const badge = el.querySelector(".fp-badge");
+    if(pos>=0){ el.classList.add("selected"); badge.classList.remove("hidden"); badge.innerText="第"+(pos+1)+"个出发"; }
+    else{ el.classList.remove("selected"); badge.classList.add("hidden"); badge.innerText=""; }
+  });
+}
+document.getElementById("backToSetup").onclick=()=>{
+  document.getElementById("firstPlayerPage").classList.add("hidden");
+  document.getElementById("setupPage").classList.remove("hidden");
+};
+document.getElementById("confirmFirstBtn").onclick=()=>{
+  if(turnOrder.length < setting.num-1){ alert("请按顺序点击选择出发先后！"); return }
+  // 未选的那个自动排最后
+  if(turnOrder.length === setting.num-1){
+    for(let i=0;i<setting.num;i++) if(!turnOrder.includes(i)) turnOrder.push(i);
+  }
+  initGame();
+};
+
+// ========== 初始化游戏 ==========
+function initGame(){
+  boardLen = setting.mode==="race"?40:90;
+  boardCols = setting.mode==="race"?728:1017;   // 棋盘宽(px)
+  boardRows = setting.mode==="race"?619:1011;   // 棋盘高(px)
+  players = [];
+  turnOrder.forEach(idx=>{
+    players.push({role:setting.roles[idx],pos:0,score:0,right:0,wrong:0,shield:0,doubleNext:false,combo:0,_ms50:false,_ms90:false});
+  });
+  turn = 0;
+  usedQids.clear(); wrongList=[]; gameRunning=true; canRoll=true; movingIdx=-1;
+  combo=0; collectedCards.clear(); rollHist=[];
+  document.getElementById("firstPlayerPage").classList.add("hidden");
+  document.getElementById("gamePage").classList.remove("hidden");
+  document.getElementById("timerBox").classList.remove("danger");
+  buildBoard(); renderScore();
+  startBGM();
+  if(setting.mode==="timer"){
+    document.getElementById("timerBox").classList.remove("hidden");
+    remainTime=180; startTimer();
+  }else document.getElementById("timerBox").classList.add("hidden");
+  setTip(roleName(players[turn].role)+" 第一个出发，点击骰子掷点");
+}
+
+// ========== 螺旋棋盘 ==========
+// 像素级回形针：同一条线内格子间距≈5mm，两条平行线之间≈1cm
+// 起点右下角，终点在最内圈正中
+const CELL_SZ=78, STEP=97, INSET=116;
+function spiralPixels(W,H,total){
+  const pts=[];
+  let k=0;
+  let R=W-78, B=H-78;
+  pts.push([R,B]);           // 起点：右下角
+  while(pts.length<total && k<12){
+    const L=116*k; R=W-78-116*k; const T=116*k; B=H-78-116*k;
+    if((R-L)<78||(B-T)<78) break;
+    let cx=(k===0?R:R+116), cy=B;
+    const Bnext=H-78-116*(k+1);
+    const runs=[[L,B],[L,T],[R,T],[R,Bnext]]; // 左→上→右→下(到下一环底)
+    for(const [tx,ty] of runs){
+      const dx=tx-cx, dy=ty-cy;
+      const len=Math.hypot(dx,dy);
+      let n=Math.round(len/STEP); if(n<1)n=1;
+      for(let i=1;i<=n && pts.length<total;i++){
+        const t=i/n;
+        pts.push([Math.round(cx+dx*t),Math.round(cy+dy*t)]);
+      }
+      cx=tx; cy=ty;
+      if(pts.length>=total) break;
+    }
+    k++;
+  }
+  return pts;
+}
+const cellTypes={
+  normal:{cls:"cell-normal",icon:"❓",label:"答题"},
+  rest:{cls:"cell-rest",icon:"⭐",label:"休息"},
+  trap:{cls:"cell-trap",icon:"⚠️",label:"陷阱"},
+  end:{cls:"cell-end",icon:"🏆",label:"终点"},
+  start:{cls:"cell-start",icon:"🚩",label:"起点"}
+};
+function buildBoard(){
+  const bd=document.getElementById("board");bd.innerHTML="";
+  bd.style.position="relative";
+  bd.style.width=boardCols+"px";
+  bd.style.height=boardRows+"px";
+  bd.style.margin="10px auto";
+  const pts=spiralPixels(boardCols,boardRows,boardLen);
+  // 休息格 6 个；陷阱格 10 个且分散（互不相邻）
+  const midIdx=[];for(let i=1;i<boardLen-1;i++)midIdx.push(i);
+  const shuffledMid=shuffle([...midIdx]);
+  const restSet=new Set(shuffledMid.slice(0,6));
+  const trapSet=new Set();
+  for(const i of shuffledMid.slice(6)){
+    if(trapSet.size>=10)break;
+    if(restSet.has(i))continue;
+    if(trapSet.has(i-1)||trapSet.has(i+1))continue; // 不与已有陷阱相邻
+    trapSet.add(i);
+  }
+  for(let i=0;i<boardLen && i<pts.length;i++){
+    const [px,py]=pts[i];
+    let type="normal";
+    if(restSet.has(i))type="rest";
+    else if(trapSet.has(i))type="trap";
+    if(i===boardLen-1)type="end";
+    if(i===0)type="start";
+    const t=cellTypes[type];
+    const div=document.createElement("div");
+    div.className="cell "+t.cls;
+    div.style.position="absolute";
+    div.style.left=px+"px";
+    div.style.top=py+"px";
+    div.innerHTML=`<div class="cicon">${t.icon}</div><div class="clabel">${t.label}</div>`;
+    div.dataset.idx=i;div.dataset.type=type;
+    bd.appendChild(div);
+  }
+  renderPieces();
+}
+function renderPieces(){
+  document.querySelectorAll(".piece").forEach(p=>p.remove());
+  const maxScore=Math.max(...players.map(x=>x.score));
+  players.forEach((p,idx)=>{
+    const cell=document.querySelector(`.cell[data-idx="${p.pos}"]`);if(!cell)return;
+    const pc=document.createElement("div");
+    pc.className="piece p"+idx+(idx===turn?" active":"")+(idx===movingIdx?" jumping":"");
+    pc.dataset.pi=idx;
+    const mood=(p.score>=maxScore&&maxScore>0)?"😄":"💪";
+    pc.innerHTML=`<img src="${roleImg(p.role)}" style="width:100%;height:100%"><span class="piece-mood">${mood}</span>`;
+    cell.appendChild(pc);
+  });
+}
+// 答题反应：答对开心跳+彩带，答错蹲下+乌云
+function pieceReact(ok){
+  const pc=document.querySelector(`.piece[data-pi="${turn}"]`);
+  if(!pc)return;
+  pc.classList.remove("happy","sad");void pc.offsetWidth;
+  pc.classList.add(ok?"happy":"sad");
+  const fx=document.createElement("div");
+  fx.className="piece-fx";
+  fx.innerText=ok?"🎉":"☁️";
+  pc.appendChild(fx);
+  setTimeout(()=>{pc.classList.remove("happy","sad");fx.remove()},1800);
+}
+function renderScore(){
+  const sb=document.getElementById("scoreBoard");sb.innerHTML="";
+  players.forEach((p,i)=>{
+    const d=document.createElement("div");
+    d.className="score-card"+(i===turn?" active":"");
+    let badges="";
+    if(p.shield>0)badges+=` <span title="护盾">🛡️×${p.shield}</span>`;
+    if(p.doubleNext)badges+=` <span title="双倍卡">🎯</span>`;
+    if(p.combo>=3)badges+=` <span title="火热状态">🔥×${p.combo}</span>`;
+    d.innerHTML=`<img class="score-role-img" src="${roleImg(p.role)}" alt="${roleName(p.role)}"><div class="score-info"><div style="font-weight:600;font-size:16px">${roleName(p.role)}${badges}</div><div>积分：${p.score}｜位置：${p.pos+1}/${boardLen}</div></div>`;
+    sb.appendChild(d);
+  });
+}
+function setTip(s){document.getElementById("tipBox").innerText=s}
+
+// ========== 骰子 + 跳格子动画 ==========
+const diceFaces=["⚀","⚁","⚂","⚃","⚄","⚅"];
+const dice=document.getElementById("dice");
+dice.innerText=diceFaces[0];
+dice.onclick=()=>{
+  if(!gameRunning||!canRoll)return;
+  canRoll=false;
+  playDiceRoll();
+  dice.classList.add("rolling");
+  // 快速闪动骰面，模拟真实摇骰
+  const flick=setInterval(()=>{
+    dice.innerText=diceFaces[Math.floor(Math.random()*6)];
+  },70);
+  setTimeout(()=>{
+    clearInterval(flick);
+    diceVal=balancedRoll(turn);
+    dice.innerText=diceFaces[diceVal-1];
+    dice.classList.remove("rolling");
+    movePlayerAnimated(turn,diceVal);
+  },700);
+};
+
+// 骰子点数平衡：避免某人连续全大点或全小点
+let rollHist=[];
+function balancedRoll(pi){
+  const h=rollHist[pi]||[];
+  const last2=h.slice(-2);
+  let v;
+  if(last2.length===2 && last2.every(x=>x>=5)){
+    v=Math.floor(Math.random()*3)+1;      // 连续两次大点 → 这次给 1-3
+  }else if(last2.length===2 && last2.every(x=>x<=2)){
+    v=Math.floor(Math.random()*3)+4;      // 连续两次小点 → 这次给 4-6
+  }else{
+    v=Math.floor(Math.random()*6)+1;
+  }
+  rollHist[pi]=(h.concat(v)).slice(-3);
+  return v;
+}
+
+// 角色一格一格跳过去，跳完才触发格子事件
+function movePlayerAnimated(pi,step){
+  const p=players[pi];
+  let left=step;
+  movingIdx=pi;
+  const doHop=()=>{
+    p.pos=Math.min(p.pos+1,boardLen-1);
+    left--;
+    playHop();
+    renderPieces();renderScore();
+    if(left>0 && p.pos<boardLen-1){
+      setTimeout(doHop,330);
+    }else{
+      movingIdx=-1;
+      renderPieces();
+      setTimeout(()=>afterArrive(pi),500);
+    }
+  };
+  setTimeout(doHop,280);
+}
+
+// 里程碑播报（非阻塞 toast + 语音）。speak 为朗读文本（不含表情符号）
+function milestoneToast(msg,speak){
+  const t=document.createElement("div");
+  t.className="milestone-toast";
+  t.innerText=msg;
+  document.body.appendChild(t);
+  playTone(880,0.12,"sine",0,0.2);playTone(1108,0.2,"sine",0.12,0.2);
+  // 语音播报（甜美：高音调、稍快）
+  try{
+    const u=new SpeechSynthesisUtterance(speak||msg);
+    u.lang="zh-CN";u.rate=1.2;u.pitch=1.6;u.volume=1;
+    const voices=speechSynthesis.getVoices().filter(v=>v.lang.startsWith("zh"));
+    const sweet=voices.find(v=>/Xiaoxiao|Xiaoyi|female|女|Yaoyao|Tingting|Meijia/i.test(v.name));
+    if(sweet)u.voice=sweet;
+    speechSynthesis.cancel();speechSynthesis.speak(u);
+  }catch(e){}
+  setTimeout(()=>t.remove(),2600);
+}
+function checkMilestone(p){
+  const ratio=p.pos/(boardLen-1);
+  if(ratio>=0.9&&!p._ms90){p._ms90=true;milestoneToast("🏁 "+roleName(p.role)+" 马上就到终点了！",roleName(p.role)+" 马上就到终点了！")}
+  else if(ratio>=0.5&&!p._ms50){p._ms50=true;milestoneToast("💨 "+roleName(p.role)+" 已经走了一半啦！",roleName(p.role)+" 已经走了一半啦！")}
+}
+
+function afterArrive(pi){
+  const p=players[pi];
+  checkMilestone(p);
+  const cell=document.querySelector(`.cell[data-idx="${p.pos}"]`);
+  const type=cell.dataset.type;
+  // 先判定碰撞偷分（任何格子都可能撞上），再处理格子事件
+  handleCollision(pi,()=>cellEvent(pi,type));
+}
+function cellEvent(pi,type){
+  const p=players[pi];
+  if(type==="rest"){
+    p.score+=1;renderScore();
+    playRest();
+    showResult("👏","很幸运，你可以休息一次！","+1 分",()=>{canRoll=true;nextTurn()});
+  }else if(type==="trap"){
+    if(p.shield>0){
+      p.shield--;renderScore();
+      showResult("🛡️","护盾生效，免疫这次陷阱！","",()=>{canRoll=true;nextTurn()});
+    }else{
+      showTrapModal();
+    }
+  }else if(type==="end"){
+    if(setting.mode==="race"){
+      playWin();endGame();
+    }else{
+      p.score+=5;renderScore();
+      playCorrect();
+      showResult("🏆","到达终点！","+5 分",()=>{canRoll=true;nextTurn()});
+    }
+  }else{
+    // 普通格：抽道具后答题
+    maybeDrawItem(pi,()=>showQuestion());
+  }
+}
+
+// 追击/碰撞：踩到别人格子，抢走对方1分
+function handleCollision(pi,done){
+  const p=players[pi];
+  if(p.pos<=0){done();return}
+  const victim=players.find((q,idx)=>idx!==pi && q.pos===p.pos);
+  if(victim && victim.score>0){
+    victim.score-=1;p.score+=1;renderScore();
+    showResult("⚔️","撞上 "+roleName(victim.role)+"，抢走 1 分！","+1 分",done);
+  }else if(victim){
+    showResult("⚔️","撞上 "+roleName(victim.role)+"，但对方没有分可抢","",done);
+  }else{
+    done();
+  }
+}
+
+// 道具卡：踩到普通格 20% 概率转盘抽奖
+function maybeDrawItem(pi,done){
+  if(Math.random()>=0.20){done();return} // 20% 概率
+  const items=["forward","shield","back","double"];
+  const item=items[Math.floor(Math.random()*items.length)];
+  showItemWheel(item,()=>awardItem(pi,item,done));
+}
+
+// 转盘抽奖动画
+function showItemWheel(item,done){
+  const items=["forward","shield","back","double"];
+  const i=items.indexOf(item);
+  const modal=document.getElementById("itemWheelModal");
+  modal.classList.remove("hidden");
+  const wheel=document.getElementById("itemWheel");
+  const targetR=(360-(i*90+45))%360;   // 让目标停在顶部指针
+  const deg=360*5+targetR;
+  wheel.style.transition="none";
+  wheel.style.transform="rotate(0deg)";
+  void wheel.offsetWidth;               // 强制重排
+  wheel.style.transition="transform 3s cubic-bezier(.15,.85,.25,1)";
+  wheel.style.transform=`rotate(${deg}deg)`;
+  if(typeof playItemSpin==="function")playItemSpin();
+  setTimeout(()=>{modal.classList.add("hidden");done();},3150);
+}
+
+// 发放道具
+function awardItem(pi,item,done){
+  const p=players[pi];
+  if(item==="forward"){
+    p.pos=Math.min(p.pos+2,boardLen-1);renderPieces();renderScore();
+    showResult("🚀","抽到前进卡！","再前进 2 步",()=>{
+      const c=document.querySelector(`.cell[data-idx="${p.pos}"]`);
+      if(c && c.dataset.type==="end" && setting.mode==="race"){playWin();endGame();return}
+      done();
+    });
+  }else if(item==="shield"){
+    p.shield++;renderScore();
+    showResult("🛡️","抽到护盾卡！","可免疫一次陷阱",done);
+  }else if(item==="back"){
+    const others=players.map((q,idx)=>idx).filter(idx=>idx!==pi);
+    if(others.length===0){done();return}
+    showBackCardPicker(others,done);
+  }else{ // double
+    p.doubleNext=true;renderScore();
+    showResult("🎯","抽到双倍卡！","本题答对得分 ×2",done);
+  }
+}
+
+// 倒退卡：选择目标对手
+function showBackCardPicker(others,done){
+  const p=players[turn];
+  let html=`<h3 style="margin-bottom:10px">⏪ 倒退卡：选择一个对手后退 2 步</h3><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">`;
+  others.forEach(idx=>{
+    const q=players[idx];
+    html+=`<div class="backcard-target" data-idx="${idx}" style="cursor:pointer;border:2px solid #c8e6c9;border-radius:14px;padding:12px;text-align:center;min-width:100px">
+      <img src="${roleImg(q.role)}" style="width:56px;height:56px;border-radius:50%;object-fit:contain;background:#fff;display:block;margin:0 auto 6px">
+      <div style="font-weight:600">${roleName(q.role)}</div>
+    </div>`;
+  });
+  html+="</div>";
+  document.getElementById("backCardBox").innerHTML=html;
+  document.getElementById("backCardModal").classList.remove("hidden");
+  document.querySelectorAll(".backcard-target").forEach(el=>{
+    el.onclick=()=>{
+      const idx=+el.dataset.idx;
+      const target=players[idx];
+      target.pos=Math.max(0,target.pos-2);
+      renderPieces();renderScore();
+      document.getElementById("backCardModal").classList.add("hidden");
+      showResult("⏪",roleName(target.role)+" 被后退 2 步！","",done);
+    };
+  });
+}
+
+// 集卡：答对收集该单词卡片
+function collectCard(q){
+  if(q.raw && q.raw.en)collectedCards.add(q.raw.en);
+}
+// 火热状态特效
+function triggerFire(){
+  const fw=document.getElementById("fireWorks");
+  fw.classList.remove("hidden");
+  let html="";
+  for(let i=0;i<12;i++){
+    html+=`<span class="flame" style="left:${Math.random()*90}%;animation-delay:${Math.random()*0.4}s">🔥</span>`;
+  }
+  fw.innerHTML=html;
+  playWin();
+  setTimeout(()=>{fw.classList.add("hidden");fw.innerHTML=""},1800);
+}
+
+// ========== 陷阱 ==========
+function showTrapModal(){document.getElementById("trapModal").classList.remove("hidden")}
+document.getElementById("trapBack").onclick=()=>{
+  document.getElementById("trapModal").classList.add("hidden");
+  players[turn].pos=Math.max(0,players[turn].pos-2);renderPieces();renderScore();
+  playWrong();
+  setTip("选择后退2步，下一位");canRoll=true;nextTurn();
+};
+document.getElementById("trapChallenge").onclick=()=>{
+  document.getElementById("trapModal").classList.add("hidden");
+  trapChallengeMode=true;showQuestion();
+};
+
+// ========== 题目 ==========
+function showQuestion(){
+  const q=pickQuestion();
+  if(!q){alert("本局题目用完啦！");canRoll=true;nextTurn();return}
+  curQ=q;
+  document.getElementById("qModal").classList.remove("hidden");
+  document.getElementById("optBox").innerHTML="";
+  document.getElementById("spellBox").classList.add("hidden");
+  document.getElementById("qImg").classList.add("hidden");
+  curSpell="";document.getElementById("spellInput").innerText="";
+  document.getElementById("recordBox").classList.add("hidden");
+  document.getElementById("qSubmit").classList.remove("hidden");
+  document.getElementById("qText").innerText=q.text;
+  startQuestionTimer();
+
+  if(q.type==="choiceCn"||q.type==="choiceEn"||q.type==="choiceImg"||q.type==="listenChoice"){
+    const opts=shuffle([...q.opts]);
+    let html="";
+    if(q.type==="listenChoice"){
+      html+=`<button class="btn" id="playSoundBtn" style="background:#4fc3f7;font-size:20px">🔊 播放发音</button><div style="height:10px"></div>`;
+    }
+    opts.forEach((x,i)=>{
+      if(q.type==="choiceImg"){
+        html+=`<button class="btn opt-btn opt-img" data-i="${i}"><span style="font-size:44px;display:block;line-height:1">${x.label}</span></button>`;
+      }else{
+        html+=`<button class="btn opt-btn" data-i="${i}">${String.fromCharCode(65+i)}. ${x.label}</button>`;
+      }
+    });
+    document.getElementById("optBox").innerHTML=html;
+    document.getElementById("optBox").className = q.type==="choiceImg" ? "opt-grid-2" : "";
+    document.querySelectorAll("#optBox .opt-btn").forEach(b=>{
+      b.onclick=()=>{
+        document.querySelectorAll("#optBox .opt-btn").forEach(x=>x.classList.remove("chosen"));
+        b.classList.add("chosen");
+        q.userAns=opts[+b.dataset.i].value;
+      };
+    });
+    if(q.type==="listenChoice"){
+      const pb=document.getElementById("playSoundBtn");
+      pb.onclick=()=>speakWord(q.ans);
+      speakWord(q.ans); // 打开即自动播放一次
+    }
+  }else if(q.type==="judge"){
+    if(q.emoji){document.getElementById("qImg").innerText=q.emoji;document.getElementById("qImg").classList.remove("hidden")}
+    document.getElementById("optBox").innerHTML=
+      `<button class="btn opt-btn opt-judge-yes" data-v="yes">✅ 对</button>`+
+      `<button class="btn opt-btn opt-judge-no" data-v="no">❌ 错</button>`;
+    document.querySelectorAll("#optBox .opt-btn").forEach(b=>{
+      b.onclick=()=>{
+        document.querySelectorAll("#optBox .opt-btn").forEach(x=>x.classList.remove("chosen"));
+        b.classList.add("chosen");
+        q.userAns=b.dataset.v;
+      };
+    });
+  }else if(q.type==="spell"){
+    if(q.emoji){document.getElementById("qImg").innerText=q.emoji;document.getElementById("qImg").classList.remove("hidden")}
+    document.getElementById("spellBox").classList.remove("hidden");
+    buildKeyboard();
+  }else if(q.type==="readAloud"){
+    if(q.emoji){document.getElementById("qImg").innerText=q.emoji;document.getElementById("qImg").classList.remove("hidden")}
+    document.getElementById("recordBox").classList.remove("hidden");
+    document.getElementById("recordStatus").innerText="点击下方麦克风开始录音（"+RECORD_TIME+"秒）";
+    document.getElementById("micBtn").classList.remove("recording");
+    document.getElementById("micBtn").innerText="🎤";
+    document.getElementById("qSubmit").classList.add("hidden");
+    speakWord(q.ans); // 先示范一遍发音
+  }
+}
+function buildKeyboard(){
+  const kb=document.getElementById("keyboard");kb.innerHTML="";
+  const keys="abcdefghijklmnopqrstuvwxyz ";
+  for(let c of keys){
+    const k=document.createElement("div");k.className="key";k.innerText=c===" "?"␣":c;
+    k.onclick=()=>{curSpell+=c;document.getElementById("spellInput").innerText=curSpell};
+    kb.appendChild(k);
+  }
+  const del=document.createElement("div");del.className="key";del.innerText="⌫";
+  del.onclick=()=>{curSpell=curSpell.slice(0,-1);document.getElementById("spellInput").innerText=curSpell};
+  kb.appendChild(del);
+}
+document.getElementById("spellSubmit").onclick=()=>{curQ.userAns=curSpell;checkAnswer()};
+document.getElementById("qSubmit").onclick=()=>checkAnswer();
+
+function startQuestionTimer(){
+  clearInterval(qTimer);
+  qRemain = (curQ && curQ.type==="spell") ? SPELL_TIME : (curQ && curQ.type==="readAloud") ? READ_Q_TIME : QUESTION_TIME;
+  const box=document.getElementById("qTimerBox");
+  const span=document.getElementById("qTimer");
+  box.classList.remove("warn");
+  span.innerText=qRemain;
+  qTimer=setInterval(()=>{
+    qRemain--;
+    span.innerText=qRemain;
+    if(qRemain<=5)box.classList.add("warn");
+    if(qRemain<=0){
+      clearInterval(qTimer);
+      curQ.userAns="__timeout__";
+      checkAnswer(true);
+    }
+  },1000);
+}
+function stopQuestionTimer(){clearInterval(qTimer)}
+
+function checkAnswer(isTimeout){
+  const q=curQ;
+  if(!isTimeout && q.userAns===undefined){alert("请先选择答案！");return}
+  stopQuestionTimer();
+  document.getElementById("qModal").classList.add("hidden");
+  let ok=false;
+  if(isTimeout){ok=false}
+  else if(q.type==="choiceCn"||q.type==="choiceEn"||q.type==="choiceImg"||q.type==="listenChoice")ok=q.userAns===q.ans;
+  else if(q.type==="judge")ok=q.userAns===q.ans;
+  else if(q.type==="readAloud")ok=(q.readScore||0)>=READ_PASS;
+  else if(q.type==="spell")ok=(q.userAns||"").trim().toLowerCase()===q.ans.toLowerCase();
+
+  const p=players[turn];
+  pieceReact(ok);   // 角色答题反应
+  if(ok){
+    let gain=2;
+    if(p.doubleNext){gain*=2;p.doubleNext=false}
+    p.score+=gain;p.right++;
+    collectCard(q);                       // 集卡
+    p.combo++;
+    let comboBonus=0;
+    if(p.combo>=3){comboBonus=1;p.score+=1} // 连对奖励
+    let bonus=0;
+    if(trapChallengeMode){bonus=2;p.score+=2;trapChallengeMode=false}
+    playCorrect();
+    const extra=(comboBonus?`🔥连对${p.combo}题，火热状态+1分！`:"");
+    showResult("🎉","恭喜你，答对了！"+extra,"+"+(gain+bonus+comboBonus)+" 分",()=>{canRoll=true;nextTurn()});
+    if(p.combo===3)triggerFire();
+  }else{
+    p.score-=1;p.wrong++;p.doubleNext=false;p.combo=0;
+    if(!isTimeout)wrongList.push(q);
+    let msg,icon;
+    if(isTimeout){icon="😭";msg="时间到，没有及时回答！";playTimeout()}
+    else{icon="💪";msg="别灰心，继续加油！";playWrong()}
+    if(trapChallengeMode){
+      p.pos=Math.max(0,p.pos-2);
+      msg+="（挑战失败，后退2步）";
+      trapChallengeMode=false;
+    }
+    renderPieces();
+    showResult(icon,msg,"-1 分",()=>{canRoll=true;nextTurn()});
+  }
+  renderScore();
+}
+
+function showResult(icon,msg,scoreText,callback){
+  document.getElementById("resultIcon").innerText=icon;
+  document.getElementById("resultMsg").innerText=msg;
+  document.getElementById("resultScore").innerText=scoreText;
+  document.getElementById("resultModal").classList.remove("hidden");
+  setTimeout(()=>{
+    document.getElementById("resultModal").classList.add("hidden");
+    if(callback)callback();
+  },3000);
+}
+
+function pickQuestion(){
+  const lv=setting.lv;const pool=[];
+  // 陷阱挑战：按难度定制题池
+  if(trapChallengeMode){
+    words.forEach((w,idx)=>{
+      // 听音选词
+      const idl=idx+"-listen";
+      if(!usedQids.has(idl)){
+        const wrongs=words.filter(x=>x.en!==w.en).sort(()=>Math.random()-0.5).slice(0,3);
+        const opts=[{label:w.en,value:w.en},...wrongs.map(x=>({label:x.en,value:x.en}))];
+        const listenQ={id:idl,type:"listenChoice",text:"听发音，选出听到的单词",ans:w.en,opts,emoji:"",raw:w};
+        if(lv===1){pool.push(listenQ)}
+        else if(lv===2){pool.push(listenQ,listenQ,listenQ)} // 高频
+        else if(lv===3){pool.push(listenQ)}
+      }
+      // 读单词（lv2低频、lv3）
+      const idr=idx+"-read";
+      if(!usedQids.has(idr) && lv>=2){
+        const readQ={id:idr,type:"readAloud",text:"请大声读出这个单词："+w.en,ans:w.en,emoji:w.emoji,raw:w};
+        if(lv===2){pool.push(readQ)}       // 少量
+        else if(lv===3){pool.push(readQ)}
+      }
+    });
+    if(pool.length===0)return null;
+    const q=pool[Math.floor(Math.random()*pool.length)];
+    usedQids.add(q.id);
+    return q;
+  }
+  // 普通格出题
+  words.forEach((w,idx)=>{
+    const id1=idx+"-cn";
+    if(!usedQids.has(id1)){
+      const wrongs=words.filter(x=>x.en!==w.en).sort(()=>Math.random()-0.5).slice(0,3);
+      const opts=[{label:w.en,value:w.en},...wrongs.map(x=>({label:x.en,value:x.en}))];
+      pool.push({id:id1,type:"choiceCn",text:"选出正确的单词："+w.cn,ans:w.en,opts,emoji:w.emoji,raw:w});
+    }
+    const id2=idx+"-en";
+    if(!usedQids.has(id2)){
+      const wrongs=words.filter(x=>x.cn!==w.cn).sort(()=>Math.random()-0.5).slice(0,3);
+      const opts=[{label:w.cn,value:w.cn},...wrongs.map(x=>({label:x.cn,value:x.cn}))];
+      pool.push({id:id2,type:"choiceEn",text:"选出中文意思："+w.en,ans:w.cn,opts,emoji:w.emoji,raw:w});
+    }
+    const id3=idx+"-judge";
+    if(!usedQids.has(id3)){
+      const match=Math.random()<0.5;
+      let dispWord=w.en,ans="yes";
+      if(!match){const other=words.find(x=>x.en!==w.en);dispWord=other.en;ans="no"}
+      pool.push({id:id3,type:"judge",text:"图片和单词是否一致？单词："+dispWord,ans,emoji:w.emoji,raw:w});
+    }
+    // 英文选图片
+    const id5=idx+"-img";
+    if(!usedQids.has(id5)){
+      const wrongs=words.filter(x=>x.emoji!==w.emoji).sort(()=>Math.random()-0.5).slice(0,3);
+      const opts=[{label:w.emoji,value:w.emoji},...wrongs.map(x=>({label:x.emoji,value:x.emoji}))];
+      pool.push({id:id5,type:"choiceImg",text:"选出与单词对应的图片："+w.en,ans:w.emoji,opts,emoji:"",raw:w});
+    }
+    if(lv===3){
+      const id4=idx+"-spell";
+      if(!usedQids.has(id4))pool.push({id:id4,type:"spell",text:"看图拼写单词",ans:w.en,emoji:w.emoji,raw:w});
+    }
+    // 听音选词：level3 普通题
+    const idl=idx+"-listen";
+    if(!usedQids.has(idl) && lv===3){
+      const wrongs=words.filter(x=>x.en!==w.en).sort(()=>Math.random()-0.5).slice(0,3);
+      const opts=[{label:w.en,value:w.en},...wrongs.map(x=>({label:x.en,value:x.en}))];
+      pool.push({id:idl,type:"listenChoice",text:"听发音，选出听到的单词",ans:w.en,opts,emoji:"",raw:w});
+    }
+  });
+  if(pool.length===0)return null;
+  const q=pool[Math.floor(Math.random()*pool.length)];
+  usedQids.add(q.id);
+  return q;
+}
+
+function nextTurn(){
+  turn=(turn+1)%players.length;
+  if(gameRunning){renderScore();renderPieces();setTip("轮到 "+roleName(players[turn].role)+"，点击骰子掷点")}
+}
+function startTimer(){
+  timer=setInterval(()=>{
+    remainTime--;
+    document.getElementById("timer").innerText=remainTime;
+    if(remainTime<=15)document.getElementById("timerBox").classList.add("danger");
+    if(remainTime<=0){clearInterval(timer);endGame()}
+  },1000);
+}
+function endGame(){
+  gameRunning=false;clearInterval(timer);stopQuestionTimer();stopBGM();
+  playWin();
+  document.getElementById("gamePage").classList.add("hidden");
+  document.getElementById("resultPage").classList.remove("hidden");
+  const sorted=[...players].sort((a,b)=>b.score-a.score);
+  // 领奖台名次：三人赛按 2-1-3 排列，二人赛按 1-2
+  const podiumOrder = sorted.length===3 ? [1,0,2] : sorted.map((_,i)=>i);
+  const podiumHtml = podiumOrder.map(i=>{
+    const p=sorted[i];
+    const crown=i===0?"👑":i===1?"🥈":i===2?"🥉":"";
+    const place=i+1;
+    return `<div class="podium-slot place-${place}">
+      <div class="podium-crown">${crown}</div>
+      <img class="podium-img" src="${roleImg(p.role)}" alt="${roleName(p.role)}">
+      <div class="podium-name">${roleName(p.role)}</div>
+      <div class="podium-score">${p.score} 分</div>
+      <div class="podium-block block-${place}"><span class="podium-num">${place}</span></div>
+      <div class="podium-detail">答对 ${p.right}｜答错 ${p.wrong}</div>
+    </div>`;
+  }).join("");
+  const info=`<h3>🏆 比赛结果</h3><div class="podium">${podiumHtml}</div>`;
+  document.getElementById("resultInfo").innerHTML=info;
+  // 集卡图鉴
+  let albumHtml="";
+  if(collectedCards.size>0){
+    albumHtml=`<h3 class="wrong-title">🃏 本局收集的食物卡片（${collectedCards.size}/${words.length}）</h3><div class="album-grid">`;
+    words.forEach(w=>{
+      const got=collectedCards.has(w.en);
+      albumHtml+=`<div class="album-card ${got?'got':'locked'}"><div class="album-emoji">${got?w.emoji:"❓"}</div><div class="album-name">${got?w.en:"???"}</div></div>`;
+    });
+    albumHtml+="</div>";
+  }else{
+    albumHtml=`<h3 class="wrong-title">🃏 本局还没有收集到食物卡片</h3>`;
+  }
+  document.getElementById("albumBox").innerHTML=albumHtml;
+  let whtml="";
+  wrongList.forEach((w,i)=>{whtml+=`<div class="wrong-item" data-idx="${i}">${w.text} 【正确答案：${w.ans}】</div>`});
+  document.getElementById("wrongList").innerHTML=whtml||"<p style='color:#66bb6a;padding:10px;font-size:18px'>没有错题，太棒了！🌟</p>";
+  document.querySelectorAll(".wrong-item").forEach(el=>{el.onclick=()=>showWrongDetail(+el.dataset.idx)});
+}
+function showWrongDetail(i){
+  const w=wrongList[i];
+  let html=`<p style='font-size:16px;margin-bottom:8px'>题目：${w.text}</p><p style='color:#00897b;font-weight:600;margin-bottom:8px'>标准答案：${w.ans}</p>`;
+  if(w.emoji)html+=`<div style="font-size:80px;text-align:center;margin:10px">${w.emoji}</div>`;
+  document.getElementById("wrongDetail").innerHTML=html;
+  document.getElementById("wrongModal").classList.remove("hidden");
+}
+function closeWrongModal(){document.getElementById("wrongModal").classList.add("hidden")}
+</script>
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Word &amp; Picture Matching Memory Game</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe Print", "Comic Sans MS", "Yuanti SC", "YouYuan", cursive;
+    color: #7a5c48;
+    background:
+      radial-gradient(circle at 15% 15%, rgba(255, 214, 224, .45), transparent 45%),
+      radial-gradient(circle at 85% 25%, rgba(255, 230, 190, .5), transparent 45%),
+      radial-gradient(circle at 20% 85%, rgba(255, 236, 200, .55), transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255, 209, 220, .4), transparent 45%),
+      #fff6e3;
+    padding: 22px;
+    user-select: none;
+  }
+
+  /* ---------- 标题 ---------- */
+  header { text-align: center; margin-bottom: 14px; }
+  h1 {
+    font-size: clamp(24px, 3.6vw, 38px);
+    letter-spacing: 1px;
+    color: #e2708a;
+    text-shadow: 2px 2px 0 #ffe1ea;
+  }
+  .subtitle {
+    margin-top: 4px;
+    font-size: clamp(14px, 1.7vw, 19px);
+    color: #f0a35e;
+    font-weight: bold;
+  }
+
+  /* ---------- 炸弹倒计时 ---------- */
+  .timer-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+    padding: 8px 26px;
+    background: #fffdf7;
+    border: 3px solid #ffd9a8;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(240,163,94,.2);
+    position: relative;
+  }
+  .bomb { width: 52px; height: 52px; }
+  .bomb.wick-burn { animation: bombWobble .5s infinite; }
+  @keyframes bombWobble {
+    0%,100% { transform: rotate(-4deg) scale(1); }
+    50% { transform: rotate(4deg) scale(1.08); }
+  }
+  .timer-num {
+    font-size: clamp(34px, 4vw, 46px);
+    font-weight: bold;
+    color: #5a9e54;
+    min-width: 96px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .timer-num.danger {
+    color: #e23c3c;
+    animation: blink .45s infinite;
+  }
+  @keyframes blink {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .35; transform: scale(1.12); }
+  }
+  /* 时间加减浮动提示 */
+  .time-float {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    font-weight: bold;
+    pointer-events: none;
+    animation: floatUp 1s ease-out forwards;
+  }
+  .time-float.plus { color: #5a9e54; right: -64px; }
+  .time-float.minus { color: #e23c3c; right: -64px; }
+  @keyframes floatUp {
+    from { opacity: 1; transform: translateY(-50%); }
+    to { opacity: 0; transform: translateY(-180%); }
+  }
+
+  /* ---------- 数据面板 ---------- */
+  .stats {
+    margin-top: 12px;
+    font-size: clamp(15px, 1.6vw, 18px);
+    font-weight: bold;
+    color: #a98a70;
+    background: #fffdf7;
+    border: 2px dashed #ffd9a8;
+    border-radius: 14px;
+    padding: 6px 22px;
+  }
+  .stats span { color: #e2708a; }
+
+  /* ---------- 棋盘：20张 = 5列 x 4行 ---------- */
+  .board {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 140px));
+    gap: 16px;
+    padding: 24px;
+    background: #fffdf7;
+    border: 4px solid #ffd9a8;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(240, 163, 94, .18), inset 0 0 0 4px #fff3dd;
+  }
+
+  .card {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    perspective: 900px;
+    cursor: pointer;
+  }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform .45s cubic-bezier(.4,.1,.3,1.25);
+  }
+  .card.flipped .card-inner { transform: rotateY(180deg); }
+
+  .face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 卡背：小甜点花纹 */
+  .back {
+    background:
+      radial-gradient(circle at 20% 18%, rgba(255,255,255,.75), transparent 45%),
+      linear-gradient(160deg, #ffc9d8 0%, #ffd9b0 100%);
+    border: 3px solid #ffffff;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,.4), 0 4px 10px rgba(226,112,138,.18);
+    transition: all .18s;
+  }
+  .back svg { width: 100%; height: 100%; }
+  .card:not(.flipped):not(.matched):hover .back {
+    transform: scale(1.06) rotate(-1.5deg);
+    box-shadow: 0 8px 18px rgba(226,112,138,.3);
+  }
+
+  /* 正面 */
+  .front {
+    transform: rotateY(180deg);
+    background: #ffffff;
+    border: 3px solid #ffe3c4;
+    box-shadow: 0 4px 10px rgba(240,163,94,.15);
+    flex-direction: column;
+  }
+  .front svg { width: 84%; height: 84%; }
+  .word {
+    font-size: clamp(17px, 1.9vw, 27px);
+    font-weight: bold;
+    color: #e2708a;
+    letter-spacing: 1px;
+    padding: 0 6px;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  /* 匹配成功 */
+  .card.matched { cursor: default; }
+  .card.matched .front {
+    border-color: #9ed99a;
+    background: #f4fdf2;
+    box-shadow: 0 0 14px rgba(140, 210, 135, .55);
+    animation: bounceIn .5s;
+  }
+  @keyframes bounceIn {
+    0% { transform: rotateY(180deg) scale(.85); }
+    60% { transform: rotateY(180deg) scale(1.08); }
+    100% { transform: rotateY(180deg) scale(1); }
+  }
+
+  .card.shake .card-inner { animation: shake .4s; }
+  @keyframes shake {
+    0%,100% { transform: rotateY(180deg) translateX(0); }
+    25% { transform: rotateY(180deg) translateX(-7px); }
+    75% { transform: rotateY(180deg) translateX(7px); }
+  }
+
+  /* ---------- 按钮 ---------- */
+  .restart-btn {
+    margin-top: 16px;
+    padding: 10px 30px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #f58ba6, #f7b267);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 14px rgba(245,139,166,.4);
+    transition: all .15s;
+  }
+  .restart-btn:hover { transform: scale(1.07); box-shadow: 0 8px 20px rgba(245,139,166,.5); }
+
+  /* ---------- 弹窗 ---------- */
+  .modal-mask {
+    position: fixed;
+    inset: 0;
+    background: rgba(122, 92, 72, .45);
+    backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  .modal-mask.show { display: flex; }
+  .modal {
+    text-align: center;
+    padding: 38px 56px;
+    background: #fffdf7;
+    border: 5px solid #ffd9a8;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(226,112,138,.35);
+    animation: pop .5s cubic-bezier(.3,1.6,.5,1);
+    max-width: 90vw;
+  }
+  @keyframes pop { from { transform: scale(.4); opacity: 0; } }
+  .modal .modal-svg { width: 96px; height: 96px; margin-bottom: 6px; }
+  .modal h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: #e2708a;
+    text-shadow: 2px 2px 0 #ffe1ea;
+    margin-bottom: 8px;
+  }
+  .modal h2.fail { color: #e23c3c; text-shadow: 2px 2px 0 #ffd5d5; }
+  .modal p { font-size: 19px; color: #a98a70; font-weight: bold; margin-bottom: 22px; line-height: 1.6; }
+  .modal p b { color: #f0a35e; font-size: 24px; }
+  .modal .restart-btn { margin-top: 0; }
+  /* 爆炸动画 */
+  .explode { animation: explodeAnim .7s ease-out; transform-origin: center; }
+  @keyframes explodeAnim {
+    0% { transform: scale(1) rotate(0); }
+    30% { transform: scale(1.6) rotate(10deg); }
+    60% { transform: scale(2.4) rotate(-8deg); opacity: .8; }
+    100% { transform: scale(3); opacity: 0; }
+  }
+
+  @media (max-width: 860px) {
+    .board { grid-template-columns: repeat(4, minmax(80px, 115px)); gap: 12px; padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Food Word &amp; Picture Matching Memory Game</h1>
+  <div class="subtitle">Yummy Food 美味食物单词配对 · 限时挑战</div>
+
+  <!-- 炸弹倒计时 -->
+  <div class="timer-bar">
+    <svg class="bomb wick-burn" id="bombIcon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <circle cx="48" cy="60" r="28" fill="#6b5b73" stroke="#54455c"/>
+        <path d="M36 44 Q40 38 48 36" stroke="#9d8aa8" stroke-width="5"/>
+        <rect x="42" y="24" width="12" height="12" rx="3" fill="#8a8a8a" stroke="#666"/>
+        <path d="M48 24 Q54 12 66 10" stroke="#c97b4a"/>
+        <path d="M66 10 L72 4 M66 10 L74 12 M66 10 L64 2 M66 10 L58 6" stroke="#ffd166" stroke-width="3.5"/>
+        <circle cx="66" cy="10" r="3.5" fill="#ff9d3c" stroke="#e2708a" stroke-width="2"/>
+        <circle cx="39" cy="57" r="4" fill="#fff" stroke="none"/>
+        <circle cx="57" cy="57" r="4" fill="#fff" stroke="none"/>
+        <circle cx="40" cy="58" r="2" fill="#333" stroke="none"/>
+        <circle cx="58" cy="58" r="2" fill="#333" stroke="none"/>
+        <path d="M42 70 Q48 75 54 70" stroke="#333"/>
+      </g>
+    </svg>
+    <div class="timer-num" id="timerNum">60</div>
+    <div id="floatLayer"></div>
+  </div>
+
+  <!-- 数据面板 -->
+  <div class="stats">🍰 Matched 已配对: <span id="pairs">0</span> / 10 &nbsp;|&nbsp; 👣 Moves 步数: <span id="moves">0</span></div>
+</header>
+
+<div class="board" id="board"></div>
+
+<button class="restart-btn" onclick="initGame()">↻ Restart 重新开始</button>
+
+<!-- 胜利弹窗 -->
+<div class="modal-mask" id="winModal">
+  <div class="modal">
+    <svg class="modal-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <path d="M30 55 L70 55 L64 88 L36 88 Z" stroke="#f0a35e"/>
+        <path d="M28 55 Q28 40 40 40 Q40 28 50 28 Q60 28 60 40 Q72 40 72 55" stroke="#f58ba6"/>
+        <circle cx="50" cy="22" r="6" stroke="#e2708a"/>
+        <path d="M50 16 Q53 10 58 9" stroke="#9ed99a"/>
+        <path d="M40 66 L42 66 M52 70 L54 70 M46 78 L48 78 M60 66 L62 66 M58 78 L60 78" stroke="#ffd166"/>
+      </g>
+    </svg>
+    <h2>Congratulations!</h2>
+    <p>恭喜通关！You matched all the food!<br>
+      👣 Total moves 总步数: <b id="finalMoves"></b><br>
+      ⏰ Time left 剩余时间: <b id="finalTime"></b> s</p>
+    <button class="restart-btn" onclick="initGame()">Play Again 再玩一次</button>
+  </div>
+</div>
+
+<!-- 失败弹窗 -->
+<div class="modal-mask" id="failModal">
+  <div class="modal">
+    <svg class="modal-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <path d="M50 14 L58 34 L80 30 L64 46 L82 58 L60 60 L64 82 L50 66 L36 82 L40 60 L18 58 L36 46 L20 30 L42 34 Z" stroke="#e23c3c" fill="#ffd166"/>
+        <path d="M50 40 L50 56" stroke="#e23c3c" stroke-width="5"/>
+        <circle cx="50" cy="66" r="3" fill="#e23c3c" stroke="none"/>
+      </g>
+    </svg>
+    <h2 class="fail">BOOM! Time's Up!</h2>
+    <p>炸弹爆炸了，时间用完啦！<br>
+      🍰 Matched 已配对: <b id="failPairs"></b> / 10 组<br>
+      再试一次，你一定可以的！</p>
+    <button class="restart-btn" onclick="initGame()">Try Again 再试一次</button>
+  </div>
+</div>
+
+<script>
+/* ================= 食物简笔画 SVG（柔和彩色线稿） ================= */
+function svg(inner) {
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">${inner}</g>
+  </svg>`;
+}
+
+const PICTURES = {
+  apple: svg(`
+    <path d="M50 32 Q28 24 24 52 Q21 78 42 84 Q47 85 50 81 Q53 85 58 84 Q79 78 76 52 Q72 24 50 32" stroke="#ef6a6a"/>
+    <path d="M50 32 Q50 22 46 16" stroke="#a98a70"/>
+    <path d="M50 22 Q60 10 72 16 Q66 28 50 22" stroke="#8ecf7f"/>
+    <path d="M36 50 Q38 44 44 42" stroke="#ffb3b3"/>`),
+  banana: svg(`
+    <path d="M26 24 Q20 58 46 76 Q66 88 82 72 Q86 66 80 64 Q60 70 44 54 Q32 42 34 24 Q30 20 26 24" stroke="#f7c948"/>
+    <path d="M30 28 Q28 52 48 68" stroke="#fde9a8"/>
+    <path d="M24 22 L30 26" stroke="#a98a70"/>`),
+  cake: svg(`
+    <path d="M24 52 L76 52 L76 82 L24 82 Z" stroke="#f0a35e"/>
+    <path d="M24 66 L76 66" stroke="#f0a35e" stroke-width="3"/>
+    <path d="M24 52 Q24 42 34 42 L66 42 Q76 42 76 52" stroke="#f58ba6"/>
+    <path d="M30 42 L30 30 M50 42 L50 28 M70 42 L70 30" stroke="#ffd166"/>
+    <circle cx="30" cy="26" r="3.5" stroke="#ffd166"/>
+    <circle cx="50" cy="24" r="3.5" stroke="#ffd166"/>
+    <circle cx="70" cy="26" r="3.5" stroke="#ffd166"/>
+    <circle cx="50" cy="58" r="4" stroke="#e2708a"/>
+    <path d="M50 54 Q52 49 56 48" stroke="#8ecf7f" stroke-width="3"/>`),
+  hamburger: svg(`
+    <path d="M22 44 Q22 24 50 24 Q78 24 78 44 Z" stroke="#f0a35e"/>
+    <circle cx="38" cy="32" r="1.8" fill="#fff3dd" stroke="#ffe1b8" stroke-width="2.5"/>
+    <circle cx="50" cy="29" r="1.8" fill="#fff3dd" stroke="#ffe1b8" stroke-width="2.5"/>
+    <circle cx="62" cy="32" r="1.8" fill="#fff3dd" stroke="#ffe1b8" stroke-width="2.5"/>
+    <path d="M20 50 Q28 44 36 50 Q44 56 52 50 Q60 44 68 50 Q74 55 80 50" stroke="#8ecf7f"/>
+    <rect x="24" y="56" width="52" height="9" rx="4.5" stroke="#c97b4a"/>
+    <path d="M24 70 L76 70 L74 80 Q50 86 26 80 Z" stroke="#f0a35e"/>`),
+  milk: svg(`
+    <path d="M32 38 L68 38 L68 84 L32 84 Z" stroke="#8ab6e2"/>
+    <path d="M32 38 L40 20 L60 20 L68 38" stroke="#8ab6e2"/>
+    <path d="M40 20 L40 30 M60 20 L60 30" stroke="#8ab6e2" stroke-width="3"/>
+    <path d="M32 62 Q41 56 50 62 Q59 68 68 62 L68 84 L32 84 Z" stroke="#bcd9f5"/>
+    <circle cx="50" cy="48" r="7" stroke="#f58ba6"/>
+    <path d="M46 48 L49 51 L55 44" stroke="#f58ba6" stroke-width="3"/>`),
+  bread: svg(`
+    <path d="M28 44 Q28 28 50 28 Q72 28 72 44 Q80 44 80 54 L80 78 Q80 84 74 84 L26 84 Q20 84 20 78 L20 54 Q20 44 28 44 Z" stroke="#e8a358"/>
+    <path d="M34 52 Q34 42 50 42 Q66 42 66 52" stroke="#f7d8a8"/>
+    <path d="M32 62 L36 66 M50 60 L54 64 M66 62 L70 66" stroke="#f7d8a8" stroke-width="3"/>`),
+  egg: svg(`
+    <path d="M50 22 Q76 22 82 48 Q86 70 66 80 Q44 90 28 74 Q14 60 22 42 Q30 24 50 22 Z" stroke="#e8c47f"/>
+    <circle cx="52" cy="52" r="15" fill="#fff3c9" stroke="#f7c948"/>
+    <circle cx="47" cy="47" r="3" fill="#ffffff" stroke="none"/>`),
+  orange: svg(`
+    <circle cx="50" cy="56" r="30" stroke="#f7a34f"/>
+    <path d="M50 26 Q48 16 42 12" stroke="#a98a70"/>
+    <path d="M48 22 Q60 8 74 16 Q66 30 48 22" stroke="#8ecf7f"/>
+    <circle cx="40" cy="50" r="1.6" fill="#f7a34f" stroke="none"/>
+    <circle cx="58" cy="46" r="1.6" fill="#f7a34f" stroke="none"/>
+    <circle cx="62" cy="62" r="1.6" fill="#f7a34f" stroke="none"/>
+    <circle cx="44" cy="66" r="1.6" fill="#f7a34f" stroke="none"/>
+    <path d="M32 48 Q36 40 44 37" stroke="#ffd9a8" stroke-width="3"/>`),
+  grape: svg(`
+    <path d="M50 30 Q50 20 44 14" stroke="#a98a70"/>
+    <path d="M50 24 Q62 10 76 18 Q68 32 50 24" stroke="#8ecf7f"/>
+    <circle cx="40" cy="38" r="10" stroke="#b48ec7"/>
+    <circle cx="60" cy="38" r="10" stroke="#b48ec7"/>
+    <circle cx="30" cy="54" r="10" stroke="#b48ec7"/>
+    <circle cx="50" cy="54" r="10" stroke="#b48ec7"/>
+    <circle cx="70" cy="54" r="10" stroke="#b48ec7"/>
+    <circle cx="40" cy="70" r="10" stroke="#b48ec7"/>
+    <circle cx="60" cy="70" r="10" stroke="#b48ec7"/>
+    <circle cx="50" cy="84" r="9" stroke="#b48ec7"/>
+    <circle cx="37" cy="35" r="2.5" stroke="#e3d2ee" stroke-width="3"/>
+    <circle cx="27" cy="51" r="2.5" stroke="#e3d2ee" stroke-width="3"/>`),
+  'ice cream': svg(`
+    <path d="M32 48 L68 48 L50 90 Z" stroke="#e8a358"/>
+    <path d="M38 58 L60 66 M62 58 L42 68 M44 74 L54 78" stroke="#f0c48f" stroke-width="2.5"/>
+    <path d="M32 48 Q26 30 42 26 Q44 14 56 16 Q68 12 70 26 Q80 34 68 48 Z" stroke="#f58ba6"/>
+    <circle cx="58" cy="24" r="5" stroke="#e2708a"/>
+    <path d="M58 19 Q60 14 64 13" stroke="#8ecf7f" stroke-width="3"/>
+    <circle cx="44" cy="34" r="1.6" fill="#ffd166" stroke="none"/>
+    <circle cx="56" cy="38" r="1.6" fill="#8ecf7f" stroke="none"/>`)
+};
+
+const WORDS = [
+  { key: 'apple',     word: 'apple'     },
+  { key: 'banana',    word: 'banana'    },
+  { key: 'cake',      word: 'cake'      },
+  { key: 'hamburger', word: 'hamburger' },
+  { key: 'milk',      word: 'milk'      },
+  { key: 'bread',     word: 'bread'     },
+  { key: 'egg',       word: 'egg'       },
+  { key: 'orange',    word: 'orange'    },
+  { key: 'grape',     word: 'grape'     },
+  { key: 'ice cream', word: 'ice cream' }
+];
+
+const BACK_SVG = `<svg viewBox="0 0 100 133" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <pattern id="sweet" width="50" height="66" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2">
+        <path d="M9 26 L21 26 L19 36 L11 36 Z" stroke="#e2708a"/>
+        <path d="M8 26 Q8 19 15 19 Q22 19 22 26" stroke="#ffffff"/>
+        <circle cx="15" cy="15" r="2" stroke="#ffffff"/>
+        <circle cx="38" cy="48" r="6.5" stroke="#ffffff"/>
+        <circle cx="38" cy="48" r="2.2" stroke="#e2708a"/>
+        <path d="M34 44 L36 43 M41 45 L43 44 M34 52 L36 53 M42 52 L44 51" stroke="#ffd166"/>
+        <path d="M40 8 Q42 4 45 6 Q47 8 45 11 Q43 13 40 15 Q37 13 35 11 Q33 8 35 6 Q38 4 40 8" stroke="#ffffff"/>
+        <circle cx="6" cy="56" r="1.4" fill="#ffffff" stroke="none"/>
+        <circle cx="28" cy="6" r="1.4" fill="#ffffff" stroke="none"/>
+        <circle cx="12" cy="48" r="1.4" fill="#e2708a" stroke="none"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="100" height="133" fill="url(#sweet)"/>
+</svg>`;
+
+/* ================= 游戏状态 ================= */
+const TOTAL_TIME = 60;      // 总时长（秒）
+const BONUS_TIME = 5;       // 配对成功奖励
+const PENALTY_TIME = 3;     // 配对失败扣除
+const DANGER_TIME = 10;     // 低于该值数字变红闪烁
+
+const board = document.getElementById('board');
+const movesEl = document.getElementById('moves');
+const pairsEl = document.getElementById('pairs');
+const timerNum = document.getElementById('timerNum');
+const bombIcon = document.getElementById('bombIcon');
+const floatLayer = document.getElementById('floatLayer');
+const winModal = document.getElementById('winModal');
+const failModal = document.getElementById('failModal');
+
+let firstCard = null, secondCard = null, lockBoard = false;
+let moves = 0, matchedPairs = 0;
+let timeLeft = TOTAL_TIME, timerId = null, gameOver = false;
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildDeck() {
+  const deck = [];
+  WORDS.forEach(item => {
+    deck.push({ key: item.key, type: 'picture', html: PICTURES[item.key] });
+    deck.push({ key: item.key, type: 'word', html: `<div class="word">${item.word}</div>` });
+  });
+  return shuffle(deck);
+}
+
+/* ================= 倒计时 ================= */
+function updateTimerDisplay() {
+  timerNum.textContent = timeLeft;
+  timerNum.classList.toggle('danger', timeLeft <= DANGER_TIME);
+}
+
+function showTimeFloat(delta) {
+  const el = document.createElement('div');
+  el.className = 'time-float ' + (delta > 0 ? 'plus' : 'minus');
+  el.textContent = (delta > 0 ? '+' : '') + delta + 's';
+  floatLayer.appendChild(el);
+  setTimeout(() => el.remove(), 1000);
+}
+
+function changeTime(delta) {
+  timeLeft = Math.max(0, timeLeft + delta);
+  updateTimerDisplay();
+  showTimeFloat(delta);
+  if (timeLeft <= 0) endGame(false);
+}
+
+function startTimer() {
+  clearInterval(timerId);
+  timeLeft = TOTAL_TIME;
+  updateTimerDisplay();
+  timerId = setInterval(() => {
+    timeLeft--;
+    updateTimerDisplay();
+    if (timeLeft <= 0) endGame(false);
+  }, 1000);
+}
+
+/* ================= 游戏流程 ================= */
+function initGame() {
+  board.innerHTML = '';
+  winModal.classList.remove('show');
+  failModal.classList.remove('show');
+  bombIcon.classList.remove('explode');
+  bombIcon.classList.add('wick-burn');
+  firstCard = secondCard = null;
+  lockBoard = false;
+  gameOver = false;
+  moves = 0; matchedPairs = 0;
+  movesEl.textContent = 0;
+  pairsEl.textContent = 0;
+
+  buildDeck().forEach(data => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.key = data.key;
+    card.dataset.type = data.type;
+    card.innerHTML = `
+      <div class="card-inner">
+        <div class="face back">${BACK_SVG}</div>
+        <div class="face front">${data.html}</div>
+      </div>`;
+    card.addEventListener('click', () => flipCard(card));
+    board.appendChild(card);
+  });
+
+  startTimer();
+}
+
+function flipCard(card) {
+  if (gameOver || lockBoard || card === firstCard) return;
+  if (card.classList.contains('flipped') || card.classList.contains('matched')) return;
+
+  card.classList.add('flipped');
+
+  if (!firstCard) {
+    firstCard = card;
+    return;
+  }
+
+  secondCard = card;
+  lockBoard = true;
+  moves++;
+  movesEl.textContent = moves;
+
+  const isMatch =
+    firstCard.dataset.key === secondCard.dataset.key &&
+    firstCard.dataset.type !== secondCard.dataset.type;
+
+  if (isMatch) {
+    firstCard.classList.add('matched');
+    secondCard.classList.add('matched');
+    matchedPairs++;
+    pairsEl.textContent = matchedPairs;
+    changeTime(BONUS_TIME);          // 奖励 +5 秒
+    resetTurn();
+    if (matchedPairs === WORDS.length) {
+      setTimeout(() => endGame(true), 600);
+    }
+  } else {
+    changeTime(-PENALTY_TIME);       // 惩罚 -3 秒
+    setTimeout(() => {
+      firstCard && firstCard.classList.add('shake');
+      secondCard && secondCard.classList.add('shake');
+    }, 500);
+    setTimeout(() => {
+      if (firstCard) firstCard.classList.remove('flipped', 'shake');
+      if (secondCard) secondCard.classList.remove('flipped', 'shake');
+      resetTurn();
+    }, 1000);
+  }
+}
+
+function resetTurn() {
+  firstCard = null;
+  secondCard = null;
+  lockBoard = false;
+}
+
+function endGame(isWin) {
+  if (gameOver) return;
+  gameOver = true;
+  clearInterval(timerId);
+  lockBoard = true;
+  timerNum.classList.remove('danger');
+
+  if (isWin) {
+    document.getElementById('finalMoves').textContent = moves;
+    document.getElementById('finalTime').textContent = timeLeft;
+    winModal.classList.add('show');
+  } else {
+    timeLeft = 0;
+    updateTimerDisplay();
+    /* 炸弹爆炸动画后弹出失败提示 */
+    bombIcon.classList.remove('wick-burn');
+    bombIcon.classList.add('explode');
+    setTimeout(() => {
+      document.getElementById('failPairs').textContent = matchedPairs;
+      failModal.classList.add('show');
+    }, 700);
+  }
+}
+
+initGame();
+</script>
+</body>
+</html>

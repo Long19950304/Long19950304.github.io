@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>单词消消乐</title>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script>if (typeof Peer === 'undefined') { document.write('<script src="https:\/\/unpkg.com\/peerjs@1.5.4\/dist\/peerjs.min.js"><\/script>'); }</script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { height:100%; }
+  body {
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Comic Sans MS",sans-serif;
+    background:linear-gradient(160deg,#FFF6E5 0%,#E9F4FF 60%,#F3EBFF 100%);
+    color:#3A405A; touch-action:manipulation; user-select:none; -webkit-user-select:none;
+    overflow:hidden;
+  }
+  .screen { display:none; height:100dvh; flex-direction:column; overflow:hidden; }
+  .screen.active { display:flex; }
+  .scroll { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:16px; }
+
+  /* ---------- 通用组件 ---------- */
+  .btn {
+    display:block; width:100%; border:none; outline:none; cursor:pointer;
+    font-family:inherit; font-weight:800; color:#fff; text-align:center;
+    border-radius:999px; padding:15px 20px; font-size:19px; letter-spacing:2px;
+    transition:transform .08s;
+  }
+  .btn:active { transform:scale(.95); }
+  .btn-green  { background:#58C777; box-shadow:0 4px 0 #3FA95E; }
+  .btn-blue   { background:#6BB0FF; box-shadow:0 4px 0 #4A8FE0; }
+  .btn-red    { background:#FF7B6B; box-shadow:0 4px 0 #E0594B; }
+  .btn-purple { background:#A78BFA; box-shadow:0 4px 0 #8266E0; }
+  .btn-orange { background:#FFB347; box-shadow:0 4px 0 #E0932A; }
+  .btn:disabled { opacity:.45; transform:none; }
+  .btn:active:not(:disabled){ box-shadow:0 1px 0 rgba(0,0,0,.15); transform:translateY(3px); }
+  .back-link { display:inline-block; margin:4px 0 12px; color:#7A86A8; font-size:15px; font-weight:700; background:none;border:none; }
+  .panel { background:rgba(255,255,255,.92); border-radius:22px; padding:18px; box-shadow:0 6px 18px rgba(120,140,200,.15); margin-bottom:14px; }
+  h2.paget { text-align:center; font-size:24px; margin:6px 0 14px; color:#4A5580; }
+
+  /* ---------- 首页 ---------- */
+  .home-wrap { flex:1; display:flex; flex-direction:column; justify-content:center; padding:24px; max-width:460px; width:100%; margin:0 auto; }
+  .logo { text-align:center; margin-bottom:8px; }
+  .logo .t1 { font-size:40px; font-weight:900; color:#FF8C42; text-shadow:2px 2px 0 #FFE3C2; letter-spacing:4px; }
+  .logo .t2 { font-size:15px; color:#8A94B8; margin-top:6px; font-weight:700; letter-spacing:3px; }
+  .home-star { text-align:center; font-size:17px; font-weight:800; color:#B8821A; margin:10px 0 20px; }
+  .home-btns .btn { margin-bottom:14px; }
+  .home-tip { text-align:center; font-size:12px; color:#9AA3C0; margin-top:6px; }
+
+  /* ---------- 难度选择 ---------- */
+  .lv-card { display:flex; align-items:center; gap:14px; background:#fff; border-radius:20px; padding:16px; margin-bottom:12px; box-shadow:0 5px 14px rgba(120,140,200,.14); border:none; width:100%; text-align:left; font-family:inherit; }
+  .lv-card:active { transform:scale(.97); }
+  .lv-card.locked { opacity:.55; }
+  .lv-badge { width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:900; color:#fff; flex-shrink:0; }
+  .lv-info { flex:1; }
+  .lv-name { font-size:20px; font-weight:900; color:#3A405A; }
+  .lv-desc { font-size:13px; color:#8A94B8; margin-top:3px; font-weight:600; }
+  .lv-stars { font-size:20px; letter-spacing:2px; color:#E4E6F0; }
+  .lv-stars .on { color:#FFC93C; text-shadow:0 1px 0 #E8A900; }
+  .lv-lock { font-size:13px; color:#A0A8C4; font-weight:700; }
+
+  /* ---------- 游戏页 ---------- */
+  .game-header {
+    position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between;
+    padding:12px 14px calc(10px); background:rgba(255,255,255,.85); backdrop-filter:blur(8px);
+    box-shadow:0 2px 10px rgba(120,140,200,.12);
+  }
+  .game-title { font-size:22px; font-weight:900; color:#FF8C42; letter-spacing:3px; text-shadow:1px 1px 0 #FFE3C2; }
+  .snd-btn { width:40px; height:40px; border-radius:12px; border:none; background:#EEF3FF; display:flex; align-items:center; justify-content:center; cursor:pointer; }
+  .snd-btn:active { transform:scale(.9); }
+  .toolbar { display:flex; align-items:center; gap:8px; padding:10px 12px 6px; }
+  .timer-box { flex:1; text-align:center; background:#fff; border-radius:16px; padding:8px 4px; box-shadow:0 3px 8px rgba(120,140,200,.12); }
+  .timer-label { font-size:11px; color:#8A94B8; font-weight:700; }
+  .timer-num { font-size:22px; font-weight:900; color:#3A6FD8; font-variant-numeric:tabular-nums; }
+  .timer-num.danger { color:#E5484D; animation:pulse .5s infinite alternate; }
+  @keyframes pulse { from{transform:scale(1);} to{transform:scale(1.18);} }
+  .prog-box { flex:1; text-align:center; background:#fff; border-radius:16px; padding:8px 4px; box-shadow:0 3px 8px rgba(120,140,200,.12); }
+  .prog-num { font-size:22px; font-weight:900; color:#3FA95E; font-variant-numeric:tabular-nums; }
+  .tool-btns { display:flex; gap:8px; padding:4px 12px 10px; }
+  .tool-btns .btn { flex:1; padding:12px 8px; font-size:17px; letter-spacing:1px; }
+  .pk-bars { padding:0 12px 6px; }
+  .pk-row { display:flex; align-items:center; gap:8px; margin-bottom:5px; }
+  .pk-name { font-size:13px; font-weight:800; width:44px; color:#5A6488; }
+  .pk-track { flex:1; height:12px; background:#E8ECF7; border-radius:999px; overflow:hidden; }
+  .pk-fill { height:100%; border-radius:999px; transition:width .3s; }
+  .pk-fill.me { background:linear-gradient(90deg,#58C777,#7FDCA0); }
+  .pk-fill.op { background:linear-gradient(90deg,#6BB0FF,#9CC8FF); }
+  .pk-cnt { font-size:13px; font-weight:900; width:52px; text-align:right; color:#5A6488; font-variant-numeric:tabular-nums; }
+
+  .board-wrap { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; position:relative; padding:10px 12px 24px; }
+  .board { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+  .board.locked { pointer-events:none; filter:grayscale(.4) opacity(.55); }
+  .card {
+    border:none; font-family:inherit; cursor:pointer; border-radius:16px; min-height:62px;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    padding:6px 4px; font-weight:800; line-height:1.2; word-break:break-all;
+    transition:transform .1s, box-shadow .1s, opacity .3s;
+  }
+  .card.en { background:#BEE0FF; color:#1B4F8A; box-shadow:0 4px 0 #8FC1EE; }
+  .card.zh { background:#C6F0CD; color:#1E6B34; box-shadow:0 4px 0 #97D9A6; }
+  .card.f-lg { font-size:18px; }
+  .card.f-md { font-size:15px; }
+  .card.f-sm { font-size:12.5px; }
+  .card:active { transform:translateY(3px); box-shadow:0 1px 0 rgba(0,0,0,.1); }
+  .card.sel { outline:3px solid #FFB020; outline-offset:2px; transform:scale(1.06); box-shadow:0 0 14px rgba(255,176,32,.6); }
+  .card.gone { visibility:hidden; opacity:0; transform:scale(.3); }
+  .card.shake { animation:shake .35s; }
+  @keyframes shake { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);} }
+  .lock-hint { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:5; }
+  .lock-hint span { background:rgba(58,64,90,.85); color:#fff; font-size:16px; font-weight:800; padding:12px 22px; border-radius:999px; }
+
+  /* ---------- 弹窗 ---------- */
+  .mask { position:fixed; inset:0; background:rgba(50,56,90,.45); z-index:100; display:none; align-items:center; justify-content:center; padding:24px; }
+  .mask.show { display:flex; }
+  .modal { background:#fff; border-radius:24px; padding:24px 20px; width:100%; max-width:380px; text-align:center; box-shadow:0 12px 40px rgba(0,0,0,.25); animation:pop .25s; max-height:86dvh; overflow-y:auto; }
+  @keyframes pop { from{transform:scale(.7); opacity:0;} to{transform:scale(1); opacity:1;} }
+  .modal h3 { font-size:23px; color:#4A5580; margin-bottom:8px; }
+  .modal .big-stars { font-size:44px; letter-spacing:6px; margin:8px 0; color:#E4E6F0; }
+  .modal .big-stars .on { color:#FFC93C; text-shadow:0 2px 0 #E8A900; }
+  .modal .row { display:flex; justify-content:space-between; font-size:16px; font-weight:700; color:#6A739A; padding:8px 6px; border-bottom:1px dashed #E8ECF7; }
+  .modal .row b { color:#3A405A; }
+  .modal .btn { margin-top:12px; }
+  .quiz-word { font-size:30px; font-weight:900; color:#3A6FD8; background:#EEF4FF; border-radius:16px; padding:14px; margin:12px 0; }
+  .quiz-opt { display:block; width:100%; margin-top:10px; padding:14px; border-radius:16px; border:2px solid #DDE6F5; background:#F7FAFF; font-size:19px; font-weight:800; color:#3A405A; font-family:inherit; cursor:pointer; }
+  .quiz-opt:active { transform:scale(.96); }
+  .quiz-opt.right { background:#D8F5DF; border-color:#58C777; color:#1E6B34; }
+  .quiz-opt.wrong { background:#FFE1DE; border-color:#FF7B6B; color:#B02A1E; }
+  .modal .note { font-size:13px; color:#9AA3C0; font-weight:700; margin-top:10px; }
+
+  /* ---------- 提示吐司 ---------- */
+  #toast { position:fixed; top:18%; left:50%; transform:translateX(-50%) scale(.8); z-index:200; background:rgba(229,72,77,.95); color:#fff; font-size:19px; font-weight:900; padding:12px 28px; border-radius:999px; opacity:0; pointer-events:none; transition:all .18s; letter-spacing:2px; box-shadow:0 6px 20px rgba(229,72,77,.4); }
+  #toast.show { opacity:1; transform:translateX(-50%) scale(1); }
+
+  /* ---------- 资料页 / 词库页 ---------- */
+  .total-star { text-align:center; padding:10px 0 4px; }
+  .total-star .n { font-size:52px; font-weight:900; color:#FFC93C; text-shadow:0 3px 0 #E8A900; }
+  .total-star .l { font-size:15px; color:#8A94B8; font-weight:700; margin-top:4px; }
+  .pf-row { display:flex; align-items:center; justify-content:space-between; padding:12px 6px; border-bottom:1px dashed #E8ECF7; font-size:17px; font-weight:800; color:#4A5580; }
+  .pf-row .stars { font-size:19px; color:#E4E6F0; letter-spacing:2px; }
+  .pf-row .stars .on { color:#FFC93C; }
+  .tabs { display:flex; gap:8px; margin-bottom:12px; }
+  .tab { flex:1; padding:10px 4px; border-radius:14px; border:2px solid #DDE6F5; background:#fff; font-family:inherit; font-size:16px; font-weight:800; color:#7A86A8; cursor:pointer; }
+  .tab.on { background:#6BB0FF; border-color:#6BB0FF; color:#fff; }
+  textarea { width:100%; min-height:260px; border:2px solid #DDE6F5; border-radius:16px; padding:12px; font-size:15px; font-family:inherit; line-height:1.7; resize:vertical; color:#3A405A; background:#FAFCFF; }
+
+  /* ---------- PK ---------- */
+  .room-code { text-align:center; font-size:46px; font-weight:900; letter-spacing:10px; color:#3A6FD8; background:#EEF4FF; border-radius:18px; padding:16px 8px 16px 18px; margin:14px 0; }
+  .room-status { text-align:center; font-size:16px; font-weight:800; color:#7A86A8; margin-bottom:10px; }
+  .dotting::after { content:''; animation:dots 1.2s infinite; }
+  @keyframes dots { 0%{content:'';} 33%{content:'.';} 66%{content:'..';} 100%{content:'...';} }
+  input.code-input { width:100%; font-size:26px; font-weight:900; text-align:center; letter-spacing:8px; padding:14px; border-radius:16px; border:2px solid #DDE6F5; font-family:inherit; color:#3A405A; margin-bottom:12px; }
+  .vs-line { display:flex; align-items:center; justify-content:center; gap:14px; margin:8px 0; font-weight:900; font-size:17px; color:#4A5580; }
+  .vs-tag { background:#FFE9D9; color:#D96A1B; border-radius:999px; padding:6px 16px; font-size:15px; }
+  select.sel-lv { width:100%; padding:13px; border-radius:14px; border:2px solid #DDE6F5; font-size:17px; font-weight:800; font-family:inherit; color:#3A405A; background:#fff; margin-bottom:12px; }
+</style>
+</head>
+<body>
+
+<!-- ============ 首页：模式选择 ============ -->
+<div id="screen-home" class="screen active">
+  <div class="home-wrap">
+    <div class="logo">
+      <div class="t1">单词消消乐</div>
+      <div class="t2">英语单词配对大挑战</div>
+    </div>
+    <div class="home-star" id="home-stars">★ 我的星星：0</div>
+    <div class="home-btns">
+      <button class="btn btn-green" onclick="goLevels()">单人闯关</button>
+      <button class="btn btn-blue" onclick="showScreen('screen-pk')">双人联机PK</button>
+      <button class="btn btn-orange" onclick="goProfile()">个人资料</button>
+      <button class="btn btn-purple" onclick="goImport()">导入单词库</button>
+    </div>
+    <div class="home-tip">点击单词卡可以听发音，快和小伙伴比赛吧！</div>
+  </div>
+</div>
+
+<!-- ============ 难度选择 ============ -->
+<div id="screen-level" class="screen">
+  <div class="scroll" style="max-width:520px;margin:0 auto;width:100%;">
+    <button class="back-link" onclick="showScreen('screen-home')">‹ 返回首页</button>
+    <h2 class="paget">选择难度</h2>
+    <div id="level-list"></div>
+  </div>
+</div>
+
+<!-- ============ 个人资料 ============ -->
+<div id="screen-profile" class="screen">
+  <div class="scroll" style="max-width:520px;margin:0 auto;width:100%;">
+    <button class="back-link" onclick="showScreen('screen-home')">‹ 返回首页</button>
+    <h2 class="paget">个人资料</h2>
+    <div class="panel">
+      <div class="total-star">
+        <div class="n" id="pf-total">0</div>
+        <div class="l">★ 累计获得星星 ★</div>
+      </div>
+    </div>
+    <div class="panel" id="pf-list"></div>
+    <button class="btn btn-red" style="font-size:15px;padding:11px;" onclick="resetData()">清空全部数据</button>
+  </div>
+</div>
+
+<!-- ============ 导入词库 ============ -->
+<div id="screen-import" class="screen">
+  <div class="scroll" style="max-width:560px;margin:0 auto;width:100%;">
+    <button class="back-link" onclick="showScreen('screen-home')">‹ 返回首页</button>
+    <h2 class="paget">自定义单词库</h2>
+    <div class="tabs" id="imp-tabs"></div>
+    <div class="panel">
+      <textarea id="imp-text" placeholder="每行一组：英文,中文&#10;例如：&#10;apple,苹果&#10;banana,香蕉"></textarea>
+      <div style="font-size:12px;color:#9AA3C0;font-weight:700;margin-top:8px;" id="imp-info"></div>
+    </div>
+    <button class="btn btn-green" onclick="saveImport()">保存该难度词库</button>
+    <button class="btn btn-orange" style="margin-top:10px;" onclick="restoreDefault()">恢复默认词库</button>
+  </div>
+</div>
+
+<!-- ============ PK 大厅 ============ -->
+<div id="screen-pk" class="screen">
+  <div class="scroll" style="max-width:520px;margin:0 auto;width:100%;">
+    <button class="back-link" onclick="showScreen('screen-home')">‹ 返回首页</button>
+    <h2 class="paget">双人联机PK</h2>
+    <div class="panel">
+      <div style="font-size:17px;font-weight:900;color:#4A5580;margin-bottom:10px;">创建房间（我是房主）</div>
+      <select class="sel-lv" id="pk-lv-sel">
+        <option value="easy">入门（8组 · PK限时120秒）</option>
+        <option value="basic">基础（14组 · 90秒）</option>
+        <option value="hard">进阶（20组 · 80秒）</option>
+        <option value="devil">魔鬼（24组 · 70秒）</option>
+      </select>
+      <button class="btn btn-green" onclick="pkCreate()">创建房间</button>
+    </div>
+    <div class="panel">
+      <div style="font-size:17px;font-weight:900;color:#4A5580;margin-bottom:10px;">加入房间（输入房间号）</div>
+      <input class="code-input" id="pk-code-input" maxlength="4" inputmode="numeric" placeholder="0000">
+      <button class="btn btn-blue" onclick="pkJoin()">加入房间</button>
+    </div>
+    <div class="home-tip">两台手机需联网；房主创建房间后，把房间号告诉小伙伴</div>
+  </div>
+</div>
+
+<!-- ============ PK 房间等待页 ============ -->
+<div id="screen-room" class="screen">
+  <div class="home-wrap">
+    <h2 class="paget" id="room-title">房间</h2>
+    <div class="panel">
+      <div style="text-align:center;font-size:14px;font-weight:800;color:#8A94B8;">房间号</div>
+      <div class="room-code" id="room-code">----</div>
+      <div class="room-status dotting" id="room-status">等待挑战者加入</div>
+      <div class="vs-line" id="room-vs" style="display:none;">
+        <span class="vs-tag">房主（你）</span><span>VS</span><span class="vs-tag" style="background:#DDEAFF;color:#1B4F8A;">挑战者</span>
+      </div>
+      <button class="btn btn-green" id="room-start" style="display:none;margin-top:8px;" onclick="pkHostStart()">开始游戏</button>
+      <button class="btn btn-red" style="margin-top:10px;" onclick="pkLeaveRoom()">退出房间</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 游戏对局页 ============ -->
+<div id="screen-game" class="screen">
+  <header class="game-header">
+    <div class="game-title">单词消消乐</div>
+    <button class="snd-btn" id="snd-btn" onclick="toggleSound()" aria-label="发音开关"></button>
+  </header>
+  <div class="toolbar">
+    <div class="timer-box">
+      <div class="timer-label" id="timer-label">剩余时间</div>
+      <div class="timer-num" id="timer-num">--:--</div>
+    </div>
+    <div class="prog-box">
+      <div class="timer-label">已配对</div>
+      <div class="prog-num" id="prog-num">0/0</div>
+    </div>
+  </div>
+  <div class="pk-bars" id="pk-bars" style="display:none;">
+    <div class="pk-row"><span class="pk-name">我</span><div class="pk-track"><div class="pk-fill me" id="pk-me-fill" style="width:0%"></div></div><span class="pk-cnt" id="pk-me-cnt">0/0</span></div>
+    <div class="pk-row"><span class="pk-name">对手</span><div class="pk-track"><div class="pk-fill op" id="pk-op-fill" style="width:0%"></div></div><span class="pk-cnt" id="pk-op-cnt">0/0</span></div>
+  </div>
+  <div class="tool-btns">
+    <button class="btn btn-green" id="btn-start" onclick="startGame()">开始游戏</button>
+    <button class="btn btn-red" onclick="exitGame()">结束游戏</button>
+  </div>
+  <div class="board-wrap">
+    <div class="board locked" id="board"></div>
+    <div class="lock-hint" id="lock-hint"><span>点击「开始游戏」解锁卡片</span></div>
+  </div>
+</div>
+
+<!-- ============ 弹窗：单人结算 ============ -->
+<div class="mask" id="m-result">
+  <div class="modal">
+    <h3 id="r-title">闯关成功</h3>
+    <div class="big-stars" id="r-stars"></div>
+    <div class="row"><span>配对数量</span><b id="r-pairs">0/0</b></div>
+    <div class="row"><span>完成用时</span><b id="r-time">0秒</b></div>
+    <div class="row"><span>获得星星</span><b id="r-star-num" style="color:#E8A900;">+0 ★</b></div>
+    <button class="btn btn-green" onclick="replayGame()">再玩一次</button>
+    <button class="btn btn-blue" onclick="closeMasks();showScreen('screen-level')">返回难度选择</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：复活挑战 ============ -->
+<div class="mask" id="m-revive">
+  <div class="modal">
+    <h3>时间到！复活挑战</h3>
+    <div style="font-size:15px;font-weight:700;color:#8A94B8;">选出正确的中文意思，答对 +15 秒继续游戏<br>（本局仅有一次复活机会）</div>
+    <div class="quiz-word" id="quiz-word">apple</div>
+    <div id="quiz-opts"></div>
+    <button class="btn btn-red" style="margin-top:14px;" onclick="reviveGiveUp()">放弃复活</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：失败 ============ -->
+<div class="mask" id="m-fail">
+  <div class="modal">
+    <h3>挑战失败，别灰心！</h3>
+    <div class="row"><span>配对数量</span><b id="f-pairs">0/0</b></div>
+    <button class="btn btn-green" onclick="replayGame()">再玩一次</button>
+    <button class="btn btn-blue" onclick="closeMasks();showScreen('screen-level')">返回难度选择</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：PK 结算 ============ -->
+<div class="mask" id="m-pk">
+  <div class="modal">
+    <h3 id="pk-title">胜利</h3>
+    <div class="vs-line" id="pk-detail"></div>
+    <div class="row"><span>我的配对</span><b id="pk-my-num">0</b></div>
+    <div class="row"><span>对手配对</span><b id="pk-op-num">0</b></div>
+    <button class="btn btn-blue" onclick="closeMasks();cleanupPk();showScreen('screen-home')">返回首页</button>
+  </div>
+</div>
+
+<div id="toast">匹配失败</div>
+
+<script>
+/* ==================== 数据 ==================== */
+const LEVEL_ORDER = ['easy','basic','hard','devil'];
+const LEVELS = {
+  easy:  { name:'入门', pairs:8,  time:0,   desc:'8组单词 · 不限时 · 通关得星', color:'#58C777' },
+  basic: { name:'基础', pairs:14, time:90,  desc:'14组单词 · 限时90秒',        color:'#6BB0FF' },
+  hard:  { name:'进阶', pairs:20, time:80,  desc:'20组单词 · 限时80秒',        color:'#A78BFA' },
+  devil: { name:'魔鬼', pairs:24, time:70,  desc:'24组单词 · 限时70秒',        color:'#FF7B6B' }
+};
+const PK_TIME_OVERRIDE = { easy: 120 }; // PK模式入门难度也需要倒计时判定胜负
+
+const DEFAULT_BANKS = {
+easy: [["apple","苹果"],["banana","香蕉"],["cat","猫"],["dog","狗"],["egg","鸡蛋"],["fish","鱼"],["bird","鸟"],["cake","蛋糕"],["milk","牛奶"],["water","水"],["sun","太阳"],["moon","月亮"],["star","星星"],["red","红色"],["blue","蓝色"],["green","绿色"],["book","书"],["pen","钢笔"],["bag","书包"],["desk","课桌"],["boy","男孩"],["girl","女孩"],["one","一"],["two","二"],["three","三"],["four","四"],["five","五"],["hand","手"],["foot","脚"],["eye","眼睛"],["ear","耳朵"],["nose","鼻子"],["mouth","嘴"],["head","头"],["bus","公共汽车"],["car","小汽车"],["tree","树"],["flower","花"],["rain","雨"],["snow","雪"]],
+basic: [["school","学校"],["teacher","老师"],["student","学生"],["friend","朋友"],["family","家庭"],["mother","妈妈"],["father","爸爸"],["brother","兄弟"],["sister","姐妹"],["breakfast","早餐"],["lunch","午餐"],["dinner","晚餐"],["rice","米饭"],["bread","面包"],["juice","果汁"],["orange","橙子"],["Monday","星期一"],["Tuesday","星期二"],["spring","春天"],["summer","夏天"],["autumn","秋天"],["winter","冬天"],["happy","开心的"],["sad","伤心的"],["angry","生气的"],["tired","累的"],["run","跑"],["jump","跳"],["swim","游泳"],["read","读"],["write","写"],["sing","唱歌"],["dance","跳舞"],["draw","画画"],["football","足球"],["basketball","篮球"],["piano","钢琴"],["park","公园"],["zoo","动物园"],["library","图书馆"],["hospital","医院"],["cinema","电影院"],["classroom","教室"],["chair","椅子"],["window","窗户"],["door","门"],["black","黑色"],["white","白色"],["yellow","黄色"],["pink","粉色"],["seven","七"],["eight","八"],["nine","九"],["ten","十"],["eleven","十一"],["twelve","十二"],["twenty","二十"],["thirty","三十"],["forty","四十"],["hundred","一百"]],
+hard: [["vegetable","蔬菜"],["tomato","西红柿"],["potato","土豆"],["hamburger","汉堡包"],["sandwich","三明治"],["chocolate","巧克力"],["camera","照相机"],["computer","电脑"],["keyboard","键盘"],["museum","博物馆"],["restaurant","餐馆"],["supermarket","超市"],["science","科学"],["history","历史"],["geography","地理"],["subject","科目"],["homework","作业"],["exam","考试"],["dictionary","字典"],["magazine","杂志"],["newspaper","报纸"],["message","信息"],["weather","天气"],["cloudy","多云的"],["rainy","下雨的"],["windy","有风的"],["sunny","晴朗的"],["season","季节"],["January","一月"],["February","二月"],["March","三月"],["Wednesday","星期三"],["Thursday","星期四"],["Friday","星期五"],["Saturday","星期六"],["difficult","困难的"],["important","重要的"],["interesting","有趣的"],["wonderful","精彩的"],["favorite","最喜欢的"],["popular","受欢迎的"],["different","不同的"],["between","在…之间"],["behind","在…后面"],["beside","在…旁边"],["above","在…上方"],["below","在…下方"],["mountain","高山"],["river","河流"],["ocean","海洋"],["forest","森林"],["island","岛屿"],["village","村庄"],["country","国家"],["world","世界"],["capital","首都"],["language","语言"],["music","音乐"],["sport","运动"],["exercise","锻炼"],["healthy","健康的"],["strong","强壮的"],["quickly","快速地"],["slowly","缓慢地"],["carefully","仔细地"],["loudly","大声地"],["quietly","安静地"],["together","一起"],["alone","独自"],["early","早地"],["late","晚地"],["soon","很快"],["again","再一次"],["never","从不"],["always","总是"],["usually","通常"],["sometimes","有时"],["brush","刷"],["wash","洗"],["climb","爬"],["carry","搬"],["catch","接住"],["throw","扔"],["push","推"],["pull","拉"]],
+devil: [["delicious","美味的"],["expensive","昂贵的"],["comfortable","舒适的"],["necessary","必要的"],["possible","可能的"],["convenient","方便的"],["dangerous","危险的"],["knowledge","知识"],["experience","经验"],["invitation","邀请"],["competition","比赛"],["information","信息"],["education","教育"],["conversation","对话"],["pronunciation","发音"],["grammar","语法"],["vocabulary","词汇"],["sentence","句子"],["article","文章"],["adventure","冒险"],["discovery","发现"],["invention","发明"],["technology","技术"],["engineer","工程师"],["scientist","科学家"],["astronaut","宇航员"],["president","总统"],["government","政府"],["society","社会"],["culture","文化"],["tradition","传统"],["festival","节日"],["celebrate","庆祝"],["remember","记住"],["forget","忘记"],["understand","理解"],["believe","相信"],["imagine","想象"],["decide","决定"],["promise","承诺"],["practice","练习"],["prepare","准备"],["protect","保护"],["provide","提供"],["receive","收到"],["refuse","拒绝"],["succeed","成功"],["achieve","实现"],["improve","提高"],["increase","增加"],["reduce","减少"],["compare","比较"],["describe","描述"],["explain","解释"],["suggest","建议"],["continue","继续"],["arrive","到达"],["return","返回"],["travel","旅行"],["journey","旅程"],["passenger","乘客"],["luggage","行李"],["airport","机场"],["ticket","票"],["passport","护照"],["abroad","在国外"],["foreign","外国的"],["thousand","一千"],["million","一百万"],["quarter","四分之一"],["double","双倍的"],["several","几个"],["except","除了"],["instead","代替"],["perhaps","也许"],["probably","很可能"],["almost","几乎"],["already","已经"],["still","仍然"],["ever","曾经"],["hardly","几乎不"],["nearly","差不多"],["exactly","确切地"],["especially","特别地"],["recently","最近"],["suddenly","突然"],["luckily","幸运地"],["successfully","成功地"],["environment","环境"],["pollution","污染"],["recycle","回收利用"],["volunteer","志愿者"],["community","社区"],["traffic","交通"],["safety","安全"],["medicine","药"],["temperature","温度"],["umbrella","雨伞"],["suitcase","手提箱"],["souvenir","纪念品"],["schedule","日程表"],["attitude","态度"],["confidence","信心"],["courage","勇气"],["ability","能力"],["activity","活动"],["immediately","立刻"],["gradually","逐渐地"]]
+};
+
+/* ==================== 存储 ==================== */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('wm_' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('wm_' + k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem('wm_' + k); } catch (e) {} }
+};
+let profile = store.get('profile', { stars: { easy:0, basic:0, hard:0, devil:0 }, unlocked: 0 });
+function saveProfile() { store.set('profile', profile); }
+function totalStars() { return LEVEL_ORDER.reduce((s, k) => s + (profile.stars[k] || 0), 0); }
+
+/* ==================== 音效 & 发音 ==================== */
+let soundOn = true, AC = null;
+function ac() {
+  if (!AC) { try { AC = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return null; } }
+  if (AC && AC.state === 'suspended') AC.resume();
+  return AC;
+}
+function tone(freq, delay, dur, type, vol) {
+  const a = ac(); if (!a) return;
+  const o = a.createOscillator(), g = a.createGain();
+  o.type = type || 'sine'; o.frequency.value = freq;
+  g.gain.setValueAtTime(0.0001, a.currentTime + delay);
+  g.gain.exponentialRampToValueAtTime(vol || 0.18, a.currentTime + delay + 0.015);
+  g.gain.exponentialRampToValueAtTime(0.0001, a.currentTime + delay + dur);
+  o.connect(g); g.connect(a.destination);
+  o.start(a.currentTime + delay); o.stop(a.currentTime + delay + dur + 0.05);
+}
+function sndOk()   { tone(880, 0, .12); tone(1318, .09, .2); }
+function sndNo()   { tone(220, 0, .15, 'square', .1); tone(155, .12, .25, 'square', .1); }
+function sndTick() { tone(1050, 0, .06, 'square', .06); }
+function sndWin()  { tone(660,0,.12); tone(880,.1,.12); tone(1100,.2,.12); tone(1320,.3,.3); }
+function speak(w) {
+  if (!soundOn) return;
+  try {
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang = 'en-US'; u.rate = 0.85;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch (e) {}
+}
+const SVG_SND_ON  = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3A6FD8"/><path d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" stroke="#3A6FD8" stroke-width="2" stroke-linecap="round"/></svg>';
+const SVG_SND_OFF = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#B0B8D0"/><path d="M16 9l6 6M22 9l-6 6" stroke="#E5484D" stroke-width="2" stroke-linecap="round"/></svg>';
+function renderSndBtn() { document.getElementById('snd-btn').innerHTML = soundOn ? SVG_SND_ON : SVG_SND_OFF; }
+function toggleSound() { soundOn = !soundOn; renderSndBtn(); if (!soundOn) { try { speechSynthesis.cancel(); } catch (e) {} } }
+
+/* ==================== 工具 ==================== */
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function fmt(sec) { sec = Math.max(0, Math.round(sec)); return String(Math.floor(sec / 60)).padStart(2, '0') + ':' + String(sec % 60).padStart(2, '0'); }
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  if (id === 'screen-home') document.getElementById('home-stars').textContent = '★ 我的星星：' + totalStars();
+}
+function showMask(id) { document.getElementById(id).classList.add('show'); }
+function closeMasks() { document.querySelectorAll('.mask').forEach(m => m.classList.remove('show')); }
+let toastT = null;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 1100);
+}
+
+/* ==================== 词库（含自定义） ==================== */
+function getPool(level) {
+  const custom = store.get('words_' + level, null);
+  if (custom && custom.length >= LEVELS[level].pairs) return custom;
+  return DEFAULT_BANKS[level];
+}
+// 洗牌队列抽词：保证同一难度连续开局单词组合不重复
+function drawPairs(level, n) {
+  const pool = getPool(level);
+  let q = (store.get('queue_' + level, []) || []).filter(i => i < pool.length);
+  if (q.length < n) { q = shuffle([...Array(pool.length).keys()]); }
+  const idx = q.splice(0, n);
+  store.set('queue_' + level, q);
+  return idx.map(i => pool[i]);
+}
+
+/* ==================== 难度选择 / 资料页 ==================== */
+function goLevels() {
+  const wrap = document.getElementById('level-list');
+  wrap.innerHTML = '';
+  LEVEL_ORDER.forEach((k, i) => {
+    const lv = LEVELS[k], locked = i > profile.unlocked;
+    const stars = profile.stars[k] || 0;
+    const el = document.createElement('button');
+    el.className = 'lv-card' + (locked ? ' locked' : '');
+    el.innerHTML =
+      '<div class="lv-badge" style="background:' + lv.color + '">' + lv.name[0] + '</div>' +
+      '<div class="lv-info"><div class="lv-name">' + lv.name + '</div><div class="lv-desc">' + lv.desc + '</div></div>' +
+      (locked ? '<div class="lv-lock">🔒 通关前一难度解锁</div>'
+              : '<div class="lv-stars">' + [1,2,3].map(s => '<span class="' + (s <= stars ? 'on' : '') + '">★</span>').join('') + '</div>');
+    if (!locked) el.onclick = () => openGame('single', k);
+    wrap.appendChild(el);
+  });
+  showScreen('screen-level');
+}
+function goProfile() {
+  document.getElementById('pf-total').textContent = totalStars();
+  const list = document.getElementById('pf-list');
+  list.innerHTML = '';
+  LEVEL_ORDER.forEach(k => {
+    const s = profile.stars[k] || 0;
+    const row = document.createElement('div');
+    row.className = 'pf-row';
+    row.innerHTML = '<span>' + LEVELS[k].name + '模式</span><span class="stars">' + [1,2,3].map(i => '<span class="' + (i <= s ? 'on' : '') + '">★</span>').join('') + '</span>';
+    list.appendChild(row);
+  });
+  showScreen('screen-profile');
+}
+function resetData() {
+  if (!confirm('确定要清空全部星星和游戏数据吗？')) return;
+  profile = { stars: { easy:0, basic:0, hard:0, devil:0 }, unlocked: 0 };
+  saveProfile();
+  LEVEL_ORDER.forEach(k => { store.del('queue_' + k); });
+  goProfile();
+}
+
+/* ==================== 导入词库 ==================== */
+let impLevel = 'easy';
+function goImport() {
+  const tabs = document.getElementById('imp-tabs');
+  tabs.innerHTML = '';
+  LEVEL_ORDER.forEach(k => {
+    const b = document.createElement('button');
+    b.className = 'tab' + (k === impLevel ? ' on' : '');
+    b.textContent = LEVELS[k].name;
+    b.onclick = () => { impLevel = k; goImport(); };
+    tabs.appendChild(b);
+  });
+  const pool = getPool(impLevel);
+  document.getElementById('imp-text').value = pool.map(p => p[0] + ',' + p[1]).join('\n');
+  const isCustom = !!store.get('words_' + impLevel, null);
+  document.getElementById('imp-info').textContent =
+    '当前：' + (isCustom ? '自定义词库' : '默认词库') + ' · 共 ' + pool.length + ' 组（该难度每局需 ' + LEVELS[impLevel].pairs + ' 组）';
+  showScreen('screen-import');
+}
+function saveImport() {
+  const lines = document.getElementById('imp-text').value.split('\n');
+  const out = [];
+  for (let line of lines) {
+    line = line.trim(); if (!line) continue;
+    let parts = line.split(/[,，\t]/).map(s => s.trim()).filter(Boolean);
+    if (parts.length < 2) parts = line.split(/\s+/).map(s => s.trim()).filter(Boolean);
+    if (parts.length >= 2) out.push([parts[0], parts.slice(1).join(' ')]);
+  }
+  if (out.length < LEVELS[impLevel].pairs) {
+    alert('有效单词不足！该难度每局需要 ' + LEVELS[impLevel].pairs + ' 组，请至少导入 ' + LEVELS[impLevel].pairs + ' 组。\n当前识别到 ' + out.length + ' 组。');
+    return;
+  }
+  store.set('words_' + impLevel, out);
+  store.del('queue_' + impLevel);
+  alert('保存成功！已导入 ' + out.length + ' 组单词。');
+  goImport();
+}
+function restoreDefault() {
+  store.del('words_' + impLevel);
+  store.del('queue_' + impLevel);
+  goImport();
+}
+
+/* ==================== 游戏对局 ==================== */
+let G = null; // 当前对局状态
+const board = document.getElementById('board');
+
+function openGame(mode, level, pkPairs) {
+  const lv = LEVELS[level];
+  const pairs = pkPairs || drawPairs(level, lv.pairs);
+  const timeLimit = mode === 'pk' ? (PK_TIME_OVERRIDE[level] || lv.time) : lv.time;
+  G = {
+    mode, level, pairs, total: pairs.length, timeLimit,
+    matched: 0, first: null, inputLock: false,
+    started: false, revived: false, warned: false, lastTickSec: -1,
+    startStamp: 0, bonus: 0, timerId: null, over: false,
+    pkOpp: 0, pkOppFinal: null
+  };
+  document.getElementById('pk-bars').style.display = mode === 'pk' ? 'block' : 'none';
+  document.getElementById('timer-label').textContent = timeLimit > 0 ? '剩余时间' : '已用时间';
+  document.getElementById('timer-num').textContent = timeLimit > 0 ? fmt(timeLimit) : '00:00';
+  document.getElementById('timer-num').classList.remove('danger');
+  document.getElementById('btn-start').style.display = mode === 'pk' ? 'none' : 'block';
+  buildBoard();
+  setBoardLocked(true);
+  updateProg();
+  if (mode === 'pk') { updatePkUI(); startPlay(); } // PK由房主发令，双方直接进入开始状态
+  showScreen('screen-game');
+  renderSndBtn();
+}
+
+function buildBoard() {
+  board.innerHTML = '';
+  const cards = [];
+  G.pairs.forEach((p, i) => {
+    cards.push({ t: 'en', id: i, txt: p[0] });
+    cards.push({ t: 'zh', id: i, txt: p[1] });
+  });
+  shuffle(cards);
+  cards.forEach(c => {
+    const el = document.createElement('button');
+    el.className = 'card ' + c.t;
+    el.textContent = c.txt;
+    el.dataset.id = c.id; el.dataset.t = c.t;
+    const len = c.txt.length;
+    if (c.t === 'en') el.classList.add(len <= 4 ? 'f-lg' : len <= 7 ? 'f-md' : 'f-sm');
+    else el.classList.add(len <= 3 ? 'f-lg' : len <= 5 ? 'f-md' : 'f-sm');
+    el.onclick = () => onCardTap(el);
+    board.appendChild(el);
+  });
+}
+function setBoardLocked(locked) {
+  board.classList.toggle('locked', locked);
+  document.getElementById('lock-hint').style.display = locked ? 'flex' : 'none';
+}
+
+function startGame() { // 点击「开始游戏」
+  if (!G || G.started) return;
+  setBoardLocked(false);
+  document.getElementById('btn-start').disabled = true;
+  document.getElementById('btn-start').textContent = '游戏中…';
+  startPlay();
+}
+function startPlay() { // 真正开始计时
+  G.started = true; G.over = false;
+  G.startStamp = Date.now(); G.bonus = 0; G.warned = false; G.lastTickSec = -1;
+  ac(); // 提前激活音频上下文（移动端需用户手势）
+  clearInterval(G.timerId);
+  G.timerId = setInterval(tick, 200);
+}
+function stopTimer() { if (G) { clearInterval(G.timerId); G.timerId = null; } }
+function elapsed() { return (Date.now() - G.startStamp) / 1000; }
+function remainTime() { return G.timeLimit + G.bonus - elapsed(); }
+
+function tick() {
+  if (!G || G.over) return;
+  const tn = document.getElementById('timer-num');
+  if (G.timeLimit > 0) {
+    const r = remainTime();
+    tn.textContent = fmt(r);
+    if (r <= 10 && r > 0) {
+      if (!G.warned) { G.warned = true; tn.classList.add('danger'); } // 10秒收尾提醒：数字变红
+      const s = Math.ceil(r);
+      if (s !== G.lastTickSec) { G.lastTickSec = s; sndTick(); }
+    } else if (r > 10 && G.warned) {
+      G.warned = false; tn.classList.remove('danger');
+    }
+    if (r <= 0) { tn.textContent = '00:00'; onTimeout(); }
+  } else {
+    tn.textContent = fmt(elapsed());
+  }
+}
+
+function onCardTap(el) {
+  if (!G || !G.started || G.over || G.inputLock) return;
+  if (el.classList.contains('gone')) return;
+  if (el.dataset.t === 'en') speak(el.textContent);
+  if (G.first === el) { el.classList.remove('sel'); G.first = null; return; }
+  if (G.first && G.first.dataset.t === el.dataset.t) { // 同类卡片：换选
+    G.first.classList.remove('sel');
+    el.classList.add('sel'); G.first = el; return;
+  }
+  el.classList.add('sel');
+  if (!G.first) { G.first = el; return; }
+  const a = G.first, b = el; G.first = null;
+  if (a.dataset.id === b.dataset.id) { // 匹配成功
+    sndOk();
+    G.inputLock = true;
+    setTimeout(() => { a.classList.add('gone'); b.classList.add('gone'); G.inputLock = false; }, 180);
+    G.matched++;
+    updateProg();
+    if (G.mode === 'pk' && conn && conn.open) conn.send({ type: 'progress', n: G.matched });
+    if (G.matched === G.total) onComplete();
+  } else { // 匹配失败
+    sndNo(); toast('匹配失败');
+    G.inputLock = true;
+    a.classList.add('shake'); b.classList.add('shake');
+    setTimeout(() => {
+      a.classList.remove('sel', 'shake'); b.classList.remove('sel', 'shake');
+      G.inputLock = false;
+    }, 420);
+  }
+}
+function updateProg() { document.getElementById('prog-num').textContent = G.matched + '/' + G.total; }
+
+/* ---------- 通关 & 星级 ---------- */
+function onComplete() {
+  stopTimer(); G.over = true;
+  const used = elapsed();
+  if (G.mode === 'pk') { // PK：率先清空者胜
+    if (conn && conn.open) conn.send({ type: 'finish', n: G.matched });
+    setTimeout(() => pkSettle(true), 200);
+    return;
+  }
+  sndWin();
+  const lv = LEVELS[G.level];
+  let stars = 1;
+  if (lv.time > 0) {
+    const r = used / lv.time;
+    stars = r <= 1 / 3 ? 3 : r <= 2 / 3 ? 2 : 1; // 前1/3→3星，中1/3→2星，后1/3→1星
+  }
+  const idx = LEVEL_ORDER.indexOf(G.level);
+  if (stars > (profile.stars[G.level] || 0)) profile.stars[G.level] = stars;
+  if (idx === profile.unlocked && profile.unlocked < LEVEL_ORDER.length - 1) profile.unlocked++;
+  saveProfile();
+  document.getElementById('r-title').textContent = '闯关成功！';
+  document.getElementById('r-stars').innerHTML = [1,2,3].map(s => '<span class="' + (s <= stars ? 'on' : '') + '">★</span>').join('');
+  document.getElementById('r-pairs').textContent = G.matched + '/' + G.total;
+  document.getElementById('r-time').textContent = Math.round(used) + ' 秒';
+  document.getElementById('r-star-num').textContent = '+' + stars + ' ★';
+  showMask('m-result');
+}
+
+/* ---------- 超时 → 复活 ---------- */
+function onTimeout() {
+  stopTimer();
+  if (G.mode === 'pk') { // PK无复活：按配对数定胜负
+    G.over = true;
+    if (conn && conn.open) conn.send({ type: 'tend', n: G.matched });
+    setTimeout(() => {
+      const op = G.pkOppFinal !== null ? G.pkOppFinal : G.pkOpp;
+      if (G.matched > op) pkSettle(true, op);
+      else if (G.matched < op) pkSettle(false, op);
+      else pkSettle(null, op);
+    }, 700);
+    return;
+  }
+  if (!G.revived) { showReviveQuiz(); }
+  else { gameFail(); }
+}
+function showReviveQuiz() {
+  G.revived = true;
+  const pool = G.pairs;
+  const answer = pool[Math.floor(Math.random() * pool.length)];
+  const others = shuffle(pool.filter(p => p !== answer)).slice(0, 3).map(p => p[1]);
+  const opts = shuffle([answer[1], ...others]);
+  document.getElementById('quiz-word').textContent = answer[0];
+  const box = document.getElementById('quiz-opts');
+  box.innerHTML = '';
+  opts.forEach(o => {
+    const b = document.createElement('button');
+    b.className = 'quiz-opt'; b.textContent = o;
+    b.onclick = () => {
+      if (o === answer[1]) {
+        b.classList.add('right'); sndOk();
+        setTimeout(() => {
+          closeMasks();
+          G.bonus += 15; // 复活+15秒
+          G.warned = false;
+          document.getElementById('timer-num').classList.remove('danger');
+          G.timerId = setInterval(tick, 200);
+        }, 450);
+      } else {
+        b.classList.add('wrong'); sndNo();
+        setTimeout(() => { closeMasks(); gameFail(); }, 600);
+      }
+    };
+    box.appendChild(b);
+  });
+  showMask('m-revive');
+}
+function reviveGiveUp() { closeMasks(); gameFail(); }
+function gameFail() {
+  G.over = true; stopTimer();
+  document.getElementById('f-pairs').textContent = G.matched + '/' + G.total;
+  showMask('m-fail');
+}
+function replayGame() {
+  closeMasks();
+  if (G.mode === 'pk') { cleanupPk(); showScreen('screen-pk'); return; }
+  openGame('single', G.level);
+}
+function exitGame() { // 点击「结束游戏」
+  stopTimer(); closeMasks();
+  if (G && G.mode === 'pk') { if (conn && conn.open) conn.send({ type: 'leave' }); cleanupPk(); showScreen('screen-home'); return; }
+  G = null;
+  showScreen('screen-level');
+  goLevels();
+}
+
+/* ==================== 双人联机 PK（PeerJS/WebRTC） ==================== */
+let peer = null, conn = null, isHost = false, pkLevelSel = 'easy';
+
+function pkGuard() {
+  if (typeof Peer === 'undefined') { alert('联机组件加载失败，请检查网络后刷新页面重试。'); return false; }
+  return true;
+}
+function pkCreate() {
+  if (!pkGuard()) return;
+  pkLevelSel = document.getElementById('pk-lv-sel').value;
+  isHost = true;
+  const code = String(Math.floor(1000 + Math.random() * 9000));
+  try { peer = new Peer('wmcc-' + code); } catch (e) { alert('联机初始化失败'); return; }
+  peer.on('open', () => {
+    document.getElementById('room-title').textContent = LEVELS[pkLevelSel].name + '难度 · 我是房主';
+    document.getElementById('room-code').textContent = code;
+    document.getElementById('room-status').textContent = '等待挑战者加入';
+    document.getElementById('room-status').classList.add('dotting');
+    document.getElementById('room-vs').style.display = 'none';
+    document.getElementById('room-start').style.display = 'none';
+    showScreen('screen-room');
+  });
+  peer.on('connection', c => {
+    conn = c;
+    conn.on('open', () => {
+      document.getElementById('room-status').textContent = '挑战者已加入！';
+      document.getElementById('room-status').classList.remove('dotting');
+      document.getElementById('room-vs').style.display = 'flex';
+      const sb = document.getElementById('room-start');
+      sb.style.display = 'block'; sb.disabled = false;
+    });
+    conn.on('data', onPkMsg);
+    conn.on('close', () => {});
+  });
+  peer.on('error', e => {
+    if (e.type === 'unavailable-id') pkCreate(); // 房间号撞车，重新生成
+    else if (e.type !== 'peer-unavailable') console.warn('peer error', e.type);
+  });
+}
+function pkJoin() {
+  if (!pkGuard()) return;
+  const code = document.getElementById('pk-code-input').value.trim();
+  if (!/^\d{4}$/.test(code)) { alert('请输入4位数字房间号'); return; }
+  isHost = false;
+  try { peer = new Peer(); } catch (e) { alert('联机初始化失败'); return; }
+  peer.on('open', () => {
+    conn = peer.connect('wmcc-' + code, { reliable: true });
+    conn.on('open', () => {
+      document.getElementById('room-title').textContent = '我是挑战者';
+      document.getElementById('room-code').textContent = code;
+      document.getElementById('room-status').textContent = '已加入，等待房主开始游戏';
+      document.getElementById('room-status').classList.add('dotting');
+      document.getElementById('room-vs').style.display = 'flex';
+      document.getElementById('room-vs').children[0].textContent = '房主';
+      document.getElementById('room-vs').children[2].textContent = '挑战者（你）';
+      document.getElementById('room-start').style.display = 'none';
+      showScreen('screen-room');
+    });
+    conn.on('data', onPkMsg);
+  });
+  peer.on('error', e => {
+    if (e.type === 'peer-unavailable') { alert('房间不存在，请核对房间号'); cleanupPk(); }
+  });
+}
+function pkHostStart() { // 房主点击开始：抽词并同步给挑战者
+  if (!conn || !conn.open) { alert('挑战者还未加入'); return; }
+  const pairs = drawPairs(pkLevelSel, LEVELS[pkLevelSel].pairs);
+  conn.send({ type: 'start', level: pkLevelSel, pairs });
+  openGame('pk', pkLevelSel, pairs);
+}
+function onPkMsg(m) {
+  if (!m || !m.type) return;
+  if (m.type === 'start') { openGame('pk', m.level, m.pairs); }
+  else if (m.type === 'progress') { if (G) { G.pkOpp = m.n; updatePkUI(); } }
+  else if (m.type === 'finish') { // 对方已清空 → 对方获胜，双方立即结算
+    if (G && !G.over) { G.over = true; stopTimer(); pkSettle(false, m.n); }
+  }
+  else if (m.type === 'tend') { if (G) G.pkOppFinal = m.n; }
+  else if (m.type === 'leave') {
+    closeMasks(); stopTimer();
+    if (G && !G.over) { alert('对方已退出对局'); }
+    G = null; cleanupPk(); showScreen('screen-home');
+  }
+}
+function updatePkUI() {
+  if (!G) return;
+  document.getElementById('pk-me-fill').style.width = (G.matched / G.total * 100) + '%';
+  document.getElementById('pk-op-fill').style.width = (G.pkOpp / G.total * 100) + '%';
+  document.getElementById('pk-me-cnt').textContent = G.matched + '/' + G.total;
+  document.getElementById('pk-op-cnt').textContent = G.pkOpp + '/' + G.total;
+}
+function pkSettle(iWon, oppN) {
+  stopTimer(); if (G) G.over = true;
+  const op = oppN !== undefined ? oppN : (G ? G.pkOpp : 0);
+  const mine = G ? G.matched : 0;
+  let title, sub;
+  if (iWon === null) { title = '平局！'; sub = '双方势均力敌'; }
+  else if (iWon) { title = '🏆 ' + (isHost ? '房主' : '挑战者') + '获胜！'; sub = '你赢啦，太棒了！'; sndWin(); }
+  else { title = (isHost ? '挑战者' : '房主') + '获胜'; sub = '别灰心，再接再厉！'; }
+  document.getElementById('pk-title').textContent = title;
+  document.getElementById('pk-detail').innerHTML = '<span class="vs-tag">' + sub + '</span>';
+  document.getElementById('pk-my-num').textContent = mine + '/' + (G ? G.total : 0);
+  document.getElementById('pk-op-num').textContent = op + '/' + (G ? G.total : 0);
+  showMask('m-pk');
+}
+function pkLeaveRoom() {
+  if (conn && conn.open) conn.send({ type: 'leave' });
+  cleanupPk(); showScreen('screen-pk');
+}
+function cleanupPk() {
+  try { if (conn) conn.close(); } catch (e) {}
+  try { if (peer) peer.destroy(); } catch (e) {}
+  conn = null; peer = null;
+  if (G && G.mode === 'pk') { stopTimer(); G = null; }
+}
+
+/* ==================== 初始化 ==================== */
+document.getElementById('home-stars').textContent = '★ 我的星星：' + totalStars();
+renderSndBtn();
+</script>
+</body>
+</html>

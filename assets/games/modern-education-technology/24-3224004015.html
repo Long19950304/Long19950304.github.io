@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>单词切水果 · Unit1</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    height: 100%;
+    background: #070d18;
+    font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    user-select: none;
+  }
+  #stage { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  #cv {
+    display: block; border-radius: 18px;
+    box-shadow: 0 24px 70px rgba(0,0,0,.7), 0 0 0 1px rgba(120,180,255,.12);
+    touch-action: none; cursor: crosshair;
+  }
+  #cv.hidden { display: none; }
+
+  /* ============ 通用遮罩 ============ */
+  .overlay {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 18px;
+    background: radial-gradient(circle at 50% 35%, rgba(30,60,110,.85), rgba(5,10,20,.95));
+    backdrop-filter: blur(6px);
+    z-index: 10; overflow-y: auto;
+  }
+  .overlay.hidden { display: none; }
+
+  .card {
+    width: min(720px, 100%);
+    background: linear-gradient(180deg, #14233d, #0d1728);
+    border: 1px solid rgba(120,180,255,.22);
+    border-radius: 26px;
+    padding: 26px 26px 22px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.6);
+    color: #e8f0ff;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 30px; letter-spacing: 1px; text-align: center;
+    background: linear-gradient(90deg,#7ee8a2,#6fb8ff,#c99cff);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    margin-bottom: 4px;
+  }
+  .sub { text-align: center; color: #7d92b5; font-size: 13px; margin-bottom: 20px; }
+
+  .group { margin-bottom: 16px; }
+  .group > label {
+    display: block; font-size: 13px; color: #8fa6c9;
+    margin-bottom: 8px; font-weight: 600; letter-spacing: .5px;
+  }
+  .group > label .tag { color: #6ee7b7; font-weight: 400; font-size: 12px; }
+  .opts { display: flex; gap: 10px; flex-wrap: wrap; }
+  .opt {
+    flex: 1 1 0; min-width: 120px;
+    padding: 12px 10px; text-align: center;
+    font-size: 15px; font-weight: 700;
+    color: #a9bee0;
+    background: rgba(255,255,255,.04);
+    border: 2px solid rgba(255,255,255,.09);
+    border-radius: 14px; cursor: pointer; transition: .18s;
+  }
+  .opt:hover { background: rgba(255,255,255,.08); color: #dfeaff; }
+  .opt.on {
+    background: linear-gradient(180deg, rgba(110,231,183,.22), rgba(110,231,183,.08));
+    border-color: #6ee7b7; color: #b8ffdc;
+    box-shadow: 0 0 22px rgba(110,231,183,.25);
+  }
+
+  .btn {
+    padding: 12px 20px; border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+    color: #d8e6ff; font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: .18s; font-family: inherit;
+  }
+  .btn:hover { background: rgba(255,255,255,.13); }
+  .btn.primary {
+    background: linear-gradient(180deg, #43d98a, #22a866);
+    border-color: transparent; color: #062415;
+    box-shadow: 0 10px 26px rgba(52,211,153,.35);
+  }
+  .btn.primary:hover { filter: brightness(1.1); }
+  .btn.big { width: 100%; padding: 16px; font-size: 18px; margin-top: 6px; }
+  .btn.small { padding: 9px 16px; font-size: 13px; border-radius: 11px; }
+
+  .row-btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+  .row-btns .btn { flex: 1 1 140px; }
+
+  /* ============ 表单 ============ */
+  .field { margin-bottom: 12px; }
+  .input {
+    width: 100%; padding: 12px 14px; border-radius: 12px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.12);
+    color: #e8f0ff; font-size: 14px; font-family: inherit; outline: none;
+    transition: .18s;
+  }
+  .input::placeholder { color: #55688a; }
+  .input:focus { border-color: rgba(110,231,183,.6); background: rgba(255,255,255,.08); }
+  .input.area { min-height: 118px; resize: vertical; line-height: 1.7; }
+
+  .filebtn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 11px 18px; border-radius: 12px; cursor: pointer;
+    background: rgba(255,255,255,.06);
+    border: 1px dashed rgba(120,180,255,.4);
+    color: #b8d4ff; font-size: 14px; font-weight: 600;
+    transition: .18s;
+  }
+  .filebtn:hover { background: rgba(255,255,255,.11); }
+
+  .hint { font-size: 12px; color: #7d92b5; margin-top: 8px; display: block; line-height: 1.6; }
+  .hint.err { color: #ff8a8a; }
+  .hint.ok  { color: #6ee7b7; }
+
+  .unit-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 12px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    margin-bottom: 8px; font-size: 14px;
+  }
+  .unit-item .nm { flex: 1; color: #d8e6ff; font-weight: 700; }
+  .unit-item .ct { color: #7d92b5; font-size: 12px; }
+  .unit-item .del {
+    background: rgba(255,90,90,.15); border: 1px solid rgba(255,90,90,.35);
+    color: #ff8a8a; border-radius: 8px; padding: 4px 10px;
+    font-size: 12px; cursor: pointer; font-family: inherit; transition: .18s;
+  }
+  .unit-item .del:hover { background: rgba(255,90,90,.28); }
+
+  /* ============ 结算 ============ */
+  .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .stat {
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 14px; padding: 12px 6px; text-align: center;
+  }
+  .stat b { display: block; font-size: 24px; color: #7ee8a2; }
+  .stat span { font-size: 12px; color: #7d92b5; }
+
+  .medal {
+    text-align: center; font-size: 22px; font-weight: 800;
+    padding: 14px; border-radius: 16px; margin: 14px 0;
+    background: linear-gradient(90deg, rgba(255,215,0,.14), rgba(255,140,0,.08));
+    border: 1px solid rgba(255,215,0,.3);
+    color: #ffd85e;
+  }
+
+  .duel-result { display: flex; gap: 12px; margin: 16px 0; }
+  .duel-side { flex: 1; border-radius: 16px; padding: 14px; text-align: center; border: 2px solid transparent; }
+  .duel-side.red  { background: rgba(255,90,90,.1);  border-color: rgba(255,90,90,.35); }
+  .duel-side.blue { background: rgba(90,150,255,.1); border-color: rgba(90,150,255,.35); }
+  .duel-side b { display: block; font-size: 34px; margin: 6px 0; }
+  .duel-side.red b  { color: #ff8a8a; }
+  .duel-side.blue b { color: #8ab6ff; }
+  .duel-side small { color: #7d92b5; font-size: 12px; line-height: 1.6; }
+  .winner-tag { text-align: center; font-size: 22px; font-weight: 800; color: #ffd85e; margin: 6px 0 10px; }
+
+  h3 { font-size: 14px; color: #8fa6c9; margin: 16px 0 8px; font-weight: 700; }
+  .mis-list { list-style: none; display: flex; flex-direction: column; gap: 6px; max-height: 220px; overflow-y: auto; }
+  .mis-list li {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(255,90,90,.08);
+    border-left: 3px solid rgba(255,90,90,.5);
+    padding: 9px 12px; border-radius: 9px; font-size: 14px;
+  }
+  .mis-list li b { color: #ffb3b3; min-width: 110px; }
+  .mis-list li span { color: #9fb3d1; flex: 1; }
+  .mis-list li i { font-style: normal; color: #ff8a8a; font-size: 12px; }
+  .empty { color: #6ee7b7; font-size: 14px; padding: 10px 0; }
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="cv" class="hidden"></canvas>
+</div>
+
+<!-- ==================== 首页 ==================== -->
+<div id="home" class="overlay">
+  <div class="card">
+    <h1>🍉 单词切水果</h1>
+    <p class="sub">五年级上册 · Unit1 · 滑动鼠标切出正确答案</p>
+
+    <div class="group">
+      <label>① 游戏模式</label>
+      <div class="opts" id="optMode">
+        <div class="opt on" data-v="single">👤 单人模式</div>
+        <div class="opt" data-v="duel">⚔️ 双人 PK</div>
+      </div>
+    </div>
+
+    <div class="group">
+      <label>② 出题方向</label>
+      <div class="opts" id="optDir">
+        <div class="opt on" data-v="zh2en">中 → 切英文</div>
+        <div class="opt" data-v="en2zh">英 → 切中文</div>
+      </div>
+    </div>
+
+    <div class="group">
+      <label>③ 单词范围 <span class="tag">（可多选）</span></label>
+      <div class="opts" id="optUnit"></div>
+      <button class="btn small" id="btnUnits" style="margin-top:10px">📚 管理单词库 / 导入单元</button>
+    </div>
+
+    <div class="group">
+      <label>④ 难度（水果数量）</label>
+      <div class="opts" id="optDiff">
+        <div class="opt" data-v="3">简单 · 3 个水果</div>
+        <div class="opt on" data-v="4">困难 · 4 个水果</div>
+      </div>
+    </div>
+
+    <div class="row-btns">
+      <button class="btn" id="btnSound">🔊 音效：开</button>
+      <button class="btn" id="btnRules">📖 玩法规则</button>
+      <button class="btn" id="btnBook">📕 错题本</button>
+    </div>
+
+    <button class="btn primary big" id="btnStart">开始游戏</button>
+  </div>
+</div>
+
+<!-- ==================== 单词库管理 ==================== -->
+<div id="units" class="overlay hidden">
+  <div class="card">
+    <h1 style="font-size:24px">📚 单词库管理</h1>
+    <p class="sub">导入不同单元的单词，支持 TXT / CSV / JSON / 直接粘贴</p>
+
+    <h3>已有单元</h3>
+    <div id="unitList"></div>
+
+    <h3>导入新单元</h3>
+
+    <div class="field">
+      <input id="unitName" class="input" placeholder="单元名称，例如：Unit 2 / 五年级下册 Unit 3">
+    </div>
+
+    <div class="field">
+      <textarea id="unitText" class="input area" spellcheck="false"
+placeholder="每行一个单词，以下格式全部支持：
+
+team 团队
+player, 选手
+clever = 聪明的
+robot：机器人
+Australia　澳大利亚
+聪明的 clever
+hard-working 努力的
+
+也可以直接粘贴 JSON：
+[{&quot;en&quot;:&quot;team&quot;,&quot;zh&quot;:&quot;团队&quot;}]"></textarea>
+    </div>
+
+    <div class="field">
+      <label class="filebtn">
+        📎 选择文件导入（可多选）
+        <input type="file" id="unitFile" accept=".txt,.csv,.tsv,.json,.md,text/plain,application/json" multiple hidden>
+      </label>
+      <span id="fileName" class="hint"></span>
+    </div>
+
+    <div id="importMsg" class="hint"></div>
+
+    <div class="row-btns">
+      <button class="btn primary" id="btnDoImport">✅ 导入并添加单元</button>
+      <button class="btn" id="btnCloseUnits">返回首页</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 结算 ==================== -->
+<div id="result" class="overlay hidden">
+  <div class="card" id="resultCard"></div>
+</div>
+
+<!-- ==================== 错题本 ==================== -->
+<div id="book" class="overlay hidden">
+  <div class="card">
+    <h1 style="font-size:24px">📕 错题本</h1>
+    <p class="sub">答错的单词会自动收进这里，反复复习效果更好</p>
+    <div id="bookBody"></div>
+    <div class="row-btns">
+      <button class="btn" id="btnClearBook">清空错题本</button>
+      <button class="btn primary" id="btnCloseBook">返回</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   一、单词库 & 游戏参数 —— 全部可在这里修改
+   ---------------------------------------------------------------------
+   ★ 换单词：直接改下面的 WORDS 数组，或用首页的「管理单词库」导入新单元
+   ★ 调速度：改 CONFIG.GRAVITY（越小飞得越慢、飘得越久）
+            配合 SPEED_MIN / SPEED_MAX（初始向上速度，越小越慢）
+   ★ 改时长：改 CONFIG.DURATION（单位：秒）
+   ★ 改选项：改 CONFIG.OPTIONS（3 = 简单 / 4 = 困难）
+   ===================================================================== */
+const WORDS = [
+  { en: 'team',         zh: '团队' },
+  { en: 'player',       zh: '运动员；选手' },
+  { en: 'him',          zh: '他（宾格）' },
+  { en: 'lovely',       zh: '可爱的' },
+  { en: 'clever',       zh: '聪明的' },
+  { en: 'young',        zh: '年轻的' },
+  { en: 'hard-working', zh: '努力的' },
+  { en: 'science',      zh: '科学' },
+  { en: 'robot',        zh: '机器人' },
+  { en: 'jump',         zh: '跳' },
+  { en: 'rope',         zh: '绳子' },
+  { en: 'piano',        zh: '钢琴' },
+  { en: 'chess',        zh: '国际象棋' },
+  { en: 'front',        zh: '前面' },
+  { en: 'easy',         zh: '容易的' },
+  { en: 'star',         zh: '星星' },
+  { en: 'wonderful',    zh: '精彩的' },
+  { en: 'Australia',    zh: '澳大利亚' },
+];
+
+const CONFIG = {
+  W: 1000,
+  H: 640,
+
+  DURATION: 60,        // ★ 每局时长（秒）
+  READY: 3,            // 开局 3 秒倒计时
+
+  /* ---------- ★★★ 水果飞行速度：数值越小，飞得越慢 ★★★ ---------- */
+  GRAVITY: 0.135,      // 重力加速度（之前 0.155，已调慢）
+  SPEED_MIN: 9.6,      // 初始向上速度最小值（之前 10.8）
+  SPEED_MAX: 11.2,     // 初始向上速度最大值（之前 12.4）
+  /* ------------------------------------------------------------- */
+
+  RUSH_TIME: 20,       // 剩余多少秒开始加速
+  RUSH_MULT: 1.10,     // 加速倍率
+
+  SCORE_RIGHT: 10,
+  SCORE_COMBO: 15,     // 连击 ≥3 时每题得分
+  SCORE_WRONG: -5,
+  COMBO_MIN: 3,
+
+  OPTIONS: 4,          // 每题水果数量（3=简单 / 4=困难）
+};
+
+const FONT = '"PingFang SC","Microsoft YaHei",system-ui,sans-serif';
+
+const FRUIT_STYLE = {
+  apple:      { c1: '#ff8f8f', c2: '#d63030', c3: '#8b1a1a', kind: 'apple' },
+  orange:     { c1: '#ffcc85', c2: '#f2711c', c3: '#b34700', kind: 'orange' },
+  banana:     { c1: '#fff09a', c2: '#f2b705', c3: '#c98f00', kind: 'banana' },
+  watermelon: { c1: '#9df0ab', c2: '#31a04a', c3: '#175c28', kind: 'watermelon' },
+};
+
+/* =====================================================================
+   二、工具函数
+   ===================================================================== */
+const rand  = (a, b) => a + Math.random() * (b - a);
+const pick  = arr => arr[Math.floor(Math.random() * arr.length)];
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function pointSegDist(px, py, x1, y1, x2, y2) {
+  const dx = x2 - x1, dy = y2 - y1;
+  const len2 = dx * dx + dy * dy;
+  if (len2 === 0) return Math.hypot(px - x1, py - y1);
+  let t = ((px - x1) * dx + (py - y1) * dy) / len2;
+  t = clamp(t, 0, 1);
+  return Math.hypot(px - (x1 + t * dx), py - (y1 + t * dy));
+}
+function roundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y,     x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x,     y + h, r);
+  ctx.arcTo(x,     y + h, x,     y,     r);
+  ctx.arcTo(x,     y,     x + w, y,     r);
+  ctx.closePath();
+}
+
+/* =====================================================================
+   三、音效（WebAudio 合成，无需外部文件）
+   ===================================================================== */
+let audioCtx = null;
+function initAudio() {
+  if (!audioCtx) {
+    try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {}
+  }
+  if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+}
+function beep(freq, when, dur, type = 'sine', vol = 0.14) {
+  if (!audioCtx) return;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = type;
+  o.frequency.setValueAtTime(freq, when);
+  g.gain.setValueAtTime(0, when);
+  g.gain.linearRampToValueAtTime(vol, when + 0.012);
+  g.gain.exponentialRampToValueAtTime(0.0001, when + dur);
+  o.connect(g); g.connect(audioCtx.destination);
+  o.start(when); o.stop(when + dur + 0.05);
+}
+function playSound(kind) {
+  if (!G.soundOn) return;
+  initAudio();
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  switch (kind) {
+    case 'correct':
+      beep(680, t, 0.12, 'sine', 0.16);
+      beep(1020, t + 0.09, 0.16, 'sine', 0.13);
+      break;
+    case 'wrong':
+      beep(190, t, 0.22, 'sawtooth', 0.10);
+      beep(140, t + 0.06, 0.22, 'sawtooth', 0.08);
+      break;
+    case 'combo':
+      beep(880, t, 0.09, 'triangle', 0.12);
+      beep(1180, t + 0.07, 0.12, 'triangle', 0.11);
+      beep(1480, t + 0.14, 0.16, 'triangle', 0.10);
+      break;
+    case 'count': beep(560, t, 0.09, 'square', 0.07); break;
+    case 'start':
+      beep(760, t, 0.12, 'square', 0.09);
+      beep(1140, t + 0.11, 0.22, 'square', 0.08);
+      break;
+    case 'end':
+      beep(700, t, 0.14);
+      beep(520, t + 0.14, 0.14);
+      beep(360, t + 0.28, 0.30);
+      break;
+  }
+}
+
+/* =====================================================================
+   四、Canvas 初始化
+   ===================================================================== */
+const cv  = document.getElementById('cv');
+const ctx = cv.getContext('2d');
+const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+cv.width  = CONFIG.W * DPR;
+cv.height = CONFIG.H * DPR;
+ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+
+function fitCanvas() {
+  const s = Math.min(
+    (window.innerWidth  - 16) / CONFIG.W,
+    (window.innerHeight - 16) / CONFIG.H
+  );
+  cv.style.width  = Math.round(CONFIG.W * s) + 'px';
+  cv.style.height = Math.round(CONFIG.H * s) + 'px';
+}
+window.addEventListener('resize', fitCanvas);
+fitCanvas();
+
+function toCanvas(e) {
+  const r = cv.getBoundingClientRect();
+  return {
+    x: (e.clientX - r.left) / r.width  * CONFIG.W,
+    y: (e.clientY - r.top)  / r.height * CONFIG.H,
+  };
+}
+function fitFontSize(text, maxW, maxSize) {
+  let fs = maxSize;
+  while (fs > 9) {
+    ctx.font = `800 ${fs}px ${FONT}`;
+    if (ctx.measureText(text).width <= maxW) break;
+    fs -= 1;
+  }
+  return fs;
+}
+
+/* =====================================================================
+   五、游戏状态
+   ===================================================================== */
+const G = {
+  phase: 'home',      // home | ready | playing | over
+  mode: 'single',     // single | duel
+  dir: 'zh2en',       // zh2en | en2zh
+  soundOn: true,
+  options: 4,
+
+  pool: WORDS.slice(),          // 当前生效的单词池
+  selectedUnits: new Set(['u1']), // 已选中的单元 id
+
+  timeLeft: CONFIG.DURATION,
+  readyT: 0,
+
+  players: [],
+  particles: [],
+  trail: [],
+  pointerDown: false,
+  lastPt: null,
+  shake: 0,
+};
+
+function makePlayer(idx, zone, name, color) {
+  return {
+    idx, zone, name, color,
+    score: 0, correct: 0, wrong: 0,
+    streak: 0, maxStreak: 0,
+    mistakes: [], fruits: [], floats: [],
+    question: null, respawnT: 0, nextIsNew: false,
+  };
+}
+
+/* =====================================================================
+   六、★★★ 单词库：多单元管理 + 多格式导入 ★★★
+   ===================================================================== */
+const UNITS_KEY = 'word_slicer_units_v1';
+
+const DEFAULT_UNIT = {
+  id: 'u1',
+  name: 'Unit 1',
+  builtin: true,
+  words: WORDS.map(w => ({ en: w.en, zh: w.zh })),
+};
+
+let UNIT_LIST = [];
+
+/* ---------- 6.1 单元读写 ---------- */
+function loadUnits() {
+  let custom = [];
+  try {
+    const raw = localStorage.getItem(UNITS_KEY);
+    if (raw) {
+      const arr = JSON.parse(raw);
+      if (Array.isArray(arr)) {
+        custom = arr
+          .filter(u => u && u.name && Array.isArray(u.words) && u.words.length)
+          .map(u => ({
+            id: u.id || ('u_' + Math.random().toString(36).slice(2, 9)),
+            name: String(u.name),
+            words: u.words
+              .map(w => ({ en: String(w.en || '').trim(), zh: String(w.zh || '').trim() }))
+              .filter(w => w.en && w.zh),
+          }))
+          .filter(u => u.words.length);
+      }
+    }
+  } catch (e) { /* ignore */ }
+  UNIT_LIST = [DEFAULT_UNIT, ...custom];
+}
+
+function saveUnits() {
+  const custom = UNIT_LIST.filter(u => !u.builtin);
+  try { localStorage.setItem(UNITS_KEY, JSON.stringify(custom)); } catch (e) {}
+}
+
+/* ---------- 6.2 去重 / 字段归一 ---------- */
+function dedupeWords(list) {
+  const seen = new Set();
+  const out = [];
+  for (const w of list) {
+    const key = w.en.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(w);
+  }
+  return out;
+}
+
+function normWordObj(o) {
+  const get = keys => {
+    for (const k of keys) {
+      if (o[k] != null && String(o[k]).trim() !== '') return String(o[k]).trim();
+    }
+    return '';
+  };
+  const en = get(['en', 'word', 'english', 'en_word', '英文', '单词']);
+  const zh = get(['zh', 'cn', 'meaning', 'chinese', 'trans', '中文', '释义', '意思', '翻译']);
+  if (en && zh) return { en, zh };
+  return null;
+}
+
+/* ---------- 6.3 单行解析：支持多种分隔与顺序 ---------- */
+const CJK_RE = /[\u4e00-\u9fa5]/;
+
+function parseLine(raw) {
+  if (raw == null) return null;
+  let line = String(raw).replace(/^\uFEFF/, '').trim();
+  if (!line) return null;
+
+  // 去掉列表符号 / 编号："1." "1)" "- " "• " "* "
+  line = line.replace(/^\s*(?:\d+[.、)）]\s*|[-*•·]\s+)/, '').trim();
+  if (!line) return null;
+
+  // 注释 / Markdown 标题
+  if (line.startsWith('#') || line.startsWith('//')) return null;
+
+  // 跳过表头（word,meaning / 单词,释义 …）
+  if (/^(word|english|单词|英文|序号|no\.?)\b/i.test(line) &&
+      /(meaning|chinese|trans|释义|中文|意思|翻译)/i.test(line)) return null;
+
+  const firstCJK = line.search(CJK_RE);
+
+  // 形式①：英文在前，中文在后 —— "team 团队" / "clever, 聪明的" / "robot：机器人"
+  if (firstCJK > 0) {
+    const en = line.slice(0, firstCJK)
+      .replace(/[\s,，、\t=:：|｜\-—–]+$/, '').trim();
+    const zh = line.slice(firstCJK)
+      .replace(/^[\s,，、\t=:：|｜\-—–]+/, '').trim();
+    if (en && zh && /[a-zA-Z]/.test(en)) return { en, zh };
+  }
+
+  // 形式②：中文在前，英文在后 —— "聪明的 clever" / "团队 team"
+  if (firstCJK === 0) {
+    const m = line.match(/^(.+?)[\s,，、\t=:：|｜]+([a-zA-Z][a-zA-Z\s\-'’.]*)$/);
+    if (m) {
+      const zh = m[1].replace(/[\s,，、\t=:：|｜]+$/, '').trim();
+      const en = m[2].trim();
+      if (zh && en) return { en, zh };
+    }
+  }
+
+  // 形式③：纯分隔符切分 —— "team,团队" / "team = 团队"
+  const parts = line.split(/\s*[,，、\t=:：|｜]+\s*/).filter(Boolean);
+  if (parts.length >= 2) {
+    const a = parts[0].trim();
+    const b = parts.slice(1).join(' ').trim();
+    if (a && b) {
+      if (CJK_RE.test(a) && !CJK_RE.test(b)) return { en: b, zh: a };
+      return { en: a, zh: b };
+    }
+  }
+
+  return null; // 只有单词没有释义的行丢弃
+}
+
+/* ---------- 6.4 整段文本解析：自动识别 JSON / 文本 ---------- */
+function parseWordList(text) {
+  if (!text) return [];
+  text = String(text).replace(/^\uFEFF/, '').trim();
+  if (!text) return [];
+
+  // —— JSON 形式 ——
+  if (/^[\[{]/.test(text)) {
+    try {
+      const data = JSON.parse(text);
+      const out = [];
+
+      if (Array.isArray(data)) {
+        data.forEach(item => {
+          if (typeof item === 'string') {
+            const p = parseLine(item);
+            if (p) out.push(p);
+          } else if (item && typeof item === 'object') {
+            const w = normWordObj(item);
+            if (w) out.push(w);
+          }
+        });
+        return dedupeWords(out);
+      }
+
+      if (data && typeof data === 'object') {
+        Object.entries(data).forEach(([k, v]) => {
+          const en = String(k).trim();
+          if (!en) return;
+          if (typeof v === 'string' && v.trim()) {
+            out.push({ en, zh: v.trim() });
+          } else if (Array.isArray(v)) {
+            v.forEach(x => {
+              if (typeof x === 'string' && x.trim()) out.push({ en, zh: x.trim() });
+            });
+          }
+        });
+        return dedupeWords(out);
+      }
+    } catch (e) { /* 不是合法 JSON，走文本解析 */ }
+  }
+
+  // —— 逐行文本形式 ——
+  const out = [];
+  text.split(/\r?\n/).forEach(line => {
+    const w = parseLine(line);
+    if (w) out.push(w);
+  });
+  return dedupeWords(out);
+}
+
+/* ---------- 6.5 取当前生效的单词池 ---------- */
+function getActiveWords() {
+  const out = [], seen = new Set();
+  UNIT_LIST.forEach(u => {
+    if (!G.selectedUnits.has(u.id)) return;
+    u.words.forEach(w => {
+      const k = w.en.toLowerCase();
+      if (seen.has(k)) return;
+      seen.add(k);
+      out.push(w);
+    });
+  });
+  return out.length ? out : WORDS.slice();
+}
+
+/* ---------- 6.6 首页单元选项渲染 ---------- */
+function renderUnitOptions() {
+  const box = document.getElementById('optUnit');
+  box.innerHTML = '';
+
+  UNIT_LIST.forEach(u => {
+    const el = document.createElement('div');
+    el.className = 'opt';
+    el.dataset.v = u.id;
+    el.textContent = `${u.name}（${u.words.length} 词）`;
+    box.appendChild(el);
+  });
+
+  const all = document.createElement('div');
+  all.className = 'opt';
+  all.dataset.v = '__all__';
+  all.textContent = '全部单词';
+  box.appendChild(all);
+
+  syncUnitSelectionUI();
+}
+
+function syncUnitSelectionUI() {
+  const box = document.getElementById('optUnit');
+  const ids = [...box.children].map(c => c.dataset.v).filter(v => v !== '__all__');
+  const allSel = ids.length > 0 && ids.every(id => G.selectedUnits.has(id));
+
+  [...box.children].forEach(c => {
+    if (c.dataset.v === '__all__') c.classList.toggle('on', allSel);
+    else c.classList.toggle('on', G.selectedUnits.has(c.dataset.v));
+  });
+}
+
+document.getElementById('optUnit').addEventListener('click', e => {
+  const el = e.target.closest('.opt');
+  if (!el) return;
+  const v = el.dataset.v;
+
+  if (v === '__all__') {
+    const ids = [...document.getElementById('optUnit').children]
+      .map(c => c.dataset.v).filter(x => x !== '__all__');
+    const allSel = ids.every(id => G.selectedUnits.has(id));
+    if (allSel) G.selectedUnits.clear();
+    else ids.forEach(id => G.selectedUnits.add(id));
+  } else {
+    if (G.selectedUnits.has(v)) G.selectedUnits.delete(v);
+    else G.selectedUnits.add(v);
+  }
+
+  if (G.selectedUnits.size === 0 && UNIT_LIST.length) {
+    G.selectedUnits.add(UNIT_LIST[0].id);
+  }
+  syncUnitSelectionUI();
+});
+
+/* ---------- 6.7 管理弹窗 ---------- */
+const unitsEl = document.getElementById('units');
+
+function renderUnitList() {
+  const box = document.getElementById('unitList');
+  box.innerHTML = '';
+  UNIT_LIST.forEach(u => {
+    const row = document.createElement('div');
+    row.className = 'unit-item';
+    row.innerHTML = `
+      <span class="nm">${u.name}</span>
+      <span class="ct">${u.words.length} 个单词</span>
+    `;
+    if (!u.builtin) {
+      const del = document.createElement('button');
+      del.className = 'del';
+      del.textContent = '删除';
+      del.onclick = () => {
+        if (!confirm(`确定删除「${u.name}」吗？`)) return;
+        UNIT_LIST = UNIT_LIST.filter(x => x.id !== u.id);
+        G.selectedUnits.delete(u.id);
+        if (G.selectedUnits.size === 0 && UNIT_LIST.length) {
+          G.selectedUnits.add(UNIT_LIST[0].id);
+        }
+        saveUnits();
+        renderUnitList();
+        renderUnitOptions();
+      };
+      row.appendChild(del);
+    }
+    box.appendChild(row);
+  });
+}
+
+document.getElementById('btnUnits').addEventListener('click', () => {
+  renderUnitList();
+  document.getElementById('importMsg').textContent = '';
+  document.getElementById('importMsg').className = 'hint';
+  unitsEl.classList.remove('hidden');
+});
+
+document.getElementById('btnCloseUnits').addEventListener('click', () => {
+  unitsEl.classList.add('hidden');
+});
+
+/* 文件选择后显示文件名 */
+document.getElementById('unitFile').addEventListener('change', e => {
+  const files = Array.from(e.target.files || []);
+  document.getElementById('fileName').textContent =
+    files.length ? '已选择：' + files.map(f => f.name).join('、') : '';
+});
+
+/* 执行导入 */
+document.getElementById('btnDoImport').addEventListener('click', async () => {
+  const msgEl = document.getElementById('importMsg');
+  const setMsg = (t, cls = '') => { msgEl.textContent = t; msgEl.className = 'hint ' + cls; };
+
+  const nameInput = document.getElementById('unitName');
+  const textInput = document.getElementById('unitText');
+  const fileInput = document.getElementById('unitFile');
+
+  let words = [];
+
+  // 1) 解析文件
+  const files = Array.from(fileInput.files || []);
+  for (const f of files) {
+    try {
+      const t = await f.text();
+      words = words.concat(parseWordList(t));
+    } catch (err) {
+      setMsg(`读取文件「${f.name}」失败`, 'err');
+    }
+  }
+
+  // 2) 解析粘贴文本
+  const pasted = textInput.value;
+  if (pasted && pasted.trim()) {
+    words = words.concat(parseWordList(pasted));
+  }
+
+  words = dedupeWords(words);
+
+  if (!words.length) {
+    setMsg('没有解析到有效单词。请确认每行都包含「英文 + 中文释义」，例如：team 团队', 'err');
+    return;
+  }
+
+  // 3) 生成单元
+  let name = nameInput.value.trim();
+  if (!name) {
+    let n = 2;
+    while (UNIT_LIST.some(u => u.name === `自定义单元 ${n}`)) n++;
+    name = `自定义单元 ${n}`;
+  }
+
+  const unit = {
+    id: 'u_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5),
+    name,
+    words,
+  };
+  UNIT_LIST.push(unit);
+  G.selectedUnits.add(unit.id);
+  saveUnits();
+
+  renderUnitList();
+  renderUnitOptions();
+
+  // 4) 清空输入
+  nameInput.value = '';
+  textInput.value = '';
+  fileInput.value = '';
+  document.getElementById('fileName').textContent = '';
+
+  setMsg(`✅ 已导入「${name}」，共 ${words.length} 个单词，已自动勾选`, 'ok');
+});
+
+/* =====================================================================
+   七、出题 & 生成水果
+   ===================================================================== */
+function newQuestion(p) {
+  const pool = G.pool;
+  const target = pick(pool);
+  const zh2en = (G.dir === 'zh2en');
+
+  const others = pool.filter(w => w.en !== target.en);
+  shuffle(others);
+  const distractors = others.slice(0, Math.max(0, G.options - 1));
+
+  const opts = [
+    { text: zh2en ? target.en : target.zh, correct: true },
+    ...distractors.map(w => ({ text: zh2en ? w.en : w.zh, correct: false })),
+  ];
+  shuffle(opts);
+
+  p.question = {
+    prompt: zh2en ? target.zh : target.en,
+    target,
+    opts,
+  };
+  spawnFruits(p);
+}
+
+function spawnFruits(p) {
+  const q = p.question;
+  if (!q) return;
+
+  p.fruits = [];
+
+  const n = q.opts.length;
+  const { x0, x1 } = p.zone;
+  const span = x1 - x0;
+  const rush = (G.timeLeft <= CONFIG.RUSH_TIME) ? CONFIG.RUSH_MULT : 1;
+  const isSingle = (G.mode === 'single');
+
+  const slots = [];
+  for (let i = 0; i < n; i++) {
+    slots.push(x0 + span * (i + 0.5) / n + rand(-1, 1) * (span / n) * 0.18);
+  }
+  shuffle(slots);
+
+  q.opts.forEach((opt, i) => {
+    const speed = rand(CONFIG.SPEED_MIN, CONFIG.SPEED_MAX) * rush;
+    const r = isSingle ? 58 : 50;
+
+    const f = {
+      type: pick(['apple', 'orange', 'banana', 'watermelon']),
+      x: slots[i],
+      y: CONFIG.H + 90,
+      vx: rand(-1, 1) * (isSingle ? 0.95 : 0.5),
+      vy: -speed,
+      r,
+      scale: 1,
+      rot: rand(-0.5, 0.5),
+      rotV: rand(-0.018, 0.018),
+      text: opt.text,
+      correct: opt.correct,
+      alpha: 1,
+      sliced: false,
+      removing: false,
+    };
+    f.fontSize = fitFontSize(f.text, r * 1.75, isSingle ? 22 : 19);
+    p.fruits.push(f);
+  });
+}
+
+/* =====================================================================
+   八、切开判定
+   ===================================================================== */
+function sliceFruit(f, p) {
+  if (f.sliced || f.removing) return;
+
+  if (f.correct) {
+    p.streak++;
+    p.maxStreak = Math.max(p.maxStreak, p.streak);
+    const combo = p.streak >= CONFIG.COMBO_MIN;
+    const gain  = combo ? CONFIG.SCORE_COMBO : CONFIG.SCORE_RIGHT;
+    p.score  += gain;
+    p.correct++;
+
+    spawnBurst(f, true);
+    addFloat(p, f.x, f.y - 10,
+      combo ? `连击 ×${p.streak}  +${gain}` : `Great!  +${gain}`,
+      combo ? '#ffd85e' : '#7CFFB2', combo ? 26 : 24);
+
+    if (combo) playSound('combo'); else playSound('correct');
+    G.shake = combo ? 8 : 4;
+
+    clearFruits(p);
+    p.respawnT  = 0.45;
+    p.nextIsNew = true;
+
+  } else {
+    p.streak = 0;
+    p.score  = Math.max(0, p.score + CONFIG.SCORE_WRONG);
+    p.wrong++;
+
+    if (p.question) {
+      p.mistakes.push({ en: p.question.target.en, zh: p.question.target.zh });
+      saveMistake(p.question.target);
+    }
+
+    spawnBurst(f, false);
+    addFloat(p, f.x, f.y - 10, `Try again  ${CONFIG.SCORE_WRONG}`, '#FF9AA2', 22);
+    playSound('wrong');
+    G.shake = 10;
+
+    clearFruits(p);
+    p.respawnT  = 0.45;
+    p.nextIsNew = false;
+  }
+
+  f.sliced = true;
+}
+
+function clearFruits(p) {
+  for (const f of p.fruits) {
+    if (!f.sliced) f.removing = true;
+  }
+}
+
+/* =====================================================================
+   九、粒子 & 飘字
+   ===================================================================== */
+function spawnBurst(f, good) {
+  const colors = good
+    ? ['#ffd85e', '#7CFFB2', '#6fb8ff', '#ff9ff3']
+    : ['#9aa5b1', '#6b7280', '#4b5563'];
+
+  const n = good ? 22 : 14;
+  for (let i = 0; i < n; i++) {
+    const a  = Math.random() * Math.PI * 2;
+    const sp = rand(2, 8) * (good ? 1 : 0.65);
+    G.particles.push({
+      x: f.x, y: f.y,
+      vx: Math.cos(a) * sp,
+      vy: Math.sin(a) * sp - 2,
+      life: rand(0.5, 1.0), max: 1.0,
+      size: rand(3, 8),
+      color: pick(colors),
+      grav: good ? 0.28 : 0.4,
+    });
+  }
+}
+
+function addFloat(p, x, y, text, color, size = 22) {
+  p.floats.push({ x, y, text, color, size, life: 1.15, max: 1.15 });
+}
+
+/* =====================================================================
+   十、更新
+   ===================================================================== */
+function update(dt, dtSec) {
+  for (let i = G.particles.length - 1; i >= 0; i--) {
+    const pt = G.particles[i];
+    pt.vy += pt.grav * dt;
+    pt.x  += pt.vx * dt;
+    pt.y  += pt.vy * dt;
+    pt.life -= dtSec;
+    if (pt.life <= 0) G.particles.splice(i, 1);
+  }
+
+  for (const p of G.players) {
+    for (let i = p.floats.length - 1; i >= 0; i--) {
+      const ft = p.floats[i];
+      ft.y -= 46 * dtSec;
+      ft.life -= dtSec;
+      if (ft.life <= 0) p.floats.splice(i, 1);
+    }
+  }
+
+  if (G.shake > 0) G.shake = Math.max(0, G.shake - 40 * dtSec);
+
+  if (G.phase === 'ready') {
+    const before = Math.ceil(G.readyT);
+    G.readyT -= dtSec;
+    const after = Math.ceil(G.readyT);
+    if (after !== before && after > 0) playSound('count');
+
+    if (G.readyT <= 0) {
+      G.phase = 'playing';
+      G.players.forEach(p => newQuestion(p));
+      playSound('start');
+    }
+    return;
+  }
+
+  if (G.phase !== 'playing') return;
+
+  G.timeLeft -= dtSec;
+  if (G.timeLeft <= 0) {
+    G.timeLeft = 0;
+    endGame();
+    return;
+  }
+
+  for (const p of G.players) {
+    if (p.respawnT > 0) {
+      p.respawnT -= dtSec;
+      if (p.respawnT <= 0) {
+        p.respawnT = 0;
+        if (p.nextIsNew) newQuestion(p);
+        else spawnFruits(p);
+      }
+    } else if (p.fruits.length === 0) {
+      p.respawnT = 0.3;
+      p.nextIsNew = false;
+    }
+
+    for (let i = p.fruits.length - 1; i >= 0; i--) {
+      const f = p.fruits[i];
+
+      if (f.sliced) { p.fruits.splice(i, 1); continue; }
+
+      if (f.removing) {
+        f.alpha -= 4.5 * dtSec;
+        f.scale = Math.max(0.1, f.scale - 3 * dtSec);
+        if (f.alpha <= 0) p.fruits.splice(i, 1);
+        continue;
+      }
+
+      f.vy += CONFIG.GRAVITY * dt;
+      f.x  += f.vx * dt;
+      f.y  += f.vy * dt;
+      f.rot += f.rotV * dt;
+
+      if (f.y > CONFIG.H + 130) p.fruits.splice(i, 1);
+    }
+  }
+}
+
+/* =====================================================================
+   十一、绘制
+   ===================================================================== */
+function drawBackground() {
+  const g = ctx.createLinearGradient(0, 0, 0, CONFIG.H);
+  g.addColorStop(0,    '#0e1a30');
+  g.addColorStop(0.55, '#152a4d');
+  g.addColorStop(1,    '#1d3a63');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, CONFIG.W, CONFIG.H);
+
+  const rg = ctx.createRadialGradient(
+    CONFIG.W / 2, CONFIG.H * 0.42, 40,
+    CONFIG.W / 2, CONFIG.H * 0.42, 640
+  );
+  rg.addColorStop(0, 'rgba(90,160,255,0.16)');
+  rg.addColorStop(1, 'rgba(90,160,255,0)');
+  ctx.fillStyle = rg;
+  ctx.fillRect(0, 0, CONFIG.W, CONFIG.H);
+
+  if (G.mode === 'duel' && G.phase !== 'home') {
+    let lg = ctx.createLinearGradient(0, 0, CONFIG.W / 2, 0);
+    lg.addColorStop(0, 'rgba(255,80,80,0.13)');
+    lg.addColorStop(1, 'rgba(255,80,80,0)');
+    ctx.fillStyle = lg;
+    ctx.fillRect(0, 0, CONFIG.W / 2, CONFIG.H);
+
+    lg = ctx.createLinearGradient(CONFIG.W, 0, CONFIG.W / 2, 0);
+    lg.addColorStop(0, 'rgba(80,140,255,0.13)');
+    lg.addColorStop(1, 'rgba(80,140,255,0)');
+    ctx.fillStyle = lg;
+    ctx.fillRect(CONFIG.W / 2, 0, CONFIG.W / 2, CONFIG.H);
+
+    ctx.save();
+    ctx.setLineDash([14, 14]);
+    ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(CONFIG.W / 2, 0);
+    ctx.lineTo(CONFIG.W / 2, CONFIG.H);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  const bg = ctx.createLinearGradient(0, CONFIG.H - 120, 0, CONFIG.H);
+  bg.addColorStop(0, 'rgba(0,0,0,0)');
+  bg.addColorStop(1, 'rgba(0,0,0,0.45)');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, CONFIG.H - 120, CONFIG.W, 120);
+}
+
+function drawFruit(f) {
+  const st = FRUIT_STYLE[f.type];
+  ctx.save();
+  ctx.globalAlpha = f.alpha;
+  ctx.translate(f.x, f.y);
+  ctx.rotate(f.rot);
+  ctx.scale(f.scale, f.scale);
+
+  ctx.beginPath();
+  ctx.arc(0, f.r * 0.12, f.r * 0.98, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(0,0,0,0.22)';
+  ctx.fill();
+
+  const g = ctx.createRadialGradient(
+    -f.r * 0.3, -f.r * 0.36, f.r * 0.12,
+    0, 0, f.r * 1.06
+  );
+  g.addColorStop(0,    st.c1);
+  g.addColorStop(0.62, st.c2);
+  g.addColorStop(1,    st.c3);
+  ctx.beginPath();
+  ctx.arc(0, 0, f.r, 0, Math.PI * 2);
+  ctx.fillStyle = g;
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.ellipse(-f.r * 0.34, -f.r * 0.4, f.r * 0.28, f.r * 0.17, -0.6, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.fill();
+
+  if (st.kind === 'watermelon') {
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(0, 0, f.r, 0, Math.PI * 2);
+    ctx.clip();
+    ctx.strokeStyle = 'rgba(20,90,40,0.55)';
+    ctx.lineWidth = f.r * 0.12;
+    for (let i = -2; i <= 2; i++) {
+      ctx.beginPath();
+      ctx.moveTo(i * f.r * 0.42, -f.r);
+      ctx.quadraticCurveTo(i * f.r * 0.6, 0, i * f.r * 0.42, f.r);
+      ctx.stroke();
+    }
+    ctx.restore();
+  } else if (st.kind === 'orange') {
+    ctx.fillStyle = 'rgba(150,60,0,0.22)';
+    for (let i = 0; i < 7; i++) {
+      const a = i * 1.1, d = f.r * 0.55;
+      ctx.beginPath();
+      ctx.arc(Math.cos(a) * d, Math.sin(a) * d, f.r * 0.055, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  } else if (st.kind === 'apple') {
+    ctx.strokeStyle = '#6b3d1f';
+    ctx.lineWidth = f.r * 0.11;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(0, -f.r * 0.92);
+    ctx.lineTo(f.r * 0.06, -f.r * 1.18);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.ellipse(f.r * 0.28, -f.r * 1.12, f.r * 0.26, f.r * 0.13, -0.5, 0, Math.PI * 2);
+    ctx.fillStyle = '#48c05c';
+    ctx.fill();
+  } else if (st.kind === 'banana') {
+    ctx.fillStyle = 'rgba(120,80,0,0.5)';
+    ctx.beginPath();
+    ctx.arc(-f.r * 0.9, 0, f.r * 0.09, 0, Math.PI * 2);
+    ctx.arc( f.r * 0.9, 0, f.r * 0.09, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.restore();
+
+  // 文字（不随水果旋转，保证可读）
+  ctx.save();
+  ctx.globalAlpha = f.alpha;
+  ctx.translate(f.x, f.y);
+  ctx.font = `800 ${f.fontSize}px ${FONT}`;
+  ctx.lineWidth = 5;
+  ctx.lineJoin = 'round';
+  ctx.strokeStyle = 'rgba(0,0,0,0.55)';
+  ctx.strokeText(f.text, 0, 0);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillText(f.text, 0, 0);
+  ctx.restore();
+}
+
+function drawParticles() {
+  for (const pt of G.particles) {
+    ctx.globalAlpha = clamp(pt.life / pt.max, 0, 1);
+    ctx.beginPath();
+    ctx.arc(pt.x, pt.y, pt.size, 0, Math.PI * 2);
+    ctx.fillStyle = pt.color;
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+function drawPill(x, y, w, h, label, value, color, blink) {
+  ctx.save();
+  if (blink) ctx.globalAlpha = 0.55 + 0.45 * Math.abs(Math.sin(performance.now() / 160));
+  roundRect(x, y, w, h, 24);
+  ctx.fillStyle = 'rgba(8,18,36,0.75)';
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(255,255,255,0.13)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  ctx.textAlign = 'left';
+  ctx.font = `600 14px ${FONT}`;
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.fillText(label, x + 16, y + h / 2);
+
+  ctx.textAlign = 'right';
+  ctx.font = `800 23px ${FONT}`;
+  ctx.fillStyle = color;
+  ctx.fillText(value, x + w - 16, y + h / 2);
+  ctx.restore();
+
+  ctx.textAlign = 'center';
+}
+
+function drawQuestionCard(p, cx, cy, w) {
+  const q = p.question;
+  if (!q) return;
+
+  const h = 74;
+  const x = cx - w / 2, y = cy - h / 2;
+
+  ctx.save();
+  roundRect(x, y, w, h, 18);
+  const g = ctx.createLinearGradient(0, y, 0, y + h);
+  g.addColorStop(0, 'rgba(16,32,58,0.92)');
+  g.addColorStop(1, 'rgba(9,18,34,0.92)');
+  ctx.fillStyle = g;
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(120,180,255,0.35)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  let fs = 34;
+  ctx.font = `800 ${fs}px ${FONT}`;
+  while (ctx.measureText(q.prompt).width > w - 44 && fs > 18) {
+    fs -= 2;
+    ctx.font = `800 ${fs}px ${FONT}`;
+  }
+  ctx.fillStyle = '#ffffff';
+  ctx.textAlign = 'center';
+  ctx.fillText(q.prompt, cx, cy - 8);
+
+  ctx.font = `600 13px ${FONT}`;
+  ctx.fillStyle = 'rgba(150,195,255,0.72)';
+  ctx.fillText(
+    G.dir === 'zh2en' ? '切开正确的英文单词' : '切开正确的中文意思',
+    cx, cy + 24
+  );
+  ctx.restore();
+}
+
+function drawHUD() {
+  const t = G.timeLeft;
+  const urgent = t <= 10;
+
+  if (G.mode === 'single') {
+    const p = G.players[0];
+    if (!p) return;
+    drawPill(24, 22, 150, 48, '得分', String(p.score), '#6ee7b7');
+    drawPill(CONFIG.W - 174, 22, 150, 48, '时间',
+      Math.ceil(t) + 's', urgent ? '#ff6b6b' : '#ffd43b', urgent);
+    drawQuestionCard(p, CONFIG.W / 2, 118, 560);
+
+    if (p.streak >= CONFIG.COMBO_MIN) {
+      ctx.save();
+      ctx.font = `800 20px ${FONT}`;
+      ctx.fillStyle = '#ffd85e';
+      ctx.shadowColor = 'rgba(255,200,60,0.8)';
+      ctx.shadowBlur = 18;
+      ctx.fillText(`🔥 连击 ×${p.streak}`, CONFIG.W / 2, 176);
+      ctx.restore();
+    }
+  } else {
+    const [p1, p2] = G.players;
+    drawPill(60, 20, 190, 48, '红方', String(p1.score), '#ff8a8a');
+    drawPill(CONFIG.W - 250, 20, 190, 48, '蓝方', String(p2.score), '#8ab6ff');
+
+    ctx.save();
+    roundRect(CONFIG.W / 2 - 62, 20, 124, 48, 24);
+    ctx.fillStyle = 'rgba(8,18,36,0.78)';
+    ctx.fill();
+    ctx.strokeStyle = urgent ? 'rgba(255,90,90,0.8)' : 'rgba(255,255,255,0.15)';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.font = `800 23px ${FONT}`;
+    ctx.fillStyle = urgent ? '#ff6b6b' : '#ffd43b';
+    if (urgent) ctx.globalAlpha = 0.55 + 0.45 * Math.abs(Math.sin(performance.now() / 160));
+    ctx.fillText(Math.ceil(t) + 's', CONFIG.W / 2, 44);
+    ctx.restore();
+
+    drawQuestionCard(p1, 250, 128, 400);
+    drawQuestionCard(p2, 750, 128, 400);
+  }
+}
+
+function drawFloats() {
+  for (const p of G.players) {
+    for (const ft of p.floats) {
+      const a = clamp(ft.life / ft.max, 0, 1);
+      ctx.save();
+      ctx.globalAlpha = a;
+      ctx.font = `800 ${ft.size}px ${FONT}`;
+      ctx.lineWidth = 5;
+      ctx.lineJoin = 'round';
+      ctx.strokeStyle = 'rgba(0,0,0,0.6)';
+      ctx.strokeText(ft.text, ft.x, ft.y);
+      ctx.fillStyle = ft.color;
+      ctx.fillText(ft.text, ft.x, ft.y);
+      ctx.restore();
+    }
+  }
+}
+
+function drawTrail() {
+  if (G.trail.length < 2) return;
+  ctx.save();
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  for (let i = 1; i < G.trail.length; i++) {
+    const a = G.trail[i - 1], b = G.trail[i];
+    const k = i / G.trail.length;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.strokeStyle = `rgba(180,235,255,${0.85 * k})`;
+    ctx.lineWidth = 10 * k;
+    ctx.shadowColor = 'rgba(120,220,255,0.9)';
+    ctx.shadowBlur = 14;
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawReady() {
+  const n = Math.max(1, Math.ceil(G.readyT));
+  const frac = G.readyT - Math.floor(G.readyT);
+  const sc = 1 + 0.45 * frac;
+
+  ctx.save();
+  ctx.translate(CONFIG.W / 2, CONFIG.H / 2 - 10);
+  ctx.scale(sc, sc);
+  ctx.font = `900 150px ${FONT}`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.shadowColor = 'rgba(110,200,255,0.85)';
+  ctx.shadowBlur = 46;
+  ctx.fillStyle = '#ffffff';
+  ctx.fillText(String(n), 0, 0);
+  ctx.restore();
+
+  ctx.save();
+  ctx.font = `700 24px ${FONT}`;
+  ctx.fillStyle = 'rgba(200,225,255,0.7)';
+  ctx.textAlign = 'center';
+  ctx.fillText(
+    G.mode === 'single' ? '准备好，切出正确答案！' : '红蓝双方各切自己半场的水果',
+    CONFIG.W / 2, CONFIG.H / 2 + 140
+  );
+  ctx.restore();
+}
+
+function draw() {
+  if (G.phase === 'home') return;
+
+  ctx.save();
+  if (G.shake > 0.5) ctx.translate(rand(-G.shake, G.shake), rand(-G.shake, G.shake));
+
+  drawBackground();
+
+  if (G.phase === 'ready') { drawReady(); ctx.restore(); return; }
+
+  for (const p of G.players) for (const f of p.fruits) drawFruit(f);
+  drawParticles();
+  drawTrail();
+  drawFloats();
+  drawHUD();
+
+  ctx.restore();
+}
+
+/* =====================================================================
+   十二、输入
+   ===================================================================== */
+function checkSlice(ax, ay, bx, by) {
+  if (G.phase !== 'playing') return;
+  const mid = CONFIG.W / 2;
+
+  for (const p of G.players) {
+    if (G.mode === 'duel') {
+      const isP1 = (p === G.players[0]);
+      const inLeft = (bx < mid);
+      if (isP1 !== inLeft) continue;
+    }
+
+    for (let i = p.fruits.length - 1; i >= 0; i--) {
+      const f = p.fruits[i];
+      if (f.sliced || f.removing) continue;
+      if (pointSegDist(f.x, f.y, ax, ay, bx, by) < f.r * 0.92) {
+        sliceFruit(f, p);
+        break;
+      }
+    }
+  }
+}
+
+function onDown(e) {
+  if (G.phase !== 'playing') return;
+  initAudio();
+  const pt = toCanvas(e);
+  G.pointerDown = true;
+  G.lastPt = pt;
+  G.trail = [{ ...pt, t: performance.now() }];
+  checkSlice(pt.x, pt.y, pt.x, pt.y);
+}
+
+function onMove(e) {
+  if (!G.pointerDown || G.phase !== 'playing') return;
+  const pt = toCanvas(e);
+  if (G.lastPt) checkSlice(G.lastPt.x, G.lastPt.y, pt.x, pt.y);
+  G.lastPt = pt;
+  G.trail.push({ ...pt, t: performance.now() });
+  if (G.trail.length > 14) G.trail.shift();
+}
+
+function onUp() {
+  G.pointerDown = false;
+  G.lastPt = null;
+  G.trail = [];
+}
+
+cv.addEventListener('pointerdown', e => { e.preventDefault(); onDown(e); });
+cv.addEventListener('pointermove', e => { e.preventDefault(); onMove(e); });
+window.addEventListener('pointerup', onUp);
+window.addEventListener('pointercancel', onUp);
+
+setInterval(() => {
+  const now = performance.now();
+  G.trail = G.trail.filter(p => now - p.t < 130);
+}, 60);
+
+/* =====================================================================
+   十三、主循环
+   ===================================================================== */
+let lastTs = 0;
+function loop(ts) {
+  if (!lastTs) lastTs = ts;
+  const dtMs = Math.min(50, ts - lastTs);
+  lastTs = ts;
+
+  const dt    = dtMs / 16.6667;
+  const dtSec = dtMs / 1000;
+
+  update(dt, dtSec);
+  draw();
+
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+/* =====================================================================
+   十四、错题本（localStorage）
+   ===================================================================== */
+const BOOK_KEY = 'word_slicer_mistakes_v1';
+
+function loadBook() {
+  try { return JSON.parse(localStorage.getItem(BOOK_KEY) || '{}'); }
+  catch (e) { return {}; }
+}
+function saveMistake(word) {
+  const b = loadBook();
+  b[word.en] = b[word.en] || { en: word.en, zh: word.zh, n: 0 };
+  b[word.en].zh = word.zh;
+  b[word.en].n++;
+  try { localStorage.setItem(BOOK_KEY, JSON.stringify(b)); } catch (e) {}
+}
+
+/* =====================================================================
+   十五、UI 交互
+   ===================================================================== */
+const $ = id => document.getElementById(id);
+const homeEl   = $('home');
+const resultEl = $('result');
+const bookEl   = $('book');
+
+let uiMode = 'single';
+let uiDir  = 'zh2en';
+let uiOpts = 4;
+
+function bindOpts(containerId, cb) {
+  const box = $(containerId);
+  box.addEventListener('click', e => {
+    const el = e.target.closest('.opt');
+    if (!el) return;
+    [...box.children].forEach(c => c.classList.remove('on'));
+    el.classList.add('on');
+    cb(el.dataset.v);
+  });
+}
+bindOpts('optMode', v => uiMode = v);
+bindOpts('optDir',  v => uiDir  = v);
+bindOpts('optDiff', v => uiOpts = parseInt(v, 10));
+
+$('btnSound').addEventListener('click', e => {
+  G.soundOn = !G.soundOn;
+  e.target.textContent = G.soundOn ? '🔊 音效：开' : '🔇 音效：关';
+  if (G.soundOn) playSound('count');
+});
+
+$('btnRules').addEventListener('click', () => {
+  alert(
+`【玩法规则】
+1. 屏幕上会先出现题干，随后水果从底部飞出。
+2. 按住鼠标滑动（或直接点击）切开正确的那个水果。
+3. 切对 +10 分；连续切对 3 题及以上，每题 +15 分。
+4. 切错 -5 分，并自动记入错题本。
+5. 不切 / 漏掉不扣分，水果飞出屏幕后会重新飞出。
+6. 剩余 20 秒时水果会飞得更快，加油！
+7. 双人 PK：红方切左半场，蓝方切右半场，互不干扰。
+
+【自定义单词】
+首页 →「📚 管理单词库 / 导入单元」，可粘贴文本或上传
+.txt / .csv / .json / .md 文件，每行一个单词即可。`
+  );
+});
+
+$('btnBook').addEventListener('click', () => { renderBook(); bookEl.classList.remove('hidden'); });
+$('btnCloseBook').addEventListener('click', () => bookEl.classList.add('hidden'));
+$('btnClearBook').addEventListener('click', () => {
+  if (confirm('确定清空错题本吗？')) {
+    localStorage.removeItem(BOOK_KEY);
+    renderBook();
+  }
+});
+
+function renderBook() {
+  const b = loadBook();
+  const list = Object.values(b).sort((x, y) => y.n - x.n);
+  $('bookBody').innerHTML = list.length
+    ? '<ul class="mis-list">' + list.map(m =>
+        `<li><b>${m.en}</b><span>${m.zh}</span>${m.n > 1 ? `<i>错 ${m.n} 次</i>` : ''}</li>`
+      ).join('') + '</ul>'
+    : '<p class="empty">🎉 错题本是空的，继续保持！</p>';
+}
+
+/* =====================================================================
+   十六、游戏流程控制
+   ===================================================================== */
+$('btnStart').addEventListener('click', () => {
+  initAudio();
+  startGame();
+});
+
+function startGame() {
+  const pool = getActiveWords();
+  if (pool.length < 2) {
+    alert('至少需要 2 个单词才能开始游戏，请检查单词范围选择。');
+    return;
+  }
+
+  G.pool    = pool;
+  G.mode    = uiMode;
+  G.dir     = uiDir;
+  G.options = Math.min(uiOpts, pool.length);
+  G.timeLeft = CONFIG.DURATION;
+  G.phase    = 'ready';
+  G.readyT   = CONFIG.READY;
+  G.particles = [];
+  G.trail = [];
+  G.shake = 0;
+
+  G.players = [];
+  if (G.mode === 'single') {
+    G.players.push(makePlayer(0, { x0: 50, x1: 950 }, '单人', '#6ee7b7'));
+  } else {
+    G.players.push(makePlayer(0, { x0: 25, x1: 475 }, '红方', '#ff8a8a'));
+    G.players.push(makePlayer(1, { x0: 525, x1: 975 }, '蓝方', '#8ab6ff'));
+  }
+
+  homeEl.classList.add('hidden');
+  resultEl.classList.add('hidden');
+  bookEl.classList.add('hidden');
+  unitsEl.classList.add('hidden');
+  cv.classList.remove('hidden');
+
+  fitCanvas();
+}
+
+function endGame() {
+  G.phase = 'over';
+  playSound('end');
+  setTimeout(showResult, 260);
+}
+
+function medalOf(acc) {
+  if (acc < 80)  return { name: '初学小白',   icon: '🌱', color: '#9fb3d1' };
+  if (acc < 95)  return { name: '单词小达人', icon: '⭐', color: '#6fb8ff' };
+  return                 { name: '超级记忆王', icon: '👑', color: '#ffd85e' };
+}
+
+function mistakesHtml(list) {
+  if (!list.length) return '<p class="empty">🎉 太棒了，本局没有错题！</p>';
+  const map = new Map();
+  for (const m of list) {
+    if (map.has(m.en)) map.get(m.en).n++;
+    else map.set(m.en, { ...m, n: 1 });
+  }
+  return '<ul class="mis-list">' + [...map.values()].map(m =>
+    `<li><b>${m.en}</b><span>${m.zh}</span>${m.n > 1 ? `<i>×${m.n}</i>` : ''}</li>`
+  ).join('') + '</ul>';
+}
+
+function showResult() {
+  const card = $('resultCard');
+
+  if (G.mode === 'single') {
+    const p = G.players[0];
+    const total = p.correct + p.wrong;
+    const acc = total ? Math.round(p.correct / total * 100) : 0;
+    const md = medalOf(acc);
+
+    card.innerHTML = `
+      <h1 style="font-size:26px">🏁 本局结束</h1>
+      <p class="sub">${G.dir === 'zh2en' ? '中文 → 切英文' : '英文 → 切中文'} · 单词池 ${G.pool.length} 词</p>
+
+      <div class="stat-grid">
+        <div class="stat"><b>${total}</b><span>总题数</span></div>
+        <div class="stat"><b>${p.correct}</b><span>答对</span></div>
+        <div class="stat"><b style="color:#ffd85e">${p.score}</b><span>总分</span></div>
+        <div class="stat"><b>${acc}%</b><span>正确率</span></div>
+      </div>
+
+      <div class="medal">${md.icon} ${md.name}</div>
+
+      <h3>❌ 本局错题</h3>
+      ${mistakesHtml(p.mistakes)}
+
+      <div class="row-btns">
+        <button class="btn primary" id="rAgain">再来一局</button>
+        <button class="btn" id="rSwitch">切换出题方向</button>
+        <button class="btn" id="rBook">查看错题复习</button>
+        <button class="btn" id="rHome">返回首页</button>
+      </div>
+    `;
+  } else {
+    const [p1, p2] = G.players;
+    let title;
+    if (p1.score > p2.score)      title = '🎉 红方赢啦！';
+    else if (p2.score > p1.score) title = '🎉 蓝方赢啦！';
+    else                          title = '🤝 平局！势均力敌';
+
+    const statOf = p => {
+      const t = p.correct + p.wrong;
+      return { total: t, acc: t ? Math.round(p.correct / t * 100) : 0 };
+    };
+    const s1 = statOf(p1), s2 = statOf(p2);
+
+    card.innerHTML = `
+      <h1 style="font-size:26px">⚔️ 双人 PK 结算</h1>
+      <p class="sub">${G.dir === 'zh2en' ? '中文 → 切英文' : '英文 → 切中文'} · 单词池 ${G.pool.length} 词</p>
+
+      <div class="winner-tag">${title}</div>
+
+      <div class="duel-result">
+        <div class="duel-side red">
+          <span>🔴 红方</span>
+          <b>${p1.score}</b>
+          <small>答对 ${p1.correct} / 总 ${s1.total} · 正确率 ${s1.acc}% · 最高连击 ${p1.maxStreak}</small>
+        </div>
+        <div class="duel-side blue">
+          <span>🔵 蓝方</span>
+          <b>${p2.score}</b>
+          <small>答对 ${p2.correct} / 总 ${s2.total} · 正确率 ${s2.acc}% · 最高连击 ${p2.maxStreak}</small>
+        </div>
+      </div>
+
+      <h3>🔴 红方错题</h3>
+      ${mistakesHtml(p1.mistakes)}
+      <h3>🔵 蓝方错题</h3>
+      ${mistakesHtml(p2.mistakes)}
+
+      <div class="row-btns">
+        <button class="btn primary" id="rAgain">再来一局</button>
+        <button class="btn" id="rSwitch">切换出题方向</button>
+        <button class="btn" id="rBook">查看错题复习</button>
+        <button class="btn" id="rHome">返回首页</button>
+      </div>
+    `;
+  }
+
+  resultEl.classList.remove('hidden');
+
+  $('rAgain').onclick  = () => { resultEl.classList.add('hidden'); startGame(); };
+  $('rSwitch').onclick = () => {
+    uiDir = (uiDir === 'zh2en') ? 'en2zh' : 'zh2en';
+    const box = $('optDir');
+    [...box.children].forEach(c => c.classList.toggle('on', c.dataset.v === uiDir));
+    resultEl.classList.add('hidden');
+    startGame();
+  };
+  $('rBook').onclick = () => { renderBook(); bookEl.classList.remove('hidden'); };
+  $('rHome').onclick = () => {
+    resultEl.classList.add('hidden');
+    cv.classList.add('hidden');
+    homeEl.classList.remove('hidden');
+    G.phase = 'home';
+  };
+}
+
+/* =====================================================================
+   十七、初始化
+   ===================================================================== */
+loadUnits();
+
+// 过滤掉已删除单元的选中状态
+G.selectedUnits = new Set(
+  [...G.selectedUnits].filter(id => UNIT_LIST.some(u => u.id === id))
+);
+if (!G.selectedUnits.size && UNIT_LIST.length) G.selectedUnits.add(UNIT_LIST[0].id);
+
+renderUnitOptions();
+renderBook();
+</script>
+</body>
+</html>

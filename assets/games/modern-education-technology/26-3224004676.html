@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>单词扫雷 · Word Minesweeper</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(160deg, #eef2ff, #fdf2f8);
+    min-height: 100vh; color: #1e293b;
+  }
+  .app { max-width: 920px; margin: 0 auto; padding: 20px 14px 48px; }
+  header { text-align: center; margin-bottom: 14px; }
+  h1 { font-size: clamp(22px, 4vw, 30px); letter-spacing: 1px; }
+  .sub { color: #64748b; font-size: 14px; margin-top: 4px; }
+
+  .panel {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;
+    background: #fff; border-radius: 14px; padding: 10px 12px;
+    box-shadow: 0 2px 10px rgba(15,23,42,.06); margin-bottom: 12px;
+  }
+  .levels { display: flex; gap: 6px; flex-wrap: wrap; }
+  .level-btn {
+    border: 1.5px solid #e2e8f0; background: #f8fafc; border-radius: 10px;
+    padding: 7px 12px; font-weight: 600; cursor: pointer; font-size: 14px; color: #475569;
+    transition: .15s;
+  }
+  .level-btn.active { background: #4f46e5; border-color: #4f46e5; color: #fff; }
+  .stats { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip {
+    background: #f1f5f9; border-radius: 999px; padding: 6px 12px;
+    font-size: 14px; font-weight: 600; color: #334155; white-space: nowrap;
+  }
+  .btns { display: flex; gap: 8px; }
+  .btn {
+    border: none; border-radius: 10px; padding: 8px 14px; font-weight: 600; cursor: pointer;
+    font-size: 14px; background: #e2e8f0; color: #334155; transition: .15s;
+  }
+  .btn.primary { background: #4f46e5; color: #fff; }
+  .btn.primary:hover { background: #4338ca; }
+  .btn.on { background: #f59e0b; color: #fff; }
+
+  .banner {
+    background: linear-gradient(90deg, #ef4444, #f97316);
+    color: #fff; border-radius: 14px; padding: 12px 16px; margin-bottom: 12px;
+    box-shadow: 0 4px 14px rgba(239,68,68,.25);
+  }
+  .banner .cat { font-size: clamp(17px, 3vw, 22px); font-weight: 800; }
+  .banner .note { font-size: 13px; opacity: .92; margin-top: 3px; }
+  .banner .eg { font-size: 12.5px; opacity: .85; margin-top: 2px; }
+
+  .grid-wrap { display: flex; justify-content: center; }
+  .grid { display: grid; gap: 3px; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+  .cell {
+    position: relative; aspect-ratio: 1; border-radius: 7px; background: #fff;
+    box-shadow: 0 2px 5px rgba(15,23,42,.10), inset 0 0 0 1.5px #e2e8f0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    font-weight: 700; color: #334155; cursor: pointer; padding: 1px;
+    line-height: 1.05; word-break: break-word; overflow: hidden;
+    transition: transform .08s, box-shadow .08s;
+  }
+  .cell:hover { transform: translateY(-1px); }
+  .cell.revealed {
+    background: #eef2f7; box-shadow: inset 0 0 0 1.5px #dbe2ea;
+    cursor: default; transform: none;
+  }
+  .cell.revealed .w { color: #94a3b8; }
+  .cell .zh {
+    display: none; font-size: .55em; font-weight: 500; color: #94a3b8;
+    line-height: 1.15; margin-top: 1px; padding: 0 1px;
+  }
+  .cell.revealed .zh, .cell.mine .zh, .cell.boom .zh { display: block; }
+  .cell.revealed .zh { color: #a8b3c2; }
+  .cell.flagged::after {
+    content: '\1F6A9'; position: absolute; top: 1px; right: 2px; font-size: .62em; line-height: 1;
+  }
+  .cell.mine { background: #fee2e2; box-shadow: inset 0 0 0 1.5px #fca5a5; color: #b91c1c; }
+  .cell.mine .zh { color: #d98a8a; }
+  .cell.boom { background: #ef4444; color: #fff; animation: shake .4s; }
+  .cell.boom .zh { color: #ffd9d9; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+  }
+  .cell.wrongflag { box-shadow: inset 0 0 0 2px #f43f5e; }
+  .cell.wrongflag::after { content: '\2717'; color: #e11d48; font-weight: 800; }
+  .cell .num { position: absolute; top: 1px; left: 3px; font-size: .72em; font-weight: 800; }
+  .n1 { color: #2563eb; } .n2 { color: #16a34a; } .n3 { color: #dc2626; } .n4 { color: #7c3aed; }
+  .n5 { color: #b45309; } .n6 { color: #0891b2; } .n7 { color: #334155; } .n8 { color: #64748b; }
+  .cell.revealed .num { opacity: .85; }
+
+  .help { text-align: center; color: #94a3b8; font-size: 12.5px; margin-top: 14px; line-height: 1.7; }
+
+  .overlay {
+    position: fixed; inset: 0; background: rgba(15,23,42,.55);
+    display: flex; align-items: center; justify-content: center; z-index: 100; padding: 16px;
+  }
+  .overlay.hidden { display: none; }
+  .modal {
+    background: #fff; border-radius: 18px; padding: 24px; max-width: 540px; width: 100%;
+    max-height: 82vh; overflow: auto; text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.3); animation: pop .25s;
+  }
+  @keyframes pop { from { transform: scale(.9); opacity: 0; } }
+  .modal h2 { font-size: 24px; margin-bottom: 8px; }
+  .modal p { color: #475569; margin-bottom: 12px; }
+  .recap { text-align: left; background: #f8fafc; border-radius: 12px; padding: 12px; margin-bottom: 14px; }
+  .recap .rt { font-weight: 700; font-size: 14px; margin-bottom: 8px; color: #334155; }
+  .recap .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .wchip { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 999px; padding: 4px 10px; font-size: 13px; }
+  .wchip.placed { border-color: #fca5a5; background: #fef2f2; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>单词扫雷 · Word Minesweeper</h1>
+    <p class="sub">每一局随机一个类别：属于该类别的单词是地雷，排除所有安全单词即可获胜</p>
+  </header>
+
+  <div class="panel">
+    <div class="levels" id="levels"></div>
+    <div class="stats">
+      <span class="chip">剩余地雷 <b id="mineLeft">0</b></span>
+      <span class="chip">已排除 <b id="progress">0/0</b></span>
+      <span class="chip">用时 <b id="time">0s</b></span>
+    </div>
+    <div class="btns">
+      <button id="flagBtn" class="btn">标记模式：关</button>
+      <button id="newBtn" class="btn primary">换一局</button>
+    </div>
+  </div>
+
+  <div class="banner" id="banner"></div>
+  <div class="grid-wrap"><div class="grid" id="grid"></div></div>
+
+  <p class="help">
+    左键点击 = 排除单词（并显示中文意思） · 右键 / 长按 / 标记模式 = 标记地雷<br>
+    数字 = 周围地雷（同类单词）的数量 · 点到地雷类别中的单词就输了
+  </p>
+</div>
+
+<div class="overlay hidden" id="overlay">
+  <div class="modal">
+    <h2 id="resultTitle"></h2>
+    <p id="resultDesc"></p>
+    <div class="recap" id="recap"></div>
+    <button class="btn primary" id="againBtn">再来一局</button>
+  </div>
+</div>
+
+<script>
+/*GEN-START*/
+const CATEGORIES = [
+  { n: '动物', en: 'Animals', w: 'cat|猫,dog|狗,bird|鸟,fish|鱼,tiger|老虎,lion|狮子,elephant|大象,monkey|猴子,panda|熊猫,rabbit|兔子,horse|马,sheep|绵羊,pig|猪,cow|奶牛,duck|鸭子,chicken|鸡,snake|蛇,mouse|老鼠,bear|熊,wolf|狼,fox|狐狸,deer|鹿,frog|青蛙,turtle|乌龟,penguin|企鹅,dolphin|海豚,whale|鲸鱼,shark|鲨鱼,zebra|斑马,giraffe|长颈鹿,kangaroo|袋鼠,camel|骆驼,goat|山羊,goose|鹅,hen|母鸡,ant|蚂蚁,bee|蜜蜂,butterfly|蝴蝶,spider|蜘蛛,eagle|老鹰,owl|猫头鹰,parrot|鹦鹉' },
+  { n: '水果', en: 'Fruits', w: 'apple|苹果,banana|香蕉,pear|梨,grape|葡萄,peach|桃子,watermelon|西瓜,strawberry|草莓,mango|芒果,pineapple|菠萝,lemon|柠檬,cherry|樱桃,melon|甜瓜,coconut|椰子,kiwi|猕猴桃,lychee|荔枝' },
+  { n: '蔬菜', en: 'Vegetables', w: 'potato|土豆,tomato|西红柿,carrot|胡萝卜,cabbage|卷心菜,onion|洋葱,pea|豌豆,corn|玉米,cucumber|黄瓜,eggplant|茄子,mushroom|蘑菇,pumpkin|南瓜,bean|豆子,pepper|辣椒,garlic|大蒜' },
+  { n: '颜色', en: 'Colors', w: 'red|红色,blue|蓝色,green|绿色,yellow|黄色,black|黑色,white|白色,pink|粉色,purple|紫色,brown|棕色,gray|灰色,gold|金色,silver|银色' },
+  { n: '食物', en: 'Food', w: 'rice|米饭,bread|面包,noodles|面条,egg|鸡蛋,milk|牛奶,meat|肉,beef|牛肉,pork|猪肉,mutton|羊肉,hamburger|汉堡包,sandwich|三明治,cake|蛋糕,candy|糖果,chocolate|巧克力,cookie|曲奇,biscuit|饼干,pizza|披萨,dumpling|饺子,tofu|豆腐,jam|果酱,honey|蜂蜜,salt|盐,sugar|糖,oil|油,flour|面粉' },
+  { n: '饮料', en: 'Drinks', w: 'water|水,juice|果汁,tea|茶,coffee|咖啡,coke|可乐,soup|汤,yogurt|酸奶,lemonade|柠檬水' },
+  { n: '运动', en: 'Sports', w: 'football|足球,basketball|篮球,ping-pong|乒乓球,tennis|网球,volleyball|排球,baseball|棒球,swimming|游泳,running|跑步,skating|滑冰,skiing|滑雪,dancing|跳舞,climbing|攀岩,fishing|钓鱼,cycling|骑自行车,badminton|羽毛球,golf|高尔夫球,hockey|曲棍球,boxing|拳击,judo|柔道,yoga|瑜伽,rowing|划船,sailing|帆船运动' },
+  { n: '学科', en: 'School Subjects', w: 'Chinese|语文,English|英语,math|数学,music|音乐,art|美术,science|科学,history|历史,geography|地理,physics|物理,chemistry|化学,biology|生物,politics|政治,PE|体育,IT|信息技术' },
+  { n: '学习用品', en: 'School Things', w: 'pen|钢笔,pencil|铅笔,book|书,ruler|尺子,eraser|橡皮,bag|书包,desk|课桌,chair|椅子,blackboard|黑板,chalk|粉笔,crayon|蜡笔,scissors|剪刀,notebook|笔记本,dictionary|词典,glue|胶水,paper|纸,letter|信,card|卡片,photo|照片,map|地图' },
+  { n: '身体部位', en: 'Body Parts', w: 'head|头,face|脸,eye|眼睛,ear|耳朵,nose|鼻子,mouth|嘴,hand|手,foot|脚,leg|腿,arm|手臂,hair|头发,finger|手指,knee|膝盖,shoulder|肩膀,stomach|胃、肚子,neck|脖子,tooth|牙齿,back|背部,heart|心脏,brain|大脑,blood|血液,bone|骨头,skin|皮肤' },
+  { n: '家庭成员', en: 'Family', w: 'father|爸爸,mother|妈妈,brother|兄弟,sister|姐妹,grandpa|爷爷、外公,grandma|奶奶、外婆,uncle|叔叔、舅舅,aunt|姑姑、阿姨,cousin|表亲、堂亲,baby|宝宝,parents|父母,son|儿子,daughter|女儿,husband|丈夫,wife|妻子' },
+  { n: '职业', en: 'Jobs', w: 'teacher|教师,doctor|医生,nurse|护士,driver|司机,farmer|农民,worker|工人,policeman|男警察,policewoman|女警察,cook|厨师,singer|歌手,writer|作家,waiter|服务员,dentist|牙医,pilot|飞行员,postman|邮递员,engineer|工程师,manager|经理,actor|演员,artist|画家,scientist|科学家,soldier|士兵,salesman|售货员,guide|导游,reporter|记者' },
+  { n: '天气', en: 'Weather', w: 'sunny|晴朗的,rainy|下雨的,windy|有风的,cloudy|多云的,snowy|下雪的,hot|热的,cold|冷的,warm|温暖的,cool|凉爽的,dry|干燥的,wet|潮湿的,fog|雾,storm|暴风雨,lightning|闪电,thunder|雷声,rainbow|彩虹,rain|雨,snow|雪,wind|风,ice|冰,sun|太阳,moon|月亮,star|星星,sky|天空' },
+  { n: '时间', en: 'Time', w: 'Monday|星期一,Tuesday|星期二,Wednesday|星期三,Thursday|星期四,Friday|星期五,Saturday|星期六,Sunday|星期日,January|一月,February|二月,March|三月,April|四月,May|五月,June|六月,July|七月,August|八月,September|九月,October|十月,November|十一月,December|十二月,spring|春天,summer|夏天,autumn|秋天,winter|冬天,morning|早晨,afternoon|下午,evening|傍晚,night|夜晚,today|今天,tomorrow|明天,yesterday|昨天,week|星期、周,month|月份,year|年,hour|小时,minute|分钟,weekend|周末,birthday|生日,holiday|假期,season|季节,century|世纪' },
+  { n: '交通工具', en: 'Transport', w: 'bus|公共汽车,car|小汽车,bike|自行车,train|火车,plane|飞机,ship|轮船,boat|小船,taxi|出租车,subway|地铁,helicopter|直升机,truck|卡车,motorcycle|摩托车,ambulance|救护车,jeep|吉普车,spaceship|宇宙飞船,tractor|拖拉机,ferry|渡轮' },
+  { n: '地点', en: 'Places', w: 'park|公园,zoo|动物园,school|学校,hospital|医院,cinema|电影院,library|图书馆,museum|博物馆,restaurant|餐馆,hotel|旅馆,bank|银行,station|车站,airport|机场,farm|农场,beach|海滩,mountain|高山,river|河流,lake|湖泊,sea|大海,city|城市,country|国家,street|街道,road|马路,bridge|桥,shop|商店,supermarket|超市,garden|花园,playground|操场,kitchen|厨房,bedroom|卧室,bathroom|浴室,classroom|教室,office|办公室,factory|工厂,village|村庄,island|岛屿,building|大楼,tower|塔,castle|城堡,market|市场' },
+  { n: '服装', en: 'Clothes', w: 'shirt|衬衫,T-shirt|T恤衫,dress|连衣裙,skirt|裙子,pants|裤子,coat|外套,sweater|毛衣,jacket|夹克衫,hat|帽子,cap|鸭舌帽,shoe|鞋,sock|袜子,glasses|眼镜,scarf|围巾,glove|手套,boot|靴子,shorts|短裤,uniform|制服,belt|腰带,tie|领带,pocket|口袋' },
+  { n: '自然', en: 'Nature', w: 'tree|树,flower|花,grass|草,leaf|叶子,forest|森林,stone|石头,sand|沙子,earth|地球、大地,seed|种子,plant|植物,rose|玫瑰花,bamboo|竹子,soil|土壤,rock|岩石,hill|小山,field|田地,jungle|丛林,wave|波浪,root|根,branch|树枝' },
+  { n: '玩具乐器', en: 'Toys & Instruments', w: 'doll|玩具娃娃,kite|风筝,ball|球,robot|机器人,puzzle|拼图,guitar|吉他,piano|钢琴,violin|小提琴,drum|鼓,trumpet|小号,chess|国际象棋,swing|秋千,slide|滑梯,balloon|气球,toy|玩具' },
+  { n: '家居物品', en: 'Household', w: 'lamp|台灯,sofa|沙发,table|桌子,bed|床,fridge|冰箱,TV|电视机,phone|电话,computer|电脑,door|门,window|窗户,wall|墙,floor|地板,key|钥匙,lock|锁,box|盒子,bottle|瓶子,cup|杯子,glass|玻璃杯,plate|盘子,bowl|碗,spoon|勺子,fork|叉子,knife|刀,chopsticks|筷子,mirror|镜子,basket|篮子,umbrella|雨伞,wallet|钱包,brush|刷子,towel|毛巾,soap|肥皂,toothbrush|牙刷,house|房子' },
+  { n: '形容词', en: 'Adjectives', w: 'big|大的,small|小的,long|长的,short|短的、矮的,tall|高的,fat|胖的,thin|瘦的,new|新的,old|旧的、老的,young|年轻的,happy|快乐的,sad|悲伤的,angry|生气的,tired|疲倦的,hungry|饥饿的,thirsty|口渴的,beautiful|美丽的,pretty|漂亮的,cute|可爱的,clean|干净的,dirty|脏的,strong|强壮的,weak|虚弱的,kind|善良的,brave|勇敢的,clever|聪明的,funny|滑稽的,quiet|安静的,busy|忙碌的,free|空闲的,easy|容易的,difficult|困难的,expensive|昂贵的,cheap|便宜的,heavy|重的,light|轻的,fast|快的,slow|慢的,high|高的,low|低的,rich|富有的,poor|贫穷的,lazy|懒惰的,honest|诚实的,sweet|甜的,sour|酸的,salty|咸的,delicious|美味的' },
+  { n: '数字', en: 'Numbers', w: 'zero|零,one|一,two|二,three|三,four|四,five|五,six|六,seven|七,eight|八,nine|九,ten|十,eleven|十一,twelve|十二,thirteen|十三,fourteen|十四,fifteen|十五,sixteen|十六,seventeen|十七,eighteen|十八,nineteen|十九,twenty|二十,thirty|三十,forty|四十,fifty|五十,sixty|六十,seventy|七十,eighty|八十,ninety|九十,hundred|一百,thousand|一千,million|百万,first|第一,second|第二,third|第三,half|一半,pair|一双、一对' }
+];
+
+const LEVELS = [
+  { cols: 5, mines: 5, label: '5×5 新手' },
+  { cols: 8, mines: 12, label: '8×8 进阶' },
+  { cols: 10, mines: 18, label: '10×10 熟练' },
+  { cols: 15, mines: 40, label: '15×15 大师' }
+];
+
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+CATEGORIES.forEach(c => {
+  c.words = c.w.split(',').map(s => { const [en, zh] = s.split('|'); return { en, zh, cat: c }; });
+  delete c.w;
+});
+const ALL = [];
+CATEGORIES.forEach(c => ALL.push(...c.words));
+
+function genGame(cols, mines, cat) {
+  const total = cols * cols;
+  // 地雷单词：从类别中抽取，单词数量不足时允许每个词最多出现 2 次
+  const cw = shuffle(cat.words.slice());
+  const cap = Math.min(2, Math.max(1, Math.ceil(mines / cw.length)));
+  const mpool = [];
+  cw.forEach(w => { for (let k = 0; k < cap; k++) mpool.push(w); });
+  shuffle(mpool);
+  const mineUnits = mpool.slice(0, Math.min(mines, mpool.length));
+  // 安全单词：从其他所有类别中抽取，互不重复
+  const safePool = shuffle(ALL.filter(w => w.cat !== cat));
+  const safeUnits = safePool.slice(0, total - mineUnits.length);
+  const units = shuffle(mineUnits.concat(safeUnits));
+  const cells = units.map(u => ({ w: u, mine: u.cat === cat, revealed: false, flagged: false, n: 0 }));
+  // 计算每个格子周围的地雷数
+  cells.forEach((c, i) => {
+    if (c.mine) return;
+    const r = Math.floor(i / cols), cc = i % cols;
+    for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+      if (!dr && !dc) continue;
+      const nr = r + dr, nc = cc + dc;
+      if (nr < 0 || nr >= cols || nc < 0 || nc >= cols) continue;
+      if (cells[nr * cols + nc].mine) c.n++;
+    }
+  });
+  const placedEn = new Set(mineUnits.map(w => w.en));
+  return {
+    cat, cells, cols, total, mines: mineUnits.length, placedEn, catWords: cat.words,
+    revealed: 0, flags: 0, over: false, started: false, secs: 0, flagMode: false
+  };
+}
+/*GEN-END*/
+
+const $ = s => document.querySelector(s);
+const grid = $('#grid'), banner = $('#banner');
+const mineEl = $('#mineLeft'), progEl = $('#progress'), timeEl = $('#time');
+let level = LEVELS[0], G = null, timerId = null, lpTimer = null, lpFired = false;
+
+function buildLevels() {
+  const box = $('#levels');
+  LEVELS.forEach((lv, i) => {
+    const b = document.createElement('button');
+    b.className = 'level-btn';
+    b.textContent = lv.label;
+    b.onclick = () => {
+      level = lv;
+      [...box.children].forEach((x, k) => x.classList.toggle('active', k === i));
+      newGame();
+    };
+    box.appendChild(b);
+  });
+  box.children[0].classList.add('active');
+}
+
+function newGame() {
+  stopTimer();
+  G = genGame(level.cols, level.mines, CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)]);
+  setFlagBtn(false);
+  render();
+  timeEl.textContent = '0s';
+  updateHUD();
+}
+
+function render() {
+  grid.innerHTML = '';
+  grid.style.gridTemplateColumns = `repeat(${G.cols},1fr)`;
+  grid.style.width = `min(94vw, ${G.cols * 54 + (G.cols - 1) * 3}px)`;
+  const unplaced = G.catWords.filter(w => !G.placedEn.has(w.en));
+  banner.innerHTML =
+    `<div class="cat">地雷类别：${G.cat.n} ${G.cat.en}</div>` +
+    `<div class="note">属于该类别的单词是地雷，点到即爆炸 · 本局地雷 ${G.mines} 个 · 排除全部安全单词即获胜</div>` +
+    (unplaced.length
+      ? `<div class="eg">同类词参考（不在本局棋盘上）：${unplaced.slice(0, 2).map(w => `${w.en} ${w.zh}`).join(' · ')}</div>`
+      : '');
+  G.cells.forEach((c, i) => {
+    const d = document.createElement('div');
+    d.className = 'cell';
+    d.dataset.i = i;
+    d.textContent = c.w.en; // 点击前只显示英文，中文意思点击后出现
+    grid.appendChild(d);
+  });
+  requestAnimationFrame(sizeWords);
+}
+
+function sizeWords() {
+  if (!G) return;
+  const cellPx = (grid.clientWidth - (G.cols - 1) * 3) / G.cols;
+  [...grid.children].forEach((el, i) => {
+    const len = G.cells[i].w.en.length;
+    let f = Math.min(cellPx * 0.36, cellPx * 1.8 / Math.max(3, len));
+    f = Math.max(8.5, Math.min(15, f));
+    el.style.fontSize = f + 'px';
+  });
+}
+
+const cellEl = i => grid.children[i];
+
+function updateHUD() {
+  mineEl.textContent = G.mines - G.flags;
+  progEl.textContent = `${G.revealed}/${G.total - G.mines}`;
+}
+
+function fmt(s) {
+  return s < 60 ? s + 's' : Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+}
+
+function startTimer() {
+  G.t0 = Date.now();
+  timerId = setInterval(() => {
+    G.secs = Math.round((Date.now() - G.t0) / 1000);
+    timeEl.textContent = fmt(G.secs);
+  }, 500);
+}
+
+function stopTimer() {
+  if (timerId) { clearInterval(timerId); timerId = null; }
+}
+
+grid.addEventListener('click', e => {
+  if (lpFired) { lpFired = false; return; }
+  const d = e.target.closest('.cell');
+  if (!d) return;
+  const i = +d.dataset.i;
+  G.flagMode ? toggleFlag(i) : reveal(i);
+});
+grid.addEventListener('contextmenu', e => {
+  e.preventDefault();
+  if (lpFired) { lpFired = false; return; } // 手机长按已处理，避免重复切换
+  const d = e.target.closest('.cell');
+  if (d) toggleFlag(+d.dataset.i);
+});
+grid.addEventListener('touchstart', e => {
+  const d = e.target.closest('.cell');
+  if (!d) return;
+  lpFired = false;
+  lpTimer = setTimeout(() => {
+    lpFired = true;
+    toggleFlag(+d.dataset.i);
+    if (navigator.vibrate) navigator.vibrate(30);
+  }, 420);
+}, { passive: true });
+grid.addEventListener('touchend', () => clearTimeout(lpTimer));
+grid.addEventListener('touchmove', () => clearTimeout(lpTimer));
+
+function setContent(el, c, withNum) {
+  el.innerHTML = `<span class="w">${c.w.en}</span><span class="zh">${c.w.zh}</span>` +
+    (withNum && c.n ? `<span class="num n${Math.min(c.n, 8)}">${c.n}</span>` : '');
+}
+
+function reveal(i) {
+  if (G.over) return;
+  const c = G.cells[i];
+  if (c.revealed || c.flagged) return;
+  if (!G.started) { G.started = true; startTimer(); }
+  if (c.mine) { lose(i); return; }
+  const st = [i];
+  while (st.length) {
+    const j = st.pop(), cc = G.cells[j];
+    if (cc.revealed || cc.flagged) continue;
+    cc.revealed = true;
+    G.revealed++;
+    const el = cellEl(j);
+    el.classList.add('revealed');
+    setContent(el, cc, true);
+    if (cc.n === 0) {
+      const r = Math.floor(j / G.cols), ccx = j % G.cols;
+      for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+        if (!dr && !dc) continue;
+        const nr = r + dr, nc = ccx + dc;
+        if (nr < 0 || nr >= G.cols || nc < 0 || nc >= G.cols) continue;
+        const k = nr * G.cols + nc;
+        if (!G.cells[k].revealed && !G.cells[k].flagged) st.push(k);
+      }
+    }
+  }
+  updateHUD();
+  if (G.revealed === G.total - G.mines) win();
+}
+
+function toggleFlag(i) {
+  if (G.over) return;
+  const c = G.cells[i];
+  if (c.revealed) return;
+  c.flagged = !c.flagged;
+  G.flags += c.flagged ? 1 : -1;
+  cellEl(i).classList.toggle('flagged', c.flagged);
+  updateHUD();
+}
+
+function lose(i) {
+  G.over = true;
+  stopTimer();
+  // 结束时翻开所有单词并显示中文，方便学习
+  G.cells.forEach((c, j) => {
+    const el = cellEl(j);
+    if (c.mine) el.classList.add('mine');
+    else if (c.flagged) el.classList.add('wrongflag');
+    if (!c.revealed) setContent(el, c, false);
+  });
+  cellEl(i).classList.add('boom');
+  setTimeout(() => showResult(false, i), 900);
+}
+
+function win() {
+  G.over = true;
+  stopTimer();
+  G.cells.forEach((c, j) => { if (c.mine) cellEl(j).classList.add('flagged'); });
+  setTimeout(() => showResult(true), 500);
+}
+
+function showResult(won, i) {
+  $('#resultTitle').textContent = won ? '排雷成功！' : '砰！踩到地雷了';
+  $('#resultDesc').innerHTML = won
+    ? `用时 ${fmt(G.secs)}，成功排除全部 ${G.revealed} 个安全单词。`
+    : `“${G.cells[i].w.en}”（${G.cells[i].w.zh}）属于地雷类别【${G.cat.n} ${G.cat.en}】。`;
+  const chips = G.catWords.map(w =>
+    `<span class="wchip${G.placedEn.has(w.en) ? ' placed' : ''}">${G.placedEn.has(w.en) ? '\u1F4A3 ' : ''}${w.en} ${w.zh}</span>`
+  ).join('');
+  $('#recap').innerHTML =
+    `<div class="rt">地雷类别：${G.cat.n} ${G.cat.en}（\u1F4A3 = 本局棋盘上的地雷）</div><div class="chips">${chips}</div>`;
+  $('#overlay').classList.remove('hidden');
+}
+
+$('#againBtn').onclick = () => { $('#overlay').classList.add('hidden'); newGame(); };
+$('#newBtn').onclick = () => { $('#overlay').classList.add('hidden'); newGame(); };
+$('#flagBtn').onclick = () => setFlagBtn(!G.flagMode);
+
+function setFlagBtn(v) {
+  G.flagMode = v;
+  const b = $('#flagBtn');
+  b.classList.toggle('on', v);
+  b.textContent = `🚩 标记模式：${v ? '开' : '关'}`;
+}
+
+window.addEventListener('resize', () => sizeWords());
+buildLevels();
+newGame();
+</script>
+</body>
+</html>

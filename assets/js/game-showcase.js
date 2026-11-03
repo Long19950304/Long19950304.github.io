@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var API = window.GAME_SHOWCASE_API || '';
+  var API = window.GAME_SHOWCASE_API || window.location.origin;
   var cards = Array.prototype.slice.call(document.querySelectorAll('[data-game-card]'));
   var search = document.querySelector('[data-game-search]');
   var sort = document.querySelector('[data-game-sort]');

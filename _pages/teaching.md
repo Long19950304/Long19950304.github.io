@@ -33,3 +33,8 @@ I teach applied courses in media creation, screenwriting, and film and televisio
 ## Studio format (teamwork + competition)
 
 Students work in small teams to build AI-era products (apps, automated workflows, or media/knowledge SaaS prototypes). Collaboration is incentivized within teams; competition happens between teams (outcome-oriented evaluation).
+
+
+## Student game showcase
+
+Explore the [Modern Educational Technology game showcase](/teaching/games/), with 27 playable student prototypes.

@@ -65,6 +65,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-现代教育技术-小游戏作品展",
+          title: "现代教育技术 · 小游戏作品展",
+          description: "现代教育技术课程学生小游戏作品展示。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/teaching/games/";
+          },
+        },{id: "nav-modern-educational-technology-game-showcase",
+          title: "Modern Educational Technology · Game Showcase",
+          description: "Student-created learning games from the Modern Educational Technology course.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/games/";
+          },
         },{id: "nav-简报",
           title: "简报",
           description: "每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。",

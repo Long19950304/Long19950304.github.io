@@ -1158,3 +1158,19 @@ h1 {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+/* Reusable student game showcases */
+.game-showcase-toolbar { display: flex; gap: .65rem; margin: 1.25rem 0; }
+.game-showcase-search, .game-showcase-sort { border: 1px solid var(--global-divider-color); border-radius: 10px; padding: .55rem .7rem; background: var(--global-card-bg-color); color: var(--global-text-color); }
+.game-showcase-search { flex: 1; min-width: 0; }
+.game-showcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 1rem; }
+.game-card { position: relative; display: flex; gap: .85rem; border: 1px solid var(--global-divider-color); border-radius: 16px; padding: 1rem; background: var(--global-card-bg-color); transition: transform .16s ease, box-shadow .16s ease; }
+.game-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,.08); }
+.game-card__number { width: 2rem; height: 2rem; flex: 0 0 2rem; display: grid; place-items: center; border-radius: 50%; background: var(--global-theme-color); color: #fff; font-weight: 700; }
+.game-card__body { min-width: 0; flex: 1; }
+.game-card__title { font-size: 1.05rem; line-height: 1.35; margin: 0 0 .4rem; }
+.game-card__student, .game-showcase-note { color: var(--global-text-color-light); font-size: .88rem; }
+.game-card__actions { display: flex; gap: .45rem; margin-top: .8rem; }
+.game-card__play { background: var(--global-theme-color); color: #fff !important; }
+.game-like.is-liked { color: #d64545; border-color: #d64545; }
+@media (max-width: 575px) { .game-showcase-toolbar { flex-direction: column; } }

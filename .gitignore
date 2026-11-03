@@ -17,3 +17,6 @@ __pycache__/
 *.baiduyun.uploading.cfg
 assets/img/digests/_bg/
 _data/digests/*.draft.yml
+
+# Local course source archives (published copies live under assets/games/)
+教育技术小游戏展示/

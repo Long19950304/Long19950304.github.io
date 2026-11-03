@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>食物单词塔防 - Food Words Tower Defense</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Comic Sans MS", "Microsoft YaHei", cursive, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #fff9c4 100%);
+    min-height: 100vh;
+    padding: 10px;
+    color: #333;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 6px;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  .objectives {
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    border: 2px solid #aed581;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .objectives h3 { color: #2e7d32; font-size: 14px; margin-bottom: 4px; }
+  .obj-item { font-size: 12px; line-height: 1.5; margin: 2px 0; }
+  .obj-item b { color: #66bb6a; }
+
+  .game-wrap { display: flex; gap: 10px; align-items: flex-start; }
+
+  .word-panel {
+    width: 180px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px;
+    border: 2px solid #aed581;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    flex-shrink: 0;
+  }
+  .word-panel h4 { color: #2e7d32; font-size: 13px; margin-bottom: 6px; text-align: center; }
+  .word-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 6px;
+    margin-bottom: 4px;
+    border: 2px solid #c5e1a5;
+    border-radius: 8px;
+    background: #f1f8e9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    transition: all 0.15s;
+    text-align: left;
+  }
+  .word-btn:hover:not(:disabled) {
+    background: #dcedc8;
+    transform: translateX(2px);
+    border-color: #7cb342;
+  }
+  .word-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .word-btn .emoji { font-size: 20px; margin-right: 4px; }
+  .word-btn .info { flex: 1; }
+  .word-btn .en { font-weight: bold; color: #2e7d32; }
+  .word-btn .cost { color: #ef6c00; font-size: 11px; }
+  .word-btn.free-badge { border-color: #ff8f00; background: #fff8e1; }
+  .word-btn.free-badge .cost { color: #d84315; font-weight: bold; }
+
+  .main { flex: 1; min-width: 0; }
+  .status-bar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #aed581;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  .stat .label { font-size: 12px; color: #888; margin-right: 3px; }
+  .stat.leaves { color: #ef6c00; }
+  .stat.hp { color: #d32f2f; }
+  .stat.wave { color: #1976d2; }
+
+  .canvas-wrap { position: relative; }
+  canvas {
+    display: block;
+    background: #8bc34a;
+    border-radius: 12px;
+    border: 3px solid #2e7d32;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: default;
+  }
+  canvas.placing { cursor: crosshair; }
+
+  .hint-bar {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+    min-height: 18px;
+  }
+  .start-btn {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    font-family: inherit;
+  }
+  .start-btn:hover { transform: scale(1.05); }
+
+  /* Quiz modal */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 100; align-items: center; justify-content: center;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal {
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px 26px;
+    text-align: center;
+    border: 4px solid #aed581;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 380px;
+    animation: pop 0.3s;
+  }
+  @keyframes pop { 0% { transform: scale(0.7); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+  .modal .q-word { font-size: 30px; font-weight: bold; color: #2e7d32; margin: 6px 0; }
+  .modal .q-emoji { font-size: 36px; }
+  .modal p { color: #555; font-size: 14px; margin: 6px 0 12px; }
+  .options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 6px; }
+  .opt-btn {
+    padding: 10px;
+    border: 2px solid #c5e1a5;
+    border-radius: 10px;
+    background: #f1f8e9;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .opt-btn:hover { background: #dcedc8; border-color: #7cb342; }
+  .opt-btn.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
+  .opt-btn.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
+  .modal .close-btn {
+    margin-top: 10px;
+    background: #bdbdbd;
+    color: white;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .toast {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    background: #e53935;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 200;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none;
+  }
+  .toast.show { display: block; animation: pop 0.2s; }
+
+  /* Win/Lose modal */
+  .result-modal h2 { font-size: 26px; margin-bottom: 10px; }
+  .result-modal .emoji { font-size: 50px; margin: 8px 0; }
+  .word-list { margin: 10px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .word-list div {
+    background: #f1f8e9;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .word-list div .en { font-weight: bold; color: #2e7d32; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🥗 食物单词塔防 🍅</h1>
+
+  <div class="objectives">
+    <h3>🎯 教学目标</h3>
+    <div class="obj-item"><b>知识目标：</b>认读 rice, egg, tomato, bread, juice, vegetables, eat, food，建立英文单词和食物形象、中文释义的对应关系。</div>
+    <div class="obj-item"><b>能力目标：</b>看到英文单词快速识别词义。</div>
+    <div class="obj-item"><b>情感目标：</b>在塔防闯关游戏中主动认读英语词汇，感受英语学习乐趣。</div>
+  </div>
+
+  <div class="game-wrap">
+    <div class="word-panel">
+      <h4>📖 单词面板</h4>
+      <div id="wordButtons"></div>
+    </div>
+
+    <div class="main">
+      <div class="status-bar">
+        <div class="stat leaves"><span class="label">🥬 菜叶</span><span id="leavesVal">10</span></div>
+        <div class="stat hp"><span class="label">❤️ 生命</span><span id="hpVal">10</span></div>
+        <div class="stat wave"><span class="label">🌊 波数</span><span id="waveVal">0</span>/3</div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" width="720" height="400"></canvas>
+      </div>
+      <div class="hint-bar" id="hintBar">点击左侧单词，答对中文释义即可放置食物守卫！</div>
+      <div style="text-align:center; margin-top:8px;">
+        <button class="start-btn" id="nextWaveBtn" style="display:none;">▶ 开始下一波</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Modal -->
+<div class="modal-overlay" id="quizModal">
+  <div class="modal">
+    <div class="q-emoji" id="qEmoji"></div>
+    <p>这个英文单词是什么意思？</p>
+    <div class="q-word" id="qWord"></div>
+    <div class="options" id="qOptions"></div>
+    <button class="close-btn" id="qClose">取消</button>
+  </div>
+</div>
+
+<!-- Result Modal -->
+<div class="modal-overlay" id="resultModal">
+  <div class="modal result-modal">
+    <div class="emoji" id="rEmoji"></div>
+    <h2 id="rTitle"></h2>
+    <p id="rMsg"></p>
+    <div class="word-list" id="rWordList"></div>
+    <button class="start-btn" onclick="restartGame()">🔄 再玩一次</button>
+  </div>
+</div>
+
+<div class="toast" id="toast">Try again!</div>
+
+<script>
+/* ===================== CONFIG ===================== */
+const CELL_W = 80, CELL_H = 80;
+const COLS = 9, ROWS = 5;
+const CANVAS_W = COLS * CELL_W; // 720
+const CANVAS_H = ROWS * CELL_H; // 400
+
+const TOWERS = {
+  vegetables: { emoji:'🥬', cost:3, color:'#aed581', name:'vegetables' },
+  tomato:     { emoji:'🍅', cost:3, color:'#ef5350', name:'tomato',     dmg:8,  range:4, rate:900,  proj:'tomato' },
+  rice:       { emoji:'🍚', cost:2, color:'#fff3e0', name:'rice',       hp:120, slow:0.4 },
+  egg:        { emoji:'🥚', cost:4, color:'#fffde7', name:'egg',        dmg:14, range:4, rate:1400, proj:'egg', aoe:70 },
+  bread:      { emoji:'🍞', cost:5, color:'#ffcc80', name:'bread',      dmg:35, range:5, rate:2200, proj:'bread' },
+  juice:      { emoji:'🧃', cost:3, color:'#ffb74d', name:'juice',      slow:0.45, range:1.2 },
+  eat:        { emoji:'🥢', cost:4, color:'#a1887f', name:'eat',        dmg:6, range:1.1, rate:280, melee:true },
+  food:       { emoji:'🍽️', cost:6, color:'#ce93d8', name:'food',       ult:true }
+};
+
+const WORDS = {
+  vegetables:{ cn:'蔬菜',   dist:['水果','肉类','饮料'] },
+  tomato:    { cn:'番茄',   dist:['土豆','胡萝卜','洋葱'] },
+  rice:      { cn:'米饭',   dist:['面条','面包','粥'] },
+  egg:       { cn:'鸡蛋',   dist:['鸭蛋','牛奶','奶酪'] },
+  bread:     { cn:'面包',   dist:['蛋糕','饼干','三明治'] },
+  juice:     { cn:'果汁',   dist:['牛奶','水','茶'] },
+  eat:       { cn:'吃',     dist:['喝','做饭','睡觉'] },
+  food:      { cn:'食物',   dist:['饮料','水果','零食'] }
+};
+
+const WAVES = [
+  { count:6,  hp:28, speed:42, interval:1600 },
+  { count:9,  hp:45, speed:48, interval:1300 },
+  { count:13, hp:70, speed:54, interval:1000 }
+];
+
+/* ===================== STATE ===================== */
+let leaves = 10;
+let hp = 10;
+let wave = 0;
+let waveActive = false;
+let enemiesSpawned = 0;
+let enemiesAlive = 0;
+let firstVegFree = true; // the gifted vegetable
+
+let towers = [];     // {type, col, row, cooldown, hp?, produceTimer}
+let enemies = [];    // {x, y, row, hp, maxHp, speed, slowUntil, slowFactor}
+let projectiles = []; // {x, y, row, speed, dmg, type, aoe?}
+let placing = null;  // tower type key being placed
+let gameOver = false;
+let gameWon = false;
+
+let lastTime = 0;
+let spawnTimer = 0;
+let waveStartDelay = 0;
+
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+
+/* ===================== WORD PANEL ===================== */
+function buildWordPanel() {
+  const wrap = document.getElementById('wordButtons');
+  wrap.innerHTML = '';
+  Object.keys(TOWERS).forEach(key => {
+    const t = TOWERS[key];
+    const btn = document.createElement('button');
+    btn.className = 'word-btn' + (key === 'vegetables' && firstVegFree ? ' free-badge' : '');
+    btn.dataset.key = key;
+    const costText = (key === 'vegetables' && firstVegFree) ? '免费!' : `${t.cost} leaves`;
+    btn.innerHTML = `<span class="emoji">${t.emoji}</span><span class="info"><div class="en">${t.name}</div><div class="cost">${costText}</div></span>`;
+    btn.addEventListener('click', () => onWordClick(key));
+    wrap.appendChild(btn);
+  });
+}
+
+function refreshWordPanel() {
+  document.querySelectorAll('.word-btn').forEach(btn => {
+    const key = btn.dataset.key;
+    const t = TOWERS[key];
+    const cost = (key === 'vegetables' && firstVegFree) ? 0 : t.cost;
+    btn.disabled = gameOver || leaves < cost;
+    if (key === 'vegetables' && firstVegFree) {
+      btn.classList.add('free-badge');
+      btn.querySelector('.cost').textContent = '免费!';
+    } else {
+      btn.classList.remove('free-badge');
+      btn.querySelector('.cost').textContent = `${t.cost} leaves`;
+    }
+  });
+}
+
+/* ===================== QUIZ ===================== */
+function onWordClick(key) {
+  if (gameOver) return;
+  const cost = (key === 'vegetables' && firstVegFree) ? 0 : TOWERS[key].cost;
+  if (leaves < cost) { showToast('菜叶不足！'); return; }
+
+  // food ultimate: no quiz, just place & clear
+  if (key === 'food') {
+    leaves -= cost;
+    updateUI();
+    placing = 'food';
+    setHint('🍽️ 大招模式：点击地图任意位置清除所有虫子！');
+    return;
+  }
+
+  // show quiz
+  const t = TOWERS[key];
+  const w = WORDS[key];
+  document.getElementById('qEmoji').textContent = t.emoji;
+  document.getElementById('qWord').textContent = t.name;
+
+  const opts = [...w.dist, w.cn].sort(() => Math.random() - 0.5);
+  const optWrap = document.getElementById('qOptions');
+  optWrap.innerHTML = '';
+  opts.forEach(opt => {
+    const b = document.createElement('button');
+    b.className = 'opt-btn';
+    b.textContent = opt;
+    b.addEventListener('click', () => {
+      if (opt === w.cn) {
+        b.classList.add('correct');
+        setTimeout(() => {
+          closeQuiz();
+          leaves -= cost;
+          if (key === 'vegetables' && firstVegFree) firstVegFree = false;
+          updateUI();
+          placing = key;
+          setHint(`✅ 答对啦！点击地图放置 ${t.emoji} ${t.name}`);
+        }, 400);
+      } else {
+        b.classList.add('wrong');
+        setTimeout(() => b.classList.remove('wrong'), 500);
+        showToast('Try again!');
+      }
+    });
+    optWrap.appendChild(b);
+  });
+  document.getElementById('quizModal').classList.add('show');
+}
+
+function closeQuiz() {
+  document.getElementById('quizModal').classList.remove('show');
+}
+document.getElementById('qClose').addEventListener('click', closeQuiz);
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1200);
+}
+
+function setHint(msg) {
+  document.getElementById('hintBar').textContent = msg;
+}
+
+/* ===================== UI ===================== */
+function updateUI() {
+  document.getElementById('leavesVal').textContent = leaves;
+  document.getElementById('hpVal').textContent = hp;
+  document.getElementById('waveVal').textContent = wave;
+  refreshWordPanel();
+}
+
+/* ===================== CANVAS INPUT ===================== */
+canvas.addEventListener('click', (e) => {
+  if (!placing) return;
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  const x = (e.clientX - rect.left) * scaleX;
+  const y = (e.clientY - rect.top) * scaleY;
+  const col = Math.floor(x / CELL_W);
+  const row = Math.floor(y / CELL_H);
+  if (col < 0 || col >= COLS || row < 0 || row >= ROWS) return;
+
+  if (placing === 'food') {
+    // ultimate: clear all enemies
+    enemies = [];
+    projectiles = [];
+    showToast('💥 全屏清除！');
+    placing = null;
+    setHint('点击左侧单词继续放置守卫！');
+    canvas.classList.remove('placing');
+    checkWaveEnd();
+    return;
+  }
+
+  // cannot place on occupied cell
+  if (towers.some(t => t.col === col && t.row === row)) {
+    showToast('这里已经有守卫了！');
+    return;
+  }
+
+  placeTower(placing, col, row);
+  placing = null;
+  canvas.classList.remove('placing');
+  setHint('点击左侧单词继续放置守卫！');
+});
+
+function placeTower(type, col, row) {
+  const t = TOWERS[type];
+  const tower = {
+    type, col, row,
+    x: col * CELL_W + CELL_W/2,
+    y: row * CELL_H + CELL_H/2,
+    cooldown: 0,
+    produceTimer: 1500
+  };
+  if (t.hp) tower.hp = t.hp;
+  towers.push(tower);
+  updateUI();
+}
+
+/* ===================== ENEMIES ===================== */
+function spawnEnemy() {
+  const w = WAVES[wave-1];
+  const row = Math.floor(Math.random() * ROWS);
+  enemies.push({
+    x: CANVAS_W + 20,
+    y: row * CELL_H + CELL_H/2,
+    row,
+    hp: w.hp,
+    maxHp: w.hp,
+    speed: w.speed,
+    slowUntil: 0,
+    slowFactor: 1,
+    eating: null
+  });
+  enemiesSpawned++;
+  enemiesAlive++;
+}
+
+/* ===================== GAME LOOP ===================== */
+function update(dt) {
+  if (gameOver) return;
+
+  // leaf production from vegetables
+  towers.forEach(t => {
+    if (t.type === 'vegetables') {
+      t.produceTimer -= dt;
+      if (t.produceTimer <= 0) {
+        leaves++;
+        t.produceTimer = 1500;
+        updateUI();
+      }
+    }
+  });
+
+  // wave spawning
+  if (waveActive && wave > 0) {
+    const w = WAVES[wave-1];
+    if (enemiesSpawned < w.count) {
+      spawnTimer -= dt;
+      if (spawnTimer <= 0) {
+        spawnEnemy();
+        spawnTimer = w.interval;
+      }
+    }
+  }
+
+  // update enemies
+  const now = performance.now();
+  enemies.forEach(en => {
+    if (en.hp <= 0) return;
+
+    // check slow from juice aura
+    let slowFactor = 1;
+    towers.forEach(t => {
+      if (t.type === 'juice') {
+        const d = Math.hypot(t.x - en.x, t.y - en.y);
+        if (d < TOWERS.juice.range * CELL_W) slowFactor = Math.min(slowFactor, TOWERS.juice.slow);
+      }
+    });
+
+    // rice wall blocking
+    const cellCol = Math.floor((en.x - 10) / CELL_W);
+    const riceBlocker = towers.find(t => t.type === 'rice' && t.row === en.row && t.col === cellCol && t.hp > 0);
+    if (riceBlocker && en.x - riceBlocker.x < CELL_W/2 + 15 && en.x - riceBlocker.x > -10) {
+      // eating rice
+      en.eating = riceBlocker;
+      riceBlocker.hp -= 12 * dt / 1000;
+      slowFactor = Math.min(slowFactor, TOWERS.rice.slow);
+      if (riceBlocker.hp <= 0) {
+        towers = towers.filter(t => t !== riceBlocker);
+        en.eating = null;
+      }
+    } else {
+      en.eating = null;
+      en.x -= en.speed * slowFactor * dt / 1000;
+    }
+
+    // reached base
+    if (en.x < -10) {
+      en.hp = 0;
+      hp -= 1;
+      updateUI();
+      if (hp <= 0) endGame(false);
+    }
+  });
+
+  // remove dead enemies
+  const before = enemies.length;
+  enemies = enemies.filter(e => e.hp > 0);
+  enemiesAlive = enemies.length;
+
+  // towers attack
+  towers.forEach(t => {
+    const cfg = TOWERS[t.type];
+    if (t.type === 'vegetables' || t.type === 'rice' || t.type === 'juice' || t.type === 'food') return;
+    t.cooldown -= dt;
+    if (t.cooldown > 0) return;
+
+    if (cfg.melee) {
+      // eat: melee attack nearest in range
+      const target = enemies.find(e => e.row === t.row && Math.abs(e.x - t.x) < cfg.range * CELL_W && e.hp > 0);
+      if (target) {
+        target.hp -= cfg.dmg;
+        t.cooldown = cfg.rate;
+      }
+    } else if (cfg.aoe) {
+      // egg: lob to group of enemies in row
+      const targets = enemies.filter(e => e.row === t.row && e.x < t.x && e.x > t.x - cfg.range * CELL_W && e.hp > 0);
+      if (targets.length > 0) {
+        // find furthest left target to aim
+        const aim = targets.reduce((a,b) => a.x < b.x ? a : b);
+        projectiles.push({ x: t.x, y: t.y, tx: aim.x, ty: aim.y, row: t.row, speed: 300, dmg: cfg.dmg, type: 'egg', aoe: cfg.aoe, t: 0 });
+        t.cooldown = cfg.rate;
+      }
+    } else {
+      // tomato / bread: shoot along row
+      const target = enemies.find(e => e.row === t.row && e.x < t.x && e.x > t.x - cfg.range * CELL_W && e.hp > 0);
+      if (target) {
+        projectiles.push({ x: t.x, y: t.y, row: t.row, speed: 380, dmg: cfg.dmg, type: cfg.proj, dir: -1 });
+        t.cooldown = cfg.rate;
+      }
+    }
+  });
+
+  // update projectiles
+  projectiles.forEach(p => {
+    if (p.type === 'egg') {
+      p.t += dt / 600;
+      if (p.t >= 1) {
+        // explode
+        enemies.forEach(e => {
+          if (Math.hypot(e.x - p.tx, e.y - p.ty) < p.aoe) e.hp -= p.dmg;
+        });
+        p.dead = true;
+      }
+    } else {
+      p.x += p.speed * p.dir * dt / 1000;
+      const hit = enemies.find(e => e.row === p.row && Math.abs(e.x - p.x) < 22 && e.hp > 0);
+      if (hit) { hit.hp -= p.dmg; p.dead = true; }
+      if (p.x < -20 || p.x > CANVAS_W + 20) p.dead = true;
+    }
+  });
+  projectiles = projectiles.filter(p => !p.dead);
+
+  // check wave end
+  checkWaveEnd();
+}
+
+function checkWaveEnd() {
+  if (waveActive && wave > 0 && enemiesSpawned >= WAVES[wave-1].count && enemies.length === 0) {
+    waveActive = false;
+    if (wave >= WAVES.length) {
+      endGame(true);
+    } else {
+      document.getElementById('nextWaveBtn').style.display = 'inline-block';
+      setHint(`🎉 第 ${wave} 波清除！点击「开始下一波」继续`);
+    }
+  }
+}
+
+/* ===================== RENDER ===================== */
+function draw() {
+  ctx.clearRect(0,0,CANVAS_W,CANVAS_H);
+
+  // lawn stripes
+  for (let r = 0; r < ROWS; r++) {
+    ctx.fillStyle = r % 2 === 0 ? '#aed581' : '#9ccc65';
+    ctx.fillRect(0, r*CELL_H, CANVAS_W, CELL_H);
+  }
+
+  // grid lines
+  ctx.strokeStyle = 'rgba(255,255,255,0.25)';
+  ctx.lineWidth = 1;
+  for (let c = 1; c < COLS; c++) {
+    ctx.beginPath(); ctx.moveTo(c*CELL_W, 0); ctx.lineTo(c*CELL_W, CANVAS_H); ctx.stroke();
+  }
+  for (let r = 1; r < ROWS; r++) {
+    ctx.beginPath(); ctx.moveTo(0, r*CELL_H); ctx.lineTo(CANVAS_W, r*CELL_H); ctx.stroke();
+  }
+
+  // base on left
+  ctx.fillStyle = '#5d4037';
+  ctx.fillRect(0, 0, 6, CANVAS_H);
+
+  // towers
+  towers.forEach(t => {
+    const cfg = TOWERS[t.type];
+    // base circle
+    ctx.fillStyle = cfg.color;
+    ctx.beginPath();
+    ctx.arc(t.x, t.y, CELL_W*0.36, 0, Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#2e7d32';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    // emoji
+    ctx.font = `${CELL_W*0.55}px serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(cfg.emoji, t.x, t.y+2);
+
+    // rice hp bar
+    if (t.type === 'rice' && t.hp < cfg.hp) {
+      const w = CELL_W*0.6;
+      ctx.fillStyle = '#c62828';
+      ctx.fillRect(t.x - w/2, t.y - CELL_W*0.42, w, 5);
+      ctx.fillStyle = '#66bb6a';
+      ctx.fillRect(t.x - w/2, t.y - CELL_W*0.42, w * (t.hp/cfg.hp), 5);
+    }
+  });
+
+  // enemies
+  enemies.forEach(e => {
+    // worm body
+    ctx.fillStyle = '#8d6e63';
+    for (let i = 0; i < 3; i++) {
+      ctx.beginPath();
+      ctx.arc(e.x + i*10, e.y, 12 - i*2, 0, Math.PI*2);
+      ctx.fill();
+    }
+    // head
+    ctx.fillStyle = '#a1887f';
+    ctx.beginPath();
+    ctx.arc(e.x - 8, e.y, 13, 0, Math.PI*2);
+    ctx.fill();
+    // eyes
+    ctx.fillStyle = '#fff';
+    ctx.beginPath(); ctx.arc(e.x-12, e.y-4, 3, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#000';
+    ctx.beginPath(); ctx.arc(e.x-13, e.y-4, 1.5, 0, Math.PI*2); ctx.fill();
+    // hp bar
+    if (e.hp < e.maxHp) {
+      const w = 36;
+      ctx.fillStyle = '#c62828';
+      ctx.fillRect(e.x - 18, e.y - 24, w, 4);
+      ctx.fillStyle = '#66bb6a';
+      ctx.fillRect(e.x - 18, e.y - 24, w * (e.hp/e.maxHp), 4);
+    }
+  });
+
+  // projectiles
+  projectiles.forEach(p => {
+    if (p.type === 'egg') {
+      const prog = Math.min(p.t, 1);
+      const cx = p.x + (p.tx - p.x) * prog;
+      const cy = p.y + (p.ty - p.y) * prog - Math.sin(prog*Math.PI) * 60;
+      ctx.fillStyle = '#fffde7';
+      ctx.beginPath(); ctx.arc(cx, cy, 8, 0, Math.PI*2); ctx.fill();
+      ctx.strokeStyle = '#fbc02d'; ctx.lineWidth = 1.5; ctx.stroke();
+    } else if (p.type === 'tomato') {
+      ctx.fillStyle = '#e53935';
+      ctx.beginPath(); ctx.arc(p.x, p.y, 7, 0, Math.PI*2); ctx.fill();
+    } else if (p.type === 'bread') {
+      ctx.fillStyle = '#ff8f00';
+      ctx.fillRect(p.x-7, p.y-5, 14, 10);
+    }
+  });
+
+  // placement ghost
+  if (placing && mouseCell.col >= 0) {
+    ctx.globalAlpha = 0.5;
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(mouseCell.col*CELL_W, mouseCell.row*CELL_H, CELL_W, CELL_H);
+    const cfg = TOWERS[placing];
+    ctx.font = `${CELL_W*0.55}px serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(cfg.emoji, mouseCell.col*CELL_W+CELL_W/2, mouseCell.row*CELL_H+CELL_H/2+2);
+    ctx.globalAlpha = 1;
+  }
+}
+
+const mouseCell = { col: -1, row: -1 };
+canvas.addEventListener('mousemove', (e) => {
+  if (!placing) { mouseCell.col = -1; return; }
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  const x = (e.clientX - rect.left) * scaleX;
+  const y = (e.clientY - rect.top) * scaleY;
+  mouseCell.col = Math.floor(x / CELL_W);
+  mouseCell.row = Math.floor(y / CELL_H);
+});
+canvas.addEventListener('mouseleave', () => { mouseCell.col = -1; });
+
+/* ===================== WAVE CONTROL ===================== */
+document.getElementById('nextWaveBtn').addEventListener('click', startNextWave);
+
+function startNextWave() {
+  if (gameOver) return;
+  wave++;
+  waveActive = true;
+  enemiesSpawned = 0;
+  spawnTimer = 800;
+  document.getElementById('nextWaveBtn').style.display = 'none';
+  updateUI();
+  setHint(`⚔️ 第 ${wave} 波虫子来袭！`);
+}
+
+/* ===================== END GAME ===================== */
+function endGame(won) {
+  gameOver = true;
+  gameWon = won;
+  document.getElementById('nextWaveBtn').style.display = 'none';
+  const modal = document.getElementById('resultModal');
+  document.getElementById('rEmoji').textContent = won ? '🎉🏆🎉' : '💔🐛';
+  document.getElementById('rTitle').textContent = won ? '太棒了！' : '基地被攻破...';
+  document.getElementById('rMsg').textContent = won ? '你成功守护了菜园，认读了全部单词！' : '虫子攻破了防线，再试一次吧！';
+
+  const wl = document.getElementById('rWordList');
+  wl.innerHTML = '';
+  Object.keys(TOWERS).forEach(key => {
+    const div = document.createElement('div');
+    div.innerHTML = `<span class="en">${TOWERS[key].emoji} ${TOWERS[key].name}</span> — ${WORDS[key].cn}`;
+    wl.appendChild(div);
+  });
+  modal.classList.add('show');
+}
+
+function restartGame() {
+  leaves = 10; hp = 10; wave = 0;
+  waveActive = false; enemiesSpawned = 0;
+  towers = []; enemies = []; projectiles = [];
+  placing = null; gameOver = false; gameWon = false;
+  firstVegFree = true;
+  document.getElementById('resultModal').classList.remove('show');
+  document.getElementById('nextWaveBtn').style.display = 'none';
+  buildWordPanel();
+  updateUI();
+  setHint('🥬 开局赠送1个免费青菜！点击左侧 vegetables（答对题）即可放置，之后每个青菜消耗3片菜叶。虫子将在15秒后出现！');
+  setTimeout(() => { if (!gameOver) startNextWave(); }, 15000);
+}
+
+/* ===================== MAIN LOOP ===================== */
+function loop(t) {
+  const dt = Math.min(t - lastTime, 100);
+  lastTime = t;
+  update(dt);
+  draw();
+  requestAnimationFrame(loop);
+}
+
+/* ===================== INIT ===================== */
+buildWordPanel();
+updateUI();
+setHint('🥬 开局赠送1个免费青菜！点击左侧 vegetables（答对题）即可放置，之后每个青菜消耗3片菜叶。虫子将在15秒后出现！');
+setTimeout(() => { if (!gameOver) startNextWave(); }, 15000);
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

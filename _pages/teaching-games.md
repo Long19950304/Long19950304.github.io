@@ -3,8 +3,7 @@ layout: page
 permalink: /teaching/games/
 title: Modern Educational Technology · Game Showcase
 description: Student-created learning games from the Modern Educational Technology course.
-nav: true
-nav_order: 6
+nav: false
 lang: en
 translation_key: teaching-games
 ---

@@ -1,0 +1,30 @@
+---
+layout: page
+permalink: /zh/teaching/modern-educational-technology/
+title: 现代教育技术
+description: 课程介绍、学习活动与学生作品展示。
+nav: false
+lang: zh
+translation_key: teaching-modern-educational-technology
+---
+
+<div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
+  <img src="/assets/img/teaching/studio-teams-zh.svg" alt="工作室式学习：团队协作与结构化竞赛" style="width: 100%; height: auto; border-radius: 14px;">
+</div>
+
+## 课程介绍
+
+现代教育技术把教育理论与数字内容实践结合起来。学生从教学目标出发，设计小型学习体验，通过试玩和反馈检验设计，再反思技术如何影响参与、互动与课堂活动。
+
+## 学习内容
+
+- 学习设计：把教学目标转化为清晰的活动和互动规则。
+- 数字工具：使用网页、多媒体及 AI 辅助工具制作原型。
+- 作品评估：检验作品是否易懂、好玩，并且真正服务于学习。
+- 过程反思：记录设计选择、局限，以及负责任使用技术的方式。
+
+## 学生作品展示
+
+本课程收集了 27 个学生制作的学习小游戏原型。你可以进入[学生小游戏作品展](/zh/teaching/games/)，按作品名或学生搜索，打开试玩，并为喜欢的作品点心心。
+
+这些作品是课堂原型，部分作品适合双人或触屏操作；使用较大的屏幕或与同伴一起试玩，体验可能更好。

@@ -3,8 +3,7 @@ layout: page
 permalink: /zh/teaching/games/
 title: 现代教育技术 · 小游戏作品展
 description: 现代教育技术课程学生小游戏作品展示。
-nav: true
-nav_order: 6
+nav: false
 lang: zh
 translation_key: teaching-games
 ---

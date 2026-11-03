@@ -19,8 +19,7 @@ translation_key: teaching
 
 - 数字摄影与摄像
 - 微电影制作
-- 编剧艺术
-- 影视文化
+- [现代教育技术](/zh/teaching/modern-educational-technology/)
 - 大学语文
 
 ## 教学方向
@@ -35,6 +34,6 @@ translation_key: teaching
 学生以小组形式构建 AI 时代的产品（应用、自动化工作流，或媒体/知识 SaaS 原型）。团队内协作被制度化激励；团队间竞争以成果评估为导向。
 
 
-## 学生小游戏作品展
+## 课程页面
 
-欢迎进入[现代教育技术小游戏作品展](/zh/teaching/games/)，试玩 27 个学生作品并留下喜欢。
+欢迎进入[现代教育技术课程页面](/zh/teaching/modern-educational-technology/)，了解课程内容，并进入学生作品展试玩 27 个小游戏作品。

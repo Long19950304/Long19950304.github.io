@@ -13,7 +13,12 @@ translation_key: teaching-games
   <p class="small game-showcase-note">封面均为游戏内实景。支持浏览器直接游玩；双人作品可同屏体验，横向布局建议使用电脑或横屏。</p>
 
   <div class="game-showcase-toolbar" data-game-toolbar>
-    <input class="game-showcase-search" type="search" placeholder="按作品名或学生搜索" aria-label="搜索小游戏" data-game-search>
+    <input class="game-showcase-search" type="search" placeholder="按游戏、玩法或学生搜索" aria-label="搜索小游戏" data-game-search>
+    <select class="game-showcase-mode" aria-label="游玩人数" data-game-mode>
+      <option value="all">全部玩法</option>
+      <option value="single">单人游玩</option>
+      <option value="multiplayer">双人或多人</option>
+    </select>
     <select class="game-showcase-sort" aria-label="排序方式" data-game-sort>
       <option value="order">按课堂序号</option>
       <option value="likes">按喜欢数</option>

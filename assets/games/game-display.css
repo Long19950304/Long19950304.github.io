@@ -1,7 +1,13 @@
 /* Display improvements only: each student game's rules and artwork stay intact. */
 button, [role="button"] { touch-action: manipulation; }
 button:focus-visible, [role="button"]:focus-visible { outline: 3px solid #1675d1; outline-offset: 3px; }
-.game-display-fullscreen { position: fixed; bottom: max(10px, env(safe-area-inset-bottom)); left: max(10px, env(safe-area-inset-left)); z-index: 9000; border: 1px solid #ffffff90; border-radius: 8px; padding: 7px 10px; background: #17232cdd; color: white; font: 13px/1.2 system-ui, sans-serif; cursor: pointer; box-shadow: 0 2px 6px #0002; }
+.game-display-menu { position: fixed; bottom: max(10px, env(safe-area-inset-bottom)); left: max(10px, env(safe-area-inset-left)); z-index: 9000; font: 14px/1.5 system-ui, sans-serif; color: white; text-align: left; }
+.game-display-menu > summary { box-sizing: border-box; min-height: 44px; display: flex; align-items: center; width: max-content; padding: 8px 12px; list-style: none; border: 1px solid #ffffff90; border-radius: 8px; background: #17232cf0; cursor: pointer; box-shadow: 0 2px 6px #0002; }
+.game-display-menu > summary::-webkit-details-marker { display: none; }
+.game-display-menu > summary:focus-visible { outline: 3px solid #1675d1; outline-offset: 3px; }
+.game-display-panel { position: absolute; bottom: 52px; left: 0; box-sizing: border-box; width: min(290px, calc(100vw - 24px)); max-height: calc(100dvh - 85px); overflow-y: auto; padding: 12px; border-radius: 10px; border: 1px solid #ffffff70; background: #17232cf5; box-shadow: 0 4px 16px #0004; }
+.game-display-panel p { margin: 0 0 10px; color: #fff; font: inherit; }
+.game-display-panel a, .game-display-panel button { box-sizing: border-box; display: flex; align-items: center; width: 100%; min-height: 44px; margin: 4px 0 0; padding: 8px 10px; background: #ffffff15; border: 1px solid #ffffff40; border-radius: 6px; color: #fff; font: inherit; text-decoration: none; cursor: pointer; box-shadow: none; }
 html[data-game="07"] #roleList { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
 html[data-game="07"] #boardWrap { max-width: 100%; }
 html[data-game="09"] canvas { touch-action: none; }
@@ -73,3 +79,7 @@ html[data-game="26"] .grid { flex-shrink: 0; margin-inline: auto; }
 @media (max-height: 560px) {
   html[data-game="19"] .board { width: min(100%, 570px); }
 }
+
+/* Long scrolling games keep the menu in the page flow, clear of task buttons. */
+.game-display-menu--inline { position: relative; left: auto; bottom: auto; margin: 10px; width: max-content; }
+.game-display-menu--inline .game-display-panel { top: 52px; bottom: auto; }

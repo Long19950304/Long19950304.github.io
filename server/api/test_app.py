@@ -81,6 +81,16 @@ class ShowcaseAPI(unittest.TestCase):
             self.assertEqual((status, data['likes']), (200, 1))
         self.assertEqual(self.request('DELETE', 'likes-test/like', {})[1]['likes'], 0)
 
+    def test_saved_likes_follow_visitor_cookie(self):
+        self.request('POST', 'saved-like/like', {}, visitor='s' * 32)
+        _, owner = self.request('GET', 'likes', visitor='s' * 32)
+        _, other = self.request('GET', 'likes', visitor='t' * 32)
+        self.assertIn('saved-like', owner['liked'])
+        self.assertNotIn('saved-like', other['liked'])
+        self.assertEqual(owner['likes'], other['likes'])
+        self.request('DELETE', 'saved-like/like', {}, visitor='s' * 32)
+        self.assertNotIn('saved-like', self.request('GET', 'likes', visitor='s' * 32)[1]['liked'])
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -5,13 +5,16 @@
   var cards = Array.prototype.slice.call(document.querySelectorAll('[data-game-card]'));
   var search = document.querySelector('[data-game-search]');
   var sort = document.querySelector('[data-game-sort]');
+  var playerMode = document.querySelector('[data-game-mode]');
+  var likedState = Object.create(null);
   var chinese = document.querySelector('[data-game-language="zh"]') !== null;
   var results = document.querySelector('[data-game-results]');
   var empty = document.querySelector('[data-game-empty]');
 
   function localKey(id) { return 'game-liked:' + id; }
-  function isLiked(id) { try { return window.localStorage.getItem(localKey(id)) === '1'; } catch (_) { return false; } }
+  function isLiked(id) { if (id in likedState) return likedState[id]; try { return window.localStorage.getItem(localKey(id)) === '1'; } catch (_) { return false; } }
   function setLiked(id, value) {
+    likedState[id] = value;
     try {
     if (value) window.localStorage.setItem(localKey(id), '1');
     else window.localStorage.removeItem(localKey(id));
@@ -33,8 +36,9 @@
       if (mode === 'likes') return Number(b.dataset.likes || 0) - Number(a.dataset.likes || 0);
       return Number(a.dataset.order) - Number(b.dataset.order);
     }).forEach(function (card) {
-      var hay = (card.dataset.title + ' ' + card.dataset.student).toLowerCase();
-      card.hidden = term && hay.indexOf(term) === -1;
+      var hay = (card.dataset.title + ' ' + card.dataset.student + ' ' + card.dataset.genre).toLowerCase();
+      var players = playerMode && playerMode.value || 'all';
+      card.hidden = (term && hay.indexOf(term) === -1) || (players !== 'all' && card.dataset[players] !== 'true');
       card.parentNode.appendChild(card);
     });
     var count = cards.filter(function (card) { return !card.hidden; }).length;
@@ -54,7 +58,10 @@
     if (!API) { cards.forEach(function (card) { updateButton(card.querySelector('[data-like-button]')); }); return; }
     fetch(API.replace(/\/$/, '') + '/api/v1/games/likes')
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
-      .then(function (data) { applyCounts(data.likes || {}); })
+      .then(function (data) {
+        if (Array.isArray(data.liked)) cards.forEach(function (card) { setLiked(card.dataset.gameId, data.liked.includes(card.dataset.gameId)); });
+        applyCounts(data.likes || {});
+      })
       .catch(function () { cards.forEach(function (card) { updateButton(card.querySelector('[data-like-button]')); }); });
   }
   cards.forEach(function (card) {
@@ -88,6 +95,7 @@
   });
   if (search) search.addEventListener('input', renderOrder);
   if (sort) sort.addEventListener('change', renderOrder);
+  if (playerMode) playerMode.addEventListener('change', renderOrder);
   renderOrder();
   fetchCounts();
 })();

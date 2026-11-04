@@ -92,7 +92,10 @@ class Handler(BaseHTTPRequestHandler):
             if path in ('/api/v1/games/likes', '/api/v1/games/comments'):
                 table = 'likes' if path.endswith('/likes') else 'comments'
                 counts = {r[0]: r[1] for r in con.execute(f'SELECT game_id, COUNT(*) FROM {table} GROUP BY game_id')}
-                self.send_json(200, {table: counts})
+                payload = {table: counts}
+                if table == 'likes':
+                    payload['liked'] = [r[0] for r in con.execute('SELECT game_id FROM likes WHERE visitor_id=?', (cookie(self.headers),))]
+                self.send_json(200, payload)
                 return
             match = re.fullmatch(r'/api/v1/games/([^/]+)/comments', path)
             if not match:

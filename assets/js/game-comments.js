@@ -129,5 +129,15 @@
     } catch (error) { if (version === generation) status.textContent = errorText(error); }
     finally { submit.disabled = false; }
   });
+  function openLinkedComments() {
+    var match = location.hash.match(/^#comment-(\d+)$/);
+    if (!match) return;
+    var card = document.getElementById('game-' + Number(match[1]));
+    if (!card) return;
+    card.scrollIntoView({ block: 'center' });
+    card.querySelector('[data-comments-open]').click();
+  }
+  window.addEventListener('hashchange', openLinkedComments);
+  openLinkedComments();
   refreshCounts();
 })();

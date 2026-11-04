@@ -3,18 +3,19 @@
 <p class="game-showcase-results" data-game-results role="status" aria-live="polite"></p>
 <div class="game-showcase-grid" data-game-grid>
   {% for game in site.data.game_showcases.modern_education_technology %}
-    <article class="game-card" data-game-card data-title="{{ game.title | escape }}" data-student="{{ game.student | escape }}" data-order="{{ game.order }}" data-game-id="{{ game.id }}">
-      <a class="game-card__cover" href="{{ game.file | relative_url }}" target="_blank" rel="noopener" aria-label="{% if chinese %}试玩{% else %}Play{% endif %} {{ game.title | escape }}">
+    <article class="game-card" id="game-{{ game.order }}" data-game-card data-genre="{{ game.genre | escape }} {{ game.genre_en | escape }}" data-single="{{ game.single }}" data-multiplayer="{{ game.multiplayer }}" data-title="{{ game.title | escape }}" data-student="{{ game.student | escape }}" data-order="{{ game.order }}" data-game-id="{{ game.id }}">
+      <a class="game-card__cover" href="{{ game.file | relative_url }}?lang={{ page.lang }}" target="_blank" rel="noopener" aria-label="{% if chinese %}试玩{% else %}Play{% endif %} {{ game.title | escape }}">
         <img src="{{ game.cover | relative_url }}" alt="{{ game.title | escape }}{% if chinese %}游戏内画面{% else %} gameplay screenshot{% endif %}" width="960" height="600" {% if forloop.index > 3 %}loading="lazy"{% else %}loading="eager"{% endif %} decoding="async">
         <span class="game-card__number">{{ game.order }}</span>
         <span class="game-card__cover-play" aria-hidden="true">▶</span>
       </a>
       <div class="game-card__body">
         <p class="game-card__genre">{% if chinese %}{{ game.genre }}{% else %}{{ game.genre_en }}{% endif %}</p>
-        <h2 class="game-card__title"><a href="{{ game.file | relative_url }}" target="_blank" rel="noopener">{{ game.title }}</a></h2>
+        <h2 class="game-card__title"><a href="{{ game.file | relative_url }}?lang={{ page.lang }}" target="_blank" rel="noopener">{{ game.title }}</a></h2>
+        <p class="game-card__controls">{% if chinese %}{{ game.controls }}{% else %}{{ game.controls_en }}{% endif %}</p>
         <p class="game-card__student">{{ game.student }}</p>
         <div class="game-card__actions">
-          <a class="btn btn-sm z-depth-0 game-card__play" href="{{ game.file | relative_url }}" target="_blank" rel="noopener">{% if chinese %}开始游戏{% else %}Play game{% endif %} <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-sm z-depth-0 game-card__play" href="{{ game.file | relative_url }}?lang={{ page.lang }}" target="_blank" rel="noopener">{% if chinese %}开始游戏{% else %}Play game{% endif %} <span aria-hidden="true">↗</span></a>
           <button class="btn btn-sm z-depth-0 game-like" type="button" data-like-button data-game-id="{{ game.id }}" aria-label="{% if chinese %}喜欢{% else %}Like{% endif %} {{ game.title | escape }}" aria-pressed="false">♡ <span data-like-count>{% if chinese %}喜欢{% else %}Like{% endif %}</span></button>
         </div>
         <span class="game-like-feedback" data-like-feedback role="status" hidden></span>

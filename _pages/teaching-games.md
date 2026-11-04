@@ -13,7 +13,12 @@ translation_key: teaching-games
   <p class="small game-showcase-note">Real gameplay screenshots. Play directly in your browser; use a computer or landscape screen for games with a wide layout.</p>
 
   <div class="game-showcase-toolbar" data-game-toolbar>
-    <input class="game-showcase-search" type="search" placeholder="Search by title or student" aria-label="Search games" data-game-search>
+    <input class="game-showcase-search" type="search" placeholder="Search title, game type or student" aria-label="Search games" data-game-search>
+    <select class="game-showcase-mode" aria-label="Player mode" data-game-mode>
+      <option value="all">All modes</option>
+      <option value="single">Single player</option>
+      <option value="multiplayer">Two or more players</option>
+    </select>
     <select class="game-showcase-sort" aria-label="Sort games" data-game-sort>
       <option value="order">Class order</option>
       <option value="likes">Most liked</option>

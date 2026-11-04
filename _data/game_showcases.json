@@ -10,7 +10,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-01.webp",
       "genre": "听音挖矿",
-      "genre_en": "Listening · mining"
+      "genre_en": "Listening · mining",
+      "controls": "点击画面或按空格放钩，听发音寻找目标。",
+      "controls_en": "Click or press Space to drop the hook; listen for the target.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "02-3124003043",
@@ -22,7 +26,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-02.webp",
       "genre": "发音挖矿",
-      "genre_en": "Phonics · mining"
+      "genre_en": "Phonics · mining",
+      "controls": "点击或按空格放钩，P 键暂停。",
+      "controls_en": "Click or press Space to drop the hook; press P to pause.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "03-3224000506",
@@ -34,7 +42,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-03.webp",
       "genre": "食物闯关",
-      "genre_en": "Food · adventure"
+      "genre_en": "Food · adventure",
+      "controls": "用上下方向键或屏幕按钮选择食物。",
+      "controls_en": "Use arrow keys or on-screen buttons to choose food.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "04-3224000510",
@@ -46,7 +58,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-04.webp",
       "genre": "食物分类",
-      "genre_en": "Food sorting"
+      "genre_en": "Food sorting",
+      "controls": "拖动食物到分类篮；也可先点食物再点篮子。",
+      "controls_en": "Drag food to a basket, or tap the food then its basket.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "05-3224000599",
@@ -58,7 +74,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-05.webp",
       "genre": "翻牌与闯关",
-      "genre_en": "Memory · challenges"
+      "genre_en": "Memory · challenges",
+      "controls": "选择挑战模式，按提示点击或拖动。",
+      "controls_en": "Choose a mode, then click or drag as instructed.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "06-3224000733",
@@ -70,7 +90,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-06.webp",
       "genre": "餐厅经营",
-      "genre_en": "Restaurant"
+      "genre_en": "Restaurant",
+      "controls": "按订单点击或拖动食物，可选择接力模式。",
+      "controls_en": "Click or drag food to fill orders; a relay mode is available.",
+      "single": true,
+      "multiplayer": true
     },
     {
       "id": "07-3224000784",
@@ -82,7 +106,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-07.webp",
       "genre": "多人飞行棋",
-      "genre_en": "Multiplayer board"
+      "genre_en": "Multiplayer board",
+      "controls": "2–3 人同屏，选择角色后轮流掷骰、答题。",
+      "controls_en": "2–3 players share a screen; choose characters, roll and answer in turn.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "08-3224000889",
@@ -94,7 +122,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-08.webp",
       "genre": "听音打地鼠",
-      "genre_en": "Listening · whack-a-mole"
+      "genre_en": "Listening · whack-a-mole",
+      "controls": "听发音，点击对应食物。",
+      "controls_en": "Listen and click the matching food.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "09-3224001156",
@@ -106,7 +138,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-09.webp",
       "genre": "转盘拼词",
-      "genre_en": "Word wheel"
+      "genre_en": "Word wheel",
+      "controls": "点击转盘字母拼出目标单词。",
+      "controls_en": "Click letters on the wheel to spell the word.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "10-3224001428",
@@ -118,7 +154,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-10.webp",
       "genre": "单词塔防",
-      "genre_en": "Word tower defense"
+      "genre_en": "Word tower defense",
+      "controls": "先回答单词题，再点击地图放置防御塔。",
+      "controls_en": "Answer a word question, then click the map to place a tower.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "11-3224001447",
@@ -130,7 +170,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-11.webp",
       "genre": "单词闯关",
-      "genre_en": "Word adventure"
+      "genre_en": "Word adventure",
+      "controls": "点击答案，通过单词关卡。",
+      "controls_en": "Click an answer to complete each word challenge.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "12-3224001617",
@@ -142,7 +186,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-12.webp",
       "genre": "密室解谜",
-      "genre_en": "Escape room"
+      "genre_en": "Escape room",
+      "controls": "点击场景线索，按提示解谜。",
+      "controls_en": "Click scene clues and solve the puzzles.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "13-3224001644",
@@ -154,7 +202,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-13.webp",
       "genre": "双人追逐棋",
-      "genre_en": "Two-player chase"
+      "genre_en": "Two-player chase",
+      "controls": "双人同屏，轮流掷骰并完成单词任务。",
+      "controls_en": "Two players share a screen; roll and complete word tasks in turn.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "14-3224002250",
@@ -166,7 +218,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-14.webp",
       "genre": "小组词汇竞赛",
-      "genre_en": "Team word challenge"
+      "genre_en": "Team word challenge",
+      "controls": "四组轮流选择词卡，按课堂规则竞赛。",
+      "controls_en": "Four teams take turns choosing word cards.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "15-3224002327",
@@ -178,7 +234,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-15.webp",
       "genre": "字母拼词",
-      "genre_en": "Spelling"
+      "genre_en": "Spelling",
+      "controls": "依次点击字母，拼出目标单词。",
+      "controls_en": "Click letters in order to spell the target word.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "16-3224002342",
@@ -190,7 +250,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-16.webp",
       "genre": "地图探险",
-      "genre_en": "Map adventure"
+      "genre_en": "Map adventure",
+      "controls": "跟随地图选择关卡并答题。",
+      "controls_en": "Follow the map, select a level and answer questions.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "17-3224002426",
@@ -202,7 +266,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-17.webp",
       "genre": "红蓝配对对抗",
-      "genre_en": "Team matching"
+      "genre_en": "Team matching",
+      "controls": "红蓝两队同屏，点击配对词卡。",
+      "controls_en": "Red and blue teams share a screen and click matching cards.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "18-3224002586",
@@ -214,7 +282,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-18.webp",
       "genre": "双人单词竞赛",
-      "genre_en": "Two-player word quiz"
+      "genre_en": "Two-player word quiz",
+      "controls": "两队同屏，点击答案进行单词竞赛。",
+      "controls_en": "Two teams share a screen and click answers to compete.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "19-3224003047",
@@ -226,7 +298,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-19.webp",
       "genre": "食物记忆配对",
-      "genre_en": "Food memory"
+      "genre_en": "Food memory",
+      "controls": "点击翻牌，将食物单词与图片配对。",
+      "controls_en": "Flip cards to match food words with pictures.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "20-3224003541",
@@ -238,7 +314,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-20.webp",
       "genre": "情绪翻牌",
-      "genre_en": "Feelings memory"
+      "genre_en": "Feelings memory",
+      "controls": "点击翻牌，配对情绪单词与表情。",
+      "controls_en": "Flip cards to match feelings with expressions.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "21-3224003646",
@@ -250,7 +330,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-21.webp",
       "genre": "双人任务棋",
-      "genre_en": "Two-player board"
+      "genre_en": "Two-player board",
+      "controls": "双人同屏，先猜拳决定顺序，再轮流完成任务。",
+      "controls_en": "Two players choose the first turn with rock-paper-scissors, then take turns.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "22-3224003701",
@@ -262,7 +346,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-22.webp",
       "genre": "单词配对",
-      "genre_en": "Word matching"
+      "genre_en": "Word matching",
+      "controls": "点击词卡配对；联网 PK 需要双方网络连接。",
+      "controls_en": "Click matching cards; online PK requires a connection for both players.",
+      "single": true,
+      "multiplayer": true
     },
     {
       "id": "23-3224003909",
@@ -274,7 +362,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-23.webp",
       "genre": "双向切词闯关",
-      "genre_en": "Word slicing"
+      "genre_en": "Word slicing",
+      "controls": "按住鼠标或手指滑动，切中目标单词。",
+      "controls_en": "Hold and drag the mouse or swipe to slice the target word.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "24-3224004015",
@@ -286,7 +378,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-24.webp",
       "genre": "单词切水果",
-      "genre_en": "Word fruit slicing"
+      "genre_en": "Word fruit slicing",
+      "controls": "按住鼠标或手指滑动切词，可选择对战。",
+      "controls_en": "Drag or swipe to slice words; a versus mode is available.",
+      "single": true,
+      "multiplayer": true
     },
     {
       "id": "25-3224004152",
@@ -298,7 +394,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-25.webp",
       "genre": "双人打地鼠",
-      "genre_en": "Two-player whack-a-mole"
+      "genre_en": "Two-player whack-a-mole",
+      "controls": "双人同屏，听题后点击对应地鼠。",
+      "controls_en": "Two players share a screen; listen and click the matching mole.",
+      "single": false,
+      "multiplayer": true
     },
     {
       "id": "26-3224004676",
@@ -310,7 +410,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-26.webp",
       "genre": "单词扫雷",
-      "genre_en": "Word minesweeper"
+      "genre_en": "Word minesweeper",
+      "controls": "点击翻格，右键插旗；触屏可切换插旗模式或长按。",
+      "controls_en": "Click to reveal, right-click to flag; on touch, use flag mode or long-press.",
+      "single": true,
+      "multiplayer": false
     },
     {
       "id": "27-3224004748",
@@ -322,7 +426,11 @@
       "category": "英语学习",
       "cover": "/assets/img/games/game-27.webp",
       "genre": "听音寻宝",
-      "genre_en": "Listening · treasure"
+      "genre_en": "Listening · treasure",
+      "controls": "听目标发音，点击画面放钩寻宝。",
+      "controls_en": "Listen for the target and click to drop the hook.",
+      "single": true,
+      "multiplayer": false
     }
   ]
 }

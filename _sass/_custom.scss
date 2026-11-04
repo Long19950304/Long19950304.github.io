@@ -1223,3 +1223,14 @@ h1 {
 @media (max-width: 575px) { .game-showcase-toolbar { flex-direction: column; } .game-showcase-grid { gap: .8rem; } .game-card__body { padding: .75rem; } }
 @media (max-width: 380px) { .game-showcase-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .game-card__cover img { transition: none; } .game-card__cover:hover img { transform: none; } }
+
+.skip-to-content { position: fixed; top: -100px; left: 12px; z-index: 11000; padding: 12px 18px; background: var(--global-bg-color); color: var(--global-text-color); border: 2px solid var(--global-theme-color); border-radius: 6px; }
+.skip-to-content:focus { top: 12px; }
+#main-content { scroll-margin-top: 90px; }
+.publication-jumps { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.25rem; }
+.publication-group h2[id] { scroll-margin-top: 90px; }
+.game-showcase-mode { border: 1px solid var(--global-divider-color); border-radius: 8px; padding: .65rem .8rem; background: var(--global-card-bg-color); color: var(--global-text-color); }
+.game-card { scroll-margin-top: 90px; }
+.game-card__controls { color: var(--global-text-color-light); font-size: .78rem; line-height: 1.6; margin: 0 0 .7rem; }
+.game-card__actions .btn, .game-comment-link { min-height: 44px; }
+@media (min-width: 576px) and (max-width: 760px) { .game-showcase-toolbar { flex-wrap: wrap; } .game-showcase-search { flex-basis: 100%; } }

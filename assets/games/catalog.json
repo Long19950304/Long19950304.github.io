@@ -1,0 +1,8 @@
+---
+layout: null
+---
+[
+{% for game in site.data.game_showcases.modern_education_technology %}
+  {"order": {{ game.order }}, "controls": {{ game.controls | jsonify }}, "controls_en": {{ game.controls_en | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

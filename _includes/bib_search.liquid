@@ -1,4 +1,6 @@
 {% if site.bib_search %}
   <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
+  <label class="sr-only" for="bibsearch">{% if page.lang == 'zh' %}搜索论文与会议报告{% else %}Search publications and presentations{% endif %}</label>
+  <input type="search" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="{% if page.lang == 'zh' %}搜索题名、作者、年份或会议{% else %}Search title, author, year or conference{% endif %}" aria-describedby="bibsearch-status">
+  <p id="bibsearch-status" class="small" role="status" aria-live="polite"></p>
 {% endif %}

@@ -424,24 +424,24 @@ function scoreRecording(){
 
 // 角色表：图片 + 名称（相同类别相邻，角色区按6列排成三行）
 const ROLES=[
-  {id:"yang",    name:"小羊",   img:"羊.png"},
-  {id:"gou",     name:"小狗",   img:"狗.png"},
-  {id:"qingwa",  name:"青蛙",   img:"青蛙.png"},
-  {id:"tuzi",    name:"兔子",   img:"兔子.png"},
-  {id:"mao",     name:"小猫咪", img:"小猫咪.png"},
-  {id:"zhu",     name:"小猪",   img:"小猪.png"},
-  {id:"aoteman", name:"奥特曼", img:"奥特曼.png"},
-  {id:"xiongda", name:"熊大",   img:"熊大.jpg"},
-  {id:"xionger", name:"熊二",   img:"熊二.jpg"},
-  {id:"barbie",  name:"芭比公主",img:"芭比.jpg"},
-  {id:"boy",     name:"小男孩", img:"小男孩.png"},
-  {id:"girl",    name:"小女孩", img:"小女孩.png"},
-  {id:"baji",    name:"小纵队·巴基",img:"海底小纵队巴基.jpg"},
-  {id:"zhiwuyu", name:"小纵队·植物鱼",img:"海底小纵队植物鱼.jpg"},
-  {id:"haimian", name:"海绵宝宝",img:"海绵宝宝.jpg"},
-  {id:"paidaxing",name:"派大星", img:"派大星.jpg"},
-  {id:"zhangyu", name:"章鱼哥", img:"章鱼哥.png"},
-  {id:"wugui",   name:"小乌龟", img:"乌龟.png"}
+  {id:"yang", name:"小羊", img:"/assets/games/roles/yang.svg"},
+  {id:"gou", name:"小狗", img:"/assets/games/roles/gou.svg"},
+  {id:"qingwa", name:"青蛙", img:"/assets/games/roles/qingwa.svg"},
+  {id:"tuzi", name:"兔子", img:"/assets/games/roles/tuzi.svg"},
+  {id:"mao", name:"小猫咪", img:"/assets/games/roles/mao.svg"},
+  {id:"zhu", name:"小猪", img:"/assets/games/roles/zhu.svg"},
+  {id:"aoteman", name:"奥特曼", img:"/assets/games/roles/aoteman.svg"},
+  {id:"xiongda", name:"熊大", img:"/assets/games/roles/xiongda.svg"},
+  {id:"xionger", name:"熊二", img:"/assets/games/roles/xionger.svg"},
+  {id:"barbie", name:"芭比公主", img:"/assets/games/roles/barbie.svg"},
+  {id:"boy", name:"小男孩", img:"/assets/games/roles/boy.svg"},
+  {id:"girl", name:"小女孩", img:"/assets/games/roles/girl.svg"},
+  {id:"baji", name:"小纵队·巴基", img:"/assets/games/roles/baji.svg"},
+  {id:"zhiwuyu", name:"小纵队·植物鱼", img:"/assets/games/roles/zhiwuyu.svg"},
+  {id:"haimian", name:"海绵宝宝", img:"/assets/games/roles/haimian.svg"},
+  {id:"paidaxing", name:"派大星", img:"/assets/games/roles/paidaxing.svg"},
+  {id:"zhangyu", name:"章鱼哥", img:"/assets/games/roles/zhangyu.svg"},
+  {id:"wugui", name:"小乌龟", img:"/assets/games/roles/wugui.svg"}
 ];
 function roleInfo(id){return ROLES.find(r=>r.id===id)||{name:id,img:""}}
 function roleName(id){return roleInfo(id).name}

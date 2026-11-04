@@ -28,7 +28,7 @@
   {%- endif -%}
 
   {%- assign meta = site.data.research_citations[p.project_id] -%}
-  {%- assign canonical_url = site.url | append: '/research/' | append: '#' | append: p.project_id -%}
+  {%- assign canonical_url = site.url | append: page.url | append: '#' | append: p.project_id -%}
 
   {%- assign primary_url = "" -%}
   {%- if p.published_url != "" -%}

@@ -10,7 +10,8 @@ translation_key: home
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: zhilong-zhao-pixel.png
+  pixel_art: true
   image_circular: false
   more_info: >
     <p>中国广东江门（UTC+8）</p>

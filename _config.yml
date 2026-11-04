@@ -15,7 +15,7 @@ footer_text: >
   Hosted on <a href="https://www.tencentcloud.com/">Tencent Cloud</a>.
 keywords: Zhilong Zhao, 赵志龙, Wuyi University, communication, AI for Social Science, health communication, LLM evaluation
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: Z # the emoji/character used as the favicon (alternatively, provide image name in /assets/img/)
+icon: zhilong-zhao-pixel-icon.png
 
 url: https://www.zhaozhilong.com # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -64,7 +64,7 @@ max_width: 1100px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: /assets/img/og-default.png # The site-wide (default for all links) Open Graph preview image
+og_image: https://www.zhaozhilong.com/assets/img/zhilong-zhao-pixel.png # Public avatar shared across website previews
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

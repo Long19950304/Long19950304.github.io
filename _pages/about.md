@@ -10,7 +10,8 @@ translation_key: home
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: zhilong-zhao-pixel.png
+  pixel_art: true
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Jiangmen, Guangdong, China (UTC+8)</p>

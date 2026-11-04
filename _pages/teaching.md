@@ -20,8 +20,8 @@ Generative AI can help students explore alternatives, build prototypes, and comp
 Studio-based learning provides an overall approach to classroom design. Tasks, pacing, and assessment are adapted to each course's learning goals.
 
 <figure style="margin: 1.5rem 0;">
-  <img src="/assets/img/teaching/teaching-studio.webp" width="2560" height="1120" alt="Four stages of classroom design: discussing a question, making a prototype together, gathering peer feedback and revising, and sharing the work with an audience. Feedback supports further revision." style="display: block; width: 100%; height: auto; border-radius: 8px;">
-  <figcaption style="margin-top: .6rem; font-size: .9rem; text-align: center;">Ask a question → Make together → Test and revise → Share the work</figcaption>
+  <a href="/assets/img/teaching/teaching-framework-en.webp" target="_blank" rel="noopener" aria-label="Open the classroom design framework at full size"><img src="/assets/img/teaching/teaching-framework-en.webp" width="2560" height="1440" alt="Conceptual framework for studio-based teaching: define the task, make together, test and respond, and share and reflect; feedback returns to making. Collaboration, assessment, and responsible AI support all four stages." style="display: block; width: 100%; height: auto; border-radius: 8px;"></a>
+  <figcaption style="margin-top: .6rem; font-size: .9rem; text-align: center;">A framework connecting tasks, making, feedback, and reflection. Click to view at full size.</figcaption>
 </figure>
 
 1. **Ask a question**: start with a real communication or learning context, identify the audience and purpose, and decide what would count as a useful outcome.

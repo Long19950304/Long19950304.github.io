@@ -20,8 +20,8 @@ translation_key: teaching
 工作室式学习是我组织课堂的总体思路，具体任务、节奏与评价方式随课程目标调整。
 
 <figure style="margin: 1.5rem 0;">
-  <img src="/assets/img/teaching/teaching-studio.webp" width="2560" height="1120" alt="课堂设计的四个环节：围绕问题共同讨论、团队协作制作、同伴试玩与反馈、公开展示作品；反馈推动进一步修改。" style="display: block; width: 100%; height: auto; border-radius: 8px;">
-  <figcaption style="margin-top: .6rem; font-size: .9rem; text-align: center;">提出问题 → 协作制作 → 反馈修改 → 公开展示</figcaption>
+  <a href="/assets/img/teaching/teaching-framework-zh.webp" target="_blank" rel="noopener" aria-label="查看课堂设计概念图大图"><img src="/assets/img/teaching/teaching-framework-zh.webp" width="2560" height="1440" alt="工作室式课堂设计概念图：明确任务、协作制作、测试反馈、展示反思依次连接，测试反馈返回协作制作形成修改回路；团队协作、评价标准与负责任的AI贯穿全过程。" style="display: block; width: 100%; height: auto; border-radius: 8px;"></a>
+  <figcaption style="margin-top: .6rem; font-size: .9rem; text-align: center;">课堂设计框架：任务、制作、反馈与反思。点击图片可查看大图。</figcaption>
 </figure>
 
 1. **提出问题**：从真实的传播或学习情境出发，明确面向谁、希望解决什么，以及怎样判断是否有效。

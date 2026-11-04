@@ -37,10 +37,13 @@ layout: default
             {% else %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
+            {% if page.profile.pixel_art %}
+              {% assign profile_image_class = profile_image_class | append: ' pixel-art-avatar' %}
+            {% endif %}
             {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.27}}px, (min-width: 576px) 27vw, 95vw{% endcapture %}
             {%
               include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Zhilong Zhao"
-              cache_bust=true
+              cache_bust=true avoid_scaling=page.profile.pixel_art
             %}
           {% endif %}
           {% if page.profile.more_info %}

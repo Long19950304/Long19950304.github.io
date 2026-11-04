@@ -23,16 +23,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-研究",
-          title: "研究",
-          description: "传播研究、AI for Social Science与影像创作。",
+        },{id: "nav-项目",
+          title: "项目",
+          description: "主持科研项目、教改项目、省级人才项目与参与研究。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/research/";
           },
-        },{id: "nav-research",
-          title: "Research",
-          description: "Communication research, AI for Social Science, and media production.",
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Research grants, teaching development, talent support, and collaborative projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -64,6 +64,20 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-服务",
+          title: "服务",
+          description: "学术服务与期刊同行评审。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/service/";
+          },
+        },{id: "nav-service",
+          title: "Service",
+          description: "Academic service and journal peer review.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
           },
         },{id: "nav-简历",
           title: "简历",

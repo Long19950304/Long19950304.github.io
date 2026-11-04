@@ -74,7 +74,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Education, affiliations, and research interests of Zhilong George Zhao.",
+          description: "Education, affiliations, and research interests of Zhilong Zhao.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";

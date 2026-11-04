@@ -48,4 +48,4 @@ I hold a PhD in Communication from the University of Macau and previously worked
 - **AI for Social Science**: evaluating LLM-assisted coding and developing methods for calibration and human review.
 - **Media production and teaching**: exploring generative AI in visual storytelling and project-based learning.
 
-[Research](/research/) · [Media projects](/media/) · [Teaching and student work](/teaching/)
+[Projects](/research/) · [Media projects](/media/) · [Teaching and student work](/teaching/) · [Academic service](/service/)

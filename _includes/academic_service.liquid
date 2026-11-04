@@ -1,0 +1,9 @@
+{% assign service_heading = include.heading | default: 'h2' %}
+<{{ service_heading }} id="journal-reviewing">{% if page.lang == 'zh' %}期刊审稿{% else %}Journal Peer Review{% endif %}</{{ service_heading }}>
+<ul>
+{% for journal in site.data.academic_service.journals %}
+  {% assign journal_name = journal.name %}
+  {% if page.lang != 'zh' and journal.name_en %}{% assign journal_name = journal.name_en %}{% endif %}
+  <li><a href="{{ journal.url }}">{{ journal_name }}</a></li>
+{% endfor %}
+</ul>

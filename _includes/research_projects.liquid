@@ -1,27 +1,23 @@
-{% if page.lang == 'zh' %}
-<h2 id="projects">主持科研项目</h2>
+{% assign project_lang = page.lang | default: 'en' %}
+{% for section in site.data.research_grants.sections %}
+<h2 id="{{ section.id }}">{{ section.title[project_lang] }}</h2>
+{% if section.note %}<p>{{ section.note[project_lang] }}</p>{% endif %}
 <ul>
-  <li><p><strong>粤港澳大湾区AI辅助质性研究的语义保真与偏差校正机制研究</strong><br>
-  广东省哲学社会科学规划青年项目 · GD26YXW16 · 2026–2028 · 经费2万元<br>
-  关注AI辅助质性研究中的语义偏移、文化偏差及其识别与校正。</p></li>
-  <li><p><strong>生成式人工智能赋能侨乡文化多模态国际传播的机制与路径研究</strong><br>
-  五邑大学博士科研启动项目 · 2026–2031 · 经费10万元<br>
-  探索生成式人工智能参与侨乡文化多模态叙事与跨文化传播的机制。</p></li>
+  {% for project in section.items %}
+  <li><p><strong>{{ project.title[project_lang] }}</strong>
+    {% assign project_meta = '' | split: ',' %}
+    {% if project.programme %}{% assign project_meta = project_meta | push: project.programme[project_lang] %}{% endif %}
+    {% if project.number %}{% assign project_meta = project_meta | push: project.number %}{% endif %}
+    {% if project.period %}
+      {% assign project_period = project.period[project_lang] | default: project.period %}
+      {% assign project_meta = project_meta | push: project_period %}
+    {% endif %}
+    {% if project.funding %}{% assign project_meta = project_meta | push: project.funding[project_lang] %}{% endif %}
+    {% if project.status %}{% assign project_meta = project_meta | push: project.status[project_lang] %}{% endif %}
+    {% if project_meta.size > 0 %}<br>{{ project_meta | join: ' · ' }}{% endif %}
+    {% if project.lead %}<br>{% if project_lang == 'zh' %}主持：{% else %}Principal investigator: {% endif %}{{ project.lead[project_lang] }}{% endif %}
+    {% if project.description %}<br>{{ project.description[project_lang] }}{% endif %}
+  </p></li>
+  {% endfor %}
 </ul>
-<h2 id="talent">省级人才项目</h2>
-<p><strong>广东省海外博士后人才支持项目</strong> · 2024–2029 · 经费100万元<br>
-相关研究：数字健康教育对中小学生健康素养影响的研究。</p>
-{% else %}
-<h2 id="projects">Research Grants as Principal Investigator</h2>
-<ul>
-  <li><p><strong>Semantic Fidelity and Bias Correction in AI-Assisted Qualitative Research in the Guangdong–Hong Kong–Macao Greater Bay Area</strong><br>
-  Guangdong Philosophy and Social Science Planning, Youth Project · GD26YXW16 · 2026–2028 · Funding: RMB 20,000<br>
-  Examines semantic drift and cultural bias in AI-assisted qualitative research, and methods for identifying and correcting them.</p></li>
-  <li><p><strong>Generative AI for Multimodal International Communication of Qiaoxiang Culture: Mechanisms and Pathways</strong><br>
-  Wuyi University Doctoral Research Start-up Project · 2026–2031 · Funding: RMB 100,000<br>
-  Studies generative AI in multimodal storytelling and cross-cultural communication about communities with historical ties to overseas Chinese migration.</p></li>
-</ul>
-<h2 id="talent">Provincial Talent Programme</h2>
-<p><strong>Guangdong Overseas Postdoctoral Talent Support Programme</strong> · 2024–2029 · Funding: RMB 1,000,000<br>
-Related research: digital health education and health literacy among primary and secondary school students.</p>
-{% endif %}
+{% endfor %}

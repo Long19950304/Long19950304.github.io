@@ -6,7 +6,8 @@ en:
   nav:
     home: "About"
     publications: "Publications"
-    research: "Research"
+    research: "Projects"
+    service: "Service"
     media: "Media"
     teaching: "Teaching"
     cv: "CV"
@@ -61,7 +62,8 @@ zh:
   nav:
     home: "关于"
     publications: "论文"
-    research: "研究"
+    research: "项目"
+    service: "服务"
     media: "作品"
     teaching: "教学"
     cv: "简历"

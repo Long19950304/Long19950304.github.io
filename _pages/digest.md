@@ -4,7 +4,7 @@ title: Digest
 permalink: /digest/
 description: An archive of research and news briefs on AI, society, health, and education.
 nav: true
-nav_order: 7
+nav_order: 8
 lang: en
 translation_key: digest
 ---

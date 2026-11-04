@@ -1,0 +1,189 @@
+---
+sections:
+- id: projects
+  title:
+    zh: 主持科研项目
+    en: Research Grants as Principal Investigator
+  items:
+  - title:
+      zh: 粤港澳大湾区AI辅助质性研究的语义保真与偏差校正机制研究
+      en: Semantic Fidelity and Bias Correction in AI-Assisted Qualitative Research
+        in the Guangdong–Hong Kong–Macao Greater Bay Area
+    programme:
+      zh: 广东省哲学社会科学规划青年项目
+      en: Guangdong Philosophy and Social Science Planning, Youth Project
+    number: GD26YXW16
+    period: 2026–2028
+    funding:
+      zh: 经费2万元
+      en: 'Funding: RMB 20,000'
+  - title:
+      zh: 生成式人工智能赋能侨乡文化多模态国际传播的机制与路径研究
+      en: 'Generative AI for Multimodal International Communication of Qiaoxiang Culture:
+        Mechanisms and Pathways'
+    programme:
+      zh: 五邑大学博士科研启动项目
+      en: Wuyi University Doctoral Research Start-up Project
+    period: 2026–2031
+    funding:
+      zh: 经费10万元
+      en: 'Funding: RMB 100,000'
+- id: teaching-projects
+  title:
+    zh: 主持教改项目
+    en: Teaching Development as Project Lead
+  items:
+  - title:
+      zh: 生成式人工智能赋能《数字摄影与摄像》智能影像生产教学改革与实践
+      en: 'Generative AI for Intelligent Image Production in Digital Photography and
+        Videography: Teaching Reform and Practice'
+    programme:
+      zh: 五邑大学2026年度校级“人工智能+”教育教学专项建设项目
+      en: Wuyi University 2026 AI+ Education and Teaching Development Programme
+    number: RGZN2026262469
+    period: 2026–2028
+    funding:
+      zh: 申请经费1万元
+      en: 'Requested funding: RMB 10,000'
+    status:
+      zh: 立项评审中
+      en: Application under review
+- id: talent
+  title:
+    zh: 省级人才项目
+    en: Provincial Talent Programme
+  items:
+  - title:
+      zh: 广东省海外博士后人才支持项目
+      en: Guangdong Overseas Postdoctoral Talent Support Programme
+    period: 2024–2029
+    funding:
+      zh: 经费100万元
+      en: 'Funding: RMB 1,000,000'
+    description:
+      zh: 数字健康教育对中小学生健康素养影响的研究。
+      en: Research on digital health education and health literacy among primary and
+        secondary school students.
+- id: collaborative-projects
+  title:
+    zh: 参与科研项目
+    en: Collaborative Research Projects
+  items:
+  - title:
+      zh: 我国儿童青少年肥胖风险评估与干预策略研究
+      en: Obesity Risk Assessment and Intervention Strategies for Children and Adolescents
+        in China
+    programme:
+      zh: 国家社会科学基金重点项目
+      en: National Social Science Fund of China, Key Project
+    number: 23ATY007
+    funding:
+      zh: 经费35万元
+      en: 'Funding: RMB 350,000'
+    lead:
+      zh: 朱琳
+      en: Zhu Lin
+  - title:
+      zh: 数字新闻生态下的信息失序与协同治理研究
+      en: Information Disorder and Collaborative Governance in the Digital News Ecosystem
+    programme:
+      zh: 教育部人文社会科学研究规划基金项目
+      en: Ministry of Education Humanities and Social Sciences Planning Fund
+    number: 24YJA860010
+    funding:
+      zh: 经费10万元
+      en: 'Funding: RMB 100,000'
+    lead:
+      zh: 刘银娣
+      en: Liu Yindi
+  - title:
+      zh: 数字媒介情境下粤港澳大湾区听觉文化遗产的传承与传播研究
+      en: Preservation and Communication of Auditory Cultural Heritage in the Guangdong–Hong
+        Kong–Macao Greater Bay Area in Digital Media Contexts
+    programme:
+      zh: 广东省哲学社会科学规划专项项目
+      en: Guangdong Philosophy and Social Science Planning, Special Project
+    number: GD25DWQXW02
+    funding:
+      zh: 经费3万元
+      en: 'Funding: RMB 30,000'
+    lead:
+      zh: 刘银娣
+      en: Liu Yindi
+  - title:
+      zh: 广东省中小学校健康教育现况调研
+      en: Survey of Health Education in Primary and Secondary Schools in Guangdong
+    programme:
+      zh: 广东省教育厅资助
+      en: Funded by the Department of Education of Guangdong Province
+    period: 2022–2023
+    funding:
+      zh: 经费30万元
+      en: 'Funding: RMB 300,000'
+    lead:
+      zh: 陈亚军、朱琳
+      en: Chen Yajun and Zhu Lin
+  - title:
+      zh: COMET-19跨国心理健康与媒介使用调查
+      en: COMET-19 Mental Health Survey
+    period: 2020–2022
+    description:
+      zh: 多国高校联合开展的跨国心理健康与媒介使用调查，合作机构包括澳门大学、阿姆斯特丹自由大学、苏黎世大学医院、耶鲁大学及柏林自由大学等。
+      en: A multinational survey of mental health and media use, involving the University
+        of Macau, Vrije Universiteit Amsterdam, University Hospital Zurich, Yale University,
+        Freie Universität Berlin, and other partners.
+  - title:
+      zh: 澳门青年参与粤港澳大湾区意向调查
+      en: Survey of Macao Youth’s Intentions to Participate in the Guangdong–Hong
+        Kong–Macao Greater Bay Area
+    programme:
+      zh: 澳门大学澳门研究中心、澳门青年创业孵化中心资助
+      en: Funded by the Centre for Macau Studies, University of Macau, and the Macao
+        Young Entrepreneur Incubation Centre
+    period: 2020–2021
+    funding:
+      zh: 经费5万澳门元
+      en: 'Funding: MOP 50,000'
+    lead:
+      zh: 林玉凤
+      en: Agnes I. F. Lam
+  - title:
+      zh: 澳门居民媒介使用研究
+      en: Research on Media Use among Macao Residents
+    programme:
+      zh: 澳门大学澳门研究中心、澳门特别行政区政府新闻局资助
+      en: Funded by the Centre for Macau Studies, University of Macau, and the Macao
+        Government Information Bureau
+    period:
+      zh: 2008–2021（项目整体周期）
+      en: 2008–2021 (overall project period)
+    funding:
+      zh: 每年经费20万澳门元
+      en: 'Annual funding: MOP 200,000'
+    lead:
+      zh: 林玉凤
+      en: Agnes I. F. Lam
+  note:
+    zh: 以下经费为项目总经费。
+    en: Funding amounts below refer to the full project budgets.
+- id: documentary-projects
+  title:
+    zh: 参与地方志与口述史项目
+    en: Local History and Oral History Projects
+  items:
+  - title:
+      zh: "《澳门志·地理分志》编纂"
+      en: Compilation of the Geography Volume of the Macao Gazetteer
+    description:
+      zh: 作为编纂组成员，参与资料整理、内容撰写与编纂工作。该卷由澳门大学统筹出版，于2024年发布。
+      en: Contributed as a compilation team member to source organisation, writing,
+        and editing. The volume was coordinated by the University of Macau and published
+        in 2024.
+  - title:
+      zh: "《澳门回归历程口述史——变革前线》"
+      en: 'Oral History of Macao’s Return: The Frontline of Change'
+    description:
+      zh: 参与采访、记录、资料整理及成稿支持。该书由澳门大学澳门研究中心编著，香港城市大学出版社于2021年出版。
+      en: Contributed to interviews, documentation, source organisation, and manuscript
+        preparation. Compiled by the Centre for Macau Studies, University of Macau,
+        and published by City University of Hong Kong Press in 2021.

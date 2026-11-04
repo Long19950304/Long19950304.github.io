@@ -4,7 +4,7 @@ title: 简报
 permalink: /zh/digest/
 description: AI、社会、健康与教育方向的研究和新闻简报档案。
 nav: true
-nav_order: 7
+nav_order: 8
 lang: zh
 translation_key: digest
 ---

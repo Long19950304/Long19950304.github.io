@@ -48,4 +48,4 @@ latest_posts:
 - **AI for Social Science**：评估大语言模型辅助编码的可靠性，研究置信度校准与人工复核方法。
 - **影像创作与教学**：探索生成式人工智能参与视觉叙事和项目制学习的方式。
 
-[研究项目](/zh/research/) · [影像作品](/zh/media/) · [教学与学生作品](/zh/teaching/)
+[项目](/zh/research/) · [影像作品](/zh/media/) · [教学与学生作品](/zh/teaching/) · [学术服务](/zh/service/)

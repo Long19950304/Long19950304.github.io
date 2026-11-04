@@ -4,7 +4,7 @@ permalink: /zh/cv/
 title: 简历
 description: 赵志龙的教育经历、工作单位与研究兴趣。
 nav: true
-nav_order: 6
+nav_order: 7
 lang: zh
 translation_key: cv
 ---
@@ -31,11 +31,15 @@ translation_key: cv
 
 {% include research_projects.liquid %}
 
+## 学术服务
+
+{% include academic_service.liquid heading="h3" %}
+
 ## 论文、会议报告与教学
 
 会议经历涵盖ICA、AEJMC、智能与计算传播学年会及区域学术论坛。[会议论文与报告](/zh/publications/#conferences)按年份列出题名、会议与地点，包括2026年第八届高盟年会的《面向精准国际传播的多模态算法审计研究与治理路径》。
 
-[论文](/zh/publications/) · [研究](/zh/research/) · [教学](/zh/teaching/) · [影像作品](/zh/media/)
+[论文](/zh/publications/) · [项目](/zh/research/) · [教学](/zh/teaching/) · [学术服务](/zh/service/) · [影像作品](/zh/media/)
 
 ## 联系方式
 

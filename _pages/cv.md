@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 description: Education, affiliations, and research interests of Zhilong Zhao.
 nav: true
-nav_order: 6
+nav_order: 7
 lang: en
 translation_key: cv
 ---
@@ -31,11 +31,15 @@ Health and public communication; media use and trust; AI for Social Science, inc
 
 {% include research_projects.liquid %}
 
+## Academic Service
+
+{% include academic_service.liquid heading="h3" %}
+
 ## Publications, Presentations, and Teaching
 
 My conference record includes ICA, AEJMC, computational communication conferences, and regional academic forums. The [conference papers and presentations](/publications/#conferences) list gives titles, venues, locations, and years, including my 2026 work on multimodal algorithmic auditing at the eighth annual meeting of the university alliance for area studies at Shanghai Second Polytechnic University.
 
-[Publications](/publications/) · [Research](/research/) · [Teaching](/teaching/) · [Media projects](/media/)
+[Publications](/publications/) · [Projects](/research/) · [Teaching](/teaching/) · [Academic service](/service/) · [Media projects](/media/)
 
 ## Contact
 

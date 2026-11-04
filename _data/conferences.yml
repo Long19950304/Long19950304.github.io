@@ -1,4 +1,5 @@
 - id: nca-2026-agenda-translation
+  year: 2026
   title: "Agenda Translation on Platforms: Digital Capacity and Uneven Local Government Responsiveness to National Health Attention in China"
   conference: "National Communication Association (NCA), 112th Annual Convention"
   division: "Health Communication Division"
@@ -9,6 +10,7 @@
   status: accepted
 
 - id: nca-2026-comparative-cues
+  year: 2026
   title: "Comparative Cues, Not Uniform Distrust: Foreign Media and Tiered Political Trust in China"
   conference: "National Communication Association (NCA), 112th Annual Convention"
   division: "Political Communication Division"
@@ -19,6 +21,7 @@
   status: accepted
 
 - id: computational-communication-2026-embedded-construction
+  year: 2026
   title: "何以嵌入而难以主导：大语言模型中的南南合作话语建构"
   authors_zh: "赵志龙、刘银娣"
   authors_en: "Zhilong Zhao and Yindi Liu"
@@ -30,6 +33,7 @@
   status: scheduled
 
 - id: alliance-2026-multimodal-audit
+  year: 2026
   title: "面向精准国际传播的多模态算法审计研究与治理路径"
   authors_zh: "赵志龙"
   authors_en: "Zhilong Zhao"
@@ -41,6 +45,7 @@
   status: presented
 
 - id: aejmc-2025
+  year: 2025
   title: "AEJMC 2025"
   conference: "Association for Education in Journalism and Mass Communication (AEJMC), 108th Annual Conference"
   date_en: "6–10 August 2025"
@@ -50,6 +55,7 @@
   status: presented
 
 - id: greater-bay-2024-discourse
+  year: 2024
   title: "智能舆情监测在一国两制话语建构中的应用研究：基于香港报业的分析"
   authors_zh: "赵志龙"
   authors_en: "Zhilong Zhao"
@@ -61,6 +67,7 @@
   status: presented
 
 - id: computational-communication-2024-older-adults
+  year: 2024
   title: "Is Negative Representation More Engaging? The Influence of News Title Framing of Older Adults on Viewer Behavior"
   authors_zh: "赵志龙"
   authors_en: "Zhilong Zhao"
@@ -72,6 +79,7 @@
   status: presented
 
 - id: aejmc-2024-parental-mediation
+  year: 2024
   title: "Parental Mediation, Digital Media Usage, and Health Literacy: An Exploration among Chinese Elementary School Students"
   authors_zh: "Z. Zhao, L. Zhu, J. Liao, J. Xia, and X. Pu"
   authors_en: "Z. Zhao, L. Zhu, J. Liao, J. Xia, and X. Pu"
@@ -83,6 +91,7 @@
   status: presented
 
 - id: ica-2022-first-person
+  year: 2022
   title: "First-Person Influences on Third-Person Perceptions"
   authors_zh: "X. Zhao, X. Liu, Y. S. Chen, W. A. Jiao, S. H. Ao, F. Shen, and Zhilong Zhao"
   authors_en: "X. Zhao, X. Liu, Y. S. Chen, W. A. Jiao, S. H. Ao, F. Shen, and Zhilong Zhao"
@@ -94,6 +103,7 @@
   status: presented
 
 - id: greater-bay-2021-macao-identity
+  year: 2021
   title: "澳门居民媒体使用与国族认同间的相关关系模型"
   authors_zh: "林玉凤、赵志龙"
   authors_en: "Agnes Iok Fong Lam and Zhilong Zhao"

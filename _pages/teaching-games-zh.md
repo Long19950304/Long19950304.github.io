@@ -27,7 +27,7 @@ translation_key: teaching-games
         <div class="game-card__number">{{ game.order }}</div>
         <div class="game-card__body">
           <h2 class="game-card__title">{{ game.title }}</h2>
-          <p class="game-card__student">{{ game.student }} · {{ game.student_id | slice: 0, 3 }}•••••••</p>
+          <p class="game-card__student">{{ game.student }}</p>
           <div class="game-card__actions">
             <a class="btn btn-sm z-depth-0 game-card__play" href="{{ game.file | relative_url }}" target="_blank" rel="noopener">试玩</a>
             <button class="btn btn-sm z-depth-0 game-like" type="button" data-like-button data-game-id="{{ game.id }}" aria-pressed="false">♡ <span data-like-count>喜欢</span></button>

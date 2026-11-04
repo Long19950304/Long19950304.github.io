@@ -8,13 +8,11 @@ lang: en
 translation_key: teaching-modern-educational-technology
 ---
 
-<div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
-  <img src="/assets/img/teaching/studio-teams.svg" alt="Studio-style learning with collaboration and competition" style="width: 100%; height: auto; border-radius: 14px;">
-</div>
-
 ## About the course
 
 Modern Educational Technology connects educational theory with practical digital production. Students design small learning experiences, test them with users, and reflect on how technology changes participation, feedback, and classroom activity.
+
+My overall [teaching philosophy and classroom design](/teaching/) are described on the teaching homepage. This page focuses on the course's learning activities and student work.
 
 ## What we work on
 

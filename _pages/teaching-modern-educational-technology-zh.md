@@ -8,13 +8,11 @@ lang: zh
 translation_key: teaching-modern-educational-technology
 ---
 
-<div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
-  <img src="/assets/img/teaching/studio-teams-zh.svg" alt="工作室式学习：团队协作与结构化竞赛" style="width: 100%; height: auto; border-radius: 14px;">
-</div>
-
 ## 课程介绍
 
 现代教育技术把教育理论与数字内容实践结合起来。学生从教学目标出发，设计小型学习体验，通过试玩和反馈检验设计，再反思技术如何影响参与、互动与课堂活动。
+
+整体的[教学理念与课堂设计](/zh/teaching/)见教学主页。本页介绍这门课程的学习内容与学生作品。
 
 ## 学习内容
 

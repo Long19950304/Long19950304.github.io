@@ -9,26 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-论文",
-          title: "论文",
-          description: "已发表期刊论文、预印本、工作论文与会议论文。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/zh/publications/";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "Publications",
           description: "Peer-reviewed articles, preprints, working papers, and conference papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-研究",
-          title: "研究",
-          description: "传播研究、AI for Social Science与影像创作。",
+        },{id: "nav-论文",
+          title: "论文",
+          description: "已发表期刊论文、预印本、工作论文与会议论文。",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/zh/research/";
+            window.location.href = "/zh/publications/";
           },
         },{id: "nav-research",
           title: "Research",
@@ -36,6 +29,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
+          },
+        },{id: "nav-研究",
+          title: "研究",
+          description: "传播研究、AI for Social Science与影像创作。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/research/";
           },
         },{id: "nav-作品",
           title: "作品",
@@ -51,19 +51,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/media/";
           },
-        },{id: "nav-教学",
-          title: "教学",
-          description: "影像制作、现代教育技术与学生项目。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/zh/teaching/";
-          },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Media production, educational technology, and student projects.",
+          description: "Teaching philosophy, classroom design, media production, and student projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-教学",
+          title: "教学",
+          description: "教学理念、课堂设计、影像制作与学生项目。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/teaching/";
           },
         },{id: "nav-简历",
           title: "简历",
@@ -79,19 +79,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-简报",
-          title: "简报",
-          description: "AI、社会、健康与教育方向的研究和新闻简报档案。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/zh/digest/";
-          },
         },{id: "nav-digest",
           title: "Digest",
           description: "An archive of research and news briefs on AI, society, health, and education.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/digest/";
+          },
+        },{id: "nav-简报",
+          title: "简报",
+          description: "AI、社会、健康与教育方向的研究和新闻简报档案。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/digest/";
           },
         },{id: "digests-daily-digest-2026-01-20",
           title: 'Daily Digest — 2026-01-20',

@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>英语挖矿大冒险 · 听音挖金</title>
+<style>
+  :root{
+    --ink:#22314a;
+    --gold:#ffcf4d;
+    --card:#fff8ea;
+    --good:#25a36c;
+    --bad:#e0503a;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;margin:0;overflow:hidden;background:#101a2b;
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;color:var(--ink);}
+  #app{position:fixed;inset:0;overflow:hidden;}
+  canvas{display:block;width:100%;height:100%;touch-action:none;}
+
+  /* ---------- HUD ---------- */
+  #hud{position:absolute;left:0;top:0;right:0;display:flex;flex-wrap:wrap;gap:8px;
+    padding:12px 16px;pointer-events:none;z-index:5;}
+  .pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.88);
+    border-radius:999px;padding:7px 15px;font-weight:800;font-size:17px;color:#22314a;
+    box-shadow:0 4px 14px rgba(10,20,40,.16);white-space:nowrap;}
+  .pill .ico{font-size:16px;}
+  .pill .muted{font-weight:600;font-size:13px;color:#71809a;}
+  .pill.score{background:linear-gradient(180deg,#fff3cf,#ffdd7f);}
+  .pill.lives{letter-spacing:1px;font-size:17px;color:#e0453a;}
+  .pill.danger{background:linear-gradient(180deg,#ffd9d2,#ff9c8b);color:#7a1c0c;animation:pulse .9s infinite;}
+  @keyframes pulse{50%{transform:scale(1.06);}}
+
+  /* ---------- 听音卡片 ---------- */
+  .prompt{position:absolute;top:14px;right:16px;z-index:6;display:flex;align-items:center;gap:12px;
+    background:rgba(255,255,255,.94);border-radius:18px;padding:10px 14px;
+    box-shadow:0 8px 24px rgba(10,20,40,.18);transition:opacity .25s;}
+  .prompt.hidden{opacity:0;pointer-events:none;}
+  .speaker{width:56px;height:56px;border-radius:16px;border:0;cursor:pointer;font-size:26px;
+    background:linear-gradient(180deg,#ffd964,#f2a93b);color:#5a3600;
+    box-shadow:0 4px 0 #c9821f;transition:transform .08s;}
+  .speaker:active{transform:translateY(2px);box-shadow:0 2px 0 #c9821f;}
+  .speaker.speaking{animation:ring .7s ease-in-out;}
+  @keyframes ring{50%{transform:scale(1.12) rotate(-6deg);}}
+  .ptext{min-width:190px;}
+  .plabel{font-size:14px;font-weight:800;color:#22314a;}
+  .hint{font-size:12px;color:#7a879c;margin-top:3px;font-weight:600;}
+  .toggle{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#5c6b85;
+    background:#f1f4f9;border-radius:10px;padding:6px 9px;cursor:pointer;white-space:nowrap;}
+  .toggle input{accent-color:#f2a93b;}
+
+  /* ---------- 提示/反馈 ---------- */
+  .toast{position:absolute;left:50%;top:82px;transform:translate(-50%,-12px);z-index:8;
+    padding:12px 22px;border-radius:16px;font-size:17px;font-weight:800;line-height:1.45;
+    color:#fff;background:rgba(30,40,60,.92);opacity:0;pointer-events:none;transition:all .25s;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:min(92vw,720px);text-align:center;}
+  .toast.show{opacity:1;transform:translate(-50%,0);}
+  .toast .zh{font-weight:600;font-size:15px;opacity:.9;}
+  .toast.good{background:linear-gradient(180deg,#2fbf7d,#199a60);}
+  .toast.bad{background:linear-gradient(180deg,#ee5c46,#c33a25);}
+  .toast.level{background:linear-gradient(180deg,#3b82f6,#1d4ed8);}
+  .toast b{color:#fff7c9;}
+
+  .controlHint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:5;
+    background:rgba(12,20,34,.55);color:#fff;font-size:13px;font-weight:700;padding:8px 16px;
+    border-radius:999px;opacity:0;transition:opacity .5s;pointer-events:none;}
+  .controlHint.show{opacity:1;}
+  kbd{background:#fff;color:#22314a;border-radius:5px;padding:1px 6px;font-size:12px;
+    box-shadow:0 2px 0 rgba(0,0,0,.25);font-family:inherit;}
+
+  /* ---------- 遮罩层 ---------- */
+  .overlay{position:absolute;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;
+    padding:20px;background:radial-gradient(circle at 50% 30%,rgba(20,35,60,.55),rgba(8,14,24,.82));
+    -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);}
+  .overlay.hidden{display:none;}
+  .card{width:min(680px,94vw);max-height:92vh;overflow:auto;background:var(--card);
+    border-radius:26px;padding:26px 30px 28px;box-shadow:0 24px 60px rgba(0,0,0,.35);
+    border:3px solid rgba(255,255,255,.7);}
+  .logo{font-size:44px;text-align:center;line-height:1;}
+  .card h1{margin:6px 0 4px;text-align:center;font-size:34px;letter-spacing:1px;
+    background:linear-gradient(180deg,#3a4a68,#16233a);-webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;}
+  .sub{text-align:center;color:#7a879c;font-weight:700;margin:0 0 16px;font-size:14px;letter-spacing:2px;}
+  .rules{list-style:none;padding:0;margin:0 0 20px;}
+  .rules li{position:relative;padding:10px 12px 10px 40px;font-size:15px;line-height:1.6;color:#33445f;
+    background:#fff;border-radius:14px;margin-bottom:8px;box-shadow:0 2px 6px rgba(20,40,70,.06);}
+  .rules li::before{content:"⛏";position:absolute;left:13px;top:10px;font-size:16px;}
+  .rules li:nth-child(2)::before{content:"🎯";}
+  .rules li:nth-child(3)::before{content:"💰";}
+  .rules li:nth-child(4)::before{content:"⏱";}
+  .rules b{color:#1b2b45;}
+  .btn{display:block;width:100%;border:0;border-radius:16px;padding:15px 0;font-size:20px;font-weight:900;
+    color:#4a2c00;cursor:pointer;background:linear-gradient(180deg,#ffdc72,#f3ac39);
+    box-shadow:0 6px 0 #c9821f,0 12px 22px rgba(200,130,30,.35);transition:transform .08s;
+    font-family:inherit;letter-spacing:1px;}
+  .btn:active{transform:translateY(3px);box-shadow:0 3px 0 #c9821f;}
+  .tip{text-align:center;color:#98a3b5;font-size:12px;margin:14px 0 0;font-weight:600;}
+  .overlay h2{text-align:center;margin:0 0 4px;font-size:28px;}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0;text-align:center;}
+  .stat{background:#fff;border-radius:14px;padding:12px 6px;box-shadow:0 2px 8px rgba(20,40,70,.07);}
+  .stat .v{font-size:23px;font-weight:900;color:#22314a;}
+  .stat .k{font-size:12px;color:#8490a3;font-weight:700;margin-top:2px;}
+  .review{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin:0 0 20px;}
+  .chip{font-size:13px;font-weight:800;padding:6px 10px;border-radius:10px;background:#fff;
+    box-shadow:0 2px 6px rgba(20,40,70,.07);}
+  .chip i{font-style:normal;font-weight:600;color:#8b97aa;margin-left:4px;font-size:11px;}
+  .chip.ok{color:#178a58;background:#e7f8ef;}
+  .chip.no{color:#c33a25;background:#fdeae6;}
+
+  @media (max-width:760px){
+    #hud{padding:8px 8px;gap:5px;}
+    .pill{font-size:12.5px;padding:5px 9px;gap:3px;}
+    .pill .muted{font-size:11px;}
+    .pill.lives{font-size:12px;letter-spacing:0;}
+    .prompt{top:56px;left:8px;right:8px;padding:8px 10px;gap:8px;}
+    .speaker{width:44px;height:44px;font-size:21px;border-radius:12px;}
+    .ptext{min-width:0;flex:1;}
+    .plabel{font-size:13px;}
+    .hint{font-size:11px;}
+    .card{padding:20px 18px;}
+    .card h1{font-size:26px;}
+    .rules li{font-size:13.5px;}
+    .toast{top:118px;font-size:15px;padding:10px 16px;}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div class="pill score"><span class="muted">得分</span><span id="score">0</span></div>
+    <div class="pill"><span class="muted">第</span><span id="level">1</span><span class="muted">关</span></div>
+    <div class="pill" id="timePill"><span class="ico">⏱</span><span id="time">90</span><span class="muted">s</span></div>
+    <div class="pill lives" id="lives">❤❤❤❤❤</div>
+    <div class="pill"><span class="muted">连击</span>x<span id="combo">1</span></div>
+  </div>
+
+  <div id="prompt" class="prompt hidden">
+    <button id="btnReplay" class="speaker" aria-label="再听一遍">🔊</button>
+    <div class="ptext">
+      <div class="plabel">听单词，挖出对应的单词</div>
+      <div class="hint" id="hint">点击喇叭可以再听一遍</div>
+    </div>
+    <label class="toggle"><input type="checkbox" id="zhToggle"><span>中文提示</span></label>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="controlHint" class="controlHint">按 <kbd>空格</kbd> 或点击屏幕放钩</div>
+
+  <div id="menu" class="overlay">
+    <div class="card">
+      <div class="logo">⛏️💰</div>
+      <h1>英语挖矿大冒险</h1>
+      <p class="sub">听单词 · 挖金块 · 记单词</p>
+      <ul class="rules">
+        <li><b>听：</b>系统朗读一个初一单词，矿场里的单词都刻在<b>一样的石头</b>上，挖到正确单词，石头会当场变成<b>金块</b>。</li>
+        <li><b>挖：</b>钩子左右摆动时，按 <kbd>空格</kbd> 或点击屏幕放钩。</li>
+        <li><b>得分：</b>挖到正确金块 +100（连击加成），挖错扣一颗心。</li>
+        <li><b>目标：</b>90 秒内挖到更多正确单词，每挖对 5 个升一关。</li>
+      </ul>
+      <button id="btnStart" class="btn">开始游戏</button>
+      <p class="tip">建议佩戴耳机 · 电脑 / 手机均可玩</p>
+    </div>
+  </div>
+
+  <div id="over" class="overlay hidden">
+    <div class="card">
+      <h2 id="overTitle">时间到！</h2>
+      <p class="sub" id="overSub">看看这一局的表现</p>
+      <div class="stats">
+        <div class="stat"><div class="v" id="stScore">0</div><div class="k">总得分</div></div>
+        <div class="stat"><div class="v" id="stCorrect">0</div><div class="k">挖对</div></div>
+        <div class="stat"><div class="v" id="stWrong">0</div><div class="k">挖错</div></div>
+        <div class="stat"><div class="v" id="stAcc">0%</div><div class="k">正确率</div></div>
+        <div class="stat"><div class="v" id="stCombo">x1</div><div class="k">最高连击</div></div>
+        <div class="stat"><div class="v" id="stLevel">1</div><div class="k">到达关卡</div></div>
+      </div>
+      <div class="review" id="review"></div>
+      <button id="btnAgain" class="btn">再玩一次</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+/* ================= 基础常量 ================= */
+var W = 1280, H = 720;
+var GROUND_Y = 210;
+var ANCHOR = { x: 640, y: 138 };
+var MINLEN = 120;
+var MAXA = 1.12;          // 摆动最大角（弧度）
+var SHOOT_SPEED = 980;    // 放钩速度
+var ROPSPEED_EMPTY = 1500;
+
+/* ================= 初一词汇库 ================= */
+var WORDS = [
+  {en:'sun', zh:'太阳'}, {en:'son', zh:'儿子'}, {en:'sit', zh:'坐'}, {en:'bus', zh:'公共汽车'},
+  {en:'sad', zh:'伤心的'}, {en:'soap', zh:'肥皂'}, {en:'sock', zh:'袜子'}, {en:'sunny', zh:'晴朗的'},
+  {en:'think', zh:'思考'}, {en:'three', zh:'三'}, {en:'thin', zh:'瘦的'}, {en:'tooth', zh:'牙齿'},
+  {en:'thank', zh:'感谢'}, {en:'thirsty', zh:'口渴的'}, {en:'birthday', zh:'生日'}, {en:'thirty', zh:'三十'},
+  {en:'name', zh:'名字'}, {en:'nice', zh:'好的'}, {en:'meet', zh:'见面'}, {en:'friend', zh:'朋友'},
+  {en:'family', zh:'家庭'}, {en:'mother', zh:'妈妈'}, {en:'father', zh:'爸爸'}, {en:'sister', zh:'姐妹'},
+  {en:'brother', zh:'兄弟'}, {en:'school', zh:'学校'}, {en:'teacher', zh:'老师'}, {en:'student', zh:'学生'},
+  {en:'class', zh:'班级'}, {en:'book', zh:'书'}, {en:'pencil', zh:'铅笔'}, {en:'ruler', zh:'尺子'},
+  {en:'eraser', zh:'橡皮'}, {en:'dictionary', zh:'词典'}, {en:'apple', zh:'苹果'}, {en:'banana', zh:'香蕉'},
+  {en:'orange', zh:'橙子'}, {en:'egg', zh:'鸡蛋'}, {en:'milk', zh:'牛奶'}, {en:'bread', zh:'面包'},
+  {en:'rice', zh:'米饭'}, {en:'chicken', zh:'鸡肉'}, {en:'hamburger', zh:'汉堡包'}, {en:'salad', zh:'沙拉'},
+  {en:'strawberry', zh:'草莓'}, {en:'pear', zh:'梨'}, {en:'fruit', zh:'水果'}, {en:'vegetable', zh:'蔬菜'},
+  {en:'party', zh:'聚会'}, {en:'month', zh:'月份'}, {en:'Monday', zh:'星期一'}, {en:'weekend', zh:'周末'},
+  {en:'like', zh:'喜欢'}, {en:'play', zh:'玩'}, {en:'run', zh:'跑'}, {en:'swim', zh:'游泳'},
+  {en:'read', zh:'读'}, {en:'write', zh:'写'}, {en:'sing', zh:'唱歌'}, {en:'dance', zh:'跳舞'},
+  {en:'draw', zh:'画画'}, {en:'morning', zh:'早上'}, {en:'evening', zh:'晚上'}, {en:'homework', zh:'作业'},
+  {en:'sport', zh:'运动'}, {en:'tennis', zh:'网球'}, {en:'volleyball', zh:'排球'}, {en:'basketball', zh:'篮球'},
+  {en:'soccer', zh:'足球'}, {en:'club', zh:'俱乐部'}, {en:'music', zh:'音乐'}, {en:'science', zh:'科学'},
+  {en:'history', zh:'历史'}, {en:'math', zh:'数学'}, {en:'English', zh:'英语'}, {en:'healthy', zh:'健康的'},
+  {en:'delicious', zh:'美味的'}, {en:'expensive', zh:'昂贵的'}, {en:'interesting', zh:'有趣的'},
+  {en:'boring', zh:'无聊的'}, {en:'difficult', zh:'困难的'}, {en:'easy', zh:'容易的'},
+  {en:'breakfast', zh:'早餐'}, {en:'dinner', zh:'晚餐'}, {en:'clock', zh:'钟'}, {en:'time', zh:'时间'},
+  {en:'habit', zh:'习惯'}, {en:'dream', zh:'梦想'}, {en:'train', zh:'火车'}, {en:'bike', zh:'自行车'},
+  {en:'subway', zh:'地铁'}, {en:'walk', zh:'步行'}, {en:'river', zh:'河流'}, {en:'bridge', zh:'桥'},
+  {en:'village', zh:'村庄'}, {en:'city', zh:'城市'}, {en:'weather', zh:'天气'}, {en:'rain', zh:'雨'},
+  {en:'snow', zh:'雪'}, {en:'wind', zh:'风'}, {en:'cloud', zh:'云'}, {en:'holiday', zh:'假日'},
+  {en:'travel', zh:'旅行'}, {en:'museum', zh:'博物馆'}, {en:'zoo', zh:'动物园'}, {en:'park', zh:'公园'},
+  {en:'library', zh:'图书馆'}, {en:'hospital', zh:'医院'}
+];
+
+/* ================= 工具函数 ================= */
+function rand(a,b){ return a + Math.random()*(b-a); }
+function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+function shuffle(arr){
+  var a = arr.slice();
+  for(var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+  return a;
+}
+function clamp(v,a,b){ return Math.max(a, Math.min(b, v)); }
+function rr(x,y,w,h,r){
+  r = Math.min(r, w/2, h/2);
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.lineTo(x+w-r,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r); ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r); ctx.quadraticCurveTo(x,y,x+r,y);
+  ctx.closePath();
+}
+// 发音相似度：用于挑选"易混淆"的错误单词
+function sim(a,b){
+  a = a.toLowerCase(); b = b.toLowerCase();
+  var s = 0;
+  if(a.charAt(0) === b.charAt(0)) s += 3;
+  if(a.charAt(0) === b.charAt(0) && a.charAt(1) === b.charAt(1)) s += 3;
+  if(a.length === b.length) s += 2;
+  if(Math.abs(a.length-b.length) === 1) s += 1;
+  if(a.charAt(a.length-1) === b.charAt(b.length-1)) s += 1;
+  return s;
+}
+
+/* ================= 画布 ================= */
+var canvas = document.getElementById('game');
+var ctx = canvas.getContext('2d');
+var view = { scale:1, ox:0, oy:0, dpr:1 };
+
+function resize(){
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var cw = window.innerWidth, ch = window.innerHeight;
+  canvas.width = Math.round(cw*dpr);
+  canvas.height = Math.round(ch*dpr);
+  var scale = Math.min(cw/W, ch/H);
+  view.scale = scale;
+  view.ox = (cw - W*scale)/2;
+  view.oy = (ch - H*scale)/2;
+  view.dpr = dpr;
+}
+
+/* ================= 音效 ================= */
+var AC = null;
+function audio(){
+  if(!AC){
+    try{ AC = new (window.AudioContext || window.webkitAudioContext)(); }catch(e){ AC = null; }
+  }
+  if(AC && AC.state === 'suspended'){ AC.resume(); }
+  return AC;
+}
+function blip(f1, f2, dur, type, vol){
+  var a = audio(); if(!a) return;
+  var o = a.createOscillator(), g = a.createGain();
+  o.type = type || 'sine';
+  o.frequency.setValueAtTime(f1, a.currentTime);
+  if(f2) o.frequency.exponentialRampToValueAtTime(f2, a.currentTime + dur);
+  g.gain.setValueAtTime(vol || 0.06, a.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.0001, a.currentTime + dur);
+  o.connect(g); g.connect(a.destination);
+  o.start(); o.stop(a.currentTime + dur + 0.03);
+}
+function sfx(name){
+  switch(name){
+    case 'shoot': blip(560, 180, 0.13, 'sawtooth', 0.05); break;
+    case 'grab':  blip(280, 420, 0.09, 'square', 0.05); break;
+    case 'gold':
+      blip(880, 880, 0.1, 'triangle', 0.08);
+      setTimeout(function(){ blip(1320, 1320, 0.16, 'triangle', 0.07); }, 90);
+      break;
+    case 'bad':
+      blip(200, 70, 0.32, 'square', 0.07);
+      break;
+    case 'level':
+      blip(660, 660, 0.1, 'triangle', 0.07);
+      setTimeout(function(){ blip(880, 880, 0.1, 'triangle', 0.07); }, 110);
+      setTimeout(function(){ blip(1100, 1100, 0.18, 'triangle', 0.07); }, 220);
+      break;
+    case 'start': blip(600, 1000, 0.2, 'triangle', 0.06); break;
+  }
+}
+
+/* ================= 语音朗读 ================= */
+var voices = [];
+function loadVoices(){
+  try{ voices = window.speechSynthesis ? (window.speechSynthesis.getVoices() || []) : []; }
+  catch(e){ voices = []; }
+}
+function englishVoice(){
+  var prefer = ['Zira','Samantha','Google US English','Aria','Jenny','David','Mark'];
+  for(var p=0;p<prefer.length;p++){
+    for(var i=0;i<voices.length;i++){
+      if(voices[i].name.indexOf(prefer[p]) >= 0 && /^en/i.test(voices[i].lang)) return voices[i];
+    }
+  }
+  for(var j=0;j<voices.length;j++){ if(/^en[-_]US/i.test(voices[j].lang)) return voices[j]; }
+  for(var k=0;k<voices.length;k++){ if(/^en/i.test(voices[k].lang)) return voices[k]; }
+  return null;
+}
+function speakTarget(delay){
+  if(!G.target) return;
+  var wait = delay === undefined ? 80 : delay;
+  var btn = document.getElementById('btnReplay');
+  btn.classList.remove('speaking');
+  // 触发动画
+  void btn.offsetWidth;
+  btn.classList.add('speaking');
+  setTimeout(function(){ btn.classList.remove('speaking'); }, 850);
+
+  if(!('speechSynthesis' in window)){
+    document.getElementById('hint').textContent = G.target.en;
+    return;
+  }
+  try{
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(G.target.en);
+    u.lang = 'en-US';
+    u.rate = 0.82;
+    u.pitch = 1.05;
+    u.volume = 1;
+    var v = englishVoice();
+    if(v) u.voice = v;
+    setTimeout(function(){
+      try{ window.speechSynthesis.speak(u); }catch(e){}
+    }, wait);
+  }catch(e){}
+}
+
+/* ================= 游戏状态 ================= */
+var G = {
+  state: 'menu',            // menu | playing | over
+  score: 0, level: 1, lives: 5, time: 90,
+  combo: 0, bestCombo: 0,
+  target: null,
+  objects: [],
+  particles: [], floats: [],
+  totalCorrect: 0, totalWrong: 0, correctInLevel: 0,
+  history: [], recentTargets: [],
+  shake: 0,
+  hook: { angle: 0, dir: 1, len: MINLEN, mode: 'swing', obj: null }
+};
+
+function resetHook(){
+  var h = G.hook;
+  h.mode = 'swing';
+  h.len = MINLEN;
+  h.obj = null;
+}
+
+function hookTip(){
+  var h = G.hook;
+  return { x: ANCHOR.x + Math.sin(h.angle)*h.len, y: ANCHOR.y + Math.cos(h.angle)*h.len };
+}
+
+/* ================= 关卡与矿场 ================= */
+function chooseTarget(){
+  var pool = WORDS.filter(function(w){ return G.recentTargets.indexOf(w.en) < 0; });
+  if(!pool.length){ G.recentTargets = []; pool = WORDS.slice(); }
+  G.target = pick(pool);
+  G.recentTargets.push(G.target.en);
+  if(G.recentTargets.length > 8) G.recentTargets.shift();
+}
+
+function makeOre(spec){
+  var o = {
+    look: 'rock',
+    word: spec.word,
+    zh: spec.zh,
+    rx: rand(62, 78),
+    ry: rand(48, 60),
+    x: 0, y: 0, rot: rand(-0.22, 0.22),
+    caught: false, pop: 0,
+    points: [],
+    dots: []
+  };
+  o.r = Math.max(o.rx, o.ry);
+  var n = 10;
+  for(var i=0;i<n;i++){
+    o.points.push({ a: (Math.PI*2/n)*i + rand(-0.12,0.12), k: rand(0.84, 1.12) });
+  }
+  for(var d=0; d<7; d++){
+    o.dots.push({ x: rand(-0.6,0.6)*o.rx, y: rand(-0.6,0.6)*o.ry, r: rand(1.5,4) });
+  }
+  return o;
+}
+
+function buildField(){
+  G.objects = [];
+  var goldCount = G.level >= 2 ? 2 : 1;
+  var rockCount = Math.min(6, 3 + (G.level - 1));
+
+  // 易混淆词优先
+  var others = WORDS.filter(function(w){ return w.en !== G.target.en; });
+  var scored = others.map(function(w){ return { w: w, s: sim(w.en, G.target.en) + Math.random()*2.5 }; });
+  scored.sort(function(a,b){ return b.s - a.s; });
+  var top = scored.slice(0, 14).map(function(o){ return o.w; });
+  var distractors = shuffle(top).slice(0, rockCount);
+
+  var specs = [];
+  for(var i=0;i<goldCount;i++){
+    specs.push({ word: G.target.en, zh: G.target.zh });
+  }
+  distractors.forEach(function(w){ specs.push({ word: w.en, zh: w.zh }); });
+
+  specs.forEach(function(sp){
+    var o = makeOre(sp);
+    var tries = 0, ok = false;
+    while(!ok && tries < 400){
+      o.x = rand(120, W-120);
+      o.y = rand(GROUND_Y + 110, H - 70);
+      tries++;
+      ok = true;
+      for(var i=0;i<G.objects.length;i++){
+        var p = G.objects[i];
+        var dx = p.x - o.x, dy = p.y - o.y;
+        var need = (p.rx + o.rx) * 0.92 + 18;
+        if(Math.sqrt(dx*dx + dy*dy) < need){ ok = false; break; }
+      }
+    }
+    G.objects.push(o);
+  });
+}
+
+function newRound(voiceDelay){
+  resetHook();
+  chooseTarget();
+  buildField();
+  speakTarget(voiceDelay);
+  updateHint();
+}
+
+function levelUp(){
+  G.level++;
+  G.time = Math.min(150, G.time + 15);
+  G.correctInLevel = 0;
+  showToast('🎉 进入第 ' + G.level + ' 关！时间 +15 秒', 'level', 1700);
+  sfx('level');
+  setTimeout(function(){
+    if(G.state === 'playing') newRound();
+  }, 800);
+}
+
+/* ================= 抓取判定 ================= */
+function resolve(){
+  var h = G.hook;
+  var o = h.obj;
+  h.obj = null;
+  resetHook();
+  if(!o) return;
+
+  if(o.word === G.target.en){
+    G.combo++;
+    G.bestCombo = Math.max(G.bestCombo, G.combo);
+    var mul = Math.min(3, 1 + Math.floor(G.combo/2));
+    var gain = 100 * mul;
+    G.score += gain;
+    G.totalCorrect++;
+    G.correctInLevel++;
+    G.history.push({ word: o.word, zh: o.zh, ok: true });
+    burst(o.x, o.y, true);
+    addFloat(o.x, o.y, '+' + gain, '#ffe27a');
+    sfx('gold');
+    showToast('✓ 挖到 <b>' + o.word + '</b> ' + o.zh + ' <b>+' + gain + '</b>' + (mul>1 ? '（连击 x'+mul+'）' : ''), 'good', 1300);
+    if(G.correctInLevel >= 5){ levelUp(); }
+    else { newRound(820); }
+  } else {
+    G.combo = 0;
+    G.lives--;
+    G.totalWrong++;
+    G.score = Math.max(0, G.score - 40);
+    G.history.push({ word: o.word, zh: o.zh, ok: false });
+    burst(o.x, o.y, false);
+    addFloat(o.x, o.y, '-40', '#ff7b6b');
+    G.shake = 1;
+    sfx('bad');
+    showToast('✗ 你挖到的是 <b>' + o.word + '</b>（' + o.zh + '），正确单词是 <b>' +
+              G.target.en + '</b>（' + G.target.zh + '）', 'bad', 1800);
+    if(G.lives <= 0){ endGame('lives'); return; }
+    // 拿走这块石头，并补一块新的错误石头
+    G.objects = G.objects.filter(function(x){ return x !== o; });
+    setTimeout(function(){
+      if(G.state !== 'playing') return;
+      var available = WORDS.filter(function(w){
+        return w.en !== G.target.en && !G.objects.some(function(x){ return x.word === w.en; });
+      });
+      if(available.length){
+        var w = pick(available);
+        var no = makeOre({ word: w.en, zh: w.zh });
+        placeOre(no);
+        G.objects.push(no);
+      }
+      speakTarget();
+    }, 650);
+  }
+  updateHUD();
+}
+
+function placeOre(o){
+  var tries = 0, ok = false;
+  while(!ok && tries < 400){
+    o.x = rand(120, W-120);
+    o.y = rand(GROUND_Y + 110, H - 70);
+    tries++;
+    ok = true;
+    for(var i=0;i<G.objects.length;i++){
+      var p = G.objects[i];
+      if(p === o) continue;
+      var dx = p.x - o.x, dy = p.y - o.y;
+      if(Math.sqrt(dx*dx + dy*dy) < (p.rx + o.rx)*0.92 + 18){ ok = false; break; }
+    }
+  }
+}
+
+/* ================= 特效 ================= */
+function burst(x, y, good){
+  var n = good ? 22 : 14;
+  for(var i=0;i<n;i++){
+    var a = Math.random()*Math.PI*2, sp = rand(80, 320);
+    G.particles.push({
+      x: x, y: y,
+      vx: Math.cos(a)*sp, vy: Math.sin(a)*sp - 120,
+      life: rand(0.5, 1.1), max: 1.1,
+      color: good ? (Math.random()<0.5 ? '#ffd24d' : '#fff2b0') : (Math.random()<0.5 ? '#9aa6b4' : '#cf6a56'),
+      size: rand(2, 5)
+    });
+  }
+}
+function addFloat(x, y, text, color){
+  G.floats.push({ x: x, y: y, vy: -70, life: 1.2, max: 1.2, text: text, color: color });
+}
+function updateFx(dt){
+  for(var i=G.particles.length-1;i>=0;i--){
+    var p = G.particles[i];
+    p.life -= dt;
+    if(p.life <= 0){ G.particles.splice(i,1); continue; }
+    p.vy += 700*dt;
+    p.x += p.vx*dt; p.y += p.vy*dt;
+  }
+  for(var j=G.floats.length-1;j>=0;j--){
+    var f = G.floats[j];
+    f.life -= dt;
+    if(f.life <= 0){ G.floats.splice(j,1); continue; }
+    f.y += f.vy*dt;
+  }
+  if(G.shake > 0) G.shake = Math.max(0, G.shake - dt*3);
+}
+
+/* ================= 更新 ================= */
+function update(dt){
+  var h = G.hook;
+  var playing = G.state === 'playing';
+
+  if(playing || G.state === 'menu'){
+    var swingSpeed = (0.95 + (G.level-1)*0.09) * (G.state === 'menu' ? 0.6 : 1);
+    if(h.mode === 'swing'){
+      h.angle += h.dir * swingSpeed * dt;
+      if(h.angle > MAXA){ h.angle = MAXA; h.dir = -1; }
+      if(h.angle < -MAXA){ h.angle = -MAXA; h.dir = 1; }
+    } else if(h.mode === 'extend'){
+      h.len += SHOOT_SPEED*dt;
+      var t = hookTip();
+      if(h.len > 1280 || t.y > H-6 || t.x < 24 || t.x > W-24){
+        h.mode = 'retract';
+      } else {
+        for(var i=0;i<G.objects.length;i++){
+          var o = G.objects[i];
+          if(o.caught) continue;
+          var dx = o.x - t.x, dy = o.y - t.y;
+          if(Math.sqrt(dx*dx + dy*dy) < o.r*0.8 + 16){
+            o.caught = true;
+            if(o.word === G.target.en){
+              // 挖到正确单词：石头当场变成金块
+              o.look = 'gold';
+              o.pop = 1;
+              burst(o.x, o.y, true);
+              blip(1200, 1600, 0.18, 'triangle', 0.07);
+            }
+            h.obj = o;
+            h.mode = 'retract';
+            sfx('grab');
+            break;
+          }
+        }
+      }
+    } else if(h.mode === 'retract'){
+      var sp = h.obj ? (h.obj.look === 'gold' ? 370 : 480) : ROPSPEED_EMPTY;
+      h.len -= sp*dt;
+      if(h.obj){
+        var tip = hookTip();
+        h.obj.x = tip.x; h.obj.y = tip.y;
+      }
+      if(h.len <= MINLEN){
+        h.len = MINLEN;
+        if(G.state === 'playing') resolve();
+        else { h.mode = 'swing'; h.obj = null; }
+      }
+    }
+  }
+
+  if(playing){
+    G.time -= dt;
+    if(G.time <= 0){ G.time = 0; endGame('time'); }
+  }
+
+  updateFx(dt);
+  for(var q=0;q<G.objects.length;q++){
+    if(G.objects[q].pop > 0) G.objects[q].pop = Math.max(0, G.objects[q].pop - dt*2.4);
+  }
+  updateHUD();
+}
+
+/* ================= HUD ================= */
+var lastHud = { score:-1, level:-1, time:-1, lives:-1, combo:-1 };
+function updateHUD(){
+  if(G.score !== lastHud.score){
+    document.getElementById('score').textContent = G.score;
+    lastHud.score = G.score;
+  }
+  if(G.level !== lastHud.level){
+    document.getElementById('level').textContent = G.level;
+    lastHud.level = G.level;
+  }
+  var tm = Math.ceil(G.time);
+  if(tm !== lastHud.time){
+    document.getElementById('time').textContent = tm;
+    document.getElementById('timePill').classList.toggle('danger', tm <= 10 && G.state === 'playing');
+    lastHud.time = tm;
+  }
+  if(G.lives !== lastHud.lives){
+    var s = '';
+    for(var i=0;i<5;i++){ s += i < G.lives ? '❤' : '♡'; }
+    document.getElementById('lives').textContent = s;
+    lastHud.lives = G.lives;
+  }
+  var mul = Math.min(3, 1 + Math.floor(G.combo/2));
+  if(mul !== lastHud.combo){
+    document.getElementById('combo').textContent = mul;
+    lastHud.combo = mul;
+  }
+}
+
+/* ================= 提示与反馈 ================= */
+var toastTimer = null;
+function showToast(html, cls, ms){
+  var el = document.getElementById('toast');
+  el.innerHTML = html;
+  el.className = 'toast show ' + (cls || '');
+  if(toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){
+    el.className = 'toast ' + (cls || '');
+  }, ms || 1500);
+}
+function updateHint(){
+  var el = document.getElementById('hint');
+  if(!G.target){ el.textContent = ''; return; }
+  if(!('speechSynthesis' in window)){
+    el.textContent = '本浏览器不支持语音朗读';
+    return;
+  }
+  if(document.getElementById('zhToggle').checked){
+    el.textContent = '提示：' + G.target.zh;
+  } else {
+    el.textContent = '点击喇叭可以再听一遍';
+  }
+}
+
+/* ================= 绘制 ================= */
+var skyClouds = [];
+(function initDecor(){
+  for(var i=0;i<5;i++){
+    skyClouds.push({ x: rand(0,W), y: rand(24,90), s: rand(0.6,1.2), v: rand(6,16) });
+  }
+})();
+var groundMarks = [];
+(function initGround(){
+  for(var i=0;i<70;i++){
+    groundMarks.push({
+      x: rand(0,W), y: rand(GROUND_Y+20, H-10),
+      r: rand(1.5, 5), a: rand(0.05, 0.18)
+    });
+  }
+})();
+
+function drawSky(t){
+  var g = ctx.createLinearGradient(0,0,0,GROUND_Y);
+  g.addColorStop(0, '#79bfe3');
+  g.addColorStop(0.65, '#b9e0f0');
+  g.addColorStop(1, '#e9f5f6');
+  ctx.fillStyle = g;
+  ctx.fillRect(0,0,W,GROUND_Y);
+
+  // 太阳
+  var sx = 1090, sy = 66;
+  var sg = ctx.createRadialGradient(sx,sy,10,sx,sy,70);
+  sg.addColorStop(0,'rgba(255,246,190,.95)');
+  sg.addColorStop(0.45,'rgba(255,220,110,.55)');
+  sg.addColorStop(1,'rgba(255,220,110,0)');
+  ctx.fillStyle = sg;
+  ctx.beginPath(); ctx.arc(sx,sy,70,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle = '#fff3b8';
+  ctx.beginPath(); ctx.arc(sx,sy,26,0,Math.PI*2); ctx.fill();
+
+  // 云
+  ctx.fillStyle = 'rgba(255,255,255,.85)';
+  for(var i=0;i<skyClouds.length;i++){
+    var c = skyClouds[i];
+    c.x += c.v * 0.016;
+    if(c.x > W+80) c.x = -80;
+    var s = c.s;
+    ctx.beginPath();
+    ctx.arc(c.x, c.y, 16*s, 0, Math.PI*2);
+    ctx.arc(c.x+20*s, c.y-6*s, 20*s, 0, Math.PI*2);
+    ctx.arc(c.x+44*s, c.y+2*s, 14*s, 0, Math.PI*2);
+    ctx.fill();
+  }
+
+  // 远山
+  ctx.fillStyle = '#7fb46a';
+  ctx.beginPath();
+  ctx.moveTo(0, GROUND_Y);
+  ctx.quadraticCurveTo(120, GROUND_Y-70, 260, GROUND_Y);
+  ctx.quadraticCurveTo(380, GROUND_Y-46, 520, GROUND_Y);
+  ctx.fill();
+  ctx.fillStyle = '#6aa459';
+  ctx.beginPath();
+  ctx.moveTo(520, GROUND_Y);
+  ctx.quadraticCurveTo(700, GROUND_Y-88, 900, GROUND_Y);
+  ctx.quadraticCurveTo(1080, GROUND_Y-52, W, GROUND_Y);
+  ctx.fill();
+}
+
+function drawGround(){
+  var g = ctx.createLinearGradient(0, GROUND_Y, 0, H);
+  g.addColorStop(0, '#9c6a3a');
+  g.addColorStop(0.32, '#7d4e28');
+  g.addColorStop(1, '#46280f');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, GROUND_Y, W, H-GROUND_Y);
+
+  // 表层草地
+  ctx.fillStyle = '#8cc152';
+  ctx.fillRect(0, GROUND_Y-8, W, 12);
+  ctx.fillStyle = '#6da33c';
+  ctx.fillRect(0, GROUND_Y+2, W, 4);
+
+  // 土层纹理
+  ctx.strokeStyle = 'rgba(0,0,0,.12)';
+  ctx.lineWidth = 2;
+  for(var i=0;i<5;i++){
+    var y = GROUND_Y + 70 + i*88;
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.bezierCurveTo(W*0.3, y-16, W*0.6, y+18, W, y-6);
+    ctx.stroke();
+  }
+  // 石子
+  for(var j=0;j<groundMarks.length;j++){
+    var m = groundMarks[j];
+    ctx.fillStyle = 'rgba(255,235,200,' + m.a + ')';
+    ctx.beginPath(); ctx.arc(m.x, m.y, m.r, 0, Math.PI*2); ctx.fill();
+  }
+}
+
+function drawOreAt(o, x, y){
+  var gold = o.look === 'gold';
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.rotate(o.rot);
+  if(o.pop > 0){ var sc = 1 + o.pop*0.14; ctx.scale(sc, sc); }
+
+  ctx.beginPath();
+  for(var i=0;i<o.points.length;i++){
+    var p = o.points[i];
+    var px = Math.cos(p.a)*o.rx*p.k;
+    var py = Math.sin(p.a)*o.ry*p.k;
+    if(i === 0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+  }
+  ctx.closePath();
+
+  ctx.shadowColor = 'rgba(0,0,0,.38)';
+  ctx.shadowBlur = 18;
+  ctx.shadowOffsetY = 8;
+
+  var gr = ctx.createRadialGradient(-o.rx*0.3, -o.ry*0.4, 4, 0, 0, o.rx*1.15);
+  if(gold){
+    gr.addColorStop(0, '#fff6c4');
+    gr.addColorStop(0.42, '#ffcd45');
+    gr.addColorStop(1, '#c98700');
+  } else {
+    gr.addColorStop(0, '#c7cfd8');
+    gr.addColorStop(0.5, '#8d98a5');
+    gr.addColorStop(1, '#56616e');
+  }
+  ctx.fillStyle = gr;
+  ctx.fill();
+
+  ctx.shadowColor = 'transparent';
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetY = 0;
+
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = gold ? 'rgba(146,90,0,.75)' : 'rgba(38,46,56,.8)';
+  ctx.stroke();
+
+  // 内部斑纹
+  for(var d=0;d<o.dots.length;d++){
+    var dot = o.dots[d];
+    ctx.fillStyle = gold ? 'rgba(255,255,255,.4)' : 'rgba(30,38,48,.22)';
+    ctx.beginPath(); ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI*2); ctx.fill();
+  }
+  // 金块高光
+  if(gold){
+    ctx.fillStyle = 'rgba(255,255,255,.55)';
+    ctx.beginPath();
+    ctx.ellipse(-o.rx*0.32, -o.ry*0.4, o.rx*0.24, o.ry*0.14, -0.5, 0, Math.PI*2);
+    ctx.fill();
+  }
+  ctx.restore();
+
+  // 由石头变成金块时的光环
+  if(o.pop > 0){
+    ctx.save();
+    ctx.globalAlpha = Math.min(1, o.pop);
+    ctx.strokeStyle = '#ffd766';
+    ctx.lineWidth = 7;
+    ctx.beginPath();
+    ctx.arc(x, y, o.r*(1.05 + (1 - o.pop)*0.7), 0, Math.PI*2);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  // 单词标签（不随石块旋转，保证可读）
+  var fs = Math.min(26, Math.floor(o.rx*2.7/Math.max(4, o.word.length)));
+  ctx.font = '800 ' + fs + 'px "Trebuchet MS","Microsoft YaHei",sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  if(gold){
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = 'rgba(255,250,220,.85)';
+    ctx.strokeText(o.word, x, y+1);
+    ctx.fillStyle = '#5a3600';
+  } else {
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = 'rgba(20,26,34,.55)';
+    ctx.strokeText(o.word, x, y+1);
+    ctx.fillStyle = '#f2f6fb';
+  }
+  ctx.fillText(o.word, x, y+1);
+}
+
+function drawMiner(){
+  var x = ANCHOR.x, y = ANCHOR.y;
+  var baseY = GROUND_Y;
+
+  // 平台
+  ctx.fillStyle = 'rgba(0,0,0,.18)';
+  rr(x-112, baseY-10, 224, 16, 6); ctx.fill();
+  ctx.fillStyle = '#6b4726';
+  rr(x-112, baseY-18, 224, 16, 6); ctx.fill();
+  ctx.fillStyle = '#8a6134';
+  rr(x-112, baseY-18, 224, 7, 4); ctx.fill();
+  // 支柱
+  ctx.fillStyle = '#5a3a1d';
+  rr(x-96, baseY-18, 9, 22, 3); ctx.fill();
+  rr(x+87, baseY-18, 9, 22, 3); ctx.fill();
+
+  // 腿
+  ctx.fillStyle = '#2f4f86';
+  rr(x-19, baseY-48, 14, 34, 6); ctx.fill();
+  rr(x+5, baseY-48, 14, 34, 6); ctx.fill();
+  // 靴子
+  ctx.fillStyle = '#3b2a1c';
+  rr(x-24, baseY-18, 21, 10, 5); ctx.fill();
+  rr(x+3, baseY-18, 21, 10, 5); ctx.fill();
+
+  // 身体（背带裤）
+  ctx.fillStyle = '#3f6fb5';
+  rr(x-25, baseY-92, 50, 48, 14); ctx.fill();
+  ctx.fillStyle = '#2f5c9c';
+  rr(x-22, baseY-66, 44, 22, 8); ctx.fill();
+  // 背带
+  ctx.strokeStyle = '#2f5c9c';
+  ctx.lineWidth = 5;
+  ctx.beginPath(); ctx.moveTo(x-16, baseY-90); ctx.lineTo(x-12, baseY-68); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x+16, baseY-90); ctx.lineTo(x+12, baseY-68); ctx.stroke();
+  // 衬衫领口
+  ctx.fillStyle = '#efe6d3';
+  ctx.beginPath();
+  ctx.moveTo(x-10, baseY-92); ctx.lineTo(x+10, baseY-92); ctx.lineTo(x, baseY-82); ctx.closePath();
+  ctx.fill();
+
+  // 手臂
+  ctx.strokeStyle = '#f0c49b';
+  ctx.lineWidth = 11;
+  ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(x-22, baseY-84); ctx.lineTo(x-26, baseY-72); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x+22, baseY-84); ctx.lineTo(x+26, baseY-72); ctx.stroke();
+
+  // 头
+  ctx.fillStyle = '#f3c49a';
+  ctx.beginPath(); ctx.arc(x, baseY-108, 18, 0, Math.PI*2); ctx.fill();
+  // 帽子
+  ctx.fillStyle = '#f0b23e';
+  ctx.beginPath(); ctx.arc(x, baseY-111, 19, Math.PI, 0); ctx.fill();
+  ctx.fillRect(x-25, baseY-112, 50, 6);
+  ctx.fillStyle = '#ffd76a';
+  ctx.beginPath(); ctx.arc(x, baseY-128, 4, 0, Math.PI*2); ctx.fill();
+  // 眼睛
+  ctx.fillStyle = '#2b2b2b';
+  ctx.beginPath(); ctx.arc(x-7, baseY-108, 2.4, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(x+7, baseY-108, 2.4, 0, Math.PI*2); ctx.fill();
+  // 胡子
+  ctx.fillStyle = '#8b5a2b';
+  ctx.beginPath();
+  ctx.ellipse(x, baseY-101, 11, 4, 0, 0, Math.PI);
+  ctx.fill();
+  // 笑脸
+  ctx.strokeStyle = '#a0522d';
+  ctx.lineWidth = 1.6;
+  ctx.beginPath();
+  ctx.arc(x, baseY-103, 7, 0.15*Math.PI, 0.85*Math.PI);
+  ctx.stroke();
+
+  // 滑轮环
+  ctx.strokeStyle = '#c9a24a';
+  ctx.lineWidth = 4;
+  ctx.beginPath(); ctx.arc(x, y, 8, 0, Math.PI*2); ctx.stroke();
+}
+
+function drawHookScene(){
+  var h = G.hook;
+  var tip = hookTip();
+
+  ctx.strokeStyle = 'rgba(0,0,0,.18)';
+  ctx.lineWidth = 7;
+  ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(ANCHOR.x+2, ANCHOR.y+3); ctx.lineTo(tip.x+2, tip.y+3); ctx.stroke();
+
+  ctx.strokeStyle = '#6b4a2a';
+  ctx.lineWidth = 5;
+  ctx.beginPath(); ctx.moveTo(ANCHOR.x, ANCHOR.y); ctx.lineTo(tip.x, tip.y); ctx.stroke();
+  ctx.strokeStyle = 'rgba(255,230,190,.35)';
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(ANCHOR.x-1, ANCHOR.y+4); ctx.lineTo(tip.x-1, tip.y+4); ctx.stroke();
+
+  // 挂钩
+  ctx.save();
+  ctx.translate(tip.x, tip.y);
+  ctx.rotate(-h.angle);
+  ctx.strokeStyle = '#c7d2de';
+  ctx.lineWidth = 6;
+  ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.moveTo(-15,-12);
+  ctx.quadraticCurveTo(-24, 8, -6, 18);
+  ctx.moveTo(15,-12);
+  ctx.quadraticCurveTo(24, 8, 6, 18);
+  ctx.stroke();
+  ctx.strokeStyle = '#93a6ba';
+  ctx.lineWidth = 4;
+  ctx.beginPath(); ctx.arc(0, -2, 7, 0, Math.PI*2); ctx.stroke();
+  ctx.restore();
+
+  // 吊着的矿石
+  if(h.obj){
+    var hang = h.obj.ry*0.65 + 14;
+    var ox = tip.x + Math.sin(h.angle)*hang;
+    var oy = tip.y + Math.cos(h.angle)*hang;
+    drawOreAt(h.obj, ox, oy);
+  }
+}
+
+function drawFx(){
+  for(var i=0;i<G.particles.length;i++){
+    var p = G.particles[i];
+    ctx.globalAlpha = Math.max(0, p.life/p.max);
+    ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  for(var j=0;j<G.floats.length;j++){
+    var f = G.floats[j];
+    ctx.globalAlpha = Math.max(0, f.life/f.max);
+    ctx.font = '900 30px "Trebuchet MS","Microsoft YaHei",sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.lineWidth = 6;
+    ctx.strokeStyle = 'rgba(20,26,38,.45)';
+    ctx.strokeText(f.text, f.x, f.y);
+    ctx.fillStyle = f.color;
+    ctx.fillText(f.text, f.x, f.y);
+  }
+  ctx.globalAlpha = 1;
+}
+
+function render(){
+  var dpr = view.dpr;
+  ctx.setTransform(dpr*view.scale, 0, 0, dpr*view.scale, dpr*view.ox, dpr*view.oy);
+  ctx.clearRect(-view.ox/view.scale, -view.oy/view.scale, W + view.ox*2/view.scale, H + view.oy*2/view.scale);
+
+  var sh = G.shake * 7;
+  ctx.save();
+  if(sh > 0.2) ctx.translate(rand(-sh, sh), rand(-sh, sh));
+
+  drawSky();
+  drawGround();
+
+  for(var i=0;i<G.objects.length;i++){
+    var o = G.objects[i];
+    if(!o.caught) drawOreAt(o, o.x, o.y);
+  }
+
+  drawMiner();
+  drawHookScene();
+  drawFx();
+
+  ctx.restore();
+}
+
+/* ================= 主循环 ================= */
+var last = 0;
+function loop(ts){
+  if(!last) last = ts;
+  var dt = Math.min(0.033, (ts - last)/1000);
+  last = ts;
+  update(dt);
+  render();
+  requestAnimationFrame(loop);
+}
+
+/* ================= 流程控制 ================= */
+function startGame(){
+  audio();
+  G.state = 'playing';
+  G.score = 0; G.level = 1; G.lives = 5; G.time = 90;
+  G.combo = 0; G.bestCombo = 0;
+  G.totalCorrect = 0; G.totalWrong = 0; G.correctInLevel = 0;
+  G.history = []; G.recentTargets = [];
+  G.particles = []; G.floats = [];
+  lastHud = { score:-1, level:-1, time:-1, lives:-1, combo:-1 };
+  resetHook();
+
+  document.getElementById('menu').classList.add('hidden');
+  document.getElementById('over').classList.add('hidden');
+  document.getElementById('prompt').classList.remove('hidden');
+  var ch = document.getElementById('controlHint');
+  ch.classList.add('show');
+  setTimeout(function(){ ch.classList.remove('show'); }, 5200);
+
+  newRound();
+  updateHUD();
+  sfx('start');
+}
+
+function endGame(reason){
+  if(G.state !== 'playing') return;
+  G.state = 'over';
+  document.getElementById('prompt').classList.add('hidden');
+  document.getElementById('overTitle').textContent = reason === 'time' ? '时间到！' : '生命耗尽！';
+  document.getElementById('overSub').textContent = '这一局你挖到了 ' + G.totalCorrect + ' 个正确单词';
+  document.getElementById('stScore').textContent = G.score;
+  document.getElementById('stCorrect').textContent = G.totalCorrect;
+  document.getElementById('stWrong').textContent = G.totalWrong;
+  var total = G.totalCorrect + G.totalWrong;
+  document.getElementById('stAcc').textContent = (total ? Math.round(G.totalCorrect/total*100) : 0) + '%';
+  document.getElementById('stCombo').textContent = 'x' + Math.min(3, 1 + Math.floor(G.bestCombo/2));
+  document.getElementById('stLevel').textContent = G.level;
+
+  var review = G.history.slice(-10).map(function(h){
+    return '<span class="chip ' + (h.ok ? 'ok' : 'no') + '">' +
+           (h.ok ? '✓ ' : '✗ ') + h.word + '<i>' + h.zh + '</i></span>';
+  }).join('');
+  document.getElementById('review').innerHTML = review || '<span class="chip">再来一局试试吧</span>';
+
+  document.getElementById('over').classList.remove('hidden');
+}
+
+/* ================= 输入 ================= */
+function shoot(){
+  if(G.state !== 'playing') return;
+  if(G.hook.mode !== 'swing') return;
+  G.hook.mode = 'extend';
+  sfx('shoot');
+}
+document.addEventListener('keydown', function(e){
+  if(e.code === 'Space' || e.key === ' '){
+    e.preventDefault();
+    if(G.state === 'playing') shoot();
+    else if(G.state === 'over') startGame();
+  }
+});
+canvas.addEventListener('pointerdown', function(e){
+  e.preventDefault();
+  shoot();
+}, {passive:false});
+
+document.getElementById('btnStart').addEventListener('click', startGame);
+document.getElementById('btnAgain').addEventListener('click', startGame);
+document.getElementById('btnReplay').addEventListener('click', function(e){
+  e.stopPropagation();
+  speakTarget();
+});
+document.getElementById('zhToggle').addEventListener('change', updateHint);
+
+/* ================= 初始化 ================= */
+window.addEventListener('resize', resize);
+window.addEventListener('orientationchange', function(){ setTimeout(resize, 150); });
+
+if('speechSynthesis' in window){
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+  setTimeout(loadVoices, 300);
+}
+
+resize();
+// 菜单背景：先摆一个矿场，让画面不空
+chooseTarget();
+buildField();
+updateHUD();
+requestAnimationFrame(loop);
+
+})();
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-game="09" lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
@@ -27,6 +27,8 @@ canvas{display:block}
 #pbtn{background:linear-gradient(180deg,#ffe08a,#f5b942);color:#3a2a10}
 #toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);padding:8px 22px;border-radius:18px;font-size:16px;z-index:30;display:none;color:#ffe6a3;font-weight:bold}
 </style>
+<link rel="stylesheet" href="/assets/games/game-display.css">
+<script defer src="/assets/games/game-display.js"></script>
 </head>
 <body>
 <canvas id="cv"></canvas>
@@ -90,6 +92,10 @@ canvas{display:block}
   var shakeTimer=0;
   var combo=0;
   var wheelRadius=0, wheelCx=0, wheelCy=0;
+  window.addEventListener('resize',function(){
+    wheelRadius=Math.min(W,H)*0.38;
+    wheelCx=W/2; wheelCy=H*0.58;
+  });
   var hintIdx=-1; // which letter to glow (-1 = none)
 
   // ========== INPUT ==========

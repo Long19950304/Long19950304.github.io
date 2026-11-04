@@ -173,6 +173,7 @@ include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - _audit/
+  - 教育技术小游戏展示/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile

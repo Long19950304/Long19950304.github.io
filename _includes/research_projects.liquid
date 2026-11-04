@@ -12,7 +12,6 @@
       {% assign project_period = project.period[project_lang] | default: project.period %}
       {% assign project_meta = project_meta | push: project_period %}
     {% endif %}
-    {% if project.funding %}{% assign project_meta = project_meta | push: project.funding[project_lang] %}{% endif %}
     {% if project.status %}{% assign project_meta = project_meta | push: project.status[project_lang] %}{% endif %}
     {% if project_meta.size > 0 %}<br>{{ project_meta | join: ' · ' }}{% endif %}
     {% if project.lead %}<br>{% if project_lang == 'zh' %}主持：{% else %}Principal investigator: {% endif %}{{ project.lead[project_lang] }}{% endif %}

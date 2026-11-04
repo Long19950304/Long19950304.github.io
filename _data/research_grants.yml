@@ -13,9 +13,6 @@ sections:
       zh: 广东省哲学社会科学规划青年项目
       en: Guangdong Philosophy and Social Science Planning, Youth Project
     period: 2026–2028
-    funding:
-      zh: 经费2万元
-      en: 'Funding: RMB 20,000'
   - title:
       zh: 生成式人工智能赋能侨乡文化多模态国际传播的机制与路径研究
       en: 'Generative AI for Multimodal International Communication of Qiaoxiang Culture:
@@ -24,9 +21,6 @@ sections:
       zh: 五邑大学博士科研启动项目
       en: Wuyi University Doctoral Research Start-up Project
     period: 2026–2031
-    funding:
-      zh: 经费10万元
-      en: 'Funding: RMB 100,000'
 - id: teaching-projects
   title:
     zh: 主持教改项目
@@ -40,9 +34,6 @@ sections:
       zh: 五邑大学2026年度校级“人工智能+”教育教学专项建设项目
       en: Wuyi University 2026 AI+ Education and Teaching Development Programme
     period: 2026–2028
-    funding:
-      zh: 申请经费1万元
-      en: 'Requested funding: RMB 10,000'
     status:
       zh: 立项评审中
       en: Application under review
@@ -55,9 +46,6 @@ sections:
       zh: 广东省海外博士后人才支持项目
       en: Guangdong Overseas Postdoctoral Talent Support Programme
     period: 2024–2029
-    funding:
-      zh: 经费100万元
-      en: 'Funding: RMB 1,000,000'
     description:
       zh: 健康传播研究相关。
       en: Research related to health communication.

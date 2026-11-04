@@ -14,6 +14,8 @@ DB_PATH = os.environ.get('LIKES_DB', '/var/lib/zhaozhilong/likes.sqlite3')
 ORIGIN = os.environ.get('CORS_ORIGIN', 'https://www.zhaozhilong.com')
 HOST = os.environ.get('API_HOST', '127.0.0.1')
 PORT = int(os.environ.get('API_PORT', '8080'))
+COMMENT_INTERVAL = 20
+COMMENTS_PER_HOUR = 120
 
 
 def db():
@@ -34,6 +36,7 @@ def db():
             created_at INTEGER NOT NULL, client_hash TEXT NOT NULL);
         CREATE INDEX IF NOT EXISTS comments_game ON comments(game_id, id DESC);
         CREATE INDEX IF NOT EXISTS comments_rate ON comments(client_hash, created_at);
+        CREATE INDEX IF NOT EXISTS comments_visitor_rate ON comments(visitor_id, created_at);
     """)
     con.commit()
     return con
@@ -53,7 +56,7 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass
 
-    def send_json(self, status, payload, visitor=None):
+    def send_json(self, status, payload, visitor=None, retry_after=None):
         body = json.dumps(payload, ensure_ascii=False).encode()
         self.send_response(status)
         for key, value in {
@@ -66,6 +69,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header(key, value)
         if visitor:
             self.send_header('Set-Cookie', f'visitor_id={visitor}; Max-Age=31536000; Path=/; Secure; HttpOnly; SameSite=Lax')
+        if retry_after is not None:
+            self.send_header('Retry-After', str(retry_after))
         self.end_headers()
         self.wfile.write(body)
 
@@ -172,9 +177,17 @@ class Handler(BaseHTTPRequestHandler):
                 now = int(time.time())
                 # Serialize the rate check and insert to cover simultaneous posts.
                 con.execute('BEGIN IMMEDIATE')
-                recent = con.execute('SELECT COUNT(*), MAX(created_at) FROM comments WHERE client_hash=? AND created_at>?', (client_hash, now - 3600)).fetchone()
-                if recent[0] >= 20 or (recent[1] is not None and now - recent[1] < 20):
-                    self.send_json(429, {'error': 'too_fast'})
+                # Classmates may share an IP; reviewing another game is not a duplicate post.
+                recent = con.execute('SELECT created_at FROM comments WHERE visitor_id=? AND created_at>? ORDER BY created_at DESC', (visitor, now - 3600)).fetchall()
+                latest = con.execute('SELECT MAX(created_at) FROM comments WHERE visitor_id=? AND game_id=?', (visitor, game_id)).fetchone()[0]
+                retry_after = max(0, COMMENT_INTERVAL - (now - latest)) if latest is not None else 0
+                reason = 'comment_cooldown'
+                if len(recent) >= COMMENTS_PER_HOUR:
+                    hourly_wait = recent[COMMENTS_PER_HOUR - 1][0] + 3600 - now
+                    if hourly_wait > retry_after:
+                        retry_after, reason = hourly_wait, 'comment_hourly_limit'
+                if retry_after > 0:
+                    self.send_json(429, {'error': reason, 'retry_after': retry_after}, visitor, retry_after)
                     return
                 cur = con.execute('INSERT INTO comments(game_id, visitor_id, author, body, created_at, client_hash) VALUES (?,?,?,?,?,?)', (game_id, visitor, name, text, now, client_hash))
                 con.commit()

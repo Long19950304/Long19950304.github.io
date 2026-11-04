@@ -4,6 +4,7 @@ import json
 import tempfile
 import threading
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 import app
@@ -59,7 +60,9 @@ class ShowcaseAPI(unittest.TestCase):
             self.assertEqual(self.request('POST', 'validation/comments', body)[0], 400)
         self.assertEqual(self.request('POST', 'validation/comments', {'text': 'ok'}, origin='https://other.example')[0], 403)
         self.assertEqual(self.request('POST', 'validation/comments', {'text': 'ok'}, client='rate')[0], 201)
-        self.assertEqual(self.request('POST', 'validation/comments', {'text': 'again'}, visitor='d' * 32, client='rate')[0], 429)
+        self.assertEqual(self.request('POST', 'validation/comments', {'text': 'again'}, client='rate')[0], 429)
+        # A second student on the classroom network can still post.
+        self.assertEqual(self.request('POST', 'validation/comments', {'text': 'another student'}, visitor='d' * 32, client='rate')[0], 201)
         self.assertEqual(self.request('GET', 'validation/comments?before=bad')[0], 400)
 
     def test_pagination_isolated_by_game_and_text_kept_as_data(self):
@@ -90,6 +93,34 @@ class ShowcaseAPI(unittest.TestCase):
         self.assertEqual(owner['likes'], other['likes'])
         self.request('DELETE', 'saved-like/like', {}, visitor='s' * 32)
         self.assertNotIn('saved-like', self.request('GET', 'likes', visitor='s' * 32)[1]['liked'])
+
+    def test_review_all_games_and_cooldown_expires(self):
+        visitor = 'r' * 32
+        with patch('app.time.time', return_value=2000000000):
+            for i in range(27):
+                self.assertEqual(self.request('POST', f'review-{i}/comments', {'text': '试玩反馈'}, visitor=visitor, client='shared-classroom')[0], 201)
+            status, data = self.request('POST', 'review-0/comments', {'text': '补充'}, visitor=visitor)
+            self.assertEqual(status, 429)
+            self.assertEqual(data, {'error': 'comment_cooldown', 'retry_after': 20})
+        with patch('app.time.time', return_value=2000000020):
+            self.assertEqual(self.request('POST', 'review-0/comments', {'text': '等过20秒后的补充'}, visitor=visitor)[0], 201)
+
+    def test_hourly_limit_reports_real_wait_and_expires_without_data_loss(self):
+        visitor = 'h' * 32
+        now = 2100000000
+        with app.db() as con:
+            for i in range(app.COMMENTS_PER_HOUR):
+                con.execute('INSERT INTO comments(game_id,visitor_id,author,body,created_at,client_hash) VALUES (?,?,?,?,?,?)', ('hourly', visitor, '老师', f'反馈{i}', now - 100, 'fixture'))
+        self.request('POST', 'hourly-like/like', {}, visitor=visitor)
+        with patch('app.time.time', return_value=now):
+            status, data = self.request('POST', 'another-game/comments', {'text': '继续反馈'}, visitor=visitor)
+            self.assertEqual(status, 429)
+            self.assertEqual(data, {'error': 'comment_hourly_limit', 'retry_after': 3500})
+        with patch('app.time.time', return_value=now + 3500):
+            self.assertEqual(self.request('POST', 'another-game/comments', {'text': '继续反馈'}, visitor=visitor)[0], 201)
+        with app.db() as con:
+            self.assertEqual(con.execute('SELECT COUNT(*) FROM comments WHERE visitor_id=?', (visitor,)).fetchone()[0], app.COMMENTS_PER_HOUR + 1)
+        self.assertIn('hourly-like', self.request('GET', 'likes', visitor=visitor)[1]['liked'])
 
 
 if __name__ == '__main__':

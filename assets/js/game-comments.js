@@ -18,11 +18,23 @@
   async function request(url, options) {
     var response = await fetch(url, Object.assign({ credentials: 'same-origin' }, options || {}));
     var data = await response.json();
-    if (!response.ok) { var error = new Error(data.error || 'request_failed'); error.status = response.status; throw error; }
+    if (!response.ok) {
+      var error = new Error(data.error || 'request_failed');
+      error.status = response.status;
+      error.retryAfter = Number(data.retry_after || response.headers.get('Retry-After')) || 20;
+      throw error;
+    }
     return data;
   }
   function errorText(error) {
-    return error.status === 429 ? message('发布有些频繁，请稍等 20 秒再试。', 'Please wait 20 seconds before posting again.') : message('暂时未能完成，请检查网络后重试。', 'Unable to complete this request. Please try again.');
+    if (error.status === 429) {
+      var seconds = Math.max(1, Math.ceil(error.retryAfter));
+      var wait = seconds < 60 ? message(seconds + ' 秒', seconds + ' seconds') : message(Math.ceil(seconds / 60) + ' 分钟', Math.ceil(seconds / 60) + ' minutes');
+      return error.message === 'comment_hourly_limit'
+        ? message('本小时评论较多，请约 ' + wait + '后再试。你输入的内容仍保留。', 'Hourly comment limit reached. Try again in about ' + wait + '. Your text has been kept.')
+        : message('同一作品评论间隔较短，请等 ' + wait + '后再试。也可以先评论其他作品。', 'Please wait ' + wait + ' before commenting on this game again. You can comment on another game now.');
+    }
+    return message('暂时未能完成，请检查网络后重试。', 'Unable to complete this request. Please try again.');
   }
   function refreshCounts() {
     request(api + '/api/v1/games/comments').then(function (data) {

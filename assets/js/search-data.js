@@ -11,28 +11,28 @@ ninja.data = [{
     },
   },{id: "nav-论文",
           title: "论文",
-          description: "已发表论文与部分工作论文（精选）。",
+          description: "已发表期刊论文、预印本与工作论文。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/publications/";
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications and selected working papers.",
+          description: "Peer-reviewed articles, preprints, and working papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-研究",
           title: "研究",
-          description: "研究方向与项目（AE+X）。",
+          description: "传播研究、AI for Social Science与影像创作。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/research/";
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Research directions and selected projects (AE+X).",
+          description: "Communication research, AI for Social Science, and media production.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -53,28 +53,42 @@ ninja.data = [{
           },
         },{id: "nav-教学",
           title: "教学",
-          description: "面向 AI 时代、以产品与成果为导向的教学设计。",
+          description: "影像制作、现代教育技术与学生项目。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/teaching/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "AI-forward, product- and outcome-oriented teaching.",
+          description: "Media production, educational technology, and student projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-简历",
+          title: "简历",
+          description: "赵志龙的教育经历、工作单位与研究兴趣。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/zh/cv/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, affiliations, and research interests of Zhilong George Zhao.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
         },{id: "nav-简报",
           title: "简报",
-          description: "每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。",
+          description: "AI、社会、健康与教育方向的研究和新闻简报档案。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/digest/";
           },
         },{id: "nav-digest",
           title: "Digest",
-          description: "Daily (high-signal) research briefs curated across AI, CSS/AI &amp; society, digital health, and education.",
+          description: "An archive of research and news briefs on AI, society, health, and education.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/digest/";
@@ -439,14 +453,14 @@ ninja.data = [{
           description: "",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-06-26/";
-            },},{id: "projects-agentic-engineering-ae-x",
-          title: 'Agentic Engineering (AE+X)',
-          description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes.",
+            },},{id: "projects-ai-for-social-science",
+          title: 'AI for Social Science',
+          description: "Reliable AI-assisted coding, confidence calibration, and human review in social science research.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-多智能体工程-ae-x",
-          title: '多智能体工程（AE+X）',
-          description: "以评估为先的研究计划：配置、测试与部署多智能体系统，使其在真实工作流中稳定产出可靠结果。",
+            },},{id: "projects-ai-for-social-science",
+          title: 'AI for Social Science',
+          description: "社会科学研究中的AI辅助编码、置信度校准与人工复核。",
           section: "Projects",handler: () => {
               window.location.href = "/zh/projects/1_project/";
             },},{id: "projects-reliable-llm-assisted-qualitative-analysis",
@@ -459,24 +473,24 @@ ninja.data = [{
           description: "面向传播研究的人机协同编码：基准评测、校准与质量保障（QA），让复杂质性分析更可辩护。",
           section: "Projects",handler: () => {
               window.location.href = "/zh/projects/2_project/";
-            },},{id: "projects-computational-social-science-amp-digital-methods",
-          title: 'Computational Social Science &amp;amp; Digital Methods',
-          description: "Computational communication research using large-scale digital trace data, measurement, and causal designs.",
+            },},{id: "projects-health-and-public-communication",
+          title: 'Health and Public Communication',
+          description: "Media use, health literacy, trust, and news framing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-计算传播与数字方法",
-          title: '计算传播与数字方法',
-          description: "用大规模数字痕迹数据、测量与因果识别设计，开展可复现、可检验的计算传播/计算社会科学研究。",
+            },},{id: "projects-健康与公共传播",
+          title: '健康与公共传播',
+          description: "媒体使用、健康素养、信任与新闻框架。",
           section: "Projects",handler: () => {
               window.location.href = "/zh/projects/3_project/";
-            },},{id: "projects-ai-native-media-pipelines",
-          title: 'AI-Native Media Pipelines',
-          description: "Code-first multi-model pipelines for scripting → visuals → subtitles → packaging → publishing (with evaluation and QA).",
+            },},{id: "projects-generative-ai-in-media-production",
+          title: 'Generative AI in Media Production',
+          description: "Using generative AI in scripting, imagery, voices, subtitles, and editing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-ai-native-媒体生产流水线",
-          title: 'AI-native 媒体生产流水线',
-          description: "代码优先的多模型/多智能体流水线：脚本→视觉→字幕→打包→发布，并内置评估与质量门控。",
+            },},{id: "projects-生成式-ai-与影像创作",
+          title: '生成式 AI 与影像创作',
+          description: "探索生成式 AI 在脚本、画面、声音、字幕与剪辑中的应用。",
           section: "Projects",handler: () => {
               window.location.href = "/zh/projects/4_project/";
             },},{

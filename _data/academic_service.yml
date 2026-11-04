@@ -1,10 +1,22 @@
 journals:
   - name: BMJ Public Health
     url: https://bmjpublichealth.bmj.com/
+    classification:
+      zh: ESCI
+      en: ESCI
   - name: Journal of Health Communication
     url: https://www.tandfonline.com/journals/uhcm20
+    classification:
+      zh: SSCI · JCR Q1
+      en: SSCI · JCR Q1
   - name: "The Journals of Gerontology, Series B: Psychological Sciences and Social Sciences"
     url: https://academic.oup.com/psychsocgerontology
+    classification:
+      zh: SCIE / SSCI · JCR Q1
+      en: SCIE / SSCI · JCR Q1
   - name: 澳门研究
     name_en: Macao Studies (澳门研究)
-    url: https://cms.um.edu.mo/publication/macao-studies-bulletin/
+    url: https://jms.cms.um.edu.mo/zh-hant/
+    classification:
+      zh: 人大复印报刊资料收录
+      en: Indexed in Renmin University’s Reprinted Press and Periodical Materials database

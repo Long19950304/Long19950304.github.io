@@ -12,7 +12,6 @@ sections:
     programme:
       zh: 广东省哲学社会科学规划青年项目
       en: Guangdong Philosophy and Social Science Planning, Youth Project
-    number: GD26YXW16
     period: 2026–2028
     funding:
       zh: 经费2万元
@@ -40,7 +39,6 @@ sections:
     programme:
       zh: 五邑大学2026年度校级“人工智能+”教育教学专项建设项目
       en: Wuyi University 2026 AI+ Education and Teaching Development Programme
-    number: RGZN2026262469
     period: 2026–2028
     funding:
       zh: 申请经费1万元
@@ -61,9 +59,8 @@ sections:
       zh: 经费100万元
       en: 'Funding: RMB 1,000,000'
     description:
-      zh: 数字健康教育对中小学生健康素养影响的研究。
-      en: Research on digital health education and health literacy among primary and
-        secondary school students.
+      zh: 健康传播研究相关。
+      en: Research related to health communication.
 - id: collaborative-projects
   title:
     zh: 参与科研项目
@@ -76,26 +73,12 @@ sections:
     programme:
       zh: 国家社会科学基金重点项目
       en: National Social Science Fund of China, Key Project
-    number: 23ATY007
-    funding:
-      zh: 经费35万元
-      en: 'Funding: RMB 350,000'
-    lead:
-      zh: 朱琳
-      en: Zhu Lin
   - title:
       zh: 数字新闻生态下的信息失序与协同治理研究
       en: Information Disorder and Collaborative Governance in the Digital News Ecosystem
     programme:
       zh: 教育部人文社会科学研究规划基金项目
       en: Ministry of Education Humanities and Social Sciences Planning Fund
-    number: 24YJA860010
-    funding:
-      zh: 经费10万元
-      en: 'Funding: RMB 100,000'
-    lead:
-      zh: 刘银娣
-      en: Liu Yindi
   - title:
       zh: 数字媒介情境下粤港澳大湾区听觉文化遗产的传承与传播研究
       en: Preservation and Communication of Auditory Cultural Heritage in the Guangdong–Hong
@@ -103,13 +86,6 @@ sections:
     programme:
       zh: 广东省哲学社会科学规划专项项目
       en: Guangdong Philosophy and Social Science Planning, Special Project
-    number: GD25DWQXW02
-    funding:
-      zh: 经费3万元
-      en: 'Funding: RMB 30,000'
-    lead:
-      zh: 刘银娣
-      en: Liu Yindi
   - title:
       zh: 广东省中小学校健康教育现况调研
       en: Survey of Health Education in Primary and Secondary Schools in Guangdong
@@ -117,12 +93,6 @@ sections:
       zh: 广东省教育厅资助
       en: Funded by the Department of Education of Guangdong Province
     period: 2022–2023
-    funding:
-      zh: 经费30万元
-      en: 'Funding: RMB 300,000'
-    lead:
-      zh: 陈亚军、朱琳
-      en: Chen Yajun and Zhu Lin
   - title:
       zh: COMET-19跨国心理健康与媒介使用调查
       en: COMET-19 Mental Health Survey
@@ -141,12 +111,6 @@ sections:
       en: Funded by the Centre for Macau Studies, University of Macau, and the Macao
         Young Entrepreneur Incubation Centre
     period: 2020–2021
-    funding:
-      zh: 经费5万澳门元
-      en: 'Funding: MOP 50,000'
-    lead:
-      zh: 林玉凤
-      en: Agnes I. F. Lam
   - title:
       zh: 澳门居民媒介使用研究
       en: Research on Media Use among Macao Residents
@@ -157,15 +121,6 @@ sections:
     period:
       zh: 2008–2021（项目整体周期）
       en: 2008–2021 (overall project period)
-    funding:
-      zh: 每年经费20万澳门元
-      en: 'Annual funding: MOP 200,000'
-    lead:
-      zh: 林玉凤
-      en: Agnes I. F. Lam
-  note:
-    zh: 以下经费为项目总经费。
-    en: Funding amounts below refer to the full project budgets.
 - id: documentary-projects
   title:
     zh: 参与地方志与口述史项目

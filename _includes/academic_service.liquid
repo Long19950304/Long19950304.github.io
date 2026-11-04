@@ -4,6 +4,6 @@
 {% for journal in site.data.academic_service.journals %}
   {% assign journal_name = journal.name %}
   {% if page.lang != 'zh' and journal.name_en %}{% assign journal_name = journal.name_en %}{% endif %}
-  <li><a href="{{ journal.url }}">{{ journal_name }}</a></li>
+  <li><a href="{{ journal.url }}">{{ journal_name }}</a>{% if journal.classification %} · {{ journal.classification[page.lang] }}{% endif %}</li>
 {% endfor %}
 </ul>

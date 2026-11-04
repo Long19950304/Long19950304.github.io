@@ -2,7 +2,7 @@
 layout: page
 permalink: /cv/
 title: CV
-description: Education, affiliations, and research interests of Zhilong George Zhao.
+description: Education, affiliations, and research interests of Zhilong Zhao.
 nav: true
 nav_order: 6
 lang: en

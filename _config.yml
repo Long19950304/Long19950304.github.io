@@ -4,12 +4,12 @@
 
 title: blank # use "blank" to render first/middle/last name in the header
 first_name: Zhilong
-middle_name: George
+middle_name:
 last_name: Zhao
 chinese_name: 赵志龙
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Zhilong George Zhao, Wuyi University. Communication research, AI for Social Science, health communication, and media use and trust.
+  Zhilong Zhao, Wuyi University. Communication research, AI for Social Science, health communication, and media use and trust.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

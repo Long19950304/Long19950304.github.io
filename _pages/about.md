@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: "Communication Research · AI for Social Science"
-description: "Zhilong George Zhao works at Wuyi University. Research on health and public communication, media use and trust, and AI for Social Science."
+description: "Zhilong Zhao works at Wuyi University. Research on health and public communication, media use and trust, and AI for Social Science."
 nav: false
 lang: en
 translation_key: home
@@ -27,7 +27,7 @@ latest_posts:
 ---
 
 <p class="lead">
-I am <strong>Zhilong George Zhao (赵志龙)</strong>, and I work in the <strong>School of Humanities and Law at Wuyi University</strong>.
+I am <strong>Zhilong Zhao (赵志龙)</strong>, and I work in the <strong>School of Humanities and Law at Wuyi University</strong>.
 </p>
 
 My research examines health and public communication, media use and trust, and **AI for Social Science**. My recent work focuses on the reliability of LLM-assisted qualitative coding, confidence calibration, and human–AI collaboration. I also explore generative AI in media production and teaching.

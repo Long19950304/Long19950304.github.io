@@ -5,7 +5,7 @@ permalink: /digest/feed.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Zhilong George Zhao — Daily Digest</title>
+    <title>Zhilong Zhao — Daily Digest</title>
     <link>{{ '/digest/' | absolute_url }}</link>
     <description>Daily digest archive (news + AI tools/model updates).</description>
     <language>en</language>

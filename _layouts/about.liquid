@@ -39,7 +39,7 @@ layout: default
             {% endif %}
             {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.27}}px, (min-width: 576px) 27vw, 95vw{% endcapture %}
             {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Zhilong George Zhao"
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Zhilong Zhao"
               cache_bust=true
             %}
           {% endif %}

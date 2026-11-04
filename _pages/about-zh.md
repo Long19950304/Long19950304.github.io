@@ -27,7 +27,7 @@ latest_posts:
 ---
 
 <p class="lead">
-我是<strong>赵志龙（Zhilong George Zhao）</strong>，现于<strong>五邑大学人文与政法学院</strong>工作。
+我是<strong>赵志龙（Zhilong Zhao）</strong>，现于<strong>五邑大学人文与政法学院</strong>工作。
 </p>
 
 我的研究关注健康与公共传播、媒体使用与信任，以及 **AI for Social Science（人工智能辅助社会科学研究）**。近期工作主要考察大语言模型参与质性编码时的可靠性、置信度校准与人机协同，并探索生成式人工智能在影像创作和教学中的应用。

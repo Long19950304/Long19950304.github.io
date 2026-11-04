@@ -2411,7 +2411,7 @@ def render_card(
     )
 
     # Footer anchored at the bottom to avoid a large empty block below the content.
-    footer1 = "Zhilong George Zhao · @longlalaland"
+    footer1 = "Zhilong Zhao · @longlalaland"
     digest_path = f"/digest/{date.isoformat()}/" if lang != "zh" else f"/zh/digest/{date.isoformat()}/"
     footer2 = footer_url_override or (DEFAULT_SITE_URL + digest_path)
     bottom_pad = 52

@@ -29,9 +29,13 @@ School of Journalism and Communication · June 2024–June 2026
 
 Health and public communication; media use and trust; AI for Social Science, including LLM-assisted qualitative coding, reliability assessment, and human–AI collaboration.
 
-## Publications and Teaching
+{% include research_projects.liquid %}
 
-Three conference papers have been accepted for November 2026: two at the NCA Annual Convention and one at 智能与计算传播学2026年会. See [conference papers and presentations](/publications/#conferences).
+## Publications, Presentations, and Teaching
+
+My conference record includes ICA, AEJMC, computational communication conferences, and regional academic forums. The [conference papers and presentations](/publications/#conferences) list separates past presentations from three papers accepted for November 2026. My recent work includes a presentation on multimodal algorithmic auditing at Shanghai Second Polytechnic University on 24 October 2026.
+
+The [teaching page](/teaching/#teaching-projects) also lists a university-level AI and teaching reform application currently under review.
 
 [Publications](/publications/) · [Research](/research/) · [Teaching](/teaching/) · [Media projects](/media/)
 

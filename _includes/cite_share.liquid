@@ -9,7 +9,7 @@
 {%- assign canonical_url = site.url | append: page.url | append: '#' | append: entry.key -%}
 {%- assign note_down = entry.note | default: '' | downcase -%}
 {%- assign is_published_or_preprint = false -%}
-{%- if note_down contains 'published' or note_down contains 'posted' or note_down contains 'preprint' or note_down contains 'working paper' or entry.type == 'article' -%}
+{%- if note_down contains 'published' or note_down contains 'posted' or note_down contains 'preprint' or note_down contains 'working paper' or entry.type == 'article' or entry.type == 'incollection' -%}
   {%- assign is_published_or_preprint = true -%}
 {%- endif -%}
 {%- if entry.arxiv -%}
@@ -25,8 +25,9 @@
 
   {%- assign export_type = 'report' -%}
   {%- if entry.type == 'article' -%}{%- assign export_type = 'article-journal' -%}{%- endif -%}
+  {%- if entry.type == 'incollection' -%}{%- assign export_type = 'chapter' -%}{%- endif -%}
   {%- assign export_container = entry.journal | default: entry.booktitle | default: entry.howpublished -%}
-  {%- capture ris -%}{% include citation_ris.liquid type=export_type authors=entry.author_array title=entry.title container=export_container year=entry.year doi=entry.doi url=entry.url volume=entry.volume issue=entry.number pages=entry.pages %}{%- endcapture -%}
+  {%- capture ris -%}{% include citation_ris.liquid type=export_type authors=entry.author_array title=entry.title container=export_container year=entry.year doi=entry.doi url=entry.url volume=entry.volume issue=entry.number pages=entry.pages publisher=entry.publisher address=entry.address editors=entry.editor_array %}{%- endcapture -%}
 
   {%- assign citation_plain = author_plain | append: ' (' | append: entry.year | append: '). ' | append: entry.title | append: '.' -%}
   {%- if entry.journal -%}
@@ -35,6 +36,9 @@
     {%- if entry.number -%}{%- assign citation_plain = citation_plain | append: '(' | append: entry.number | append: ')' -%}{%- endif -%}
     {%- if entry.pages -%}{%- assign citation_plain = citation_plain | append: ', ' | append: entry.pages -%}{%- endif -%}
     {%- assign citation_plain = citation_plain | append: '.' -%}
+  {%- endif -%}
+  {%- if entry.type == 'incollection' -%}
+    {%- assign citation_plain = citation_plain | append: ' In ' | append: entry.booktitle | append: ', pp. ' | append: entry.pages | replace: '--', '–' | append: '. ' | append: entry.publisher | append: '.' -%}
   {%- endif -%}
   {%- if entry.doi -%}
     {%- assign citation_plain = citation_plain | append: ' https://doi.org/' | append: entry.doi -%}
@@ -57,7 +61,7 @@
   "ris": {{ ris | jsonify }},
   "csl_json": {
     "id": {{ entry.key | jsonify }},
-    "type": {%- if entry.type == 'article' -%}"article-journal"{%- else -%}"report"{%- endif -%},
+    "type": {{ export_type | jsonify }},
     "title": {{ entry.title | strip | jsonify }},
     "author": [
       {%- for a in entry.author_array -%}
@@ -72,6 +76,11 @@
     "issue": {{ entry.number | default: '' | jsonify }},
     "page": {{ entry.pages | default: '' | replace: '--', '-' | jsonify }},
     "container-title": {{ entry.journal | default: entry.booktitle | default: '' | strip | jsonify }},
+    {% if entry.type == 'incollection' %}
+    "publisher": {{ entry.publisher | jsonify }},
+    "publisher-place": {{ entry.address | jsonify }},
+    "editor": [{%- for editor in entry.editor_array -%}{"family": {{ editor.last | jsonify }}, "given": {{ editor.first | jsonify }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}],
+    {% endif %}
     "DOI": {{ entry.doi | default: '' | strip | jsonify }},
     "URL": {{ entry.url | default: '' | strip | jsonify }}
   }

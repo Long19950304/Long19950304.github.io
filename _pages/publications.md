@@ -25,6 +25,10 @@ translation_key: publications
 
 {% bibliography --query @misc %}
 
+<h2 id="chapters">Book Chapters and Research Reports</h2>
+
+{% bibliography --query @incollection %}
+
 </div>
 
 <h2 id="conferences">Conference Papers and Presentations</h2>

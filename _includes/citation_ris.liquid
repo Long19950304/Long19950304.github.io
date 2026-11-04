@@ -1,15 +1,22 @@
 {%- capture newline %}
 {% endcapture -%}
-{%- if include.type == 'article-journal' -%}{%- assign record_type = 'JOUR' -%}{%- else -%}{%- assign record_type = 'GEN' -%}{%- endif -%}
+{%- if include.type == 'article-journal' -%}{%- assign record_type = 'JOUR' -%}{%- elsif include.type == 'chapter' -%}{%- assign record_type = 'CHAP' -%}{%- else -%}{%- assign record_type = 'GEN' -%}{%- endif -%}
 {%- assign result = 'TY  - ' | append: record_type | append: newline -%}
 {%- for author in include.authors -%}
   {%- assign given = author.given | default: author.first -%}
   {%- assign family = author.family | default: author.last -%}
   {%- assign result = result | append: 'AU  - ' | append: family | append: ', ' | append: given | append: newline -%}
 {%- endfor -%}
+{%- for editor in include.editors -%}
+  {%- assign editor_name = editor.last -%}
+  {%- if editor.first != blank -%}{%- assign editor_name = editor_name | append: ', ' | append: editor.first -%}{%- endif -%}
+  {%- assign result = result | append: 'A2  - ' | append: editor_name | append: newline -%}
+{%- endfor -%}
 {%- assign result = result | append: 'TI  - ' | append: include.title | append: newline -%}
 {%- if include.container != blank -%}{%- assign result = result | append: 'T2  - ' | append: include.container | append: newline -%}{%- endif -%}
 {%- assign result = result | append: 'PY  - ' | append: include.year | append: newline -%}
+{%- if include.publisher != blank -%}{%- assign result = result | append: 'PB  - ' | append: include.publisher | append: newline -%}{%- endif -%}
+{%- if include.address != blank -%}{%- assign result = result | append: 'CY  - ' | append: include.address | append: newline -%}{%- endif -%}
 {%- if include.volume != blank -%}{%- assign result = result | append: 'VL  - ' | append: include.volume | append: newline -%}{%- endif -%}
 {%- if include.issue != blank -%}{%- assign result = result | append: 'IS  - ' | append: include.issue | append: newline -%}{%- endif -%}
 {%- if include.pages != blank -%}

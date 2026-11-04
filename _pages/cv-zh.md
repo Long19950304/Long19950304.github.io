@@ -29,9 +29,13 @@ translation_key: cv
 
 健康与公共传播、媒体使用与信任、AI for Social Science，包括大语言模型辅助质性编码、可靠性评估与人机协同。
 
-## 论文与教学
+{% include research_projects.liquid %}
 
-三篇会议论文获2026年11月会议录用：NCA年会两篇、智能与计算传播学年会一篇。详见[会议论文与报告](/zh/publications/#conferences)。
+## 论文、会议报告与教学
+
+会议经历涵盖ICA、AEJMC、智能与计算传播学年会及区域学术论坛。[会议论文与报告](/zh/publications/#conferences)分别列出历年报告和2026年11月待报告的三篇录用论文。近期报告包括2026年10月24日在上海第二工业大学举行的第八届高盟年会报告《面向精准国际传播的多模态算法审计研究与治理路径》。
+
+[教学页](/zh/teaching/#teaching-projects)另列校级“人工智能+”教育教学专项申报，当前处于立项评审阶段。
 
 [论文](/zh/publications/) · [研究](/zh/research/) · [教学](/zh/teaching/) · [影像作品](/zh/media/)
 

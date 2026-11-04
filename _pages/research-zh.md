@@ -27,6 +27,8 @@ translation_key: research
 
 探索生成式人工智能参与视觉叙事的方式，包括历史对谈节目和影像制作流程。[作品页](/zh/media/)展示部分影像创作，[教学页](/zh/teaching/)收录课程项目与学生原型。
 
+{% include research_projects.liquid %}
+
 ## 论文与研究资料
 
 [论文页](/zh/publications/)分别列出已发表期刊论文、预印本与工作论文，并提供公开版本和引用导出入口。更多记录可见 [Google Scholar](https://scholar.google.com/citations?user=U-FdkpMAAAAJ) 和 [ORCID](https://orcid.org/0000-0002-3771-4969)。

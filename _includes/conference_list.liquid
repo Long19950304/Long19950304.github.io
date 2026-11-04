@@ -1,6 +1,11 @@
 {% assign conference_lang = page.lang | default: 'en' %}
+{% assign conference_groups = 'upcoming,past' | split: ',' %}
+{% for conference_group in conference_groups %}
+<h3>{% if conference_lang == 'zh' %}{% if conference_group == 'upcoming' %}已录用，待报告{% else %}历年会议论文与报告{% endif %}{% else %}{% if conference_group == 'upcoming' %}Accepted and Upcoming{% else %}Past Conference Papers and Presentations{% endif %}{% endif %}</h3>
 <ol class="conference-papers">
   {% for paper in site.data.conferences %}
+    {% if conference_group == 'upcoming' and paper.status == 'presented' %}{% continue %}{% endif %}
+    {% if conference_group == 'past' and paper.status != 'presented' %}{% continue %}{% endif %}
     <li id="{{ paper.id }}">
       <p>
         <strong>{{ paper.title | escape }}</strong><br>
@@ -8,14 +13,15 @@
           {% if paper.authors_zh %}{{ paper.authors_zh | escape }}<br>{% endif %}
           {{ paper.conference | escape }}{% if paper.division %} · {{ paper.division | escape }}{% endif %}<br>
           {{ paper.date_zh | escape }} · {{ paper.location_zh | escape }}<br>
-          {% if paper.status == 'scheduled' %}已录用，报告已安排（会议尚未举行）。{% else %}已录用，拟报告（会议尚未举行）。{% endif %}
+          {% if paper.status == 'presented' %}会议报告。{% elsif paper.status == 'scheduled' %}已录用，报告已安排（会议尚未举行）。{% else %}已录用，拟报告（会议尚未举行）。{% endif %}
         {% else %}
           {% if paper.authors_en %}{{ paper.authors_en | escape }}<br>{% endif %}
           {{ paper.conference | escape }}{% if paper.division %} · {{ paper.division | escape }}{% endif %}<br>
           {{ paper.date_en | escape }} · {{ paper.location_en | escape }}<br>
-          {% if paper.status == 'scheduled' %}Accepted; presentation scheduled (upcoming).{% else %}Accepted for presentation (upcoming).{% endif %}
+          {% if paper.status == 'presented' %}Conference presentation.{% elsif paper.status == 'scheduled' %}Accepted; presentation scheduled (upcoming).{% else %}Accepted for presentation (upcoming).{% endif %}
         {% endif %}
       </p>
     </li>
   {% endfor %}
 </ol>
+{% endfor %}

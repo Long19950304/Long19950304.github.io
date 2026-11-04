@@ -28,3 +28,78 @@
   location_en: "South China University of Technology, Guangzhou, China"
   location_zh: "中国广州，华南理工大学"
   status: scheduled
+
+- id: alliance-2026-multimodal-audit
+  title: "面向精准国际传播的多模态算法审计研究与治理路径"
+  authors_zh: "赵志龙"
+  authors_en: "Zhilong Zhao"
+  conference: "高校区域国别学人才培养与学科建设联盟第八届年会 · 区域国别学与精准国际传播"
+  date_en: "24 October 2026"
+  date_zh: "2026年10月24日"
+  location_en: "Shanghai Second Polytechnic University, Shanghai, China"
+  location_zh: "中国上海，上海第二工业大学"
+  status: presented
+
+- id: aejmc-2025
+  title: "AEJMC 2025"
+  conference: "Association for Education in Journalism and Mass Communication (AEJMC), 108th Annual Conference"
+  date_en: "6–10 August 2025"
+  date_zh: "2025年8月6–10日"
+  location_en: "San Francisco, USA"
+  location_zh: "美国旧金山"
+  status: presented
+
+- id: greater-bay-2024-discourse
+  title: "智能舆情监测在一国两制话语建构中的应用研究：基于香港报业的分析"
+  authors_zh: "赵志龙"
+  authors_en: "Zhilong Zhao"
+  conference: "粤港澳大湾区国际传播发展论坛2024"
+  date_en: "17 November 2024"
+  date_zh: "2024年11月17日"
+  location_en: "South China University of Technology, Guangzhou, China"
+  location_zh: "中国广州，华南理工大学"
+  status: presented
+
+- id: computational-communication-2024-older-adults
+  title: "Is Negative Representation More Engaging? The Influence of News Title Framing of Older Adults on Viewer Behavior"
+  authors_zh: "赵志龙"
+  authors_en: "Zhilong Zhao"
+  conference: "智能与计算传播学2024年年会"
+  date_en: "10 November 2024"
+  date_zh: "2024年11月10日"
+  location_en: "Zhejiang University of Technology, Hangzhou, China"
+  location_zh: "中国杭州，浙江工业大学"
+  status: presented
+
+- id: aejmc-2024-parental-mediation
+  title: "Parental Mediation, Digital Media Usage, and Health Literacy: An Exploration among Chinese Elementary School Students"
+  authors_zh: "Z. Zhao, L. Zhu, J. Liao, J. Xia, and X. Pu"
+  authors_en: "Z. Zhao, L. Zhu, J. Liao, J. Xia, and X. Pu"
+  conference: "Association for Education in Journalism and Mass Communication (AEJMC), 107th Annual Conference"
+  date_en: "8 August 2024"
+  date_zh: "2024年8月8日"
+  location_en: "Philadelphia, USA"
+  location_zh: "美国费城"
+  status: presented
+
+- id: ica-2022-first-person
+  title: "First-Person Influences on Third-Person Perceptions"
+  authors_zh: "X. Zhao, X. Liu, Y. S. Chen, W. A. Jiao, S. H. Ao, F. Shen, and Zhilong Zhao"
+  authors_en: "X. Zhao, X. Liu, Y. S. Chen, W. A. Jiao, S. H. Ao, F. Shen, and Zhilong Zhao"
+  conference: "International Communication Association (ICA), 72nd Annual Conference"
+  date_en: "2022"
+  date_zh: "2022年"
+  location_en: "Paris, France"
+  location_zh: "法国巴黎"
+  status: presented
+
+- id: greater-bay-2021-macao-identity
+  title: "澳门居民媒体使用与国族认同间的相关关系模型"
+  authors_zh: "林玉凤、赵志龙"
+  authors_en: "Agnes Iok Fong Lam and Zhilong Zhao"
+  conference: "首届粤港澳大湾区中国文化传播论坛"
+  date_en: "6 November 2021"
+  date_zh: "2021年11月6日"
+  location_en: "Jinan University, Guangzhou, China"
+  location_zh: "中国广州，暨南大学"
+  status: presented

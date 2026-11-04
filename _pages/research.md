@@ -27,6 +27,8 @@ My recent methodological work evaluates LLM-assisted qualitative coding: how con
 
 I explore generative AI in visual storytelling, including historical dialogue programs and media production workflows. [Media projects](/media/) show selected creative work; [Teaching](/teaching/) includes classroom projects and student prototypes.
 
+{% include research_projects.liquid %}
+
 ## Publications and Research Materials
 
 [Publications](/publications/) lists peer-reviewed articles separately from preprints and working papers, with links to public versions and citation exports. [Google Scholar](https://scholar.google.com/citations?user=U-FdkpMAAAAJ) and [ORCID](https://orcid.org/0000-0002-3771-4969) provide additional records.

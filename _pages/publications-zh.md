@@ -19,6 +19,10 @@ translation_key: publications
 <h2>预印本与工作论文</h2>
 
 {% bibliography --query @misc %}
+
+<h2 id="chapters">报告集章节与研究报告</h2>
+
+{% bibliography --query @incollection %}
 </div>
 
 <h2 id="conferences">会议论文与报告</h2>

@@ -1,0 +1,30 @@
+- id: nca-2026-agenda-translation
+  title: "Agenda Translation on Platforms: Digital Capacity and Uneven Local Government Responsiveness to National Health Attention in China"
+  conference: "National Communication Association (NCA), 112th Annual Convention"
+  division: "Health Communication Division"
+  date_en: "19–22 November 2026"
+  date_zh: "2026年11月19–22日"
+  location_en: "New Orleans, USA"
+  location_zh: "美国新奥尔良"
+  status: accepted
+
+- id: nca-2026-comparative-cues
+  title: "Comparative Cues, Not Uniform Distrust: Foreign Media and Tiered Political Trust in China"
+  conference: "National Communication Association (NCA), 112th Annual Convention"
+  division: "Political Communication Division"
+  date_en: "19–22 November 2026"
+  date_zh: "2026年11月19–22日"
+  location_en: "New Orleans, USA"
+  location_zh: "美国新奥尔良"
+  status: accepted
+
+- id: computational-communication-2026-embedded-construction
+  title: "何以嵌入而难以主导：大语言模型中的南南合作话语建构"
+  authors_zh: "赵志龙、刘银娣"
+  authors_en: "Zhilong Zhao and Yindi Liu"
+  conference: "智能与计算传播学2026年会"
+  date_en: "14–15 November 2026"
+  date_zh: "2026年11月14–15日"
+  location_en: "South China University of Technology, Guangzhou, China"
+  location_zh: "中国广州，华南理工大学"
+  status: scheduled

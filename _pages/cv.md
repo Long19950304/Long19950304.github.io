@@ -31,6 +31,8 @@ Health and public communication; media use and trust; AI for Social Science, inc
 
 ## Publications and Teaching
 
+Three conference papers have been accepted for November 2026: two at the NCA Annual Convention and one at 智能与计算传播学2026年会. See [conference papers and presentations](/publications/#conferences).
+
 [Publications](/publications/) · [Research](/research/) · [Teaching](/teaching/) · [Media projects](/media/)
 
 ## Contact

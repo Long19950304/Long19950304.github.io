@@ -31,6 +31,8 @@ translation_key: cv
 
 ## 论文与教学
 
+三篇会议论文获2026年11月会议录用：NCA年会两篇、智能与计算传播学年会一篇。详见[会议论文与报告](/zh/publications/#conferences)。
+
 [论文](/zh/publications/) · [研究](/zh/research/) · [教学](/zh/teaching/) · [影像作品](/zh/media/)
 
 ## 联系方式

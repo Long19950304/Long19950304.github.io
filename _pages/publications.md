@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Peer-reviewed articles, preprints, and working papers.
+description: Peer-reviewed articles, preprints, working papers, and conference papers.
 nav: true
 nav_order: 2
 lang: en
@@ -26,3 +26,7 @@ translation_key: publications
 {% bibliography --query @misc %}
 
 </div>
+
+<h2 id="conferences">Conference Papers and Presentations</h2>
+
+{% include conference_list.liquid %}

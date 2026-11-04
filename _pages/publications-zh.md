@@ -2,7 +2,7 @@
 layout: page
 permalink: /zh/publications/
 title: 论文
-description: 已发表期刊论文、预印本与工作论文。
+description: 已发表期刊论文、预印本、工作论文与会议论文。
 nav: true
 nav_order: 2
 lang: zh
@@ -21,3 +21,6 @@ translation_key: publications
 {% bibliography --query @misc %}
 </div>
 
+<h2 id="conferences">会议论文与报告</h2>
+
+{% include conference_list.liquid %}

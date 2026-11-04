@@ -1,0 +1,21 @@
+{% assign conference_lang = page.lang | default: 'en' %}
+<ol class="conference-papers">
+  {% for paper in site.data.conferences %}
+    <li id="{{ paper.id }}">
+      <p>
+        <strong>{{ paper.title | escape }}</strong><br>
+        {% if conference_lang == 'zh' %}
+          {% if paper.authors_zh %}{{ paper.authors_zh | escape }}<br>{% endif %}
+          {{ paper.conference | escape }}{% if paper.division %} · {{ paper.division | escape }}{% endif %}<br>
+          {{ paper.date_zh | escape }} · {{ paper.location_zh | escape }}<br>
+          {% if paper.status == 'scheduled' %}已录用，报告已安排（会议尚未举行）。{% else %}已录用，拟报告（会议尚未举行）。{% endif %}
+        {% else %}
+          {% if paper.authors_en %}{{ paper.authors_en | escape }}<br>{% endif %}
+          {{ paper.conference | escape }}{% if paper.division %} · {{ paper.division | escape }}{% endif %}<br>
+          {{ paper.date_en | escape }} · {{ paper.location_en | escape }}<br>
+          {% if paper.status == 'scheduled' %}Accepted; presentation scheduled (upcoming).{% else %}Accepted for presentation (upcoming).{% endif %}
+        {% endif %}
+      </p>
+    </li>
+  {% endfor %}
+</ol>

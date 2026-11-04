@@ -35,8 +35,6 @@ translation_key: cv
 
 会议经历涵盖ICA、AEJMC、智能与计算传播学年会及区域学术论坛。[会议论文与报告](/zh/publications/#conferences)分别列出历年报告和2026年11月会议已录用的三篇论文。近期报告包括2026年10月24日在上海第二工业大学举行的第八届高盟年会报告《面向精准国际传播的多模态算法审计研究与治理路径》。
 
-[教学页](/zh/teaching/#teaching-projects)另列校级“人工智能+”教育教学专项申报，当前处于立项评审阶段。
-
 [论文](/zh/publications/) · [研究](/zh/research/) · [教学](/zh/teaching/) · [影像作品](/zh/media/)
 
 ## 联系方式

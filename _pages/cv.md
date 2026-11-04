@@ -35,8 +35,6 @@ Health and public communication; media use and trust; AI for Social Science, inc
 
 My conference record includes ICA, AEJMC, computational communication conferences, and regional academic forums. The [conference papers and presentations](/publications/#conferences) list separates past presentations from three papers accepted for November 2026. My recent work includes a presentation on multimodal algorithmic auditing at Shanghai Second Polytechnic University on 24 October 2026.
 
-The [teaching page](/teaching/#teaching-projects) also lists a university-level AI and teaching reform application currently under review.
-
 [Publications](/publications/) · [Research](/research/) · [Teaching](/teaching/) · [Media projects](/media/)
 
 ## Contact

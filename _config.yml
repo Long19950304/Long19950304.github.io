@@ -11,8 +11,8 @@ contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Zhilong Zhao, Wuyi University. Communication research, AI for Social Science, health communication, and media use and trust.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+  Hosted on <a href="https://www.tencentcloud.com/">Tencent Cloud</a>.
 keywords: Zhilong Zhao, 赵志龙, Wuyi University, communication, AI for Social Science, health communication, LLM evaluation
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: Z # the emoji/character used as the favicon (alternatively, provide image name in /assets/img/)

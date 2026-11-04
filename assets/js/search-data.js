@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-论文",
           title: "论文",
-          description: "已发表期刊论文、预印本与工作论文。",
+          description: "已发表期刊论文、预印本、工作论文与会议论文。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/publications/";
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed articles, preprints, and working papers.",
+          description: "Peer-reviewed articles, preprints, working papers, and conference papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";

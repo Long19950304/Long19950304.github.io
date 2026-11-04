@@ -20,8 +20,8 @@ Generative AI can help students explore alternatives, build prototypes, and comp
 Studio-based learning provides an overall approach to classroom design. Tasks, pacing, and assessment are adapted to each course's learning goals.
 
 <figure style="margin: 1.5rem 0;">
-  <a href="/assets/img/teaching/teaching-framework-en.webp" target="_blank" rel="noopener" aria-label="Open the classroom design framework at full size"><img src="/assets/img/teaching/teaching-framework-en.webp" width="2560" height="1440" alt="Conceptual framework for studio-based teaching: define the task, make together, test and respond, and share and reflect; feedback returns to making. Collaboration, assessment, and responsible AI support all four stages." style="display: block; width: 100%; height: auto; border-radius: 8px;"></a>
-  <figcaption style="margin-top: .6rem; font-size: .9rem; text-align: center;">A framework connecting tasks, making, feedback, and reflection. Click to view at full size.</figcaption>
+  <a href="/assets/img/teaching/teaching-concepts.webp" target="_blank" rel="noopener" aria-label="Open the classroom design concept map at full size"><img src="/assets/img/teaching/teaching-concepts.webp" width="2300" height="690" alt="Four connected abstract forms: an open ring represents inquiry, interlocking pieces represent collaboration, orbiting nodes represent feedback, and expanding arcs represent sharing and reflection. A feedback arrow returns to making." style="display: block; width: 100%; height: auto; border-radius: 8px;"></a>
+  <figcaption class="teaching-concept-labels"><span>Define the task</span><span>Make together</span><span>Test and respond</span><span>Share and reflect</span></figcaption>
 </figure>
 
 1. **Ask a question**: start with a real communication or learning context, identify the audience and purpose, and decide what would count as a useful outcome.

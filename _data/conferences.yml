@@ -44,16 +44,6 @@
   location_zh: "中国上海，上海第二工业大学"
   status: presented
 
-- id: aejmc-2025
-  year: 2025
-  title: "AEJMC 2025"
-  conference: "Association for Education in Journalism and Mass Communication (AEJMC), 108th Annual Conference"
-  date_en: "6–10 August 2025"
-  date_zh: "2025年8月6–10日"
-  location_en: "San Francisco, USA"
-  location_zh: "美国旧金山"
-  status: presented
-
 - id: greater-bay-2024-discourse
   year: 2024
   title: "智能舆情监测在一国两制话语建构中的应用研究：基于香港报业的分析"

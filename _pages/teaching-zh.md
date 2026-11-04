@@ -2,38 +2,28 @@
 layout: page
 permalink: /zh/teaching/
 title: 教学
-description: 面向 AI 时代、以产品与成果为导向的教学设计。
+description: 影像制作、现代教育技术与学生项目。
 nav: true
 nav_order: 5
 lang: zh
 translation_key: teaching
 ---
 
-<div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
-  <img src="/assets/img/teaching/studio-teams-zh.svg" alt="工作室式教学：团队协作 + 结构化竞赛" style="width: 100%; height: auto; border-radius: 14px;">
-</div>
+我的教学结合影像制作、批判性观影与项目制学习，让学生通过创作、试玩和反馈改进作品，并反思自己的设计选择。
 
-我主要讲授媒体创作、编剧、影视文化及大学语文等课程，结合实践制作、批判性观影与项目制学习。
+## 2026年秋季教学
 
-## 当前课程
+- **[现代教育技术](/zh/teaching/modern-educational-technology/)**：围绕学习设计、数字工具与互动教学材料开展课程活动。
+- **微电影制作**：负责摄影摄像与拍摄实训部分。
 
-- 数字摄影与摄像
-- 微电影制作
-- [现代教育技术](/zh/teaching/modern-educational-technology/)
-- 大学语文
+## 学生作品
 
-## 教学方向
+[学生小游戏作品展](/zh/teaching/games/)收录了现代教育技术课程的 **27个可试玩原型**。这些作品为讨论互动设计、学习目标与作品修改提供了具体案例。
 
-- 数字内容创作 / 制作（AI-native 流水线 + 评估）
-- 计算传播 / 数字方法（标注、基准评测、可复现工作流）
-- AI 辅助研究方法（LLM 评估、可靠性、校准、负责任使用）
-- 多智能体工程工作室（团队产品构建 + 评估）
+## 课程建设
 
-## 工作室式课程（协作 + 竞赛）
+我也在准备数字摄影与摄像、影视文化等课程的教学材料。这些工作属于面向后续教学的课程建设。
 
-学生以小组形式构建 AI 时代的产品（应用、自动化工作流，或媒体/知识 SaaS 原型）。团队内协作被制度化激励；团队间竞争以成果评估为导向。
+## 教学探索
 
-
-## 课程页面
-
-欢迎进入[现代教育技术课程页面](/zh/teaching/modern-educational-technology/)，了解课程内容，并进入学生作品展试玩 27 个小游戏作品。
+探索生成式人工智能在研究、视觉叙事与课堂原型制作中的应用，关注学习目标、生成内容的评价，以及技术工具如何影响创作判断。

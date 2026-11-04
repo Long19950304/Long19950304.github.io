@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Computational Social Science & Digital Methods"
-description: "Computational communication research using large-scale digital trace data, measurement, and causal designs."
-title_zh: "计算传播与数字方法"
-description_zh: "用大规模数字痕迹数据、测量与因果识别设计，开展可复现、可检验的计算传播/计算社会科学研究。"
+title: "Health and Public Communication"
+description: "Media use, health literacy, trust, and news framing."
+title_zh: "健康与公共传播"
+description_zh: "媒体使用、健康素养、信任与新闻框架。"
 img: /assets/img/projects/computational-social-science.svg
 importance: 3
 category: research
@@ -12,12 +12,12 @@ permalink: /projects/3_project/
 translation_key: project-css-digital-methods
 ---
 
-I develop **computational communication / computational social science** projects that combine large-scale data, careful measurement, and defensible designs.
+I study **health and public communication**, connecting questions about media use and trust with empirical research on audiences and news coverage.
 
 Representative directions:
-- Platform and agenda dynamics (large-scale text + time-series signals)
-- Measurement and validation for AI-assisted research pipelines
-- Causal designs and policy evaluation with observational data (transparent assumptions + robustness checks)
+- Parental mediation, children's media use, and health literacy
+- Media use across generations in Macau
+- Newspaper framing of domestic violence and older adults
 
 ## Selected outputs & working papers (2025+)
 

@@ -9,11 +9,11 @@ last_name: Zhao
 chinese_name: 赵志龙
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Communication & Digital Media | Agentic Engineering (AE+X) | LLM evaluation and reliable AI-native workflows.
+  Zhilong George Zhao, Wuyi University. Communication research, AI for Social Science, health communication, and media use and trust.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: communication, digital media, agentic engineering, multi-agent systems, LLM evaluation, computational communication # add your own keywords or leave empty
+keywords: Zhilong Zhao, 赵志龙, Wuyi University, communication, AI for Social Science, health communication, LLM evaluation
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: Z # the emoji/character used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -172,6 +172,7 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
+  - _audit/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -261,7 +262,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Zhao]
-  first_name: [Zhilong, Z., George, G., "Zhilong George", "Z. G."]
+  first_name: [Zhilong, Z., George, G., "Zhilong George", "George Zhi-long", "Z. G."]
 
   style: apa
   locale: en

@@ -101,7 +101,7 @@ translation_key: media
 
 ### *Interdimensional Interview Room / 异次元访谈室*
 
-- AI-native interview-format video program
+- A fictional interview-format video program using AI-generated characters, voices, and imagery.
 - Sample episodes are available via private viewing links upon request (selected stills shown below).
 
 **Selected stills**
@@ -145,7 +145,7 @@ translation_key: media
 
 ### *Xianxian Dialogues / 先贤对谈*
 
-- AI-native dialogue video series (multi-camera interview format)
+- A video series staging imagined conversations with historical figures through AI-generated imagery and voices, with multiple camera viewpoints.
 
 **Selected posters**
 

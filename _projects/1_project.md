@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Agentic Engineering (AE+X)"
-description: "A unifying research agenda for configuring, testing, and deploying multi-agent systems for reliable outcomes."
-title_zh: "多智能体工程（AE+X）"
-description_zh: "以评估为先的研究计划：配置、测试与部署多智能体系统，使其在真实工作流中稳定产出可靠结果。"
+title: "AI for Social Science"
+description: "Reliable AI-assisted coding, confidence calibration, and human review in social science research."
+title_zh: "AI for Social Science"
+description_zh: "社会科学研究中的AI辅助编码、置信度校准与人工复核。"
 img: /assets/img/projects/agentic-engineering.svg
 importance: 1
 category: research
@@ -12,12 +12,12 @@ permalink: /projects/1_project/
 translation_key: project-agentic-engineering
 ---
 
-My 3–5 year agenda is **Agentic Engineering (AE+X)**: the goal is not only to use AI/LLMs, but to **design, evaluate, and deploy** multi-agent architectures that deliver reliable outcomes in real workflows.
+My work in **AI for Social Science** examines how large language models can support social science research, with attention to measurement quality, uncertainty, and the role of human judgment.
 
 Key themes:
-- Evaluation and benchmarking for agentic systems (reliability, calibration, failure analysis)
-- Reproducible pipelines for human/LLM hybrid coding and quality assurance
-- Governance as a first-class output (documentation, auditability, responsible AI)
+- Evaluating LLM-assisted coding across tasks and domains
+- Using confidence and model disagreement to guide human review
+- Documenting models, coding rules, and error analysis for reproducible research
 
 ## Selected outputs & working papers (2025+)
 

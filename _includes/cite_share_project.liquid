@@ -60,43 +60,40 @@
     {%- assign csl_type = meta.type -%}
   {%- endif -%}
 
-  {%- capture author_plain -%}
-    {%- if meta and meta.authors and meta.authors.size > 0 -%}
-      {%- for a in meta.authors -%}
-        {%- if forloop.first == false -%}; {%- endif -%}
-        {{- a.given }} {{ a.family -}}
-      {%- endfor -%}
-    {%- else -%}
-      {{- site.first_name }} {{ site.last_name -}}
-    {%- endif -%}
-  {%- endcapture -%}
-  {%- assign author_plain = author_plain | strip -%}
+  {%- assign author_plain = '' -%}
+  {%- if meta.authors.size > 0 -%}
+    {%- for a in meta.authors -%}
+      {%- unless forloop.first -%}{%- assign author_plain = author_plain | append: '; ' -%}{%- endunless -%}
+      {%- assign author_plain = author_plain | append: a.given | append: ' ' | append: a.family -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign author_plain = site.first_name | append: ' ' | append: site.last_name -%}
+  {%- endif -%}
 
-  {%- capture citation_plain -%}
-    {{- author_plain -}}
-    {%- if year_num > 0 -%} ({{ year_num }}).{%- endif -%}
-    {{- ' ' -}}{{ title_display | strip }}.
-    {%- if container_title != "" -%} {{ container_title | strip }}.{%- endif -%}
-    {%- if doi != "" -%} https://doi.org/{{ doi | strip }}{%- endif -%}
-    {%- if doi == "" and primary_url != "" -%} {{ primary_url | strip }}{%- endif -%}
-    {%- if doi == "" and primary_url == "" -%} {{ canonical_url | strip }}{%- endif -%}
-  {%- endcapture -%}
-  {%- assign citation_plain = citation_plain | strip -%}
+  {%- assign citation_plain = author_plain | append: ' (' | append: year_num | append: '). ' | append: title_display | append: '.' -%}
+  {%- if container_title != '' -%}
+    {%- assign citation_plain = citation_plain | append: ' ' | append: container_title -%}
+    {%- if meta.volume -%}{%- assign citation_plain = citation_plain | append: ', ' | append: meta.volume -%}{%- endif -%}
+    {%- if meta.issue -%}{%- assign citation_plain = citation_plain | append: '(' | append: meta.issue | append: ')' -%}{%- endif -%}
+    {%- if meta.page -%}{%- assign citation_plain = citation_plain | append: ', ' | append: meta.page -%}{%- endif -%}
+    {%- assign citation_plain = citation_plain | append: '.' -%}
+  {%- endif -%}
+  {%- if doi != '' -%}
+    {%- assign citation_plain = citation_plain | append: ' https://doi.org/' | append: doi -%}
+  {%- elsif primary_url != '' -%}
+    {%- assign citation_plain = citation_plain | append: ' ' | append: primary_url -%}
+  {%- else -%}
+    {%- assign citation_plain = citation_plain | append: ' ' | append: canonical_url -%}
+  {%- endif -%}
 
-  {%- capture bibtex_author -%}
-    {%- if meta and meta.authors and meta.authors.size > 0 -%}
-      {%- for a in meta.authors -%}
-        {%- if forloop.first == false -%} and {%- endif -%}
-        {{- a.family }}, {{ a.given -}}
-      {%- endfor -%}
-    {%- else -%}
-      {{- site.last_name }}, {{ site.first_name -}}
-    {%- endif -%}
-  {%- endcapture -%}
-  {%- assign bibtex_author = bibtex_author | strip -%}
+  {%- assign bibtex_author = '' -%}
+  {%- for a in meta.authors -%}
+    {%- unless forloop.first -%}{%- assign bibtex_author = bibtex_author | append: ' and ' -%}{%- endunless -%}
+    {%- assign bibtex_author = bibtex_author | append: a.family | append: ', ' | append: a.given -%}
+  {%- endfor -%}
 
   {%- assign bibtex_type = "misc" -%}
-  {%- if p.type == "journal_article" -%}
+  {%- if csl_type == "article-journal" -%}
     {%- assign bibtex_type = "article" -%}
   {%- endif -%}
 
@@ -104,7 +101,10 @@
 @{{ bibtex_type }}{ {{ p.project_id }},
   author = { {{ bibtex_author }} },
   title = { {{ p.title | strip }} },
-  year = { {{ year_num }} }{%- if container_title != "" and bibtex_type == "article" -%},
+  year = { {{ year_num }} }{% if meta.volume != blank %},
+  volume = { {{ meta.volume }} }{% endif %}{% if meta.issue != blank %},
+  number = { {{ meta.issue }} }{% endif %}{% if meta.page != blank %},
+  pages = { {{ meta.page }} }{% endif %}{%- if container_title != "" and bibtex_type == "article" -%},
   journal = { {{ container_title | strip }} }{%- endif -%}{%- if doi != "" -%},
   doi = { {{ doi | strip }} }{%- endif -%}{%- if primary_url != "" -%},
   url = { {{ primary_url | strip }} }{%- endif -%}
@@ -112,35 +112,8 @@
   {%- endcapture -%}
   {%- assign bibtex = bibtex | strip -%}
 
-  {%- capture ris -%}
-    {%- if bibtex_type == 'article' -%}
-TY  - JOUR
-    {%- else -%}
-TY  - GEN
-    {%- endif -%}
-    {%- if meta and meta.authors and meta.authors.size > 0 -%}
-      {%- for a in meta.authors -%}
-AU  - {{ a.given }} {{ a.family }}
-      {%- endfor -%}
-    {%- else -%}
-AU  - {{ site.first_name }} {{ site.last_name }}
-    {%- endif -%}
-TI  - {{ p.title | strip }}
-    {%- if container_title != "" -%}
-JO  - {{ container_title | strip }}
-    {%- endif -%}
-PY  - {{ year_num }}
-    {%- if doi != "" -%}
-DO  - {{ doi | strip }}
-    {%- endif -%}
-    {%- if primary_url != "" -%}
-UR  - {{ primary_url | strip }}
-    {%- else -%}
-UR  - {{ canonical_url | strip }}
-    {%- endif -%}
-ER  -
-  {%- endcapture -%}
-  {%- assign ris = ris | strip -%}
+  {%- assign export_url = primary_url | default: canonical_url -%}
+  {%- capture ris -%}{% include citation_ris.liquid type=csl_type authors=meta.authors title=p.title container=container_title year=year_num doi=doi url=export_url volume=meta.volume issue=meta.issue pages=meta.page %}{%- endcapture -%}
 
   {%- capture payload -%}
 {
@@ -169,6 +142,9 @@ ER  -
       {%- endif -%}
     ],
     "issued": { "date-parts": [[{{ year_num }}]] },
+    "volume": {{ meta.volume | default: '' | jsonify }},
+    "issue": {{ meta.issue | default: '' | jsonify }},
+    "page": {{ meta.page | default: '' | jsonify }},
     "container-title": {{ container_title | default: '' | strip | jsonify }},
     "DOI": {{ doi | default: '' | strip | jsonify }},
     "URL": {{ primary_url | default: canonical_url | strip | jsonify }}

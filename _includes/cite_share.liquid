@@ -9,7 +9,7 @@
 {%- assign canonical_url = site.url | append: page.url | append: '#' | append: entry.key -%}
 {%- assign note_down = entry.note | default: '' | downcase -%}
 {%- assign is_published_or_preprint = false -%}
-{%- if note_down contains 'published' or note_down contains 'posted' -%}
+{%- if note_down contains 'published' or note_down contains 'posted' or note_down contains 'preprint' or note_down contains 'working paper' or entry.type == 'article' -%}
   {%- assign is_published_or_preprint = true -%}
 {%- endif -%}
 {%- if entry.arxiv -%}
@@ -17,49 +17,30 @@
 {%- endif -%}
 
 {%- if is_published_or_preprint -%}
-  {%- capture author_plain -%}
-    {%- for a in entry.author_array -%}
-      {%- if forloop.first == false -%}; {%- endif -%}
-      {{- a.first }} {{ a.last -}}
-    {%- endfor -%}
-  {%- endcapture -%}
-  {%- assign author_plain = author_plain | strip -%}
+  {%- assign author_plain = '' -%}
+  {%- for a in entry.author_array -%}
+    {%- unless forloop.first -%}{%- assign author_plain = author_plain | append: '; ' -%}{%- endunless -%}
+    {%- assign author_plain = author_plain | append: a.first | append: ' ' | append: a.last -%}
+  {%- endfor -%}
 
-  {%- capture ris -%}
-    {%- if entry.type == 'article' -%}
-TY  - JOUR
-    {%- else -%}
-TY  - GEN
-    {%- endif -%}
-    {%- for a in entry.author_array -%}
-AU  - {{ a.first }} {{ a.last }}
-    {%- endfor -%}
-TI  - {{ entry.title | strip }}
-    {%- if entry.journal -%}
-JO  - {{ entry.journal | strip }}
-    {%- elsif entry.booktitle -%}
-T2  - {{ entry.booktitle | strip }}
-    {%- endif -%}
-PY  - {{ entry.year | strip }}
-    {%- if entry.doi -%}
-DO  - {{ entry.doi | strip }}
-    {%- endif -%}
-    {%- if entry.url -%}
-UR  - {{ entry.url | strip }}
-    {%- endif -%}
-ER  -
-  {%- endcapture -%}
-  {%- assign ris = ris | strip -%}
+  {%- assign export_type = 'report' -%}
+  {%- if entry.type == 'article' -%}{%- assign export_type = 'article-journal' -%}{%- endif -%}
+  {%- assign export_container = entry.journal | default: entry.booktitle | default: entry.howpublished -%}
+  {%- capture ris -%}{% include citation_ris.liquid type=export_type authors=entry.author_array title=entry.title container=export_container year=entry.year doi=entry.doi url=entry.url volume=entry.volume issue=entry.number pages=entry.pages %}{%- endcapture -%}
 
-  {%- capture citation_plain -%}
-    {{- author_plain -}}
-    {%- if entry.year -%} ({{ entry.year | strip }}).{%- endif -%}
-    {{- ' ' -}}{{ entry.title | strip }}.
-    {%- if entry.journal -%} {{ entry.journal | strip }}.{%- endif -%}
-    {%- if entry.doi -%} https://doi.org/{{ entry.doi | strip }}{%- endif -%}
-    {%- if entry.doi == blank and entry.url -%} {{ entry.url | strip }}{%- endif -%}
-  {%- endcapture -%}
-  {%- assign citation_plain = citation_plain | strip -%}
+  {%- assign citation_plain = author_plain | append: ' (' | append: entry.year | append: '). ' | append: entry.title | append: '.' -%}
+  {%- if entry.journal -%}
+    {%- assign citation_plain = citation_plain | append: ' ' | append: entry.journal -%}
+    {%- if entry.volume -%}{%- assign citation_plain = citation_plain | append: ', ' | append: entry.volume -%}{%- endif -%}
+    {%- if entry.number -%}{%- assign citation_plain = citation_plain | append: '(' | append: entry.number | append: ')' -%}{%- endif -%}
+    {%- if entry.pages -%}{%- assign citation_plain = citation_plain | append: ', ' | append: entry.pages -%}{%- endif -%}
+    {%- assign citation_plain = citation_plain | append: '.' -%}
+  {%- endif -%}
+  {%- if entry.doi -%}
+    {%- assign citation_plain = citation_plain | append: ' https://doi.org/' | append: entry.doi -%}
+  {%- elsif entry.url -%}
+    {%- assign citation_plain = citation_plain | append: ' ' | append: entry.url -%}
+  {%- endif -%}
 
   {%- capture payload -%}
 {
@@ -87,6 +68,9 @@ ER  -
       {%- endfor -%}
     ],
     "issued": { "date-parts": [[{{ entry.year | default: 0 | plus: 0 }}]] },
+    "volume": {{ entry.volume | default: '' | jsonify }},
+    "issue": {{ entry.number | default: '' | jsonify }},
+    "page": {{ entry.pages | default: '' | replace: '--', '-' | jsonify }},
     "container-title": {{ entry.journal | default: entry.booktitle | default: '' | strip | jsonify }},
     "DOI": {{ entry.doi | default: '' | strip | jsonify }},
     "URL": {{ entry.url | default: '' | strip | jsonify }}

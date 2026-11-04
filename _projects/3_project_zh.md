@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "计算传播与数字方法"
-description: "用大规模数字痕迹数据、测量与因果识别设计，开展可复现、可检验的计算传播/计算社会科学研究。"
+title: "健康与公共传播"
+description: "媒体使用、健康素养、信任与新闻框架。"
 img: /assets/img/projects/computational-social-science.svg
 importance: 3
 category: research
@@ -10,12 +10,12 @@ permalink: /zh/projects/3_project/
 translation_key: project-css-digital-methods
 ---
 
-我做 **计算传播/计算社会科学（CSS）** 研究：把大规模数字痕迹数据、严谨测量与可辩护的识别设计结合起来，尽量做到结论可复现、可检验。
+我的**健康与公共传播**研究围绕媒体使用与信任，通过受众调查和新闻内容分析考察具体传播问题。
 
 代表性方向：
-- 平台与议程动力学（大规模文本 + 时间序列信号）
-- AI 辅助研究流水线的测量与验证（透明假设 + 可靠性检验）
-- 观测数据下的因果设计与政策评估（稳健性检验 + 解释边界）
+- 家长媒介干预、儿童媒体使用与健康素养
+- 澳门不同世代的媒体使用
+- 家庭暴力与老年人议题的新闻框架
 
 ## 代表性论文与工作论文（2025+）
 

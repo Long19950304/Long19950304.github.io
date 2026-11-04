@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "多智能体工程（AE+X）"
-description: "以评估为先的研究计划：配置、测试与部署多智能体系统，使其在真实工作流中稳定产出可靠结果。"
+title: "AI for Social Science"
+description: "社会科学研究中的AI辅助编码、置信度校准与人工复核。"
 img: /assets/img/projects/agentic-engineering.svg
 importance: 1
 category: research
@@ -10,12 +10,12 @@ permalink: /zh/projects/1_project/
 translation_key: project-agentic-engineering
 ---
 
-我的 3–5 年研究计划是 **Agentic Engineering（AE+X）**：目标不只是“使用”AI/LLM，而是把它们当作可工程化系统来 **设计—评估—部署**，让多智能体架构在真实工作流中稳定地产生可依赖的结果。
+我的 **AI for Social Science** 研究考察大语言模型如何支持社会科学研究，关注测量质量、不确定性与人工判断的作用。
 
 核心主题：
-- 面向多智能体系统的评估与基准（可靠性、校准、失败模式与误差分析）
-- 面向传播研究的“人类 + LLM”混合编码与 QA：流程化、可复现、可审计
-- 把治理作为一等输出（文档、日志、版本控制、可追责）
+- 评估大语言模型在不同任务和领域中的编码表现
+- 利用置信度与模型间分歧安排人工复核
+- 记录模型、编码规则与误差分析，支持研究复现
 
 ## 代表性论文与工作论文（2025+）
 

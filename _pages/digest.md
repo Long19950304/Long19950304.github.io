@@ -2,7 +2,7 @@
 layout: page
 title: Digest
 permalink: /digest/
-description: Daily (high-signal) research briefs curated across AI, CSS/AI & society, digital health, and education.
+description: An archive of research and news briefs on AI, society, health, and education.
 nav: true
 nav_order: 7
 lang: en
@@ -10,7 +10,7 @@ translation_key: digest
 ---
 
 <p class="small">
-Archive of daily digests (news + sources), plus a separate AI tools/model updates section per day.
+Research and news brief archive, last updated 26 June 2026.
 </p>
 
 <p class="small">

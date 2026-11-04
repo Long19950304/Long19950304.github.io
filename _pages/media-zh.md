@@ -56,7 +56,7 @@ translation_key: media
 
 ### *异次元访谈室 / Interdimensional Interview Room*
 
-- AI-native 的访谈型视频节目
+- 使用 AI 生成人物、声音与画面的虚构访谈节目。
 - 样片可通过私密链接提供（下方为部分截图）
 
 **截图（节选）**
@@ -88,7 +88,7 @@ translation_key: media
 
 ### *先贤对谈 / Xianxian Dialogues*
 
-- AI-native 的对谈类视频节目（多机位访谈形式）
+- 通过 AI 生成画面与声音，呈现历史人物之间的虚构对话，并以不同机位视角组织叙事。
 
 **海报（节选）**
 

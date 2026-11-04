@@ -62,6 +62,7 @@
       {%- if p.year -%}{% if show_venue and p.target_venue != "" %} {% endif %}({{ p.year }}){%- endif -%}
       {%- if p.stage != "" -%}
         {%- assign stage_key = p.stage | default: "" -%}
+        {%- if p.stage != 'published' and p.preprint_url != blank -%}{%- assign stage_key = 'preprint' -%}{%- endif -%}
         {%- assign stage_label = ui.stages[stage_key] | default: (stage_key | replace: "_", " ") -%}
         <span class="research-item__stage">— {{ stage_label }}</span>
       {%- endif -%}

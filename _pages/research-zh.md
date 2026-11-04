@@ -2,196 +2,31 @@
 layout: page
 title: 研究
 permalink: /zh/research/
-description: 研究方向与项目（AE+X）。
+description: 传播研究、AI for Social Science与影像创作。
 nav: true
 nav_order: 3
-research_filter: true
 lang: zh
 translation_key: research
-display_categories:
-horizontal: false
 ---
 
-<p class="lead">
-我的研究计划聚焦于 <strong>Agentic Engineering（AE+X）</strong>：构建并评估多智能体系统，让其在传播与数字媒体的真实应用场景中稳定产出可依赖的结果。
-</p>
+我的研究将传播学问题与 **AI for Social Science（人工智能辅助社会科学研究）**相结合，关注人们如何使用和信任媒体、健康与社会议题如何被呈现，以及人工智能如何支持可靠的社会科学研究。
 
-<!-- pages/projects.md -->
-<div class="projects">
-<!-- Display projects without categories -->
+## 健康与公共传播
 
-{% assign sorted_projects = site.projects | where: "category", "research" | where: "lang", page.lang | sort: "importance" %}
+通过对儿童与家庭、澳门媒体受众和社会议题新闻报道的实证研究，考察媒体使用、健康素养、信任和新闻框架。
 
-  <!-- Generate cards for each project -->
+{% include research_direction_list.liquid ids="long1-desk1-parental-mediation-digital-media-health-literacy,long1-desk1-journal-of-family-violence-domestic-violence-framing,long1-desk1-macao-media-ecology-generational-differences" %}
 
-{% if page.horizontal %}
+## AI for Social Science
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-</div>
+近期的方法研究聚焦大语言模型辅助质性编码：置信度和模型间分歧能否帮助识别编码质量，何时需要人工复核，以及如何诊断和纠正错误。以下成果为公开预印本。
 
-## 研究清单（自动同步）
+{% include research_direction_list.liquid ids="long1-desk1-bds-confidence-diversity-framework,long1-desk1-scirep-confidence-diversity-framework,long1-desk1-hec-hierarchical-error-framework" %}
 
-<p class="small">
-以下条目来自我的内部研究池，包含已发表、已接收、预印本与进行中项目。
-</p>
+## 影像创作与文化传播
 
-{% assign ui = site.data.i18n[page.lang] | default: site.data.i18n.en %}
-<div class="research-filter" data-research-filter>
-  <div class="research-filter__row">
-    <input class="research-filter__input" type="search" placeholder="{{ ui.research_filter.placeholder }}" aria-label="{{ ui.research_filter.placeholder }}" data-research-filter-input>
-    <div class="research-filter__count small" data-research-filter-count></div>
-  </div>
-  <div class="research-filter__row research-filter__row--pills" role="group" aria-label="Stage filters">
-    <button class="btn btn-sm z-depth-0 research-filter__pill is-active" type="button" data-research-filter-stage="all">{{ ui.research_filter.all }}</button>
-    <button class="btn btn-sm z-depth-0 research-filter__pill" type="button" data-research-filter-stage="published">{{ ui.research_filter.published }}</button>
-    <button class="btn btn-sm z-depth-0 research-filter__pill" type="button" data-research-filter-stage="accepted">{{ ui.research_filter.accepted }}</button>
-    <button class="btn btn-sm z-depth-0 research-filter__pill" type="button" data-research-filter-stage="preprint">{{ ui.research_filter.preprint }}</button>
-  </div>
-</div>
+探索生成式人工智能参与视觉叙事的方式，包括历史对谈节目和影像制作流程。[作品页](/zh/media/)展示部分影像创作，[教学页](/zh/teaching/)收录课程项目与学生原型。
 
-<div id="research-portfolio" data-research-portfolio>
-{% assign stage_order = "published,accepted,revise_resubmit,submitted,writing,analysis,build,design,data_inventory,idea" | split: "," %}
-{% assign pool = site.data.research_pool.projects %}
-{% assign expanded_stages = "published,accepted,revise_resubmit,submitted" | split: "," %}
+## 论文与研究资料
 
-{% assign conf_items = pool | where: "kind", "conference_paper" | sort: "conference_date" | reverse %}
-{% if conf_items.size > 0 %}
-<details class="research-stage" data-research-stage="conference" open>
-  <summary><strong>{{ ui.stages.conference | default: "会议报告" }} ({{ conf_items.size }})</strong></summary>
-  <ul>
-{% for p in conf_items %}
-<li
-  id="{{ p.project_id }}"
-  class="research-item"
-  data-stage="{{ p.stage | default: 'conference' }}"
-  data-year="{{ p.year | default: 0 }}"
-  data-preprint="{% if p.preprint_url != '' %}true{% else %}false{% endif %}"
-  data-title="{{ p.title | strip | escape }}"
-  data-venue="{{ p.conference_name | default: '' | strip | escape }}"
->
-{%- assign link_url = "" -%}
-{%- if p.published_url != "" -%}
-  {%- assign link_url = p.published_url -%}
-{%- elsif p.preprint_url != "" -%}
-  {%- assign link_url = p.preprint_url -%}
-{%- endif -%}
-
-{%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
-{%- assign display_title = p.title -%}
-{%- if translated_title != "" -%}
-  {%- assign display_title = p.title -%}
-{%- endif -%}
-
-<div class="research-item__headline">
-{%- if link_url != "" -%}
-  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ display_title }}</a>
-{%- else -%}
-  {{ display_title }}
-{%- endif -%}
-</div>
-
-{% if translated_title != "" %}
-  <div class="research-item__subtitle">{{ translated_title }}</div>
-{% endif %}
-
-{%- if p.conference_name != "" -%}
-  — <em>{{ p.conference_name }}</em>
-{%- endif -%}
-
-{%- assign where_parts = "" -%}
-{%- if p.conference_city != "" -%}
-  {%- assign where_parts = where_parts | append: p.conference_city -%}
-{%- endif -%}
-{%- if p.conference_date != "" -%}
-  {%- if where_parts != "" -%}
-    {%- assign where_parts = where_parts | append: ", " -%}
-  {%- endif -%}
-  {%- assign where_parts = where_parts | append: p.conference_date -%}
-{%- endif -%}
-{%- if where_parts != "" -%}
-  ({{ where_parts }})
-{%- endif -%}
-</li>
-{% endfor %}
-</ul>
-</details>
-{% endif %}
-
-{% for stage in stage_order %}
-  {% assign items = pool | where: "stage", stage %}
-  {% if items.size > 0 %}
-    {% assign stage_fallback = stage | replace: "_", " " | capitalize %}
-    {% assign stage_name = ui.stages[stage] | default: stage_fallback %}
-    <details class="research-stage" data-research-stage="{{ stage }}"{% if expanded_stages contains stage %} open{% endif %}>
-      <summary><strong>{{ stage_name }} ({{ items.size }})</strong></summary>
-      <ul>
-{% for p in items %}
-<li
-  id="{{ p.project_id }}"
-  class="research-item"
-  data-stage="{{ p.stage | default: '' }}"
-  data-year="{{ p.year | default: 0 }}"
-  data-preprint="{% if p.preprint_url != '' %}true{% else %}false{% endif %}"
-  data-title="{{ p.title | strip | escape }}"
-  data-venue="{{ p.target_venue | default: '' | strip | escape }}"
->
-{%- assign link_url = "" -%}
-{%- if p.published_url != "" -%}
-  {%- assign link_url = p.published_url -%}
-{%- elsif p.preprint_url != "" -%}
-  {%- assign link_url = p.preprint_url -%}
-{%- endif -%}
-
-{%- assign translated_title = site.data.title_translations[p.project_id] | default: "" -%}
-{%- assign display_title = p.title -%}
-
-<div class="research-item__headline">
-{%- if link_url != "" -%}
-  <a href="{{ link_url }}" target="_blank" rel="noopener">{{ display_title }}</a>
-{%- else -%}
-  {{ display_title }}
-{%- endif -%}
-{% include cite_share_project.liquid project=p %}
-</div>
-
-{% if translated_title != "" %}
-  <div class="research-item__subtitle">{{ translated_title }}</div>
-{% endif %}
-
-<div class="research-item__meta">
-{%- if p.stage == "published" or p.stage == "accepted" -%}
-  {%- if p.target_venue != "" -%}
-    <em>{{ p.target_venue }}</em>
-  {%- endif -%}
-{%- endif -%}
-
-{%- if p.year -%}
-  {%- if p.stage == "published" or p.stage == "accepted" -%}
-    {%- if p.target_venue != "" -%} {% endif -%}
-  {%- endif -%}
-  ({{ p.year }})
-{%- endif -%}
-</div>
-
-{% include podcast_link.liquid id=p.project_id %}
-</li>
-{% endfor %}
-      </ul>
-    </details>
-  {% endif %}
-{% endfor %}
-
-</div>
+[论文页](/zh/publications/)分别列出已发表期刊论文、预印本与工作论文，并提供公开版本和引用导出入口。更多记录可见 [Google Scholar](https://scholar.google.com/citations?user=U-FdkpMAAAAJ) 和 [ORCID](https://orcid.org/0000-0002-3771-4969)。

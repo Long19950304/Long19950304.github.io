@@ -39,7 +39,7 @@ layout: default
             {% endif %}
             {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.27}}px, (min-width: 576px) 27vw, 95vw{% endcapture %}
             {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Zhilong George Zhao"
               cache_bust=true
             %}
           {% endif %}
@@ -71,7 +71,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent publications</a>
+        {% if lang == 'zh' %}<a href="{{ '/zh/publications/' | relative_url }}" style="color: inherit">代表成果</a>{% else %}<a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Work</a>{% endif %}
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

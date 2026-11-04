@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Peer-reviewed publications and selected working papers.
+description: Peer-reviewed articles, preprints, and working papers.
 nav: true
 nav_order: 2
 lang: en
@@ -17,6 +17,12 @@ translation_key: publications
 
 <div class="publications">
 
-{% bibliography %}
+<h2>Peer-reviewed Articles</h2>
+
+{% bibliography --query @article %}
+
+<h2>Preprints and Working Papers</h2>
+
+{% bibliography --query @misc %}
 
 </div>

@@ -2,7 +2,7 @@
 layout: page
 title: 简报
 permalink: /zh/digest/
-description: 每日（高信号）简报：AI、CSS/AI 与社会、健康传播与教育方向。
+description: AI、社会、健康与教育方向的研究和新闻简报档案。
 nav: true
 nav_order: 7
 lang: zh
@@ -10,7 +10,7 @@ translation_key: digest
 ---
 
 <p class="small">
-每日简报归档（新闻 + 来源），并单列当日 AI 工具 / 模型更新。
+研究与新闻简报档案，最后更新于2026年6月26日。
 </p>
 
 <p class="small">

@@ -2,38 +2,28 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: AI-forward, product- and outcome-oriented teaching.
+description: Media production, educational technology, and student projects.
 nav: true
 nav_order: 5
 lang: en
 translation_key: teaching
 ---
 
-<div style="max-width: 900px; margin: 0.5rem 0 1.25rem;">
-  <img src="/assets/img/teaching/studio-teams.svg" alt="Studio teaching: teams + competition" style="width: 100%; height: auto; border-radius: 14px;">
-</div>
+My teaching brings together media production, critical viewing, and project-based learning. Students develop small creative or educational projects, test their work, and reflect on their choices.
 
-I teach applied courses in media creation, screenwriting, and film and television culture, alongside general education in Chinese. My teaching combines hands-on production, critical viewing, and structured project work.
+## Teaching in Autumn 2026
 
-## Current courses
+- **[Modern Educational Technology](/teaching/modern-educational-technology/)**: learning design, digital tools, and interactive teaching materials.
+- **Microfilm Production**: I teach the cinematography and filming practice component.
 
-- Digital Photography and Videography
-- Microfilm Production
-- [Modern Educational Technology](/teaching/modern-educational-technology/)
-- College Chinese
+## Student Work
 
-## Teaching directions
+The [student game showcase](/teaching/games/) includes **27 playable prototypes** from Modern Educational Technology. Each prototype provides a concrete starting point for discussing interaction, learning goals, and revision.
 
-- Digital Content Creation / Production (AI-native pipelines + evaluation)
-- Computational Communication / Digital Methods (annotation, benchmarking, reproducible workflows)
-- AI-Assisted Research Methods (LLM evaluation, reliability, calibration, responsible use)
-- Multi-Agent Engineering Studio (team-based product building + evaluation)
+## Course Development
 
-## Studio format (teamwork + competition)
+I am also preparing course materials for Digital Photography and Videography and Film and Television Culture. These are course development activities for future teaching.
 
-Students work in small teams to build AI-era products (apps, automated workflows, or media/knowledge SaaS prototypes). Collaboration is incentivized within teams; competition happens between teams (outcome-oriented evaluation).
+## Teaching Explorations
 
-
-## Course page
-
-The [Modern Educational Technology course page](/teaching/modern-educational-technology/) introduces the course and includes a student work showcase with 27 playable prototypes.
+I explore ways to use generative AI for research, visual storytelling, and classroom prototyping. These activities emphasize clear learning goals, critical evaluation of outputs, and reflection on how tools shape creative decisions.

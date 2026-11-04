@@ -49,8 +49,8 @@ en:
 
   podcast:
     label: "Listen: audio overview"
-    hint: "Tip: the player loads audio only when opened, to keep the page fast."
-    guidance: "Prefer listening to reading? The audio overview gives a short, two-host walkthrough of the paper’s core question, method, and key finding."
+    hint: "AI-generated audio overview based on the paper."
+    guidance: "Read the paper for the full methods, findings, and limitations."
     take_home_label: "Take-home:"
 
 zh:
@@ -104,6 +104,6 @@ zh:
 
   podcast:
     label: "收听：音频概览"
-    hint: "提示：播放器仅在展开后加载音频，以保持页面加载速度。"
-    guidance: "如果你更喜欢听而不是读：音频概览会用双人对谈的方式快速介绍研究问题、方法与关键发现。"
+    hint: "根据论文生成的AI音频导读。"
+    guidance: "完整方法、研究发现与局限请参阅论文原文。"
     take_home_label: "一句话要点："

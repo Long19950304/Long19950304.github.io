@@ -50,13 +50,16 @@ long1-desk1-news-title-framing-older-adults:
 
 long1-desk1-journal-of-family-violence-domestic-violence-framing:
   type: article-journal
+  volume: '41'
+  issue: '6'
+  page: '1295-1307'
   container_title: Journal of Family Violence
   doi: 10.1007/s10896-024-00796-8
   url: https://link.springer.com/article/10.1007/s10896-024-00796-8
   authors:
     - given: Agnes Iok Fong
       family: Lam
-    - given: Zhilong George
+    - given: George Zhi-long
       family: Zhao
     - given: Ying
       family: Li
@@ -69,6 +72,9 @@ long1-desk1-journal-of-family-violence-domestic-violence-framing:
 
 long1-desk1-parental-mediation-digital-media-health-literacy:
   type: article-journal
+  volume: '40'
+  issue: '6'
+  page: '1144-1156'
   container_title: Health Communication
   doi: 10.1080/10410236.2024.2387389
   url: https://www.tandfonline.com/doi/abs/10.1080/10410236.2024.2387389
@@ -86,10 +92,12 @@ long1-desk1-parental-mediation-digital-media-health-literacy:
 
 long1-desk1-macao-media-ecology-generational-differences:
   type: article-journal
-  container_title: 《澳门研究》
-  url: ""
+  container_title: 澳門研究
+  issue: '115'
+  page: '7-23'
+  url: https://jms.cms.um.edu.mo/zh-hant/article/generational-differences-and-media-consumption-in-small-societies-theoretical-exploration-of-the-macao-model-and-its-implications-for-studying-media-ecology/
   authors:
     - given: Zhilong
       family: Zhao
-    - given: Agnes Iok Fong
+    - given: Iok-Fong
       family: Lam

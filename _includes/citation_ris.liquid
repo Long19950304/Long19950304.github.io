@@ -1,0 +1,22 @@
+{%- capture newline %}
+{% endcapture -%}
+{%- if include.type == 'article-journal' -%}{%- assign record_type = 'JOUR' -%}{%- else -%}{%- assign record_type = 'GEN' -%}{%- endif -%}
+{%- assign result = 'TY  - ' | append: record_type | append: newline -%}
+{%- for author in include.authors -%}
+  {%- assign given = author.given | default: author.first -%}
+  {%- assign family = author.family | default: author.last -%}
+  {%- assign result = result | append: 'AU  - ' | append: family | append: ', ' | append: given | append: newline -%}
+{%- endfor -%}
+{%- assign result = result | append: 'TI  - ' | append: include.title | append: newline -%}
+{%- if include.container != blank -%}{%- assign result = result | append: 'T2  - ' | append: include.container | append: newline -%}{%- endif -%}
+{%- assign result = result | append: 'PY  - ' | append: include.year | append: newline -%}
+{%- if include.volume != blank -%}{%- assign result = result | append: 'VL  - ' | append: include.volume | append: newline -%}{%- endif -%}
+{%- if include.issue != blank -%}{%- assign result = result | append: 'IS  - ' | append: include.issue | append: newline -%}{%- endif -%}
+{%- if include.pages != blank -%}
+  {%- assign page_parts = include.pages | replace: '--', '-' | replace: '–', '-' | split: '-' -%}
+  {%- assign result = result | append: 'SP  - ' | append: page_parts.first | append: newline -%}
+  {%- if page_parts.size > 1 -%}{%- assign result = result | append: 'EP  - ' | append: page_parts.last | append: newline -%}{%- endif -%}
+{%- endif -%}
+{%- if include.doi != blank -%}{%- assign result = result | append: 'DO  - ' | append: include.doi | append: newline -%}{%- endif -%}
+{%- assign result = result | append: 'UR  - ' | append: include.url | append: newline | append: 'ER  -' | append: newline -%}
+{{- result -}}

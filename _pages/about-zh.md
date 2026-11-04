@@ -2,7 +2,8 @@
 layout: about
 title: 关于
 permalink: /zh/
-subtitle: "Agentic Engineering (AE+X)：以评估为先的多智能体工作流。"
+subtitle: "传播研究 · AI for Social Science"
+description: "赵志龙，现于五邑大学人文与政法学院工作，研究健康与公共传播、媒体使用与信任，以及AI for Social Science。"
 nav: false
 lang: zh
 translation_key: home
@@ -26,36 +27,24 @@ latest_posts:
 ---
 
 <p class="lead">
-我做<strong>以评估为先（evaluation-first）的多智能体系统</strong>，用于研究与 AI-native 媒体生产。
+我是<strong>赵志龙（Zhilong George Zhao）</strong>，现于<strong>五邑大学人文与政法学院</strong>工作。
 </p>
 
+我的研究关注健康与公共传播、媒体使用与信任，以及 **AI for Social Science（人工智能辅助社会科学研究）**。近期工作主要考察大语言模型参与质性编码时的可靠性、置信度校准与人机协同，并探索生成式人工智能在影像创作和教学中的应用。
+
+我在澳门大学获得传播学博士学位，曾在华南理工大学新闻与传播学院从事博士后研究。
+
 <div class="cta-row">
-  <a class="btn-cta" href="/zh/research/"><i class="ti ti-flask-2"></i> 研究</a>
   <a class="btn-cta" href="/zh/publications/"><i class="ti ti-file-text"></i> 论文</a>
-  <a class="btn-cta" href="/zh/media/"><i class="ti ti-movie"></i> 作品</a>
-  <a class="btn-cta" href="/zh/teaching/"><i class="ti ti-chalkboard"></i> 教学</a>
+  <a class="btn-cta" href="/zh/cv/"><i class="ti ti-id"></i> 简历</a>
 </div>
 
-<details>
-  <summary><strong>背景</strong></summary>
-  <div style="margin-top: 0.75rem;">
-    <p>
-      我是<strong>赵志龙（Zhilong George Zhao）</strong>，研究兴趣位于<strong>传播与数字媒体</strong>领域，并聚焦于<strong>AI-native 工作流</strong>、<strong>大语言模型评估</strong>与<strong>多智能体系统</strong>的交叉。
-    </p>
-    <p>
-      我目前在<strong>五邑大学人文与政法学院</strong>担任<strong>讲师</strong>，承担数字摄影与摄像、微电影制作、编剧艺术、影视文化和大学语文等课程教学。
-    </p>
-  </div>
-</details>
+<p class="profile-links"><a href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ">Google Scholar</a> · <a href="https://orcid.org/0000-0002-3771-4969">ORCID</a> · <a href="mailto:zhilongzhao@wyu.edu.cn">邮箱</a></p>
 
-## 研究方向（AE+X）
+## 研究兴趣
 
-- **面向社会科学的 AE**：LLM 辅助质性分析的可靠性与基准评测（复杂编码、校准、误差分析）。
-- **面向媒体工作流的 AE**：从脚本 → 视觉 → 字幕 → 打包 → 发布的代码优先、多模型/多智能体流水线，并将评估与治理作为一等产出。
-- **面向应用学习的 AE**：工作室式教学，把原型构建与评估、文档与负责任 AI 实践连接起来。
+- **健康与公共传播**：媒体使用、信任、健康素养，以及社会议题的新闻框架。
+- **AI for Social Science**：评估大语言模型辅助编码的可靠性，研究置信度校准与人工复核方法。
+- **影像创作与教学**：探索生成式人工智能参与视觉叙事和项目制学习的方式。
 
-## 我会做什么
-
-- 用于标注、评估与质量保障的多智能体工作流（人类/LLM 混合）。
-- 尽量减少“传统工具依赖”、强调可复现性的 AI-native 媒体生产流水线。
-- 强调<strong>团队内协作</strong>与<strong>团队间竞争</strong>的课程设计（以成果/评估为导向）。
+[研究项目](/zh/research/) · [影像作品](/zh/media/) · [教学与学生作品](/zh/teaching/)

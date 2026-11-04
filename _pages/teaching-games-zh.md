@@ -8,9 +8,9 @@ lang: zh
 translation_key: teaching-games
 ---
 
-<div class="game-showcase-page">
-  <p class="lead">这里展示《现代教育技术》课程的 <strong>27 个学生小游戏作品</strong>。点击“试玩”打开游戏，也欢迎为喜欢的作品点一颗心。</p>
-  <p class="small game-showcase-note">这些作品是课堂原型；部分游戏适合双人或触屏操作。</p>
+<div class="game-showcase-page" data-game-language="zh">
+  <p class="lead">这里展示《现代教育技术》课程的 <strong>27 个学生小游戏作品</strong>。面向<strong>小学或初中低年级学生</strong>设计，点击画面即可试玩。欢迎点赞，也可以匿名或署名评论。</p>
+  <p class="small game-showcase-note">封面均为游戏内实景。支持浏览器直接游玩；双人作品可同屏体验，横向布局建议使用电脑或横屏。</p>
 
   <div class="game-showcase-toolbar" data-game-toolbar>
     <input class="game-showcase-search" type="search" placeholder="按作品名或学生搜索" aria-label="搜索小游戏" data-game-search>
@@ -21,21 +21,7 @@ translation_key: teaching-games
     </select>
   </div>
 
-  <div class="game-showcase-grid" data-game-grid>
-    {% for game in site.data.game_showcases.modern_education_technology %}
-      <article class="game-card" data-game-card data-title="{{ game.title | escape }}" data-student="{{ game.student | escape }}" data-order="{{ game.order }}" data-game-id="{{ game.id }}">
-        <div class="game-card__number">{{ game.order }}</div>
-        <div class="game-card__body">
-          <h2 class="game-card__title">{{ game.title }}</h2>
-          <p class="game-card__student">{{ game.student }}</p>
-          <div class="game-card__actions">
-            <a class="btn btn-sm z-depth-0 game-card__play" href="{{ game.file | relative_url }}" target="_blank" rel="noopener">试玩</a>
-            <button class="btn btn-sm z-depth-0 game-like" type="button" data-like-button data-game-id="{{ game.id }}" aria-pressed="false">♡ <span data-like-count>喜欢</span></button>
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
+  {% include game-showcase-grid.liquid %}
 </div>
 
 <script src="{{ '/assets/js/game-showcase.js' | relative_url | bust_file_cache }}"></script>

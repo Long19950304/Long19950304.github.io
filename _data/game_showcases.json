@@ -7,7 +7,10 @@
       "student_id": "3124001357",
       "title": "英语挖矿大冒险 · 听音挖金",
       "file": "/assets/games/modern-education-technology/01-3124001357.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-01.webp",
+      "genre": "听音挖矿",
+      "genre_en": "Listening · mining"
     },
     {
       "id": "02-3124003043",
@@ -16,7 +19,10 @@
       "student_id": "3124003043",
       "title": "黄金矿工 · 单词矿场",
       "file": "/assets/games/modern-education-technology/02-3124003043.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-02.webp",
+      "genre": "发音挖矿",
+      "genre_en": "Phonics · mining"
     },
     {
       "id": "03-3224000506",
@@ -25,7 +31,10 @@
       "student_id": "3224000506",
       "title": "Unit 4 食物闯关小游戏",
       "file": "/assets/games/modern-education-technology/03-3224000506.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-03.webp",
+      "genre": "食物闯关",
+      "genre_en": "Food · adventure"
     },
     {
       "id": "04-3224000510",
@@ -34,7 +43,10 @@
       "student_id": "3224000510",
       "title": "Food Sorting Dash — Countable or Uncountable?",
       "file": "/assets/games/modern-education-technology/04-3224000510.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-04.webp",
+      "genre": "食物分类",
+      "genre_en": "Food sorting"
     },
     {
       "id": "05-3224000599",
@@ -43,7 +55,10 @@
       "student_id": "3224000599",
       "title": "Food Fun! 食物记忆大挑战",
       "file": "/assets/games/modern-education-technology/05-3224000599.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-05.webp",
+      "genre": "翻牌与闯关",
+      "genre_en": "Memory · challenges"
     },
     {
       "id": "06-3224000733",
@@ -52,7 +67,10 @@
       "student_id": "3224000733",
       "title": "Eat Well · 我的英语小餐厅",
       "file": "/assets/games/modern-education-technology/06-3224000733.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-06.webp",
+      "genre": "餐厅经营",
+      "genre_en": "Restaurant"
     },
     {
       "id": "07-3224000784",
@@ -61,7 +79,10 @@
       "student_id": "3224000784",
       "title": "食物单词飞行棋",
       "file": "/assets/games/modern-education-technology/07-3224000784.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-07.webp",
+      "genre": "多人飞行棋",
+      "genre_en": "Multiplayer board"
     },
     {
       "id": "08-3224000889",
@@ -70,7 +91,10 @@
       "student_id": "3224000889",
       "title": "食物打地鼠 · Food Whack-a-Mole",
       "file": "/assets/games/modern-education-technology/08-3224000889.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-08.webp",
+      "genre": "听音打地鼠",
+      "genre_en": "Listening · whack-a-mole"
     },
     {
       "id": "09-3224001156",
@@ -79,7 +103,10 @@
       "student_id": "3224001156",
       "title": "Word Wheel - Spelling Game",
       "file": "/assets/games/modern-education-technology/09-3224001156.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-09.webp",
+      "genre": "转盘拼词",
+      "genre_en": "Word wheel"
     },
     {
       "id": "10-3224001428",
@@ -88,7 +115,10 @@
       "student_id": "3224001428",
       "title": "食物单词塔防 - Food Words Tower Defense",
       "file": "/assets/games/modern-education-technology/10-3224001428.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-10.webp",
+      "genre": "单词塔防",
+      "genre_en": "Word tower defense"
     },
     {
       "id": "11-3224001447",
@@ -97,7 +127,10 @@
       "student_id": "3224001447",
       "title": "小青蛙洗澡 · 单词闸水流闯关",
       "file": "/assets/games/modern-education-technology/11-3224001447.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-11.webp",
+      "genre": "单词闯关",
+      "genre_en": "Word adventure"
     },
     {
       "id": "12-3224001617",
@@ -106,7 +139,10 @@
       "student_id": "3224001617",
       "title": "Escape Room: School Secret 校园密室逃脱 · 五重密室",
       "file": "/assets/games/modern-education-technology/12-3224001617.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-12.webp",
+      "genre": "密室解谜",
+      "genre_en": "Escape room"
     },
     {
       "id": "13-3224001644",
@@ -115,7 +151,10 @@
       "student_id": "3224001644",
       "title": "警察抓小偷 · Unit 2 单词",
       "file": "/assets/games/modern-education-technology/13-3224001644.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-13.webp",
+      "genre": "双人追逐棋",
+      "genre_en": "Two-player chase"
     },
     {
       "id": "14-3224002250",
@@ -124,7 +163,10 @@
       "student_id": "3224002250",
       "title": "女巫的毒药 Witch's Poison — 五年级英语课堂游戏",
       "file": "/assets/games/modern-education-technology/14-3224002250.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-14.webp",
+      "genre": "小组词汇竞赛",
+      "genre_en": "Team word challenge"
     },
     {
       "id": "15-3224002327",
@@ -133,7 +175,10 @@
       "student_id": "3224002327",
       "title": "拼词小达人 · Word Spell Game",
       "file": "/assets/games/modern-education-technology/15-3224002327.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-15.webp",
+      "genre": "字母拼词",
+      "genre_en": "Spelling"
     },
     {
       "id": "16-3224002342",
@@ -142,7 +187,10 @@
       "student_id": "3224002342",
       "title": "小k历险记 · 羊皮卷寻宝图",
       "file": "/assets/games/modern-education-technology/16-3224002342.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-16.webp",
+      "genre": "地图探险",
+      "genre_en": "Map adventure"
     },
     {
       "id": "17-3224002426",
@@ -151,7 +199,10 @@
       "student_id": "3224002426",
       "title": "英语单词消消乐 · 红蓝对抗版",
       "file": "/assets/games/modern-education-technology/17-3224002426.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-17.webp",
+      "genre": "红蓝配对对抗",
+      "genre_en": "Team matching"
     },
     {
       "id": "18-3224002586",
@@ -160,7 +211,10 @@
       "student_id": "3224002586",
       "title": "英语单词PK对战 · 比赛模式",
       "file": "/assets/games/modern-education-technology/18-3224002586.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-18.webp",
+      "genre": "双人单词竞赛",
+      "genre_en": "Two-player word quiz"
     },
     {
       "id": "19-3224003047",
@@ -169,7 +223,10 @@
       "student_id": "3224003047",
       "title": "Food Word &amp; Picture Matching Memory Game",
       "file": "/assets/games/modern-education-technology/19-3224003047.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-19.webp",
+      "genre": "食物记忆配对",
+      "genre_en": "Food memory"
     },
     {
       "id": "20-3224003541",
@@ -178,7 +235,10 @@
       "student_id": "3224003541",
       "title": "Feelings单词记忆翻牌游戏",
       "file": "/assets/games/modern-education-technology/20-3224003541.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-20.webp",
+      "genre": "情绪翻牌",
+      "genre_en": "Feelings memory"
     },
     {
       "id": "21-3224003646",
@@ -187,7 +247,10 @@
       "student_id": "3224003646",
       "title": "单词飞行棋 · Word Board Game",
       "file": "/assets/games/modern-education-technology/21-3224003646.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-21.webp",
+      "genre": "双人任务棋",
+      "genre_en": "Two-player board"
     },
     {
       "id": "22-3224003701",
@@ -196,7 +259,10 @@
       "student_id": "3224003701",
       "title": "单词消消乐",
       "file": "/assets/games/modern-education-technology/22-3224003701.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-22.webp",
+      "genre": "单词配对",
+      "genre_en": "Word matching"
     },
     {
       "id": "23-3224003909",
@@ -205,7 +271,10 @@
       "student_id": "3224003909",
       "title": "🍉 英语切单词大闯关",
       "file": "/assets/games/modern-education-technology/23-3224003909.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-23.webp",
+      "genre": "双向切词闯关",
+      "genre_en": "Word slicing"
     },
     {
       "id": "24-3224004015",
@@ -214,7 +283,10 @@
       "student_id": "3224004015",
       "title": "单词切水果 · Unit1",
       "file": "/assets/games/modern-education-technology/24-3224004015.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-24.webp",
+      "genre": "单词切水果",
+      "genre_en": "Word fruit slicing"
     },
     {
       "id": "25-3224004152",
@@ -223,7 +295,10 @@
       "student_id": "3224004152",
       "title": "五年级上册英语 · 单元闯关打地鼠双人PK",
       "file": "/assets/games/modern-education-technology/25-3224004152.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-25.webp",
+      "genre": "双人打地鼠",
+      "genre_en": "Two-player whack-a-mole"
     },
     {
       "id": "26-3224004676",
@@ -232,7 +307,10 @@
       "student_id": "3224004676",
       "title": "单词扫雷 · Word Minesweeper",
       "file": "/assets/games/modern-education-technology/26-3224004676.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-26.webp",
+      "genre": "单词扫雷",
+      "genre_en": "Word minesweeper"
     },
     {
       "id": "27-3224004748",
@@ -241,7 +319,10 @@
       "student_id": "3224004748",
       "title": "Gold Miner · 单词寻宝",
       "file": "/assets/games/modern-education-technology/27-3224004748.html",
-      "category": "英语学习"
+      "category": "英语学习",
+      "cover": "/assets/img/games/game-27.webp",
+      "genre": "听音寻宝",
+      "genre_en": "Listening · treasure"
     }
   ]
 }

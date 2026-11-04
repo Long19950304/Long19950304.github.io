@@ -1,0 +1,51 @@
+{% assign chinese = false %}
+{% if page.lang == 'zh' %}{% assign chinese = true %}{% endif %}
+<p class="game-showcase-results" data-game-results role="status" aria-live="polite"></p>
+<div class="game-showcase-grid" data-game-grid>
+  {% for game in site.data.game_showcases.modern_education_technology %}
+    <article class="game-card" data-game-card data-title="{{ game.title | escape }}" data-student="{{ game.student | escape }}" data-order="{{ game.order }}" data-game-id="{{ game.id }}">
+      <a class="game-card__cover" href="{{ game.file | relative_url }}" target="_blank" rel="noopener" aria-label="{% if chinese %}试玩{% else %}Play{% endif %} {{ game.title | escape }}">
+        <img src="{{ game.cover | relative_url }}" alt="{{ game.title | escape }}{% if chinese %}游戏内画面{% else %} gameplay screenshot{% endif %}" width="960" height="600" {% if forloop.index > 3 %}loading="lazy"{% else %}loading="eager"{% endif %} decoding="async">
+        <span class="game-card__number">{{ game.order }}</span>
+        <span class="game-card__cover-play" aria-hidden="true">▶</span>
+      </a>
+      <div class="game-card__body">
+        <p class="game-card__genre">{% if chinese %}{{ game.genre }}{% else %}{{ game.genre_en }}{% endif %}</p>
+        <h2 class="game-card__title"><a href="{{ game.file | relative_url }}" target="_blank" rel="noopener">{{ game.title }}</a></h2>
+        <p class="game-card__student">{{ game.student }}</p>
+        <div class="game-card__actions">
+          <a class="btn btn-sm z-depth-0 game-card__play" href="{{ game.file | relative_url }}" target="_blank" rel="noopener">{% if chinese %}开始游戏{% else %}Play game{% endif %} <span aria-hidden="true">↗</span></a>
+          <button class="btn btn-sm z-depth-0 game-like" type="button" data-like-button data-game-id="{{ game.id }}" aria-label="{% if chinese %}喜欢{% else %}Like{% endif %} {{ game.title | escape }}" aria-pressed="false">♡ <span data-like-count>{% if chinese %}喜欢{% else %}Like{% endif %}</span></button>
+        </div>
+        <span class="game-like-feedback" data-like-feedback role="status" hidden></span>
+        <button class="game-comment-link" type="button" data-comments-open data-game-id="{{ game.id }}" data-game-title="{{ game.title | escape }}">{% if chinese %}评论{% else %}Comments{% endif %} <span data-comment-count>0</span> <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+<p class="game-showcase-empty" data-game-empty hidden>{% if chinese %}没有找到这个作品，试试游戏名称或同学姓名。{% else %}No games found. Try a game title or student name.{% endif %}</p>
+<dialog class="game-comments" data-comments-dialog aria-labelledby="game-comments-title">
+  <div class="game-comments__heading">
+    <h2 id="game-comments-title">{% if chinese %}作品评论{% else %}Game comments{% endif %}</h2>
+    <button type="button" data-comments-close aria-label="{% if chinese %}关闭评论{% else %}Close comments{% endif %}">×</button>
+  </div>
+  <p class="game-comments__game" data-comments-title></p>
+  <p class="game-comments__status" data-comments-status role="status" aria-live="polite"></p>
+  <div class="game-comments__list" data-comments-list></div>
+  <button class="game-comments__more" type="button" data-comments-more hidden>{% if chinese %}查看更早评论{% else %}Load earlier comments{% endif %}</button>
+  <form data-comments-form>
+    <fieldset class="game-comments__identity">
+      <legend>{% if chinese %}发布方式{% else %}Post as{% endif %}</legend>
+      <label><input type="radio" name="identity" value="anonymous" checked> {% if chinese %}匿名{% else %}Anonymous{% endif %}</label>
+      <label><input type="radio" name="identity" value="named"> {% if chinese %}留下名字{% else %}Use a name{% endif %}</label>
+    </fieldset>
+    <label class="game-comments__name" data-comments-name-wrap hidden>{% if chinese %}名字{% else %}Name{% endif %}<input type="text" name="name" maxlength="40" autocomplete="nickname" disabled></label>
+    <label for="game-comment-text">{% if chinese %}试玩感受或建议{% else %}Your experience or suggestions{% endif %}</label>
+    <textarea id="game-comment-text" name="text" maxlength="600" rows="3" required placeholder="{% if chinese %}哪里有趣？哪里还可以改进？{% else %}What did you enjoy? What could be improved?{% endif %}"></textarea>
+    <div class="game-comments__submit">
+      <small>{% if chinese %}评论公开可见 · 最多 600 字{% else %}Public comments · Up to 600 characters{% endif %}</small>
+      <button type="submit">{% if chinese %}发布评论{% else %}Post comment{% endif %}</button>
+    </div>
+  </form>
+</dialog>
+<script src="{{ '/assets/js/game-comments.js' | relative_url | bust_file_cache }}" defer></script>

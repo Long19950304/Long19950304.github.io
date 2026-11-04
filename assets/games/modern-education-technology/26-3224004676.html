@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html data-game="26" lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,6 +113,8 @@
   .wchip { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 999px; padding: 4px 10px; font-size: 13px; }
   .wchip.placed { border-color: #fca5a5; background: #fef2f2; }
 </style>
+<link rel="stylesheet" href="/assets/games/game-display.css">
+<script defer src="/assets/games/game-display.js"></script>
 </head>
 <body>
 <div class="app">
@@ -267,7 +269,7 @@ function newGame() {
 function render() {
   grid.innerHTML = '';
   grid.style.gridTemplateColumns = `repeat(${G.cols},1fr)`;
-  grid.style.width = `min(94vw, ${G.cols * 54 + (G.cols - 1) * 3}px)`;
+  grid.style.width = `${G.cols * 54 + (G.cols - 1) * 3}px`;
   const unplaced = G.catWords.filter(w => !G.placedEn.has(w.en));
   banner.innerHTML =
     `<div class="cat">地雷类别：${G.cat.n} ${G.cat.en}</div>` +

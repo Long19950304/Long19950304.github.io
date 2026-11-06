@@ -15,6 +15,7 @@ BASE = SSD / 'WorkData/ResearchData/zhaozhilong-digest'
 
 
 def run():
+    print('Digest scheduler started', flush=True)
     if not SSD.is_mount():
         print('Digest scheduler: external SSD is not mounted', flush=True)
         return 1
@@ -25,7 +26,9 @@ def run():
     with (BASE / 'scheduler.lock').open('w') as lock:
         try: fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError: return 0
-        if (work / 'published.json').exists(): return 0
+        if (work / 'published.json').exists():
+            print(f'{day}: already published; skipped', flush=True)
+            return 0
         attempts_path = BASE / 'scheduler-attempts.json'
         attempts = json.loads(attempts_path.read_text()) if attempts_path.exists() else {}
         if attempts.get('date') != day: attempts = {'date': day, 'attempts': 0}

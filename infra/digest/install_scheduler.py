@@ -16,7 +16,7 @@ def install():
     BASE.mkdir(parents=True, exist_ok=True)
     repo = BASE / 'publisher'
     if not repo.exists():
-        subprocess.run(['git', 'clone', '--single-branch', '--branch', 'main',
+        subprocess.run(['git', 'clone', '--depth', '1', '--single-branch', '--branch', 'main',
                         'git@github.com:Long19950304/Long19950304.github.io.git', str(repo)], check=True)
     (BASE / 'logs').mkdir(exist_ok=True)
     # Keep a small stable launcher on the internal disk so an unmounted SSD does
@@ -26,8 +26,9 @@ def install():
     shutil.copyfile(Path(__file__).with_name('daily_job.py'), launcher / 'daily_job.py')
     logs = Path.home() / 'Library/Logs/zhaozhilong-digest'
     logs.mkdir(parents=True, exist_ok=True)
+    python = shutil.which('python3') or '/usr/bin/python3'
     plist = {'Label': LABEL,
-             'ProgramArguments': ['/usr/bin/python3', str(launcher / 'daily_job.py')],
+             'ProgramArguments': [python, str(launcher / 'daily_job.py')],
              'EnvironmentVariables': {'PATH': f'{Path.home()}/.local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin'},
              'StartCalendarInterval': {'Hour': 8, 'Minute': 0}, 'StartInterval': 1800,
              'RunAtLoad': True, 'ProcessType': 'Background',

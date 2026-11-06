@@ -95,26 +95,26 @@ ninja.data = [{
           },
         },{id: "nav-简报",
           title: "简报",
-          description: "每日科技与研究简报，关注 AI 工具、科研方法和教育技术，提供中英文音频与原始来源。",
+          description: "国内外财经、科技与研究简报，提供中英文音频、权威报道和原始公告。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/digest/";
           },
         },{id: "nav-digest",
           title: "Digest",
-          description: "A daily briefing on useful AI tools, research methods and teaching technology, with Chinese and English audio and primary sources.",
+          description: "A daily China and world economy, technology and research briefing, with Chinese and English audio, authoritative reporting and original releases.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/digest/";
           },
-        },{id: "digests-daily-technology-amp-research-brief-2026-11-06",
-          title: 'Daily Technology &amp;amp; Research Brief · 2026-11-06',
-          description: "GitHub details a Git storage architecture for concurrent agents · Ruff 0.17.4 improves diagnostics and formatting performance · Dharma Field Extractor turns document images into structured JSON",
+        },{id: "digests-daily-economy-technology-amp-research-brief-2026-11-06",
+          title: 'Daily Economy, Technology &amp;amp; Research Brief · 2026-11-06',
+          description: "Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy · ECB Publishes Consolidated EU Banking Data for End-June 2026 · NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-11-06/";
-            },},{id: "digests_zh-每日科技与研究简报-2026-11-06",
-          title: '每日科技与研究简报 · 2026-11-06',
-          description: "GitHub详解面向并发智能体的Git存储架构；Ruff 0.17.4改进诊断显示与格式化性能；Dharma Field Extractor将文档图像转为结构化JSON",
+            },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-06",
+          title: '每日财经、科技与研究简报 · 2026-11-06',
+          description: "山东沿黄城市推进智能制造与绿色能源；欧洲央行发布截至2026年6月底的欧盟银行合并数据；英伟达为Cosmos 3新增四个开放权重模拟检查点",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-11-06/";
             },},{id: "projects-ai-for-social-science",

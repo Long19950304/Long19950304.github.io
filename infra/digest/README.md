@@ -14,18 +14,27 @@ Chinese HTML news indexes are read through explicit article-path/domain and body
 
 Policy version 2 adds numerical checks for reference periods, currencies, units, Chinese 万/亿 versus English million/billion/trillion, annual/monthly comparisons, and preliminary/revised data. Financial reporting is a factual overview without stock recommendations, return promises or price predictions. A valid source balance is selected and checked before writing the long narration, then checked again on the final issue. The separate audit uses another request to the same MiniMax model; it is not a separate model provider or human editorial approval.
 
+Policy version 3 adds a second, separate MiniMax publication review after factual review. It receives the source evidence and the entire bilingual issue, without the first review's verdict. Each story and the whole programme require explicit `approve` decisions and empty blocking-reason lists. `hold`, `reject`, omitted IDs, malformed responses and API errors stop the run before speech or page installation. A failed publication review is held for inspection, rather than automatically rewriting a sensitive story. Both the audio and installation functions require valid receipts for both stages, so a direct call cannot skip the gate. Receipts bind the complete issue, selected evidence, policy, resolved review endpoint/model and corresponding prompt; changes invalidate approvals. Reports remain private as `review.json` and `publication-review.json`, with timestamped review copies.
+
 ## Local operation
 
 ```sh
 bin/digest-daily collect
 bin/digest-daily run
 bin/digest-daily run --resume --publish
+bin/digest-daily review --run-name 2026-11-06-economy
 uv run --with feedparser --with pyyaml python -m unittest discover -s infra/digest -p 'test_*.py'
 ```
 
 `run` without `--publish` prepares files locally. Publication commits only the current edition’s pages, public metadata, compressed audio and transcripts. It refuses an already populated Git staging area and only pushes `main`. A Git push is recorded as `pushed`, not as confirmed production deployment. The existing GitHub/Tencent deployment verification remains authoritative.
 
+`review` submits an existing private run to both review stages afresh and saves the reports; it does not collect stories, change the draft, synthesize speech or publish files. Omitting `--run-name` selects today's ordinary run. The suffixed example above is the revised 2026-11-06 edition with economic coverage.
+
+A semantic `hold` or `reject` remains blocking for the same input: the scheduler cannot repeatedly ask until it gets a pass. Changing the material/policy/review specification or explicitly running `review` permits a new assessment. Technical/API failures may be retried within the existing daily retry budget.
+
 MiniMax credentials are read in process from macOS Keychain, account `picture-book-service`, services `minimax-token-plan-key` and optionally `minimax-tts-api-key`. Explicit environment alternatives are `MINIMAX_TOKEN_PLAN_KEY` and `MINIMAX_TTS_API_KEY`. Text uses the existing MiniMax M3 subscription endpoint. `DIGEST_MINIMAX_ENDPOINT` can point to a compatible local Anthropic relay. The default speech credential is the Token Plan; there is no silent metered fallback. Explicitly set `DIGEST_TTS_CREDENTIAL=tts` only to select the existing TTS account. Never put credentials in Git, public YAML, HTML, or logs. RSS/article requests use the existing local network proxy configured in `policy.yml`; GitHub API and MiniMax requests use their normal routes.
+
+Both review stages use the same existing Token Plan credential, with separate `review_model` and `review_endpoint` settings. Their runtime overrides are `DIGEST_MINIMAX_REVIEW_MODEL` and `DIGEST_MINIMAX_REVIEW_ENDPOINT`; a writing-only relay override does not silently redirect review credentials. The current review model is `MiniMax-M3`. No dedicated local MiniMax listener was found in the earlier inventory; the defaults call the official HTTPS API using the locally stored key. These are separate requests to the same model, not independent-provider or human judgments.
 
 Private evidence, source-health reports, drafts, audits, segment caches and audio intermediates stay in `/Volumes/longssd/WorkData/ResearchData/zhaozhilong-digest/runs/YYYY-MM-DD/`. An actual mounted SSD is required. Public MP3 files use mono 64 kbps, around 5 MB for ten minutes. Raw synthesis is cached by text/model/voice hash so a retry reuses completed segments.
 

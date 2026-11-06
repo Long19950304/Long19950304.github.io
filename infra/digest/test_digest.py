@@ -3,6 +3,9 @@ import copy
 import importlib.util
 from pathlib import Path
 import unittest
+import json
+import tempfile
+from unittest import mock
 
 SPEC = importlib.util.spec_from_file_location('digest_daily', Path(__file__).resolve().parents[2] / 'bin/digest_daily.py')
 d = importlib.util.module_from_spec(SPEC)
@@ -123,6 +126,105 @@ class PublicationTests(unittest.TestCase):
         for source in public:
             self.assertIsInstance(source['available'], bool)
             self.assertGreaterEqual(source['initial_candidates'], 0)
+
+    def final_report(self):
+        return {'checks': [{'id': str(i), 'decision': 'approve', 'reasons': []} for i in range(5)],
+                'programme': {'decision': 'approve', 'reasons': []}}
+
+    def seed_factual_review(self, work):
+        audit = {'checks': [dict(id=str(i), fact_check='pass', scope_check='pass',
+                                translation_check='pass', blocking_errors=[]) for i in range(5)],
+                 'approved': True, 'fingerprint': d.review_fingerprint(self.issue, self.candidates, self.policy, 'factual')}
+        d.save_json(work / 'review.json', audit)
+
+    def test_publication_review_requires_every_story_and_programme(self):
+        valid = self.final_report();expected = {str(i) for i in range(5)}
+        self.assertTrue(d.publication_approved(valid, expected))
+        for decision in ['hold', 'reject', True, None, 'APPROVE']:
+            for target in ['story', 'programme']:
+                report = copy.deepcopy(valid)
+                (report['checks'][0] if target == 'story' else report['programme'])['decision'] = decision
+                self.assertFalse(d.publication_approved(report, expected))
+        malformed = [None, [], {'checks': None}, {'checks': 'approve'}, {'checks': [None], 'programme': {}},
+                     {**valid, 'programme': None}, {**valid, 'checks': valid['checks'][:-1]},
+                     {**valid, 'checks': valid['checks'] + [valid['checks'][0]]}]
+        for report in malformed:
+            self.assertFalse(d.publication_approved(report, expected))
+        for reasons in [None, '', ['Unresolved concern']]:
+            report = copy.deepcopy(valid);report['programme']['reasons'] = reasons
+            self.assertFalse(d.publication_approved(report, expected))
+
+    def test_final_hold_or_api_failure_blocks_audio_and_install(self):
+        for response in ['hold', 'timeout', 'malformed']:
+            with self.subTest(response=response), tempfile.TemporaryDirectory() as tmp:
+                work = Path(tmp);self.seed_factual_review(work)
+                d.save_json(work / 'candidates.json', self.candidates)
+                audit = self.final_report();audit['programme']['decision'] = 'hold';audit['programme']['reasons'] = ['Need more evidence']
+                call = mock.patch.object(d, 'llm', side_effect=TimeoutError('private error')) if response == 'timeout' else mock.patch.object(d, 'llm', return_value=audit if response == 'hold' else [])
+                with call, self.assertRaises(d.PublicationReviewError):
+                    d.publication_review(self.issue, self.candidates, work, self.policy)
+                receipt = json.loads((work / 'publication-review.json').read_text())
+                self.assertIs(receipt['approved'], False)
+                with mock.patch.object(d, 'key') as key:
+                    with self.assertRaises(d.PublicationReviewError): d.audio('2026-11-06', self.issue, work, self.policy)
+                    key.assert_not_called()
+                with self.assertRaises(d.PublicationReviewError):
+                    d.install('2026-11-06', self.issue, self.candidates, {}, work, self.policy)
+
+    def test_review_receipts_bind_draft_evidence_policy_and_model(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);self.seed_factual_review(work)
+            with mock.patch.object(d, 'llm', return_value=self.final_report()) as call:
+                d.publication_review(self.issue, self.candidates, work, self.policy)
+                self.assertEqual(call.call_args.kwargs['purpose'], 'review')
+                self.assertNotIn('audit', call.call_args.args[2])
+                d.publication_review(self.issue, self.candidates, work, self.policy)
+                self.assertEqual(call.call_count, 1)
+            d.require_reviews(self.issue, self.candidates, work, self.policy)
+            edits = []
+            issue = copy.deepcopy(self.issue);issue['intro'] += ' Revised.';edits.append((issue,self.candidates,self.policy))
+            candidates = copy.deepcopy(self.candidates);candidates[0]['evidence'] += ' Revised.';edits.append((self.issue,candidates,self.policy))
+            policy = {**self.policy, 'version': self.policy['version'] + 1};edits.append((self.issue,self.candidates,policy))
+            policy = {**self.policy, 'review_model': 'another-model'};edits.append((self.issue,self.candidates,policy))
+            for issue,candidates,policy in edits:
+                with self.assertRaises(d.PublicationReviewError): d.require_reviews(issue,candidates,work,policy)
+            with mock.patch.object(d, 'PUBLICATION_REVIEW_PROMPT', d.PUBLICATION_REVIEW_PROMPT + ' Revised.'):
+                with self.assertRaises(d.PublicationReviewError): d.require_reviews(self.issue,self.candidates,work,self.policy)
+            with mock.patch.dict(d.os.environ, {'DIGEST_MINIMAX_REVIEW_MODEL': 'runtime-review-model'}):
+                with self.assertRaises(d.PublicationReviewError): d.require_reviews(self.issue,self.candidates,work,self.policy)
+
+    def test_missing_final_receipt_cannot_bypass_fact_pass(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);self.seed_factual_review(work)
+            with self.assertRaisesRegex(d.PublicationReviewError, 'publication'):
+                d.require_reviews(self.issue, self.candidates, work, self.policy)
+        for report in [None, [], {'checks': None}, {'checks': [None]}]:
+            self.assertFalse(d.audit_approved(report, {'a'}))
+
+    def test_forced_factual_api_failure_invalidates_old_receipt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);self.seed_factual_review(work)
+            with mock.patch.object(d, 'llm', side_effect=TimeoutError('private error')):
+                with self.assertRaises(d.PublicationReviewError):
+                    d.review(self.issue,self.candidates,work,self.policy,force=True)
+            receipt = json.loads((work / 'review.json').read_text())
+            self.assertIs(receipt['approved'], False)
+            self.assertNotIn('private error', (work / 'review.json').read_text())
+            with mock.patch.object(d, 'llm') as call:
+                with self.assertRaises(d.PublicationReviewError):
+                    d.publication_review(self.issue,self.candidates,work,self.policy)
+                call.assert_not_called()
+
+    def test_semantic_rejection_cannot_be_retried_until_a_pass(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);self.seed_factual_review(work)
+            rejected = self.final_report();rejected['checks'][0].update(decision='reject', reasons=['Unsupported promised returns'])
+            with mock.patch.object(d, 'llm', return_value=rejected) as call:
+                with self.assertRaises(d.PublicationReviewError):
+                    d.publication_review(self.issue,self.candidates,work,self.policy)
+                with self.assertRaisesRegex(d.PublicationReviewError, 'explicit re-audit'):
+                    d.publication_review(self.issue,self.candidates,work,self.policy)
+                self.assertEqual(call.call_count, 1)
 
 
 if __name__ == '__main__': unittest.main()

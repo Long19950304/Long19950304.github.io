@@ -1,4 +1,4 @@
-version: 2
+version: 3
 timezone: Asia/Shanghai
 lookback_hours: 48
 min_items: 5
@@ -11,6 +11,8 @@ min_seconds: 480
 max_seconds: 720
 text_model: MiniMax-M3
 text_endpoint: https://api.minimaxi.com/anthropic/v1/messages
+review_model: MiniMax-M3
+review_endpoint: https://api.minimaxi.com/anthropic/v1/messages
 tts_model: speech-2.8-hd
 tts_endpoint: https://api.minimaxi.com/v1/t2a_v2
 voice_zh: Chinese (Mandarin)_Gentleman

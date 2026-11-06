@@ -1,0 +1,21 @@
+# The daily programme deliberately excludes general/world/political news feeds.
+# Official software release notes and technical blogs supply attributable evidence.
+sources:
+  - {id: huggingface, name: Hugging Face, category: AI tools & model releases, url: 'https://huggingface.co/blog/feed.xml', hosts: [huggingface.co]}
+  - {id: google-developers, name: Google Developers, category: Education / learning sciences / edtech, url: 'https://developers.googleblog.com/feeds/posts/default', hosts: [developers.googleblog.com]}
+  - {id: github-blog, name: GitHub Engineering, category: Research tools, url: 'https://github.blog/engineering/feed/', hosts: [github.blog]}
+  - {id: google-research, name: Google Research, category: Research tools, url: 'https://research.google/blog/rss/', hosts: [research.google]}
+  - {id: google-ai, name: Google AI, category: AI tools & model releases, url: 'https://blog.google/technology/ai/rss/', hosts: [blog.google]}
+  - {id: openai, name: OpenAI, category: AI tools & model releases, url: 'https://openai.com/news/rss.xml', hosts: [openai.com]}
+  - {id: ruff, name: Ruff releases, category: Research tools, github_repo: astral-sh/ruff, hosts: [github.com]}
+  - {id: zed, name: Zed releases, category: Research tools, github_repo: zed-industries/zed, hosts: [github.com]}
+  - {id: uv, name: uv releases, category: Research tools, github_repo: astral-sh/uv, hosts: [github.com]}
+  - {id: dify, name: Dify releases, category: AI tools & model releases, github_repo: langgenius/dify, hosts: [github.com]}
+  - {id: comfyui, name: ComfyUI releases, category: AI tools & model releases, github_repo: Comfy-Org/ComfyUI, hosts: [github.com]}
+  - {id: jupyterlab, name: JupyterLab releases, category: Research tools, github_repo: jupyterlab/jupyterlab, hosts: [github.com]}
+  - {id: pandas, name: pandas releases, category: Research tools, github_repo: pandas-dev/pandas, hosts: [github.com]}
+  - {id: scikit-learn, name: scikit-learn releases, category: Research tools, github_repo: scikit-learn/scikit-learn, hosts: [github.com]}
+  - {id: ollama, name: Ollama releases, category: AI tools & model releases, github_repo: ollama/ollama, hosts: [github.com]}
+  - {id: vllm, name: vLLM releases, category: AI tools & model releases, github_repo: vllm-project/vllm, hosts: [github.com]}
+  - {id: transformers, name: Transformers releases, category: AI tools & model releases, github_repo: huggingface/transformers, hosts: [github.com]}
+  - {id: quarto, name: Quarto releases, category: Education / learning sciences / edtech, github_repo: quarto-dev/quarto-cli, hosts: [github.com]}

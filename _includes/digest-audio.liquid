@@ -1,0 +1,30 @@
+{% assign issue_key = page.digest_date | date: '%Y-%m-%d' %}
+{% assign issue = site.data.digests[issue_key] %}
+{% if issue.audio %}
+<section class="digest-listen" aria-label="{% if page.lang == 'zh' %}收听简报{% else %}Listen to the briefing{% endif %}">
+  <p class="digest-listen__eyebrow">{% if page.lang == 'zh' %}每日科技与研究 · 双语播报{% else %}Daily technology & research · Two language editions{% endif %}</p>
+  <h2>{% if page.lang == 'zh' %}用十分钟，听今天值得关注的进展{% else %}Today’s useful developments, in about ten minutes{% endif %}</h2>
+  <p>{% if page.lang == 'zh' %}中文和英文各为完整一期，内容相同，可按需收听。{% else %}Choose a complete Chinese or English edition covering the same stories.{% endif %}</p>
+  <div class="digest-listen__grid">
+  {% assign languages = 'zh,en' | split: ',' %}
+  {% for language in languages %}
+    {% assign recording = issue.audio[language] %}
+    {% assign minutes = recording.seconds | divided_by: 60 | floor %}
+    {% assign seconds = recording.seconds | modulo: 60 | floor %}
+    <div class="digest-listen__edition" lang="{% if language == 'zh' %}zh-CN{% else %}en{% endif %}">
+      <h3>{% if language == 'zh' %}中文播报{% else %}English edition{% endif %} <span>{{ minutes }}:{% if seconds < 10 %}0{% endif %}{{ seconds }}</span></h3>
+      <audio id="digest-audio-{{ language }}" controls preload="none" src="{{ recording.path | relative_url }}" aria-label="{% if language == 'zh' %}中文新闻播报{% else %}English news briefing{% endif %}"></audio>
+      <label class="small" for="digest-speed-{{ language }}">{% if page.lang == 'zh' %}播放速度{% else %}Playback speed{% endif %}</label>
+      <select class="digest-listen__speed" id="digest-speed-{{ language }}" data-audio-speed="digest-audio-{{ language }}">
+        <option value="0.85">0.85×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option>
+      </select>
+      <p class="small" data-audio-error hidden>{% if page.lang == 'zh' %}音频暂时无法加载，可尝试下载或稍后重试。{% else %}Audio could not load. Try the download link or retry later.{% endif %}</p>
+      {% assign transcript_path = recording.path | replace: '.mp3', '.txt' %}
+      <p class="small"><a href="{{ recording.path | relative_url }}" download>{% if page.lang == 'zh' %}下载 MP3{% else %}Download MP3{% endif %}</a> · <a href="{{ transcript_path | relative_url }}">{% if page.lang == 'zh' %}播报文字{% else %}Transcript{% endif %}</a></p>
+    </div>
+  {% endfor %}
+  </div>
+  <p class="small text-muted">{% if page.lang == 'zh' %}AI 合成语音 · 原始来源见下文 · 无自动播放{% else %}AI-generated voices · Primary sources below · Play when ready{% endif %}</p>
+</section>
+<script defer src="{{ '/assets/js/digest-audio.js' | relative_url }}"></script>
+{% endif %}

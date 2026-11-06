@@ -1225,6 +1225,21 @@ h1 {
 @media (prefers-reduced-motion: reduce) { .game-card__cover img { transition: none; } .game-card__cover:hover img { transform: none; } }
 
 .skip-to-content { position: fixed; top: -100px; left: 12px; z-index: 11000; padding: 12px 18px; background: var(--global-bg-color); color: var(--global-text-color); border: 2px solid var(--global-theme-color); border-radius: 6px; }
+.digest-listen { margin: 1.5rem 0 2.5rem; padding: 1.5rem; border: 1px solid var(--global-divider-color); border-radius: 12px; background: var(--global-card-bg-color); }
+.digest-listen__eyebrow { font-size: .8rem; color: var(--global-theme-color); letter-spacing: .04em; }
+.digest-listen h2 { margin-top: .5rem; font-size: 1.5rem; line-height: 1.5; }
+.digest-listen__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin: 1.25rem 0; }
+.digest-listen__edition { min-width: 0; }
+.digest-listen__edition h3 { font-size: 1.05rem; }
+.digest-listen__edition h3 span { font-size: .85rem; color: var(--global-text-color-light); margin-left: .5rem; font-variant-numeric: tabular-nums; }
+.digest-listen audio { display: block; width: 100%; margin: .75rem 0; }
+.digest-listen__speed { padding: .25rem .4rem; margin-left: .4rem; border: 1px solid var(--global-divider-color); border-radius: 4px; background: var(--global-bg-color); color: var(--global-text-color); font-size: .85rem; }
+.digest-listen__edition a { display: inline-block; padding: .3rem 0; }
+.digest-page details { margin: 1rem 0 2rem; }
+.digest-page details summary { color: var(--global-theme-color); cursor: pointer; padding: .5rem 0; }
+.digest-page details[open] summary { margin-bottom: .75rem; }
+.digest-current { border-left: 3px solid var(--global-theme-color); padding: .75rem 1rem; margin: 1.5rem 0; }
+@media (max-width: 575px) { .digest-listen { padding: 1rem; } .digest-listen__grid { grid-template-columns: 1fr; gap: .75rem; } }
 .skip-to-content:focus { top: 12px; }
 #main-content { scroll-margin-top: 90px; }
 .publication-jumps { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.25rem; }

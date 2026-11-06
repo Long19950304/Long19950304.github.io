@@ -24,3 +24,7 @@ Tip: use a square headshot.
 ## Course showcases and Tencent Cloud
 
 The reusable student game showcase lives at `/teaching/games/` and `/zh/teaching/games/`. Published games are copied to `assets/games/`; the original local archive is ignored. The optional Tencent Cloud deployment files are in `infra/tencent-cloud/`, and the dependency-free likes API is in `server/api/`.
+
+## Daily bilingual digest
+
+The renewed digest covers practical technology and research, with separate Chinese and English audio editions of about ten minutes each. The local MiniMax pipeline, publication gates, SSD storage and 08:00 daily schedule are documented in [infra/digest/README.md](infra/digest/README.md). Use `bin/digest-daily`; `bin/digest` is the unscheduled legacy generator. The previous unscreened editions and headline cards have been moved to an offline SSD archive; their public URLs retain an archive notice.

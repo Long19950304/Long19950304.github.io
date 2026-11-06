@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+digest_repo=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec uv run --with feedparser==6.0.14 --with pyyaml==6.0.3 python "$digest_repo/bin/digest_daily.py" "$@"

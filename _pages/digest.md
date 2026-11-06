@@ -2,23 +2,26 @@
 layout: page
 title: Digest
 permalink: /digest/
-description: An archive of research and news briefs on AI, society, health, and education.
+description: A daily briefing on useful AI tools, research methods and teaching technology, with Chinese and English audio and primary sources.
 nav: true
 nav_order: 8
 lang: en
 translation_key: digest
 ---
 
-<p class="small">
-Research and news brief archive, last updated 26 June 2026.
-</p>
+{% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
+{% assign latest_digest = digests | first %}
+<p>Useful developments in AI tools, research methods and teaching technology. New editions include complete Chinese and English recordings, about ten minutes each, with primary sources and transcripts.</p>
+{% if latest_digest %}
+<div class="digest-current"><strong>Latest edition · {{ latest_digest.digest_date }}</strong><br><a href="{{ latest_digest.url | relative_url }}">Read and listen to the latest briefing →</a><br><small>Check the edition date. Publication may be delayed when source coverage or verification is insufficient.</small></div>
+{% endif %}
 
 <p class="small">
 <a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
  · <a href="{{ '/digest/feed.xml' | relative_url }}">RSS</a>
 </p>
 
-{% assign digests = site.digests | sort: "name" | reverse %}
+{% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
 
 {% if digests.size == 0 %}
 <p>No digests yet.</p>
@@ -102,7 +105,7 @@ Research and news brief archive, last updated 26 June 2026.
           <div class="digest-card-tagline mt-2">{{ tagline | strip | truncate: 120 }}</div>
         {% endif %}
         <div class="mt-2">
-          <span class="badge badge-light">News</span>
+          {% if meta.audio %}<span class="badge badge-light">Chinese & English audio · ~10 min</span>{% else %}<span class="badge badge-light">Text archive</span>{% endif %}
           {% if ai_file %}
             <span class="badge badge-light">AI tools</span>
           {% endif %}

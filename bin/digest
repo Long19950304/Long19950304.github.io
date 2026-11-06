@@ -2933,6 +2933,8 @@ def cmd_social(args: argparse.Namespace) -> None:
 
 
 def main(argv: list[str]) -> int:
+    if argv and argv[0] in {"draft", "build"}:
+        _die("Legacy digest generation is retired. Use bin/digest-daily run for the screened bilingual audio edition.")
     parser = argparse.ArgumentParser(prog="digest")
     sub = parser.add_subparsers(dest="cmd", required=True)
 

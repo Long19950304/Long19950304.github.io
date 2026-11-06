@@ -1,0 +1,28 @@
+version: 1
+timezone: Asia/Shanghai
+lookback_hours: 48
+min_items: 5
+max_items: 7
+min_sources: 3
+min_healthy_sources: 4
+max_per_source: 2
+target_seconds: 600
+min_seconds: 480
+max_seconds: 720
+text_model: MiniMax-M3
+text_endpoint: https://api.minimaxi.com/anthropic/v1/messages
+tts_model: speech-2.8-hd
+tts_endpoint: https://api.minimaxi.com/v1/t2a_v2
+voice_zh: Chinese (Mandarin)_Gentleman
+voice_en: English_Graceful_Lady
+feed_proxy: http://127.0.0.1:7890
+# Fail closed. A technical article touching these topics is omitted as a whole.
+exclude_patterns:
+  - '\b(politic\w*|geopolitic\w*|elections?|presidents?|prime minister|parliament|congress|senators?|white house|government|governance|diploma\w*|sanctions?|tariffs?|export controls?|trade war|military|warfare|weapons?|defen[cs]e|missiles?|nuclear|terroris\w*|extremis\w*|protests?|censorship|propaganda|surveillance|human rights|sovereignty|territorial|taiwan|tibet|xinjiang|hong kong|russia|ukraine|israel|palestin\w*|trump|biden|xi jinping|communis\w*|democra\w*|fedramp|govcloud|pentagon|immigration|abortion|religio\w*|porn\w*|gambling|suicid\w*)\b'
+  - '政治|政党|政府|执政|选举|总统|总理|议会|国会|白宫|外交|制裁|关税|出口管制|贸易战|军事|军用|国防|武器|战争|核武|恐怖|极端主义|抗议|示威|审查制度|舆论管控|宣传战|监控|人权|主权|领土|台湾|台独|西藏|新疆|香港|俄乌|乌克兰|以色列|巴勒斯坦|特朗普|拜登|习近平|共产党|宗教|色情|赌博|自杀'
+  - '\b(buy now|price target|investment advice|guaranteed returns?|medical advice|cures? cancer)\b|投资建议|荐股|保证收益|包治|处方|用药建议'
+editorial_scope: >-
+  Only practical AI/software tools, reproducible research methods, teaching technology,
+  and non-clinical digital health research. No politics, public policy, conflict,
+  national security, identity disputes, investment advice, medical advice, rumours,
+  accusations, or predictions presented as facts. Exclude the whole story when in doubt.

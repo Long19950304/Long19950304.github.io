@@ -2,23 +2,26 @@
 layout: page
 title: 简报
 permalink: /zh/digest/
-description: AI、社会、健康与教育方向的研究和新闻简报档案。
+description: 每日科技与研究简报，关注 AI 工具、科研方法和教育技术，提供中英文音频与原始来源。
 nav: true
 nav_order: 8
 lang: zh
 translation_key: digest
 ---
 
-<p class="small">
-研究与新闻简报档案，最后更新于2026年6月26日。
-</p>
+{% assign digests = site.digests_zh | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
+{% assign latest_digest = digests | first %}
+<p>关注值得实际尝试的 AI 工具、科研方法与教育技术。新版每天提供中文和英文两套完整播报，每套约十分钟，并保留原始来源与播报文字。</p>
+{% if latest_digest %}
+<div class="digest-current"><strong>最近一期 · {{ latest_digest.digest_date }}</strong><br><a href="{{ latest_digest.url | relative_url }}">阅读与收听最新简报 →</a><br><small>以页面标注日期为准；来源不足或核验未通过时会延后更新。</small></div>
+{% endif %}
 
 <p class="small">
 <a href="{{ '/zh/digest/weekly/' | relative_url }}">每周汇总</a>
  · <a href="{{ '/zh/digest/feed.xml' | relative_url }}">RSS</a>
 </p>
 
-{% assign digests = site.digests_zh | sort: "name" | reverse %}
+{% assign digests = site.digests_zh | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
 
 {% if digests.size == 0 %}
 <p>暂时还没有简报。</p>
@@ -106,7 +109,7 @@ translation_key: digest
           <div class="digest-card-tagline mt-2">{{ tagline | strip | truncate: 80 }}</div>
         {% endif %}
         <div class="mt-2">
-          <span class="badge badge-light">新闻</span>
+          {% if meta.audio %}<span class="badge badge-light">中英音频 · 约十分钟</span>{% else %}<span class="badge badge-light">文字档案</span>{% endif %}
           {% if ai_file %}
             <span class="badge badge-light">AI 工具</span>
           {% endif %}

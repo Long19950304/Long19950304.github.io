@@ -7,12 +7,13 @@ permalink: /digest/feed.xml
   <channel>
     <title>Zhilong Zhao — Daily Digest</title>
     <link>{{ '/digest/' | absolute_url }}</link>
-    <description>Daily digest archive (news + AI tools/model updates).</description>
+    <description>Daily technology and research briefing with English audio and primary sources.</description>
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    {% assign digests = site.digests | sort: "name" | reverse %}
+    {% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
     {% for d in digests limit: 50 %}
-      {% assign meta = site.data.digests[d.digest_date] %}
+      {% assign date_key = d.digest_date | date: '%Y-%m-%d' %}
+      {% assign meta = site.data.digests[date_key] %}
       {% assign tagline = meta.note %}
       {% if tagline == nil or tagline == "" %}
         {% assign tagline = meta.items[0].title %}
@@ -23,6 +24,7 @@ permalink: /digest/feed.xml
       <guid isPermaLink="true">{{ d.url | absolute_url }}</guid>
       <pubDate>{{ d.digest_date | date_to_rfc822 }}</pubDate>
       <description>{{ tagline | default: "" | strip | truncate: 240 | xml_escape }}</description>
+      {% if meta.audio.en %}<enclosure url="{{ meta.audio.en.path | absolute_url | xml_escape }}" length="{{ meta.audio.en.bytes }}" type="audio/mpeg" />{% endif %}
     </item>
     {% endfor %}
   </channel>

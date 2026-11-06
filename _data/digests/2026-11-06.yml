@@ -1,0 +1,73 @@
+date: '2026-11-06'
+note: GitHub details a Git storage architecture for concurrent agents · Ruff 0.17.4
+  improves diagnostics and formatting performance · Dharma Field Extractor turns document
+  images into structured JSON
+note_zh: GitHub详解面向并发智能体的Git存储架构；Ruff 0.17.4改进诊断显示与格式化性能；Dharma Field Extractor将文档图像转为结构化JSON
+edition: daily-audio
+policy_version: 1
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-06-zh.mp3
+    seconds: 678.5
+    bytes: 5428556
+    sha256: 915a89f5dc74130735af64d31bb25a7499cc4d0b30cda5dbebee04b87fb185dd
+  en:
+    path: /assets/audio/digests/2026-11-06-en.mp3
+    seconds: 707.2
+    bytes: 5658380
+    sha256: d3845afc067160ae070ee279156caf8c33404b9c5ae3f8d69bc7d09bf9a07e7d
+items:
+- title: GitHub details a Git storage architecture for concurrent agents
+  title_zh: GitHub详解面向并发智能体的Git存储架构
+  url: https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture
+  published: '2026-11-05T20:23:21+00:00'
+  source: GitHub Engineering
+  category: Research tools
+  why: GitHub described a new Git storage design that separates object storage, reference
+    coordination, and repository maintenance. GitHub claims internal testing sustained
+    5,000 concurrent agents and 7,200 pushes per second while maintaining low read
+    latency.
+  why_zh: GitHub介绍了一套新的Git存储设计，将对象存储、引用协调和仓库维护解耦。GitHub称内部测试可支持5,000个并发智能体和每秒7,200次推送，同时保持较低的读取延迟。
+- title: Ruff 0.17.4 improves diagnostics and formatting performance
+  title_zh: Ruff 0.17.4改进诊断显示与格式化性能
+  url: https://github.com/astral-sh/ruff/releases/tag/0.17.4
+  published: '2026-11-05T18:53:24+00:00'
+  source: Ruff releases
+  category: Research tools
+  why: Ruff 0.17.4 is a maintenance release containing preview changes, bug fixes,
+    performance work, and documentation updates. It also improves color-control precedence
+    for Ruff and ty diagnostics and provides verifiable release artifacts.
+  why_zh: Ruff 0.17.4是一个维护版本，包含预览功能变更、错误修复、性能工作和文档更新。它还改善了Ruff与ty诊断的颜色控制优先级，并提供可验证的发布制品。
+- title: Dharma Field Extractor turns document images into structured JSON
+  title_zh: Dharma Field Extractor将文档图像转为结构化JSON
+  url: https://huggingface.co/blog/Dharma-AI/dharma-field-extractor
+  published: '2026-11-04T17:50:10+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  why: Dharma Field Extractor is a two-billion-parameter document model that returns
+    open or schema-directed fields as JSON. Its authors report stronger benchmark
+    results and lower extraction cost than tested frontier APIs, but those comparisons
+    depend on their benchmark and deployment assumptions.
+  why_zh: Dharma Field Extractor是一款20亿参数文档模型，可按开放模式或指定模式输出JSON字段。其作者报告称，在其基准和部署假设下，模型成绩优于所测试的前沿API，且单次抽取成本更低。
+- title: Agile Deliberation helps define subjective image classifiers
+  title_zh: Agile Deliberation帮助定义主观图像分类器
+  url: https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas
+  published: '2026-11-04T18:07:05+00:00'
+  source: Google Research
+  category: Research tools
+  why: Google Research open-sourced Agile Deliberation, which uses borderline-image
+    feedback to refine subjective image classifiers. In an 18-session user study,
+    the authors reported better consistency and performance than standard baselines,
+    along with lower reported cognitive effort.
+  why_zh: Google Research开源了Agile Deliberation，它通过边界图像反馈来优化主观图像分类器。在18场用户研究中，作者报告称，该方法相较标准基线提高了标注一致性与模型表现，同时参与者报告的认知负担更低。
+- title: Phonon brings on-device text-to-speech to Transformers
+  title_zh: Phonon将端侧文字转语音带入Transformers
+  url: https://huggingface.co/blog/phonon-tts
+  published: '2026-11-05T00:00:00+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  why: Phonon is a family of roughly 65–75 MB text-to-speech models that runs locally
+    without a network and supports five languages, voice cloning, and voice design.
+    Its authors report strong leaderboard positions, but licensing differs between
+    the 31m and 40m checkpoints.
+  why_zh: Phonon是一组约65至75MB的文字转语音模型，可离线在本地运行，支持五种语言、声音克隆和声音设计。作者报告了较强的排行榜成绩，但31m与40m检查点的许可不同。

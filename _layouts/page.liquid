@@ -16,10 +16,10 @@ layout: default
 
   {% if page.page_class == "digest-page" %}
     {% if page.lang == "zh" %}
-      {% assign _digest_coll = site.digests_zh %}
+      {% assign _digest_coll = site.digests_zh | where_exp: "d", "d.archived != true" %}
       {% assign _digest_index_url = "/zh/digest/" %}
     {% else %}
-      {% assign _digest_coll = site.digests %}
+      {% assign _digest_coll = site.digests | where_exp: "d", "d.archived != true" %}
       {% assign _digest_index_url = "/digest/" %}
     {% endif %}
     {% assign _sorted = _digest_coll | sort: "digest_date" %}

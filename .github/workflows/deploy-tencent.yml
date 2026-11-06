@@ -1,0 +1,53 @@
+name: Verify Tencent Cloud deployment
+
+on:
+  workflow_run:
+    workflows: [Deploy site]
+    types: [completed]
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tencent-production-verification
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Wait for the production server to deploy the verified build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_REVISION: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          target = os.environ['TARGET_REVISION']
+          repo = os.environ['GITHUB_REPOSITORY']
+          token = os.environ['GH_TOKEN']
+          for attempt in range(36):
+              request = urllib.request.Request(f'https://api.github.com/repos/{repo}/commits/main', headers={'Authorization': 'Bearer ' + token})
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  current = json.load(response)['sha']
+              if current != target:
+                  print('Superseded by a newer source revision; its workflow will verify production.')
+                  break
+              try:
+                  with urllib.request.urlopen('https://www.zhaozhilong.com/release.json', timeout=20) as response:
+                      release = json.load(response)
+                  if release['source_revision'] == target:
+                      with urllib.request.urlopen('https://www.zhaozhilong.com/api/v1/health', timeout=20) as response:
+                          assert json.load(response)['ok'] is True
+                      print('Tencent Cloud is serving source ' + target + '; API healthy.')
+                      break
+              except Exception as error:
+                  print(f'Waiting for production ({attempt + 1}/36): {error}')
+              time.sleep(10)
+          else:
+              raise SystemExit('Tencent Cloud did not deploy the current build. Check zhaozhilong-deploy.service on the server.')
+          PY

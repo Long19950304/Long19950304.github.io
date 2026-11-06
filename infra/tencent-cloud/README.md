@@ -1,22 +1,34 @@
-# Tencent Cloud deployment notes
+# Tencent Cloud production deployment
 
-Target: Ubuntu 22.04/24.04, Nginx, Python 3, systemd, and SQLite.
+The public domain runs on the existing Hong Kong Lighthouse instance. GitHub Actions builds Jekyll and publishes `gh-pages`; the server checks for a new build every two minutes. No inbound SSH connection or repository deploy secret is required.
 
-1. Create a 2 vCPU / 2 GB overseas Lighthouse instance with a 40 GB disk.
-2. Add an SSH public key. Open TCP 22, 80, and 443 only.
-3. Point `www.zhaozhilong.com` and `zhaozhilong.com` to the server IP after the first deployment.
-4. Install Nginx and Certbot; copy `nginx.conf` to `/etc/nginx/sites-available/zhaozhilong.com`, enable it, then run `certbot --nginx -d zhaozhilong.com -d www.zhaozhilong.com`.
-5. Copy `server/api` to `/opt/zhaozhilong-api`, install `zhaozhilong-api.service`, create the `zhaozhilong` user and `/var/lib/zhaozhilong`, then enable the service.
-6. Add GitHub Actions secrets documented in `.github/workflows/deploy-tencent.yml` and run the workflow manually.
+## How a release reaches production
 
-Keep GitHub Pages active until the Tencent site passes link and mobile checks. Switch DNS only after that check.
+1. Push to `main` (or run `Deploy site` manually). Jekyll builds and CSS is processed.
+2. `bin/create-release-manifest.py` records the source revision and SHA-256 of every generated file in `release.json`.
+3. `zhaozhilong-deploy.timer` fetches the immutable `gh-pages` commit, verifies the archive and every checksum, and rejects a build if newer source is still building.
+4. Changed static files are backed up under `/opt/zhaozhilong-deploy/backups/`; assets are installed before HTML. Only files managed by a previous release can be removed. The version marker is written last.
+5. The server checks the main pages through local HTTPS and checks API health. Failure restores the changed files. A separate GitHub workflow waits for the public version marker and reports whether production reached the expected revision.
 
-## GitHub Actions secrets
+The deployer only writes `/var/www/zhaozhilong.com` and its own deployment state. It does not replace API code, SQLite data, Nginx configuration, or the other movie website. API changes require a separate backed-up deployment.
 
-Create these repository secrets before running `Deploy to Tencent Cloud`:
+## One-time setup
 
-- `TENCENT_HOST`: server public IP or deploy hostname
-- `TENCENT_USER`: SSH user with permission to write the web root and restart services
-- `TENCENT_SSH_KEY`: private key matching the server's authorized public key
-- `TENCENT_PORT` (optional, defaults to `22`)
-- `TENCENT_WEB_ROOT` (optional, defaults to `/var/www/zhaozhilong.com`)
+Copy this directory to the server, inspect it, then run:
+
+```sh
+sudo bash install-auto-deploy.sh
+```
+
+The service is installed at `/opt/zhaozhilong-deploy/pull-release.py`. Installing a new copy of this script is a separate maintenance action; web releases cannot update the privileged deployer automatically.
+
+## Status and recovery
+
+```sh
+systemctl status zhaozhilong-deploy.timer
+journalctl -u zhaozhilong-deploy.service -n 30 --no-pager
+sudo systemctl start zhaozhilong-deploy.service
+curl -fsS https://www.zhaozhilong.com/release.json
+```
+
+A failed checksum, download or health check leaves the previous release in place; the timer retries on its next run. If the public version does not advance, inspect the journal rather than treating a successful GitHub Pages build as production deployment success. Backups include `operations.json` with the changed, removed and previously existing files. Backups are retained for manual review; monitor disk use before pruning them.

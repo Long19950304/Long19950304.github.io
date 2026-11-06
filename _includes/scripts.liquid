@@ -13,7 +13,7 @@
   crossorigin="anonymous"
 ></script>
 
-{% if site.enable_masonry %}
+{% if site.enable_masonry and page.masonry %}
   <!-- Masonry & imagesLoaded -->
   <script
     defer
@@ -152,7 +152,7 @@
   <script src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.enable_medium_zoom %}
+{% if site.enable_medium_zoom and content contains 'data-zoomable' %}
   <!-- Medium Zoom JS -->
   <script
     defer
@@ -200,7 +200,7 @@
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 {% endif %}
 
-{% if site.enable_math %}
+{% if site.enable_math and page.math %}
   <!-- MathJax -->
   <script
     defer
@@ -212,11 +212,6 @@
   ></script>
   {% unless page.pseudocode %}
     <script src="{{ '/assets/js/mathjax-setup.js' | relative_url | bust_file_cache }}"></script>
-    <script
-      defer
-      src="{{ site.third_party_libraries.polyfill.url.js }}"
-      crossorigin="anonymous"
-    ></script>
   {% else %}
     <script src="{{ '/assets/js/pseudocode-setup.js' | relative_url | bust_file_cache }}"></script>
     <script

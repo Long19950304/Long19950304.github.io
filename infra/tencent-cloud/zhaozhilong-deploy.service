@@ -1,0 +1,16 @@
+[Unit]
+Description=Deploy verified personal website releases from GitHub
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/zhaozhilong-deploy/pull-release.py
+TimeoutStartSec=10min
+UMask=0022
+Nice=10
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/zhaozhilong-deploy /var/www/zhaozhilong.com

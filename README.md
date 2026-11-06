@@ -1,24 +1,10 @@
 # Personal Website — al-folio (GitHub Pages)
 
-This folder is a ready-to-publish **English** personal website using the **al-folio** academic theme.
+Bilingual academic website at https://www.zhaozhilong.com, built with Jekyll and al-folio.
 
-Target URL (your GitHub username):
-- https://www.zhaozhilong.com
-- Deployment: GitHub Actions builds the site and publishes the prebuilt `_site/` output to `gh-pages` (includes `.nojekyll`).
+Push to `main` to build and publish `gh-pages`. The existing Tencent Cloud server automatically pulls and verifies new static releases every two minutes. GitHub Actions also verifies that production reaches the expected source revision. Deployment setup, backups and troubleshooting: [infra/tencent-cloud/README.md](infra/tencent-cloud/README.md).
 
-## Publish (fastest)
-
-1) Create a GitHub repository named exactly:
-- `Long19950304.github.io`
-
-2) Copy **everything inside** `personal-site/` to the root of that repository.
-
-3) In GitHub, enable Pages:
-- `Settings` → `Pages`
-- Source: **Deploy from a branch**
-- Branch: **gh-pages** / Folder: **/(root)**
-
-4) Push to `main`. The included workflow `.github/workflows/deploy.yml` will build and publish the site to the `gh-pages` branch.
+Shared fonts and commonly used scripts are served from `assets/vendor/`. Vendor sources and licenses are kept there; ordinary pages do not load MathJax or Masonry unless their front matter opts in (`math: true`, `masonry: true`). Image zoom only loads when the rendered page contains zoomable images.
 
 ## What to edit first
 

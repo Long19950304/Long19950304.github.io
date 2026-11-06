@@ -21,22 +21,6 @@ sections:
       zh: 五邑大学博士科研启动项目
       en: Wuyi University Doctoral Research Start-up Project
     period: 2026–2031
-- id: teaching-projects
-  title:
-    zh: 主持教改项目
-    en: Teaching Development as Project Lead
-  items:
-  - title:
-      zh: 生成式人工智能赋能《数字摄影与摄像》智能影像生产教学改革与实践
-      en: 'Generative AI for Intelligent Image Production in Digital Photography and
-        Videography: Teaching Reform and Practice'
-    programme:
-      zh: 五邑大学2026年度校级“人工智能+”教育教学专项建设项目
-      en: Wuyi University 2026 AI+ Education and Teaching Development Programme
-    period: 2026–2028
-    status:
-      zh: 立项评审中
-      en: Application under review
 - id: talent
   title:
     zh: 省级人才项目

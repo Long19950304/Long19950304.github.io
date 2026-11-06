@@ -1,0 +1,11 @@
+[Unit]
+Description=Check for a new personal website release every two minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitInactiveSec=2min
+RandomizedDelaySec=10s
+Unit=zhaozhilong-deploy.service
+
+[Install]
+WantedBy=timers.target

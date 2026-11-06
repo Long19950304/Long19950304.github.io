@@ -9,6 +9,7 @@ on:
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
+      - "bin/create-release-manifest.py"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -40,6 +41,7 @@ on:
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
+      - "bin/create-release-manifest.py"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -110,6 +112,8 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Record verified release
+        run: python3 bin/create-release-manifest.py _site "$GITHUB_SHA"
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

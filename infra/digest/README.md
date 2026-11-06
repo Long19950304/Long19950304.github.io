@@ -58,3 +58,9 @@ The job uses a dedicated checkout on the SSD, leaving the user’s working direc
 On macOS the background interpreter needs removable-volume access separately from the interactive Codex app. The installer uses the available Python executable. If macOS asks to let Python access a removable volume, the user must allow it in the system dialog. An `Operation not permitted` in the job log means installation alone is insufficient; verify a real background run exits 0 and reports `already published; skipped` before describing the schedule as operational. Do not weaken or bypass macOS privacy controls. Keychain access must also be available to the background process.
 
 The schedule is publishing to the existing GitHub-to-Tencent release flow; it does not access site accounts, comments, likes or the API database.
+
+## Index cards and playback
+
+Both language indexes use `_includes/digest-index-card.liquid`: an original lightweight SVG cover, one edition date, actual top-three headlines and publisher names, with exact audio durations from public metadata. The cover is a reusable editorial illustration, not a photograph or a chart of actual market data. Cards automatically reflect future issues without daily image generation. The desktop layout places the cover beside the content; mobile uses a short cover above it.
+
+`assets/js/digest-card-player.js` provides direct Chinese/English play and pause, seeking, loading/error/end states and mutually exclusive playback across all index cards. Audio uses `preload="none"` and never autoplays. Switching language, filtering out a card or leaving the page pauses playback; late play responses cannot restart a cancelled track. Without JavaScript the labeled native audio controls remain available. Full text and sources remain linked from the card. Run `node --test infra/digest/test_card_player.cjs` for the media-state checks.

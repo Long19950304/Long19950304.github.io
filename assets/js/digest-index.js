@@ -5,6 +5,7 @@
   const search = root.querySelector('[data-digest-search]');
   const buttons = Array.from(root.querySelectorAll('[data-digest-filter]'));
   const cards = Array.from(root.querySelectorAll('[data-digest-card]'));
+  const empty = root.querySelector('[data-digest-empty]');
 
   let activeTag = 'all';
 
@@ -24,18 +25,23 @@
 
   const apply = () => {
     const q = normalize(search ? search.value : '');
+    let visible = 0;
     cards.forEach((card) => {
       const tags = normalize(card.dataset.tags || '');
       const title = normalize(card.dataset.title || '');
       const tagline = normalize(card.dataset.tagline || '');
+      const content = normalize(card.dataset.search || card.textContent);
 
       const tagOk = activeTag === 'all' ? true : tags.split(/\s+/).includes(activeTag);
       // Search also matches tags (so "ai", "health", "business" etc. work as expected).
-      const qOk = !q ? true : (title.includes(q) || tagline.includes(q) || tags.includes(q));
+      const qOk = !q ? true : (title.includes(q) || tagline.includes(q) || tags.includes(q) || content.includes(q));
 
       const wrap = cardWrap(card);
       wrap.style.display = tagOk && qOk ? '' : 'none';
+      if (tagOk && qOk) visible += 1;
+      else card.querySelectorAll('audio').forEach((audio) => audio.pause());
     });
+    if (empty) empty.hidden = visible > 0;
   };
 
   if (search) {

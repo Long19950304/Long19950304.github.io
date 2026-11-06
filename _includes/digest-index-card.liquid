@@ -1,0 +1,57 @@
+{% assign issue = include.issue %}
+{% assign meta = include.meta %}
+{% assign is_zh = false %}{% if page.lang == 'zh' %}{% assign is_zh = true %}{% endif %}
+{% assign source_names = meta.items | map: 'source' | uniq %}
+{% capture searchable %}{% for item in meta.items %}{{ item.title }} {{ item.title_zh }} {{ item.source }} {% endfor %}{% endcapture %}
+<article class="digest-index-card" data-digest-card data-tags="{{ include.tags | escape }}" data-title="{{ issue.title | escape }}" data-tagline="{{ include.tagline | strip | escape }}" data-search="{{ searchable | strip | escape }}">
+  <a class="digest-index-card__cover" href="{{ issue.url | relative_url }}" aria-label="{% if is_zh %}阅读 {{ issue.digest_date }} 简报{% else %}Read the {{ issue.digest_date }} briefing{% endif %}">
+    <span class="digest-index-card__cover-label">{% if is_zh %}每日简报{% else %}DAILY BRIEFING{% endif %}</span>
+    <img src="{{ '/assets/img/digests/briefing-cover.svg' | relative_url }}" width="720" height="540" alt="" loading="lazy">
+    <span class="digest-index-card__cover-caption">{% if is_zh %}财经 / 科技 / 研究{% else %}ECONOMY / TECHNOLOGY / RESEARCH{% endif %}</span>
+  </a>
+  <div class="digest-index-card__body">
+    <div class="digest-index-card__meta">
+      <time datetime="{{ issue.digest_date }}">{{ issue.digest_date }}</time>
+      {% if meta.items.size > 0 %}<span>{{ meta.items.size }} {% if is_zh %}条新闻{% else %}stories{% endif %}</span>{% endif %}
+    </div>
+    <h2 class="digest-index-card__title"><a href="{{ issue.url | relative_url }}">{% if is_zh %}财经、科技与研究{% else %}Economy, technology &amp; research{% endif %}</a></h2>
+    {% if meta.items.size > 0 %}
+    <ul class="digest-index-card__headlines">
+      {% for item in meta.items limit: 3 %}<li>{% if is_zh %}{{ item.title_zh | default: item.title | escape }}{% else %}{{ item.title | escape }}{% endif %}</li>{% endfor %}
+    </ul>
+    {% elsif include.tagline %}<p>{{ include.tagline | escape }}</p>{% endif %}
+    {% if source_names.size > 0 %}<p class="digest-index-card__sources">{% if is_zh %}来源{% else %}Sources{% endif %} · {% for source in source_names limit: 3 %}{{ source | escape }}{% unless forloop.last %} / {% endunless %}{% endfor %}{% if source_names.size > 3 %}{% if is_zh %} 等{% else %} + more{% endif %}{% endif %}</p>{% endif %}
+    {% if meta.audio %}
+    <div class="digest-card-player" data-digest-player>
+      <div class="digest-card-player__buttons" role="group" aria-label="{% if is_zh %}选择播报语言{% else %}Choose an audio edition{% endif %}">
+        {% assign languages = 'zh,en' | split: ',' %}
+        {% for language in languages %}
+          {% assign recording = meta.audio[language] %}
+          {% if recording %}
+          {% assign audio_id = 'briefing-' | append: include.date_key | append: '-' | append: language %}
+          {% assign minutes = recording.seconds | divided_by: 60 | floor %}{% assign seconds = recording.seconds | modulo: 60 | floor %}
+          <button type="button" class="digest-card-player__play" data-digest-play="{{ audio_id }}" aria-controls="{{ audio_id }}" aria-pressed="false" data-state="idle" data-label-play="{% if language == 'zh' %}播放中文{% else %}Play English{% endif %}" data-label-pause="{% if language == 'zh' %}暂停中文{% else %}Pause English{% endif %}" data-label-loading="{% if language == 'zh' %}正在加载中文{% else %}Loading English{% endif %}" aria-label="{% if language == 'zh' %}播放中文{% else %}Play English{% endif %}">
+            <svg class="digest-card-player__icon digest-card-player__icon--play" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2L13 8L4 14Z" fill="currentColor"/></svg>
+            <svg class="digest-card-player__icon digest-card-player__icon--pause" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2V14M12 2V14" stroke="currentColor" stroke-width="4"/></svg>
+            <span>{% if language == 'zh' %}中文播报{% else %}English{% endif %}</span><span class="digest-card-player__duration">{{ minutes }}:{% if seconds < 10 %}0{% endif %}{{ seconds }}</span>
+          </button>
+          <span class="digest-card-player__fallback">{% if language == 'zh' %}中文播报{% else %}English{% endif %} · {{ minutes }}:{% if seconds < 10 %}0{% endif %}{{ seconds }}</span>
+          <audio id="{{ audio_id }}" data-digest-recording controls preload="none" src="{{ recording.path | relative_url }}?v={{ recording.sha256 | slice: 0, 12 }}" aria-label="{% if language == 'zh' %}中文播报{% else %}English briefing{% endif %}"></audio>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="digest-card-player__progress" data-digest-progress hidden>
+        <label class="sr-only" for="seek-{{ include.date_key }}">{% if is_zh %}播放进度{% else %}Playback position{% endif %}</label>
+        <input id="seek-{{ include.date_key }}" type="range" min="0" max="1000" step="1" value="0" data-digest-seek>
+        <span class="digest-card-player__clock"><span data-digest-elapsed>0:00</span> / <span data-digest-total>0:00</span></span>
+      </div>
+      <p class="digest-card-player__status" data-digest-player-status role="status" aria-live="polite" data-ready="{% if is_zh %}选择语言，直接收听{% else %}Choose a language to listen here{% endif %}" data-loading="{% if is_zh %}正在加载音频…{% else %}Loading audio…{% endif %}" data-paused="{% if is_zh %}已暂停，可继续收听{% else %}Paused. Press play to resume.{% endif %}" data-playing="{% if is_zh %}正在播放{% else %}Playing{% endif %}" data-ended="{% if is_zh %}本期播报结束{% else %}End of this edition{% endif %}" data-error="{% if is_zh %}音频暂时无法加载，请重试或进入全文下载。{% else %}Audio could not load. Retry or open the full briefing to download.{% endif %}">{% if is_zh %}选择语言，直接收听{% else %}Choose a language to listen here{% endif %}</p>
+      <noscript><p>{% if is_zh %}使用上方原生播放器收听。{% else %}Use the audio controls above to listen.{% endif %}</p></noscript>
+    </div>
+    {% endif %}
+    <div class="digest-index-card__links">
+      <a href="{{ issue.url | relative_url }}">{% if is_zh %}阅读全文与来源{% else %}Full briefing &amp; sources{% endif %}<span aria-hidden="true"> ↗</span></a>
+      {% if include.alternate %}<a href="{{ include.alternate.url | relative_url }}" lang="{% if is_zh %}en{% else %}zh{% endif %}">{% if is_zh %}English text{% else %}中文全文{% endif %}</a>{% endif %}
+    </div>
+  </div>
+</article>

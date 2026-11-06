@@ -4,7 +4,7 @@ Bilingual academic website at https://www.zhaozhilong.com, built with Jekyll and
 
 Push to `main` to build and publish `gh-pages`. The existing Tencent Cloud server automatically pulls and verifies new static releases every two minutes. GitHub Actions also verifies that production reaches the expected source revision. Deployment setup, backups and troubleshooting: [infra/tencent-cloud/README.md](infra/tencent-cloud/README.md).
 
-Shared fonts and commonly used scripts are served from `assets/vendor/`. Vendor sources and licenses are kept there; ordinary pages do not load MathJax or Masonry unless their front matter opts in (`math: true`, `masonry: true`). Image zoom only loads when the rendered page contains zoomable images.
+Commonly used scripts are served from `assets/vendor/`. Fonts use the original Google Fonts stylesheet to preserve the preferred appearance. Vendor sources and licenses are kept in `assets/vendor/`; ordinary pages do not load MathJax or Masonry unless their front matter opts in (`math: true`, `masonry: true`). Image zoom only loads when the rendered page contains zoomable images.
 
 ## What to edit first
 

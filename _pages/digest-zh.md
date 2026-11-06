@@ -2,7 +2,7 @@
 layout: page
 title: 简报
 permalink: /zh/digest/
-description: 每日科技与研究简报，关注 AI 工具、科研方法和教育技术，提供中英文音频与原始来源。
+description: 国内外财经、科技与研究简报，提供中英文音频、权威报道和原始公告。
 nav: true
 nav_order: 8
 lang: zh
@@ -11,7 +11,7 @@ translation_key: digest
 
 {% assign digests = site.digests_zh | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
 {% assign latest_digest = digests | first %}
-<p>关注值得实际尝试的 AI 工具、科研方法与教育技术。新版每天提供中文和英文两套完整播报，每套约十分钟，并保留原始来源与播报文字。</p>
+<p>关注国内与国际财经、实用科技和研究进展。每天提供中文和英文两套完整播报，每套约十分钟，并保留原始公告、报道和播报文字。</p>
 {% if latest_digest %}
 <div class="digest-current"><strong>最近一期 · {{ latest_digest.digest_date }}</strong><br><a href="{{ latest_digest.url | relative_url }}">阅读与收听最新简报 →</a><br><small>以页面标注日期为准；来源不足或核验未通过时会延后更新。</small></div>
 {% endif %}
@@ -19,6 +19,7 @@ translation_key: digest
 <p class="small">
 <a href="{{ '/zh/digest/weekly/' | relative_url }}">每周汇总</a>
  · <a href="{{ '/zh/digest/feed.xml' | relative_url }}">RSS</a>
+ · <a href="{{ '/zh/digest/sources/' | relative_url }}">来源与筛选说明</a>
 </p>
 
 {% assign digests = site.digests_zh | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}

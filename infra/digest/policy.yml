@@ -1,4 +1,4 @@
-version: 1
+version: 2
 timezone: Asia/Shanghai
 lookback_hours: 48
 min_items: 5
@@ -16,13 +16,33 @@ tts_endpoint: https://api.minimaxi.com/v1/t2a_v2
 voice_zh: Chinese (Mandarin)_Gentleman
 voice_en: English_Graceful_Lady
 feed_proxy: http://127.0.0.1:7890
+min_economy_items: 2
+max_economy_items: 3
+min_technology_items: 3
+required_economy_coverage: [china, world]
+selection_instruction: >-
+  Include 2–3 finance/economy stories and 3–4 technology/research/education stories
+  within the existing 5–7 total. Include at least one mainland-China economy story
+  from a China-based authoritative source and one international economy story from
+  an international authoritative source. Set coverage to china/world/other for each
+  item according to the actual story, not the publisher's location. Do not use an
+  overseas story published by a Chinese outlet as domestic news. If balanced fresh
+  coverage is unavailable, hold publication rather than invent, backdate or recycle.
 # Fail closed. A technical article touching these topics is omitted as a whole.
 exclude_patterns:
+  - '\b(wars?|conflicts?|iran|iraq)\b|伊朗|伊拉克|地缘政治|武装冲突'
   - '\b(politic\w*|geopolitic\w*|elections?|presidents?|prime minister|parliament|congress|senators?|white house|government|governance|diploma\w*|sanctions?|tariffs?|export controls?|trade war|military|warfare|weapons?|defen[cs]e|missiles?|nuclear|terroris\w*|extremis\w*|protests?|censorship|propaganda|surveillance|human rights|sovereignty|territorial|taiwan|tibet|xinjiang|hong kong|russia|ukraine|israel|palestin\w*|trump|biden|xi jinping|communis\w*|democra\w*|fedramp|govcloud|pentagon|immigration|abortion|religio\w*|porn\w*|gambling|suicid\w*)\b'
   - '政治|政党|政府|执政|选举|总统|总理|议会|国会|白宫|外交|制裁|关税|出口管制|贸易战|军事|军用|国防|武器|战争|核武|恐怖|极端主义|抗议|示威|审查制度|舆论管控|宣传战|监控|人权|主权|领土|台湾|台独|西藏|新疆|香港|俄乌|乌克兰|以色列|巴勒斯坦|特朗普|拜登|习近平|共产党|宗教|色情|赌博|自杀'
   - '\b(buy now|price target|investment advice|guaranteed returns?|medical advice|cures? cancer)\b|投资建议|荐股|保证收益|包治|处方|用药建议'
 editorial_scope: >-
-  Only practical AI/software tools, reproducible research methods, teaching technology,
-  and non-clinical digital health research. No politics, public policy, conflict,
-  national security, identity disputes, investment advice, medical advice, rumours,
-  accusations, or predictions presented as facts. Exclude the whole story when in doubt.
+  Practical AI/software tools, reproducible research methods, teaching technology,
+  non-clinical digital health research, and factual domestic/international economic
+  statistics, company results, banking data, consumption and industry news from
+  authoritative agencies or established newsrooms. No politics, public-policy debate,
+  conflict, national security, identity disputes, stock recommendations, investment
+  advice, return promises, price forecasts, medical advice, rumours or accusations.
+  Economic coverage must identify the publisher, data period, units, currency,
+  year-on-year versus month-on-month, and preliminary/revised figures where relevant.
+  Distinguish reported facts from a suggested reading of the evidence. Do not infer
+  causation from market moves or combine incompatible statistics. Exclude the whole
+  story when in doubt; authoritative publication alone does not make a topic eligible.

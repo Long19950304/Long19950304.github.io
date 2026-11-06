@@ -7,7 +7,7 @@ permalink: /digest/feed.xml
   <channel>
     <title>Zhilong Zhao — Daily Digest</title>
     <link>{{ '/digest/' | absolute_url }}</link>
-    <description>Daily technology and research briefing with English audio and primary sources.</description>
+    <description>Daily China and world economy, technology and research briefing with English audio and attributable sources.</description>
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
@@ -24,7 +24,7 @@ permalink: /digest/feed.xml
       <guid isPermaLink="true">{{ d.url | absolute_url }}</guid>
       <pubDate>{{ d.digest_date | date_to_rfc822 }}</pubDate>
       <description>{{ tagline | default: "" | strip | truncate: 240 | xml_escape }}</description>
-      {% if meta.audio.en %}<enclosure url="{{ meta.audio.en.path | absolute_url | xml_escape }}" length="{{ meta.audio.en.bytes }}" type="audio/mpeg" />{% endif %}
+      {% if meta.audio.en %}<enclosure url="{{ meta.audio.en.path | absolute_url | xml_escape }}?v={{ meta.audio.en.sha256 | slice: 0, 12 }}" length="{{ meta.audio.en.bytes }}" type="audio/mpeg" />{% endif %}
     </item>
     {% endfor %}
   </channel>

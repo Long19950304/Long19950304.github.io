@@ -2,7 +2,7 @@
 layout: page
 title: Digest
 permalink: /digest/
-description: A daily briefing on useful AI tools, research methods and teaching technology, with Chinese and English audio and primary sources.
+description: A daily China and world economy, technology and research briefing, with Chinese and English audio, authoritative reporting and original releases.
 nav: true
 nav_order: 8
 lang: en
@@ -11,7 +11,7 @@ translation_key: digest
 
 {% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
 {% assign latest_digest = digests | first %}
-<p>Useful developments in AI tools, research methods and teaching technology. New editions include complete Chinese and English recordings, about ten minutes each, with primary sources and transcripts.</p>
+<p>Developments in the Chinese and world economy, useful technology and research. Each edition includes complete Chinese and English recordings, about ten minutes each, with original releases, reporting and transcripts.</p>
 {% if latest_digest %}
 <div class="digest-current"><strong>Latest edition · {{ latest_digest.digest_date }}</strong><br><a href="{{ latest_digest.url | relative_url }}">Read and listen to the latest briefing →</a><br><small>Check the edition date. Publication may be delayed when source coverage or verification is insufficient.</small></div>
 {% endif %}
@@ -19,6 +19,7 @@ translation_key: digest
 <p class="small">
 <a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
  · <a href="{{ '/digest/feed.xml' | relative_url }}">RSS</a>
+ · <a href="{{ '/digest/sources/' | relative_url }}">Sources and editorial checks</a>
 </p>
 
 {% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}

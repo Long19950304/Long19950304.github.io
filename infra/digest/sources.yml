@@ -1,6 +1,35 @@
-# The daily programme deliberately excludes general/world/political news feeds.
-# Official software release notes and technical blogs supply attributable evidence.
+# Authoritative economy sources plus attributable technical primary sources.
+# Every story still passes topic, evidence, freshness and bilingual review gates.
 sources:
+  - id: nbs-china
+    name: 国家统计局
+    category: Business & economy
+    topic: economy
+    region: china
+    authority: statistical_agency
+    index_url: https://www.stats.gov.cn/sj/zxfb/
+    link_pattern: '/sj/zxfb/\d{6}/t\d{8}_\d+\.html$'
+    date_pattern: 't(\d{8})_'
+    body_classes: [txt-content]
+    hosts: [www.stats.gov.cn]
+    direct: true
+    max_articles: 6
+  - id: xinhua-finance
+    name: 新华社财经
+    category: Business & economy
+    topic: economy
+    region: china
+    authority: news_agency
+    index_url: https://www.news.cn/fortune/index.htm
+    link_pattern: '/fortune/\d{8}/[a-zA-Z0-9]+/c\.html$'
+    date_pattern: '/(\d{8})/'
+    body_ids: [detailContent, detail-content]
+    hosts: [www.news.cn]
+    direct: true
+    max_articles: 12
+  - {id: bbc-business, name: BBC News Business, category: Business & economy, topic: economy, region: international, authority: public_media, url: 'https://feeds.bbci.co.uk/news/business/rss.xml', hosts: [www.bbc.co.uk, www.bbc.com], full_article: true, max_articles: 10}
+  - {id: bea-data, name: U.S. Bureau of Economic Analysis, category: Business & economy, topic: economy, region: international, authority: statistical_agency, url: 'https://apps.bea.gov/rss/rss.xml', hosts: [www.bea.gov, bea.gov], full_article: true, max_articles: 4}
+  - {id: ecb-data, name: European Central Bank, category: Business & economy, topic: economy, region: international, authority: central_bank, url: 'https://www.ecb.europa.eu/rss/press.html', hosts: [www.ecb.europa.eu], full_article: true, max_articles: 6}
   - {id: huggingface, name: Hugging Face, category: AI tools & model releases, url: 'https://huggingface.co/blog/feed.xml', hosts: [huggingface.co]}
   - {id: google-developers, name: Google Developers, category: Education / learning sciences / edtech, url: 'https://developers.googleblog.com/feeds/posts/default', hosts: [developers.googleblog.com]}
   - {id: github-blog, name: GitHub Engineering, category: Research tools, url: 'https://github.blog/engineering/feed/', hosts: [github.blog]}

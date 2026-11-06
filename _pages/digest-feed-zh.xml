@@ -7,7 +7,7 @@ permalink: /zh/digest/feed.xml
   <channel>
     <title>赵志龙 — 每日简报</title>
     <link>{{ '/zh/digest/' | absolute_url }}</link>
-    <description>每日科技与研究简报，含中文音频、播报文字与原始来源。</description>
+    <description>每日国内外财经、科技与研究简报，含中文音频、播报文字、公告与报道来源。</description>
     <language>zh</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% assign digests = site.digests_zh | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
@@ -27,7 +27,7 @@ permalink: /zh/digest/feed.xml
       <guid isPermaLink="true">{{ d.url | absolute_url }}</guid>
       <pubDate>{{ d.digest_date | date_to_rfc822 }}</pubDate>
       <description>{{ tagline | default: "" | strip | truncate: 240 | xml_escape }}</description>
-      {% if meta.audio.zh %}<enclosure url="{{ meta.audio.zh.path | absolute_url | xml_escape }}" length="{{ meta.audio.zh.bytes }}" type="audio/mpeg" />{% endif %}
+      {% if meta.audio.zh %}<enclosure url="{{ meta.audio.zh.path | absolute_url | xml_escape }}?v={{ meta.audio.zh.sha256 | slice: 0, 12 }}" length="{{ meta.audio.zh.bytes }}" type="audio/mpeg" />{% endif %}
     </item>
     {% endfor %}
   </channel>

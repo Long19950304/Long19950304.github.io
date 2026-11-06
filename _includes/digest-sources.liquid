@@ -1,0 +1,19 @@
+{% assign zh = false %}{% if page.lang == 'zh' %}{% assign zh = true %}{% endif %}
+<p class="small text-muted">{% if zh %}来源核查日期：{% else %}Sources checked: {% endif %}{{ site.data.digest_sources_public.checked_on }}{% if zh %}。已接入不代表每天都有合格报道；网络、发布时间和选题检查仍可能排除当天内容。{% else %}. A configured source may have no eligible stories on a given day. Availability, freshness and topic checks still apply.{% endif %}</p>
+{% assign groups = 'economy,technology' | split: ',' %}
+{% for group in groups %}
+<h2>{% if group == 'economy' %}{% if zh %}国内与国际财经来源{% else %}China and world economy sources{% endif %}{% else %}{% if zh %}科技与研究来源{% else %}Technology and research sources{% endif %}{% endif %}</h2>
+<div class="table-responsive">
+<table class="table table-sm">
+  <thead><tr><th>{% if zh %}来源{% else %}Source{% endif %}</th><th>{% if zh %}类型与用途{% else %}Type and use{% endif %}</th><th>{% if zh %}本次核查{% else %}Latest check{% endif %}</th></tr></thead>
+  <tbody>
+  {% for source in site.data.digest_sources_public.sources %}
+    {% if source.group == group %}
+    <tr><td><a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.name | escape }}</a></td><td>{% if zh %}{{ source.description_zh | escape }}{% else %}{{ source.description | escape }}{% endif %}</td><td>{% if source.available %}{% if zh %}入口可读取；初筛候选 {{ source.initial_candidates }} 条{% else %}Index reachable; {{ source.initial_candidates }} initially eligible{% endif %}{% else %}{% if zh %}本次读取失败，未采用{% else %}Unavailable in this check; not used{% endif %}{% endif %}</td></tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endfor %}
+<p>{% if zh %}路透社、《金融时报》、IMF 等未列为当前自动采集来源：本次候选地址失效、访问受限或无法稳定获取原文。不会绕过付费墙，也不会仅凭标题扩写新闻。{% else %}Reuters, the Financial Times and the IMF are not current automated sources: tested endpoints were unavailable, access-restricted or could not supply reliable article text. Paywalls are not bypassed, and headlines alone are not expanded into stories.{% endif %}</p>

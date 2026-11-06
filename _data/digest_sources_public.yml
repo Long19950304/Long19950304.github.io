@@ -1,0 +1,188 @@
+checked_on: '2026-11-06'
+sources:
+- id: nbs-china
+  name: 国家统计局
+  group: economy
+  url: https://www.stats.gov.cn/sj/zxfb/
+  description_zh: 统计机构原始数据；核对统计时期和修订口径
+  description: Official statistical releases; reference periods and revisions checked
+  available: true
+  initial_candidates: 0
+- id: xinhua-finance
+  name: 新华社财经
+  group: economy
+  url: https://www.news.cn/fortune/index.htm
+  description_zh: 国内通讯社财经报道；按实际事件区分国内与海外
+  description: News-agency economic reporting; geography checked against the actual
+    event
+  available: true
+  initial_candidates: 10
+- id: bbc-business
+  name: BBC News Business
+  group: economy
+  url: https://feeds.bbci.co.uk/news/business/rss.xml
+  description_zh: 国际公共媒体商业报道；须读取原文
+  description: International public-service business reporting; full article required
+  available: true
+  initial_candidates: 2
+- id: bea-data
+  name: U.S. Bureau of Economic Analysis
+  group: economy
+  url: https://apps.bea.gov/rss/rss.xml
+  description_zh: 统计机构原始数据；核对统计时期和修订口径
+  description: Official statistical releases; reference periods and revisions checked
+  available: true
+  initial_candidates: 0
+- id: ecb-data
+  name: European Central Bank
+  group: economy
+  url: https://www.ecb.europa.eu/rss/press.html
+  description_zh: 央行银行业及经济数据；不采用政治或政策争议评论
+  description: Central-bank banking/economic data; political and policy debates excluded
+  available: true
+  initial_candidates: 1
+- id: huggingface
+  name: Hugging Face
+  group: technology
+  url: https://huggingface.co/blog/feed.xml
+  description_zh: 研究者与开发者文章；非平台认证或独立评测
+  description: Researcher/developer articles; not platform certification or independent
+    testing
+  available: true
+  initial_candidates: 4
+- id: google-developers
+  name: Google Developers
+  group: technology
+  url: https://developers.googleblog.com/feeds/posts/default
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: github-blog
+  name: GitHub Engineering
+  group: technology
+  url: https://github.blog/engineering/feed/
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: google-research
+  name: Google Research
+  group: technology
+  url: https://research.google/blog/rss/
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 1
+- id: google-ai
+  name: Google AI
+  group: technology
+  url: https://blog.google/technology/ai/rss/
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 1
+- id: openai
+  name: OpenAI
+  group: technology
+  url: https://openai.com/news/rss.xml
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: ruff
+  name: Ruff releases
+  group: technology
+  url: https://github.com/astral-sh/ruff/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 1
+- id: zed
+  name: Zed releases
+  group: technology
+  url: https://github.com/zed-industries/zed/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 1
+- id: uv
+  name: uv releases
+  group: technology
+  url: https://github.com/astral-sh/uv/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: dify
+  name: Dify releases
+  group: technology
+  url: https://github.com/langgenius/dify/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: comfyui
+  name: ComfyUI releases
+  group: technology
+  url: https://github.com/Comfy-Org/ComfyUI/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: jupyterlab
+  name: JupyterLab releases
+  group: technology
+  url: https://github.com/jupyterlab/jupyterlab/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: pandas
+  name: pandas releases
+  group: technology
+  url: https://github.com/pandas-dev/pandas/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 1
+- id: scikit-learn
+  name: scikit-learn releases
+  group: technology
+  url: https://github.com/scikit-learn/scikit-learn/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: ollama
+  name: Ollama releases
+  group: technology
+  url: https://github.com/ollama/ollama/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: vllm
+  name: vLLM releases
+  group: technology
+  url: https://github.com/vllm-project/vllm/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: transformers
+  name: Transformers releases
+  group: technology
+  url: https://github.com/huggingface/transformers/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: true
+  initial_candidates: 0
+- id: quarto
+  name: Quarto releases
+  group: technology
+  url: https://github.com/quarto-dev/quarto-cli/releases
+  description_zh: 维护者或厂商原始发布；性能主张注明归属
+  description: Maintainer/vendor primary publication; performance claims attributed
+  available: false
+  initial_candidates: 0

@@ -5,29 +5,29 @@ weeks:
   issues:
   - '2026-11-06'
   highlights_news:
-  - title: GitHub details a Git storage architecture for concurrent agents
-    title_zh: GitHub详解面向并发智能体的Git存储架构
-    url: https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture
-    source: GitHub Engineering
-    category: Research tools
-  - title: Ruff 0.17.4 improves diagnostics and formatting performance
-    title_zh: Ruff 0.17.4改进诊断显示与格式化性能
-    url: https://github.com/astral-sh/ruff/releases/tag/0.17.4
-    source: Ruff releases
-    category: Research tools
-  - title: Agile Deliberation helps define subjective image classifiers
-    title_zh: Agile Deliberation帮助定义主观图像分类器
+  - title: Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy
+    title_zh: 山东沿黄城市推进智能制造与绿色能源
+    url: https://www.news.cn/fortune/20261106/c681ecdb253a4931bf79a846e1afa3ae/c.html
+    source: 新华社财经
+    category: Business & economy
+  - title: ECB Publishes Consolidated EU Banking Data for End-June 2026
+    title_zh: 欧洲央行发布截至2026年6月底的欧盟银行合并数据
+    url: https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html
+    source: European Central Bank
+    category: Business & economy
+  - title: Agile Deliberation Makes Subjective Image Labeling Interactive
+    title_zh: Agile Deliberation把主观图像标签转化为交互过程
     url: https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas
     source: Google Research
     category: Research tools
   highlights_ai:
-  - title: Dharma Field Extractor turns document images into structured JSON
-    title_zh: Dharma Field Extractor将文档图像转为结构化JSON
-    url: https://huggingface.co/blog/Dharma-AI/dharma-field-extractor
+  - title: NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints
+    title_zh: 英伟达为Cosmos 3新增四个开放权重模拟检查点
+    url: https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation
     source: Hugging Face
     category: AI tools & model releases
-  - title: Phonon brings on-device text-to-speech to Transformers
-    title_zh: Phonon将端侧文字转语音带入Transformers
-    url: https://huggingface.co/blog/phonon-tts
-    source: Hugging Face
+  - title: Gemini Omni 1.2 Flash Adds Longer Video and Conversational Editing
+    title_zh: Gemini Omni 1.2 Flash加入更长视频与对话式编辑
+    url: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash
+    source: Google AI
     category: AI tools & model releases

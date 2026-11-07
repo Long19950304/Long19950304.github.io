@@ -112,11 +112,21 @@ ninja.data = [{
           description: "Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy · ECB Publishes Consolidated EU Banking Data for End-June 2026 · NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-11-06/";
+            },},{id: "digests-daily-economy-technology-amp-research-brief-2026-11-07",
+          title: 'Daily Economy, Technology &amp;amp; Research Brief · 2026-11-07',
+          description: "Heritage brands expand China channels at CIIE · ORIX Aviation to acquire AerFin in £475m deal · ToyBlocks Offers Controlled Robot-Learning Tests",
+          section: "Digests",handler: () => {
+              window.location.href = "/digest/2026-11-07/";
             },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-06",
           title: '每日财经、科技与研究简报 · 2026-11-06',
           description: "山东沿黄城市推进智能制造与绿色能源；欧洲央行发布截至2026年6月底的欧盟银行合并数据；英伟达为Cosmos 3新增四个开放权重模拟检查点",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-11-06/";
+            },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-07",
+          title: '每日财经、科技与研究简报 · 2026-11-07',
+          description: "进博会环球国民品牌展示区加速海外品牌拓展中国市场；ORIX Aviation以约4.75亿英镑收购AerFin；ToyBlocks提供可控的机器人学习评测环境",
+          section: "Digests_zh",handler: () => {
+              window.location.href = "/zh/digest/2026-11-07/";
             },},{id: "projects-ai-for-social-science",
           title: 'AI for Social Science',
           description: "Reliable AI-assisted coding, confidence calibration, and human review in social science research.",

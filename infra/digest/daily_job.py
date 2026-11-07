@@ -20,7 +20,7 @@ def run():
         print('Digest scheduler: external SSD is not mounted', flush=True)
         return 1
     now = dt.datetime.now(ZoneInfo('Asia/Shanghai'))
-    if now.hour < 8: return 0
+    if now.hour < 7: return 0
     day = now.date().isoformat()
     work = BASE / 'runs' / day
     with (BASE / 'scheduler.lock').open('w') as lock:

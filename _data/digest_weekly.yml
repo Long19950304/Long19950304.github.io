@@ -4,6 +4,7 @@ weeks:
   end: '2026-11-08'
   issues:
   - '2026-11-06'
+  - '2026-11-07'
   highlights_news:
   - title: Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy
     title_zh: 山东沿黄城市推进智能制造与绿色能源
@@ -20,6 +21,26 @@ weeks:
     url: https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas
     source: Google Research
     category: Research tools
+  - title: Heritage brands expand China channels at CIIE
+    title_zh: 进博会环球国民品牌展示区加速海外品牌拓展中国市场
+    url: https://www.news.cn/fortune/20261107/a770c5616a284ef28108029e413c4f40/c.html
+    source: 新华社财经
+    category: Business & economy
+  - title: ORIX Aviation to acquire AerFin in £475m deal
+    title_zh: ORIX Aviation以约4.75亿英镑收购AerFin
+    url: https://www.bbc.co.uk/news/articles/cq203vjxnln7o
+    source: BBC News Business
+    category: Business & economy
+  - title: Humanoid Robots Move Toward Practical Tasks
+    title_zh: 具身智能从展台表演走向实际服务
+    url: https://www.news.cn/fortune/20261106/bf076be9b61e4bf5a7f2bdb4c69d646a/c.html
+    source: 新华社财经
+    category: Business & economy
+  - title: JupyterLab 4.6.6 Fixes Workflow and Interface Bugs
+    title_zh: JupyterLab 4.6.6 修复工作流与界面问题
+    url: https://github.com/jupyterlab/jupyterlab/releases/tag/v4.6.6
+    source: JupyterLab releases
+    category: Research tools
   highlights_ai:
   - title: NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints
     title_zh: 英伟达为Cosmos 3新增四个开放权重模拟检查点
@@ -30,4 +51,14 @@ weeks:
     title_zh: Gemini Omni 1.2 Flash加入更长视频与对话式编辑
     url: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash
     source: Google AI
+    category: AI tools & model releases
+  - title: ToyBlocks Offers Controlled Robot-Learning Tests
+    title_zh: ToyBlocks提供可控的机器人学习评测环境
+    url: https://huggingface.co/blog/allenai/toyblocks
+    source: Hugging Face
+    category: AI tools & model releases
+  - title: Hugging Face Adds Egyptian and Nigerian English ASR Data
+    title_zh: Hugging Face 为埃及和尼日利亚英语语音识别榜单加入私有数据
+    url: https://huggingface.co/blog/open-asr-leaderboard-liva
+    source: Hugging Face
     category: AI tools & model releases

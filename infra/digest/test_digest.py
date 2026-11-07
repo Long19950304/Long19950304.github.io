@@ -28,6 +28,86 @@ class PublicationTests(unittest.TestCase):
     def test_valid_evidence_and_bilingual_lengths(self):
         self.assertEqual(len(d.validate_issue(self.issue, self.candidates, self.policy)), 5)
 
+    def test_resume_archives_incomplete_or_wrong_language_draft(self):
+        for problem in ('missing_script', 'wrong_language', 'invalid_json', 'wrong_shape'):
+            with self.subTest(problem=problem), tempfile.TemporaryDirectory() as tmp:
+                work = Path(tmp)
+                broken = copy.deepcopy(self.issue)
+                if problem == 'missing_script': del broken['items'][2]['script_zh']
+                if problem == 'wrong_language': broken['items'][0]['script'] = '这是中文稿件。' * 250
+                if problem == 'wrong_shape': broken = []
+                if problem == 'invalid_json': (work / 'draft.json').write_text('{')
+                else: d.save_json(work / 'draft.json', broken)
+                with mock.patch.object(d, 'draft', return_value=self.issue) as regenerate:
+                    result = d.resume_or_draft('2026-11-07', self.candidates, work, self.policy)
+                self.assertEqual(result, self.issue)
+                regenerate.assert_called_once()
+                self.assertEqual(len(list(work.glob('invalid-draft-*.json'))), 1)
+                self.assertTrue((work / 'draft-recovery.json').exists())
+
+    def test_resume_reuses_valid_draft_without_regeneration(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);d.save_json(work / 'draft.json', self.issue)
+            with mock.patch.object(d, 'draft') as regenerate:
+                self.assertEqual(d.resume_or_draft('2026-11-07', self.candidates, work, self.policy), self.issue)
+                regenerate.assert_not_called()
+
+    def test_short_sources_are_not_offered_for_long_narration(self):
+        substantial = [{**c, 'evidence': c['evidence'] * 10} for c in self.candidates]
+        short = {**self.candidates[0], 'id': 'short'}
+        selected = [{'id': str(i + 1), 'coverage': it['coverage']} for i, it in enumerate(self.issue['items'])]
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'llm', return_value={'items': selected}) as call, mock.patch.object(d, 'compose_issue', return_value=self.issue):
+            d.draft('2026-11-07', substantial + [short], Path(tmp), self.policy)
+            offered = call.call_args.args[2]['candidates']
+            self.assertEqual([c['id'] for c in offered], ['1', '2', '3', '4', '5'])
+            self.assertEqual([c['evidence'] for c in offered], [c['evidence'] for c in substantial])
+
+    def test_partial_selection_is_rechecked_and_reused(self):
+        substantial = [{**c, 'evidence': c['evidence'] * 10} for c in self.candidates]
+        selected = [{'id': it['id'], 'coverage': it['coverage']} for it in self.issue['items']]
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);d.save_json(work / 'selection.json', {'items': selected})
+            with mock.patch.object(d, 'llm') as call, mock.patch.object(d, 'compose_issue', return_value=self.issue) as compose:
+                d.draft('2026-11-07', substantial, work, self.policy)
+                call.assert_not_called()
+                self.assertEqual(compose.call_args.args[1], selected)
+
+    def test_length_correction_is_targeted_and_does_not_bypass_validation(self):
+        issue = copy.deepcopy(self.issue)
+        issue['items'][0]['script'] = ' '.join(['research'] * 100)
+        original = copy.deepcopy(issue)
+        with mock.patch.object(d, 'llm', return_value={'script': self.issue['items'][0]['script']}) as call:
+            d.balance_english_length(issue, {c['id']: c for c in self.candidates}, self.policy)
+        self.assertEqual(len(d.validate_issue(issue, self.candidates, self.policy)), 5)
+        self.assertEqual(issue['items'][1:], original['items'][1:])
+        call.assert_called_once()
+
+    def test_per_story_generation_repairs_missing_field_and_reuses_caches(self):
+        selection = [{'id': it['id'], 'coverage': it['coverage']} for it in self.issue['items']]
+        malformed_once = set()
+        def generate(policy, system, payload, **kwargs):
+            source = payload['source']
+            if 'script_zh' in system:
+                return {k: self.issue['items'][0][k] for k in ('title_zh', 'summary_zh', 'script_zh')}
+            if source['id'] == '0' and not malformed_once:
+                malformed_once.add('0')
+                return {'title': 'Missing narration'}
+            return {'title': 'Research update', 'summary': 'A documented update.',
+                    'script': ' '.join(['research'] * 225), 'evidence_quote': source['evidence']}
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'llm', side_effect=generate) as call:
+            work = Path(tmp)
+            result = d.compose_issue('2026-11-07', selection, self.candidates, work, self.policy)
+            self.assertEqual(len(d.validate_issue(result, self.candidates, self.policy)), 5)
+            self.assertEqual(call.call_count, 11)
+            self.assertTrue(any('previous_copy' in c.args[2] for c in call.call_args_list))
+            call.reset_mock()
+            cached = d.compose_issue('2026-11-07', selection, self.candidates, work, self.policy)
+            self.assertEqual(cached, result)
+            call.assert_not_called()
+            next((work / 'story-drafts').glob('*-en-*.json')).write_text('{')
+            d.compose_issue('2026-11-07', selection, self.candidates, work, self.policy)
+            call.assert_called_once()
+
     def test_sensitive_topics_in_either_language_block(self):
         for value in ('election', 'export controls', 'military applications', 'global oil prices affected by war', 'conflict in Iran', '台湾', '政策由政府制定'):
             with self.subTest(value=value):
@@ -81,6 +161,19 @@ class PublicationTests(unittest.TestCase):
         self.assertIn('1.2', ' '.join(parts))
         self.assertIn('数值0.834。', ' '.join(parts))
         self.assertTrue(all(len(part) <= 90 for part in parts))
+
+    def test_speech_network_retry_is_bounded_without_billing_fallback(self):
+        result = {'base_resp': {'status_code': 0}}
+        with mock.patch.object(d.time, 'sleep'), mock.patch.object(d, 'request_json', side_effect=[TimeoutError(), result]) as call:
+            self.assertEqual(d.speech_request(self.policy, {'text': 'News'}, 'test-credential'), result)
+            self.assertEqual(call.call_count, 2)
+            for request in call.call_args_list:
+                self.assertEqual(request.args[0], self.policy['tts_endpoint'])
+                self.assertEqual(request.args[2], 'test-credential')
+        with mock.patch.object(d.time, 'sleep'), mock.patch.object(d, 'request_json', side_effect=TimeoutError()) as call:
+            with self.assertRaisesRegex(RuntimeError, 'bounded retry'):
+                d.speech_request(self.policy, {}, 'test-credential')
+            self.assertEqual(call.call_count, 2)
 
     def test_economy_requires_domestic_and_international_authority(self):
         self.issue['items'][0]['coverage'] = 'world'

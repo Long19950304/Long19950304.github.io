@@ -1,4 +1,4 @@
-checked_on: '2026-11-06'
+checked_on: '2026-11-07'
 sources:
 - id: nbs-china
   name: 国家统计局
@@ -16,7 +16,7 @@ sources:
   description: News-agency economic reporting; geography checked against the actual
     event
   available: true
-  initial_candidates: 10
+  initial_candidates: 8
 - id: bbc-business
   name: BBC News Business
   group: economy
@@ -24,7 +24,7 @@ sources:
   description_zh: 国际公共媒体商业报道；须读取原文
   description: International public-service business reporting; full article required
   available: true
-  initial_candidates: 2
+  initial_candidates: 3
 - id: bea-data
   name: U.S. Bureau of Economic Analysis
   group: economy
@@ -49,7 +49,7 @@ sources:
   description: Researcher/developer articles; not platform certification or independent
     testing
   available: true
-  initial_candidates: 4
+  initial_candidates: 3
 - id: google-developers
   name: Google Developers
   group: technology
@@ -73,7 +73,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: google-ai
   name: Google AI
   group: technology
@@ -105,7 +105,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: uv
   name: uv releases
   group: technology
@@ -137,7 +137,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 0
+  initial_candidates: 1
 - id: pandas
   name: pandas releases
   group: technology
@@ -145,7 +145,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: scikit-learn
   name: scikit-learn releases
   group: technology
@@ -177,12 +177,12 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 0
+  initial_candidates: 1
 - id: quarto
   name: Quarto releases
   group: technology
   url: https://github.com/quarto-dev/quarto-cli/releases
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
-  available: false
+  available: true
   initial_candidates: 0

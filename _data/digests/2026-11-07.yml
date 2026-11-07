@@ -1,0 +1,101 @@
+date: '2026-11-07'
+note: Heritage brands expand China channels at CIIE · ORIX Aviation to acquire AerFin
+  in £475m deal · ToyBlocks Offers Controlled Robot-Learning Tests
+note_zh: 进博会环球国民品牌展示区加速海外品牌拓展中国市场；ORIX Aviation以约4.75亿英镑收购AerFin；ToyBlocks提供可控的机器人学习评测环境
+edition: daily-audio
+policy_version: 3
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-07-zh.mp3
+    seconds: 597.6
+    bytes: 4781708
+    sha256: 3cd63fc81ee7233e88d3f8796bc1ed2b457da16b5119bb605df11c0f1777205c
+  en:
+    path: /assets/audio/digests/2026-11-07-en.mp3
+    seconds: 719.3
+    bytes: 5755148
+    sha256: 5b20c187ee678f5d229b58402c92426e10603e34e6fca37c91455817cb82b1ce
+items:
+- title: Heritage brands expand China channels at CIIE
+  title_zh: 进博会环球国民品牌展示区加速海外品牌拓展中国市场
+  url: https://www.news.cn/fortune/20261107/a770c5616a284ef28108029e413c4f40/c.html
+  published: '2026-11-07T00:00:00+08:00'
+  source: 新华社财经
+  category: Business & economy
+  source_id: xinhua-finance
+  authority: news_agency
+  coverage: china
+  why: Xinhua Finance reported on November 7, 2026, that the ninth China International
+    Import Expo featured about 100 established overseas brands, including more than
+    30 with histories exceeding 100 years. Vendors discussed potential retail, e-commerce,
+    localised product development and AI-assisted customer targeting, without reported
+    sales outcomes for these initiatives.
+  why_zh: 新华社财经2026年11月7日报道，第九届进博会首次设立环球国民品牌展示区，约100个海外品牌参展，其中30多个品牌历史超过100年。参展商正讨论直营店、跨境电商、本土化研发和AI客群匹配，但报道未公布相关举措的量化销售结果。
+- title: ORIX Aviation to acquire AerFin in £475m deal
+  title_zh: ORIX Aviation以约4.75亿英镑收购AerFin
+  url: https://www.bbc.co.uk/news/articles/cq203vjxnln7o
+  published: '2026-11-05T11:01:06+00:00'
+  source: BBC News Business
+  category: Business & economy
+  source_id: bbc-business
+  authority: public_media
+  coverage: world
+  why: BBC News Business reported that Japanese firm ORIX Aviation has agreed to acquire
+    Newport-based AerFin in a deal worth about £475m. The company employs more than
+    230 people and said there are no plans to move its headquarters from Newport.
+  why_zh: BBC News Business报道，日本ORIX Aviation已同意收购总部位于纽波特的AerFin，交易价值约4.75亿英镑。AerFin雇用超过230人，并表示暂无搬迁纽波特总部的计划。
+- title: ToyBlocks Offers Controlled Robot-Learning Tests
+  title_zh: ToyBlocks提供可控的机器人学习评测环境
+  url: https://huggingface.co/blog/allenai/toyblocks
+  published: '2026-11-06T14:00:48+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  source_id: huggingface
+  authority: developer_primary
+  coverage: world
+  why: Hugging Face published a November 6, 2026 report introducing ToyBlocks, an
+    open simulation framework for robot learning and evaluation. AllenAI reports reproducible
+    experiments on data generation, model generalization, hierarchical planning, world
+    models, and transfer from simulation to a physical robot.
+  why_zh: Hugging Face于2026年11月6日报道，AllenAI推出开放模拟框架ToyBlocks，用于机器人学习与评测。报告称，其实验覆盖数据生成、泛化、分层规划、世界模型以及从仿真迁移到实体机器人的测试。
+- title: Humanoid Robots Move Toward Practical Tasks
+  title_zh: 具身智能从展台表演走向实际服务
+  url: https://www.news.cn/fortune/20261106/bf076be9b61e4bf5a7f2bdb4c69d646a/c.html
+  published: '2026-11-06T00:00:00+08:00'
+  source: 新华社财经
+  category: Business & economy
+  source_id: xinhua-finance
+  authority: news_agency
+  coverage: china
+  why: Xinhua reported on 6 November 2026 that humanoid robots demonstrated photography,
+    hotel service, luggage handling and tea preparation at the ninth China International
+    Import Expo in Shanghai. Company representatives said deployment still faces precise-control,
+    energy-consumption and interaction-safety constraints.
+  why_zh: 新华社2026年11月6日报道，第九届中国国际进口博览会上，人形机器人展示了拍照、酒店服务、搬运行李和泡茶等工作场景。企业代表认为真实环境部署是规模化落地的关键，但精确操控、运动能耗和交互安全仍待解决。
+- title: Hugging Face Adds Egyptian and Nigerian English ASR Data
+  title_zh: Hugging Face 为埃及和尼日利亚英语语音识别榜单加入私有数据
+  url: https://huggingface.co/blog/open-asr-leaderboard-liva
+  published: '2026-11-06T00:00:00+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  source_id: huggingface
+  authority: developer_primary
+  coverage: world
+  why: Hugging Face reports that a Liva AI collaboration adds private conversational
+    speech datasets for Egyptian and Nigerian English to its Open ASR Leaderboard.
+    The update also adds a Kachru Three Circles-based accent breakdown.
+  why_zh: Hugging Face 宣布，Liva AI 合作新增了涵盖埃及与尼日利亚英语的私有对话语音数据集。榜单还加入了基于卡奇鲁“三圈”的口音分组。
+- title: JupyterLab 4.6.6 Fixes Workflow and Interface Bugs
+  title_zh: JupyterLab 4.6.6 修复工作流与界面问题
+  url: https://github.com/jupyterlab/jupyterlab/releases/tag/v4.6.6
+  published: '2026-11-06T14:18:02+00:00'
+  source: JupyterLab releases
+  category: Research tools
+  source_id: jupyterlab
+  authority: developer_primary
+  coverage: world
+  why: JupyterLab released version 4.6.6 with fixes spanning notebooks, Markdown,
+    debugging, uploads, extensions, navigation, and interface behavior. The release
+    notes also include dependency maintenance and documentation improvements, though
+    the source does not provide performance measurements or quantified user outcomes.
+  why_zh: JupyterLab 发布 4.6.6，修复笔记本、Markdown、调试、文件操作、扩展启用和界面导航等问题。发布说明还列出依赖维护与文档改进，但未提供性能测量或量化的用户结果。

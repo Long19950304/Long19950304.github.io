@@ -27,7 +27,7 @@ sources:
     hosts: [www.news.cn]
     direct: true
     max_articles: 12
-  - {id: bbc-business, name: BBC News Business, category: Business & economy, topic: economy, region: international, authority: public_media, url: 'https://feeds.bbci.co.uk/news/business/rss.xml', hosts: [www.bbc.co.uk, www.bbc.com], full_article: true, max_articles: 10}
+  - {id: bbc-business, name: BBC News Business, category: Business & economy, topic: economy, region: international, authority: public_media, url: 'https://feeds.bbci.co.uk/news/business/rss.xml', hosts: [www.bbc.co.uk, www.bbc.com], full_article: true, max_articles: 25}
   - {id: bea-data, name: U.S. Bureau of Economic Analysis, category: Business & economy, topic: economy, region: international, authority: statistical_agency, url: 'https://apps.bea.gov/rss/rss.xml', hosts: [www.bea.gov, bea.gov], full_article: true, max_articles: 4}
   - {id: ecb-data, name: European Central Bank, category: Business & economy, topic: economy, region: international, authority: central_bank, url: 'https://www.ecb.europa.eu/rss/press.html', hosts: [www.ecb.europa.eu], full_article: true, max_articles: 6}
   - {id: huggingface, name: Hugging Face, category: AI tools & model releases, url: 'https://huggingface.co/blog/feed.xml', hosts: [huggingface.co]}

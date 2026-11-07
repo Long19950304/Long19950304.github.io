@@ -30,7 +30,7 @@ def install():
     plist = {'Label': LABEL,
              'ProgramArguments': [python, str(launcher / 'daily_job.py')],
              'EnvironmentVariables': {'PATH': f'{Path.home()}/.local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin'},
-             'StartCalendarInterval': {'Hour': 8, 'Minute': 0}, 'StartInterval': 1800,
+             'StartCalendarInterval': {'Hour': 7, 'Minute': 0}, 'StartInterval': 1800,
              'RunAtLoad': True, 'ProcessType': 'Background',
              'StandardOutPath': str(logs / 'stdout.log'),
              'StandardErrorPath': str(logs / 'stderr.log')}
@@ -39,7 +39,7 @@ def install():
     domain = 'gui/' + str(os.getuid())
     subprocess.run(['launchctl', 'bootout', domain + '/' + LABEL], capture_output=True)
     subprocess.run(['launchctl', 'bootstrap', domain, str(dest)], check=True)
-    print(f'Installed {LABEL}: 08:00 Asia/Shanghai, catch-up every 30 minutes after 08:00, at most 3 attempts/day')
+    print(f'Installed {LABEL}: preparation at 07:00 Asia/Shanghai for an approximately 08:00 edition, catch-up every 30 minutes, at most 3 attempts/day')
 
 
 if __name__ == '__main__': install()

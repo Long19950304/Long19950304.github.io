@@ -117,6 +117,11 @@ ninja.data = [{
           description: "Heritage brands expand China channels at CIIE · ORIX Aviation to acquire AerFin in £475m deal · ToyBlocks Offers Controlled Robot-Learning Tests",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-11-07/";
+            },},{id: "digests-daily-economy-technology-amp-research-brief-2026-11-08",
+          title: 'Daily Economy, Technology &amp;amp; Research Brief · 2026-11-08',
+          description: "Exhibitors localize products for finer consumer needs · Beef Prices Stabilize, but Relief Looks Limited · Prefect 3.9.2 improves workflow reliability",
+          section: "Digests",handler: () => {
+              window.location.href = "/digest/2026-11-08/";
             },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-06",
           title: '每日财经、科技与研究简报 · 2026-11-06',
           description: "山东沿黄城市推进智能制造与绿色能源；欧洲央行发布截至2026年6月底的欧盟银行合并数据；英伟达为Cosmos 3新增四个开放权重模拟检查点",
@@ -127,6 +132,11 @@ ninja.data = [{
           description: "进博会环球国民品牌展示区加速海外品牌拓展中国市场；ORIX Aviation以约4.75亿英镑收购AerFin；ToyBlocks提供可控的机器人学习评测环境",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-11-07/";
+            },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-08",
+          title: '每日财经、科技与研究简报 · 2026-11-08',
+          description: "进博会展商围绕中国消费需求调整产品；加拿大牛肉价格趋稳，但降价空间有限；Prefect 3.9.2更新聚焦工作流可靠性",
+          section: "Digests_zh",handler: () => {
+              window.location.href = "/zh/digest/2026-11-08/";
             },},{id: "projects-ai-for-social-science",
           title: 'AI for Social Science',
           description: "Reliable AI-assisted coding, confidence calibration, and human review in social science research.",

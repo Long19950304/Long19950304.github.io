@@ -39,7 +39,7 @@ def install():
     domain = 'gui/' + str(os.getuid())
     subprocess.run(['launchctl', 'bootout', domain + '/' + LABEL], capture_output=True)
     subprocess.run(['launchctl', 'bootstrap', domain, str(dest)], check=True)
-    print(f'Installed {LABEL}: preparation at 07:00 Asia/Shanghai for an approximately 08:00 edition, catch-up every 30 minutes, at most 3 attempts/day')
+    print(f'Installed {LABEL}: preparation at 07:00 Asia/Shanghai, three early attempts and further source checks at 10/12/14/16/18, at most 8 attempts/day')
 
 
 if __name__ == '__main__': install()

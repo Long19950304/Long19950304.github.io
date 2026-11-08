@@ -19,6 +19,8 @@ translation_key: digest
 </p>
 
 
+{% include digest-status.liquid latest=digests.first %}
+
 {% if digests.size == 0 %}
 <p>暂时还没有简报。</p>
 {% else %}

@@ -1,0 +1,5 @@
+{% assign delivery = site.data.digest_status %}
+{% assign latest_date = include.latest.digest_date | date: '%Y-%m-%d' %}
+{% if delivery.state == 'delayed' and delivery.date > latest_date %}
+<p class="alert alert-light border" role="status">{% if page.lang == 'zh' %}{{ delivery.date }} 简报尚未通过全部制作与审核检查，暂缓发布。通过后会更新；下方为最近已发布版本。{% else %}The {{ delivery.date }} edition is delayed while production and editorial checks are completed. The latest published edition remains available below.{% endif %}</p>
+{% endif %}

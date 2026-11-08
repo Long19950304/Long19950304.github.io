@@ -28,6 +28,37 @@ class PublicationTests(unittest.TestCase):
     def test_valid_evidence_and_bilingual_lengths(self):
         self.assertEqual(len(d.validate_issue(self.issue, self.candidates, self.policy)), 5)
 
+    def test_weekend_window_is_explicit_and_bounded(self):
+        self.assertEqual(d.load_config('2026-11-09')['lookback_hours'], 48)
+        for day in ['2026-11-07', '2026-11-08']:
+            self.assertEqual(d.load_config(day)['lookback_hours'], 72)
+
+    def test_delay_notice_never_contains_private_failure_details(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'ROOT', Path(tmp)):
+            (Path(tmp) / '_data').mkdir()
+            path = d.public_status('2026-11-08', 'delayed')
+            first = path.read_text()
+            self.assertEqual(set(d.yaml.safe_load(first)), {'date', 'state', 'updated'})
+            d.public_status('2026-11-08', 'delayed')
+            self.assertEqual(path.read_text(), first)
+            d.public_status('2026-11-08', 'published')
+            self.assertEqual(d.yaml.safe_load(path.read_text())['state'], 'published')
+            with self.assertRaises(ValueError): d.public_status('2026-11-08', 'private error')
+
+    def test_scheduler_allows_later_sources_but_bounds_daily_attempts(self):
+        spec = importlib.util.spec_from_file_location('daily_job', d.CONFIG / 'daily_job.py')
+        job = importlib.util.module_from_spec(spec);spec.loader.exec_module(job)
+        def now(hour): return d.dt.datetime(2026, 11, 8, hour, tzinfo=d.TZ)
+        self.assertFalse(job.attempt_due(now(6), 0))
+        self.assertTrue(job.attempt_due(now(7), 0))
+        self.assertTrue(job.attempt_due(now(8), 2))
+        self.assertFalse(job.attempt_due(now(9), 3))
+        self.assertTrue(job.attempt_due(now(10), 3))
+        self.assertFalse(job.attempt_due(now(11), 4))
+        self.assertTrue(job.attempt_due(now(12), 4))
+        self.assertTrue(job.attempt_due(now(18), 7))
+        self.assertFalse(job.attempt_due(now(23), 8))
+
     def test_resume_archives_incomplete_or_wrong_language_draft(self):
         for problem in ('missing_script', 'wrong_language', 'invalid_json', 'wrong_shape'):
             with self.subTest(problem=problem), tempfile.TemporaryDirectory() as tmp:
@@ -93,7 +124,7 @@ class PublicationTests(unittest.TestCase):
                 malformed_once.add('0')
                 return {'title': 'Missing narration'}
             return {'title': 'Research update', 'summary': 'A documented update.',
-                    'script': ' '.join(['research'] * 225), 'evidence_quote': source['evidence']}
+                    'script': ' '.join(['research'] * 225), 'evidence_quote_id': '1'}
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'llm', side_effect=generate) as call:
             work = Path(tmp)
             result = d.compose_issue('2026-11-07', selection, self.candidates, work, self.policy)
@@ -189,6 +220,15 @@ class PublicationTests(unittest.TestCase):
         for candidate in self.candidates:
             candidate.update(topic='economy', authority='public_media')
         with self.assertRaisesRegex(ValueError, 'count'): d.validate_issue(self.issue, self.candidates, self.policy)
+
+    def test_quote_options_are_verbatim_and_long_enough(self):
+        evidence = '短标题\n' + self.candidates[0]['evidence'] + '\n' + '第二段可核查原文内容。' * 8
+        options = d.quote_options(evidence)
+        self.assertGreaterEqual(len(options), 2)
+        normalized = d.re.sub(r'\s+', ' ', evidence)
+        for quote in options.values():
+            self.assertTrue(40 <= len(quote) <= 300)
+            self.assertIn(quote, normalized)
 
     def test_chinese_evidence_quote_is_checked_against_original(self):
         original = '新华社报道该企业公布本期营业收入，并明确列出数据所属时期、币种、计算单位和比较口径。'

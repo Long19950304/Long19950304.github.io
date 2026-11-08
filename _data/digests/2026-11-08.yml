@@ -1,0 +1,88 @@
+date: '2026-11-08'
+note: Exhibitors localize products for finer consumer needs · Beef Prices Stabilize,
+  but Relief Looks Limited · Prefect 3.9.2 improves workflow reliability
+note_zh: 进博会展商围绕中国消费需求调整产品；加拿大牛肉价格趋稳，但降价空间有限；Prefect 3.9.2更新聚焦工作流可靠性
+edition: daily-audio
+policy_version: 4
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-08-zh.mp3
+    seconds: 559.8
+    bytes: 4479020
+    sha256: 2fd078081dfb2a8becf68667c3609e7a697334e15b3e581ede77b1d55252085e
+  en:
+    path: /assets/audio/digests/2026-11-08-en.mp3
+    seconds: 672.2
+    bytes: 5378156
+    sha256: dc29682c63d2b4f7532d4da9f11be1f7fa56152aefea5eb92de7ddd1dacb7a4f
+items:
+- title: Exhibitors localize products for finer consumer needs
+  title_zh: 进博会展商围绕中国消费需求调整产品
+  url: https://www.news.cn/fortune/20261107/451e87b00b98469280978a05c2ab5c22/c.html
+  published: '2026-11-07T00:00:00+08:00'
+  source: 新华社财经
+  category: Business & economy
+  source_id: xinhua-finance
+  authority: news_agency
+  coverage: china
+  why: Xinhua Finance reported that exhibitors at the ninth China International Import
+    Expo responded to more specific Chinese consumer needs through senior-friendly
+    products, emotion-focused designs, and locally informed updates. The report also
+    described partnerships between international brands and Chinese companies, but
+    did not provide market-size, revenue, or growth statistics.
+  why_zh: 新华社财经报道第九届进博会展商通过适老化、情绪价值及本土化设计回应更细致的中国消费需求。报道还提到国际品牌与中国企业合作开发产品，但未提供市场规模、营收或增长数据。
+- title: Beef Prices Stabilize, but Relief Looks Limited
+  title_zh: 加拿大牛肉价格趋稳，但降价空间有限
+  url: https://www.cbc.ca/news/canada/calgary/sidhu-beef-prices-finally-stabilizing-9.7409526
+  published: '2026-11-06T09:00:00+00:00'
+  source: CBC Business
+  category: Business & economy
+  source_id: cbc-business
+  authority: public_media
+  coverage: world
+  why: CBC Business reports that Canadian beef prices have stabilized after steep
+    increases, though retail prices are unlikely to fall sharply. Cattle numbers are
+    recovering, but tight North American supply and high production costs could keep
+    prices elevated.
+  why_zh: CBC商业报道称，加拿大牛肉价格在大幅上涨后开始趋稳，但消费者短期内难见明显降价。牛群虽在恢复，北美供应偏紧和高昂生产成本仍可能支撑高价。
+- title: Prefect 3.9.2 improves workflow reliability
+  title_zh: Prefect 3.9.2更新聚焦工作流可靠性
+  url: https://github.com/PrefectHQ/prefect/releases/tag/3.9.2
+  published: '2026-11-06T21:19:09+00:00'
+  source: Prefect releases
+  category: Research tools
+  source_id: PrefectHQ-prefect
+  authority: developer_primary
+  coverage: world
+  why: Prefect’s 3.9.2 release targets dependable orchestration, with fixes for locks,
+    completed runs, deployment activity and missing flow records. It also reduces
+    deployment writes from queue polling and improves handling of invalid request
+    values and literal artifact content.
+  why_zh: Prefect发布3.9.2版本，主要改进工作流编排的可靠性与可用性。更新涵盖锁管理、运行状态可见性、数据处理和错误返回，并减少队列轮询产生的部署写入。
+- title: Streamlit 1.67.0 adds agent and data tooling
+  title_zh: Streamlit 1.67.0更新智能体访问与数据工具
+  url: https://github.com/streamlit/streamlit/releases/tag/1.67.0
+  published: '2026-11-05T19:54:01+00:00'
+  source: Streamlit releases
+  category: Research tools
+  source_id: streamlit-streamlit
+  authority: developer_primary
+  coverage: world
+  why: Streamlit’s 1.67.0 release adds HTTP access for driving apps with an agent
+    API, an MCP endpoint, required-field controls, and expanded charting and caching
+    features. The release also includes many fixes for accessibility, layouts, charts,
+    sessions, and app testing.
+  why_zh: Streamlit于2026年11月5日发布1.67.0版本，新增通过HTTP驱动应用的智能体API、MCP端点、必填控件和响应式网格。该版本还扩展图表与缓存能力，并修复无障碍、布局、会话和AppTest等问题。
+- title: Ruff 0.17.4 improves diagnostics and linting
+  title_zh: Ruff 0.17.4 改进诊断、规则与性能
+  url: https://github.com/astral-sh/ruff/releases/tag/0.17.4
+  published: '2026-11-05T18:53:24+00:00'
+  source: Ruff releases
+  category: Research tools
+  source_id: ruff
+  authority: developer_primary
+  coverage: world
+  why: Ruff’s 0.17.4 release adds linting fixes, diagnostic improvements, performance
+    work, and clearer colour-control behaviour. Astral’s release notes cover changes
+    made for the version released on 5 November 2026.
+  why_zh: Astral 的 Ruff 0.17.4 于 2026 年 11 月 5 日发布，加入错误修复、诊断改进、预览规则和多项性能优化。发布说明还更新了命令行颜色控制与文档，但未提供基准测试、采用率或独立评估数据。

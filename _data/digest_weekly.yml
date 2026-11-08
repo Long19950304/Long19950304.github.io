@@ -5,6 +5,7 @@ weeks:
   issues:
   - '2026-11-06'
   - '2026-11-07'
+  - '2026-11-08'
   highlights_news:
   - title: Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy
     title_zh: 山东沿黄城市推进智能制造与绿色能源
@@ -40,6 +41,21 @@ weeks:
     title_zh: JupyterLab 4.6.6 修复工作流与界面问题
     url: https://github.com/jupyterlab/jupyterlab/releases/tag/v4.6.6
     source: JupyterLab releases
+    category: Research tools
+  - title: Exhibitors localize products for finer consumer needs
+    title_zh: 进博会展商围绕中国消费需求调整产品
+    url: https://www.news.cn/fortune/20261107/451e87b00b98469280978a05c2ab5c22/c.html
+    source: 新华社财经
+    category: Business & economy
+  - title: Beef Prices Stabilize, but Relief Looks Limited
+    title_zh: 加拿大牛肉价格趋稳，但降价空间有限
+    url: https://www.cbc.ca/news/canada/calgary/sidhu-beef-prices-finally-stabilizing-9.7409526
+    source: CBC Business
+    category: Business & economy
+  - title: Prefect 3.9.2 improves workflow reliability
+    title_zh: Prefect 3.9.2更新聚焦工作流可靠性
+    url: https://github.com/PrefectHQ/prefect/releases/tag/3.9.2
+    source: Prefect releases
     category: Research tools
   highlights_ai:
   - title: NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints

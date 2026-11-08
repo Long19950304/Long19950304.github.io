@@ -48,3 +48,11 @@ sources:
   - {id: vllm, name: vLLM releases, category: AI tools & model releases, github_repo: vllm-project/vllm, hosts: [github.com]}
   - {id: transformers, name: Transformers releases, category: AI tools & model releases, github_repo: huggingface/transformers, hosts: [github.com]}
   - {id: quarto, name: Quarto releases, category: Education / learning sciences / edtech, github_repo: quarto-dev/quarto-cli, hosts: [github.com]}
+
+  - {id: cbc-business, name: CBC Business, url: 'https://www.cbc.ca/webfeed/rss/rss-business', hosts: [www.cbc.ca], category: Business & economy, topic: economy, region: international, authority: public_media, full_article: true, max_articles: 25}
+  - {id: npr-business, name: NPR Business, url: 'https://feeds.npr.org/1006/rss.xml', hosts: [www.npr.org], category: Business & economy, topic: economy, region: international, authority: public_media, full_article: true, max_articles: 25}
+  - {id: streamlit-streamlit, name: Streamlit releases, github_repo: streamlit/streamlit, hosts: [github.com], category: Research tools}
+  - {id: fastapi-fastapi, name: FastAPI releases, github_repo: fastapi/fastapi, hosts: [github.com], category: Research tools}
+  - {id: jupyter-notebook, name: Jupyter Notebook releases, github_repo: jupyter/notebook, hosts: [github.com], category: Research tools}
+  - {id: dagster-io-dagster, name: Dagster releases, github_repo: dagster-io/dagster, hosts: [github.com], category: Research tools}
+  - {id: PrefectHQ-prefect, name: Prefect releases, github_repo: PrefectHQ/prefect, hosts: [github.com], category: Research tools}

@@ -14,6 +14,14 @@ SSD = Path('/Volumes/longssd')
 BASE = SSD / 'WorkData/ResearchData/zhaozhilong-digest'
 
 
+def attempt_due(now, attempts):
+    # Keep three early attempts, then allow newly published sources to arrive.
+    # The final-review gate still preserves a hold for unchanged material.
+    if now.hour < 7 or attempts >= 8: return False
+    if attempts < 3: return True
+    return now.hour >= 10 + 2 * (attempts - 3)
+
+
 def run():
     print('Digest scheduler started', flush=True)
     if not SSD.is_mount():
@@ -32,9 +40,14 @@ def run():
         attempts_path = BASE / 'scheduler-attempts.json'
         attempts = json.loads(attempts_path.read_text()) if attempts_path.exists() else {}
         if attempts.get('date') != day: attempts = {'date': day, 'attempts': 0}
-        if attempts['attempts'] >= 3:
-            print(f'{day}: daily retry budget exhausted; inspect runs/{day}/status.json', flush=True)
-            return 1
+        if not attempt_due(now, attempts['attempts']):
+            print(f'{day}: waiting for next permitted source check, or daily budget exhausted', flush=True)
+            return 0
+        with (BASE / 'run.lock').open('a') as pipeline_lock:
+            try: fcntl.flock(pipeline_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            except BlockingIOError:
+                print('Digest production already running; no attempt consumed', flush=True)
+                return 0
         attempts['attempts'] += 1
         attempts_path.write_text(json.dumps(attempts) + '\n')
         repo = BASE / 'publisher'

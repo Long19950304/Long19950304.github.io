@@ -122,6 +122,11 @@ ninja.data = [{
           description: "Exhibitors localize products for finer consumer needs · Beef Prices Stabilize, but Relief Looks Limited · Prefect 3.9.2 improves workflow reliability",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-11-08/";
+            },},{id: "digests-daily-economy-technology-amp-research-brief-2026-11-09",
+          title: 'Daily Economy, Technology &amp;amp; Research Brief · 2026-11-09',
+          description: "China’s CPI Rose 0.7% in October · Jetty Enters the Hydration Market · abcFISH enables single-molecule imaging of circular RNA",
+          section: "Digests",handler: () => {
+              window.location.href = "/digest/2026-11-09/";
             },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-06",
           title: '每日财经、科技与研究简报 · 2026-11-06',
           description: "山东沿黄城市推进智能制造与绿色能源；欧洲央行发布截至2026年6月底的欧盟银行合并数据；英伟达为Cosmos 3新增四个开放权重模拟检查点",
@@ -137,6 +142,11 @@ ninja.data = [{
           description: "进博会展商围绕中国消费需求调整产品；加拿大牛肉价格趋稳，但降价空间有限；Prefect 3.9.2更新聚焦工作流可靠性",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-11-08/";
+            },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-09",
+          title: '每日财经、科技与研究简报 · 2026-11-09',
+          description: "国家统计局：2026年10月居民消费价格同比上涨0.7%；Jetty进入美国日常补水市场；中国科学院团队开发环形RNA单分子原位成像技术",
+          section: "Digests_zh",handler: () => {
+              window.location.href = "/zh/digest/2026-11-09/";
             },},{id: "projects-ai-for-social-science",
           title: 'AI for Social Science',
           description: "Reliable AI-assisted coding, confidence calibration, and human review in social science research.",

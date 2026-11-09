@@ -1,4 +1,4 @@
-version: 4
+version: 5
 timezone: Asia/Shanghai
 lookback_hours: 48
 weekend_lookback_hours: 72
@@ -33,6 +33,7 @@ selection_instruction: >-
   coverage is unavailable, hold publication rather than invent, backdate or recycle.
 # Fail closed. A technical article touching these topics is omitted as a whole.
 exclude_patterns:
+  - '\b(lawsuits?|litigation|class.action|false advertising|allegations?|accusations?)\b|诉讼|虚假宣传|指控|集体起诉'
   - '\b(wars?|conflicts?|iran|iraq)\b|伊朗|伊拉克|地缘政治|武装冲突'
   - '\b(politic\w*|geopolitic\w*|elections?|presidents?|prime minister|parliament|congress|senators?|white house|government|governance|diploma\w*|sanctions?|tariffs?|export controls?|trade war|military|warfare|weapons?|defen[cs]e|missiles?|nuclear|terroris\w*|extremis\w*|protests?|censorship|propaganda|surveillance|human rights|sovereignty|territorial|taiwan|tibet|xinjiang|hong kong|russia|ukraine|israel|palestin\w*|trump|biden|xi jinping|communis\w*|democra\w*|fedramp|govcloud|pentagon|immigration|abortion|religio\w*|porn\w*|gambling|suicid\w*)\b'
   - '政治|政党|政府|执政|选举|总统|总理|议会|国会|白宫|外交|制裁|关税|出口管制|贸易战|军事|军用|国防|武器|战争|核武|恐怖|极端主义|抗议|示威|审查制度|舆论管控|宣传战|监控|人权|主权|领土|台湾|台独|西藏|新疆|香港|俄乌|乌克兰|以色列|巴勒斯坦|特朗普|拜登|习近平|共产党|宗教|色情|赌博|自杀'

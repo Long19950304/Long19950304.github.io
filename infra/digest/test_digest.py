@@ -151,6 +151,20 @@ class PublicationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'source evidence'):
             d.validate_issue(self.issue, self.candidates, self.policy)
 
+    def test_commercial_dispute_in_source_background_excludes_whole_story(self):
+        for passage in [
+            'The founder paid to settle class-action litigation alleging false advertising.',
+            'The company faces a lawsuit over earlier product claims.',
+            '报道背景包括商业诉讼和虚假宣传指控。',
+        ]:
+            with self.subTest(passage=passage):
+                candidates = copy.deepcopy(self.candidates)
+                candidates[1]['evidence'] += ' ' + passage
+                with self.assertRaisesRegex(ValueError, 'source evidence'):
+                    d.validate_issue(self.issue, candidates, self.policy)
+        for allowed in ['A statistical model uses a suite of tests.', 'The research demonstrates a class of RNA molecules.']:
+            self.assertFalse(d.blocked(allowed, self.policy))
+
     def test_unknown_story_duplicate_and_invented_quote_block(self):
         for field, value in [('id', 'invented'), ('id', '1'), ('evidence_quote', 'This quotation was invented and does not occur in the primary source.')]:
             issue = copy.deepcopy(self.issue)

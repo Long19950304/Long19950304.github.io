@@ -1,20 +1,21 @@
 date: '2026-11-09'
-note: China’s CPI Rose 0.7% in October · Jetty Enters the Hydration Market · abcFISH
-  enables single-molecule imaging of circular RNA
-note_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%；Jetty进入美国日常补水市场；中国科学院团队开发环形RNA单分子原位成像技术
+note: China’s CPI Rose 0.7% in October · Cosm expands immersive cinema venues while
+  keeping ticket prices premium · abcFISH enables single-molecule imaging of circular
+  RNA
+note_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%；Cosm扩张沉浸式影院，维持高端票价；中国科学院团队开发环形RNA单分子原位成像技术
 edition: daily-audio
-policy_version: 4
+policy_version: 5
 audio:
   zh:
     path: /assets/audio/digests/2026-11-09-zh.mp3
-    seconds: 550.2
-    bytes: 4402700
-    sha256: 28f9a92fc3218ca98dfea571f8dfcc254c69667a5d6affbbdd26bb2355e51b2a
+    seconds: 553.6
+    bytes: 4429484
+    sha256: 200f013751bf5f8b1673cedd515b7a033239884514c1c9c5601164e6dcc481a8
   en:
     path: /assets/audio/digests/2026-11-09-en.mp3
-    seconds: 698.3
-    bytes: 5587244
-    sha256: 7b2f234a294e1745714fc338ba114c69ed6b97b88e719e7e60b89f5b1f35dbd4
+    seconds: 712.7
+    bytes: 5702444
+    sha256: b5f49856a378d9d6c5984fa655e001f7a54b4d9a04edf43d8d2c031580b9e193
 items:
 - title: China’s CPI Rose 0.7% in October
   title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
@@ -30,22 +31,22 @@ items:
     rose 0.7% year on year in October 2026 and was unchanged from September. Food
     prices fell 2.9% year on year, while non-food prices rose 1.5%.
   why_zh: 国家统计局发布数据显示，2026年10月全国居民消费价格同比上涨0.7%，与上月相比持平。食品价格同比下降2.9%，非食品价格上涨1.5%，前十个月平均同比上涨0.9%。
-- title: Jetty Enters the Hydration Market
-  title_zh: Jetty进入美国日常补水市场
-  url: https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html
-  published: '2026-11-08T14:00:01+00:00'
+- title: Cosm expands immersive cinema venues while keeping ticket prices premium
+  title_zh: Cosm扩张沉浸式影院，维持高端票价
+  url: https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html
+  published: '2026-11-07T13:00:01+00:00'
   source: CNBC Business
   category: Business & economy
   source_id: cnbc-business
   authority: established_newsroom
   publisher_id: cnbc-business
   coverage: world
-  why: CNBC reports that Poppi founders Allison and Stephen Ellsworth are launching
-    Jetty with five flavors and $2.5 million in self-funding. SPINS data show U.S.
-    hydration and electrolyte dollar sales reached $2.6 billion over the 52 weeks
-    ended October 4, while Numerator data indicate sports-drink unit sales fell 9.1%
-    from 2022 to 2026.
-  why_zh: CNBC报道，Poppi创始人艾利森和斯蒂芬·埃尔斯沃思以250万美元自有资金推出五种口味的Jetty。SPINS数据显示，截至10月4日的52周，美国补水及电解质产品销售额为26亿美元；Numerator数据显示，运动饮料销量从2022年至2026年下降9.1%。
+  why: CNBC Business reported on 7 November 2026 that Cosm has opened four immersive
+    theaters since 2024 and plans to open a larger Cleveland venue in 2027. The Los
+    Angeles and Dallas locations seat around 350 people, while Atlanta and Detroit
+    have up to 500 seats; tickets cost from $18 to around $70 before concession or
+    themed-menu fees.
+  why_zh: CNBC Business于2026年11月7日报道，Cosm自2024年以来已开设四家沉浸式影院，并计划于2027年在克利夫兰开设更大场馆。洛杉矶和达拉斯各约350座，亚特兰大和底特律最多500座；票价从18美元至约70美元，另收餐饮等费用。
 - title: abcFISH enables single-molecule imaging of circular RNA
   title_zh: 中国科学院团队开发环形RNA单分子原位成像技术
   url: https://www.cas.cn/syky/202611/t20261106_5123658.shtml
@@ -71,8 +72,8 @@ items:
   authority: established_newsroom
   publisher_id: sciencenet-news
   coverage: china
-  why: ScienceNet News, citing China News Service, reported that Hefei-based Qiyuan
-    Quantum unveiled the “Qianzhang” prototype on November 8, 2026. The report describes
+  why: ScienceNet News, citing China News Service, reported that Hefei-based Qianyuan
+    Quantum unveiled the “Qianzhen” prototype on November 8, 2026. The report describes
     it as China’s first neutral-atom quantum computer prototype designed with multi-machine
     interconnection capability, but provides no quantitative performance results.
   why_zh: 科学网新闻援引中新社报道，合肥乾原量子于2026年11月8日发布“乾阵”中性原子量子计算机原型机。据乾原量子董事长李刚介绍，该原型机从架构设计之初纳入互联技术；报道未提供量子比特数、互联机器数量、保真度或任务完成时间等定量结果。

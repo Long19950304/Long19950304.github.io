@@ -124,7 +124,7 @@ ninja.data = [{
               window.location.href = "/digest/2026-11-08/";
             },},{id: "digests-daily-economy-technology-amp-research-brief-2026-11-09",
           title: 'Daily Economy, Technology &amp;amp; Research Brief · 2026-11-09',
-          description: "China’s CPI Rose 0.7% in October · Jetty Enters the Hydration Market · abcFISH enables single-molecule imaging of circular RNA",
+          description: "China’s CPI Rose 0.7% in October · Cosm expands immersive cinema venues while keeping ticket prices premium · abcFISH enables single-molecule imaging of circular RNA",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-11-09/";
             },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-06",
@@ -144,7 +144,7 @@ ninja.data = [{
               window.location.href = "/zh/digest/2026-11-08/";
             },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-09",
           title: '每日财经、科技与研究简报 · 2026-11-09',
-          description: "国家统计局：2026年10月居民消费价格同比上涨0.7%；Jetty进入美国日常补水市场；中国科学院团队开发环形RNA单分子原位成像技术",
+          description: "国家统计局：2026年10月居民消费价格同比上涨0.7%；Cosm扩张沉浸式影院，维持高端票价；中国科学院团队开发环形RNA单分子原位成像技术",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-11-09/";
             },},{id: "projects-ai-for-social-science",

@@ -160,8 +160,25 @@ class PublicationTests(unittest.TestCase):
     def test_short_narration_and_source_monopoly_block(self):
         self.issue['items'][0]['script'] = 'Too short.'
         with self.assertRaises(ValueError): d.validate_issue(self.issue, self.candidates, self.policy)
+        self.issue['items'][0]['script'] = ' '.join(['research'] * 245)
         for c in self.candidates: c['source_id'] = 'one-vendor'
-        with self.assertRaises(ValueError): d.validate_issue(self.issue, self.candidates, self.policy)
+        with self.assertRaisesRegex(ValueError, 'source diversity'):
+            d.validate_issue(self.issue, self.candidates, self.policy)
+
+    def test_different_channels_of_one_publisher_do_not_establish_diversity(self):
+        candidates = copy.deepcopy(self.candidates)
+        for c in candidates: c['publisher_id'] = 'one-newsroom'
+        with self.assertRaisesRegex(ValueError, 'source diversity'):
+            d.validate_issue(self.issue, candidates, self.policy)
+        for i, c in enumerate(candidates): c['publisher_id'] = 'newsroom-' + str(i // 2)
+        self.assertEqual(len(d.validate_issue(self.issue, candidates, self.policy)), 5)
+
+    def test_established_economic_newsroom_requires_same_evidence_gates(self):
+        self.candidates[1]['authority'] = 'established_newsroom'
+        self.assertEqual(len(d.validate_issue(self.issue, self.candidates, self.policy)), 5)
+        self.candidates[1]['evidence'] += ' Political controversy.'
+        with self.assertRaisesRegex(ValueError, 'source evidence'):
+            d.validate_issue(self.issue, self.candidates, self.policy)
 
     def test_source_url_validation(self):
         for url in ['http://example.com/article', 'javascript:alert(1)', 'https://user:secret@example.com/']:
@@ -250,6 +267,37 @@ class PublicationTests(unittest.TestCase):
         parsed = d.publication_time('2026/11/06 09:30')
         self.assertEqual(parsed.utcoffset(), d.dt.timedelta(hours=8))
         self.assertEqual(d.publication_time('2026-11-06').hour, 0)
+
+    def test_domestic_publication_fields_use_explicit_source_patterns(self):
+        sources = {s['id']: s for s in d.yaml.safe_load((d.CONFIG / 'sources.yml').read_text())['sources']}
+        samples = [
+            ('chinanews-finance', '<span id="pubtime_baidu">2026-11-09 09:32:09</span>', 9),
+            ('sciencenet-news', '作者：研究者 来源：科学网 发布时间：2026/11/9 8:12:30</div>', 8),
+            ('cas-research', '<meta name="PubDate" content="2026-11-09 08:18">', 8),
+        ]
+        for source_id, raw, hour in samples:
+            with self.subTest(source_id=source_id):
+                parsed = d.article_publication_time(raw, sources[source_id])
+                self.assertEqual(parsed.date(), d.dt.date(2026, 11, 9))
+                self.assertEqual(parsed.hour, hour)
+                self.assertEqual(parsed.utcoffset(), d.dt.timedelta(hours=8))
+                with self.assertRaises(ValueError):
+                    d.article_publication_time('<p>Last year 2026-11-09 was discussed.</p>', sources[source_id])
+
+    def test_expanded_body_selectors_exclude_surrounding_topics(self):
+        sources = {s['id']: s for s in d.yaml.safe_load((d.CONFIG / 'sources.yml').read_text())['sources']}
+        for source_id, opening, closing in [
+            ('chinanews-finance', '<div class="content_maincontent_content">', '</div>'),
+            ('sciencenet-news', '<div id="content1">', '</div>'),
+            ('cas-research', '<div class="trs_editor_view">', '</div>'),
+            ('cnbc-business', '<div class="ArticleBody-articleBody">', '</div>')]:
+            with self.subTest(source_id=source_id):
+                evidence = 'Verified science and economic reporting. ' * 20
+                raw = '<nav>election military</nav>' + opening + '<p>' + evidence + '</p>' + closing + '<footer>politics</footer>'
+                text = d.extract_evidence(raw, 'https://example.com/article', sources[source_id])
+                self.assertIn(evidence.strip(), text)
+                self.assertNotIn('election', text)
+                self.assertNotIn('politics', text)
 
     def test_public_source_catalogue_matches_collector(self):
         configured = d.yaml.safe_load((d.CONFIG / 'sources.yml').read_text())['sources']

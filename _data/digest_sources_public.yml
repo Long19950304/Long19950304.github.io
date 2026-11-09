@@ -1,4 +1,4 @@
-checked_on: '2026-11-08'
+checked_on: '2026-11-09'
 sources:
 - id: nbs-china
   name: 国家统计局
@@ -7,7 +7,7 @@ sources:
   description_zh: 统计机构原始数据；核对统计时期和修订口径
   description: Official statistical releases; reference periods and revisions checked
   available: true
-  initial_candidates: 0
+  initial_candidates: 2
 - id: xinhua-finance
   name: 新华社财经
   group: economy
@@ -16,7 +16,7 @@ sources:
   description: News-agency economic reporting; geography checked against the actual
     event
   available: true
-  initial_candidates: 8
+  initial_candidates: 6
 - id: bbc-business
   name: BBC News Business
   group: economy
@@ -24,7 +24,7 @@ sources:
   description_zh: 国际公共媒体商业报道；须读取原文
   description: International public-service business reporting; full article required
   available: true
-  initial_candidates: 5
+  initial_candidates: 2
 - id: bea-data
   name: U.S. Bureau of Economic Analysis
   group: economy
@@ -40,7 +40,7 @@ sources:
   description_zh: 央行银行业及经济数据；不采用政治或政策争议评论
   description: Central-bank banking/economic data; political and policy debates excluded
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: huggingface
   name: Hugging Face
   group: technology
@@ -49,7 +49,7 @@ sources:
   description: Researcher/developer articles; not platform certification or independent
     testing
   available: true
-  initial_candidates: 3
+  initial_candidates: 0
 - id: google-developers
   name: Google Developers
   group: technology
@@ -81,7 +81,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: openai
   name: OpenAI
   group: technology
@@ -97,7 +97,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: zed
   name: Zed releases
   group: technology
@@ -137,7 +137,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: pandas
   name: pandas releases
   group: technology
@@ -177,14 +177,14 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: quarto
   name: Quarto releases
   group: technology
   url: https://github.com/quarto-dev/quarto-cli/releases
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
-  available: true
+  available: false
   initial_candidates: 0
 - id: cbc-business
   name: CBC Business
@@ -193,7 +193,7 @@ sources:
   description_zh: 国际公共媒体财经报道；须读取原文
   description: Public-service economic reporting; full article required
   available: true
-  initial_candidates: 3
+  initial_candidates: 0
 - id: npr-business
   name: NPR Business
   group: economy
@@ -201,7 +201,7 @@ sources:
   description_zh: 国际公共媒体财经报道；须读取原文
   description: Public-service economic reporting; full article required
   available: true
-  initial_candidates: 2
+  initial_candidates: 0
 - id: streamlit-streamlit
   name: Streamlit releases
   group: technology
@@ -209,7 +209,7 @@ sources:
   description_zh: 开发者原始版本公告；核对具体变更与适用范围
   description: Developer release notes; scope and changes checked
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: fastapi-fastapi
   name: FastAPI releases
   group: technology
@@ -225,7 +225,7 @@ sources:
   description_zh: 开发者原始版本公告；核对具体变更与适用范围
   description: Developer release notes; scope and changes checked
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: dagster-io-dagster
   name: Dagster releases
   group: technology
@@ -233,7 +233,7 @@ sources:
   description_zh: 开发者原始版本公告；核对具体变更与适用范围
   description: Developer release notes; scope and changes checked
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: PrefectHQ-prefect
   name: Prefect releases
   group: technology
@@ -241,4 +241,183 @@ sources:
   description_zh: 开发者原始版本公告；核对具体变更与适用范围
   description: Developer release notes; scope and changes checked
   available: true
+  initial_candidates: 0
+- id: bbc-tech
+  name: BBC Technology
+  group: technology
+  url: https://feeds.bbci.co.uk/news/technology/rss.xml
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
   initial_candidates: 1
+- id: bbc-science
+  name: BBC Science & Environment
+  group: technology
+  url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 6
+- id: npr-tech
+  name: NPR Technology
+  group: technology
+  url: https://feeds.npr.org/1019/rss.xml
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 1
+- id: npr-science
+  name: NPR Science
+  group: technology
+  url: https://feeds.npr.org/1007/rss.xml
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 1
+- id: cbc-tech
+  name: CBC Technology & Science
+  group: technology
+  url: https://www.cbc.ca/webfeed/rss/rss-technology
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 1
+- id: guardian-science
+  name: The Guardian Science
+  group: technology
+  url: https://www.theguardian.com/science/rss
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 3
+- id: guardian-tech
+  name: The Guardian Technology
+  group: technology
+  url: https://www.theguardian.com/uk/technology/rss
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 1
+- id: sciencedaily
+  name: ScienceDaily
+  group: technology
+  url: https://www.sciencedaily.com/rss/top/science.xml
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 5
+- id: sciencealert
+  name: ScienceAlert
+  group: technology
+  url: https://www.sciencealert.com/feed
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 6
+- id: nasa
+  name: NASA
+  group: technology
+  url: https://www.nasa.gov/feed/
+  description_zh: 权威机构原始发布；核对研究证据与限制，不作临床建议
+  description: Institutional original reporting; evidence and limits checked; no clinical
+    advice
+  available: true
+  initial_candidates: 4
+- id: mit-news
+  name: MIT News
+  group: technology
+  url: https://news.mit.edu/rss/research
+  description_zh: 权威机构原始发布；核对研究证据与限制，不作临床建议
+  description: Institutional original reporting; evidence and limits checked; no clinical
+    advice
+  available: false
+  initial_candidates: 0
+- id: microsoft-research
+  name: Microsoft Research
+  group: technology
+  url: https://www.microsoft.com/en-us/research/feed/
+  description_zh: 权威机构原始发布；核对研究证据与限制，不作临床建议
+  description: Institutional original reporting; evidence and limits checked; no clinical
+    advice
+  available: false
+  initial_candidates: 0
+- id: amazon-science
+  name: Amazon Science
+  group: technology
+  url: https://www.amazon.science/index.rss
+  description_zh: 权威机构原始发布；核对研究证据与限制，不作临床建议
+  description: Institutional original reporting; evidence and limits checked; no clinical
+    advice
+  available: false
+  initial_candidates: 0
+- id: mozilla
+  name: Mozilla
+  group: technology
+  url: https://blog.mozilla.org/en/feed/
+  description_zh: 开发者原始发布；功能与效果主张须注明来源
+  description: Developer primary reporting; capabilities and outcomes attributed
+  available: true
+  initial_candidates: 0
+- id: guardian-business
+  name: The Guardian Business
+  group: economy
+  url: https://www.theguardian.com/business/rss
+  description_zh: 通讯社或成熟新闻机构财经报道；读取全文并核对统计口径
+  description: News-agency or established-newsroom economic reporting; full text and
+    data definitions checked
+  available: true
+  initial_candidates: 2
+- id: cnbc-business
+  name: CNBC Business
+  group: economy
+  url: https://www.cnbc.com/id/10001147/device/rss/rss.html
+  description_zh: 通讯社或成熟新闻机构财经报道；读取全文并核对统计口径
+  description: News-agency or established-newsroom economic reporting; full text and
+    data definitions checked
+  available: true
+  initial_candidates: 2
+- id: chinanews-finance
+  name: 中国新闻网财经
+  group: economy
+  url: https://www.chinanews.com.cn/finance/
+  description_zh: 通讯社或成熟新闻机构财经报道；读取全文并核对统计口径
+  description: News-agency or established-newsroom economic reporting; full text and
+    data definitions checked
+  available: true
+  initial_candidates: 8
+- id: sciencenet-news
+  name: 科学网新闻
+  group: technology
+  url: https://news.sciencenet.cn/
+  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
+  description: Science and technology reporting; distinguish findings, institutional
+    claims and interpretation
+  available: true
+  initial_candidates: 5
+- id: cas-research
+  name: 中国科学院科研进展
+  group: technology
+  url: https://www.cas.cn/syky/
+  description_zh: 权威机构原始发布；核对研究证据与限制，不作临床建议
+  description: Institutional original reporting; evidence and limits checked; no clinical
+    advice
+  available: true
+  initial_candidates: 4
+- id: dw-business
+  name: DW Business
+  group: economy
+  url: https://rss.dw.com/rdf/rss-en-bus
+  description_zh: 德国公共媒体商业报道；须读取正文并复核选题范围
+  description: German public-service business reporting; full evidence and topic review
+    required
+  available: true
+  initial_candidates: 0

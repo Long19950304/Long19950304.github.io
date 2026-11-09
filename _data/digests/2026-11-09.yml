@@ -1,0 +1,93 @@
+date: '2026-11-09'
+note: China’s CPI Rose 0.7% in October · Jetty Enters the Hydration Market · abcFISH
+  enables single-molecule imaging of circular RNA
+note_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%；Jetty进入美国日常补水市场；中国科学院团队开发环形RNA单分子原位成像技术
+edition: daily-audio
+policy_version: 4
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-09-zh.mp3
+    seconds: 550.2
+    bytes: 4402700
+    sha256: 28f9a92fc3218ca98dfea571f8dfcc254c69667a5d6affbbdd26bb2355e51b2a
+  en:
+    path: /assets/audio/digests/2026-11-09-en.mp3
+    seconds: 698.3
+    bytes: 5587244
+    sha256: 7b2f234a294e1745714fc338ba114c69ed6b97b88e719e7e60b89f5b1f35dbd4
+items:
+- title: China’s CPI Rose 0.7% in October
+  title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
+  url: https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965795.html
+  published: '2026-11-09T09:30:00+08:00'
+  source: 国家统计局
+  category: Business & economy
+  source_id: nbs-china
+  authority: statistical_agency
+  publisher_id: nbs-china
+  coverage: china
+  why: China’s National Bureau of Statistics reported that the Consumer Price Index
+    rose 0.7% year on year in October 2026 and was unchanged from September. Food
+    prices fell 2.9% year on year, while non-food prices rose 1.5%.
+  why_zh: 国家统计局发布数据显示，2026年10月全国居民消费价格同比上涨0.7%，与上月相比持平。食品价格同比下降2.9%，非食品价格上涨1.5%，前十个月平均同比上涨0.9%。
+- title: Jetty Enters the Hydration Market
+  title_zh: Jetty进入美国日常补水市场
+  url: https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html
+  published: '2026-11-08T14:00:01+00:00'
+  source: CNBC Business
+  category: Business & economy
+  source_id: cnbc-business
+  authority: established_newsroom
+  publisher_id: cnbc-business
+  coverage: world
+  why: CNBC reports that Poppi founders Allison and Stephen Ellsworth are launching
+    Jetty with five flavors and $2.5 million in self-funding. SPINS data show U.S.
+    hydration and electrolyte dollar sales reached $2.6 billion over the 52 weeks
+    ended October 4, while Numerator data indicate sports-drink unit sales fell 9.1%
+    from 2022 to 2026.
+  why_zh: CNBC报道，Poppi创始人艾利森和斯蒂芬·埃尔斯沃思以250万美元自有资金推出五种口味的Jetty。SPINS数据显示，截至10月4日的52周，美国补水及电解质产品销售额为26亿美元；Numerator数据显示，运动饮料销量从2022年至2026年下降9.1%。
+- title: abcFISH enables single-molecule imaging of circular RNA
+  title_zh: 中国科学院团队开发环形RNA单分子原位成像技术
+  url: https://www.cas.cn/syky/202611/t20261106_5123658.shtml
+  published: '2026-11-09T08:21:00+08:00'
+  source: 中国科学院科研进展
+  category: Science & research
+  source_id: cas-research
+  authority: research_primary
+  publisher_id: cas-research
+  coverage: china
+  why: Researchers reported a new abcFISH method for imaging circular RNA in cells
+    and tissues with single-molecule resolution and spatial information. The Chinese
+    Academy of Sciences says the method supports multiplex detection and could broaden
+    research using archived pathology samples.
+  why_zh: 中国科学院分子细胞科学卓越创新中心团队开发了abcFISH，用于在细胞和组织中对环形RNA进行单分子原位成像与定量。该技术通过检测反向剪接位点提高选择性，并支持多重检测及存档病理样本研究。
+- title: “乾阵”Interconnected Neutral-Atom Prototype Unveiled
+  title_zh: “乾阵”可互联中性原子量子计算机原型机发布
+  url: https://news.sciencenet.cn/htmlnews/2026/11/574419.shtm
+  published: '2026-11-08T23:04:30+08:00'
+  source: 科学网新闻
+  category: Science & research
+  source_id: sciencenet-news
+  authority: established_newsroom
+  publisher_id: sciencenet-news
+  coverage: china
+  why: ScienceNet News, citing China News Service, reported that Hefei-based Qiyuan
+    Quantum unveiled the “Qianzhang” prototype on November 8, 2026. The report describes
+    it as China’s first neutral-atom quantum computer prototype designed with multi-machine
+    interconnection capability, but provides no quantitative performance results.
+  why_zh: 科学网新闻援引中新社报道，合肥乾原量子于2026年11月8日发布“乾阵”中性原子量子计算机原型机。据乾原量子董事长李刚介绍，该原型机从架构设计之初纳入互联技术；报道未提供量子比特数、互联机器数量、保真度或任务完成时间等定量结果。
+- title: Electrons Face a Space-Time Limit
+  title_zh: 电子运动存在时空极限
+  url: https://www.sciencedaily.com/releases/2026/11/261106174537.htm
+  published: '2026-11-07T23:34:19+00:00'
+  source: ScienceDaily
+  category: Science & research
+  source_id: sciencedaily
+  authority: established_newsroom
+  publisher_id: sciencedaily
+  coverage: world
+  why: University of Regensburg researchers reported experimental evidence that electrons’
+    timing and spatial extent cannot be sharpened independently. The work demonstrates
+    a fundamental research constraint; faster electronics and controllable chemical
+    reactions remain long-term goals, not demonstrated outcomes.
+  why_zh: 雷根斯堡大学与汉堡马克斯·普朗克研究所团队报告了电子位置与时间行为无法同时无限精确测量的实验证据。更快的电子技术和可控化学反应仍是长期目标，并非本次实验已经实现的成果。

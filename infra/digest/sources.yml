@@ -27,7 +27,7 @@ sources:
     hosts: [www.news.cn]
     direct: true
     max_articles: 12
-  - {id: bbc-business, name: BBC News Business, category: Business & economy, topic: economy, region: international, authority: public_media, url: 'https://feeds.bbci.co.uk/news/business/rss.xml', hosts: [www.bbc.co.uk, www.bbc.com], full_article: true, max_articles: 25}
+  - {id: bbc-business, publisher_id: bbc, name: BBC News Business, category: Business & economy, topic: economy, region: international, authority: public_media, url: 'https://feeds.bbci.co.uk/news/business/rss.xml', hosts: [www.bbc.co.uk, www.bbc.com], full_article: true, max_articles: 25}
   - {id: bea-data, name: U.S. Bureau of Economic Analysis, category: Business & economy, topic: economy, region: international, authority: statistical_agency, url: 'https://apps.bea.gov/rss/rss.xml', hosts: [www.bea.gov, bea.gov], full_article: true, max_articles: 4}
   - {id: ecb-data, name: European Central Bank, category: Business & economy, topic: economy, region: international, authority: central_bank, url: 'https://www.ecb.europa.eu/rss/press.html', hosts: [www.ecb.europa.eu], full_article: true, max_articles: 6}
   - {id: huggingface, name: Hugging Face, category: AI tools & model releases, url: 'https://huggingface.co/blog/feed.xml', hosts: [huggingface.co]}
@@ -49,10 +49,247 @@ sources:
   - {id: transformers, name: Transformers releases, category: AI tools & model releases, github_repo: huggingface/transformers, hosts: [github.com]}
   - {id: quarto, name: Quarto releases, category: Education / learning sciences / edtech, github_repo: quarto-dev/quarto-cli, hosts: [github.com]}
 
-  - {id: cbc-business, name: CBC Business, url: 'https://www.cbc.ca/webfeed/rss/rss-business', hosts: [www.cbc.ca], category: Business & economy, topic: economy, region: international, authority: public_media, full_article: true, max_articles: 25}
-  - {id: npr-business, name: NPR Business, url: 'https://feeds.npr.org/1006/rss.xml', hosts: [www.npr.org], category: Business & economy, topic: economy, region: international, authority: public_media, full_article: true, max_articles: 25}
+  - {id: cbc-business, publisher_id: cbc, name: CBC Business, url: 'https://www.cbc.ca/webfeed/rss/rss-business', hosts: [www.cbc.ca], category: Business & economy, topic: economy, region: international, authority: public_media, full_article: true, max_articles: 25}
+  - {id: npr-business, publisher_id: npr, name: NPR Business, url: 'https://feeds.npr.org/1006/rss.xml', hosts: [www.npr.org], category: Business & economy, topic: economy, region: international, authority: public_media, full_article: true, max_articles: 25}
   - {id: streamlit-streamlit, name: Streamlit releases, github_repo: streamlit/streamlit, hosts: [github.com], category: Research tools}
   - {id: fastapi-fastapi, name: FastAPI releases, github_repo: fastapi/fastapi, hosts: [github.com], category: Research tools}
   - {id: jupyter-notebook, name: Jupyter Notebook releases, github_repo: jupyter/notebook, hosts: [github.com], category: Research tools}
   - {id: dagster-io-dagster, name: Dagster releases, github_repo: dagster-io/dagster, hosts: [github.com], category: Research tools}
   - {id: PrefectHQ-prefect, name: Prefect releases, github_repo: PrefectHQ/prefect, hosts: [github.com], category: Research tools}
+
+  - id: bbc-tech
+    publisher_id: bbc
+    name: BBC Technology
+    category: Technology & research
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+    hosts:
+    - www.bbc.co.uk
+    - www.bbc.com
+    authority: public_media
+    full_article: true
+    max_articles: 10
+
+  - id: bbc-science
+    publisher_id: bbc
+    name: BBC Science & Environment
+    category: Science & research
+    url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+    hosts:
+    - www.bbc.co.uk
+    - www.bbc.com
+    authority: public_media
+    full_article: true
+    max_articles: 10
+
+  - id: npr-tech
+    publisher_id: npr
+    name: NPR Technology
+    category: Technology & research
+    url: https://feeds.npr.org/1019/rss.xml
+    hosts:
+    - www.npr.org
+    authority: public_media
+    full_article: true
+    max_articles: 10
+
+  - id: npr-science
+    publisher_id: npr
+    name: NPR Science
+    category: Science & research
+    url: https://feeds.npr.org/1007/rss.xml
+    hosts:
+    - www.npr.org
+    authority: public_media
+    full_article: true
+    max_articles: 10
+
+  - id: cbc-tech
+    publisher_id: cbc
+    name: CBC Technology & Science
+    category: Technology & research
+    url: https://www.cbc.ca/webfeed/rss/rss-technology
+    hosts:
+    - www.cbc.ca
+    authority: public_media
+    full_article: true
+    max_articles: 10
+
+  - id: guardian-science
+    publisher_id: guardian
+    name: The Guardian Science
+    category: Science & research
+    url: https://www.theguardian.com/science/rss
+    hosts:
+    - www.theguardian.com
+    authority: established_newsroom
+    full_article: true
+    max_articles: 10
+
+  - id: guardian-tech
+    publisher_id: guardian
+    name: The Guardian Technology
+    category: Technology & research
+    url: https://www.theguardian.com/uk/technology/rss
+    hosts:
+    - www.theguardian.com
+    authority: established_newsroom
+    full_article: true
+    max_articles: 10
+
+  - id: sciencedaily
+    name: ScienceDaily
+    category: Science & research
+    url: https://www.sciencedaily.com/rss/top/science.xml
+    hosts:
+    - www.sciencedaily.com
+    authority: established_newsroom
+    full_article: true
+    max_articles: 10
+
+  - id: sciencealert
+    name: ScienceAlert
+    category: Science & research
+    url: https://www.sciencealert.com/feed
+    hosts:
+    - www.sciencealert.com
+    authority: established_newsroom
+    full_article: true
+    max_articles: 10
+
+  - id: nasa
+    name: NASA
+    category: Science & research
+    url: https://www.nasa.gov/feed/
+    hosts:
+    - science.nasa.gov
+    - www.nasa.gov
+    authority: research_primary
+    full_article: true
+    max_articles: 10
+
+  - id: mit-news
+    name: MIT News
+    category: Science & research
+    url: https://news.mit.edu/rss/research
+    hosts:
+    - news.mit.edu
+    authority: research_primary
+    full_article: true
+    max_articles: 10
+
+  - id: microsoft-research
+    name: Microsoft Research
+    category: Science & research
+    url: https://www.microsoft.com/en-us/research/feed/
+    hosts:
+    - www.microsoft.com
+    authority: research_primary
+    full_article: true
+    max_articles: 10
+
+  - id: amazon-science
+    name: Amazon Science
+    category: Science & research
+    url: https://www.amazon.science/index.rss
+    hosts:
+    - www.amazon.science
+    authority: research_primary
+    full_article: true
+    max_articles: 10
+
+  - id: mozilla
+    name: Mozilla
+    category: Technology & research
+    url: https://blog.mozilla.org/en/feed/
+    hosts:
+    - blog.mozilla.org
+    authority: developer_primary
+    full_article: true
+    max_articles: 10
+
+  - id: guardian-business
+    publisher_id: guardian
+    name: The Guardian Business
+    url: https://www.theguardian.com/business/rss
+    hosts:
+    - www.theguardian.com
+    topic: economy
+    region: international
+    category: Business & economy
+    authority: established_newsroom
+    full_article: true
+    max_articles: 15
+
+  - id: cnbc-business
+    name: CNBC Business
+    url: https://www.cnbc.com/id/10001147/device/rss/rss.html
+    hosts:
+    - www.cnbc.com
+    topic: economy
+    region: international
+    category: Business & economy
+    authority: established_newsroom
+    full_article: true
+    max_articles: 15
+    body_classes:
+    - ArticleBody-articleBody
+
+  - id: chinanews-finance
+    name: 中国新闻网财经
+    category: Business & economy
+    topic: economy
+    region: china
+    authority: news_agency
+    index_url: https://www.chinanews.com.cn/finance/
+    hosts:
+    - www.chinanews.com.cn
+    direct: true
+    link_pattern: /cj/\d{4}/\d{2}-\d{2}/\d+\.shtml$
+    body_classes:
+    - content_maincontent_content
+    publication_pattern: <span\s+id="pubtime_baidu">([^<]+)</span>
+    max_articles: 20
+
+  - id: sciencenet-news
+    name: 科学网新闻
+    category: Science & research
+    region: china
+    authority: established_newsroom
+    index_url: https://news.sciencenet.cn/
+    hosts:
+    - news.sciencenet.cn
+    direct: true
+    link_pattern: /htmlnews/\d{4}/\d{1,2}/\d+\.shtm$
+    body_ids:
+    - content1
+    publication_pattern: 发布时间[：:]\s*(\d{4}/\d{1,2}/\d{1,2}\s+\d{1,2}:\d{2}:\d{2})
+    publication_format: '%Y/%m/%d %H:%M:%S'
+    max_articles: 18
+
+  - id: cas-research
+    name: 中国科学院科研进展
+    category: Science & research
+    region: china
+    authority: research_primary
+    index_url: https://www.cas.cn/syky/
+    hosts:
+    - www.cas.cn
+    direct: true
+    link_pattern: /syky/\d{6}/t\d{8}_\d+\.shtml$
+    body_classes:
+    - trs_editor_view
+    max_articles: 12
+
+  - id: dw-business
+    name: DW Business
+    url: https://rss.dw.com/rdf/rss-en-bus
+    hosts:
+    - www.dw.com
+    - www.dw.de
+    - dw.com
+    topic: economy
+    region: international
+    category: Business & economy
+    authority: public_media
+    full_article: true
+    max_articles: 25

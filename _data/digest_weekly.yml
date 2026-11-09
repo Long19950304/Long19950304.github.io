@@ -78,3 +78,35 @@ weeks:
     url: https://huggingface.co/blog/open-asr-leaderboard-liva
     source: Hugging Face
     category: AI tools & model releases
+- week: 2026-W46
+  start: '2026-11-09'
+  end: '2026-11-15'
+  issues:
+  - '2026-11-09'
+  highlights_news:
+  - title: China’s CPI Rose 0.7% in October
+    title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
+    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965795.html
+    source: 国家统计局
+    category: Business & economy
+  - title: Jetty Enters the Hydration Market
+    title_zh: Jetty进入美国日常补水市场
+    url: https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html
+    source: CNBC Business
+    category: Business & economy
+  - title: abcFISH enables single-molecule imaging of circular RNA
+    title_zh: 中国科学院团队开发环形RNA单分子原位成像技术
+    url: https://www.cas.cn/syky/202611/t20261106_5123658.shtml
+    source: 中国科学院科研进展
+    category: Science & research
+  - title: “乾阵”Interconnected Neutral-Atom Prototype Unveiled
+    title_zh: “乾阵”可互联中性原子量子计算机原型机发布
+    url: https://news.sciencenet.cn/htmlnews/2026/11/574419.shtm
+    source: 科学网新闻
+    category: Science & research
+  - title: Electrons Face a Space-Time Limit
+    title_zh: 电子运动存在时空极限
+    url: https://www.sciencedaily.com/releases/2026/11/261106174537.htm
+    source: ScienceDaily
+    category: Science & research
+  highlights_ai: []

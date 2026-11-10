@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Peer-reviewed articles, preprints, working papers, and conference papers.
+description: Published and accepted journal articles, preprints, working papers, and conference papers.
 nav: true
 nav_order: 2
 lang: en
@@ -13,12 +13,18 @@ translation_key: publications
 
 <!-- Bibsearch Feature -->
 
-<nav class="publication-jumps" aria-label="Publication sections"><a href="#articles">Articles</a> · <a href="#preprints">Preprints</a> · <a href="#chapters">Chapters and reports</a> · <a href="#conferences">Conferences</a></nav>
+<nav class="publication-jumps" aria-label="Publication sections"><a href="#upcoming">Accepted / Upcoming</a> · <a href="#articles">Articles</a> · <a href="#preprints">Preprints</a> · <a href="#chapters">Chapters and reports</a> · <a href="#conferences">Conferences</a></nav>
 
 {% include bib_search.liquid %}
 
 <div class="publications">
 
+<section class="publication-group">
+<h2 id="upcoming">Accepted / Upcoming Articles</h2>
+
+{% bibliography --file accepted --group_by none --query @article %}
+
+</section>
 <section class="publication-group">
 <h2 id="articles">Peer-reviewed Articles</h2>
 

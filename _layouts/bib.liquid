@@ -189,7 +189,11 @@
       {{ periodical | strip }}
     </div>
     <div class="periodical">
-      {{ entry.note | strip }}
+      {% if entry.pubstate == 'accepted' and page.lang == 'zh' %}
+        已接收（{{ entry.accepted_date | date: '%Y年%-m月%-d日' }}），待刊。
+      {% else %}
+        {{ entry.note | strip }}
+      {% endif %}
     </div>
 
     <!-- Links/Buttons -->

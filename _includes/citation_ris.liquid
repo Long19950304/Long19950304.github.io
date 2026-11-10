@@ -14,7 +14,7 @@
 {%- endfor -%}
 {%- assign result = result | append: 'TI  - ' | append: include.title | append: newline -%}
 {%- if include.container != blank -%}{%- assign result = result | append: 'T2  - ' | append: include.container | append: newline -%}{%- endif -%}
-{%- assign result = result | append: 'PY  - ' | append: include.year | append: newline -%}
+{%- if include.year != blank -%}{%- assign result = result | append: 'PY  - ' | append: include.year | append: newline -%}{%- endif -%}
 {%- if include.publisher != blank -%}{%- assign result = result | append: 'PB  - ' | append: include.publisher | append: newline -%}{%- endif -%}
 {%- if include.address != blank -%}{%- assign result = result | append: 'CY  - ' | append: include.address | append: newline -%}{%- endif -%}
 {%- if include.volume != blank -%}{%- assign result = result | append: 'VL  - ' | append: include.volume | append: newline -%}{%- endif -%}

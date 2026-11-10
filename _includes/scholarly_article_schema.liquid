@@ -37,7 +37,11 @@
     "url": {{ url | default: canonical_url | strip | jsonify }},
     "mainEntityOfPage": {{ canonical_url | strip | jsonify }},
     "inLanguage": {{ page_lang | jsonify }},
+    {% if entry.pubstate == 'accepted' %}
+    "creativeWorkStatus": "Accepted for publication",
+    {% else %}
     "datePublished": {{ entry.year | default: "" | strip | jsonify }},
+    {% endif %}
     "author": [
       {%- for a in entry.author_array -%}
         { "@type": "Person", "name": {{- a.first | append: " " | append: a.last | strip | jsonify -}} }{%- unless forloop.last -%},{%- endunless -%}

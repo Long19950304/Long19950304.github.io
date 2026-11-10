@@ -35,13 +35,6 @@ latest_posts:
 
 我在澳门大学获得传播学博士学位，曾在华南理工大学新闻与传播学院从事博士后研究。
 
-<div class="cta-row">
-  <a class="btn-cta" href="/zh/publications/"><i class="ti ti-file-text"></i> 论文</a>
-  <a class="btn-cta" href="/zh/cv/"><i class="ti ti-id"></i> 简历</a>
-</div>
-
-<p class="profile-links"><a href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ">Google Scholar</a> · <a href="https://orcid.org/0000-0002-3771-4969">ORCID</a> · <a href="mailto:zhilongzhao@wyu.edu.cn">邮箱</a></p>
-
 ## 研究兴趣
 
 - **健康与公共传播**：媒体使用、信任、健康素养，以及社会议题的新闻框架。

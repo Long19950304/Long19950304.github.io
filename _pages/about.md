@@ -35,13 +35,6 @@ My research examines health and public communication, media use and trust, and *
 
 I hold a PhD in Communication from the University of Macau and previously worked as a postdoctoral researcher at South China University of Technology.
 
-<div class="cta-row">
-  <a class="btn-cta" href="/publications/"><i class="ti ti-file-text"></i> Publications</a>
-  <a class="btn-cta" href="/cv/"><i class="ti ti-id"></i> CV</a>
-</div>
-
-<p class="profile-links"><a href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ">Google Scholar</a> · <a href="https://orcid.org/0000-0002-3771-4969">ORCID</a> · <a href="mailto:zhilongzhao@wyu.edu.cn">Email</a></p>
-
 ## Research Interests
 
 - **Health and public communication**: media use, trust, health literacy, and the framing of social issues.

@@ -21,11 +21,22 @@ published digests, the section is hidden.
 
 The homepage also displays exactly the latest three available accepted/published
 journal articles, automatically selected from `accepted.bib` and `papers.bib` by
-`_plugins/recent-publications.rb`. Accepted work uses `accepted_date`; published
-work uses `publication_date` (first formal online publication, not a later print
-issue year). Keep citation years unchanged. Legacy year-only records sort by
-year without displaying an invented month or day. Future dates are excluded.
+`_plugins/recent-publications.rb`. Per the user's preference, English-language
+articles (`language = {en}`) take priority. Entries marked `homepage = {false}`
+are excluded from the homepage, while remaining on the full publications page;
+the Macau Studies article is explicitly excluded.
+
+Accepted work uses `accepted_date`; published work uses `final_publication_date`
+when available (the final issue publication date), otherwise `publication_date`
+or its known year. Within language priority, sort newest first. Keep citation
+years unchanged. Preserve date precision: a known month such as 2026-08 never
+becomes a fabricated day. Future dates are excluded.
 Preprints and book chapters are not journal articles and do not enter this list.
 When a paper is published, move it to `papers.bib`, remove the accepted status,
-and record its actual first publication date. The next build updates the three
+and record its actual final issue publication date when available. The next build updates the three
 homepage entries automatically.
+
+Date verification on 2026-11-10: Crossref records final print publication for
+`10.1007/s10896-024-00796-8` as August 2026, and
+`10.1080/10410236.2024.2387389` as 12 May 2025. First-online dates are preserved
+as bibliographic history and are not used when a final date is known.

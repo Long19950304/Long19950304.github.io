@@ -702,21 +702,40 @@ def balance_english_length(issue, lookup, policy):
 
 
 def balance_chinese_length(issue, lookup, policy):
-    """Allow uneven story lengths while enforcing the complete Mandarin edition."""
+    """Use measured feedback and bounded edits before either editorial gate."""
+    def count(text):
+        return len(re.findall(r'[\u4e00-\u9fff]', text))
+
+    def distance(total):
+        return max(2100 - total, total - 3300, 0)
+
     for item in sorted(issue['items'], key=lambda it: len(lookup[it['id']]['evidence']), reverse=True):
-        total = len(re.findall(r'[\u4e00-\u9fff]', transcript(issue, 'zh')))
-        if 2100 <= total <= 3300: return
-        current = len(re.findall(r'[\u4e00-\u9fff]', item['script_zh']))
-        target = current + max(-200, min(200, 2400 - total))
-        value = llm(policy, STORY_WRITING_PROMPT + '\nEdit the supplied Mandarin script only. Return {"script_zh":"complete revised Mandarin narration"}. Preserve all facts, attribution and numerical magnitudes. Use the source to supply substantive details; do not repeat or pad.',
-                    {'source': lookup[item['id']], 'previous_copy': item,
-                     'correction_required': f'The whole programme has {total} Han characters. This script needs {target - 30}–{target + 30} actual Han characters, excluding punctuation, digits and Latin letters.'}, max_tokens=4500)
-        if not isinstance(value, dict) or not isinstance(value.get('script_zh'), str):
-            raise ValueError('Length correction returned no Mandarin narration')
-        item['script_zh'] = value['script_zh']
-        validate_story(item, lookup[item['id']], item['coverage'], policy)
-    if not 2100 <= len(re.findall(r'[\u4e00-\u9fff]', transcript(issue, 'zh'))) <= 3300:
-        raise ValueError('Mandarin programme length correction failed')
+        feedback = None
+        for attempt in range(3):
+            total = count(transcript(issue, 'zh'))
+            if distance(total) == 0: return
+            current = count(item['script_zh'])
+            target = max(120, current + max(-350, min(350, 2400 - total)))
+            value = llm(policy, STORY_WRITING_PROMPT + '\nEdit the supplied Mandarin script only. Return {"script_zh":"complete revised Mandarin narration"}. Preserve all facts, attribution and numerical magnitudes. Use the source to supply substantive details; do not repeat or pad. The application counts actual Han characters; punctuation, digits and Latin letters do not count. Follow the measured length feedback.',
+                        {'source': lookup[item['id']], 'previous_copy': item,
+                         'correction_required': f'The whole programme has {total} Han characters; this script currently has {current}. Return a complete replacement script with {target - 30}–{target + 30} actual Han characters.',
+                         **({'previous_attempt': feedback} if feedback else {})}, max_tokens=4500)
+            if not isinstance(value, dict) or not isinstance(value.get('script_zh'), str):
+                raise ValueError('Length correction returned no Mandarin narration')
+            revised = {**item, 'script_zh': value['script_zh']}
+            validate_story(revised, lookup[item['id']], item['coverage'], policy)
+            measured = count(revised['script_zh'])
+            revised_total = total - current + measured
+            feedback = {'script_zh': revised['script_zh'], 'actual_han_characters': measured,
+                        'required_han_characters': [target - 30, target + 30]}
+            # Keep useful progress, never replace a draft with a worse-length
+            # response just because the model claims to have obeyed the request.
+            if distance(revised_total) < distance(total):
+                item['script_zh'] = revised['script_zh']
+            print(f"{item['id']}: Mandarin length edit {attempt + 1}/3 measured {measured}; programme {count(transcript(issue, 'zh'))}", flush=True)
+    total = count(transcript(issue, 'zh'))
+    if distance(total):
+        raise ValueError(f'Mandarin programme length correction failed ({total} Han characters; required 2100–3300)')
 
 
 def resume_or_draft(day, candidates, work, policy):

@@ -139,6 +139,38 @@ class PublicationTests(unittest.TestCase):
             d.compose_issue('2026-11-07', selection, self.candidates, work, self.policy)
             call.assert_called_once()
 
+    def test_mandarin_length_retries_with_measured_feedback(self):
+        issue = copy.deepcopy(self.issue)
+        for item in issue['items']:
+            item['script_zh'] = '研究工具' * 80
+        replies = [{'script_zh': '研究工具' * n} for n in (80, 150, 160, 140)]
+        with mock.patch.object(d, 'llm', side_effect=replies) as call:
+            d.balance_chinese_length(issue, {c['id']: c for c in self.candidates}, self.policy)
+        self.assertEqual(call.call_count, 4)
+        self.assertEqual(call.call_args_list[1].args[2]['previous_attempt']['actual_han_characters'], 320)
+        self.assertEqual(len(d.validate_issue(issue, self.candidates, self.policy)), 5)
+
+    def test_mandarin_length_fails_closed_without_progress(self):
+        issue = copy.deepcopy(self.issue)
+        for item in issue['items']:
+            item['script_zh'] = '研究工具' * 80
+        original = copy.deepcopy(issue)
+        with mock.patch.object(d, 'llm', return_value={'script_zh': '研究工具' * 60}) as call:
+            with self.assertRaisesRegex(ValueError, 'Mandarin programme length correction failed'):
+                d.balance_chinese_length(issue, {c['id']: c for c in self.candidates}, self.policy)
+        self.assertEqual(call.call_count, 15)
+        self.assertEqual(issue, original)
+
+    def test_mandarin_length_edit_still_rejects_sensitive_copy(self):
+        issue = copy.deepcopy(self.issue)
+        for item in issue['items']:
+            item['script_zh'] = '研究工具' * 80
+        original = copy.deepcopy(issue)
+        with mock.patch.object(d, 'llm', return_value={'script_zh': '研究工具' * 150 + '军事冲突'}):
+            with self.assertRaisesRegex(ValueError, 'Excluded topic'):
+                d.balance_chinese_length(issue, {c['id']: c for c in self.candidates}, self.policy)
+        self.assertEqual(issue, original)
+
     def test_sensitive_topics_in_either_language_block(self):
         for value in ('election', 'export controls', 'military applications', 'global oil prices affected by war', 'conflict in Iran', '台湾', '政策由政府制定'):
             with self.subTest(value=value):

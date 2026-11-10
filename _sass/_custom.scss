@@ -1275,14 +1275,16 @@ html[data-theme="dark"] .digest-index-card { --digest-ink: #294e57; }
 .site-updates__meta time { font-variant-numeric: tabular-nums; }
 .site-updates__body { min-width: 0; }
 .site-updates__body h3 { margin: 0 0 .4rem; font-size: .95rem; font-weight: 400; line-height: 1.55; }
-.site-updates__body h3 a { color: var(--global-text-color); font-weight: 400; text-decoration: none; }
-.site-updates__body h3 a:hover { color: var(--global-text-color); text-decoration: underline; text-underline-offset: .2em; }
 .site-updates__body p { margin: 0; color: var(--global-text-color-light); font-size: .9rem; line-height: 1.75; overflow-wrap: anywhere; }
 .site-updates__digest { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: .9rem 0 0; font-size: .85rem; line-height: 1.7; }
 .site-updates__digest > span { color: var(--global-text-color-light); }
-.site-updates__digest a { color: var(--global-text-color-light); font-weight: 400; text-decoration: none; }
-.site-updates__digest a:hover { color: var(--global-text-color-light); text-decoration: underline; text-underline-offset: .2em; }
-.site-updates a:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
+#latest-updates a,
+#latest-updates a:link,
+#latest-updates a:visited,
+#latest-updates a:hover,
+#latest-updates a:active { color: var(--global-text-color); background: transparent; font-weight: 400; text-decoration: none; }
+#latest-updates a:hover { text-decoration: underline; text-underline-offset: .2em; }
+#latest-updates a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .recent-publications__date { margin: 1.25rem 0 .4rem; color: var(--global-text-color-light); font-size: .8rem; font-variant-numeric: tabular-nums; }
 #recent-publications { scroll-margin-top: 90px; }
 @media (max-width: 575px) {

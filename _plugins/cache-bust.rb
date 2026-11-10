@@ -43,7 +43,10 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      site = @context.registers[:site]
+      # The actual Sass sources live in _sass, not assets/_sass. Hashing an
+      # absent directory kept every release on the empty-string cache key.
+      CacheDigester.new(file_name: file_name, directory: site.in_source_dir('_sass')).digest!
     end
   end
 end

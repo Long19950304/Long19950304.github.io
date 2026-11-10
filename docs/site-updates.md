@@ -17,6 +17,11 @@ link automatically, without filling the milestone list with daily news items.
 No client-side polling or new service is needed. If there are no milestones or
 published digests, the section is hidden.
 
+Display this section as one quiet panel: a subtle neutral background, thin
+border, modest corner radius and internal spacing. Keep headings and links at
+regular weight and links in the body text color. Use a matching dark surface in
+dark mode and reduce padding on small screens.
+
 ## Recent Publications
 
 The homepage also displays exactly the latest three available accepted/published

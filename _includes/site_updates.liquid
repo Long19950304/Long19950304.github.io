@@ -1,0 +1,45 @@
+{% assign updates_lang = page.lang | default: 'en' %}
+{% assign today_key = site.time | date: '%Y-%m-%d' %}
+{% assign milestones = site.data.site_updates | sort: 'date' | reverse %}
+{% assign shown_updates = 0 %}
+{% capture milestone_rows %}
+  {% for update in milestones %}
+    {% assign event_date = update.date | date: '%Y-%m-%d' %}
+    {% if event_date <= today_key and update.title[updates_lang] and update.url[updates_lang] %}
+      <li class="site-updates__item">
+        <div class="site-updates__meta">
+          <time datetime="{{ event_date }}">{{ event_date }}</time>
+          <span>{{ update.category[updates_lang] | escape }}</span>
+        </div>
+        <div class="site-updates__body">
+          <h3><a href="{{ update.url[updates_lang] | relative_url }}">{{ update.title[updates_lang] | escape }}</a></h3>
+          {% if update.description[updates_lang] %}<p>{{ update.description[updates_lang] | escape }}</p>{% endif %}
+        </div>
+      </li>
+      {% assign shown_updates = shown_updates | plus: 1 %}
+      {% if shown_updates >= 4 %}{% break %}{% endif %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign newest_digest = nil %}
+{% assign sorted_digests = site.data.digests | sort %}
+{% for pair in sorted_digests reversed %}
+  {% assign digest_date = pair[1].date | date: '%Y-%m-%d' %}
+  {% if pair[1].edition == 'daily-audio' and digest_date <= today_key %}
+    {% assign newest_digest = pair[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if shown_updates > 0 or newest_digest %}
+<section class="site-updates" id="latest-updates" aria-labelledby="latest-updates-heading">
+  <h2 id="latest-updates-heading">{% if updates_lang == 'zh' %}最新动态{% else %}Latest Updates{% endif %}</h2>
+  {% if shown_updates > 0 %}<ul class="site-updates__list">{{ milestone_rows }}</ul>{% endif %}
+  {% if newest_digest %}
+    {% assign newest_date = newest_digest.date | date: '%Y-%m-%d' %}
+    <p class="site-updates__digest">
+      <span>{% if updates_lang == 'zh' %}每日简报{% else %}Daily Digest{% endif %}</span>
+      <a href="{% if updates_lang == 'zh' %}{{ '/zh/digest/' | relative_url }}{% else %}{{ '/digest/' | relative_url }}{% endif %}">{% if updates_lang == 'zh' %}最新一期：{{ newest_date }} · 中英文音频{% else %}Latest edition: {{ newest_date }} · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a>
+    </p>
+  {% endif %}
+</section>
+{% endif %}

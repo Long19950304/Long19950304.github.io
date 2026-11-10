@@ -1267,5 +1267,23 @@ html[data-theme="dark"] .digest-index-card { --digest-ink: #294e57; }
 .game-showcase-mode { border: 1px solid var(--global-divider-color); border-radius: 8px; padding: .65rem .8rem; background: var(--global-card-bg-color); color: var(--global-text-color); }
 .game-card { scroll-margin-top: 90px; }
 .game-card__controls { color: var(--global-text-color-light); font-size: .78rem; line-height: 1.6; margin: 0 0 .7rem; }
+.site-updates { margin: 2rem 0 2.75rem; scroll-margin-top: 90px; }
+.site-updates h2 { margin: 0 0 1rem; }
+.site-updates__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--global-divider-color); }
+.site-updates__item { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 1.25rem; padding: 1.2rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.site-updates__meta { display: flex; flex-direction: column; gap: .3rem; color: var(--global-text-color-light); font-size: .8rem; line-height: 1.6; }
+.site-updates__meta time { font-variant-numeric: tabular-nums; }
+.site-updates__body { min-width: 0; }
+.site-updates__body h3 { margin: 0 0 .4rem; font-size: 1.05rem; line-height: 1.55; }
+.site-updates__body h3 a { color: var(--global-text-color); text-decoration: underline; text-decoration-color: var(--global-divider-color); text-underline-offset: .2em; }
+.site-updates__body h3 a:hover { color: var(--global-theme-color); }
+.site-updates__body p { margin: 0; color: var(--global-text-color-light); font-size: .9rem; line-height: 1.75; overflow-wrap: anywhere; }
+.site-updates__digest { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: .9rem 0 0; font-size: .85rem; line-height: 1.7; }
+.site-updates__digest > span { color: var(--global-text-color-light); }
+.site-updates a:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
+@media (max-width: 575px) {
+  .site-updates__item { grid-template-columns: 1fr; gap: .45rem; }
+  .site-updates__meta { flex-direction: row; gap: .75rem; }
+}
 .game-card__actions .btn, .game-comment-link { min-height: 44px; }
 @media (min-width: 576px) and (max-width: 760px) { .game-showcase-toolbar { flex-wrap: wrap; } .game-showcase-search { flex-basis: 100%; } }

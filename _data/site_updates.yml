@@ -1,0 +1,17 @@
+# Significant public milestones, newest first after sorting by date.
+# Dates describe the event, not the day the website was edited.
+# Supply both languages and link to an existing public page. Do not add private
+# submission targets, unconfirmed achievements, or routine code/deployment changes.
+- date: '2026-11-06'
+  category:
+    en: Publication
+    zh: 论文
+  title:
+    en: Article accepted by Journal of Health Communication
+    zh: 论文获 Journal of Health Communication 接收
+  description:
+    en: With Yindi Liu, on perceived social-media health misinformation, trust, and patient–clinician communication in HINTS 2022 and 2024. Accepted; awaiting publication.
+    zh: 与刘银娣合作，考察 HINTS 2022 与 2024 中感知到的社交媒体健康错误信息、信任及医患沟通。已接收，待刊。
+  url:
+    en: /publications/#zhao-liu-health-misinformation-hints-accepted
+    zh: /zh/publications/#zhao-liu-health-misinformation-hints-accepted

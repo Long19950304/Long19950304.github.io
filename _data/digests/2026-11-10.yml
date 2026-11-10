@@ -1,0 +1,92 @@
+date: '2026-11-10'
+note: China producer prices rise in October · Skydance Details Planned Operating Cost
+  Savings · NASA ESCAPADE Spacecraft Begin Trip to Mars
+note_zh: 国家统计局：2026年10月工业生产者价格同比上涨5.7%；Skydance公布未来三年经营成本节约计划；NASA的ESCAPADE双探测器启程前往火星
+edition: daily-audio
+policy_version: 5
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-10-zh.mp3
+    seconds: 657.7
+    bytes: 5262092
+    sha256: 52d313df50a860485456a5505c8ee169d23b44f0a7b22b1d3d66512bffd16bbd
+  en:
+    path: /assets/audio/digests/2026-11-10-en.mp3
+    seconds: 679.7
+    bytes: 5438348
+    sha256: bdd85759cee9a392302221d4cc4e70fcc34c21295fa71e920f2a33ecdb8e0c4b
+items:
+- title: China producer prices rise in October
+  title_zh: 国家统计局：2026年10月工业生产者价格同比上涨5.7%
+  url: https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965794.html
+  published: '2026-11-09T09:30:00+08:00'
+  source: 国家统计局
+  category: Business & economy
+  source_id: nbs-china
+  authority: statistical_agency
+  publisher_id: nbs-china
+  coverage: china
+  why: China’s National Bureau of Statistics reported October 2026 factory-gate prices
+    up 5.7 percent year on year and 0.7 percent month on month. Production-material
+    prices rose, while the consumer-goods factory-gate category fell 0.1 percent on
+    both comparisons.
+  why_zh: 国家统计局数据显示，2026年10月全国工业生产者出厂价格同比上涨5.7%、环比上涨0.7%。生产资料价格涨幅较高，生活资料价格同比和环比均下降0.1%。
+- title: Skydance Details Planned Operating Cost Savings
+  title_zh: Skydance公布未来三年经营成本节约计划
+  url: https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html
+  published: '2026-11-09T23:14:38+00:00'
+  source: CNBC Business
+  category: Business & economy
+  source_id: cnbc-business
+  authority: established_newsroom
+  publisher_id: cnbc-business
+  coverage: world
+  why: CNBC reported on November 9 that Skydance outlined at least $6 billion in planned
+    cost savings over three years. The company described proposed operational integration
+    and said its reported third-quarter results excluded the later Warner Bros. Discovery
+    acquisition.
+  why_zh: CNBC于11月9日报道，Skydance公布未来三年至少节约60亿美元成本的计划，涉及后台、营销、流媒体及采购整合。报道中的第三季度财务结果未包含季度结束后完成的华纳兄弟探索收购。
+- title: NASA ESCAPADE Spacecraft Begin Trip to Mars
+  title_zh: NASA的ESCAPADE双探测器启程前往火星
+  url: https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars
+  published: '2026-11-09T16:01:47+00:00'
+  source: NASA
+  category: Science & research
+  source_id: nasa
+  authority: research_primary
+  publisher_id: nasa
+  coverage: world
+  why: NASA reports that both ESCAPADE spacecraft completed powered Earth flybys and
+    are on course for a 10-month cruise to Mars. The mission will study the solar
+    wind’s effects on Mars, with science operations expected to begin in June 2028.
+  why_zh: NASA于2026年11月9日报道，两艘ESCAPADE航天器完成动力地球掠过，正按计划用10个月飞往火星。科学观测预计于2028年6月开始，研究太阳风如何影响火星环境及大气流失。
+- title: HOPE Prunes MoE Experts by Cooperation
+  title_zh: HOPE通过专家协作关系优化混合专家模型剪枝
+  url: https://huggingface.co/blog/amazon/higher-order-pruning-experts
+  published: '2026-11-09T12:34:29+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  source_id: huggingface
+  authority: developer_primary
+  publisher_id: huggingface
+  coverage: world
+  why: Hugging Face reports that HOPE reduces memory use in mixture-of-experts models
+    by removing experts while accounting for their pairwise cooperation. Its tested
+    advantage was clearest at 40–50% pruning, where it preserved benchmark performance
+    better than first-order baselines.
+  why_zh: 据Hugging Face于2026年11月9日发布的文章，HOPE在剪除混合专家模型专家时纳入两两协作关系，以降低推理内存需求。其测试优势在40%至50%的高剪枝率下最明显，可更好地保持基准性能。
+- title: FLEX Teaches Robots to Generalize Commands
+  title_zh: FLEX让机器人从自然语言指令中泛化安全偏好
+  url: https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109
+  published: '2026-11-09T05:00:00+00:00'
+  source: MIT News
+  category: Science & research
+  source_id: mit-news
+  authority: research_primary
+  publisher_id: mit-news
+  coverage: world
+  why: MIT News reports that researchers from MIT and New York University developed
+    FLEX, a system that helps robots infer broader safety preferences from natural-language
+    commands. Testing was limited to simulations of three robotic-arm tasks, so the
+    results do not yet establish performance in real homes or care settings.
+  why_zh: MIT News于2026年11月9日报道，麻省理工学院与纽约大学研究人员开发了机器人运动规划系统FLEX，可从自然语言指令推断更广泛的安全偏好。测试限于三类机械臂任务的模拟环境，尚未证明其在真实家庭或辅助场景中的表现。

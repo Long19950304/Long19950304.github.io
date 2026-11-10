@@ -1,0 +1,46 @@
+Welcome to the daily economy, technology and research briefing for November 10, 2026. Today we cover economic developments in China and around the world, alongside useful technology and research updates. Each story comes with an attributable source. We explain the reporting period and the limits of the evidence, and keep any practical suggestions separate from the news.
+
+China producer prices rise in October.
+China’s National Bureau of Statistics released its October 2026 industrial producer price figures on November 9. Factory-gate prices rose 5.7 percent from a year earlier and 0.7 percent from September. Industrial input purchase prices rose 7.9 percent year on year and 1.1 percent month on month. January-to-October averages increased 2.7 percent and 4.0 percent respectively, compared with the same period last year.
+
+Production-material factory-gate prices rose 7.4 percent annually and 0.9 percent monthly. Annual increases were 27.9 percent for mining, 11.6 percent for raw materials and 3.5 percent for processing. Their monthly increases were 2.8, 2.0 and 0.2 percent respectively.
+
+Consumer-goods factory-gate prices fell 0.1 percent on both comparisons. Food, clothing and general daily-use goods fell 1.6, 1.3 and 0.7 percent annually. Their monthly changes were zero, minus 0.2 and minus 0.1 percent. Durable consumer goods rose 1.4 percent annually but fell 0.1 percent monthly.
+
+Factory-gate statistics concern industrial products’ first sale and cover 41 major industrial sectors and over 1,300 basic classifications. Input purchase-price statistics cover nine categories and over 800 classifications. The survey involves over 40,000 industrial enterprises.
+
+Since January 2026, the producer price index has used 2025 as its base year. The agency estimates that this rebasing affected monthly year-on-year indices by an average of about 0.08 percentage points. It also notes that rounding affects reported figures; changes rounded to zero are treated as unchanged.
+
+Skydance Details Planned Operating Cost Savings.
+CNBC reported on November 9, 2026, that Skydance had outlined plans for at least six billion dollars in cost savings over the next three years. These are company projections, rather than savings already achieved.
+
+In a shareholder letter accompanying its third-quarter release, the company described combining streaming services, film and television studio groups, television portfolios and overlapping corporate functions. It said the combined expense base exceeded fifty billion dollars.
+
+The proposed reductions include at least 2.2 billion dollars from back-office and corporate functions, including management layers, office arrangements and greater use of artificial intelligence. Skydance expects at least one billion dollars from marketing and promotion, about 1.4 billion from streaming and technology integration, and another 1.4 billion from third-party spending and centralized purchasing.
+
+CNBC also reported plans to offer a Paramount+ and HBO Max bundle early next year as a step toward eventually combining the services. That bundle is a planned offering; the report does not describe it as already available.
+
+The quarterly results cited in the article concern the legacy Paramount Skydance business. Revenue was 7.03 billion dollars, with adjusted earnings before interest, taxes, depreciation and amortization of one billion dollars. Those results exclude the Warner Bros. Discovery acquisition, which closed after the quarter ended.
+
+The company said full-year guidance would accompany its next fourth-quarter report. The evidence therefore separates a completed reporting period from future integration and cost-saving plans; it does not establish that those targets will be achieved.
+
+NASA ESCAPADE Spacecraft Begin Trip to Mars.
+NASA reported on November 9, 2026, that its two ESCAPADE spacecraft had completed powered flybys of Earth and were traveling toward Mars. The first spacecraft reached its closest approach and completed an approximately 9-minute trans-Mars injection burn at 5 a.m. EST on November 7, about 1,000 miles above Earth’s surface. The second completed the maneuver at 6 a.m. EST on November 9, about 650 miles above the surface. NASA described these as the first powered Earth flybys it has used to propel spacecraft toward Mars. Each craft is now on course for a 10-month cruise. Mars orbit insertion burns are planned for September 7 and September 9, 2027, after which the spacecraft will maneuver into a shared science formation. According to NASA, the pair will investigate how the solar wind interacts with the Martian environment and contributes to atmospheric loss. Science operations are expected to begin in June 2028. Later, the spacecraft will enter different orbits, with one farther from Mars and the other closer, for a five-month campaign. The University of California, Berkeley’s Space Sciences Laboratory leads the mission, with Rocket Lab, NASA’s Goddard Space Flight Center, Embry-Riddle Aeronautical University, Advanced Space, and Blue Origin among key partners. A documented limitation is that the arrival schedule, orbital maneuvers, and research results remain future plans rather than completed outcomes.
+
+HOPE Prunes MoE Experts by Cooperation.
+Hugging Face published this account on November 9, 2026, describing HOPE, a method for reducing inference memory in mixture-of-experts language models. The publisher says all expert parameters occupy memory even when a token activates only a small number of them. Expert pruning permanently removes selected experts, requires no training and is compatible with quantization.
+
+Unlike first-order methods that score experts independently, HOPE accounts for pairwise cooperation among jointly activated experts. It collects interaction data during one forward pass over calibration data, then solves a quadratic optimization problem for each layer to choose the prune-set. Hugging Face says this additional step takes one to two seconds per layer, while calibration dominates the cost.
+
+In tests using three models, two calibration datasets and pruning rates from 10% to 50%, the publisher reports that HOPE achieved the best average rank among the compared methods. At 50% pruning, its average rank was 1.58, versus 2.42 for the next-best method, REAP. On one agentic coding benchmark, the HOPE-pruned model scored 42.3, the unpruned model 41.8 and the REAP-pruned model 36.2.
+
+The documented limitations are that some first-order methods remain competitive at 10–20% pruning, cross-layer results are preliminary, and triplets or higher-order interactions are not captured. These results are reported by Hugging Face and were not independently verified.
+
+FLEX Teaches Robots to Generalize Commands.
+MIT News reported on November 9, 2026, that researchers from MIT and New York University have developed an AI-assisted learning platform called FLEX for robot motion planning. The system is intended to let people give robots instructions in ordinary conversational language and help robots draw broader conclusions from those instructions. In a reported simulation, a user tells a robotic arm carrying coffee not to spill on a laptop. FLEX uses a large language model to infer that electronics should also be avoided, so the robot changes its path to avoid a nearby phone without receiving that instruction explicitly.
+
+FLEX operates in three reported stages. The Add stage records objects mentioned by the user. Generalize uses GPT-4o to identify broader categories, such as treating electronics as objects to avoid. Mask uses the robot’s computer-vision system to remove objects no longer present. MIT News says the complete three-stage process takes about five seconds.
+
+Researchers tested FLEX in simulations involving a robotic arm serving coffee, moving a candle, and carrying a bowling ball. Volunteers entered commands by typing, and MIT News reports that the robot followed the commands while also avoiding broader categories such as electronics, flammable objects, and fragile items. The study was led by Andreea Bobu, with Audrey Lee and Ilia Sucholutsky as co-authors. A limitation is that these findings come from simulated tasks with volunteers typing instructions; the article does not report testing with physical robots, people speaking aloud, or deployment in homes and assistive settings. For teaching or research, the documented method provides a clear structure for comparing literal command following with preference generalization, while keeping the simulated evidence distinct from real-world performance.
+
+That concludes today’s briefing. Original sources and the complete narration are linked on the website. Thank you for listening.

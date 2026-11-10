@@ -83,6 +83,7 @@ weeks:
   end: '2026-11-15'
   issues:
   - '2026-11-09'
+  - '2026-11-10'
   highlights_news:
   - title: China’s CPI Rose 0.7% in October
     title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
@@ -109,4 +110,29 @@ weeks:
     url: https://www.sciencedaily.com/releases/2026/11/261106174537.htm
     source: ScienceDaily
     category: Science & research
-  highlights_ai: []
+  - title: China producer prices rise in October
+    title_zh: 国家统计局：2026年10月工业生产者价格同比上涨5.7%
+    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965794.html
+    source: 国家统计局
+    category: Business & economy
+  - title: Skydance Details Planned Operating Cost Savings
+    title_zh: Skydance公布未来三年经营成本节约计划
+    url: https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html
+    source: CNBC Business
+    category: Business & economy
+  - title: NASA ESCAPADE Spacecraft Begin Trip to Mars
+    title_zh: NASA的ESCAPADE双探测器启程前往火星
+    url: https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars
+    source: NASA
+    category: Science & research
+  - title: FLEX Teaches Robots to Generalize Commands
+    title_zh: FLEX让机器人从自然语言指令中泛化安全偏好
+    url: https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109
+    source: MIT News
+    category: Science & research
+  highlights_ai:
+  - title: HOPE Prunes MoE Experts by Cooperation
+    title_zh: HOPE通过专家协作关系优化混合专家模型剪枝
+    url: https://huggingface.co/blog/amazon/higher-order-pruning-experts
+    source: Hugging Face
+    category: AI tools & model releases

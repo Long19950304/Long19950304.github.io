@@ -3,57 +3,47 @@ layout: default
 ---
 <div class="post post-about">
   <header class="post-header post-header--hero">
-    <h1 class="post-title">
-      {% assign lang = page.lang | default: site.lang | default: "en" %}
-      {% if site.title == 'blank' %}
-        {% assign chinese_name = site.chinese_name | default: "" %}
-        {% capture english_name %}<span class="font-weight-bold">{{ site.first_name }}</span>{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
-        {% if chinese_name != "" %}
-          {% if lang == "zh" %}
-            <span class="font-weight-bold">{{ chinese_name }}</span>（{{ english_name }}）
+    <div class="about-identity">
+      <h1 class="post-title">
+        {% assign lang = page.lang | default: site.lang | default: "en" %}
+        {% if site.title == 'blank' %}
+          {% assign chinese_name = site.chinese_name | default: "" %}
+          {% capture english_name %}<span class="font-weight-bold">{{ site.first_name }}</span>{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+          {% if chinese_name != "" %}
+            {% if lang == "zh" %}
+              <span class="font-weight-bold">{{ chinese_name }}</span>（{{ english_name }}）
+            {% else %}
+              {{ english_name }} ({{ chinese_name }})
+            {% endif %}
           {% else %}
-            {{ english_name }} ({{ chinese_name }})
+            {{ english_name }}
           {% endif %}
         {% else %}
-          {{ english_name }}
+          {{ site.title }}
         {% endif %}
-      {% else %}
-        {{ site.title }}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+      {% if page.profile.more_info %}
+        <div class="about-contact">{{ page.profile.more_info }}</div>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    </div>
+    {% if page.profile.image %}
+      <div class="about-avatar">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% assign profile_image_class = 'img-fluid' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = profile_image_class | append: ' rounded-circle' %}
+        {% endif %}
+        {% if page.profile.pixel_art %}
+          {% assign profile_image_class = profile_image_class | append: ' pixel-art-avatar' %}
+        {% endif %}
+        {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes="(max-width: 575px) 72px, 104px" alt="Zhilong Zhao" cache_bust=true avoid_scaling=page.profile.pixel_art %}
+      </div>
+    {% endif %}
   </header>
 
   <article>
-    <div class="about-hero">
-      {% if page.profile %}
-        <div class="about-content clearfix">{{ content }}</div>
-
-        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% if page.profile.pixel_art %}
-              {% assign profile_image_class = profile_image_class | append: ' pixel-art-avatar' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.27}}px, (min-width: 576px) 27vw, 95vw{% endcapture %}
-            {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Zhilong Zhao"
-              cache_bust=true avoid_scaling=page.profile.pixel_art
-            %}
-          {% endif %}
-          {% if page.profile.more_info %}
-            <div class="more-info">{{ page.profile.more_info }}</div>
-          {% endif %}
-        </div>
-      {% else %}
-        <div class="about-content clearfix">{{ content }}</div>
-      {% endif %}
-    </div>
+    <div class="about-content clearfix">{{ content }}</div>
 
     {% include site_updates.liquid %}
 

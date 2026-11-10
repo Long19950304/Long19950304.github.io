@@ -16,3 +16,16 @@ edition from `_data/digests` at build time. Daily publication updates that one
 link automatically, without filling the milestone list with daily news items.
 No client-side polling or new service is needed. If there are no milestones or
 published digests, the section is hidden.
+
+## Recent Publications
+
+The homepage also displays exactly the latest three available accepted/published
+journal articles, automatically selected from `accepted.bib` and `papers.bib` by
+`_plugins/recent-publications.rb`. Accepted work uses `accepted_date`; published
+work uses `publication_date` (first formal online publication, not a later print
+issue year). Keep citation years unchanged. Legacy year-only records sort by
+year without displaying an invented month or day. Future dates are excluded.
+Preprints and book chapters are not journal articles and do not enter this list.
+When a paper is published, move it to `papers.bib`, remove the accepted status,
+and record its actual first publication date. The next build updates the three
+homepage entries automatically.

@@ -73,12 +73,12 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        {% if lang == 'zh' %}<a href="{{ '/zh/publications/' | relative_url }}" style="color: inherit">代表成果</a>{% else %}<a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Work</a>{% endif %}
+    <!-- Recent publications -->
+    {% if page.recent_publications %}
+      <h2 id="recent-publications">
+        {% if lang == 'zh' %}<a href="{{ '/zh/publications/' | relative_url }}" style="color: inherit">近期成果</a>{% else %}<a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent Publications</a>{% endif %}
       </h2>
-      {% include selected_papers.liquid %}
+      {% include recent_publications.liquid %}
     {% endif %}
 
     <!-- Social -->

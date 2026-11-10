@@ -1,0 +1,11 @@
+<div class="publications recent-publications">
+  {% for publication in site.data.recent_publications %}
+    <div class="recent-publications__entry">
+      <p class="recent-publications__date">
+        {% if page.lang == 'zh' %}{% if publication.accepted %}已接收{% else %}首次发表{% endif %}{% else %}{% if publication.accepted %}Accepted{% else %}First published{% endif %}{% endif %}
+        · <time datetime="{{ publication.date }}">{{ publication.date }}</time>
+      </p>
+      {% bibliography --file {{ publication.file }} --group_by none --query @article[key={{ publication.key }}] %}
+    </div>
+  {% endfor %}
+</div>

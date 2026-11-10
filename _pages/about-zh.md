@@ -17,7 +17,7 @@ profile:
     <p>中国广东江门（UTC+8）</p>
     <p><a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a></p>
 
-selected_papers: true
+recent_publications: true
 social: true
 
 announcements:

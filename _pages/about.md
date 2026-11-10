@@ -17,7 +17,7 @@ profile:
     <p>Jiangmen, Guangdong, China (UTC+8)</p>
     <p><a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+recent_publications: true # latest three accepted/published journal articles
 social: true # includes social icons at the bottom of the page
 
 announcements:

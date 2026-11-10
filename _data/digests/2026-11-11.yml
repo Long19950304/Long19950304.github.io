@@ -1,0 +1,94 @@
+date: '2026-11-11'
+note: China Insurance Association Updates Commercial Health Insurance Guides · Fossil
+  Reports a Return to Quarterly Profitability · Mitra-v2 expands synthetic pretraining
+  for tables
+note_zh: 中国保险行业协会发布商业医疗险示范条款与药品推荐清单；Fossil第三财季恢复盈利并上调全年销售预期；Mitra-v2扩大表格基础模型的合成预训练规模
+edition: daily-audio
+policy_version: 5
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-11-zh.mp3
+    seconds: 617.6
+    bytes: 4941260
+    sha256: 2df42cadb8cc69f99e1e287ecbd3f3d511de6a2b56fac841caae22bea250b1b0
+  en:
+    path: /assets/audio/digests/2026-11-11-en.mp3
+    seconds: 690.0
+    bytes: 5521004
+    sha256: 14f54cd86a6e4a8620380d8ddd2074dbaa65abe72dbfd04de654aefa5b87c68a
+items:
+- title: China Insurance Association Updates Commercial Health Insurance Guides
+  title_zh: 中国保险行业协会发布商业医疗险示范条款与药品推荐清单
+  url: https://www.news.cn/fortune/20261110/3c34ca006cf44c6c84aa98d3103d7fd2/c.html
+  published: '2026-11-10T00:00:00+08:00'
+  source: 新华社财经
+  category: Business & economy
+  source_id: xinhua-finance
+  authority: news_agency
+  publisher_id: xinhua-finance
+  coverage: china
+  why: Xinhua Finance reports that China’s insurance association released model commercial
+    medical-insurance clauses and its first recommended list for commercial health-insurance
+    drug coverage on November 10, 2026. The association says the documents are non-mandatory
+    reference texts intended to improve consistency in wording, claims materials and
+    service standards.
+  why_zh: 新华社财经报道，中国保险行业协会于2026年11月10日发布商业医疗保险示范条款及首版商业健康保险药品保障推荐清单。行业协会称，两类文件均为非强制性的示范性参考文本，旨在提高条款表述、理赔材料和服务标准的规范性与一致性。
+- title: Fossil Reports a Return to Quarterly Profitability
+  title_zh: Fossil第三财季恢复盈利并上调全年销售预期
+  url: https://www.cnbc.com/2026/11/10/fossil-fosl-q3-2026-earnings.html
+  published: '2026-11-10T22:39:30+00:00'
+  source: CNBC Business
+  category: Business & economy
+  source_id: cnbc-business
+  authority: established_newsroom
+  publisher_id: cnbc-business
+  coverage: world
+  why: CNBC Business reported that Fossil returned to profitability and sales growth
+    in its fiscal third quarter. The company also raised its full-year sales outlook,
+    although the guidance still implies a slight year-over-year decline.
+  why_zh: CNBC Business报道，Fossil第三财季恢复盈利，销售额也恢复同比增长。公司上调全年净销售额指引，但该区间仍意味着较上年略有下降。
+- title: Mitra-v2 expands synthetic pretraining for tables
+  title_zh: Mitra-v2扩大表格基础模型的合成预训练规模
+  url: https://www.amazon.science/blog/mitra-v2-scaling-synthetic-pretraining-for-tabular-foundation-models
+  published: '2026-11-10T15:37:39+00:00'
+  source: Amazon Science
+  category: Science & research
+  source_id: amazon-science
+  authority: research_primary
+  publisher_id: amazon-science
+  coverage: world
+  why: Amazon Science says Mitra-v2 uses larger and more varied synthetic pretraining
+    tables for classification and regression. The company reports leading single-model
+    results on TabArena, while noting that deployment includes brief table-level fine-tuning
+    rather than pure zero-shot use.
+  why_zh: 亚马逊科学称，Mitra-v2通过更大、更多样的合成表格预训练，支持分类与回归任务。该公司报告其位列TabArena单模型榜首，同时指出部署默认包含短暂的表级微调，并非纯粹的零样本使用。
+- title: LISA’s Search for New Exoplanets
+  title_zh: LISA或将借引力波发现新的系外行星族群
+  url: https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds
+  published: '2026-11-10T16:00:26+00:00'
+  source: NASA
+  category: Science & research
+  source_id: nasa
+  authority: research_primary
+  publisher_id: nasa
+  coverage: world
+  why: NASA reports that the developing LISA observatory could identify planets around
+    tightly orbiting double white dwarf systems through features in their gravitational-wave
+    signals. Researchers also describe a proposed use of the James Webb Space Telescope
+    to confirm some of those detections.
+  why_zh: NASA称，尚在开发中的LISA观测台可通过引力波信号，识别紧密双白矮星系统周围的行星。研究者还提出利用詹姆斯·韦布空间望远镜的红外观测确认其中一些候选目标。
+- title: Organic iron-sulfur framework aids photosynthetic carbon fixation
+  title_zh: 有机铁硫框架材料提升离体叶绿体固碳活性
+  url: https://www.cas.cn/syky/202611/t20261109_5123749.shtml
+  published: '2026-11-10T08:33:00+08:00'
+  source: 中国科学院科研进展
+  category: Science & research
+  source_id: cas-research
+  authority: research_primary
+  publisher_id: cas-research
+  coverage: china
+  why: Chinese Academy of Sciences researchers report a synthetic material that combined
+    independent iron-sulfur clusters with a stable framework and transferred electrons
+    to isolated chloroplasts. In laboratory tests, the composite increased carbon-fixation
+    activity over chloroplasts alone during 24 hours.
+  why_zh: 中国科学院科研进展称，研究团队构建了含独立铁硫簇的凝聚态有机铁硫框架材料OISF，并将其与离体叶绿体结合。实验显示，复合体系在24小时内的碳固定活性为单纯叶绿体的1.54倍，但来源未证明作物产量提高。

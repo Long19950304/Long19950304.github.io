@@ -84,6 +84,7 @@ weeks:
   issues:
   - '2026-11-09'
   - '2026-11-10'
+  - '2026-11-11'
   highlights_news:
   - title: China’s CPI Rose 0.7% in October
     title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
@@ -130,6 +131,11 @@ weeks:
     url: https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109
     source: MIT News
     category: Science & research
+  - title: China Insurance Association Updates Commercial Health Insurance Guides
+    title_zh: 中国保险行业协会发布商业医疗险示范条款与药品推荐清单
+    url: https://www.news.cn/fortune/20261110/3c34ca006cf44c6c84aa98d3103d7fd2/c.html
+    source: 新华社财经
+    category: Business & economy
   highlights_ai:
   - title: HOPE Prunes MoE Experts by Cooperation
     title_zh: HOPE通过专家协作关系优化混合专家模型剪枝

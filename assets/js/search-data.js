@@ -132,6 +132,11 @@ ninja.data = [{
           description: "China producer prices rise in October · Skydance Details Planned Operating Cost Savings · NASA ESCAPADE Spacecraft Begin Trip to Mars",
           section: "Digests",handler: () => {
               window.location.href = "/digest/2026-11-10/";
+            },},{id: "digests-daily-economy-technology-amp-research-brief-2026-11-11",
+          title: 'Daily Economy, Technology &amp;amp; Research Brief · 2026-11-11',
+          description: "China Insurance Association Updates Commercial Health Insurance Guides · Fossil Reports a Return to Quarterly Profitability · Mitra-v2 expands synthetic pretraining for tables",
+          section: "Digests",handler: () => {
+              window.location.href = "/digest/2026-11-11/";
             },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-06",
           title: '每日财经、科技与研究简报 · 2026-11-06',
           description: "山东沿黄城市推进智能制造与绿色能源；欧洲央行发布截至2026年6月底的欧盟银行合并数据；英伟达为Cosmos 3新增四个开放权重模拟检查点",
@@ -157,6 +162,11 @@ ninja.data = [{
           description: "国家统计局：2026年10月工业生产者价格同比上涨5.7%；Skydance公布未来三年经营成本节约计划；NASA的ESCAPADE双探测器启程前往火星",
           section: "Digests_zh",handler: () => {
               window.location.href = "/zh/digest/2026-11-10/";
+            },},{id: "digests_zh-每日财经-科技与研究简报-2026-11-11",
+          title: '每日财经、科技与研究简报 · 2026-11-11',
+          description: "中国保险行业协会发布商业医疗险示范条款与药品推荐清单；Fossil第三财季恢复盈利并上调全年销售预期；Mitra-v2扩大表格基础模型的合成预训练规模",
+          section: "Digests_zh",handler: () => {
+              window.location.href = "/zh/digest/2026-11-11/";
             },},{id: "projects-ai-for-social-science",
           title: 'AI for Social Science',
           description: "Reliable AI-assisted coding, confidence calibration, and human review in social science research.",

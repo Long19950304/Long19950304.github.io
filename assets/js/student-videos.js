@@ -1,0 +1,1 @@
+document.querySelectorAll(".student-videos video").forEach(e=>{e.addEventListener("play",()=>{document.querySelectorAll(".student-videos video").forEach(d=>{d!==e&&d.pause()})})});

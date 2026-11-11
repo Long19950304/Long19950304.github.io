@@ -22,5 +22,5 @@ translation_key: project-agentic-engineering
 {% include research_direction_list.liquid ids="long1-desk1-hec-hierarchical-error-framework,long1-desk1-bds-confidence-diversity-framework,long1-desk1-scirep-confidence-diversity-framework,long1-desk1-pishi-global-south-llm" %}
 
 <p class="small">
-完整清单（含引用导出/分享按钮）见：<a href="/zh/research/">研究</a>。
+完整论文清单及引用导出见：<a href="/zh/publications/">论文</a>。
 </p>

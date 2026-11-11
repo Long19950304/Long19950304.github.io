@@ -1,0 +1,47 @@
+{% assign cv_lang = page.lang | default: 'en' %}
+{% assign cv_prefix = '' %}{% if cv_lang == 'zh' %}{% assign cv_prefix = '/zh' %}{% endif %}
+<div class="cv-actions">
+  <span>{% if cv_lang == 'zh' %}更新于{% else %}Updated{% endif %} <time datetime="{{ site.data.cv_profile.updated }}">{{ site.data.cv_profile.updated }}</time></span>
+  <button type="button" class="text-action" data-print-page>{% if cv_lang == 'zh' %}打印／保存为 PDF{% else %}Print / Save as PDF{% endif %}</button>
+</div>
+<nav class="section-jumps" aria-label="{% if cv_lang == 'zh' %}简历目录{% else %}CV sections{% endif %}">
+  <a href="#appointments">{% if cv_lang == 'zh' %}工作与研究经历{% else %}Appointments{% endif %}</a>
+  <a href="#education">{% if cv_lang == 'zh' %}教育经历{% else %}Education{% endif %}</a>
+  <a href="#projects">{% if cv_lang == 'zh' %}科研项目{% else %}Projects{% endif %}</a>
+  <a href="#academic-service">{% if cv_lang == 'zh' %}学术服务{% else %}Academic service{% endif %}</a>
+  <a href="#contact">{% if cv_lang == 'zh' %}联系方式{% else %}Contact{% endif %}</a>
+</nav>
+{% assign cv_groups = 'appointments,education' | split: ',' %}
+{% for group in cv_groups %}
+<section aria-labelledby="{{ group }}">
+  <h2 id="{{ group }}">{% if group == 'appointments' %}{% if cv_lang == 'zh' %}工作与研究经历{% else %}Academic Appointments{% endif %}{% else %}{% if cv_lang == 'zh' %}教育经历{% else %}Education{% endif %}{% endif %}</h2>
+  <dl class="cv-timeline">
+    {% for record in site.data.cv_profile[group] %}
+    <div class="cv-timeline__entry">
+      <dt>{{ record.title[cv_lang] }}</dt>
+      <dd class="cv-timeline__period">{{ record.period[cv_lang] | default: record.period }}</dd>
+      {% if record.detail %}<dd class="cv-timeline__detail">{{ record.detail[cv_lang] }}</dd>{% endif %}
+    </div>
+    {% endfor %}
+  </dl>
+</section>
+{% endfor %}
+<section aria-labelledby="research-interests">
+  <h2 id="research-interests">{% if cv_lang == 'zh' %}研究兴趣{% else %}Research Interests{% endif %}</h2>
+  <p>{% if cv_lang == 'zh' %}健康与公共传播、媒体使用与信任、AI for Social Science，包括大语言模型辅助质性编码、可靠性评估与人机协同。{% else %}Health and public communication; media use and trust; AI for Social Science, including LLM-assisted qualitative coding, reliability assessment, and human–AI collaboration.{% endif %}</p>
+</section>
+{% include research_projects.liquid hide_navigation=true %}
+<section aria-labelledby="academic-service">
+  <h2 id="academic-service">{% if cv_lang == 'zh' %}学术服务{% else %}Academic Service{% endif %}</h2>
+  {% include academic_service.liquid heading='h3' %}
+</section>
+<section aria-labelledby="related-work">
+  <h2 id="related-work">{% if cv_lang == 'zh' %}论文、会议报告与教学{% else %}Publications, Presentations, and Teaching{% endif %}</h2>
+  <p>{% if cv_lang == 'zh' %}会议记录包括 ICA、AEJMC、智能与计算传播学年会及区域学术论坛。题名、日期、地点和接收／报告状态见{% else %}Conference records include ICA, AEJMC, computational communication conferences, and regional academic forums. Titles, dates, venues, and acceptance or presentation status are listed under {% endif %}<a href="{{ cv_prefix | append: '/publications/' | relative_url }}#conferences">{% if cv_lang == 'zh' %}会议论文与报告{% else %}conference papers and presentations{% endif %}</a>{% if cv_lang == 'zh' %}。{% else %}.{% endif %}</p>
+  <p><a href="{{ cv_prefix | append: '/publications/' | relative_url }}">{% if cv_lang == 'zh' %}论文{% else %}Publications{% endif %}</a> · <a href="{{ cv_prefix | append: '/research/' | relative_url }}">{% if cv_lang == 'zh' %}项目{% else %}Projects{% endif %}</a> · <a href="{{ cv_prefix | append: '/teaching/' | relative_url }}">{% if cv_lang == 'zh' %}教学{% else %}Teaching{% endif %}</a> · <a href="{{ cv_prefix | append: '/media/' | relative_url }}">{% if cv_lang == 'zh' %}个人创作{% else %}Creative work{% endif %}</a></p>
+</section>
+<section aria-labelledby="contact">
+  <h2 id="contact">{% if cv_lang == 'zh' %}联系方式{% else %}Contact{% endif %}</h2>
+  <p><a href="mailto:zhilongzhao@wyu.edu.cn">zhilongzhao@wyu.edu.cn</a> · <a href="https://scholar.google.com/citations?user=U-FdkpMAAAAJ">Google Scholar</a> · <a href="https://orcid.org/0000-0002-3771-4969">ORCID</a></p>
+</section>
+<script defer src="{{ '/assets/js/print-page.js' | relative_url | bust_file_cache }}"></script>

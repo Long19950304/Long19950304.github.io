@@ -24,5 +24,5 @@ Representative directions:
 {% include research_direction_list.liquid ids="long1-desk1-parental-mediation-digital-media-health-literacy,long1-desk1-journal-of-family-violence-domestic-violence-framing,long1-desk1-macao-media-ecology-generational-differences,long1-desk1-news-title-framing-older-adults" %}
 
 <p class="small">
-See also: the full research portfolio with cite/export tools on <a href="/research/">Research</a>.
+See the full publication list and citation exports on <a href="/publications/">Publications</a>.
 </p>

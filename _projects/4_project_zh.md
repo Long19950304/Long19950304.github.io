@@ -19,9 +19,9 @@ translation_key: project-ai-native-media-pipelines
 {% include research_direction_list.liquid ids="long1-desk1-pishi-global-south-llm" %}
 
 <p class="small">
-相关研究见：<a href="/zh/research/">研究</a>。
+相关论文见：<a href="/zh/publications/">论文</a>。
 </p>
 
-## 相关媒体与 Demo
+## 相关创作
 
-- 作品示例与截图见：<a href="/zh/media/">作品</a>（如 *异次元访谈室*）。
+- 作品海报与剧照见：<a href="/zh/media/">个人创作</a>，包括《先贤对谈》和《通鉴史案》。

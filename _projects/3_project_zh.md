@@ -22,5 +22,5 @@ translation_key: project-css-digital-methods
 {% include research_direction_list.liquid ids="long1-desk1-parental-mediation-digital-media-health-literacy,long1-desk1-journal-of-family-violence-domestic-violence-framing,long1-desk1-macao-media-ecology-generational-differences,long1-desk1-news-title-framing-older-adults" %}
 
 <p class="small">
-完整清单（含引用导出/分享按钮）见：<a href="/zh/research/">研究</a>。
+完整论文清单及引用导出见：<a href="/zh/publications/">论文</a>。
 </p>

@@ -21,9 +21,9 @@ The work involves coordinating generated materials, checking visual and narrativ
 {% include research_direction_list.liquid ids="long1-desk1-pishi-global-south-llm" %}
 
 <p class="small">
-See related work on <a href="/research/">Research</a>.
+See related papers on <a href="/publications/">Publications</a>.
 </p>
 
-## Related media & demos
+## Related creative work
 
-- Selected stills and posters are on <a href="/media/">Media</a>.
+- Posters and stills from Xianxian Dialogues and LongXiGE Reads Zizhi Tongjian are on <a href="/media/">Creative Work</a>.

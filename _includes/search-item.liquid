@@ -1,0 +1,7 @@
+{
+  url: {{ include.item.url | relative_url | jsonify }},
+  lang: {{ include.item.lang | default: 'en' | jsonify }},
+  title: {{ include.item.title | strip_html | jsonify }},
+  description: {{ include.item.description | default: '' | strip_html | strip_newlines | jsonify }},
+  group: {{ include.group | jsonify }},
+},

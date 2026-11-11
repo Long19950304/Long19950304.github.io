@@ -12,11 +12,7 @@ translation_key: digest
 {% assign digests = site.digests_zh | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
 <p>关注国内与国际财经、实用科技和研究进展。每天提供中文和英文两套完整播报，每套约十分钟，并保留原始公告、报道和播报文字。</p>
 
-<p class="small">
-<a href="{{ '/zh/digest/weekly/' | relative_url }}">每周汇总</a>
- · <a href="{{ '/zh/digest/feed.xml' | relative_url }}">RSS</a>
- · <a href="{{ '/zh/digest/sources/' | relative_url }}">来源与筛选说明</a>
-</p>
+{% include digest-navigation.liquid %}
 
 
 {% include digest-status.liquid latest=digests.first %}

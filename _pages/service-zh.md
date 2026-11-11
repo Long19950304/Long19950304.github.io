@@ -1,6 +1,7 @@
 ---
 layout: page
-title: 服务
+title: 学术服务
+nav_title: 服务
 permalink: /zh/service/
 description: 学术服务与期刊同行评审。
 nav: true

@@ -8,6 +8,9 @@ lang: zh
 translation_key: digest-weekly
 ---
 
+{% include digest-navigation.liquid %}
+
+
 <p class="small">
 每周汇总（便于收藏/回顾）。每周包含每日简报链接，并精选部分重点条目。
 </p>

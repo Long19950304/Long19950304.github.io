@@ -1257,6 +1257,35 @@ html[data-theme="dark"] .digest-index-card { --digest-ink: #294e57; }
 .section-jumps { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: 0 0 1.25rem; padding: .5rem 0; border-top: 1px solid var(--global-divider-color); border-bottom: 1px solid var(--global-divider-color); }
 .section-jumps a { display: inline-flex; align-items: center; min-height: 44px; color: var(--global-text-color); font-size: .88rem; }
 .section-jumps a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.section-jumps a[aria-current="page"] { text-decoration: underline; text-underline-offset: .3em; }
+.post h2[id], .post h3[id] { scroll-margin-top: 90px; }
+.post-description { overflow-wrap: anywhere; }
+.text-action { padding: .4rem 0; border: 0; background: transparent; color: var(--global-text-color); font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+.text-action:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.cv-actions { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem 1.5rem; margin-bottom: 1rem; color: var(--global-text-color-light); font-size: .83rem; }
+.cv-timeline { margin: 1rem 0 2rem; }
+.cv-timeline__entry { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: .4rem 2rem; padding: 1rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.cv-timeline dt { font-weight: 500; line-height: 1.7; }
+.cv-timeline dd { margin: 0; line-height: 1.7; }
+.cv-timeline__period { grid-column: 2; grid-row: 1 / span 2; color: var(--global-text-color-light); font-size: .85rem; font-variant-numeric: tabular-nums; }
+.cv-timeline__detail { grid-column: 1; font-size: .9rem; }
+.service-journals { margin: .75rem 0 2rem; padding: 0; list-style: none; }
+.service-journals li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(130px, 25%); gap: .5rem 2rem; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.service-journals a { color: var(--global-text-color); line-height: 1.7; }
+.service-journals__detail { color: var(--global-text-color-light); font-size: .82rem; line-height: 1.7; }
+@media (max-width: 575px) {
+  .cv-timeline__entry, .service-journals li { grid-template-columns: minmax(0, 1fr); gap: .4rem; }
+  .cv-timeline__period { grid-column: 1; grid-row: auto; }
+}
+@media print {
+  body.fixed-top-nav { padding-top: 0; background: white !important; color: black !important; }
+  #navbar, body > header, body > footer, .skip-to-content, ninja-keys, .cv-actions, .cv-page .section-jumps { display: none !important; }
+  .cv-page { font-size: 10pt; }
+  .cv-page, .cv-page * { color: #111 !important; transition: none !important; animation: none !important; }
+  .cv-page h2, .cv-page h3 { break-after: avoid; }
+  .cv-timeline__entry, .cv-page .research-project, .cv-page .service-journals li { break-inside: avoid; }
+  .cv-page .research-project, .cv-page .cv-timeline__entry, .cv-page .service-journals li { padding: .6rem 0; }
+}
 .publication-guide { margin-bottom: 1.25rem; color: var(--global-text-color-light); font-size: .85rem; line-height: 1.8; }
 .publication-group h2[id] { scroll-margin-top: 90px; }
 .conference-status { color: var(--global-text-color-light); font-size: .82rem; }

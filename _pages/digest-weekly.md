@@ -8,6 +8,9 @@ lang: en
 translation_key: digest-weekly
 ---
 
+{% include digest-navigation.liquid %}
+
+
 <p class="small">
 Weekly roll-up (for bookmarking). Each week links to the daily issues and surfaces a few highlights.
 </p>

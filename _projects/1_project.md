@@ -24,5 +24,5 @@ Key themes:
 {% include research_direction_list.liquid ids="long1-desk1-hec-hierarchical-error-framework,long1-desk1-bds-confidence-diversity-framework,long1-desk1-scirep-confidence-diversity-framework,long1-desk1-pishi-global-south-llm" %}
 
 <p class="small">
-See also: the full research portfolio with cite/export tools on <a href="/research/">Research</a>.
+See the full publication list and citation exports on <a href="/publications/">Publications</a>.
 </p>

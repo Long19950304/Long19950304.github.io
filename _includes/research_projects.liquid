@@ -1,7 +1,7 @@
 {% assign project_lang = page.lang | default: 'en' %}
-<nav class="section-jumps research-jumps" aria-label="{% if project_lang == 'zh' %}项目分类{% else %}Project sections{% endif %}">
+{% unless include.hide_navigation %}<nav class="section-jumps research-jumps" aria-label="{% if project_lang == 'zh' %}项目分类{% else %}Project sections{% endif %}">
   {% for section in site.data.research_grants.sections %}<a href="#{{ section.id }}">{{ section.title[project_lang] }}</a>{% endfor %}
-</nav>
+</nav>{% endunless %}
 <div class="research-projects">
 {% for section in site.data.research_grants.sections %}
 <section class="research-section" aria-labelledby="{{ section.id }}">

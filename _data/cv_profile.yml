@@ -1,0 +1,39 @@
+updated: '2026-11-11'
+appointments:
+  - title:
+      zh: 五邑大学人文与政法学院
+      en: School of Humanities and Law, Wuyi University
+    detail:
+      zh: 中国广东江门
+      en: Jiangmen, Guangdong, China
+    period:
+      zh: 2026年7月至今
+      en: July 2026–present
+  - title:
+      zh: 华南理工大学新闻与传播学院，博士后
+      en: Postdoctoral Researcher, School of Journalism and Communication, South China University of Technology
+    period:
+      zh: 2024年6月至2026年6月
+      en: June 2024–June 2026
+education:
+  - title:
+      zh: 传播学博士
+      en: PhD in Communication
+    detail:
+      zh: 澳门大学
+      en: University of Macau
+    period: 2019–2024
+  - title:
+      zh: 传播与新媒体硕士
+      en: MA in Communication and New Media
+    detail:
+      zh: 澳门大学
+      en: University of Macau
+    period: 2016–2018
+  - title:
+      zh: 汉语国际教育学士
+      en: BA in Chinese International Education
+    detail:
+      zh: 华侨大学
+      en: Huaqiao University
+    period: 2012–2016

@@ -1,0 +1,7 @@
+{% assign digest_nav_prefix = '' %}{% if page.lang == 'zh' %}{% assign digest_nav_prefix = '/zh' %}{% endif %}
+<nav class="section-jumps digest-sections" aria-label="{% if page.lang == 'zh' %}简报导航{% else %}Digest navigation{% endif %}">
+  <a href="{{ digest_nav_prefix | append: '/digest/' | relative_url }}"{% if page.translation_key == 'digest' %} aria-current="page"{% endif %}>{% if page.lang == 'zh' %}每日简报{% else %}Daily editions{% endif %}</a>
+  <a href="{{ digest_nav_prefix | append: '/digest/weekly/' | relative_url }}"{% if page.translation_key == 'digest-weekly' %} aria-current="page"{% endif %}>{% if page.lang == 'zh' %}每周汇总{% else %}Weekly roll-up{% endif %}</a>
+  <a href="{{ digest_nav_prefix | append: '/digest/sources/' | relative_url }}"{% if page.translation_key == 'digest-sources' %} aria-current="page"{% endif %}>{% if page.lang == 'zh' %}来源与筛选说明{% else %}Sources and editorial checks{% endif %}</a>
+  <a href="{{ digest_nav_prefix | append: '/digest/feed.xml' | relative_url }}">RSS</a>
+</nav>

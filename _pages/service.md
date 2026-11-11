@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Service
+title: Academic Service
+nav_title: Service
 permalink: /service/
 description: Academic service and journal peer review.
 nav: true

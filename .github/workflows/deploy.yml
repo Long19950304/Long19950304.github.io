@@ -10,6 +10,7 @@ on:
       - "_sass/**"
       - "_scripts/**"
       - "bin/create-release-manifest.py"
+      - "bin/audit-site.rb"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -42,6 +43,7 @@ on:
       - "_sass/**"
       - "_scripts/**"
       - "bin/create-release-manifest.py"
+      - "bin/audit-site.rb"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -121,6 +123,8 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Check generated pages and internal links
+        run: bundle exec ruby bin/audit-site.rb
       - name: Record verified release
         run: python3 bin/create-release-manifest.py _site "$GITHUB_SHA"
       - name: Deploy 🚀

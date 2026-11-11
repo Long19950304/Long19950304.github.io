@@ -8,6 +8,9 @@ translation_key: digest-sources
 nav: false
 ---
 
+{% include digest-navigation.liquid %}
+
+
 The briefing covers the Chinese economy, the world economy, and technology and research. Each edition contains 5–7 stories: 2–3 economic stories and at least 3 technology or research stories. Chinese and English recordings each provide a complete edition. Every edition needs at least three publishers, with at most two stories per publisher; channels from one newsroom are counted together. The list below defines the candidate sources; each edition links to the releases and reporting it actually uses.
 
 Economic coverage prioritizes statistical agencies and central banks for original data, with reporting from Xinhua, China News Service, BBC, CBC, NPR, CNBC, the Guardian and DW for company, consumption and industry developments. Research coverage includes ScienceNet, the Chinese Academy of Sciences, NASA, MIT News, BBC Science and ScienceDaily, alongside maintainer releases and research blogs. Institutional announcements and media accounts of papers are attributed reporting, rather than independent replication; the narration states research stages and evidence limits. Community posts hosted by Hugging Face represent their authors, not platform certification or independent testing. Vendor performance claims are attributed to the vendor.

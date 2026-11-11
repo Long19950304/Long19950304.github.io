@@ -12,11 +12,7 @@ translation_key: digest
 {% assign digests = site.digests | where_exp: "d", "d.archived != true" | sort: "name" | reverse %}
 <p>Developments in the Chinese and world economy, useful technology and research. Each edition includes complete Chinese and English recordings, about ten minutes each, with original releases, reporting and transcripts.</p>
 
-<p class="small">
-<a href="{{ '/digest/weekly/' | relative_url }}">Weekly roll-up</a>
- · <a href="{{ '/digest/feed.xml' | relative_url }}">RSS</a>
- · <a href="{{ '/digest/sources/' | relative_url }}">Sources and editorial checks</a>
-</p>
+{% include digest-navigation.liquid %}
 
 
 {% include digest-status.liquid latest=digests.first %}

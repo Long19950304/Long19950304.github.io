@@ -41,7 +41,7 @@
   {%- endif -%}
 
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" aria-label="{% if current_lang == 'zh' %}主导航{% else %}Main navigation{% endif %}">
     <div class="container">
       <a class="navbar-brand title font-weight-lighter" href="{{ about_url | relative_url }}">
         {% if site.title == 'blank' %}
@@ -68,9 +68,9 @@
         data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-label="{% if current_lang == 'zh' %}展开或收起导航{% else %}Toggle navigation{% endif %}"
       >
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">{% if current_lang == 'zh' %}展开或收起导航{% else %}Toggle navigation{% endif %}</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -80,7 +80,7 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
           <li class="nav-item {% if page.url == about_url %}active{% endif %}">
-            <a class="nav-link" href="{{ about_url | relative_url }}">
+            <a class="nav-link" href="{{ about_url | relative_url }}"{% if page.url == about_url %} aria-current="page"{% endif %}>
               {{- about_title }}
               {% if page.url == about_url %}
                 <span class="sr-only">(current)</span>
@@ -139,7 +139,7 @@
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+                  <a class="nav-link" href="{{ url | relative_url }}"{% if page.url contains parent_link %} aria-current="page"{% endif %}>
                     {{- p.nav_title | default: p.title }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
@@ -152,7 +152,7 @@
 
           <!-- Language -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ alt_url | relative_url }}" aria-label="Switch language">
+            <a class="nav-link" href="{{ alt_url | relative_url }}" lang="{{ other_lang }}" hreflang="{{ other_lang }}" aria-label="{% if current_lang == 'zh' %}Switch to English{% else %}切换到中文{% endif %}">
               {{- lang_switch_label -}}
             </a>
           </li>
@@ -160,7 +160,7 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+              <button type="button" id="search-toggle" title="{% if current_lang == 'zh' %}搜索网站{% else %}Search site{% endif %}" aria-label="{% if current_lang == 'zh' %}搜索网站{% else %}Search site{% endif %}" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
               </button>
             </li>
@@ -168,7 +168,7 @@
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
+              <button type="button" id="light-toggle" title="{% if current_lang == 'zh' %}切换浅色或深色主题{% else %}Change theme{% endif %}" aria-label="{% if current_lang == 'zh' %}切换浅色或深色主题{% else %}Change theme{% endif %}">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>

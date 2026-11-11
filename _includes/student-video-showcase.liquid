@@ -8,6 +8,7 @@
   <div class="student-videos__intro">
     <p>{% if is_zh %}数字人视频是本课程的可选作业。本页仅展示部分同学自愿提供并同意公开的成果，按同学意愿署名或匿名展示。{% else %}Digital-human video production is an optional assignment in this course. This page presents only some students’ voluntarily shared work, published with their agreement and credited by name or anonymously as requested.{% endif %}</p>
   </div>
+  {% include coursework-usage-note.liquid %}
   <div class="student-videos__grid">
     {% for video in site.data.student_videos %}
       {% capture media_base %}/assets/video/student-digital-humans/{{ video.id }}{% endcapture %}

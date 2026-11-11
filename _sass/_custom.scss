@@ -1288,6 +1288,8 @@ html[data-theme="dark"] .site-updates { background: #242426; }
 }
 .site-views { display: block; margin-top: .4rem; font-size: .75rem; font-variant-numeric: tabular-nums; }
 .site-views[hidden] { display: none; }
+.site-content-usage { display: block; margin-top: .5rem; font-size: .75rem; line-height: 1.7; }
+.coursework-usage-note { margin: 0 0 1.25rem; color: var(--global-text-color-light); font-size: .82rem; line-height: 1.75; }
 #latest-updates a,
 #latest-updates a:link,
 #latest-updates a:visited,

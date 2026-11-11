@@ -6,6 +6,7 @@
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
+  <span class="site-content-usage">{% if page.lang == 'zh' %}除另有标注外，内容仅供非商业研究与教学参考。<a href="{{ '/zh/content-usage/' | relative_url }}">版权与使用说明</a>{% else %}Unless otherwise stated, content is for non-commercial research and teaching reference. <a href="{{ '/content-usage/' | relative_url }}">Copyright and content use</a>{% endif %}</span>
   <span class="site-views" data-site-views data-locale="{{ page.lang | default: 'en' }}" hidden>
     <span>{% if page.lang == 'zh' %}浏览次数：{% else %}Page views: {% endif %}<span data-view-total></span></span>
   </span>

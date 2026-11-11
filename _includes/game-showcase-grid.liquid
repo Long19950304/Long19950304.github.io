@@ -1,5 +1,6 @@
 {% assign chinese = false %}
 {% if page.lang == 'zh' %}{% assign chinese = true %}{% endif %}
+{% include coursework-usage-note.liquid %}
 <p class="game-showcase-results" data-game-results role="status" aria-live="polite"></p>
 <div class="game-showcase-grid" data-game-grid>
   {% for game in site.data.game_showcases.modern_education_technology %}

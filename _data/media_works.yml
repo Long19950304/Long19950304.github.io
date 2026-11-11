@@ -1,0 +1,148 @@
+groups:
+  - id: series
+    title:
+      zh: 影像系列
+      en: Video series
+    description:
+      zh: 虚构访谈、人物对话与历史文本解读。
+      en: Fictional interviews, imagined conversations, and readings of historical texts.
+  - id: short-film
+    title:
+      zh: 实验短片
+      en: Experimental film
+    description:
+      zh: 以影像创作探索叙事与生活经验。
+      en: Exploring narrative and lived experience through film.
+
+works:
+  - id: xianxian-dialogues
+    group: series
+    title:
+      zh: 先贤对谈
+      en: Xianxian Dialogues
+    format:
+      zh: AI 虚构对话
+      en: AI-generated fictional dialogues
+    description:
+      zh: 通过 AI 生成画面与声音，呈现人物之间的虚构对话，并以不同机位组织叙事。
+      en: Imagined conversations presented through AI-generated imagery and voices, with multiple camera viewpoints.
+    image_note:
+      zh: 本页展示的海报上，节目名称标注为《异次元访谈室》。
+      en: The posters shown here carry the programme title “Interdimensional Interview Room.”
+    cover: /assets/img/media/xianxian-dialogues/ep03-poster.jpg
+    cover_width: 1600
+    cover_height: 900
+    action:
+      zh: 查看节目海报
+      en: View episode posters
+    gallery_label:
+      zh: 单集海报
+      en: Episode posters
+    gallery:
+      - /assets/img/media/xianxian-dialogues/ep01-poster.jpg
+      - /assets/img/media/xianxian-dialogues/ep02-poster.jpg
+      - /assets/img/media/xianxian-dialogues/ep03-poster.jpg
+      - /assets/img/media/xianxian-dialogues/ep04-poster.jpg
+    legacy_id:
+      zh: 先贤对谈--xianxian-dialogues
+      en: xianxian-dialogues--先贤对谈
+
+  - id: interdimensional-interview-room
+    group: series
+    title:
+      zh: 异次元访谈室
+      en: Interdimensional Interview Room
+    format:
+      zh: AI 虚构访谈
+      en: AI-generated fictional interviews
+    description:
+      zh: 使用 AI 生成人物、声音与画面的虚构访谈节目。
+      en: A fictional interview-format video programme using AI-generated characters, voices, and imagery.
+    cover: /assets/img/media/interdimensional-interview-room/still-2.jpg
+    cover_width: 1600
+    cover_height: 900
+    action:
+      zh: 查看节目截图
+      en: View programme stills
+    private_sample: true
+    gallery_label:
+      zh: 节目截图
+      en: Programme stills
+    gallery:
+      - /assets/img/media/interdimensional-interview-room/still-1.jpg
+      - /assets/img/media/interdimensional-interview-room/still-2.jpg
+      - /assets/img/media/interdimensional-interview-room/still-3.jpg
+      - /assets/img/media/interdimensional-interview-room/still-4.jpg
+      - /assets/img/media/interdimensional-interview-room/still-5.jpg
+      - /assets/img/media/interdimensional-interview-room/still-6.jpg
+    legacy_id:
+      zh: 异次元访谈室--interdimensional-interview-room
+      en: interdimensional-interview-room--异次元访谈室
+
+  - id: tongjian-shian
+    group: series
+    title:
+      zh: 通鉴史案
+      en: LongXiGE Reads Zizhi Tongjian
+    format:
+      zh: 中英双语历史节目
+      en: Bilingual history series
+    description:
+      zh: 基于《资治通鉴》，以史案复盘、文本解读与决策分析组织历史叙事。
+      en: A bilingual history video-podcast series based on Zizhi Tongjian, combining historical case reconstruction, close reading, and decision analysis.
+    cover: /assets/img/media/tongjian-shian/still-3.jpg
+    cover_width: 1920
+    cover_height: 1080
+    action:
+      zh: 查看海报与剧照
+      en: View posters and stills
+    poster:
+      zh: /assets/img/media/tongjian-shian/poster-zh.jpg
+      en: /assets/img/media/tongjian-shian/poster-en.jpg
+    poster_layout: landscape
+    gallery_label:
+      zh: 剧照
+      en: Stills
+    gallery:
+      - /assets/img/media/tongjian-shian/still-1.jpg
+      - /assets/img/media/tongjian-shian/still-2.jpg
+      - /assets/img/media/tongjian-shian/still-3.jpg
+      - /assets/img/media/tongjian-shian/still-4.jpg
+    legacy_id:
+      zh: 通鉴史案--longxige-reads-zizhi-tongjian
+      en: longxige-reads-zizhi-tongjian--通鉴史案
+
+  - id: chinese-passenger
+    group: short-film
+    title:
+      zh: 普快列车
+      en: Chinese Passenger
+    format:
+      zh: 实验短片
+      en: Experimental short film
+    description:
+      zh: 澳门大学硕士论文作品，关注中国内地移民的生活经验。
+      en: An experimental short film about Chinese inland migrants’ lived experience, produced as an MA thesis at the University of Macau.
+    recognition:
+      zh: 入围／展映：澳门国际电影节短片单元（2017）
+      en: Shortlisted / selected for the Macao International Film Festival short film section (2017).
+    cover: /assets/img/media/chinese-passenger/still-4.jpg
+    cover_width: 1600
+    cover_height: 1000
+    action:
+      zh: 查看海报与剧照
+      en: View the poster and stills
+    poster:
+      zh: /assets/img/media/chinese-passenger/poster.jpg
+      en: /assets/img/media/chinese-passenger/poster.jpg
+    gallery_label:
+      zh: 剧照
+      en: Stills
+    gallery:
+      - /assets/img/media/chinese-passenger/still-1.jpg
+      - /assets/img/media/chinese-passenger/still-2.jpg
+      - /assets/img/media/chinese-passenger/still-3.jpg
+      - /assets/img/media/chinese-passenger/still-4.jpg
+    legacy_id:
+      zh: 普快列车--chinese-passenger
+      en: chinese-passenger--普快列车

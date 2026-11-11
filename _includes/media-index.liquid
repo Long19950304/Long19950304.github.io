@@ -1,0 +1,35 @@
+{% assign portfolio_lang = page.lang | default: 'en' %}
+{% assign portfolio_prefix = '' %}
+{% if portfolio_lang == 'zh' %}{% assign portfolio_prefix = '/zh' %}{% endif %}
+<nav class="portfolio-nav" id="{% if portfolio_lang == 'zh' %}作品选集{% else %}selected-works{% endif %}" aria-label="{% if portfolio_lang == 'zh' %}作品分类{% else %}Work categories{% endif %}">
+  {% for group in site.data.media_works.groups %}<a href="#{{ group.id }}">{{ group.title[portfolio_lang] }}</a>{% endfor %}
+</nav>
+
+{% for group in site.data.media_works.groups %}
+  <section class="portfolio-group" aria-labelledby="{{ group.id }}">
+    <header class="portfolio-group__heading">
+      <h2 id="{{ group.id }}">{{ group.title[portfolio_lang] }}</h2>
+      <p>{{ group.description[portfolio_lang] }}</p>
+    </header>
+    {% assign group_works = site.data.media_works.works | where: 'group', group.id %}
+    {% for work in group_works %}
+      {% capture work_url %}{{ portfolio_prefix }}/media/{{ work.id }}/{% endcapture %}
+      <article class="portfolio-entry" id="{{ work.legacy_id[portfolio_lang] }}" aria-labelledby="{{ work.id }}-title">
+        <a class="portfolio-entry__image" href="{{ work_url | relative_url }}" aria-label="{{ work.title[portfolio_lang] | escape }} — {{ work.action[portfolio_lang] | escape }}">
+          <img src="{{ work.cover | relative_url }}" width="{{ work.cover_width }}" height="{{ work.cover_height }}" alt="{% if portfolio_lang == 'zh' %}{{ work.title.zh }}：{{ work.gallery_label.zh }}{% else %}{{ work.title.en }}: {{ work.gallery_label.en }}{% endif %}" loading="{% if forloop.first and forloop.parentloop.first %}eager{% else %}lazy{% endif %}" decoding="async">
+        </a>
+        <div class="portfolio-entry__body">
+          <p class="portfolio-entry__format">{{ work.format[portfolio_lang] }}</p>
+          <h3 id="{{ work.id }}-title"><a href="{{ work_url | relative_url }}">{{ work.title[portfolio_lang] }}</a></h3>
+          <p class="portfolio-entry__translation">{% if portfolio_lang == 'zh' %}{{ work.title.en }}{% else %}{{ work.title.zh }}{% endif %}</p>
+          <p class="portfolio-entry__description">{{ work.description[portfolio_lang] }}</p>
+          {% if work.recognition %}<p class="portfolio-entry__note">{{ work.recognition[portfolio_lang] }}</p>{% endif %}
+          <a class="portfolio-entry__action" href="{{ work_url | relative_url }}">{{ work.action[portfolio_lang] }} <span aria-hidden="true">→</span></a>
+          {% if work.private_sample %}<span class="portfolio-entry__availability">{% if portfolio_lang == 'zh' %}样片可通过私密链接提供{% else %}Private sample viewing available on request{% endif %}</span>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+{% endfor %}
+
+<p class="portfolio-teaching-link">{% if portfolio_lang == 'zh' %}课程与学生作品请见<a href="{{ '/zh/teaching/#courses' | relative_url }}">教学页面</a>。{% else %}For courses and student work, visit the <a href="{{ '/teaching/#courses' | relative_url }}">teaching page</a>.{% endif %}</p>

@@ -1,0 +1,49 @@
+{% assign portfolio_lang = page.lang | default: 'en' %}
+{% assign portfolio_prefix = '' %}
+{% if portfolio_lang == 'zh' %}{% assign portfolio_prefix = '/zh' %}{% endif %}
+{% assign work = site.data.media_works.works | where: 'id', page.work_id | first %}
+<nav class="portfolio-breadcrumbs" aria-label="{% if portfolio_lang == 'zh' %}作品导航{% else %}Work navigation{% endif %}">
+  <a href="{{ portfolio_prefix | append: '/media/' | relative_url }}#{{ work.group }}">{% if portfolio_lang == 'zh' %}← 返回作品总览{% else %}← All creative work{% endif %}</a>
+</nav>
+
+<div class="portfolio-detail__intro">
+  <p class="portfolio-entry__format">{{ work.format[portfolio_lang] }}</p>
+  <p class="portfolio-entry__translation">{% if portfolio_lang == 'zh' %}{{ work.title.en }}{% else %}{{ work.title.zh }}{% endif %}</p>
+  <p>{{ work.description[portfolio_lang] }}</p>
+  {% if work.recognition %}<p class="portfolio-entry__note">{{ work.recognition[portfolio_lang] }}</p>{% endif %}
+  {% if work.image_note %}<p class="portfolio-entry__note">{{ work.image_note[portfolio_lang] }}</p>{% endif %}
+  {% if work.private_sample %}<p class="portfolio-detail__sample">{% if portfolio_lang == 'zh' %}样片可通过私密链接提供。<a href="mailto:zhilongzhao@wyu.edu.cn?subject={{ work.title.zh | uri_escape }}">联系咨询样片</a>。{% else %}Sample episodes are available through private viewing links on request. <a href="mailto:zhilongzhao@wyu.edu.cn?subject={{ work.title.en | uri_escape }}">Enquire about a sample</a>.{% endif %}</p>{% endif %}
+</div>
+
+{% if work.poster %}
+  {% assign poster_path = work.poster[portfolio_lang] %}
+  {% capture poster_alt %}{{ work.title[portfolio_lang] }} {% if portfolio_lang == 'zh' %}海报{% else %}poster{% endif %}{% endcapture %}
+  <section class="portfolio-detail__poster{% if work.poster_layout == 'landscape' %} portfolio-detail__poster--landscape{% endif %}" aria-labelledby="work-poster">
+    <h2 id="work-poster">{% if portfolio_lang == 'zh' %}海报{% else %}Poster{% endif %}</h2>
+    {% if work.poster_layout == 'landscape' %}{% assign poster_sizes = '(min-width: 768px) 760px, 95vw' %}{% else %}{% assign poster_sizes = '(min-width: 600px) 440px, 95vw' %}{% endif %}
+    {% include figure.liquid path=poster_path alt=poster_alt class='portfolio-detail__poster-img' sizes=poster_sizes zoomable=true %}
+  </section>
+{% endif %}
+
+<section class="portfolio-detail__gallery-section" aria-labelledby="work-gallery">
+  <h2 id="work-gallery">{{ work.gallery_label[portfolio_lang] }}</h2>
+  <p class="portfolio-detail__image-help">{% if portfolio_lang == 'zh' %}点击图片可放大查看。{% else %}Select an image to enlarge it.{% endif %}</p>
+  <div class="portfolio-detail__gallery">
+    {% for image_path in work.gallery %}
+      {% capture image_alt %}{{ work.title[portfolio_lang] }} — {{ work.gallery_label[portfolio_lang] }} {{ forloop.index }}{% endcapture %}
+      <div class="portfolio-detail__image">
+        {% include figure.liquid path=image_path alt=image_alt class='portfolio-detail__gallery-img' sizes='(min-width: 768px) 450px, 95vw' zoomable=true %}
+        <a class="portfolio-detail__original" href="{{ image_path | relative_url }}" target="_blank" rel="noopener">{% if portfolio_lang == 'zh' %}{{ work.gallery_label.zh }} {{ forloop.index }} · 查看原图{% else %}{{ work.gallery_label.en }} {{ forloop.index }} · Open original{% endif %}<span aria-hidden="true"> ↗</span></a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<nav class="portfolio-related" aria-label="{% if portfolio_lang == 'zh' %}其他作品{% else %}Other work{% endif %}">
+  <p>{% if portfolio_lang == 'zh' %}其他作品{% else %}Other work{% endif %}</p>
+  <ul>
+    {% for other in site.data.media_works.works %}
+      {% unless other.id == work.id %}<li><a href="{{ portfolio_prefix | append: '/media/' | append: other.id | append: '/' | relative_url }}">{{ other.title[portfolio_lang] }} <span aria-hidden="true">→</span></a></li>{% endunless %}
+    {% endfor %}
+  </ul>
+</nav>

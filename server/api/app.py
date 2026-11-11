@@ -16,6 +16,7 @@ HOST = os.environ.get('API_HOST', '127.0.0.1')
 PORT = int(os.environ.get('API_PORT', '8080'))
 COMMENT_INTERVAL = 20
 COMMENTS_PER_HOUR = 120
+VISIT_INITIAL_BASE = int(os.environ.get('VISIT_INITIAL_BASE', '0'))
 
 
 def db():
@@ -37,7 +38,16 @@ def db():
         CREATE INDEX IF NOT EXISTS comments_game ON comments(game_id, id DESC);
         CREATE INDEX IF NOT EXISTS comments_rate ON comments(client_hash, created_at);
         CREATE INDEX IF NOT EXISTS comments_visitor_rate ON comments(visitor_id, created_at);
+        CREATE TABLE IF NOT EXISTS site_views (
+            singleton INTEGER PRIMARY KEY CHECK (singleton=1),
+            initial_base INTEGER NOT NULL CHECK (initial_base>=0),
+            observed INTEGER NOT NULL DEFAULT 0 CHECK (observed>=0),
+            started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+        CREATE TABLE IF NOT EXISTS view_receipts (
+            event_id TEXT PRIMARY KEY, created_at INTEGER NOT NULL);
+        CREATE INDEX IF NOT EXISTS view_receipts_time ON view_receipts(created_at);
     """)
+    con.execute('INSERT OR IGNORE INTO site_views(singleton, initial_base) VALUES (1,?)', (VISIT_INITIAL_BASE,))
     con.commit()
     return con
 
@@ -48,6 +58,11 @@ def cookie(headers):
         if key == 'visitor_id' and re.fullmatch(r'[A-Za-z0-9_-]{20,80}', value):
             return value
     return None
+
+
+def view_totals(con):
+    base, observed, started = con.execute('SELECT initial_base, observed, started_at FROM site_views WHERE singleton=1').fetchone()
+    return {'total': base + observed, 'initial_base': base, 'observed': observed, 'started_at': started + 'Z'}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -94,6 +109,9 @@ class Handler(BaseHTTPRequestHandler):
             return
         con = db()
         try:
+            if path == '/api/v1/site/views':
+                self.send_json(200, view_totals(con))
+                return
             if path in ('/api/v1/games/likes', '/api/v1/games/comments'):
                 table = 'likes' if path.endswith('/likes') else 'comments'
                 counts = {r[0]: r[1] for r in con.execute(f'SELECT game_id, COUNT(*) FROM {table} GROUP BY game_id')}
@@ -144,6 +162,25 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(403, {'error': 'invalid_origin'})
             return
         path = urlparse(self.path).path.rstrip('/')
+        if path == '/api/v1/site/views' and add:
+            event_id = data.get('event_id')
+            if not isinstance(event_id, str) or not re.fullmatch(r'[A-Za-z0-9_-]{20,80}', event_id):
+                self.send_json(400, {'error': 'invalid_view_event'})
+                return
+            con = db()
+            try:
+                now = int(time.time())
+                con.execute('BEGIN IMMEDIATE')
+                con.execute('DELETE FROM view_receipts WHERE created_at<?', (now - 172800,))
+                inserted = con.execute('INSERT OR IGNORE INTO view_receipts(event_id,created_at) VALUES (?,?)', (event_id, now)).rowcount
+                if inserted:
+                    con.execute('UPDATE site_views SET observed=observed+1 WHERE singleton=1')
+                totals = view_totals(con)
+                con.commit()
+                self.send_json(200, totals)
+            finally:
+                con.close()
+            return
         match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments)(?:/(\d+))?', path)
         if not match:
             self.send_json(404, {'error': 'not_found'})

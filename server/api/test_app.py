@@ -4,10 +4,74 @@ import json
 import tempfile
 import threading
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 from unittest.mock import patch
 from pathlib import Path
 
 import app
+
+
+class SiteViewsAPI(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.db_patch = patch.object(app, 'DB_PATH', str(Path(self.temp.name) / 'visits.sqlite3'))
+        self.db_patch.start()
+        self.base_patch = patch.object(app, 'VISIT_INITIAL_BASE', 731)
+        self.base_patch.start()
+        app.db().close()
+        self.server = app.ThreadingHTTPServer(('127.0.0.1', 0), app.Handler)
+        self.thread = threading.Thread(target=self.server.serve_forever, daemon=True)
+        self.thread.start()
+
+    def tearDown(self):
+        self.server.shutdown(); self.server.server_close(); self.thread.join()
+        self.base_patch.stop(); self.db_patch.stop(); self.temp.cleanup()
+
+    def request(self, event_id=None, method='POST', origin=None):
+        con = http.client.HTTPConnection(*self.server.server_address)
+        body = json.dumps({'event_id': event_id}) if method == 'POST' else None
+        headers = {'Content-Type': 'application/json'}
+        if origin: headers['Origin'] = origin
+        con.request(method, '/api/v1/site/views', body, headers)
+        response = con.getresponse()
+        result = response.status, json.loads(response.read())
+        con.close()
+        return result
+
+    def test_count_persists_and_initial_base_is_never_reapplied(self):
+        self.assertEqual(self.request(method='GET')[1]['total'], 731)
+        status, first = self.request('a' * 32)
+        self.assertEqual((status, first['initial_base'], first['observed'], first['total']), (200, 731, 1, 732))
+        self.assertEqual(self.request('a' * 32)[1], first)
+        self.assertEqual(self.request(method='GET')[1], first)
+        with patch.object(app, 'VISIT_INITIAL_BASE', 999):
+            app.db().close()
+            self.assertEqual(self.request(method='GET')[1], first)
+        self.assertEqual(self.request('b' * 32)[1]['total'], 733)
+
+    def test_parallel_views_and_retries_do_not_lose_or_duplicate_counts(self):
+        ids = [f'{number:032x}' for number in range(12)]
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            results = list(pool.map(self.request, ids + ids))
+        self.assertTrue(all(status == 200 for status, _ in results))
+        self.assertEqual(self.request(method='GET')[1]['observed'], 12)
+
+    def test_invalid_input_and_foreign_origin_cannot_increment(self):
+        for event in [None, '', 123, [], 'x' * 81, '<script>bad</script>']:
+            self.assertEqual(self.request(event)[0], 400)
+        self.assertEqual(self.request('c' * 32, origin='https://other.example')[0], 403)
+        self.assertEqual(self.request('c' * 32, method='DELETE')[0], 404)
+        self.assertEqual(self.request(method='GET')[1]['observed'], 0)
+
+    def test_receipt_cleanup_keeps_aggregate_and_existing_showcase_rows(self):
+        with app.db() as con:
+            con.execute('INSERT INTO likes(game_id,visitor_id) VALUES (?,?)', ('kept', 'visitor'))
+            con.execute('INSERT INTO view_receipts VALUES (?,?)', ('old' * 10, 1))
+        self.request('d' * 32)
+        with app.db() as con:
+            self.assertEqual(con.execute('SELECT COUNT(*) FROM likes').fetchone()[0], 1)
+            self.assertEqual(con.execute('SELECT COUNT(*) FROM view_receipts').fetchone()[0], 1)
+        self.assertEqual(self.request(method='GET')[1]['observed'], 1)
 
 
 class ShowcaseAPI(unittest.TestCase):

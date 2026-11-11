@@ -12,6 +12,26 @@ The public domain runs on the existing Hong Kong Lighthouse instance. GitHub Act
 
 The deployer only writes `/var/www/zhaozhilong.com` and its own deployment state. It does not replace API code, SQLite data, Nginx configuration, or the other movie website. API changes require a separate backed-up deployment.
 
+## API updates and page-view counter
+
+`deploy-api.sh REVISION APP_SHA256 [INITIAL_BASE]` installs the API from a pinned
+source revision after verifying its SHA-256. Run it as root on the existing host.
+It stops the API briefly, backs up its application, optional counter configuration
+and complete SQLite database, then verifies API health, the counter response,
+database integrity and retention of all original likes and comments. A failure
+restores the previous application and configuration; the database is never reset.
+Backups stay in `/opt/zhaozhilong-deploy/backups/`.
+
+The optional initial base must be selected before the new API first starts. It is
+stored once, separately from observed page views, and is visibly disclosed in the
+footer as not measured historical traffic. Omit it for a counter starting at zero.
+Static builds cannot modify either stored number. See `server/api/README.md` for
+counting semantics. Verify `GET /api/v1/site/views` without incrementing production
+counts; exercise mutations against temporary databases in the integration tests.
+
+Checks: `python3 -m unittest discover -s server/api -p test_app.py -v` and
+`node --test infra/tencent-cloud/test_site_views.cjs`.
+
 ## One-time setup
 
 Copy this directory to the server, inspect it, then run:

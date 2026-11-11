@@ -1,0 +1,22 @@
+<div class="teaching-directory">
+  <section class="teaching-course" aria-labelledby="course-modern-education">
+    <div class="teaching-course__heading">
+      <h3 id="course-modern-education"><a href="{% if page.lang == 'zh' %}/zh{% endif %}/teaching/modern-educational-technology/">{% if page.lang == 'zh' %}现代教育技术{% else %}Modern Educational Technology{% endif %}</a></h3>
+      <p>{% if page.lang == 'zh' %}学习设计与数字教学{% else %}Learning design and digital teaching{% endif %}</p>
+    </div>
+    <div class="teaching-course__content">
+      <p>{% if page.lang == 'zh' %}从教学目标出发，使用数字工具制作学习材料，并通过试玩、展示与反馈检验设计。课程介绍与两类学生作品均已公开。{% else %}Students use digital tools to develop learning materials and test their designs through play, presentation, and feedback. A course overview and two student showcases are available.{% endif %}</p>
+      {% include teaching-work-links.liquid compact=true %}
+    </div>
+  </section>
+  <section class="teaching-course" aria-labelledby="course-microfilm">
+    <div class="teaching-course__heading">
+      <h3 id="course-microfilm">{% if page.lang == 'zh' %}微电影制作{% else %}Microfilm Production{% endif %}</h3>
+      <p>{% if page.lang == 'zh' %}摄影摄像与拍摄实训{% else %}Cinematography and filming practice{% endif %}</p>
+    </div>
+    <div class="teaching-course__content">
+      <p>{% if page.lang == 'zh' %}我负责课程中的摄影摄像与拍摄实训部分，结合镜头设计、现场拍摄与作品讨论。{% else %}I teach the cinematography and filming-practice component, connecting shot design, on-location filming, and discussion of student work.{% endif %}</p>
+      <p class="teaching-course__availability">{% if page.lang == 'zh' %}本网站目前未公开该课程的学生作品。{% else %}Student work from this course is not currently published on this site.{% endif %}</p>
+    </div>
+  </section>
+</div>

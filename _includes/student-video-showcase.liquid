@@ -2,9 +2,7 @@
 {% assign is_zh = false %}
 {% if video_lang == 'zh' %}{% assign is_zh = true %}{% endif %}
 <div class="student-videos" data-game-language="{{ video_lang }}">
-  <nav class="student-videos__back" aria-label="{% if is_zh %}课程导航{% else %}Course navigation{% endif %}">
-    <a href="{% if is_zh %}/zh{% endif %}/teaching/modern-educational-technology/">{% if is_zh %}← 现代教育技术{% else %}← Modern Educational Technology{% endif %}</a>
-  </nav>
+  {% include teaching-navigation.liquid %}
   <div class="student-videos__intro">
     <p>{% if is_zh %}数字人视频是本课程的可选作业。本页仅展示部分同学自愿提供并同意公开的成果，按同学意愿署名或匿名展示。{% else %}Digital-human video production is an optional assignment in this course. This page presents only some students’ voluntarily shared work, published with their agreement and credited by name or anonymously as requested.{% endif %}</p>
   </div>

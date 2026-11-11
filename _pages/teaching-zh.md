@@ -2,20 +2,29 @@
 layout: page
 permalink: /zh/teaching/
 title: 教学
-description: 教学理念、课堂设计、影像制作与学生项目。
+description: 现代教育技术、微电影制作：教学理念、课程介绍与学生作品。
+page_class: teaching-page
 nav: true
 nav_order: 5
 lang: zh
 translation_key: teaching
 ---
 
+<nav class="teaching-quicklinks" aria-label="教学页面目录">
+  <a href="#courses">课程与学生作品 <span aria-hidden="true">↓</span></a>
+  <a href="#teaching-philosophy">教学理念</a>
+  <a href="#classroom-design">课堂设计</a>
+</nav>
+
 ## 教学理念
+{: #teaching-philosophy }
 
 我希望学生在课堂上学会提出问题、作出判断，并把想法转化为可以讨论和检验的作品。影像创作与数字学习设计都需要反复尝试：解释自己的选择，观察受众的反应，再据此修改。
 
 生成式人工智能可以帮助探索方案、制作原型和比较不同表达，但内容的准确性、创作伦理与最终判断仍由使用者负责。评价作品时，我关注学生如何理解问题、运用证据和回应反馈。
 
 ## 课堂设计
+{: #classroom-design }
 
 工作室式学习是我组织课堂的总体思路，具体任务、节奏与评价方式随课程目标调整。
 
@@ -32,9 +41,9 @@ translation_key: teaching
 团队之间可以围绕共同任务开展阶段展示与交流，评价同时考虑作品质量、个人贡献和修改过程。展示是学习过程的一部分，也为下一轮创作提供依据。
 
 ## 课程与学生作品
+{: #courses }
 
-- **[现代教育技术](/zh/teaching/modern-educational-technology/)**：学习设计、数字工具与互动教学材料。课程的[学生小游戏作品展](/zh/teaching/games/)收录 **27个可试玩原型**。
-- **微电影制作**：负责摄影摄像与拍摄实训部分，结合镜头设计、现场拍摄与作品讨论。
+{% include teaching-course-directory.liquid %}
 
 ## 课程建设
 

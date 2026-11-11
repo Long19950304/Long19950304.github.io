@@ -1,12 +1,14 @@
 ---
 layout: page
 permalink: /zh/teaching/games/
-title: 现代教育技术 · 小游戏作品展
+title: 学习小游戏作品
 description: 现代教育技术课程学生小游戏作品展示。
 nav: false
 lang: zh
 translation_key: teaching-games
 ---
+
+{% include teaching-navigation.liquid %}
 
 <div class="game-showcase-page" data-game-language="zh">
   <p class="lead">这里展示《现代教育技术》课程的 <strong>27 个学生小游戏作品</strong>。面向<strong>小学或初中低年级学生</strong>设计，点击画面即可试玩。欢迎点赞，也可以匿名或署名评论。</p>

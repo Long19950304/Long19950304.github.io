@@ -3,34 +3,38 @@ layout: page
 permalink: /teaching/modern-educational-technology/
 title: Modern Educational Technology
 description: Course overview, learning activities, and student work showcase.
+page_class: teaching-page
 nav: false
 lang: en
 translation_key: teaching-modern-educational-technology
 ---
 
-## About the course
+{% include teaching-navigation.liquid %}
 
 Modern Educational Technology connects educational theory with practical digital production. Students design small learning experiences, test them with users, and reflect on how technology changes participation, feedback, and classroom activity.
 
-My overall [teaching philosophy and classroom design](/teaching/) are described on the teaching homepage. This page focuses on the course's learning activities and student work.
+<nav class="teaching-quicklinks" aria-label="Course page contents">
+  <a href="#student-work">Student work <span aria-hidden="true">↓</span></a>
+  <a href="#learning-content">Learning activities</a>
+</nav>
+
+## Student work
+{: #student-work }
+
+Two showcases explore interactive learning materials and virtual-presenter explanations. Open either collection to play or watch.
+
+{% include teaching-work-links.liquid %}
+
+Both showcases support likes and comments, either anonymously or with a name.
+
+{% include coursework-usage-note.liquid %}
 
 ## What we work on
+{: #learning-content }
 
 - Learning design: turning a teaching objective into a clear activity and interaction.
 - Digital tools: prototyping with accessible web, multimedia, and AI-assisted tools.
 - Evaluation: testing whether an activity is understandable, playable, and useful for learning.
 - Reflection: documenting design choices, limitations, and responsible technology use.
 
-## Student work showcase
-
-### Digital-human videos · Optional assignment
-
-Some students have voluntarily shared videos using virtual presenters for English teaching and knowledge explanation. This is an optional assignment. The showcase includes only work approved for public display, credited by name or anonymously as requested.
-
-[Watch the digital-human videos →](/teaching/digital-humans/)
-
-### Learning games
-
-The course showcase collects 27 student-created learning game prototypes designed for primary and lower secondary school students. You can [open the showcase](/teaching/games/), search by title or student, try a game, like the works you enjoy, and comment anonymously or with your name.
-
-These are classroom prototypes. Some are designed for two players or touch screens, so they may work best on a larger screen or with a partner.
+The games are designed for primary and lower secondary school students. Some are designed for two players or touch screens, so they may work best on a larger screen or with a partner.

@@ -1,0 +1,24 @@
+{% assign teaching_lang = page.lang | default: 'en' %}
+{% assign teaching_prefix = '' %}
+{% if teaching_lang == 'zh' %}{% assign teaching_prefix = '/zh' %}{% endif %}
+{% if include.compact %}
+  <ul class="teaching-work-links">
+    {% for work in site.data.teaching_showcases %}
+      <li><a href="{{ teaching_prefix | append: work.path | relative_url }}">{{ work.title[teaching_lang] }} <span aria-hidden="true">→</span></a>{% if work.id == 'games' %}<span class="teaching-work-links__detail">{% if teaching_lang == 'zh' %}{{ site.data.game_showcases.modern_education_technology.size }} 个可试玩原型{% else %}{{ site.data.game_showcases.modern_education_technology.size }} playable prototypes{% endif %}</span>{% else %}<span class="teaching-work-links__detail">{% if teaching_lang == 'zh' %}可选作业，自愿展示{% else %}Optional, voluntarily shared work{% endif %}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <div class="teaching-work-grid">
+    {% for work in site.data.teaching_showcases %}
+      <a class="teaching-work" href="{{ teaching_prefix | append: work.path | relative_url }}">
+        <img src="{{ work.image | relative_url }}" alt="" width="960" height="540" loading="lazy">
+        <div class="teaching-work__body">
+          <p class="teaching-work__label">{{ work.label[teaching_lang] }}</p>
+          <h3>{{ work.title[teaching_lang] }}</h3>
+          <p>{{ work.description[teaching_lang] }}</p>
+          <span class="teaching-work__action">{{ work.action[teaching_lang] }} <span aria-hidden="true">→</span>{% if work.id == 'games' %}<span class="teaching-work__count">{% if teaching_lang == 'zh' %}{{ site.data.game_showcases.modern_education_technology.size }} 个原型{% else %}{{ site.data.game_showcases.modern_education_technology.size }} prototypes{% endif %}</span>{% endif %}</span>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

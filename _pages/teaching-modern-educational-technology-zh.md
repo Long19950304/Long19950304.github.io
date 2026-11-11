@@ -3,34 +3,38 @@ layout: page
 permalink: /zh/teaching/modern-educational-technology/
 title: 现代教育技术
 description: 课程介绍、学习活动与学生作品展示。
+page_class: teaching-page
 nav: false
 lang: zh
 translation_key: teaching-modern-educational-technology
 ---
 
-## 课程介绍
+{% include teaching-navigation.liquid %}
 
 现代教育技术把教育理论与数字内容实践结合起来。学生从教学目标出发，设计小型学习体验，通过试玩和反馈检验设计，再反思技术如何影响参与、互动与课堂活动。
 
-整体的[教学理念与课堂设计](/zh/teaching/)见教学主页。本页介绍这门课程的学习内容与学生作品。
+<nav class="teaching-quicklinks" aria-label="课程页面目录">
+  <a href="#student-work">学生作品 <span aria-hidden="true">↓</span></a>
+  <a href="#learning-content">学习内容</a>
+</nav>
+
+## 学生作品
+{: #student-work }
+
+两类作品分别展示互动学习材料与虚拟角色讲解，点击下方入口可直接试玩或观看。
+
+{% include teaching-work-links.liquid %}
+
+两类作品均可点赞，并支持匿名或署名评论。
+
+{% include coursework-usage-note.liquid %}
 
 ## 学习内容
+{: #learning-content }
 
 - 学习设计：把教学目标转化为清晰的活动和互动规则。
 - 数字工具：使用网页、多媒体及 AI 辅助工具制作原型。
 - 作品评估：检验作品是否易懂、好玩，并且真正服务于学习。
 - 过程反思：记录设计选择、局限，以及负责任使用技术的方式。
 
-## 学生作品展示
-
-### 数字人视频 · 可选作业
-
-部分同学自愿提供了数字人视频，用虚拟角色尝试英语教学与知识讲解。这是可选作业，作品展仅收录同意公开展示的部分成果，按同学意愿署名或匿名。
-
-[观看数字人视频作品 →](/zh/teaching/digital-humans/)
-
-### 学习小游戏
-
-本课程收集了 27 个学生制作的学习小游戏原型，面向小学或初中低年级学生设计。你可以进入[学生小游戏作品展](/zh/teaching/games/)，按作品名或学生搜索，打开试玩，为喜欢的作品点赞，也可以匿名或署名评论。
-
-这些作品是课堂原型，部分作品适合双人或触屏操作；使用较大的屏幕或与同伴一起试玩，体验可能更好。
+小游戏面向小学或初中低年级学生设计。部分作品适合双人或触屏操作，使用较大的屏幕或与同伴一起试玩，体验可能更好。

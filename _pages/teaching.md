@@ -2,20 +2,29 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Teaching philosophy, classroom design, media production, and student projects.
+description: Modern Educational Technology and Microfilm Production — teaching, courses, and student work.
+page_class: teaching-page
 nav: true
 nav_order: 5
 lang: en
 translation_key: teaching
 ---
 
+<nav class="teaching-quicklinks" aria-label="Teaching page contents">
+  <a href="#courses">Courses and student work <span aria-hidden="true">↓</span></a>
+  <a href="#teaching-philosophy">Teaching philosophy</a>
+  <a href="#classroom-design">Classroom design</a>
+</nav>
+
 ## Teaching Philosophy
+{: #teaching-philosophy }
 
 I want students to learn to ask useful questions, exercise judgment, and turn ideas into work that others can discuss and test. Media production and learning design both involve repeated attempts: explaining a choice, observing an audience's response, and revising the work in light of that response.
 
 Generative AI can help students explore alternatives, build prototypes, and compare ways of communicating. Its users remain responsible for accuracy, creative ethics, and final decisions. In assessing student work, I look at how students understand a problem, use evidence, and respond to feedback.
 
 ## Classroom Design
+{: #classroom-design }
 
 Studio-based learning provides an overall approach to classroom design. Tasks, pacing, and assessment are adapted to each course's learning goals.
 
@@ -32,9 +41,9 @@ Studio-based learning provides an overall approach to classroom design. Tasks, p
 Teams can share and compare responses to a common task at successive stages. Assessment considers the work itself, individual contributions, and the revision process. Presentations are part of learning and provide a starting point for further work.
 
 ## Courses and Student Work
+{: #courses }
 
-- **[Modern Educational Technology](/teaching/modern-educational-technology/)**: learning design, digital tools, and interactive teaching materials. The course's [student game showcase](/teaching/games/) includes **27 playable prototypes**.
-- **Microfilm Production**: I teach cinematography and filming practice, connecting shot design, practical production, and discussion of student work.
+{% include teaching-course-directory.liquid %}
 
 ## Course Development
 

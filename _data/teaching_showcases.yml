@@ -1,0 +1,30 @@
+- id: games
+  path: /teaching/games/
+  image: /assets/img/games/game-01.webp
+  title:
+    zh: 学习小游戏
+    en: Learning games
+  label:
+    zh: 互动教学材料
+    en: Interactive learning materials
+  description:
+    zh: 以英语学习为主题的网页小游戏，可按作品、玩法或作者搜索，直接打开试玩。
+    en: Browser-based games for English learning. Search by title, game type, or author, then open a game to play.
+  action:
+    zh: 进入作品展
+    en: Explore the games
+- id: digital-humans
+  path: /teaching/digital-humans/
+  image: /assets/video/student-digital-humans/dh-003.jpg
+  title:
+    zh: 数字人视频
+    en: Digital-human videos
+  label:
+    zh: 可选作业 · 部分同学自愿展示
+    en: Optional assignment · Voluntarily shared work
+  description:
+    zh: 用虚拟角色尝试英语教学与知识讲解，仅展示部分同学同意公开的作品，按意愿署名或匿名。
+    en: Virtual presenters used for English teaching and explanation. Only some students’ work is displayed, with consent and their chosen attribution.
+  action:
+    zh: 观看视频
+    en: Watch the videos

@@ -1,12 +1,14 @@
 ---
 layout: page
 permalink: /teaching/games/
-title: Modern Educational Technology · Game Showcase
+title: Learning Games
 description: Student-created learning games from the Modern Educational Technology course.
 nav: false
 lang: en
 translation_key: teaching-games
 ---
+
+{% include teaching-navigation.liquid %}
 
 <div class="game-showcase-page" data-game-language="en">
   <p class="lead">A playable showcase of 27 student-created learning games from <strong>Modern Educational Technology</strong>. Designed for <strong>primary and lower secondary school students</strong>. Play, leave a like, or share a comment anonymously or with your name.</p>

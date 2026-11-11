@@ -1,0 +1,22 @@
+{% assign course_nav_lang = page.lang | default: 'en' %}
+{% assign course_nav_prefix = '' %}
+{% if course_nav_lang == 'zh' %}{% assign course_nav_prefix = '/zh' %}{% endif %}
+<nav class="teaching-breadcrumbs" aria-label="{% if course_nav_lang == 'zh' %}课程导航{% else %}Course navigation{% endif %}">
+  <ol>
+    <li><a href="{{ course_nav_prefix | append: '/teaching/' | relative_url }}">{% if course_nav_lang == 'zh' %}教学{% else %}Teaching{% endif %}</a></li>
+    {% if page.translation_key == 'teaching-modern-educational-technology' %}
+      <li aria-current="page">{% if course_nav_lang == 'zh' %}现代教育技术{% else %}Modern Educational Technology{% endif %}</li>
+    {% else %}
+      <li><a href="{{ course_nav_prefix | append: '/teaching/modern-educational-technology/' | relative_url }}">{% if course_nav_lang == 'zh' %}现代教育技术{% else %}Modern Educational Technology{% endif %}</a></li>
+      <li aria-current="page">{% if page.translation_key == 'teaching-games' %}{% if course_nav_lang == 'zh' %}学习小游戏{% else %}Learning games{% endif %}{% else %}{% if course_nav_lang == 'zh' %}数字人视频{% else %}Digital-human videos{% endif %}{% endif %}</li>
+    {% endif %}
+  </ol>
+</nav>
+{% unless page.translation_key == 'teaching-modern-educational-technology' %}
+  <nav class="teaching-collections" aria-label="{% if course_nav_lang == 'zh' %}本课程的作品展{% else %}Course showcases{% endif %}">
+    {% for collection in site.data.teaching_showcases %}
+      {% assign collection_url = course_nav_prefix | append: collection.path %}
+      <a href="{{ collection_url | relative_url }}"{% if page.permalink == collection_url %} aria-current="page"{% endif %}>{{ collection.title[course_nav_lang] }}</a>
+    {% endfor %}
+  </nav>
+{% endunless %}

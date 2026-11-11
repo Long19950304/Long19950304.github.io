@@ -53,14 +53,14 @@ ninja.data = [{
           },
         },{id: "nav-教学",
           title: "教学",
-          description: "教学理念、课堂设计、影像制作与学生项目。",
+          description: "现代教育技术、微电影制作：教学理念、课程介绍与学生作品。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/teaching/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Teaching philosophy, classroom design, media production, and student projects.",
+          description: "Modern Educational Technology and Microfilm Production — teaching, courses, and student work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";

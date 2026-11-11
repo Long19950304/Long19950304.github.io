@@ -1280,7 +1280,7 @@ html[data-theme="dark"] .site-updates { background: #242426; }
 .site-updates__digest > span { color: var(--global-text-color-light); }
 .site-updates__digest-preview { margin: .4rem 0 0; color: var(--global-text-color-light); font-size: .85rem; font-weight: 400; line-height: 1.75; overflow-wrap: anywhere; }
 .site-views { display: block; margin-top: .4rem; font-size: .75rem; font-variant-numeric: tabular-nums; }
-.site-views[hidden], .site-views__base[hidden] { display: none; }
+.site-views[hidden] { display: none; }
 #latest-updates a,
 #latest-updates a:link,
 #latest-updates a:visited,

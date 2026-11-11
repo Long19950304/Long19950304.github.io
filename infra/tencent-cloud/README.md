@@ -23,8 +23,8 @@ restores the previous application and configuration; the database is never reset
 Backups stay in `/opt/zhaozhilong-deploy/backups/`.
 
 The optional initial base must be selected before the new API first starts. It is
-stored once, separately from observed page views, and is visibly disclosed in the
-footer as not measured historical traffic. Omit it for a counter starting at zero.
+stored once, separately from observed page views. The footer displays the combined
+total; the base is not measured historical traffic. Omit it for a counter starting at zero.
 Static builds cannot modify either stored number. See `server/api/README.md` for
 counting semantics. Verify `GET /api/v1/site/views` without incrementing production
 counts; exercise mutations against temporary databases in the integration tests.

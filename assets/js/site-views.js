@@ -9,8 +9,6 @@
         data.total !== data.initial_base + data.observed) return;
     const locale = counter.dataset.locale === 'zh' ? 'zh-CN' : 'en-US';
     counter.querySelector('[data-view-total]').textContent = data.total.toLocaleString(locale);
-    counter.querySelector('[data-view-base]').textContent = data.initial_base.toLocaleString(locale);
-    counter.querySelector('[data-view-base-note]').hidden = data.initial_base === 0;
     counter.hidden = false;
   };
 

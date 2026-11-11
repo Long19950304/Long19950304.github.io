@@ -8,7 +8,6 @@
   {% endif %}
   <span class="site-views" data-site-views data-locale="{{ page.lang | default: 'en' }}" hidden>
     <span>{% if page.lang == 'zh' %}浏览次数：{% else %}Page views: {% endif %}<span data-view-total></span></span>
-    <span class="site-views__base" data-view-base-note hidden>{% if page.lang == 'zh' %}（含初始基数 <span data-view-base></span>，非历史实测）{% else %}(includes an initial base of <span data-view-base></span>, not measured historical traffic){% endif %}</span>
   </span>
 {% endcapture %}
 

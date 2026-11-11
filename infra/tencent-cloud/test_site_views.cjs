@@ -6,7 +6,7 @@ const { webcrypto } = require('node:crypto');
 const code = fs.readFileSync('assets/js/site-views.js', 'utf8');
 
 function page(fetch, visibility = 'visible') {
-  const elements = Object.fromEntries(['total', 'base', 'base-note'].map((key) => [key, { hidden: true, textContent: '' }]));
+  const elements = {total: {hidden: true, textContent: ''}};
   const counter = {
     dataset: { locale: 'zh' }, hidden: true,
     querySelector: (selector) => elements[selector.slice(11, -1)],
@@ -25,7 +25,7 @@ function page(fetch, visibility = 'visible') {
 const tick = () => new Promise((resolve) => setImmediate(resolve));
 const response = (data) => ({ ok: true, json: async () => data });
 
-test('shows total and explicitly disclosed initial base, and runs once per document', async () => {
+test('shows total and runs once per document', async () => {
   let calls = 0;
   const p = page(async () => { calls += 1; return response({ total: 618, initial_base: 617, observed: 1 }); });
   await tick();
@@ -34,8 +34,6 @@ test('shows total and explicitly disclosed initial base, and runs once per docum
   assert.equal(calls, 1);
   assert.equal(p.counter.hidden, false);
   assert.equal(p.elements.total.textContent, '618');
-  assert.equal(p.elements.base.textContent, '617');
-  assert.equal(p.elements['base-note'].hidden, false);
 });
 
 test('retry reuses the view ID after a network failure', async () => {
@@ -67,7 +65,6 @@ test('background documents wait until visible; a fresh document gets a different
   await tick();
   assert.equal(ids.length, 2);
   assert.notEqual(ids[0], ids[1]);
-  assert.equal(p.elements['base-note'].hidden, true);
 });
 
 test('failure and invalid totals remain hidden without a fabricated fallback', async () => {

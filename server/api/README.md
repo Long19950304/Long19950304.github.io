@@ -30,7 +30,7 @@ by this counter. Only the aggregate and temporary random retry receipts are kept
 
 `VISIT_INITIAL_BASE` defaults to zero and is applied only when the singleton is
 first created in SQLite. If a nonzero initial display base is configured, the
-footer visibly identifies it as an initial base rather than measured historical
+footer displays the combined total. The configured base is not measured historical
 traffic. Responses expose `observed`, `initial_base`, `total` and `started_at`
 separately. Deployments and restarts never reset these numbers. The frontend hides
 the counter on failure rather than displaying a made-up fallback total.

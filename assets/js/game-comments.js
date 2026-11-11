@@ -2,6 +2,7 @@
   'use strict';
   var dialog = document.querySelector('[data-comments-dialog]');
   if (!dialog) return;
+  var video = dialog.dataset.commentsKind === 'video';
   var zh = document.querySelector('[data-game-language="zh"]') !== null;
   var api = (window.GAME_SHOWCASE_API || window.location.origin).replace(/\/$/, '');
   var form = dialog.querySelector('form');
@@ -32,7 +33,7 @@
       var wait = seconds < 60 ? message(seconds + ' 秒', seconds + ' seconds') : message(Math.ceil(seconds / 60) + ' 分钟', Math.ceil(seconds / 60) + ' minutes');
       return error.message === 'comment_hourly_limit'
         ? message('本小时评论较多，请约 ' + wait + '后再试。你输入的内容仍保留。', 'Hourly comment limit reached. Try again in about ' + wait + '. Your text has been kept.')
-        : message('同一作品评论间隔较短，请等 ' + wait + '后再试。也可以先评论其他作品。', 'Please wait ' + wait + ' before commenting on this game again. You can comment on another game now.');
+        : message('同一作品评论间隔较短，请等 ' + wait + '后再试。也可以先评论其他作品。', 'Please wait ' + wait + ' before commenting on this ' + (video ? 'video' : 'game') + ' again. You can comment on another work now.');
     }
     return message('暂时未能完成，请检查网络后重试。', 'Unable to complete this request. Please try again.');
   }
@@ -89,7 +90,7 @@
       next = data.next;
       more.hidden = !next;
       more.textContent = message('查看更早评论', 'Load earlier comments');
-      status.textContent = list.children.length ? '' : message('还没有评论，欢迎分享你的试玩感受。', 'No comments yet. Share your experience.');
+      status.textContent = list.children.length ? '' : message(video ? '还没有评论，欢迎分享你的观看感受。' : '还没有评论，欢迎分享你的试玩感受。', 'No comments yet. Share your experience.');
     } catch (error) {
       if (version !== generation) return;
       status.textContent = errorText(error);

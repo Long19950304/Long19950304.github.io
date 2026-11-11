@@ -25,28 +25,4 @@
   {% endfor %}
 </div>
 <p class="game-showcase-empty" data-game-empty hidden>{% if chinese %}没有找到这个作品，试试游戏名称或同学姓名。{% else %}No games found. Try a game title or student name.{% endif %}</p>
-<dialog class="game-comments" data-comments-dialog aria-labelledby="game-comments-title">
-  <div class="game-comments__heading">
-    <h2 id="game-comments-title">{% if chinese %}作品评论{% else %}Game comments{% endif %}</h2>
-    <button type="button" data-comments-close aria-label="{% if chinese %}关闭评论{% else %}Close comments{% endif %}">×</button>
-  </div>
-  <p class="game-comments__game" data-comments-title></p>
-  <p class="game-comments__status" data-comments-status role="status" aria-live="polite"></p>
-  <div class="game-comments__list" data-comments-list></div>
-  <button class="game-comments__more" type="button" data-comments-more hidden>{% if chinese %}查看更早评论{% else %}Load earlier comments{% endif %}</button>
-  <form data-comments-form>
-    <fieldset class="game-comments__identity">
-      <legend>{% if chinese %}发布方式{% else %}Post as{% endif %}</legend>
-      <label><input type="radio" name="identity" value="anonymous" checked> {% if chinese %}匿名{% else %}Anonymous{% endif %}</label>
-      <label><input type="radio" name="identity" value="named"> {% if chinese %}留下名字{% else %}Use a name{% endif %}</label>
-    </fieldset>
-    <label class="game-comments__name" data-comments-name-wrap hidden>{% if chinese %}名字{% else %}Name{% endif %}<input type="text" name="name" maxlength="40" autocomplete="nickname" disabled></label>
-    <label for="game-comment-text">{% if chinese %}试玩感受或建议{% else %}Your experience or suggestions{% endif %}</label>
-    <textarea id="game-comment-text" name="text" maxlength="600" rows="3" required placeholder="{% if chinese %}哪里有趣？哪里还可以改进？{% else %}What did you enjoy? What could be improved?{% endif %}"></textarea>
-    <div class="game-comments__submit">
-      <small>{% if chinese %}评论公开可见 · 最多 600 字{% else %}Public comments · Up to 600 characters{% endif %}</small>
-      <button type="submit">{% if chinese %}发布评论{% else %}Post comment{% endif %}</button>
-    </div>
-  </form>
-</dialog>
-<script src="{{ '/assets/js/game-comments.js' | relative_url | bust_file_cache }}" defer></script>
+{% include coursework-comments.liquid %}

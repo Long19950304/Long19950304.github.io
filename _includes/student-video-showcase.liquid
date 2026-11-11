@@ -1,7 +1,7 @@
 {% assign video_lang = page.lang | default: 'en' %}
 {% assign is_zh = false %}
 {% if video_lang == 'zh' %}{% assign is_zh = true %}{% endif %}
-<div class="student-videos">
+<div class="student-videos" data-game-language="{{ video_lang }}">
   <nav class="student-videos__back" aria-label="{% if is_zh %}课程导航{% else %}Course navigation{% endif %}">
     <a href="{% if is_zh %}/zh{% endif %}/teaching/modern-educational-technology/">{% if is_zh %}← 现代教育技术{% else %}← Modern Educational Technology{% endif %}</a>
   </nav>
@@ -11,7 +11,7 @@
   <div class="student-videos__grid">
     {% for video in site.data.student_videos %}
       {% capture media_base %}/assets/video/student-digital-humans/{{ video.id }}{% endcapture %}
-      <article class="student-video" id="{{ video.id }}" aria-labelledby="{{ video.id }}-title">
+      <article class="student-video" id="{{ video.id }}" aria-labelledby="{{ video.id }}-title" data-video-id="student-video-{{ video.id }}">
         <video controls playsinline preload="none" poster="{{ media_base | append: '.jpg' | relative_url }}" aria-label="{{ video.title[video_lang] | escape }}" width="960" height="544">
           <source src="{{ media_base | append: '.mp4' | relative_url }}" type="video/mp4">
           {% if is_zh %}浏览器暂不支持内嵌视频。{% else %}Your browser does not support embedded video.{% endif %}
@@ -22,9 +22,15 @@
           <h2 id="{{ video.id }}-title">{{ video.title[video_lang] | escape }}</h2>
           <p>{{ video.description[video_lang] | escape }}</p>
           <a class="student-video__open" href="{{ media_base | append: '.mp4' | relative_url }}">{% if is_zh %}单独打开视频{% else %}Open video separately{% endif %}<span aria-hidden="true"> ↗</span></a>
+          <div class="student-video__actions">
+            <button class="game-like" type="button" data-video-like data-game-id="student-video-{{ video.id }}" aria-label="{% if is_zh %}喜欢{% else %}Like{% endif %} {{ video.title[video_lang] | escape }}" aria-pressed="false">♡ <span data-like-count>{% if is_zh %}喜欢{% else %}Like{% endif %}</span></button>
+            <button type="button" data-comments-open data-game-id="student-video-{{ video.id }}" data-game-title="{{ video.title[video_lang] | escape }}">{% if is_zh %}评论{% else %}Comments{% endif %} <span data-comment-count>0</span></button>
+          </div>
+          <span class="game-like-feedback" data-like-feedback role="status" hidden></span>
         </div>
       </article>
     {% endfor %}
   </div>
 </div>
+{% include coursework-comments.liquid kind='video' %}
 <script defer src="{{ '/assets/js/student-videos.js' | relative_url | bust_file_cache }}"></script>

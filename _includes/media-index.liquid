@@ -23,6 +23,7 @@
           <p class="portfolio-entry__format">{{ work.format[portfolio_lang] }}</p>
           <h3 id="{{ work.id }}-title"><a href="{{ work_url | relative_url }}">{{ work.title[portfolio_lang] }}</a></h3>
           <p class="portfolio-entry__translation">{% if portfolio_lang == 'zh' %}{{ work.title.en }}{% else %}{{ work.title.zh }}{% endif %}</p>
+          {% if work.production_period %}<p class="portfolio-entry__note">{% if portfolio_lang == 'zh' %}制作时期：{% else %}Production period: {% endif %}{{ work.production_period[portfolio_lang] }}</p>{% endif %}
           <p class="portfolio-entry__description">{{ work.description[portfolio_lang] }}</p>
           {% if work.recognition %}<p class="portfolio-entry__note">{{ work.recognition[portfolio_lang] }}</p>{% endif %}
           <a class="portfolio-entry__action" href="{{ work_url | relative_url }}">{{ work.action[portfolio_lang] }} <span aria-hidden="true">→</span></a>

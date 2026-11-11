@@ -9,6 +9,7 @@
 <div class="portfolio-detail__intro">
   <p class="portfolio-entry__format">{{ work.format[portfolio_lang] }}</p>
   <p class="portfolio-entry__translation">{% if portfolio_lang == 'zh' %}{{ work.title.en }}{% else %}{{ work.title.zh }}{% endif %}</p>
+  {% if work.production_period %}<p class="portfolio-entry__note">{% if portfolio_lang == 'zh' %}制作时期：{% else %}Production period: {% endif %}{{ work.production_period[portfolio_lang] }}</p>{% endif %}
   <p>{{ work.description[portfolio_lang] }}</p>
   {% if work.recognition %}<p class="portfolio-entry__note">{{ work.recognition[portfolio_lang] }}</p>{% endif %}
   {% if work.image_note %}<p class="portfolio-entry__note">{{ work.image_note[portfolio_lang] }}</p>{% endif %}

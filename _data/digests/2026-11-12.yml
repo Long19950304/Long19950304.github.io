@@ -1,0 +1,93 @@
+date: '2026-11-12'
+note: China’s New-Energy Vehicle Exports Top Half of Exports · UK toy sales rise as
+  hands-on products lead · Google Introduces Gemini Decisions API
+note_zh: 中国新能源汽车出口占比连续五个月超过50%；英国传统动手玩具带动销售增长；Google推出Gemini Decisions API
+edition: daily-audio
+policy_version: 6
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-12-zh.mp3
+    seconds: 625.0
+    bytes: 5000876
+    sha256: d76b731a19ffa90967b3dd569e1ee70be15d437bd252f54afb6bc6009a0c34a5
+  en:
+    path: /assets/audio/digests/2026-11-12-en.mp3
+    seconds: 714.0
+    bytes: 5712524
+    sha256: dae93f9d2a68f4dd35d5fa634b76439efc49885a0e6f30e72b05c8ebc8a2edb9
+items:
+- title: China’s New-Energy Vehicle Exports Top Half of Exports
+  title_zh: 中国新能源汽车出口占比连续五个月超过50%
+  url: https://www.chinanews.com.cn/cj/2026/11-11/10730233.shtml
+  published: '2026-11-11T16:08:45+08:00'
+  source: 中国新闻网财经
+  category: Business & economy
+  source_id: chinanews-finance
+  authority: news_agency
+  publisher_id: chinanews-finance
+  coverage: china
+  why: China’s new-energy vehicle exports accounted for more than 50% of total vehicle
+    exports for five consecutive months, according to China News Service, citing the
+    China Association of Automobile Manufacturers. In October, these exports reached
+    606,000 vehicles, while total vehicle production and sales declined year on year.
+  why_zh: 中国新闻网援引中国汽车工业协会数据称，2026年10月新能源汽车出口占汽车出口总量超过50%，已连续五个月保持这一水平。10月新能源汽车出口60.6万辆，同比增长1.4倍，汽车整体销量同比下降9.2%。
+- title: UK toy sales rise as hands-on products lead
+  title_zh: 英国传统动手玩具带动销售增长
+  url: https://www.bbc.co.uk/news/articles/cx5ynyg6j375o
+  published: '2026-11-11T07:52:05+00:00'
+  source: BBC News Business
+  category: Business & economy
+  source_id: bbc-business
+  authority: public_media
+  publisher_id: bbc
+  coverage: world
+  why: BBC News Business reports that UK toy sales rose 17% through October, with
+    growth strongest among traditional and hands-on products such as squishies and
+    building sets. Circana also reported a 22% year-on-year rise in the value of “kidult”
+    sales during the first half of 2026.
+  why_zh: BBC News Business援引Circana称，截至2026年10月，英国售出玩具数量同比增长17%，增速达十年高位。Circana另称，2026年上半年面向12岁以上“成人儿童”的玩具与游戏销售额同比增长22%。
+- title: Google Introduces Gemini Decisions API
+  title_zh: Google推出Gemini Decisions API
+  url: https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api
+  published: '2026-11-11T18:00:00+00:00'
+  source: Google AI
+  category: AI tools & model releases
+  source_id: google-ai
+  authority: developer_primary
+  publisher_id: google-ai
+  coverage: world
+  why: Google AI announced the Gemini Decisions API, powered by Gemini Decision 1,
+    for closed-set decisions across text, images, audio, video, and PDFs. Google reports
+    that it can evaluate up to 1,000 independent questions in one pass, with confidence
+    scores and stated latency and pricing.
+  why_zh: Google AI宣布推出由Gemini Decision 1驱动的Gemini Decisions API，面向文本、图像、音频、视频和PDF的封闭式决策。Google称，该接口单次最多评估1,000个独立问题，并提供置信度分数、延迟和定价数据。
+- title: Network-Inspired Metamaterials
+  title_zh: 网络启发的多尺度超材料
+  url: https://news.mit.edu/2026/engineers-design-stronger-resilient-nature-inspired-metamaterials-1111
+  published: '2026-11-11T16:00:00+00:00'
+  source: MIT News
+  category: Science & research
+  source_id: mit-news
+  authority: research_primary
+  publisher_id: mit-news
+  coverage: world
+  why: MIT News reports that researchers designed 3D-printed metamaterials from varied,
+    interconnecting beams that showed greater resilience to compression and impacts
+    in physical tests. The open-access Nature study also demonstrated that one design
+    could cushion a fragile object embedded at its center.
+  why_zh: MIT新闻报道，麻省理工学院、东北大学和乌得勒支大学研究人员用不同尺寸的互联梁设计三维打印超材料，物理测试显示其抗压缩和抗冲击能力优于传统有序超材料。相关《自然》论文还展示了一种可缓冲并保护中心脆弱物体的设计。
+- title: Injectable Hydrogel Sealant Tested for Gastrointestinal Fistulas
+  title_zh: 可注射水凝胶内镜修复胃肠瘘取得动物实验进展
+  url: https://www.cas.cn/syky/202611/t20261109_5123747.shtml
+  published: '2026-11-11T09:55:00+08:00'
+  source: 中国科学院科研进展
+  category: Science & research
+  source_id: cas-research
+  authority: research_primary
+  publisher_id: cas-research
+  coverage: china
+  why: China’s Academy of Sciences reported a heat-responsive, injectable hydrogel
+    sealant for gastrointestinal fistula repair. Laboratory tests and rat and巴马 pig
+    models showed sealing and tissue-repair results, but the work remains preclinical,
+    and clinical efficacy has not yet been established.
+  why_zh: 中国科学院称，受蛞蝓黏液启发，研究团队开发出可经内镜注射、在体内原位凝胶化的胃肠瘘密封剂。动物实验显示其具有封堵和组织修复效果，但研究仍处于临床前阶段，实际临床疗效尚待验证。

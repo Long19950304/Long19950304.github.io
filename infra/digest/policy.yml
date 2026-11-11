@@ -1,5 +1,6 @@
-version: 5
+version: 6
 timezone: Asia/Shanghai
+dedup_days: 7
 lookback_hours: 48
 weekend_lookback_hours: 72
 min_items: 5
@@ -31,6 +32,8 @@ selection_instruction: >-
   item according to the actual story, not the publisher's location. Do not use an
   overseas story published by a Chinese outlet as domestic news. If balanced fresh
   coverage is unavailable, hold publication rather than invent, backdate or recycle.
+  Exclude events aired in the previous seven days, including the previous day,
+  even if another publisher, URL, headline, language or angle reports the same news.
 # Fail closed. A technical article touching these topics is omitted as a whole.
 exclude_patterns:
   - '\b(lawsuits?|litigation|class.action|false advertising|allegations?|accusations?)\b|诉讼|虚假宣传|指控|集体起诉'

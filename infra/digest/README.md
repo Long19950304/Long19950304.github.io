@@ -4,6 +4,18 @@ The renewed digest covers the Chinese and world economy, useful AI tools, reprod
 
 ## Editorial and publication gates
 
+Policy version 6 adds event comparison against the preceding seven calendar days,
+including yesterday. Before narration, URL/title matches are excluded and a separate
+MiniMax request compares the selected source evidence with previously aired bilingual
+titles and summaries. Changed publishers, URLs, headlines, languages and angles do
+not make the same event new. The same organisation can have a genuinely distinct
+event; uncertain distinctions are excluded. Rejected selections are removed before
+bounded reselection, and resumed drafts are rechecked before reuse. The final editor
+also receives the historical list. Novelty receipts bind evidence, history, model
+and prompt; publication approval fingerprints bind history as well. Incomplete or
+unavailable novelty reviews hold publication. The private `novelty-review.json` and
+`novelty-reviews/` cache retain decisions without exposing source drafts publicly.
+
 `sources.yml` allowlists official statistical/central-bank releases, established economic newsrooms and technical primary sources. Entries need a real timestamp within 48 hours on weekdays or 72 hours on weekends, an allowlisted HTTPS link and substantive source evidence. Economic stories always require the article body; short technical feed descriptions also trigger article retrieval. Pre-releases are excluded. The preceding seven published days are checked for duplicate URLs. Each edition needs 5–7 distinct stories from at least three publishers; no publisher supplies more than two. Separate channels from BBC, CBC, NPR or the Guardian share a publisher ID. Of those, 2–3 must be economic stories and at least three must be technology/research. A mainland-China economic story from a Chinese authoritative publisher and an international economic story from an international authoritative publisher are required. Publisher location cannot establish the story's actual geography; the model review checks that separately. Missing coverage holds publication.
 
 The initial economic sources are China's National Bureau of Statistics and Xinhua Finance, BBC News Business, the U.S. Bureau of Economic Analysis and the European Central Bank. A configured source may be unavailable or have no eligible releases on a particular day. The public catalogue at `/digest/sources/` and `/zh/digest/sources/` records the last source check. Reuters, FT, IMF and other proposed sources are not advertised as integrated when their endpoints fail or full evidence is inaccessible. Paywalls and TLS verification are not bypassed. Technical community posts hosted on Hugging Face are attributed to their authors; platform hosting is not independent verification.

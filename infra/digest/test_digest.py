@@ -14,6 +14,10 @@ SPEC.loader.exec_module(d)
 
 class PublicationTests(unittest.TestCase):
     def setUp(self):
+        # Publication tests use synthetic stories, independent of live editions.
+        history = mock.patch.object(d, 'aired_history', return_value=[])
+        history.start()
+        self.addCleanup(history.stop)
         self.policy = d.load_config()
         self.candidates = [dict(id=str(i), source_id=str(i), evidence='A verified primary-source passage describing an actual software update and its documented behavior.') for i in range(5)]
         self.candidates[0].update(topic='economy', source_region='china', authority='statistical_agency')
@@ -102,6 +106,21 @@ class PublicationTests(unittest.TestCase):
                 d.draft('2026-11-07', substantial, work, self.policy)
                 call.assert_not_called()
                 self.assertEqual(compose.call_args.args[1], selected)
+
+    def test_repeat_is_removed_before_reselection_and_narration(self):
+        candidates = [{**c, 'evidence': c['evidence'] * 10} for c in self.candidates]
+        candidates.append({**candidates[4], 'id': '5', 'source_id': '5'})
+        selected = [{'id': str(i + 1), 'coverage': it['coverage']} for i, it in enumerate(self.issue['items'])]
+        for cached in [False, True]:
+            with self.subTest(cached=cached), tempfile.TemporaryDirectory() as tmp:
+                work = Path(tmp)
+                if cached:
+                    d.save_json(work / 'selection.json', {'items': [{'id': it['id'], 'coverage': it['coverage']} for it in self.issue['items']]})
+                with mock.patch.object(d, 'repeated_stories', side_effect=[{'2'}, set()]), mock.patch.object(d, 'llm', return_value={'items': selected}) as call, mock.patch.object(d, 'compose_issue', return_value=self.issue) as compose:
+                    d.draft('2026-11-11', candidates, work, self.policy)
+                    offered = call.call_args.args[2]['candidates']
+                    self.assertNotIn('2', {c['source_id'] for c in offered})
+                    self.assertNotIn('2', {it['id'] for it in compose.call_args.args[1]})
 
     def test_length_correction_is_targeted_and_does_not_bypass_validation(self):
         issue = copy.deepcopy(self.issue)
@@ -428,6 +447,16 @@ class PublicationTests(unittest.TestCase):
         for report in [None, [], {'checks': None}, {'checks': [None]}]:
             self.assertFalse(d.audit_approved(report, {'a'}))
 
+    def test_final_repeat_blocks_publication_even_after_factual_approval(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp);self.seed_factual_review(work)
+            with mock.patch.object(d, 'repeated_stories', return_value={'2'}), mock.patch.object(d, 'llm') as call:
+                with self.assertRaisesRegex(d.PublicationReviewError, 'Previously aired'):
+                    d.publication_review(self.issue, self.candidates, work, self.policy)
+                call.assert_not_called()
+            with self.assertRaises(d.PublicationReviewError):
+                d.require_reviews(self.issue, self.candidates, work, self.policy)
+
     def test_forced_factual_api_failure_invalidates_old_receipt(self):
         with tempfile.TemporaryDirectory() as tmp:
             work = Path(tmp);self.seed_factual_review(work)
@@ -452,6 +481,90 @@ class PublicationTests(unittest.TestCase):
                 with self.assertRaisesRegex(d.PublicationReviewError, 'explicit re-audit'):
                     d.publication_review(self.issue,self.candidates,work,self.policy)
                 self.assertEqual(call.call_count, 1)
+
+
+class EventNoveltyTests(unittest.TestCase):
+    def setUp(self):
+        self.policy = d.load_config('2026-11-11')
+        self.history = [dict(id='2026-11-10:1', edition_date='2026-11-10',
+            title='Acme releases Model 2', title_zh='Acme发布Model 2',
+            url='https://example.com/original', why='Model 2 was released.')]
+        self.candidate = dict(id='today', title='New reporting on Model 2',
+            url='https://news.example.com/another-report', evidence='Acme released Model 2.')
+
+    def report(self, decision='repeat', previous=None):
+        return {'checks': [dict(id='today', decision=decision,
+            previous_ids=(['2026-11-10:1'] if decision == 'repeat' else []) if previous is None else previous,
+            reason='同一产品版本的报道。' if decision == 'repeat' else '不同的事件。')]}
+
+    def check(self, work):
+        return d.repeated_stories('2026-11-11', [{'id': 'today'}], [self.candidate], work, self.policy)
+
+    def test_history_includes_yesterday_and_boundary_but_not_self_or_future(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'ROOT', Path(tmp)):
+            base = Path(tmp) / '_data/digests';base.mkdir(parents=True)
+            for day in ['2026-11-03', '2026-11-04', '2026-11-10', '2026-11-11', '2026-11-12']:
+                (base / (day + '.yml')).write_text(d.yaml.safe_dump({'items': [self.history[0]]}))
+            history = d.aired_history('2026-11-11', self.policy)
+            self.assertEqual([h['edition_date'] for h in history], ['2026-11-04', '2026-11-10'])
+
+    def test_tracking_url_and_reformatted_title_are_excluded_without_model(self):
+        for changes in [dict(url='https://example.com/original/?utm_source=feed#part'),
+                        dict(title='ACME: releases Model 2!')]:
+            with self.subTest(changes=changes), tempfile.TemporaryDirectory() as tmp:
+                self.candidate.update(changes)
+                with mock.patch.object(d, 'aired_history', return_value=self.history), mock.patch.object(d, 'llm') as call:
+                    self.assertEqual(self.check(Path(tmp)), {'today'})
+                    call.assert_not_called()
+
+    def test_changed_publisher_and_title_still_rejected_and_cached(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'aired_history', return_value=self.history), mock.patch.object(d, 'llm', return_value=self.report()) as call:
+            self.assertEqual(self.check(Path(tmp)), {'today'})
+            self.assertEqual(self.check(Path(tmp)), {'today'})
+            call.assert_called_once()
+            self.assertEqual(call.call_args.args[2]['previously_aired'], self.history)
+
+    def test_distinct_event_from_same_organisation_can_pass_but_history_changes_recheck(self):
+        self.candidate.update(title='Acme releases Model 3', evidence='A separate release of Model 3.')
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'aired_history', return_value=self.history), mock.patch.object(d, 'llm', return_value=self.report('new')) as call:
+            self.assertEqual(self.check(Path(tmp)), set())
+            self.assertEqual(self.check(Path(tmp)), set())
+            self.assertEqual(call.call_count, 1)
+            self.history[0]['why'] += ' Corrected release description.'
+            self.assertEqual(self.check(Path(tmp)), set())
+            self.assertEqual(call.call_count, 2)
+
+    def test_uncertain_is_excluded_and_malformed_or_unavailable_review_holds(self):
+        malformed = [[], {'checks': []}, {'checks': self.report()['checks'] * 2},
+                     self.report(previous=['invented-history-id']), self.report('new', ['2026-11-10:1']),
+                     self.report(previous=[])]
+        for response in [self.report('uncertain'), *malformed, TimeoutError('private error')]:
+            with self.subTest(response=response), tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'aired_history', return_value=self.history):
+                call = mock.patch.object(d, 'llm', side_effect=response) if isinstance(response, Exception) else mock.patch.object(d, 'llm', return_value=response)
+                with call:
+                    if response == self.report('uncertain'):
+                        self.assertEqual(self.check(Path(tmp)), {'today'})
+                    else:
+                        with self.assertRaises(d.PublicationReviewError): self.check(Path(tmp))
+
+    def test_changed_history_invalidates_publication_approval_fingerprint(self):
+        issue = {'items': [{'id': 'today'}]}
+        with mock.patch.object(d, 'aired_history', return_value=self.history):
+            before = d.review_fingerprint(issue, [self.candidate], self.policy, 'publication', '2026-11-11')
+            self.history[0]['why'] += ' Correction.'
+            after = d.review_fingerprint(issue, [self.candidate], self.policy, 'publication', '2026-11-11')
+            self.assertNotEqual(before, after)
+            with mock.patch.object(d, 'NOVELTY_REVIEW_PROMPT', d.NOVELTY_REVIEW_PROMPT + ' Revised.'):
+                revised = d.review_fingerprint(issue, [self.candidate], self.policy, 'publication', '2026-11-11')
+                self.assertNotEqual(after, revised)
+
+    def test_resumed_repeated_story_is_archived_and_reselected(self):
+        issue = {'items': [{'id': 'today'}]}
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'validate_issue'), mock.patch.object(d, 'repeated_stories', return_value={'today'}), mock.patch.object(d, 'draft', return_value={'replacement': True}) as draft:
+            work = Path(tmp);d.save_json(work / 'draft.json', issue)
+            self.assertEqual(d.resume_or_draft('2026-11-11', [self.candidate], work, self.policy), {'replacement': True})
+            draft.assert_called_once()
+            self.assertTrue(list(work.glob('invalid-draft-*.json')))
 
 
 if __name__ == '__main__': unittest.main()

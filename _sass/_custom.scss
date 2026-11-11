@@ -1297,3 +1297,21 @@ html[data-theme="dark"] .site-updates { background: #242426; }
 }
 .game-card__actions .btn, .game-comment-link { min-height: 44px; }
 @media (min-width: 576px) and (max-width: 760px) { .game-showcase-toolbar { flex-wrap: wrap; } .game-showcase-search { flex-basis: 100%; } }
+
+/* Voluntary digital-human coursework: quiet, accessible native video gallery. */
+.student-videos__back { margin: 0 0 1.25rem; font-size: .9rem; }
+.student-videos__intro { padding: 1.25rem 1.4rem; margin-bottom: 1.75rem; border: 1px solid var(--global-divider-color); border-radius: 6px; background: var(--global-card-bg-color); }
+.student-videos__intro p { margin-bottom: .65rem; }
+.student-videos__intro p:last-child { margin-bottom: 0; }
+.student-videos__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.student-video { border: 1px solid var(--global-divider-color); border-radius: 6px; overflow: hidden; background: var(--global-card-bg-color); }
+.student-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #17191c; }
+.student-video__body { padding: 1.1rem 1.15rem 1.2rem; }
+.student-video__meta { display: flex; justify-content: space-between; gap: 1rem; color: var(--global-text-color-light); font-size: .82rem; font-variant-numeric: tabular-nums; }
+.student-video h2 { margin: .55rem 0 .65rem; font-size: 1.12rem; line-height: 1.5; font-weight: 500; }
+.student-video__body p { margin-bottom: .8rem; font-size: .9rem; line-height: 1.7; }
+.student-video__open { font-size: .82rem; }
+@media (max-width: 600px) {
+  .student-videos__grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .student-videos__intro { padding: 1rem; }
+}

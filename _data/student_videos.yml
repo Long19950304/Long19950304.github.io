@@ -1,0 +1,46 @@
+# Public display metadata only. Source emails and attribution records stay in the private course archive.
+- id: dh-001
+  author: null
+  duration: '5:46'
+  title:
+    zh: 积极心理学视角下的二语习得
+    en: Positive psychology and second-language acquisition
+  description:
+    zh: 以虚拟讲解角色串联课堂情境，介绍二语习得的研究话题与教学启示。
+    en: A virtual presenter connects classroom scenes to research topics and teaching implications in second-language acquisition.
+- id: dh-002
+  author: 蔡雅兰
+  duration: '0:09'
+  title:
+    zh: 英语讲解片段：主导教学取向
+    en: 'English explainer excerpt: the dominant approach'
+  description:
+    zh: 用一段简短的虚拟角色口播，解释主导教学取向如何组织整节课。
+    en: A short virtual-presenter explanation of how a dominant approach shapes an entire lesson.
+- id: dh-003
+  author: null
+  duration: '4:47'
+  title:
+    zh: 可数名词与不可数名词
+    en: Countable and uncountable nouns
+  description:
+    zh: 借助水果、书本和水等生活情境，演示名词分类及数量表达。
+    en: Everyday examples with fruit, books, and water illustrate noun categories and expressions of quantity.
+- id: dh-004
+  author: 刘静宜
+  duration: '0:31'
+  title:
+    zh: 英语阅读：略读与寻读
+    en: 'English reading: skimming and scanning'
+  description:
+    zh: 用虚拟角色和屏幕示例，介绍快速把握主旨与定位具体信息的阅读方法。
+    en: A virtual character and on-screen examples introduce reading for the main idea and locating specific information.
+- id: dh-005
+  author: 吴洁莹
+  duration: '8:41'
+  title:
+    zh: 一般将来时：will 与 be going to
+    en: 'Future expressions: will and be going to'
+  description:
+    zh: 通过校园生活情境、板书与练习，讲解两种将来表达的用法。
+    en: Campus scenarios, lesson slides, and exercises introduce two ways of expressing the future.

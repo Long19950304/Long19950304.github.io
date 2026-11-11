@@ -2,6 +2,19 @@
 # Dates describe the event, not the day the website was edited.
 # Supply both languages and link to an existing public page. Do not add private
 # submission targets, unconfirmed achievements, or routine code/deployment changes.
+- date: '2026-11-11'
+  category:
+    en: Teaching
+    zh: 教学
+  title:
+    en: Student digital-human videos now available
+    zh: 数字人视频作品展上线
+  description:
+    en: Five voluntarily shared videos from an optional Modern Educational Technology assignment, credited by name or anonymously as requested.
+    zh: 现代教育技术课程可选作业，展示部分同学自愿提供的 5 份视频，按意愿署名或匿名。
+  url:
+    en: /teaching/digital-humans/
+    zh: /zh/teaching/digital-humans/
 - date: '2026-11-06'
   category:
     en: Publication
@@ -15,3 +28,16 @@
   url:
     en: /publications/#zhao-liu-health-misinformation-hints-accepted
     zh: /zh/publications/#zhao-liu-health-misinformation-hints-accepted
+- date: '2026-11-03'
+  category:
+    en: Teaching
+    zh: 教学
+  title:
+    en: Student learning game showcase
+    zh: 学习小游戏作品展上线
+  description:
+    en: Explore 27 student-created learning game prototypes from Modern Educational Technology, with browser play, likes, and comments.
+    zh: 现代教育技术课程的 27 个学生学习小游戏原型，可在线试玩、点赞和评论。
+  url:
+    en: /teaching/games/
+    zh: /zh/teaching/games/

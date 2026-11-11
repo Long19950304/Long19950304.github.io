@@ -23,6 +23,14 @@ My overall [teaching philosophy and classroom design](/teaching/) are described 
 
 ## Student work showcase
 
+### Digital-human videos · Optional assignment
+
+Some students have voluntarily shared videos using virtual presenters for English teaching and knowledge explanation. This is an optional assignment. The showcase includes only work approved for public display, credited by name or anonymously as requested.
+
+[Watch the digital-human videos →](/teaching/digital-humans/)
+
+### Learning games
+
 The course showcase collects 27 student-created learning game prototypes designed for primary and lower secondary school students. You can [open the showcase](/teaching/games/), search by title or student, try a game, like the works you enjoy, and comment anonymously or with your name.
 
 These are classroom prototypes. Some are designed for two players or touch screens, so they may work best on a larger screen or with a partner.

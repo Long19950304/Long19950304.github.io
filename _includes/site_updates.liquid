@@ -1,11 +1,43 @@
 {% assign updates_lang = page.lang | default: 'en' %}
 {% assign today_key = site.time | date: '%Y-%m-%d' %}
 {% assign milestones = site.data.site_updates | sort: 'date' | reverse %}
+{% assign newest_digest = nil %}
+{% assign sorted_digests = site.data.digests | sort %}
+{% for pair in sorted_digests reversed %}
+  {% assign digest_date = pair[1].date | date: '%Y-%m-%d' %}
+  {% if pair[1].edition == 'daily-audio' and digest_date <= today_key %}
+    {% assign newest_digest = pair[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% capture digest_row %}
+  {% if newest_digest %}
+    {% assign newest_date = newest_digest.date | date: '%Y-%m-%d' %}
+    {% capture newest_digest_path %}{% if updates_lang == 'zh' %}/zh{% endif %}/digest/{{ newest_date }}/{% endcapture %}
+    <li class="site-updates__item">
+      <div class="site-updates__meta">
+        <time datetime="{{ newest_date }}">{{ newest_date }}</time>
+        <span>{% if updates_lang == 'zh' %}简报{% else %}Digest{% endif %}</span>
+      </div>
+      <div class="site-updates__body">
+        <h3><a href="{{ newest_digest_path | relative_url }}">{% if updates_lang == 'zh' %}每日简报 · 中英文音频{% else %}Daily Digest · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a></h3>
+        {% if newest_digest.items.size > 0 %}
+          <p>{% if updates_lang == 'zh' %}本期包括：{% else %}In this edition: {% endif %}{% for item in newest_digest.items limit: 3 %}{% if updates_lang == 'zh' %}{{ item.title_zh | default: item.title | escape }}{% else %}{{ item.title | escape }}{% endif %}{% unless forloop.last %}{% if updates_lang == 'zh' %}；{% else %} · {% endif %}{% endunless %}{% endfor %}</p>
+        {% endif %}
+      </div>
+    </li>
+  {% endif %}
+{% endcapture %}
 {% assign shown_updates = 0 %}
+{% assign digest_inserted = false %}
 {% capture milestone_rows %}
   {% for update in milestones %}
     {% assign event_date = update.date | date: '%Y-%m-%d' %}
     {% if event_date <= today_key and update.title[updates_lang] and update.url[updates_lang] %}
+      {% if newest_digest and digest_inserted == false and newest_date > event_date %}
+        {{ digest_row }}
+        {% assign digest_inserted = true %}
+      {% endif %}
       <li class="site-updates__item">
         <div class="site-updates__meta">
           <time datetime="{{ event_date }}">{{ event_date }}</time>
@@ -20,30 +52,11 @@
       {% if shown_updates >= 4 %}{% break %}{% endif %}
     {% endif %}
   {% endfor %}
+  {% if newest_digest and digest_inserted == false %}{{ digest_row }}{% endif %}
 {% endcapture %}
-{% assign newest_digest = nil %}
-{% assign sorted_digests = site.data.digests | sort %}
-{% for pair in sorted_digests reversed %}
-  {% assign digest_date = pair[1].date | date: '%Y-%m-%d' %}
-  {% if pair[1].edition == 'daily-audio' and digest_date <= today_key %}
-    {% assign newest_digest = pair[1] %}
-    {% break %}
-  {% endif %}
-{% endfor %}
 {% if shown_updates > 0 or newest_digest %}
 <section class="site-updates" id="latest-updates" aria-labelledby="latest-updates-heading">
   <h2 id="latest-updates-heading">{% if updates_lang == 'zh' %}最新动态{% else %}Latest Updates{% endif %}</h2>
-  {% if shown_updates > 0 %}<ul class="site-updates__list">{{ milestone_rows }}</ul>{% endif %}
-  {% if newest_digest %}
-    {% assign newest_date = newest_digest.date | date: '%Y-%m-%d' %}
-    <p class="site-updates__digest">
-      <span>{% if updates_lang == 'zh' %}每日简报{% else %}Daily Digest{% endif %}</span>
-      {% capture newest_digest_path %}{% if updates_lang == 'zh' %}/zh{% endif %}/digest/{{ newest_date }}/{% endcapture %}
-      <a href="{{ newest_digest_path | relative_url }}">{% if updates_lang == 'zh' %}最新一期：{{ newest_date }} · 中英文音频{% else %}Latest edition: {{ newest_date }} · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a>
-    </p>
-    {% if newest_digest.items.size > 0 %}
-      <p class="site-updates__digest-preview">{% if updates_lang == 'zh' %}本期包括：{% else %}In this edition: {% endif %}{% for item in newest_digest.items limit: 3 %}{% if updates_lang == 'zh' %}{{ item.title_zh | default: item.title | escape }}{% else %}{{ item.title | escape }}{% endif %}{% unless forloop.last %}{% if updates_lang == 'zh' %}；{% else %} · {% endif %}{% endunless %}{% endfor %}</p>
-    {% endif %}
-  {% endif %}
+  <ul class="site-updates__list">{{ milestone_rows }}</ul>
 </section>
 {% endif %}

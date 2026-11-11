@@ -1,0 +1,30 @@
+{% assign video_lang = page.lang | default: 'en' %}
+{% assign is_zh = false %}
+{% if video_lang == 'zh' %}{% assign is_zh = true %}{% endif %}
+<div class="student-videos">
+  <nav class="student-videos__back" aria-label="{% if is_zh %}课程导航{% else %}Course navigation{% endif %}">
+    <a href="{% if is_zh %}/zh{% endif %}/teaching/modern-educational-technology/">{% if is_zh %}← 现代教育技术{% else %}← Modern Educational Technology{% endif %}</a>
+  </nav>
+  <div class="student-videos__intro">
+    <p>{% if is_zh %}数字人视频是本课程的可选作业。本页仅展示部分同学自愿提供并同意公开的成果，按同学意愿署名或匿名展示。{% else %}Digital-human video production is an optional assignment in this course. This page presents only some students’ voluntarily shared work, published with their agreement and credited by name or anonymously as requested.{% endif %}</p>
+  </div>
+  <div class="student-videos__grid">
+    {% for video in site.data.student_videos %}
+      {% capture media_base %}/assets/video/student-digital-humans/{{ video.id }}{% endcapture %}
+      <article class="student-video" id="{{ video.id }}" aria-labelledby="{{ video.id }}-title">
+        <video controls playsinline preload="none" poster="{{ media_base | append: '.jpg' | relative_url }}" aria-label="{{ video.title[video_lang] | escape }}" width="960" height="544">
+          <source src="{{ media_base | append: '.mp4' | relative_url }}" type="video/mp4">
+          {% if is_zh %}浏览器暂不支持内嵌视频。{% else %}Your browser does not support embedded video.{% endif %}
+          <a href="{{ media_base | append: '.mp4' | relative_url }}">{% if is_zh %}打开视频{% else %}Open video{% endif %}</a>
+        </video>
+        <div class="student-video__body">
+          <div class="student-video__meta"><span>{% if video.author %}{{ video.author | escape }}{% elsif is_zh %}匿名同学{% else %}Anonymous student{% endif %}</span><span>{{ video.duration }}</span></div>
+          <h2 id="{{ video.id }}-title">{{ video.title[video_lang] | escape }}</h2>
+          <p>{{ video.description[video_lang] | escape }}</p>
+          <a class="student-video__open" href="{{ media_base | append: '.mp4' | relative_url }}">{% if is_zh %}单独打开视频{% else %}Open video separately{% endif %}<span aria-hidden="true"> ↗</span></a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>
+<script defer src="{{ '/assets/js/student-videos.js' | relative_url | bust_file_cache }}"></script>

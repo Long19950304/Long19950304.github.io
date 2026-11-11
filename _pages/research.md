@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /research/
-description: Research grants, teaching development, talent support, and collaborative projects.
+description: Research grants, talent support, collaborative research, and local and oral history projects.
 nav: true
 nav_order: 3
 lang: en

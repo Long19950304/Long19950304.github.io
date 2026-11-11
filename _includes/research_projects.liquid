@@ -1,22 +1,31 @@
 {% assign project_lang = page.lang | default: 'en' %}
+<nav class="section-jumps research-jumps" aria-label="{% if project_lang == 'zh' %}项目分类{% else %}Project sections{% endif %}">
+  {% for section in site.data.research_grants.sections %}<a href="#{{ section.id }}">{{ section.title[project_lang] }}</a>{% endfor %}
+</nav>
+<div class="research-projects">
 {% for section in site.data.research_grants.sections %}
+<section class="research-section" aria-labelledby="{{ section.id }}">
 <h2 id="{{ section.id }}">{{ section.title[project_lang] }}</h2>
 {% if section.note %}<p>{{ section.note[project_lang] }}</p>{% endif %}
-<ul>
+<ul class="research-projects__list">
   {% for project in section.items %}
-  <li><p><strong>{{ project.title[project_lang] }}</strong>
-    {% assign project_meta = '' | split: ',' %}
-    {% if project.programme %}{% assign project_meta = project_meta | push: project.programme[project_lang] %}{% endif %}
-    {% if project.number %}{% assign project_meta = project_meta | push: project.number %}{% endif %}
-    {% if project.period %}
-      {% assign project_period = project.period[project_lang] | default: project.period %}
-      {% assign project_meta = project_meta | push: project_period %}
+  <li class="research-project">
+    <div class="research-project__body">
+      <h3>{{ project.title[project_lang] }}</h3>
+      {% if project.programme %}<p class="research-project__programme">{{ project.programme[project_lang] }}</p>{% endif %}
+      {% if project.number %}<p>{% if project_lang == 'zh' %}项目编号：{% else %}Grant number: {% endif %}{{ project.number }}</p>{% endif %}
+      {% if project.lead %}<p>{% if project_lang == 'zh' %}主持：{% else %}Principal investigator: {% endif %}{{ project.lead[project_lang] }}</p>{% endif %}
+      {% if project.description %}<p class="research-project__description">{{ project.description[project_lang] }}</p>{% endif %}
+    </div>
+    {% if project.period or project.status %}
+    <div class="research-project__meta">
+      {% if project.period %}<span class="research-project__meta-label">{% if project_lang == 'zh' %}项目周期{% else %}Project period{% endif %}</span><span>{{ project.period[project_lang] | default: project.period }}</span>{% endif %}
+      {% if project.status %}<span>{{ project.status[project_lang] }}</span>{% endif %}
+    </div>
     {% endif %}
-    {% if project.status %}{% assign project_meta = project_meta | push: project.status[project_lang] %}{% endif %}
-    {% if project_meta.size > 0 %}<br>{{ project_meta | join: ' · ' }}{% endif %}
-    {% if project.lead %}<br>{% if project_lang == 'zh' %}主持：{% else %}Principal investigator: {% endif %}{{ project.lead[project_lang] }}{% endif %}
-    {% if project.description %}<br>{{ project.description[project_lang] }}{% endif %}
-  </p></li>
+  </li>
   {% endfor %}
 </ul>
+</section>
 {% endfor %}
+</div>

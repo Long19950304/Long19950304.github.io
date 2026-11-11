@@ -7,12 +7,13 @@
         {% if conference_lang == 'zh' %}
           {% if paper.authors_zh %}{{ paper.authors_zh | escape }}<br>{% endif %}
           {{ paper.conference | escape }}{% if paper.division %} · {{ paper.division | escape }}{% endif %}<br>
-          {{ paper.year }} · {{ paper.location_zh | escape }}
+          {{ paper.date_zh | default: paper.year | escape }} · {{ paper.location_zh | escape }}
         {% else %}
           {% if paper.authors_en %}{{ paper.authors_en | escape }}<br>{% endif %}
           {{ paper.conference | escape }}{% if paper.division %} · {{ paper.division | escape }}{% endif %}<br>
-          {{ paper.year }} · {{ paper.location_en | escape }}
+          {{ paper.date_en | default: paper.year | escape }} · {{ paper.location_en | escape }}
         {% endif %}
+        {% if paper.status %}<br><span class="conference-status">{% if conference_lang == 'zh' %}{% case paper.status %}{% when 'accepted' %}已接收{% when 'scheduled' %}已安排报告{% when 'presented' %}已报告{% endcase %}{% else %}{% case paper.status %}{% when 'accepted' %}Accepted{% when 'scheduled' %}Scheduled{% when 'presented' %}Presented{% endcase %}{% endif %}</span>{% endif %}
       </p>
     </li>
   {% endfor %}

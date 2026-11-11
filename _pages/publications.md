@@ -13,7 +13,7 @@ translation_key: publications
 
 <!-- Bibsearch Feature -->
 
-<nav class="publication-jumps" aria-label="Publication sections"><a href="#upcoming">Accepted / Upcoming</a> · <a href="#articles">Articles</a> · <a href="#preprints">Preprints</a> · <a href="#chapters">Chapters and reports</a> · <a href="#conferences">Conferences</a></nav>
+{% include publication_navigation.liquid %}
 
 {% include bib_search.liquid %}
 

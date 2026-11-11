@@ -9,7 +9,7 @@ lang: zh
 translation_key: publications
 ---
 
-<nav class="publication-jumps" aria-label="成果分类"><a href="#upcoming">已接收／待刊</a> · <a href="#articles">期刊论文</a> · <a href="#preprints">预印本</a> · <a href="#chapters">章节与报告</a> · <a href="#conferences">会议</a></nav>
+{% include publication_navigation.liquid %}
 
 {% include bib_search.liquid %}
 

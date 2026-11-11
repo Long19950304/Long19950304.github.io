@@ -31,7 +31,7 @@ latest_posts:
 I am <strong>Zhilong Zhao (赵志龙)</strong>, and I work in the <strong>School of Humanities and Law at Wuyi University</strong>.
 </p>
 
-My research examines health and public communication, media use and trust, and **AI for Social Science**. My recent work focuses on the reliability of LLM-assisted qualitative coding, confidence calibration, and human–AI collaboration. I also explore generative AI in media production and teaching.
+My work spans communication research, AI-assisted social science, and media production and teaching.
 
 I hold a PhD in Communication from the University of Macau and previously worked as a postdoctoral researcher at South China University of Technology.
 
@@ -41,4 +41,4 @@ I hold a PhD in Communication from the University of Macau and previously worked
 - **AI for Social Science**: evaluating LLM-assisted coding and developing methods for calibration and human review.
 - **Media production and teaching**: exploring generative AI in visual storytelling and project-based learning.
 
-[Projects](/research/) · [Media projects](/media/) · [Teaching and student work](/teaching/) · [Academic service](/service/)
+[Research projects](/research/) · [Creative work](/media/) · [Teaching and student work](/teaching/) · [Academic service](/service/)

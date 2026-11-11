@@ -9,3 +9,4 @@
     </div>
   {% endfor %}
 </div>
+<p class="recent-publications__all"><a href="{% if page.lang == 'zh' %}{{ '/zh/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}查看全部论文与会议报告{% else %}View all publications and presentations{% endif %} <span aria-hidden="true">→</span></a></p>

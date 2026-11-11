@@ -46,7 +46,7 @@ en:
     copy_csl_json: "Copy CSL-JSON"
     download_csl_json: "CSL-JSON"
     copy_share_text: "Copy share text"
-    tip: "Tip: listen to the two-host audio overview above for a quick, conversational walkthrough, then share the link + citation."
+    tip: "Copy a citation or export it in BibTeX, RIS, or CSL-JSON format."
 
   podcast:
     label: "Listen: audio overview"
@@ -102,7 +102,7 @@ zh:
     copy_csl_json: "复制 CSL-JSON"
     download_csl_json: "CSL-JSON"
     copy_share_text: "复制分享文案"
-    tip: "提示：先听上方双人对谈音频快速了解要点，再分享链接与引用信息。"
+    tip: "可复制引用，或导出为 BibTeX、RIS、CSL-JSON 格式。"
 
   podcast:
     label: "收听：音频概览"

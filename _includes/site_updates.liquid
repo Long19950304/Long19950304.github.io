@@ -38,8 +38,12 @@
     {% assign newest_date = newest_digest.date | date: '%Y-%m-%d' %}
     <p class="site-updates__digest">
       <span>{% if updates_lang == 'zh' %}每日简报{% else %}Daily Digest{% endif %}</span>
-      <a href="{% if updates_lang == 'zh' %}{{ '/zh/digest/' | relative_url }}{% else %}{{ '/digest/' | relative_url }}{% endif %}">{% if updates_lang == 'zh' %}最新一期：{{ newest_date }} · 中英文音频{% else %}Latest edition: {{ newest_date }} · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a>
+      {% capture newest_digest_path %}{% if updates_lang == 'zh' %}/zh{% endif %}/digest/{{ newest_date }}/{% endcapture %}
+      <a href="{{ newest_digest_path | relative_url }}">{% if updates_lang == 'zh' %}最新一期：{{ newest_date }} · 中英文音频{% else %}Latest edition: {{ newest_date }} · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a>
     </p>
+    {% if newest_digest.items.size > 0 %}
+      <p class="site-updates__digest-preview">{% if updates_lang == 'zh' %}本期包括：{% else %}In this edition: {% endif %}{% for item in newest_digest.items limit: 3 %}{% if updates_lang == 'zh' %}{{ item.title_zh | default: item.title | escape }}{% else %}{{ item.title | escape }}{% endif %}{% unless forloop.last %}{% if updates_lang == 'zh' %}；{% else %} · {% endif %}{% endunless %}{% endfor %}</p>
+    {% endif %}
   {% endif %}
 </section>
 {% endif %}

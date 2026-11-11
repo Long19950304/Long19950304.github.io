@@ -14,6 +14,9 @@ published as personal news.
 The Daily Digest link separately selects the latest published `daily-audio`
 edition from `_data/digests` at build time. Daily publication updates that one
 link automatically, without filling the milestone list with daily news items.
+Below that link, show the latest edition's first three published headlines in the
+page language as a short, regular-weight preview. Read these from the edition's
+items, so both the preview and its direct edition link update with each daily build.
 No client-side polling or new service is needed. If there are no milestones or
 published digests, the section is hidden.
 

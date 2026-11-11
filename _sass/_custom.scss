@@ -1278,6 +1278,7 @@ html[data-theme="dark"] .site-updates { background: #242426; }
 .site-updates__body p { margin: 0; color: var(--global-text-color-light); font-size: .9rem; line-height: 1.75; overflow-wrap: anywhere; }
 .site-updates__digest { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: .9rem 0 0; font-size: .85rem; line-height: 1.7; }
 .site-updates__digest > span { color: var(--global-text-color-light); }
+.site-updates__digest-preview { margin: .4rem 0 0; color: var(--global-text-color-light); font-size: .85rem; font-weight: 400; line-height: 1.75; overflow-wrap: anywhere; }
 #latest-updates a,
 #latest-updates a:link,
 #latest-updates a:visited,

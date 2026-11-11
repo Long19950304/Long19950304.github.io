@@ -1,16 +1,8 @@
 {% assign updates_lang = page.lang | default: 'en' %}
 {% assign today_key = site.time | date: '%Y-%m-%d' %}
 {% assign milestones = site.data.site_updates | sort: 'date' | reverse %}
-{% assign newest_digest = nil %}
 {% assign sorted_digests = site.data.digests | sort %}
-{% for pair in sorted_digests reversed %}
-  {% assign digest_date = pair[1].date | date: '%Y-%m-%d' %}
-  {% if pair[1].edition == 'daily-audio' and digest_date <= today_key %}
-    {% assign newest_digest = pair[1] %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-{% assign update_groups = 'research,digest,teaching' | split: ',' %}
+{% assign update_groups = 'research,teaching,digest' | split: ',' %}
 <section class="site-updates" id="latest-updates" aria-labelledby="latest-updates-heading">
   <h2 id="latest-updates-heading">{% if updates_lang == 'zh' %}最新动态{% else %}Latest Updates{% endif %}</h2>
   <div class="site-updates__groups">
@@ -19,17 +11,24 @@
         <h3 id="updates-{{ group }}-heading">{% case group %}{% when 'research' %}{% if updates_lang == 'zh' %}科研{% else %}Research{% endif %}{% when 'digest' %}Digest{% when 'teaching' %}{% if updates_lang == 'zh' %}教学{% else %}Teaching{% endif %}{% endcase %}</h3>
         <ul class="site-updates__list">
           {% if group == 'digest' %}
-            {% if newest_digest %}
-              {% assign newest_date = newest_digest.date | date: '%Y-%m-%d' %}
-              {% capture newest_digest_path %}{% if updates_lang == 'zh' %}/zh{% endif %}/digest/{{ newest_date }}/{% endcapture %}
-              <li class="site-updates__item">
-                <time class="site-updates__date" datetime="{{ newest_date }}">{{ newest_date }}</time>
-                <h4><a href="{{ newest_digest_path | relative_url }}">{% if updates_lang == 'zh' %}每日简报 · 中英文音频{% else %}Daily Digest · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a></h4>
-                {% if newest_digest.items.size > 0 %}
-                  <p>{% if updates_lang == 'zh' %}本期包括：{% else %}In this edition: {% endif %}{% for item in newest_digest.items limit: 3 %}{% if updates_lang == 'zh' %}{{ item.title_zh | default: item.title | escape }}{% else %}{{ item.title | escape }}{% endif %}{% unless forloop.last %}{% if updates_lang == 'zh' %}；{% else %} · {% endif %}{% endunless %}{% endfor %}</p>
-                {% endif %}
-              </li>
-            {% endif %}
+            {% assign shown_digests = 0 %}
+            {% for pair in sorted_digests reversed %}
+              {% assign digest = pair[1] %}
+              {% assign digest_date = digest.date | date: '%Y-%m-%d' %}
+              {% if digest.edition == 'daily-audio' and digest_date <= today_key %}
+                {% assign newest_date = digest.date | date: '%Y-%m-%d' %}
+                {% capture newest_digest_path %}{% if updates_lang == 'zh' %}/zh{% endif %}/digest/{{ newest_date }}/{% endcapture %}
+                <li class="site-updates__item">
+                  <time class="site-updates__date" datetime="{{ newest_date }}">{{ newest_date }}</time>
+                  <h4><a href="{{ newest_digest_path | relative_url }}">{% if updates_lang == 'zh' %}每日简报 · 中英文音频{% else %}Daily Digest · Chinese &amp; English audio{% endif %}<span aria-hidden="true"> →</span></a></h4>
+                  {% if digest.items.size > 0 %}
+                    <p>{% if updates_lang == 'zh' %}本期包括：{% else %}In this edition: {% endif %}{% for item in digest.items limit: 3 %}{% if updates_lang == 'zh' %}{{ item.title_zh | default: item.title | escape }}{% else %}{{ item.title | escape }}{% endif %}{% unless forloop.last %}{% if updates_lang == 'zh' %}；{% else %} · {% endif %}{% endunless %}{% endfor %}</p>
+                  {% endif %}
+                </li>
+                {% assign shown_digests = shown_digests | plus: 1 %}
+                {% if shown_digests >= 2 %}{% break %}{% endif %}
+              {% endif %}
+            {% endfor %}
           {% else %}
             {% assign shown_in_group = 0 %}
             {% for update in milestones %}

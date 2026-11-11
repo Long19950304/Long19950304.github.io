@@ -30,6 +30,20 @@
   url:
     en: /publications/#zhao-liu-health-misinformation-hints-accepted
     zh: /zh/publications/#zhao-liu-health-misinformation-hints-accepted
+- date: '2026-10-24'
+  section: research
+  category:
+    en: Conference presentation
+    zh: 会议报告
+  title:
+    en: Conference presentation on multimodal algorithmic auditing in Shanghai
+    zh: 在上海区域国别学年会作多模态算法审计报告
+  description:
+    en: Presented “Multimodal Algorithmic Auditing for Targeted International Communication and Governance Pathways” at the eighth annual meeting of the university alliance for area studies, Shanghai Second Polytechnic University.
+    zh: 在上海第二工业大学举行的高校区域国别学人才培养与学科建设联盟第八届年会上，报告《面向精准国际传播的多模态算法审计研究与治理路径》。
+  url:
+    en: /publications/#alliance-2026-multimodal-audit
+    zh: /zh/publications/#alliance-2026-multimodal-audit
 - date: '2026-11-03'
   section: teaching
   category:

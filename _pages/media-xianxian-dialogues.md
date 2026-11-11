@@ -2,7 +2,7 @@
 layout: page
 permalink: /media/xianxian-dialogues/
 title: Xianxian Dialogues
-description: AI-generated fictional dialogues · Episode posters.
+description: AI-generated fictional interviews and dialogues · Posters, stills, and sample enquiries.
 nav: false
 lang: en
 translation_key: media-xianxian-dialogues

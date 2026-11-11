@@ -1,0 +1,13 @@
+<section class="portfolio-detail__gallery-section" aria-labelledby="{{ include.heading_id }}">
+  <h2 id="{{ include.heading_id }}">{{ include.label }}</h2>
+  <p class="portfolio-detail__image-help">{% if portfolio_lang == 'zh' %}点击图片可放大查看。{% else %}Select an image to enlarge it.{% endif %}</p>
+  <div class="portfolio-detail__gallery">
+    {% for image_path in include.images %}
+      {% capture image_alt %}{{ work.title[portfolio_lang] }} — {{ include.label }} {{ forloop.index }}{% endcapture %}
+      <div class="portfolio-detail__image">
+        {% include figure.liquid path=image_path alt=image_alt class='portfolio-detail__gallery-img' sizes='(min-width: 768px) 450px, 95vw' zoomable=true %}
+        <a class="portfolio-detail__original" href="{{ image_path | relative_url }}" target="_blank" rel="noopener">{{ include.label }} {{ forloop.index }} · {% if portfolio_lang == 'zh' %}查看原图{% else %}Open original{% endif %}<span aria-hidden="true"> ↗</span></a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

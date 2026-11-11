@@ -25,19 +25,12 @@
   </section>
 {% endif %}
 
-<section class="portfolio-detail__gallery-section" aria-labelledby="work-gallery">
-  <h2 id="work-gallery">{{ work.gallery_label[portfolio_lang] }}</h2>
-  <p class="portfolio-detail__image-help">{% if portfolio_lang == 'zh' %}点击图片可放大查看。{% else %}Select an image to enlarge it.{% endif %}</p>
-  <div class="portfolio-detail__gallery">
-    {% for image_path in work.gallery %}
-      {% capture image_alt %}{{ work.title[portfolio_lang] }} — {{ work.gallery_label[portfolio_lang] }} {{ forloop.index }}{% endcapture %}
-      <div class="portfolio-detail__image">
-        {% include figure.liquid path=image_path alt=image_alt class='portfolio-detail__gallery-img' sizes='(min-width: 768px) 450px, 95vw' zoomable=true %}
-        <a class="portfolio-detail__original" href="{{ image_path | relative_url }}" target="_blank" rel="noopener">{% if portfolio_lang == 'zh' %}{{ work.gallery_label.zh }} {{ forloop.index }} · 查看原图{% else %}{{ work.gallery_label.en }} {{ forloop.index }} · Open original{% endif %}<span aria-hidden="true"> ↗</span></a>
-      </div>
-    {% endfor %}
-  </div>
-</section>
+{% assign gallery_label = work.gallery_label[portfolio_lang] %}
+{% include media-gallery.liquid images=work.gallery label=gallery_label heading_id='work-gallery' %}
+{% if work.extra_gallery %}
+  {% assign extra_gallery_label = work.extra_gallery_label[portfolio_lang] %}
+  {% include media-gallery.liquid images=work.extra_gallery label=extra_gallery_label heading_id='work-stills' %}
+{% endif %}
 
 <nav class="portfolio-related" aria-label="{% if portfolio_lang == 'zh' %}其他作品{% else %}Other work{% endif %}">
   <p>{% if portfolio_lang == 'zh' %}其他作品{% else %}Other work{% endif %}</p>

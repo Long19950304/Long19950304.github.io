@@ -15,6 +15,7 @@
     {% for work in group_works %}
       {% capture work_url %}{{ portfolio_prefix }}/media/{{ work.id }}/{% endcapture %}
       <article class="portfolio-entry" id="{{ work.legacy_id[portfolio_lang] }}" aria-labelledby="{{ work.id }}-title">
+        {% if work.alias_id %}<span id="{{ work.alias_id[portfolio_lang] }}" hidden></span>{% endif %}
         <a class="portfolio-entry__image" href="{{ work_url | relative_url }}" aria-label="{{ work.title[portfolio_lang] | escape }} — {{ work.action[portfolio_lang] | escape }}">
           <img src="{{ work.cover | relative_url }}" width="{{ work.cover_width }}" height="{{ work.cover_height }}" alt="{% if portfolio_lang == 'zh' %}{{ work.title.zh }}：{{ work.gallery_label.zh }}{% else %}{{ work.title.en }}: {{ work.gallery_label.en }}{% endif %}" loading="{% if forloop.first and forloop.parentloop.first %}eager{% else %}lazy{% endif %}" decoding="async">
         </a>

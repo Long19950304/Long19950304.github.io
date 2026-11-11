@@ -3,6 +3,7 @@
 # Supply both languages and link to an existing public page. Do not add private
 # submission targets, unconfirmed achievements, or routine code/deployment changes.
 - date: '2026-11-11'
+  section: teaching
   category:
     en: Teaching
     zh: 教学
@@ -16,6 +17,7 @@
     en: /teaching/digital-humans/
     zh: /zh/teaching/digital-humans/
 - date: '2026-11-06'
+  section: research
   category:
     en: Publication
     zh: 论文
@@ -29,6 +31,7 @@
     en: /publications/#zhao-liu-health-misinformation-hints-accepted
     zh: /zh/publications/#zhao-liu-health-misinformation-hints-accepted
 - date: '2026-11-03'
+  section: teaching
   category:
     en: Teaching
     zh: 教学

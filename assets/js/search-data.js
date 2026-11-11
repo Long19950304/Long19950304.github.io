@@ -25,14 +25,14 @@ ninja.data = [{
           },
         },{id: "nav-项目",
           title: "项目",
-          description: "主持科研项目、教改项目、省级人才项目与参与研究。",
+          description: "主持科研项目、省级人才项目，以及参与的科研、地方志与口述史项目。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/research/";
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Research grants, teaching development, talent support, and collaborative projects.",
+          description: "Research grants, talent support, collaborative research, and local and oral history projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";

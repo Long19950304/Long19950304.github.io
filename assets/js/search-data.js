@@ -554,6 +554,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-12/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-12",
+  description: "China’s New-Energy Vehicle Exports Top Half of Exports · UK toy sales rise as hands-on products lead · Google Introduces Gemini Decisions API",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -691,6 +702,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-11",
   description: "中国保险行业协会发布商业医疗险示范条款与药品推荐清单；Fossil第三财季恢复盈利并上调全年销售预期；Mitra-v2扩大表格基础模型的合成预训练规模",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-12/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-12",
+  description: "中国新能源汽车出口占比连续五个月超过50%；英国传统动手玩具带动销售增长；Google推出Gemini Decisions API",
   group: "digests_zh",
 },
 

@@ -8,7 +8,7 @@
   <div class="site-updates__groups">
     {% for group in update_groups %}
       <section class="site-updates__group" data-update-group="{{ group }}" aria-labelledby="updates-{{ group }}-heading">
-        <h3 id="updates-{{ group }}-heading">{% case group %}{% when 'research' %}{% if updates_lang == 'zh' %}科研{% else %}Research{% endif %}{% when 'digest' %}Digest{% when 'teaching' %}{% if updates_lang == 'zh' %}教学{% else %}Teaching{% endif %}{% endcase %}</h3>
+        <h3 id="updates-{{ group }}-heading">{% case group %}{% when 'research' %}{% if updates_lang == 'zh' %}科研{% else %}Research{% endif %}{% when 'digest' %}{% if updates_lang == 'zh' %}简报{% else %}Digest{% endif %}{% when 'teaching' %}{% if updates_lang == 'zh' %}教学{% else %}Teaching{% endif %}{% endcase %}</h3>
         <ul class="site-updates__list">
           {% if group == 'digest' %}
             {% assign shown_digests = 0 %}

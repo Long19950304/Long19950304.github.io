@@ -37,16 +37,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "nav-作品",
-          title: "作品",
-          description: "影像与创作作品（节选）。",
+        },{id: "nav-个人创作",
+          title: "个人创作",
+          description: "作品总览：影像系列与实验短片。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/zh/media/";
           },
-        },{id: "nav-media",
-          title: "Media",
-          description: "Selected media and creative works.",
+        },{id: "nav-creative-work",
+          title: "Creative Work",
+          description: "Selected video series and experimental film.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/media/";

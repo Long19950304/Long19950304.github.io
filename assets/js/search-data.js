@@ -565,6 +565,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-13/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-13",
+  description: "CNOOC Reports Ultra-Deep Bohai Gas Well · Scout Motors Reports 212,000 Vehicle Reservations · IBM’s Granite LLMON preview targets structured model instructions",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -713,6 +724,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-12",
   description: "中国新能源汽车出口占比连续五个月超过50%；英国传统动手玩具带动销售增长；Google推出Gemini Decisions API",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-13/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-13",
+  description: "中国海油称渤海中部发现超深层火山岩高产油气井；Scout Motors报告约21.2万辆汽车预订；IBM Granite 推出 LLMON 预览模型，强化结构化指令处理",
   group: "digests_zh",
 },
 

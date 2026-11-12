@@ -760,6 +760,22 @@ h1 {
   margin-bottom: 0.25rem;
 }
 
+.paper-audio {
+  padding-top: .6rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+.paper-audio__heading { font-size: .92rem; font-weight: 500; margin-bottom: .35rem; }
+.paper-audio__editions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 1rem; margin: .65rem 0; }
+.paper-audio__language { font-size: .85rem; margin-bottom: .3rem; }
+.paper-audio__language span { color: var(--global-text-color-light); }
+.paper-audio audio { display: block; width: 100%; height: 40px; }
+.paper-audio__transcript { font-size: .85rem; margin-top: .35rem; }
+.paper-audio__transcript summary { cursor: pointer; color: var(--global-text-color-light); }
+.paper-audio__transcript > div { line-height: 1.65; margin-top: .6rem; }
+@media (max-width: 575px) {
+  .paper-audio__editions { grid-template-columns: minmax(0, 1fr); }
+}
+
 // Digest index: editorial cover, real headlines and inline bilingual playback.
 .digest-index-list { display: grid; gap: 1.5rem; }
 .digest-index-card {

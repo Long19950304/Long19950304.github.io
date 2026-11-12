@@ -1,4 +1,7 @@
 {% assign podcast = site.data.podcasts[include.id] %}
+{% if podcast and podcast.editions %}
+  {% include paper_audio.liquid podcast=podcast %}
+{% else %}
 {% if podcast and podcast.audio %}
   {% assign podcast_ui = site.data.i18n[page.lang].podcast | default: site.data.i18n.en.podcast %}
   {% assign take_home_text = podcast.take_home %}
@@ -16,4 +19,5 @@
       </div>
     </div>
   {% endif %}
+{% endif %}
 {% endif %}

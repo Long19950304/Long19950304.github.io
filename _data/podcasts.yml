@@ -53,3 +53,44 @@ long1-desk1-news-title-framing-older-adults:
   audio: assets/audio/notebooklm/long1-desk1-news-title-framing-older-adults-en.mp3
   take_home: Examines associations between news title framing of older adults and views, shares, collections, and rewards, with different patterns for negative and positive frames.
   take_home_zh: 分析老年人新闻标题框架与不同互动行为的关联，比较负面和正面框架在浏览、分享、收藏与打赏上的差异。
+
+zhao-liu-health-misinformation-hints-accepted:
+  provider: minimax
+  model: speech-2.8-hd
+  take_home: Perceived social-media health misinformation is associated with trust and clinician discussion, without a uniform pattern of digital-health withdrawal.
+  take_home_zh: 社交媒体健康错误信息感知与医疗信任、医患讨论存在关联，数字健康使用未呈现一致的退出模式。
+  editions:
+    zh:
+      label: 中文
+      audio: assets/audio/papers/jhc-health-misinformation-zh.mp3
+      duration: "2:02"
+      voice: Chinese (Mandarin)_Gentleman
+      transcript: |
+        当人们觉得社交媒体上有很多健康错误信息，他们会减少使用数字健康服务吗？这篇研究把问题拆开，分别考察医疗信任、医患沟通，以及几种不同的线上健康行为。
+
+        研究合并了美国健康信息全国趋势调查，也就是 HINTS，在二零二二年和二零二四年的数据。主要分析样本包括一万零八百一十八名受访者。研究区分了两种感知：认为社交媒体上有多少虚假或误导性的健康信息，以及觉得判断信息真假有多困难。这两件事不能混为一谈。
+
+        主要发现是，认为误导性健康信息较少的受访者，更可能把社交媒体上的健康信息带到与医护人员的讨论中，也报告了较好的、以患者为中心的沟通体验。在部分组别比较中，他们对医疗系统的信任也更高。
+
+        但数字健康工具呈现了不同的结果。在调整其他因素后，研究没有发现这两种感知与远程医疗使用之间有显著关联。患者门户，也就是在线查看病历等服务，关联较弱，并且对跨年度的编码方式敏感。网上搜索健康信息，也没有呈现一致的退出模式。
+
+        因此，这篇论文最值得带走的一点是：理解健康错误信息问题，不能只看人们是否还在使用数字工具，也要看他们是否信任医疗系统，是否与医护人员讨论社交媒体上的健康信息。
+
+        这里需要保留一个边界：研究使用的是两轮横截面、自我报告的数据，测量的是人们对信息环境的感知，并非实际接触错误信息的数量。因此，结果说明的是关联，不能证明错误信息感知导致了信任或沟通的变化。为讨论网上健康信息留出开放、尊重的交流空间，是这项研究提出的实践启示；它的效果仍需要后续研究检验。
+    en:
+      label: English
+      audio: assets/audio/papers/jhc-health-misinformation-en.mp3
+      duration: "2:30"
+      voice: English_Graceful_Lady
+      transcript: |
+        When people believe that social media contains a great deal of misleading health information, do they withdraw from digital health? This study separates that question into trust, communication, and several different online health behaviors.
+
+        Zhilong Zhao and Yindi Liu analyzed pooled data from the Health Information National Trends Survey, or HINTS, collected in the United States in 2022 and 2024. The main analytic sample included 10,818 respondents. The study distinguished two perceptions: how much social media health information people considered misleading, and how difficult they found it to judge whether information was true or false.
+
+        Respondents who perceived less misleading information were more likely to discuss social media health information with clinicians and reported better patient-centered communication. In some group comparisons, they also reported higher trust in the health care system.
+
+        The pattern differed for digital services. After adjustment, neither perception was significantly associated with telehealth use. Links with patient portal use were weak and sensitive to how responses were harmonized across survey years. Online health information seeking did not follow a consistent withdrawal pattern either.
+
+        The take-home message is that continued use of digital tools tells only part of the story. Trust and reported discussions of social media health information with clinicians also deserve attention.
+
+        These are associations, not evidence of cause and effect. The study used repeated cross-sectional, self-reported data and measured perceptions, rather than verified misinformation exposure or objective accuracy-judgment skills. Creating respectful opportunities to discuss online health information is a practical implication, but whether such approaches improve outcomes still needs to be tested.

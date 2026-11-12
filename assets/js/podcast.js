@@ -16,6 +16,15 @@
 
   const init = () => {
     document.querySelectorAll("details.podcast").forEach(attach);
+    // Switching language should stop the other paper recording.
+    const recordings = document.querySelectorAll(".paper-audio audio");
+    recordings.forEach((audio) => {
+      audio.addEventListener("play", () => {
+        recordings.forEach((other) => {
+          if (other !== audio) other.pause();
+        });
+      });
+    });
   };
 
   if (document.readyState === "loading") {

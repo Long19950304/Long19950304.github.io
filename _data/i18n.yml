@@ -54,10 +54,18 @@ en:
     guidance: "Read the paper for the full methods, findings, and limitations."
     take_home_label: "Take-home:"
 
+  paper_audio:
+    label: "Paper overview · Chinese & English audio"
+    note: "MiniMax AI narration. Read the paper for the full findings and limitations."
+
 zh:
   lang_label: "EN"
   lang_code: "zh"
   lang_locale: "zh_CN"
+
+  paper_audio:
+    label: "论文导读 · 中英音频"
+    note: "MiniMax AI 配音。完整研究发现与局限请参阅论文原文。"
 
   nav:
     home: "关于"

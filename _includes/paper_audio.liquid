@@ -1,0 +1,28 @@
+{% assign recording = include.podcast %}
+{% assign audio_ui = site.data.i18n[page.lang].paper_audio | default: site.data.i18n.en.paper_audio %}
+{% assign takeaway = recording.take_home %}
+{% if page.lang == 'zh' %}{% assign takeaway = recording.take_home_zh | default: takeaway %}{% endif %}
+<div class="podcast-block paper-audio" role="group" aria-label="{{ audio_ui.label }}">
+  <div class="paper-audio__heading">{{ audio_ui.label }}</div>
+  <div class="podcast-takehome">{{ takeaway | escape }}</div>
+  <div class="paper-audio__editions">
+    {% for edition in recording.editions %}
+      {% assign track = edition[1] %}
+      {% assign track_path = track.audio | prepend: '/' %}
+      {% assign track_file = site.static_files | where: 'path', track_path | first %}
+      {% if track_file %}
+        <div class="paper-audio__edition" lang="{{ edition[0] }}">
+          <div class="paper-audio__language">{{ track.label | escape }} <span>· {{ track.duration | escape }}</span></div>
+          <audio controls preload="none" aria-label="{{ track.label | escape }} — {{ audio_ui.label }}" src="{{ track.audio | relative_url }}">
+            <a href="{{ track.audio | relative_url }}">{{ track.label | escape }} (MP3)</a>
+          </audio>
+          <details class="paper-audio__transcript">
+            <summary>{% if edition[0] == 'zh' %}文字稿{% else %}Transcript{% endif %}</summary>
+            <div>{{ track.transcript | escape | newline_to_br }}</div>
+          </details>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="podcast-guidance">{{ audio_ui.note }}</div>
+</div>

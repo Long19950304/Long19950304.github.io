@@ -191,6 +191,8 @@
     <div class="periodical">
       {% if entry.pubstate == 'accepted' and page.lang == 'zh' %}
         已接收（{{ entry.accepted_date | date: '%Y年%-m月%-d日' }}），待刊。
+      {% elsif entry.pubstate == 'published_online' and page.lang == 'zh' %}
+        {{ entry.publication_date | date: '%Y年%-m月%-d日' }}在线发表，待编入卷期。
       {% else %}
         {{ entry.note | strip }}
       {% endif %}
@@ -266,6 +268,11 @@
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
+    {% assign publication_access = site.data.publication_access[entry.key] %}
+    {% if publication_access.eprint_on_request %}
+      {% capture eprint_subject %}Eprint request: {{ entry.title }}{% endcapture %}
+      <p class="publication-access"><a href="mailto:{{ publication_access.email | escape }}?subject={{ eprint_subject | strip | uri_escape }}">{% if page.lang == 'zh' %}联系作者索取免费全文（eprint）{% else %}Request a free eprint from the author{% endif %}</a><span>{% if page.lang == 'zh' %} · 出版社分享名额有限{% else %} · Limited publisher sharing allowance{% endif %}</span></p>
+    {% endif %}
     {% include podcast_player.liquid id=entry.key %}
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}

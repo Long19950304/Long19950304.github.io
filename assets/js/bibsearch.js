@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (list.previousElementSibling?.matches(".bibliography")) list.previousElementSibling.classList.toggle("unloaded", empty);
     });
     document.querySelectorAll(".publication-group").forEach(group => {
-      group.classList.toggle("unloaded", !group.querySelector("li:not(.unloaded)"));
+      const preserveEmpty = !term && group.querySelector('.publication-empty');
+      group.classList.toggle("unloaded", !preserveEmpty && !group.querySelector("li:not(.unloaded)"));
     });
     if (CSS.highlights) highlightSearchTerm({ search: term, selector });
     const count = items.filter(el => !el.classList.contains("unloaded")).length;

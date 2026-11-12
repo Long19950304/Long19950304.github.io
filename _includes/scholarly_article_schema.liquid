@@ -36,11 +36,11 @@
     "headline": {{ entry.title | strip | jsonify }},
     "url": {{ url | default: canonical_url | strip | jsonify }},
     "mainEntityOfPage": {{ canonical_url | strip | jsonify }},
-    "inLanguage": {{ page_lang | jsonify }},
+    "inLanguage": {{ entry.language | default: page_lang | jsonify }},
     {% if entry.pubstate == 'accepted' %}
     "creativeWorkStatus": "Accepted for publication",
     {% else %}
-    "datePublished": {{ entry.year | default: "" | strip | jsonify }},
+    "datePublished": {{ entry.final_publication_date | default: entry.publication_date | default: entry.year | default: "" | strip | jsonify }},
     {% endif %}
     "author": [
       {%- for a in entry.author_array -%}

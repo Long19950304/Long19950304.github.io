@@ -1,0 +1,4 @@
+# Request access from the author without exposing the limited-use eprint token.
+zhao-liu-health-misinformation-hints-accepted:
+  eprint_on_request: true
+  email: zhilongzhao@wyu.edu.cn

@@ -1287,6 +1287,9 @@ html[data-theme="dark"] .digest-index-card { --digest-ink: #294e57; }
   .cv-page .research-project, .cv-page .cv-timeline__entry, .cv-page .service-journals li { padding: .6rem 0; }
 }
 .publication-guide { margin-bottom: 1.25rem; color: var(--global-text-color-light); font-size: .85rem; line-height: 1.8; }
+.publication-empty, .publication-access { color: var(--global-text-color-light); font-size: .84rem; line-height: 1.8; }
+.publication-access { margin: .6rem 0; }
+.publication-access a { color: var(--global-text-color); text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--global-divider-color); }
 .publication-group h2[id] { scroll-margin-top: 90px; }
 .conference-status { color: var(--global-text-color-light); font-size: .82rem; }
 .research-section { margin: 2.25rem 0; }

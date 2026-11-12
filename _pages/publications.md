@@ -22,7 +22,7 @@ translation_key: publications
 <section class="publication-group">
 <h2 id="upcoming">Accepted / Upcoming Articles</h2>
 
-{% bibliography --file accepted --group_by none --query @article %}
+{% include accepted_publications.liquid %}
 
 </section>
 <section class="publication-group">

@@ -31,7 +31,8 @@ module Jekyll
           next if sort_date > site.time.to_date
 
           records << { 'key' => entry.key, 'file' => file, 'date' => date,
-                       'accepted' => accepted, 'english' => entry[:language].to_s == 'en',
+                       'accepted' => accepted, 'online' => entry[:pubstate].to_s == 'published_online',
+                       'english' => entry[:language].to_s == 'en',
                        'sort_date' => sort_date.iso8601 }
         end
       end

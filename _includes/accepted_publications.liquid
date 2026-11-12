@@ -1,0 +1,6 @@
+{% capture accepted_entries %}{% bibliography --file accepted --group_by none --query @article %}{% endcapture %}
+{% if accepted_entries contains '<li' %}
+  {{ accepted_entries }}
+{% else %}
+  <p class="publication-empty">{% if page.lang == 'zh' %}目前暂无已接收但尚未发表的论文。在线发表的论文列于下方。{% else %}No accepted articles are currently awaiting publication. Published articles, including online publications, are listed below.{% endif %}</p>
+{% endif %}

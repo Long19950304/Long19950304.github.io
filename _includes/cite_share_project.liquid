@@ -197,22 +197,6 @@
           <button class="btn btn-sm z-depth-0 cite-share__btn" type="button" data-cite-share-action="copy_share_text">
             <i class="ti ti-share-2"></i> {{ ui.cite_share.copy_share_text }}
           </button>
-          <a
-            class="btn btn-sm z-depth-0 cite-share__btn"
-            href="https://twitter.com/intent/tweet?text={{ citation_plain | uri_escape }}&url={{ canonical_url | uri_escape }}"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="ti ti-brand-x"></i> X
-          </a>
-          <a
-            class="btn btn-sm z-depth-0 cite-share__btn"
-            href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical_url | uri_escape }}"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="ti ti-brand-linkedin"></i> LinkedIn
-          </a>
         </div>
         <div class="cite-share__hint">
           {{ ui.cite_share.tip }}

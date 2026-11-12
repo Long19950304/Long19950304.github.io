@@ -86,6 +86,7 @@ weeks:
   - '2026-11-10'
   - '2026-11-11'
   - '2026-11-12'
+  - '2026-11-13'
   highlights_news:
   - title: China’s CPI Rose 0.7% in October
     title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
@@ -147,4 +148,9 @@ weeks:
     title_zh: Google推出Gemini Decisions API
     url: https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api
     source: Google AI
+    category: AI tools & model releases
+  - title: IBM’s Granite LLMON preview targets structured model instructions
+    title_zh: IBM Granite 推出 LLMON 预览模型，强化结构化指令处理
+    url: https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite
+    source: Hugging Face
     category: AI tools & model releases

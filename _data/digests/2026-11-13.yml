@@ -1,0 +1,93 @@
+date: '2026-11-13'
+note: CNOOC Reports Ultra-Deep Bohai Gas Well · Scout Motors Reports 212,000 Vehicle
+  Reservations · IBM’s Granite LLMON preview targets structured model instructions
+note_zh: 中国海油称渤海中部发现超深层火山岩高产油气井；Scout Motors报告约21.2万辆汽车预订；IBM Granite 推出 LLMON 预览模型，强化结构化指令处理
+edition: daily-audio
+policy_version: 6
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-13-zh.mp3
+    seconds: 604.9
+    bytes: 4840172
+    sha256: ff08aeaa1f118bccf1f0b58b5eb4e625acd30bc43e8cf3996db7239741a08127
+  en:
+    path: /assets/audio/digests/2026-11-13-en.mp3
+    seconds: 685.2
+    bytes: 5482124
+    sha256: 0ec673fcfecb4a27be2eede2b76e3e18310d624815d55dac7e10c17ed68c9ed9
+items:
+- title: CNOOC Reports Ultra-Deep Bohai Gas Well
+  title_zh: 中国海油称渤海中部发现超深层火山岩高产油气井
+  url: https://www.chinanews.com.cn/cj/2026/11-12/10730704.shtml
+  published: '2026-11-12T11:17:44+08:00'
+  source: 中国新闻网财经
+  category: Business & economy
+  source_id: chinanews-finance
+  authority: news_agency
+  publisher_id: chinanews-finance
+  coverage: china
+  why: China News Service reported that CNOOC announced a high-yield gas well in volcanic
+    rock more than 5,000 metres deep in the central Bohai Sea. The company said the
+    completed well reached 5,770 metres and tested at about 800,000 cubic metres of
+    gas per day.
+  why_zh: 中国新闻网报道，中国海油宣布在渤海中部超5000米地层发现一口火山岩高产油气井。该井完钻井深5770米，测试日产天然气约80万立方米；这些勘探与测试数据均由公司公布。
+- title: Scout Motors Reports 212,000 Vehicle Reservations
+  title_zh: Scout Motors报告约21.2万辆汽车预订
+  url: https://www.cnbc.com/2026/11/12/scout-motors-reservations-south-carolina-plant.html
+  published: '2026-11-12T22:17:05+00:00'
+  source: CNBC Business
+  category: Business & economy
+  source_id: cnbc-business
+  authority: established_newsroom
+  publisher_id: cnbc-business
+  coverage: world
+  why: CNBC Business reports that Scout Motors has roughly 212,000 reservations for
+    its Terra pickup and Traveler SUV as its $2 billion South Carolina plant nears
+    completion. The company expects full production next year and customer deliveries
+    in 2028, but reservations do not necessarily translate into sales.
+  why_zh: CNBC Business报道，Scout Motors的Terra皮卡和Traveler SUV累计获得约21.2万辆预订，其位于南卡罗来纳州的新工厂接近完工。公司预计2027年全面投产、2028年开始交付，但预订未必转化为实际销量。
+- title: IBM’s Granite LLMON preview targets structured model instructions
+  title_zh: IBM Granite 推出 LLMON 预览模型，强化结构化指令处理
+  url: https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite
+  published: '2026-11-12T19:07:35+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  source_id: huggingface
+  authority: developer_primary
+  publisher_id: huggingface
+  coverage: world
+  why: Hugging Face reports that IBM’s Granite team released two experimental LLMON
+    preview models for explicit instruction-and-data separation. The publisher says
+    static prompt-injection resistance improved in benchmark testing, while the models
+    remain intended for evaluation rather than production.
+  why_zh: Hugging Face 于2026年11月12日报道，IBM Granite 团队发布两款实验性 LLMON 预览模型，通过明确分离指令与数据来应对提示注入。出版方称静态提示注入测试表现改善，但模型仅供评估，不用于生产环境。
+- title: Researchers Report Low-Temperature Densification of Ceramic Films
+  title_zh: 研究团队报告陶瓷薄膜低温致密化新策略
+  url: https://news.sciencenet.cn/htmlnews/2026/11/574611.shtm
+  published: '2026-11-12T13:18:40+08:00'
+  source: 科学网新闻
+  category: Science & research
+  source_id: sciencenet-news
+  authority: established_newsroom
+  publisher_id: sciencenet-news
+  coverage: china
+  why: ScienceNet News reports that a Chinese Academy of Sciences team developed a
+    liquid-phase strategy for growing dense ceramic films at 800 °C and atmospheric
+    pressure. The article says the method produced a roughly 10-micrometre BZY electrolyte
+    film with uniform composition and demonstrated large-area preparation.
+  why_zh: 科学网新闻报道，中国科学院大连化学物理研究所团队提出液相晶体生长策略，在800 °C、常压下制成约10微米厚的致密、成分均匀BZY电解质薄膜。团队还展示了大面积制备，并称该方法可用于金属基底及其他陶瓷材料。
+- title: JWST detects a faint trihydrogen signal
+  title_zh: 韦布望远镜首次探测到三氢阳离子微弱旋转辐射
+  url: https://www.sciencealert.com/jwst-detects-a-forbidden-signal-never-before-seen-in-the-universe-not-even-in-a-lab
+  published: '2026-11-12T12:00:00+00:00'
+  source: ScienceAlert
+  category: Science & research
+  source_id: sciencealert
+  authority: established_newsroom
+  publisher_id: sciencealert
+  coverage: world
+  why: ScienceAlert reports that astronomers using the James Webb Space Telescope
+    detected previously unseen rotational emission from the trihydrogen cation in
+    two Herbig-Haro objects. The researchers identified 26 spectral lines, but shock-wave
+    models did not fully explain the signal’s brightness.
+  why_zh: ScienceAlert于2026年11月12日报道，研究团队利用詹姆斯·韦布空间望远镜，在两个赫比格－阿罗天体中探测到三氢阳离子此前未观测到的旋转辐射。研究人员识别出26条高统计置信度谱线，但激波模型尚不能完整解释其异常明亮的原因。

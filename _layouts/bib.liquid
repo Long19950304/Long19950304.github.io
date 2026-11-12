@@ -271,7 +271,7 @@
     {% assign publication_access = site.data.publication_access[entry.key] %}
     {% if publication_access.eprint_on_request %}
       {% capture eprint_subject %}Eprint request: {{ entry.title }}{% endcapture %}
-      <p class="publication-access"><a href="mailto:{{ publication_access.email | escape }}?subject={{ eprint_subject | strip | uri_escape }}">{% if page.lang == 'zh' %}联系作者索取免费全文（eprint）{% else %}Request a free eprint from the author{% endif %}</a><span>{% if page.lang == 'zh' %} · 出版社分享名额有限{% else %} · Limited publisher sharing allowance{% endif %}</span></p>
+      <p class="publication-access"><a href="mailto:{{ publication_access.email | escape }}?subject={{ eprint_subject | strip | uri_escape }}">{% if page.lang == 'zh' %}联系作者获取免费全文{% else %}Contact the author for free full text{% endif %}</a></p>
     {% endif %}
     {% include podcast_player.liquid id=entry.key %}
     {% if site.enable_publication_badges %}

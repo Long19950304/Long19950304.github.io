@@ -830,6 +830,41 @@ def balance_chinese_length(issue, lookup, policy):
 
 
 def resume_or_draft(day, candidates, work, policy):
+    # A resumed draft must not keep a story that the final publication editor
+    # rejected.  The scheduler may collect newer candidates later the same day;
+    # force a fresh selection from that pool instead of repeatedly re-auditing
+    # the unchanged rejected edition.
+    try:
+        prior_publication = json.loads((work / 'publication-review.json').read_text())
+    except (OSError, ValueError, TypeError):
+        prior_publication = {}
+    if isinstance(prior_publication, dict) and prior_publication.get('approved') is False:
+        checks = prior_publication.get('checks', [])
+        rejected = {
+            check.get('id') for check in checks
+            if isinstance(check, dict) and check.get('decision') in ('reject', 'hold')
+            and isinstance(check.get('id'), str)
+        }
+        if rejected:
+            reselection_candidates = [c for c in candidates if c.get('id') not in rejected]
+        else:
+            # A programme-level hold without an item-level decision can still
+            # reflect a structural problem in the old lineup.  Do not reuse
+            # every old story unchanged; let the selector build a new lineup.
+            try:
+                old_selection = json.loads((work / 'selection.json').read_text())
+                old_ids = {item.get('id') for item in old_selection.get('items', [])}
+            except (OSError, ValueError, TypeError):
+                old_ids = set()
+            reselection_candidates = [c for c in candidates if c.get('id') not in old_ids]
+        if len(reselection_candidates) >= policy['min_items']:
+            for stale_name in ('draft.json', 'selection.json'):
+                stale = work / stale_name
+                if stale.exists():
+                    archive = work / ('reselection-' + stale_name)
+                    stale.replace(archive)
+            print('Previous publication hold detected; selecting changed material', flush=True)
+            return draft(day, reselection_candidates, work, policy)
     path = work / 'draft.json'
     if path.exists():
         try:

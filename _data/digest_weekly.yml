@@ -154,3 +154,35 @@ weeks:
     url: https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite
     source: Hugging Face
     category: AI tools & model releases
+- week: 2026-W47
+  start: '2026-11-16'
+  end: '2026-11-22'
+  issues:
+  - '2026-11-16'
+  highlights_news:
+  - title: China Retail Growth Through October
+    title_zh: 国家统计局：2026年1—10月社会消费品零售总额增长1.0%
+    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965839.html
+    source: 国家统计局
+    category: Business & economy
+  - title: In-Person Work and Office Design
+    title_zh: 面对面办公与真实互动
+    url: https://www.npr.org/2026/11/14/nx-s1-6040158/these-economists-say-in-person-work-boosts-creativity-but-office-mandates-fall-short
+    source: NPR Business
+    category: Business & economy
+  - title: Chinese researchers directly image non-equilibrium Thomson cooling
+    title_zh: 中国科学院：纳米沟道直接成像观测非平衡汤姆孙冷却
+    url: https://www.cas.cn/syky/202611/t20261111_5124016.shtml
+    source: 中国科学院科研进展
+    category: Science & research
+  - title: Stacked Mylar Insulation for Lunar Use
+    title_zh: 层叠迈拉薄膜：为月球基地试验耐用隔热材料
+    url: https://www.sciencedaily.com/releases/2026/11/261115085549.htm
+    source: ScienceDaily
+    category: Science & research
+  - title: ECNU Unveils Hyperspectral Satellite
+    title_zh: 华东师大首颗自主研发高光谱卫星亮相
+    url: https://news.sciencenet.cn/htmlnews/2026/11/574807.shtm
+    source: 科学网新闻
+    category: Science & research
+  highlights_ai: []

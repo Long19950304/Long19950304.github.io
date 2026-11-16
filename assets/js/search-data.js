@@ -576,6 +576,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-16/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-16",
+  description: "China Retail Growth Through October · In-Person Work and Office Design · Chinese researchers directly image non-equilibrium Thomson cooling",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -735,6 +746,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-13",
   description: "中国海油称渤海中部发现超深层火山岩高产油气井；Scout Motors报告约21.2万辆汽车预订；IBM Granite 推出 LLMON 预览模型，强化结构化指令处理",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-16/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-16",
+  description: "国家统计局：2026年1—10月社会消费品零售总额增长1.0%；面对面办公与真实互动；中国科学院：纳米沟道直接成像观测非平衡汤姆孙冷却",
   group: "digests_zh",
 },
 

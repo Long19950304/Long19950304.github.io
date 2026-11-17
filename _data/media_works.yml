@@ -105,29 +105,49 @@ works:
     format:
       zh: 实验短片
       en: Experimental short film
+    production_period:
+      zh: 2017年（澳门大学硕士阶段）
+      en: 2017 (during the MA period at the University of Macau)
     description:
-      zh: 澳门大学硕士论文作品，关注中国内地移民的生活经验。
-      en: An experimental short film about Chinese inland migrants’ lived experience, produced as an MA thesis at the University of Macau.
+      zh: 半梦半醒间，小狄在普快列车的连接处睡着了。梦中，车厢、站台、旧物与陌生旅人交替出现，一段关于离开、等待与归来的内心旅程，随着列车向前展开。影片以梦境般的车厢漫游，触碰中国内地移民经验中的漂泊、记忆与未说出口的告别。
+      en: Half awake and half dreaming, Xiao Di falls asleep in the passage between carriages on an ordinary fast train. In the dream, carriages, platforms, objects and passing strangers drift into one another, turning the journey into an inward passage through departure, waiting and return. Moving through the train like a reverie, the film approaches the experience of Chinese inland migrants through displacement, memory and unspoken farewells.
     recognition:
       zh: 入围／展映：澳门国际电影节短片单元（2017）
       en: Shortlisted / selected for the Macao International Film Festival short film section (2017).
-    cover: /assets/img/media/chinese-passenger/still-4.jpg
-    cover_width: 1600
-    cover_height: 1000
+    cover: /assets/img/media/chinese-passenger/poster.webp
+    cover_width: 1920
+    cover_height: 1080
     action:
       zh: 查看海报与剧照
       en: View the poster and stills
     poster:
-      zh: /assets/img/media/chinese-passenger/poster.jpg
-      en: /assets/img/media/chinese-passenger/poster.jpg
+      zh: /assets/img/media/chinese-passenger/poster.webp
+      en: /assets/img/media/chinese-passenger/poster.webp
+    video:
+      trailer:
+        path: /assets/video/media/chinese-passenger/chinese-passenger-trailer-v3-720p.mp4
+        label:
+          zh: 文艺预告片（720p）
+          en: Trailer (720p)
+      film_note:
+        zh: 完整影片约38分钟。高清与720p文件保存在外置归档中；网站暂以预告片和剧照展示，完整片可通过私密链接提供。需要观看链接，请联系作者。
+        en: The complete film runs for approximately 38 minutes. The high-resolution and 720p files are preserved in the external archive; this page currently presents the trailer and stills, while the complete film can be shared through a private viewing link. Please contact the author for access.
     gallery_label:
       zh: 剧照
       en: Stills
     gallery:
-      - /assets/img/media/chinese-passenger/still-1.jpg
-      - /assets/img/media/chinese-passenger/still-2.jpg
-      - /assets/img/media/chinese-passenger/still-3.jpg
-      - /assets/img/media/chinese-passenger/still-4.jpg
+      - /assets/img/media/chinese-passenger/stills/still-01.webp
+      - /assets/img/media/chinese-passenger/stills/still-02.webp
+      - /assets/img/media/chinese-passenger/stills/still-03.webp
+      - /assets/img/media/chinese-passenger/stills/still-04.webp
+      - /assets/img/media/chinese-passenger/stills/still-05.webp
+      - /assets/img/media/chinese-passenger/stills/still-06.webp
+      - /assets/img/media/chinese-passenger/stills/still-07.webp
+      - /assets/img/media/chinese-passenger/stills/still-08.webp
+      - /assets/img/media/chinese-passenger/stills/still-09.webp
+      - /assets/img/media/chinese-passenger/stills/still-10.webp
+      - /assets/img/media/chinese-passenger/stills/still-11.webp
+      - /assets/img/media/chinese-passenger/stills/still-12.webp
     legacy_id:
       zh: 普快列车--chinese-passenger
       en: chinese-passenger--普快列车

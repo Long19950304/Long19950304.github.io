@@ -16,6 +16,24 @@
   {% if work.private_sample %}<p class="portfolio-detail__sample">{% if portfolio_lang == 'zh' %}样片可通过私密链接提供。<a href="mailto:zhilongzhao@wyu.edu.cn?subject={{ work.title.zh | uri_escape }}">联系咨询样片</a>。{% else %}Sample episodes are available through private viewing links on request. <a href="mailto:zhilongzhao@wyu.edu.cn?subject={{ work.title.en | uri_escape }}">Enquire about a sample</a>.{% endif %}</p>{% endif %}
 </div>
 
+{% if work.video %}
+  <section class="portfolio-detail__video" aria-labelledby="work-video">
+    <h2 id="work-video">{% if portfolio_lang == 'zh' %}预告与观看{% else %}Preview and viewing{% endif %}</h2>
+    {% if work.video.trailer.path %}
+      <div class="portfolio-detail__video-player">
+        <video controls playsinline preload="metadata" poster="{{ work.poster[portfolio_lang] | relative_url }}" width="1280" height="720">
+          <source src="{{ work.video.trailer.path | relative_url }}" type="video/mp4">
+          {% if portfolio_lang == 'zh' %}浏览器暂不支持内嵌视频。{% else %}Your browser does not support embedded video.{% endif %}
+        </video>
+      </div>
+      <p class="portfolio-detail__video-note">{{ work.video.trailer.label[portfolio_lang] }} · {% if portfolio_lang == 'zh' %}点击播放器直接观看。{% else %}Use the player above to watch. {% endif %}</p>
+    {% endif %}
+    {% if work.video.film_note %}
+      <p class="portfolio-detail__video-note">{{ work.video.film_note[portfolio_lang] }} {% if portfolio_lang == 'zh' %}<a href="mailto:zhilongzhao@wyu.edu.cn?subject={{ work.title.zh | uri_escape }}">联系作者获取观看链接</a>。{% else %}<a href="mailto:zhilongzhao@wyu.edu.cn?subject={{ work.title.en | uri_escape }}">Contact the author for a viewing link</a>.{% endif %}</p>
+    {% endif %}
+  </section>
+{% endif %}
+
 {% if work.poster %}
   {% assign poster_path = work.poster[portfolio_lang] %}
   {% capture poster_alt %}{{ work.title[portfolio_lang] }} {% if portfolio_lang == 'zh' %}海报{% else %}poster{% endif %}{% endcapture %}

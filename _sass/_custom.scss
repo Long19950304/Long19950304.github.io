@@ -1458,6 +1458,10 @@ html[data-theme="dark"] .site-updates { background: #242426; }
 .portfolio-breadcrumbs { margin-bottom: 1.5rem; font-size: .85rem; }
 .portfolio-breadcrumbs a { display: inline-flex; align-items: center; min-height: 44px; color: var(--global-text-color-light); }
 .portfolio-detail__intro { max-width: 760px; margin-bottom: 2rem; line-height: 1.8; }
+.portfolio-detail__video { max-width: 960px; margin: 0 0 2.5rem; }
+.portfolio-detail__video-player { background: #111; }
+.portfolio-detail__video-player video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+.portfolio-detail__video-note { margin: .75rem 0 0; color: var(--global-text-color-light); font-size: .88rem; line-height: 1.7; }
 .portfolio-detail .post-title { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.3; overflow-wrap: break-word; }
 .portfolio-detail__intro .portfolio-entry__translation { margin-bottom: 1.25rem; }
 .portfolio-detail__sample { font-size: .9rem; }

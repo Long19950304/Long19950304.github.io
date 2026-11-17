@@ -158,7 +158,7 @@
   url: "/zh/media/chinese-passenger/",
   lang: "zh",
   title: "普快列车",
-  description: "实验短片 · 海报与剧照。",
+  description: "实验短片 · 预告片与剧照。",
   group: "pages",
 },
 
@@ -169,7 +169,7 @@
   url: "/media/chinese-passenger/",
   lang: "en",
   title: "Chinese Passenger",
-  description: "Experimental short film · Poster and stills.",
+  description: "Experimental short film · Trailer and stills.",
   group: "pages",
 },
 

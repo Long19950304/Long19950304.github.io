@@ -587,6 +587,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-17/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-17",
+  description: "China’s October Energy Output · US Bank Customers Report Service Disruptions · Wireless Near-Infrared Switch for Neural Activity",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -757,6 +768,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-16",
   description: "国家统计局：2026年1—10月社会消费品零售总额增长1.0%；面对面办公与真实互动；中国科学院：纳米沟道直接成像观测非平衡汤姆孙冷却",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-17/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-17",
+  description: "国家统计局发布2026年10月能源生产数据；美国多家主要银行客户报告服务中断；无线近红外“开关”调控小鼠神经活动",
   group: "digests_zh",
 },
 

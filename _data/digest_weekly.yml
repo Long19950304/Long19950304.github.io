@@ -159,6 +159,7 @@ weeks:
   end: '2026-11-22'
   issues:
   - '2026-11-16'
+  - '2026-11-17'
   highlights_news:
   - title: China Retail Growth Through October
     title_zh: 国家统计局：2026年1—10月社会消费品零售总额增长1.0%
@@ -185,4 +186,29 @@ weeks:
     url: https://news.sciencenet.cn/htmlnews/2026/11/574807.shtm
     source: 科学网新闻
     category: Science & research
-  highlights_ai: []
+  - title: China’s October Energy Output
+    title_zh: 国家统计局发布2026年10月能源生产数据
+    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965837.html
+    source: 国家统计局
+    category: Business & economy
+  - title: US Bank Customers Report Service Disruptions
+    title_zh: 美国多家主要银行客户报告服务中断
+    url: https://www.bbc.co.uk/news/articles/cj752wvqneq6o
+    source: BBC News Business
+    category: Business & economy
+  - title: Wireless Near-Infrared Switch for Neural Activity
+    title_zh: 无线近红外“开关”调控小鼠神经活动
+    url: https://www.cas.cn/syky/202611/t20261117_5124408.shtml
+    source: 中国科学院科研进展
+    category: Science & research
+  - title: Researchers report a more stable methanol-to-hydrogen catalyst
+    title_zh: 中国科学院团队报告更稳定的甲醇制氢催化剂
+    url: https://www.cas.cn/syky/202611/t20261112_5124098.shtml
+    source: 中国科学院科研进展
+    category: Science & research
+  highlights_ai:
+  - title: Open-weight models gain a unified serving route
+    title_zh: 开放权重模型获得统一调用路径
+    url: https://huggingface.co/blog/openrouter
+    source: Hugging Face
+    category: AI tools & model releases

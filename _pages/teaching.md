@@ -2,13 +2,15 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Modern Educational Technology and Microfilm Production — teaching, courses, and student work.
+description: Modern Educational Technology, College Chinese, and Microfilm Production — teaching, courses, and student work.
 page_class: teaching-page
 nav: true
 nav_order: 5
 lang: en
 translation_key: teaching
 ---
+
+<p class="teaching-studio-entry"><a href="https://class.zhaozhilong.com/">Enter the teaching studio →</a><br><span>Choose a course and class, and build your own learning space.</span></p>
 
 <nav class="teaching-quicklinks" aria-label="Teaching page contents">
   <a href="#courses">Courses and student work <span aria-hidden="true">↓</span></a>

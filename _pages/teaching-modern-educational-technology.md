@@ -13,6 +13,8 @@ translation_key: teaching-modern-educational-technology
 
 Modern Educational Technology connects educational theory with practical digital production. Students design small learning experiences, test them with users, and reflect on how technology changes participation, feedback, and classroom activity.
 
+<p class="teaching-studio-entry"><a href="https://class.zhaozhilong.com/#course/modern-educational-technology">Enter this course studio →</a><br><span>Join your semester class and share English comics and course projects.</span></p>
+
 <nav class="teaching-quicklinks" aria-label="Course page contents">
   <a href="#student-work">Student work <span aria-hidden="true">↓</span></a>
   <a href="#learning-content">Learning activities</a>

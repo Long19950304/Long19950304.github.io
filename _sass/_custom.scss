@@ -1487,3 +1487,8 @@ html[data-theme="dark"] .site-updates { background: #242426; }
   .portfolio-detail__gallery { grid-template-columns: 1fr; gap: 1.25rem; }
   .portfolio-group { margin-bottom: 2.25rem; }
 }
+
+/* The shared teaching studio is the entry for current course classrooms. */
+.teaching-studio-entry { padding: 1.15rem 1.35rem; border-left: 3px solid var(--global-theme-color); background: var(--global-code-bg-color); margin: 0 0 1.5rem; }
+.teaching-studio-entry a { font-size: 1.06rem; font-weight: 600; }
+.teaching-studio-entry span { display: inline-block; margin-top: .35rem; font-size: .86rem; color: var(--global-text-color-light); }

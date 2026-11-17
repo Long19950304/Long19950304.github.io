@@ -13,6 +13,8 @@ translation_key: teaching-modern-educational-technology
 
 现代教育技术把教育理论与数字内容实践结合起来。学生从教学目标出发，设计小型学习体验，通过试玩和反馈检验设计，再反思技术如何影响参与、互动与课堂活动。
 
+<p class="teaching-studio-entry"><a href="https://class.zhaozhilong.com/#course/modern-educational-technology">进入本课程工作室 →</a><br><span>加入本学期教学班，上传英语四格漫画与课程作品。</span></p>
+
 <nav class="teaching-quicklinks" aria-label="课程页面目录">
   <a href="#student-work">学生作品 <span aria-hidden="true">↓</span></a>
   <a href="#learning-content">学习内容</a>

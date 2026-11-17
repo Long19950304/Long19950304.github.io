@@ -2,13 +2,15 @@
 layout: page
 permalink: /zh/teaching/
 title: 教学
-description: 现代教育技术、微电影制作：教学理念、课程介绍与学生作品。
+description: 现代教育技术、大学语文与微电影制作：教学理念、课程介绍与学生作品。
 page_class: teaching-page
 nav: true
 nav_order: 5
 lang: zh
 translation_key: teaching
 ---
+
+<p class="teaching-studio-entry"><a href="https://class.zhaozhilong.com/">进入教学工作室 →</a><br><span>选择课程与教学班，建立自己的学习空间。</span></p>
 
 <nav class="teaching-quicklinks" aria-label="教学页面目录">
   <a href="#courses">课程与学生作品 <span aria-hidden="true">↓</span></a>

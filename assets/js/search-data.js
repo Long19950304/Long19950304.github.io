@@ -598,6 +598,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-18/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-18",
+  description: "China Parcel Volume Exceeds 17 Billion for Two Months · Canada’s October Home Sales Rise Slightly · Panzhihua Water Plant Launches Integrated Microgrid",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -779,6 +790,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-17",
   description: "国家统计局发布2026年10月能源生产数据；美国多家主要银行客户报告服务中断；无线近红外“开关”调控小鼠神经活动",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-18/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-18",
+  description: "中国快递业务量连续两个月超170亿件；加拿大十月住宅销售小幅回升；四川首个一体化构网型微电网在攀枝花投运",
   group: "digests_zh",
 },
 

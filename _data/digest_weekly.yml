@@ -160,6 +160,7 @@ weeks:
   issues:
   - '2026-11-16'
   - '2026-11-17'
+  - '2026-11-18'
   highlights_news:
   - title: China Retail Growth Through October
     title_zh: 国家统计局：2026年1—10月社会消费品零售总额增长1.0%
@@ -206,9 +207,19 @@ weeks:
     url: https://www.cas.cn/syky/202611/t20261112_5124098.shtml
     source: 中国科学院科研进展
     category: Science & research
+  - title: China Parcel Volume Exceeds 17 Billion for Two Months
+    title_zh: 中国快递业务量连续两个月超170亿件
+    url: https://www.chinanews.com.cn/cj/2026/11-17/10733362.shtml
+    source: 中国新闻网财经
+    category: Business & economy
   highlights_ai:
   - title: Open-weight models gain a unified serving route
     title_zh: 开放权重模型获得统一调用路径
     url: https://huggingface.co/blog/openrouter
     source: Hugging Face
+    category: AI tools & model releases
+  - title: Ask Maps adds trip planning and appointment search
+    title_zh: Ask Maps新增行程规划与预约搜索
+    url: https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026
+    source: Google AI
     category: AI tools & model releases

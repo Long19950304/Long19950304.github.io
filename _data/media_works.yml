@@ -114,15 +114,12 @@ works:
     recognition:
       zh: 入围／展映：澳门国际电影节短片单元（2017）
       en: Shortlisted / selected for the Macao International Film Festival short film section (2017).
-    cover: /assets/img/media/chinese-passenger/poster.jpg
-    cover_width: 1400
-    cover_height: 1980
+    cover: /assets/img/media/chinese-passenger/stills/still-11.webp
+    cover_width: 1920
+    cover_height: 820
     action:
-      zh: 查看海报与剧照
-      en: View the poster and stills
-    poster:
-      zh: /assets/img/media/chinese-passenger/poster.jpg
-      en: /assets/img/media/chinese-passenger/poster.jpg
+      zh: 查看剧照
+      en: View the stills
     video:
       trailer:
         path: /assets/video/media/chinese-passenger/chinese-passenger-trailer-v3-720p.mp4

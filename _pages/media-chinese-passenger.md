@@ -2,7 +2,7 @@
 layout: page
 permalink: /media/chinese-passenger/
 title: Chinese Passenger
-description: Experimental short film · Poster and stills.
+description: Experimental short film · Trailer and stills.
 nav: false
 lang: en
 translation_key: media-chinese-passenger

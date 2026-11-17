@@ -2,7 +2,7 @@
 layout: page
 permalink: /zh/media/chinese-passenger/
 title: 普快列车
-description: 实验短片 · 海报与剧照。
+description: 实验短片 · 预告片与剧照。
 nav: false
 lang: zh
 translation_key: media-chinese-passenger

@@ -21,7 +21,8 @@
     <h2 id="work-video">{% if portfolio_lang == 'zh' %}预告与观看{% else %}Preview and viewing{% endif %}</h2>
     {% if work.video.trailer.path %}
       <div class="portfolio-detail__video-player">
-        <video controls playsinline preload="metadata" poster="{{ work.poster[portfolio_lang] | relative_url }}" width="1280" height="720">
+        {% assign video_poster = work.poster[portfolio_lang] | default: work.cover %}
+        <video controls playsinline preload="metadata" poster="{{ video_poster | relative_url }}" width="1280" height="720">
           <source src="{{ work.video.trailer.path | relative_url }}" type="video/mp4">
           {% if portfolio_lang == 'zh' %}浏览器暂不支持内嵌视频。{% else %}Your browser does not support embedded video.{% endif %}
         </video>

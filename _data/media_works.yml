@@ -114,21 +114,21 @@ works:
     recognition:
       zh: 入围／展映：澳门国际电影节短片单元（2017）
       en: Shortlisted / selected for the Macao International Film Festival short film section (2017).
-    cover: /assets/img/media/chinese-passenger/poster.webp
-    cover_width: 1920
-    cover_height: 1080
+    cover: /assets/img/media/chinese-passenger/poster.jpg
+    cover_width: 1400
+    cover_height: 1980
     action:
       zh: 查看海报与剧照
       en: View the poster and stills
     poster:
-      zh: /assets/img/media/chinese-passenger/poster.webp
-      en: /assets/img/media/chinese-passenger/poster.webp
+      zh: /assets/img/media/chinese-passenger/poster.jpg
+      en: /assets/img/media/chinese-passenger/poster.jpg
     video:
       trailer:
         path: /assets/video/media/chinese-passenger/chinese-passenger-trailer-v3-720p.mp4
         label:
-          zh: 文艺预告片（720p）
-          en: Trailer (720p)
+          zh: 普快列车预告片（720p）
+          en: Chinese Passenger trailer (720p)
       film_note:
         zh: 完整影片约38分钟。高清与720p文件保存在外置归档中；网站暂以预告片和剧照展示，完整片可通过私密链接提供。需要观看链接，请联系作者。
         en: The complete film runs for approximately 38 minutes. The high-resolution and 720p files are preserved in the external archive; this page currently presents the trailer and stills, while the complete film can be shared through a private viewing link. Please contact the author for access.

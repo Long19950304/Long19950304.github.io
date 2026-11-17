@@ -390,7 +390,7 @@
   url: "/zh/teaching/",
   lang: "zh",
   title: "教学",
-  description: "现代教育技术、微电影制作：教学理念、课程介绍与学生作品。",
+  description: "现代教育技术、大学语文与微电影制作：教学理念、课程介绍与学生作品。",
   group: "pages",
 },
 
@@ -401,7 +401,7 @@
   url: "/teaching/",
   lang: "en",
   title: "Teaching",
-  description: "Modern Educational Technology and Microfilm Production — teaching, courses, and student work.",
+  description: "Modern Educational Technology, College Chinese, and Microfilm Production — teaching, courses, and student work.",
   group: "pages",
 },
 

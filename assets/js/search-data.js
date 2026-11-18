@@ -56,28 +56,6 @@
       
     
       
-        {
-  url: "/zh/cv/",
-  lang: "zh",
-  title: "简历",
-  description: "赵志龙的教育经历、工作单位与研究兴趣。",
-  group: "pages",
-},
-
-      
-    
-      
-        {
-  url: "/cv/",
-  lang: "en",
-  title: "CV",
-  description: "Education, affiliations, and research interests of Zhilong Zhao.",
-  group: "pages",
-},
-
-      
-    
-      
     
       
     

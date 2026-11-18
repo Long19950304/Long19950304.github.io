@@ -2,6 +2,20 @@
 # Dates describe the event, not the day the website was edited.
 # Supply both languages and link to an existing public page. Do not add private
 # submission targets, unconfirmed achievements, or routine code/deployment changes.
+- date: '2026-11-18'
+  section: teaching
+  category:
+    en: Teaching
+    zh: 教学
+  title:
+    en: English four-panel comics from the classroom
+    zh: 英语四格漫画课堂作品上线
+  description:
+    en: Humorous English comics from Modern Educational Technology, created with AI and shared through a browser-automation exercise. View public works in the teaching studio, with likes, comments, and replies.
+    zh: 现代教育技术课程实训：用 AI 创作幽默英语四格漫画，通过浏览器自动化发布到教学工作室。公开作品可在线浏览、点赞、评论和回复。
+  url:
+    en: https://class.zhaozhilong.com/#gallery?course=modern-educational-technology&kind=image
+    zh: https://class.zhaozhilong.com/#gallery?course=modern-educational-technology&kind=image
 - date: '2026-11-11'
   section: teaching
   category:

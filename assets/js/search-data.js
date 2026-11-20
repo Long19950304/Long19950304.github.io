@@ -598,6 +598,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-21/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-21",
+  description: "AI and China’s Smart Factories · U.S. Multinational Employment and Investment Rose in 2024 · How a Wound Scent Switches Locusts from Recovery to Risk",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -801,6 +812,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-20",
   description: "钱凯港智能系统与中秘贸易数据；Booking整合合作伙伴旅游业务；研究团队鉴定茶树储存茶氨酸的关键基因",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-21/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-21",
+  description: "人工智能与中国智能工厂；美国跨国公司2024年就业与投资增长；伤口气味如何让飞蝗从康复转向风险",
   group: "digests_zh",
 },
 

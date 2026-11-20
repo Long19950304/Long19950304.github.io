@@ -587,6 +587,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-20/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-20",
+  description: "Port Tech and Faster China–Peru Trade · Booking consolidates partner travel operations · Gene Identified for Tea’s Freshness Storage",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -779,6 +790,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-18",
   description: "中国快递业务量连续两个月超170亿件；加拿大十月住宅销售小幅回升；四川首个一体化构网型微电网在攀枝花投运",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-20/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-20",
+  description: "钱凯港智能系统与中秘贸易数据；Booking整合合作伙伴旅游业务；研究团队鉴定茶树储存茶氨酸的关键基因",
   group: "digests_zh",
 },
 

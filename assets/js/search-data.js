@@ -609,6 +609,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-22/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-22",
+  description: "Traditional Industries Add Digital Tools · U.S. Airlines Shift International First Class to Business · Customized Light for Plant Factories",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -823,6 +834,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-21",
   description: "人工智能与中国智能工厂；美国跨国公司2024年就业与投资增长；伤口气味如何让飞蝗从康复转向风险",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-22/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-22",
+  description: "传统产业借数字工具焕新；美国航司以大型公务舱取代远程国际头等舱；科研团队为不同植物定制“光配方”",
   group: "digests_zh",
 },
 

@@ -163,6 +163,7 @@ weeks:
   - '2026-11-18'
   - '2026-11-20'
   - '2026-11-21'
+  - '2026-11-22'
   highlights_news:
   - title: China Retail Growth Through October
     title_zh: 国家统计局：2026年1—10月社会消费品零售总额增长1.0%
@@ -224,4 +225,9 @@ weeks:
     title_zh: Ask Maps新增行程规划与预约搜索
     url: https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026
     source: Google AI
+    category: AI tools & model releases
+  - title: Inkling 2 Mini Targets Local AI
+    title_zh: Inkling 2 Mini面向本地人工智能部署
+    url: https://huggingface.co/blog/inkling2mini
+    source: Hugging Face
     category: AI tools & model releases

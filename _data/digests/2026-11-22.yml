@@ -1,0 +1,93 @@
+date: '2026-11-22'
+note: Traditional Industries Add Digital Tools · U.S. Airlines Shift International
+  First Class to Business · Customized Light for Plant Factories
+note_zh: 传统产业借数字工具焕新；美国航司以大型公务舱取代远程国际头等舱；科研团队为不同植物定制“光配方”
+edition: daily-audio
+policy_version: 6
+audio:
+  zh:
+    path: /assets/audio/digests/2026-11-22-zh.mp3
+    seconds: 624.3
+    bytes: 4994828
+    sha256: a70cf5863ffcdfa756ded4456693e7e0a476c8fc90aecc3eb8d697a8aeb5a6cb
+  en:
+    path: /assets/audio/digests/2026-11-22-en.mp3
+    seconds: 653.6
+    bytes: 5229836
+    sha256: d1534fd5ccaf87614eeab6148b70e0a2ec7d70d2c37bc5b8f5f89c3ab0aac30d
+items:
+- title: Traditional Industries Add Digital Tools
+  title_zh: 传统产业借数字工具焕新
+  url: https://www.news.cn/fortune/20261121/a4f444ebbedc4e6989516ebf2f99c9c6/c.html
+  published: '2026-11-21T00:00:00+08:00'
+  source: 新华社财经
+  category: Business & economy
+  source_id: xinhua-finance
+  authority: news_agency
+  publisher_id: xinhua-finance
+  coverage: china
+  why: Xinhua Finance reports that the first Historical Classics Industry Expo in
+    Hangzhou showcased how traditional manufacturers are using AI, standardized processes,
+    and modern equipment. Customs data cited for Longquan sword-related products also
+    show year-on-year export growth during January–September 2026.
+  why_zh: 新华社财经报道，首届历史经典产业博览会展示了AI设计大模型、标准化生产与现代设备在传统产业中的应用。丽水海关数据显示，2026年1至9月龙泉宝剑相关品类出口额同比增长44.7%，但这不代表全年结果。
+- title: U.S. Airlines Shift International First Class to Business
+  title_zh: 美国航司以大型公务舱取代远程国际头等舱
+  url: https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html
+  published: '2026-11-21T12:00:01+00:00'
+  source: CNBC Business
+  category: Business & economy
+  source_id: cnbc-business
+  authority: established_newsroom
+  publisher_id: cnbc-business
+  coverage: world
+  why: CNBC Business reports that American Airlines has ended international first-class
+    service as U.S. carriers expand larger business-class cabins. The article covers
+    reported cabin changes, pricing examples and continued segmentation of premium
+    travel.
+  why_zh: CNBC商业报道，美国航空最后一班配有远程国际头等舱的航班已结束，美国航司正转向更大的公务舱。报道同时指出，国际头等舱并未消失，公务舱产品也在进一步细分。
+- title: Customized Light for Plant Factories
+  title_zh: 科研团队为不同植物定制“光配方”
+  url: https://news.sciencenet.cn/htmlnews/2026/11/575116.shtm
+  published: '2026-11-21T22:36:16+08:00'
+  source: 科学网新闻
+  category: Science & research
+  source_id: sciencenet-news
+  authority: established_newsroom
+  publisher_id: sciencenet-news
+  coverage: china
+  why: ScienceNet News reports that a Chinese research team developed a plant-factory
+    system that adjusts lighting for different crops and feeds measurements back into
+    a closed loop. The team also combines optical filtering with photovoltaic generation
+    and is gathering crop-growth data to iteratively optimize lighting recipes.
+  why_zh: 科学网新闻援引中新网报道，中国科学技术大学先进技术研究院团队开发了可调光强、光谱和光周期的植物工厂系统，并以传感器数据形成闭环调光。团队还利用聚合物光学膜把部分光反射给光伏板，同时收集作物数据，用于训练模型和迭代优化配方。
+- title: Inkling 2 Mini Targets Local AI
+  title_zh: Inkling 2 Mini面向本地人工智能部署
+  url: https://huggingface.co/blog/inkling2mini
+  published: '2026-11-20T00:00:00+00:00'
+  source: Hugging Face
+  category: AI tools & model releases
+  source_id: huggingface
+  authority: developer_primary
+  publisher_id: huggingface
+  coverage: world
+  why: Hugging Face says Thinking Machines Lab’s Inkling 2 Mini is a multimodal, looped
+    mixture-of-experts model designed for local AI setups. The publisher reports broad
+    tooling support, but explicitly says its initial comparison is based on informal
+    tests and needs more validation.
+  why_zh: Hugging Face称，Thinking Machines Lab发布的Inkling 2 Mini是一款面向本地部署的多模态循环混合专家模型。平台方称其工具支持广泛，但初步比较主要来自非正式测试，仍需更多验证。
+- title: AI-Assisted Review Maps Code Sharing Gaps
+  title_zh: 人工智能辅助综述揭示临床预测研究代码共享缺口
+  url: https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119
+  published: '2026-11-19T22:15:00+00:00'
+  source: MIT News
+  category: Science & research
+  source_id: mit-news
+  authority: research_primary
+  publisher_id: mit-news
+  coverage: world
+  why: MIT News reported that an MIT and Dana-Farber team used large language models
+    to examine nearly 4,000 clinical prediction studies and hundreds of linked code
+    repositories. The review found that code sharing was uncommon, and publicly available
+    code often lacked the documentation and supporting information needed for reuse.
+  why_zh: MIT新闻报道，MIT与达纳-法伯癌症研究所团队用大语言模型审查近4000项临床预测研究及数百个代码仓库。研究发现，代码共享并不普遍，而且公开代码也常缺少支持理解和复用所需的文档与配套信息。

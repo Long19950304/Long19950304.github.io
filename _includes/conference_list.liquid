@@ -19,14 +19,12 @@
               {% when 'accepted' %}已接收
               {% when 'scheduled' %}已安排报告
               {% when 'presented' %}已报告
-              {% when 'presented_by_proxy' %}已由代讲人报告
             {% endcase %}
           {% else %}
             {% case paper.status %}
               {% when 'accepted' %}Accepted
               {% when 'scheduled' %}Scheduled
               {% when 'presented' %}Presented
-              {% when 'presented_by_proxy' %}Presented by a proxy
             {% endcase %}
           {% endif %}
         </span>{% endif %}

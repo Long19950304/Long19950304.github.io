@@ -1,13 +1,28 @@
 - id: nca-2026-agenda-translation
   year: 2026
   title: "Agenda Translation on Platforms: Digital Capacity and Uneven Local Government Responsiveness to National Health Attention in China"
+  authors_zh: "赵志龙、刘银娣"
+  authors_en: "Zhilong Zhao and Yindi Liu"
   conference: "National Communication Association (NCA), 112th Annual Convention"
   division: "Health Communication Division"
   date_en: "19–22 November 2026"
   date_zh: "2026年11月19–22日"
   location_en: "New Orleans, USA"
   location_zh: "美国新奥尔良"
-  status: presented_by_proxy
+  status: presented
+
+- id: nca-2026-comparative-cues
+  year: 2026
+  title: "Comparative Cues, Not Uniform Distrust: Foreign Media and Tiered Political Trust in China"
+  authors_zh: "赵志龙、刘银娣"
+  authors_en: "Zhilong Zhao and Yindi Liu"
+  conference: "National Communication Association (NCA), 112th Annual Convention"
+  division: "Political Communication Division"
+  date_en: "19–22 November 2026"
+  date_zh: "2026年11月19–22日"
+  location_en: "New Orleans, USA"
+  location_zh: "美国新奥尔良"
+  status: presented
 
 - id: computational-communication-2026-embedded-construction
   year: 2026
@@ -60,8 +75,8 @@
 - id: aejmc-2024-parental-mediation
   year: 2024
   title: "Parental Mediation, Digital Media Usage, and Health Literacy: An Exploration among Chinese Elementary School Students"
-  authors_zh: "Z. Zhao, L. Zhu, J. Liao, J. Xia, and X. Pu"
-  authors_en: "Z. Zhao, L. Zhu, J. Liao, J. Xia, and X. Pu"
+  authors_zh: "Zhilong Zhao, Lin Zhu, Jing Liao, Jiaxin Xia, and Xueya Pu"
+  authors_en: "Zhilong Zhao, Lin Zhu, Jing Liao, Jiaxin Xia, and Xueya Pu"
   conference: "Association for Education in Journalism and Mass Communication (AEJMC), 107th Annual Conference"
   date_en: "8 August 2024"
   date_zh: "2024年8月8日"
@@ -72,8 +87,8 @@
 - id: ica-2022-first-person
   year: 2022
   title: "First-Person Influences on Third-Person Perceptions"
-  authors_zh: "X. Zhao, X. Liu, Y. S. Chen, W. A. Jiao, S. H. Ao, F. Shen, and Zhilong Zhao"
-  authors_en: "X. Zhao, X. Liu, Y. S. Chen, W. A. Jiao, S. H. Ao, F. Shen, and Zhilong Zhao"
+  authors_zh: "Xinshu Zhao, Xudong Liu, Yue Selene Chen, Wen Aquamarine Jiao, Song Harris Ao, Fuyuan Shen, and Zhilong Zhao"
+  authors_en: "Xinshu Zhao, Xudong Liu, Yue Selene Chen, Wen Aquamarine Jiao, Song Harris Ao, Fuyuan Shen, and Zhilong Zhao"
   conference: "International Communication Association (ICA), 72nd Annual Conference"
   date_en: "2022"
   date_zh: "2022年"

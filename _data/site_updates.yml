@@ -2,6 +2,20 @@
 # Dates describe the event, not the day the website was edited.
 # Supply both languages and link to an existing public page. Do not add private
 # submission targets, unconfirmed achievements, or routine code/deployment changes.
+- date: '2026-11-22'
+  section: research
+  category:
+    en: Conference presentation
+    zh: 会议报告
+  title:
+    en: Presented research on South–South cooperation discourse in Guangzhou
+    zh: 在广州华南理工大学作学术报告
+  description:
+    en: At the 2026 Annual Meeting on Intelligent and Computational Communication, hosted by South China University of Technology, I presented joint work with Yindi Liu on how large language models frame South–South cooperation.
+    zh: 在华南理工大学承办的智能与计算传播学2026年会上，报告与刘银娣合作的研究《何以嵌入而难以主导：大语言模型中的南南合作话语建构》。
+  url:
+    en: /publications/#computational-communication-2026-embedded-construction
+    zh: /zh/publications/#computational-communication-2026-embedded-construction
 - date: '2026-11-18'
   section: teaching
   category:

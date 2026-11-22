@@ -7,7 +7,7 @@
   date_zh: "2026年11月19–22日"
   location_en: "New Orleans, USA"
   location_zh: "美国新奥尔良"
-  status: accepted
+  status: presented_by_proxy
 
 - id: computational-communication-2026-embedded-construction
   year: 2026
@@ -15,11 +15,11 @@
   authors_zh: "赵志龙、刘银娣"
   authors_en: "Zhilong Zhao and Yindi Liu"
   conference: "智能与计算传播学2026年会"
-  date_en: "14–15 November 2026"
-  date_zh: "2026年11月14–15日"
+  date_en: "21–22 November 2026"
+  date_zh: "2026年11月21–22日"
   location_en: "South China University of Technology, Guangzhou, China"
   location_zh: "中国广州，华南理工大学"
-  status: scheduled
+  status: presented
 
 - id: alliance-2026-multimodal-audit
   year: 2026

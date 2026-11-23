@@ -620,6 +620,17 @@
 
           
         
+          
+            {
+  url: "/digest/2026-11-23/",
+  lang: "en",
+  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-23",
+  description: "Salt Lake Lithium Project Reports Stable Output · U.S. Pizza Chains Face Demand Pressure · Genetic lineages reshape pine conservation",
+  group: "digests",
+},
+
+          
+        
       
     
       
@@ -845,6 +856,17 @@
   lang: "zh",
   title: "每日财经、科技与研究简报 · 2026-11-22",
   description: "传统产业借数字工具焕新；美国航司以大型公务舱取代远程国际头等舱；科研团队为不同植物定制“光配方”",
+  group: "digests_zh",
+},
+
+          
+        
+          
+            {
+  url: "/zh/digest/2026-11-23/",
+  lang: "zh",
+  title: "每日财经、科技与研究简报 · 2026-11-23",
+  description: "察尔汗盐湖锂项目产量与工艺优化进展；美国披萨连锁面临需求压力；华南五针松复合体保护研究重新界定遗传谱系",
   group: "digests_zh",
 },
 

@@ -478,124 +478,25 @@
           
         
           
-            {
-  url: "/digest/2026-11-07/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-07",
-  description: "Heritage brands expand China channels at CIIE · ORIX Aviation to acquire AerFin in £475m deal · ToyBlocks Offers Controlled Robot-Learning Tests",
-  group: "digests",
-},
-
+        
           
         
           
-            {
-  url: "/digest/2026-11-08/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-08",
-  description: "Exhibitors localize products for finer consumer needs · Beef Prices Stabilize, but Relief Looks Limited · Prefect 3.9.2 improves workflow reliability",
-  group: "digests",
-},
-
+        
           
         
           
-            {
-  url: "/digest/2026-11-09/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-09",
-  description: "China’s CPI Rose 0.7% in October · Cosm expands immersive cinema venues while keeping ticket prices premium · abcFISH enables single-molecule imaging of circular RNA",
-  group: "digests",
-},
-
+        
           
         
           
-            {
-  url: "/digest/2026-11-10/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-10",
-  description: "China producer prices rise in October · Skydance Details Planned Operating Cost Savings · NASA ESCAPADE Spacecraft Begin Trip to Mars",
-  group: "digests",
-},
-
+        
           
         
           
-            {
-  url: "/digest/2026-11-11/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-11",
-  description: "China Insurance Association Updates Commercial Health Insurance Guides · Fossil Reports a Return to Quarterly Profitability · Mitra-v2 expands synthetic pretraining for tables",
-  group: "digests",
-},
-
-          
         
           
-            {
-  url: "/digest/2026-11-12/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-12",
-  description: "China’s New-Energy Vehicle Exports Top Half of Exports · UK toy sales rise as hands-on products lead · Google Introduces Gemini Decisions API",
-  group: "digests",
-},
-
-          
         
-          
-            {
-  url: "/digest/2026-11-13/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-13",
-  description: "CNOOC Reports Ultra-Deep Bohai Gas Well · Scout Motors Reports 212,000 Vehicle Reservations · IBM’s Granite LLMON preview targets structured model instructions",
-  group: "digests",
-},
-
-          
-        
-          
-            {
-  url: "/digest/2026-11-16/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-16",
-  description: "China Retail Growth Through October · In-Person Work and Office Design · Chinese researchers directly image non-equilibrium Thomson cooling",
-  group: "digests",
-},
-
-          
-        
-          
-            {
-  url: "/digest/2026-11-17/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-17",
-  description: "China’s October Energy Output · US Bank Customers Report Service Disruptions · Wireless Near-Infrared Switch for Neural Activity",
-  group: "digests",
-},
-
-          
-        
-          
-            {
-  url: "/digest/2026-11-18/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-18",
-  description: "China Parcel Volume Exceeds 17 Billion for Two Months · Canada’s October Home Sales Rise Slightly · Panzhihua Water Plant Launches Integrated Microgrid",
-  group: "digests",
-},
-
-          
-        
-          
-            {
-  url: "/digest/2026-11-20/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-20",
-  description: "Port Tech and Faster China–Peru Trade · Booking consolidates partner travel operations · Gene Identified for Tea’s Freshness Storage",
-  group: "digests",
-},
-
           
         
           
@@ -610,25 +511,7 @@
           
         
           
-            {
-  url: "/digest/2026-11-22/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-22",
-  description: "Traditional Industries Add Digital Tools · U.S. Airlines Shift International First Class to Business · Customized Light for Plant Factories",
-  group: "digests",
-},
-
-          
         
-          
-            {
-  url: "/digest/2026-11-23/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-23",
-  description: "Salt Lake Lithium Project Reports Stable Output · U.S. Pizza Chains Face Demand Pressure · Genetic lineages reshape pine conservation",
-  group: "digests",
-},
-
           
         
       
@@ -719,124 +602,25 @@
           
         
           
-            {
-  url: "/zh/digest/2026-11-07/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-07",
-  description: "进博会环球国民品牌展示区加速海外品牌拓展中国市场；ORIX Aviation以约4.75亿英镑收购AerFin；ToyBlocks提供可控的机器人学习评测环境",
-  group: "digests_zh",
-},
-
+        
           
         
           
-            {
-  url: "/zh/digest/2026-11-08/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-08",
-  description: "进博会展商围绕中国消费需求调整产品；加拿大牛肉价格趋稳，但降价空间有限；Prefect 3.9.2更新聚焦工作流可靠性",
-  group: "digests_zh",
-},
-
+        
           
         
           
-            {
-  url: "/zh/digest/2026-11-09/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-09",
-  description: "国家统计局：2026年10月居民消费价格同比上涨0.7%；Cosm扩张沉浸式影院，维持高端票价；中国科学院团队开发环形RNA单分子原位成像技术",
-  group: "digests_zh",
-},
-
+        
           
         
           
-            {
-  url: "/zh/digest/2026-11-10/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-10",
-  description: "国家统计局：2026年10月工业生产者价格同比上涨5.7%；Skydance公布未来三年经营成本节约计划；NASA的ESCAPADE双探测器启程前往火星",
-  group: "digests_zh",
-},
-
+        
           
         
           
-            {
-  url: "/zh/digest/2026-11-11/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-11",
-  description: "中国保险行业协会发布商业医疗险示范条款与药品推荐清单；Fossil第三财季恢复盈利并上调全年销售预期；Mitra-v2扩大表格基础模型的合成预训练规模",
-  group: "digests_zh",
-},
-
-          
         
           
-            {
-  url: "/zh/digest/2026-11-12/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-12",
-  description: "中国新能源汽车出口占比连续五个月超过50%；英国传统动手玩具带动销售增长；Google推出Gemini Decisions API",
-  group: "digests_zh",
-},
-
-          
         
-          
-            {
-  url: "/zh/digest/2026-11-13/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-13",
-  description: "中国海油称渤海中部发现超深层火山岩高产油气井；Scout Motors报告约21.2万辆汽车预订；IBM Granite 推出 LLMON 预览模型，强化结构化指令处理",
-  group: "digests_zh",
-},
-
-          
-        
-          
-            {
-  url: "/zh/digest/2026-11-16/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-16",
-  description: "国家统计局：2026年1—10月社会消费品零售总额增长1.0%；面对面办公与真实互动；中国科学院：纳米沟道直接成像观测非平衡汤姆孙冷却",
-  group: "digests_zh",
-},
-
-          
-        
-          
-            {
-  url: "/zh/digest/2026-11-17/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-17",
-  description: "国家统计局发布2026年10月能源生产数据；美国多家主要银行客户报告服务中断；无线近红外“开关”调控小鼠神经活动",
-  group: "digests_zh",
-},
-
-          
-        
-          
-            {
-  url: "/zh/digest/2026-11-18/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-18",
-  description: "中国快递业务量连续两个月超170亿件；加拿大十月住宅销售小幅回升；四川首个一体化构网型微电网在攀枝花投运",
-  group: "digests_zh",
-},
-
-          
-        
-          
-            {
-  url: "/zh/digest/2026-11-20/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-20",
-  description: "钱凯港智能系统与中秘贸易数据；Booking整合合作伙伴旅游业务；研究团队鉴定茶树储存茶氨酸的关键基因",
-  group: "digests_zh",
-},
-
           
         
           
@@ -851,25 +635,7 @@
           
         
           
-            {
-  url: "/zh/digest/2026-11-22/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-22",
-  description: "传统产业借数字工具焕新；美国航司以大型公务舱取代远程国际头等舱；科研团队为不同植物定制“光配方”",
-  group: "digests_zh",
-},
-
-          
         
-          
-            {
-  url: "/zh/digest/2026-11-23/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-23",
-  description: "察尔汗盐湖锂项目产量与工艺优化进展；美国披萨连锁面临需求压力；华南五针松复合体保护研究重新界定遗传谱系",
-  group: "digests_zh",
-},
-
           
         
       

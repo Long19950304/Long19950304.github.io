@@ -1,4 +1,4 @@
-checked_on: '2026-11-22'
+checked_on: '2026-11-23'
 sources:
 - id: nbs-china
   name: 国家统计局
@@ -16,7 +16,7 @@ sources:
   description: News-agency economic reporting; geography checked against the actual
     event
   available: true
-  initial_candidates: 7
+  initial_candidates: 9
 - id: bbc-business
   name: BBC News Business
   group: economy
@@ -24,7 +24,7 @@ sources:
   description_zh: 国际公共媒体商业报道；须读取原文
   description: International public-service business reporting; full article required
   available: true
-  initial_candidates: 5
+  initial_candidates: 2
 - id: bea-data
   name: U.S. Bureau of Economic Analysis
   group: economy
@@ -32,7 +32,7 @@ sources:
   description_zh: 统计机构原始数据；核对统计时期和修订口径
   description: Official statistical releases; reference periods and revisions checked
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: ecb-data
   name: European Central Bank
   group: economy
@@ -49,7 +49,7 @@ sources:
   description: Researcher/developer articles; not platform certification or independent
     testing
   available: true
-  initial_candidates: 2
+  initial_candidates: 0
 - id: google-developers
   name: Google Developers
   group: technology
@@ -73,7 +73,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: google-ai
   name: Google AI
   group: technology
@@ -81,7 +81,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 2
+  initial_candidates: 0
 - id: openai
   name: OpenAI
   group: technology
@@ -89,7 +89,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 4
+  initial_candidates: 1
 - id: ruff
   name: Ruff releases
   group: technology
@@ -97,7 +97,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: zed
   name: Zed releases
   group: technology
@@ -105,7 +105,7 @@ sources:
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: uv
   name: uv releases
   group: technology
@@ -120,7 +120,7 @@ sources:
   url: https://github.com/langgenius/dify/releases
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
-  available: false
+  available: true
   initial_candidates: 0
 - id: comfyui
   name: ComfyUI releases
@@ -136,7 +136,7 @@ sources:
   url: https://github.com/jupyterlab/jupyterlab/releases
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
-  available: true
+  available: false
   initial_candidates: 0
 - id: pandas
   name: pandas releases
@@ -152,7 +152,7 @@ sources:
   url: https://github.com/scikit-learn/scikit-learn/releases
   description_zh: 维护者或厂商原始发布；性能主张注明归属
   description: Maintainer/vendor primary publication; performance claims attributed
-  available: true
+  available: false
   initial_candidates: 0
 - id: ollama
   name: Ollama releases
@@ -193,7 +193,7 @@ sources:
   description_zh: 国际公共媒体财经报道；须读取原文
   description: Public-service economic reporting; full article required
   available: true
-  initial_candidates: 4
+  initial_candidates: 1
 - id: npr-business
   name: NPR Business
   group: economy
@@ -233,7 +233,7 @@ sources:
   description_zh: 开发者原始版本公告；核对具体变更与适用范围
   description: Developer release notes; scope and changes checked
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: PrefectHQ-prefect
   name: Prefect releases
   group: technology
@@ -241,7 +241,7 @@ sources:
   description_zh: 开发者原始版本公告；核对具体变更与适用范围
   description: Developer release notes; scope and changes checked
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: bbc-tech
   name: BBC Technology
   group: technology
@@ -250,7 +250,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 5
+  initial_candidates: 0
 - id: bbc-science
   name: BBC Science & Environment
   group: technology
@@ -268,7 +268,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: npr-science
   name: NPR Science
   group: technology
@@ -277,7 +277,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 2
+  initial_candidates: 1
 - id: cbc-tech
   name: CBC Technology & Science
   group: technology
@@ -286,7 +286,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 4
+  initial_candidates: 1
 - id: guardian-science
   name: The Guardian Science
   group: technology
@@ -295,7 +295,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 4
+  initial_candidates: 1
 - id: guardian-tech
   name: The Guardian Technology
   group: technology
@@ -313,7 +313,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 6
+  initial_candidates: 4
 - id: sciencealert
   name: ScienceAlert
   group: technology
@@ -331,7 +331,7 @@ sources:
   description: Institutional original reporting; evidence and limits checked; no clinical
     advice
   available: true
-  initial_candidates: 7
+  initial_candidates: 3
 - id: mit-news
   name: MIT News
   group: technology
@@ -340,7 +340,7 @@ sources:
   description: Institutional original reporting; evidence and limits checked; no clinical
     advice
   available: true
-  initial_candidates: 7
+  initial_candidates: 1
 - id: microsoft-research
   name: Microsoft Research
   group: technology
@@ -366,7 +366,7 @@ sources:
   description_zh: 开发者原始发布；功能与效果主张须注明来源
   description: Developer primary reporting; capabilities and outcomes attributed
   available: true
-  initial_candidates: 1
+  initial_candidates: 0
 - id: guardian-business
   name: The Guardian Business
   group: economy
@@ -402,7 +402,7 @@ sources:
   description: Science and technology reporting; distinguish findings, institutional
     claims and interpretation
   available: true
-  initial_candidates: 10
+  initial_candidates: 5
 - id: cas-research
   name: 中国科学院科研进展
   group: technology

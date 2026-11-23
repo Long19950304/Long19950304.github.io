@@ -231,3 +231,35 @@ weeks:
     url: https://huggingface.co/blog/inkling2mini
     source: Hugging Face
     category: AI tools & model releases
+- week: 2026-W48
+  start: '2026-11-23'
+  end: '2026-11-29'
+  issues:
+  - '2026-11-23'
+  highlights_news:
+  - title: Salt Lake Lithium Project Reports Stable Output
+    title_zh: 察尔汗盐湖锂项目产量与工艺优化进展
+    url: https://www.chinanews.com.cn/cj/2026/11-22/10736161.shtml
+    source: 中国新闻网财经
+    category: Business & economy
+  - title: U.S. Pizza Chains Face Demand Pressure
+    title_zh: 美国披萨连锁面临需求压力
+    url: https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html
+    source: CNBC Business
+    category: Business & economy
+  - title: Genetic lineages reshape pine conservation
+    title_zh: 华南五针松复合体保护研究重新界定遗传谱系
+    url: https://www.cas.cn/syky/202611/t20261118_5124531.shtml
+    source: 中国科学院科研进展
+    category: Science & research
+  - title: Arctic Laser Station Advances Satellite Tracking
+    title_zh: 北极激光测距站推进卫星跟踪
+    url: https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world
+    source: NASA
+    category: Science & research
+  - title: A Smaller AI Model for Analog Chip Design
+    title_zh: 更小的模型协助模拟芯片设计
+    url: https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123
+    source: MIT News
+    category: Science & research
+  highlights_ai: []

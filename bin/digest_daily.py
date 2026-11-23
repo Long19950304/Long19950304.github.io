@@ -577,6 +577,7 @@ def validate_issue(issue, candidates, policy):
     for item in items:
         validate_story(item, lookup[item['id']], item.get('coverage'), policy)
     for k in ['intro', 'intro_zh', 'outro', 'outro_zh', 'note', 'note_zh']:
+        if k in ('intro', 'intro_zh') and k not in issue: continue
         if not isinstance(issue.get(k), str) or not issue[k].strip() or blocked(issue[k], policy): raise ValueError('Invalid programme field: ' + k)
     for lang in ('en', 'zh'):
         text = transcript(issue, lang)
@@ -587,14 +588,19 @@ def validate_issue(issue, candidates, policy):
 
 
 def transcript(issue, lang):
+    return '\n\n'.join(narration_blocks(issue, lang))
+
+
+def narration_blocks(issue, lang):
     suffix = '_zh' if lang == 'zh' else ''
-    return '\n\n'.join([issue['intro' + suffix]] +
-                         [it['title' + suffix] + '。' + '\n' + it['script' + suffix] if lang == 'zh'
-                          else it['title'] + '.\n' + it['script'] for it in issue['items']] +
-                         [issue['outro' + suffix]])
+    punctuation = '。' if lang == 'zh' else '.'
+    intro = issue.get('intro' + suffix)
+    return ([intro] if intro else []) + [
+        item['title' + suffix] + punctuation + '\n' + item['script' + suffix] for item in issue['items']
+    ] + [issue['outro' + suffix]]
 
 
-def normalize_selection(day, issue, candidates, policy):
+def normalize_selection(issue, candidates, policy):
     """Enforce the source cap before narration; never rely on model arithmetic."""
     lookup = {c['id']: c for c in candidates}
     counts = collections.Counter()
@@ -605,15 +611,8 @@ def normalize_selection(day, issue, candidates, policy):
             counts[source] += 1
             retained.append(item)
     issue['items'] = list(reversed(retained))
-    # An opening must not mention stories removed during editorial selection.
-    date = dt.date.fromisoformat(day)
-    digits = '零一二三四五六七八九'
-    def chinese_number(number):
-        if number < 10: return digits[number]
-        return ('' if number < 20 else digits[number // 10]) + '十' + (digits[number % 10] if number % 10 else '')
-    spoken_zh_date = ''.join(digits[int(n)] for n in str(date.year)) + '年' + chinese_number(date.month) + '月' + chinese_number(date.day) + '日'
-    issue['intro'] = f'Welcome to the daily economy, technology and research briefing for {date.strftime("%B")} {date.day}, {date.year}. Today we cover economic developments in China and around the world, alongside useful technology and research updates. Each story comes with an attributable source. We explain the reporting period and the limits of the evidence, and keep any practical suggestions separate from the news.'
-    issue['intro_zh'] = f'欢迎收听每日财经、科技与研究简报。今天是{spoken_zh_date}。这期既关注国内和国际经济进展，也关注实用的科技与研究动态。每条消息都附有可查来源。涉及经济数据，我们会交代统计时期和证据边界，并把新闻事实与参考建议分开。'
+    issue.pop('intro', None)
+    issue.pop('intro_zh', None)
     issue['note'] = ' · '.join(it['title'] for it in issue['items'][:3])
     issue['note_zh'] = '；'.join(it['title_zh'] for it in issue['items'][:3])
     return issue
@@ -699,7 +698,7 @@ def compose_issue(day, selection, candidates, work, policy):
     count = len(selection)
     # Separate language requests keep the output schema small and avoid the
     # model returning Chinese in both editions or omitting a long story field.
-    en_low, en_high = (1050 + count - 1) // count, 1175 // count
+    en_low, en_high = (1175 + count - 1) // count, 1240 // count
     zh_low, zh_high = 280, 600
 
     def write_story(selected):
@@ -766,7 +765,7 @@ def compose_issue(day, selection, candidates, work, policy):
     issue = {'items': items,
              'outro': 'That concludes today’s briefing. Original sources and the complete narration are linked on the website. Thank you for listening.',
              'outro_zh': '今天的简报就到这里。原始来源和完整播报文字都可以在网站查阅。感谢收听。'}
-    normalize_selection(day, issue, candidates, policy)
+    normalize_selection(issue, candidates, policy)
     balance_english_length(issue, lookup, policy)
     balance_chinese_length(issue, lookup, policy)
     validate_issue(issue, candidates, policy)
@@ -869,9 +868,15 @@ def resume_or_draft(day, candidates, work, policy):
     if path.exists():
         try:
             issue = json.loads(path.read_text())
+            migrated = isinstance(issue, dict) and ('intro' in issue or 'intro_zh' in issue)
+            if migrated:
+                issue.pop('intro', None)
+                issue.pop('intro_zh', None)
             validate_issue(issue, candidates, policy)
             if repeated_stories(day, issue['items'], candidates, work, policy):
                 raise ValueError('Resumed draft contains previously aired or uncertain events')
+            if migrated:
+                save_json(path, issue)
             return issue
         except (ValueError, KeyError, TypeError) as exc:
             # Retain the malformed output for diagnosis, never re-save it as the
@@ -1043,10 +1048,8 @@ def audio(day, issue, work, policy):
     if tts_env == 'tts': credential = key('minimax-tts-api-key', 'MINIMAX_TTS_API_KEY')
     result = {}
     for lang in ('zh', 'en'):
-        text = transcript(issue, lang)
-        (work / f'transcript-{lang}.txt').write_text(text + '\n')
-        suffix = '_zh' if lang == 'zh' else ''
-        blocks = [issue['intro' + suffix]] + [it['title' + suffix] + '. ' + it['script' + suffix] for it in issue['items']] + [issue['outro' + suffix]]
+        blocks = narration_blocks(issue, lang)
+        (work / f'transcript-{lang}.txt').write_text('\n\n'.join(blocks) + '\n')
         chunks = [chunk for block in blocks for chunk in speech_chunks(block, 300 if lang == 'zh' else 500)]
         def synthesize(job):
             i, chunk = job
@@ -1117,7 +1120,9 @@ def page(day, issue, rows, audio_meta, lang):
              'digest_date': day, 'translation_key': 'digest-' + day, 'page_class': 'digest-page',
              'description': issue['note' + suffix], 'daily_audio': True}
     parts = ['---\n' + yaml.safe_dump(front, allow_unicode=True, sort_keys=False) + '---\n']
-    parts += ['{% include digest-audio.liquid %}\n', '## ' + ('今日概览' if zh else 'Today’s briefing'), html.escape(issue['intro' + suffix])]
+    parts.append('{% include digest-audio.liquid %}\n')
+    if intro := issue.get('intro' + suffix):
+        parts += ['## ' + ('今日概览' if zh else 'Today’s briefing'), html.escape(intro)]
     for i, item in enumerate(issue['items'], 1):
         row = rows[item['id']]
         title = html.escape(item['title' + suffix])
@@ -1277,13 +1282,13 @@ def main():
                 if repair_marker.exists(): raise
                 feedback = json.loads((work / 'review.json').read_text())
                 save_json(repair_marker, {'attempted': True, 'feedback': feedback})
-                fixed = llm(policy, '''You are correcting a bilingual economy/technology briefing after a separate factual review. Correct every reported blocking error using ONLY supplied source evidence. Preserve all exact story IDs, the same news selection and the complete JSON schema. Do not add new stories, facts, numbers or unsupported features. The Chinese edition must contain 2100–3300 actual Han characters and the English edition 1200–1300 words, including intros and outros. Preserve natural spoken paragraphs and full bilingual fields. Keep evidence_quote verbatim. Exclude political/policy/military/territorial/religious/investing/medical-advice subjects completely. Return the entire corrected issue JSON, not a patch.''',
+                fixed = llm(policy, '''You are correcting a bilingual economy/technology briefing after a separate factual review. Correct every reported blocking error using ONLY supplied source evidence. Preserve all exact story IDs, the same news selection and the complete JSON schema. Do not add new stories, facts, numbers or unsupported features. The Chinese edition must contain 2100–3300 actual Han characters and the English edition 1200–1300 words, including story titles and outros. Begin directly with the first story. Preserve natural spoken paragraphs and full bilingual fields. Keep evidence_quote verbatim. Exclude political/policy/military/territorial/religious/investing/medical-advice subjects completely. Return the entire corrected issue JSON, not a patch.''',
                             {'draft': issue, 'audit': feedback, 'scope': policy['editorial_scope'],
                              'selection_instruction': policy.get('selection_instruction', ''),
                              'evidence': [c for c in candidates if c['id'] in {it['id'] for it in issue['items']}]})
                 if {it['id'] for it in fixed['items']} != {it['id'] for it in issue['items']}:
                     raise EditorialReviewError('Editorial correction changed the story selection')
-                issue = normalize_selection(day, fixed, candidates, policy)
+                issue = normalize_selection(fixed, candidates, policy)
                 save_json(work / 'draft.json', issue)
                 validate_issue(issue, candidates, policy)
                 review(issue, candidates, work, policy)

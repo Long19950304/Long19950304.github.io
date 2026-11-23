@@ -84,7 +84,9 @@ class PublicationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             work = Path(tmp);d.save_json(work / 'draft.json', self.issue)
             with mock.patch.object(d, 'draft') as regenerate:
-                self.assertEqual(d.resume_or_draft('2026-11-07', self.candidates, work, self.policy), self.issue)
+                expected = {k: v for k, v in self.issue.items() if k not in ('intro', 'intro_zh')}
+                self.assertEqual(d.resume_or_draft('2026-11-07', self.candidates, work, self.policy), expected)
+                self.assertEqual(json.loads((work / 'draft.json').read_text()), expected)
                 regenerate.assert_not_called()
 
     def test_short_sources_are_not_offered_for_long_narration(self):
@@ -143,11 +145,22 @@ class PublicationTests(unittest.TestCase):
                 malformed_once.add('0')
                 return {'title': 'Missing narration'}
             return {'title': 'Research update', 'summary': 'A documented update.',
-                    'script': ' '.join(['research'] * 225), 'evidence_quote_id': '1'}
+                    'script': ' '.join(['research'] * 240), 'evidence_quote_id': '1'}
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'llm', side_effect=generate) as call:
             work = Path(tmp)
             result = d.compose_issue('2026-11-07', selection, self.candidates, work, self.policy)
             self.assertEqual(len(d.validate_issue(result, self.candidates, self.policy)), 5)
+            self.assertNotIn('intro', result)
+            self.assertNotIn('intro_zh', result)
+            rows = {row['id']: dict(row, source='Example publisher', category='Research',
+                                   published='2026-11-07', url='https://example.com/story')
+                    for row in self.candidates}
+            for lang, headline, overview in [('en', 'Research update', 'Today’s briefing'),
+                                             ('zh', '研究工具更新', '今日概览')]:
+                self.assertTrue(d.transcript(result, lang).startswith(headline))
+                page = d.page('2026-11-07', result, rows, {}, lang)
+                self.assertIn('## 1. ' + headline, page)
+                self.assertNotIn('## ' + overview, page)
             self.assertEqual(call.call_count, 11)
             self.assertTrue(any('previous_copy' in c.args[2] for c in call.call_args_list))
             call.reset_mock()

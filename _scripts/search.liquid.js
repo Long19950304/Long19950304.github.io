@@ -12,19 +12,15 @@ permalink: /assets/js/search-data.js
         {% include search-item.liquid item=item group='pages' %}
       {% endif %}
     {% endfor %}
-    {% for collection in site.collections %}
-      {% if collection.label == 'projects' or collection.label == 'digests' or collection.label == 'digests_zh' %}
-        {% for item in collection.docs %}
-          {% unless item.archived %}
-            {% include search-item.liquid item=item group=collection.label %}
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
+    {% for item in site.projects %}
+      {% unless item.archived %}
+        {% include search-item.liquid item=item group='projects' %}
+      {% endunless %}
     {% endfor %}
   ];
   const sections = zh
-    ? { pages: '网站页面', projects: '研究方向', digests: '每日简报', digests_zh: '每日简报' }
-    : { pages: 'Pages', projects: 'Research areas', digests: 'Daily digest', digests_zh: 'Daily digest' };
+    ? { pages: '网站页面', projects: '研究方向' }
+    : { pages: 'Pages', projects: 'Research areas' };
   {% if site.socials_in_search %}
   const socials = {{ site.data.socials | jsonify }};
   const contact = (title, url) => entries.push({ title, url, lang, group: 'contact', description: '' });
@@ -33,7 +29,6 @@ permalink: /assets/js/search-data.js
   if (socials.scholar_userid) contact('Google Scholar', 'https://scholar.google.com/citations?user=' + encodeURIComponent(socials.scholar_userid));
   if (socials.orcid_id) contact('ORCID', 'https://orcid.org/' + encodeURIComponent(socials.orcid_id));
   if (socials.github_username) contact('GitHub', 'https://github.com/' + encodeURIComponent(socials.github_username));
-  if (socials.rss_icon) contact(zh ? '订阅每日简报 RSS' : 'Daily digest RSS', (zh ? '/zh' : '') + '/digest/feed.xml');
   {% endif %}
   ninja.data = entries.filter(item => item.lang === lang).map(item => ({
     id: item.url,

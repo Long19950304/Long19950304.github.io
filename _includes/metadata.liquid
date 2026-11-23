@@ -56,12 +56,6 @@
   {% if zh_page == nil %}
     {% assign zh_page = site.projects | where: "translation_key", page.translation_key | where: "lang", "zh" | first %}
   {% endif %}
-  {% if en_page == nil %}
-    {% assign en_page = site.digests | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
-  {% endif %}
-  {% if zh_page == nil %}
-    {% assign zh_page = site.digests_zh | where: "translation_key", page.translation_key | where: "lang", "zh" | first %}
-  {% endif %}
   {% if en_page %}
     <link rel="alternate" hreflang="en" href="{{ en_page.url | absolute_url }}">
     <link rel="alternate" hreflang="x-default" href="{{ en_page.url | absolute_url }}">
@@ -198,11 +192,6 @@
       {% when 'research_gate_profile' %}
         {% capture link %}https://www.researchgate.net/profile/{{ social[1] }}/{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
-      {% when 'rss_icon' %}
-        {% comment %}
-          {% capture link %}{{ site.baseurl }}/feed.xml{% endcapture %}
-          {% assign sameaslinks = sameaslinks | push: link %}
-        {% endcomment %}
       {% when 'scholar_userid' %}
         {% capture link %}https://scholar.google.com/citations?user={{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}

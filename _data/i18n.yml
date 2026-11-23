@@ -11,7 +11,6 @@ en:
     media: "Media"
     teaching: "Teaching"
     cv: "CV"
-    digest: "Digest"
 
   research_filter:
     placeholder: "Filter by keyword (title/venue)..."
@@ -75,7 +74,6 @@ zh:
     media: "作品"
     teaching: "教学"
     cv: "简历"
-    digest: "简报"
 
   research_filter:
     placeholder: "按关键词筛选（标题/期刊/会议）..."

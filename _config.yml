@@ -145,12 +145,6 @@ collections:
     output: true
   projects:
     output: true
-  digests:
-    output: true
-    permalink: /digest/:name/
-  digests_zh:
-    output: true
-    permalink: /zh/digest/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

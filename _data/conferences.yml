@@ -1,29 +1,3 @@
-- id: nca-2026-agenda-translation
-  year: 2026
-  title: "Agenda Translation on Platforms: Digital Capacity and Uneven Local Government Responsiveness to National Health Attention in China"
-  authors_zh: "赵志龙、刘银娣"
-  authors_en: "Zhilong Zhao and Yindi Liu"
-  conference: "National Communication Association (NCA), 112th Annual Convention"
-  division: "Health Communication Division"
-  date_en: "19–22 November 2026"
-  date_zh: "2026年11月19–22日"
-  location_en: "New Orleans, USA"
-  location_zh: "美国新奥尔良"
-  status: presented
-
-- id: nca-2026-comparative-cues
-  year: 2026
-  title: "Comparative Cues, Not Uniform Distrust: Foreign Media and Tiered Political Trust in China"
-  authors_zh: "赵志龙、刘银娣"
-  authors_en: "Zhilong Zhao and Yindi Liu"
-  conference: "National Communication Association (NCA), 112th Annual Convention"
-  division: "Political Communication Division"
-  date_en: "19–22 November 2026"
-  date_zh: "2026年11月19–22日"
-  location_en: "New Orleans, USA"
-  location_zh: "美国新奥尔良"
-  status: presented
-
 - id: computational-communication-2026-embedded-construction
   year: 2026
   title: "何以嵌入而难以主导：大语言模型中的南南合作话语建构"
@@ -46,18 +20,6 @@
   date_zh: "2026年10月24日"
   location_en: "Shanghai Second Polytechnic University, Shanghai, China"
   location_zh: "中国上海，上海第二工业大学"
-  status: presented
-
-- id: greater-bay-2024-discourse
-  year: 2024
-  title: "智能舆情监测在一国两制话语建构中的应用研究：基于香港报业的分析"
-  authors_zh: "赵志龙"
-  authors_en: "Zhilong Zhao"
-  conference: "粤港澳大湾区国际传播发展论坛2024"
-  date_en: "17 November 2024"
-  date_zh: "2024年11月17日"
-  location_en: "South China University of Technology, Guangzhou, China"
-  location_zh: "中国广州，华南理工大学"
   status: presented
 
 - id: computational-communication-2024-older-adults
@@ -94,16 +56,4 @@
   date_zh: "2022年"
   location_en: "Paris, France"
   location_zh: "法国巴黎"
-  status: presented
-
-- id: greater-bay-2021-macao-identity
-  year: 2021
-  title: "澳门居民媒体使用与国族认同间的相关关系模型"
-  authors_zh: "林玉凤、赵志龙"
-  authors_en: "Agnes Iok Fong Lam and Zhilong Zhao"
-  conference: "首届粤港澳大湾区中国文化传播论坛"
-  date_en: "6 November 2021"
-  date_zh: "2021年11月6日"
-  location_en: "Jinan University, Guangzhou, China"
-  location_zh: "中国广州，暨南大学"
   status: presented

@@ -19,7 +19,9 @@ class PublicationTests(unittest.TestCase):
         history.start()
         self.addCleanup(history.stop)
         self.policy = d.load_config()
-        self.candidates = [dict(id=str(i), source_id=str(i), evidence='A verified primary-source passage describing an actual software update and its documented behavior.') for i in range(5)]
+        self.policy['source_hosts'] = {str(i): ['example.com'] for i in range(6)}
+        self.policy['source_hosts']['one-vendor'] = ['example.com']
+        self.candidates = [dict(id=str(i), source_id=str(i), url=f'https://example.com/{i}', evidence='A verified primary-source passage describing an actual software update and its documented behavior.') for i in range(5)]
         self.candidates[0].update(topic='economy', source_region='china', authority='statistical_agency')
         self.candidates[1].update(topic='economy', source_region='international', authority='central_bank')
         self.issue = dict(intro='Welcome.', intro_zh='欢迎收听。', outro='Thank you.', outro_zh='感谢收听。', note='Useful research tools.', note_zh='实用科研工具。', items=[])
@@ -252,7 +254,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(len(d.validate_issue(self.issue, candidates, self.policy)), 5)
 
     def test_established_economic_newsroom_requires_same_evidence_gates(self):
-        self.candidates[1]['authority'] = 'established_newsroom'
+        self.candidates[1].update(authority='established_newsroom', source_region='china')
         self.assertEqual(len(d.validate_issue(self.issue, self.candidates, self.policy)), 5)
         self.candidates[1]['evidence'] += ' Political controversy.'
         with self.assertRaisesRegex(ValueError, 'source evidence'):
@@ -311,9 +313,38 @@ class PublicationTests(unittest.TestCase):
         self.candidates[0]['authority'] = 'developer_primary'
         with self.assertRaisesRegex(ValueError, 'authoritative'): d.validate_issue(self.issue, self.candidates, self.policy)
 
+    def test_original_domestic_reporting_can_cover_world_economy(self):
+        self.candidates[1].update(source_region='china', authority='news_agency')
+        d.validate_issue(self.issue, self.candidates, self.policy)
+        for mention in ['路透社报道', 'according to Reuters', '海外媒体称', 'https://uk.reuters.com/markets/']:
+            with self.subTest(mention=mention):
+                item = self.candidates[1]
+                old = item['evidence']
+                item['evidence'] = old + ' ' + mention
+                with self.assertRaisesRegex(ValueError, 'Excluded'):
+                    d.validate_issue(self.issue, self.candidates, self.policy)
+                item['evidence'] = old
+
+    def test_old_candidate_cannot_restore_removed_source(self):
+        for overrides in [
+            {'source_id': 'cnbc-business'},
+            {'url': 'https://www.cnbc.com/story'},
+            {'authority': 'public_media', 'source_region': 'international'},
+        ]:
+            with self.subTest(overrides=overrides):
+                cached = {**self.candidates[1], **overrides}
+                self.assertFalse(d.candidate_allowed(cached, self.policy))
+                with self.assertRaisesRegex(ValueError, 'Excluded'):
+                    d.validate_issue(self.issue, [self.candidates[0], cached, *self.candidates[2:]], self.policy)
+
+    def test_generated_narration_cannot_add_overseas_media(self):
+        self.issue['items'][0]['script_zh'] += '这则消息也见于美联社报道。'
+        with self.assertRaisesRegex(ValueError, 'Excluded'):
+            d.validate_issue(self.issue, self.candidates, self.policy)
+
     def test_economy_does_not_displace_entire_programme(self):
         for candidate in self.candidates:
-            candidate.update(topic='economy', authority='public_media')
+            candidate.update(topic='economy', source_region='china', authority='news_agency')
         with self.assertRaisesRegex(ValueError, 'count'): d.validate_issue(self.issue, self.candidates, self.policy)
 
     def test_quote_options_are_verbatim_and_long_enough(self):
@@ -335,11 +366,11 @@ class PublicationTests(unittest.TestCase):
 
     def test_official_body_excludes_navigation_and_keeps_table_units(self):
         raw = '<nav>政治新闻</nav><div class="txt-content"><p>统计数据说明</p><table><tr><td>收入（亿元）</td><td>123.4</td></tr></table>' + '本期统计数据。' * 40 + '</div><footer>政府网站</footer>'
-        body = d.extract_evidence(raw, 'https://www.stats.gov.cn/example', {'body_classes': ['txt-content']})
+        body = d.extract_evidence(raw, 'https://www.stats.gov.cn/example', {'body_classes': ['txt-content']}, self.policy)
         self.assertIn('收入（亿元） | 123.4', body)
         self.assertNotIn('政府网站', body)
         self.assertNotIn('政治新闻', body)
-        with self.assertRaises(ValueError): d.extract_evidence('<div>Subscribe to read this article</div>', 'https://example.com', {})
+        with self.assertRaises(ValueError): d.extract_evidence('<div>Subscribe to read this article</div>', 'https://example.com', {}, self.policy)
 
     def test_publication_dates_keep_shanghai_timezone(self):
         parsed = d.publication_time('2026/11/06 09:30')
@@ -367,15 +398,25 @@ class PublicationTests(unittest.TestCase):
         for source_id, opening, closing in [
             ('chinanews-finance', '<div class="content_maincontent_content">', '</div>'),
             ('sciencenet-news', '<div id="content1">', '</div>'),
-            ('cas-research', '<div class="trs_editor_view">', '</div>'),
-            ('cnbc-business', '<div class="ArticleBody-articleBody">', '</div>')]:
+            ('cas-research', '<div class="trs_editor_view">', '</div>')]:
             with self.subTest(source_id=source_id):
                 evidence = 'Verified science and economic reporting. ' * 20
                 raw = '<nav>election military</nav>' + opening + '<p>' + evidence + '</p>' + closing + '<footer>politics</footer>'
-                text = d.extract_evidence(raw, 'https://example.com/article', sources[source_id])
+                text = d.extract_evidence(raw, 'https://example.com/article', sources[source_id], self.policy)
                 self.assertIn(evidence.strip(), text)
                 self.assertNotIn('election', text)
                 self.assertNotIn('politics', text)
+
+    def test_excluded_link_counts_only_inside_article_evidence(self):
+        article = '<div id="content1">' + 'Original science reporting. ' * 24
+        link = '<a href="https://www.reuters.com/world/">Details</a>'
+        source = {'body_ids': ['content1']}
+        d.extract_evidence(article + '</div><footer>' + link + '</footer>',
+                           'https://example.com', source, self.policy)
+        with self.assertRaisesRegex(ValueError, 'Excluded outlet link'):
+            d.extract_evidence(article + link + '</div>', 'https://example.com', source, self.policy)
+        with self.assertRaisesRegex(ValueError, 'Excluded outlet link'):
+            d.plain(article + link + '</div>', self.policy)
 
     def test_public_source_catalogue_matches_collector(self):
         configured = d.yaml.safe_load((d.CONFIG / 'sources.yml').read_text())['sources']
@@ -514,12 +555,26 @@ class EventNoveltyTests(unittest.TestCase):
         return d.repeated_stories('2026-11-11', [{'id': 'today'}], [self.candidate], work, self.policy)
 
     def test_history_includes_yesterday_and_boundary_but_not_self_or_future(self):
-        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'ROOT', Path(tmp)):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'ROOT', Path(tmp)), mock.patch.object(d, 'PRIVATE', Path(tmp)):
             base = Path(tmp) / '_data/digests';base.mkdir(parents=True)
             for day in ['2026-11-03', '2026-11-04', '2026-11-10', '2026-11-11', '2026-11-12']:
                 (base / (day + '.yml')).write_text(d.yaml.safe_dump({'items': [self.history[0]]}))
             history = d.aired_history('2026-11-11', self.policy)
             self.assertEqual([h['edition_date'] for h in history], ['2026-11-04', '2026-11-10'])
+
+    def test_archived_editions_still_deduplicate_and_public_edition_wins(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(d, 'ROOT', Path(tmp)), mock.patch.object(d, 'PRIVATE', Path(tmp)):
+            archive = Path(tmp) / 'archived-digests'
+            archive.mkdir()
+            public = Path(tmp) / '_data/digests'
+            public.mkdir(parents=True)
+            for folder, day, title in [(archive, '2026-11-09', 'Archived story'),
+                                       (archive, '2026-11-10', 'Superseded story'),
+                                       (public, '2026-11-10', 'Current story')]:
+                entry = {'items': [{'title': title}]}
+                (folder / (day + '.yml')).write_text(d.yaml.safe_dump(entry))
+            self.assertEqual([item['title'] for item in d.aired_history('2026-11-11', self.policy)],
+                             ['Archived story', 'Current story'])
 
     def test_tracking_url_and_reformatted_title_are_excluded_without_model(self):
         for changes in [dict(url='https://example.com/original/?utm_source=feed#part'),

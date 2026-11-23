@@ -4,8 +4,6 @@ weeks:
   end: '2026-11-08'
   issues:
   - '2026-11-06'
-  - '2026-11-07'
-  - '2026-11-08'
   highlights_news:
   - title: Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy
     title_zh: 山东沿黄城市推进智能制造与绿色能源
@@ -22,41 +20,6 @@ weeks:
     url: https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas
     source: Google Research
     category: Research tools
-  - title: Heritage brands expand China channels at CIIE
-    title_zh: 进博会环球国民品牌展示区加速海外品牌拓展中国市场
-    url: https://www.news.cn/fortune/20261107/a770c5616a284ef28108029e413c4f40/c.html
-    source: 新华社财经
-    category: Business & economy
-  - title: ORIX Aviation to acquire AerFin in £475m deal
-    title_zh: ORIX Aviation以约4.75亿英镑收购AerFin
-    url: https://www.bbc.co.uk/news/articles/cq203vjxnln7o
-    source: BBC News Business
-    category: Business & economy
-  - title: Humanoid Robots Move Toward Practical Tasks
-    title_zh: 具身智能从展台表演走向实际服务
-    url: https://www.news.cn/fortune/20261106/bf076be9b61e4bf5a7f2bdb4c69d646a/c.html
-    source: 新华社财经
-    category: Business & economy
-  - title: JupyterLab 4.6.6 Fixes Workflow and Interface Bugs
-    title_zh: JupyterLab 4.6.6 修复工作流与界面问题
-    url: https://github.com/jupyterlab/jupyterlab/releases/tag/v4.6.6
-    source: JupyterLab releases
-    category: Research tools
-  - title: Exhibitors localize products for finer consumer needs
-    title_zh: 进博会展商围绕中国消费需求调整产品
-    url: https://www.news.cn/fortune/20261107/451e87b00b98469280978a05c2ab5c22/c.html
-    source: 新华社财经
-    category: Business & economy
-  - title: Beef Prices Stabilize, but Relief Looks Limited
-    title_zh: 加拿大牛肉价格趋稳，但降价空间有限
-    url: https://www.cbc.ca/news/canada/calgary/sidhu-beef-prices-finally-stabilizing-9.7409526
-    source: CBC Business
-    category: Business & economy
-  - title: Prefect 3.9.2 improves workflow reliability
-    title_zh: Prefect 3.9.2更新聚焦工作流可靠性
-    url: https://github.com/PrefectHQ/prefect/releases/tag/3.9.2
-    source: Prefect releases
-    category: Research tools
   highlights_ai:
   - title: NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints
     title_zh: 英伟达为Cosmos 3新增四个开放权重模拟检查点
@@ -68,198 +31,35 @@ weeks:
     url: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash
     source: Google AI
     category: AI tools & model releases
-  - title: ToyBlocks Offers Controlled Robot-Learning Tests
-    title_zh: ToyBlocks提供可控的机器人学习评测环境
-    url: https://huggingface.co/blog/allenai/toyblocks
-    source: Hugging Face
-    category: AI tools & model releases
-  - title: Hugging Face Adds Egyptian and Nigerian English ASR Data
-    title_zh: Hugging Face 为埃及和尼日利亚英语语音识别榜单加入私有数据
-    url: https://huggingface.co/blog/open-asr-leaderboard-liva
-    source: Hugging Face
-    category: AI tools & model releases
-- week: 2026-W46
-  start: '2026-11-09'
-  end: '2026-11-15'
-  issues:
-  - '2026-11-09'
-  - '2026-11-10'
-  - '2026-11-11'
-  - '2026-11-12'
-  - '2026-11-13'
-  highlights_news:
-  - title: China’s CPI Rose 0.7% in October
-    title_zh: 国家统计局：2026年10月居民消费价格同比上涨0.7%
-    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965795.html
-    source: 国家统计局
-    category: Business & economy
-  - title: Cosm expands immersive cinema venues while keeping ticket prices premium
-    title_zh: Cosm扩张沉浸式影院，维持高端票价
-    url: https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html
-    source: CNBC Business
-    category: Business & economy
-  - title: abcFISH enables single-molecule imaging of circular RNA
-    title_zh: 中国科学院团队开发环形RNA单分子原位成像技术
-    url: https://www.cas.cn/syky/202611/t20261106_5123658.shtml
-    source: 中国科学院科研进展
-    category: Science & research
-  - title: “乾阵”Interconnected Neutral-Atom Prototype Unveiled
-    title_zh: “乾阵”可互联中性原子量子计算机原型机发布
-    url: https://news.sciencenet.cn/htmlnews/2026/11/574419.shtm
-    source: 科学网新闻
-    category: Science & research
-  - title: Electrons Face a Space-Time Limit
-    title_zh: 电子运动存在时空极限
-    url: https://www.sciencedaily.com/releases/2026/11/261106174537.htm
-    source: ScienceDaily
-    category: Science & research
-  - title: China producer prices rise in October
-    title_zh: 国家统计局：2026年10月工业生产者价格同比上涨5.7%
-    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965794.html
-    source: 国家统计局
-    category: Business & economy
-  - title: Skydance Details Planned Operating Cost Savings
-    title_zh: Skydance公布未来三年经营成本节约计划
-    url: https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html
-    source: CNBC Business
-    category: Business & economy
-  - title: NASA ESCAPADE Spacecraft Begin Trip to Mars
-    title_zh: NASA的ESCAPADE双探测器启程前往火星
-    url: https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars
-    source: NASA
-    category: Science & research
-  - title: FLEX Teaches Robots to Generalize Commands
-    title_zh: FLEX让机器人从自然语言指令中泛化安全偏好
-    url: https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109
-    source: MIT News
-    category: Science & research
-  - title: China Insurance Association Updates Commercial Health Insurance Guides
-    title_zh: 中国保险行业协会发布商业医疗险示范条款与药品推荐清单
-    url: https://www.news.cn/fortune/20261110/3c34ca006cf44c6c84aa98d3103d7fd2/c.html
-    source: 新华社财经
-    category: Business & economy
-  highlights_ai:
-  - title: HOPE Prunes MoE Experts by Cooperation
-    title_zh: HOPE通过专家协作关系优化混合专家模型剪枝
-    url: https://huggingface.co/blog/amazon/higher-order-pruning-experts
-    source: Hugging Face
-    category: AI tools & model releases
-  - title: Google Introduces Gemini Decisions API
-    title_zh: Google推出Gemini Decisions API
-    url: https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api
-    source: Google AI
-    category: AI tools & model releases
-  - title: IBM’s Granite LLMON preview targets structured model instructions
-    title_zh: IBM Granite 推出 LLMON 预览模型，强化结构化指令处理
-    url: https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite
-    source: Hugging Face
-    category: AI tools & model releases
 - week: 2026-W47
   start: '2026-11-16'
   end: '2026-11-22'
   issues:
-  - '2026-11-16'
-  - '2026-11-17'
-  - '2026-11-18'
-  - '2026-11-20'
   - '2026-11-21'
-  - '2026-11-22'
   highlights_news:
-  - title: China Retail Growth Through October
-    title_zh: 国家统计局：2026年1—10月社会消费品零售总额增长1.0%
-    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965839.html
-    source: 国家统计局
+  - title: AI and China’s Smart Factories
+    title_zh: 人工智能与中国智能工厂
+    url: https://www.news.cn/fortune/20261120/d1b603091aa0460dae7a70c1be426236/c.html
+    source: 新华社财经
     category: Business & economy
-  - title: In-Person Work and Office Design
-    title_zh: 面对面办公与真实互动
-    url: https://www.npr.org/2026/11/14/nx-s1-6040158/these-economists-say-in-person-work-boosts-creativity-but-office-mandates-fall-short
-    source: NPR Business
+  - title: U.S. Multinational Employment and Investment Rose in 2024
+    title_zh: 美国跨国公司2024年就业与投资增长
+    url: https://www.bea.gov/news/2026/activities-us-multinational-enterprises-2024
+    source: U.S. Bureau of Economic Analysis
     category: Business & economy
-  - title: Chinese researchers directly image non-equilibrium Thomson cooling
-    title_zh: 中国科学院：纳米沟道直接成像观测非平衡汤姆孙冷却
-    url: https://www.cas.cn/syky/202611/t20261111_5124016.shtml
-    source: 中国科学院科研进展
-    category: Science & research
-  - title: Stacked Mylar Insulation for Lunar Use
-    title_zh: 层叠迈拉薄膜：为月球基地试验耐用隔热材料
-    url: https://www.sciencedaily.com/releases/2026/11/261115085549.htm
-    source: ScienceDaily
-    category: Science & research
-  - title: ECNU Unveils Hyperspectral Satellite
-    title_zh: 华东师大首颗自主研发高光谱卫星亮相
-    url: https://news.sciencenet.cn/htmlnews/2026/11/574807.shtm
+  - title: How a Wound Scent Switches Locusts from Recovery to Risk
+    title_zh: 伤口气味如何让飞蝗从康复转向风险
+    url: https://news.sciencenet.cn/htmlnews/2026/11/575064.shtm
     source: 科学网新闻
     category: Science & research
-  - title: China’s October Energy Output
-    title_zh: 国家统计局发布2026年10月能源生产数据
-    url: https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965837.html
-    source: 国家统计局
-    category: Business & economy
-  - title: US Bank Customers Report Service Disruptions
-    title_zh: 美国多家主要银行客户报告服务中断
-    url: https://www.bbc.co.uk/news/articles/cj752wvqneq6o
-    source: BBC News Business
-    category: Business & economy
-  - title: Wireless Near-Infrared Switch for Neural Activity
-    title_zh: 无线近红外“开关”调控小鼠神经活动
-    url: https://www.cas.cn/syky/202611/t20261117_5124408.shtml
-    source: 中国科学院科研进展
-    category: Science & research
-  - title: Researchers report a more stable methanol-to-hydrogen catalyst
-    title_zh: 中国科学院团队报告更稳定的甲醇制氢催化剂
-    url: https://www.cas.cn/syky/202611/t20261112_5124098.shtml
-    source: 中国科学院科研进展
-    category: Science & research
-  - title: China Parcel Volume Exceeds 17 Billion for Two Months
-    title_zh: 中国快递业务量连续两个月超170亿件
-    url: https://www.chinanews.com.cn/cj/2026/11-17/10733362.shtml
-    source: 中国新闻网财经
-    category: Business & economy
-  highlights_ai:
-  - title: Open-weight models gain a unified serving route
-    title_zh: 开放权重模型获得统一调用路径
-    url: https://huggingface.co/blog/openrouter
-    source: Hugging Face
-    category: AI tools & model releases
-  - title: Ask Maps adds trip planning and appointment search
-    title_zh: Ask Maps新增行程规划与预约搜索
-    url: https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026
-    source: Google AI
-    category: AI tools & model releases
-  - title: Inkling 2 Mini Targets Local AI
-    title_zh: Inkling 2 Mini面向本地人工智能部署
-    url: https://huggingface.co/blog/inkling2mini
-    source: Hugging Face
-    category: AI tools & model releases
-- week: 2026-W48
-  start: '2026-11-23'
-  end: '2026-11-29'
-  issues:
-  - '2026-11-23'
-  highlights_news:
-  - title: Salt Lake Lithium Project Reports Stable Output
-    title_zh: 察尔汗盐湖锂项目产量与工艺优化进展
-    url: https://www.chinanews.com.cn/cj/2026/11-22/10736161.shtml
-    source: 中国新闻网财经
-    category: Business & economy
-  - title: U.S. Pizza Chains Face Demand Pressure
-    title_zh: 美国披萨连锁面临需求压力
-    url: https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html
-    source: CNBC Business
-    category: Business & economy
-  - title: Genetic lineages reshape pine conservation
-    title_zh: 华南五针松复合体保护研究重新界定遗传谱系
-    url: https://www.cas.cn/syky/202611/t20261118_5124531.shtml
-    source: 中国科学院科研进展
-    category: Science & research
-  - title: Arctic Laser Station Advances Satellite Tracking
-    title_zh: 北极激光测距站推进卫星跟踪
-    url: https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world
-    source: NASA
-    category: Science & research
-  - title: A Smaller AI Model for Analog Chip Design
-    title_zh: 更小的模型协助模拟芯片设计
-    url: https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123
+  - title: Physics-Constrained AI Keeps Chaotic Models Bounded
+    title_zh: 物理约束让混沌人工智能模型保持有界
+    url: https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120
     source: MIT News
+    category: Science & research
+  - title: Researchers Advance Low-Cost Sodium-Ion Cathode
+    title_zh: 中国科学院：低成本钠离子电池复合磷酸盐正极取得进展
+    url: https://www.cas.cn/syky/202611/t20261111_5124017.shtml
+    source: 中国科学院科研进展
     category: Science & research
   highlights_ai: []

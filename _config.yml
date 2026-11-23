@@ -176,6 +176,7 @@ exclude:
   - server/
   - infra/
   - _audit/
+  - tmp/
   - 教育技术小游戏展示/
   - CONTRIBUTING.md
   - CUSTOMIZE.md

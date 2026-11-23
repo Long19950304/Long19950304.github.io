@@ -116,25 +116,6 @@
       "conference_date": ""
     },
     {
-      "project_id": "20260105-agenda-translation-on-platforms-digital-capacity-as-state-communication-capacity-in-local-government-health-messaging-165ebb",
-      "title": "Agenda Translation on Platforms: Digital Capacity as State Communication Capacity in Local Government Health Messaging",
-      "type": "journal_article",
-      "stage": "submitted",
-      "kind": "paper",
-      "target_venue": "Policy & Internet",
-      "year": 2026,
-      "updated_at": "2026-01-06T12:54:49+00:00",
-      "one_liner": "When national health attention rises, local governments do not respond uniformly on platforms; pre-period digital capacity predicts which cities translate national agenda signals into local health information supply.",
-      "published_url": "",
-      "published_doi": "",
-      "preprint_url": "",
-      "preprint_doi": "",
-      "conference_name": "",
-      "conference_host": "",
-      "conference_city": "",
-      "conference_date": ""
-    },
-    {
       "project_id": "long1-desk1-johppl-catch-up-under-constraint",
       "title": "Catch-up under Constraint: Subnational Equalization in Reform-Era China’s Public Health Spending and Capacity, 2007–2021",
       "type": "journal_article",
@@ -220,25 +201,6 @@
       "year": 2025,
       "updated_at": "2026-01-06T14:10:29+00:00",
       "one_liner": "Staggered adoption (LCCP) event-study + robustness; city-year panel 2001–2023",
-      "published_url": "",
-      "published_doi": "",
-      "preprint_url": "",
-      "preprint_doi": "",
-      "conference_name": "",
-      "conference_host": "",
-      "conference_city": "",
-      "conference_date": ""
-    },
-    {
-      "project_id": "long1-desk1-paradox-foreign-media-domestic-trust",
-      "title": "The Paradox of Foreign Media Increasing Domestic Trust: The Mediating Role of Political and Economic Awareness in Developmental Governance Contexts",
-      "type": "journal_article",
-      "stage": "submitted",
-      "kind": "paper",
-      "target_venue": "Policy & Internet",
-      "year": 2025,
-      "updated_at": "2026-01-06T15:19:53+00:00",
-      "one_liner": "The Paradox of Foreign Media Increasing Domestic Trust: The Mediating Role of Political and Economic Awareness in Developmental Governance Contexts (status: submitted; target: Policy & Internet).",
       "published_url": "",
       "published_doi": "",
       "preprint_url": "",
@@ -532,25 +494,6 @@
       "conference_host": "ICA",
       "conference_city": "Paris",
       "conference_date": "2022-04-17"
-    },
-    {
-      "project_id": "long1-desk1-conf-gba-culture-comm-2021-macau-media-identity",
-      "title": "澳门居民媒体使用与国族认同间的相关关系模型",
-      "type": "other",
-      "stage": "archived",
-      "kind": "conference_paper",
-      "target_venue": "首届粤港澳大湾区中国文化传播论坛",
-      "year": null,
-      "updated_at": "2026-01-07T04:22:40+00:00",
-      "one_liner": "",
-      "published_url": "",
-      "published_doi": "",
-      "preprint_url": "",
-      "preprint_doi": "",
-      "conference_name": "首届粤港澳大湾区中国文化传播论坛",
-      "conference_host": "Jinan University",
-      "conference_city": "Guangzhou",
-      "conference_date": "2021-11-06"
     }
   ]
 }

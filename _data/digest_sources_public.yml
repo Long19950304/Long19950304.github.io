@@ -17,14 +17,6 @@ sources:
     event
   available: true
   initial_candidates: 9
-- id: bbc-business
-  name: BBC News Business
-  group: economy
-  url: https://feeds.bbci.co.uk/news/business/rss.xml
-  description_zh: 国际公共媒体商业报道；须读取原文
-  description: International public-service business reporting; full article required
-  available: true
-  initial_candidates: 2
 - id: bea-data
   name: U.S. Bureau of Economic Analysis
   group: economy
@@ -186,22 +178,6 @@ sources:
   description: Maintainer/vendor primary publication; performance claims attributed
   available: true
   initial_candidates: 0
-- id: cbc-business
-  name: CBC Business
-  group: economy
-  url: https://www.cbc.ca/webfeed/rss/rss-business
-  description_zh: 国际公共媒体财经报道；须读取原文
-  description: Public-service economic reporting; full article required
-  available: true
-  initial_candidates: 1
-- id: npr-business
-  name: NPR Business
-  group: economy
-  url: https://feeds.npr.org/1006/rss.xml
-  description_zh: 国际公共媒体财经报道；须读取原文
-  description: Public-service economic reporting; full article required
-  available: true
-  initial_candidates: 0
 - id: streamlit-streamlit
   name: Streamlit releases
   group: technology
@@ -242,87 +218,6 @@ sources:
   description: Developer release notes; scope and changes checked
   available: true
   initial_candidates: 0
-- id: bbc-tech
-  name: BBC Technology
-  group: technology
-  url: https://feeds.bbci.co.uk/news/technology/rss.xml
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 0
-- id: bbc-science
-  name: BBC Science & Environment
-  group: technology
-  url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 5
-- id: npr-tech
-  name: NPR Technology
-  group: technology
-  url: https://feeds.npr.org/1019/rss.xml
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 0
-- id: npr-science
-  name: NPR Science
-  group: technology
-  url: https://feeds.npr.org/1007/rss.xml
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 1
-- id: cbc-tech
-  name: CBC Technology & Science
-  group: technology
-  url: https://www.cbc.ca/webfeed/rss/rss-technology
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 1
-- id: guardian-science
-  name: The Guardian Science
-  group: technology
-  url: https://www.theguardian.com/science/rss
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 1
-- id: guardian-tech
-  name: The Guardian Technology
-  group: technology
-  url: https://www.theguardian.com/uk/technology/rss
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 3
-- id: sciencedaily
-  name: ScienceDaily
-  group: technology
-  url: https://www.sciencedaily.com/rss/top/science.xml
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 4
-- id: sciencealert
-  name: ScienceAlert
-  group: technology
-  url: https://www.sciencealert.com/feed
-  description_zh: 科技与研究报道；区分论文结果、机构主张与媒体解释
-  description: Science and technology reporting; distinguish findings, institutional
-    claims and interpretation
-  available: true
-  initial_candidates: 9
 - id: nasa
   name: NASA
   group: technology
@@ -367,24 +262,6 @@ sources:
   description: Developer primary reporting; capabilities and outcomes attributed
   available: true
   initial_candidates: 0
-- id: guardian-business
-  name: The Guardian Business
-  group: economy
-  url: https://www.theguardian.com/business/rss
-  description_zh: 通讯社或成熟新闻机构财经报道；读取全文并核对统计口径
-  description: News-agency or established-newsroom economic reporting; full text and
-    data definitions checked
-  available: true
-  initial_candidates: 0
-- id: cnbc-business
-  name: CNBC Business
-  group: economy
-  url: https://www.cnbc.com/id/10001147/device/rss/rss.html
-  description_zh: 通讯社或成熟新闻机构财经报道；读取全文并核对统计口径
-  description: News-agency or established-newsroom economic reporting; full text and
-    data definitions checked
-  available: true
-  initial_candidates: 2
 - id: chinanews-finance
   name: 中国新闻网财经
   group: economy
@@ -412,12 +289,3 @@ sources:
     advice
   available: true
   initial_candidates: 5
-- id: dw-business
-  name: DW Business
-  group: economy
-  url: https://rss.dw.com/rdf/rss-en-bus
-  description_zh: 德国公共媒体商业报道；须读取正文并复核选题范围
-  description: German public-service business reporting; full evidence and topic review
-    required
-  available: true
-  initial_candidates: 0

@@ -60,76 +60,6 @@
       
     
       
-        {
-  url: "/zh/digest/sources/",
-  lang: "zh",
-  title: "简报来源与筛选说明",
-  description: "国内外财经与科技简报的信息来源、选题边界和核验方法。",
-  group: "pages",
-},
-
-      
-    
-      
-        {
-  url: "/digest/sources/",
-  lang: "en",
-  title: "Digest sources and editorial checks",
-  description: "Sources, topic boundaries and verification for the China and world economy, technology and research briefing.",
-  group: "pages",
-},
-
-      
-    
-      
-        {
-  url: "/zh/digest/weekly/",
-  lang: "zh",
-  title: "每周简报",
-  description: "每周汇总：将每日简报中的重点条目按周聚合，便于回顾与收藏。",
-  group: "pages",
-},
-
-      
-    
-      
-        {
-  url: "/digest/weekly/",
-  lang: "en",
-  title: "Weekly Digest",
-  description: "A weekly roll-up of the most important items across my daily digests.",
-  group: "pages",
-},
-
-      
-    
-      
-        {
-  url: "/zh/digest/",
-  lang: "zh",
-  title: "简报",
-  description: "国内外财经、科技与研究简报，提供中英文音频、权威报道和原始公告。",
-  group: "pages",
-},
-
-      
-    
-      
-        {
-  url: "/digest/",
-  lang: "en",
-  title: "Digest",
-  description: "A daily China and world economy, technology and research briefing, with Chinese and English audio, authoritative reporting and original releases.",
-  group: "pages",
-},
-
-      
-    
-      
-    
-      
-    
-      
     
       
         {
@@ -393,261 +323,7 @@
     
     
       
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            {
-  url: "/digest/2026-11-06/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-06",
-  description: "Shandong’s Yellow River Cities Combine Smart Manufacturing with Green Energy · ECB Publishes Consolidated EU Banking Data for End-June 2026 · NVIDIA Adds Four Open-Weight Cosmos 3 Simulation Checkpoints",
-  group: "digests",
-},
-
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            {
-  url: "/digest/2026-11-21/",
-  lang: "en",
-  title: "Daily Economy, Technology \u0026 Research Brief · 2026-11-21",
-  description: "AI and China’s Smart Factories · U.S. Multinational Employment and Investment Rose in 2024 · How a Wound Scent Switches Locusts from Recovery to Risk",
-  group: "digests",
-},
-
-          
-        
-          
-        
-          
-        
-      
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            {
-  url: "/zh/digest/2026-11-06/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-06",
-  description: "山东沿黄城市推进智能制造与绿色能源；欧洲央行发布截至2026年6月底的欧盟银行合并数据；英伟达为Cosmos 3新增四个开放权重模拟检查点",
-  group: "digests_zh",
-},
-
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            {
-  url: "/zh/digest/2026-11-21/",
-  lang: "zh",
-  title: "每日财经、科技与研究简报 · 2026-11-21",
-  description: "人工智能与中国智能工厂；美国跨国公司2024年就业与投资增长；伤口气味如何让飞蝗从康复转向风险",
-  group: "digests_zh",
-},
-
-          
-        
-          
-        
-          
-        
-      
-    
-      
-    
-      
-    
-      
-        
-          
-            {
+        {
   url: "/projects/1_project/",
   lang: "en",
   title: "AI for Social Science",
@@ -655,10 +331,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/zh/projects/1_project/",
   lang: "zh",
   title: "AI for Social Science",
@@ -666,10 +342,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/projects/2_project/",
   lang: "en",
   title: "Reliable LLM-Assisted Qualitative Analysis",
@@ -677,10 +353,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/zh/projects/2_project/",
   lang: "zh",
   title: "LLM 辅助质性分析的可靠性",
@@ -688,10 +364,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/projects/3_project/",
   lang: "en",
   title: "Health and Public Communication",
@@ -699,10 +375,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/zh/projects/3_project/",
   lang: "zh",
   title: "健康与公共传播",
@@ -710,10 +386,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/projects/4_project/",
   lang: "en",
   title: "Generative AI in Media Production",
@@ -721,10 +397,10 @@
   group: "projects",
 },
 
-          
-        
-          
-            {
+      
+    
+      
+        {
   url: "/zh/projects/4_project/",
   lang: "zh",
   title: "生成式 AI 与影像创作",
@@ -732,23 +408,20 @@
   group: "projects",
 },
 
-          
-        
       
     
   ];
   const sections = zh
-    ? { pages: '网站页面', projects: '研究方向', digests: '每日简报', digests_zh: '每日简报' }
-    : { pages: 'Pages', projects: 'Research areas', digests: 'Daily digest', digests_zh: 'Daily digest' };
+    ? { pages: '网站页面', projects: '研究方向' }
+    : { pages: 'Pages', projects: 'Research areas' };
   
-  const socials = {"email":"zhilongzhao@wyu.edu.cn","github_username":"Long19950304","orcid_id":"0000-0002-3771-4969","rss_icon":true,"scholar_userid":"U-FdkpMAAAAJ"};
+  const socials = {"email":"zhilongzhao@wyu.edu.cn","github_username":"Long19950304","orcid_id":"0000-0002-3771-4969","scholar_userid":"U-FdkpMAAAAJ"};
   const contact = (title, url) => entries.push({ title, url, lang, group: 'contact', description: '' });
   sections.contact = zh ? '联系与学术主页' : 'Contact and profiles';
   if (socials.email) contact(zh ? '邮箱' : 'Email', 'mailto:' + socials.email);
   if (socials.scholar_userid) contact('Google Scholar', 'https://scholar.google.com/citations?user=' + encodeURIComponent(socials.scholar_userid));
   if (socials.orcid_id) contact('ORCID', 'https://orcid.org/' + encodeURIComponent(socials.orcid_id));
   if (socials.github_username) contact('GitHub', 'https://github.com/' + encodeURIComponent(socials.github_username));
-  if (socials.rss_icon) contact(zh ? '订阅每日简报 RSS' : 'Daily digest RSS', (zh ? '/zh' : '') + '/digest/feed.xml');
   
   ninja.data = entries.filter(item => item.lang === lang).map(item => ({
     id: item.url,

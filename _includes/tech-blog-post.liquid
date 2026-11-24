@@ -11,14 +11,7 @@
     <track kind="captions" srclang="zh" label="简体中文" src="{{ post.media | append: '.vtt' | relative_url }}">
     <a href="{{ post.media | append: '.mp4' | relative_url }}">{% if lang == 'zh' %}打开视频{% else %}Open the video{% endif %}</a>
   </video>
-  <div class="tech-actions">
-    <span class="tech-meta" data-tech-views hidden>{% if lang == 'zh' %}浏览{% else %}Views{% endif %} <span data-tech-view-count></span></span>
-    <button class="tech-button" type="button" data-tech-like aria-pressed="false" disabled>
-      <span data-tech-like-label>{% if lang == 'zh' %}点赞{% else %}Like{% endif %}</span> <span data-tech-like-count></span>
-    </button>
-    <a href="#comments">{% if lang == 'zh' %}留言{% else %}Comments{% endif %} <span data-tech-comment-count></span></a>
-  </div>
-  <p class="tech-meta tech-status" data-tech-action-status role="status"></p>
+  <a class="tech-comment-link" href="#comments">{% if lang == 'zh' %}留言{% else %}Comments{% endif %}</a>
 
   <section class="tech-notes" aria-labelledby="tech-guide">
     <h2 id="tech-guide">{% if lang == 'zh' %}跟着做{% else %}Follow along{% endif %}</h2>
@@ -52,7 +45,7 @@
     <p class="tech-meta tech-status" id="tech-comment-status" data-tech-status role="status"></p>
     <div class="tech-comment-list" data-tech-list></div>
     <button class="tech-button" type="button" data-tech-more hidden>{% if lang == 'zh' %}查看更早的留言{% else %}Load earlier comments{% endif %}</button>
-    <noscript><p>{% if lang == 'zh' %}开启 JavaScript 后可点赞和留言。{% else %}Enable JavaScript to like or comment.{% endif %}</p></noscript>
+    <noscript><p>{% if lang == 'zh' %}开启 JavaScript 后可留言。{% else %}Enable JavaScript to comment.{% endif %}</p></noscript>
   </section>
 </div>
 <script defer src="{{ '/assets/js/tech-blog.js' | relative_url | bust_file_cache }}"></script>

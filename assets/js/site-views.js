@@ -7,8 +7,10 @@
     if (!Number.isSafeInteger(data.total) || !Number.isSafeInteger(data.initial_base) ||
         !Number.isSafeInteger(data.observed) || data.initial_base < 0 || data.observed < 0 ||
         data.total !== data.initial_base + data.observed) return;
+    const total = counter.querySelector('[data-view-total]');
+    if (!total) return;
     const locale = counter.dataset.locale === 'zh' ? 'zh-CN' : 'en-US';
-    counter.querySelector('[data-view-total]').textContent = data.total.toLocaleString(locale);
+    total.textContent = data.total.toLocaleString(locale);
     counter.hidden = false;
   };
 

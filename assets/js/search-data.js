@@ -316,6 +316,50 @@
       
     
       
+        {
+  url: "/zh/tech-blog/trae-windows-getting-started/",
+  lang: "zh",
+  title: "TRAE 国内版：Windows 下载、安装与第一次使用",
+  description: "跟着视频完成第一个小练习，无需编程基础。",
+  group: "pages",
+},
+
+      
+    
+      
+        {
+  url: "/tech-blog/trae-windows-getting-started/",
+  lang: "en",
+  title: "TRAE on Windows — from download to your first project",
+  description: "A beginner’s video guide to the Chinese edition of TRAE.",
+  group: "pages",
+},
+
+      
+    
+      
+        {
+  url: "/zh/tech-blog/",
+  lang: "zh",
+  title: "技术博客",
+  description: "分享用得上的技术工具与应用，记录它们如何帮助教学、研究和日常工作。",
+  group: "pages",
+},
+
+      
+    
+      
+        {
+  url: "/tech-blog/",
+  lang: "en",
+  title: "Tech Blog",
+  description: "Practical videos on using technology for teaching, research, and everyday work.",
+  group: "pages",
+},
+
+      
+    
+      
     
       
     

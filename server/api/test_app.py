@@ -83,7 +83,7 @@ class ShowcaseAPI(unittest.TestCase):
         cls.patches = [
             patch.object(app, 'review', return_value=(200, 'approved')),
             patch.object(app, 'PUBLIC_WORKS', dict.fromkeys(['one','two','validation','likes-test','saved-like','hourly-like','another-game',
-                'test-video','test-play'] + [f'review-{i}' for i in range(27)], 'game')),
+                'test-video'] + [f'review-{i}' for i in range(27)], 'game')),
         ]
         for p in cls.patches: p.start()
         app.db().close()
@@ -145,14 +145,6 @@ class ShowcaseAPI(unittest.TestCase):
         with patch.object(app, 'review') as gate:
             self.assertEqual(self.request('POST', 'private-work/comments', {'text':'不应审核'})[0],404)
             gate.assert_not_called()
-
-    def test_activity_uses_existing_browser_identity_and_deduplicates(self):
-        origin = app.STUDIO_ORIGIN
-        self.assertEqual(self.request('POST', 'test-play/activity', {}, origin=origin), (200, {'total':1}))
-        self.assertEqual(self.request('POST', 'test-play/activity', {}, origin=origin), (200, {'total':1}))
-        self.assertEqual(self.request('POST', 'test-play/activity', {}, visitor='b' * 32), (200, {'total':2}))
-        self.assertEqual(self.request('POST', 'missing/activity', {}, origin=origin)[0],404)
-        self.assertEqual(self.request('GET', 'activity')[1]['activity']['test-play'],2)
 
     def test_pagination_isolated_by_game_and_text_kept_as_data(self):
         with app.db() as con:

@@ -43,12 +43,6 @@ def db():
         CREATE INDEX IF NOT EXISTS comments_game ON comments(game_id, id DESC);
         CREATE INDEX IF NOT EXISTS comments_rate ON comments(client_hash, created_at);
         CREATE INDEX IF NOT EXISTS comments_visitor_rate ON comments(visitor_id, created_at);
-        CREATE TABLE IF NOT EXISTS work_activity (
-            game_id TEXT PRIMARY KEY, total INTEGER NOT NULL DEFAULT 0);
-        CREATE TABLE IF NOT EXISTS work_activity_receipts (
-            game_id TEXT NOT NULL, actor TEXT NOT NULL, created_at INTEGER NOT NULL,
-            PRIMARY KEY (game_id, actor));
-        CREATE INDEX IF NOT EXISTS activity_receipts_time ON work_activity_receipts(created_at);
         CREATE TABLE IF NOT EXISTS site_views (
             singleton INTEGER PRIMARY KEY CHECK (singleton=1),
             initial_base INTEGER NOT NULL CHECK (initial_base>=0),
@@ -132,18 +126,13 @@ class Handler(BaseHTTPRequestHandler):
             if path == '/api/v1/site/views':
                 self.send_json(200, view_totals(con))
                 return
-            if path == '/api/v1/games/activity':
-                counts = dict(con.execute('SELECT game_id, total FROM work_activity'))
-                self.send_json(200, {'activity': {k: counts.get(k, 0) for k in PUBLIC_WORKS}},
-                               visitor=None if cookie(self.headers) else secrets.token_urlsafe(24))
-                return
             if path in ('/api/v1/games/likes', '/api/v1/games/comments'):
                 table = 'likes' if path.endswith('/likes') else 'comments'
                 counts = {r[0]: r[1] for r in con.execute(f'SELECT game_id, COUNT(*) FROM {table} GROUP BY game_id')}
                 payload = {table: counts}
                 if table == 'likes':
                     payload['liked'] = [r[0] for r in con.execute('SELECT game_id FROM likes WHERE visitor_id=?', (cookie(self.headers),))]
-                self.send_json(200, payload)
+                self.send_json(200, payload, visitor=secrets.token_urlsafe(24) if table == 'likes' and not cookie(self.headers) else None)
                 return
             match = re.fullmatch(r'/api/v1/games/([^/]+)/comments', path)
             if not match:
@@ -220,7 +209,7 @@ class Handler(BaseHTTPRequestHandler):
             finally:
                 con.close()
             return
-        match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments|activity)(?:/(\d+))?', path)
+        match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments)(?:/(\d+))?', path)
         if not match:
             self.send_json(404, {'error': 'not_found'})
             return
@@ -231,17 +220,7 @@ class Handler(BaseHTTPRequestHandler):
         visitor = cookie(self.headers) or secrets.token_urlsafe(24)
         con = db()
         try:
-            if action == 'activity' and add and not comment_id:
-                now = int(time.time())
-                actor = opaque(visitor)
-                con.execute('BEGIN IMMEDIATE')
-                con.execute('DELETE FROM work_activity_receipts WHERE created_at<=?', (now - 1800,))
-                if con.execute('INSERT OR IGNORE INTO work_activity_receipts VALUES (?,?,?)', (game_id, actor, now)).rowcount:
-                    con.execute('INSERT INTO work_activity VALUES (?,1) ON CONFLICT (game_id) DO UPDATE SET total=total+1', (game_id,))
-                count = con.execute('SELECT total FROM work_activity WHERE game_id=?', (game_id,)).fetchone()[0]
-                con.commit()
-                self.send_json(200, {'total': count}, visitor)
-            elif action == 'like' and not comment_id:
+            if action == 'like' and not comment_id:
                 if add:
                     con.execute('INSERT OR IGNORE INTO likes(game_id, visitor_id) VALUES (?,?)', (game_id, visitor))
                 else:

@@ -13,8 +13,6 @@ Dependency-free Python API. One anonymous cookie visitor can like or unlike each
 - `POST /api/v1/games/{game_id}/comments` — JSON `{"text":"..."}`; new comments always display as anonymous
 - `DELETE /api/v1/games/{game_id}/comments/{id}` — the visitor can delete their own comment
 
-- `GET /api/v1/games/activity` — combined game launch / video playback totals across both websites
-- `POST /api/v1/games/{game_id}/activity` — one count per browser and work per 30 minutes; no historical baseline
 
 All public writes require a work in `public_works.json`. Existing comments keep their attribution.
 New comments are limited to 600 characters. The server sends only the comment text to MiniMax, and stores it

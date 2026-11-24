@@ -24,7 +24,6 @@
           <div class="student-video__actions">
             <button class="game-like" type="button" data-video-like data-game-id="student-video-{{ video.id }}" aria-label="{% if is_zh %}喜欢{% else %}Like{% endif %} {{ video.title[video_lang] | escape }}" aria-pressed="false">♡ <span data-like-count>{% if is_zh %}喜欢{% else %}Like{% endif %}</span></button>
             <button type="button" data-comments-open data-game-id="student-video-{{ video.id }}" data-game-title="{{ video.title[video_lang] | escape }}">{% if is_zh %}评论{% else %}Comments{% endif %} <span data-comment-count>0</span></button>
-          <small class="coursework-activity" title="{% if page.lang == 'zh' %}自功能上线起统计{% else %}Counted since this feature launched{% endif %}" hidden>{% if is_zh %}播放{% else %}Views{% endif %} <span data-work-activity>0</span></small>
           </div>
           <span class="game-like-feedback" data-like-feedback role="status" hidden></span>
         </div>
@@ -34,5 +33,3 @@
 </div>
 {% include coursework-comments.liquid kind='video' %}
 <script defer src="{{ '/assets/js/student-videos.js' | relative_url | bust_file_cache }}"></script>
-
-<script src="{{ '/assets/js/coursework-activity.js' | relative_url | bust_file_cache }}" defer></script>

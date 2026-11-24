@@ -10,10 +10,19 @@ Dependency-free Python API. One anonymous cookie visitor can like or unlike each
 - `DELETE /api/v1/games/{game_id}/like`
 - `GET /api/v1/games/comments` — comment counts by game
 - `GET /api/v1/games/{game_id}/comments?before={id}` — latest 20, with an earlier-page cursor
-- `POST /api/v1/games/{game_id}/comments` — JSON `{"name":"","text":"..."}`; empty name means anonymous
+- `POST /api/v1/games/{game_id}/comments` — JSON `{"text":"..."}`; new comments always display as anonymous
 - `DELETE /api/v1/games/{game_id}/comments/{id}` — the visitor can delete their own comment
 
-Names are limited to 40 characters and comments to 600. Comments are public. The browser renders names and messages as text, including any HTML-like input. Posts are limited to one per 20 seconds per visitor on the same game, and 120 per hour per visitor across games. Different games can be reviewed consecutively. Rate-limit responses report the actual retry time. Nginx supplies the client address; the database stores its hash. No login or student ID is required.
+- `GET /api/v1/games/activity` — combined game launch / video playback totals across both websites
+- `POST /api/v1/games/{game_id}/activity` — one count per browser and work per 30 minutes; no historical baseline
+
+All public writes require a work in `public_works.json`. Existing comments keep their attribution.
+New comments are limited to 600 characters. The server sends only the comment text to MiniMax, and stores it
+only after explicit approval. Refusals and provider errors are not published. Independent per-visitor,
+per-network and global review limits apply before the model call, including to rejected attempts.
+Add backend-only `MINIMAX_MODERATION_KEY` and `COURSEWORK_GATE_KEY` as a root-owned systemd
+environment file. The studio uses the same gate credential for its loopback review requests.
+Never put these values in the repository or browser. Keep the public work manifest in sync with the teaching galleries.
 
 The existing SQLite database gains a comments table automatically; existing likes remain intact. Keep `/var/lib/zhaozhilong` across releases and back up the database with SQLite's backup command before replacing the API. Never place it in the public web root.
 

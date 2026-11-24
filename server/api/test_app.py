@@ -80,6 +80,12 @@ class ShowcaseAPI(unittest.TestCase):
         cls.temp = tempfile.TemporaryDirectory()
         app.DB_PATH = str(Path(cls.temp.name) / 'test.sqlite3')
         app.ORIGIN = 'https://www.example.com'
+        cls.patches = [
+            patch.object(app, 'review', return_value=(200, 'approved')),
+            patch.object(app, 'PUBLIC_WORKS', dict.fromkeys(['one','two','validation','likes-test','saved-like','hourly-like','another-game',
+                'test-video','test-play'] + [f'review-{i}' for i in range(27)], 'game')),
+        ]
+        for p in cls.patches: p.start()
         app.db().close()
         cls.server = app.ThreadingHTTPServer(('127.0.0.1', 0), app.Handler)
         cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
@@ -90,6 +96,7 @@ class ShowcaseAPI(unittest.TestCase):
         cls.server.shutdown()
         cls.server.server_close()
         cls.thread.join()
+        for p in reversed(cls.patches): p.stop()
         cls.temp.cleanup()
 
     def request(self, method, path, body=None, visitor='a' * 32, client='test', origin=None):
@@ -105,14 +112,14 @@ class ShowcaseAPI(unittest.TestCase):
         con.close()
         return value
 
-    def test_anonymous_named_persistence_and_owner_deletion(self):
+    def test_anonymous_persistence_and_owner_deletion(self):
         for game, name, visitor in [('one', '', 'a' * 32), ('two', '试玩同学', 'b' * 32)]:
             status, data = self.request('POST', game + '/comments', {'name': name, 'text': '操作顺畅\n建议增加提示'}, visitor, game)
             self.assertEqual(status, 201)
             comment_id = data['comment']['id']
             # Read from a fresh connection; author and content survive.
             _, data = self.request('GET', game + '/comments', visitor=visitor)
-            self.assertEqual(data['comments'][0]['name'], name)
+            self.assertEqual(data['comments'][0]['name'], '')
             self.assertTrue(data['comments'][0]['own'])
             self.assertEqual(data['comments'][0]['text'], '操作顺畅\n建议增加提示')
             self.assertEqual(self.request('DELETE', game + '/comments/' + str(comment_id), visitor='c' * 32)[0], 403)
@@ -120,7 +127,7 @@ class ShowcaseAPI(unittest.TestCase):
             self.assertEqual(self.request('GET', game + '/comments')[1]['comments'], [])
 
     def test_validation_origin_and_rate_limit(self):
-        for body in [{'text': ' '}, {'name': '名' * 41, 'text': 'ok'}, {'text': 'a' * 601}, {'text': []}]:
+        for body in [{'text': ' '}, {'text': 'a' * 601}, {'text': []}]:
             self.assertEqual(self.request('POST', 'validation/comments', body)[0], 400)
         self.assertEqual(self.request('POST', 'validation/comments', {'text': 'ok'}, origin='https://other.example')[0], 403)
         self.assertEqual(self.request('POST', 'validation/comments', {'text': 'ok'}, client='rate')[0], 201)
@@ -128,6 +135,24 @@ class ShowcaseAPI(unittest.TestCase):
         # A second student on the classroom network can still post.
         self.assertEqual(self.request('POST', 'validation/comments', {'text': 'another student'}, visitor='d' * 32, client='rate')[0], 201)
         self.assertEqual(self.request('GET', 'validation/comments?before=bad')[0], 400)
+
+    def test_moderation_rejections_and_outages_never_write(self):
+        for code,error in [(422,'comment_not_approved'),(503,'review_unavailable')]:
+            with patch.object(app, 'review', return_value=(code,error)) as gate:
+                self.assertEqual(self.request('POST', 'test-video/comments', {'text':'未发布的示例'})[0], code)
+                gate.assert_called_once()
+        self.assertEqual(self.request('GET', 'test-video/comments')[1]['comments'], [])
+        with patch.object(app, 'review') as gate:
+            self.assertEqual(self.request('POST', 'private-work/comments', {'text':'不应审核'})[0],404)
+            gate.assert_not_called()
+
+    def test_activity_uses_existing_browser_identity_and_deduplicates(self):
+        origin = app.STUDIO_ORIGIN
+        self.assertEqual(self.request('POST', 'test-play/activity', {}, origin=origin), (200, {'total':1}))
+        self.assertEqual(self.request('POST', 'test-play/activity', {}, origin=origin), (200, {'total':1}))
+        self.assertEqual(self.request('POST', 'test-play/activity', {}, visitor='b' * 32), (200, {'total':2}))
+        self.assertEqual(self.request('POST', 'missing/activity', {}, origin=origin)[0],404)
+        self.assertEqual(self.request('GET', 'activity')[1]['activity']['test-play'],2)
 
     def test_pagination_isolated_by_game_and_text_kept_as_data(self):
         with app.db() as con:

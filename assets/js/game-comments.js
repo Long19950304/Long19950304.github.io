@@ -10,7 +10,6 @@
   var status = dialog.querySelector('[data-comments-status]');
   var more = dialog.querySelector('[data-comments-more]');
   var submit = form.querySelector('[type="submit"]');
-  var name = form.elements.name;
   var text = form.elements.text;
   var active = null, next = null, generation = 0;
 
@@ -28,6 +27,9 @@
     return data;
   }
   function errorText(error) {
+    if (error.message === 'comment_not_approved') return message('这条评论未通过审核。请围绕作品，友善表达，并避免透露个人信息。', 'This comment did not pass review. Please keep feedback respectful, relevant and free of personal information.');
+    if (error.message === 'review_unavailable') return message('审核暂时不可用，评论未发布，请稍后再试。', 'Review is temporarily unavailable. Your comment was not posted. Please try again later.');
+    if (error.message === 'review_rate_limit') return message('评论提交太频繁，请稍后再试。', 'Too many submissions. Please try again shortly.');
     if (error.status === 429) {
       var seconds = Math.max(1, Math.ceil(error.retryAfter));
       var wait = seconds < 60 ? message(seconds + ' 秒', seconds + ' seconds') : message(Math.ceil(seconds / 60) + ' 分钟', Math.ceil(seconds / 60) + ' minutes');
@@ -98,20 +100,12 @@
       more.textContent = message('重新加载', 'Try again');
     } finally { if (version === generation) more.disabled = false; }
   }
-  function updateIdentity() {
-    var named = form.elements.identity.value === 'named';
-    dialog.querySelector('[data-comments-name-wrap]').hidden = !named;
-    name.disabled = !named;
-    name.required = named;
-  }
-  form.addEventListener('change', updateIdentity);
   document.querySelectorAll('[data-comments-open]').forEach(function (button) {
     button.addEventListener('click', function () {
       generation++;
       active = button.dataset.gameId;
       next = null;
       form.reset();
-      updateIdentity();
       list.replaceChildren();
       more.hidden = true;
       dialog.querySelector('[data-comments-title]').textContent = button.dataset.gameTitle;
@@ -125,12 +119,12 @@
   more.addEventListener('click', function () { load(!!next); });
   form.addEventListener('submit', async function (event) {
     event.preventDefault();
-    if (!text.value.trim() || (form.elements.identity.value === 'named' && !name.value.trim())) { form.reportValidity(); return; }
+    if (!text.value.trim()) { form.reportValidity(); return; }
     var id = active, version = generation;
     submit.disabled = true;
-    status.textContent = message('正在发布…', 'Posting…');
+    status.textContent = message('正在审核评论…', 'Reviewing your comment…');
     try {
-      var data = await request(endpoint(id), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: name.disabled ? '' : name.value.trim(), text: text.value.trim() }) });
+      var data = await request(endpoint(id), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: text.value.trim() }) });
       if (version === generation) {
         generation++;
         render(data.comment, true);

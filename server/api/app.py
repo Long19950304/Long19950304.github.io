@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """Persistent likes and comments for course showcases; standard library only."""
-import hashlib
+import hmac
 import json
 import os
 import re
 import secrets
 import sqlite3
 import time
+from pathlib import Path
+
+from moderation import opaque, review, valid_comment
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, unquote, urlparse
 
 DB_PATH = os.environ.get('LIKES_DB', '/var/lib/zhaozhilong/likes.sqlite3')
 ORIGIN = os.environ.get('CORS_ORIGIN', 'https://www.zhaozhilong.com')
+STUDIO_ORIGIN = 'https://class.zhaozhilong.com'
+PUBLIC_WORKS = json.loads(Path(__file__).with_name('public_works.json').read_text())
 HOST = os.environ.get('API_HOST', '127.0.0.1')
 PORT = int(os.environ.get('API_PORT', '8080'))
 COMMENT_INTERVAL = 20
@@ -38,6 +43,12 @@ def db():
         CREATE INDEX IF NOT EXISTS comments_game ON comments(game_id, id DESC);
         CREATE INDEX IF NOT EXISTS comments_rate ON comments(client_hash, created_at);
         CREATE INDEX IF NOT EXISTS comments_visitor_rate ON comments(visitor_id, created_at);
+        CREATE TABLE IF NOT EXISTS work_activity (
+            game_id TEXT PRIMARY KEY, total INTEGER NOT NULL DEFAULT 0);
+        CREATE TABLE IF NOT EXISTS work_activity_receipts (
+            game_id TEXT NOT NULL, actor TEXT NOT NULL, created_at INTEGER NOT NULL,
+            PRIMARY KEY (game_id, actor));
+        CREATE INDEX IF NOT EXISTS activity_receipts_time ON work_activity_receipts(created_at);
         CREATE TABLE IF NOT EXISTS site_views (
             singleton INTEGER PRIMARY KEY CHECK (singleton=1),
             initial_base INTEGER NOT NULL CHECK (initial_base>=0),
@@ -71,13 +82,21 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass
 
+    def allowed_origin(self):
+        source = self.headers.get('Origin')
+        if source in {ORIGIN, ORIGIN.replace('://www.', '://')}:
+            return source
+        if source == STUDIO_ORIGIN and urlparse(self.path).path.startswith('/api/v1/games/'):
+            return source
+        return None
+
     def send_json(self, status, payload, visitor=None, retry_after=None):
         body = json.dumps(payload, ensure_ascii=False).encode()
         self.send_response(status)
         for key, value in {
             'Content-Type': 'application/json; charset=utf-8',
             'Content-Length': str(len(body)),
-            'Access-Control-Allow-Origin': ORIGIN,
+            'Access-Control-Allow-Origin': self.allowed_origin() or ORIGIN,
             'Access-Control-Allow-Credentials': 'true',
             'Vary': 'Origin', 'Cache-Control': 'no-store',
         }.items():
@@ -92,8 +111,9 @@ class Handler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         self.send_response(204)
         for key, value in {
-            'Access-Control-Allow-Origin': ORIGIN,
+            'Access-Control-Allow-Origin': self.allowed_origin() or ORIGIN,
             'Access-Control-Allow-Credentials': 'true',
+            'Vary': 'Origin',
             'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS',
             'Access-Control-Allow-Headers': 'Content-Type',
             'Content-Length': '0',
@@ -111,6 +131,11 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if path == '/api/v1/site/views':
                 self.send_json(200, view_totals(con))
+                return
+            if path == '/api/v1/games/activity':
+                counts = dict(con.execute('SELECT game_id, total FROM work_activity'))
+                self.send_json(200, {'activity': {k: counts.get(k, 0) for k in PUBLIC_WORKS}},
+                               visitor=None if cookie(self.headers) else secrets.token_urlsafe(24))
                 return
             if path in ('/api/v1/games/likes', '/api/v1/games/comments'):
                 table = 'likes' if path.endswith('/likes') else 'comments'
@@ -158,10 +183,24 @@ class Handler(BaseHTTPRequestHandler):
         if data is None:
             return
         origin = self.headers.get('Origin')
-        if origin and origin not in {ORIGIN, ORIGIN.replace('://www.', '://')}:
+        if origin and not self.allowed_origin():
             self.send_json(403, {'error': 'invalid_origin'})
             return
         path = urlparse(self.path).path.rstrip('/')
+        if path == '/internal/coursework-review' and add:
+            key = os.environ.get('COURSEWORK_GATE_KEY', '')
+            supplied = self.headers.get('X-Coursework-Gate', '').encode('utf-8')
+            if origin or not key or not hmac.compare_digest(key.encode(), supplied):
+                self.send_json(404, {'error': 'not_found'})
+                return
+            text, peer, actor = (data.get(k) for k in ('text', 'peer', 'actor'))
+            if (not valid_comment(text) or not all(isinstance(x, str) and re.fullmatch(r'[a-f0-9]{64}', x)
+                                                   for x in (peer, actor))):
+                self.send_json(400, {'error': 'invalid_comment'})
+                return
+            status, code = review(text, peer, actor)
+            self.send_json(status, {'error': code} if status != 200 else {'approved': True})
+            return
         if path == '/api/v1/site/views' and add:
             event_id = data.get('event_id')
             if not isinstance(event_id, str) or not re.fullmatch(r'[A-Za-z0-9_-]{20,80}', event_id):
@@ -181,18 +220,28 @@ class Handler(BaseHTTPRequestHandler):
             finally:
                 con.close()
             return
-        match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments)(?:/(\d+))?', path)
+        match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments|activity)(?:/(\d+))?', path)
         if not match:
             self.send_json(404, {'error': 'not_found'})
             return
         game_id, action, comment_id = unquote(match[1]), match[2], match[3]
-        if not re.fullmatch(r'[A-Za-z0-9_-]{1,120}', game_id):
-            self.send_json(400, {'error': 'invalid_game'})
+        if game_id not in PUBLIC_WORKS:
+            self.send_json(404, {'error': 'invalid_game'})
             return
         visitor = cookie(self.headers) or secrets.token_urlsafe(24)
         con = db()
         try:
-            if action == 'like' and not comment_id:
+            if action == 'activity' and add and not comment_id:
+                now = int(time.time())
+                actor = opaque(visitor)
+                con.execute('BEGIN IMMEDIATE')
+                con.execute('DELETE FROM work_activity_receipts WHERE created_at<=?', (now - 1800,))
+                if con.execute('INSERT OR IGNORE INTO work_activity_receipts VALUES (?,?,?)', (game_id, actor, now)).rowcount:
+                    con.execute('INSERT INTO work_activity VALUES (?,1) ON CONFLICT (game_id) DO UPDATE SET total=total+1', (game_id,))
+                count = con.execute('SELECT total FROM work_activity WHERE game_id=?', (game_id,)).fetchone()[0]
+                con.commit()
+                self.send_json(200, {'total': count}, visitor)
+            elif action == 'like' and not comment_id:
                 if add:
                     con.execute('INSERT OR IGNORE INTO likes(game_id, visitor_id) VALUES (?,?)', (game_id, visitor))
                 else:
@@ -201,31 +250,30 @@ class Handler(BaseHTTPRequestHandler):
                 count = con.execute('SELECT COUNT(*) FROM likes WHERE game_id=?', (game_id,)).fetchone()[0]
                 self.send_json(200, {'game_id': game_id, 'likes': count}, visitor)
             elif action == 'comments' and add and not comment_id:
-                name, text = data.get('name', ''), data.get('text', '')
-                if not isinstance(name, str) or not isinstance(text, str):
+                text = data.get('text', '')
+                if not isinstance(text, str) or not valid_comment(text.strip()):
                     self.send_json(400, {'error': 'invalid_comment'})
                     return
-                name, text = name.strip(), text.strip()
-                if len(name) > 40 or not 1 <= len(text) <= 600 or any(ord(c) < 32 for c in name) or any(ord(c) < 32 and c not in '\r\n\t' for c in text):
-                    self.send_json(400, {'error': 'invalid_comment'})
-                    return
-                client = self.headers.get('X-Real-IP', self.client_address[0])
-                client_hash = hashlib.sha256(client.encode()).hexdigest()
+                text = text.strip()
+                client_hash = opaque(self.headers.get('X-Real-IP', self.client_address[0]))
                 now = int(time.time())
-                # Serialize the rate check and insert to cover simultaneous posts.
-                con.execute('BEGIN IMMEDIATE')
-                # Classmates may share an IP; reviewing another game is not a duplicate post.
-                recent = con.execute('SELECT created_at FROM comments WHERE visitor_id=? AND created_at>? ORDER BY created_at DESC', (visitor, now - 3600)).fetchall()
-                latest = con.execute('SELECT MAX(created_at) FROM comments WHERE visitor_id=? AND game_id=?', (visitor, game_id)).fetchone()[0]
-                retry_after = max(0, COMMENT_INTERVAL - (now - latest)) if latest is not None else 0
-                reason = 'comment_cooldown'
-                if len(recent) >= COMMENTS_PER_HOUR:
-                    hourly_wait = recent[COMMENTS_PER_HOUR - 1][0] + 3600 - now
-                    if hourly_wait > retry_after:
-                        retry_after, reason = hourly_wait, 'comment_hourly_limit'
-                if retry_after > 0:
+                retry_after, reason = self.comment_wait(con, visitor, game_id, now)
+                if retry_after:
                     self.send_json(429, {'error': reason, 'retry_after': retry_after}, visitor, retry_after)
                     return
+                status, code = review(text, client_hash, opaque(visitor))
+                if status != 200:
+                    self.send_json(status, {'error': code}, visitor)
+                    return
+                # Check again without holding a database lock during model review.
+                now = int(time.time())
+                con.execute('BEGIN IMMEDIATE')
+                retry_after, reason = self.comment_wait(con, visitor, game_id, now)
+                if retry_after > 0:
+                    con.rollback()
+                    self.send_json(429, {'error': reason, 'retry_after': retry_after}, visitor, retry_after)
+                    return
+                name = ''
                 cur = con.execute('INSERT INTO comments(game_id, visitor_id, author, body, created_at, client_hash) VALUES (?,?,?,?,?,?)', (game_id, visitor, name, text, now, client_hash))
                 con.commit()
                 self.send_json(201, {'comment': {'id': cur.lastrowid, 'name': name, 'text': text, 'created_at': now, 'own': True}}, visitor)
@@ -237,6 +285,15 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json(404, {'error': 'not_found'})
         finally:
             con.close()
+
+    @staticmethod
+    def comment_wait(con, visitor, game_id, now):
+        cutoff = con.execute('SELECT created_at FROM comments WHERE visitor_id=? AND created_at>? ORDER BY created_at DESC LIMIT 1 OFFSET ?',
+                             (visitor, now - 3600, COMMENTS_PER_HOUR - 1)).fetchone()
+        latest = con.execute('SELECT MAX(created_at) FROM comments WHERE visitor_id=? AND game_id=?', (visitor, game_id)).fetchone()[0]
+        cool = latest + COMMENT_INTERVAL - now if latest is not None else 0
+        hourly = cutoff[0] + 3600 - now if cutoff else 0
+        return (hourly, 'comment_hourly_limit') if hourly > max(0, cool) else (max(0, cool), 'comment_cooldown')
 
     def do_POST(self):
         self.mutate(True)

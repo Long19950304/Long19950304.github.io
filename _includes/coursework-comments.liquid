@@ -10,16 +10,10 @@
   <div class="game-comments__list" data-comments-list></div>
   <button class="game-comments__more" type="button" data-comments-more hidden>{% if chinese %}查看更早评论{% else %}Load earlier comments{% endif %}</button>
   <form data-comments-form>
-    <fieldset class="game-comments__identity">
-      <legend>{% if chinese %}发布方式{% else %}Post as{% endif %}</legend>
-      <label><input type="radio" name="identity" value="anonymous" checked> {% if chinese %}匿名{% else %}Anonymous{% endif %}</label>
-      <label><input type="radio" name="identity" value="named"> {% if chinese %}留下名字{% else %}Use a name{% endif %}</label>
-    </fieldset>
-    <label class="game-comments__name" data-comments-name-wrap hidden>{% if chinese %}名字{% else %}Name{% endif %}<input type="text" name="name" maxlength="40" autocomplete="nickname" disabled></label>
     <label for="game-comment-text">{% if include.kind == 'video' %}{% if chinese %}观看感受或建议{% else %}Your thoughts or suggestions{% endif %}{% elsif chinese %}试玩感受或建议{% else %}Your experience or suggestions{% endif %}</label>
     <textarea id="game-comment-text" name="text" maxlength="600" rows="3" required placeholder="{% if chinese %}哪里有趣？哪里还可以改进？{% else %}What did you enjoy? What could be improved?{% endif %}"></textarea>
     <div class="game-comments__submit">
-      <small>{% if chinese %}评论公开可见 · 最多 600 字{% else %}Public comments · Up to 600 characters{% endif %}</small>
+      <small>{% if chinese %}匿名发布 · 评论正文经 MiniMax 审核 · 请勿填写个人信息{% else %}Posted anonymously · Comment text is reviewed by MiniMax · Please omit personal information{% endif %}</small>
       <button type="submit">{% if chinese %}发布评论{% else %}Post comment{% endif %}</button>
     </div>
   </form>

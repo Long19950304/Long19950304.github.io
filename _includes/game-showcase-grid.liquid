@@ -21,9 +21,12 @@
         </div>
         <span class="game-like-feedback" data-like-feedback role="status" hidden></span>
         <button class="game-comment-link" type="button" data-comments-open data-game-id="{{ game.id }}" data-game-title="{{ game.title | escape }}">{% if chinese %}评论{% else %}Comments{% endif %} <span data-comment-count>0</span> <span aria-hidden="true">↗</span></button>
+          <small class="coursework-activity" title="{% if page.lang == 'zh' %}自功能上线起统计{% else %}Counted since this feature launched{% endif %}" hidden>{% if chinese %}试玩{% else %}Plays{% endif %} <span data-work-activity>0</span></small>
       </div>
     </article>
   {% endfor %}
 </div>
 <p class="game-showcase-empty" data-game-empty hidden>{% if chinese %}没有找到这个作品，试试游戏名称或同学姓名。{% else %}No games found. Try a game title or student name.{% endif %}</p>
 {% include coursework-comments.liquid %}
+
+<script src="{{ '/assets/js/coursework-activity.js' | relative_url | bust_file_cache }}" defer></script>

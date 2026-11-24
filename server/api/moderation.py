@@ -24,13 +24,20 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 
-def classify(text):
+def classify(text, blog=False):
     key = os.environ.get('MINIMAX_MODERATION_KEY')
     if not key:
         return None
+    system = SYSTEM
+    if blog:
+        system = system.replace('a public university student showcase (games, comics and videos)',
+                                'a public technology tutorial blog')
+        system = system.replace('concrete criticism of the work',
+                                'concrete criticism, questions and troubleshooting about the tutorial')
+        system = system.replace('public classroom gallery', 'public technology tutorial discussion')
     payload = {
         'model': 'MiniMax-M3', 'max_tokens': 128, 'temperature': 0.0,
-        'thinking': {'type': 'disabled'}, 'system': SYSTEM,
+        'thinking': {'type': 'disabled'}, 'system': system,
         'messages': [{'role': 'user', 'content': json.dumps({'comment': text}, ensure_ascii=False)}],
     }
     req = urllib.request.Request(ENDPOINT, data=json.dumps(payload, ensure_ascii=False).encode(), headers={
@@ -56,7 +63,7 @@ def valid_comment(text):
             and not any((ord(c) < 32 and c not in '\r\n\t') or 0xD800 <= ord(c) <= 0xDFFF for c in text))
 
 
-def review(text, peer, actor):
+def review(text, peer, actor, *, blog=False):
     """Limit attempts (including rejected ones) before incurring model cost."""
     now = time.monotonic()
     floor = int(now // 60)
@@ -72,7 +79,7 @@ def review(text, peer, actor):
     if not _slots.acquire(blocking=False):
         return 503, 'review_unavailable'
     try:
-        decision = classify(text)
+        decision = classify(text, blog) if blog else classify(text)
     finally:
         _slots.release()
     if decision is True:

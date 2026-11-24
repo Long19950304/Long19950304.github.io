@@ -106,11 +106,49 @@ class ShowcaseAPI(unittest.TestCase):
             headers['Origin'] = origin
         if body is not None:
             headers['Content-Type'] = 'application/json'
-        con.request(method, '/api/v1/games/' + path, json.dumps(body) if body is not None else None, headers)
+        url = path if path.startswith('/api/') else '/api/v1/games/' + path
+        con.request(method, url, json.dumps(body) if body is not None else None, headers)
         response = con.getresponse()
         value = response.status, json.loads(response.read())
         con.close()
         return value
+
+    def test_blog_views_are_persistent_and_do_not_change_site_totals(self):
+        base = '/api/v1/tech-blog/trae-windows-getting-started'
+        before = self.request('GET', '/api/v1/site/views')[1]
+        self.assertEqual(self.request('GET', base)[1]['views'], 0)
+        self.assertEqual(self.request('POST', base + '/views', {'event_id': 'x'})[0], 400)
+        event = {'event_id': 'v' * 32}
+        self.assertEqual(self.request('POST', base + '/views', event, origin=app.STUDIO_ORIGIN)[0], 403)
+        for _ in range(2):
+            self.assertEqual(self.request('POST', base + '/views', event), (200, {'views': 1}))
+        self.assertEqual(self.request('GET', base)[1]['views'], 1)
+        self.assertEqual(self.request('GET', '/api/v1/site/views')[1], before)
+        self.assertEqual(self.request('POST', '/api/v1/tech-blog/unknown/views', event)[0], 404)
+
+    def test_blog_interactions_share_review_but_are_separate_from_showcase(self):
+        slug = 'trae-windows-getting-started'
+        base = '/api/v1/tech-blog/' + slug
+        visitor = 'z' * 32
+        for _ in range(2):
+            self.assertEqual(self.request('POST', base + '/like', visitor=visitor)[1]['likes'], 1)
+        self.assertTrue(self.request('GET', base, visitor=visitor)[1]['liked'])
+        self.assertFalse(self.request('GET', base)[1]['liked'])
+        self.assertNotIn('tech-blog-' + slug, self.request('GET', 'likes')[1]['likes'])
+        self.assertEqual(self.request('DELETE', base + '/like', visitor=visitor)[1]['likes'], 0)
+        with patch.object(app, 'review', return_value=(422, 'comment_not_approved')) as gate:
+            self.assertEqual(self.request('POST', base + '/comments', {'text': '测试拒绝'}, visitor=visitor)[0], 422)
+            self.assertTrue(gate.call_args.kwargs['blog'])
+        self.assertEqual(self.request('GET', base)[1]['comments'], 0)
+        status, result = self.request('POST', base + '/comments', {'text': '请问下载后在哪里打开？'}, visitor=visitor)
+        self.assertEqual(status, 201)
+        thread = self.request('GET', base + '/comments', visitor=visitor)[1]['comments']
+        self.assertEqual(thread, [result['comment']])
+        self.assertEqual(self.request('GET', 'tech-blog-' + slug + '/comments')[0], 404)
+        delete_url = base + '/comments/' + str(result['comment']['id'])
+        self.assertEqual(self.request('DELETE', delete_url)[0], 403)
+        self.assertEqual(self.request('DELETE', delete_url, visitor=visitor)[0], 200)
+        self.assertEqual(self.request('GET', base)[1]['comments'], 0)
 
     def test_anonymous_persistence_and_owner_deletion(self):
         for game, name, visitor in [('one', '', 'a' * 32), ('two', '试玩同学', 'b' * 32)]:

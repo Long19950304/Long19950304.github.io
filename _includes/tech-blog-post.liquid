@@ -1,0 +1,58 @@
+{% assign lang = page.lang %}
+{% assign post = site.data.tech_blog | where: 'slug', page.tech_post | first %}
+{% assign base = '/tech-blog/' %}
+{% if lang == 'zh' %}{% assign base = '/zh/tech-blog/' %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/tech-blog.css' | relative_url | bust_file_cache }}">
+<div class="tech-post" data-tech-lang="{{ lang }}" data-tech-slug="{{ post.slug }}" data-tech-article>
+  <a class="tech-back" href="{{ base | relative_url }}">← {% if lang == 'zh' %}返回技术博客{% else %}Back to Tech Blog{% endif %}</a>
+  <p class="tech-meta"><time datetime="{{ post.date }}">{{ post.date }}</time> · {{ post.duration }}{% if lang != 'zh' %} · Mandarin audio{% endif %}</p>
+  <video controls playsinline preload="none" poster="{{ post.media | append: '.jpg' | relative_url }}" width="1600" height="900" aria-label="{{ page.title | escape }}">
+    <source src="{{ post.media | append: '.mp4' | relative_url }}" type="video/mp4">
+    <track kind="captions" srclang="zh" label="简体中文" src="{{ post.media | append: '.vtt' | relative_url }}">
+    <a href="{{ post.media | append: '.mp4' | relative_url }}">{% if lang == 'zh' %}打开视频{% else %}Open the video{% endif %}</a>
+  </video>
+  <div class="tech-actions">
+    <span class="tech-meta" data-tech-views hidden>{% if lang == 'zh' %}浏览{% else %}Views{% endif %} <span data-tech-view-count></span></span>
+    <button class="tech-button" type="button" data-tech-like aria-pressed="false" disabled>
+      <span data-tech-like-label>{% if lang == 'zh' %}点赞{% else %}Like{% endif %}</span> <span data-tech-like-count></span>
+    </button>
+    <a href="#comments">{% if lang == 'zh' %}留言{% else %}Comments{% endif %} <span data-tech-comment-count></span></a>
+  </div>
+  <p class="tech-meta tech-status" data-tech-action-status role="status"></p>
+
+  <section class="tech-notes" aria-labelledby="tech-guide">
+    <h2 id="tech-guide">{% if lang == 'zh' %}跟着做{% else %}Follow along{% endif %}</h2>
+    {% if lang == 'zh' %}
+      <p>先到 <a href="https://www.trae.cn/download">TRAE 国内版官方下载页</a>，选择桌面端 Windows (x64)。装好后新建一个练习文件夹，用 TRAE 打开，再把下面这段话发给右侧的 AI。生成后保留并保存，回到文件夹双击 <code>index.html</code>。</p>
+    {% else %}
+      <p>Open the <a href="https://www.trae.cn/download">official TRAE download page</a> and choose Windows (x64). After installing, create a practice folder and open it in TRAE. Send the prompt below in the AI chat, keep and save the result, then double-click <code>index.html</code> in File Explorer.</p>
+    {% endif %}
+    <div class="tech-prompt">
+      <p data-tech-prompt>{% if lang == 'zh' %}请在当前文件夹创建一个 index.html，做一张课堂欢迎卡。大标题写“欢迎来到我的课堂”，下面写“今天，从一个好问题开始”。用浅色背景、深色大字，居中即可。只用一个文件，不安装软件、不运行命令。{% else %}Create an index.html file in this folder for a classroom welcome card. Use “Welcome to my classroom” as the heading and “Today, let’s start with a good question” below. Use large, dark text on a light background. Keep everything in one file. Do not install software or run commands.{% endif %}</p>
+      <button type="button" class="tech-button" data-tech-copy hidden>{% if lang == 'zh' %}复制提示词{% else %}Copy prompt{% endif %}</button>
+      <span class="tech-meta" role="status" data-tech-copy-status></span>
+    </div>
+    <details class="tech-meta">
+      <summary>{% if lang == 'zh' %}画面来源与版本说明{% else %}Footage and version notes{% endif %}</summary>
+      {% if lang == 'zh' %}
+        <p>Windows 安装画面来自 AI数智未来的 <a href="https://www.cnblogs.com/aidigitialfuture/p/18875823/trae-domestic-version-installation-tutorial-1jadig">2025 年安装教程</a>；开始菜单和文件资源管理器参考 <a href="https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows">微软支持</a>。AI 创建欢迎卡为本机新版 TRAE 的 macOS 实测，已标注 Windows 对应操作。</p>
+      {% else %}
+        <p>The Windows installer images are from <a href="https://www.cnblogs.com/aidigitialfuture/p/18875823/trae-domestic-version-installation-tutorial-1jadig">a 2025 guide by AI数智未来</a>. Windows system images are from <a href="https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows">Microsoft Support</a>. The welcome card was created in the current macOS version of TRAE, with Windows actions noted on screen.</p>
+      {% endif %}
+    </details>
+  </section>
+  <section class="tech-comments" id="comments" aria-labelledby="tech-comments-title">
+    <h2 id="tech-comments-title">{% if lang == 'zh' %}留言{% else %}Comments{% endif %}</h2>
+    <p>{% if lang == 'zh' %}哪一步卡住了，或你想用 TRAE 做什么？欢迎留言。留言匿名，经审核后公开。{% else %}Tell me where you got stuck or what you’d like to build. Comments are anonymous and published after review.{% endif %}</p>
+    <form data-tech-form>
+      <label for="tech-comment-text">{% if lang == 'zh' %}你的留言{% else %}Your comment{% endif %}</label>
+      <textarea id="tech-comment-text" name="text" rows="4" maxlength="600" required aria-describedby="tech-comment-status"></textarea>
+      <button type="submit" class="tech-button" disabled>{% if lang == 'zh' %}提交留言{% else %}Post comment{% endif %}</button>
+    </form>
+    <p class="tech-meta tech-status" id="tech-comment-status" data-tech-status role="status"></p>
+    <div class="tech-comment-list" data-tech-list></div>
+    <button class="tech-button" type="button" data-tech-more hidden>{% if lang == 'zh' %}查看更早的留言{% else %}Load earlier comments{% endif %}</button>
+    <noscript><p>{% if lang == 'zh' %}开启 JavaScript 后可点赞和留言。{% else %}Enable JavaScript to like or comment.{% endif %}</p></noscript>
+  </section>
+</div>
+<script defer src="{{ '/assets/js/tech-blog.js' | relative_url | bust_file_cache }}"></script>

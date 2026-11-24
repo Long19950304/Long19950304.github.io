@@ -1,0 +1,24 @@
+{% assign lang = page.lang %}
+{% assign base = '/tech-blog/' %}
+{% if lang == 'zh' %}{% assign base = '/zh/tech-blog/' %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/tech-blog.css' | relative_url | bust_file_cache }}">
+<div class="tech-list" data-tech-lang="{{ lang }}">
+  {% assign entries = site.data.tech_blog | sort: 'date' | reverse %}
+  {% for post in entries %}
+    {% assign post_url = base | append: post.slug | append: '/' | relative_url %}
+    <article class="tech-card" data-tech-slug="{{ post.slug }}">
+      <a class="tech-cover" href="{{ post_url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ post.media | append: '.jpg' | relative_url }}" alt="" width="1000" height="563" decoding="async">
+        <span class="tech-duration">{{ post.duration }}</span>
+      </a>
+      <div class="tech-card-body">
+        <p class="tech-meta">{{ post.category[lang] | escape }} · <time datetime="{{ post.date }}">{{ post.date }}</time></p>
+        <h2><a href="{{ post_url }}">{{ post.title[lang] | escape }}</a></h2>
+        <p>{{ post.summary[lang] | escape }}</p>
+        <p class="tech-meta" data-tech-views hidden>{% if lang == 'zh' %}浏览{% else %}Views{% endif %} <span data-tech-view-count></span></p>
+        <a class="tech-watch" href="{{ post_url }}">{% if lang == 'zh' %}观看教程{% else %}Watch the guide{% endif %} <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+<script defer src="{{ '/assets/js/tech-blog.js' | relative_url | bust_file_cache }}"></script>

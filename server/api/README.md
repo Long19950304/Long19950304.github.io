@@ -1,5 +1,15 @@
 # Course showcase likes and comments API
 
+## Technology blog
+
+`GET /api/v1/tech-blog/{slug}` reads the post's views, likes, comment count and
+the visitor's like state. `POST …/{slug}/views` records one view per document
+ID, independently of the site's footer total. The index only reads counts.
+Both language editions use the same slug. `POST/DELETE …/{slug}/like` and
+`GET/POST …/{slug}/comments` (with owner deletion and the `before` cursor)
+use the established anonymous visitor cookie, moderation and rate limits.
+Only published slugs in `PUBLIC_POSTS` accept engagement.
+
 Dependency-free Python API. One anonymous cookie visitor can like or unlike each game once.
 
 - `GET /api/v1/health`

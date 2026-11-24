@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Persistent likes and comments for course showcases; standard library only."""
+"""Persistent engagement for the personal site and course showcases."""
 import hmac
 import json
 import os
@@ -17,6 +17,8 @@ DB_PATH = os.environ.get('LIKES_DB', '/var/lib/zhaozhilong/likes.sqlite3')
 ORIGIN = os.environ.get('CORS_ORIGIN', 'https://www.zhaozhilong.com')
 STUDIO_ORIGIN = 'https://class.zhaozhilong.com'
 PUBLIC_WORKS = json.loads(Path(__file__).with_name('public_works.json').read_text())
+PUBLIC_POSTS = frozenset({'trae-windows-getting-started'})
+BLOG_ROUTE = re.compile(r'/api/v1/tech-blog/([a-z0-9-]+)(?:/(views|like|comments)(?:/(\d+))?)?')
 HOST = os.environ.get('API_HOST', '127.0.0.1')
 PORT = int(os.environ.get('API_PORT', '8080'))
 COMMENT_INTERVAL = 20
@@ -51,6 +53,12 @@ def db():
         CREATE TABLE IF NOT EXISTS view_receipts (
             event_id TEXT PRIMARY KEY, created_at INTEGER NOT NULL);
         CREATE INDEX IF NOT EXISTS view_receipts_time ON view_receipts(created_at);
+        CREATE TABLE IF NOT EXISTS blog_views (
+            slug TEXT PRIMARY KEY, total INTEGER NOT NULL DEFAULT 0 CHECK (total>=0));
+        CREATE TABLE IF NOT EXISTS blog_view_receipts (
+            slug TEXT NOT NULL, event_id TEXT NOT NULL, created_at INTEGER NOT NULL,
+            PRIMARY KEY (slug, event_id));
+        CREATE INDEX IF NOT EXISTS blog_view_receipts_time ON blog_view_receipts(created_at);
     """)
     con.execute('INSERT OR IGNORE INTO site_views(singleton, initial_base) VALUES (1,?)', (VISIT_INITIAL_BASE,))
     con.commit()
@@ -68,6 +76,15 @@ def cookie(headers):
 def view_totals(con):
     base, observed, started = con.execute('SELECT initial_base, observed, started_at FROM site_views WHERE singleton=1').fetchone()
     return {'total': base + observed, 'initial_base': base, 'observed': observed, 'started_at': started + 'Z'}
+
+
+def blog_stats(con, slug, visitor):
+    topic = 'tech-blog-' + slug
+    views = con.execute('SELECT total FROM blog_views WHERE slug=?', (slug,)).fetchone()
+    likes = con.execute('SELECT COUNT(*) FROM likes WHERE game_id=?', (topic,)).fetchone()[0]
+    comments = con.execute('SELECT COUNT(*) FROM comments WHERE game_id=?', (topic,)).fetchone()[0]
+    liked = con.execute('SELECT 1 FROM likes WHERE game_id=? AND visitor_id=?', (topic, visitor)).fetchone()
+    return {'views': views[0] if views else 0, 'likes': likes, 'comments': comments, 'liked': bool(liked)}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -128,17 +145,25 @@ class Handler(BaseHTTPRequestHandler):
                 return
             if path in ('/api/v1/games/likes', '/api/v1/games/comments'):
                 table = 'likes' if path.endswith('/likes') else 'comments'
-                counts = {r[0]: r[1] for r in con.execute(f'SELECT game_id, COUNT(*) FROM {table} GROUP BY game_id')}
+                counts = {r[0]: r[1] for r in con.execute(f"SELECT game_id, COUNT(*) FROM {table} WHERE game_id NOT GLOB 'tech-blog-*' GROUP BY game_id")}
                 payload = {table: counts}
                 if table == 'likes':
-                    payload['liked'] = [r[0] for r in con.execute('SELECT game_id FROM likes WHERE visitor_id=?', (cookie(self.headers),))]
+                    payload['liked'] = [r[0] for r in con.execute("SELECT game_id FROM likes WHERE visitor_id=? AND game_id NOT GLOB 'tech-blog-*'", (cookie(self.headers),))]
                 self.send_json(200, payload, visitor=secrets.token_urlsafe(24) if table == 'likes' and not cookie(self.headers) else None)
                 return
+            blog = BLOG_ROUTE.fullmatch(path)
             match = re.fullmatch(r'/api/v1/games/([^/]+)/comments', path)
-            if not match:
+            visitor = cookie(self.headers)
+            if blog and blog[1] in PUBLIC_POSTS and not blog[2]:
+                self.send_json(200, blog_stats(con, blog[1], visitor), visitor or secrets.token_urlsafe(24))
+                return
+            if blog and blog[1] in PUBLIC_POSTS and blog[2] == 'comments' and not blog[3]:
+                game_id = 'tech-blog-' + blog[1]
+            elif match and not unquote(match[1]).startswith('tech-blog-'):
+                game_id = unquote(match[1])
+            else:
                 self.send_json(404, {'error': 'not_found'})
                 return
-            game_id = unquote(match[1])
             try:
                 before = int(parse_qs(parsed.query).get('before', [str(2**63 - 1)])[0])
                 if not 0 < before <= 2**63 - 1:
@@ -147,7 +172,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json(400, {'error': 'invalid_cursor'})
                 return
             rows = con.execute('SELECT id, author, body, created_at, visitor_id FROM comments WHERE game_id=? AND id<? ORDER BY id DESC LIMIT 21', (game_id, before)).fetchall()
-            items = [{'id': r[0], 'name': r[1], 'text': r[2], 'created_at': r[3], 'own': r[4] == cookie(self.headers)} for r in rows[:20]]
+            items = [{'id': r[0], 'name': r[1], 'text': r[2], 'created_at': r[3], 'own': r[4] == visitor} for r in rows[:20]]
             self.send_json(200, {'comments': items, 'next': items[-1]['id'] if len(rows) > 20 else None})
         finally:
             con.close()
@@ -209,13 +234,35 @@ class Handler(BaseHTTPRequestHandler):
             finally:
                 con.close()
             return
-        match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments)(?:/(\d+))?', path)
-        if not match:
-            self.send_json(404, {'error': 'not_found'})
+        blog = BLOG_ROUTE.fullmatch(path)
+        if blog and blog[1] in PUBLIC_POSTS and blog[2] == 'views' and not blog[3] and add:
+            event_id = data.get('event_id')
+            if not isinstance(event_id, str) or not re.fullmatch(r'[A-Za-z0-9_-]{20,80}', event_id):
+                self.send_json(400, {'error': 'invalid_view_event'})
+                return
+            con = db()
+            try:
+                now = int(time.time())
+                con.execute('BEGIN IMMEDIATE')
+                con.execute('DELETE FROM blog_view_receipts WHERE created_at<?', (now - 172800,))
+                inserted = con.execute('INSERT OR IGNORE INTO blog_view_receipts VALUES (?,?,?)',
+                                       (blog[1], event_id, now)).rowcount
+                if inserted:
+                    con.execute('INSERT INTO blog_views(slug,total) VALUES (?,1) ON CONFLICT(slug) DO UPDATE SET total=total+1',
+                                (blog[1],))
+                total = con.execute('SELECT total FROM blog_views WHERE slug=?', (blog[1],)).fetchone()[0]
+                con.commit()
+                self.send_json(200, {'views': total})
+            finally:
+                con.close()
             return
-        game_id, action, comment_id = unquote(match[1]), match[2], match[3]
-        if game_id not in PUBLIC_WORKS:
-            self.send_json(404, {'error': 'invalid_game'})
+        match = re.fullmatch(r'/api/v1/games/([^/]+)/(like|comments)(?:/(\d+))?', path)
+        if blog and blog[1] in PUBLIC_POSTS and blog[2] in ('like', 'comments'):
+            game_id, action, comment_id = 'tech-blog-' + blog[1], blog[2], blog[3]
+        elif match and unquote(match[1]) in PUBLIC_WORKS:
+            game_id, action, comment_id = unquote(match[1]), match[2], match[3]
+        else:
+            self.send_json(404, {'error': 'not_found'})
             return
         visitor = cookie(self.headers) or secrets.token_urlsafe(24)
         con = db()
@@ -240,7 +287,8 @@ class Handler(BaseHTTPRequestHandler):
                 if retry_after:
                     self.send_json(429, {'error': reason, 'retry_after': retry_after}, visitor, retry_after)
                     return
-                status, code = review(text, client_hash, opaque(visitor))
+                status, code = (review(text, client_hash, opaque(visitor), blog=True) if blog
+                                else review(text, client_hash, opaque(visitor)))
                 if status != 200:
                     self.send_json(status, {'error': code}, visitor)
                     return

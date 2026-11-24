@@ -1,0 +1,13 @@
+- slug: trae-windows-getting-started
+  date: '2026-11-24'
+  duration: '4:10'
+  media: /assets/video/tech-blog/trae-windows-getting-started
+  title:
+    zh: TRAE 国内版：Windows 下载、安装与第一次使用
+    en: TRAE on Windows — from download to your first project
+  summary:
+    zh: 从官网下载安装，到用 AI 做一张课堂欢迎卡。适合没有编程经验的老师。
+    en: Download and install TRAE, then use AI to make a classroom welcome card. No coding experience is needed.
+  category:
+    zh: AI 工具 · 视频教程
+    en: AI tools · Video guide

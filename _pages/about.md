@@ -35,6 +35,10 @@ My work spans communication research, AI-assisted social science, and media prod
 
 I hold a PhD in Communication from the University of Macau and previously worked as a postdoctoral researcher at South China University of Technology.
 
+## Academic Mentorship
+
+My doctoral supervisor was [Prof. Agnes Lam Iok Fong (林玉鳳)](https://fss.um.edu.mo/lam-iok-fong-agnes-%E6%9E%97%E7%8E%89%E9%B3%B3/), University of Macau. My postdoctoral co-supervisor was [Prof. Yindi Liu (刘银娣)](https://www2.scut.edu.cn/communication/34213/list.htm), South China University of Technology.
+
 ## Research Interests
 
 - **Health and public communication**: media use, trust, health literacy, and the framing of social issues.

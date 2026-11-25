@@ -35,6 +35,10 @@ latest_posts:
 
 我在澳门大学获得传播学博士学位，曾在华南理工大学新闻与传播学院从事博士后研究。
 
+## 学术导师
+
+我的博士导师是[澳门大学林玉凤教授（Agnes Lam Iok Fong）](https://fss.um.edu.mo/lam-iok-fong-agnes-%E6%9E%97%E7%8E%89%E9%B3%B3/)；博士后合作导师是[华南理工大学刘银娣教授（Yindi Liu）](https://www2.scut.edu.cn/communication/34213/list.htm)。
+
 ## 研究兴趣
 
 - **健康与公共传播**：媒体使用、信任、健康素养，以及社会议题的新闻框架。

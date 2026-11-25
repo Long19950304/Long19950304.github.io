@@ -33,11 +33,7 @@ latest_posts:
 
 我的工作围绕传播研究、人工智能辅助社会科学研究，以及影像创作与教学展开。
 
-我在澳门大学获得传播学博士学位，曾在华南理工大学新闻与传播学院从事博士后研究。
-
-## 学术导师
-
-我的博士导师是[澳门大学林玉凤教授（Agnes Lam Iok Fong）](https://fss.um.edu.mo/lam-iok-fong-agnes-%E6%9E%97%E7%8E%89%E9%B3%B3/)；博士后合作导师是[华南理工大学刘银娣教授（Yindi Liu）](https://www2.scut.edu.cn/communication/34213/list.htm)。
+我在澳门大学获得传播学博士学位，博士导师为[林玉凤（Agnes Lam Iok Fong）](https://fss.um.edu.mo/lam-iok-fong-agnes-%E6%9E%97%E7%8E%89%E9%B3%B3/)；随后在华南理工大学新闻与传播学院从事博士后研究，合作导师为[刘银娣（Yindi Liu）](https://www2.scut.edu.cn/communication/34213/list.htm)。
 
 ## 研究兴趣
 
